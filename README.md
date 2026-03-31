@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# WhateverFi
 
-# Run and deploy your AI Studio app
+> Fresh ideas in fintech — rethinking personal finance
 
-This contains everything you need to run your app locally.
+[![Language](https://img.shields.io/badge/language-TypeScript-3178c6?style=flat-square)](https://github.com/Tornado-Truxton/whateverfi)
+[![Maintained by Regan.Studio](https://img.shields.io/badge/maintained%20by-Regan.Studio-6C63FF?style=flat-square)](https://regan.studio)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1o708oXJvFU3YP1jqKN5yeVMstfVkcT6u
+---
 
-## Run Locally
+## Overview
 
-**Prerequisites:**  Node.js
+WhateverFi is a fintech exploration project pushing the boundaries of personal finance tooling with fresh ideas and modern engineering. Built in TypeScript, it serves as an incubator for financial features, concepts, and prototypes. Opinionated, experimental, and built for real-world impact.
 
+## Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **TypeScript**
+- **Node.js**
+- **React**
+
+## Getting Started
+
+Documentation coming soon.
+
+## License
+
+Private — © Regan.Studio. All rights reserved.
+
+---
+
+Built with ❤️ by [Regan.Studio](https://regan.studio)
