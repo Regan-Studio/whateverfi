@@ -1,0 +1,75 @@
+name: whateverfi-site-deploy
+
+# Root copy of whateverfi-site/.github/workflows/deploy.yml.
+# Runs ONLY on push to main that touches whateverfi-site/, and the deploy job is SKIPPED unless both
+# Cloudflare credentials exist (secret CLOUDFLARE_API_TOKEN + secret or variable CLOUDFLARE_ACCOUNT_ID).
+# Successful deploys are tagged whateverfi-deploy-<UTC time>-<sha> so the rollback workflow can redeploy them.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "whateverfi-site/**"
+      - ".github/workflows/whateverfi-site-deploy.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: whateverfi-site-deploy-production
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.check.outputs.enabled }}
+    steps:
+      - id: check
+        env:
+          HAS_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+          HAS_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID != '' || vars.CLOUDFLARE_ACCOUNT_ID != '' }}
+        run: |
+          if [[ "$HAS_TOKEN" == true && "$HAS_ACCOUNT" == true ]]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Cloudflare secrets (CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID) not set - deploy skipped." | tee -a "$GITHUB_STEP_SUMMARY"
+          fi
+
+  deploy:
+    needs: gate
+    if: needs.gate.outputs.enabled == 'true' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: production # add required reviewers here for an extra approval gate
+    defaults:
+      run:
+        working-directory: whateverfi-site
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DEPLOY_TARGET: ${{ vars.DEPLOY_TARGET || 'cloudflare-pages' }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || vars.CLOUDFLARE_ACCOUNT_ID }}
+      CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./whateverfi-site/.github/actions/setup
+        with:
+          dir: whateverfi-site
+      - name: Build pinned upstream with overlay and verify branding
+        run: scripts/sync-upstream.sh --ocr
+      - uses: actions/upload-artifact@v4
+        with:
+          name: whateverfi-site-production-${{ github.sha }}
+          path: whateverfi-site/dist/
+          retention-days: 90
+      - name: Deploy
+        id: deploy
+        run: scripts/deploy.sh production
+      - name: Tag deployed revision
+        if: env.DEPLOY_TARGET != 'none'
+        run: |
+          tag="whateverfi-deploy-$(date -u +%Y%m%d-%H%M%S)-${GITHUB_SHA:0:7}"
+          git tag "$tag" "$GITHUB_SHA"
+          git push origin "refs/tags/$tag"
+          echo "Deployed $GITHUB_SHA as $tag ${{ steps.deploy.outputs.url }}" >> "$GITHUB_STEP_SUMMARY"

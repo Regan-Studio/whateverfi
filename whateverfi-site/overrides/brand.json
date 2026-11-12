@@ -1,0 +1,90 @@
+{
+  "$comment": "Single source of truth for the WhatEverFi overlay. Rules run in order over every scoped text file of the upstream checkout. A rule with required=true must match at least once, otherwise the overlay fails so upstream restructuring can never silently restore old branding.",
+  "brand": "WhatEverFi",
+  "company": "Regan.Studio",
+  "companyUrl": "https://regan.studio",
+  "siteUrl": "https://whateverfi.com",
+  "appUrl": "https://app.whateverfi.com",
+  "scope": {
+    "include": ["apps/www", "docs", "packages/core/src", "packages/i18n/src", "packages/ui-web/src", "packages/contracts/src"],
+    "exclude": ["node_modules", "dist", ".astro", ".vercel", "e2e"],
+    "textExtensions": [".ts", ".tsx", ".mjs", ".js", ".astro", ".md", ".mdx", ".json", ".txt", ".svg", ".webmanifest", ".css", ".html", ".xml", ".yml", ".yaml"]
+  },
+  "renameFiles": {
+    "roots": ["apps/www/public", "apps/www/src/content"],
+    "from": "rakazo",
+    "to": "whateverfi"
+  },
+  "rules": [
+    { "id": "www-url", "find": "https://www\\.rakazo\\.com", "replace": "https://www.whateverfi.com" },
+    { "id": "www-host", "find": "(?<![\\w.-])www\\.rakazo\\.com", "replace": "www.whateverfi.com", "required": true },
+    { "id": "site-url", "find": "https://rakazo\\.com", "replace": "https://whateverfi.com", "required": true },
+    { "id": "app-url", "find": "https://app\\.rakazo\\.com", "replace": "https://app.whateverfi.com", "required": true },
+    { "id": "app-host", "find": "(?<![\\w./-])app\\.rakazo\\.com", "replace": "app.whateverfi.com" },
+    { "id": "emails", "find": "([A-Za-z0-9._%+-]+)@rakazo\\.com", "replace": "$1@whateverfi.com", "required": true },
+    { "id": "bare-domain", "find": "(?<![\\w.@/-])rakazo\\.com\\b", "replace": "whateverfi.com" },
+    { "id": "utm-source", "find": "utm_source=rakazo", "replace": "utm_source=whateverfi" },
+    { "id": "company-url", "find": "https://www\\.getinboxzero\\.com/[^\"'`\\s)]*", "replace": "https://regan.studio", "required": true },
+    { "id": "company-name-inc", "find": "Inbox Zero Inc\\.", "replace": "Regan.Studio", "required": true },
+    { "id": "company-short-quoted", "find": "\\(\"Inbox Zero,\"", "replace": "(\"Regan.Studio,\"" },
+    { "id": "company-short", "find": "\\bInbox Zero\\b", "replace": "Regan.Studio" },
+    { "id": "company-address", "find": "\\s*131 Continental Dr, Suite 305(<br\\s*/>)?\\s*\\n?\\s*Newark, Delaware 19713, United States(<br\\s*/>)?", "replace": "", "$comment": "Upstream company's postal address. Regan.Studio's address is unknown, so it is removed rather than replaced." },
+    { "id": "brand-word", "find": "\\bRakazo\\b", "replace": "WhatEverFi", "required": true },
+    { "id": "brand-upper", "find": "\\bRAKAZO\\b", "replace": "WHATEVERFI" },
+    { "id": "logo-word", "find": "(<span class=\"brand-lockup__word\">)rakazo(</span>)", "replace": "$1WhatEverFi$2", "required": true },
+    {
+      "id": "footer-notice",
+      "file": "apps/www/src/components/Footer.astro",
+      "find": "<span>Apache-2.0</span>",
+      "replace": "<a href=\"/NOTICE.txt\">Apache-2.0 · Open-source notices</a>",
+      "required": true,
+      "$comment": "Keeps the Apache-2.0 attribution to the upstream project visibly reachable from every page."
+    },
+    {
+      "id": "claims-data-source",
+      "file": "apps/www/src/site.ts",
+      "find": "`\\$\\{APP_URL\\}/api/v1/integration-claims`",
+      "replace": "\"https://app.rakazo.com/api/v1/integration-claims\"",
+      "required": true,
+      "$comment": "Build-time data feed only (owners' website links on integration pages); never rendered. app.whateverfi.com has no API, so the upstream feed is kept."
+    },
+    {
+      "id": "testimonials",
+      "file": "apps/www/src/i18n/home.ts",
+      "find": "(const TESTIMONIALS: HomeCopy\\[\"testimonials\"\\]\\[\"items\"\\] = )\\[[\\s\\S]*?\\n\\];",
+      "replace": "$1[];",
+      "required": true,
+      "$comment": "Real user quotes about the upstream product must not be presented as endorsements of WhatEverFi."
+    },
+    {
+      "id": "testimonials-hide",
+      "file": "apps/www/src/components/HomePage.astro",
+      "find": "<section id=\"testimonials\" class=\"section testimonials\"",
+      "replace": "<section id=\"testimonials\" class=\"section testimonials\" hidden={copy.testimonials.items.length === 0}",
+      "required": true
+    }
+  ],
+  "verify": {
+    "forbidden": ["rakazo", "inbox zero", "getinboxzero"],
+    "allowedPatterns": [
+      "github\\.com/elie222/rakazo[\\w./#?=&%:-]*",
+      "raw\\.githubusercontent\\.com/elie222/rakazo[\\w./-]*",
+      "ghcr\\.io/elie222/rakazo[\\w./:-]*",
+      "api\\.github\\.com/repos/elie222/rakazo[\\w./-]*",
+      "elie222/rakazo[\\w./-]*",
+      "x\\.com/rakazobot",
+      "apps\\.apple\\.com/app/rakazo[\\w/-]*",
+      "com\\.rakazo\\.app",
+      "rakazo-public\\.[\\w.-]+",
+      "@rakazo/[\\w-]+",
+      "[A-Z0-9_]*RAKAZO[A-Z0-9_]*"
+    ],
+    "skipFiles": ["NOTICE.txt", "pagefind/"],
+    "requiredStrings": {
+      "index.html": ["https://whateverfi.com/", "WhatEverFi", "Regan.Studio", "/NOTICE.txt"],
+      "robots.txt": ["https://whateverfi.com/"],
+      "sitemap-index.xml": ["https://whateverfi.com/"],
+      "NOTICE.txt": ["elie222/rakazo", "Apache License"]
+    }
+  }
+}

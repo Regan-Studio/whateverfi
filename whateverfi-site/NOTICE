@@ -1,0 +1,23 @@
+WhatEverFi website (whateverfi.com)
+Operated by Regan.Studio.
+
+This website is a modified build of the marketing site (apps/www) of the open
+source project "Rakazo":
+
+    https://github.com/elie222/rakazo
+    Copyright 2026 Rakazo contributors (maintained by Inbox Zero Inc.)
+    Licensed under the Apache License, Version 2.0
+
+Modifications by Regan.Studio: the site domain, product name ("WhatEverFi"),
+company name ("Regan.Studio"), contact e-mail addresses, wordmark images and
+social cards were changed, user testimonials were removed, and an attribution
+link was added to the footer. The exact, machine-applied list of changes is in
+overrides/brand.json of the whateverfi-site repository.
+
+The upstream project's copyright notice and license are retained unmodified.
+Apache-2.0 does not grant permission to use the upstream project's trade
+names, trademarks or logos (Section 6). The original project name appears in
+this file only to provide the attribution the license requires.
+
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0

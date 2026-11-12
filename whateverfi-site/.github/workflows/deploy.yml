@@ -1,0 +1,48 @@
+name: deploy
+
+# Runs after a human merges into the default branch. Target = repo variable DEPLOY_TARGET
+# (none | cloudflare-pages). Successful production deploys are tagged deploy-<UTC time>-<sha>
+# so `rollback` can redeploy them.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: production # add required reviewers here for an extra approval gate
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DEPLOY_TARGET: ${{ vars.DEPLOY_TARGET || 'none' }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+      CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Build pinned upstream with overlay and verify branding
+        run: scripts/sync-upstream.sh --ocr
+      - uses: actions/upload-artifact@v4
+        with:
+          name: production-${{ github.sha }}
+          path: dist/
+          retention-days: 90
+      - name: Deploy
+        id: deploy
+        run: scripts/deploy.sh production
+      - name: Tag deployed revision
+        if: env.DEPLOY_TARGET != 'none'
+        run: |
+          tag="deploy-$(date -u +%Y%m%d-%H%M%S)-${GITHUB_SHA:0:7}"
+          git tag "$tag" "$GITHUB_SHA"
+          git push origin "refs/tags/$tag"
+          echo "Deployed $GITHUB_SHA as $tag ${{ steps.deploy.outputs.url }}" >> "$GITHUB_STEP_SUMMARY"

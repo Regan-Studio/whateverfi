@@ -1,0 +1,53 @@
+name: ci
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # raises the GitHub API limit for star/commit lookups at build time
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Lint wrapper scripts
+        run: |
+          bash -n scripts/*.sh
+          node --check scripts/apply-overlay.mjs
+          node --check scripts/verify-build.mjs
+          node --check scripts/postbuild.mjs
+          python3 -m py_compile scripts/rebrand-assets.py
+      - name: Fetch pinned upstream, apply overlay, build, astro check, verify branding (incl. OCR)
+        run: scripts/sync-upstream.sh --ocr
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site-${{ github.sha }}
+          path: dist/
+          retention-days: 14
+      - name: Preview deploy (only when a deploy target is configured)
+        id: preview
+        if: github.event_name == 'pull_request' && vars.DEPLOY_TARGET == 'cloudflare-pages' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          DEPLOY_TARGET: ${{ vars.DEPLOY_TARGET }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+        run: scripts/deploy.sh preview "pr-${{ github.event.pull_request.number }}"
+      - name: Comment preview URL
+        if: steps.preview.outputs.url != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PREVIEW_URL: ${{ steps.preview.outputs.url }}
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" --body "Preview deploy: $PREVIEW_URL"

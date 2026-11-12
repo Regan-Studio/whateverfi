@@ -1,0 +1,59 @@
+name: whateverfi-site-rollback
+
+# Root copy of whateverfi-site/.github/workflows/rollback.yml. Redeploys an earlier revision
+# (a whateverfi-deploy-* tag or any commit SHA). upstream.json pins the upstream SHA, so the rebuild
+# reproduces that release's content. Fails fast if the Cloudflare credentials are not configured.
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "whateverfi-deploy-* tag or commit SHA to redeploy (list: git tag -l 'whateverfi-deploy-*')"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: whateverfi-site-deploy-production
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: whateverfi-site
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: production
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DEPLOY_TARGET: ${{ vars.DEPLOY_TARGET || 'cloudflare-pages' }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || vars.CLOUDFLARE_ACCOUNT_ID }}
+      CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+    steps:
+      - name: Require Cloudflare credentials
+        working-directory: .
+        run: |
+          [[ -n "$CLOUDFLARE_API_TOKEN" && -n "$CLOUDFLARE_ACCOUNT_ID" ]] || { echo "::error::Set CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID first"; exit 1; }
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+      - name: Show what is being redeployed
+        run: |
+          echo "Repo: $(git rev-parse HEAD)  upstream: $(jq -r .sha upstream.json)" | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: ./whateverfi-site/.github/actions/setup
+        with:
+          dir: whateverfi-site
+      - name: Rebuild that revision
+        run: scripts/sync-upstream.sh --ocr
+      - name: Deploy
+        id: deploy
+        run: scripts/deploy.sh production
+      - name: Tag rollback
+        run: |
+          tag="whateverfi-rollback-$(date -u +%Y%m%d-%H%M%S)-$(git rev-parse --short=7 HEAD)"
+          git tag "$tag" HEAD && git push origin "refs/tags/$tag"
+          echo "Rolled back to ${{ inputs.ref }} as $tag ${{ steps.deploy.outputs.url }}" >> "$GITHUB_STEP_SUMMARY"

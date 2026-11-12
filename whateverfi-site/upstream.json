@@ -1,0 +1,8 @@
+{
+  "repo": "https://github.com/elie222/rakazo",
+  "branch": "main",
+  "sha": "1115613b8d007328c5a625a1cc2b096161a5788c",
+  "app": "apps/www",
+  "node": "24.22.3",
+  "pnpm": "12.18.0"
+}

@@ -1,0 +1,99 @@
+name: sync-upstream
+
+# Checks elie222/rakazo for new commits, rebuilds the WhatEverFi overlay on top and opens/updates a
+# PR from sync/upstream-<sha>. It never merges and never pushes to the default branch.
+# On patch/overlay conflict or a failed build/branding check it opens (or updates) an issue instead.
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Upstream ref to sync (branch, tag or SHA); default = upstream default branch HEAD"
+        required: false
+        default: latest
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      # GITHUB_TOKEN-created PRs do not trigger other workflows; set SYNC_TOKEN (fine-grained PAT or
+      # GitHub App token: contents/pull-requests/issues write) so `ci` runs on sync PRs.
+      GH_TOKEN: ${{ secrets.SYNC_TOKEN || github.token }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SYNC_TOKEN || github.token }}
+      - name: Resolve upstream target
+        id: target
+        run: |
+          repo=$(jq -r .repo upstream.json); branch=$(jq -r .branch upstream.json); pinned=$(jq -r .sha upstream.json)
+          ref="${{ inputs.ref || 'latest' }}"
+          [[ "$ref" == latest ]] && ref="$branch"
+          if [[ "$ref" =~ ^[0-9a-f]{40}$ ]]; then sha="$ref"; else
+            sha=$(git ls-remote "$repo" "refs/heads/$ref" "refs/tags/$ref" | head -n1 | cut -f1); fi
+          [[ -n "$sha" ]] || { echo "::error::cannot resolve $ref"; exit 1; }
+          { echo "sha=$sha"; echo "short=${sha:0:12}"; echo "pinned=$pinned"; } >> "$GITHUB_OUTPUT"
+          if [[ "$sha" == "$pinned" ]]; then echo "uptodate=true" >> "$GITHUB_OUTPUT"; echo "Already at $sha"; fi
+      - uses: ./.github/actions/setup
+        if: steps.target.outputs.uptodate != 'true'
+      - name: Build overlay on upstream ${{ steps.target.outputs.short }}
+        id: build
+        if: steps.target.outputs.uptodate != 'true'
+        run: |
+          set +e
+          scripts/sync-upstream.sh --ref "${{ steps.target.outputs.sha }}" --pin --ocr 2>&1 | tee .cache-sync.log
+          code=${PIPESTATUS[0]}
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Open/update PR on sync/upstream-${{ steps.target.outputs.short }}
+        if: steps.target.outputs.uptodate != 'true' && steps.build.outputs.code == '0'
+        run: |
+          sha=${{ steps.target.outputs.sha }}; short=${{ steps.target.outputs.short }}
+          branch="sync/upstream-$short"
+          git config user.name "whateverfi-sync[bot]"
+          git config user.email "whateverfi-sync@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add upstream.json
+          git commit -m "Sync upstream elie222/rakazo to $short" || echo "nothing to commit"
+          git push --force-with-lease origin "$branch"   # sync branch only, never the default branch
+          # shellcheck disable=SC2016 # literal backticks are Markdown
+          body=$(printf 'Automated upstream sync to [`%s`](https://github.com/elie222/rakazo/commit/%s).\n\nOverlay applied, build + astro check + branding verification (text + OCR) passed in this run.\n\n**Human review required before merge** (merge triggers `deploy`).\nUpstream changes: https://github.com/elie222/rakazo/compare/%s...%s' "$short" "$sha" "${{ steps.target.outputs.pinned }}" "$sha")
+          if gh pr view "$branch" --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit "$branch" --body "$body"
+          else
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head "$branch" \
+              --title "Sync upstream to $short" --body "$body"
+          fi
+          # Close older sync PRs superseded by this one (they are never merged automatically).
+          gh pr list --state open --json headRefName,number -q '.[] | select(.headRefName|startswith("sync/upstream-")) | select(.headRefName != "'"$branch"'") | .number' \
+            | xargs -r -n1 -I{} gh pr close {} --comment "Superseded by $branch"
+      - name: Open/update issue on conflict or failure
+        if: steps.target.outputs.uptodate != 'true' && steps.build.outputs.code != '0'
+        run: |
+          short=${{ steps.target.outputs.short }}; code=${{ steps.build.outputs.code }}
+          case "$code" in
+            3) kind="patch conflict" ;; 4) kind="overlay no longer matches upstream" ;;
+            5) kind="install/build failure" ;; 6) kind="type-check or branding verification failure" ;; *) kind="sync failure (exit $code)" ;;
+          esac
+          title="Upstream sync blocked at $short: $kind"
+          # shellcheck disable=SC2016 # literal backticks are Markdown
+          body=$(printf 'The scheduled sync could not prepare a PR.\n\n- Upstream: https://github.com/elie222/rakazo/commit/%s\n- Run: %s/%s/actions/runs/%s\n- Exit code: %s (%s)\n\n```\n%s\n```\n\nSee DEPLOY.md "Resolving a blocked sync".' \
+            "${{ steps.target.outputs.sha }}" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$code" "$kind" \
+            "$( (cat .cache/conflict.txt 2>/dev/null; tail -40 .cache-sync.log) | tail -60)")
+          gh label create upstream-sync --color B60205 2>/dev/null || true
+          existing=$(gh issue list --label upstream-sync --state open --search "$short in:title" --json number -q '.[0].number')
+          if [[ -n "$existing" ]]; then gh issue comment "$existing" --body "$body"; else
+            gh issue create --title "$title" --label upstream-sync --body "$body"; fi
+          exit 1
