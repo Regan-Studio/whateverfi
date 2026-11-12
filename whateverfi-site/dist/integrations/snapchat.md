@@ -1,0 +1,148 @@
+# Snapchat
+
+Snapchat Marketing API and Ads Manager integration for creating and managing ad campaigns, analyzing performance metrics, and accessing business accounts.
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/snapchat/.
+
+## Actions
+
+- **Add Users to Segment**: Add users to a Snapchat audience segment.
+- **Create Account Role**: Create new roles for members in a Snapchat Ad Account.
+- **Create Ad Account**: Create a new ad account within a Snapchat organization.
+- **Create ad account creative elements**: Create new creative elements in a Snapchat ad account.
+- **Create Ad Account Dynamic Templates**: Create new dynamic templates for product ads in a Snapchat ad account.
+- **Create Ad Account Event Details**: Create event details for a Snapchat ad account.
+- **Create Ad Account Interaction Zones**: Create new interaction zones for an ad account in Snapchat Marketing API.
+- **Create Ad Squad**: Create a new ad squad within a campaign.
+- **Create Audience Segment**: Create new audience segments (customer lists or lookalikes) in Snapchat Ads.
+- **Create Billing Center**: Create one or more billing centers for a Snapchat Ads organization.
+- **Create Campaign**: Create a new advertising campaign in Snapchat Marketing API.
+- **Create Catalog Product Set**: Create a new product set within a Snapchat catalog.
+- **Create Catalog Role**: Create new roles for a catalog in Snapchat Marketing API.
+- **Create Catalogs Product Feed**: Create a new product feed under a specified catalog.
+- **Create Media**: Create a new media file in a Snapchat ad account.
+- **Create Organization Role**: Create a new role for an organization in Snapchat Marketing API.
+- **Create Organizations Catalogs**: Create new product catalogs within a Snapchat organization for Dynamic Product Ads.
+- **Delete Ad Squad**: Permanently delete an ad squad from Snapchat Marketing API.
+- **Delete Audience Segment**: Delete an audience segment from Snapchat.
+- **Delete Campaign**: Delete a campaign from Snapchat Marketing API.
+- **Delete Member**: Remove a member from an organization in Snapchat Marketing API.
+- **Get Ad Account** (read-only): Retrieve a specific ad account by its ID from Snapchat Marketing API.
+- **Get Ad Account Leads Report** (read-only): Retrieve ad account leads report by ID from Snapchat Marketing API.
+- **Get Ad Account Stats** (read-only): Retrieve ad account statistics from Snapchat Marketing API.
+- **Get Ad Account Stats Report** (read-only): Retrieve ad account stats report by ID from Snapchat Marketing API.
+- **Get Ad Squad** (read-only): Retrieve a specific ad squad by its ID from Snapchat Marketing API.
+- **Get Ad Squad Stats** (read-only): Retrieve performance statistics for a specific ad squad from Snapchat Marketing API.
+- **Get Ad Stats** (read-only): Retrieve performance statistics for a specific ad from Snapchat Marketing API.
+- **Get Authenticated User** (read-only): Retrieve information about the authenticated user from Snapchat Marketing API.
+- **Get Campaign** (read-only): Retrieve a specific campaign by its ID from Snapchat Marketing API.
+- **Get Campaign Stats** (read-only): Retrieve performance statistics for a specific campaign from Snapchat Marketing API.
+- **Get Campaigns by IDs** (read-only): Fetch multiple campaigns by their IDs from Snapchat Marketing API.
+- **Get Organization** (read-only): Retrieve a specific organization by its ID from Snapchat Marketing API.
+- **List Ad Accounts** (read-only): Retrieve all ad accounts associated with an organization from Snapchat Marketing API.
+- **List Ad Squads by Campaign** (read-only): Retrieve all ad squads for a specific campaign.
+- **List Ads by Account** (read-only): Retrieve all ads for a specific ad account from Snapchat Marketing API.
+- **List Ads by Ad Squad** (read-only): Retrieve all ads for a specific ad squad from Snapchat Marketing API.
+- **List Ads by Campaign** (read-only): Retrieve all ads for a specific campaign from Snapchat Marketing API.
+- **List Campaigns** (read-only): Retrieve all campaigns for a specific ad account from Snapchat Marketing API.
+- **List Organizations** (read-only): Retrieve all organizations that the authenticated user has access to from Snapchat Marketing API.
+- **Update Ad Account**: Update an existing ad account within a Snapchat organization.
+- **Update Ad Squad**: Update an existing ad squad within a campaign.
+- **Update Audience Segment**: Update existing audience segments in Snapchat Ads.
+- **Update Billing Center**: Update one or more existing billing centers for a Snapchat Ads organization.
+- **Update Campaign**: Update an existing advertising campaign in Snapchat Marketing API.
+- **Upload Media Multipart**: Upload large media files using multipart upload in Snapchat Marketing API.
+- **Copy Media Between Ad Accounts**: Copies media from one Snapchat ad account to another.
+- **Create ad account reserved forecasting** (read-only): Create a reserved forecasting for Snapchat ad accounts.
+- **Create Adaccounts Targeting Insights** (read-only): Generate targeting insights for a Snapchat ad account.
+- **Create Catalog Facets**: Create catalog facets for grouping products by attributes like BRAND, COLOR, or AVAILABILITY.
+- **Create Offer Disclaimers**: Create new offer disclaimers for a Snapchat ad account.
+- **Delete All Segment Users**: Remove all users from a Snapchat audience segment.
+- **Delete Catalog**: Delete a catalog by ID from Snapchat Marketing API.
+- **Delete Event Details**: Delete event details from Snapchat Marketing API.
+- **Delete Offer Disclaimer**: Delete an offer disclaimer from a Snapchat ad account.
+- **Delete product feed**: Permanently delete a product feed from Snapchat Ads.
+- **Delete Role**: Delete a role from Snapchat Marketing API.
+- **Delete Users from Segment**: Remove specific users from a Snapchat audience segment.
+- **Estimate Ad Account Audience Size** (read-only): Estimate audience size for Snapchat ad campaigns.
+- **Get Ad Account Ad Squad UI Render Data** (read-only): Retrieve ad squad UI render data for a Snapchat ad account.
+- **Get Ad Account Ad Squads** (read-only): Retrieve all ad squads in an ad account by ID.
+- **Get Ad Account Dynamic Templates** (read-only): Retrieve dynamic templates for a Snapchat ad account.
+- **Get Ad Account Event Details** (read-only): Retrieve all Event Details entities for a specific ad account.
+- **Get Ad Account Interaction Zones** (read-only): Retrieve interaction zones for an ad account from Snapchat Marketing API.
+- **Get Ad Account Lead Generation Forms** (read-only): Retrieve all lead generation forms for a specific ad account from Snapchat Marketing API.
+- **Get Ad Account Mobile Apps** (read-only): Retrieve all mobile apps associated with a Snapchat ad account by ID.
+- **Get Ad Account Offer Disclaimers** (read-only): Retrieve all offer disclaimers for a specific ad account from Snapchat Marketing API.
+- **Get Ad Account Pixels** (read-only): Retrieve all Snap Pixels associated with an ad account.
+- **Get Ad Account Spend Guidance** (read-only): Retrieve spend guidance for an ad account from Snapchat Marketing API.
+- **Get Ad Squad Audience Size** (read-only): Retrieve estimated audience size for a specific ad squad by ID.
+- **Get Ad Squad Restrictions** (read-only): Retrieve ad type restrictions for a specific ad squad from Snapchat Marketing API.
+- **Get Ad Squad Stats Report** (read-only): Retrieve adsquads stats report by ID from Snapchat Marketing API.
+- **Get Ad Squad Targeting** (read-only): Retrieve targeting specifications for a specific ad squad from Snapchat Marketing API.
+- **Get Advanced Demographics Targeting Options** (read-only): Retrieve all available advanced demographics targeting options from Snapchat Marketing API.
+- **Get Audience Segment** (read-only): Retrieve a specific audience segment by its ID from Snapchat Marketing API.
+- **Get Billing Center** (read-only): Retrieve a specific billing center by its ID from Snapchat Marketing API.
+- **Get Campaign Changelog** (read-only): Retrieve changelog (audit log) for a campaign from Snapchat Marketing API.
+- **Get Catalog** (read-only): Retrieve a specific catalog by its ID from Snapchat Marketing API.
+- **Get Catalog Product Sets** (read-only): Retrieve all product sets from a Snapchat catalog.
+- **Get Dynamic Template** (read-only): Retrieve a specific dynamic template by its ID from Snapchat Marketing API.
+- **Get Dynamic Templates External Changelogs** (read-only): Retrieve external changelogs for a dynamic template from Snapchat Marketing API.
+- **Get Event Details** (read-only): Retrieve event details by ID from Snapchat Marketing API.
+- **Get Funding Source** (read-only): Retrieve a specific funding source by its ID from Snapchat Marketing API.
+- **Get Gender Targeting Options** (read-only): Retrieve all available gender targeting options from Snapchat Marketing API.
+- **Get Interaction Zone** (read-only): Retrieve a specific interaction zone by its ID from Snapchat Marketing API.
+- **Get Invoice** (read-only): Retrieve a specific invoice by its ID from Snapchat Marketing API.
+- **Get Location Category LOI Options** (read-only): Retrieve all location category (LOI - Locations of Interest) targeting options from Snapchat Marketing API.
+- **Get Media** (read-only): Retrieve a specific media file by its ID from Snapchat Marketing API.
+- **Get Media by IDs** (read-only): Fetch multiple media items by their IDs from Snapchat Marketing API.
+- **Get Media Stats** (read-only): Retrieve performance statistics for a specific media from Snapchat Marketing API.
+- **Get Member** (read-only): Retrieve a specific member by ID from a Snapchat organization.
+- **Get Organizations Catalogs** (read-only): Retrieve all catalogs for a specific organization from Snapchat Marketing API.
+- **Get Organizations Mobile Apps** (read-only): Retrieve mobile apps associated with a Snapchat organization by organization ID.
+- **Get Organizations Public Profiles** (read-only): Retrieve organization public profiles by ID from Snapchat Marketing API.
+- **Get Product Feed** (read-only): Retrieve a product feed by ID from Snapchat Marketing API.
+- **Get Product Feed Uploads** (read-only): Retrieve product feed upload history for a specific product feed.
+- **Get Product Set** (read-only): Retrieve a specific product set by ID from Snapchat Marketing API.
+- **Get Targeting Carriers** (read-only): Retrieve available mobile carrier targeting options from Snapchat Marketing API.
+- **Get Targeting Connection Types** (read-only): Retrieve available connection types for device targeting from Snapchat Marketing API.
+- **Get Targeting Demographics Age Group** (read-only): Retrieve all available age group targeting options from Snapchat Marketing API.
+- **Get Targeting Demographics Languages** (read-only): Retrieve all available language targeting options from Snapchat Marketing API.
+- **Get Targeting Device iOS OS Version** (read-only): Retrieve all available iOS OS version targeting options from Snapchat Marketing API.
+- **Get Targeting Device Marketing Names** (read-only): Retrieve available device marketing names for targeting from Snapchat Marketing API.
+- **Get Targeting Geo Postal Codes** (read-only): Retrieve postal code targeting options by country code from Snapchat Marketing API.
+- **Get Targeting Geo Region** (read-only): Retrieve region targeting options for a specific country from Snapchat Marketing API.
+- **Get Targeting Geo US Postal Codes** (read-only): Retrieve all US postal code targeting options from Snapchat Marketing API.
+- **Get Targeting Geo US Region** (read-only): Retrieve all available US region targeting options from Snapchat Marketing API.
+- **Get Targeting Interests DLXC** (read-only): Retrieve Oracle Datalogix DLXC interest targeting options from Snapchat Marketing API.
+- **Get Targeting Interests DLXP** (read-only): Retrieve Oracle Datalogix DLXP interest targeting options from Snapchat Marketing API.
+- **Get Targeting Interests DLXS** (read-only): Retrieve all available Oracle Datalogix (DLXS) interest targeting options from Snapchat Marketing API.
+- **Get Targeting Interests NLN** (read-only): Retrieve all available Nielsen interest targeting options from Snapchat Marketing API.
+- **Get Targeting Interests PLC** (read-only): Retrieve all available PLC (Placed Visitation Segments) targeting options from Snapchat Marketing API.
+- **Get Targeting Interests SCLS** (read-only): Retrieve Snap Lifestyle Categories (SCLS) for interest targeting from Snapchat Marketing API.
+- **Get Targeting Metros** (read-only): Retrieve metro/DMA targeting options by country code from Snapchat Marketing API.
+- **Get Targeting OS Types** (read-only): Retrieve available OS type targeting options from Snapchat Marketing API.
+- **Get Targeting OS Versions** (read-only): Retrieve available OS versions for targeting from Snapchat Marketing API.
+- **Get Targeting V1 Interests SCLS** (read-only): Retrieve all Snap Lifestyle Categories V1 targeting options from Snapchat Marketing API.
+- **Get Targeting V1 Interests Shp** (read-only): Retrieve first-party shopper segment targeting options from Snapchat Marketing API.
+- **Get Targeting V1 Options** (read-only): Retrieve all available targeting v1 options from Snapchat Marketing API.
+- **Get Targeting VAC Interests** (read-only): Retrieve First-Party Visitation Segments (VAC interests) for targeting from Snapchat Marketing API.
+- **List Account Roles** (read-only): Retrieve all roles for a Snapchat Ad Account.
+- **List Audience Segments** (read-only): Retrieve all audience segments for an ad account from Snapchat Marketing API.
+- **List Billing Centers** (read-only): Retrieve all billing centers for a Snapchat Ads organization.
+- **List Catalog Roles** (read-only): Retrieve all roles for a Snapchat catalog.
+- **List Creatives** (read-only): Retrieve all creatives for a specific ad account from Snapchat Marketing API.
+- **List Funding Sources** (read-only): Retrieve all funding sources for a specific organization from Snapchat Marketing API.
+- **List Invoices** (read-only): Retrieve all invoices for an ad account from Snapchat Marketing API.
+- **List Media** (read-only): Retrieve all media files for a specific Snapchat ad account.
+- **List Member Roles** (read-only): Retrieve all roles assigned to a member in Snapchat Marketing API.
+- **List Organization Members** (read-only): Retrieve all members of a Snapchat organization.
+- **List Organization Pixels** (read-only): Retrieve all Snap Pixels for a specific organization from Snapchat Marketing API.
+- **List Organization Roles** (read-only): Retrieve all roles for a Snapchat organization.
+- **List Phone Numbers** (read-only): Retrieve all verified phone numbers associated with a Snapchat ad account.
+- **List Sponsored Content** (read-only): Retrieve organic sponsored content from Snapchat Ads Library.
+- **List Transactions** (read-only): Retrieve all transactions for an organization from Snapchat Marketing API.
+- **Search Ads Library Sponsored Content** (read-only): Search for sponsored content by creator name in Snapchat Ads Library.
+- **Search Catalog Flights** (read-only): Search for flights within a Snapchat catalog using optional filters.
+- **Search Catalog Products** (read-only): Search a catalog for products given a provided filter.
+- **Search Catalogs Hotels** (read-only): Search for hotels in a Snapchat catalog using filters and pagination.
+- **Validate Conversion Event** (read-only): Validate conversion events before sending them to Snapchat Conversion API.

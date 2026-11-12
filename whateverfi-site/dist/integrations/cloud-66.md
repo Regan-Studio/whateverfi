@@ -1,0 +1,110 @@
+# Cloud 66
+
+Deploy and manage applications, stacks, servers, databases, networking, and users across cloud providers with Cloud 66.
+
+Category: Security & Ops. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/cloud-66/.
+
+## Actions
+
+- **Add User Device**: Register a human user's mobile device token with Cloud 66.
+- **Cancel Deployment**: Cancel an existing Cloud 66 deployment.
+- **Clear Stack Caches**: Clear all application caches for a Cloud 66 stack and return the accepted asynchronous job by default.
+- **Commit Application Variant**: Finalize a rollout application variant and make it the active production version.
+- **Create Backup Task**: Create a scheduled backup task for a Cloud 66 stack.
+- **Create Cluster**: Call Cloud 66's documented cluster-creation route with no parameters.
+- **Create Container Session**: Start an interactive Cloud 66 container session.
+- **Create Database**: Create a database in a Cloud 66 server group, optionally grant database users access, and by default wait for asynchronous completion.
+- **Create Database User**: Create a database user in a Cloud 66 server group.
+- **Create Elastic Address**: Create an elastic address failover group between distinct primary and secondary Cloud 66 stacks.
+- **Create Firewall Rule**: Add a firewall rule to a Cloud 66 stack using a numeric protocol code and at least one destination field.
+- **Create Gateway**: Create a gateway for a Cloud 66 account using bastion-server connection metadata without accepting private-key content.
+- **Create SSL Certificate**: Submit a Let's Encrypt SSL-certificate creation request for a Cloud 66 stack.
+- **Create Stack**: Create and build a Docker stack.
+- **Delete All Tags**: Permanently delete all tags from one Cloud 66 server or load balancer.
+- **Delete Application Variant**: Permanently delete a preview application variant from a Cloud 66 stack.
+- **Delete Database**: Permanently delete a Cloud 66 database and all of its data.
+- **Delete Database User**: Permanently remove a database user from every associated database.
+- **Delete Elastic Address**: Permanently delete a Cloud 66 elastic address (failover group).
+- **Delete Environment Variable**: Permanently delete an environment variable from a Cloud 66 stack by its key/name.
+- **Delete Gateway**: Permanently delete a gateway from a Cloud 66 account.
+- **Delete SSL Certificate**: Permanently delete an SSL certificate from a Cloud 66 stack.
+- **Disable Database Replication**: Disable replication to a Cloud 66 slave database server and return the accepted irreversible asynchronous job by default.
+- **Get Account** (read-only): Retrieve detailed information for a specific Cloud 66 account.
+- **Get API Status** (read-only): Call Cloud 66's unauthenticated basic ping endpoint and return its acknowledgement.
+- **Get Backup** (read-only): Get information about a single Cloud 66 backup.
+- **Get Backup File** (read-only): Get the public download URL for a Cloud 66 backup file.
+- **Get Cloud** (read-only): Get regions and server sizes for one cloud provider available to the connected Cloud 66 account.
+- **Get Cloud Reference** (read-only): Return Cloud 66 cloud-provider reference data needed to select valid cloud, region, and server-size values.
+- **Get Cluster** (read-only): Return status, health, capacity, and node details for a Kubernetes cluster.
+- **Get Container** (read-only): Get runtime information for a specific container in a Cloud 66 stack.
+- **Get Container Session** (read-only): Get a specific Cloud 66 container session by session ID, or the most recent session for a service.
+- **Get Current Identity** (read-only): Verify the Cloud 66 connection and return the authenticated user and current account identity.
+- **Get Deployment** (read-only): Get information about a single deployment in a Cloud 66 stack.
+- **Get Environment Variable** (read-only): Get one environment variable's name and metadata from a Cloud 66 stack by numeric ID.
+- **Get Firewall Rule** (read-only): Get information about a specific firewall rule in a Cloud 66 stack.
+- **Get Nginx Module Reference** (read-only): Return the Nginx modules supported by Cloud 66 stack configuration.
+- **Get Process** (read-only): Gets one page of information about a specific process in a Cloud 66 stack.
+- **Get Server** (read-only): Get information about a single server in a Cloud 66 stack.
+- **Get Server Setting** (read-only): Get information about a single setting for a server in a Cloud 66 stack.
+- **Get SSL Certificate** (read-only): Get one SSL certificate from a Cloud 66 stack by certificate identifier.
+- **Get Stack** (read-only): Retrieve detailed configuration, deployment status, and health for a Cloud 66 stack.
+- **Get Stack Action** (read-only): Return the current state and result of one asynchronous Cloud 66 stack action.
+- **Get Stack Alert** (read-only): Return the configuration for a named alert on a Cloud 66 stack.
+- **Get Stack Setting** (read-only): Get a single setting for a Cloud 66 stack by its setting identifier.
+- **Get User** (read-only): Get detailed information about a Cloud 66 user by user ID.
+- **Import Backup**: Queue an external backup import for a Cloud 66 stack.
+- **List Accounts** (read-only): Lists accounts that the current authenticated user can access.
+- **List Application Variants** (read-only): Returns all active, rollout, and preview application variants for a specified Cloud 66 stack.
+- **List Backup Files** (read-only): Get backup files for a Cloud 66 stack backup.
+- **List Backups** (read-only): Gets backups for a Cloud 66 stack.
+- **List Clouds** (read-only): Get cloud providers available to the connected Cloud 66 account, with their regions and server sizes.
+- **List Clusters** (read-only): Return one documented page of Kubernetes clusters accessible to the user.
+- **List Containers** (read-only): Gets containers for a Cloud 66 stack, optionally filtered by server.
+- **List Database Users** (read-only): Gets one page of database-user names and metadata for a Cloud 66 server group.
+- **List Databases** (read-only): Returns one page of databases associated with a Cloud 66 server group.
+- **List Deployments** (read-only): Gets one page of deployments for a Cloud 66 stack.
+- **List DNS Providers** (read-only): Gets one page of DNS providers configured for SSL certificate management.
+- **List Elastic Addresses** (read-only): Return Cloud 66's documented elastic-address failover groups.
+- **List Environment Variables** (read-only): Get one page of environment-variable names and metadata for a Cloud 66 stack.
+- **List Firewall Rules** (read-only): Gets one page of firewall rules for a Cloud 66 stack.
+- **List Gateways** (read-only): Gets one page of gateway metadata for a Cloud 66 account.
+- **List Image Repositories** (read-only): Gets one page of image repositories for a Cloud 66 stack.
+- **List Jobs** (read-only): Gets one page of jobs configured on a Cloud 66 stack, including each job's command and run_on server-target context.
+- **List Notifications** (read-only): Return one documented page of Cloud 66 notification records.
+- **List Processes** (read-only): Gets one page of processes for a Cloud 66 stack, optionally filtered by server.
+- **List Server Groups** (read-only): Gets one page of server groups for a Cloud 66 stack.
+- **List Server Settings** (read-only): Returns one page of settings for a server, including optional IDs, timestamps, and warnings when Cloud 66 provides them.
+- **List Servers** (read-only): Gets one page of servers for a Cloud 66 stack.
+- **List Services** (read-only): Gets one page of services for a Cloud 66 stack.
+- **List SSL Certificates** (read-only): Gets one page of SSL certificate metadata for a Cloud 66 stack.
+- **List Stack Actions** (read-only): Retrieve one page of asynchronous actions performed for a Cloud 66 stack, optionally filtered by caller reference.
+- **List Stack Alerts** (read-only): Returns the alert configurations and notification channels for a specified stack.
+- **List Stack Settings** (read-only): Returns one page of settings for a Cloud 66 stack, including their values and read-only status.
+- **List Stacks** (read-only): Retrieves stack objects accessible to the current user.
+- **List Tags** (read-only): Gets one page of tags for a Cloud 66 server or load balancer, identified by entity type and ID.
+- **List Users** (read-only): Gets one page of users in the connected Cloud 66 account, including account roles and access-profile details when available.
+- **Patch SSL Certificate**: Update a Let's Encrypt SSL certificate using Cloud 66's PATCH method.
+- **Pause Stack Workload**: Pause a Cloud 66 service or process workload.
+- **Promote Database Replica**: Promote a Cloud 66 slave database server to a standalone master and return the accepted irreversible asynchronous job by default.
+- **Put SSL Certificate**: Update a Let's Encrypt SSL certificate using Cloud 66's PUT method.
+- **Reboot Cluster Servers**: Queue an irreversible reboot of selected Kubernetes cluster servers.
+- **Reboot Server**: Initiate an irreversible reboot of one Cloud 66 server.
+- **Reboot Stack Servers**: Reboot all servers or one server group in a Cloud 66 stack using a parallel or serial strategy, and by default wait for documented…
+- **Redeploy Stack**: Redeploy a Cloud 66 stack.
+- **Replace Tags**: Replace all tags on one Cloud 66 server or load balancer with the supplied non-empty tag set.
+- **Restart Stack**: Restart every component of a Cloud 66 stack and return the accepted asynchronous job by default.
+- **Restart Stack Workload**: Restart a Cloud 66 container, service, or process workload.
+- **Resume Stack Workload**: Resume a Cloud 66 service or process workload.
+- **Resync Database Replica**: Re-synchronize a PostgreSQL or MySQL Cloud 66 slave database server with its master and return the accepted asynchronous job by default.
+- **Scale Process**: Trigger the provider-configured scaling operation for a process on a Cloud 66 stack and, by default, poll until Cloud 66 confirms success.
+- **Set Stack Maintenance Mode**: Enable or disable maintenance mode for a Cloud 66 stack.
+- **Stop Container**: Stop a container in a Cloud 66 stack.
+- **Update Application Group Alerts**: Apply alert configurations to every stack in a Cloud 66 application group and report successes, non-applicable alerts, and failures.
+- **Update Application Variant Percentage**: Change the percentage of production traffic sent to a canary rollout application variant.
+- **Update Elastic Address**: Update an elastic address's primary or secondary stack assignment, or switch which stack currently receives traffic.
+- **Update Gateway**: Update a Cloud 66 gateway's bastion-server metadata without accepting or returning private-key content.
+- **Update Server Setting**: Update one server setting in a Cloud 66 stack and, by default, poll the asynchronous action until Cloud 66 confirms success.
+- **Update Stack Alerts**: Update one or more Cloud 66 stack alert configurations.
+- **Update Stack Setting**: Update one Cloud 66 stack setting and, by default, poll the asynchronous action until Cloud 66 confirms success.
+- **Update Tags**: Incrementally add or delete tags on one Cloud 66 server or load balancer.
+- **Update User**: Update a Cloud 66 user's access profile.

@@ -1,0 +1,120 @@
+# incident.io
+
+Incident management and response platform
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/incident-io/.
+
+## Actions
+
+- **Create Incident V1**: Create a new incident in incident.io.
+- **Create Incident V2**: Create a new incident in incident.io using the V2 API.
+- **Edit Incident V2**: Edit an existing incident in incident.io.
+- **Get Incident by ID (V1)** (read-only): Retrieve a specific incident by ID.
+- **Get Incident by ID (V2)** (read-only): Retrieve a specific incident by ID using V2 API.
+- **List Alert Sources V2** (read-only): List all configured alert sources in incident.io.
+- **List Alerts V2** (read-only): List alerts from incident.io.
+- **List Catalog Entries V2** (read-only): List entries from a catalog type in incident.io.
+- **List Catalog Entries V3** (read-only): List entries from a catalog type in incident.io.
+- **List Catalog Types V2** (read-only): Retrieve all catalog types configured for an organization.
+- **List Catalog Types V3** (read-only): Retrieve all catalog types configured for an organization using V3 API.
+- **List Custom Fields V1** (read-only): List all custom fields for an organization.
+- **List Custom Fields V2** (read-only): List all custom fields V2 for an organization.
+- **List Incident Roles V1** (read-only): List all incident roles for an organization.
+- **List Incident Roles V2** (read-only): List all incident roles for an organization using V2 API.
+- **List Incident Statuses V1** (read-only): List all incident statuses configured for an organization.
+- **List Incident Types V1** (read-only): List all incident types for an organization.
+- **List Incidents V1** (read-only): List incidents from incident.io.
+- **List Incidents V2** (read-only): List incidents from incident.io using the V2 API.
+- **List Schedules V2** (read-only): List schedules from incident.io.
+- **List Severities V1** (read-only): Retrieve all incident severities configured for an organization.
+- **List Users V2** (read-only): List users in incident.io.
+- **List Workflows V2** (read-only): List workflows from incident.io.
+- **Update Incident Status**: Update an existing incident status in incident.io.
+- **Bulk Update Catalog Entries V3**: Bulk update catalog entries in incident.io v3 API.
+- **Create Alert Attribute V2**: Create an alert attribute in incident.io.
+- **Create Alert Route V2**: Create an alert route in incident.io.
+- **Create Alert Source V2**: Create a new alert source in incident.io.
+- **Create Catalog Entry V2**: Create a catalog entry in incident.io.
+- **Create Catalog Entry V3**: Create a catalog entry in incident.io using the V3 API.
+- **Create Catalog Type V3**: Create a new catalog type in incident.io V3 API.
+- **Create Custom Field Option**: Create a new custom field option in incident.io.
+- **Create Custom Field V2**: Create a custom field in incident.io using the V2 API.
+- **Create Escalation V2**: Create an escalation in incident.io.
+- **Create Incident Role**: Create a new incident role in incident.io.
+- **Create Incident Role V2**: Create a new incident role in incident.io using the V2 API.
+- **Create Incident Status**: Create a new incident status in incident.io.
+- **Create Managed Resource V2**: Create a managed resource in incident.io.
+- **Create Severity**: Create a new severity level in incident.io.
+- **Delete Alert Attribute V2**: Delete an alert attribute from incident.io.
+- **Delete Alert Route V2**: Delete an alert route from incident.io.
+- **Delete Alert Source V2**: Delete an alert source from incident.io.
+- **Delete Catalog Entry V2**: Delete a catalog entry from incident.io.
+- **Delete Catalog Entry V3**: Archive a catalog entry from incident.io using V3 API.
+- **Delete Catalog Type V2**: Delete a catalog type from incident.io.
+- **Delete Catalog Type V3**: Archive a catalog type and all its entries from incident.io.
+- **Delete Custom Field**: Delete a custom field from incident.io.
+- **Delete Custom Field Option**: Delete a custom field option in incident.io.
+- **Delete Custom Field V2**: Delete a custom field from incident.io using the V2 API.
+- **Delete Escalation Path V2**: Delete an escalation path from incident.io.
+- **Delete Incident Role V1**: Delete an incident role by ID.
+- **Delete Incident Role V2**: Delete an incident role by ID.
+- **Delete Incident Status V1**: Delete an incident status by its ID.
+- **Delete Schedule V2**: Delete a schedule from incident.io.
+- **Delete Severity**: Delete a severity in incident.io.
+- **Delete Workflow V2**: Delete a workflow from incident.io using the V2 API.
+- **Get API Key Identity** (read-only): Retrieve identity information for the current API key.
+- **Get Catalog Entry V3** (read-only): Retrieve a specific catalog entry by ID from incident.io.
+- **Get Catalog Type V2** (read-only): Retrieve a specific catalog type by ID from incident.io.
+- **Get Catalog Type V3** (read-only): Retrieve a specific catalog type by ID from incident.io V3 API.
+- **Get Custom Field Option** (read-only): Retrieve a specific custom field option by its ID.
+- **Get Custom Field V1** (read-only): Retrieve details of a specific custom field by ID in incident.io.
+- **Get Custom Field V2** (read-only): Retrieve details of a specific custom field by ID using the V2 API in incident.io.
+- **Get Incident Role** (read-only): Retrieve a specific incident role by ID.
+- **Get Incident Role V2** (read-only): Retrieve a specific incident role by ID using V2 API.
+- **Get Incident Status** (read-only): Retrieve details of a specific incident status by ID.
+- **Get Incident Timestamp V2** (read-only): Retrieve a specific incident timestamp by ID using V2 API.
+- **Get Incident Type** (read-only): Retrieve detailed information about a specific incident type by ID.
+- **Get Severity V1** (read-only): Retrieve a specific severity by ID from incident.io.
+- **Get User V2** (read-only): Retrieve a specific user by ID from incident.io using V2 API.
+- **Get Workflow V2** (read-only): Retrieve a specific workflow by ID from incident.io.
+- **List Actions V1** (read-only): List actions from incidents.
+- **List Actions V2** (read-only): Retrieve a list of actions from incident.io.
+- **List Alert Attributes V2** (read-only): List all available alert attributes.
+- **List Alert Routes V2** (read-only): List alert routes from incident.io.
+- **List Catalog Resources V2** (read-only): Retrieve all available catalog resource types.
+- **List Catalog Resources V3** (read-only): Retrieve all available catalog resource types from the V3 API.
+- **List Custom Field Options V1** (read-only): List all options for a specific custom field in incident.io.
+- **List Escalation Paths V2** (read-only): List escalation paths from incident.io.
+- **List Escalations V2** (read-only): List escalations from incident.io.
+- **List Follow-ups V2** (read-only): Retrieve a list of follow-ups from incident.io.
+- **List Incident Alerts V2** (read-only): List incident alerts from incident.io.
+- **List Incident Attachments V1** (read-only): List incident attachments from incident.io.
+- **List Incident Relationships V1** (read-only): List incident relationships for a given incident.
+- **List Incident Timestamps V2** (read-only): List all incident timestamp configurations using V2 API.
+- **List Incident Updates V2** (read-only): List incident updates from incident.io.
+- **List IP allowlists** (read-only): Retrieve the current IP allowlist configuration for incident.io.
+- **List Schedule Entries V2** (read-only): List schedule entries for a specific schedule in incident.io.
+- **List Status Pages V2** (read-only): List status pages from incident.io.
+- **Show Alert Attribute V2** (read-only): Retrieve a specific alert attribute by its ID from incident.io.
+- **Show Alert Routes V2** (read-only): Retrieve a specific alert route configuration by its ID from incident.io.
+- **Show Alert Source V2** (read-only): Retrieve a specific alert source by its ID from incident.io.
+- **Show Entry Catalog V2** (read-only): Retrieve a specific catalog entry by ID from incident.io.
+- **Show Escalations V2** (read-only): Retrieve a specific escalation by ID from incident.io.
+- **Show Schedules V2** (read-only): Retrieve a specific schedule by ID from incident.io using V2 API.
+- **Update Alert Attribute V2**: Update an alert attribute in incident.io.
+- **Update Alert Source V2**: Update an existing alert source configuration in incident.io.
+- **Update Catalog Entry V2**: Update an existing catalog entry in incident.io.
+- **Update Catalog Entry V3**: Update an existing catalog entry in incident.io using the v3 API.
+- **Update Catalog Type Schema V2**: Update the schema of a catalog type in incident.io.
+- **Update Catalog Type Schema V3**: Update the schema of a catalog type in incident.io V3 API.
+- **Update Catalog Type V2**: Update a catalog type in incident.io.
+- **Update Catalog Type V3**: Update a catalog type in incident.io V3 API.
+- **Update Custom Field Option V1**: Update a custom field option in incident.io.
+- **Update Custom Field V2**: Update an existing custom field in incident.io using the V2 API.
+- **Update Custom Fields V1**: Update an existing custom field configuration in incident.io.
+- **Update Escalation Path V2**: Update an escalation path in incident.io.
+- **Update Incident Role**: Update an existing incident role in incident.io.
+- **Update Incident Role V2**: Update an existing incident role in incident.io using the V2 API.
+- **Update Schedule V2**: Update an existing schedule in incident.io.
+- **Update Severity**: Update a severity in incident.io.
+- **Update Workflow V2**: Update an existing workflow in incident.io using the V2 API.

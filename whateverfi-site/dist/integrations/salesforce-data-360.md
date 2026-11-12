@@ -1,0 +1,432 @@
+# Salesforce Data 360
+
+Salesforce Data 360 unifies customer data and provides Connect REST APIs for data management, analytics, segmentation, and activation workflows.
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/salesforce-data-360/.
+
+## Actions
+
+- **Accept a collaboration invitation**: Accept an invitation for a clean room collaboration.
+- **Activate data graph**: Activate a data graph draft.
+- **Add deep research as knowledge source**: Copy a completed deep research report into the knowledge space's GENERATED_RESOURCES library and trigger indexing.
+- **Approve tag suggestions**: Approves one or more tag suggestions.
+- **Assign ad account**: Assigns the specified ad account to the activation target.
+- **Bulk create classification assignments**: Bulk creates data governance classification assignments.
+- **Bulk create classification taxonomies**: Creates multiple classification taxonomies in a single request.
+- **Bulk create classifications**: Creates multiple classifications in a single request.
+- **Bulk create object access grants**: Creates multiple object access grants for a single combination of a data space and a permission set using an idempotent request.
+- **Bulk create tag assignments**: Bulk creates data governance tag assignments.
+- **Bulk create tag detection instructions**: Bulk creates active detection instructions for multiple tags under one taxonomy.
+- **Bulk create tag taxonomies**: Creates multiple tag taxonomies in a single request.
+- **Bulk create tags**: Creates multiple tags in a single request.
+- **Bulk delete classification assignments**: Bulk deletes data governance classification assignments.
+- **Bulk delete classification taxonomies**: Deletes multiple classification taxonomies in a single request.
+- **Bulk delete classifications**: Deletes multiple classifications in a single request, cascading each deletion to its child classifications and assignments.
+- **Bulk delete object access grants**: Deletes multiple object access grants for a single combination of a data space and a permission set using an idempotent request.
+- **Bulk delete tag assignments**: Bulk deletes data governance tag assignments.
+- **Bulk delete tag taxonomies**: Deletes multiple tag taxonomies and all child tags in a single request.
+- **Bulk delete tags**: Deletes multiple tags in a single request, cascading each deletion to its child tags and assignments.
+- **Bulk fetch catalog metadata** (read-only): Returns catalog metadata records matching the provided identifiers.
+- **Bulk fetch catalog metadata children** (read-only): Returns children of catalog metadata records grouped by parent.
+- **Bulk update classification taxonomies**: Updates multiple classification taxonomies in a single request.
+- **Bulk update classifications**: Updates multiple classifications in a single request.
+- **Bulk update tag taxonomies**: Updates multiple tag taxonomies in a single request.
+- **Bulk update tags**: Updates multiple tags in a single requests.
+- **Cancel data transform**: Cancel a data transform.
+- **Cancel running deep research job**: Cancel a running deep research job, optionally requesting a partial report from completed steps.
+- **Cancel SQL query**: Delete the specified SQL query and terminate any queries that are currently running.
+- **Count segment** (read-only): Trigger a segment count on demand.
+- **Create a prediction job definition**: Create a new prediction job definition.
+- **Create a provider**: Create a new clean room provider.
+- **Create a specification**: Create a new clean room specification.
+- **Create access policy**: Creates an access policy, with optional inline rules, using all-or-none semantics.
+- **Create activation**: Create an activation.
+- **Create activation target**: Create an activation target.
+- **Create agent**: Creates a new agent.
+- **Create calculated insights**: Create a calculated insight in Data 360.
+- **Create classification**: Creates a classification under a specified classification taxonomy, with optional initial tag links.
+- **Create classification assignment**: Creates a single data governance classification assignment.
+- **Create classification taxonomy**: Creates a classification taxonomy.
+- **Create communication capping configuration**: Creates a communication capping configuration entity.
+- **Create communication capping dimension**: Creates a communication capping dimension.
+- **Create communication capping rule**: Creates a communication capping rule for a configuration.
+- **Create custom code deployment**: Creates a custom code deployment.
+- **Create data action**: Create a new data action.
+- **Create data action target**: Create a new data action target.
+- **Create data alert**: Create a new data alert within the data alert collection.
+- **Create data graph**: Create a data graph.
+- **Create data kit**: Create a standard data kit.
+- **Create data lake object**: Create a data lake object (DLO).
+- **Create data model object**: Create a custom data model object (DMO).
+- **Create data model object mapping**: Create a new mapping between a data lake object (DLO) source and a data model object (DMO) target.
+- **Create data share**: Creates a data share and adds the data model object (DMO), data lake object (DLO), and calculated insight object (CIO) to it.
+- **Create data share target**: Creates a data share target of a particular target type.
+- **Create data space**: Create a new data space based on the input details provided.
+- **Create data stream**: Create a data stream.
+- **Create data transform**: Create a data transform.
+- **Create Document AI configuration**: Create a new Document AI configuration.
+- **Create field source target relationships**: Create bulk data model object (DMO) relationships between fields in the source DMO and fields in the target DMO.
+- **Create identity resolution ruleset**: Create an identity resolution ruleset in Data 360.
+- **Create ingestion job**: Create a Data 360 bulk ingestion job for one object and an upsert or delete operation.
+- **Create knowledge library**: Create a knowledge library in an existing knowledge space.
+- **Create knowledge space**: Create a knowledge space in the current data space.
+- **Create knowledge space configuration**: Create a knowledge space configuration.
+- **Create knowledge space session**: Create a new session for a knowledge space.
+- **Create model setup version**: Create a new model setup version.
+- **Create object access grant**: Creates a single object access grant using an idempotent request.
+- **Create retriever**: Create a retriever to query and retrieve data from Data 360 objects or search indexes.
+- **Create retriever configuration**: Create a new configuration version for the retriever.
+- **Create segment**: Create a segment in Data 360.
+- **Create semantic search**: Define the connect APIs that perform create, read, update, and delete operations for a search index of unstructured data.
+- **Create tag**: Creates a tag under a specified tag taxonomy, optionally nested under a parent tag.
+- **Create tag assignment**: Creates a single data governance tag assignment.
+- **Create tag detection instruction**: Creates or replaces the active detection instruction for a tag.
+- **Create tag taxonomy**: Creates a top-level tag taxonomy.
+- **Deactivate segment by ID**: Deactivate a segment on demand by ID.
+- **Deactivate segment by name**: Deactivate a segment on demand by API name.
+- **Delete a prediction job definition**: Delete a specific prediction job definition.
+- **Delete a specification**: Deletes a specific clean room specification.
+- **Delete access policy**: Permanently deletes an access policy and cascades the delete to its rules.
+- **Delete activation**: Delete an activation.
+- **Delete activation platform**: Deletes an activation platform.
+- **Delete activation target**: Delete an activation target by ID or developer name.
+- **Delete activation target metadata**: Deletes activation target dimension metadata for a given activation target ID.
+- **Delete agent**: Deletes an existing agent.
+- **Delete calculated insight**: Delete a calculated insight in Data 360.
+- **Delete classification**: Deletes a classification and cascades the deletion to any child classifications and assignments.
+- **Delete classification assignment**: Deletes a data governance classification assignment by ID.
+- **Delete classification taxonomy**: Deletes a classification taxonomy.
+- **Delete communication capping rule**: Deletes a communication capping rule.
+- **Delete configured model**: Delete a configured model.
+- **Delete connection**: Delete a Data 360 connector.
+- **Delete custom code deployment**: Deletes a custom code deployment.
+- **Delete data action target**: Delete a data action target.
+- **Delete data graph**: Delete a data graph.
+- **Delete data kit**: Delete a data kit.
+- **Delete data lake object**: Delete a data lake object (DLO).
+- **Delete data model object**: Delete a standard or custom data model object (DMO).
+- **Delete data model object field mapping**: Delete a field mapping between a data lake object (DLO) source and a data model object (DMO) target.
+- **Delete data model object mapping**: Delete a mapping between a data lake object (DLO) source and a data model object (DMO) target.
+- **Delete data share**: Deletes a data share.
+- **Delete data share target**: Deletes a data share target.
+- **Delete data space**: Delete the specified data space.
+- **Delete data space members**: Delete the specified data lake objects (DLOs) from a data space.
+- **Delete data stream**: Delete a data stream.
+- **Delete data transform**: Initiate the deletion of a data transform.
+- **Delete Document AI configuration**: Delete a Document AI configuration.
+- **Delete field source target relationship**: Delete a data model object (DMO) relationship between a field in the source DMO and a field in the target DMO.
+- **Delete identity resolution ruleset**: Delete an identity resolution ruleset in Data 360.
+- **Delete ingestion job**: Delete an eligible Data 360 bulk ingestion job, including its stored job data and metadata.
+- **Delete ingestion records**: Delete up to 200 records from a Data 360 data lake table by primary key.
+- **Delete knowledge space**: Delete a knowledge space.
+- **Delete knowledge space configuration**: Delete a knowledge space configuration.
+- **Delete knowledge space session**: Delete a knowledge space session.
+- **Delete model artifact**: Delete the model artifact.
+- **Delete object access grant**: Deletes a single object access grant.
+- **Delete retriever**: Delete a retriever and all its configuration versions.
+- **Delete retriever configuration**: Delete a retriever configuration.
+- **Delete segment**: Delete a segment in Data 360.
+- **Delete semantic search**: Delete a search index definition.
+- **Delete tag**: Deletes a tag and cascades the deletion to any child tags and assignments.
+- **Delete tag assignment**: Deletes a data governance tag assignment by ID.
+- **Delete tag detection instruction**: Deactivates the currently active detection instruction for a tag.
+- **Delete tag taxonomy**: Deletes a tag taxonomy and all child tags.
+- **Deploy data kit components**: Deploy multiple components from a specific data kit.
+- **Describe catalog metadata type** (read-only): Returns the full JSON Schema document for a single metadata type, including its subtypes and property schemas.
+- **Detect Document AI schema** (read-only): Detect which extraction schema best matches a document from PDF, image, Microsoft Word (.docx), PowerPoint (.pptx), Excel (.xlsx),…
+- **Disable a collaboration**: Disable a clean room collaboration.
+- **Disable activation**: Disables a market segment activation.
+- **Disable activation platform**: Disables an activation platform.
+- **Disable activation target**: Disables an activation target.
+- **Disable communication capping**: Disables a communication capping configuration.
+- **Enable activation**: Enables a market segment activation.
+- **Enable activation platform**: Enables an activation platform.
+- **Enable activation target**: Enables an activation target.
+- **Enable communication capping**: Enables a communication capping configuration.
+- **Extract Document AI configuration data**: Extract structured data from PDF, image, Microsoft Word (.docx), PowerPoint (.pptx), Excel (.xlsx), markdown (.md), and text (.txt) files.
+- **Generate Document AI schema**: Generate a schema from a source of unstructured data.
+- **Generate tag suggestions**: Launches asynchronous AI-driven tag suggestion jobs for one or more objects.
+- **Get a predict job** (read-only): Get a specific predict job.
+- **Get a predict job task** (read-only): Get a task associated with a specific predict job.
+- **Get a prediction job definition** (read-only): Get a specific prediction job definition.
+- **Get a provider** (read-only): Get a clean room provider.
+- **Get access policies** (read-only): Returns a paginated list of builder-compatible access policies.
+- **Get access policy** (read-only): Returns a single access policy and its rules by developer name.
+- **Get access policy rule** (read-only): Returns the details of a specific rule within an access policy.
+- **Get action sources for an event** (read-only): Returns the action sources valid for the specified event on the activation platform, such as Website, App, or Offline.
+- **Get activation** (read-only): Get an activation by ID.
+- **Get activation external platform** (read-only): Get a specific activation external platform.
+- **Get activation external platforms** (read-only): Get a paginated list of activation external platforms.
+- **Get activation history** (read-only): Returns a paginated list of publish-history records.
+- **Get activation platform** (read-only): Returns an activation platform by record ID or API name.
+- **Get activation platform metadata** (read-only): Returns a paginated list of activation platform metadata, with optional filtering by platform type and name.
+- **Get activation platforms** (read-only): Returns a paginated list of activation platforms.
+- **Get activation target** (read-only): Get an activation target by ID or developer name.
+- **Get activation target dimension metadata** (read-only): Gets activation target dimension metadata for a given activation target ID.
+- **Get activation target platform fields** (read-only): Returns the target-level configuration fields for an activation platform.
+- **Get activation targets** (read-only): Get a list of activation targets with selected filters.
+- **Get activations** (read-only): Get a list of activations with selected filters.
+- **Get agent** (read-only): Get an existing agent.
+- **Get agents** (read-only): Returns a list of all registered agents.
+- **Get Audience DMO activation records** (read-only): Query activation data.
+- **Get auto-tagging job** (read-only): Returns a single data governance auto-tagging job by ID, reporting its progress and status.
+- **Get auto-tagging jobs** (read-only): Returns a paginated list of data governance auto-tagging jobs, optionally filtered by object or status.
+- **Get available ad accounts** (read-only): Returns the ad accounts that aren't already assigned in the specified data space.
+- **Get calculated insight** (read-only): Get a calculated insight in Data 360.
+- **Get calculated insight object** (read-only): Query a Calculated Insight object in Data 360.
+- **Get calculated insight object metadata** (read-only): Get metadata for a Calculated Insight object in Data 360.
+- **Get calculated insights** (read-only): Get calculated insights in Data 360.
+- **Get catalog metadata** (read-only): Returns the full metadata profile for a single Unified Catalog asset.
+- **Get catalog metadata children** (read-only): Returns all child metadata records (for example, fields) for the given parent catalog identifier.
+- **Get catalog metadata relationship children** (read-only): Returns the field-level details of a single relationship edge, including field-to-field edges.
+- **Get catalog metadata relationships** (read-only): Returns the relationship subgraph reachable from the given catalog asset within the requested depths.
+- **Get catalog metadata relationships by composite key** (read-only): Resolves a catalog asset by composite key, then traverses the relationship subgraph.
+- **Get catalog metadata types** (read-only): Returns a lightweight catalog of all available metadata types, each with its subtypes.
+- **Get channel preferences** (read-only): Returns the channel preference options for a channel and data model object (DMO) pair, such as Primary phone or Secondary phone.
+- **Get channels** (read-only): Returns the available activation channels for a data space.
+- **Get classification** (read-only): Returns a classification by its fully-qualified API name.
+- **Get classification assignment** (read-only): Returns a single data governance classification assignment by ID.
+- **Get classification assignments** (read-only): Returns a paginated list of data governance classification assignments, optionally filtered by tag or classification.
+- **Get classification assignments on a classification** (read-only): Returns a paginated list of assignments for a specific classification, including all linked tags.
+- **Get classification taxonomies** (read-only): Returns a paginated list of classification taxonomies.
+- **Get classification taxonomy** (read-only): Returns a classification taxonomy by its API name.
+- **Get classifications** (read-only): Returns a paginated list of classifications across all classification taxonomies.
+- **Get collaboration result objects** (read-only): Retrieve a list of all data model objects (DMOs) created by a specific clean room collaboration.
+- **Get collaborations** (read-only): Get a list of clean room collaborations.
+- **Get communication capping activation targets** (read-only): Returns a paginated list of activation targets for a communication capping configuration.
+- **Get communication capping configuration** (read-only): Returns a communication capping configuration.
+- **Get communication capping data spaces** (read-only): Returns all data spaces with communication capping definitions linked to activation targets.
+- **Get communication capping dimensions** (read-only): Gets dimension information for a communication capping configuration by communication capping ID or data space ID.
+- **Get communication capping rules** (read-only): Returns a paginated list of rules for a communication capping configuration.
+- **Get configured model** (read-only): Get the configured model.
+- **Get configured models** (read-only): Get the set of configured models and their properties.
+- **Get Connection** (read-only): Get identity, connector type, and status for one existing Data 360 connection by ID.
+- **Get connection database schemas** (read-only): Get a list of database schema names for a connection.
+- **Get connection databases** (read-only): Get a list of databases for a connection.
+- **Get connection endpoints** (read-only): Get the endpoints of an Ingestion API connector as a binary stream.
+- **Get connection fields** (read-only): Get a list of fields for a connection object.
+- **Get connection objects** (read-only): Get a list of source objects for a connection.
+- **Get connection preview** (read-only): Get a preview of the data in an object and pass it through parser settings.
+- **Get connection schema** (read-only): Get the schema model for a connection.
+- **Get connection site map** (read-only): Get the sitemap for a Streaming App connection.
+- **Get Connector** (read-only): Get metadata and setup requirements for one Data 360 connector type.
+- **Get consent data model objects** (read-only): Returns the standard consent data model objects (DMOs) for a data space.
+- **Get custom code deployment** (read-only): Returns a custom code deployment.
+- **Get custom code deployments** (read-only): Returns a paginated list of custom code deployments.
+- **Get custom code execution** (read-only): Returns a single execution for a custom code script deployment.
+- **Get custom code executions** (read-only): Returns a paginated list of executions for a custom code script deployment.
+- **Get data action target** (read-only): Get a data action target.
+- **Get data action targets** (read-only): Get a paginated list of data action targets.
+- **Get data actions** (read-only): Get a paginated list of data actions in the org.
+- **Get data graph** (read-only): Query a data graph.
+- **Get data graph data by entity name** (read-only): Query a data graph by the primary key of either the primary data model object (DMO) or the Individual linked DMO.
+- **Get data graph data by ID** (read-only): Query data graph data by ID.
+- **Get data graph metadata** (read-only): Query data graph metadata.
+- **Get data kit available components** (read-only): Get a list of available components within data kits by component type.
+- **Get data kit component dependency** (read-only): Get the dependencies for components deployed from a data kit.
+- **Get data kit component status** (read-only): Get the status of a component deployed from a data kit.
+- **Get data kit manifest** (read-only): Get a list of all member components and dependencies for a data kit.
+- **Get data kits** (read-only): Get a list of data kits by namespace.
+- **Get Data Lake Object** (read-only): Get one Data 360 data lake object by record ID or developer name, including its schema and status.
+- **Get data model object** (read-only): Get a data model object (DMO).
+- **Get data model object mapping** (read-only): Get the details of a data model object (DMO) mapping.
+- **Get data model object mappings** (read-only): Get the details of all mappings associated with a data model object (DMO).
+- **Get data model objects** (read-only): Get a paginated list of all data model objects (DMOs).
+- **Get data object categories available for activation** (read-only): Returns the data object category types that are available for activation, optionally scoped to a data space.
+- **Get data share** (read-only): Returns a data share with its object names.
+- **Get data share target** (read-only): Returns a data share target.
+- **Get data share targets** (read-only): Returns all data share targets of a given target type.
+- **Get data shares** (read-only): Returns all data shares in the org, ordered by developer name.
+- **Get data sources** (read-only): Returns the data sources for a data model object (DMO).
+- **Get Data Space** (read-only): Get one Data 360 data space by its ID or API name, including its current status and configuration.
+- **Get data space member** (read-only): Get details about a data space member for a given data lake object (DLO).
+- **Get Data Stream** (read-only): Get one Data 360 data stream by record ID or developer name, including its source, refresh configuration, and status.
+- **Get data transform** (read-only): Get a data transform.
+- **Get data transform run history** (read-only): Get information about all the jobs that the batch or streaming data transform has run.
+- **Get data transform schedule** (read-only): Get a data transform's schedule.
+- **Get data transforms** (read-only): Get a list of data transforms.
+- **Get deep research report** (read-only): Get the deep research report for a research ID.
+- **Get deep research status** (read-only): Get the deep research status by research ID.
+- **Get Document AI configuration** (read-only): Get the details of a Document AI configuration.
+- **Get Document AI configurations** (read-only): Get all Document AI configurations.
+- **Get Document AI global configuration** (read-only): Get the global configurations for Document AI.
+- **Get events for an activation platform** (read-only): Returns the standard event names configured for the activation platform's streaming metadata, such as Purchase or AddToCart.
+- **Get field source target relationships** (read-only): Get the details of all data model object (DMO) relationships between fields in the source DMO and fields in the target DMO.
+- **Get file chunks summary** (read-only): Get all chunks for files in a knowledge space.
+- **Get file status** (read-only): Get the file status of a knowledge space for the specified file IDs.
+- **Get identity providers for match boost** (read-only): Returns the identity providers for an activation target and data model object (DMO).
+- **Get identity resolution ruleset** (read-only): Get an identity resolution ruleset in Data 360.
+- **Get identity resolution rulesets** (read-only): Get identity resolution rulesets in Data 360.
+- **Get ingestion job** (read-only): Get detailed status and processing information for a Data 360 bulk ingestion job.
+- **Get insight metadata** (read-only): Get Insight metadata, including Calculated Insight objects, their dimensions, and their measures in Data 360.
+- **Get knowledge for import** (read-only): Get knowledge libraries and search indexes to import into the specified knowledge space.
+- **Get knowledge libraries** (read-only): Get all knowledge libraries.
+- **Get knowledge library details** (read-only): Get detailed information about a specific knowledge library.
+- **Get knowledge space** (read-only): Get a knowledge space.
+- **Get knowledge space configuration** (read-only): Get the details of a specific knowledge space configuration record.
+- **Get knowledge space configurations** (read-only): Get all knowledge space configuration details.
+- **Get knowledge space details** (read-only): Get detailed information about a specific knowledge space.
+- **Get knowledge space session** (read-only): Get a knowledge space session.
+- **Get knowledge space sessions** (read-only): Get all sessions for a knowledge space.
+- **Get knowledge spaces** (read-only): Get all knowledge spaces in the current data space.
+- **Get last extraction info** (read-only): Returns the last extraction information for the unified catalog.
+- **Get Marketing Cloud enterprises** (read-only): Returns Marketing Cloud enterprises and their business units.
+- **Get metadata** (read-only): Get all metadata, including Calculated Insights, Engagement, Profile, and other objects, as well as their relationships to other objects…
+- **Get metadata entities** (read-only): Get a list of metadata entities.
+- **Get model artifact** (read-only): Get the model artifact.
+- **Get model artifacts** (read-only): Get model artifacts.
+- **Get model setup version** (read-only): Retrieve a specific model setup version.
+- **Get model setup version partition** (read-only): Retrieve a partition of a specific model setup version.
+- **Get model setup version partitions** (read-only): Retrieve all partitions of a specific model setup version.
+- **Get model setup versions** (read-only): Retrieve a list of model setup versions.
+- **Get object access grant** (read-only): Returns a single object access grant.
+- **Get object access grants** (read-only): Returns a paginated list of object access grants, with optional filters.
+- **Get partner objects** (read-only): Returns partner-platform objects of the specified type.
+- **Get partner-object types for an activation platform** (read-only): Returns the partner-object types valid for the activation platform, such as Pixel, App, or ConversionRule, each with a display label.
+- **Get predict job tasks** (read-only): Get a list of tasks associated with a specific predict job.
+- **Get predict jobs** (read-only): Get a list of predict jobs.
+- **Get prediction** (read-only): Make a prediction using the specified model and parameters.
+- **Get prediction job definitions** (read-only): Get a list of existing prediction job definitions.
+- **Get presigned URLs** (read-only): Get presigned URLs for uploading files to a knowledge library.
+- **Get private network route** (read-only): Get detailed information about a Private Network Route.
+- **Get private network routes** (read-only): Get a paginated list of Private Network Routes.
+- **Get profile data model object** (read-only): Query a profile data model object using filters in Data 360.
+- **Get profile data model object and calculated insight with search key** (read-only): Query a profile data model object and a calculated insight object using filters and a search key in Data 360.
+- **Get profile data model object and child object with search key** (read-only): Query a profile data model object and a child object using filters and a search key in Data 360.
+- **Get profile data model object metadata** (read-only): Get metadata for a data model object (DMO) in the profile category, such as Individual, Contact Point Email, Unified Individual, and…
+- **Get profile data model object with search key** (read-only): Query a profile data model object using filters and a search key in Data 360.
+- **Get profile metadata** (read-only): Get metadata for data model objects in the profile category, including Individual, Contact Point Email, Unified Individual, and Contact…
+- **Get provider templates** (read-only): Get a list of all templates associated with a clean room provider.
+- **Get providers** (read-only): Get a list of clean room providers.
+- **Get query jobs** (read-only): Get a list of clean room query jobs.
+- **Get refresh status** (read-only): Returns the current catalog refresh status.
+- **Get related attribute activation quota** (read-only): Returns the related-attribute activation quota for the org.
+- **Get related attribute configuration limits** (read-only): Returns the static configuration limits for related-attribute activations, such as maximum hops and attributes per activation.
+- **Get retriever** (read-only): Get a retriever with its latest and active configurations.
+- **Get retriever configuration** (read-only): Get a retriever configuration.
+- **Get retriever configurations** (read-only): Get all configuration versions for the retriever.
+- **Get retrievers** (read-only): Get a paginated list of retrievers.
+- **Get segment members** (read-only): Get segment members in Data 360.
+- **Get segments** (read-only): Returns a paginated list of segments.
+- **Get segments by API name** (read-only): Returns a paginated list of segments that match the specified segment API name.
+- **Get segments by ID** (read-only): Returns the segments that match the specified segment ID.
+- **Get semantic search** (read-only): Get information about the specified search index definition record.
+- **Get semantic search configuration** (read-only): Get a search index configuration.
+- **Get semantic search definition details** (read-only): Get all search index definition details.
+- **Get session conversation** (read-only): Get conversation messages for a knowledge space session.
+- **Get specifications** (read-only): Get a list of all clean room specifications.
+- **Get SQL query rows** (read-only): Get additional query results that weren't returned in the initial request.
+- **Get SQL query status** (read-only): Get the status of an SQL query request.
+- **Get streaming eligibility** (read-only): Indicates whether streaming activation is allowed for a data model object (DMO), and provides the reason when it isn't.
+- **Get tag** (read-only): Returns a tag by its fully qualified API name.
+- **Get tag assignment** (read-only): Returns a single data governance tag assignment by ID.
+- **Get tag assignments** (read-only): Returns a paginated list of data governance tag assignments for a given object, with optional field filtering.
+- **Get tag assignments on a tag** (read-only): Returns a paginated list of tag assignments for a specific tag.
+- **Get tag detection instruction** (read-only): Returns the currently active detection instruction for a tag.
+- **Get tag suggestion** (read-only): Returns a single AI-generated tag suggestion by ID.
+- **Get tag suggestions** (read-only): Returns a paginated list of AI-generated data governance tag suggestions, optionally filtered by object, tag, or status.
+- **Get tag taxonomy** (read-only): Returns a tag taxonomy by its fully qualified API name.
+- **Get tags** (read-only): Returns a paginated list of tags across all tag taxonomies.
+- **Get tags with active detection instructions** (read-only): Returns a paginated list of tags in a taxonomy along with their active detection instruction, if any.
+- **Get template collaborations** (read-only): Retrieve a paginated list of all collaborations for a specific type of use case template.
+- **Get templates** (read-only): Get a list of all clean room templates.
+- **Import knowledge**: Import selected knowledge libraries and search indexes into a target knowledge space.
+- **Index files**: Index uploaded files for a knowledge space.
+- **Link data share with target**: Links a data share with a data share target.
+- **List Connections** (read-only): List existing Data 360 connections for one required connector type and return one provider page.
+- **List Connectors** (read-only): List the connector types available for Data 360 connections, including labels, release levels, and capability types.
+- **List Data Lake Objects** (read-only): List Data 360 data lake objects and their status, returning one provider page without large field arrays.
+- **List data space members** (read-only): List information about the objects that can access a data space.
+- **List Data Spaces** (read-only): List the Data 360 data spaces visible to the connected Salesforce account and return one provider page.
+- **List Data Streams** (read-only): List Data 360 ingestion streams and their status, returning one provider page without embedded field metadata.
+- **List ingestion jobs** (read-only): List Data 360 bulk ingestion jobs with bounded result count, offset, ordering, and optional state filters.
+- **List tag taxonomies** (read-only): Returns a paginated list of tag taxonomies.
+- **Lookup catalog metadata** (read-only): Looks up catalog metadata records matching human-readable fields when the identifier isn't known.
+- **Lookup universal ID** (read-only): Look up objects by source ID in Data 360.
+- **Map dimension metadata to activation target**: Maps dimension metadata to a communication capping activation target.
+- **Propagate tags**: Propagates data governance tags to the specified objects.
+- **Provision knowledge space**: Provision a knowledge space for the specified data spaces.
+- **Publish a Batch DMO activation**: Initiate an on-demand publish job for a Batch data model object (DMO) activation.
+- **Publish activation platform**: Publishes an activation platform and sets its status to active.
+- **Publish segment**: Publish a segment in Data 360.
+- **Rebuild data transform**: Rebuild a streaming data transform.
+- **Refresh collaboration metadata**: Refresh metadata for a clean room collaboration.
+- **Refresh data graph**: Refresh a data graph.
+- **Refresh data transform status**: Refresh the status of a data transform.
+- **Reject a collaboration invitation**: Reject an invitation for a clean room collaboration.
+- **Reject tag suggestions**: Rejects one or more tag suggestions.
+- **Remove files**: Remove files from a knowledge library.
+- **Remove knowledge library**: Remove a knowledge library from a knowledge space.
+- **Replace access policy rule**: Overwrites or upserts a single rule within an access policy.
+- **Retry activation platform sync**: Retries the sync operation for an activation platform that previously failed.
+- **Retry activation sync**: Retries the sync for an activation.
+- **Retry activation target sync**: Retries the sync for an activation target.
+- **Retry data transform**: Retry a data transform.
+- **Review retriever**: Reviews a Custom SQL retriever input and returns findings with errors and suggestions.
+- **Run calculated insight**: Trigger a run on a calculated insight in Data 360.
+- **Run clean room query**: Run a query job on a clean room.
+- **Run data streams**: Start a data stream run to ingest data from the source and refresh the data lake object (DLO).
+- **Run data transform**: Run a data transform.
+- **Run deep research**: Run deep research for a research ID.
+- **Run Document AI process**: Run the Document AI configuration to process documents.
+- **Run existing connection action**: Run a command on an existing connection.
+- **Run identity resolution ruleset now**: Run an identity resolution ruleset job on demand in Data 360.
+- **Search catalog metadata** (read-only): Returns catalog metadata records matching a semantic search query.
+- **Search knowledge libraries** (read-only): Search for a knowledge library.
+- **Set activation platform privacy type**: Sets the privacy type classification for an activation platform.
+- **Submit SQL query**: Submit SQL query.
+- **Sync data space**: Retry off-core sync for a data space in an error state.
+- **Sync data space member**: Retry off-core sync for a data space member in an error state.
+- **Test connection** (read-only): Test the connection between the clean room and the provider's external storage.
+- **Test existing connection action** (read-only): Test an existing connection and update its status based on the test result.
+- **Test existing connection schema action** (read-only): Test a schema for an existing connection.
+- **Trigger activation full refresh**: Triggers a full-refresh publish for an activation.
+- **Trigger full extraction**: Triggers a catalog full extraction (Day 0 job).
+- **Undeploy data kit component**: Undeploy a component previously deployed from a data kit.
+- **Unlink data share with target**: Unlinks a data share from a data share target.
+- **Update a prediction job definition**: Update a specific prediction job definition.
+- **Update access policy**: Applies an idempotent partial update to an access policy's label or description.
+- **Update activation**: Update a specific activation by ID.
+- **Update activation target**: Update a specific activation target by ID or developer name.
+- **Update calculated insight**: Update a calculated insight in Data 360.
+- **Update classification**: Updates a classification.
+- **Update classification taxonomy**: Updates a classification taxonomy.
+- **Update communication capping configuration**: Updates a communication capping configuration entity.
+- **Update communication capping dimension**: Updates a communication capping dimension.
+- **Update communication capping dimension priority**: Updates the priority order of communication capping dimensions.
+- **Update communication capping rule**: Updates a communication capping rule within a configuration.
+- **Update configured model**: Update a configured model.
+- **Update connection**: Update a Data 360 connector, replacing only the data passed in the request.
+- **Update custom code deployment**: Updates a custom code deployment.
+- **Update data alert**: Partially update an existing data alert.
+- **Update data kit components**: Update the components of an existing data kit.
+- **Update data lake object**: Update a data lake object (DLO) by adding new fields or changing the label.
+- **Update data model object**: Update a custom data model object (DMO).
+- **Update data model object field mapping**: Add or update field mappings between a data lake object (DLO) source and a data model object (DMO) target.
+- **Update data share**: Updates a data share and adds the data model object (DMO), data lake object (DLO), and calculated insight object (CIO) to it.
+- **Update data space**: Update the specified data space.
+- **Update data stream**: Update a data stream.
+- **Update data transform**: Update a data transform.
+- **Update data transform schedule**: Update a data transform's schedule.
+- **Update deep research plan**: Update the deep research plan (instructions and/or steps) before execution.
+- **Update Document AI configuration**: Update an existing Document AI configuration.
+- **Update identity resolution ruleset**: Update an identity resolution ruleset in Data 360.
+- **Update ingestion job state**: Irreversibly close a Data 360 bulk ingestion job and enqueue its uploaded data for processing, or abort it and delete its uploaded data.
+- **Update knowledge library**: Update a knowledge library.
+- **Update knowledge space**: Update a knowledge space.
+- **Update model artifact**: Update the model artifact.
+- **Update model setup version**: Partially update an existing model setup version.
+- **Update retriever**: Update a retriever label or description.
+- **Update retriever configuration**: Update the configuration's active status.
+- **Update segment**: Update a segment in Data 360.
+- **Update semantic search**: Update a Semantic Index record.
+- **Update tag**: Updates a tag.
+- **Update tag taxonomy**: Updates a tag taxonomy.
+- **Upload ingestion job CSV**: Upload one bounded CSV file to an open Data 360 bulk ingestion job.
+- **Upsert connection schema**: Create or update a schema model for a connection.
+- **Upsert connection site map**: Create or update the sitemap for a Streaming App connection.
+- **Upsert data space members**: Add members to a data space or update existing data space filters.
+- **Upsert ingestion records**: Upsert a JSON micro-batch into a Data 360 ingestion connector.
+- **Validate data space account for target** (read-only): Indicates whether an ad account is available to assign to an activation target.
+- **Validate data transform** (read-only): Validate your data transform before you create it.
+- **Validate ingestion records** (read-only): Validate streaming records synchronously against a Data 360 ingestion connector schema without persisting the records.

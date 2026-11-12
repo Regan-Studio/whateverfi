@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>WhatEverFi blog</title>
+  <link>https://whateverfi.com/blog/</link>
+  <description>Notes on running an open source AI agent yourself.</description>
+<item>
+  <title>Claude Duet vs Grok Bot, and an open source alternative</title>
+  <link>https://whateverfi.com/blog/claude-duet-vs-grok-bot/</link>
+  <guid>https://whateverfi.com/blog/claude-duet-vs-grok-bot/</guid>
+  <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+  <description>Anthropic released Claude Duet on October 21, 2026. How it compares with xAI's Grok Bot, and with WhatEverFi, the open source option you run yourself.</description>
+</item>
+<item>
+  <title>Best open source AI agents in 2026</title>
+  <link>https://whateverfi.com/blog/best-open-source-ai-agents-2026/</link>
+  <guid>https://whateverfi.com/blog/best-open-source-ai-agents-2026/</guid>
+  <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+  <description>A look at open source agents you can run yourself in 2026, split into apps and libraries. There is no single best, and this is not a benchmark.</description>
+</item>
+<item>
+  <title>OpenClaw vs Hermes Agent vs WhatEverFi: which is simplest to run?</title>
+  <link>https://whateverfi.com/blog/openclaw-vs-hermes-vs-whateverfi/</link>
+  <guid>https://whateverfi.com/blog/openclaw-vs-hermes-vs-whateverfi/</guid>
+  <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+  <description>WhatEverFi, OpenClaw, and Hermes Agent are open source and can run on your hardware. The simplest one is the product shape you actually want: chat, a gateway, or a desktop agent.</description>
+</item>
+<item>
+  <title>How to self-host an AI agent in 10 minutes</title>
+  <link>https://whateverfi.com/blog/self-host-an-ai-agent/</link>
+  <guid>https://whateverfi.com/blog/self-host-an-ai-agent/</guid>
+  <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+  <description>Install WhatEverFi with the published Docker images, create an account, connect a model, and keep the database on your machine. Image pulls vary, and a public server takes longer.</description>
+</item>
+</channel>
+</rss>

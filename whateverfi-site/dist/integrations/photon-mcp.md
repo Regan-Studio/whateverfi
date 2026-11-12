@@ -1,0 +1,134 @@
+# Photon MCP
+
+Manage Photon messaging projects, resources, conversations, voice profiles and webhooks through its official hosted MCP server.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/photon-mcp/.
+
+## Actions
+
+- **Assignsmslinecampaign**: Assign or replace SMS line campaign Attach a ready campaign from this project’s organization to its line.
+- **Assignvoicelineprofile**: Assign Voice line profile Assigns or replaces a line's explicit additional-profile override when the resource version matches.
+- **Batchupdatevoicelineprofileassignments**: Batch update Voice line assignments Atomically sets additional-profile overrides or switches lines back to the project default for up to…
+- **Begintotpenrollment**: Begin TOTP enrollment Requires a first-party interactive Account credential authenticated no more than 300 seconds ago.
+- **Canceloperation**: Cancel operation Withdraws a provision that has not been fulfilled yet.
+- **Checkprojectslugavailability** (read-only): Check project slug availability Reports whether createProject would accept slug right now.
+- **Commitaccountprofilepicture**: Commit profile picture Commits a profile picture previously uploaded through createAccountProfilePictureUpload.
+- **Commitagentprofileavatar**: Commit agent avatar Commits an agent avatar previously uploaded through createAgentProfileAvatarUpload.
+- **Connectemaildomain**: Connect email domain Reserves a normalized DNS domain and starts its durable email-provider setup.
+- **Connecttelegrambot**: Connect Telegram bot Starts a free managed Telegram bot connection.
+- **Countfilteredverificationcodes** (read-only): Count filtered verification codes Counts the verification codes Photon kept from this project's dedicated lines and numbers, optionally…
+- **Countmessages** (read-only): Count Messages Counts matching Messages before pagination.
+- **Countprojects** (read-only): Count projects Counts the projects the same filter would list.
+- **Countresourcefilteredverificationcodes** (read-only): Count a line's filtered verification codes Counts the verification codes Photon kept from one dedicated line or number.
+- **Countspaces** (read-only): Count Spaces Counts distinct Spaces matching the list filters.
+- **Countusers** (read-only): Count Users Counts distinct Users matching the list filters, including incoming senders or outgoing recipients selected by Message filters.
+- **Createaccountprofilepictureupload**: Create profile picture upload Creates a ten-minute, Account-bound presigned S3 POST for a JPEG, PNG, or WebP profile picture up to 5 MiB.
+- **Createagentprofileavatarupload**: Create agent avatar upload Creates a ten-minute, Project-bound presigned S3 POST for a JPEG, PNG, or WebP agent avatar up to 5 MiB.
+- **Createdefaultvoiceprofile**: Create default Voice profile Creates the project default Voice profile when absent.
+- **Createorgetspace**: Create or get a Space Creates or returns a project Space.
+- **Createorgetuser**: Create or get a User Creates or reconciles a User by normalized handle.
+- **Createproject**: Create project Creates in the authorized organization.
+- **Createsharedlineassignment**: Create shared line assignment Maps an end user's iMessage handle — an E.164 phone number or an email address — onto one of the project's…
+- **Createvoiceprofile**: Create Voice profile Creates a direction-neutral additional Voice profile.
+- **Createwhatsappsharedlineassignment**: Create WhatsApp shared line assignment Maps an end user's phone number onto one of the project's pooled shared WhatsApp lines, consuming a…
+- **Createwhatsappvoipsender**: Create WhatsApp VoIP sender Registers an active, SMS-capable Photon VoIP line on this project's connected WhatsApp Business Account.
+- **Deleteaccount**: Delete account Deletes the authenticated account and returns its account tombstone.
+- **Deleteproject**: Delete project Starts deletion of the identified project using a credential authorized for project management.
+- **Deletetotpfactor**: Delete a TOTP factor Requires a first-party interactive Account credential authenticated no more than 300 seconds ago.
+- **Deletevoiceprofile**: Delete Voice profile Deletes an additional profile when expectedVersion matches.
+- **Deletevoiceprofileinbound**: Delete Voice inbound configuration Removes a profile's inbound destination when the shared profile version matches.
+- **Deletevoiceprofileoutbound**: Revoke Voice outbound credential Revokes outbound calling for a profile when the shared profile version matches.
+- **Deletewebhookdestination**: Delete webhook destination Deletes the selected project's destination and returns its stable tombstone.
+- **Disconnectwhatsappbusinessaccount**: Disconnect WhatsApp Business account Disconnects every attached WhatsApp sender, then unsubscribes our app and removes the project's…
+- **Getaccount** (read-only): Get account Returns the profile of the authenticated account.
+- **Getagentprofile** (read-only): Get agent profile Returns the agent profile belonging to the identified project.
+- **Getattachment** (read-only): Get attachment Returns an Attachment's metadata.
+- **Getbillingoperation** (read-only): Get billing operation Returns the authoritative state of a billing operation belonging to the selected project.
+- **Getbillingoverview** (read-only): Get project billing overview Returns the selected project's plan information, entitlements and current billing-period usage.
+- **Getcurrentorganization** (read-only): Read the credential's organization Reads the organization the credential is bound to.
+- **Getdefaultvoiceprofile** (read-only): Get default Voice profile Gets the profile currently selected as the project default, including its optional inbound delivery state.
+- **Geteffectiveterms** (read-only): Get the project's effective billing terms Returns what the selected project is billed on now, per category it holds.
+- **Getemaildeliverymetrics** (read-only): Get email delivery metrics Reads cached supplementary email series for the exact Project and rolling day or week.
+- **Getemailsendingpolicies** (read-only): Get email sending policies Reads Organization email recipient allowances shared across all its Projects, with rolling 60-second and…
+- **Getmessage** (read-only): Get a Message Returns one stored Message by canonical Photon Message ID on any supported contract platform.
+- **Getmessagemetricsbackfill** (read-only): Get metrics backfill status Returns historical metrics update progress.
+- **Getmessagemetricssqlschema** (read-only): Get metrics SQL schema Returns the message_events and call_events SQL schema, supported queries, and limits for the selected API version.
+- **Getmfastatus** (read-only): Get MFA status Requires a first-party interactive Account credential.
+- **Getoperation** (read-only): Get operation Reads one operation using the same operation representation as creation and list.
+- **Getorganizationbillingoverview** (read-only): Get organization billing overview Returns the selected organization’s billing subscription and entitlementsVersion.
+- **Getorganizationcredit** (read-only): Get organization credit Returns the credit the selected organization holds.
+- **Getorganizationpaymentmethod** (read-only): Get organization payment method Reports whether the selected organization has a card on file and returns its documented payment-method…
+- **Getorganizationterms** (read-only): Get the organization's effective billing terms Returns what the selected organization is billed on now on its own subscription, such as…
+- **Getproject** (read-only): Get project Returns the identified project's settings for an authorized caller.
+- **Getprojectclosurestatus** (read-only): Get project closure status Returns closure progress for projectId within organizationId, including deletionOperationId, domain progress…
+- **Getprojectimessageplatform** (read-only): Get project iMessage platform Reports whether the project is on shared or dedicated iMessage lines, derived from its billing entitlements.
+- **Getprojectwhatsappplatform** (read-only): Get project WhatsApp platform Reports whether the project is on shared or dedicated WhatsApp lines, derived from its billing entitlements.
+- **Getresource** (read-only): Get resource Reads one resource the project holds.
+- **Getsharedlineassignment** (read-only): Get shared line assignment Reads one shared line assignment.
+- **Getsmslinecampaignassignment** (read-only): Get SMS line campaign assignment Read the last confirmed campaign and current eligibility.
+- **Getspace** (read-only): Get a Space Returns one stored Space by canonical Photon Space ID.
+- **Getuser**: Get an User Returns one User after refreshing its Human or Agent classification and project ownership where supported.
+- **Getvoicelineprofileassignment** (read-only): Get Voice line profile assignment Gets the explicit additional-profile override for an owned Voice-capable line.
+- **Getvoiceprofile** (read-only): Get Voice profile Gets one reusable Voice profile, including its optional inbound delivery state.
+- **Getwebhookdestination** (read-only): Get webhook destination Returns the configuration of one webhook destination belonging to the selected project.
+- **Getwebhookeventschema** (read-only): Get webhook event schema Returns the published reader JSON Schema for eventType in the requested webhook apiVersion.
+- **Getwhatsappbusinessaccount** (read-only): Get WhatsApp Business account Gets the one WhatsApp Business Account this project has connected, with its number of live senders.
+- **Getwhatsappsharedlineassignment** (read-only): Get WhatsApp shared line assignment Reads one WhatsApp shared line assignment.
+- **Leaveorganization**: Leave an organization.
+- **Listaccountservicekeys** (read-only): List Account Service Keys Returns metadata for the authenticated account's unrevoked service keys, including expired keys, ordered newest…
+- **Listattachments** (read-only): List attachments Lists the Project's Attachment metadata, with optional time filters.
+- **Listauthorizedapplications** (read-only): List connected applications Lists the OAuth applications authorized by the authenticated user.
+- **Listbillingplans** (read-only): List billing plans Lists the billing plan catalog, grouped by their public plan-metadata type.
+- **Listcreditactivity** (read-only): List credit activity Returns one page of how the selected organization's credit balance changed, newest first.
+- **Listemailrecommendations** (read-only): List email recommendations Reads Photon guidance from stored sending policies, sending setup and domain checks.
+- **Listfilteredverificationcodes** (read-only): List filtered verification codes Lists the verification codes Photon kept from this project's dedicated lines and numbers.
+- **Listinvoices** (read-only): List invoices Returns one page of the selected organization's invoices, newest first.
+- **Listmessages** (read-only): List Messages Lists the Project's Messages, with optional resource, conversation, and time filters.
+- **Listnumberareacodes** (read-only): List number area codes Lists current provider coverage for US local numbers, sorted and deduplicated.
+- **Listnumbercountries** (read-only): List number countries Lists supported purchase countries independently of current provider inventory.
+- **Listoauthscopes** (read-only): List OAuth scopes Lists the business permissions available to OAuth applications.
+- **Listoperations** (read-only): List operations Lists the project's operations using the same operation representation as creation and GET.
+- **Listorganizationmembers** (read-only): List current organization members
+- **Listprojectplatforms** (read-only): List project platforms Lists the platform types available to this project.
+- **Listprojects** (read-only): List projects Returns a cursor-paginated page of the active projects in organizationId.
+- **Listprojectsubscriptions** (read-only): List project subscriptions Lists the plan each of the selected project's categories holds, with its price and the payer's standing.
+- **Listresourcefilteredverificationcodes** (read-only): List a line's filtered verification codes Lists the verification codes Photon kept from one dedicated line or number.
+- **Listresources** (read-only): List resources Lists the project's resources, oldest first, including retired ones unless state filters them out.
+- **Listsharedlineassignments** (read-only): List shared line assignments Lists the project's shared line assignments, oldest first.
+- **Listspaces** (read-only): List Spaces Lists the Project's stored Spaces, with optional participant and Message filters.
+- **Listusers** (read-only): List Users Lists stored Users without refreshing their classification.
+- **Listvoiceprofiles** (read-only): List Voice profiles Lists reusable Voice profiles in this project.
+- **Listwebhookapiversions** (read-only): List webhook API versions Lists the published webhook payload API versions and their lifecycle metadata.
+- **Listwebhookdestinations** (read-only): List webhook destinations Returns a cursor-paginated page of active webhook destinations configured for the selected project.
+- **Listwebhookegressaddresses** (read-only): List webhook egress addresses Returns the public network addresses from which this environment sends webhook deliveries.
+- **Listwebhookeventtypes** (read-only): List webhook event types Lists the webhook event types available in the requested apiVersion, including their descriptions, audiences and…
+- **Listwhatsappaccountphonenumbers** (read-only): List WhatsApp account phone numbers Lists the connected WABA's phone numbers directly from Meta, including numbers whose Photon sender was…
+- **Listwhatsappsharedlineassignments** (read-only): List WhatsApp shared line assignments Lists the project's WhatsApp shared line assignments, oldest first.
+- **Markmessageread**: Mark a Message as read Persists a request to mark one incoming Message as read using its receiving account.
+- **Previeworganizationchange** (read-only): Preview an organization billing change Previews a fixed-charge quantity change on the selected organization's own subscription, such as SSO.
+- **Previewprojectchange** (read-only): Preview a project billing change Previews a change on the selected project's subscription in the supplied category.
+- **Provisionimessagededicatedline**: Provision dedicated iMessage line Claims one dedicated iMessage line for the project and enables iMessage on it.
+- **Provisionwhatsappdedicatedline**: Provision dedicated WhatsApp line Provisions one dedicated WhatsApp line with WhatsApp and shared Voice enabled.
+- **Purchasesmsnumber**: Purchase SMS number Buys one US local number from the provider and records it as a resource with SMS enabled.
+- **Querymessagemetrics**: Query metrics Runs read-only SQL over the Project's message_events or call_events table.
+- **Releaseimessagededicatedline**: Release dedicated iMessage line Removes only iMessage from one dedicated line.
+- **Releaseresource**: Release resource Gives one resource back, whatever it is.
+- **Releasesharedlineassignment**: Release shared line assignment Releases a shared line assignment, freeing both its seat and its handle for reassignment.
+- **Releasewhatsappdedicatedline**: Release dedicated WhatsApp line Removes only WhatsApp from one dedicated line.
+- **Releasewhatsappsharedlineassignment**: Release WhatsApp shared line assignment Releases a WhatsApp shared line assignment, freeing its seat for reassignment.
+- **Resetaccountprofilepicture**: Remove profile picture Removes the authenticated account's custom profile picture and returns the account using its default picture.
+- **Resetagentprofileavatar**: Reset agent avatar Replaces the selected project's agent avatar with the project's default avatar, a generated planet image derived from…
+- **Revokeaccountservicekey**: Revoke Account Service Key Revokes the account-owned service key identified by serviceKeyId and returns its revoked metadata.
+- **Revokeauthorizedapplication**: Revoke connected application Revokes the authenticated user's grant for one OAuth application.
+- **Sendmessage**: Send a Message Sends SMS, email, WhatsApp Personal, WhatsApp Business, iMessage, or Telegram text and image messages.
+- **Setspacetyping**: Set typing in a Space Saves one transient typing update as an authorized Agent in this Space.
+- **Unassignsmslinecampaign**: Unassign SMS line campaign Any project writer, including a scoped API key, may detach the campaign.
+- **Unassignvoicelineprofile**: Unassign Voice line profile Removes a line's explicit override when the resource version matches so the line follows the project default.
+- **Updateaccount**: Update account Updates the supplied firstName and lastName fields on the authenticated account and returns the updated profile.
+- **Updateagentprofile**: Update agent profile Updates the supplied firstName and lastName fields in the project's agent profile and returns the updated profile.
+- **Updatedefaultvoiceprofile**: Update default Voice profile Patches the default profile's protocol or mediaEncryption when expectedVersion matches.
+- **Updateproject**: Update project Updates the identified project's name and returns the updated project.
+- **Updatevoiceprofile**: Update Voice profile Patches an additional profile's name, protocol, or mediaEncryption when expectedVersion matches.
+- **Updatevoiceprofileoutboundauthentication**: Update Voice outbound authentication Changes a SIP profile's outbound Digest algorithm when expectedVersion matches.
+- **Updatewebhookdestination**: Update webhook destination Updates the supplied URL, name, description, status or enabledEvents fields on a project's webhook destination…
+- **Verifytotpenrollment**: Verify TOTP enrollment Requires a first-party interactive Account credential authenticated no more than 300 seconds ago.

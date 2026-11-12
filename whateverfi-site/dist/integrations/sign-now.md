@@ -1,0 +1,325 @@
+# SignNow
+
+Create, send, sign, and manage electronic documents, templates, signing workflows, teams, and organizations with SignNow.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/sign-now/.
+
+## Actions
+
+- **ACCEPT INVITE TO ORGANIZATION**: Accept a pending organization invitation for the specified organization and member.
+- **ACTIVATE DEACTIVATE ALLOWED TEAM ADMINS**: Activate or deactivate one allowed team admin in an organization.
+- **ACTIVATE EVENT SUBSCRIPTION**: Set an existing event subscription active by its 40-character subscription ID.
+- **ADD AND CHANGE LOGO FROM URL**: Add or replace a brand logo using an image URL.
+- **ADD AND EDIT EMAIL GENERAL BRANDING**: Add or update general branding used for all email types on a brand.
+- **ADD CONTACT TO GROUP**: Add an existing CRM contact to a specific contact group without creating either resource.
+- **ADD CUSTOM HISTORY EVENT**: Add a custom document-history event that may remain in SignNow audit history after the document is deleted.
+- **ADD DOCUMENT METADATA**: Attach the supplied metadata fields to one existing document.
+- **ADD MEMBERS**: Invite a user by email to join a SignNow organization as a member.
+- **Add Metadata to Document Group**: Add documented metadata fields to a document group.
+- **ADD MODERATOR OR ADMIN**: Invite a user by email to join a SignNow organization as an admin or moderator.
+- **Add Organization Members Batch**: Invite organization members sequentially through SignNow's singular official endpoint.
+- **ADD SMART FIELDS TO TEMPLATE**: Create smart fields on an existing template from a documented smart-field payload.
+- **ADD TEMPLATE TO DOCUMENT GROUP TEMPLATE**: Attach a template described in the request body to an existing document group template.
+- **Assign Brand to Entity**: Assign a brand to an application, document, document group, or organization using the entity's current endpoint.
+- **Cancel Document Field Invite**: Cancel the outstanding field invite for a document and record the cancellation reason.
+- **CANCEL DOCUMENT GROUP INVITE**: Irreversibly cancel one invite identified within a specific document group.
+- **CANCEL FREEFORM INVITE**: Cancel a document FreeForm invite with an optional reason.
+- **CANCEL INVITE FOR ONE SIGNER**: Cancel a document-group FreeForm invite for one signer.
+- **CANCEL INVITES FOR ALL SIGNERS**: Cancel a document-group FreeForm invite for every signer.
+- **CANCEL SCHEDULED INVITE**: Delete the active scheduled invite for a document or document group before it is sent.
+- **CHANGE TEAM PRIMARY ADMIN**: Transfer a team's primary administrator role to an existing member by user ID.
+- **CONNECT ORGANIZATION MERCHANT ACCOUNT**: Connect a SignNow organization to a Stripe or Stripe Connect merchant account.
+- **CONNECT PERSONAL MERCHANT ACCOUNT**: Connect the current SignNow user to a Stripe or Stripe Connect merchant account.
+- **Correct Document Group Invite**: Start and complete correction of a pending document-group invite through the required SignNow routes.
+- **CREATE AND EDIT EDITOR BRAND RESOURCE**: Create or replace the editor-specific settings for an existing brand.
+- **CREATE AND EDIT GENERAL BRAND RESOURCE**: Create or replace the general settings for an existing brand.
+- **CREATE API EVENT SUBSCRIPTION**: Deprecated.
+- **CREATE BRAND**: Create a brand from the supplied documented branding settings.
+- **CREATE BRAND FROM TEMPLATE FILE**: Create a brand by uploading a JSON branding template file.
+- **CREATE CONTACT GROUP**: Create a CRM contact group from the supplied group settings.
+- **CREATE CRM CONTACT**: Create one CRM contact from the supplied contact payload.
+- **CREATE DOCUMENT EMBEDDED EDITOR LINK**: Generate a link that embeds the SignNow document editor.
+- **CREATE DOCUMENT EMBEDDED INVITE**: Create an embedded signing invite for a document, including signer and optional approver settings.
+- **CREATE DOCUMENT EMBEDDED INVITE LINK**: Generate a signing link for an existing document embedded invite.
+- **CREATE DOCUMENT EMBEDDED SENDING LINK**: Return a 15-45 minute embedded URL that opens a document editor or Send Invite page.
+- **CREATE DOCUMENT EMBEDDED VIEW LINK**: Create a reusable embedded-view link for a document so it can be reviewed and downloaded without signing in.
+- **Create Document From Template**: Generate a signable document copy from a SignNow template.
+- **Create Document Group**: Create a document group from owned documents.
+- **CREATE DOCUMENT GROUP EMBEDDED EDITOR LINK**: Generate a link that embeds the SignNow editor for a document group.
+- **CREATE DOCUMENT GROUP EMBEDDED INVITE**: Create ordered embedded signing or approval invites for documents in a document group.
+- **CREATE DOCUMENT GROUP EMBEDDED INVITE LINK**: Generate a signing link for one recipient of a document-group embedded invite.
+- **CREATE DOCUMENT GROUP EMBEDDED SENDING LINK**: Return embedded URLs that open a document group's Add Documents, editor, or Send Invite page for 15-45 minutes.
+- **CREATE DOCUMENT GROUP EMBEDDED VIEW LINK**: Create a reusable embedded-view link for a document group so its documents can be reviewed and downloaded without signing in.
+- **CREATE DOCUMENT GROUP FROM TEMPLATE**: Instantiate a new document group from a document group template's unique ID.
+- **CREATE DOCUMENT GROUP TEMPLATE**: Create a reusable document group template from the supplied configuration.
+- **Create Document Signing Link**: Create a document signing link and QR code, optionally adding documented smart-field values to its redirect URI.
+- **CREATE EMAIL LOGO BRAND RESOURCE**: Create or replace a brand's email logo from an uploaded image file.
+- **CREATE EVENT SUBSCRIPTION**: Create a legacy event subscription from the supplied event and callback settings.
+- **CREATE FOLDER**: Create a folder under an existing SignNow folder.
+- **CREATE FREEFORM INVITE**: Create and send a FreeForm invite for a document group.
+- **CREATE GROUP TEMPLATE FROM DOCUMENT GROUP**: Create a reusable template from one existing document group and the supplied template settings.
+- **CREATE LOGO BRAND RESOURCE**: Upload an image file as a brand's logo resource.
+- **CREATE ORGANIZATION**: Create an organization from the supplied organization settings.
+- **CREATE ORGANIZATION BRAND**: Create a brand owned by a specific organization from the supplied settings.
+- **CREATE ORGANIZATION EDITOR BRAND RESOURCE**: Set editor-specific branding for a brand owned by a specific organization.
+- **CREATE ORGANIZATION EMAIL BRAND RESOURCE**: Set email-specific branding for a brand owned by a specific organization.
+- **CREATE ORGANIZATION GENERAL BRAND RESOURCE**: Set general branding for a brand owned by a specific organization.
+- **CREATE ORGANIZATION LOGO BRAND RESOURCE**: Create the logo resource for a brand owned by a specific organization.
+- **CREATE SCHEDULED INVITE**: Prepare a document or document-group invite for irreversible delivery at a future Unix timestamp.
+- **CREATE TEAM**: Create a team from the supplied team settings.
+- **Create Template**: Create a template by flattening an existing SignNow document.
+- **DEACTIVATE EVENT SUBSCRIPTION**: Set an existing event subscription inactive without deleting its configuration.
+- **DECLINE GROUP INVITE**: Decline a specific document group invite with the supplied reason and optional timestamp.
+- **DECLINE INVITE TO ORGANIZATION**: Decline a pending organization invitation for the specified organization and member.
+- **DECLINE TO SIGN A FIELD INVITE**: Irreversibly decline one document field invite using its document and invite IDs.
+- **DELETE BRAND**: Delete one brand by its 40-character brand ID.
+- **DELETE CONTACT GROUP**: Delete one CRM contact group by ID rather than removing an individual contact from it.
+- **DELETE CRM CONTACT**: Delete one CRM contact by ID rather than only removing it from a group.
+- **DELETE DOCUMENT**: Delete one existing document by ID.
+- **DELETE DOCUMENT EMBEDDED INVITES**: Delete all active embedded invites for a document.
+- **Delete Document Group**: Delete a document group without deleting its documents.
+- **DELETE DOCUMENT GROUP EMBEDDED INVITES**: Delete all active embedded invites for a document group.
+- **DELETE EDITOR BRAND RESOURCE**: Remove the editor-specific settings from one brand.
+- **DELETE EMAIL CANCELED RESOURCE**: Remove the canceled-invite email settings from one brand.
+- **DELETE EMAIL COMPLETED RESOURCE**: Remove the completed-invite email settings from one brand.
+- **DELETE EMAIL GENERAL RESOURCE**: Remove the general email settings shared by a specific brand.
+- **DELETE EMAIL INVITE RESOURCE**: Remove the invitation email settings from one brand.
+- **DELETE EMAIL LOGO BRAND RESOURCE**: Remove the email logo resource from one brand.
+- **DELETE EMAIL REASSIGN RESOURCE**: Remove the reassignment email settings from one brand.
+- **DELETE EMAIL REMINDER RESOURCE**: Remove the reminder email settings from one brand.
+- **DELETE EMPTY TRASH BIN FOLDER**: Permanently delete every document in the connected user's Trash Bin.
+- **DELETE EVENT SUBSCRIPTION**: Delete an event subscription by ID rather than merely deactivating it.
+- **DELETE FOLDER**: Delete an existing SignNow folder.
+- **DELETE FREEFORM SIGNED CC EMAIL BRANDING**: Remove the FreeForm-signed CC email settings from one brand.
+- **DELETE GENERAL BRAND RESOURCE**: Remove the general branding settings from one brand.
+- **DELETE INVITE CC EMAIL BRANDING**: Remove the invite CC email settings from one brand.
+- **DELETE INVITE COMPLETED CC EMAIL BRANDING**: Remove the completed-invite CC email settings from one brand.
+- **DELETE LOGO BRAND RESOURCE**: Remove the logo resource from one brand without deleting the brand itself.
+- **DELETE MERCHANT ACCOUNT**: Delete a merchant account connected to a SignNow organization.
+- **DELETE ORGANIZATION**: Delete one organization by ID.
+- **Delete Organization Brand**: Delete one brand owned by an organization.
+- **DELETE ORGANIZATION EDITOR BRAND RESOURCE**: Remove editor-specific settings from a brand owned by a specific organization.
+- **DELETE ORGANIZATION EMAIL BRAND RESOURCE**: Remove email-specific settings from a brand owned by a specific organization.
+- **DELETE ORGANIZATION GENERAL BRAND RESOURCE**: Remove general settings from a brand owned by a specific organization.
+- **DELETE ORGANIZATION LOGO**: Delete the logo configured for an organization.
+- **DELETE ORGANIZATION LOGO BRAND RESOURCE**: Remove the logo resource from a brand owned by a specific organization.
+- **DELETE PERSONAL MERCHANT ACCOUNT**: Disconnect a merchant account from the current SignNow user.
+- **DELETE REASSIGN CC EMAIL BRANDING**: Remove the reassignment CC email settings from one brand.
+- **DELETE SEND INVITE BRAND RESOURCE**: Delete the send-invite branding resource from a brand.
+- **DELETE SMART FIELDS FROM TEMPLATE**: Delete the smart fields selected in the request body from one template.
+- **DELETE STEP COMPLETED CC EMAIL BRANDING**: Remove the completed-step CC email settings from one brand.
+- **DELETE TEAM**: Delete team.
+- **DELETE USER FROM TEAM**: Remove a user from a team as the primary admin, or leave a team as that user.
+- **Demote Team Admin**: Remove administrator permissions from one team user while retaining their team membership and shared-folder access.
+- **DISABLE TEAM DOCUMENTS FOLDER**: Disable the Documents folder for one team without deleting the team.
+- **DOWNLOAD DOCUMENT** (read-only): Download a document in the requested type, optionally with its history table.
+- **DOWNLOAD DOCUMENT ATTACHMENT** (read-only): Download one attachment from a document using both document and attachment IDs.
+- **Download Document Group** (read-only): Download all documents in a document group in a documented format.
+- **Duplicate Document Group**: Schedule creation of a named copy of a document group in any status.
+- **DUPLICATE DOCUMENT GROUP TEMPLATE**: Create a new copy of one document group template using the supplied copy settings.
+- **Duplicate Template**: Create a named editable copy of a template in the default or specified Templates folder.
+- **ENABLE TEAM DOCUMENTS FOLDER**: Enable the Documents folder for one team without changing other team settings.
+- **Expire User Tokens**: Expire the connected SignNow user's full-scope tokens.
+- **EXPORT LAST ACTIVITY OF MEMBERS**: Request a CSV export of organization user activity.
+- **EXPORT LAST LOGINS OF MEMBERS**: Request a CSV export of member last-login data for a date range.
+- **EXPORT PAID REQUEST LOGS** (read-only): Export filtered paid request logs as a streamed XLSX file.
+- **Generate Document**: Start asynchronous PDF document generation from either a publicly accessible DOCX template URL or an uploaded DOCX file.
+- **GET ACCESS TOKEN METADATA** (read-only): Return the current token's validity, scope, and expiry metadata for authorization troubleshooting.
+- **GET BRAND** (read-only): Return one brand's configuration by its 40-character brand ID.
+- **GET BRAND ASSIGNED TO ORGANIZATION** (read-only): Return the brand currently assigned to a specific organization.
+- **GET BRAND OF APPLICATION** (read-only): Return the brand assigned to an application, optionally using its organization hierarchy.
+- **GET BRAND OF DOCUMENT** (read-only): Return the brand assigned to a document, optionally using its hierarchy.
+- **GET BRAND OF DOCUMENT GROUP** (read-only): Return the brand assigned to a document group, optionally using its hierarchy.
+- **GET BRAND TEMPLATE FILE** (read-only): Download the reusable branding template file used to create a brand from a file.
+- **GET CALLBACK DETAILS BY ID** (read-only): Return one callback delivery record within a specific event subscription using both IDs.
+- **GET CONTACT GROUP** (read-only): Return one CRM contact group's details by group ID.
+- **GET CRM CONTACT DETAILS** (read-only): Return one CRM contact's details by contact ID.
+- **GET DECLINED FIELD INVITE** (read-only): Return one declined field invite using its document and field-invite IDs.
+- **GET DOCUMENT** (read-only): Return one document's details, optionally including smart fields and document attributes.
+- **GET DOCUMENT DOWNLOAD LINK** (read-only): Return a download URL for one existing document rather than downloading its bytes.
+- **Get Document Generation Status** (read-only): Return the current state of a SignNow document generation process and, after completion, the generated document or document-group ID.
+- **Get Document Group** (read-only): Return a document group using the original document-group endpoint.
+- **Get Document Group Details** (read-only): Return detailed version 2 information for a document group.
+- **GET DOCUMENT GROUP HISTORY** (read-only): Return the recorded history events for one document group.
+- **GET DOCUMENT GROUP INVITE** (read-only): Return one invite within a specific document group using both IDs.
+- **GET DOCUMENT HISTORY** (read-only): Return the recorded history events for one document.
+- **GET DOCUMENT METADATA** (read-only): Return the metadata entries attached to one document.
+- **GET EDITOR BRAND RESOURCE** (read-only): Return the editor-specific settings configured for one brand.
+- **GET EMAIL CANCELED RESOURCE** (read-only): Return the canceled-invite email settings configured for one brand.
+- **GET EMAIL COMPLETED RESOURCE** (read-only): Return the completed-invite email settings configured for one brand.
+- **GET EMAIL GENERAL RESOURCE** (read-only): Return the general email settings shared by one brand.
+- **GET EMAIL INVITE RESOURCE** (read-only): Return the invitation email settings configured for one brand.
+- **GET EMAIL LOGO BRAND RESOURCE** (read-only): Download a brand's email logo image.
+- **GET EMAIL REASSIGN RESOURCE** (read-only): Return the reassignment email settings configured for one brand.
+- **GET EMAIL REMINDER RESOURCE** (read-only): Return the reminder email settings configured for one brand.
+- **Get Event Subscription Details** (read-only): Return the configuration and optional callback event count for one Webhooks 2.0 event subscription.
+- **GET FOLDER BY ID** (read-only): Return one offset-based page of entities from a SignNow folder.
+- **GET FREEFORM SIGNED CC EMAIL BRANDING** (read-only): Return the FreeForm-signed CC email settings configured for one brand.
+- **GET GENERAL BRAND RESOURCE** (read-only): Return the general branding settings configured for one brand.
+- **GET INVITE CC EMAIL BRANDING** (read-only): Return the invite CC email settings configured for one brand.
+- **GET INVITE COMPLETED CC EMAIL BRANDING** (read-only): Return the completed-invite CC email settings configured for one brand.
+- **GET LOGO BRAND RESOURCE** (read-only): Download a brand's logo image.
+- **GET MERCHANT ACCOUNT** (read-only): Retrieve a specific merchant account connected to a SignNow organization.
+- **GET MONTHLY REQUEST TOTALS** (read-only): Return paid-request usage totals grouped by dynamic YYYYMM month keys.
+- **GET ORGANIZATION ACTIVITY** (read-only): Return activity for one organization, optionally limited to events after a timestamp.
+- **Get Organization Brand** (read-only): Return the name, owner type, and resources of one brand owned by an organization.
+- **GET ORGANIZATION EDITOR BRAND RESOURCE** (read-only): Return editor-specific settings for a brand owned by a specific organization.
+- **GET ORGANIZATION EMAIL BRAND RESOURCE** (read-only): Return email-specific settings for a brand owned by a specific organization.
+- **GET ORGANIZATION GENERAL BRAND RESOURCE** (read-only): Return general settings for a brand owned by a specific organization.
+- **GET ORGANIZATION LOGO BRAND RESOURCE** (read-only): Return the logo resource for a brand owned by a specific organization.
+- **GET ORGANIZATION SETTINGS** (read-only): Return the settings configured for an organization.
+- **GET PAID REQUEST TOTALS** (read-only): Return total, used, and remaining paid-request quota.
+- **GET PERSONAL MERCHANT ACCOUNT** (read-only): Retrieve a specific merchant account connected to the current SignNow user.
+- **GET REASSIGN CC EMAIL BRANDING** (read-only): Return the reassignment CC email settings configured for one brand.
+- **GET REQUEST LOG** (read-only): Return one API request log by its request ID.
+- **GET SEND INVITE BRAND RESOURCE** (read-only): Return the send-invite settings configured for one brand.
+- **GET SMART FIELDS FROM TEMPLATE** (read-only): Return the smart-field definitions configured on one template.
+- **GET STEP COMPLETED CC EMAIL BRANDING** (read-only): Return the completed-step CC email settings configured for one brand.
+- **GET TEAM** (read-only): Return one team's details by team ID.
+- **GET TEAM INVITE** (read-only): Return one team invitation by its invitation request ID.
+- **GET USER DETAILS** (read-only): Return details for the connected SignNow user.
+- **Get User Role For Template** (read-only): Retrieve a user's role for a specific shared template.
+- **GET WELCOME MESSAGE** (read-only): Return the current signing welcome message for the connected account.
+- **GRANT TEAM ADMIN PERMISSIONS**: Promote an existing team member, selected by email, to administrator of a specific team.
+- **IMPORT CRM CONTACTS IN BULK**: Import CRM contacts in bulk from a CSV file.
+- **Import Template From DocuSign**: Import one or more DocuSign templates from an exported ZIP archive.
+- **INVITE USER TO TEAM**: Send team invitations to the email addresses supplied for one specific team.
+- **LIST ADMIN ORGANIZATIONS** (read-only): List one page of organizations administered by the connected user, with status and type filters.
+- **List Allowed Team Admins** (read-only): List the users permitted to administer teams in an organization, optionally filtered by email or active state.
+- **LIST API REQUEST LOGS** (read-only): Return one page of API request logs for the active application.
+- **LIST BRANDS** (read-only): List every brand available to the connected account.
+- **LIST CALLBACKS** (read-only): List callback delivery records with optional event, application, status, initiator, entity, URL, and date filters.
+- **LIST CALLBACKS BY EVENT SUBSCRIPTION** (read-only): List callback delivery records for one event subscription with optional status, initiator, and date filters.
+- **LIST COMPLETED DOCUMENT FIELDS** (read-only): Return field values from one completed document.
+- **LIST CONTACT GROUPS** (read-only): List one page of CRM contact groups, optionally filtered by group ID or name.
+- **LIST CONTACT GROUPS FOR CONTACT** (read-only): Return contact groups containing a CRM contact.
+- **LIST CONTACTS FROM GROUP** (read-only): Return one page of contacts from a contact group.
+- **LIST CRM CONTACTS** (read-only): List one page of CRM contacts with optional owner, sharing, identity, company, and interaction filters.
+- **LIST CRM USERS** (read-only): List one page of CRM users and return a continuation cursor.
+- **LIST DOCUMENT FREE FORM INVITES** (read-only): Retrieve one page of FreeForm invites for a document.
+- **LIST DOCUMENT GROUP RECIPIENTS** (read-only): Return the recipients configured for one document group.
+- **List Document Group Template Recipients** (read-only): List recipient, CC, document-role, reminder, and expiration routing settings for a document group template.
+- **LIST DOCUMENT GROUP TEMPLATE ROLES** (read-only): List one page of roles for a document group template and return a continuation cursor.
+- **LIST DOCUMENT GROUP TEMPLATES** (read-only): List document group templates using offset or continuation-cursor pagination.
+- **LIST DOCUMENT GROUP USERS** (read-only): List one page of users with access to a document group and return a continuation cursor.
+- **List Document Groups** (read-only): Return one offset/limit page of document groups owned by the user.
+- **LIST DOCUMENT GROUPS CREATED FROM TEMPLATE** (read-only): List one page of document groups created from a specific template, with search, status, label, and sort options.
+- **LIST DOCUMENT USERS** (read-only): List one page of users with access to a document and return a continuation cursor.
+- **List Documents From Template** (read-only): Return one page of documents generated from a template.
+- **LIST EMAILS OF THE INVITE STEP** (read-only): Return the email records for one step of a specific document group invite.
+- **LIST EVENT SUBSCRIPTIONS** (read-only): List event subscriptions with event, application, callback URL, date, sort, and event-count options.
+- **LIST FAVORITES** (read-only): Return one page of documents and document groups marked as favorites.
+- **LIST FOLDERS** (read-only): Return the connected user's root folder tree and its documents.
+- **LIST FREE FORM INVITE DOCUMENTS** (read-only): Retrieve one page of documents for a document-group FreeForm invite.
+- **LIST MEMBERS LAST LOGINS** (read-only): Return the last-login audit records for organization members.
+- **List Metadata of Document Group** (read-only): Return the documented metadata response for a document group.
+- **LIST MODIFIED DOCUMENTS** (read-only): Return user documents that have been modified with fields or content.
+- **LIST ORGANIZATION ADMINS** (read-only): List administrators of one organization, optionally filtered by email or administrator type.
+- **List Organization Brands** (read-only): List the brands owned by an organization with their configured resources and pagination metadata.
+- **LIST ORGANIZATION MEMBERS** (read-only): List members of one organization with optional email, member-type, and email-sort controls.
+- **LIST ORGANIZATION USER DOCUMENTS** (read-only): Search and return one page of documents belonging to organization users.
+- **List Paid Request Logs** (read-only): List one page of paid API request charge records and return a cursor for the next page.
+- **LIST PENDING DOCUMENT GROUP INVITES** (read-only): Return pending invite data for a specific invite within one document group.
+- **List Pinned Templates** (read-only): List the templates pinned in a specific Templates folder or subfolder.
+- **List Team Admins** (read-only): List the administrators of a specific team, including its primary administrator.
+- **List Team Members** (read-only): List the members and administrators of a specific team, optionally including declined invitations.
+- **List Template Recipients** (read-only): List a template's signer, viewer, approver, and carbon-copy routing configuration.
+- **LIST USER DOCUMENTS** (read-only): Return the connected user's documents that have not yet been modified.
+- **LIST USER TEAMS** (read-only): List the teams associated with the connected SignNow user.
+- **LIST USERS ACTIVITY** (read-only): Return document activity statistics for users in an organization.
+- **LIST USERS BY CONTACT** (read-only): Return users connected to a CRM contact.
+- **MARK DOCUMENT AS FAVORITE**: Add a document in the Documents folder to the user's favorites.
+- **MARK DOCUMENT GROUP AS FAVORITE**: Add a document group in the Documents folder to the user's favorites.
+- **MERGE DOCUMENTS**: Create one merged document from the documents specified in the request body.
+- **MOVE DOCUMENT**: Relocate one document according to the destination supplied in the move payload.
+- **Move Document Group**: Move a document group and its eligible documents to another folder.
+- **MOVE DOCUMENT GROUP TEMPLATE**: Relocate one document group template using the destination settings in the request body.
+- **MOVE DOCUMENTS IN BULK**: Move a supplied array of documents into one target folder in a single request.
+- **Move Organization Members Batch**: Move organization members sequentially through SignNow's singular official endpoint.
+- **PREFILL SMART FIELDS**: Prefill smart fields.
+- **PREFILL TEXT FIELDS**: Set text-field values on one existing document before it is completed.
+- **Remove Access To Template**: Revoke a user's access to a shared template.
+- **REMOVE ADMIN MODERATOR**: Remove one administrator or moderator from a specific organization by admin ID.
+- **REMOVE CONTACT FROM GROUP**: Remove one CRM contact from a contact group without deleting the contact.
+- **REMOVE DOCUMENT FROM FAVORITES**: Remove a document in the Documents folder from the user's favorites.
+- **REMOVE DOCUMENT GROUP FROM FAVORITES**: Remove a document group in the Documents folder from the user's favorites.
+- **Remove Metadata from Document Group**: Delete every metadata entry attached to one document group.
+- **Remove Organization Members Batch**: Remove organization members sequentially through SignNow's singular official endpoint.
+- **Remove Team Admin**: Remove one administrator from the team, ending their team membership and revoking their shared-folder access.
+- **Rename Document Group**: Replace the name of one existing document group.
+- **RENAME FOLDER**: Replace the name of one folder using its folder ID and the supplied rename payload.
+- **RENAME ORGANIZATION**: Replace the name of one organization using the supplied rename payload.
+- **RENAME TEAM**: Replace the name of one team while leaving its membership unchanged.
+- **Replace Signer**: Replace a field-invite signer through SignNow's required delete, replace, and send sequence.
+- **RESEND CALLBACK**: Redeliver one callback for a specific event subscription using both IDs.
+- **RESEND DOCUMENT GROUP INVITE**: Resend a specific document group invite using its group and invite IDs.
+- **RESEND EMAIL INVITE**: Resend the email invitation for a specific field invite request.
+- **RESEND FREEFORM INVITE**: Resend a document-group FreeForm invite to one signer.
+- **RESET WELCOME MESSAGE TO DEFAULT**: Delete the custom signing welcome message so the account uses its default message.
+- **RESPOND TO ORGANIZATION ADMIN INVITE**: Accept or decline an organization admin or moderator invitation according to the decision parameter.
+- **RESPOND TO TEAM INVITE**: Accept or decline invitation to a team.
+- **Revoke Shared Contact Access**: Remove one user's access to a CRM contact previously shared with that user.
+- **SEARCH DOCUMENTS TEMPLATES AND GROUPS** (read-only): Search for documents, templates, and document groups.
+- **Send Bulk Template Invite**: Generate and invite multiple documents from one template using SignNow's documented CSV multipart workflow.
+- **SEND DOCUMENT GROUP BY EMAIL**: Irreversibly email a copy of one document group using the supplied delivery settings.
+- **SEND DOCUMENT GROUP INVITE**: Irreversibly send signing invitations for one document group using the supplied routing payload.
+- **SEND DOCUMENT INVITE**: Send a field, free-form, or payment-request invitation for a document using the officially documented request shape for that invitation…
+- **SEND DOCUMENT SMS INVITE**: Irreversibly send an SMS signing invitation for one document using the supplied invite payload.
+- **SEND FAX**: Send the fax described in the request body.
+- **SEND GROUP PAYMENT INVITE**: Send a document-group invite containing fixed or calculated payment requests.
+- **SEND SCHEDULED INVITE**: Irreversibly send an existing scheduled document or document-group invite now and return its delivery result.
+- **SET ALLOWED TEAM ADMIN**: Add one email address as an allowed team admin for an organization.
+- **SHARE CONTACT WITH OTHER USERS**: Grant the users in the request payload access to one existing CRM contact.
+- **SHARE DOCUMENT**: Grant document access according to the recipients and permissions in the sharing payload.
+- **SHARE DOCUMENT GROUP**: Grant access to one document group according to the supplied sharing settings.
+- **SHARE DOCUMENT GROUP TEMPLATE**: Grant access to one document group template according to the supplied sharing settings.
+- **Share Template**: Share a template once with another user as a sender or viewer.
+- **TERMINATE ACCESS TOKEN**: Irreversibly revoke the current access token so it can no longer authorize requests.
+- **UNASSIGN BRAND FROM APPLICATION**: Remove the direct brand assignment from an application.
+- **UNASSIGN BRAND FROM DOCUMENT**: Remove the direct brand assignment from a document.
+- **UNASSIGN BRAND FROM DOCUMENT GROUP**: Remove the direct brand assignment from a document group.
+- **UNASSIGN BRAND FROM ORGANIZATION**: Remove a brand as the default for one organization without deleting the brand itself.
+- **UNSHARE DOCUMENT FROM ALL USERS**: Revoke every user's shared access to one document in a single operation.
+- **UNSHARE DOCUMENT FROM USER**: Revoke one specified user's shared access to a document.
+- **UNSHARE DOCUMENT GROUP FROM ALL USERS**: Revoke every user's shared access to one document group in a single operation.
+- **UNSHARE DOCUMENT GROUP FROM USER**: Revoke one specified user's shared access to a document group.
+- **UNSHARE DOCUMENT GROUP TEMPLATE FROM USER**: Revoke one specified user's shared access to a document group template.
+- **UNSHARE GROUP TEMPLATE FROM ALL USERS**: Revoke every user's shared access to one document group template in a single operation.
+- **Update Brand**: Update the name of an existing brand.
+- **UPDATE CANCELED INVITE EMAIL BRANDING**: Apply canceled-invite email branding to one brand.
+- **UPDATE COMPLETED INVITE EMAIL BRANDING**: Apply completed-invite email branding to one brand.
+- **UPDATE CONTACT GROUP**: Update one CRM contact group's settings without changing its contacts.
+- **UPDATE CRM CONTACT**: Update one existing CRM contact from the supplied contact payload.
+- **UPDATE DOCUMENT**: Update a document's documented fields, including payment-request fields when supplied.
+- **Update Document Group**: Reorder documents or update the completion-email action for a document group that has no pending or fulfilled signature invites.
+- **UPDATE DOCUMENT GROUP INVITE**: Irreversibly update one step of a specific document group invite.
+- **UPDATE DOCUMENT GROUP RECIPIENTS**: Update recipient routing for one existing document group from the supplied payload.
+- **UPDATE DOCUMENT GROUP ROLE**: Change one user's role on a specific document group.
+- **UPDATE DOCUMENT GROUP TEMPLATE**: Update one document group template from the supplied template settings.
+- **UPDATE DOCUMENT GROUP TEMPLATE RECIPIENTS**: Update recipient routing for one document group template from the supplied payload.
+- **UPDATE DOCUMENT GROUP TEMPLATE ROLE**: Change one user's role on a specific document group template.
+- **UPDATE EMAIL LOGO FROM URL**: Add and update email logo for brand from URL.
+- **UPDATE EVENT SUBSCRIPTION**: Update one existing legacy event subscription's callback or event settings.
+- **UPDATE FREEFORM SIGNED CC EMAIL BRANDING**: Apply FreeForm-signed CC email branding to one brand.
+- **UPDATE INVITE CC EMAIL BRANDING**: Apply invite CC email branding to one brand.
+- **UPDATE INVITE COMPLETED CC EMAIL BRANDING**: Apply completed-invite CC email branding to one brand.
+- **UPDATE INVITE EMAIL BRANDING**: Apply invitation email branding to one brand.
+- **UPDATE ORGANIZATION ADMIN ROLE**: Change one user's administrator or moderator role within a specific organization.
+- **Update Organization Brand**: Update the name of one brand owned by an organization.
+- **UPDATE ORGANIZATION SETTINGS**: Update one named organization setting.
+- **UPDATE REASSIGN CC EMAIL BRANDING**: Apply reassignment CC email branding to one brand.
+- **UPDATE REASSIGN EMAIL BRANDING**: Apply reassignment email branding to one brand.
+- **UPDATE REMINDER EMAIL BRANDING**: Apply reminder email branding to one brand.
+- **Update Role For Template**: Change a user's role for a shared template as its owner.
+- **UPDATE SCHEDULED INVITE**: Reschedule an active document or document-group invite to a new future Unix timestamp.
+- **UPDATE SIGNING WELCOME MESSAGE**: Replace the connected account's signing welcome message with the supplied text.
+- **UPDATE STEP COMPLETED CC EMAIL BRANDING**: Apply completed-step CC email branding to one brand.
+- **UPDATE TEAM INVITE STATUS**: Update the status of a waiting team invite.
+- **Update Template Recipients**: Update a template's signer, viewer, approver, carbon-copy, completion, and branding routing details.
+- **Update User Details**: Update the connected SignNow user's first name, last name, or password.
+- **UPLOAD DOCUMENT**: Create a document from an uploaded file, optionally detecting simple text tags.
+- **UPLOAD DOCUMENT FROM URL**: Create a document by having SignNow fetch the source URL supplied in the request body.
+- **UPLOAD DOCUMENT WITH TAGS**: Create a document from a file while parsing optional complex text tags with a selected parse flow.
+- **UPLOAD ORGANIZATION LOGO**: Upload an image file as the organization logo.
+- **Upsert Document Group Signing Link**: Create a signing link for a document group, or update its existing signing link.
+- **UPSERT SEND INVITE BRANDING**: Create or replace one brand's send-invite email settings.

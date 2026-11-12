@@ -1,0 +1,330 @@
+# Trello
+
+A web-based, kanban-style, list-making application.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/trello/.
+
+## Actions
+
+- **Add board**: Creates a new trello board.
+- **Add card**: Creates a new card in a trello list.
+- **Add new list to board**: Creates a new list on a specified trello board, with options to copy an existing list, set its position, initial state…
+- **Delete card by ID**: Permanently deletes an archived trello card specified by its idcard.
+- **Get board by id** (read-only): Fetches comprehensive details for a specific trello board by its id.
+- **Get board by list ID** (read-only): Retrieves the board to which a specific trello list belongs.
+- **Get cards by board ID** (read-only): Retrieves cards from an existing trello board, allowing filtering and customization of fields for cards, attachments, and members.
+- **Get member by ID** (read-only): Fetches comprehensive information about a trello member, specified by id or username, including profile, activities, boards, cards,…
+- **Add a label to a board**: Creates a new label on an existing trello board.
+- **Add attachment to card**: Adds an attachment to a trello card by idcard.
+- **Add board power-up**: Enables the power-up specified by the 'value' parameter on the board.
+- **Add board star to member**: Stars a trello board for a member (does not remove or list stars), optionally at a specified position.
+- **Add card member by id**: Assigns a trello member to a specific trello card by card id (or short link) and member id.
+- **Add card to list**: Creates a new card in a trello list, which must be specified by an existing and accessible idlist.
+- **Add check item to checklist**: Adds a new check item to an existing checklist on a specific trello card.
+- **Add check item to checklist**: Adds a new check item to a specified trello checklist.
+- **Add checklist to board**: Creates a new, initially empty checklist with a given name on an existing and accessible trello board.
+- **Add checklist to card**: Creates a new checklist on a trello card, either by name or by copying from idchecklistsource, targeting an idcard or idboard.
+- **Add checklist to card via id**: Adds a checklist to a trello card.
+- **Add comment to card**: Adds a new text comment, which can include @mentions, to a trello card specified by its id.
+- **Add custom board background for a member**: Adds a new custom board background for a specified trello member.
+- **Add custom emoji for a member**: Adds a new custom emoji using an image file and a unique name to a trello member's account.
+- **Add custom sticker for member**: Uploads a custom sticker to a trello member's collection, if the member's plan allows custom stickers and respects associated limits.
+- **Add label to card**: Adds an existing label to a trello card.
+- **Add labels to card**: Adds a label to an existing trello card (specified by idcard), defining the label by name and either color or the overriding value (which…
+- **Add member board background**: Adds a new custom board background, from an image file, to a specified trello member's collection, making it available for their use but…
+- **Add member to card**: Adds a member to a trello card, appending their id to the card's list of member ids.
+- **Add member vote to card**: Casts a 'yes' vote for a specified member on a trello card.
+- **Add new list to board**: Creates a new, empty list on a specified, existing trello board, typically used as a column or category for organizing cards.
+- **Add organization logo**: Sets or updates the logo for a trello organization.
+- **Add saved search for member**: Creates a new saved search with a specified name, position, and query for a trello member.
+- **Add sticker to card**: Adds a sticker to a trello card, using a default sticker name (e.g., 'taco-cool') or a custom sticker id for the image, and allows…
+- **Add token webhook**: Creates a webhook for a trello token to monitor a trello model (idmodel) and send notifications to a callbackurl, which must be publicly…
+- **Archive all cards in list**: Archives all cards in a trello list.
+- **Convert checklist item to card**: Converts a checklist item into a new card (useful for promoting a subtask), which inherits some properties from the item.
+- **Create label on board**: Creates a new label with a specified name (required) and color on a trello board (idboard required).
+- **Create new session**: Creates or updates a trello user session, optionally linking it to a specific board for status updates and setting the user's activity…
+- **Create organization**: Creates a new trello organization (workspace) with a displayname (required), and optionally a description, website, and various…
+- **Delete action by id**: Deletes a specific trello action, such as a commentcard, by its id.
+- **Delete card action comment**: Deletes a specific comment action (identified by idaction) from a trello card (identified by idcard).
+- **Delete card attachment**: Permanently removes a specified attachment from a trello card.
+- **Delete card checklist**: Permanently deletes a specific checklist from a trello card.
+- **Delete card label by color**: Permanently removes a specific color label from an existing trello card identified by idcard, if the card has that label.
+- **Delete card sticker**: Permanently removes a specific sticker (identified by idsticker) from a trello card (identified by idcard).
+- **Delete checklist by id**: Permanently and irreversibly deletes a trello checklist and all its items using the idchecklist.
+- **Delete checklist item**: Permanently deletes a specific check item from a checklist on a trello card.
+- **Delete label by id**: Permanently deletes an existing label from a trello board by its id.
+- **Delete member board background**: Permanently deletes a specific custom board background belonging to the specified trello member.
+- **Delete member board star**: Removes a specific starred board (identified by idboardstar) from a trello member's (identified by idmember) list of favorites.
+- **Delete member custom sticker**: Deletes a custom sticker from a trello member's collection.
+- **Delete member from board**: Permanently removes a current member from a trello board, revoking their access.
+- **Delete member from organization**: Removes a member entirely from a specific trello organization, including from all its boards and cards.
+- **Delete member saved search**: Permanently deletes a specific saved search for a trello member, used when the search is outdated or no longer needed.
+- **Delete member vote from card**: Removes a member's vote from a trello card.
+- **Delete org associated domain**: Irreversibly deletes an associated email domain from a trello organization's preferences to update email domain restrictions for workspace…
+- **Delete org invite restriction**: Removes a previously set email domain invitation restriction for a trello organization.
+- **Delete organization by id**: Permanently deletes a trello organization and all its associated data.
+- **Delete organization logo by id**: Deletes an existing trello organization's custom logo, restoring its default and leaving other settings unchanged.
+- **Delete organization member by IDs**: Permanently removes a member from a trello organization by id, revoking all access to its content.
+- **Delete Power-Up from board**: Disables a power-up on a trello board using the board's id and the plugin id of a power-up currently enabled on that board.
+- **Delete token**: Deletes a specific trello api token, identified by its value in the path, permanently revoking its access.
+- **Delete token webhook by id**: Deletes an existing webhook, specified by its idwebhook, thereby stopping its notifications.
+- **Delete webhook by id**: Permanently deletes an existing trello webhook by its idwebhook, an irreversible action that stops future notifications.
+- **Dismiss member message**: Dismisses a specific one-time message for an existing trello member, preventing it from being displayed again.
+- **Fetch action member creator** (read-only): Retrieves details about the trello member who created the action with the given idaction.
+- **Fetch organization action by id** (read-only): Fetches the organization details for a given trello action, if the action has an associated organization.
+- **Generate board calendar key**: Generates a new calendar key for the trello board specified by idboard, invalidating any previous key for that board.
+- **Generate email key for board**: Generates a new email key for the trello board specified by idboard to enable or reset adding cards via email.
+- **Get a board label** (read-only): Fetches specified fields for a specific label on a trello board.
+- **Get a notification field** (read-only): Retrieves a specific field from a trello notification.
+- **Get a specified member's organizations** (read-only): Fetches organizations a specific trello member belongs to.
+- **Get action by ID** (read-only): Retrieves detailed information about a specific trello action by its id.
+- **Get action display by ID** (read-only): Retrieves a display-friendly representation of an existing and accessible trello action for ui/report purposes, providing…
+- **Get action entities by id** (read-only): Retrieves all entities (e.g., boards, lists, cards, members) associated with a specific, existing trello action id.
+- **Get action field by id** (read-only): Retrieves the value of a specific field (e.g., 'data', 'date', 'type') from a trello action using its unique id.
+- **Get action member creator field** (read-only): Gets information about the creator of a trello action.
+- **Get action's board field** (read-only): Retrieves a specified field from the trello board associated with the provided trello idaction.
+- **Get action's card field** (read-only): Retrieves a specific field from the trello card associated with the given action id.
+- **Get action's member by id** (read-only): Retrieves specified details of the trello member who performed the action identified by idaction.
+- **Get action's organization field** (read-only): Retrieves the value of a specific field for the organization associated with a trello idaction.
+- **Get an action's list** (read-only): Retrieves the trello list associated with a specific trello action id, for actions linked to a list.
+- **Get batch** (read-only): Executes multiple trello api get requests in a single batch operation for efficient bulk data retrieval.
+- **Get board actions by id** (read-only): Retrieves actions (e.g., card creations, comments) for a trello board by its id, useful for activity tracking.
+- **Get board by action id** (read-only): Retrieves details for the trello board associated with a specific action id, returning board information only.
+- **Get board by card id** (read-only): Fetches detailed information about the trello board to which a specific, existing, and accessible card belongs, using the card's id or…
+- **Get board by label ID** (read-only): Retrieves the trello board to which a given, valid trello label id (idlabel) belongs.
+- **Get board checklists** (read-only): Retrieves checklists (primarily structure/metadata, not detailed item history) from a trello board, with options to include associated…
+- **Get board field** (read-only): Retrieves the value of a single, specified field from a trello board.
+- **Get board field by card ID** (read-only): Retrieves a specific field from the board associated with a given trello card.
+- **Get board field by list ID** (read-only): Retrieves a specific field (e.g., 'name', 'desc', 'url') from the trello board associated with a given list id, useful when the board's id…
+- **Get board for a checklist** (read-only): Retrieves the trello board a specific checklist belongs to, using the checklist id.
+- **Get board labels by ID** (read-only): Fetches labels for a specified trello board, aiding in its organization or label management.
+- **Get board lists by filter** (read-only): Fetches lists by status from an accessible trello board.
+- **Get board members** (read-only): Retrieves members of a trello board, with options to filter the list and select specific member fields to return.
+- **Get board members filtered** (read-only): Retrieves members of a trello board using a specified filter, assuming the board exists and the filter is valid.
+- **Get board membership** (read-only): Retrieves a specific membership on a trello board by its id, optionally including member details.
+- **Get board organization** (read-only): Fetches information about the trello workspace (organization) to which a specific board belongs, returning details for the workspace only,…
+- **Get board organization field** (read-only): Retrieves a specific field from the organization associated with a trello board, useful for obtaining targeted details without fetching…
+- **Get board stars by board ID** (read-only): Retrieves board stars (user-marked favorites) for a specified trello board, where idboard must be an existing board.
+- **Get board's lists** (read-only): Retrieves lists from a specified trello board, with options to filter lists and include card details.
+- **Get card actions by id** (read-only): Retrieves the history of actions (e.g., comments, updates, moves) for a trello card specified by idcard.
+- **Get card attachments** (read-only): Retrieves attachments for a trello card.
+- **Get card by action ID** (read-only): Retrieves trello card details for a given idaction, which must be an action specifically linked to a card.
+- **Get card by ID** (read-only): Retrieves a trello card by its id or shortlink, with options to include related data like actions, attachments, members, and checklists.
+- **Get card check item states** (read-only): Gets the states (e.g., 'complete', 'incomplete') of checklist items on a trello card.
+- **Get card checklists by ID** (read-only): Retrieves all checklists, including their check items, for a trello card specified by its id or shortlink, if the card exists and is…
+- **Get card field by id** (read-only): Retrieves the value of a single, specified field from a trello card.
+- **Get card from board** (read-only): Retrieves details for a specific trello card by its id and its parent board's id, with options to customize returned fields for the card…
+- **Get card list field** (read-only): Fetches a specific field from the trello list that a given card belongs to.
+- **Get card members** (read-only): Retrieves members of a trello card, identified by its id or shortlink, allowing customization of which member fields are returned.
+- **Get card members voted** (read-only): Fetches members who voted on a trello card.
+- **Get card sticker by id** (read-only): Call this action to retrieve detailed properties (like image, position, rotation) of a specific sticker on a trello card.
+- **Get card stickers by ID card** (read-only): Retrieves all visual stickers (used for categorization, emphasis, or decoration) from an existing and accessible trello card.
+- **Get cards by filter from board** (read-only): Retrieves cards from a specified trello board, filtered by 'all', 'closed', 'none', 'open', or 'visible'.
+- **Get cards by member ID** (read-only): Retrieves cards for a trello member, specified by id or username, with options to filter cards and include related data like actions,…
+- **Get cards from a checklist by filter** (read-only): Retrieves cards from a specified trello checklist, filterable by card id or status (e.g., 'all', 'open'), noting the response is a single…
+- **Get cards in a list** (read-only): Fetches cards from a trello list by its id, with options to filter and customize the returned card data.
+- **Get check item by id** (read-only): Retrieves a specific check item from a checklist using the checklist id and check item id.
+- **Get checklist by ID** (read-only): Fetches a trello checklist by its idchecklist, requiring the id to refer to an existing checklist, and allows specifying which details of…
+- **Get checklist cards** (read-only): Retrieves cards associated with a specific, valid trello checklist id, allowing for filtering and customization of card and related entity…
+- **Get checklist field** (read-only): Retrieves a specific field's value from a trello checklist by its id and the field name, without loading the entire checklist object or…
+- **Get checklist items by ID** (read-only): Retrieves check items from an existing trello checklist, optionally filtering them and specifying which fields to return.
+- **Get checklist's board field** (read-only): Retrieves a specified field (e.g., 'name', 'desc') from the trello board associated with the given idchecklist.
+- **Get field of action's list** (read-only): Retrieves a specific field of the list associated with a trello action, returning only that single field's value.
+- **Get field of member's invited organization** (read-only): Get a specific field of an organization to which the member has a pending invitation.
+- **Get invited board members** (read-only): Retrieves a list of members invited to a specific trello board who have not yet joined.
+- **Get invited organization members** (read-only): Retrieves members invited to a trello organization who have not yet accepted their invitation, returning only data for pending invitations…
+- **Get label by id** (read-only): Retrieves detailed information for a specific trello label by its id, allowing selection of specific fields to return.
+- **Get list actions by ID** (read-only): Retrieves actions (like card movements or comments, newest first) for a trello list by its id, to track history or create activity logs.
+- **Get list by card ID** (read-only): Gets the trello list to which a specified card (which must exist) belongs.
+- **Get list by ID** (read-only): Retrieves a trello list by its unique id, optionally including details for its cards and parent board.
+- **Get list cards by filter** (read-only): Retrieves cards from a specific trello list, filtered by criteria like 'open', 'closed', or 'all'.
+- **Get list field value** (read-only): Fetches the value of a single, specified field from a trello list.
+- **Get member action field by ID** (read-only): Fetches a specific field of a member for a trello action, returning only one field per call for optimized data retrieval.
+- **Get member actions by ID** (read-only): Retrieves a list of actions for a specified trello member, allowing filtering by type, date, models, and control over output format and…
+- **Get Member Board Background** (read-only): Retrieves a specific custom board background for a trello member, using the member's id and the board background's id.
+- **Get member board backgrounds** (read-only): Fetches the board backgrounds for a specified trello member.
+- **Get member board star** (read-only): Retrieves detailed information about a specific board star (a trello board marked as a favorite) for a given trello member.
+- **Get member board stars** (read-only): Fetches only the boards a specific trello member has starred, identified by their id or username.
+- **Get member boards by id** (read-only): Retrieves board-level details (not lists/cards) for trello boards associated with a member id or username, allowing extensive…
+- **Get member boards with filter** (read-only): Retrieves a list of boards for a specific trello member, applying a filter such as 'open', 'starred', or 'all'.
+- **Get member cards by filter** (read-only): Retrieves cards for a trello member, applying a filter that must be a trello-recognized card filter.
+- **Get member cards from board** (read-only): Retrieves cards for a member on a board, with options to customize returned fields and related data.
+- **Get member creator of a notification** (read-only): Fetches the creator (member) of a trello notification, identified by idnotification, returning only creator details and respecting trello…
+- **Get member custom board background** (read-only): Retrieves metadata (e.g., brightness, urls, tiling status) for a specific custom board background of a trello member, not the image file…
+- **Get member custom emoji** (read-only): Retrieves a specific custom emoji by its id for a trello member, requiring that both the member and emoji exist and are associated.
+- **Get member custom emoji** (read-only): Retrieves all custom (user-specific, non-standard) emojis that a specified trello member has created or can access.
+- **Get member custom sticker** (read-only): Retrieves a specific custom sticker by id for a trello member.
+- **Get member custom stickers** (read-only): Retrieves a member's custom stickers, which are unique personalized stickers created by them, distinct from standard trello stickers.
+- **Get member deltas by ID** (read-only): Retrieves a chronological list of all changes (deltas) made by a specific trello member, including modifications to boards, lists, and…
+- **Get member field by ID** (read-only): Efficiently retrieves a specific field (e.g., fullname, username, bio) of a trello member using their id or username, without fetching the…
+- **Get member notifications by filter** (read-only): Retrieves a list of a trello member's notifications, filtered by specified types.
+- **Get member notifications by id** (read-only): Retrieves notifications for a trello member, specified by their id or username, with options for filtering and pagination.
+- **Get member organizations by filter** (read-only): Fetches a list of organizations a specific trello member belongs to, using a filter to narrow down the results.
+- **Get Member Saved Search** (read-only): Fetches the details of a specific saved search for a trello member.
+- **Get member saved searches** (read-only): Retrieves all saved search queries for a trello member.
+- **Get member's invited board field** (read-only): Retrieves a specific field from trello boards to which a member has been invited but not yet joined.
+- **Get member's invited boards** (read-only): Retrieves trello boards to which a specific member has been invited but has not yet joined.
+- **Get my board preferences** (read-only): Retrieves the authenticated user's preferences for a specific trello board.
+- **Get notification board by ID** (read-only): Gets the trello board associated with a given notification id, returning only board data and allowing selection of specific board fields.
+- **Get notification by ID** (read-only): Retrieves a specific trello notification by its id, optionally including related entities and specific fields for the notification and its…
+- **Get notification card field** (read-only): Retrieves a specific field of a trello card, using the id of a notification that is directly associated with that card.
+- **Get notification creator field** (read-only): Fetches a specific field of the member who created the specified trello notification.
+- **Get notification display by id** (read-only): Retrieves the information needed to display an existing trello notification, identified by its id, without altering the notification or…
+- **Get notification entities by id** (read-only): Retrieves trello entities (e.g., boards, cards, lists, members) linked to a specific notification id, focusing on the related entities…
+- **Get notification list field** (read-only): Efficiently retrieves a single specified field from a trello list linked to a notification, avoiding fetching the entire list.
+- **Get notification member by id** (read-only): Fetches details of the member (not the notification content itself) associated with a specific trello notification id.
+- **Get notification organization** (read-only): Retrieves the trello organization linked to a specific notification id.
+- **Get notification organization field** (read-only): Retrieves a specific field from the trello organization associated with a given notification, provided the notification is linked to an…
+- **Get notification's board field** (read-only): Retrieves a specific, valid field from the board associated with a trello notification.
+- **Get notification's card** (read-only): Retrieves card details (excluding notification, board, or list data) for a specified trello idnotification, which must exist and be linked…
+- **Get organization actions by ID** (read-only): Retrieves a log of actions (e.g., card creations, list movements, comments) for a specified trello organization, filterable by type, date…
+- **Get organization boards** (read-only): Fetches boards for a trello organization, specified by its id or name, with options to filter and customize returned data.
+- **Get organization boards by filter** (read-only): Fetches a list of boards belonging to a specific trello organization, filtered by a given criterion.
+- **Get organization by ID** (read-only): Retrieves detailed information about a specific trello organization, including optional related resources like members, boards, and…
+- **Get organization deltas by id** (read-only): Retrieves a log of recent modifications (deltas) for a trello organization, filterable by tags and supporting incremental fetching via an…
+- **Get organization field by id** (read-only): Retrieves the value of a single specified field for a trello organization idorg, ideal for efficiently fetching a specific piece of…
+- **Get organization invited member field** (read-only): Retrieves a specific field (e.g., fullname, username, email, status) for members with pending invitations to the trello organization…
+- **Get organization member cards** (read-only): Fetches all cards assigned to a specific member of a given trello organization.
+- **Get organization members by filter** (read-only): Fetches members of a specified trello organization using a filter like 'all', 'normal', 'admins', or 'owners'.
+- **Get organization membership** (read-only): Retrieves a specific membership within a trello organization, using their respective ids, to ascertain the member's role, status, or…
+- **Get organization memberships** (read-only): Fetches organization-level memberships for a trello organization, with options to filter members and include their details.
+- **Get sessions socket** (read-only): Establishes a websocket connection with trello for receiving real-time updates on trello entities.
+- **Get specific card attachment** (read-only): Retrieves a specific attachment from a trello card by card id and attachment id.
+- **Get token by token** (read-only): Retrieves information about a specific trello api token, allowing selection of specific fields and inclusion of webhook details.
+- **Get token field** (read-only): Retrieves a specific field from a trello token, provided the token is valid, has necessary permissions, and the field is a valid token…
+- **Get token member** (read-only): Retrieves information about the trello member associated with the current api token, allowing customization of the returned fields.
+- **Get token webhook by ID** (read-only): Retrieves detailed information for a specific trello webhook, identified by idwebhook, that is associated with the given token.
+- **Get type by id** (read-only): Retrieves the structural details of a trello object type (e.g., 'action', 'board', 'card') using its identifier.
+- **Get webhook by ID** (read-only): Retrieves the full configuration and status for a specific trello webhook by its unique id.
+- **Get webhook field by id** (read-only): Gets a specific field's value from a trello webhook, avoiding retrieval of the full webhook object.
+- **Get webhooks for token** (read-only): Retrieves all webhooks associated with a specific trello api token.
+- **List board memberships** (read-only): Retrieves trello board memberships (user roles and permissions) for auditing access or managing collaboration, returning only membership…
+- **Mark all notifications as read**: Marks all trello notifications for the authenticated user as read across all boards.
+- **Mark board as viewed**: Marks the trello board specified by idboard as viewed for the current user, exclusively updating its viewed status and potentially…
+- **Mark card notifications read**: Marks all notifications associated with a specific trello card as read.
+- **Modify board email position preference**: Updates a trello board's email position preference for new cards.
+- **Move all cards in list to board**: Moves all cards from a trello list to a *different* board.
+- **Move card to board**: Moves a trello card to a different board and, optionally, to a specific list on that new board, useful for reorganizing across projects or…
+- **Move checklist to card**: Moves a trello checklist to a new parent card.
+- **Move list to board**: Moves an existing trello list (identified by idlist) to an existing destination board (board id in value), optionally setting its new…
+- **Remove checklist item**: Permanently deletes a specific checklist item from a checklist on a trello card using their respective ids.
+- **Remove label from card**: Removes a specific label from a trello card.
+- **Remove member from card**: Removes a currently assigned member from a trello card, affecting only the card's member list and not the member's board membership or…
+- **Remove member's custom board background**: Permanently deletes a specific custom board background (identified by idboardbackground) associated with an existing trello member…
+- **Retrieve board deltas** (read-only): Retrieves recent changes (deltas) for a trello board by its id, allowing tracking of modifications since a specified update sequence…
+- **Retrieve board field by label id** (read-only): Retrieves a specified field (e.g., 'name', 'url') from the trello board associated with a given idlabel.
+- **Retrieve invited board member field** (read-only): Retrieves a specific field (e.g., email, username) for members who have been invited to a trello board but have not yet joined.
+- **Retrieve member custom board backgrounds** (read-only): Retrieves custom board backgrounds for a trello member, who must exist, using their id or username.
+- **Retrieve member s invited organizations** (read-only): Retrieves organizations a trello member has been invited to but has not yet accepted or declined.
+- **Retrieve member tokens** (read-only): Gets api token metadata for a trello member.
+- **Retrieve notification list by id** (read-only): Retrieves details of the trello list associated with a specific notification id.
+- **Retrieve notification member field** (read-only): Retrieves a specific field of the trello member associated with the given idnotification.
+- **Retrieve organization members by id** (read-only): Retrieves members of a trello organization (specified by id or name), with an option to include member activity if the organization is…
+- **Retrieve token member field** (read-only): Retrieves a specific field for the trello member associated with the provided api token.
+- **Search for members** (read-only): Searches trello members by name, username, or email, optionally scoped to a board or organization.
+- **Search Trello** (read-only): Searches trello content (e.g., boards, cards, members) within specified organizations using a query and customizable result fields.
+- **Update a board's blue label name**: Sets the name of the blue label for a trello board.
+- **Update a checklist item**: Updates a check item's attributes (name, position, state) or moves it to a different checklist on the same card, requiring the card id,…
+- **Update a token's webhook**: Updates an existing webhook's description, callback url, or monitored trello model id, using the api token in the path to identify the…
+- **Update action text**: Updates the text field of a specific trello comment action, identified by idaction.
+- **Update action text**: Updates the text of an existing trello action (e.g., a comment or card update) identified by idaction.
+- **Update an organization member**: Adds/updates a member in a specified trello organization (idorg).
+- **Update an organization's associated domain preferences**: Updates or removes the google workspace domain associated with a trello organization, often to configure features like sso or automatic…
+- **Update an organization's external members access**: Updates the 'externalmembersdisabled' preference for a trello organization to control whether non-members can be added to its boards.
+- **Update board background**: Updates the cosmetic background preference for a specific trello board.
+- **Update board by ID**: Updates attributes (e.g., name, description, status, preferences) of an existing trello board identified by idboard.
+- **Update board calendar feed enabled status**: Updates the 'calendarfeedenabled' preference for a trello board, which, when enabled, makes board cards with due dates accessible via an…
+- **Update board card aging preference**: Updates the card aging visual preference to 'pirate' or 'regular' mode for a specified trello board.
+- **Update board card cover preference**: Updates the preference on a specific trello board for whether existing card covers are displayed.
+- **Update board closed status**: Archives (closes) an active trello board or reopens a previously archived board.
+- **Update board comment preferences**: Changes the permission settings for who can add comments to cards on a specific trello board, without affecting other board settings.
+- **Update board description**: Updates the description of a specified trello board.
+- **Update board email list preference**: Sets or disables the default trello list for new cards created via email on a specific board.
+- **Update board invitation preferences**: Updates who can invite new members ('admins' or 'members') to a specific trello board.
+- **Update board label name red**: Updates the name of the red label on a specified trello board, without affecting its color or other labels.
+- **Update board label orange name**: Updates the name of the orange label for a specified trello board, affecting only the label's name, not its color or associated cards.
+- **Update board member attributes**: Updates a current member's email, full name, or role (admin, normal, or observer) on a specific trello board.
+- **Update board members**: Adds or updates a member's role on a specific trello board, typically requiring the member's email and a membership type.
+- **Update board membership**: Updates a user's role (e.g., admin, normal, observer) on a specific trello board or retrieves updated member details, requiring existing…
+- **Update board name**: Updates the name of an existing trello board, identified by idboard.
+- **Update board organization**: Moves an existing trello board to a specified, existing trello organization, which can affect the board's visibility and member access.
+- **Update board prefs permission level**: Updates the permission level preference (e.g., 'private' or 'public') for a trello board, identified by idboard, if the board exists and…
+- **Update board self-join preference**: Updates a board's 'selfjoin' preference, determining if members can join freely or must be invited.
+- **Update board show list guide preference**: Updates the 'show list guide' preference for a specified trello board, affecting visibility for all users of that board.
+- **Update board sidebar actions preferences**: Updates the current user's preference for the visibility of sidebar board actions on a specific trello board.
+- **Update board sidebar members preference**: Updates the authenticated user's preference for showing or hiding members in a specific trello board's sidebar, affecting only the current…
+- **Update board sidebar visibility**: Updates the authenticated user's personal preference for showing or hiding the sidebar on a specific trello board.
+- **Update board star position**: Updates the display position of a specific starred board for a trello member (referenced by idmember or 'me') using its idboardstar,…
+- **Update board subscription status**: Updates the authenticated user's subscription status (subscribe/unsubscribe for notifications) for a specified trello board, to which the…
+- **Update board voting preferences**: Sets who can vote on cards for an existing trello board, changing only the voting preferences for all cards on the board.
+- **Update board's green label name**: Updates the name of the green label for a specified trello board.
+- **Update card attachment cover**: Sets or removes the attachment cover for an existing trello card, using a specified image attachment id from that card or none to remove…
+- **Update card attributes**: Updates an existing trello card's attributes like name, description, due date, members, labels, position, or archives/unarchives it,…
+- **Update card checklist item state**: Updates the state of a specific check item on a trello card's checklist, only affecting its completion status and no other properties.
+- **Update card closed status by id**: Updates the 'closed' status of an existing trello card.
+- **Update card comment**: Updates the text for a given comment action (idaction) on a specified card (idcard), affecting only the text content.
+- **Update card description**: Updates or clears the entire description of an existing trello card.
+- **Update card due date**: Updates the due date of a specific trello card.
+- **Update card labels**: Updates labels on an existing trello card.
+- **Update card list ID**: Moves a trello card to a different list on the same trello board.
+- **Update card name**: Updates the name of an existing trello card, identified by its id or shortlink.
+- **Update card position**: Updates a trello card's position within its list to 'top', 'bottom', or a specified 1-indexed positive integer.
+- **Update card sticker attributes**: Updates an existing sticker's image, position (top, left coordinates), or stacking order (zindex) on a specific trello card.
+- **Update card subscribed status**: Updates the user's subscription status for a trello card, if the card exists and is accessible.
+- **Update checklist**: Updates an existing trello checklist, allowing modification of its name, position, associated card/board, or copying items from a source…
+- **Update checklist item name in card**: Updates the name of a specific check item on a checklist within a trello card, provided the card, checklist, and check item all exist.
+- **Update checklist item position**: Updates the position of a check item within a checklist on a trello card.
+- **Update checklist name**: Updates the name of an existing trello checklist.
+- **Update checklist position by id**: Updates the position of an existing checklist on a trello card.
+- **Update label attributes**: Updates an existing trello label's attributes (color, name, or associated board) by its id.
+- **Update label color**: Updates the color of an existing trello label, or removes its color if 'null' is specified for the value.
+- **Update label name**: Updates the name of an existing trello label, identified by idlabel.
+- **Update list attributes**: Updates attributes of an existing trello list, such as name, position, archive status, board, or copies cards from another list, provided…
+- **Update list name**: Updates the name of an existing trello list, identified by its id.
+- **Update list position**: Changes a trello list's order on a board to 'top', 'bottom', or a specified numeric position, affecting only its position.
+- **Update list subscription**: Updates the subscription status for a trello list, allowing the user to subscribe or unsubscribe to control notifications.
+- **Update lists closed status**: Updates whether an existing trello list is closed (archived).
+- **Update member avatar source**: Updates the avatar source for a specified trello member.
+- **Update member bio**: Updates the bio of a specified trello member.
+- **Update Member Board Background**: Updates an existing board background's properties (brightness, image file, or tiling) for a specified trello member, using their id and…
+- **Update Member Board Star**: Updates an existing board star for a member, allowing changes to the target board (must be a valid, accessible board id if specified) or…
+- **Update member by ID**: Updates an existing trello member's profile information, preferences, or username.
+- **Update member color blind preference**: Updates a trello member's color blind preference, which only changes their specific display without affecting others.
+- **Update member full name by id**: Updates the full name for a trello member, identified by their valid id or username.
+- **Update member initials**: Updates the initials for a specified trello member, identified by their id or username.
+- **Update member locale preference**: Updates a trello member's locale preference.
+- **Update member saved search**: Updates an existing trello member's saved search (name, position, or query) identified by idmember and idsavedsearch.
+- **Update member saved search name**: Updates a trello member's saved search display name (not its criteria), identified by idmember and idsavedsearch.
+- **Update member saved search position**: Updates the position of a specified saved search for a trello member.
+- **Update member saved search query**: Updates the query string of an existing saved search for a trello member.
+- **Update Member Summary Interval**: Updates a trello member's preference for the frequency of email summary notifications.
+- **Update member username**: Updates the username for an existing trello member, identified by their id or current username.
+- **Update member's custom board background**: Updates a specific existing custom board background for a trello member.
+- **Update my board sidebar activity preference**: Sets the current user's preference for displaying or concealing the sidebar activity feed on an accessible trello board.
+- **Update notification status by id**: Updates only the 'unread' status of a specific trello notification.
+- **Update notification unread status**: Marks an existing and accessible trello notification as read or unread.
+- **Update org member deactivation status**: Updates a member's deactivation status in an organization.
+- **Update org membership**: Updates a trello organization member's type to 'admin', 'normal', or 'observer', using the organization and membership ids.
+- **Update organization attributes**: Updates various attributes of an existing trello organization, identified by idorg.
+- **Update organization board visibility preference**: Updates the preference controlling who can set board visibility to 'organization-visible' within an existing trello organization.
+- **Update organization description**: Updates or clears the description for an existing trello organization, identified by its id or name, to a new string up to 16384 characters.
+- **Update organization display name**: Updates the display name of a trello organization, identifiable by its current id or name (idorg), to the new value.
+- **Update organization Google Apps version**: Updates the google apps integration version preference for a specified trello organization, to manage compatibility or features related to…
+- **Update organization invite restriction**: Modifies a trello organization's invitation policy using an email, domain, or keyword rule, affecting only future invites, not existing…
+- **Update organization member**: Updates a member's details (email, full name, or type) in a trello organization, applying changes only to the fields provided.
+- **Update organization name by id**: Updates the unique programmatic identifier (used in urls and api interactions) for an existing trello organization.
+- **Update organization permission level**: Updates a trello organization's permissionlevel preference, determining if it's members-only or link-accessible, and affecting new board…
+- **Update organization private board visibility restriction**: Updates the organization's preference controlling who is permitted to change the visibility of its private boards.
+- **Update organization public board visibility**: Updates the restriction on who can set board visibility to public for a specified trello organization.
+- **Update organization website**: Updates the website url for a specified trello organization.
+- **Update purple label name**: Updates the name of the purple label on a trello board specified by idboard.
+- **Update session by id**: Updates a trello user session's viewed board id or status.
+- **Update session status by ID**: Updates the status of an existing trello session.
+- **Update webhook active status**: Updates the active status ('true' or 'false') of an existing trello webhook specified by idwebhook, without affecting other properties.
+- **Update webhook callback url**: Updates the callback url for a specific trello webhook.
+- **Update webhook configuration**: Updates an existing trello webhook's configuration, avoiding the need to delete and recreate it for modifications.
+- **Update webhook description**: Updates the description of an existing trello webhook.
+- **Update webhook idModel**: Updates the idmodel (the monitored trello entity like a board, list, or card) for an active webhook idwebhook to the new model id value.
+- **Update webhooks**: Updates an existing trello webhook's description, active status, callback url, or monitored model id.
+- **Update yellow label name on board**: Updates the name of a board's yellow label.
+- **Upload member avatar**: Updates a trello member's avatar using a base64-encoded image.

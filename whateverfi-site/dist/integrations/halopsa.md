@@ -1,0 +1,93 @@
+# HaloPSA
+
+Create, inspect, list, and delete HaloPSA tickets, with customer, site, user, agent, asset, and ticket-routing lookups.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/halopsa/.
+
+## Actions
+
+- **Create Ticket**: Create one HaloPSA ticket from a summary and optional details and routing IDs.
+- **Delete Agent**: Request deletion of one HaloPSA agent by numeric ID.
+- **Delete Appointment**: Delete one HaloPSA appointment by numeric ID.
+- **Delete Asset**: Delete one HaloPSA asset by numeric ID.
+- **Delete Attachment**: Delete one HaloPSA attachment by numeric ID.
+- **Delete Client Contract**: Delete one HaloPSA client contract by numeric ID.
+- **Delete Customer**: Delete one HaloPSA customer by numeric ID.
+- **Delete Invoice**: Delete one HaloPSA invoice by numeric ID.
+- **Delete Item**: Delete one HaloPSA inventory or service item by numeric ID.
+- **Delete Knowledge Base Article**: Delete one HaloPSA knowledge-base article by numeric ID.
+- **Delete Opportunity**: Delete one HaloPSA sales opportunity by numeric ID.
+- **Delete Project**: Delete one HaloPSA project by numeric ID.
+- **Delete Quotation**: Delete one HaloPSA quotation by numeric ID.
+- **Delete Report**: Delete one HaloPSA report definition by numeric ID.
+- **Delete Site**: Delete one HaloPSA customer site by numeric ID.
+- **Delete Status**: Delete one HaloPSA ticket-status configuration record by numeric ID.
+- **Delete Supplier**: Delete one HaloPSA supplier by numeric ID.
+- **Delete Team**: Delete one HaloPSA team by numeric ID.
+- **Delete Ticket**: Delete one HaloPSA ticket by numeric ID, optionally recording a reason.
+- **Delete Ticket Action**: Delete one HaloPSA ticket action by numeric action ID and its parent ticket ID.
+- **Delete Ticket Type**: Delete one HaloPSA ticket-type configuration record by numeric ID.
+- **Delete User**: Delete one HaloPSA end user by numeric ID.
+- **Get Agent** (read-only): Return one HaloPSA agent by numeric ID.
+- **Get Appointment** (read-only): Return one HaloPSA appointment by numeric ID, optionally with extra detail objects.
+- **Get Asset** (read-only): Return one HaloPSA asset by numeric ID, optionally including activity, allowed statuses, details, diagram data, and hierarchy data.
+- **Get Attachment** (read-only): Download one HaloPSA attachment by numeric ID.
+- **Get Client Contract** (read-only): Return one HaloPSA client contract by numeric ID, with optional expanded billing, asset, user, schedule, and period details.
+- **Get Current Agent** (read-only): Return a compact identity for the HaloPSA agent authorized by the current connection, without claims or access-control records.
+- **Get Customer** (read-only): Return one HaloPSA customer by numeric ID, with optional expanded, activity, ticket-type, period, and pre-pay data.
+- **Get Invoice** (read-only): Return one HaloPSA invoice by numeric ID, optionally with extra detail objects.
+- **Get Item** (read-only): Return one HaloPSA inventory or service item by numeric ID, optionally with expanded details and tenant-specific accounting data.
+- **Get Knowledge Base Article** (read-only): Return one HaloPSA knowledge-base article by numeric ID, optionally with expanded details and language or organisation context.
+- **Get Opportunity** (read-only): Return one HaloPSA sales opportunity by numeric ID, optionally with extra provider detail objects.
+- **Get Project** (read-only): Return one HaloPSA project by numeric ID, optionally with expanded details.
+- **Get Quotation** (read-only): Return one HaloPSA quotation by numeric ID, optionally with expanded details or portal-view context.
+- **Get Report** (read-only): Return one HaloPSA report definition by numeric ID.
+- **Get Site** (read-only): Return one HaloPSA customer site by numeric ID, with optional customer, permission, activity, detail, setup, and ticket-type context.
+- **Get Status** (read-only): Return one HaloPSA ticket-status configuration record by numeric ID, optionally including its detailed configuration.
+- **Get Supplier** (read-only): Return one HaloPSA supplier by numeric ID, optionally including expanded details.
+- **Get Team** (read-only): Return one HaloPSA team by numeric ID, optionally including agent details and expanded team objects.
+- **Get Ticket** (read-only): Return one HaloPSA ticket by numeric ID, with core assignment and classification fields and optional expanded details and most recent…
+- **Get Ticket Action** (read-only): Get one HaloPSA ticket action by numeric action ID, optionally providing its ticket ID and requesting expanded details.
+- **Get Ticket Type** (read-only): Return one HaloPSA ticket type by numeric ID.
+- **Get User** (read-only): Return one HaloPSA end user by numeric ID, with optional customer, site, ticket-type, opportunity, supplier, activity, billing, asset, and…
+- **List Agents** (read-only): Return compact HaloPSA agent records for assignment lookup, optionally filtered by name, email address, telephone number, or team ID.
+- **List Appointments** (read-only): Return one page of HaloPSA appointments, optionally filtered by customer, ticket, date range, or search text.
+- **List Assets** (read-only): Return one page of HaloPSA assets, optionally filtered by customer, site, user, asset type, search text, and active state.
+- **List Attachments** (read-only): List HaloPSA attachment metadata, optionally for one ticket.
+- **List Client Contracts** (read-only): Return one page of HaloPSA client contracts, optionally filtered by customer, site, search text, and active state.
+- **List Customers** (read-only): Return one page of HaloPSA customers, optionally filtered by name and active state.
+- **List Invoices** (read-only): Return one page of HaloPSA invoices, optionally filtered by date, customer, site, ticket, user, or search text.
+- **List Items** (read-only): Return one page of HaloPSA inventory and service items with the provider's documented status, asset, supplier, accounting, stock, search,…
+- **List Knowledge Base Articles** (read-only): Return one page of HaloPSA knowledge-base articles using the provider's documented status, access, relationship, language, search, and…
+- **List Opportunities** (read-only): Return one page of HaloPSA sales opportunities, optionally filtered by customer, assignment, status, date range, or search text.
+- **List Priorities** (read-only): Return HaloPSA policy-priority mappings used to classify tickets, optionally filtered by SLA policy ID.
+- **List Projects** (read-only): Return one page of HaloPSA projects.
+- **List Quotations** (read-only): Return HaloPSA quotations with customer, state, approval, processing, text, attachment, ordering, and page filters.
+- **List Reports** (read-only): Return one page of HaloPSA report definitions with the provider's documented access, chart, customer, publication, ordering, group,…
+- **List Sites** (read-only): Return one page of HaloPSA customer sites, optionally filtered by customer, name, and active state.
+- **List Statuses** (read-only): Return HaloPSA ticket statuses, optionally constrained to a ticket type or a specific ticket's valid context.
+- **List Suppliers** (read-only): Return one page of HaloPSA suppliers with the provider's documented status, integration, ordering, search, and top-level filters.
+- **List Teams** (read-only): Return HaloPSA teams available for ticket assignment, optionally limited to the current agent's teams or a department.
+- **List Ticket Actions** (read-only): List HaloPSA ticket actions, optionally filtering by occurrence date range and whether attachment details are included.
+- **List Ticket Types** (read-only): Return ticket types available for ticket classification, optionally limited to types that agents can create for a customer.
+- **List Tickets** (read-only): Return one page of HaloPSA tickets, optionally filtered by customer, site, user, status, assigned agent, or text search.
+- **List Users** (read-only): Return one page of HaloPSA end users, optionally filtered by customer, site, name, and active state.
+- **Upsert Agent**: Create or update HaloPSA agent profiles, team memberships, account enablement, administrator access, working hours, licensing, costs,…
+- **Upsert Appointment**: Create or update HaloPSA appointments in one array request.
+- **Upsert Asset**: Create or update one or more HaloPSA assets.
+- **Upsert Client Contract**: Create or update one or more HaloPSA client contracts.
+- **Upsert Customer**: Create or update one or more HaloPSA customers in the endpoint's array body.
+- **Upsert Invoice**: Create or update HaloPSA invoice records and their typed line items.
+- **Upsert Item**: Create or update HaloPSA inventory and service items in one array request.
+- **Upsert Knowledge Base Article**: Create or update one or more HaloPSA knowledge-base articles through POST /KBArticle.
+- **Upsert Opportunity**: Upsert HaloPSA sales opportunities.
+- **Upsert Project**: Create or update HaloPSA project records, typed milestones, and tags.
+- **Upsert Quotation**: Create or update HaloPSA quotation records and typed quotation lines.
+- **Upsert Report**: Create or update HaloPSA report definitions in one array request.
+- **Upsert Site**: Create or update one or more HaloPSA customer sites.
+- **Upsert Status**: Create or update HaloPSA ticket statuses in one array request.
+- **Upsert Supplier**: Create or update one or more HaloPSA suppliers through POST /Supplier.
+- **Upsert Team**: Create or update HaloPSA teams in one array request.
+- **Upsert Ticket Action**: Create or update ticket notes and work-log actions, optionally recording time or applying a ticket status, without sending email.
+- **Upsert Ticket Type**: Create or update HaloPSA ticket types in one array request.
+- **Upsert User**: Create or update one or more HaloPSA end-user records without sending welcome email.

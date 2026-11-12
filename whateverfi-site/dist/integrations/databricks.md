@@ -1,0 +1,455 @@
+# Databricks
+
+Databricks is the lakehouse company, helping data teams solve the world's toughest problems with unified analytics platform for big data and AI.
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/databricks/.
+
+## Actions
+
+- **Cancel Databricks Job Run**: Cancel a Databricks job run asynchronously.
+- **Cancel Databricks Job Run**: Cancel a Databricks job run asynchronously.
+- **Create Databricks Cluster**: Create a new Databricks Spark cluster with specified configuration.
+- **Create IAM Group V2**: Create a new group in Databricks workspace using SCIM v2 protocol.
+- **Create IAM User V2**: Create a new user in Databricks workspace using SCIM v2 protocol.
+- **Create ML Experiment**: Create a new MLflow experiment for tracking machine learning runs and models.
+- **Create MLflow Experiment Run**: Create a new MLflow run within an experiment for tracking machine learning execution.
+- **Create Provisioned Throughput Endpoint**: Create a provisioned throughput serving endpoint for AI models in Databricks.
+- **Create SQL Query**: Create a saved SQL query object in Databricks.
+- **Create Workspace Repo**: Create and optionally checkout a Databricks Repo linking a Git repository to the workspace.
+- **Delete Databricks Cluster**: Terminate a Databricks Spark cluster asynchronously.
+- **Delete Databricks Job Run**: Delete a non-active Databricks job run from the system.
+- **Delete IAM User V2**: Delete a user from Databricks workspace using SCIM v2 protocol.
+- **Delete SQL Query**: Delete a Databricks SQL query (soft delete to trash).
+- **Delete SQL Warehouse**: Delete a SQL warehouse from the Databricks workspace.
+- **Edit Databricks Cluster**: Edit an existing Databricks cluster configuration.
+- **Edit SQL Warehouse**: Update the configuration of an existing SQL warehouse.
+- **Export Workspace Object**: Export a workspace object (notebook, dashboard, or file) as file content or base64-encoded string.
+- **Get Catalog Details**: Retrieve details of a specific catalog in Unity Catalog.
+- **Get Catalog Schema**: Retrieve details of a specific schema from Unity Catalog metastore.
+- **Get Catalog Table Details**: Retrieve comprehensive metadata about a table from Unity Catalog metastore.
+- **Get Cluster Information** (read-only): Retrieve comprehensive metadata and configuration details for a Databricks cluster by its unique identifier.
+- **Get Current Metastore Assignment**: Retrieve the current metastore assignment for the workspace being accessed.
+- **Get Current User Information**: Retrieve details about the currently authenticated user or service principal making the API request.
+- **Get Databricks Job Details**: Retrieve detailed information about a single Databricks job.
+- **Get Databricks Job Run Details** (read-only): Retrieve complete metadata for a single Databricks job run.
+- **Get Databricks Job Run Output**: Retrieve output and metadata of a single Databricks task run.
+- **Get Databricks Job Run Output**: Retrieve output and metadata of a single Databricks task run.
+- **Get Group by ID** (read-only): Retrieve information for a specific group in Databricks workspace by its ID.
+- **Get IAM Permission Levels** (read-only): Retrieve available permission levels for a Databricks workspace object.
+- **Get IAM Permissions**: Retrieve IAM permissions for a Databricks workspace object.
+- **Get IAM User V2**: Retrieve detailed information for a specific user by ID from Databricks workspace using SCIM v2 protocol.
+- **Get IAM Users V2 Permissions** (read-only): Retrieve permissions for password-based authentication.
+- **Get Job Permission Levels** (read-only): Retrieve available permission levels for a Databricks job.
+- **Get Job Policy Compliance** (read-only): Retrieve policy compliance status for a specific job.
+- **Get Job Run By ID**: Retrieve metadata of a single Databricks job run by ID.
+- **Get Metastore Details**: Retrieve detailed information about a specific Unity Catalog metastore by its ID.
+- **Get ML Experiment** (read-only): Retrieve metadata for an MLflow experiment by ID.
+- **Get MLflow Run** (read-only): Retrieve complete information about a specific MLflow run including metadata, metrics, parameters, tags, inputs, and outputs.
+- **Get Secret Value** (read-only): Get a secret value from a Databricks secret scope.
+- **Get Serving Endpoint Details**: Retrieve detailed information about a specific serving endpoint by name.
+- **Get Serving Endpoint OpenAPI Spec** (read-only): Retrieve the OpenAPI 3.1.0 specification for a serving endpoint.
+- **Get Serving Endpoint Permission Levels** (read-only): Retrieve available permission levels for a Databricks serving endpoint.
+- **Get SQL Object Permissions**: Retrieve the access control list for a specified SQL object (alerts, dashboards, queries, or data_sources).
+- **Get SQL Query Details**: Retrieve detailed information about a specific SQL query by its UUID.
+- **Get SQL Warehouse Details**: Retrieve detailed information about a specific SQL warehouse by its ID.
+- **Get SQL Warehouse Permission Levels** (read-only): Retrieve available permission levels for a Databricks SQL warehouse.
+- **Get SQL Warehouse Permissions** (read-only): Retrieve permissions for a Databricks SQL warehouse.
+- **Get User by ID** (read-only): Retrieve information for a specific user in Databricks workspace by their ID.
+- **Get Workspace IAM Group V2**: Retrieve details of a specific group by ID from Databricks workspace using SCIM v2 protocol.
+- **Get Workspace Warehouse Config** (read-only): Retrieve workspace-level SQL warehouse configuration settings.
+- **Import Workspace Object**: Import a notebook or file into the Databricks workspace.
+- **List All Databricks Jobs (API 2.0)** (read-only): List all jobs in the Databricks workspace using API 2.0.
+- **List Catalog Schemas** (read-only): Retrieve all schemas in a specified catalog from Unity Catalog.
+- **List Catalog Tables** (read-only): List all tables in a Unity Catalog schema with pagination support.
+- **List Clusters** (read-only): List all pinned, active, and recently terminated Databricks clusters.
+- **List Compute Cluster Node Types** (read-only): List all supported Spark node types available for cluster launch in the workspace region.
+- **List Delta Live Tables Pipelines** (read-only): List Delta Live Tables pipelines in the workspace.
+- **List Instance Pools** (read-only): Retrieve a list of all active instance pools in the Databricks workspace with their statistics and configuration.
+- **List Model Serving Endpoints** (read-only): Retrieve all serving endpoints for model serving in the workspace.
+- **List Node Types** (read-only): List all supported node types available for cluster launch in the workspace.
+- **List Repos** (read-only): List Git repos that the calling user has Manage permissions on.
+- **List Secret Scopes** (read-only): List all secret scopes available in the Databricks workspace.
+- **List Secrets** (read-only): List all secret keys stored in a Databricks secret scope.
+- **List SQL Warehouses** (read-only): List all SQL warehouses in the Databricks workspace.
+- **List Unity Catalogs** (read-only): Retrieve a list of all catalogs in the Unity Catalog metastore.
+- **List Users** (read-only): List all users in a Databricks workspace using SCIM 2.0 protocol.
+- **List Vector Search Endpoints** (read-only): List all vector search endpoints in the Databricks workspace.
+- **List Workspace Groups** (read-only): List all groups in the Databricks workspace using SCIM v2 protocol.
+- **Put Secret in Scope**: Insert or update a secret in a Databricks secret scope.
+- **Set IAM Permissions**: Set IAM permissions for a Databricks workspace object, replacing all existing permissions.
+- **Set SQL Object Permissions**: Set access control list for SQL objects (alerts, dashboards, queries, or data_sources).
+- **Start SQL Warehouse**: Start a stopped Databricks SQL warehouse asynchronously.
+- **Submit Databricks Job Run**: Submit a one-time Databricks job run without creating a persistent job.
+- **Submit One-Time Run**: Submit a one-time run without creating a job.
+- **Update Catalog Table**: Update Unity Catalog table properties.
+- **Update Databricks Job By ID**: Completely reset all settings for a Databricks job.
+- **Update SQL Query**: Update a saved SQL query object in Databricks using partial field updates.
+- **Update Workspace Repo**: Update a workspace repo to a different branch or tag.
+- **Update Workspace Repo Permissions**: Incrementally update permissions on a Databricks workspace repository.
+- **Add Block to DBFS Stream**: Append a block of data to an open DBFS stream.
+- **Add Compute Instance Profile**: Register an instance profile in Databricks for cluster launches.
+- **Add Member to Security Group**: Add a user or group as a member to a Databricks security group.
+- **Assign Metastore to Workspace**: Assign a Unity Catalog metastore to a workspace.
+- **Batch Create Access Requests**: Batch create access requests for Unity Catalog permissions.
+- **Batch Get Marketplace Consumer Listings** (read-only): Batch get published listings from the Databricks Marketplace.
+- **Batch Get Marketplace Consumer Providers** (read-only): Batch get providers from the Databricks Marketplace with visible listings.
+- **Cancel All Databricks Job Runs**: Cancel all active runs of a Databricks job asynchronously.
+- **Cancel SQL Statement Execution**: Cancel an executing SQL statement on a Databricks warehouse.
+- **Check Table Exists**: Check if a table exists in Unity Catalog metastore.
+- **Create Catalog Connection**: Create a new Unity Catalog connection to external data sources.
+- **Create Catalog Credential**: Create a new credential for Unity Catalog access to cloud services.
+- **Create Clean Room**: Create a new Databricks Clean Room for secure data collaboration with specified collaborators.
+- **Create Clean Room Auto-Approval Rule**: Create a new auto-approval rule for a Databricks Clean Room.
+- **Create Compute Cluster Policy**: Create a new cluster policy with prescribed settings for controlling cluster creation.
+- **Create Compute Instance Pool**: Create a new Databricks instance pool with specified configuration.
+- **Create Data Quality Monitor**: Create a data quality monitor for a Unity Catalog Delta table.
+- **Create Database Catalog**: Create a new database catalog in Databricks.
+- **Create Database Instance**: Create a Lakebase database instance with specified configuration.
+- **Create Databricks App**: Create a new Databricks app with specified configuration.
+- **Create DBFS File Stream**: Open a stream to write to a DBFS file and returns a handle.
+- **Create External Location**: Create a new Unity Catalog external location combining a cloud storage path with a storage credential.
+- **Create Genie Message**: Create a message in a Genie conversation and get AI-generated responses.
+- **Create Genie Space**: Create a new Genie space from a serialized payload for programmatic space management.
+- **Create Global Init Script**: Create a new global initialization script in Databricks workspace.
+- **Create IAM Service Principal V2**: Create a new service principal in Databricks workspace using SCIM v2 protocol.
+- **Create IP Access List**: Create a new IP access list for workspace access control.
+- **Create Lakeview Dashboard**: Create a new Lakeview dashboard in Databricks.
+- **Create Legacy SQL Alert**: Create a legacy SQL alert that periodically runs a query and notifies when conditions are met.
+- **Create Legacy SQL Query**: Create a new SQL query definition using the legacy API.
+- **Create Legacy SQL Query Visualization**: Create a visualization in a SQL query using the legacy API.
+- **Create Logged Model**: Create a new logged model in MLflow that ties together model metadata, parameters, metrics, and artifacts.
+- **Create Marketplace Consumer Installation**: Create a marketplace consumer installation for Databricks Marketplace listings.
+- **Create Marketplace Provider Listing**: Create a new listing in Databricks Marketplace for data providers.
+- **Create Metastore**: Create a new Unity Catalog metastore.
+- **Create ML Feature Store Online Store**: Create a Databricks Online Feature Store for real-time feature serving.
+- **Create ML Forecasting Experiment**: Create a new AutoML forecasting experiment for time series prediction.
+- **Create Notification Destination**: Create a notification destination for alerts and jobs.
+- **Create OAuth Service Principal Secret**: Create an OAuth secret for service principal authentication.
+- **Create Personal Access Token**: Create a personal access token (PAT) for Databricks API authentication.
+- **Create Provider Analytics Dashboard**: Create a provider analytics dashboard for monitoring Databricks Marketplace listing metrics.
+- **Create Quality Monitor V2**: Create a quality monitor for Unity Catalog table.
+- **Create Secret Scope**: Create a new secret scope in Databricks workspace.
+- **Create Share**: Create a new share for data objects in Unity Catalog.
+- **Create Sharing Provider**: Create a new authentication provider in Unity Catalog for Delta Sharing.
+- **Create Sharing Recipient**: Create a Delta Sharing recipient in Unity Catalog metastore.
+- **Create SQL Alert**: Create a new Databricks SQL alert for query monitoring.
+- **Create SQL Query Visualization**: Create a new visualization for a Databricks SQL query.
+- **Create Storage Credential**: Create a new storage credential in Unity Catalog for cloud data access.
+- **Create Tag Policy**: Create a new tag policy (governed tag) in Databricks with built-in rules for consistency and control.
+- **Create Vector Search Endpoint**: Create a new vector search endpoint to host indexes in Databricks Mosaic AI Vector Search.
+- **Create Workspace Directory**: Create a directory and necessary parent directories in the workspace.
+- **Create Workspace Git Credentials**: Create Git credentials for authenticating with remote Git repositories in Databricks.
+- **Delete AI/BI Dashboard Embedding Access Policy**: Delete AI/BI dashboard embedding access policy, reverting to default.
+- **Delete AI/BI Dashboard Embedding Approved Domains**: Delete the list of approved domains for AI/BI dashboard embedding, reverting to default.
+- **Delete Catalog**: Delete a catalog from Unity Catalog metastore.
+- **Delete Catalog Connection**: Delete a Unity Catalog connection to external data sources.
+- **Delete Catalog Credential**: Delete a Unity Catalog credential for cloud storage or service access.
+- **Delete Catalog Table**: Delete a table from Unity Catalog.
+- **Delete Compute Cluster**: Terminate a Databricks compute cluster.
+- **Delete Compute Cluster Policy**: Delete a cluster policy.
+- **Delete Compute Instance Pool**: Delete a Databricks compute instance pool.
+- **Delete Custom LLM Agent**: Delete a Custom LLM agent created through Agent Bricks.
+- **Delete Dashboard Email Subscriptions Setting**: Delete the dashboard email subscriptions setting, reverting to default value.
+- **Delete Database Instance**: Delete a Lakebase Postgres database instance.
+- **Delete Databricks App**: Delete a Databricks app from the workspace.
+- **Delete Databricks Job Run**: Delete a non-active Databricks job run.
+- **Delete Databricks Pipeline**: Delete a Databricks Delta Live Tables pipeline permanently and stop any active updates.
+- **Delete DBFS File or Directory**: Delete a file or directory from DBFS.
+- **Delete Default Namespace Setting**: Delete the default namespace setting for the workspace, removing the default catalog configuration.
+- **Delete Default Warehouse ID Setting**: Delete the default warehouse ID setting for the workspace, reverting to default state.
+- **Delete Disable Legacy Access Setting**: Delete the disable legacy access workspace setting, re-enabling legacy features.
+- **Delete Disable Legacy DBFS Setting**: Delete the disable legacy DBFS workspace setting, reverting to default DBFS access behavior.
+- **Delete External Location**: Delete an external location from Unity Catalog metastore.
+- **Delete Genie Conversation**: Delete a conversation from a Genie space programmatically.
+- **Delete Genie Conversation Message**: Delete a specific message from a Genie conversation.
+- **Delete Global Init Script**: Delete a global initialization script from Databricks workspace.
+- **Delete Group Copy**: Delete a group from Databricks workspace using SCIM v2 protocol.
+- **Delete IAM Group V2**: Delete a group from Databricks workspace using SCIM v2 protocol.
+- **Delete IAM Service Principal V2**: Delete a service principal from Databricks workspace using SCIM v2 protocol.
+- **Delete Lakeview Dashboard Schedule**: Delete a dashboard schedule from a Lakeview dashboard.
+- **Delete Legacy SQL Alert**: Permanently delete a legacy SQL alert (permanent deletion).
+- **Delete Legacy SQL Query**: Delete a legacy SQL query (soft delete to trash).
+- **Delete Legacy SQL Query Visualization**: Permanently delete a legacy SQL query visualization.
+- **Delete Listing From Exchange**: Remove the association between a marketplace exchange and a listing.
+- **Delete LLM Proxy Partner Powered Setting**: Delete (revert to default) the partner-powered AI features workspace setting.
+- **Delete Logged Model**: Delete a logged model from MLflow tracking.
+- **Delete Logged Model Tag**: Delete a tag from a logged model in MLflow.
+- **Delete Marketplace Consumer Installation**: Uninstall a Databricks Marketplace installation.
+- **Delete Metastore**: Delete a Unity Catalog metastore.
+- **Delete ML Experiment**: Delete an MLflow experiment and associated metadata, runs, metrics, params, and tags.
+- **Delete ML Experiment Run**: Mark an MLflow run for deletion in ML experiments.
+- **Delete ML Experiment Run Tag**: Delete a tag from an MLflow experiment run.
+- **Delete ML Experiment Runs**: Bulk delete runs in an ML experiment created before a specified timestamp.
+- **Delete ML Feature Engineering Kafka Config**: Delete a Kafka configuration from ML Feature Engineering.
+- **Delete ML Feature Store Online Store**: Delete an online store from ML Feature Store.
+- **Delete ML Feature Store Online Table**: Delete an online table from ML Feature Store.
+- **Delete ML Feature Tag**: Delete a tag from a feature in a feature table in ML Feature Store.
+- **Delete Notification Destination**: Delete a notification destination from the Databricks workspace.
+- **Delete OAuth2 Service Principal Secret**: Delete an OAuth secret from a service principal at the account level.
+- **Delete OAuth2 Service Principal Secret Proxy**: Delete an OAuth secret from a service principal.
+- **Delete Online Table**: Delete an online table by name.
+- **Delete Restrict Workspace Admins Setting**: Delete/revert the restrict workspace admins setting to its default state.
+- **Delete Secret Scope**: Delete a secret scope and all associated secrets and ACLs.
+- **Delete Secrets ACL**: Delete an access control list from a Databricks secret scope.
+- **Delete Serving Endpoint**: Delete a model serving endpoint and all associated data.
+- **Delete Share**: Delete a Unity Catalog share from the metastore.
+- **Delete Sharing Recipient**: Delete a Delta Sharing recipient from Unity Catalog metastore.
+- **Delete SQL Alert**: Delete a Databricks SQL alert (soft delete to trash).
+- **Delete SQL Dashboard**: Delete a legacy Databricks SQL dashboard by moving it to trash (soft delete).
+- **Delete SQL Results Download Setting**: Delete SQL results download workspace setting, reverting to default state where users are permitted to download results.
+- **Delete Storage Credential**: Delete a storage credential from the Unity Catalog metastore.
+- **Delete Synced Database Table**: Delete a synced table from Unity Catalog and stop data refreshes.
+- **Delete Tag Policy**: Delete a tag policy by its key, making the tag ungoverned.
+- **Delete Token via Token Management**: Delete a token specified by ID via token management.
+- **Delete User by ID**: Delete a user from the Databricks workspace by their ID.
+- **Delete Vector Search Index**: Delete a vector search index from Databricks workspace.
+- **Delete Workspace Git Credentials**: Delete Git credentials for remote repository authentication in Databricks.
+- **Delete Workspace Object**: Permanently delete a workspace object or directory.
+- **Delete Workspace Repo**: Delete a Git repository from Databricks workspace.
+- **Delete Workspace Secret**: Delete a secret from a Databricks secret scope.
+- **Deploy Databricks App**: Create a deployment for a Databricks app.
+- **Disable System Schema**: Disable a system schema in Unity Catalog metastore.
+- **Edit Compute Cluster**: Update the configuration of a Databricks cluster.
+- **Edit Compute Cluster Policy**: Update an existing Databricks cluster policy.
+- **Edit Compute Instance Pool**: Modify the configuration of an existing Databricks instance pool.
+- **Edit Compute Instance Profile**: Modify an existing AWS EC2 instance profile registered with Databricks.
+- **Enable System Schema**: Enable a system schema in Unity Catalog metastore.
+- **Enforce Cluster Policy Compliance**: Update a cluster to be compliant with the current version of its policy.
+- **Execute Genie Message Query**: Execute the SQL query associated with a Genie message.
+- **Execute Message Attachment Query**: Execute SQL query for an expired message attachment in a Genie space.
+- **Finalize Logged Model**: Finalize a logged model in MLflow by updating its status to READY or FAILED.
+- **Find Database Instance By UID** (read-only): Find a database instance by its unique identifier (UID).
+- **Generate Database Credential**: Generate OAuth token for database instance authentication.
+- **Generate Temporary Path Credentials**: Generate short-lived, scoped temporary credentials for accessing external storage locations registered in Unity Catalog.
+- **Generate Temporary Service Credential**: Generate temporary credentials from a service credential with admin access.
+- **Get Access Request Destinations** (read-only): Retrieve access request destinations for a Unity Catalog securable.
+- **Get AI/BI Dashboard Embedding Access Policy**: Retrieve workspace AI/BI dashboard embedding access policy setting.
+- **Get AI/BI Dashboard Embedding Approved Domains**: Retrieve the list of domains approved to host embedded AI/BI dashboards.
+- **Get All Library Statuses** (read-only): Retrieve status of all libraries across all Databricks clusters.
+- **Get App Deployment Update** (read-only): Retrieve information about a specific app deployment update.
+- **Get Automatic Cluster Update Setting**: Retrieve automatic cluster update setting for the workspace.
+- **Get Catalog Artifact Allowlist**: Retrieve artifact allowlist configuration for a specified artifact type in Unity Catalog.
+- **Get Catalog Connection**: Retrieve detailed information about a specific Unity Catalog connection.
+- **Get Catalog Credential** (read-only): Retrieve detailed information about a specific Unity Catalog credential.
+- **Get Catalog Grants**: Get permissions (grants) for a securable in Unity Catalog without inherited permissions.
+- **Get Catalog Volume Details**: Retrieve detailed information about a specific Unity Catalog volume.
+- **Get Clean Room Asset**: Retrieve detailed information about a specific asset within a Databricks Clean Room.
+- **Get Cluster Policy Compliance** (read-only): Retrieve policy compliance status for a specific cluster.
+- **Get Compliance Security Profile Setting**: Retrieve workspace compliance security profile setting.
+- **Get Compute Cluster Permission Levels** (read-only): Retrieve available permission levels for a Databricks compute cluster.
+- **Get Compute Cluster Policy**: Retrieve detailed information about a specific cluster policy by its ID.
+- **Get Compute Cluster Policy Permission Levels** (read-only): Retrieve available permission levels for a Databricks cluster policy.
+- **Get Compute Cluster Policy Permissions** (read-only): Retrieve permissions for a Databricks cluster policy.
+- **Get Compute Policy Families**: Retrieve information for a policy family by identifier and optional version.
+- **Get Dashboard Email Subscriptions Setting**: Retrieve dashboard email subscriptions setting for the workspace.
+- **Get Database Instance** (read-only): Retrieve detailed information about a specific database instance by its name identifier.
+- **Get Databricks App Details**: Retrieve details about a specific Databricks app by name.
+- **Get Databricks App Permission Levels** (read-only): Retrieve available permission levels for a Databricks app.
+- **Get Databricks App Permissions** (read-only): Retrieve permissions for a Databricks app.
+- **Get DBFS File Status** (read-only): Get the information of a file or directory in DBFS.
+- **Get Default Namespace Setting**: Retrieve the default catalog namespace setting for the workspace.
+- **Get Default Warehouse ID Setting**: Retrieve the default SQL warehouse ID setting for the workspace.
+- **Get Disable Legacy Access Setting**: Retrieve the disable legacy access workspace setting.
+- **Get Disable Legacy DBFS Setting**: Retrieve the disable legacy DBFS workspace setting.
+- **Get Effective Catalog Permissions** (read-only): Get effective permissions for a securable in Unity Catalog, including inherited permissions from parent securables.
+- **Get Enable Export Notebook Setting**: Retrieve workspace setting controlling notebook export functionality.
+- **Get Enable Notebook Table Clipboard Setting**: Retrieve notebook table clipboard setting for the workspace.
+- **Get Enable Results Downloading Setting**: Retrieve workspace setting controlling notebook results download functionality.
+- **Get Enhanced Security Monitoring Setting**: Retrieve enhanced security monitoring workspace setting.
+- **Get Entity Tag Assignment**: Retrieve a specific tag assignment for a Unity Catalog entity by tag key.
+- **Get External Location Details**: Retrieve details of a specific Unity Catalog external location.
+- **Get Genie Message** (read-only): Retrieve details of a specific message from a Genie conversation.
+- **Get Genie Message Attachment Query Result** (read-only): Retrieve SQL query results from a Genie message attachment.
+- **Get Genie Message Query Result** (read-only): Retrieve SQL query execution results for a Genie message (up to 5000 rows).
+- **Get Genie Message Query Result** (read-only): Retrieve SQL query execution results for a message attachment in a Genie space conversation.
+- **Get Genie Space Details** (read-only): Retrieve detailed information about a specific Databricks Genie space by ID.
+- **Get Global Init Script**: Retrieve complete details of a global initialization script in Databricks workspace.
+- **Get IAM Account Group V2**: Retrieve a specific group resource by its unique identifier from a Databricks account using SCIM v2 protocol.
+- **Get IAM Service Principal V2**: Retrieve details of a specific service principal by ID from Databricks workspace using SCIM v2 protocol.
+- **Get Instance Pool Details**: Retrieve detailed information about a Databricks instance pool by its ID.
+- **Get Instance Pool Permission Levels** (read-only): Retrieve available permission levels for a Databricks instance pool.
+- **Get Instance Pool Permissions** (read-only): Retrieve permissions for a Databricks instance pool.
+- **Get IP Access List**: Retrieve details of a specific IP access list by its ID.
+- **Get Job Permission Levels**: Retrieve available permission levels for a Databricks job.
+- **Get Lakeview Dashboard Details**: Retrieve details about a draft AI/BI Lakeview dashboard from the workspace.
+- **Get Lakeview Dashboard Schedule** (read-only): Retrieve a specific schedule for a Databricks AI/BI Lakeview dashboard.
+- **Get Latest Provider Analytics Dashboard Version** (read-only): Retrieve the latest logical version of the provider analytics dashboard template.
+- **Get Legacy SQL Alert**: Retrieve details of a specific legacy SQL alert by its ID.
+- **Get Legacy SQL Query**: Retrieve details of a specific legacy SQL query by its UUID.
+- **Get LLM Proxy Partner Powered Setting**: Retrieve workspace-level setting that controls whether partner-powered AI features are enabled.
+- **Get Logged Model** (read-only): Fetch logged model metadata by unique ID.
+- **Get Marketplace Consumer Listing**: Retrieve a published listing from Databricks Marketplace that consumer has access to.
+- **Get Marketplace Consumer Personalization Requests**: Retrieve personalization requests for a specific marketplace listing.
+- **Get Marketplace Consumer Provider**: Retrieve information about a specific provider in the Databricks Marketplace with visible listings.
+- **Get Marketplace Provider Listing**: Retrieve a specific marketplace provider listing by its identifier.
+- **Get Metastore Summary**: Retrieve summary information about the metastore associated with the current workspace.
+- **Get ML Experiment By Name** (read-only): Retrieve MLflow experiment metadata by name.
+- **Get ML Experiment Permission Levels** (read-only): Retrieve available permission levels for a Databricks ML experiment.
+- **Get ML Experiment Permissions** (read-only): Retrieve permissions for an MLflow experiment.
+- **Get ML Feature Tag** (read-only): Retrieve a specific tag from a feature in a feature table in ML Feature Store.
+- **Get ML Model Registry Permission Levels** (read-only): Retrieve available permission levels for a Databricks ML registered model.
+- **Get Model Version**: Retrieve detailed information about a specific version of a registered model in Unity Catalog.
+- **Get Notification Destination**: Retrieve details of a notification destination by its UUID identifier.
+- **Get Pipeline Permission Levels** (read-only): Retrieve available permission levels for a Databricks Delta Live Tables pipeline.
+- **Get Pipeline Permissions** (read-only): Retrieve permissions for a Databricks Delta Live Tables pipeline.
+- **Get Provider Analytics Dashboard**: Retrieve provider analytics dashboard information for monitoring consumer usage metrics.
+- **Get Public Workspace Setting** (read-only): Retrieve workspace-level settings by setting ID.
+- **Get Published Dashboard Token Info** (read-only): Retrieve authorization info for generating downscoped tokens to access published Lakeview dashboards.
+- **Get Published Lakeview Dashboard** (read-only): Retrieve the current published version of a Lakeview dashboard.
+- **Get Quality Monitor**: Retrieve quality monitor configuration for a Unity Catalog table.
+- **Get Redash V2 Config** (read-only): Retrieve workspace configuration for Redash V2 in Databricks SQL.
+- **Get Registered Model**: Retrieve detailed information about a registered model in Unity Catalog.
+- **Get Resource Quota Information** (read-only): Retrieve usage information for a Unity Catalog resource quota defined by a child-parent pair.
+- **Get Restrict Workspace Admins Setting**: Retrieve the restrict workspace admins setting for the workspace.
+- **Get Secrets ACL** (read-only): Retrieve ACL details for a principal on a Databricks secret scope.
+- **Get Share Details**: Retrieve details of a specific share from Unity Catalog.
+- **Get Share Permissions**: Retrieve permissions for a Delta Sharing share from Unity Catalog.
+- **Get Sharing Provider**: Retrieve information about a specific Delta Sharing provider in Unity Catalog.
+- **Get Sharing Recipient**: Retrieve a Delta Sharing recipient from Unity Catalog metastore by name.
+- **Get Spark Versions**: Retrieve all available Databricks Runtime and Spark versions for cluster creation.
+- **Get SQL Alert Details**: Retrieve details of a specific Databricks SQL alert by its UUID.
+- **Get SQL Dashboard**: Retrieve complete legacy dashboard definition with metadata, widgets, and queries.
+- **Get SQL Results Download Setting**: Retrieve SQL results download workspace setting.
+- **Get Storage Credential**: Retrieve storage credential details from Unity Catalog metastore by name.
+- **Get Tag Policy** (read-only): Retrieve a specific tag policy by its associated governed tag's key.
+- **Get Token Information**: Retrieve detailed information about a specific token by its ID from the token management system.
+- **Get Token Management Permission Levels** (read-only): Retrieve available permission levels for personal access token management.
+- **Get Token Management Permissions** (read-only): Retrieve permissions for workspace token management.
+- **Get Workspace Access Detail Local** (read-only): Retrieve detailed workspace access information for a specific identity in Databricks.
+- **Get Workspace Git Credentials**: Retrieve Git credentials for authenticating with remote Git repositories in Databricks.
+- **Get Workspace Object Status** (read-only): Retrieve status and metadata for any workspace object including notebooks, directories, dashboards, and files.
+- **Get Workspace Repo Permission Levels** (read-only): Retrieve available permission levels for a Databricks workspace repository.
+- **List Compute Cluster Availability Zones** (read-only): List availability zones where Databricks clusters can be created.
+- **List Compute Cluster Spark Versions**: List all available Databricks Runtime Spark versions for cluster creation.
+- **List Databricks Job Runs**: List Databricks job runs in descending order by start time.
+- **List Databricks Job Runs** (read-only): List Databricks job runs in descending order by start time.
+- **List Databricks Jobs**: Retrieve a paginated list of all jobs in the Databricks workspace.
+- **List DBFS Directory Contents**: List the contents of a directory or get details of a file in DBFS.
+- **List Genie Conversation Messages** (read-only): Retrieve all messages from a specific conversation thread in a Genie space.
+- **List Genie Conversations** (read-only): Retrieve all existing conversation threads within a Genie space.
+- **List Genie Spaces** (read-only): Retrieve all Genie spaces in the workspace that the authenticated user has access to.
+- **List Job Compliance for Policy**: Retrieve policy compliance status of all jobs using a given cluster policy.
+- **List Legacy SQL Alerts**: List all legacy SQL alerts accessible to the authenticated user.
+- **List Members of a Security Group** (read-only): Retrieve all members (users and nested groups) of a Databricks security group.
+- **List Pipeline Updates** (read-only): Retrieve a paginated list of updates for a Databricks Delta Live Tables pipeline.
+- **List Quality Monitor Refreshes** (read-only): Retrieve the refresh history for a quality monitor on a Unity Catalog table.
+- **List Security Groups** (read-only): List all security groups in the Databricks workspace using SCIM v2 protocol.
+- **List SQL Query History**: Retrieve the history of SQL queries executed against SQL warehouses and serverless compute.
+- **List Tokens** (read-only): List all valid personal access tokens (PATs) for a user-workspace pair.
+- **List Workspace Directory**: List the contents of a directory in Databricks workspace.
+- **Log Batch MLflow Data**: Log a batch of metrics, parameters, and tags for an MLflow run in a single request.
+- **Log Logged Model Parameters**: Log parameters for a logged model in MLflow.
+- **Log MLflow Dataset Inputs**: Log dataset inputs to an MLflow run for tracking data sources used during model development.
+- **Log MLflow Dataset Outputs**: Log dataset outputs from an MLflow run for tracking data generated during model development.
+- **Log MLflow Metric**: Log a metric for an MLflow run with timestamp.
+- **Log MLflow Model**: Log a model artifact for an MLflow run (Experimental API).
+- **Log MLflow Parameter**: Log a parameter for an MLflow run as a key-value pair.
+- **Migrate Permissions**: Migrate ACL permissions from workspace groups to account groups.
+- **Move DBFS File or Directory**: Move a file or directory from one location to another within DBFS.
+- **Patch IAM Group V2**: Partially update a Databricks workspace group using SCIM 2.0 PATCH operations.
+- **Patch IAM Service Principal V2**: Partially update a service principal using SCIM 2.0 PATCH operations.
+- **Patch IAM User V2**: Partially update a user using SCIM 2.0 PATCH operations.
+- **Permanently Delete Compute Cluster**: Permanently delete a Databricks compute cluster.
+- **Pin Compute Cluster**: Pin a Databricks compute cluster configuration.
+- **Publish Lakeview Dashboard**: Publish an AI/BI Lakeview dashboard making it accessible via public link.
+- **Put Secrets ACL**: Create or overwrite access control list for a principal on a Databricks secret scope.
+- **Query Vector Search Index** (read-only): Query vector search index to find similar vectors and return associated documents.
+- **Read DBFS File Contents**: Read the contents of a file from DBFS.
+- **Remove Compute Instance Profile**: Remove an instance profile from Databricks.
+- **Restore ML Experiment**: Restore a deleted MLflow experiment and its associated metadata, runs, metrics, params, and tags.
+- **Restore ML Experiment Run**: Restore a deleted MLflow run and its associated metadata, runs, metrics, params, and tags.
+- **Restore ML Experiment Runs**: Bulk restore runs in an ML experiment that were deleted at or after a specified timestamp.
+- **Restore SQL Query (Legacy)**: Restore a trashed SQL query to active state.
+- **Search Logged Models** (read-only): Search for logged models in MLflow experiments based on various criteria.
+- **Search MLflow Experiments** (read-only): Search for MLflow experiments with filtering, ordering, and pagination support.
+- **Search MLflow Runs** (read-only): Search for MLflow runs with filtering, ordering, and pagination support.
+- **Send Genie Message Feedback**: Send feedback for a Genie message.
+- **Set Compute Cluster Policy Permissions**: Set permissions for a Databricks cluster policy, replacing all existing permissions.
+- **Set Compute Instance Pool Permissions**: Set permissions for a Databricks instance pool, replacing all existing permissions.
+- **Set Databricks App Permissions**: Set permissions for a Databricks app, replacing all existing permissions.
+- **Set Databricks Job Permissions**: Set permissions for a Databricks job, completely replacing all existing permissions.
+- **Set Logged Model Tags**: Set tags on a logged model in MLflow.
+- **Set ML Experiment Permissions**: Set permissions for an MLflow experiment, replacing all existing permissions.
+- **Set ML Experiment Tag**: Set a tag on an MLflow experiment.
+- **Set MLflow Run Tag**: Set a tag on an MLflow run.
+- **Set or Update ML Feature Tag**: Set or update a tag on a feature in a feature table in ML Feature Store.
+- **Set SQL Warehouse Permissions**: Set permissions for a Databricks SQL warehouse, replacing all existing permissions.
+- **Set Token Management Permissions**: Set permissions for personal access token management, replacing all existing permissions.
+- **Set Workspace Configuration Status**: Set workspace configuration settings for a Databricks workspace.
+- **Set Workspace Repo Permissions**: Set permissions for a workspace repository, replacing all existing permissions.
+- **Set Workspace Warehouse Config**: Configure workspace-level SQL warehouse settings shared by all SQL warehouses.
+- **Start Compute Cluster**: Start a terminated Databricks compute cluster asynchronously.
+- **Start Databricks App**: Start the last active deployment of a Databricks app.
+- **Start Genie Conversation**: Start a new Genie conversation in a Databricks space for natural language data queries.
+- **Stop Databricks App**: Stop the active deployment of a Databricks app.
+- **Trash Genie Space**: Move a Genie space to trash instead of permanently deleting it.
+- **Trash Lakeview Dashboard**: Move a Lakeview dashboard to trash instead of permanently deleting it.
+- **Unassign Metastore from Workspace**: Unassign a Unity Catalog metastore from a workspace.
+- **Unpin Compute Cluster**: Unpin a Databricks compute cluster configuration.
+- **Unpublish Lakeview Dashboard**: Unpublish an AI/BI Lakeview dashboard while preserving its draft version.
+- **Update Access Request Destinations**: Update access request notification destinations for Unity Catalog securables.
+- **Update AI/BI Dashboard Embedding Access Policy**: Update AI/BI dashboard embedding workspace access policy at the workspace level.
+- **Update AI/BI Dashboard Embedding Approved Domains**: Update the list of domains approved to host embedded AI/BI dashboards at the workspace level.
+- **Update Automatic Cluster Update Setting**: Update workspace automatic cluster update configuration with etag-based concurrency control.
+- **Update Catalog Connection**: Update an existing Unity Catalog connection configuration.
+- **Update Catalog Credential**: Update an existing Unity Catalog credential with new properties.
+- **Update Catalog Function**: Update function owner in Unity Catalog.
+- **Update Catalog Grants**: Update permissions for Unity Catalog securables by adding or removing privileges for principals.
+- **Update Catalog Workspace Bindings**: Update workspace bindings for a Unity Catalog securable (catalog).
+- **Update Cluster Policy Permissions**: Incrementally update permissions on a Databricks cluster policy.
+- **Update Compute Cluster**: Partially update a Databricks compute cluster configuration using field masks.
+- **Update Dashboard Email Subscriptions Setting**: Update the Dashboard Email Subscriptions setting for the workspace with etag-based concurrency control.
+- **Update Databricks App**: Update an existing Databricks app configuration.
+- **Update Databricks App Permissions**: Incrementally update permissions for a Databricks app.
+- **Update Default Namespace Setting**: Update the default catalog namespace configuration for workspace queries with etag-based concurrency control.
+- **Update Default Warehouse ID Setting**: Update the default SQL warehouse configuration for the workspace with etag-based concurrency control.
+- **Update Disable Legacy Access Setting**: Update workspace disable legacy access setting with etag-based concurrency control.
+- **Update Disable Legacy DBFS Setting**: Update workspace disable legacy DBFS setting with etag-based concurrency control.
+- **Update Enable Export Notebook**: Update workspace notebook and file export setting.
+- **Update Enable Notebook Table Clipboard**: Update workspace setting for notebook table clipboard.
+- **Update Enable Results Downloading**: Update workspace notebook results download setting.
+- **Update Enhanced Security Monitoring**: Update enhanced security monitoring workspace settings.
+- **Update External Location**: Update an existing Unity Catalog external location properties.
+- **Update External Metadata**: Update an external metadata object in Unity Catalog.
+- **Update Genie Space**: Update an existing Genie space configuration.
+- **Update Global Init Script**: Update a global initialization script in Databricks workspace.
+- **Update Group**: Update a Databricks group using SCIM 2.0 PATCH operations.
+- **Update IAM Account Access Control Rule Set**: Update account-level access control rule set for service principals, groups, or budget policies.
+- **Update IAM Group V2**: Update an existing group in Databricks workspace using SCIM v2 protocol.
+- **Update IAM Permissions**: Incrementally update permissions on Databricks workspace objects including dashboards, jobs, clusters, warehouses, notebooks, and more.
+- **Update IAM Service Principal V2**: Update an existing service principal in Databricks workspace using SCIM v2 protocol.
+- **Update IAM User V2**: Update a user in Databricks workspace using SCIM v2 protocol.
+- **Update Instance Pool Permissions**: Incrementally update permissions on a Databricks instance pool.
+- **Update Job Permissions**: Incrementally update permissions for a Databricks job.
+- **Update Lakeview Dashboard**: Update a draft Lakeview dashboard configuration and metadata.
+- **Update Legacy SQL Alert**: Update a legacy SQL alert configuration including name, query reference, trigger conditions, and notification settings.
+- **Update Legacy SQL Query**: Update an existing SQL query definition using the legacy API.
+- **Update Legacy SQL Query Visualization**: Update a visualization in a SQL query using the legacy API.
+- **Update LLM Proxy Partner Powered Setting**: Update workspace-level setting controlling whether AI features are powered by partner-hosted models with etag-based concurrency control.
+- **Update Marketplace Consumer Installation**: Update marketplace consumer installation fields and rotate tokens for marketplace listings.
+- **Update Metastore**: Update configuration settings for an existing Unity Catalog metastore.
+- **Update Metastore Assignment**: Update a metastore assignment for a workspace.
+- **Update ML Experiment**: Update MLflow experiment metadata, primarily for renaming experiments.
+- **Update ML Experiment Permissions**: Incrementally update permissions for an MLflow experiment.
+- **Update ML Experiment Run**: Update MLflow run metadata including status, end time, and run name.
+- **Update Model Version**: Update a Unity Catalog model version.
+- **Update Notification Destination**: Update an existing notification destination configuration.
+- **Update Pipeline Permissions**: Incrementally update permissions on a Databricks pipeline.
+- **Update Restrict Workspace Admins Setting**: Update the restrict workspace admins setting with etag-based concurrency control.
+- **Update Serving Endpoint AI Gateway**: Update AI Gateway configuration of a Databricks serving endpoint.
+- **Update Serving Endpoint Rate Limits**: Update rate limits for a Databricks serving endpoint.
+- **Update Share**: Update an existing share in Unity Catalog with changes to metadata or data objects.
+- **Update Sharing Provider**: Update an existing Delta Sharing authentication provider in Unity Catalog.
+- **Update SQL Alert**: Update an existing Databricks SQL alert using partial update with field mask.
+- **Update SQL Dashboard**: Update legacy Databricks SQL dashboard attributes (name, run_as_role, tags).
+- **Update SQL Query Visualization**: Update an existing Databricks SQL query visualization using partial update with field mask.
+- **Update SQL Results Download Setting**: Update workspace SQL results download setting controlling whether users can download results from SQL Editor and AI/BI Dashboards.
+- **Update SQL Warehouse Permissions**: Incrementally update permissions for a Databricks SQL warehouse.
+- **Update Storage Credential**: Update an existing storage credential in Unity Catalog.
+- **Update Tag Policy**: Update an existing tag policy (governed tag) with specified fields.
+- **Update Token Management Permissions**: Incrementally update permissions for personal access token management.
+- **Update User by ID (PATCH)**: Update a Databricks user by applying SCIM 2.0 PATCH operations on specific user attributes.
+- **Update Workspace Git Credentials**: Update existing Git credentials for authenticating with remote Git repositories in Databricks.
+- **Upsert Data Vector Index** (read-only): Upsert (insert or update) data into a Direct Vector Access Index.
+- **Validate Catalog Credential**: Validate a Unity Catalog credential for external access.
+- **Validate Storage Credential**: Validate a storage credential configuration for Unity Catalog.

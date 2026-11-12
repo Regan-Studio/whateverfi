@@ -1,0 +1,94 @@
+# CleverReach
+
+CleverReach is an email marketing platform for managing subscriber groups, campaigns, reports, and forms.
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/cleverreach/.
+
+## Actions
+
+- **Add Blacklist Entries**: Add email addresses to the account-wide CleverReach blacklist in one provider batch request.
+- **Add Blacklist Entry**: Add one email address to the global blacklist when group_id is omitted, or to a group-specific blacklist when it is supplied.
+- **Add Group Receiver Tags**: IRREVERSIBLE AUTOMATION WARNING.
+- **Add Receiver Tags**: Add tags to one receiver through the account-wide receiver route.
+- **Bulk Update Receivers**: Update existing receivers in one provider batch for a group.
+- **Bulk Upsert Receivers**: Create or update receivers in one provider batch for a group.
+- **Change Receiver Email**: Change one receiver's email address.
+- **Clone Receiver**: Copy a receiver to a target group under a new email address.
+- **Count Receivers By Tags** (read-only): Count receivers with one tag using a GET query, or with a tag constellation using a read-like POST.
+- **Create Attribute**: Create a global or group-local CleverReach receiver attribute.
+- **Create Filter**: Create a reusable CleverReach filter or segment in one receiver group.
+- **Create Group**: Create a CleverReach receiver group and return its group ID for subsequent subscriber operations.
+- **Create Mailing**: Create a CleverReach mailing campaign definition.
+- **Create Mailing Template**: Create a reusable CleverReach mailing template.
+- **Create My Content**: Create a reusable CleverReach "My Content" item that references a URL.
+- **Create Receiver**: Create a subscriber in one CleverReach group.
+- **Create Receiver Event**: IRREVERSIBLE.
+- **Create Receiver Order**: MUTATES ORDER HISTORY.
+- **Create Receivers**: Create up to 50 subscribers in one CleverReach group and return a separate success or failure result for each receiver.
+- **Delete Attribute**: Permanently delete a CleverReach global or group-local attribute.
+- **Delete Blacklist Entries**: Permanently delete 1-50 exact email addresses sequentially from the global account blacklist, or only from one group's blacklist when…
+- **Delete Blacklist Entry**: Permanently remove one email address from the global CleverReach blacklist, or from a group blacklist when group_id is supplied.
+- **Delete Filter**: Permanently delete a CleverReach filter or segment.
+- **Delete Group**: Permanently delete one CleverReach receiver group by ID.
+- **Delete Mailing Channel**: Permanently delete one CleverReach mailing channel/category.
+- **Delete My Content**: Permanently delete one CleverReach "My Content" item by exact ID.
+- **Delete Receiver Account-Wide**: Permanently delete one exact receiver at account level.
+- **Delete Receiver Order**: IRREVERSIBLE.
+- **Delete Receivers Account-Wide**: Permanently delete a non-empty explicit list of exact receivers account-wide.
+- **Delete Report**: Permanently and irreversibly delete one report and its historical analytics by exact report or mailing ID.
+- **Filter Receivers** (read-only): Return one bounded page of receivers matching temporary CleverReach filter rules.
+- **Get Attribute** (read-only): Return one CleverReach global attribute by ID.
+- **Get Attribute Limits** (read-only): Show the attribute limits applied to the connected CleverReach account.
+- **Get Blacklist Entry** (read-only): Check whether an exact email address is on the account-wide CleverReach blacklist and return its blacklist details when present.
+- **Get Filter** (read-only): Get one CleverReach group filter or segment.
+- **Get Filter Metrics** (read-only): Return statistics or a receiver count for one CleverReach group filter.
+- **Get Form Embed Code** (read-only): Return embeddable HTML, JavaScript, and CSS for an existing legacy CleverReach form, with optional branding controls.
+- **Get Group** (read-only): Return one receiver group by its CleverReach group ID.
+- **Get Group Stats** (read-only): Return either standard or advanced CleverReach statistics for one receiver group.
+- **Get Mailing** (read-only): Return one CleverReach mailing campaign by its mailing ID.
+- **Get Mailing Channel** (read-only): Return one CleverReach mailing channel or category by ID.
+- **Get My Content** (read-only): Return one CleverReach "My Content" item by ID.
+- **Get Random Mailing Receiver** (read-only): Return a random receiver from a CleverReach mailing audience for preview purposes.
+- **Get Receiver** (read-only): Return one receiver by ID or exact email address.
+- **Get Receiver Attributes** (read-only): Get attribute values for a CleverReach receiver, optionally in one group.
+- **Get Receiver Tags** (read-only): Return all tags currently set on one receiver, optionally filtered by origin.
+- **Get Report** (read-only): Return one mailing report by report or mailing ID, including split-test versions when present.
+- **Get Report Stats** (read-only): Return one selected statistics view for a mailing report, such as links, countries, clients, traffic, or daily activity.
+- **List Attributes** (read-only): Return a locally bounded set of global attributes or local attributes for one CleverReach group.
+- **List Blacklist Entries** (read-only): Return a locally bounded set of entries on the global CleverReach blacklist, or on a specific group blacklist when group_id is supplied.
+- **List Bounced Receivers** (read-only): Return one bounded page of receivers with a bounce date and an opaque cursor for the next page.
+- **List Bounces** (read-only): Return one page of up to 500 account-wide CleverReach bounce records.
+- **List Filter Receivers** (read-only): Return one bounded page of receivers matching a saved CleverReach filter.
+- **List Filters** (read-only): Return a locally bounded set of CleverReach filters or segments for one receiver group.
+- **List Forms** (read-only): Return a locally bounded set of legacy CleverReach forms globally or for a supplied group.
+- **List Groups** (read-only): Return a locally bounded set of receiver groups (lists) in the connected CleverReach account, optionally ordered by creation or change time.
+- **List Mailing Channels** (read-only): Return a locally bounded set of CleverReach mailing channels, also called categories.
+- **List Mailing Links** (read-only): Return the links CleverReach recorded for one mailing.
+- **List Mailing Orders** (read-only): Return a locally bounded set of orders attributed to a CleverReach report or mailing.
+- **List Mailing Templates** (read-only): Return locally bounded categories and either agency-managed or user-owned CleverReach templates.
+- **List Mailings** (read-only): Return campaigns filtered by delivery state, channel, or the state's time window.
+- **List My Content** (read-only): Return a locally bounded set of reusable CleverReach "My Content" items.
+- **List Receiver Events** (read-only): Return a locally bounded set of events recorded for one CleverReach receiver, either account-wide or in a specific group.
+- **List Receiver Groups** (read-only): Return a locally bounded set of group IDs to which a receiver is allocated, filtered by membership state.
+- **List Receiver Orders** (read-only): Return a locally bounded set of orders recorded for one CleverReach receiver, globally or in a specific group.
+- **List Receiver Tags** (read-only): Return a locally bounded set of receiver tags already used in the account, optionally filtered by origin.
+- **List Receivers** (read-only): Return one page of receivers in a CleverReach group, optionally filtered by subscription state, email addresses, or receiver IDs.
+- **List Report Receivers** (read-only): Return one page of receivers in a report for a delivery or engagement state such as opened, clicked, bounced, or unsubscribed.
+- **List Reports** (read-only): Return one page of mailing reports filtered by date range, group, or channel.
+- **List Tags** (read-only): Return one page of account tags or the account's supertags.
+- **Remove Receiver From Group**: Remove one exact receiver from one specified group.
+- **Remove Receiver Tags**: Remove specified tags from one receiver.
+- **Remove Receivers From Group**: Remove a non-empty explicit list of exact receivers from one specified group.
+- **Send Mailing Preview**: Immediately deliver a preview email for one mailing to the specified CleverReach account-user addresses.
+- **Set Receiver Attribute**: Update one attribute value on a CleverReach receiver at account or group scope.
+- **Set Receiver Status**: Activate or deactivate one receiver in a CleverReach group, changing whether the subscriber is active for mailings.
+- **Update Attribute**: Update a CleverReach global or group-local attribute.
+- **Update Blacklist Entry**: Update the comment on one account-wide CleverReach blacklist entry, identified by its email address.
+- **Update Filter**: Update a CleverReach filter or segment in one receiver group.
+- **Update Group**: Update the name, notes, lock setting, or backup setting of an existing CleverReach receiver group.
+- **Update Mailing**: Update the content, audience, sender, tracking settings, or tags of an existing CleverReach mailing campaign without sending it.
+- **Update My Content**: Update supplied fields of one CleverReach "My Content" item.
+- **Update Receiver**: Update lifecycle timestamps, profile attributes, tags, or orders for one receiver in a CleverReach group without changing the email.
+- **Update Receiver Order**: IRREVERSIBLE MUTATION.
+- **Validate Blacklist Emails** (read-only): Filter up to 1000 email addresses against the global or group CleverReach blacklist without changing blacklist state.
+- **Validate Receiver Emails** (read-only): Submit up to 1000 email addresses and return CleverReach's valid-address result.

@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Limit what each local Docker computer can use, keep it off your network, and share host folders with it."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="theme-color" content="#FDFDFD"><meta property="og:title" content="Docker computers | WhatEverFi docs"><meta property="og:description" content="Limit what each local Docker computer can use, keep it off your network, and share host folders with it."><meta property="og:url" content="https://whateverfi.com/docs/self-host-docker-computers/"><meta property="og:type" content="website"><meta property="og:site_name" content="WhatEverFi"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://whateverfi.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="WhatEverFi. AI teammates you actually own. Your keys, your model, your machine."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Docker computers | WhatEverFi docs"><meta name="twitter:description" content="Limit what each local Docker computer can use, keep it off your network, and share host folders with it."><meta name="twitter:image" content="https://whateverfi.com/og-image.png"><meta name="twitter:image:alt" content="WhatEverFi. AI teammates you actually own. Your keys, your model, your machine."><link rel="canonical" href="https://whateverfi.com/docs/self-host-docker-computers/"><link rel="alternate" type="text/markdown" href="/docs/self-host-docker-computers.md"><link rel="alternate" type="application/rss+xml" title="WhatEverFi blog" href="/blog/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="describedby" type="text/plain" href="/llms.txt"><link rel="ai-catalog" type="application/ai-catalog+json" href="/.well-known/ai-catalog.json"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.png" type="image/png" sizes="128x128"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet"><title>Docker computers | WhatEverFi docs</title><link rel="stylesheet" href="/_astro/BaseLayout.WaYUuiGl.css"></head><body><a class="skip-link" href="#main">Skip to content</a><div class="page-shell"><div class="docs-topbar"><div class="docs-shell"><header class="site-header"><div class="site-header__left"><a class="brand-lockup" href="/" aria-label="WhatEverFi home"><img class="brand-lockup__mark" src="/brand/whateverfi-mark.png" width="36" height="36" alt="" aria-hidden="true"><span class="brand-lockup__word">WhatEverFi</span></a><div class="logo-menu" role="menu" aria-label="WhatEverFi home" data-logo-menu data-wordmark="/brand/kit/whateverfi-wordmark.svg" hidden><a role="menuitem" tabindex="-1" href="/" target="_blank" data-attr="logo-menu-new-tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>Open in new tab</a><button type="button" role="menuitem" tabindex="-1" data-logo-menu-copy data-attr="logo-menu-copy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"></rect><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path></svg>Copy wordmark as SVG</button><a role="menuitem" tabindex="-1" href="/brand/" data-attr="logo-menu-brand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2.5a1.5 1.5 0 0 0-1.1 2.5A2 2 0 0 1 12 22Z"></path><circle cx="7.5" cy="10.5" r="1"></circle><circle cx="10.5" cy="6.5" r="1"></circle><circle cx="15.5" cy="7.5" r="1"></circle></svg>Brand kit</a></div><a class="site-header__section" href="/docs/">Docs</a><nav class="site-nav" aria-label="Primary"><a href="/download/">Download</a><a href="/integrations/">Integrations</a><a href="/pricing/">Pricing</a></nav></div><div class="site-header__right"><button class="docs-search-trigger" type="button" aria-label="Search" aria-keyshortcuts="Meta+K Control+K"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg><span>Search</span><kbd>⌘K</kbd></button><a class="star-pill" href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener" aria-label="GitHub" data-attr="header-github"><span>GitHub</span></a><div class="site-header__cta"><a class="button button--primary button--small" href="https://app.whateverfi.com">Get started</a></div><details class="site-menu" data-site-menu><summary class="site-menu__toggle" aria-label="Menu"><svg class="site-menu__icon site-menu__icon--open" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"></path></svg><svg class="site-menu__icon site-menu__icon--close" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"></path></svg></summary><nav class="site-menu__panel" aria-label="Primary"><a href="/download/">Download</a><a href="/integrations/">Integrations</a><a href="/pricing/">Pricing</a><a href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener" data-attr="menu-github">GitHub</a></nav></details></div></header><script type="module">var e=document.querySelector(`[data-site-menu]`);e&&(e.addEventListener(`click`,t=>{t.target.closest(`a`)&&(e.open=!1)}),document.addEventListener(`click`,t=>{e.open&&!e.contains(t.target)&&(e.open=!1)}),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&(e.open=!1)}));var t=document.querySelector(`[data-logo-menu]`),n=t?.parentElement?.querySelector(`.brand-lockup`);if(t&&n){let e=()=>[...t.querySelectorAll(`[role=menuitem]`)],r=(e=!1)=>{t.hidden||(t.hidden=!0,e&&n.focus())};n.addEventListener(`contextmenu`,r=>{r.preventDefault(),t.hidden=!1;let i=r.clientX||n.getBoundingClientRect().left,a=r.clientY||n.getBoundingClientRect().bottom;t.style.left=`${Math.min(i,window.innerWidth-t.offsetWidth-8)}px`,t.style.top=`${Math.min(a,window.innerHeight-t.offsetHeight-8)}px`,e()[0]?.focus()}),t.querySelector(`[data-logo-menu-copy]`)?.addEventListener(`click`,()=>{let e=t.dataset.wordmark??``,n=fetch(e).then(async e=>{if(!e.ok)throw Error(`Wordmark request failed: ${e.status}`);return new Blob([await e.text()],{type:`text/plain`})});r(!0);let i=()=>window.location.assign(e);try{navigator.clipboard.write([new ClipboardItem({"text/plain":n})]).catch(i)}catch{i()}}),t.addEventListener(`click`,e=>{e.target.closest(`a`)&&r()}),t.addEventListener(`keydown`,t=>{let n=e(),i=n.indexOf(document.activeElement);t.key===`ArrowDown`||t.key===`ArrowUp`?(t.preventDefault(),n[(i+(t.key===`ArrowDown`?1:-1)+n.length)%n.length]?.focus()):t.key===`Escape`?(t.preventDefault(),r(!0)):t.key===`Tab`&&r()}),document.addEventListener(`pointerdown`,e=>{t.contains(e.target)||r()}),window.addEventListener(`scroll`,()=>r(),{passive:!0}),window.addEventListener(`blur`,()=>r())}</script></div></div><div class="docs-shell docs"><nav class="docs-nav docs-nav--desktop" aria-label="Docs"><div class="docs-nav__section"><p>Get started</p><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/troubleshooting/">Troubleshooting</a></li><li><a href="/docs/bots-and-chats/">Bots and chats</a></li><li><a href="/docs/import-an-agent/">Import an agent</a></li></ul></div><div class="docs-nav__section"><p>Using WhatEverFi</p><ul><li><a href="/docs/integrations/">Connect apps</a></li><li><a href="/docs/routines/">Routines</a></li><li><a href="/docs/pages/">Pages</a></li><li><a href="/docs/computer/">The bot&#39;s computer</a></li><li><a href="/docs/memory/">Memory</a></li><li><a href="/docs/skills/">Skills</a></li><li><a href="/docs/approvals/">Approvals</a></li><li><a href="/docs/groups/">Groups and teamwork</a></li><li><a href="/docs/voice-and-calls/">Voice and calls</a></li><li><a href="/docs/messaging-apps/">Chat apps</a></li></ul></div><div class="docs-nav__section"><p>Settings</p><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/model-subscriptions/">Model subscriptions</a></li><li><a href="/docs/spaces/">Spaces</a></li><li><a href="/docs/bot-secrets/">Reusable credentials</a></li><li><a href="/docs/account/">Account and billing</a></li></ul></div><div class="docs-nav__section"><p>Apps</p><ul><li><a href="/docs/desktop-app/">Desktop app</a></li><li><a href="/docs/mobile-app/">Mobile app</a></li></ul></div><div class="docs-nav__section"><p>Advanced</p><ul><li><a href="/docs/fleet-management/">Bots that manage bots</a></li><li><a href="/docs/build-a-plugin/">Build a plugin</a></li><li><a href="/docs/board/">Ticket board</a></li></ul></div><div class="docs-nav__section"><p>Self-hosting</p><ul><li><a href="/docs/self-host/">Overview</a></li><li><a href="/docs/self-host-configuration/">Configuration</a></li><li><a href="/docs/self-host-secrets/">Secrets</a></li><li><a href="/docs/self-host-production/">Production deployment</a></li><li><a href="/docs/self-host-upgrading/">Upgrading</a></li><li><a href="/docs/self-host-backups/">Backup and restore</a></li></ul></div><div class="docs-nav__section"><p>Configure your server</p><ul><li><a href="/docs/self-host-accounts/">Sign-in and accounts</a></li><li><a href="/docs/self-host-models/">Models</a></li><li><a href="/docs/self-host-integrations/">Tools and integrations</a></li><li><a href="/docs/self-host-inbound-email/">Bot email addresses</a></li><li><a href="/docs/self-host-sandbox-providers/">Computer providers</a></li><li><a href="/docs/self-host-docker-computers/" aria-current="page">Docker computers</a></li><li><a href="/docs/computer-runtime/">Computer runtime</a></li><li><a href="/docs/self-host-storage/">Storage and encryption</a></li><li><a href="/docs/self-host-clients/">Apps and clients</a></li><li><a href="/docs/self-host-billing/">Billing</a></li><li><a href="/docs/self-host-observability/">Logs and monitoring</a></li><li><a href="/docs/self-host-audit-log/">Audit log</a></li><li><a href="/docs/self-host-restricted-network/">Restricted networks</a></li></ul></div><div class="docs-nav__section"><p>Reference</p><ul><li><a href="/integrations/">Integrations</a></li></ul></div></nav><details class="docs-menu"><summary>Docs menu</summary><nav class="docs-nav" aria-label="Docs"><div class="docs-nav__section"><p>Get started</p><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/troubleshooting/">Troubleshooting</a></li><li><a href="/docs/bots-and-chats/">Bots and chats</a></li><li><a href="/docs/import-an-agent/">Import an agent</a></li></ul></div><div class="docs-nav__section"><p>Using WhatEverFi</p><ul><li><a href="/docs/integrations/">Connect apps</a></li><li><a href="/docs/routines/">Routines</a></li><li><a href="/docs/pages/">Pages</a></li><li><a href="/docs/computer/">The bot&#39;s computer</a></li><li><a href="/docs/memory/">Memory</a></li><li><a href="/docs/skills/">Skills</a></li><li><a href="/docs/approvals/">Approvals</a></li><li><a href="/docs/groups/">Groups and teamwork</a></li><li><a href="/docs/voice-and-calls/">Voice and calls</a></li><li><a href="/docs/messaging-apps/">Chat apps</a></li></ul></div><div class="docs-nav__section"><p>Settings</p><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/model-subscriptions/">Model subscriptions</a></li><li><a href="/docs/spaces/">Spaces</a></li><li><a href="/docs/bot-secrets/">Reusable credentials</a></li><li><a href="/docs/account/">Account and billing</a></li></ul></div><div class="docs-nav__section"><p>Apps</p><ul><li><a href="/docs/desktop-app/">Desktop app</a></li><li><a href="/docs/mobile-app/">Mobile app</a></li></ul></div><div class="docs-nav__section"><p>Advanced</p><ul><li><a href="/docs/fleet-management/">Bots that manage bots</a></li><li><a href="/docs/build-a-plugin/">Build a plugin</a></li><li><a href="/docs/board/">Ticket board</a></li></ul></div><div class="docs-nav__section"><p>Self-hosting</p><ul><li><a href="/docs/self-host/">Overview</a></li><li><a href="/docs/self-host-configuration/">Configuration</a></li><li><a href="/docs/self-host-secrets/">Secrets</a></li><li><a href="/docs/self-host-production/">Production deployment</a></li><li><a href="/docs/self-host-upgrading/">Upgrading</a></li><li><a href="/docs/self-host-backups/">Backup and restore</a></li></ul></div><div class="docs-nav__section"><p>Configure your server</p><ul><li><a href="/docs/self-host-accounts/">Sign-in and accounts</a></li><li><a href="/docs/self-host-models/">Models</a></li><li><a href="/docs/self-host-integrations/">Tools and integrations</a></li><li><a href="/docs/self-host-inbound-email/">Bot email addresses</a></li><li><a href="/docs/self-host-sandbox-providers/">Computer providers</a></li><li><a href="/docs/self-host-docker-computers/" aria-current="page">Docker computers</a></li><li><a href="/docs/computer-runtime/">Computer runtime</a></li><li><a href="/docs/self-host-storage/">Storage and encryption</a></li><li><a href="/docs/self-host-clients/">Apps and clients</a></li><li><a href="/docs/self-host-billing/">Billing</a></li><li><a href="/docs/self-host-observability/">Logs and monitoring</a></li><li><a href="/docs/self-host-audit-log/">Audit log</a></li><li><a href="/docs/self-host-restricted-network/">Restricted networks</a></li></ul></div><div class="docs-nav__section"><p>Reference</p><ul><li><a href="/integrations/">Integrations</a></li></ul></div></nav></details><main id="main" class="docs-main"><div class="docs-page-head"><p class="docs-eyebrow">Configure your server</p><button class="docs-copy-page" type="button" data-markdown="/docs/self-host-docker-computers.md"><svg class="docs-icon-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="docs-icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Copy page</span></button></div><article class="docs-prose" data-pagefind-body><h1 id="docker-computers">Docker computers</h1>
+<p>Limit what each local Docker computer can use, keep it off your network, and share host folders
+with it.</p>
+<p>The Docker supervisor is not published as its own image and is not exposed on the host. It runs from
+the app image, stays on the internal Compose network, and holds the Docker socket because access to
+it is equivalent to control of the Docker host. Docker sandboxes require <code>SANDBOX_SUPERVISOR_TOKEN</code>
+(API, worker, supervisor). <code>SCREEN_PROXY_SECRET</code> signs browser-screen capabilities (API and web
+proxy). Keep both distinct from <code>BETTER_AUTH_SECRET</code>.</p>
+<h2 id="resource-ceilings">Resource ceilings</h2>
+<p>Each Docker computer runs Xvfb, a window manager and a full Chromium driven by an agent that
+decides for itself what to open, so it is capped. These defaults provide a starting point for the
+Docker computer topology:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Default</th>
+<th>Accepts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RAKAZO_COMPUTER_MEMORY</code></td>
+<td><code>2g</code></td>
+<td><code>2g</code>, <code>1536m</code>, a byte count. Minimum <code>6m</code>, Docker’s own floor. Also caps swap, so the ceiling holds.</td>
+</tr>
+<tr>
+<td><code>RAKAZO_COMPUTER_CPUS</code></td>
+<td><code>2</code></td>
+<td>Whole or fractional cores, e.g. <code>1.5</code></td>
+</tr>
+<tr>
+<td><code>RAKAZO_COMPUTER_PIDS_LIMIT</code></td>
+<td><code>2048</code></td>
+<td>A positive integer</td>
+</tr>
+</tbody>
+</table>
+<p>Set any of them to <code>0</code>, <code>none</code> or <code>unlimited</code> to remove that ceiling. A malformed value fails the
+supervisor at startup naming the variable, rather than surfacing later as a failed bot.</p>
+<p>Two caps bound how many computers exist. <code>SANDBOX_MAX_COMPUTERS_PER_USER</code> caps the computers one
+user’s bots may have, and <code>SANDBOX_MAX_COMPUTERS_PER_SPACE</code> caps concurrent computer containers per
+Space. <code>SANDBOX_TEAM_SCREEN_LIMIT</code> caps active bot desktops on one Team Computer; desktops and
+browsers otherwise start only when needed. <code>0</code>, the default, leaves each to the machine.</p>
+<p>The supervisor reaches Docker at <code>/var/run/docker.sock</code> (or <code>//./pipe/docker_engine</code> on Windows). Set
+<code>DOCKER_SOCKET</code> for rootless Docker, Colima or another path; <code>DOCKER_HOST</code> wins when both are set.</p>
+<h2 id="restricted-computer-egress">Restricted computer egress</h2>
+<p>Restricted egress gives Docker computers the public internet (browsing, DNS, apt, git
+over SSH) but not the Docker host, the LAN, or link-local cloud metadata such as
+<code>169.254.169.254</code>, which on a cloud VM would hand instance credentials to anything a bot runs.</p>
+<p>It takes two parts:</p>
+<ol>
+<li>
+<p><code>SANDBOX_COMPUTER_EGRESS=restricted</code> gives each computer network a deterministic host
+bridge name (<code>rakazo-c…</code>) instead of a generic <code>br-*</code>.</p>
+</li>
+<li>
+<p>The host ruleset, applied once per Docker host:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">sudo</span><span style="color:#9ECBFF"> bash</span><span style="color:#9ECBFF"> infra/compose/restrict-computer-egress.sh</span></span></code></pre>
+<p><code>install-images.sh</code> downloads and runs it (asking for sudo) and records the result in
+<code>.env</code>. Where the rules cannot be installed (macOS, Windows, Docker Desktop, rootless
+Docker, no iptables, or a failed run) it writes <code>SANDBOX_COMPUTER_EGRESS=open</code> and says
+why. The script drops forwarded traffic from <code>rakazo-c*</code> bridges to all non-public IPv4/IPv6
+destinations via the <code>DOCKER-USER</code> chain, adds an <code>INPUT</code> drop so computers cannot open
+connections to the host (established replies to host-initiated control and screen
+connections still flow), and installs a systemd oneshot so the rules return after a
+reboot. <code>--print</code> shows the exact rules without changing anything; <code>--remove</code> uninstalls.</p>
+</li>
+</ol>
+<p>Before the first restricted computer starts, the supervisor checks that the host drops
+connections from a <code>rakazo-c*</code> bridge. Without the ruleset, computers fail to start with an
+error naming the script instead of running unrestricted; run the script (no restart needed)
+or set <code>SANDBOX_COMPUTER_EGRESS=open</code> and recreate the supervisor.</p>
+<p>When <code>SANDBOX_COMPUTER_EGRESS</code> is unset, the Compose files use <code>auto</code>: the supervisor runs the
+same check and uses restricted egress if the ruleset is in place, otherwise open egress with a
+warning in its log. It keeps the first completed answer; a check that could not finish (a Docker
+error or timeout) fails that computer’s start and runs again on the next one. With the ruleset
+in place, so does a configured <code>SANDBOX_COMPUTER_DNS</code> that no server answers (see below). An
+install from before the ruleset existed therefore keeps working when it upgrades. After
+installing the ruleset, recreate the supervisor, or set <code>restricted</code> to refuse computers
+whenever the rules are missing. A host-run supervisor (<code>pnpm dev</code>) and the desktop app’s
+<strong>This computer</strong> stack default to open: Docker Desktop keeps its bridges in a VM the host
+rules cannot reach.</p>
+<p>Screen streaming is unaffected: the supervisor and web proxy join each computer’s bridge,
+and the ruleset exempts traffic whose in- and out-interface are both <code>rakazo-c*</code> before
+any drop (that exemption is load-bearing on hosts where <code>br_netfilter</code> feeds bridged
+frames through <code>FORWARD</code>). Rules match interface names rather than subnets, so computer
+create/delete cycles need no firewall maintenance; deleting a computer removes its
+traffic from the match and nothing else. A computer provisioned while egress was open
+is replaced on its next provision — resuming it on an unnamed bridge would bypass the
+restriction.</p>
+<p>Computers resolve names through Docker’s embedded DNS. Docker 28 and newer forward lookups
+to the host’s own resolvers from the host’s network, so a private host resolver (a cloud VPC
+resolver, a LAN router) keeps working. Older Docker versions forward from the computer’s
+network, and so does any server set in <code>SANDBOX_COMPUTER_DNS</code> or the daemon’s <code>dns</code> option;
+the ruleset drops those lookups when the resolver has a private address, and every lookup
+times out while connections by IP still work. In those cases set <code>SANDBOX_COMPUTER_DNS</code> to
+public resolvers (comma-separated IP addresses, such as <code>1.1.1.1,1.0.0.1</code>) and recreate the
+supervisor; each computer picks the servers up on its next provision. When
+<code>SANDBOX_COMPUTER_DNS</code> is set, computers with restricted or <code>auto</code> egress start only after one
+of its first three servers (Docker uses no more) answers from a computer network; a start that
+fails this check retries it on the next start. The check runs from an IPv4-only network and
+skips IPv6 servers, so if those three are all IPv6 nothing is checked.</p>
+<h3 id="opening-egress">Opening egress</h3>
+<p>If computers must reach LAN services, an internal proxy, or endpoints bound to the host,
+set <code>SANDBOX_COMPUTER_EGRESS=open</code>, recreate the supervisor, and run
+<code>sudo bash infra/compose/restrict-computer-egress.sh --remove</code>. The flag alone does not
+uninstall the host rules, which keep matching the still-named <code>rakazo-c*</code> bridges until
+removed.</p>
+<p>The ruleset requires Linux Docker Engine with the iptables backend; Docker Desktop, rootless
+Docker, and <code>firewall-backend: nftables</code> are unsupported. The
+<code>SANDBOX_SCREEN_NETWORK=internal</code> topology shares one network instead of per-bot bridges,
+so the mode does not apply there.</p>
+<h3 id="docker-in-a-linux-vm">Docker in a Linux VM</h3>
+<p>Where Docker Engine runs in a Linux VM, as with OrbStack on macOS, the rules belong in the VM,
+which <code>sudo</code> on the host cannot reach. Apply them from a container on the VM’s host network
+instead, and keep it running: the VM does not persist the rules, so a loop puts them back after
+a restart. The installer does not download the script on macOS. From the directory that holds
+the stack’s <code>.env</code>:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">curl</span><span style="color:#79B8FF"> -fsSLO</span><span style="color:#9ECBFF"> https://raw.githubusercontent.com/elie222/rakazo/main/infra/compose/restrict-computer-egress.sh</span></span></code></pre>
+<p>Save the following as <code>egress.yml</code> beside that script and start it with
+<code>docker compose -f egress.yml up -d</code>. The name keeps it in its own Compose project:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#85E89D">name</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">rakazo-computer-egress</span></span>
+<span class="line"><span style="color:#85E89D">services</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">  computer-egress</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">    image</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">alpine:3</span></span>
+<span class="line"><span style="color:#85E89D">    network_mode</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">host</span></span>
+<span class="line"><span style="color:#85E89D">    cap_add</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">NET_ADMIN</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">NET_RAW</span><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#85E89D">    restart</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">unless-stopped</span></span>
+<span class="line"><span style="color:#85E89D">    volumes</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">./restrict-computer-egress.sh:/restrict-computer-egress.sh:ro</span></span>
+<span class="line"><span style="color:#85E89D">    command</span><span style="color:#E1E4E8">: </span><span style="color:#F97583">&gt;-</span></span>
+<span class="line"><span style="color:#9ECBFF">      sh -c "apk add --no-cache bash iptables ip6tables &amp;&amp;</span></span>
+<span class="line"><span style="color:#9ECBFF">      while true; do bash /restrict-computer-egress.sh --apply; sleep 60; done"</span></span></code></pre>
+<p>Then change <code>SANDBOX_COMPUTER_EGRESS</code> from <code>open</code> to <code>restricted</code> in <code>.env</code> and recreate the
+supervisor. Docker Desktop has not been tested this way.</p>
+<h2 id="ipv6-for-computers">IPv6 for computers</h2>
+<p>Computer networks are created with IPv6 in open egress mode (Docker Engine 27+): Docker
+allocates a private ULA /64 per network and masquerades outbound traffic through the host’s
+IPv6 address, so computers reach IPv6-only sites, while names with both address families
+stay on IPv4 (RFC 6724 address selection with a ULA source). Restricted egress stays
+IPv4-only: the host ruleset and the startup check enforce and verify IPv4 only. An existing
+computer picks IPv6 up when its network is created again: a stop releases the network, and
+the next start creates a new one. Docker 26, Docker-in-Docker without <code>ip6_tables</code> and
+hosts with IPv6 disabled fall back to IPv4-only networks; the supervisor logs a warning and
+computers start unchanged. A computer can also stay on IPv4 for longer when its IPv4-only
+network could not be removed (another user keeps it); IPv4 keeps working, and IPv6 returns
+once that network is gone — for example after <code>docker network rm</code> of the computer’s
+<code>rakazo-computer-*</code> network while it is stopped.</p>
+<h2 id="shared-host-folders">Shared host folders</h2>
+<p><code>SANDBOX_COMPUTER_MOUNTS</code> mounts host directories into every bot computer (Docker sandboxes
+only): comma-separated <code>source:target[:option...]</code> entries, for example
+<code>/srv/team-docs:/mnt/team-docs</code>. Mounts are read-only unless the entry adds <code>rw</code>; <code>rslave</code> is the
+other option and requires <code>rw</code>, because mounts that reach the computer later keep their own
+write access. Both paths must be absolute without <code>..</code>, and targets must sit below <code>/mnt</code>,
+<code>/media</code> or <code>/srv</code>. On Docker Desktop for Windows, write a source in its WSL form
+(<code>/mnt/c/Users/me/Docs</code> for <code>C:\Users\me\Docs</code>); Docker rejects the Windows form, and <code>rslave</code>
+does not work on these folders.</p>
+<p>The setting is deployment-wide: every bot in every Space sees every mount, and with <code>rw</code> any of
+them can change or delete what another Space’s bots read. Mount only what all of them may see.
+The supervisor rejects a source that is, holds, or sits inside the Docker socket,
+<code>/run</code>, <code>/var/run</code>, <code>/proc</code>, <code>/sys</code>, <code>/dev</code>, <code>/etc</code>, <code>/boot</code>, <code>/root</code>, <code>/var/lib/docker</code> or
+the data directory that holds bot homes. It compares the configured path, and Docker follows
+host symlinks, so never point a source at one of these through a symlink.</p>
+<p>When the source holds a mount that can be replaced while computers run,
+such as an SSHFS or NFS share that reconnects, mount the share one level below the source
+(<code>/srv/shares/docs</code>, with <code>source</code> <code>/srv/shares</code>) and add <code>rw:rslave</code>, so the new mount reaches
+running computers instead of leaving them on the dead one. Mounting the share at the source
+itself does not work: replacing it leaves running computers on the old one.</p>
+<p><code>rslave</code> also needs the source to sit on a shared or slave host mount. Check with
+<code>findmnt -no PROPAGATION -T &lt;source&gt;</code>; systemd hosts report <code>shared</code> for most paths. If it reports
+<code>private</code>, Docker refuses to create the computer, so make the source its own shared mount first
+(<code>sudo mount --rbind &lt;source&gt; &lt;source&gt;</code> then <code>sudo mount --make-rshared &lt;source&gt;</code>; <code>--rbind</code>
+keeps a share already mounted below the source visible. Repeat it at boot, before the share
+mounts, for example from a systemd mount unit the share’s unit depends on). The source must
+exist on the Docker host. Recreate the supervisor after a change; each computer picks the new
+set up on its next provision, which replaces it.</p>
+<h2 id="time-zone-and-language">Time zone and language</h2>
+<p>Each computer runs in its owner’s time zone and app language when the account has them: the
+supervisor sets <code>TZ</code> and <code>LANGUAGE</code> on the container, and the browser offers pages that language
+(<code>Accept-Language</code> and <code>navigator.languages</code>), also for a browser profile saved earlier. Without
+them, the computer stays on UTC and the browser’s default language. A changed time zone or
+language replaces the computer on its next start, so after upgrading, each computer whose owner
+has either set is replaced once. The home and saved browser profiles are kept. A custom computer
+image should not set <code>TZ</code> or <code>LANGUAGE</code>: the computer gets them from the account.</p>
+</article><footer class="docs-pager"><a href="/docs/self-host-sandbox-providers/"><span>Previous</span>Computer providers</a><a class="docs-pager__next" href="/docs/computer-runtime/"><span>Next</span>Computer runtime</a></footer></main><aside class="docs-toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#resource-ceilings">Resource ceilings</a></li><li><a href="#restricted-computer-egress">Restricted computer egress</a></li><li><a href="#ipv6-for-computers">IPv6 for computers</a></li><li><a href="#shared-host-folders">Shared host folders</a></li><li><a href="#time-zone-and-language">Time zone and language</a></li></ul><div class="docs-toc__links"><a href="/docs/self-host-docker-computers.md">View as Markdown</a><a href="https://github.com/elie222/rakazo/edit/main/docs/self-host-docker-computers.md" target="_blank" rel="noopener">Edit on GitHub</a></div></aside></div><div class="container"><footer class="site-footer"><div class="site-footer__brand"><a class="brand-lockup" href="/" aria-label="WhatEverFi home"><img class="brand-lockup__mark" src="/brand/whateverfi-mark.png" width="36" height="36" alt="" aria-hidden="true"><span class="brand-lockup__word">WhatEverFi</span></a><nav class="site-footer__languages" aria-label="Language"><details class="language-menu"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>English<svg class="language-menu__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path></svg></summary><ul><li><a href="/" hreflang="en-US" lang="en" aria-current="true">English</a></li><li><a href="/de/" hreflang="de-DE" lang="de">Deutsch</a></li><li><a href="/ko/" hreflang="ko-KR" lang="ko">한국어</a></li><li><a href="/zh/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/ja/" hreflang="ja-JP" lang="ja">日本語</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/he/" hreflang="he" lang="he">עברית</a></li><li><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a></li><li><a href="/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a></li><li><a href="/pl/" hreflang="pl-PL" lang="pl">Polski</a></li></ul></details></nav><span class="site-footer__legal"><span>© 2026 <a href="https://regan.studio" target="_blank" rel="noopener">Regan.Studio</a></span><a href="/NOTICE.txt">Apache-2.0 · Open-source notices</a></span></div><nav class="site-footer__columns" aria-label="Footer"><div class="site-footer__column"><h2>Product</h2><ul><li><a href="/download/">Download</a></li><li><a href="/self-hosted-ai-agent/">Docs</a></li><li><a href="/enterprise/">Enterprise</a></li><li><a href="/sandboxes/">Sandboxes</a></li><li><a href="/integration-platforms/">Integration platforms</a></li><li><a href="/voice-providers/">Voice providers</a></li><li><a href="/plugins/submit/">Submit a plugin</a></li><li><a href="https://github.com/elie222/rakazo/releases" target="_blank" rel="noopener">Changelog</a></li><li><a href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener">GitHub</a></li></ul></div><div class="site-footer__column"><h2>Alternatives</h2><ul><li><a href="/grok-bot-alternative/">Grok Bot</a></li><li><a href="/muse-alternative/">Muse</a></li><li><a href="/dots-alternative/">Dots</a></li><li><a href="/instinct-alternative/">Instinct</a></li><li><a href="/hermes-alternative/">Hermes</a></li><li><a href="/claude-duet-alternative/">Claude Duet</a></li><li><a href="/hark-alternative/">Hark</a></li><li><a href="/openclaw-alternative/">OpenClaw</a></li><li><a href="/alternatives/">All</a></li></ul></div><div class="site-footer__column"><h2>Company</h2><ul><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/brand/">Brand</a></li><li><a href="/support/">Support</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li></ul></div></nav></footer></div><dialog class="docs-search" aria-label="Search docs"><div id="docs-search"></div></dialog></div></body></html><script type="module">var e=document.querySelector(`.docs-copy-page`)?.querySelectorAll(`svg`)??[];async function t(e,t){let n=t.then(e=>new Blob([e],{type:`text/plain`}));await navigator.clipboard.write([new ClipboardItem({"text/plain":n})]),e.dataset.copied=``,setTimeout(()=>delete e.dataset.copied,1500)}var n=document.querySelector(`.docs-prose`);n?.querySelectorAll(`h2[id], h3[id]`).forEach(e=>{let t=document.createElement(`a`);t.className=`docs-anchor`,t.href=`#${e.id}`,t.setAttribute(`aria-label`,`Link to ${e.textContent}`),t.textContent=`#`,e.append(t)}),n?.querySelectorAll(`pre`).forEach(n=>{let r=document.createElement(`button`);r.type=`button`,r.className=`docs-copy-code`,r.setAttribute(`aria-label`,`Copy code`),r.append(...[...e].map(e=>e.cloneNode(!0))),r.addEventListener(`click`,()=>t(r,Promise.resolve(n.querySelector(`code`)?.innerText??n.innerText)));let i=document.createElement(`div`);i.className=`docs-code`,n.replaceWith(i),i.append(n,r)});var r=document.querySelector(`.docs-copy-page`);r?.addEventListener(`click`,()=>t(r,fetch(r.dataset.markdown??``).then(e=>e.text())));var i=document.querySelector(`.docs-search`),a=document.querySelector(`.docs-search-trigger`),o;if(!/Mac|iPhone|iPad/.test(navigator.platform)){let e=a?.querySelector(`kbd`);e&&(e.textContent=`Ctrl K`)}function s(){let e=Object.assign(document.createElement(`link`),{rel:`stylesheet`,href:`/pagefind/pagefind-ui.css`}),t=Object.assign(document.createElement(`script`),{src:`/pagefind/pagefind-ui.js`});return document.head.append(e,t),new Promise((e,n)=>{t.onload=()=>{let{PagefindUI:t}=window;new t({element:`#docs-search`,showSubResults:!0,showImages:!1}),e()},t.onerror=n})}async function c(){i&&(o??=s(),i.showModal(),await o,i.querySelector(`input`)?.focus())}a?.addEventListener(`click`,c),i?.addEventListener(`click`,e=>{e.target===i&&i.close(),e.target.closest(`a`)&&i.close()}),document.addEventListener(`keydown`,e=>{(e.metaKey||e.ctrlKey)&&e.key.toLowerCase()===`k`&&(e.preventDefault(),i?.open?i.close():c())});var l=[...document.querySelectorAll(`.docs-toc li a`)],u=l.map(e=>document.getElementById(decodeURIComponent(e.hash.slice(1)))).filter(e=>e!==null);function d(){let e=window.innerHeight+window.scrollY>=document.body.scrollHeight-2?u.at(-1):u.findLast(e=>e.getBoundingClientRect().top<=120);for(let t of l)t.toggleAttribute(`data-active`,t.hash===`#${e?.id}`)}u.length>0&&(d(),window.addEventListener(`scroll`,d,{passive:!0}));</script>

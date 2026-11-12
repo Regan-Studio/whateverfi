@@ -1,0 +1,139 @@
+# TikTok Ads
+
+Use TikTok API for Business actions to read advertisers, campaigns, ad groups, ads, audiences, creatives, catalogs, Business Centers, balances, billing, and transactions; manage advertiser settings, Asset Groups, disabled-by-default Smart+ and GMV Max resources, catalog feeds and videos, creative sharing, Pangle block lists, and selected compliance workflows; and retrieve MMM, GMV Max, and Smart+ reports.
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/tiktok-ads/.
+
+## Actions
+
+- **Appeal Smart+ Ad**: Submit an appeal for a Smart+ ad review decision.
+- **Assign TikTok Account To Advertiser**: Link a TikTok account to an ad account in the same Business Center.
+- **Check Advertiser Term Status** (read-only): Check whether a TikTok advertiser has signed a specified agreement.
+- **Check Change Log Download Task** (read-only): Check whether an advertiser change-log download task is processing, successful, or failed.
+- **Check File Names** (read-only): Check whether one or more image or video file names are already used in an advertiser account.
+- **Check GMV Max Occupied Custom Shop Ads** (read-only): Check which Shopping Ads occupy one TikTok Shop identity or product asset.
+- **Check MMM Data Request** (read-only): Check one MMM export job.
+- **Check Smart+ Campaign Copy Task** (read-only): Get the results of an asynchronous Upgraded Smart+ campaign copy task.
+- **Check TikTok Shop GMV Max Availability** (read-only): Check a TikTok Shop's availability for Product GMV Max campaigns.
+- **Check UnionPay Verification Requirement** (read-only): Check whether a business license requires UnionPay verification before submitting advertiser verification details.
+- **Create Business Center Asset Group**: Create an Asset Group in a TikTok Business Center, add advertiser assets and members, and optionally assign each member an advertiser…
+- **Create Business Center Organization Account**: Create an Organization Account in an authorized Business Center.
+- **Create Business Spark Ad**: Create a campaign, ad group, and Spark Ad in one request.
+- **Create Catalog Product Diagnostic Task**: Create an asynchronous download task for catalog product diagnostic information.
+- **Create Catalog Product Set by File**: Create an E-commerce catalog product set from an uploaded CSV file.
+- **Create Change Log Download Task**: Create an asynchronous download task for an advertiser's change log.
+- **Create Creative Pre-Review Task**: Create a task to pre-review creative materials for one location.
+- **Create Creative Welcome Message**: Create a welcome message within a TikTok advertiser account.
+- **Create GMV Max Campaign**: Create a GMV Max campaign from TikTok's official campaign model.
+- **Create GMV Max Session**: Create a max delivery session for a product or a creative boost session for a video.
+- **Create MMM Data Request**: Create an irreversible Media Mix Modeling export job after explicit confirmation.
+- **Create Smart+ Ad**: Create a Smart+ ad disabled for review in an existing Smart+ ad group.
+- **Create Smart+ Ad Group**: Create a Smart+ ad group disabled for review in an existing Smart+ campaign.
+- **Create Smart+ Campaign**: Create a Smart+ campaign disabled for review.
+- **Create Smart+ Campaign Copy Task**: Create and start an asynchronous copy task for an Upgraded Smart+ campaign.
+- **Create Video Fix Tasks**: Create up to 10 Smart Fix tasks for advertiser-owned videos.
+- **Delete Business Center Asset Group**: Delete one Asset Group from a TikTok Business Center.
+- **Delete Catalog Video**: Permanently delete one uploaded video from an E-commerce catalog.
+- **Delete Creative Assets**: Delete video or image assets owned by a TikTok advertiser account.
+- **Delete Customized Identity**: Permanently delete a customized user identity from an advertiser account.
+- **Delete Customized TikTok Posts**: Permanently delete shop-level customized TikTok posts.
+- **Delete GMV Max Session**: Permanently delete a GMV Max session from an advertiser account.
+- **Delete Search Ad Negative Keywords**: Delete negative keywords from one Search Ads campaign or ad group in an authorized advertiser account.
+- **Delete Smart+ Resources**: Permanently delete up to 20 Smart+ campaigns, ad groups, or ads.
+- **Disable Business Center Advertiser**: Irreversibly disable one ad account in a TikTok Business Center.
+- **Get Ad Benchmarks** (read-only): Get one page of ad benchmark dimensions and dynamic numeric metrics, scoped by exactly one ad_ids, adgroup_ids, or campaign_ids filter.
+- **Get Advertiser Accounts** (read-only): Return profile, status, timezone, currency, and other default details for specified authorized TikTok advertiser accounts.
+- **Get Advertiser Balance** (read-only): Get one page of ad account balances and budgets for a TikTok Business Center, with optional account filters and detailed balance fields.
+- **Get Asset Binding Quota** (read-only): Get advertiser binding quota usage for a TikTok identity asset.
+- **Get Bid Protection Details** (read-only): Get bid protection history for campaigns or ad groups over a date range.
+- **Get Bid Protection Statuses** (read-only): Get bid protection statuses for up to 200 campaigns or ad groups.
+- **Get Business Center Activity Log** (read-only): Get one page of activity-log records for a Business Center.
+- **Get Business Center Advertiser Attributes** (read-only): Get currencies and registration regions available when creating ad accounts in a Business Center.
+- **Get Business Center Asset Group** (read-only): Get the assets or members of an Asset Group in a Business Center.
+- **Get Business Center Balance** (read-only): Read the balance of a TikTok Business Center or Payment Portfolio.
+- **Get Campaign Quota Information** (read-only): Get SKAN Dedicated Campaign quota information by ad network.
+- **Get Catalog Category Insights** (read-only): Get up to 50 top trending product categories and availability metrics for an eligible E-commerce catalog, optionally filtered by category…
+- **Get Catalog Diagnostics** (read-only): Get one page of synchronous catalog product diagnostic information.
+- **Get Catalog Insight Filters** (read-only): Get one page of provider-approved category, brand, or availability filter values for product insight endpoints.
+- **Get Catalog Product Diagnostic Task** (read-only): Get an asynchronous catalog product diagnostic task result.
+- **Get Catalog Videos** (read-only): Get one page of uploaded videos from a catalog.
+- **Get Change Log Download Task Result** (read-only): Read the status and change-log content returned for an advertiser's change-log task.
+- **Get Creative Assets** (read-only): Return metadata for specified video or image assets in an authorized advertiser's Ads Asset Library.
+- **Get Creative Fatigue Results** (read-only): Get one page of Creative Fatigue Detection results for an ad.
+- **Get Creative Pre-Review Task** (read-only): Get the result of a creative pre-review task.
+- **Get Creative Welcome Messages** (read-only): Get one page of welcome messages within a TikTok advertiser account.
+- **Get Custom Audience Details** (read-only): Get current status and modification history for specified owned or shared custom audiences.
+- **Get Custom Audience Sharing Log** (read-only): Get the advertisers with which a specific TikTok custom audience has been shared, including each sharing status.
+- **Get GMV Max Bid Recommendation** (read-only): Get TikTok's recommended GMV Max bid for an eligible advertiser and shop.
+- **Get GMV Max Campaign Info** (read-only): Get information for one GMV Max campaign owned by an authorized advertiser.
+- **Get GMV Max Exclusive Authorization** (read-only): Get an advertiser account's exclusive authorization status for a TikTok Shop.
+- **Get GMV Max Report** (read-only): Run one paginated Product or LIVE GMV Max campaign report.
+- **Get GMV Max Sessions** (read-only): Get max delivery or creative boost session details by 1 to 20 exact session IDs.
+- **Get In-Second Video Performance** (read-only): Get one page of in-second AD or VIDEO performance.
+- **Get MMM Download URL** (read-only): Obtain a seven-day signed URL for a completed MMM compressed CSV.
+- **Get MMM Request History** (read-only): Retrieve MMM request metadata for a UTC+0 date interval.
+- **Get Recommended Search Keywords** (read-only): Get 20 TikTok search-keyword recommendations for a product, service, or brand query.
+- **Get Showcase Identity** (read-only): Get the identity with Showcase permission under an ad account.
+- **Get Showcase Products** (read-only): Get one page of products available in a Showcase.
+- **Get Showcase Regions** (read-only): Get the regions targetable by a Showcase-bound identity.
+- **Get Smart+ Ad Groups** (read-only): List Smart+ ad group details through TikTok's dedicated /smart_plus/adgroup/get/ endpoint.
+- **Get Smart+ Ads** (read-only): List Smart+ ad details through TikTok's dedicated /smart_plus/ad/get/ endpoint.
+- **Get Smart+ Campaigns** (read-only): List Smart+ campaign details through TikTok's dedicated /smart_plus/campaign/get/ endpoint.
+- **Get Smart+ Material Report** (read-only): Get one page of Smart+ material overview or breakdown reporting.
+- **Get Smart+ Review Info** (read-only): Get review information for Smart+ ads or ad materials.
+- **Get Trending Catalog Products** (read-only): Get up to 50 trending products from an eligible E-commerce catalog.
+- **Get Trending Search Keywords** (read-only): Get the top 20 TikTok search keywords, optionally personalized for a Business Account.
+- **Get Video Fix Task** (read-only): Get the results of a Smart Fix task.
+- **List Ad Accounts Linked to TikTok Account** (read-only): List one page of ad accounts linked to one TikTok account asset in a Business Center.
+- **List Ad Groups** (read-only): List regular or mixed-automation ad group inventory through TikTok's generic /adgroup/get/ endpoint.
+- **List Ads** (read-only): List regular or mixed-automation ad inventory through TikTok's generic /ad/get/ endpoint.
+- **List Advertiser Budget Changes** (read-only): Get one page of budget change audit records for an ad account.
+- **List Advertiser Qualifications** (read-only): List one page of reusable advertiser qualification records in a Business Center, optionally filtered by verification status.
+- **List Advertiser Transactions** (read-only): List one page of advertiser billing transactions accessible through a Business Center, with optional transaction type, fund type, account,…
+- **List Business Center Account Costs** (read-only): Get one page of aggregate Business Center costs and itemized advertiser cost records.
+- **List Business Center Account Transactions** (read-only): Get one page of itemized billing transactions for a Business Center, its ad accounts, or a Payment Portfolio, including invoice, tax,…
+- **List Business Center Advertisers** (read-only): List one page of advertiser-account assets assigned to the authorized user in a specified TikTok Business Center.
+- **List Business Center Asset Groups** (read-only): Get one page of Asset Groups in a TikTok Business Center.
+- **List Business Center Asset Partners** (read-only): Get one page of Business Center partners associated with an asset.
+- **List Business Center Billing Groups** (read-only): Get one page of billing groups in a TikTok Business Center.
+- **List Business Center Members** (read-only): Get one page of members in a TikTok Business Center.
+- **List Business Center Partners** (read-only): Get one page of partners for a TikTok Business Center.
+- **List Business Center Pixel Links** (read-only): Get one page of ad accounts linked to a TikTok Business Center pixel.
+- **List Business Center Transactions** (read-only): Get one page of Business Center-level cash or grant fund movements, with aggregate charged and paid amounts.
+- **List Business Centers** (read-only): List one page of Business Centers accessible to the connected TikTok authorization, optionally restricted to one Business Center ID.
+- **List Campaign Labels** (read-only): List one page of campaign labels for an authorized advertiser.
+- **List Campaigns** (read-only): List regular or mixed-automation campaign inventory through TikTok's generic /campaign/get/ endpoint.
+- **List Catalogs** (read-only): List catalogs in a specified TikTok Business Center, optionally restricted to one catalog ID.
+- **List Creative Portfolios** (read-only): List one provider page of interactive creative portfolios for an advertiser.
+- **List Custom Audiences** (read-only): List one page of owned and shared custom audiences for an authorized advertiser, optionally restricted to specified audience IDs.
+- **List GMV Max Campaign Sessions** (read-only): List active max delivery or creative boost sessions for one Product GMV Max campaign ID.
+- **List GMV Max Customized Posts** (read-only): List one page of shop-level customized TikTok posts for GMV Max.
+- **List GMV Max Identities** (read-only): List identities available to an advertiser for GMV Max campaigns.
+- **List GMV Max Videos** (read-only): List one page of authorized or custom-post-eligible TikTok posts for a Product GMV Max campaign.
+- **List Pangle Audience Packages** (read-only): List the include and exclude audience packages available for an advertiser's Pangle targeting configuration.
+- **List Search Ad Negative Keywords** (read-only): List one page of negative keywords for a campaign or ad group in an authorized advertiser account.
+- **List TikTok Shops for GMV Max** (read-only): List TikTok Shops available to an advertiser for GMV Max campaigns.
+- **List Trending Commercial Music** (read-only): Retrieve up to 100 popular, pre-cleared Commercial Music Library tracks for a TikTok Business Account, region, genre, and popularity window.
+- **List Trending Videos for Commercial Music** (read-only): Retrieve the top trending TikTok videos that use a Commercial Music Library track in a selected region.
+- **Preview Smart+ Ad** (read-only): Generate a preview link or iframe for a proposed or existing Upgraded Smart+ ad.
+- **Set Search Ad Negative Keywords**: Set negative keywords on Search Ads campaigns or ad groups.
+- **Set Smart+ Delivery Status**: Enable or disable up to 20 Smart+ campaigns, ad groups, or ads.
+- **Share Creative Assets**: Share controlled creative assets from one advertiser with specified target advertiser accounts.
+- **Submit UnionPay Verification**: Submit identity and UnionPay account details to verify an eligible business license.
+- **Unassign TikTok Account From Advertiser**: Unlink a TikTok account from an ad account in the same Business Center.
+- **Update Advertiser Account**: Update one TikTok ad account's name, contact, company, license, certificate, promotion-link, address, or billing tax-number metadata.
+- **Update Advertiser Budgets**: Consequential financial action that updates, resets, increments, deducts, or sets minimum budgets for ad accounts in a Business Center.
+- **Update Catalog**: Update the name of a catalog owned by a TikTok Business Center.
+- **Update Catalog Feed Schedule Status**: Set one catalog feed schedule to ON or OFF.
+- **Update GMV Max Campaign**: Update supported fields on an existing GMV Max campaign.
+- **Update GMV Max Campaign Creatives**: Remove creatives from a GMV Max campaign or add them back.
+- **Update GMV Max Session**: Update documented budget or schedule fields for a max delivery or creative boost session.
+- **Update Pangle Block List**: Update an advertiser's Pangle app block list by adding apps, removing apps, or clearing the existing list before adding replacements.
+- **Update Search Ad Negative Keyword**: Update the name or match type of one negative keyword attached to a Search Ads campaign or ad group.
+- **Update Smart+ Ad**: Update an existing Smart+ ad and its material configuration.
+- **Update Smart+ Ad Group**: Update an existing Smart+ ad group's name, bid, budget, schedule, pacing, comment or sharing settings, and audience targeting.
+- **Update Smart+ Ad Group Budgets**: Update immediate total budgets or next-day scheduled daily budgets for Upgraded Smart+ ad groups.
+- **Update Smart+ Ad Material Status**: Enable or disable up to 20 materials belonging to a Smart+ ad.
+- **Update Smart+ Campaign**: Update an existing Smart+ campaign's supported fields.
+- **Upload Business Certificate Image**: Upload a business certificate image for an ad account through a Business Center where the connected user is an administrator.
+- **Upload Catalog Videos by File URL**: Upload catalog videos from a file URL.

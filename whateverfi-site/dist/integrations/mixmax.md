@@ -1,0 +1,104 @@
+# Mixmax
+
+The #1 Sales Engagement Platform for Gmail. Mixmax provides email tracking, scheduling, sequences, and productivity tools for sales teams.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/mixmax/.
+
+## Actions
+
+- **Add Contact to Group**: Add a contact to a contact group.
+- **Add Email to Unsubscribe List**: Add an email address to the Mixmax unsubscribe list.
+- **Add Team Members**: Add one or more members to a Mixmax team by email.
+- **Create Contact**: Create a new contact in Mixmax.
+- **Create Contact Group**: Create a new contact group in Mixmax.
+- **Create Contact Note**: Create a note for a contact.
+- **Create Livefeed Search**: Create a new saved search in the Mixmax livefeed.
+- **Create Message**: Create a draft Mixmax message (email).
+- **Create Rule**: Create a new Mixmax rule/webhook.
+- **Create Sequence Folder**: Create a new sequence folder in Mixmax.
+- **Create Snippet Tag**: Create a new snippet tag (folder) in Mixmax.
+- **Create Team**: Create a new team in Mixmax.
+- **Delete Contact Group**: Delete a contact group by ID.
+- **Delete Contact Note**: Delete a note from a contact by its ID.
+- **Delete Rule**: Delete a Mixmax rule by its ID.
+- **Delete Sequence Folder**: Permanently delete a sequence folder by its ID.
+- **Delete Snippet Tag**: Delete a snippet tag by its unique ID.
+- **Delete Unsubscribe**: Remove an email address from the Mixmax unsubscribe list.
+- **Get all rules** (read-only): Retrieve all Mixmax rules for the authenticated user.
+- **Get contact by ID** (read-only): Retrieve a single contact by ID from Mixmax.
+- **Get Contact Group** (read-only): Retrieve a single contact group by ID.
+- **Get Contact Notes** (read-only): Retrieve notes associated with a specific contact.
+- **Get Contactgroup Contacts** (read-only): Retrieve membership for a contact group in Mixmax.
+- **Get Current User** (read-only): Retrieve information about the currently authenticated user.
+- **Get live feed activity data** (read-only): Retrieve live feed activity data from Mixmax.
+- **Get Meeting Invites** (read-only): Retrieve a paginated list of meeting invites from Mixmax.
+- **Get Teams** (read-only): Retrieve all teams that the authenticated user is a member of.
+- **Get Unsubscribes** (read-only): Retrieve a list of unsubscribed email addresses from Mixmax.
+- **List Contact Groups** (read-only): Retrieve a list of contact groups from Mixmax.
+- **List Contacts** (read-only): Retrieve all Mixmax contacts (people you've emailed using Mixmax).
+- **List Sequence Folders** (read-only): Retrieve a list of all sequence folders from Mixmax.
+- **List Sequences** (read-only): Retrieve a list of sequences from Mixmax.
+- **List Snippets** (read-only): List templates or snippets that you have access to (including those shared with you).
+- **Query Contacts** (read-only): Search for matching contacts across multiple sources including Mixmax, Google Directory, and Salesforce (contacts, leads, accounts, and…
+- **Search Sequences** (read-only): Search sequence recipients by email and sequenceId from Mixmax.
+- **Send Message Draft**: Send a message draft by its unique ID.
+- **Send Snippet as Email**: Send a snippet as an email to specified recipients.
+- **Update Contact**: Update a specific contact by ID.
+- **Update Contact Group**: Update a contact group by ID.
+- **Update Contact Note**: Update a note on a contact by its ID.
+- **Update Rule by ID**: Update a rule by its unique ID in Mixmax.
+- **Update Sequence Folder by ID**: Update a sequence folder by its unique ID in Mixmax.
+- **Update Snippet by ID**: Update a snippet by its unique ID in Mixmax.
+- **Update Snippet Tag**: Update a snippet tag (folder) by its unique ID.
+- **Add Snippet to Tag**: Add a snippet to a snippet tag in Mixmax.
+- **Cancel Sequence Recipients**: Cancel specific recipients across all sequences.
+- **Create Code Snippet**: Create a new Formatted Code enhancement in Mixmax.
+- **Create insights report**: Create a new insights report in Mixmax.
+- **Create Integration Enhancement**: Create a new enhancement integration in Mixmax.
+- **Create Integrations Command**: Create a new slash command that will be visible to only your account.
+- **Create Integrations Sidebars**: Create a new sidebar integration in Mixmax.
+- **Create Link Resolver**: Create a new link resolver integration in Mixmax.
+- **Create Rule Action**: Create a new action for a Mixmax rule.
+- **Delete Contact**: Delete a contact by ID.
+- **Delete Integration Enhancement**: Delete an integration enhancement by its ID.
+- **Delete Integrations Sidebars**: Delete a sidebar integration by its ID.
+- **Delete Link Resolver**: Permanently delete a link resolver by its ID.
+- **Delete Rule Action**: Delete an action from a Mixmax rule.
+- **Delete slash command**: Delete a slash command by its unique ID from Mixmax integrations.
+- **Delete Snippet**: Delete a snippet by moving it to trash.
+- **Delete Team**: Delete a team by its ID.
+- **Get Code Snippet** (read-only): Fetch a single Formatted Code enhancement by its unique ID.
+- **Get Current User Preferences** (read-only): Retrieve preferences for the currently authenticated user.
+- **Get File Requests** (read-only): Retrieve all file requests that you've sent out through Mixmax.
+- **Get insights report by ID** (read-only): Retrieve a single insights report by ID from Mixmax.
+- **Get Integrations Commands** (read-only): Retrieve a list of Slash Commands that you have access to in Mixmax.
+- **Get Integrations Enhancements** (read-only): Retrieve a list of enhancements that you have access to in Mixmax.
+- **Get Integrations Sidebars** (read-only): Retrieve a list of sidebar integrations that you have access to in Mixmax.
+- **Get Link Resolver Integrations** (read-only): Retrieve all link resolver integrations configured in Mixmax.
+- **Get Livefeed Events** (read-only): Retrieve events for a specific message in the live feed.
+- **Get Message by ID** (read-only): Retrieve a single message by its unique ID.
+- **Get Messages** (read-only): Retrieve messages (emails) from Mixmax.
+- **Get Polls** (read-only): Retrieve polls created in Mixmax along with voting information.
+- **Get Q&A Surveys** (read-only): Retrieve Question & Answer surveys data from Mixmax.
+- **Get Reports Data Table** (read-only): Query analytics data for messages and meetings from Mixmax reports.
+- **Get Rule by ID** (read-only): Fetch a single rule by its unique ID from Mixmax.
+- **Get Salesforce account information** (read-only): Retrieve Salesforce account information for the authenticated user.
+- **Get Sequence Folder by ID** (read-only): Retrieve a single sequence folder by its ID from Mixmax.
+- **Get Snippet by ID** (read-only): Fetch a single snippet by its unique ID from Mixmax.
+- **Get Snippet Tag** (read-only): Retrieve a single snippet tag (folder) by its unique ID.
+- **Get Snippet Tags** (read-only): Retrieve a list of snippet tags (folders) from Mixmax.
+- **Get Team Members** (read-only): Retrieve all members of a Mixmax team.
+- **Get Yes/No Questions** (read-only): Retrieve Yes/No questions created in Mixmax.
+- **List Code Snippets** (read-only): List all Formatted Code enhancements you've created.
+- **List insights reports** (read-only): Retrieve all insights reports from Mixmax.
+- **List Rule Actions** (read-only): List all actions for a given Mixmax rule.
+- **Post Reports Data Table**: Generate a table report with specified analytics data for messages, meetings, or sequences.
+- **Remove Contact from Group**: Remove a contact from a contact group.
+- **Remove Team Member**: Remove a member from a Mixmax team.
+- **Send Test Message**: Send a test Mixmax message to the authenticated user, resolving any variables.
+- **Update Appointment Link Calendar Name**: Update your custom "Mixmax Calendar" vanity URL name.
+- **Update Current User Preferences**: Update preferences for the currently authenticated user.
+- **Update insights report**: Update an existing insights report in Mixmax.
+- **Update Message by ID**: Update a message by its unique ID.
+- **Update Rule Action**: Update an action within a Mixmax rule.
+- **Update Team**: Update a team's information by ID.

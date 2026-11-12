@@ -1,0 +1,383 @@
+# SendGrid
+
+SendGrid is a cloud-based email delivery platform providing transactional and marketing email services, with APIs for integration, analytics, and scalability
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/sendgrid/.
+
+## Actions
+
+- **Add an ip address to a pool**: Add an ip address to a pool with this endpoint.
+- **Retrieve all lists** (read-only): **this endpoint allows you to retrieve all of your recipient lists.
+- **Activate template version**: **this endpoint allows you to activate a version of one of your templates.**
+- **Add a batch of ips to an ip pool**: This operation appends a batch of ips to an ip pool.
+- **Add a single recipient to a list**: **this endpoint allows you to add a single recipient to a list.**
+- **Add a twilio sendgrid ip address**: This operation adds a twilio sendgrid ip address to your account.
+- **Add an ip to an authenticated domain**: **this endpoint allows you to add an ip address to an authenticated domain.**
+- **Add ips**: **this endpoint is for adding a(n) ip address(es) to your account.**
+- **Add one or more ips to the allow list**: This endpoint adds allowed ip addresses to a list, which then assigns each ip an id for future removal.
+- **Add or update a contact**: The endpoint can handle 30k contacts or 6mb, reports queuing/errors, needs extra steps to confirm changes and retrieve ids.
+- **Add recipient addresses to the global suppression group**: **this endpoint allows you to add one or more email addresses to the global suppressions group.**
+- **Add suppressions to a suppression group**: **this endpoint allows you to add email addresses to an unsubscribe group.** if you attempt to add suppressions to a group that has been…
+- **Approve access request**: **this endpoint allows you to approve an access attempt.** **note.
+- **Assign a batch of subusers to an ip**: This operation appends a batch of subusers to a specified ip address.
+- **Associate a branded link with a subuser**: Parent accounts can create and validate branded links, then assign them to subusers through the api or twilio sendgrid app, enabling…
+- **Associate an authenticated domain with a given user**: Associate authenticated domains with subusers under a parent account to enable email sending using the parent's domain.
+- **Authenticate a domain**: The endpoint enables domain authentication for users or subusers, offering two methods—'username' parameter for visibility and…
+- **Authenticate an account with single sign on**: Authenticates and logs in a user to twilio sendgrid as a specific admin identity configured for sso by partner.
+- **Bind authenticated domains to user**: This endpoint enables linking up to five authenticated domains from a parent account to a subuser, giving them permission to send emails…
+- **Bulk delete single sends**: This api endpoint enables the deletion of multiple single sends by providing their ids.
+- **Cancel or pause a scheduled send**: This api endpoint allows users to cancel or pause a scheduled email by providing its batch id.
+- **Completed steps** (read-only): This api endpoint checks if a sendgrid account has completed domain authentication (domain verified) and single sender verification…
+- **Create a batch id**: Create a new mail batch id to group email sends, allowing pause or cancel actions via the scheduled sends api.
+- **Create a branded link**: Create a new branded link by specifying the root domain, which must align with your from email, and an optional unique subdomain.
+- **Create a campaign**: This endpoint enables campaign creation, requiring a subject, sender id, content (html and text suggested), and a list or segment id for…
+- **Create a custom field**: **this endpoint allows you to create a custom field.** **you can create up to 120 custom fields.**
+- **Create a list**: **this endpoint allows you to create a list for your recipients.**
+- **Create a new alert**: **this endpoint allows you to create a new alert.**
+- **Create a new event webhook**: Set up an event webhook by providing a url, choosing events for post requests, and receive a unique id.
+- **Create a new suppression group**: **this endpoint allows you to create a new suppression group.** to add an email address to the suppression group, [create a…
+- **Create a new transactional template version**: **this endpoint allows you to create a new version of a template.**
+- **Create a parse setting**: Create a new inbound parse setting with a twilio sendgrid authenticated hostname and a public url to receive parsed messages via http post.
+- **Create a segment**: New segment endpoint created.
+- **Create a sender**: This api endpoint is for creating new senders, with a limit of 100.
+- **Create a sender identity**: **this endpoint allows you to create a new sender identity.** you may create up to 100 unique sender identities.
+- **Create a transactional template**: **this endpoint allows you to create a transactional template.**
+- **Create an account**: Creates a new account, with specified offering, under the organization.
+- **Create an ip pool**: Create an ip pool by activating an ip in sendgrid.
+- **Create an ip pool with a name and ip assignments**: Creating an ip pool associates specified ips with it.
+- **Create an sso certificate**: **this endpoint allows you to create an sso certificate.**
+- **Create an sso integration**: **this endpoint allows you to create an sso integration.**
+- **Create an sso teammate**: Create an sso teammate with email as username.
+- **Create api keys**: Use sendgrid app to create an initial api key.
+- **Create custom field definition**: Create unique case-insensitive custom fields with alphanumeric/underscore names starting with a letter/underscore.
+- **Create design**: Create new designs via /designs by submitting html content.
+- **Create list**: This endpoint enables the creation of a new contacts list, which can automate email sending when new contacts are added.
+- **Create segment**: Segment name has to be unique.
+- **Create single send**: The endpoint lets you create a single send draft without needing a template id.
+- **Create subuser**: **this endpoint allows you to create a new subuser.**
+- **Create verified sender request**: This endpoint creates a new sender identity via post, sends a verification email to from email, and requires email verification.
+- **Createintegration**: This endpoint creates an integration for email event forwarding.
+- **Delete a batch of ips from an ip pool**: This operation removes a batch of ips from an ip pool.
+- **Delete a batch of subusers from an ip**: This operation removes a batch of subusers from a specified ip address.
+- **Delete a bounce**: **this endpoint allows you to remove an email address from your bounce list.**
+- **Delete a branded link**: Delete a branded link using this endpoint.
+- **Delete a campaign**: **this endpoint allows you to delete a specific campaign.**
+- **Delete a cancellation or pause from a scheduled send**: **this endpoint allows you to delete the cancellation/pause of a scheduled send.** scheduled sends cancelled less than 10 minutes before…
+- **Delete a contact identifier**: This endpoint asynchronously deletes an identifier (not the entire contact) from a contact, failing if it's their only one.
+- **Delete a custom field**: **this endpoint allows you to delete a custom field by id.**
+- **Delete a global suppression**: This endpoint removes an email from suppressions, allowing future emails to be sent to it.
+- **Delete a list**: **this endpoint allows you to delete a specific recipient list with the given id.**
+- **Delete a parse setting**: **this endpoint allows you to delete a specific inbound parse setting by hostname.** you can retrieve all your inbound parse settings and…
+- **Delete a recipient**: **this endpoint allows you to delete a single recipient with the given id from your contact database.** > use this to permanently delete…
+- **Delete a reverse dns record**: This endpoint deletes a reverse dns record, returning a 204 code on success.
+- **Delete a segment**: **this endpoint allows you to delete a segment from your recipients database.** you also have the option to delete all the contacts from…
+- **Delete a sender**: **this endpoint allows you to delete an existing sender.**
+- **Delete a sender identity**: **this endpoint allows you to delete one of your sender identities.**
+- **Delete a single event webhook by id**: Delete a specific event webhook by id with this endpoint.
+- **Delete a single recipient from a single list**: **this endpoint allows you to delete a single recipient from a list.**
+- **Delete a specific block**: **this endpoint allows you to delete a specific email address from your blocks list.**
+- **Delete a specific invalid email**: **this endpoint allows you to remove a specific email address from the invalid email address list.**
+- **Delete a specific spam report**: This endpoint removes a spam report for an email, lifting suppression and allowing email to be sent to that address.
+- **Delete a subuser**: **this endpoint allows you to delete a subuser.** this is a permanent action.
+- **Delete a suppression from a suppression group**: This endpoint removes an email from a suppression group, re-enabling email delivery unless specified otherwise, and should only be used…
+- **Delete a suppression group**: This api endpoint deletes email suppression groups.
+- **Delete a template**: **this endpoint allows you to delete a transactional template.**
+- **Delete a transactional template version**: **this endpoint allows you to delete a transactional template version.**
+- **Delete an account**: To delete an organization's account by id.
+- **Delete an alert**: **this endpoint allows you to delete an alert.**
+- **Delete an authenticated domain**: **this endpoint allows you to delete an authenticated domain.**
+- **Delete an ip pool**: **this endpoint allows you to delete an ip pool.**
+- **Delete an sso certificate**: **this endpoint allows you to delete an sso certificate.** you can retrieve a certificate's id from the response provided by the "get all…
+- **Delete an sso integration**: **this endpoint allows you to delete an idp configuration by id.** you can retrieve the ids for your configurations from the response…
+- **Delete api keys**: **this endpoint allows you to revoke an existing api key using an api key id** authentications using a revoked api key will fail after…
+- **Delete blocks**: This endpoint enables clearing blocked emails either by deleting all with delete all=true or by specifying addresses in the emails array.
+- **Delete bounces**: This api endpoint lets users delete bounced emails.
+- **Delete contacts**: Use this endpoint to bulk delete contacts with ids as a list of ids or delete all contacts set to "true" for all.
+- **Delete custom field definition**: **this endpoint deletes a defined custom field.** you can delete only custom fields.
+- **Delete design**: **this endpoint allows you to delete a single design**.
+- **Delete invalid emails**: This endpoint lets you delete email addresses from your invalid list.
+- **Delete ip pool**: This operation deletes an ip pool and unassigns all ip addresses associated with the pool.
+- **Delete pending teammate**: **this endpoint allows you to delete a pending teammate invite.**
+- **Delete segment**: **this endpoint allows you to delete a segment by id.**
+- **Delete single send by id**: This endpoint lets you delete a single send with its id, which you can obtain by a get request to /marketing/singlensends.
+- **Delete single send schedule**: Cancel a scheduled single send by making a delete request with its id to the endpoint.
+- **Delete spam reports**: This endpoint lets users delete spam reports, lifting email suppression for specified addresses.
+- **Delete teammate**: **this endpoint allows you to delete a teammate.** **only the parent user or an admin teammate can delete another teammate.**
+- **Delete verified sender**: Use this endpoint with a sender identity's id to remove it from your account.
+- **Deletebulkintegration**: This endpoint deletes integrations.
+- **Deny access request**: **this endpoint allows you to deny an attempt to access your account.** **note.
+- **Disassociate a branded link from a subuser**: The endpoint permits parent accounts to remove a branded link from a subuser, with successful disassociations confirmed by a 204 status…
+- **Disassociate an authenticated domain from a given user**: Disassociate an authenticated domain from a given user.
+- **Domain warn list** (read-only): The endpoint provides a list of domains with dmarc, divided by how they fail (hard or soft).
+- **Download csv** (read-only): **this endpoint will return a presigned url that can be used to download the csv that was requested from the "request a csv" endpoint.**
+- **Duplicate a transactional template**: **this endpoint allows you to duplicate a transactional template.**
+- **Duplicate design**: This endpoint duplicates existing designs without requiring data in the request body.
+- **Duplicate sendgrid pre built design**: The endpoint lets you duplicate twilio sendgrid pre-built designs without data.
+- **Duplicate single send**: This endpoint duplicates single sends using an id for easy creation, allowing edits via patch.
+- **Edit a transactional template**: This endpoint lets you change the name of a transactional template.
+- **Edit a transactional template version**: **this endpoint allows you to edit the content of your template version.**
+- **Edit an sso teammate**: This endpoint allows admin or parent users to adjust sso teammate permissions using 'is admin', 'scopes', or 'persona', and to control…
+- **Edit verified sender**: Update a sender identity by sending a patch request with the id and json-formatted changes.
+- **Email dns records to a co worker**: Use sendgrid for domain validation and branding by sharing dns records—cname for automated security, or txt/mx otherwise.
+- **Enable disable a subuser**: **this endpoint allows you to enable or disable a subuser.**
+- **Enable disable website access for a subuser**: Enable/disable website access for a subuser, while still preserving email send functionality.
+- **Erase recipients email data**: Sendgrid's delete recipients' email data operation removes personal data of up to 5,000 unique email recipients or a 256kb payload per…
+- **Export contacts** (read-only): Use the endpoint to export contact lists or segments by email, with notifications, or download as csvs using an 'id'.
+- **Export contacts status** (read-only): Use this endpoint with an id from "export contacts" to check the status and get urls for downloading your csv contact export files.
+- **Export single send stats** (read-only): This endpoint exports single send stats in .csv format, allowing specification of multiple single sends by separating their ids with…
+- **Filter all messages** (read-only): Summarize email activity filtering.
+- **Filter messages by message id** (read-only): Get all of the details about the specified message.
+- **Filtersegmentsbyparentids** (read-only): Retrieve segments using parent list ids as a filter.
+- **Get a contact by id** (read-only): **this endpoint returns the full details and all fields for the specified contact**.
+- **Get a list by id** (read-only): This endpoint fetches detailed information on a list.
+- **Get a list of all ip addresses on your account** (read-only): Fetches your account's ip addresses with details such as pool association and warm-up status.
+- **Get a list of all senders** (read-only): **this endpoint allows you to get a list of all your senders.**
+- **Get a list of subusers assigned to an ip** (read-only): The api lists subuser ids with a specific ip, retrieves up to 100 per request, and iterates with after key for more.
+- **Get a specific sender** (read-only): **this endpoint allows you to get the details for a specific sender by id.**
+- **Get a user s account information** (read-only): **this endpoint allows you to retrieve your user account details.** your user's account information includes the user's account type and…
+- **Get a user s profile** (read-only): **this endpoint allows you to retrieve your current profile details.**
+- **Get account offerings** (read-only): Retrieves offering information about the specified account.
+- **Get all accounts** (read-only): Retrieves all accounts under the organization.
+- **Get all automation stats** (read-only): Retrieve all your automation stats by default or specify with 'automation ids'.
+- **Get all available offerings** (read-only): Retrieves offerings available under the organization.
+- **Get all categories** (read-only): **this endpoint allows you to retrieve all the categories associated with your single sends.** this endpoint will return your latest 1,000…
+- **Get all existing exports** (read-only): This endpoint provides an array with details on active or completed export jobs.
+- **Get all field definitions** (read-only): **this endpoint retrieves all defined custom fields and reserved fields.**
+- **Get all ip pools that have associated ips** (read-only): The function lists your ip pools and samples up to 10 ips from each.
+- **Get all lists** (read-only): **this endpoint returns an array of all of your contact lists.**
+- **Get all sender identities** (read-only): **this endpoint allows you to retrieve a list of all sender identities that have been created for your account.**
+- **Get all single sends** (read-only): Retrieve a list of your single sends with brief details, including their ids.
+- **Get all single sends stats** (read-only): Retrieve single sends stats with options for filtering by ids, pagination, and custom page sizes from 1-50.
+- **Get all sso certificates by integration** (read-only): **this endpoint allows you to retrieve all your idp configurations by configuration id.** the integration id expected by this endpoint is…
+- **Get all sso integrations** (read-only): **this endpoint allows you to retrieve all sso integrations tied to your twilio sendgrid account.** the ids returned by this endpoint can…
+- **Get all verified senders** (read-only): Retrieve all sender identities (verified/unverified) for an account via an endpoint.
+- **Get an account s state** (read-only): Retrieve the state of the specified account.
+- **Get an sso certificate** (read-only): **this endpoint allows you to retrieve an individual sso certificate.**
+- **Get an sso integration** (read-only): **this endpoint allows you to retrieve an sso integration by id.** you can retrieve the ids for your configurations from the response…
+- **Get automation click tracking stats by id** (read-only): **this endpoint lets you retrieve click-tracking stats for a single automation**.
+- **Get automation stats by id** (read-only): Retrieve detailed stats for a specific automation by id, with optional date and aggregation filters, or use another endpoint to get stats…
+- **Get batched contacts by ids** (read-only): This endpoint fetches multiple contacts using their ids, allowing up to 100 ids per request for efficiency over single get requests.
+- **Get bounce class stats** (read-only): This endpoint will return the number of bounces for the classification specified in descending order for each day.
+- **Get contacts by emails** (read-only): Endpoint retrieves up to 100 contacts by email, ignoring case/space.
+- **Get contacts by identifiers** (read-only): Use the endpoint to fetch up to 100 contacts by identifiers (email, phone number, etc.).
+- **Get design** (read-only): Access a specific design's details in your design library with a get request to /designs/{id}.
+- **Get details for an ip address** (read-only): The operation provides details for an ip address, such as its parent account status, warm-up settings, associated pools, add/modify dates,…
+- **Get details for an ip pool** (read-only): This operation retrieves details of an ip pool, such as name, id, some sample ips (up to 10), and the total ip count.
+- **Get engagement quality scores** (read-only): Retrieve your sendgrid engagement quality (seq) scores via api for a chosen date range.
+- **Get information on a single suppression group** (read-only): **this endpoint allows you to retrieve a single suppression group.**
+- **Get ips assigned to an ip pool** (read-only): This operation returns the ip addresses that are assigned to the specified ip pool.
+- **Get list contact count** (read-only): **this endpoint returns the number of contacts on a specific list.**
+- **Get list of segments** (read-only): The api endpoint retrieves segments, using parent list ids to filter results.
+- **Get open tracking settings** (read-only): The endpoint retrieves settings for tracking email opens using an invisible image.
+- **Get recipient upload status** (read-only): **this endpoint allows you to check the upload status of a marketing campaigns recipient.**
+- **Get remaining ips count** (read-only): **this endpoint gets amount of ip addresses that can still be created during a given period and the price of those ips.**
+- **Get sample contacts** (read-only): The endpoint returns the latest 50 contacts, sorted by email, with the total count included.
+- **Get segment by id** (read-only): Get marketing campaigns segment by id
+- **Get sendgrid pre built design** (read-only): The endpoint /designs/pre-builts/{id} is used to fetch details about a particular pre-built design for duplication and modification.
+- **Get signed event webhook s public key** (read-only): Retrieve a webhook's public key using its id via this endpoint.
+- **Get single send by id** (read-only): **this endpoint allows you to retrieve details about one single send using a single send id.** you can retrieve all of your single sends…
+- **Get single send click tracking stats by id** (read-only): **this endpoint lets you retrieve click-tracking stats for one single send**.
+- **Get single send stats by id** (read-only): Retrieve individual single send stats using its id.
+- **Get single sends search** (read-only): Search for single sends by specifying name, status, and categories in the request body.
+- **Get subuser monthly stats** (read-only): Retrieve monthly email stats for subusers with sort by metric, excluding sorts by bounce drops, deferred, invalid emails, processed, spam…
+- **Get subusers engagement quality scores** (read-only): Retrieve seq scores for sendgrid subusers/accounts on a specific date.
+- **Get suppression groups** (read-only): This endpoint provides a list of user-created suppression groups and can return info for multiple groups when their ids are added to the…
+- **Get teammate subuser access** (read-only): Retrieve subusers accessible to a specified teammate, with available scopes.
+- **Get the credits for a subuser** (read-only): **this endpoint allows you to retrieve a credits overview for a subuser.**
+- **Get the default authentication** (read-only): This endpoint fetches the default domain authentication, used for sending all mail unless overridden by a 'from' address match.
+- **Get the settings for a single event webhook** (read-only): Retrieve an event webhook by id to get settings, event types, and url details.
+- **Get total contact count** (read-only): **this endpoint returns the total number of contacts you have stored.** twilio sendgrid recommends exporting your contacts regularly as a…
+- **Getintegration** (read-only): This endpoint returns the data for a specific integration.
+- **Import contacts**: The endpoint permits async csv uploads for up to 1m contacts or 5gb with specified identifiers and file type, supports gzip, field…
+- **Import contacts status** (read-only): Check the status of contact import jobs using job id via this endpoint.
+- **Invite teammate**: Invite teammates to your account through email with this endpoint, assigning initial permissions via the scopes array.
+- **List all authenticated domains** (read-only): Retrieve authenticated domain lists in pages using the limit parameter for page size and offset to start from specific list positions.
+- **List all subusers** (read-only): Retrieve a paginated list of subusers with filtering options.
+- **List api keys** (read-only): Retrieve user's api key names and ids with this endpoint.
+- **List Bulk Email Validation Jobs** (read-only): **this endpoint returns a list of all of a user's bulk email validation jobs.**
+- **List designs** (read-only): The /designs endpoint fetches a list of user's stored designs, restricted to 100 per request by default but adjustable with page size.
+- **List sendgrid pre built designs** (read-only): The designs/pre-builts endpoint fetches a list of twilio sendgrid's ready-made designs, not user-specific ones, with 100 results per…
+- **List the authenticated domain associated with the given user** (read-only): Parent accounts can link validated domains to subusers through an endpoint, allowing subusers to email from those domains.
+- **Listintegration** (read-only): This endpoint returns all the integrations for the user making this call.
+- **Manually refresh a segment**: Manually refresh a segment by segment id.
+- **Presigned url  headers for bulk email validation** (read-only): Get a presigned url and headers to upload an email list for verification.
+- **Remove a specific ip from the allowed list**: This endpoint lets you delete an allowed ip address using its id, obtainable via the "retrieve allowed ips" endpoint.
+- **Remove an ip address from a pool**: **this endpoint allows you to remove an ip address from an ip pool.**
+- **Remove an ip from an authenticated domain**: **this endpoint allows you to remove an ip address from that domain's authentication.**
+- **Remove contacts from a list**: **this endpoint allows you to remove contacts from a given list.** the contacts will not be deleted.
+- **Remove list and optional contacts**: **this endpoint allows you to deletes a specific list.** optionally, you can also delete contacts associated to the list.
+- **Remove one or more ips from the allow list**: This endpoint lets you remove ips from your allowed list by sending an array of their ids, obtained from another endpoint.
+- **Remove segment without affecting contacts**: This endpoint permits the deletion of a segment using segment id, but associated contacts remain in the overall list and any other…
+- **Rename an ip pool**: **this endpoint allows you to update the name of an ip pool.**
+- **Request csv**: Initiating a backend process creates a csv file of up to 1 million events from the last 30 days, emailed to the user with a 3-day expiry…
+- **Resend a sender verification**: **this endpoint allows you to resend the verification request for a specific sender.**
+- **Resend sender identity verification**: **this endpoint allows you to resend a sender identity verification email.**
+- **Resend teammate invite**: **this endpoint allows you to resend a teammate invitation.** teammate invitations will expire after 7 days.
+- **Resend verified sender request**: This endpoint resends a verification email to a sender identity's 'from address' by using the 'id' of the sender.
+- **Retrieve a bounce** (read-only): **this endpoint allows you to retrieve a specific bounce by email address.**
+- **Retrieve a branded link** (read-only): **this endpoint allows you to retrieve a specific branded link by providing its id.** you can submit this request as one of your subusers…
+- **Retrieve a count of recipients** (read-only): **this endpoint allows you to retrieve the total number of marketing campaigns recipients.**
+- **Retrieve a custom field** (read-only): **this endpoint allows you to retrieve a custom field by id.**
+- **Retrieve a global suppression** (read-only): This endpoint retrieves global email suppressions and confirms if an email is suppressed.
+- **Retrieve a list of currently allowed ips** (read-only): This endpoint provides a list of authorized ip addresses for your account, each with creation, update dates, and a unique id for potential…
+- **Retrieve a list of scopes for which this user has access** (read-only): Retrieve a list of scopes for which this user has access
+- **Retrieve a reverse dns record** (read-only): **this endpoint allows you to retrieve a reverse dns record.** you can retrieve the ids associated with all your reverse dns records using…
+- **Retrieve a segment** (read-only): **this endpoint allows you to retrieve a single segment with the given id.**
+- **Retrieve a single campaign** (read-only): **this endpoint allows you to retrieve a specific campaign.**
+- **Retrieve a single list** (read-only): **this endpoint allows you to retrieve a single recipient list.**
+- **Retrieve a single recipient** (read-only): **this endpoint allows you to retrieve a single recipient by id from your contact database.**
+- **Retrieve a single transactional template** (read-only): **this endpoint allows you to retrieve a single transactional template.**
+- **Retrieve a specific alert** (read-only): **this endpoint allows you to retrieve a specific alert.**
+- **Retrieve a specific allowed ip** (read-only): This endpoint retrieves an allowed ip for your account using its id, with ids obtainable from the endpoint listing currently allowed ips.
+- **Retrieve a specific block** (read-only): **this endpoint allows you to retrieve a specific email address from your blocks list.**
+- **Retrieve a specific invalid email** (read-only): **this endpoint allows you to retrieve a specific invalid email addresses.**
+- **Retrieve a specific parse setting** (read-only): **this endpoint allows you to retrieve a specific inbound parse setting by hostname.** you can retrieve all your inbound parse settings…
+- **Retrieve a specific spam report** (read-only): **this endpoint allows you to retrieve a specific spam report by email address.**
+- **Retrieve a specific transactional template version** (read-only): **this endpoint allows you to retrieve a specific version of a template.**
+- **Retrieve a subuser s branded link** (read-only): Retrieve a subuser's branded link, created and validated by the parent account, available through the api or twilio sendgrid's subuser…
+- **Retrieve access requests** (read-only): Retrieve a list of recent access requests using pagination with limit for page size and offset to control the start position for…
+- **Retrieve address whitelist mail settings** (read-only): This endpoint lets you access settings for whitelisting specific emails or domains to prevent email suppression due to bounces, blocks, or…
+- **Retrieve all alerts** (read-only): **this endpoint allows you to retrieve all of your alerts.**
+- **Retrieve all assigned ips** (read-only): This api endpoint retrieves assigned ip addresses used to send emails for various domains, where the ip's reputation is influenced by the…
+- **Retrieve all blocks** (read-only): Retrieve a paginated list of blocked emails using this endpoint, with adjustable page sizes via the 'limit' parameter and starting points…
+- **Retrieve all bounces** (read-only): This endpoint retrieves a paginated list of all your bounces, allowing customization of page size with limit and starting position with…
+- **Retrieve all branded links** (read-only): **this endpoint allows you to retrieve all branded links**.
+- **Retrieve all campaigns** (read-only): Retrieve a paginated list of campaigns in reverse creation order with the api endpoint.
+- **Retrieve all categories** (read-only): This endpoint provides a paginated list of user categories, with adjustable page size using the limit and pagination control using offset.
+- **Retrieve all custom fields** (read-only): **this endpoint allows you to retrieve all custom fields.**
+- **Retrieve all global suppressions** (read-only): Retrieve paginated lists of globally suppressed emails using limit for page size and offset to start from a specific list position.
+- **Retrieve all invalid emails** (read-only): Retrieve paginated lists of invalid emails with 'limit' for page size and 'offset' to start from a specific position for lists exceeding…
+- **Retrieve all ip addresses** (read-only): Retrieve a paginated list of assigned/unassigned ips with warmup status, pools, subusers, and dns info.
+- **Retrieve all ip pools** (read-only): **this endpoint allows you to get all of your ip pools.**
+- **Retrieve all ip pools an ip address belongs to** (read-only): This endpoint checks which ip pools contain a specific ip, which may be shared across multiple ip pools and affect the ip's reputation…
+- **Retrieve all ips currently in warmup** (read-only): **this endpoint allows you to retrieve all of your ip addresses that are currently warming up.**
+- **Retrieve all mail settings** (read-only): Retrieve a paginated list of mail settings with their enabled status and descriptions.
+- **Retrieve all of your event webhooks** (read-only): The endpoint fetches all event webhooks as objects in an array, showing each webhook's configuration and id, used to update, delete, or…
+- **Retrieve all parse settings** (read-only): **this endpoint allows you to retrieve all of your current inbound parse settings.**
+- **Retrieve all pending teammates** (read-only): **this endpoint allows you to retrieve a list of all pending teammate invitations.** each teammate invitation is valid for 7 days.
+- **Retrieve all recent access attempts** (read-only): **this endpoint allows you to retrieve a list of all of the ip addresses that recently attempted to access your account either through the…
+- **Retrieve all recipients on a list** (read-only): **this endpoint allows you to retrieve all recipients on the list with the given id.**
+- **Retrieve all reverse dns records** (read-only): The endpoint provides a paginated list of reverse dns records, with optional ip prefix search and adjustable page size using 'limit' and…
+- **Retrieve all scheduled sends** (read-only): The endpoint provides details of cancelled or paused scheduled sends but only if they have a batch id.
+- **Retrieve all segments** (read-only): **this endpoint allows you to retrieve all of your segments.**
+- **Retrieve all spam reports** (read-only): Retrieve spam reports in pages using limit for page size and offset to continue from a specific list position.
+- **Retrieve all suppression groups for an email address** (read-only): Retrieve all suppression groups for an email address
+- **Retrieve all suppressions** (read-only): **this endpoint allows you to retrieve a list of all suppressions.**
+- **Retrieve all suppressions for a suppression group** (read-only): **this endpoint allows you to retrieve all suppressed email addresses belonging to the given group.**
+- **Retrieve all teammates** (read-only): Retrieve a paginated list of teammates with the limit parameter to set page size and offset to specify the starting point for additional…
+- **Retrieve all the ips in a specified pool** (read-only): **this endpoint allows you to get all of the ip addresses that are in a specific ip pool.**
+- **Retrieve an authenticated domain** (read-only): **this endpoint allows you to retrieve a specific authenticated domain.**
+- **Retrieve an existing api key** (read-only): Retrieve an api key's details with its id via this endpoint.
+- **Retrieve bounce classification totals** (read-only): This endpoint will return the total number of bounces by classification in descending order for each day.
+- **Retrieve bounce purge mail settings** (read-only): Retrieve and manage your bounce/purge settings for soft/hard bounce suppression lists with twilio sendgrid, either automatically or…
+- **Retrieve click track settings** (read-only): This endpoint retrieves your click tracking settings in sendgrid which tracks user engagement by redirecting and monitoring clicks on up…
+- **Retrieve current enforced tls settings** (read-only): This endpoint retrieves enforced tls settings that mandate recipients to support tls 1.1+ or have a valid certificate.
+- **Retrieve email statistics by browser** (read-only): Retrieve email stats by browser with advanced stats api, storing 7 days of data, and defaulting to 500 items per request.
+- **Retrieve email statistics by client type** (read-only): Retrieve email stats by client type with endpoint.
+- **Retrieve email statistics by country and state province** (read-only): Retrieve email statistics by country and state/province.
+- **Retrieve email statistics by device type** (read-only): Retrieve email stats by device type with a 7-day data retention limit.
+- **Retrieve email statistics by mailbox provider** (read-only): Retrieve email stats by provider with advanced stats api, displaying details like location and device.
+- **Retrieve email statistics for categories** (read-only): **this endpoint allows you to retrieve all of your email statistics for each of your categories.** if you do not define any query…
+- **Retrieve email statistics for your subusers** (read-only): **this endpoint allows you to retrieve the email statistics for the given subusers.** you may retrieve statistics for up to 10 different…
+- **Retrieve footer mail settings** (read-only): Retrieve and customize your footer settings for email bodies via this endpoint, directly or through twilio sendgrid's mail settings menu.
+- **Retrieve forward bounce mail settings** (read-only): This endpoint fetches the current email forwarding settings for bounce messages, including the recipient email and whether the feature is…
+- **Retrieve forward spam mail settings** (read-only): This endpoint retrieves current forward spam settings, listing specified email addresses receiving spam reports and showing if the feature…
+- **Retrieve global email statistics** (read-only): Retrieve your global email stats within a specific date range, with parent accounts viewing their own or a subuser's aggregated data via…
+- **Retrieve google analytics settings** (read-only): Retrieve your google analytics settings, which are set to google's recommended defaults, to understand user site activity.
+- **Retrieve legacy template mail settings** (read-only): The endpoint retrieves settings for original email templates, with a guide for using and migrating from legacy to newer dynamic…
+- **Retrieve monthly stats for all subusers** (read-only): Retrieve monthly subuser email stats for a date range but can't sort by metrics like bounce drops, deferred, invalid emails, processed,…
+- **Retrieve paged transactional templates** (read-only): **this endpoint allows you to retrieve all transactional templates.**
+- **Retrieve recipients** (read-only): Retrieve all marketing campaign recipients via this endpoint.
+- **Retrieve recipients on a segment** (read-only): **this endpoint allows you to retrieve all of the recipients in a segment with the given id.**
+- **Retrieve reserved fields** (read-only): **this endpoint allows you to list all fields that are reserved and can't be used for custom field names.**
+- **Retrieve scheduled send** (read-only): **this endpoint allows you to retrieve the cancel/paused scheduled send information for a specific batch id.**
+- **Retrieve single segment endpoint** (read-only): **this endpoint allows you to retrieve a single segment by id.**
+- **Retrieve specific teammate** (read-only): **this endpoint allows you to retrieve a specific teammate by username.** you can retrieve the username's for each of your teammates using…
+- **Retrieve stats by a specific client type** (read-only): Use advanced stats api to get email statistics by client type (e.g., phone, desktop), offering location and device details.
+- **Retrieve subscription tracking settings** (read-only): **this endpoint allows you to retrieve your current settings for subscription tracking.** subscription tracking adds links to the bottom…
+- **Retrieve subuser reputations** (read-only): This endpoint provides sender reputation scores for subusers, reflecting their email performance based on recipient responses and negative…
+- **Retrieve sums of email stats for each category** (read-only): **this endpoint allows you to retrieve the total sum of each email statistic for every category over the given date range.** if you do not…
+- **Retrieve the count of billable recipients** (read-only): This endpoint provides the billable count of recipients for marketing campaigns, based on the highest number reached in your account.
+- **Retrieve the default branded link** (read-only): The endpoint retrieves the default branded link for message sending, prioritizing user-set default, legacy, or sendgrid's default links.
+- **Retrieve the lists that a recipient is on** (read-only): **this endpoint allows you to retrieve the lists that a given recipient belongs to.** each recipient can be on many lists.
+- **Retrieve the warmup status for a specific ip address** (read-only): Retrieve the warmup status for a specific ip address
+- **Retrieve tracking settings** (read-only): **this endpoint allows you to retrieve a list of all tracking settings on your account.**
+- **Retrieve user s authenticated domains** (read-only): The api endpoint allows subusers to fetch up to five domains verified by the main account for sending emails, with a defined order of…
+- **Retrieve your account email address** (read-only): **this endpoint allows you to retrieve the email address currently on file for your account.**
+- **Retrieve your credit balance** (read-only): This endpoint checks an account's base email sending credit balance, which affects per-email charges.
+- **Retrieve your username** (read-only): **this endpoint allows you to retrieve your current account username.**
+- **Retrieves inbound parse webhook statistics** (read-only): Sendgrid's inbound parse webhook parses incoming emails, up to 30mb, and posts to a specified url, with available integrations listed in…
+- **Returns a list of all partner settings** (read-only): Retrieve a paginated list of partner settings using the limit to set page size and offset to specify the starting point for additional…
+- **Schedule a campaign**: This endpoint schedules campaign emails for a specific time, recommending off-peak times like 10.
+- **Schedule single send**: Use this endpoint to send a message right away by setting send at to now, or schedule it by specifying a future time in iso 8601 format…
+- **Search contacts** (read-only): Find contacts using this endpoint with a body containing a query in sgql.
+- **Search for suppressions within a group** (read-only): **this endpoint allows you to search a suppression group for multiple suppressions.** when given a list of email addresses and a group id,…
+- **Search recipients** (read-only): This endpoint searches marketing campaigns recipients.
+- **Segment json data by specific criteria** (read-only): Search json data for segments by specifying criteria for dates, text, and campaign ids using operators and boolean logic.
+- **Send a campaign**: **this endpoint allows you to immediately send an existing campaign.** normally a post request would have a body, but since this endpoint…
+- **Send a test campaign**: **this endpoint allows you to send a test campaign.** to send to multiple addresses, use an array for the json "to" value…
+- **Send a test marketing email**: Use the endpoint to test marketing emails with a template id and up to 10 contacts.
+- **Send email with twilio sendgrid**: The mail send operation uses sendgrid's v3 api to send emails.
+- **Set up reverse dns**: **this endpoint allows you to set up reverse dns.**
+- **Singlesend csv stats retrieval** (read-only): Export single send stats in .csv format by specifying one or multiple single send ids in the ids query string, separated by commas.
+- **Start warming up an ip address**: **this endpoint allows you to put an ip address into warmup mode.**
+- **Stop warming up an ip address**: This endpoint removes an ip from warmup mode, returning a 204 code if successful.
+- **Sumemailstatsforsubusers** (read-only): **this endpoint allows you to retrieve the total sums of each email statistic metric for all subusers over the given date range.**
+- **Test an event webhook s settings**: The endpoint tests event webhooks by sending a fake event to your url.
+- **This request returns a single bulk email validation job** (read-only): This request returns a single bulk email validation job
+- **Toggle signature verification for a single event webhook by id**: Toggle signature verification for a single event webhook by id
+- **Unlink subuser domain**: The endpoint enables removal of an authenticated domain from subusers, each limited to five domains, to allow mail sending under a parent…
+- **Unschedule a scheduled campaign**: **this endpoint allows you to unschedule a campaign that has already been scheduled to be sent.** a successful unschedule will return a 204.
+- **Update a branded link**: **this endpoint allows you to update a specific branded link.
+- **Update a campaign**: **this endpoint allows you to update a specific campaign.** this is especially useful if you only set up the campaign using post…
+- **Update a list**: **this endpoint allows you to update the name of one of your recipient lists.**
+- **Update a parse setting**: **this endpoint allows you to update a specific inbound parse setting by hostname.** you can retrieve all your inbound parse settings and…
+- **Update a scheduled campaign**: **this endpoint allows to you change the scheduled time and date for a campaign to be sent.**
+- **Update a scheduled send**: Use this endpoint to change the status of a scheduled send by batch id.
+- **Update a segment**: **this endpoint allows you to update a segment.**
+- **Update a sender**: This endpoint updates an existing sender.
+- **Update a sender identity**: This api endpoint enables updates to sender identities.
+- **Update a single event webhook by id**: Update event webhooks by id with this endpoint or without id to update the oldest one.
+- **Update a suppression group**: **this endpoint allows you to update or change a suppression group.**
+- **Update a user s profile**: **this endpoint allows you to update your current profile details.** any one or more of the parameters can be updated via the patch…
+- **Update account offerings**: Updates an account's package and attaches optional add-ons like marketing campaigns, dedicated ips, and expert services.
+- **Update address whitelist mail settings**: Update email whitelist settings by toggling enabled.
+- **Update an account s state**: Update the state of the specified account.
+- **Update an alert**: **this endpoint allows you to update an alert.**
+- **Update an authenticated domain**: **this endpoint allows you to update the settings for an authenticated domain.**
+- **Update an ip pool name**: This operation will rename an ip pool.
+- **Update an sso integration**: **this endpoint allows you to modify an exisiting sso integration.** you can retrieve the ids for your configurations from the response…
+- **Update api key name**: **this endpoint allows you to update the name of an existing api key.** you must pass this endpoint a json request body with a name…
+- **Update api key name and scopes**: Update an api key's name and/or scopes using json with a name field and scopes array.
+- **Update bounce purge mail settings**: Update your bounce settings with twilio sendgrid to automatically delete contacts from suppression lists based on a set schedule in full…
+- **Update click tracking settings**: This endpoint configures click tracking for emails, redirecting links through sendgrid or branded domains for engagement analysis, with a…
+- **Update custom field definition**: **this endpoint allows you to update a defined custom field.** only your custom fields can be modified.
+- **Update design**: The design api enables partial design updates using patch requests, changing only specified fields, like the 'name' field, with no impact…
+- **Update details for an ip address**: The operation modifies an ip address's settings, such as auto warm-up status, parent account assignment, and active status.
+- **Update enforced tls settings**: Update tls settings through the endpoint by setting 'require tls' to 'true' for compulsory tls 1.1+ and valid certificates with recipients.
+- **Update footer mail settings**: This endpoint updates your email footer settings, enabling a custom footer addition in text/html emails.
+- **Update forward bounce mail settings**: This endpoint updates bounce forwarding mail settings, allowing users to set an email for bounce report forwards and configure spam mail…
+- **Update forward spam mail settings**: Activate forward spam to send spam reports to specified emails.
+- **Update google analytics settings**: Update your google analytics settings to track user activity on your site more effectively.
+- **Update list**: **this endpoint updates the name of a list.**
+- **Update open tracking settings**: Update your email settings to enable open tracking with sendgrid, which uses an invisible image to log email opens in various reports if…
+- **Update segment**: Segment name has to be unique.
+- **Update single send**: Update single send drafts using its id via this endpoint.
+- **Update sso certificate**: **this endpoint allows you to update an existing certificate by id.** you can retrieve a certificate's id from the response provided by…
+- **Update subscription tracking settings**: **this endpoint allows you to update your current settings for subscription tracking.** subscription tracking adds links to the bottom of…
+- **Update teammate s permissions**: This endpoint updates teammate permissions.
+- **Update template mail settings**: The endpoint updates legacy email templates, replaced by more advanced dynamic transactional templates.
+- **Update the credits for a subuser**: **this endpoint allows you to update the credits for a subuser.**
+- **Update the remaining credits for a subuser**: **this endpoint allows you to update the remaining credits for a subuser.**
+- **Update your account email address**: **this endpoint allows you to update the email address currently on file for your account.**
+- **Update your password**: **this endpoint allows you to update your password.**
+- **Update your username**: **this endpoint allows you to update the username for your account.**
+- **Updateintegration**: This endpoint updates an existing integration.
+- **Validate a batch id** (read-only): Validate a mail batch id to get a 200 status code for a valid one, or a 400 code for an invalid.
+- **Validate a branded link** (read-only): **this endpoint allows you to validate a branded link.** you can submit this request as one of your subusers if you include their id in…
+- **Validate a domain authentication** (read-only): **this endpoint allows you to validate an authenticated domain.
+- **Validate a reverse dns record** (read-only): Endpoint checks reverse dns record validity via valid in validation results.a record.
+- **Validate an email** (read-only): **this endpoint allows you to validate an email address.**
+- **Verify sender request** (read-only): **this endpoint allows you to verify a sender requests.** the token is generated by sendgrid and included in a verification email…
+- **View a sender identity** (read-only): **this endpoint allows you to retrieve a specific sender identity.**
+- **View scheduled time of a campaign** (read-only): **this endpoint allows you to retrieve the date and time that a campaign has been scheduled to be sent.**

@@ -1,0 +1,305 @@
+# Unleash
+
+Unleash is a feature management platform for creating, configuring, and governing feature flags across projects and environments.
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/unleash/.
+
+## Actions
+
+- **[BETA] Create a signal endpoint**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Create a signal endpoint token for a specific signal endpoint**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Create an action set**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Delete a signal endpoint**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Delete a signal endpoint token**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Delete an action set**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Disconnect all clients**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Get aggregated metered connections for a given time period** (read-only): **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Get aggregated metered requests for a given time period** (read-only): **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] List action sets** (read-only): **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] List events for an action set** (read-only): **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] List signal endpoints** (read-only): **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] List signals** (read-only): **[BETA]** Returns one page of signals in the requested creation-date range.
+- **[BETA] List signals from a specific signal endpoint** (read-only): **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] List tokens for a specific signal endpoint** (read-only): **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Update a signal endpoint**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Update a signal endpoint token**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **[BETA] Update an action set**: **[BETA]** This API is in beta state, which means it may change or be removed in the future.
+- **Add a feature dependency**: Add a dependency to a parent feature.
+- **Add a release plan**: Adds a release plan to a specific feature flag and environment.
+- **Add an environment to a project**: Associate one existing environment with a project, optionally configure change requests, and optionally create the default activation…
+- **Add and remove tags across features**: Add and remove the supplied tags on every listed feature in a project, creating added tags when needed.
+- **Add environments to a project**: Sequentially associate multiple environments with one project after rejecting duplicates and existing associations.
+- **Add feature dependencies**: Add multiple parent dependencies to one child feature flag in order.
+- **Add Feature Strategy**: Add one activation strategy configuration to a feature flag in an environment.
+- **Approve a user access request**: Approves a pending user access request, creating a new user with the specified role.
+- **Archive a release template**: Archives a global release template or a template scoped to one project.
+- **Archive Feature**: Archive a feature flag in a project.
+- **Archives a list of features**: This endpoint archives the specified features.
+- **Batch evaluate an Unleash context against a set of environments and projects** (read-only): Use the provided context, environments, and projects to evaluate toggles on this Unleash instance.
+- **Change password for a user**: Immediately replaces a user's password as an administrator.
+- **Change specific properties of a strategy**: Change specific properties of a strategy configuration in a feature flag.
+- **Change your own password**: Immediately replaces the connected user's password after verifying the old password and confirmation.
+- **Check dependencies exist** (read-only): Check if any dependencies exist in this Unleash instance
+- **Clone a feature flag**: Creates a copy of the specified feature flag.
+- **Clones an environment**: Given an existing environment name and a set of options, this will create a copy of that environment
+- **Configure project access**: Configure project access for groups and single users.
+- **Create (overwrite) variants for a feature flag in multiple environments**: Replace the feature flag's complete variant list in every environment named by environments.
+- **Create (overwrite) variants for a feature in an environment**: Replace the feature flag's complete variant list in one environment.
+- **Create a banner**: Creates a new banner.
+- **Create a feature link**: Create a new link for a feature.
+- **Create a new addon**: Create an external event integration.
+- **Create a new group**: Creates an Enterprise user group for role-based access control, with optional SSO mappings, predefined root role, and initial user…
+- **Create a new personal access token (PAT) for the current user**: Creates a new [personal access token](https.
+- **Create a new role**: Create a new custom role for Role-Based Access Control.
+- **Create a new tag**: Create a new tag with the specified data.
+- **Create a new user**: Creates a new user with the given root role.
+- **Create a project API token**: Create an API token scoped to the specified project.
+- **Create a public signup token**: Lets administrators create a invite link to share with colleagues.
+- **Create a release template**: Creates and returns a release template with its name, optional nullable description, and optional milestone configuration.
+- **Create a service account**: Creates a new service account.
+- **Create a strategy**: Creates a custom strategy type based on the supplied data.
+- **Create a tag type**: Create a new tag type.
+- **Create a token for a service account**: Creates a new token for the service account identified by the id.
+- **Create an application to connect reported metrics**: Create an application record with its loaded activation strategies and optional URL, color, and icon metadata.
+- **Create API token**: Create a backend, frontend, or deprecated client API token with optional project, environment, and expiry restrictions.
+- **Create Context Field**: Create a root context field or a project context field.
+- **Create Feature**: Create a feature flag in a project without enabling it in any environment.
+- **Create or update a milestone progression**: Creates or updates a milestone progression by source milestone ID.
+- **Create or update safeguard**: Create or update a metric-threshold safeguard for a feature environment or for one release plan.
+- **Create project**: Create a new [Unleash project](https.
+- **Create Segment**: Create a reusable segment from a name and complete constraint list.
+- **Create/Add change to a change request**: Add one or more typed changes to the caller's existing draft change request for the project environment, or create a draft when none exists.
+- **Creates a new environment**: Uses the details provided in the payload to create a new environment
+- **Delete a banner**: Deletes an existing banner identified by its id.
+- **Delete a custom role**: Delete a custom role by id.
+- **Delete a feature dependency**: Remove one named parent feature dependency from a child feature flag.
+- **Delete a feature link**: Delete a feature link by id.
+- **Delete a milestone progression**: Deletes an existing milestone progression by source milestone ID.
+- **Delete a personal access token (PAT) for the current user**: Permanently and immediately revoke one personal access token belonging to the current user by its numeric PAT ID.
+- **Delete a release plan**: Delete a release plan from a specific feature flag and environment.
+- **Delete a release template**: Permanently deletes a global release template or a template scoped to one project.
+- **Delete a service account**: Deletes an existing service account identified by its id.
+- **Delete a single group**: Delete a single user group by group id.
+- **Delete a strategy**: Deletes the specified strategy definition
+- **Delete a tag**: Delete a tag by type and value.
+- **Delete a tag type**: Deletes a tag type.
+- **Delete a token for a service account**: Permanently and immediately revoke one service account token by service account ID and token ID.
+- **Delete a user**: Deletes the user with the given userId.
+- **Delete all SCIM groups**: Deletes all groups managed by SCIM.
+- **Delete all SCIM users**: Deletes all users managed by SCIM.
+- **Delete an addon**: Delete the addon specified by the ID in the request path.
+- **Delete an application**: Delete the application specified in the request URL.
+- **Delete an environment**: Delete an environment identified by name.
+- **Delete Context Field**: Permanently delete a root or project context field without removing its existing use in strategy configuration.
+- **Delete Context Field Legal Value**: Permanently delete a legal value from a root or project context field without removing its existing use in constraints.
+- **Delete feature dependencies**: Remove all parent feature dependencies from one child feature flag.
+- **Delete Feature Strategy**: Permanently delete one activation strategy instance from a feature flag in an environment.
+- **Delete impact metric configuration**: Permanently delete one impact metric chart configuration by config_id from the instance-level collection or from one feature flag.
+- **Delete project**: Permanently delete the provided project.
+- **Delete safeguard**: Permanently delete one safeguard by safeguard_id from a feature environment or from one release plan.
+- **Delete Segment**: Permanently delete a segment by numeric ID.
+- **Deletes a change request by id**: This endpoint will delete one change request if it matches the provided id.
+- **Deletes a list of features**: Permanently this endpoint deletes the specified features, that are in archive.
+- **Deletes an archived feature**: Permanently this endpoint deletes the specified feature if it is archived.
+- **Deletes inactive users**: Deletes only the explicitly supplied IDs of users who have not logged in during the last 180 days.
+- **Discards a change from a change request by change id**: This endpoint will discard one change from a change request if it matches the provided id.
+- **Edits a single change in a change request**: Replace one change in a change request.
+- **Enable or disable maintenance mode**: Enable or disable maintenance mode for the entire Unleash instance.
+- **Evaluate an Unleash context against a change request preview** (read-only): Use the provided context to evaluate toggles on this Unleash instance with a change request applied in preview mode.
+- **Export feature flags from an environment** (read-only): Export feature flag configuration from one environment, selecting by exactly one of feature names, tag, or project.
+- **Generate user password-reset URL**: Generates and returns a password-reset URL for the user identified by email.
+- **Generates a new SCIM API token**: Generates a new SCIM API token.
+- **Get a list of all flag creators for a project** (read-only): This endpoint returns every user who created a flag in the project.
+- **Get a list of all users that have created events** (read-only): Returns a list of all users that have created events in the system.
+- **Get a list of groups** (read-only): Get a list of user groups for Role-Based Access Control.
+- **Get a list of roles** (read-only): Get a list of project, root and custom roles for Role-Based Access Control.
+- **Get a release template** (read-only): Returns a global release template or a template scoped to one project.
+- **Get a single group** (read-only): Get a single user group by group id.
+- **Get a single role** (read-only): Get a single role by role id.
+- **Get a specific addon** (read-only): Retrieve information about the addon whose ID matches the ID in the request URL.
+- **Get a strategy configuration** (read-only): Get a strategy configuration for an environment in a feature flag.
+- **Get a strategy definition** (read-only): Retrieves the definition of the strategy specified in the URL
+- **Get a tag by type and value** (read-only): Get a tag by type and value.
+- **Get a tag type** (read-only): Get a tag type by name.
+- **Get aggregated traffic data for a given time period** (read-only): Gets traffic usage data for the selected period, either aggregated by day or by month.
+- **Get all addons and providers** (read-only): Retrieve all addons and providers that are defined on this Unleash instance.
+- **Get all applications** (read-only): Returns one page of applications across the Unleash instance or for one project, with a route-bound cursor for continuation.
+- **Get all banners** (read-only): Returns a list of all configured banners.
+- **Get all environments** (read-only): Retrieves all environments that exist in this Unleash instance.
+- **Get all feature types** (read-only): Retrieves all feature types that exist in this Unleash instance, along with their descriptions and lifetimes.
+- **Get all features lifecycle stage count** (read-only): Return instance-wide feature flag counts grouped into the initial, pre-live, live, completed, and archived lifecycle stages.
+- **Get all login events** (read-only): Return all login and logout events in the Unleash system as structured JSON, including success, client, and failure details when available.
+- **Get all pending user access requests** (read-only): Returns a list of all pending user access requests.
+- **Get all personal access tokens (PATs) for the current user** (read-only): Returns all of the [personal access tokens](https.
+- **Get all tag types** (read-only): Get a list of all available tag types.
+- **Get all tags for a feature** (read-only): Retrieves all the tags for a feature name.
+- **Get all users and [root roles](https://docs.getunleash.io/concepts/rbac#predefined-roles)** (read-only): Will return all users and all available root roles for the Unleash instance.
+- **Get an overview of a project** (read-only): This endpoint returns an overview of the specified projects stats, project health, number of members, which environments are configured,…
+- **Get api tokens for project** (read-only): Returns the project-specific [API tokens](https.
+- **Get application data** (read-only): Returns data about the specified application (appName).
+- **Get application environment instances (Last 24h)** (read-only): Returns an overview of the instances for the given appName and environment that have received traffic in the last 24 hours.
+- **Get application overview** (read-only): Return an application's projects, feature count, environment and SDK activity, and missing-feature, outdated-SDK, or missing-strategy…
+- **Get basic user and group information** (read-only): Get a subset of user and group information eligible even for non-admin users.
+- **Get Context Field** (read-only): Get one root or project context field by name.
+- **Get Detailed Invoices** (read-only): Return detailed Enterprise billing data.
+- **Get Feature** (read-only): Get one feature flag with its metadata, lifecycle, dependencies, tags, environment enablement, and strategy configurations.
+- **Get Feature Environment** (read-only): Get a feature flag's enablement state, complete strategy configurations, variants, release plans, and safeguards in one environment.
+- **Get feature flag strategies** (read-only): Get strategies defined for a feature flag in the specified environment.
+- **Get feature lifecycle** (read-only): Return the selected feature flag's lifecycle history, including each recorded stage, when the feature entered it, and any detailed stage…
+- **Get feature metrics** (read-only): Get usage metrics for a specific feature for the last 48 hours, grouped by hour
+- **Get instance information** (read-only): Gets high level information about the usage of this Unleash instance, including user, project, and flag information.
+- **Get licensed user statistics** (read-only): Return the available seat count, current license usage, and monthly licensed-user count history for this Unleash instance.
+- **Get lifecycle trends** (read-only): Gets lifecycle trends information showing feature flag progression across development, production, and cleanup stages.
+- **Get maintenance mode status** (read-only): Tells you whether maintenance mode is enabled or disabled
+- **Get OIDC auth settings** (read-only): Returns the current settings for OIDC Authentication.
+- **Get Plausible analytics data** (read-only): Fetches analytics data from Plausible API for favorite events over the last 7 days.
+- **Get project status** (read-only): This endpoint returns information on the status the project, including activities, health, resources, and aggregated flag lifecycle data.
+- **Get project-role mappings** (read-only): For the provided role, retrieves a list of projects that use this role.
+- **Get remote MCP server settings** (read-only): Returns the current settings for the remote MCP server.
+- **Get SAML auth settings** (read-only): Returns the current settings for SAML authentication.
+- **Get scheduled change requests matching a query** (read-only): List scheduled change requests that touch the supplied feature flag name or activation strategy ID.
+- **Get SCIM settings** (read-only): Returns the current settings for SCIM provisioning.
+- **Get Segment** (read-only): Get one reusable segment and its complete constraint definition by numeric ID.
+- **Get Simple auth settings** (read-only): Is simple authentication (username/password) enabled for this server.
+- **Get strategies that use a context field** (read-only): Retrieves strategies using a root context field or a project context field.
+- **Get telemetry settings** (read-only): Provides the configured settings for [telemetry information collection](https.
+- **Get the environment with `name`** (read-only): Retrieves the environment with name if it exists in this Unleash instance
+- **Get the external impact-metrics source** (read-only): Returns the current configuration of the external impact-metrics source (any Prometheus-compatible endpoint).
+- **Get the number of change requests you can do something with** (read-only): Returns the number of change requests in this project that your user can move into the next stage by approving or applying them.
+- **Get total count of admin accounts** (read-only): Get a total count of admins with password, without password and admin service accounts.
+- **Get user** (read-only): Will return a single user by id.
+- **Get users and groups in project** (read-only): Get all groups, users and their roles, and available roles for the given project.
+- **Get variants for a feature in an environment** (read-only): Returns the variants for a feature in a specific environment.
+- **Get your own user details** (read-only): Detailed information about the current user, user permissions and user feedback.
+- **Get your own user profile** (read-only): Detailed information about the current user root role and project membership.
+- **Gets access overview** (read-only): Gets an overview of what access all users have to all projects and groups.
+- **Gets usage data** (read-only): Gets usage data per app/endpoint from a prometheus compatible metrics endpoint
+- **Import feature flags**: Import exported JSON feature flag configuration into the target project and environment.
+- **Instance usage statistics** (read-only): Provides statistics about various features of Unleash to allow for reporting of usage for self-hosted customers.
+- **Instance usage statistics** (read-only): Download a CSV file of self-hosted instance usage statistics, including counts and version data for users, groups, feature flags, and…
+- **Last hour of usage and a list of applications that have reported seeing this feature flag** (read-only): Separate counts for yes (enabled), no (disabled), as well as how many times each variant was selected during the last hour
+- **List all tags** (read-only): List all tags available in Unleash.
+- **List all tags of a given type** (read-only): List all tags of a given type.
+- **List all tokens for a service account** (read-only): Returns the list of all tokens for a service account identified by the id.
+- **List API tokens** (read-only): Retrieves all API tokens that exist in the Unleash instance.
+- **List API tokens by name** (read-only): Retrieves all API tokens that match a given token name.
+- **List available change request reviewers** (read-only): List users who are available to review or approve a change request in the specified project environment.
+- **List available impact metrics** (read-only): Returns all available impact metrics and their metadata.
+- **List available permissions** (read-only): Returns a list of available permissions.
+- **List change requests for a project** (read-only): This endpoint will retrieve all change requests regardless of status for a given project.
+- **List Context Fields** (read-only): List configured root context fields or project context fields.
+- **List Features** (read-only): List every feature flag in one project with its high-level state in each environment.
+- **List impact metric configurations** (read-only): List impact metric chart configurations for either the Unleash instance (not associated with a feature flag) or one feature flag.
+- **List inactive users** (read-only): Gets all inactive users.
+- **List integration events for a specific integration configuration** (read-only): Returns a list of integration events belonging to a specific integration configuration, identified by its id.
+- **List invoices** (read-only): Return Enterprise invoice summaries for billing review, including formatted amount due, paid state, current status, optional due date, and…
+- **List notifications** (read-only): A user may get relevant notifications from the projects they are a member of
+- **List outdated SDKs** (read-only): Lists outdated SDK versions and the applications using them across the instance or in one project.
+- **List parent feature variants** (read-only): List available parent variants across all strategy variants and feature environment variants.
+- **List parent options** (read-only): List available parents who have no transitive dependencies.
+- **List pending change requests referencing a feature** (read-only): This endpoint will retrieve all pending change requests (change requests with a status of Draft | In review | Approved) referencing the…
+- **List Project Environments** (read-only): List environments available to a project with project-specific visibility and enabled-toggle counts.
+- **List Projects** (read-only): List projects available to the connected Admin API principal, optionally including archived projects.
+- **List public signup tokens** (read-only): Retrieves all existing public signup tokens.
+- **List release plans** (read-only): Returns a list of all release plans for a specific feature flag and environment.
+- **List release templates** (read-only): Lists global release templates or templates for one project.
+- **List requested change request reviewers** (read-only): Get the users currently requested to review a change request.
+- **List roles for the currently logged-in user** (read-only): Gets roles assigned to currently logged in user.
+- **List Segments** (read-only): List all reusable segments in the Unleash instance with their constraints and usage counts.
+- **List service accounts** (read-only): Returns the list of all service accounts.
+- **List strategies that reference a segment** (read-only): Retrieve all strategies that reference the specified segment.
+- **List strategy segments** (read-only): Retrieve all segments that are referenced by the specified strategy.
+- **List Strategy Types** (read-only): List predefined and custom strategy types available for feature configuration.
+- **List unknown flags** (read-only): Returns a list of unknown flag reports from the last 24 hours, if any.
+- **Mark features as stale / not stale**: This endpoint marks the provided list of features as either [stale](https.
+- **Mark notifications as read**: Allow to select which notifications were read and saving a read date
+- **Modify a feature flag**: Change specific properties of a feature flag.
+- **Move feature to project**: Moves the specified feature to the new project in the request schema.
+- **Patch a feature's variants in an environment**: Apply a list of patches to the features environments in the specified environment.
+- **Query impact metrics time series data** (read-only): Queries an impact metric source for time series data based on the provided metric name, time range, and aggregation mode.
+- **Reads the Unleash license** (read-only): Reads the Unleash license.
+- **Register a new impact metric**: Registers a new impact metric by pushing 0-values.
+- **Reject a user access request**: Rejects an existing user access request identified by its id.
+- **Remove an environment from a project**: This endpoint removes the specified environment from the project.
+- **Remove project access for a group**: Removes project access for a group by removing all of its roles for the project.
+- **Remove project access for a user**: Removes project access for a user by removing all of its roles for the project.
+- **Resume paused milestone progressions**: Resumes all paused milestone progressions for a release plan
+- **Retrieves change request configuration for a project** (read-only): Given a projectId, this endpoint will retrieve change request configuration for the project
+- **Retrieves number of project change requests in each state** (read-only): This endpoint will retrieve the number of project change requests that are.
+- **Retrieves one change request by id** (read-only): This endpoint will retrieve one change request if it matches the provided id.
+- **Retrieves pending change requests in configured environments** (read-only): This endpoint will retrieve the pending change requests in the configured environments for the project, for the current user performing…
+- **Returns the list of permissions for the service account** (read-only): Gets a list of permissions for a service account.
+- **Revives a feature**: This endpoint revives the specified feature from archive.
+- **Revives a list of features**: This endpoint revives the specified features.
+- **Save impact metric configuration**: Create or update an instance-level or feature-level impact metric chart configuration.
+- **Search change requests** (read-only): Search and filter change requests by creator and approver.
+- **Search Features** (read-only): Search and filter feature flags across projects.
+- **Search for events** (read-only): Allows searching for events that match the query parameter criteria.
+- **Search users** (read-only): It will preform a simple search based on name and email matching the given query.
+- **Set a new Unleash license**: Set a new Unleash license.
+- **Set Action Set State**: Enable or disable one project action set.
+- **Set Banner State**: Enable or disable an instance banner.
+- **Set change request reviewers**: Replace the requested reviewers for a change request with the complete supplied user-ID list.
+- **Set Email Subscription**: Subscribe or unsubscribe the current principal from an email notification category.
+- **Set Environment State**: Enable or disable an environment across the Unleash instance.
+- **Set environment-default strategy**: Sets a default strategy for this environment.
+- **Set Feature Environment State**: Enable or disable one feature flag in one environment.
+- **Set Feature Favorite**: Add or remove one feature flag from the current principal's favorites.
+- **Set Feature Lifecycle Completion**: Mark a feature lifecycle as completed with a kept or discarded outcome, or mark it incomplete again.
+- **Set Features Environment State**: Enable or disable the supplied feature flags in one project environment.
+- **Set OIDC settings**: Configure or partially update OpenID Connect login, user auto-creation, roles, group syncing, PKCE, and scopes.
+- **Set Project Archived**: Archive or revive one project.
+- **Set Project Favorite**: Add or remove one project from the current principal's favorites.
+- **Set SCIM settings**: Sets new settings for SCIM provisioning.
+- **Set Signal Endpoint State**: Enable or disable one outbound signal endpoint.
+- **Set Strategy Deprecated**: Deprecate or reactivate one custom strategy type.
+- **Set strategy sort order**: Replace the sort order for the complete supplied list of strategy instances in this feature environment.
+- **Set the external impact-metrics source**: Updates the configuration of the external impact-metrics source (any Prometheus-compatible endpoint).
+- **Set users and groups to roles in the current project**: Replaces the complete project access configuration with the supplied role assignments.
+- **Sets allowed CORS origins**: Sets Cross-Origin Resource Sharing headers for Frontend SDK API.
+- **Sets roles for group**: Replace all project roles assigned to a group.
+- **Sets roles for user**: Replace all project roles assigned directly to a user.
+- **Start a release plan milestone**: Starts a release plan milestone, advancing a one-way release transition that may apply the milestone's rollout configuration and cannot…
+- **This endpoint will add a comment to a change request**: This endpoint will add a comment to a change request for the user making the request.
+- **This endpoint will update the custom title of a change request**: Replace a change request's custom title.
+- **This endpoint will update the state of a change request**: Move a change request to Draft, In review, Approved, Cancelled, or Applied when Unleash's transition rules allow it.
+- **Toggle remote MCP server settings**: Toggles the remote MCP server for this Unleash instance.
+- **Update a banner**: Updates an existing banner identified by its id.
+- **Update a feature link**: Update an existing feature link.
+- **Update a group**: Update existing user group by group id.
+- **Update a milestone strategy**: Update a milestone strategy configuration for a feature flag in the specified environment.
+- **Update a release template**: Updates a release template's name, description, and replacement milestone configuration.
+- **Update a role**: Update a custom role by its role ID.
+- **Update a service account**: Updates an existing service account identified by its id.
+- **Update a strategy type**: Update a custom strategy type's optional description and replace its complete parameter definition list.
+- **Update a tag type**: Update the configuration for the specified tag type.
+- **Update a user**: Only the explicitly specified fields get updated.
+- **Update an addon**: Replace an external event integration configuration.
+- **Update Context Field**: Update supplied settings of a root or project context field.
+- **Update environment sort orders**: Updates sort orders for the named environments.
+- **Update Feature**: Update supplied description, type, stale or archive state, or impression-data setting on an existing feature flag.
+- **Update Feature Strategy**: Replace supplied configuration fields on one feature strategy instance.
+- **Update feature tags**: Sync one or many feature tags with PUT, add one tag with POST, or remove one tag with DELETE.
+- **Update feature type lifetime**: Updates the lifetime configuration for the specified [feature flag type](https.
+- **Update project**: Update a project's name and optionally its description, access mode, or default stickiness.
+- **Update project enterprise settings**: Update project enterprise settings with new values.
+- **Update SAML auth settings**: Configure or partially update SAML login, certificates, user auto-creation, roles, and group syncing.
+- **Update Segment**: Update a segment by replacing its required name and complete constraint list plus optional metadata.
+- **Update Simple auth settings**: Enable or disable simple authentication (username/password).
+- **Update strategy segments**: Sets the segments of the strategy specified to be exactly the ones passed in the payload.
+- **Updates an environment by name**: Given an environment by name updates the environment with the given payload.
+- **Updates change request configuration for an environment in the project**: This endpoint will change the change request configuration for a given environment, set it to either on/off and optionally configure the…
+- **Upsert Context Field Legal Value**: Add a legal value to a root or project context field, or update its description when the value already exists.
+- **Validate a feature flag name** (read-only): Validates a feature flag name.
+- **Validate a role** (read-only): Check if the role matches schema and has a unique name.
+- **Validate a tag type** (read-only): Validates whether if the body of the request is a valid tag and whether the a tag type with that name already exists or not.
+- **Validate an external impact-metrics source URL** (read-only): Tests an external impact-metrics source URL on the fly without persisting it.
+- **Validate constraint** (read-only): Validates a constraint definition.
+- **Validate Context Field Name** (read-only): Check whether a proposed name can be used for a root or project context field.
+- **Validate feature import data** (read-only): Validates a feature flag data set.
+- **Validate password for a user** (read-only): Validate the password strength.
+- **Validate project ID** (read-only): Validate a project ID against Unleash's rules
+- **Validates archive features** (read-only): Preview the consequences of archiving the named feature flags.
+- **Validates if a segment name exists** (read-only): Checks whether a segment name is already in use.
+- **Validates if an environment name exists** (read-only): Checks whether an environment name is already in use.
+- **Validates the Unleash license** (read-only): Check the current Enterprise license and return whether it is valid, along with any provider status message and its info, warning, or…

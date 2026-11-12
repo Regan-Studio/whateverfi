@@ -1,0 +1,221 @@
+# Ramp MCP
+
+Ramp MCP lets authorized users analyze spend and manage cards, bills, reimbursements, approvals, transactions, and other permitted Ramp resources.
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/ramp-mcp/.
+
+## Actions
+
+- **Ramp activate card**: Activates an unactivated card for the user.
+- **Ramp add traveler loyalty program**: Compatibility route for callers that have not migrated to SetTravelerLoyaltyProgram
+- **Ramp add user to shared fund**: Provide user_email for a human or agent_id for a standalone agent.
+- **Ramp agent account numbers** (read-only): Returns active agent-managed account numbers and all payment details available for receiving funds.
+- **Ramp answer policy question** (read-only): Use this tool when the user asks about expense policy rules, spending limits, fund restrictions, or whether certain purchases are allowed…
+- **Ramp api keys** (read-only): Results are sorted by estimated cost in descending order, then by API key ID in ascending order.
+- **Ramp approve or reject bill**: The authenticated user must be the next required approver on the bill's approval chain.
+- **Ramp approve or reject reimbursement**: Use this tool when the user wants to approve or reject a reimbursement.
+- **Ramp approve or reject request**: Use this tool when a user wants to approve or reject a specific request they have identified or referenced.
+- **Ramp approve or reject transaction**: Use this tool when the user wants to approve a transaction, send it back for revisions, or require the cardholder to repay the full amount.
+- **Ramp archive spend allocation**: Archive a fund to prevent spend and hide it from users
+- **Ramp award sourcing event**: closing its current RFX.
+- **Ramp cancel reimbursement payment**: Cancel the payment on a reimbursement that has been approved but not yet paid out
+- **Ramp close sourcing event**: Closing cascades to every non-terminal child RFX.
+- **Ramp complete transaction revision**: Use this after the cardholder has addressed the requested changes and explicitly asks to mark the transaction revision complete.
+- **Ramp create department**: Department names are unique within the business (case-insensitive).
+- **Ramp create draft bill**: Returns the draft UUID, initial version, and Ramp URL.
+- **Ramp create draft spend request from sourcing event**: spend request pre-filled with the winning vendor's context.
+- **Ramp create fund request** (read-only): Always use this tool (never invent URLs) and include the returned url in your next message.
+- **Ramp create pending payee**: Call SearchVendors first with include_draft=true.
+- **Ramp create reimbursement from receipt**: Pass amount/currency_code/transaction_date/merchant to skip OCR.
+- **Ramp create rfx**: event in the same call.
+- **Ramp create trip**: Do not call this solely as a prerequisite for booking a flight or hotel.
+- **Ramp delete procurement draft**: Delete an abandoned procurement draft owned by the acting user
+- **Ramp delete reimbursement**: Deletion is permanent and only allowed for reimbursements the acting user is permitted to delete (their own drafts, or others' if they…
+- **Ramp delete spend program**: Use this tool when an admin wants to permanently delete a spend program.
+- **Ramp departments** (read-only): Returns the departments available in the user's business, which can be used as inputs to workflows that require department references.
+- **Ramp drawdown requests**: Creates a wire drawdown request from an external bank account.
+- **Ramp duplicate reimbursement**: Duplicate an existing reimbursement as a new draft
+- **Ramp edit reimbursement**: Omitted fields stay unchanged.
+- **Ramp edit transaction**: Returns the updated transaction, remaining missing items, and a transaction_link for fields the API cannot edit.
+- **Ramp edit user role on shared fund**: Change a shared-fund user's role between member and co-owner using user_email
+- **Ramp enable shared fund access**: Use this when a user wants to turn an existing personal fund into a shared fund, or when adding a member requires sharing to be enabled…
+- **Ramp enroll business in agent cards**: Enroll the current business in agent cards for agentic commerce
+- **Ramp estimate mileage reimbursement** (read-only): Estimate the reimbursement amount for a given mileage distance based on the user's company rates
+- **Ramp estimate per diem amount** (read-only): Estimate the per diem reimbursement amount for a trip given start/end dates and optional meal deductions
+- **Ramp events** (read-only): Get audit log events
+- **Ramp execute analyst query** (read-only): First use the analyst catalog and read the domain docs for every table in the query.
+- **Ramp fund x402 wallet**: Before calling, use ListBusinessAccounts to obtain the source account UUID.
+- **Ramp get account balance history** (read-only): Use when the user asks about balance history for a specific account, savings account trend, checking account balance over time, or the…
+- **Ramp get agent card creds**: Handles card enrollment and purchase instructions automatically.
+- **Ramp get agent card funds** (read-only): Returns eligible funds with available balance.
+- **Ramp get ai token spend aggregates** (read-only): Aggregate AI token usage or estimated cost over a time window, grouped by caller-selected dimensions (provider, model, configuration,…
+- **Ramp get ai token spend connections** (read-only): Use GetAiTokenSpendCurrentSpend for actual vendor spend and GetAiTokenSpendAggregates for estimated token usage and cost.
+- **Ramp get ai token spend current spend** (read-only): Requires transaction, reimbursement, or bill read access.
+- **Ramp get ai token spend filter options** (read-only): List the dimensions and values available for AI-spend aggregate queries.
+- **Ramp get analyst catalog** (read-only): Review the catalog before writing a query, then read domain docs for every table used.
+- **Ramp get analyst metric metadata** (read-only): Discover supported analyst metrics and starter SQL for aggregate business analysis
+- **Ramp get analyst spend facts domain docs** (read-only): Read domain documentation for analyst.spend_facts before using it in an analyst query
+- **Ramp get analyst table domain docs** (read-only): Read domain documentation for an analyst table before using it in an analyst query
+- **Ramp get attention feed** (read-only): See what needs the user's attention right now.
+- **Ramp get authorized businesses** (read-only): This tool returns all client businesses that the external firm (advisor console) user has been granted access to.
+- **Ramp get bank accounts** (read-only): List bank accounts
+- **Ramp get bill amount summary** (read-only): Examples.
+- **Ramp get bill comments** (read-only): Bills in Ramp have two stages.
+- **Ramp get bill details** (read-only): Requires a bill UUID and known submitted status.
+- **Ramp get bill history** (read-only): Returns a chronological event log — creation, submission, each approval-chain action with actor and timestamp, and deletion.
+- **Ramp get bill invoices** (read-only): Returns the source documents backing the bill.
+- **Ramp get bill metrics** (read-only): Answer questions like "How many bills are pending approval?" or "How many overdue bills do we have?".
+- **Ramp get bill status** (read-only): This tool does not determine required next actions.
+- **Ramp get bills for approval** (read-only): Use this tool when the user wants to see bills they need to approve or asks about pending approvals.
+- **Ramp get booking details** (read-only): Call filtered GetBookings first when the booking UUID is unknown.
+- **Ramp get bookings** (read-only): Optionally identify existing bookings by city, hotel name, flight airline, flight number, booking reference, or travel date.
+- **Ramp get business statement date** (read-only): Get the business's statement billing schedule.
+- **Ramp get candidate trips for transaction** (read-only): Returns up to 10 ongoing, upcoming, and recently completed trips.
+- **Ramp get card statement balance** (read-only): how much was due, how much has been paid, what's still outstanding, and when the next payment is due.
+- **Ramp get decline explanation** (read-only): Returns the reason, remediation actions, user notification, and transaction details.
+- **Ramp get draft bill details** (read-only): Submitted bills, including those awaiting approval or payment, are not supported.
+- **Ramp get employee submission policy requirements** (read-only): Returns the same summaries shown in the employee handbook's transaction requirements.
+- **Ramp get expense workflow context** (read-only): Provide exactly one expense UUID.
+- **Ramp get flight booking locations** (read-only): Preserve the user's location wording in query.
+- **Ramp get full transaction metadata** (read-only): Read the amount from amount_decimal, which is already in currency's major unit and needs no arithmetic.
+- **Ramp get funds** (read-only): or permitted spend.
+- **Ramp get hotel rates** (read-only): Use this after the user picks a hotel from SearchHotels results and before booking.
+- **Ramp get investment account balance** (read-only): Use this when the user asks about investment account balances, brokerage cash, or the current balance of Ramp investment accounts.
+- **Ramp get latest sync** (read-only): Use this when you need the latest sync status plus every intended and successful count exposed by Ramp's accounting latest-sync endpoint.
+- **Ramp get managed portfolio account balance** (read-only): Use this when the user asks about managed portfolio balances, managed portfolio cash, or the current balance of Ramp managed portfolio…
+- **Ramp get missing items by user** (read-only): Returns a paginated list of users you are allowed to view who have outstanding missing items, along with sample transactions.
+- **Ramp get more tools** (read-only): Use this when the user's request cannot be completed with the available Ramp tools.
+- **Ramp get my ai token spend aggregates** (read-only): Aggregate the acting user's own AI token usage and estimated token cost over a time window, optionally grouped by provider and model
+- **Ramp get office locations** (read-only): Find office addresses when searching for hotels near an office or determining travel destinations.
+- **Ramp get org chart** (read-only): This tool provides comprehensive org chart visibility including.
+- **Ramp get outstanding reimbursements by currency** (read-only): Get approved and failed reimbursements that would be affected by a bank account currency change
+- **Ramp get pending travel requests** (read-only): Use this when a user asks about travel requests they need to approve.
+- **Ramp get policies** (read-only): List policy versions for a standalone Agent Wallet
+- **Ramp get policy details** (read-only): Accepts either the policy UUID or the backing product workflow UUID returned by list-policies.
+- **Ramp get policy workflow body** (read-only): Accepts the policy UUID or the backing product workflow UUID from list-policies.
+- **Ramp get procurement draft**: Refresh and canonically revalidate a procurement draft's visible form state
+- **Ramp get purchase order details** (read-only): Use this with the exact purchase order UUID returned by the purchase-order search tool available to the caller or supplied by page context.
+- **Ramp get ramp business account balance** (read-only): Returns the available balance, statement balance, and other details for all Ramp Checking Accounts associated with the user's business.
+- **Ramp get recurring bill** (read-only): Bills in Ramp have two stages.
+- **Ramp get reimbursement receipts** (read-only): Retrieve receipts attached to a reimbursement
+- **Ramp get reimbursements** (read-only): amount ranges, tags, date ranges, approval status, and policy assessments.
+- **Ramp get reimbursements for approval** (read-only): Includes policy assessment data and recommended actions.
+- **Ramp get requests to review** (read-only): This is the approval-queue wrapper over SearchUnifiedRequests.
+- **Ramp get rfx detail** (read-only): cover sheet, pricing sheet, dates, vendor invitations with contacts, and the actions the acting user can currently perform.
+- **Ramp get rfx grading overview** (read-only): recommendations, per-vendor per-section grading status and aggregate scores, and any recorded field grades.
+- **Ramp get rfx response summary** (read-only): Summarize vendor response and grading progress for a specific RFX
+- **Ramp get rfx vendor responses** (read-only): Return all submitted vendor responses for an RFX
+- **Ramp get simplified user detail** (read-only): Returns multiple results for users that are part of multiple businesses.
+- **Ramp get sourcing event context** (read-only): Get a compact summary of a sourcing event, its RFXs, and invited vendors
+- **Ramp get sync commit failure details** (read-only): Use this when a customer asks about failed accounting sync rows, including rows from the accounting transactions table, reimbursements…
+- **Ramp get tracking categories** (read-only): as departments, classes or business units, locations, projects, customers, and cost centers.
+- **Ramp get tracking category options** (read-only): Pass query_string to narrow by name, synonym, or provider code.
+- **Ramp get transaction missing items** (read-only): Check what receipts, memos, or accounting items are missing from a specific transaction
+- **Ramp get transaction suggested memos** (read-only): Get AI-suggested memo/note options for a specific transaction
+- **Ramp get transactions** (read-only): Use analyst tools instead for aggregate spend analysis, totals, trends, or group-bys when analyst tools are available.
+- **Ramp get traveler profile** (read-only): For delegated bookings, first resolve the traveler with GetAllReducedUsers/list-users, then pass that UUID as traveler_user_id.
+- **Ramp get treasury balance history** (read-only): Get daily balance history across all Treasury accounts for a date range
+- **Ramp get unified request details** (read-only): Returns its status, approval chain, comments, activity timeline, custom fields, and agent-generated reports.
+- **Ramp get user recent reimbursements** (read-only): limit takes precedence over up_to_days so if you want to get all reimbursements in a given time frame, do not specify limit.
+- **Ramp get user trips** (read-only): Fetch trips for the acting user with optional filters
+- **Ramp get vendor agreement** (read-only): Returns contract metadata, terms, line items, contract owners, documents, linked spend requests, and renewal history.
+- **Ramp get vendor document bulk status** (read-only): Use this after BulkUploadVendorDocuments to inspect the batch job status, understand whether any documents still need manual review, and…
+- **Ramp hold**: Blocks payments to this vendor by placing a vendor-scoped hold.
+- **Ramp invite vendors to rfx**: Each vendor must be an existing payee in Ramp.
+- **Ramp issue from spend program**: Use this tool when an admin wants to issue allocations from a spend program to directly named users, or to users matched by location,…
+- **Ramp issue one off funds**: Use this tool when an admin wants to create new funds for one or more users with a specific amount, interval, and optional restrictions.
+- **Ramp limit increase**: Supports temporary (resets at the next interval) and permanent increases.
+- **Ramp list bills** (read-only): Returns bills for the current user's business.
+- **Ramp list business accounts** (read-only): Returns account details including balances, currency, yield rate, and status.
+- **Ramp list cards** (read-only): IMPORTANT.
+- **Ramp list policies** (read-only): Returns policy metadata only, not written policy document text.
+- **Ramp list sourcing events** (read-only): Use this first when the user refers to an existing sourcing event but you do not yet know which one they mean.
+- **Ramp list traveler loyalty programs** (read-only): Use this directly for loyalty-only list/show/check requests.
+- **Ramp list treasury accounts** (read-only): List all Treasury accounts (Ramp Checking Accounts, Investment Accounts, Managed Portfolios)
+- **Ramp list users** (read-only): Returns all users in the organization matching the given filters.
+- **Ramp list vendor agreements** (read-only): Returns agreement details including dates, values, renewal status, line items, and days remaining.
+- **Ramp list wallet transfers** (read-only): Returns a list of transfers including deposits, withdrawals, and other transactions with details like amount, status, and dates.
+- **Ramp lock or unlock card**: Locking prevents all transactions on it until unlocked.
+- **Ramp lock or unlock spend allocation**: Lock or unlock a fund (spend allocation) at the fund level, affecting all members
+- **Ramp lock or unlock spend allocation member**: Lock or unlock a specific member's access to a fund (spend allocation)
+- **Ramp manage rfx collaborators**: Collaborators can edit the RFX form and vendor list while it is in DRAFT and grade vendor responses once it is PUBLISHED.
+- **Ramp mark rfx graded**: Requires at least one submitted vendor response.
+- **Ramp mark transaction missing receipt**: Should be called whenever the user says "OOPS" or if the user says something along the lines of "I did not receive a receipt ...".
+- **Ramp merchant categories** (read-only): Each category expands to its configured MCC allowlist.
+- **Ramp merchants** (read-only): List merchants
+- **Ramp pay with x402**: Fill the inputs from the merchant's 402 payment challenge.
+- **Ramp payment credentials**: Issue or recover a Stripe MPP credential using an existing fund
+- **Ramp post bank accounts**: Create a manually connected bank account
+- **Ramp post comment**: If there is any ambiguity as to whether the user's message is meant to be posted to the thread, ask them for confirmation first.
+- **Ramp post policies**: Publish the active policy for a standalone Agent Wallet
+- **Ramp post procurement draft**: Create or update a procurement draft and return the current visible form state
+- **Ramp procurement spend intents** (read-only): List published procurement spend programs the agent can draft against
+- **Ramp procurement submit**: Submit a procurement draft after explicit user confirmation
+- **Ramp provide no receipt reason**: Submit a reason explaining why a transaction has no receipt
+- **Ramp provision x402 wallet**: Returns the same sign-ready Solana wallet on repeated calls.
+- **Ramp publish rfx**: Publishing notifies vendors outside Ramp, so check GetRFXDetail first.
+- **Ramp ramp bulk close purchase orders**: Use after confirming the user wants the listed POs closed.
+- **Ramp ramp bulk reopen purchase orders**: Use only after confirming the user wants the listed POs reopened.
+- **Ramp ready to sync**: Marking an object (for example a transaction) as ready to sync flags it as reviewed and complete, so it will be included in the next…
+- **Ramp release**: Releases the active vendor-scoped hold and allows new payments to be scheduled for the vendor.
+- **Ramp remind bill approvers**: Use this tool when the user wants to nudge approvers for specific bill UUIDs.
+- **Ramp remove traveler loyalty program**: Remove a saved loyalty program from the user's traveler profile
+- **Ramp remove user from shared fund**: Remove a user from a shared fund using user_email
+- **Ramp rename department**: Department names must be unique within the business (case-insensitive).
+- **Ramp reporting describe dataset** (read-only): Use this after selecting a dataset name to inspect its dimensions, measures, default time dimensions, sample questions, and join-reachable…
+- **Ramp reporting get skill** (read-only): Call once before your first reporting query and follow it exactly.
+- **Ramp reporting list datasets** (read-only): Call ramp_reporting_get_skill before your first reporting query and follow the returned skill.
+- **Ramp reporting lookup search tags** (read-only): Search tags are used to filter report data by various criteria such as.
+- **Ramp reporting query** (read-only): Data is eventually consistent (may lag a few minutes).
+- **Ramp reporting search catalog** (read-only): Use this when a user describes a reporting question in plain English and you need to choose the best semantic dataset and relevant fields.
+- **Ramp request transaction repayment**: This is the REVIEWER / APPROVER action.
+- **Ramp resubmit reimbursement**: This does NOT submit the reimbursement — it only moves it from REJECTED to DRAFT.
+- **Ramp return rfx to draft**: Only valid after a publish approval was rejected.
+- **Ramp revoke rfx vendor invitation**: This is irreversible — on a published RFX the vendor immediately loses access to the questionnaire and any e-sign envelope in flight is…
+- **Ramp roles** (read-only): List custom roles
+- **Ramp search bills** (read-only): Accepts a UUID in query even when the bill's draft/submitted stage is unknown.
+- **Ramp search flight modifications** (read-only): First inspect the booking itinerary and ask which leg, date, or route the traveler wants to change.
+- **Ramp search flights** (read-only): Before first use in a conversation, load and follow the ramp-book-flight skill when available.
+- **Ramp search help center snippets** (read-only): This tool performs semantic search across help center articles using embeddings.
+- **Ramp search hotel** (read-only): Before first use in a conversation, load and follow the ramp-book-hotel skill when available.
+- **Ramp search merchants** (read-only): Returns matching merchant IDs, UUIDs, names, categories, and domains.
+- **Ramp search purchase orders** (read-only): Search for purchase orders using structured purchase order filters
+- **Ramp search reimbursements** (read-only): Search reimbursements across a business, optionally filtering to a specific user's reimbursements
+- **Ramp search unified requests** (read-only): Find existing purchase orders, fund requests, procurement requests, policy-backed requests, or approval-only requests by vendor, request…
+- **Ramp search user** (read-only): Returns users from the business ranked by relevance to the given transaction (recent attendees and teammates appear first).
+- **Ramp search user reimbursements** (read-only): Supports filtering by.
+- **Ramp search vendors** (read-only): With a search_term, this tool finds vendor records using both fuzzy SQL matching (trigram similarity + substring) and semantic (vector)…
+- **Ramp send rfx response reminder**: submitted their RFX response.
+- **Ramp set decline buffer**: Decline buffers are stored as allowed overage percent.
+- **Ramp set rfx cover sheet**: Pass body_markdown and/or attachment_ramp_document_ids, and get explicit user confirmation for the body and every attachment before calling.
+- **Ramp set rfx pricing sheet**: The pricing sheet configures how vendors submit pricing in response to the RFX.
+- **Ramp set rfx vendor invitation contact**: Resolving a DRAFT invitation's contact activates it (DRAFT → ACTIVE) so the RFX can publish.
+- **Ramp set traveler loyalty program**: If it already exists, update its loyalty number.
+- **Ramp simulate policy workflow for expense**: Approval policies return the simulated approval steps.
+- **Ramp statement** (read-only): Fetch a statement
+- **Ramp statements** (read-only): List statements
+- **Ramp submit agent nps**: Submit an optional Agent NPS response using a one-time survey token
+- **Ramp submit draft bill**: Readiness requires at least one bill date, an active existing vendor with required bill-pay details, invoice currency, a positive amount,…
+- **Ramp submit flight booking**: Three explicit actions.
+- **Ramp submit flight cancellation**: Always call with confirm=false first.
+- **Ramp submit flight modification**: Always call with confirm=false first.
+- **Ramp submit hotel booking**: Two-step flow.
+- **Ramp submit hotel cancellation**: Always call with confirm=false first.
+- **Ramp submit reimbursement**: If the submission fails, the agent should follow up with the user based on the error returned from the endpoint.
+- **Ramp team** (read-only): User profile fields reflect current Ramp user metadata, independent of the requested dates.
+- **Ramp transaction**: Send line_items with amounts (in minor units) to create or replace the transaction's split.
+- **Ramp transfer spend allocation ownership**: Transfer ownership of a spend allocation using the current and new owners' emails
+- **Ramp travel request action**: Only act when the user's current instruction explicitly identifies this request or unambiguously refers to this exact request from the…
+- **Ramp unarchive spend allocation**: Unarchive a fund so it becomes visible and spendable again
+- **Ramp unlock fraud locked card**: Requires the user to confirm they recognize the flagged transaction.
+- **Ramp update category restrictions**: Manages spend types (e.g., Restaurants, Travel), not individual merchants.
+- **Ramp update draft bill**: Requires the current draft version and returns the new version.
+- **Ramp update merchant restrictions**: - Add or remove merchants from the allowed merchants list (whitelist) - Add or remove merchants from the blocked merchants list…
+- **Ramp update rfx**: sections is a complete replacement of the questionnaire — resubmit the full section list on every update.
+- **Ramp update spend allocation interval**: Update only the spend interval for a spend allocation
+- **Ramp update transaction amount limit**: Use this for decline action INCREASE_TRANSACTION_AMOUNT_LIMIT or requests about a per-transaction, single-transaction, or max-expense limit.
+- **Ramp update travel preferences**: Purpose.
+- **Ramp update traveler loyalty program**: Compatibility route for callers that still update a saved loyalty program by ID
+- **Ramp update traveler profile**: Never use for loyalty-only requests.
+- **Ramp usage** (read-only): List daily AI usage and spend grouped by provider, model, and product
+- **Ramp withdraw x402 wallet**: Before calling, use ListBusinessAccounts to obtain the destination account UUID.

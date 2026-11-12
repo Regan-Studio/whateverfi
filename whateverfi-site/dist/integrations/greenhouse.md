@@ -1,0 +1,141 @@
+# Greenhouse
+
+Applicant tracking and recruiting software to optimize your entire recruiting process
+
+Category: Recruiting & HR. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/greenhouse/.
+
+## Actions
+
+- **Add Greenhouse job owner**: Add a Greenhouse user to a job's hiring team as a recruiter, sourcer, or coordinator via the Harvest v3 API.
+- **Anonymize Greenhouse candidate**: Anonymize selected categories of personally identifiable data on a Greenhouse candidate via the Harvest v3 API, for GDPR or…
+- **Apply Greenhouse candidate tag**: Apply an existing candidate tag to a candidate via the Greenhouse Harvest v3 API.
+- **Bulk create Greenhouse blocked spam sources**: Add multiple blocked spam sources to Greenhouse in a single request via the Harvest v3 API.
+- **Bulk create Greenhouse custom field options**: Add many custom field options at once to select-type custom fields via the Greenhouse Harvest v3 API.
+- **Bulk create Greenhouse openings**: Asynchronously create many Greenhouse openings across one or more jobs in a single Harvest v3 call.
+- **Bulk deactivate Greenhouse users**: Asynchronously deactivate many Greenhouse users in a single Harvest v3 call, up to the bulk-endpoint cap per request.
+- **Bulk delete Greenhouse custom field options**: Archive many custom field options at once by id via the Greenhouse Harvest v3 API.
+- **Bulk update Greenhouse blocked spam sources**: Asynchronously update the note on many Greenhouse blocked spam sources in a single Harvest v3 call.
+- **Bulk update Greenhouse custom field options**: Asynchronously edit many Greenhouse custom field options in a single Harvest v3 call.
+- **Bulk update Greenhouse departments**: Asynchronously update many Greenhouse departments in a single call via the Harvest v3 API.
+- **Bulk update Greenhouse offices**: Asynchronously update many Greenhouse offices in a single Harvest v3 call.
+- **Bulk update Greenhouse openings**: Asynchronously update many Greenhouse openings in a single call via the Harvest v3 API.
+- **Bulk update Greenhouse users**: Asynchronously update many Greenhouse users in a single call via the Harvest v3 API.
+- **Create Greenhouse application**: Create a new application for an existing Greenhouse candidate via the Harvest v3 API.
+- **Create Greenhouse approval flow**: Create a multi-step approval flow on a Greenhouse job via the Harvest v3 API.
+- **Create Greenhouse attachment**: Attach a file to an existing Greenhouse application via the Harvest v3 API.
+- **Create Greenhouse blocked spam source**: Add a new IP address, CIDR range, email address, or email domain to the organization's spam blocklist via the Greenhouse Harvest v3 API.
+- **Create Greenhouse candidate**: Create a new candidate profile in Greenhouse via the Harvest v3 API.
+- **Create Greenhouse candidate education**: Add a new education entry to a Greenhouse candidate's profile via the Harvest v3 API.
+- **Create Greenhouse candidate employment**: Add a new work-history (employment) entry to a Greenhouse candidate's profile via the Harvest v3 API.
+- **Create Greenhouse candidate note**: Create a candidate note, log an email, or record an activity-feed entry on a Greenhouse candidate via the Harvest v3 API.
+- **Create Greenhouse candidate tag**: Add a new tag to the organization's candidate-tag dictionary via the Greenhouse Harvest v3 API.
+- **Create Greenhouse custom field**: Add a new custom field to your organization's dictionary via the Greenhouse Harvest v3 API.
+- **Create Greenhouse custom field department**: Restrict a custom field's visibility to one additional department via the Greenhouse Harvest v3 API.
+- **Create Greenhouse custom field office**: Restrict a custom field's visibility to one additional office via the Greenhouse Harvest v3 API.
+- **Create Greenhouse custom field option**: Add a new selectable value to a single_select or multi_select custom field via the Greenhouse Harvest v3 API.
+- **Create Greenhouse department**: Create a new department for the organization via the Greenhouse Harvest v3 API.
+- **Create Greenhouse interview**: Create a scheduled interview against a candidate application in Greenhouse Harvest.
+- **Create Greenhouse job**: Create a new Greenhouse job from an existing template via the Harvest v3 API.
+- **Create Greenhouse job hiring manager**: Assign a user as a hiring manager on a Greenhouse job via the Harvest v3 API.
+- **Create Greenhouse job note**: Create a free-form note attached to a Greenhouse job via the Harvest v3 API.
+- **Create Greenhouse offer**: Create a new offer on an existing Greenhouse application via the Harvest v3 API.
+- **Create Greenhouse office**: Create a new office for the organization via the Greenhouse Harvest v3 API.
+- **Create Greenhouse opening**: Add a new opening (headcount slot) to an existing Greenhouse job via the Harvest v3 API.
+- **Create Greenhouse user**: Create a new user in your Greenhouse Recruiting organization via the Harvest v3 API.
+- **Create Greenhouse user email**: Attach an additional email address to an existing Greenhouse user via the Harvest v3 API.
+- **Deactivate Greenhouse user**: Deactivate a Greenhouse user via the Harvest v3 API, preventing that user from signing in while preserving their historical data.
+- **Delete Greenhouse application**: Permanently delete a single Greenhouse application via the Harvest v3 API, along with its interview stages, scorecards, rejection details,…
+- **Delete Greenhouse applied candidate tag**: Detach a single tag from a candidate in Greenhouse via the Harvest v3 API, identified by its applied candidate tag id.
+- **Delete Greenhouse attachment**: Permanently remove an attachment from its Greenhouse application via the Harvest v3 API, identified by its attachment id.
+- **Delete Greenhouse blocked spam source**: Permanently remove a single blocked spam source from Greenhouse via the Harvest v3 API.
+- **Delete Greenhouse candidate**: Permanently delete a candidate from Greenhouse via the Harvest v3 API.
+- **Delete Greenhouse candidate education**: Remove a single education entry from a Greenhouse candidate's profile via the Harvest v3 API.
+- **Delete Greenhouse candidate employment**: Permanently delete a single employment entry from a candidate's profile in Greenhouse via the Harvest v3 API.
+- **Delete Greenhouse candidate tag**: Delete a tag from your organization's candidate-tag dictionary in Greenhouse via the Harvest v3 API, identified by its candidate tag id.
+- **Delete Greenhouse custom field office**: Remove an office from a custom field's visibility scope via the Greenhouse Harvest v3 API.
+- **Delete Greenhouse custom field option**: Archive a single custom field option via the Greenhouse Harvest v3 API so it can no longer be selected on new records.
+- **Delete Greenhouse interview**: Cancel and permanently delete a scheduled interview in Greenhouse via the Harvest v3 API, identified by its interview id.
+- **Delete Greenhouse job hiring manager**: Unassign a hiring manager from a Greenhouse job by deleting the job hiring manager join row, identified by its id, via the Harvest v3 API.
+- **Delete Greenhouse job note**: Permanently delete a Greenhouse job note, identified by its id, via the Harvest v3 API.
+- **Delete Greenhouse job owner**: Remove a Greenhouse user from a job's hiring team in a single role by deleting the job owner join row, identified by its id, via the…
+- **Delete Greenhouse user job permission**: Revoke a single Greenhouse user job permission by its id via the Harvest v3 API, removing that user's Job Admin role on the associated job.
+- **Grant Greenhouse user job permission**: Grant a Greenhouse user a Job Admin role on a single job via the Harvest v3 API.
+- **Hire Greenhouse application**: Mark a Greenhouse application as hired and close out the matching opening on the job via the Harvest v3 API.
+- **List Greenhouse application stages** (read-only): List the application stage history rows in your Greenhouse organization — one row per interview stage an application has occupied, with…
+- **List Greenhouse applications** (read-only): List the applications in your Greenhouse organization, which associate candidates with jobs (candidate applications attach to exactly one…
+- **List Greenhouse approval flows** (read-only): List the approval flows in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse approver groups** (read-only): List the approver groups in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse approvers** (read-only): List approver records in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse attachments** (read-only): List the attachments in your Greenhouse organization, which are files associated with applications such as resumes, cover letters,…
+- **List Greenhouse bulk requests** (read-only): List the asynchronous bulk requests submitted to Greenhouse Harvest v3, each tracking a batch operation with its record, success, and…
+- **List Greenhouse candidate educations** (read-only): List candidate educations in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse candidate employments** (read-only): List candidate employments in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse candidate tags** (read-only): List the candidate tags configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse candidates** (read-only): List the candidates (active applicants and prospects) in your Greenhouse organization, returning each candidate's profile.
+- **List Greenhouse close reasons** (read-only): List the close reasons configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse custom field departments** (read-only): List the custom field department associations configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse custom field offices** (read-only): List the custom_field_office associations in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse custom field options** (read-only): List the custom field options configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse custom fields** (read-only): List the custom field definitions configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse default interviewers** (read-only): List the default interviewers configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse demographic answer options** (read-only): List all of a Greenhouse organization's demographic answer options via the Harvest v3 API.
+- **List Greenhouse demographic answers** (read-only): List all of a Greenhouse organization's demographic answers via the Harvest v3 API.
+- **List Greenhouse demographic question sets** (read-only): List all of a Greenhouse organization's demographic question sets via the Harvest v3 API.
+- **List Greenhouse demographic questions** (read-only): List the demographic questions configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse departments** (read-only): List the departments configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse EEOC responses** (read-only): List EEOC self-identification responses in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse email templates** (read-only): List the email templates configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse focus candidate attributes** (read-only): List the focus candidate attributes in your Greenhouse organization — the subset of a job's job_candidate_attributes that an interview kit…
+- **List Greenhouse interview kits** (read-only): List the interview kits (per-job, per-slot evaluation packets interviewers see when conducting an interview) in a Greenhouse organization…
+- **List Greenhouse interviewer tags** (read-only): List the interviewer tags in your Greenhouse organization.
+- **List Greenhouse interviews** (read-only): List scheduled interview events in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse job board custom locations** (read-only): List a Greenhouse organization's job board custom locations via the Harvest v3 API.
+- **List Greenhouse job boards** (read-only): List the job boards configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse job candidate attributes** (read-only): List the job candidate attributes (the per-job instances of a job's candidate_attribute_types) in a Greenhouse organization via the…
+- **List Greenhouse job hiring managers** (read-only): List the job hiring managers configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse job interview stages** (read-only): List the job interview stages in your Greenhouse organization — the steps that make up each job's interview plan (e.g.
+- **List Greenhouse job interviews** (read-only): List the interview slot template definitions configured on jobs' interview plans in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse job notes** (read-only): List the free-form, organization-internal notes attached to jobs across your Greenhouse organization.
+- **List Greenhouse job owners** (read-only): List the job owners across your Greenhouse organization.
+- **List Greenhouse job post searchable locations** (read-only): List the searchable geographic locations attached to job posts in your Greenhouse organization.
+- **List Greenhouse job posts** (read-only): List the candidate-facing job posts in your Greenhouse organization.
+- **List Greenhouse jobs** (read-only): List the jobs (hiring plans) in your Greenhouse organization.
+- **List Greenhouse notes** (read-only): List the notes (free-form activity-feed entries) across a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse offers** (read-only): List the offers in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse offices** (read-only): List the offices configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse openings** (read-only): List the openings (individual headcount slots beneath jobs) in your Greenhouse organization.
+- **List Greenhouse pay input ranges** (read-only): List the pay input ranges configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse pay inputs** (read-only): List the pay inputs in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse prospect pool stages** (read-only): List the prospect pool stages configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse prospect pools** (read-only): List the prospect pools configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse referrers** (read-only): List the referrers in your Greenhouse organization.
+- **List Greenhouse rejection details** (read-only): List the per-application rejection records in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse rejection reasons** (read-only): List the rejection reasons configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse scorecard question options** (read-only): List scorecard question options - the multiple-choice values shown to interviewers for single_select and multi_select scorecard questions…
+- **List Greenhouse scorecards** (read-only): List the scorecards (per-interview evaluations) in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse sources** (read-only): List the sources configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse tracking links** (read-only): List the tracking links configured in a Greenhouse organization via the Harvest v3 API.
+- **List Greenhouse user job permissions** (read-only): List the per-user, per-job access grants in your Greenhouse organization, each pairing a user with a Job Admin role on a specific job.
+- **List Greenhouse users** (read-only): List the user accounts (recruiters, hiring managers, interviewers, coordinators, and site admins) in your Greenhouse organization.
+- **Merge Greenhouse candidates**: Merge two candidate profiles in Greenhouse via the Harvest v3 API, collapsing a secondary (duplicate) candidate into a primary one.
+- **Move Greenhouse application**: Move a Greenhouse application to a different interview stage via the Harvest v3 API.
+- **Reactivate Greenhouse user**: Reactivate a previously deactivated Greenhouse user via the Harvest v3 API so they can sign in again.
+- **Reject Greenhouse application**: Reject an existing Greenhouse application via the Harvest v3 API, recording the rejection reason and optionally notifying the candidate.
+- **Replace Greenhouse approver**: Swap one approver in a Greenhouse approver group for another user via the Harvest v3 API, without rebuilding the rest of the approval flow.
+- **Request Greenhouse approvals**: Start an existing pending Greenhouse approval flow by emailing its initial approver(s) via the Harvest v3 API.
+- **Revoke Greenhouse user permissions**: Revoke a Greenhouse user's site admin permissions via the Harvest v3 API, reverting them to a Basic user.
+- **Search Greenhouse applications** (read-only): Search applications through Greenhouse's full-text candidate search index with richer pipeline filters than the plain list endpoint.
+- **Update Greenhouse application**: Update attribution and metadata on an existing Greenhouse application via the Harvest v3 API.
+- **Update Greenhouse approval flow**: Toggle whether a Greenhouse approval flow resolves sequentially or in parallel, via the Harvest v3 API.
+- **Update Greenhouse blocked spam source**: Update the note on an existing entry in the organization's spam blocklist via the Greenhouse Harvest v3 API.
+- **Update Greenhouse candidate**: Update an existing candidate's profile in Greenhouse via the Harvest v3 API.
+- **Update Greenhouse custom field**: Edit the definition of an existing Greenhouse custom field via the Harvest v3 API.
+- **Update Greenhouse custom field option**: Edit the display label, sort order, or external id of an existing custom field option via the Greenhouse Harvest v3 API.
+- **Update Greenhouse department**: Update an existing Greenhouse department via the Harvest v3 API.
+- **Update Greenhouse interview**: Update a scheduled Greenhouse interview via the Harvest v3 API.
+- **Update Greenhouse job**: Update an existing Greenhouse job's editable fields via the Harvest v3 API.
+- **Update Greenhouse job note**: Update an existing Greenhouse job note, identified by its id, via the Harvest v3 API.
+- **Update Greenhouse office**: Update an existing office for the organization via the Greenhouse Harvest v3 API.
+- **Update Greenhouse opening**: Edit an existing opening (headcount slot) on a Greenhouse job via the Harvest v3 API, or close/reopen it.
+- **Update Greenhouse rejection detail**: Patch the rejection reason and/or rejection-question custom field answers on a rejected application's rejection detail record via the…
+- **Update Greenhouse user**: Update an existing user's profile in Greenhouse via the Harvest v3 API.

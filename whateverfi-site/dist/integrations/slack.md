@@ -1,0 +1,114 @@
+# Slack
+
+Slack is a channel-based messaging platform. With Slack, people can work together more effectively, connect all their software tools and services, and find the information they need to do their best work - all within a secure, enterprise-grade environment.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/slack/.
+
+## Actions
+
+- **Add reaction to message**: Adds a specified emoji reaction to an existing message in a slack channel, identified by its timestamp.
+- **Create a reminder**: Creates a slack reminder with specified text and time.
+- **Fetch conversation history** (read-only): Fetches a chronological list of messages and events from a specified slack conversation, accessible by the authenticated user/bot, with…
+- **Find channels** (read-only): Find channels in a slack workspace by any criteria - name, topic, purpose, or description.
+- **Find users** (read-only): Find users in a slack workspace by any criteria - email, name, display name, or other text.
+- **List all channels** (read-only): Lists conversations available to the user with various filters and search options.
+- **List all users** (read-only): Retrieves a paginated list of all users, including comprehensive details, profile information, status, and team memberships, in a slack…
+- **Remove reaction from item**: Removes an emoji reaction from a message, file, or file comment in slack.
+- **Schedule message**: Schedules a message to a slack channel, dm, or private group for a future time (post at), requiring text, blocks, or attachments for…
+- **Search messages** (read-only): Workspace‑wide slack message search with date ranges and filters.
+- **Send message**: Posts a message to a slack channel, direct message, or private group.
+- **Update a Slack message**: Updates a slack message, identified by channel id and ts timestamp, by modifying its text, attachments, or blocks.
+- **Add a remote file**: Adds a reference to an external file (e.g., google drive, dropbox) to slack for discovery and sharing, requiring a unique external id and…
+- **Add a star to an item**: Stars a channel, file, file comment, or a specific message in slack.
+- **Add an emoji alias**: Adds an alias for an existing custom emoji in a slack enterprise grid organization.
+- **Add call participants**: Registers new participants added to a slack call.
+- **Add emoji**: Adds a custom emoji to a slack workspace given a unique name and an image url.
+- **Archive a public or private channel**: Archives a slack public or private channel, making it read-only.
+- **Archive a Slack conversation**: Archives a slack conversation by its id, rendering it read-only and hidden while retaining history, ideal for cleaning up inactive channels.
+- **Close conversation channel**: Closes a slack direct message (dm) or multi-person direct message (mpdm) channel, removing it from the user's sidebar without deleting…
+- **Create a channel-based conversation**: Creates a new public or private slack channel with a unique name.
+- **Create a Slack user group**: Creates a new user group (often referred to as a subteam) in a slack workspace.
+- **Create channel**: Initiates a public or private channel-based conversation
+- **Customize URL unfurl**: Customizes url previews (unfurling) in a specific slack message using a url-encoded json in unfurls to define custom content or remove…
+- **Delete a file by ID**: Permanently deletes an existing file from a slack workspace using its unique file id.
+- **Delete a message from a chat**: Deletes a message, identified by its channel id and timestamp, from a slack channel, private group, or direct message conversation.
+- **Delete a public or private channel**: Permanently and irreversibly deletes a specified public or private channel, including all its messages and files, within a slack…
+- **Delete a Slack reminder**: Deletes an existing slack reminder, typically when it is no longer relevant or a task is completed.
+- **Delete file comment**: Deletes a specific comment from a file in slack.
+- **Delete scheduled chat message**: Deletes a pending, unsent scheduled message from the specified slack channel, identified by its scheduled message id.
+- **Delete user profile photo**: Deletes the slack profile photo for the user identified by the token, reverting them to the default avatar.
+- **Disable a Slack user group**: Disables a specified, currently enabled slack user group by its unique id, effectively archiving it by setting its 'date delete' timestamp.
+- **Enable a user group**: Enables a disabled user group in slack using its id, reactivating it for mentions and permissions.
+- **End a call**: Ends an ongoing slack call, identified by its id (obtained from calls.add), optionally specifying the call's duration.
+- **End DND session**: Ends the authenticated user's current do not disturb (dnd) session in slack, affecting only dnd status and making them available.
+- **End snooze**: Ends the current user's snooze mode immediately.
+- **Fetch bot user information** (read-only): Fetches information for a specified, existing slack bot user.
+- **Fetch item reactions** (read-only): Fetches reactions for a slack message, file, or file comment, requiring one of.
+- **Fetch team info** (read-only): Fetches comprehensive metadata about the current slack team, or a specified team if the provided id is accessible.
+- **Fetch workspace settings information** (read-only): Retrieves detailed settings for a specific slack workspace, primarily for administrators in an enterprise grid organization to view or…
+- **Get channel conversation preferences** (read-only): Retrieves conversation preferences (e.g., who can post, who can thread) for a specified channel, primarily for use within slack enterprise…
+- **Get conversation members** (read-only): Retrieves a paginated list of active member ids for a specified slack public channel, private channel, direct message (dm), or…
+- **Get reminder information** (read-only): Retrieves detailed information for an existing slack reminder specified by its id.
+- **Get remote file** (read-only): Retrieve information about a remote file added to slack.
+- **Get team DND status** (read-only): Retrieves a user's current do not disturb status.
+- **Invite user to workspace**: Invites a user to a slack workspace and specified channels by email.
+- **Invite users to a Slack channel**: Invites users to an existing slack channel using their valid slack user ids.
+- **Invite users to channel**: Invites users to a specified slack channel.
+- **Join conversation by channel id**: Joins an existing slack conversation (public channel, private channel, or multi-person direct message) by its id, if the authenticated…
+- **Leave conversation channel**: Leaves a slack conversation given its channel id.
+- **List admin users** (read-only): Retrieves a paginated list of admin users for a specified slack workspace.
+- **List all users in a user group** (read-only): Retrieves a list of all user ids within a specified slack user group, with an option to include users from disabled groups.
+- **List conversations** (read-only): Retrieves conversations accessible to a specified user (or the authenticated user if no user id is provided), respecting shared membership…
+- **List pinned items in a channel** (read-only): Retrieves all messages and files pinned to a specified channel.
+- **List reminders** (read-only): Lists all reminders with their details for the authenticated slack user.
+- **List remote files** (read-only): Retrieve information about a team's remote files.
+- **List scheduled messages** (read-only): Retrieves a list of pending (not yet delivered) messages scheduled in a specific slack channel, or across all accessible channels if no…
+- **List Slack files** (read-only): Lists files and their metadata within a slack workspace, filterable by user, channel, timestamp, or type.
+- **List starred items** (read-only): Lists items starred by a user.
+- **List team custom emojis** (read-only): Retrieves all custom emojis for the slack workspace (image urls or aliases), not standard unicode emojis.
+- **List user groups** (read-only): Lists user groups in a slack workspace, including user-created and default groups.
+- **List user reactions** (read-only): Lists all reactions added by a specific user to messages, files, or file comments in slack, useful for engagement analysis when the item…
+- **Lookup users by email** (read-only): Retrieves the slack user object for an active user by their registered email address.
+- **Mark reminder as complete**: Marks a specific slack reminder as complete using its reminder id.
+- **Open DM**: Opens or resumes a slack direct message (dm) or multi-person direct message (mpim) by providing either user ids or an existing channel id.
+- **Pin an item to a channel**: Pins a message to a specified slack channel.
+- **Remove a star from an item**: Removes a star from a previously starred slack item (message, file, file comment, channel, group, or dm), requiring identification via…
+- **Remove call participants**: Registers participants removed from a slack call.
+- **Remove remote file**: Removes the slack reference to an external file (which must have been previously added via the remote files api), specified by either its…
+- **Remove user from conversation**: Removes a specified user from a slack conversation (channel).
+- **Rename a conversation**: Renames a slack channel, automatically adjusting the new name to meet naming conventions (e.g., converting to lowercase), which may affect…
+- **Rename a Slack channel**: Renames a public or private slack channel.
+- **Rename an emoji**: Renames an existing custom emoji in a slack workspace, updating all its instances.
+- **Retrieve a user's identity details** (read-only): Retrieves the authenticated user's and their team's identity, with details varying based on oauth scopes (e.g., identity.basic,…
+- **Retrieve call information** (read-only): Retrieves a point-in-time snapshot of a specific slack call's information.
+- **Retrieve conversation information** (read-only): Retrieves metadata for a slack conversation by id (e.g., name, purpose, creation date, with options for member count/locale), excluding…
+- **Retrieve conversation replies** (read-only): Retrieves replies to a specific parent message in a slack conversation, using the channel id and the parent message's timestamp (ts).
+- **Retrieve detailed file information** (read-only): Retrieves detailed metadata and paginated comments for a specific slack file id.
+- **Retrieve detailed user information** (read-only): Retrieves comprehensive information for a valid slack user id, excluding message history and channel memberships.
+- **Retrieve message permalink** (read-only): Retrieves a permalink url for a specific message in a slack channel or conversation.
+- **Retrieve team profile details** (read-only): Retrieves all profile field definitions for a slack team, optionally filtered by visibility, to understand the team's profile structure.
+- **Retrieve user DND status** (read-only): Retrieves a slack user's current do not disturb (dnd) status to determine their availability before interaction.
+- **Retrieve user presence** (read-only): Retrieves a slack user's current real-time presence (e.g., 'active', 'away') to determine their availability, noting this action does not…
+- **Retrieve user profile information** (read-only): Retrieves profile information for a specified slack user (defaults to the authenticated user if user id is omitted).
+- **Revoke a file's public url**: Revokes a slack file's public url, making it private.
+- **Send ephemeral message**: Sends an ephemeral message to a user in a channel.
+- **Set a conversation's purpose**: Sets the purpose (a short description of its topic/goal, displayed in the header) for a slack conversation.
+- **Set conversation read cursor**: Marks a message, specified by its timestamp (ts), as the most recently read for the authenticated user in the given channel, provided the…
+- **Set conversation topic**: Sets or updates the topic for a specified slack conversation.
+- **Set DND duration**: Turns on do not disturb mode for the current user, or changes its duration.
+- **Set profile photo**: This method allows the user to set their profile image.
+- **Set Slack user profile information**: Updates a slack user's profile, setting either individual fields or multiple fields via a json object.
+- **Set user presence**: Manually sets a user's slack presence, overriding automatic detection.
+- **Share a me message in a channel**: Sends a 'me message' (e.g., '/me is typing') to a slack channel, where it's displayed as a third-person user action.
+- **Share a remote file in channels**: Shares a remote file, which must already be registered with slack, into specified slack channels or direct message conversations.
+- **Share file public url**: Enables public sharing for an existing slack file by generating a publicly accessible url.
+- **Start call**: Registers a new call in slack using calls.add for third-party call integration.
+- **Start real time messaging session** (read-only): Initiates a slack rtm session providing a single-use websocket url (valid 30s) for event streaming.
+- **Unarchive a public or private channel**: Unarchives a specified public or private slack channel that is currently archived, using its channel id.
+- **Unarchive channel**: Reverses conversation archival.
+- **Unpin message from channel**: Unpins a message, identified by its timestamp, from a specified channel if the message is currently pinned there.
+- **Update an existing remote file**: Updates metadata or content details for an existing remote file in slack.
+- **Update call information**: Updates the title, join url, or desktop app join url for an existing slack call identified by its id.
+- **Update Slack user group**: Updates an existing slack user group, which must be specified by an existing usergroup id, with new optional details such as its name,…
+- **Update user group members**: Replaces all members of an existing slack user group with a new list of valid user ids.
+- **Upload or create a file in Slack**: Uploads a file to slack, requiring either content (for text) or file (for binary data), optionally sharing it in specified channels or as…

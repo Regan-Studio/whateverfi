@@ -1,0 +1,191 @@
+# ClickSend
+
+ClickSend is a cloud-based SMS and email marketing platform that enables businesses to send and receive SMS messages, manage contacts, and track campaign performance.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/clicksend/.
+
+## Actions
+
+- **Calculate SMS Price** (read-only): Calculate the price for sending SMS messages without actually sending them.
+- **Create and Send SMS Campaign**: Create and send an SMS campaign to a contact list.
+- **Create Contact List**: Create a new contact list in your ClickSend account.
+- **Get Account Information** (read-only): Retrieve authenticated user's account information.
+- **Get All Contact Lists** (read-only): Retrieve all contact lists from ClickSend account with pagination support.
+- **Get All Contacts in List** (read-only): Retrieve all contacts from a specific contact list in your ClickSend account with pagination and filtering support.
+- **Get Inbound SMS Messages** (read-only): Retrieve inbound SMS messages sent to your account.
+- **Get Recharge Packages** (read-only): Retrieve all available recharge packages from ClickSend.
+- **Get SMS Delivery Receipts** (read-only): Retrieve SMS delivery receipts from your ClickSend account.
+- **Get SMS History** (read-only): Retrieve sent SMS message history with filtering and pagination.
+- **Get SMS History** (read-only): Retrieve all SMS message history with filtering and pagination.
+- **Import Contacts to List**: Import contacts to a contact list from a publicly accessible file URL.
+- **Search Dedicated Numbers by Country** (read-only): Search for available dedicated numbers by country code.
+- **Send MMS Campaign**: Create and send an MMS campaign to a contact list with multimedia content.
+- **Send MMS Messages**: Send MMS messages with media attachments to recipients.
+- **Send SMS Messages**: Send one or more SMS messages via ClickSend.
+- **Update SMS Campaign**: Update an existing SMS campaign.
+- **Upload File**: Upload and optionally convert files for use with ClickSend messaging services.
+- **Add Fax Delivery Receipt Webhook**: Add a webhook URL for fax delivery receipt notifications.
+- **Add SMS Delivery Receipt Webhook**: Add a test SMS delivery receipt webhook in ClickSend.
+- **Agree to User Countries Rules**: Agree on rules and regulations for selected countries in Global Sending.
+- **Buy Dedicated Number**: Purchase a dedicated phone number from ClickSend.
+- **Calculate MMS Campaign Price** (read-only): Calculate the price for an MMS campaign before sending.
+- **Calculate MMS Price** (read-only): Calculate the price for sending MMS messages without actually sending them.
+- **Calculate Post Letter Price** (read-only): Calculate the price for sending post letters without actually sending them.
+- **Calculate SMS Campaign Price** (read-only): Calculate the price for an SMS campaign before sending.
+- **Cancel All Scheduled SMS**: Cancel all scheduled SMS messages in ClickSend.
+- **Cancel All Scheduled Voice Messages**: Cancel all scheduled voice messages in ClickSend.
+- **Cancel MMS Campaign**: Cancel a scheduled MMS campaign in ClickSend.
+- **Cancel Scheduled SMS**: Cancel a scheduled SMS message by updating its status to cancelled.
+- **Cancel SMS Campaign**: Cancel a scheduled SMS campaign in ClickSend.
+- **Copy Contact to Another List**: Copy a contact from one list to another list.
+- **Create Allowed Email Address**: Create an allowed email address for sending transactional emails.
+- **Create Contact in List**: Create a new contact in a specific contact list in your ClickSend account.
+- **Create Delivery Issue**: Create a delivery issue report in ClickSend.
+- **Create Email Delivery Receipt Automation**: Create an email delivery receipt automation rule in ClickSend.
+- **Create Email Template from Master**: Create a new email template from an existing master template.
+- **Create Email to SMS Stripped String Rule**: Create an email to SMS stripped string rule.
+- **Create Email-to-SMS Allowed Address**: Create an allowed email address for email-to-SMS conversion.
+- **Create Fax Delivery Receipt Automation**: Create a fax delivery receipt automation rule in ClickSend.
+- **Create Inbound Fax Automation**: Create a new inbound fax automation rule in ClickSend.
+- **Create Inbound SMS Automation**: Create a new inbound SMS automation rule in ClickSend.
+- **Create Post Return Address**: Create a new post return address for ClickSend postal services.
+- **Create SMS Delivery Receipt Automation**: Create an SMS delivery receipt automation rule in ClickSend.
+- **Create SMS Template**: Create a new SMS template for reuse in campaigns.
+- **Create Subaccount**: Create a new subaccount in ClickSend with access permissions and credentials.
+- **Create Test Inbound SMS**: Create a test inbound SMS webhook configuration in ClickSend.
+- **Create Voice Delivery Receipt Automation**: Create a voice delivery receipt automation rule in ClickSend.
+- **Delete Contact from List**: Delete a specific contact from a contact list in your ClickSend account.
+- **Delete Contact List**: Delete a specific contact list from your ClickSend account.
+- **Delete Email Delivery Receipt Automation**: Delete an email delivery receipt automation rule.
+- **Delete Email Delivery Receipt Automation**: Delete an email delivery receipt automation rule.
+- **Delete Email Template**: Delete an email template by its template ID.
+- **Delete Email to SMS Stripped String Rule**: Delete an email to SMS stripped string rule from the account.
+- **Delete Fax Delivery Receipt Automation**: Delete a fax delivery receipt automation rule.
+- **Delete Inbound SMS Automation**: Delete an inbound SMS automation rule.
+- **Delete Inbound SMS Automation**: Delete an inbound SMS automation rule.
+- **Delete Post Return Address**: Delete a specific post return address from the system.
+- **Delete SMS Delivery Receipt Automation**: Delete an SMS delivery receipt automation rule.
+- **Delete SMS Email-to-SMS Allowed Address**: Delete a specific allowed email address from SMS email-to-SMS settings.
+- **Delete SMS Template**: Delete an SMS template by its template ID.
+- **Delete SMS Template**: Delete an SMS template by its template ID.
+- **Delete Specific Allowed Email Address**: Delete a specific allowed email address from the account.
+- **Delete Subaccount**: Delete a specific subaccount from the system.
+- **Delete Voice Receipt Automation**: Delete a voice delivery receipt automation rule.
+- **Detect Address from PDF or String**: Detect and convert addresses to standard format from PDF or address string.
+- **Export Contacts List** (read-only): Export contacts from a specific list to a CSV file.
+- **Export MMS History** (read-only): Export MMS message history with filtering, ordering, and pagination.
+- **Export MMS History** (read-only): Export all MMS history to a file.
+- **Export Post Letters History**: Export post letter history to a downloadable CSV file.
+- **Export SMS History** (read-only): Export all SMS history to a file.
+- **Export Voice History** (read-only): Export all voice history to a file.
+- **Forgot Password**: Initiate password recovery for a ClickSend account.
+- **Forgot Username**: Retrieve forgotten username by providing registered email or phone number.
+- **Get Account Usage by Subaccount** (read-only): Retrieve account usage statistics by subaccount for a specific month and year.
+- **Get All Countries** (read-only): Retrieve all available country codes that ClickSend supports.
+- **Get All Delivery Issues** (read-only): Retrieve all delivery issues from your ClickSend account.
+- **Get All Email Delivery Receipt Automations** (read-only): Retrieve all email delivery receipt automation rules configured in your ClickSend account.
+- **Get All Fax Delivery Receipt Automations** (read-only): Retrieve all fax delivery receipt automation rules configured in your ClickSend account.
+- **Get All Inbound Fax Automations** (read-only): Retrieve all inbound fax automation rules configured in your ClickSend account.
+- **Get All Inbound SMS Automations** (read-only): Retrieve all inbound SMS automation rules configured in your ClickSend account.
+- **Get All Master Email Template Categories** (read-only): Retrieve all master email template categories.
+- **Get All Master Email Templates** (read-only): Retrieve all master email templates.
+- **Get All Post Return Addresses** (read-only): Retrieve a list of all post return addresses from ClickSend account with pagination.
+- **Get All Recharge Transactions** (read-only): Retrieve all recharge transactions from ClickSend account with pagination support.
+- **Get All SMS Delivery Receipt Automations** (read-only): Retrieve all SMS delivery receipt automation rules configured in your ClickSend account.
+- **Get All SMS Templates** (read-only): Retrieve all SMS templates from ClickSend account with pagination and filtering support.
+- **Get All Subaccounts** (read-only): Retrieve all subaccounts from ClickSend account with pagination support.
+- **Get All User Email Templates** (read-only): Retrieve all user email templates.
+- **Get All Voice Delivery Receipt Automations** (read-only): Retrieve all voice delivery receipt automation rules configured in your ClickSend account.
+- **Get Allowed Email Addresses**: Retrieve list of allowed email addresses for sending transactional emails.
+- **Get Contact Suggestions** (read-only): Retrieve contact suggestions from your ClickSend account.
+- **Get Country Pricing** (read-only): Retrieve pricing information for a specific country.
+- **Get Dedicated Numbers** (read-only): Retrieve all available dedicated numbers associated with your ClickSend account.
+- **Get Email Campaign** (read-only): Retrieve details of a specific email campaign by its ID.
+- **Get Email Delivery Receipt Automation** (read-only): Retrieve a specific email delivery receipt automation rule by its ID.
+- **Get Email Template** (read-only): Retrieve a specific user email template by its template ID.
+- **Get Email to SMS Stripped String Rule** (read-only): Retrieve an email to SMS stripped string rule by its ID.
+- **Get Email to SMS Stripped String Rules List** (read-only): Retrieve the list of email to sms stripped string rules with pagination support.
+- **Get Fax Delivery Receipt Automation** (read-only): Retrieve a specific fax delivery receipt automation rule by its ID.
+- **Get Fax Delivery Receipts** (read-only): Retrieve fax delivery receipts from your ClickSend account.
+- **Get Fax Receipt by Message ID** (read-only): Retrieve a single fax delivery receipt using the message identifier.
+- **Get Inbound SMS Automation** (read-only): Retrieve a specific inbound SMS automation rule by its ID.
+- **Get List Import Fields** (read-only): Retrieve acceptable import fields for a contact list in ClickSend.
+- **Get Master Email Template** (read-only): Retrieve a specific master email template by its template ID.
+- **Get Master Email Template Category** (read-only): Retrieve a specific master email template category by its ID.
+- **Get Master Email Templates in Category** (read-only): Retrieve all master email templates within a specific category.
+- **Get MMS Campaigns** (read-only): Retrieve all MMS campaigns with pagination and filtering support.
+- **Get MMS Delivery Receipts** (read-only): Retrieve all MMS delivery receipts from your ClickSend account.
+- **Get MMS History** (read-only): Retrieve all MMS message history with filtering and pagination.
+- **Get Post Letters History** (read-only): Retrieve all post letters history with pagination.
+- **Get Post Return Address** (read-only): Retrieve a specific post return address by its unique identifier.
+- **Get Recharge Credit Card Info** (read-only): Retrieve stored credit card payment information in tokenized form.
+- **Get Recharge Transaction by ID** (read-only): Retrieve details of a specific recharge transaction by transaction ID.
+- **Get Referral Accounts** (read-only): Retrieve a list of referral accounts with pagination support.
+- **Get Reseller Accounts** (read-only): Retrieve a list of reseller accounts with pagination support.
+- **Get Reseller Settings** (read-only): Retrieve reseller settings and account information.
+- **Get SMS Campaign** (read-only): Retrieve details of a specific SMS campaign by its ID.
+- **Get SMS Campaigns List** (read-only): Retrieve all SMS campaigns with pagination and statistics breakdown.
+- **Get SMS Delivery Receipt Automation** (read-only): Retrieve a specific SMS delivery receipt automation rule by its ID.
+- **Get SMS Email-to-SMS Allowed Address** (read-only): Retrieve a specific allowed email address for SMS email-to-SMS by its ID.
+- **Get SMS Receipt by Message ID** (read-only): Retrieve a single SMS delivery receipt using the message identifier.
+- **Get SMS Statistics** (read-only): Retrieve SMS messaging statistics for your ClickSend account.
+- **Get Specific Allowed Email Address** (read-only): Retrieve a specific allowed email address by its ID.
+- **Get Specific Contact** (read-only): Retrieve a specific contact from a contact list in your ClickSend account.
+- **Get Specific Contact List** (read-only): Retrieve a specific contact list by its list ID.
+- **Get Specific Subaccount** (read-only): Retrieve detailed information about a specific subaccount by its ID.
+- **Get Supported Timezones** (read-only): Retrieve supported list of timezones.
+- **Get User Countries** (read-only): Retrieve the list of selected countries for Global Sending.
+- **Get Voice Delivery Receipt Automation** (read-only): Retrieve a specific voice delivery receipt automation rule by its ID.
+- **Get Voice Languages** (read-only): Retrieve all available voice languages for text-to-speech.
+- **Get Voice Statistics** (read-only): Retrieve voice messaging statistics for your ClickSend account.
+- **List Countries** (read-only): Retrieve the list of countries with IDs for global sending.
+- **Mark Fax Receipts as Read**: Mark fax delivery receipts as read in ClickSend.
+- **Mark Inbound SMS as Read**: Mark inbound SMS messages as read in ClickSend.
+- **Mark Inbound SMS as Read by Message ID**: Mark a specific inbound SMS message as read in ClickSend.
+- **Mark MMS Receipts as Read**: Mark MMS delivery receipts as read in ClickSend.
+- **Mark SMS Delivery Receipts as Read**: Mark SMS delivery receipts as read in ClickSend.
+- **Mark SMS Receipts as Read**: Mark SMS delivery receipts as read in ClickSend.
+- **Mark Voice Delivery Receipts as Read**: Mark voice delivery receipts as read in ClickSend.
+- **Mark Voice Receipts as Read**: Mark voice delivery receipts as read in ClickSend.
+- **Preview CSV Import for Contact List** (read-only): Preview the first row of a CSV import file for a contact list in ClickSend.
+- **Purchase Recharge Package**: Purchase a recharge package by package ID.
+- **Regenerate Subaccount API Key**: Regenerate API key for a specific subaccount.
+- **Remove Opted Out Contacts from List**: Remove all opted out contacts from a contact list using an opt out list reference.
+- **Search Contact Lists** (read-only): Search contact lists in ClickSend account with pagination support.
+- **Search Direct Mail Locations** (read-only): Search for direct mail locations in a specific country.
+- **Select User Countries**: Select countries for Global SMS/MMS sending.
+- **Send Account Activation Token**: Send an account activation token for verification.
+- **Send Direct Mail Campaign**: Create and send a direct mail campaign to specified locations.
+- **Send Email Verification Token**: Send a verification email containing an activation token to a registered email address.
+- **Send Post Letter**: Send physical letters through ClickSend's postal service.
+- **Transfer Contact Between Lists**: Transfer a contact from one list to another in your ClickSend account.
+- **Update Account Information**: Update authenticated user's account information.
+- **Update Contact in List**: Update a specific contact in a contact list in your ClickSend account.
+- **Update Contact List**: Update the name of a specific contact list in your ClickSend account.
+- **Update Email Delivery Receipt Automation**: Update an email delivery receipt automation rule in ClickSend.
+- **Update Email Delivery Receipt Automation**: Update an email delivery receipt automation rule in ClickSend.
+- **Update Email Template**: Update an existing email template in ClickSend.
+- **Update Email to SMS Stripped String Rule**: Update an email to SMS stripped string rule.
+- **Update Email-to-SMS Allowed Address**: Update a specific allowed email address for email-to-SMS.
+- **Update Fax Delivery Receipt Automation**: Update fax delivery receipt automation.
+- **Update Fax Delivery Receipt Automation**: Update a fax delivery receipt automation rule in ClickSend.
+- **Update Inbound Fax Automation**: Update an existing inbound fax automation rule in ClickSend.
+- **Update Inbound Fax Automation**: Update an inbound fax automation rule in ClickSend.
+- **Update Inbound SMS Automation**: Update an existing inbound SMS automation rule in ClickSend.
+- **Update Inbound SMS Automation**: Update an existing inbound SMS automation rule in ClickSend.
+- **Update MMS Campaign**: Update an existing MMS campaign with new parameters.
+- **Update Post Return Address**: Update an existing post return address in ClickSend.
+- **Update Recharge Credit Card Info**: Update credit card payment information for account recharge.
+- **Update Reseller Settings**: Update reseller account settings and configuration.
+- **Update SMS Delivery Receipt Automation**: Update an SMS delivery receipt automation rule in ClickSend.
+- **Update SMS Delivery Receipt Automation**: Update an SMS delivery receipt automation rule in ClickSend.
+- **Update SMS Template**: Update an existing SMS template in ClickSend.
+- **Update SMS Template**: Update an existing SMS template by its template ID.
+- **Update Stripped String**: Update an email to SMS stripped string rule.
+- **Update Subaccount**: Update a specific subaccount's details and permissions in ClickSend.
+- **Update Voice Delivery Receipt Automation**: Update a voice delivery receipt automation rule in ClickSend.
+- **Update Voice Delivery Receipt Automation**: Update a voice delivery receipt automation rule in ClickSend.
+- **Upload File**: Upload files to ClickSend for use in messaging campaigns.
+- **Verify Allowed Email Address**: Verify an email address using the activation token sent to it.
+- **Verify Forgot Password**: Verify forgot password request and reset user password.
+- **Verify New Account**: Verify a new ClickSend account using an activation token.

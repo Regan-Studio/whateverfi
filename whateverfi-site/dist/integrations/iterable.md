@@ -1,0 +1,124 @@
+# Iterable
+
+Cross-channel marketing platform for creating, executing, and optimizing campaigns
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/iterable/.
+
+## Actions
+
+- **List Message Types** (read-only): Lists all message types within a project.
+- **Abort Campaign**: Abort a running campaign to stop all in-progress message deliveries.
+- **Activate a triggered campaign**: Activates a triggered campaign by its unique ID, allowing it to process events and send messages.
+- **Archive Campaigns**: Archives one or more campaigns.
+- **Bulk delete templates**: Bulk delete one or more base templates from Iterable.
+- **Bulk Update User Subscriptions**: Bulk update subscription preferences for multiple users in Iterable.
+- **Bulk Update Users**: Bulk update user data in Iterable.
+- **Cancel Campaign**: Cancel a scheduled or recurring campaign in Iterable.
+- **Cancel Email**: Cancel a scheduled email to a specific user in Iterable.
+- **Cancel Export**: Cancel a queued or running export created with the 'Start export' endpoint.
+- **Cancel In-App Message**: Cancel a scheduled in-app message to a specific user in Iterable.
+- **Cancel Push**: Cancel a scheduled push notification to a specific user in Iterable.
+- **Cancel Web Push**: Cancel a scheduled web push notification to a specific user in Iterable.
+- **Cancel WhatsApp**: Cancel a scheduled WhatsApp message to a specific user in Iterable.
+- **Create a catalog**: Create a catalog with the specified name in Iterable.
+- **Create a new campaign**: Creates a new blast or triggered campaign from an existing template.
+- **Create a new list**: Create a new static list in Iterable.
+- **Create Catalog Items**: Asynchronously creates or updates up to 1000 catalog items with a single request.
+- **Create snippet**: Creates a new code snippet in Iterable.
+- **Deactivate Triggered Campaign**: Deactivate a triggered campaign in Iterable.
+- **Delete a catalog**: Delete a catalog by its name.
+- **Delete a Catalog Item**: Deletes the specified item from a catalog.
+- **Delete a list**: Delete a list by its listId.
+- **Delete Catalog Items**: Asynchronously deletes catalog items from a specified catalog in Iterable.
+- **Delete Metadata Table**: Asynchronously deletes a metadata table by its table name.
+- **Delete snippet**: Deletes a snippet by its ID (numeric) or name (string).
+- **Delete User By ID**: Asynchronously deletes a user by userId from Iterable.
+- **Export Campaign Data to JSON** (read-only): Export campaign analytics data in JSON format with one entry per line.
+- **Export data to CSV** (read-only): Export campaign analytics data in CSV format from Iterable.
+- **Export User Events** (read-only): Export all events for a user identified by email or userId.
+- **Forget User**: Deletes the specified user's data from the Iterable project and prevents future data collection about them.
+- **Get campaign by ID** (read-only): Retrieves a campaign by its unique ID.
+- **Get Campaign Metrics** (read-only): Retrieve performance metrics for one or more campaigns.
+- **Get Catalog Field Mappings** (read-only): Retrieve field mappings (field to data type) and undefined fields for a catalog in Iterable.
+- **Get catalog item by ID** (read-only): Retrieves a specific catalog item by its ID from the specified catalog.
+- **Get email template by ID** (read-only): Get an email template by templateId.
+- **Get Embedded Messages** (read-only): Retrieves embedded messages for which the specified user is eligible, grouped by placementId.
+- **Get Embedded Template** (read-only): Retrieves an embedded message template by its unique ID.
+- **Get Experiment Metrics** (read-only): Retrieve metrics for email experiments.
+- **Get In-App Messages** (read-only): Get a user's in-app messages from Iterable.
+- **Get in-app template by ID** (read-only): Retrieves an in-app template by its unique ID.
+- **Get List Size** (read-only): Get the number of users within a list.
+- **Get push template by ID** (read-only): Retrieves a push template by its unique ID.
+- **Get SMS template** (read-only): Retrieves an SMS template by its unique ID.
+- **Get snippet by ID or name** (read-only): Retrieves a snippet by its ID (numeric) or name (string).
+- **Get template by client template ID** (read-only): Retrieves an email template by its client-defined template ID.
+- **Get User By ID** (read-only): Get a user by userId from Iterable.
+- **Get User By ID (Path)** (read-only): Get a user by userId (path parameter) from Iterable.
+- **Get User Events** (read-only): Get events for a specific user by userId.
+- **Get User Sent Messages** (read-only): Get messages sent to a user by email address or userId.
+- **Get Web In-App Messages** (read-only): Get a user's web in-app messages from Iterable.
+- **List all campaigns** (read-only): Retrieves metadata about all campaigns in a project with optional pagination.
+- **List all templates** (read-only): Retrieves metadata about all templates in a project with optional pagination.
+- **List Catalog Items** (read-only): Get the catalog items for a catalog.
+- **List Catalogs** (read-only): Retrieve all catalog names from Iterable.
+- **List Channels** (read-only): Get all message channels within the Iterable project.
+- **List export files** (read-only): Get the job status and files for an export started with the 'Start export' endpoint.
+- **List Export Jobs** (read-only): Retrieve a list of recent export jobs for the current project.
+- **List Forgotten User IDs** (read-only): Get hashed user IDs of forgotten users for GDPR compliance.
+- **List Journeys** (read-only): Get a list of journeys (workflows) within your Iterable project.
+- **List List Users** (read-only): Get all users within a list.
+- **List Lists** (read-only): Retrieve all lists within a project.
+- **List Metadata Keys** (read-only): List all keys in a metadata table.
+- **List Metadata Tables** (read-only): List available metadata tables in Iterable.
+- **List recurring campaign child campaigns** (read-only): Retrieve the child campaigns generated by a recurring campaign.
+- **List Snippets** (read-only): Get all snippets for the current project.
+- **List User Fields** (read-only): Get all user fields within a project.
+- **List Webhooks** (read-only): Get all webhooks configured within the Iterable project.
+- **Merge Users**: Merge two user profiles in Iterable.
+- **Preview email template** (read-only): Generate a fully rendered HTML preview of an email template using custom data.
+- **Preview in-app template** (read-only): Generate a fully rendered HTML preview of an in-app template using custom data.
+- **Preview List Users** (read-only): Get a random sample of up to 5000 users within a list.
+- **Replace Catalog Item**: Asynchronously creates or replaces the specified catalog item in the given catalog.
+- **Replace Metadata Item**: Asynchronously creates or replaces the metadata item associated with the specified key.
+- **Schedule Campaign**: Schedule an existing campaign to be sent at a specified time.
+- **Send Campaign**: Send an existing campaign immediately in Iterable.
+- **Send email template proof**: Send a proof of an email template to a specific user.
+- **Send in-app notification to target**: Send an in-app notification to a specific user using Iterable.
+- **Send in-app template proof**: Send a proof of an in-app template to a specific user using Iterable.
+- **Send push template proof**: Send a proof of a push template to a specific user.
+- **Send push to target**: Send a push notification to a specific user using Iterable.
+- **Send SMS template proof**: Send a proof of an SMS template to a specific user.
+- **Send WhatsApp to target**: Send a WhatsApp message to a specific user using Iterable.
+- **Start Export**: Start a data export job.
+- **Subscribe to List**: Subscribe one or more users to a specific list in Iterable.
+- **Subscribe User By ID**: Subscribes a user to the specified subscription group by their userId.
+- **Track Embedded Click**: Tracks a click event on an embedded message.
+- **Track Embedded Received**: Track that an embedded message was received on a device.
+- **Track Embedded Session**: Tracks an embedded message session and related impressions in Iterable.
+- **Track Event**: Track an event in Iterable.
+- **Track Events in Bulk**: Track multiple events in bulk in Iterable.
+- **Track Purchase**: Track a purchase event in Iterable.
+- **Trigger Campaign**: Trigger a campaign to send to one or more lists of recipients.
+- **Trigger Journey**: Trigger a journey (workflow) in Iterable for a specific user or list.
+- **Unforget User**: Unforgets a previously forgotten user in Iterable, resuming data collection.
+- **Unsubscribe from list**: Remove users from a list.
+- **Unsubscribe User By ID**: Unsubscribes a user from the specified subscription group by their userId.
+- **Update Catalog Field Mappings**: Set a catalog's field mappings (data types) in Iterable.
+- **Update Catalog Item**: Asynchronously creates or updates the specified catalog item in the given catalog.
+- **Update email template**: Update an existing email template in Iterable.
+- **Update Embedded Template**: Updates an embedded message template with the specified fields.
+- **Update in-app template**: Update an existing in-app template in Iterable.
+- **Update push template**: Updates an existing push template in Iterable.
+- **Update Shopping Cart**: Update a user's shopping cart items in Iterable.
+- **Update SMS template**: Update an existing SMS template in Iterable.
+- **Update snippet by ID or name**: Updates an existing snippet by ID (numeric) or creates/updates a snippet by name (string).
+- **Update User**: Update user data or add a user if none exists in Iterable.
+- **Update User Email**: Updates a user's email address in Iterable.
+- **Update User Subscriptions**: Updates user subscription preferences in Iterable.
+- **Update Webhook**: Update an existing webhook configuration in Iterable.
+- **Upsert email template**: Create or update an email template in Iterable.
+- **Upsert Embedded Template**: Creates an embedded message template if it doesn't exist, or updates all embedded message templates that match the provided…
+- **Upsert in-app template**: Create or update an in-app template in Iterable.
+- **Upsert push template**: Create or update a push template in Iterable.
+- **Upsert SMS template**: Create or update an SMS template in Iterable.
+- **Verify SMS Code**: Verifies an SMS verification code sent to a phone number in Iterable.

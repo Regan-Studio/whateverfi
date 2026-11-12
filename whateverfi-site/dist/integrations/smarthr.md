@@ -1,0 +1,124 @@
+# SmartHR
+
+SmartHR is a cloud human resources platform for managing employee records, organization data, payroll documents, and HR workflows.
+
+Category: Recruiting & HR. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/smarthr/.
+
+## Actions
+
+- **Bulk Create Payslips**: Create up to 100 sensitive payslip entries in one SmartHR payroll group.
+- **Create Department**: Create a SmartHR department.
+- **Create Employee**: Create an employee using the documented SmartHR employee fields.
+- **Create Employee Custom Field Template**: Create an employee custom-field template.
+- **Create Employee Custom Field Template Group**: Create an employee custom-field template group.
+- **Create Employee Dependent**: Create a dependent for one employee using the documented family fields.
+- **Create Employment Type**: Create a SmartHR employment type.
+- **Create Grade**: Create a SmartHR grade.
+- **Create Job Category**: Create a SmartHR job category.
+- **Create Job Title**: Create a SmartHR job title.
+- **Create Payroll**: Create a sensitive SmartHR payroll group.
+- **Create Payslip**: Create a sensitive employee payslip in one SmartHR payroll group.
+- **Create Recruitment Type**: Create a SmartHR recruitment type.
+- **Create Tax Withholding**: Create a sensitive SmartHR tax-withholding group in the unconfirmed state.
+- **Create Tax Withholding Slip**: Create a file-backed or field-backed sensitive tax-withholding slip for an employee in one SmartHR tax-withholding group.
+- **Create User SAML Configuration**: Create the SAML SSO account configuration for one SmartHR user.
+- **Create Webhook**: Create a SmartHR webhook configuration for future employee and dependent events.
+- **Delete Employee**: Permanently delete one employee by SmartHR employee ID.
+- **Delete Employee Custom Field Template**: Delete one employee custom-field template by ID.
+- **Delete Employee Custom Field Template Group**: Delete one employee custom-field template group by ID.
+- **Delete Employee Dependent**: Permanently delete one dependent and their sensitive family data from an employee record.
+- **Delete Employment Type**: Delete one SmartHR employment type by ID.
+- **Delete Grade**: Delete one SmartHR grade by ID.
+- **Delete Job Category**: Delete one SmartHR job category by ID.
+- **Delete Job Title**: Delete one SmartHR job title by ID.
+- **Delete Payroll**: Permanently delete one sensitive SmartHR payroll group by ID.
+- **Delete Payslip**: Permanently delete one sensitive SmartHR payslip from its payroll group.
+- **Delete Recruitment Type**: Delete one SmartHR recruitment type by ID.
+- **Delete Tax Withholding**: Permanently delete one sensitive SmartHR tax-withholding group by ID.
+- **Delete Tax Withholding Slip**: Permanently delete one sensitive SmartHR tax-withholding slip from its tax-withholding group.
+- **Delete User SAML Configuration**: Delete the SAML SSO account configuration for one SmartHR user.
+- **Delete Webhook**: Permanently delete one SmartHR webhook configuration by ID.
+- **Disable User SAML Configuration**: Disable the SAML SSO account configuration for one SmartHR user.
+- **Discontinue Department**: Irreversibly discontinue one SmartHR department as of its final active date.
+- **Download Batch Job Attachment**: Download the binary file for a SmartHR batch-job attachment.
+- **Enable User SAML Configuration**: Enable the SAML SSO account configuration for one SmartHR user.
+- **Finalize Payroll**: Finalize one sensitive SmartHR payroll group.
+- **Get Batch Job** (read-only): Get one SmartHR background batch job by ID, optionally embedding its attachments.
+- **Get Department** (read-only): Get one SmartHR department by its department ID.
+- **Get Employee** (read-only): Get one employee by SmartHR employee ID, with optional comma-separated field selection.
+- **Get Employee Custom Field Template** (read-only): Get one employee custom-field template by ID.
+- **Get Employee Custom Field Template Group** (read-only): Get one employee custom-field template group by ID.
+- **Get Employee Dependent** (read-only): Get one dependent belonging to an employee.
+- **Get Employee Input Form** (read-only): Get one SmartHR employee information-collection form by ID, preserving its nested field groups, fields, and embedded custom-field…
+- **Get Employment Type** (read-only): Get one SmartHR employment type by its employment type ID.
+- **Get Grade** (read-only): Get one SmartHR grade by its grade ID.
+- **Get Job Category** (read-only): Get one SmartHR job category by its job category ID.
+- **Get Job Title** (read-only): Get one SmartHR job title by its job title ID.
+- **Get Mail Format** (read-only): Get one SmartHR mail format by ID, optionally embedding the employee information-collection forms that use it.
+- **Get Payment Period** (read-only): Get one SmartHR payroll payment period by its payment period ID.
+- **Get Payroll** (read-only): Get one sensitive SmartHR payroll group by ID.
+- **Get Payslip** (read-only): Get one highly sensitive SmartHR payslip from a payroll group.
+- **Get Recruitment Type** (read-only): Get one SmartHR recruitment type by its recruitment type ID.
+- **Get Tax Withholding** (read-only): Get one highly sensitive SmartHR tax-withholding group by ID.
+- **Get Tax Withholding Slip** (read-only): Get one highly sensitive SmartHR tax-withholding slip from a tax-withholding group.
+- **Get User** (read-only): Get one SmartHR user account by user ID with an optional related object embedded in the response.
+- **Get User SAML Configuration** (read-only): Get the SAML SSO account configuration for one SmartHR user.
+- **Get Webhook** (read-only): Get one SmartHR webhook configuration by webhook ID.
+- **Invite Employee**: Send the documented SmartHR invitation to one employee's configured email address.
+- **List Bank Account Settings** (read-only): List one page of SmartHR bank-account setting definitions.
+- **List Batch Jobs** (read-only): List one page of SmartHR background batch jobs.
+- **List Business Establishments** (read-only): List one page of SmartHR business establishments, optionally embedding the social insurance representative, labor insurance…
+- **List Companies** (read-only): List one page of SmartHR companies with an optional embedded owner.
+- **List Departments** (read-only): List one page of SmartHR departments using the documented code and sort filters.
+- **List Dependent Custom Field Templates** (read-only): List one page of SmartHR custom-field templates for employee dependents.
+- **List Dependent Relations** (read-only): List one page of configured SmartHR dependent relationship types.
+- **List Employee Custom Field Template Groups** (read-only): List one page of employee custom-field template groups.
+- **List Employee Custom Field Templates** (read-only): List one page of SmartHR employee custom-field templates.
+- **List Employee Dependents** (read-only): List one page of sensitive family and dependent records for a SmartHR employee.
+- **List Employee Input Forms** (read-only): List one page of SmartHR employee information-collection forms with their nested field definitions.
+- **List Employee Maternity and Childcare Leaves** (read-only): List one page of sensitive maternity and childcare leave records for a SmartHR employee.
+- **List Employees** (read-only): List one page of employees matching SmartHR's documented employee filters.
+- **List Employment Types** (read-only): List one page of SmartHR employment types.
+- **List Grades** (read-only): List one page of SmartHR grades.
+- **List Job Categories** (read-only): List one page of SmartHR job categories.
+- **List Job Titles** (read-only): List one page of SmartHR job titles using the documented sort option.
+- **List Mail Formats** (read-only): List one page of SmartHR mail formats.
+- **List Payment Periods** (read-only): List one page of SmartHR payroll payment periods.
+- **List Payrolls** (read-only): List one page of sensitive SmartHR payroll groups using payment-date and payment-type filters.
+- **List Payslips** (read-only): List one page of highly sensitive SmartHR payslips in a payroll group.
+- **List Recruitment Types** (read-only): List one page of SmartHR recruitment types.
+- **List Tax Withholding Slips** (read-only): List one page of sensitive tax-withholding slips in a SmartHR tax-withholding group.
+- **List Tax Withholdings** (read-only): List one page of sensitive SmartHR tax-withholding groups.
+- **List Users** (read-only): List one page of SmartHR user accounts with the documented sort and embed options, invitation status, role, and email-delivery status.
+- **List Webhooks** (read-only): List one page of SmartHR webhook configurations.
+- **Partially Update Department**: Partially update a SmartHR department by ID.
+- **Partially Update Employee Custom Field Template**: Partially update an employee custom-field template.
+- **Partially Update Employment Type**: Partially update a SmartHR employment type by ID.
+- **Partially Update Payroll**: Partially update the administrator-facing and employee-facing names of a sensitive SmartHR payroll group by ID.
+- **Partially Update User SAML Configuration**: Partially update the SAML SSO account configuration for one SmartHR user.
+- **Partially Update Webhook**: Partially update a SmartHR webhook by ID.
+- **Publish Payroll**: Irreversibly publish one sensitive SmartHR payroll group immediately or at a scheduled time within one month, optionally notifying…
+- **Remove Employee Departments**: Remove all department assignments from one employee using the documented SmartHR endpoint.
+- **Reopen Payroll**: Reopen one sensitive SmartHR payroll group.
+- **Replace Department**: Replace a SmartHR department through PUT.
+- **Replace Employee Custom Field Template**: Replace an employee custom-field template through the documented PUT operation.
+- **Replace Employee Custom Field Template Group**: Replace an employee custom-field template group through the documented PUT operation.
+- **Replace Employment Type**: Replace a SmartHR employment type through PUT.
+- **Replace Grade**: Replace a SmartHR grade by ID using full PUT semantics.
+- **Replace Job Category**: Replace a SmartHR job category by ID using full PUT semantics.
+- **Replace Job Title**: Replace a SmartHR job title by ID using full PUT semantics.
+- **Replace Recruitment Type**: Replace a SmartHR recruitment type by ID using full PUT semantics.
+- **Replace Tax Withholding**: Replace a sensitive SmartHR tax-withholding group by ID using full PUT semantics.
+- **Replace Webhook**: Replace a SmartHR webhook through PUT.
+- **Start Dependent Import Job**: Start an asynchronous SmartHR dependent-data import from a Base64-encoded CSV or Excel file.
+- **Start Employee Export Job**: Start a SmartHR background job that exports employee information using an existing custom download format.
+- **Start Employee Import Job**: Start a SmartHR background job that inserts or updates employees from a sensitive base64-encoded CSV or Excel file.
+- **Update Employee**: Update the supplied documented fields of one employee by SmartHR employee ID.
+- **Update Employee Custom Field Template Group**: Update one or more supplied fields of an employee custom-field template group.
+- **Update Employee Dependent**: Update the supplied fields of one dependent belonging to an employee.
+- **Update Grade**: Update the supplied fields of a SmartHR grade by ID.
+- **Update Job Category**: Update the supplied fields of a SmartHR job category by ID.
+- **Update Job Title**: Update the supplied fields of a SmartHR job title by ID.
+- **Update Recruitment Type**: Update a SmartHR recruitment type by ID.
+- **Update Tax Withholding**: Update the supplied fields of a sensitive SmartHR tax-withholding group by ID.
+- **Update Tax Withholding Slip**: Update a sensitive SmartHR tax-withholding slip.

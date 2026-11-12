@@ -1,0 +1,322 @@
+# Blackboard
+
+Anthology Adopt powered by Pendo allows institutions to gain insights on Blackboard Learn usage and take action through in-app messages, digital walkthrough guides, and tooltips.
+
+Category: Other. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/blackboard/.
+
+## Actions
+
+- **Fetch messages for course id** (read-only): Retrieves all messages associated with a specific course in the blackboard learning management system.
+- **Add adaptive release rule to course content**: Creates a new adaptive release rule for a specific content item within a blackboard course.
+- **Add catalog category by type**: Creates a new category in the blackboard catalog system.
+- **Add child node in hierarchy**: Creates a new child node within the institutional hierarchy of blackboard learn.
+- **Add course content attachment**: Adds an attachment to a specific content item within a blackboard learn course.
+- **Add course gradebook column**: Creates a new grade column in a blackboard course's gradebook.
+- **Add new gradebook column for course**: Creates a new grade column in a course's gradebook within the blackboard learn platform.
+- **Copy course by courseid**: This endpoint creates a copy of an existing course in the blackboard learning management system.
+- **Copy course with specific options**: The coursecopytool allows you to create a copy of a blackboard course with fine-grained control over which elements are included in the…
+- **Course Announcements Access** (read-only): Retrieves a list of announcements for a specific course in the blackboard learning management system.
+- **Course endpoint entitlement access** (read-only): Retrieves detailed information about a specific course in the blackboard learn platform using its unique identifier.
+- **Create a class course**: Creates a new course in the blackboard learn system with specified settings and configurations.
+- **Create a new course**: Creates a new course in the blackboard learn system with specified attributes and settings.
+- **Create adaptive release criteria by rule**: This endpoint allows for the creation of new adaptive release criteria for a specific rule within a course's content in blackboard.
+- **Create assignment in course contents**: Creates a new assignment within a specified blackboard course.
+- **Create calendar items**: This endpoint creates a new calendar item in the blackboard platform.
+- **Create child content in course**: Creates a new content item within a specified course and parent content in the blackboard learn platform.
+- **Create course announcement**: Creates a new announcement within a specified course in the blackboard learning management system.
+- **Create course content in course**: Creates new content within a specified blackboard course.
+- **Create course gradebook schema**: Creates a new gradebook schema for a specific course in blackboard learn.
+- **Create course group**: Creates a new group within a specified course in the blackboard learn system.
+- **Create course group in course**: Creates a new group within a specified course in the blackboard learning management system.
+- **Create course meeting**: Creates a new meeting for a specific course within the blackboard learning management system.
+- **Create course rubric with details**: Creates a new rubric for a specific course in blackboard learn.
+- **Create data source with external id**: Creates a new data source in the blackboard learn system.
+- **Create discussion forum in course**: Creates a new discussion forum within a specified course in the blackboard learning management system.
+- **Create grading period in course gradebook**: Creates a new grading period within a specific course's gradebook in the blackboard learn system.
+- **Create group in course**: Creates a new group within a specified course group set in the blackboard learn platform.
+- **Create group set**: Creates a new group set within a specified course in the blackboard learn platform.
+- **Create institutional hierarchy node**: Creates a new node in the institutional hierarchy of blackboard.
+- **Create lti domain configuration**: Creates or updates an lti (learning tools interoperability) domain configuration in blackboard learn.
+- **Create new course with json input**: Creates a new course in the blackboard learn system with specified attributes and settings.
+- **Create new lti placement**: Creates a new lti (learning tools interoperability) placement in the blackboard learn system.
+- **Create new uploads**: Uploads a file to the blackboard learn platform.
+- **Create new user profile**: Creates a new user account in the blackboard learn system with detailed profile information.
+- **Create rubric association in course**: Creates a new association between a rubric and a specific course content item in the blackboard learning management system.
+- **Create rubric evaluation for course**: Creates or updates a rubric evaluation for a specific course, rubric, and rubric association in the blackboard learn platform.
+- **Create system announcement**: Creates a new system-wide announcement in the blackboard learn environment.
+- **Create term with availability and description**: Creates a new term in the blackboard learn system with the specified attributes.
+- **Delete adaptive release rule criterion**: Deletes a specific criterion from an adaptive release rule for a content item within a blackboard course.
+- **Delete all records in meeting**: Deletes all attendance records in the course meeting for a given meeting id.
+- **Delete announcement by id**: Deletes a specific announcement from the blackboard learning management system (lms) using its unique identifier.
+- **Delete attendance record**: Delete attendance record for meeting.it will delete meeting attendance within a course meeting.
+- **Delete calendar item by type and id**: This endpoint deletes a specific calendar item from the blackboard learn system.
+- **Delete category by type and id**: This endpoint deletes a specific category from the blackboard catalog based on the provided category type and id.
+- **Delete child course association**: Deletes a specified child course from a parent course in the blackboard learning management system.
+- **Delete course announcement by id**: This endpoint deletes a specific announcement within a course in the blackboard learn platform.
+- **Delete course assessment question**: Deletes a specific question from an assessment within a blackboard course.
+- **Delete course by courseid**: Deletes a specific course from the blackboard learn platform.
+- **Delete course by courseid**: The deletecourse endpoint permanently removes a specific course from the blackboard learn platform.
+- **Delete course by id**: Deletes a specific course from the blackboard learning management system.
+- **Delete course content adaptive release rule**: Removes a specific group from a criterion within an adaptive release rule for a particular content item in a blackboard course.
+- **Delete course content attachment**: Deletes a specific attachment from a content item within a course in blackboard learn.
+- **Delete course content by id**: Deletes a specific content item from a course in the blackboard learning management system.
+- **Delete course content group by id**: This endpoint deletes a specific group associated with a content item within a blackboard course.
+- **Delete course from category list**: Removes a specific course from a designated category within the blackboard learning management system (lms) catalog.
+- **Delete course grade notation by id**: Deletes a specific grade notation from a course's gradebook in blackboard learn.
+- **Delete course group by ids**: This endpoint deletes a specific group from a course in the blackboard learning management system.
+- **Delete course meeting**: Deletes all meetings associated with a specific course in the blackboard learn platform.
+- **Delete course meeting**: This endpoint deletes a specific meeting within a course in the blackboard learning management system.
+- **Delete course message by id**: This endpoint deletes a specific message within a course in the blackboard learning management system.
+- **Delete course rubric**: Deletes a specific rubric associated with a given course in the blackboard learn system.
+- **Delete data source by id**: Deletes a specific data source from the blackboard learn platform.
+- **Delete discussion message by id**: This endpoint allows for the deletion of a specific message within a discussion thread in a blackboard course.
+- **Delete gradebook attempt file**: Deletes a specific file associated with an attempt in a course's gradebook within the blackboard learn environment.
+- **Delete gradebook column by id**: Deletes a specific gradebook column from a course in the blackboard learn system.
+- **Delete gradebook column in course**: Deletes a specific gradebook column from a course in blackboard learn.
+- **Delete gradebook period by course id**: Deletes a specific gradebook period from a course in the blackboard learning management system.
+- **Delete group in course**: This endpoint deletes a specific group within a course in the blackboard learning management system.
+- **Delete group set in course**: This endpoint deletes a specific group set within a course in the blackboard learning management system.
+- **Delete institution node admin**: Removes an administrator's access from a specific node in the institutional hierarchy of blackboard learn.
+- **Delete institutional hierarchy node by nodeid**: Deletes a specific node from the institutional hierarchy in blackboard learn.
+- **Delete lt i placement by id**: This endpoint deletes a specific learning tools interoperability (lti) placement from the blackboard learn platform.
+- **Delete lti domain by id**: Deletes a specific lti (learning tools interoperability) domain from the blackboard learning management system.
+- **Delete pronoun by id**: Deletes a specific pronoun setting from the blackboard learning management system.
+- **Delete rubric association**: Deletes a specific rubric association within a course in the blackboard learn platform.
+- **Delete specific course node**: Removes a specific course from a designated node in the institutional hierarchy of blackboard learn.
+- **Delete term by termid**: The deleteterm endpoint removes a specific academic term from the blackboard learning management system.
+- **Delete user by id**: This endpoint permanently deletes a user account from the blackboard learn platform.
+- **Delete user course meetings**: Deletes all meeting attendance records for a specific user within a particular course in the blackboard system.
+- **Delete user criterion from course content rule**: Removes a specific user from an adaptive release rule criterion for a particular content item within a course.
+- **Delete user from course**: Removes a specific user from a particular course in the blackboard learning management system.
+- **Delete user from course group**: Removes a specific user from a particular group within a course in the blackboard learning management system.
+- **Delete user from course group**: This endpoint removes a specific user from a designated group within a course in blackboard learn.
+- **Delete user from course meetings**: This endpoint removes a user from a meeting within a specific course in the blackboard learning management system.
+- **Delete user from institutional node**: This endpoint removes a specified user from a particular node within the institutional hierarchy of blackboard learn.
+- **Delete user observer**: This endpoint removes a specific observer from a user's list of observers in the blackboard learning management system.
+- **Download course content attachment** (read-only): Downloads a specific attachment from a course's content in the blackboard learning management system.
+- **Download course gradebook attempt file** (read-only): This endpoint allows for downloading a specific file associated with a student's attempt on an assignment within a blackboard course.
+- **Enroll Course With Permissions**: Updates a user's enrollment details in a specific blackboard learn course.
+- **Fetch calendar item by type and id** (read-only): Retrieves detailed information about a specific calendar item from the blackboard learning management system.
+- **Fetch category details by id** (read-only): Retrieves detailed information about a specific category in the blackboard catalog system.
+- **Fetch content collection resources** (read-only): Retrieves a list of resources from a specified content collection within a blackboard learn course.
+- **Fetch course category by id** (read-only): Retrieves a list of categories for a specific course within the blackboard learning management system.
+- **Fetch course groups by id** (read-only): Retrieves a list of all groups associated with a specific course in the blackboard learning management system.
+- **Fetch course roles information** (read-only): Retrieves a list of available course roles in the blackboard learn system.
+- **Fetch course task details** (read-only): Retrieves detailed information about a specific task within a course in the blackboard learn platform.
+- **Fetch data source list** (read-only): Retrieves a list of data sources available in the blackboard learning management system.
+- **Fetch goal set categories** (read-only): Retrieves the categories associated with a specific goal set in the blackboard learning management system.
+- **Fetch goal set category goals** (read-only): This endpoint retrieves a list of goals associated with a specific category within a goal set in the blackboard learning management system.
+- **Fetch gradebook attempt files** (read-only): Retrieves the files associated with a specific gradebook attempt for a given course in the blackboard learning management system.
+- **Fetch institutional hierarchy nodes** (read-only): Retrieves information about the nodes within the institutional hierarchy of a blackboard learning environment.
+- **Fetch learning session data** (read-only): Retrieves a list of active sessions from the blackboard learn platform.
+- **Fetch lti placements** (read-only): Retrieves a list of all available lti (learning tools interoperability) placements within the blackboard learn environment.
+- **Fetch oauth2 tokeninfo** (read-only): Retrieves detailed information about a specified oauth2 token used for authentication in the blackboard learn api.
+- **Fetch privacy policies** (read-only): Retrieves the current privacy policy for the blackboard system.
+- **Fetch rubric evaluation for group attempt column** (read-only): Retrieves the rubric evaluations for a specific group attempt within a gradebook column of a blackboard course.
+- **Fetch rubric list for course** (read-only): Retrieves all rubrics associated with a specific course in the blackboard learn platform.
+- **Fetch terms list** (read-only): Retrieves a list of academic terms or information about specific terms in the blackboard learning management system.
+- **Fetch types of goal sets** (read-only): Retrieves a list of available goal set types in the blackboard learn system.
+- **Fetch user criteria from course content rule** (read-only): Retrieves a list of users who meet a specific criterion within an adaptive release rule for a particular content item in a blackboard…
+- **Get announcement by id** (read-only): Retrieves a specific announcement from the blackboard learn platform using its unique identifier.
+- **Get assessment questions by course and assessment id** (read-only): Retrieves a list of questions for a specific assessment within a blackboard course.
+- **Get attendance record** (read-only): Returns a course meeting attendance information for the given meeting and user id.
+- **Get attendance records by meeting id** (read-only): Returns a list of course meeting attendance for a given meeting id.
+- **Get calendar items** (read-only): Retrieves calendar items from the blackboard learn platform.
+- **Get calendars** (read-only): Get the list of calendars.
+- **Get content collection resources children** (read-only): Retrieves a list of child resources for a specified parent resource within the blackboard content collection.
+- **Get course announcement by id** (read-only): Retrieves a specific announcement from a particular course in the blackboard learn system.
+- **Get Course Column Logs** (read-only): Retrieves the log entries for a specific gradebook column within a blackboard course.
+- **Get course content adaptive release group criteria** (read-only): Retrieves the groups associated with a specific criterion of an adaptive release rule for a particular content item within a blackboard…
+- **Get course content attachment** (read-only): Retrieves detailed information about a specific attachment associated with a particular content item within a blackboard course.
+- **Get course content attachment** (read-only): Retrieves the attachments associated with a specific content item within a blackboard course.
+- **Get course content group details** (read-only): Retrieves detailed information about a specific group within a content item of a course in the blackboard learn platform.
+- **Get course discussion threads** (read-only): Retrieves all discussions associated with a specific course in the blackboard learning management system.
+- **Get course gradebook attempt** (read-only): Retrieves detailed information about a specific attempt for a gradebook column in a blackboard course.
+- **Get course gradebook group attempts** (read-only): Retrieves group attempts data for a specific gradebook column within a course in blackboard learn.
+- **Get course gradebook logs** (read-only): Retrieves the gradebook logs for a specific course in the blackboard learning management system.
+- **Get course groups** (read-only): Retrieves a list of all groups associated with a specific course in the blackboard learning management system.
+- **Get course meeting details** (read-only): Retrieves detailed information about a specific meeting within a course in the blackboard learning management system.
+- **Get course meeting download url** (read-only): Retrieves a download url for meeting-related resources within a specific blackboard course.
+- **Get course meetings** (read-only): Retrieves a list of meetings associated with a specific course in the blackboard learning management system.
+- **Get course performance content review status** (read-only): Retrieves the content review status for a specific course in the blackboard learning management system.
+- **Get course resource** (read-only): Retrieves a specific resource from a particular course within the blackboard learning management system.
+- **Get course resource children** (read-only): Retrieves a list of child resources associated with a specific resource within a blackboard course.
+- **Get course rubric by course id** (read-only): Retrieves a specific rubric for a given course in the blackboard learning management system.
+- **Get courses for category** (read-only): Retrieves a list of courses associated with a specific category in the blackboard catalog.
+- **Get cross list set by course id** (read-only): Retrieves the cross-listed course set for a specified course in blackboard learn.
+- **Get data source by id** (read-only): Retrieves detailed information about a specific data source within the blackboard learn platform.
+- **Get discussion messages for course** (read-only): Retrieves all messages within a specific discussion for a given course in the blackboard learning management system.
+- **Get goal alignments by goalid** (read-only): Retrieves the alignments associated with a specific educational goal in the blackboard learning management system.
+- **Get goal set category by id** (read-only): Retrieves detailed information about a specific goal category within a designated goal set in the blackboard learn platform.
+- **Get gradebook column details** (read-only): Retrieves detailed information about a specific gradebook column for a particular course in the blackboard learning management system.
+- **Get gradebook periods by course and period id** (read-only): Retrieves detailed information about a specific gradebook period within a course in the blackboard learning management system.
+- **Get gradebook schema for course** (read-only): Retrieves the gradebook schemas for a specific course in the blackboard learning management system.
+- **Get group details from course api** (read-only): Retrieves detailed information about a specific group within a blackboard course.
+- **Get hierarchy node by node id** (read-only): Retrieves detailed information about a specific node within the institutional hierarchy of blackboard.
+- **Get institutional node tool information** (read-only): Retrieves detailed information about a specific tool associated with a particular node in the blackboard institutional hierarchy.
+- **Get last changed grade column for user** (read-only): Retrieves information about the last changes made to a specific gradebook column for a particular course in blackboard.
+- **Get learning goals** (read-only): The getgoals endpoint retrieves a list of educational goals within the blackboard learning management system.
+- **Get oauth2 authorization code** (read-only): Initiates the oauth 2.0 authorization code flow for the blackboard api.
+- **Get review status of user in course content** (read-only): Retrieves the review status of a specific content item for a particular user within a blackboard learn course.
+- **Get rubric associations for gradebook columns** (read-only): Retrieves the rubric associations for a specific gradebook column within a blackboard course.
+- **Get system info** (read-only): Retrieves system information about the blackboard learn platform.
+- **Get upload settings** (read-only): Retrieves the current upload settings for the blackboard learn platform.
+- **Get user course by id** (read-only): Retrieves detailed information about a specific user within a particular course in the blackboard learning management system.
+- **Get user gradebook for course** (read-only): Retrieves the gradebook information for a specific user within a particular course in blackboard.
+- **Get user nodes for user id** (read-only): Retrieves a list of nodes associated with a specific user in the blackboard learn platform.
+- **Get user observers by id** (read-only): Retrieves the list of observers associated with a specific user in the blackboard learning management system.
+- **Get user pronunciation audio** (read-only): Retrieves the pronunciation audio associated with a specific user's profile in blackboard learn.
+- **List announcements** (read-only): Retrieves a list of announcements from the blackboard learn platform.
+- **List child courses for a given course** (read-only): Retrieves a list of child courses or sub-courses associated with a specified parent course in the blackboard learn platform.
+- **List child nodes by node id** (read-only): Retrieves the immediate child nodes of a specified parent node in the blackboard learn institutional hierarchy.
+- **List course gradebook columns** (read-only): Retrieves a list of gradebook columns for a specified course in the blackboard learn environment.
+- **List course group sets** (read-only): Retrieves a list of groups within a specific group set for a given course in the blackboard learning management system.
+- **List course group users** (read-only): Retrieves a list of users belonging to a specific group within a blackboard learn course.
+- **List courses** (read-only): Retrieves a list of courses from the blackboard learning management system.
+- **List grade notations for course** (read-only): Retrieves the grade notations for a specific course's gradebook in the blackboard learning management system.
+- **List Gradebook Columns** (read-only): Retrieves all gradebook columns for a specified course in the blackboard learning management system.
+- **List gradebook columns for users** (read-only): Retrieves user data associated with a specific gradebook column for a given course in blackboard.
+- **List institution roles** (read-only): Retrieves a list of all institution roles defined within the blackboard learn environment.
+- **List system roles** (read-only): Retrieves a list of all system roles defined in the blackboard learn platform.
+- **List users in course group** (read-only): Retrieves a list of users belonging to a specific group within a course in the blackboard learning management system.
+- **Modify announcement details**: This endpoint allows you to update an existing course announcement in the blackboard learn platform.
+- **Modify assessment question**: This endpoint allows you to update an existing question within a specific assessment in a blackboard course.
+- **Modify course content adaptive release group criteria**: This endpoint updates the criteria for a specific group within an adaptive release rule for a particular content item in a blackboard…
+- **Modify system announcement details**: This endpoint allows you to update an existing system announcement in blackboard.
+- **Modify user enrollment in course**: Updates a user's membership details within a specific blackboard course.
+- **Obtain oauth2 token via post** (read-only): Obtains an oauth2 token for authenticating and authorizing requests to the blackboard api.
+- **Patch adaptiverelease criterion**: Updates a specific criterion within an adaptive release rule for a course content item in blackboard learn.
+- **Patch calendar item by type and id**: This endpoint allows you to update an existing calendar item in the blackboard system.
+- **Patch course content**: This endpoint allows you to update existing content within a specific blackboard learn course.
+- **Patch course content review status**: Updates the review status of a specific content item for a particular user within a blackboard learn course.
+- **Patch course details by id**: Updates an existing course in blackboard learn with the provided information.
+- **Patch course meeting details**: This endpoint allows you to update the details of a specific meeting within a course in the blackboard learning management system.
+- **Patch course rubric details**: Updates a specific rubric within a blackboard learn course.
+- **Patch data source by external id**: This endpoint allows for updating specific attributes of an existing data source in the blackboard system.
+- **Patch grade information for user**: The updategrade endpoint allows instructors to modify various aspects of a student's grade for a specific course and gradebook column in…
+- **Patch grade notation for course**: This endpoint allows you to update an existing grade notation for a specific course in the blackboard learning management system.
+- **Patch gradebook column**: This endpoint allows for updating specific properties of an existing grade column within a course's gradebook in the blackboard learn…
+- **Patch hierarchy node tool settings**: This endpoint allows you to update the settings of a specific tool within a node of blackboard's institutional hierarchy.
+- **Patch term details by termid**: Updates an existing term in the blackboard learn platform.
+- **Post course assessment question**: This endpoint creates a new question within an existing blackboard assessment.
+- **Post course message with bbml support**: Creates a new message within a specific blackboard course.
+- **Post discussion message in course**: Posts a new message to a specific discussion within a blackboard learn course.
+- **Post discussion message reply**: Creates a reply to a specific message within a blackboard course discussion.
+- **Post grade notation to course gradebook**: Creates a new grade notation in the gradebook for a specific course in blackboard.
+- **Post group attempts for gradebook column**: The creategroupattempt endpoint allows for the creation or update of a group attempt for a specific gradebook column in a blackboard learn…
+- **Post pronouns details**: Creates a new pronoun entry in the blackboard learning management system.
+- **Retrieve admin info by nodeid and userid** (read-only): Retrieves the administrative status of a specific user for a particular node within the blackboard institutional hierarchy.
+- **Retrieve assessment question** (read-only): Retrieves detailed information about a specific question within an assessment for a particular course in the blackboard learning…
+- **Retrieve attempt receipt by id** (read-only): Retrieves detailed information about a specific attempt receipt in the blackboard learning management system.
+- **Retrieve catalog category children** (read-only): Retrieves the child categories of a specified parent category within the blackboard catalog system.
+- **Retrieve category type details** (read-only): Retrieves a list of categories from the blackboard catalog based on the specified category type.
+- **Retrieve children goals by id** (read-only): Retrieves the child elements (sub-goals, tasks, or related items) of a specified goal in the blackboard learning management system.
+- **Retrieve contentcollection resource** (read-only): Retrieves a specific resource from a content collection in blackboard learn.
+- **Retrieve course alignments by id** (read-only): Retrieves the course goal alignments for a specified course in blackboard.
+- **Retrieve course attempt file** (read-only): Retrieves a specific file associated with a student's attempt in a course's gradebook within the blackboard learn system.
+- **Retrieve course child details** (read-only): Retrieves detailed information about a specific child course within a parent course in the blackboard learn platform.
+- **Retrieve course content adaptive release rule criterion** (read-only): Retrieves detailed information about a specific criterion within an adaptive release rule for a particular content item in a blackboard…
+- **Retrieve course content adaptive release rules** (read-only): Retrieves the adaptive release rules associated with a specific content item within a blackboard course.
+- **Retrieve course content by ids** (read-only): Retrieves specific content within a blackboard course using the course id and content id.
+- **Retrieve course content children** (read-only): Retrieves a list of child content items for a specific content within a blackboard learn course.
+- **Retrieve course content groups** (read-only): Retrieves the groups associated with a specific content item within a blackboard course.
+- **Retrieve course content release criteria** (read-only): Retrieves the criteria associated with a specific adaptive release rule for a particular content item within a blackboard course.
+- **Retrieve course contents** (read-only): Retrieves the contents of a specific course in the blackboard learn platform.
+- **Retrieve course details** (read-only): Retrieves detailed information about a specific course in the blackboard learn system.
+- **Retrieve course details by id** (read-only): Retrieves detailed information about a specific course in the blackboard learning management system.
+- **Retrieve course grade notation** (read-only): Retrieves detailed information about a specific grade notation within a course's gradebook in the blackboard learning management system.
+- **Retrieve course gradebook categories** (read-only): Retrieves the list of gradebook categories for a specific course in the blackboard learning management system.
+- **Retrieve course gradebook column attempts** (read-only): Retrieves attempt data for a specific gradebook column within a blackboard course.
+- **Retrieve course gradebook periods** (read-only): Retrieves the gradebook periods for a specified course in the blackboard learning management system.
+- **Retrieve course group by ids** (read-only): Retrieves detailed information about a specific group within a particular course in the blackboard learning management system.
+- **Retrieve course group information** (read-only): Retrieves detailed information about a specific group set within a course in the blackboard learning management system.
+- **Retrieve course group sets** (read-only): Retrieves all group sets associated with a specific course in the blackboard learning management system.
+- **Retrieve course list** (read-only): Retrieves a list of courses from the blackboard learn platform.
+- **Retrieve course list** (read-only): Retrieves a list of courses from the blackboard learn environment.
+- **Retrieve course message folders** (read-only): Retrieves a list of message folders for a specific course in the blackboard learning management system.
+- **Retrieve course nodes** (read-only): Retrieves a list of nodes (modules or units) for a specific course in the blackboard learning management system.
+- **Retrieve course resources by id** (read-only): Retrieves a list of resources associated with a specific course in the blackboard learning management system (lms).
+- **Retrieve course role by role id** (read-only): Retrieves detailed information about a specific course role in blackboard learn using its unique identifier.
+- **Retrieve course rubric associations** (read-only): Retrieves the associations of a specific rubric within a given course in blackboard learn.
+- **Retrieve coursediscussion details** (read-only): Retrieves detailed information about a specific discussion thread within a course on the blackboard learn platform.
+- **Retrieve courses for institutional node** (read-only): Retrieves a list of courses associated with a specific node in the institutional hierarchy of blackboard.
+- **Retrieve discussion message reply** (read-only): Retrieves all replies to a specific message within a discussion thread of a course in the blackboard learning management system.
+- **Retrieve goal by id** (read-only): Retrieves detailed information about a specific learning goal within the blackboard learn platform.
+- **Retrieve goal set by id** (read-only): Retrieves detailed information about a specific goal set within the blackboard learning management system.
+- **Retrieve goal sets** (read-only): Retrieves a list of goal sets from the blackboard learn platform.
+- **Retrieve grade attempt by course and column id** (read-only): Retrieves detailed information about a specific attempt for a gradebook column within a course in the blackboard learn system.
+- **Retrieve gradebook attempts** (read-only): Retrieves attempt data for a specific gradebook column within a course in the blackboard learn platform.
+- **Retrieve gradebook category by id** (read-only): Retrieves detailed information about a specific gradebook category within a course in the blackboard learning management system.
+- **Retrieve gradebook column by course and column ids** (read-only): Retrieves detailed information about a specific gradebook column within a particular course in the blackboard learning management system.
+- **Retrieve gradebook entry for user in course** (read-only): Retrieves detailed gradebook information for a specific user within a particular course in the blackboard learning management system.
+- **Retrieve loginas sessions** (read-only): Retrieves active login sessions for users in the blackboard learning management system.
+- **Retrieve lti domain details by domainid** (read-only): Retrieves detailed information about a specific lti (learning tools interoperability) domain within the blackboard learn system.
+- **Retrieve lti domain listings** (read-only): Retrieves a list of lti (learning tools interoperability) domains registered with the blackboard learn platform.
+- **Retrieve lti placement by id** (read-only): Retrieves detailed information about a specific lti (learning tools interoperability) placement within the blackboard learn platform.
+- **Retrieve node admins** (read-only): Retrieves the list of administrators associated with a specific node in the blackboard institutional hierarchy.
+- **Retrieve observees of user profile** (read-only): Retrieves a list of observees associated with a specific user in the blackboard learning management system.
+- **Retrieve participants of course message** (read-only): Retrieves a list of participants for a specific message within a blackboard course.
+- **Retrieve proctoring service by id** (read-only): Retrieves detailed information about a specific proctoring service integrated with blackboard learn.
+- **Retrieve proctoring services** (read-only): Retrieves a list of available proctoring services integrated with the blackboard learn platform.
+- **Retrieve pronouns information** (read-only): Retrieves the list of available pronouns in the blackboard learning management system.
+- **Retrieve rubric association for course** (read-only): Retrieves detailed information about a specific rubric association within a blackboard learn course.
+- **Retrieve rubric evaluation by association** (read-only): Retrieves the evaluations associated with a specific rubric for a particular course and rubric association in the blackboard learning…
+- **Retrieve rubric evaluation details** (read-only): Retrieves detailed information about a specific rubric evaluation within a blackboard course.
+- **Retrieve rubric evaluation for attempt** (read-only): Retrieves the rubric evaluations for a specific attempt on a gradebook item within a blackboard course.
+- **Retrieve sis dataset log by id** (read-only): Retrieves a specific student information system (sis) dataset from the blackboard learn platform using its unique identifier.
+- **Retrieve system role by id** (read-only): Retrieves detailed information about a specific system role in the blackboard learning management system.
+- **Retrieve system version information** (read-only): Retrieves the current version information of the blackboard learn system.
+- **Retrieve task by id** (read-only): Retrieves detailed information about a specific system task in the blackboard learn platform.
+- **Retrieve term by id** (read-only): Retrieves detailed information about a specific academic term in the blackboard learn system.
+- **Retrieve toc items by course id** (read-only): Retrieves the table of contents (toc) items for a specified course in the blackboard learning management system.
+- **Retrieve user avatar by userid** (read-only): Retrieves the avatar (profile picture) for a specified user in the blackboard learn platform.
+- **Retrieve user by id** (read-only): Retrieves detailed information about a specific user in the blackboard learn system.
+- **Retrieve user courses by id** (read-only): Retrieves a list of courses associated with a specific user in the blackboard learn platform.
+- **Retrieve user from course group** (read-only): Retrieves detailed information about a specific user's membership or role within a group in a particular course on the blackboard platform.
+- **Retrieve user gradebook column** (read-only): Retrieves a specific user's grade for a particular gradebook column in a blackboard course.
+- **Retrieve user gradebook column** (read-only): Retrieves a specific user's grade for a particular gradebook column in a blackboard learn course.
+- **Retrieve user grades for course column** (read-only): Retrieves the grades for all users associated with a specific gradebook column in a particular blackboard course.
+- **Retrieve user in course group** (read-only): Retrieves detailed information about a specific user within a group in a blackboard learn course.
+- **Retrieve user meetings in course** (read-only): Retrieves detailed information about a specific user's participation or engagement in meetings for a particular course within the…
+- **Retrieve user sessions by user id** (read-only): Retrieves the active or historical sessions for a specific user in the blackboard learn platform.
+- **Retrieve users from course** (read-only): Retrieves a list of users enrolled in a specific course within the blackboard learning management system.
+- **Retrieve users in institutional node** (read-only): Retrieves a list of users associated with a specific node in the blackboard learn institutional hierarchy.
+- **Retrieve users list** (read-only): The getusersendpoint retrieves user information from the blackboard learn system.
+- **Retrieves institution role by id** (read-only): Retrieves detailed information about a specific institutional role in the blackboard learning management system.
+- **Submit gradebook attempt**: Creates a new attempt for a specific gradebook column in a blackboard course.
+- **Update admin node roles**: Updates the roles of an administrative user for a specific node within the institutional hierarchy of blackboard.
+- **Update attempt status in gradebook**: This endpoint allows for updating specific attributes of a gradebook attempt for a particular course, column, and attempt id.
+- **Update attendance record**: Update the course meeting attendance data for the given course/organization.
+- **Update attendance records**: Creates or updates attendance records for the meeting for all users in the course.
+- **Update category details by type**: Updates specific details of a category in the blackboard catalog system.
+- **Update child course in parent**: This endpoint updates the relationship between a parent course and its child course in the blackboard learning management system.
+- **Update content group association**: This endpoint updates the association between a specific content item and a group within a blackboard learn course.
+- **Update course category details**: This endpoint updates an existing course within a specific category in the blackboard catalog.
+- **Update course discussion details**: Updates a specific discussion forum within a blackboard learn course.
+- **Update course group details**: Updates the properties of an existing group within a specific course in the blackboard learn platform.
+- **Update course group information**: Updates an existing group within a specified course in the blackboard learn system.
+- **Update course information**: Updates an existing course in the blackboard learn system.
+- **Update course information by courseid**: The patchcourse endpoint allows for updating specific details and settings of an existing course in the blackboard learn system.
+- **Update course message read status**: Updates the read status of a specific message within a blackboard course.
+- **Update course primary node association**: This endpoint updates the association between a specific course and a node in the blackboard institutional hierarchy.
+- **Update course primary node status**: Updates the association between a course and a node in the blackboard learn institutional hierarchy.
+- **Update course toc item**: Updates the visibility settings for a specific table of contents (toc) item within a blackboard course.
+- **Update discussion message status**: Updates a specific message within a course discussion on the blackboard platform.
+- **Update gradebook column**: This endpoint updates a specific grade column in a course's gradebook.
+- **Update grading period info**: Updates a specific grading period within a course's gradebook in the blackboard learn system.
+- **Update group details by course and group id**: Updates the properties of a specific group within a blackboard learn course.
+- **Update institution node by id**: This endpoint allows for updating specific properties of a node within the institutional hierarchy of blackboard.
+- **Update institutional hierarchy user node**: Updates a user's information or association within a specific node of the institutional hierarchy in blackboard.
+- **Update lti domain configuration**: This endpoint allows updating an existing lti (learning tools interoperability) domain configuration in the blackboard learn platform.
+- **Update lti placement details**: This endpoint allows you to update an existing lti (learning tools interoperability) placement in the blackboard learning management system.
+- **Update pronoun status by id**: Updates the information for a specific pronoun in the blackboard system.
+- **Update rubric association settings**: Updates the properties of a rubric association within a specific blackboard course.
+- **Update rubric evaluation**: Updates a specific rubric evaluation for a course in the blackboard learning management system.
+- **Update user criterion in adaptive rule**: This endpoint updates a user-specific criterion within an adaptive release rule for a particular content item in a blackboard course.
+- **Update user grade details by course**: Updates a specific user's grade information within a course's gradebook column in the blackboard learning management system.
+- **Update user in course group**: This endpoint updates a user's information within a specific group in a blackboard course.
+- **Update user in course group**: Updates a user's information within a specific group of a course in blackboard learn.
+- **Update user information**: Updates a user's profile in the blackboard learning management system.
+- **Update user meeting attendance status**: Adds a user to a specific meeting within a blackboard course and sets their attendance status.
+- **Update user observer**: Updates the observer relationship between a user and an observer in the blackboard learn platform.
+- **Upload file to attempt in gradebook**: This endpoint allows for the upload and attachment of files to a specific attempt within a course's gradebook in the blackboard learning…

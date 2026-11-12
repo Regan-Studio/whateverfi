@@ -1,0 +1,145 @@
+# Help Scout
+
+Help Scout provides customer support software with shared inbox, knowledge base, and customer management tools
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/help-scout/.
+
+## Actions
+
+- **Create Conversation**: Create a new conversation in Help Scout.
+- **Create Customer**: Create a new customer in Help Scout with contact details and profile information.
+- **Create Organization**: Create a new organization in Help Scout.
+- **Create Webhook**: Create a new webhook subscription in Help Scout to receive real-time event notifications.
+- **Get Conversation** (read-only): Retrieve a specific conversation by ID from Help Scout.
+- **Get Customer** (read-only): Get a specific customer by ID from Help Scout.
+- **Get Inbox** (read-only): Retrieve a specific inbox by ID with details including name, email, and timestamps.
+- **Get Organization** (read-only): Retrieve a specific organization by ID from Help Scout.
+- **Get Resource Owner** (read-only): Get the authenticated user's profile information.
+- **Get User** (read-only): Retrieve a specific user by ID from Help Scout.
+- **List Conversations** (read-only): List and filter conversations from Help Scout.
+- **List Customers** (read-only): List customers in Help Scout with optional filters for name, email, or modification date.
+- **List Inboxes** (read-only): List all mailboxes (inboxes) the user has access to with pagination support.
+- **List Organizations** (read-only): List all organizations (companies) in Help Scout with optional filtering and sorting.
+- **List Users** (read-only): List all users in the Help Scout account with optional filters for mailbox or email.
+- **Update Conversation**: Update specific properties of a Help Scout conversation using JSON Patch format.
+- **Update Customer**: Update an existing customer in Help Scout using JSON Patch operations.
+- **Update Organization**: Update an organization in Help Scout.
+- **Create Chat Handle**: Create a chat handle for a Help Scout customer.
+- **Create Chat Thread**: Create a new chat thread on a Help Scout conversation.
+- **Create Customer Address**: Create an address for a Help Scout customer.
+- **Create customer email**: Create an email for a customer in Help Scout.
+- **Create Customer Phone**: Create a phone number for a Help Scout customer.
+- **Create Customer Property**: Create a customer property definition in Help Scout.
+- **Create Customer Thread**: Create a new customer thread on a Help Scout conversation.
+- **Create Customer Website**: Create a website entry for a customer in Help Scout.
+- **Create Note on Conversation**: Create a new note thread on a Help Scout conversation.
+- **Create Organization Property**: Create a new custom property definition for organizations in Help Scout.
+- **Create Phone Thread**: Create a new phone thread on a Help Scout conversation.
+- **Create Reply Thread**: Create a new reply thread on a Help Scout conversation.
+- **Create saved reply**: Create a saved reply for a mailbox in Help Scout.
+- **Create Social Profile**: Create a social profile for a customer in Help Scout.
+- **Delete Chat Handle**: Delete a chat handle for a customer.
+- **Delete Conversation**: Move a conversation to the deleted folder.
+- **Delete customer**: Permanently delete a customer by ID from Help Scout.
+- **Delete Customer Address**: Delete a customer's address from Help Scout.
+- **Delete Customer Asynchronously**: Delete a customer asynchronously.
+- **Delete Customer Email**: Delete an email for a customer.
+- **Delete Customer Phone**: Delete a customer's phone number from Help Scout.
+- **Delete Customer Property**: Perform a soft delete on a customer property definition.
+- **Delete Customer Website**: Delete a website for a customer.
+- **Delete Organization**: Delete an organization by ID.
+- **Delete Organization Property**: Delete an organization property definition.
+- **Delete Organization Property Customer Tier**: Delete a customer tier property definition from organizations.
+- **Delete Saved Reply**: Delete a saved reply from a mailbox.
+- **Delete Snooze**: Delete a snooze on a conversation.
+- **Delete Social Profile**: Delete a social profile for a customer in Help Scout.
+- **Delete Thread Schedule**: Unschedule a scheduled thread in a conversation.
+- **Delete Webhook**: Permanently delete a webhook subscription from Help Scout.
+- **Download Attachment** (read-only): Download an attachment file from a Help Scout conversation.
+- **Get Attachment Data** (read-only): Retrieve attachment data for a specific attachment.
+- **Get Busy Times Report** (read-only): Get busiest time of day report showing conversation volume by day and hour.
+- **Get Chat Report** (read-only): Retrieve comprehensive chat report statistics from Help Scout.
+- **Get Company Customers Helped Report** (read-only): Retrieve company customers helped report showing distinct customer count receiving support.
+- **Get Company Drilldown Report** (read-only): Retrieve company drilldown report showing underlying conversation data for company statistics.
+- **Get Company Report** (read-only): Retrieve overall company performance report from Help Scout.
+- **Get Conversations Attachments File** (read-only): Download a single attachment file from a conversation.
+- **Get Conversations Drilldown Report** (read-only): Get conversations drilldown report from Help Scout.
+- **Get Conversations Field Drilldown Report** (read-only): Get conversations drilldown by field report from Help Scout.
+- **Get Conversations Report** (read-only): Get overall conversations report with statistics on conversation volume, channels, and trends.
+- **Get Customer Address** (read-only): Retrieve a customer's address from Help Scout.
+- **Get Docs Report** (read-only): Retrieve overall docs performance report from Help Scout.
+- **Get Email Report** (read-only): Retrieve email report with volume, resolution, and response metrics from Help Scout.
+- **Get First Response Time Report** (read-only): Retrieve first response time productivity report showing average response duration.
+- **Get Happiness Ratings Report** (read-only): Retrieve happiness ratings report with customer satisfaction scores and feedback from Help Scout.
+- **Get Happiness Report** (read-only): Retrieve overall happiness report from Help Scout.
+- **Get New Conversations Drilldown Report** (read-only): Get new conversations drilldown report showing underlying conversation data for new conversations created within a time period.
+- **Get New Conversations Report** (read-only): Get new conversations report showing conversation counts over time intervals.
+- **Get Organization Conversations** (read-only): Get conversations associated with an organization in Help Scout.
+- **Get Organization Customers** (read-only): Get customers associated with an organization in Help Scout.
+- **Get Organization Property** (read-only): Retrieve a single organization property definition by its slug identifier.
+- **Get Organization Property** (read-only): Retrieve an organization property definition by its slug.
+- **Get Phone Report** (read-only): Retrieve phone report statistics from Help Scout.
+- **Get Productivity Report** (read-only): Retrieve productivity overall report showing comprehensive team performance metrics.
+- **Get Received Messages Report** (read-only): Retrieve received messages statistics report from Help Scout.
+- **Get Replies Sent Report** (read-only): Get replies sent productivity report showing reply volume metrics over time.
+- **Get Resolution Time Report** (read-only): Retrieve resolution time productivity report showing average time to resolve conversations.
+- **Get Resolved Report** (read-only): Retrieve productivity resolved report from Help Scout.
+- **Get Routing Configuration** (read-only): Retrieve routing configuration for a mailbox inbox.
+- **Get Saved Reply** (read-only): Retrieve a specific saved reply from a mailbox.
+- **Get Tag** (read-only): Retrieve a specific tag by ID from Help Scout.
+- **Get User Chat Report** (read-only): Retrieve user/team chat report statistics from Help Scout.
+- **Get User Conversation History** (read-only): Retrieve detailed conversation history for a specific user over a designated timeframe.
+- **Get User Customers Helped Report** (read-only): Retrieve user customers helped report showing distinct customer count receiving support from a specific user.
+- **Get User Drilldown Report** (read-only): Get user drilldown report from Help Scout.
+- **Get User Happiness Report** (read-only): Retrieve user happiness report from Help Scout.
+- **Get User Ratings Report** (read-only): Retrieve user happiness ratings drilldown report showing customer satisfaction ratings for a specific user.
+- **Get User Replies Report** (read-only): Retrieve user replies report showing the number of replies sent by a specific user over time.
+- **Get User Report** (read-only): Retrieve overall user/team performance report from Help Scout.
+- **Get User Resolutions Report** (read-only): Retrieve user resolutions report showing the number of conversations resolved by a specific user over time.
+- **Get User Status** (read-only): Get the status of a user in Help Scout.
+- **Get Volume by Channel Report** (read-only): Retrieve conversation volume by channel (email, chat, phone) over a specified time period.
+- **Get Webhook** (read-only): Retrieve a specific webhook by ID from Help Scout.
+- **List Chat Handles** (read-only): List all chat handles for a specific customer in Help Scout.
+- **List Customer Emails** (read-only): List all emails for a specific customer in Help Scout.
+- **List Customer Phones** (read-only): List all phone numbers for a specific Help Scout customer.
+- **List Customer Properties** (read-only): List all customer property definitions.
+- **List Customer Websites** (read-only): List all websites associated with a specific customer in Help Scout.
+- **List Inbox Custom Fields** (read-only): List all custom fields configured for a specific inbox.
+- **List Inbox Folders** (read-only): Retrieve all folders within a specific inbox/mailbox.
+- **List Organizations Properties** (read-only): List all organization property definitions.
+- **List Saved Replies** (read-only): List saved replies for a mailbox.
+- **List Social Profiles** (read-only): List all social profiles for a customer in Help Scout.
+- **List Tags** (read-only): List all tags in Help Scout with pagination support.
+- **List Teams** (read-only): List all teams in Help Scout with pagination support.
+- **List Threads** (read-only): List all threads for a specific Help Scout conversation.
+- **List User Statuses** (read-only): List availability statuses for all users in Help Scout.
+- **List Users Status** (read-only): List the status of all users including email and chat availability.
+- **List Webhooks** (read-only): Retrieve all webhooks configured in Help Scout.
+- **List Workflows** (read-only): List all workflows (automation rules) in the account with optional filters for mailbox, type, and status.
+- **Overwrite Customer**: Overwrite an existing customer in Help Scout, replacing all customer data.
+- **Publish Thread Schedule**: Publish a scheduled thread immediately in a Help Scout conversation.
+- **Remove Organization Property Value**: Remove an organization property value.
+- **Run Manual Workflow**: Run a manual workflow on one or more conversations in Help Scout.
+- **Set Organization Property Value**: Set or update a property value for a specific organization.
+- **Set User Status**: Set the status of a user in Help Scout.
+- **Update Chat Handle**: Update a chat handle for a Help Scout customer.
+- **Update Conversation Snooze**: Update or set a snooze on a Help Scout conversation.
+- **Update Conversation Tags**: Update tags on a conversation in Help Scout.
+- **Update Conversation Thread Schedule**: Update an existing schedule for a conversation thread in Help Scout.
+- **Update Custom Fields**: Update custom fields on a Help Scout conversation.
+- **Update Customer Address**: Update an existing address for a Help Scout customer.
+- **Update Customer Chat Handle**: Update an existing chat handle for a customer in Help Scout.
+- **Update customer email**: Update an existing email for a customer in Help Scout.
+- **Update Customer Phone**: Update an existing phone number for a Help Scout customer.
+- **Update Customer Properties**: Update custom property values for a Help Scout customer using JSON Patch operations.
+- **Update Customer Social Profile**: Update an existing social profile for a customer in Help Scout.
+- **Update Customer Website**: Update an existing website URL for a customer in Help Scout.
+- **Update Mailbox Routing Configuration**: Update routing configuration for a mailbox inbox in Help Scout.
+- **Update Organization Property**: Update an organization property definition in Help Scout.
+- **Update Organization Property Industry**: Update the industry organization property definition in Help Scout.
+- **Update Routing Configuration**: Update routing configuration for a mailbox inbox.
+- **Update saved reply**: Update an existing saved reply in a Help Scout mailbox.
+- **Update Thread**: Update a specific thread in a Help Scout conversation using JSON Patch format.
+- **Update Thread Schedule**: Update the schedule for a thread in a Help Scout conversation.
+- **Update Webhook**: Update an existing webhook subscription in Help Scout.
+- **Update Workflow Status**: Update the status of a Help Scout workflow (enable/disable automation rule).

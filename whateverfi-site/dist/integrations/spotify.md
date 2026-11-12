@@ -1,0 +1,96 @@
+# Spotify
+
+Spotify is a digital music and podcast streaming service with millions of tracks, personalized playlists, and social sharing features
+
+Category: Other. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/spotify/.
+
+## Actions
+
+- **Add items to playlist**: Add one or more items to a user's playlist.
+- **Create playlist**: Create a playlist for a spotify user.
+- **Get artist s top tracks** (read-only): Get spotify catalog information about an artist's top tracks by country.
+- **Get playlist** (read-only): Get a playlist owned by a spotify user.
+- **Get show** (read-only): Get spotify catalog information for a single show identified by its unique spotify id.
+- **Get show episodes** (read-only): Get spotify catalog information about an show’s episodes.
+- **Save albums for current user**: Save one or more albums to the current user's 'your music' library.
+- **Save tracks for current user**: Save one or more tracks to the current user's 'your music' library.
+- **Add item to playback queue**: Add an item to the end of the user's current playback queue.
+- **Change playlist details**: Change a playlist's name and public/private state.
+- **Check if user follows artists or users** (read-only): Check to see if the current user is following one or more artists or other spotify users.
+- **Check if users follow playlist** (read-only): Check to see if one or more spotify users are following a specified playlist.
+- **Check user s saved albums** (read-only): Check if one or more albums is already saved in the current spotify user's 'your music' library.
+- **Check user s saved audiobooks** (read-only): Check if one or more audiobooks are already saved in the current spotify user's library.
+- **Check user s saved episodes** (read-only): This spotify api endpoint (in beta) checks if episodes are saved in a user's library.
+- **Check user s saved shows** (read-only): Check if one or more shows is already saved in the current spotify user's library.
+- **Check user s saved tracks** (read-only): Check if one or more tracks is already saved in the current spotify user's 'your music' library.
+- **Follow artists or users**: Add the current user as a follower of one or more artists or other spotify users.
+- **Follow playlist**: Add the current user as a follower of a playlist.
+- **Get a chapter** (read-only): Get spotify catalog information for a single audiobook chapter.
+- **Get album** (read-only): Get spotify catalog information for a single album.
+- **Get album tracks** (read-only): Get spotify catalog information about an album’s tracks.
+- **Get an audiobook** (read-only): Get spotify catalog information for a single audiobook.
+- **Get artist** (read-only): Get spotify catalog information for a single artist identified by their unique spotify id.
+- **Get artist s albums** (read-only): Get spotify catalog information about an artist's albums.
+- **Get artist s related artists** (read-only): Get spotify catalog information about artists similar to a given artist.
+- **Get audiobook chapters** (read-only): Get spotify catalog information about an audiobook's chapters.
+- **Get available devices** (read-only): Get information about a user’s available spotify connect devices.
+- **Get available genre seeds** (read-only): Retrieve a list of available genres seed parameter values for [recommendations](/documentation/web-api/reference/get-recommendations).
+- **Get available markets** (read-only): Get the list of markets where spotify is available.
+- **Get category s playlists** (read-only): Get a list of spotify playlists tagged with a particular category.
+- **Get current user s playlists** (read-only): Get a list of the playlists owned or followed by the current spotify user.
+- **Get current user s profile** (read-only): Get detailed profile information about the current user (including the current user's username).
+- **Get currently playing track** (read-only): Get the object currently being played on the user's spotify account.
+- **Get episode** (read-only): Get spotify catalog information for a single episode identified by its unique spotify id.
+- **Get featured playlists** (read-only): Get a list of spotify featured playlists (shown, for example, on a spotify player's 'browse' tab).
+- **Get followed artists** (read-only): Get the current user's followed artists.
+- **Get new releases** (read-only): Get a list of new album releases featured in spotify (shown, for example, on a spotify player’s “browse” tab).
+- **Get playback state** (read-only): Get information about the user’s current playback state, including track or episode, progress, and active device.
+- **Get playlist cover image** (read-only): Get the current image associated with a specific playlist.
+- **Get playlist items** (read-only): Get full details of the items of a playlist owned by a spotify user.
+- **Get recently played tracks** (read-only): Get tracks from the current user's recently played tracks.
+- **Get recommendations** (read-only): Recommendations are based on seed entity data, matched with similar artists and tracks.
+- **Get several albums** (read-only): Get spotify catalog information for multiple albums identified by their spotify ids.
+- **Get several artists** (read-only): Get spotify catalog information for several artists based on their spotify ids.
+- **Get several audiobooks** (read-only): Get spotify catalog information for several audiobooks identified by their spotify ids.
+- **Get several browse categories** (read-only): Get a list of categories used to tag items in spotify (on, for example, the spotify player’s “browse” tab).
+- **Get several chapters** (read-only): Get spotify catalog information for several audiobook chapters identified by their spotify ids.
+- **Get several episodes** (read-only): Get spotify catalog information for several episodes based on their spotify ids.
+- **Get several shows** (read-only): Get spotify catalog information for several shows based on their spotify ids.
+- **Get several tracks** (read-only): Get spotify catalog information for multiple tracks based on their spotify ids.
+- **Get several tracks audio features** (read-only): Get audio features for multiple tracks based on their spotify ids.
+- **Get single browse category** (read-only): Get a single category used to tag items in spotify (on, for example, the spotify player’s “browse” tab).
+- **Get the user s queue** (read-only): Get the list of objects that make up the user's queue.
+- **Get track** (read-only): Get spotify catalog information for a single track identified by its unique spotify id.
+- **Get track s audio analysis** (read-only): Get a low-level audio analysis for a track in the spotify catalog.
+- **Get track s audio features** (read-only): Get audio feature information for a single track identified by its unique spotify id.
+- **Get user s playlists** (read-only): Get a list of the playlists owned or followed by a spotify user.
+- **Get user s profile** (read-only): Get public profile information about a spotify user.
+- **Get user s saved albums** (read-only): Get a list of the albums saved in the current spotify user's 'your music' library.
+- **Get user s saved audiobooks** (read-only): Get a list of the audiobooks saved in the current spotify user's 'your music' library.
+- **Get user s saved episodes** (read-only): This api endpoint, currently in beta, allows retrieving episodes saved in a spotify user's library.
+- **Get user s saved shows** (read-only): Get a list of shows saved in the current spotify user's library.
+- **Get user s saved tracks** (read-only): Get a list of the songs saved in the current spotify user's 'your music' library.
+- **Get user s top artists** (read-only): Get the current user's top artists based on calculated affinity.
+- **Get user s top tracks** (read-only): Get the current user's top tracks based on calculated affinity.
+- **Pause playback**: Pause playback on the user's account.
+- **Remove playlist items**: Remove one or more items from a user's playlist.
+- **Remove user s saved audiobooks**: Remove one or more audiobooks from the spotify user's library.
+- **Remove user s saved episodes**: This api endpoint, currently in beta, allows for the removal of episodes from a user's library and may change without notice.
+- **Remove user s saved shows**: Delete one or more shows from current spotify user's library.
+- **Remove user s saved tracks**: Remove one or more tracks from the current user's 'your music' library.
+- **Remove users saved albums**: Remove one or more albums from the current user's 'your music' library.
+- **Save audiobooks for current user**: Save one or more audiobooks to the current spotify user's library.
+- **Save episodes for current user**: This api endpoint, currently in beta, allows saving episodes to a user's library.
+- **Save shows for current user**: Save one or more shows to current spotify user's library.
+- **Search for item** (read-only): Get spotify catalog information about albums, artists, playlists, tracks, shows, episodes or audiobooks that match a keyword string.
+- **Seek to position**: Seeks to the given position in the user’s currently playing track.
+- **Set playback volume**: Set the volume for the user’s current playback device.
+- **Set repeat mode**: Set the repeat mode for the user's playback.
+- **Skip to next**: Skips to next track in the user’s queue.
+- **Skip to previous**: Skips to previous track in the user’s queue.
+- **Start resume playback**: Start a new context or resume current playback on the user's active device.
+- **Toggle playback shuffle**: Toggle shuffle on or off for user’s playback.
+- **Transfer playback**: Transfer playback to a new device and optionally begin playback.
+- **Unfollow artists or users**: Remove the current user as a follower of one or more artists or other spotify users.
+- **Unfollow playlist**: Remove the current user as a follower of a playlist.
+- **Update playlist items**: To modify a playlist, use rearrange (with range start, insert before, range length, snapshot id) or replace items (uris in body/query).

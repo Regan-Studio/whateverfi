@@ -1,0 +1,151 @@
+# Podio
+
+Podio is a collaborative work platform for managing app-based workflows, items, tasks, files, comments, and related business data.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/podio/.
+
+## Actions
+
+- **Activate App**: Activate a deactivated Podio app, restoring it to the app navigator and allowing new item creation.
+- **Add New App**: Create a Podio app on a space with its configuration and fields.
+- **Add New App Field**: Add a field to a Podio app.
+- **Add New Organization**: Create a new Podio organization.
+- **Archive Space**: Archive a Podio space, hiding it from navigation without deleting its contents.
+- **Assign Task**: Assign a Podio task to a user, or remove its responsible user.
+- **Bulk Delete Items**: Permanently delete explicitly selected or filter-matched items from an app and remove them from all views.
+- **Calculate Items** (read-only): Calculate an aggregation over items in a Podio app, optionally grouped and filtered.
+- **Clone Item**: Create a new item in the same app with values identical to the selected item.
+- **Complete Task**: Mark a Podio task complete.
+- **Create Comment**: Add a comment to a Podio object, optionally attaching uploaded files or an embedded link.
+- **Create Item**: Create an item in a Podio app using field IDs or external IDs, with optional files, tags, reminder, recurrence, and reference.
+- **Create Organization App Store Profile**: Administratively create an app-store profile for a Podio organization when one does not already exist.
+- **Create Referenced Task**: Create a Podio task attached through the reference-specific task route.
+- **Create Space**: Create a new Podio space in an organization.
+- **Create Task**: Create a personal or referenced Podio task with assignment, due date, labels, files, reminder, and recurrence.
+- **Create Task Label**: Create a personal Podio task label with a name and hex color.
+- **Deactivate App**: Deactivate a Podio app, removing it from the app navigator and preventing new item creation.
+- **Delete App**: Permanently delete a Podio app and all of its items, widgets, filters, and shares.
+- **Delete App Field**: Remove a field from new and updated app items.
+- **Delete Comment**: Delete one Podio comment by ID.
+- **Delete Item**: Delete one Podio item by ID.
+- **Delete Item Reference**: Remove the reference currently attached to a Podio item, if any.
+- **Delete Organization App Store Profile**: Permanently delete an organization's app-store profile.
+- **Delete Organization Member Role**: Remove a user's organization-level role.
+- **Delete Space**: Permanently delete a Podio space, ending all of its memberships and cancelling all outstanding space invitations.
+- **Delete Task**: Delete one Podio task by ID.
+- **Delete Task Label**: Delete one personal Podio task label.
+- **Delete User Property**: Delete one auth-client-specific property from the active Podio user.
+- **End Organization Membership**: Permanently end a user's membership in every space in an organization.
+- **Export Items**: Create a Podio batch that exports app items in XLS or XLSX format.
+- **Filter Items By View**: Retrieve items from a Podio app using a saved view and optional paging or sorting overrides.
+- **Find Referenceable Items** (read-only): Search the apps allowed by a Podio reference field for items matching text.
+- **Get Admin Organizations by Email** (read-only): Look up organizations administered by an email address and free organizations containing it.
+- **Get All Apps** (read-only): Search apps available to the connected user.
+- **Get All Spaces on Organization** (read-only): As an organization administrator, list every workspace in the organization.
+- **Get App** (read-only): Return a Podio app's metadata and field definitions so an agent can construct valid item values.
+- **Get App by Organization, Space, and App Labels** (read-only): Get a Podio app using its organization, space, and app URL labels.
+- **Get App Dependencies** (read-only): Get the apps an app depends on and the dependency graph.
+- **Get App Features** (read-only): Get features available from selected Podio apps.
+- **Get App Field** (read-only): Get one Podio app field by numeric ID or external ID.
+- **Get App Inverse Dependencies** (read-only): Get apps and fields that depend on a Podio app.
+- **Get App on Space by URL Label** (read-only): Get a Podio app in a space by its URL label.
+- **Get Available Seats** (read-only): Return the available employee and external seats in a Podio space.
+- **Get Available Spaces** (read-only): List open Podio spaces in an organization that the connected user can join.
+- **Get Comment** (read-only): Return one Podio comment by ID, including files, embeds, likes, and questions.
+- **Get Comment Revisions** (read-only): Return all revisions of a Podio comment, including the current revision, ordered oldest first.
+- **Get Current User** (read-only): Return the connected Podio user's identity, profile, locale, timezone, and account status.
+- **Get Field Ranges** (read-only): Return the minimum and maximum values for a number, calculation, or money field.
+- **Get Icon Suggestions** (read-only): Search Podio app icon suggestions.
+- **Get Item**: Return one Podio item with its app, field values, revisions, comments, files, tags, references, and rights.
+- **Get Item By App Item ID** (read-only): Return a full Podio item using its app ID and app-local item ID.
+- **Get Item By External ID** (read-only): Return a Podio app item using its external-system identifier.
+- **Get Item Clone** (read-only): Return unsaved clone-ready values for a Podio item.
+- **Get Item Count** (read-only): Count items in a Podio app matching a saved view or documented scalar filters.
+- **Get Item Field Values** (read-only): Return values for one numeric field ID on a Podio item.
+- **Get Item Field Values V2** (read-only): Return values for a Podio item field selected by numeric ID or external ID.
+- **Get Item Preview For Field Reference** (read-only): Return an item preview formatted for use by a specific Podio reference field.
+- **Get Item References** (read-only): Return up to the requested limit of items that reference a Podio item, grouped by app and field.
+- **Get Item Revision** (read-only): Return metadata for a specific revision of a Podio item.
+- **Get Item Revision Difference** (read-only): Return field-value differences between two revisions of a Podio item.
+- **Get Item Revisions** (read-only): Return up to the latest 30 revisions of a Podio item.
+- **Get Item Values** (read-only): Return all populated fields and values for a Podio item.
+- **Get Item Values V2** (read-only): Return the field values on a Podio item using the v2 value representation.
+- **Get Items As XLSX** (read-only): Download up to 1000 filtered Podio app items as an XLSX file.
+- **Get Meeting URL**: Get the join URL for a Podio meeting item.
+- **Get Notification Setting** (read-only): Get whether one Podio notification type is enabled for an email or mobile client.
+- **Get Notification Settings** (read-only): Get all Podio notification-type settings for an email or mobile client.
+- **Get Organization** (read-only): Get a Podio organization by ID, including its account limits, domains, role, tier, and creator metadata.
+- **Get Organization Admins** (read-only): List the users who administer a Podio organization.
+- **Get Organization App Store Profile** (read-only): Get an organization's app-store profile, including its revision and Podio contact-area fields.
+- **Get Organization by URL** (read-only): Resolve a Podio organization from its full URL or the URL of a resource within it.
+- **Get Organization Login Report** (read-only): Retrieve an administrative report of total and active organization users by week.
+- **Get Organization Member** (read-only): Get a user's member data, contact profile, role, tier, and space counts in a Podio organization.
+- **Get Organization Members** (read-only): As an organization administrator, list invited and active members.
+- **Get Organization Task Summary** (read-only): Get task summary groups for one Podio organization.
+- **Get Personal Task Summary** (read-only): Get summary groups for personal tasks and personal-space tasks.
+- **Get Profile Field** (read-only): Get one contact-area profile field for the active Podio user.
+- **Get Recalculation Status For Field** (read-only): Return recalculation status for a calculation field on a Podio item.
+- **Get Reference Task Count** (read-only): Get the total number of open tasks on a referenced Podio object.
+- **Get Reference Task Summary** (read-only): Get task summary groups for one referenced Podio object.
+- **Get References To Item By Field** (read-only): Return items that reference a Podio item through one specific app field.
+- **Get Shared Organizations** (read-only): List organizations and spaces that the connected user shares with another Podio user, sorted by name.
+- **Get Space** (read-only): Return a Podio space by ID, including its settings, rights, creator, and membership state.
+- **Get Space App Dependencies** (read-only): Get apps on a Podio space and their dependency graph.
+- **Get Space by Organization and URL Label** (read-only): Return a Podio space using its organization ID and URL label.
+- **Get Space by URL** (read-only): Resolve a Podio space and its organization from a full URL or organization and space slugs.
+- **Get Space Memberships for Organization Member** (read-only): As an organization administrator, list a member's workspace memberships.
+- **Get Space Task Summary** (read-only): Get task summary groups for one Podio space.
+- **Get Task** (read-only): Return one Podio task with assignment, due dates, reference, labels, files, recurrence, and comments.
+- **Get Task Summary** (read-only): Get the connected user's overdue, today, and other task groups.
+- **Get Task Total By Time** (read-only): Get the number of tasks in a documented Podio time bucket.
+- **Get Task Totals** (read-only): Get active-task totals for owned and reassigned Podio tasks.
+- **Get Top Apps** (read-only): Get the connected user's top Podio apps.
+- **Get Top Apps for Organization** (read-only): Get top Podio apps in an organization.
+- **Get Top Spaces** (read-only): Return the top Podio spaces for the connected user.
+- **Get Top Values For Field** (read-only): Return the top possible item values for a Podio field of type app.
+- **Get User** (read-only): Get the active Podio user's account details.
+- **Get User Property** (read-only): Get an auth-client-specific JSON object property for the active Podio user.
+- **Install App**: Install a Podio app on a space with selected features.
+- **List Apps** (read-only): List active Podio apps in a space, optionally including inactive apps.
+- **List Comments** (read-only): Page through comments on a Podio object such as an item or task.
+- **List Items**: Filter and page through items in one Podio app, returning item IDs, titles, fields, and match totals.
+- **List Organization Workspaces** (read-only): List Podio spaces in an organization that are accessible to the connected user.
+- **List Organizations** (read-only): List organizations available to the connected user, including member spaces and access rights.
+- **List Spaces** (read-only): List the spaces the connected user can access in a Podio organization.
+- **List Task Labels** (read-only): List the connected user's personal Podio task labels.
+- **List Tasks** (read-only): Filter and page through Podio tasks visible to the connected user, including open or completed tasks and reference filters.
+- **Rank Task**: Place a Podio task before or after other tasks in the task ranking.
+- **Rearrange Item**: Apply documented from/to field-value changes and optional priority placement to a Podio item.
+- **Remove Task Reference**: Remove the object reference from a Podio task.
+- **Reopen Task**: Mark a completed Podio task incomplete using Podio's task route.
+- **Replace Task Labels**: Replace all labels on a Podio task using label IDs or label names.
+- **Restore Space**: Restore an archived Podio space, making it visible in navigation again.
+- **Revert Item Revision**: Destructively undo the change made in one revision.
+- **Revert To Revision**: Destructively restore an item to all values in the selected revision, undoing every change made after that revision.
+- **Set Participation**: Set the connected user's participation status on a Podio item.
+- **Set User Properties**: Set one or more auth-client-specific JSON object properties for the active Podio user.
+- **Set User Property**: Set one auth-client-specific JSON object property for the active Podio user.
+- **Update an App Field**: Update the configuration of one Podio app field.
+- **Update App and Return App**: Update a Podio app's configuration and fields and return the app object.
+- **Update App Configuration and Fields**: Update a Podio app's configuration, fields, and field deletions.
+- **Update App Description**: Update a Podio app's description.
+- **Update App Order**: Set the order of apps in a Podio space.
+- **Update App Usage Instructions**: Update a Podio app's usage instructions.
+- **Update Comment**: Replace a Podio comment's text, external ID, files, or embedded link.
+- **Update Item**: Update one Podio item's fields or metadata, optionally using its revision for optimistic concurrency.
+- **Update Item Field Values**: Replace the values of one Podio item field selected by numeric ID or external ID.
+- **Update Item Values**: Replace values for multiple fields on a Podio item using field IDs or external IDs.
+- **Update Notification Setting**: Enable or disable one Podio notification type for an email or mobile client.
+- **Update Notification Settings**: Update multiple Podio notification-type settings for an email or mobile client.
+- **Update Organization**: Administratively update a Podio organization's name, URL subdomain, or logo.
+- **Update Organization App Store Profile**: Administratively replace fields on an existing Podio organization app-store profile.
+- **Update Profile**: Update selected contact-area fields on the active Podio user's profile.
+- **Update Profile Field**: Update one contact-area field on the active Podio user's profile.
+- **Update Space**: Update a Podio space's name, privacy, automatic joining, URL label, or announcement settings.
+- **Update Task**: Update a Podio task's full attributes, including completing or reopening it.
+- **Update Task Description**: Replace only the description of a Podio task.
+- **Update Task Due Date**: Update only the UTC or local due fields of a Podio task.
+- **Update Task Label**: Replace the name and color of a personal Podio task label.
+- **Update Task Privacy**: Update only whether a Podio task is private.
+- **Update Task Reference**: Replace the object reference on a Podio task.
+- **Update Task Text**: Replace only the text of a Podio task.

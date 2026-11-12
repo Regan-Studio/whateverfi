@@ -1,0 +1,117 @@
+# LeadMagic
+
+LeadMagic provides people, company, jobs, advertising, and enrichment data for sales and recruiting workflows.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/leadmagic/.
+
+## Actions
+
+- **Add Emails To Suppression List**: Add a non-empty plaintext email list to one owned suppression list.
+- **Create Credit Budget**: Create a persistent credit budget that caps spend for one LeadMagic scope.
+- **Create Email Suppression List**: Create an owned suppression list from a unique list_id and non-empty plaintext email list.
+- **Create Job Search Export V3** (read-only): Synchronously export up to 5,000 matching jobs.
+- **Delete Credit Budget**: Permanently delete one credit budget.
+- **Delete Email Suppression List**: Permanently delete an entire suppression list and its stored hashes.
+- **Detect Job Change** (read-only): Check whether a person has changed jobs relative to an expected company.
+- **Download Bulk Job Results CSV** (read-only): Download all result rows for an owned bulk job as a CSV file.
+- **Enrich Company V1** (read-only): Call POST /v1/companies/company-search to enrich one company from its domain, name, or business profile identifier.
+- **Enrich Company V3 Docs Alias** (read-only): Call the distinct documented POST /v3/companies/enrich alias.
+- **Find Company Competitors V1** (read-only): Find competitors from a company domain, profile, or name.
+- **Find Company Employees V1** (read-only): Find up to 10 employees at one company, returning names, titles, locations, and professional profile URLs.
+- **Find Jobs V1** (read-only): Call POST /v1/jobs/jobs-finder to find jobs with the LeadMagic V1 filters.
+- **Find Lookalike Companies V3** (read-only): Find similar companies from a seed domain, name, or description.
+- **Find Mobile Phone** (read-only): Find one person's mobile phone number from a professional profile URL or known email.
+- **Find Person By Role V1** (read-only): Find one person by job title at a specified company.
+- **Find Personal Email** (read-only): Find one person's personal email addresses from a professional profile URL or identifier.
+- **Find Work Email** (read-only): Find one person's work email from their name and company domain or name.
+- **Find Work Email From B2B Profile** (read-only): Find one person's work email from a professional profile URL or slug.
+- **Get Account Overview** (read-only): Return the connected workspace's available credits, API-key permission summary, current rate limits, and today's usage.
+- **Get Analytics All Time Summary** (read-only): Get documented lifetime account request, credit, product, success, and latency statistics, optionally restricted to a date range.
+- **Get Analytics Credit History** (read-only): Get LeadMagic credit consumption history with a daily breakdown.
+- **Get Analytics Daily Metrics** (read-only): Get documented daily request, credit, latency, and error metrics for the last 1 to 90 days.
+- **Get Analytics Day Breakdown** (read-only): Get the documented per-product request and credit breakdown for one date.
+- **Get Analytics Products** (read-only): Get per-product LeadMagic usage with request, credit, and success metrics.
+- **Get Analytics Usage** (read-only): Get daily LeadMagic usage with request, credit, and chargeable-rate totals.
+- **Get B2B Ad Details V1** (read-only): Get full details for a specific B2B ad from its library URL, detail path, or numeric ID.
+- **Get B2B Profile From Email** (read-only): Find one person's professional profile from a supplied work or personal email.
+- **Get B2B Profile From Profile URL** (read-only): Retrieve one person's professional profile, including employment, education, certifications, and honors, from a profile URL or slug.
+- **Get Batch** (read-only): Read status, progress, cost, and metadata for a mixed-product batch by its exact batch identifier.
+- **Get Batch Campaign Metrics** (read-only): Read aggregate usage and success metrics for a batch campaign.
+- **Get Batch Client Metrics** (read-only): Read aggregate batch usage and success metrics for one client UUID.
+- **Get Bulk Capabilities** (read-only): Return the current bulk submission limits and supported operational features in a stable agent-facing shape.
+- **Get Bulk Job** (read-only): Read status, progress, timestamps, and finalized credit usage for one bulk job.
+- **Get Bulk Job Progress** (read-only): Return LeadMagic's compact progress snapshot for frequent polling of one bulk job owned by the connected workspace.
+- **Get Company Funding V1** (read-only): Call POST /v1/companies/company-funding to get complete funding history and related company intelligence by domain or name.
+- **Get Company Funding V3 Company Docs Alias** (read-only): Call the distinct documented POST /v3/companies/company-funding alias.
+- **Get Company Funding V3 Docs Alias** (read-only): Call the distinct documented POST /v3/companies/funding alias.
+- **Get Company Technographics V1** (read-only): Get a company's technology stack from its domain.
+- **Get Credit Balance V1** (read-only): Check the connected LeadMagic workspace's current credit balance for free.
+- **Get Credit Budget Status** (read-only): Read current limits, remaining credits, and exceeded state for every LeadMagic credit budget.
+- **Get Credit Service Health V1 Docs Only** (read-only): Validate the connected LeadMagic API key and check credit-service authentication status.
+- **Get Email Suppression List** (read-only): Return one offset-controlled page of details and irreversible SHA-256 email hashes for one owned suppression list.
+- **Get Job Board Stats V3** (read-only): Return the free job search dataset statistics through LeadMagic's exact job-board integration alias route.
+- **Get Job Search Catalogs** (read-only): Return the free filter catalogs used by job search, including countries, regions, job types, industries, company types, and seniority…
+- **Get Job Search Dataset Stats V3** (read-only): Return free public coverage, freshness, and capability statistics for the LeadMagic Jobs Search index.
+- **Get Search Stats** (read-only): Return free cached coverage, capabilities, and top dimensions for selected LeadMagic search products.
+- **List Batch Client Webhooks** (read-only): List delivery webhooks configured for one batch client.
+- **List Batch Clients** (read-only): List existing organization-scoped client records used to segment batch work.
+- **List Batches** (read-only): List one bounded page of mixed-product batches for the connected organization.
+- **List Bulk Job Errors** (read-only): Return one offset-controlled page of failed rows and error details for a bulk job owned by the connected workspace.
+- **List Bulk Job Events** (read-only): Return the append-only event log, newest first, for one bulk job owned by the connected workspace.
+- **List Bulk Job Results** (read-only): Return one bounded offset page of row-level JSON results for an owned bulk job.
+- **List Bulk Jobs** (read-only): Return one bounded offset page of bulk jobs owned by the connected account, newest first.
+- **List Credit Budgets** (read-only): List all persistent credit budgets configured for the connected LeadMagic workspace, including identifiers needed for owned-budget…
+- **List Email Suppression Lists** (read-only): Read all suppression-list summaries for the connected workspace.
+- **List External Batch Providers** (read-only): List organization-level external enrichment provider configurations.
+- **List Job Company Types V1** (read-only): List the company type IDs accepted by the legacy V1 Jobs Finder API.
+- **List Job Countries V1** (read-only): List the free country codes accepted by the legacy V1 Jobs Finder API.
+- **List Job Industries V1** (read-only): List the industry IDs accepted by the legacy V1 Jobs Finder API.
+- **List Job Occupation Taxonomy V3** (read-only): Autocomplete LeadMagic's broad-to-specific occupation taxonomy and return canonical IDs, labels, levels, and paths.
+- **List Job Regions V1** (read-only): List the free region IDs accepted by the legacy V1 Jobs Finder API.
+- **List Job Search Company Suggestions V3** (read-only): Autocomplete companies or resolve an exact domain into canonical company IDs and card data for Job Search filters.
+- **List Job Search Location Suggestions V3** (read-only): Autocomplete countries, regions, states, and cities into canonical IDs for exact Job Search geo filters.
+- **List Job Search Role Suggestions V3** (read-only): Autocomplete role names into canonical occupation taxonomy IDs for Job Search filters.
+- **List Job Search Tag Suggestions V3** (read-only): Autocomplete normalized job tags with tag-type and occupation taxonomy metadata for Job Search filters.
+- **List Job Search Title Suggestions V3** (read-only): Autocomplete searchable job title phrases with occupation taxonomy metadata for Job Search filters.
+- **List Job Types V1** (read-only): List the job type IDs accepted by the legacy V1 Jobs Finder API.
+- **Lookup Company Domain V3 Docs Alias** (read-only): Call the distinct documented POST /v3/companies/domain-lookup alias.
+- **Lookup Company V3 Docs Alias** (read-only): Call the distinct documented POST /v3/companies/lookup alias.
+- **Pause Bulk Job**: Pause a queued or running LeadMagic bulk job.
+- **Preview Mixed Batch Cost** (read-only): Estimate the maximum credit cost and budget impact of an exact mixed-product batch payload.
+- **Refresh Credit Cache V1 Docs Only**: Force LeadMagic to refresh the connected workspace's credit cache from its database.
+- **Remove Emails From Suppression List**: Irreversibly remove specific email suppressions from one owned list, allowing those addresses to be processed again.
+- **Resolve Job Search Filters V3** (read-only): Resolve friendly job-search companies, tags, occupation taxonomy, locations, and titles into canonical values.
+- **Restart Bulk Job**: Destructively restart a LeadMagic bulk job in full, for failed rows only, or from a zero-based row or shard.
+- **Resume Bulk Job**: Resume a paused LeadMagic bulk job.
+- **Review Bulk Job**: Resume or irreversibly cancel an owned bulk job.
+- **Search B2B Ads V1** (read-only): Search for B2B ads by company domain or name.
+- **Search Companies** (read-only): Call the canonical POST /v3/companies/search route to search or look up companies by domain, name, website, professional profile URL, or…
+- **Search Companies V1 Legacy Docs Alias** (read-only): Call the distinct legacy compatibility route POST /v1/companies/search.
+- **Search Companies V3 Company Hyphenated Docs Alias** (read-only): Call the distinct documented POST /v3/companies/company-search alias.
+- **Search Google Ads V1** (read-only): Search for Google ads run by a company.
+- **Search Jobs** (read-only): Call the canonical POST /v3/jobs/search route to search by title, company, location, taxonomy, tags, salary, seniority, date, and work…
+- **Search Jobs V1 Legacy Docs Alias** (read-only): Call the distinct legacy compatibility route POST /v1/jobs/search.
+- **Search Jobs V2 Legacy Docs Alias** (read-only): Call the distinct legacy compatibility route POST /v2/jobs/search.
+- **Search Jobs V3 Hyphenated OpenAPI Alias** (read-only): Search the distinct documented POST /v3/jobs-search alias and return one cursor-controlled page.
+- **Search Jobs V3 Singular Docs Alias** (read-only): Call the distinct documented compatibility route POST /v3/job-search.
+- **Search Meta Ads V1** (read-only): Search for Meta ads by company domain or name.
+- **Search People** (read-only): Call the canonical POST /v3/people/search route to search by company, title, role, free text, and contact availability, returning one…
+- **Search People V1 Legacy Docs Alias** (read-only): Call the distinct legacy compatibility route POST /v1/people/search.
+- **Search People V2 Legacy Docs Alias** (read-only): Call the distinct legacy compatibility route POST /v2/people/search.
+- **Search People V3 By Title Docs Alias** (read-only): Call the distinct compatibility route POST /v3/people/by-title.
+- **Search People V3 Company Docs Alias** (read-only): Call the distinct documented POST /v3/people/company-search alias.
+- **Search People V3 Contacts By Title Docs Alias** (read-only): Call the distinct compatibility route POST /v3/people/contacts-by-title.
+- **Search People V3 Employees Docs Alias** (read-only): Call the distinct compatibility route POST /v3/people/employees.
+- **Search People V3 Full Docs Alias** (read-only): Call the distinct documented POST /v3/people/full-search alias.
+- **Search People V3 Icp Docs Alias** (read-only): Call the distinct documented compatibility route POST /v3/people/icp-search.
+- **Search People V3 Lookalike Docs Alias** (read-only): Call the distinct compatibility route POST /v3/people/lookalike.
+- **Search People V3 Mixed Docs Alias** (read-only): Call the distinct documented POST /v3/people/mixed-search alias.
+- **Search People V3 Singular Docs Alias** (read-only): Call the distinct documented POST /v3/person/search alias.
+- **Submit Bulk Job**: Create one asynchronous bulk enrichment job from exactly one input mode.
+- **Submit Bulk Local Leads Job**: Create a long-running local-leads bulk job.
+- **Submit Mixed Product Batch**: Create one asynchronous mixed-product enrichment batch.
+- **Update Batch Metadata**: Update metadata or client association for an owned batch during its mutable window.
+- **Update Bulk Job Priority**: Change the priority of a queued or running LeadMagic bulk job owned by the connected workspace.
+- **Update Credit Budget**: Update one or more controls on a credit budget created and owned by the caller.
+- **Validate Bulk Submission** (read-only): Validate exactly one bulk input mode and its options without persisting or processing a job.
+- **Validate Email** (read-only): Check one email address for deliverability and return mail-server and company context.

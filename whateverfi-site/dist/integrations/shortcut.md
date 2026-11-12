@@ -1,0 +1,130 @@
+# Shortcut
+
+Shortcut aligns product development work with company objectives so teams can execute with a shared purpose.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/shortcut/.
+
+## Actions
+
+- **Get project** (read-only): Get project returns information about the selected project.
+- **List categories** (read-only): List categories returns a list of all categories and their attributes.
+- **List epics** (read-only): List epics returns a list of all epics and their attributes.
+- **List milestones** (read-only): (deprecated.
+- **List objectives** (read-only): List objectives returns a list of all objectives and their attributes.
+- **Search objectives** (read-only): Search objectives lets you search objectives based on desired parameters.
+- **Create category**: Create category allows you to create a new category in shortcut.
+- **Create entity template**: Create a new entity template for the workspace.
+- **Create epic**: Create epic allows you to create a new epic in shortcut.
+- **Create epic comment**: This endpoint allows you to create a threaded comment on an epic.
+- **Create epic comment comment**: This endpoint allows you to create a nested comment reply to an existing epic comment.
+- **Create group**: Creates a new group in the shortcut system with customizable properties.
+- **Create iteration**: The createiteration endpoint allows you to create a new iteration in shortcut, which represents a time-boxed period for completing a set…
+- **Create label**: Create label allows you to create a new label in shortcut.
+- **Create linked file**: Create linked file allows you to create a new linked file in shortcut.
+- **Create milestone**: (deprecated.
+- **Create multiple stories**: Create multiple stories allows you to create multiple stories in a single request using the same syntax as [create story](https.
+- **Create objective**: Create objective allows you to create a new objective in shortcut.
+- **Create project**: Create project is used to create a new shortcut project.
+- **Create story**: Create story is used to add a new story to your shortcut workspace.
+- **Create story comment**: Create comment allows you to create a comment on any story.
+- **Create story from template**: Create story from template is used to add a new story derived from a template to your shortcut workspace.
+- **Create story link**: Story links (called story relationships in the ui) allow you create semantic relationships between two stories.
+- **Create story reaction**: Create a reaction to a story comment.
+- **Create task**: Create task is used to create a new task in a story.
+- **Delete category**: Delete category can be used to delete any category.
+- **Delete custom field**: Deletes a specific custom field from the shortcut system using its unique public identifier.
+- **Delete entity template**: Deletes a specific entity template from the shortcut api.
+- **Delete epic**: Delete epic can be used to delete the epic.
+- **Delete epic comment**: This endpoint allows you to delete a comment from an epic.
+- **Delete file**: Delete file deletes a previously uploaded file.
+- **Delete iteration**: Deletes a specific iteration from the shortcut project management system.
+- **Delete label**: Delete label can be used to delete any label.
+- **Delete linked file**: Delete linked file can be used to delete any previously attached linked-file.
+- **Delete milestone**: (deprecated.
+- **Delete multiple stories**: Delete multiple stories allows you to delete multiple archived stories at once.
+- **Delete objective**: Delete objective can be used to delete any objective.
+- **Delete project**: Delete project can be used to delete a project.
+- **Delete story**: Delete story can be used to delete any story.
+- **Delete story comment**: Delete a comment from any story.
+- **Delete story link**: Removes the relationship between the stories for the given story link.
+- **Delete story reaction**: Delete a reaction from any story comment.
+- **Delete task**: Delete task can be used to delete any previously created task on a story.
+- **Disable iterations**: Disables iterations for the current workspace
+- **Disable story templates**: Disables the story template feature for the workspace.
+- **Enable iterations**: Enables iterations for the current workspace
+- **Enable story templates**: Enables the story template feature for the workspace.
+- **Get category** (read-only): Get category returns information about the selected category.
+- **Get current member info** (read-only): Returns information about the authenticated member.
+- **Get custom field** (read-only): Retrieves detailed information about a specific custom field in shortcut using its unique public identifier.
+- **Get entity template** (read-only): Get entity template returns information about a given entity template.
+- **Get epic** (read-only): Get epic returns information about the selected epic.
+- **Get epic comment** (read-only): This endpoint returns information about the selected epic comment.
+- **Get epic workflow** (read-only): Returns the epic workflow for the workspace.
+- **Get external link stories** (read-only): Get stories which have a given external link associated with them.
+- **Get file** (read-only): Get file returns information about the selected uploadedfile.
+- **Get group** (read-only): Retrieves detailed information about a specific group in the shortcut workspace using its unique public identifier.
+- **Get iteration** (read-only): Retrieves detailed information about a specific iteration in the shortcut project management system.
+- **Get key result** (read-only): Get key result returns information about a chosen key result.
+- **Get label** (read-only): Get label returns information about the selected label.
+- **Get linked file** (read-only): Get file returns information about the selected linked file.
+- **Get member** (read-only): Returns information about a member.
+- **Get milestone** (read-only): (deprecated.
+- **Get objective** (read-only): Get objective returns information about a chosen objective.
+- **Get repository** (read-only): Get repository returns information about the selected repository.
+- **Get story** (read-only): Get story returns information about a chosen story.
+- **Get story comment** (read-only): Get comment is used to get comment information.
+- **Get story link** (read-only): Returns the stories and their relationship for the given story link.
+- **Get task** (read-only): Returns information about a chosen task.
+- **Get workflow** (read-only): Get workflow returns information about a chosen workflow.
+- **List category milestones** (read-only): List category milestones returns a list of all milestones with the category.
+- **List category objectives** (read-only): Returns a list of all objectives with the category.
+- **List custom fields** (read-only): Retrieves a list of all custom fields defined in the shortcut api.
+- **List entity templates** (read-only): List all the entity templates for the workspace.
+- **List epic comments** (read-only): Get a list of all comments on an epic.
+- **List epic stories** (read-only): Get a list of all stories in an epic.
+- **List files** (read-only): List files returns a list of all uploadedfiles in the workspace.
+- **List group stories** (read-only): List the stories assigned to the group.
+- **List groups** (read-only): A group in our api maps to a "team" within the shortcut product.
+- **List iteration stories** (read-only): Get a list of all stories in an iteration.
+- **List iterations** (read-only): Retrieves a list of all iterations in the shortcut project management system.
+- **List label epics** (read-only): List all of the epics with the label.
+- **List label stories** (read-only): List all of the stories with the label.
+- **List labels** (read-only): List labels returns a list of all labels and their attributes.
+- **List linked files** (read-only): List linked files returns a list of all linked-files and their attributes.
+- **List members** (read-only): Returns information about members of the workspace.
+- **List milestone epics** (read-only): (deprecated.
+- **List objective epics** (read-only): List all of the epics within the objective.
+- **List projects** (read-only): List projects returns a list of all projects and their attributes.
+- **List repositories** (read-only): List repositories returns a list of all repositories and their attributes.
+- **List stories** (read-only): List stories returns a list of all stories in a selected project and their attributes.
+- **List story comment** (read-only): Lists comments associated with a story
+- **List workflows** (read-only): Returns a list of all workflows in the workspace.
+- **Search** (read-only): Search lets you search epics and stories based on desired parameters.
+- **Search epics** (read-only): Search epics lets you search epics based on desired parameters.
+- **Search iterations** (read-only): Search iterations lets you search iterations based on desired parameters.
+- **Search milestones** (read-only): Search milestones lets you search milestones based on desired parameters.
+- **Search stories** (read-only): Search stories lets you search stories based on desired parameters.
+- **Search stories old** (read-only): Search stories lets you search stories based on desired parameters.
+- **Story history** (read-only): Retrieves the complete history of changes for a specific story in the shortcut project management system.
+- **Unlink comment thread from slack**: Unlinks a comment from its linked slack thread (comment replies and slack replies will no longer be synced)
+- **Unlink productboard from epic**: This endpoint allows you to unlink a productboard epic.
+- **Update category**: Update category allows you to replace a category name with another name.
+- **Update custom field**: Update custom field can be used to update the definition of a custom field.
+- **Update entity template**: Update an entity template's name or its contents.
+- **Update epic**: Update epic can be used to update numerous fields in the epic.
+- **Update epic comment**: This endpoint allows you to update a threaded comment on an epic.
+- **Update file**: Update file updates the properties of an uploadedfile (but not its content).
+- **Update group**: Updates an existing group in the shortcut workspace.
+- **Update iteration**: This endpoint allows you to update an existing iteration in shortcut.
+- **Update key result**: Update key result allows updating a key result's name or initial, observed, or target values.
+- **Update label**: Update label allows you to replace a label name with another name.
+- **Update linked file**: Updated linked file allows you to update properties of a previously attached linked-file.
+- **Update milestone**: (deprecated.
+- **Update multiple stories**: Update multiple stories allows you to make changes to numerous stories at once.
+- **Update objective**: Update objective can be used to update objective properties.
+- **Update project**: Update project can be used to change properties of a project.
+- **Update story**: Update story can be used to update story properties.
+- **Update story comment**: Update comment replaces the text of the existing comment.
+- **Update story link**: Updates the stories and/or the relationship for the given story link.
+- **Update task**: Update task can be used to update task properties.
+- **Upload files**: Upload files uploads one or many files and optionally associates them with a story.

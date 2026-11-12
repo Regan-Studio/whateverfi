@@ -1,0 +1,88 @@
+# Ironclad
+
+Ironclad is a contract lifecycle management platform for launching and tracking contract workflows, approvals and signatures, and for managing the repository of contract records, entities and obligations.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/ironclad/.
+
+## Actions
+
+- **Activate Record**: Activate a record and set its effective date, term, termination notice, expiration, and renewal behavior.
+- **Cancel Record Auto-Renewal**: Cancel auto-renewal for a record.
+- **Cancel Workflow**: Cancel a workflow, recording a comment that explains why.
+- **Cancel Workflow Signature Request**: Cancel the signature request (the signature packet sent to the signers) that is out for signature on a workflow, with a reason.
+- **Create Data Export**: Start a data export job for workflow activity or the audit log, optionally limited to a date range.
+- **Create Embedded Workflow Signature Recipient URL**: Create a signing link for one signer that is allowed to load inside a frame on the given parent site.
+- **Create Entity**: Create an entity (a counterparty or other party that contracts refer to) with a name and, optionally, a relationship type, status, parent…
+- **Create Obligation**: Create a standalone obligation on a contract record.
+- **Create Obligation Occurrence**: Record a new triggered occurrence of an existing source obligation.
+- **Create Record**: Create a contract record in the repository with a record type, a name and metadata properties.
+- **Create Smart Import Record**: Upload a contract file and use Smart Import to create a record and predict its properties.
+- **Create Workflow Comment**: Post a comment to a workflow's activity feed as the connected user, optionally as a reply to another comment and with @-mentions.
+- **Create Workflow Signature Recipient URL**: Create a link that a signer, or a view-only recipient, can open to reach the workflow's signature request.
+- **Delete Entity**: Delete an entity.
+- **Delete Obligation**: Delete an obligation.
+- **Delete Record**: Delete a contract record from the repository.
+- **Delete Record Attachment**: Remove one file from a contract record by its attachment key.
+- **Delete Scheduled Workflow Signature Request**: Remove the scheduled send from a workflow, so its signature request (the signature packet for the signers) is no longer sent at the…
+- **Delete Workflow Signer**: Remove a signer from a workflow's signature packet.
+- **Download Data Export** (read-only): Download the file of a finished data export job.
+- **Download Record Attachment** (read-only): Download one file attached to a record by its attachment key.
+- **Download Workflow Document** (read-only): Download one document of a workflow by its document key.
+- **Download Workflow Email Attachment** (read-only): Download one file attached to an email thread of a workflow.
+- **Edit Record Renewal**: Edit a record's renewal type, term, opt-out timing, remaining renewal count, initial term, and expiration settings.
+- **Export Data**: Create an Ironclad workflow-activity or audit-log data export job, poll its status with a bounded configurable wait, then download and…
+- **Export Records XLSX** (read-only): Download an XLSX spreadsheet of records for the record types and property columns you name.
+- **Extend Record**: Extend a record, optionally setting the renewal term length.
+- **Get Data Export Status** (read-only): Check a data export job started with IRONCLAD_CREATE_DATA_EXPORT.
+- **Get Entity** (read-only): Get one entity by id or Ironclad id.
+- **Get Obligation** (read-only): Get one obligation by id or Ironclad id.
+- **Get Record** (read-only): Get one contract record by id or Ironclad id.
+- **Get Records Schema** (read-only): Get the record schema of the company's repository.
+- **Get Smart Import Predictions** (read-only): Check whether Smart Import has finished predicting properties, for one record (record_id) or for every record of an import (import_id).
+- **Get Workflow** (read-only): Get one workflow by id or Ironclad id.
+- **Get Workflow Comment** (read-only): Get one comment of a workflow by its comment id, with author, time, mentions, the comment it replies to and reactions.
+- **Get Workflow Email Thread** (read-only): Get one email thread of a workflow by its email thread id.
+- **Get Workflow Launch Status** (read-only): Check a workflow launch started with IRONCLAD_LAUNCH_WORKFLOW using execution_mode async.
+- **Get Workflow Schema** (read-only): Get the launch-form schema of one workflow template.
+- **Get Workflow Sign Status** (read-only): Get the signing state of a workflow that is in the Sign step.
+- **Launch Workflow**: Launch a workflow from a template.
+- **Launch Workflow From Attribute Source**: Launch from an existing Coupa or Salesforce workflow sync mapping.
+- **List Entities** (read-only): List the entities (counterparties and other parties) of the company, one page per call, optionally narrowed by free-text search or a…
+- **List Entity Relationship Types** (read-only): List the entity relationship types the company has defined, such as customer or vendor, all in one call.
+- **List Obligation Instances** (read-only): List the instances (occurrences) of one source obligation, by id or Ironclad id, one page per call, ordered by due date with undated…
+- **List Obligations** (read-only): List the source obligations of the company, one page per call, optionally narrowed by free-text search or a formula and sorted.
+- **List Records** (read-only): List the contract records in the repository, one page per call, optionally filtered by record type, update time, free-text search or a…
+- **List Workflow Approval Requests** (read-only): List the approval requests that have taken place on a workflow, one page per call.
+- **List Workflow Approvals** (read-only): Get the current approvals of a workflow in one call (not paged).
+- **List Workflow Comments** (read-only): List the comments in a workflow's activity feed, one page per call, with author, time, mentions, replies and reactions.
+- **List Workflow Documents** (read-only): List a workflow's documents in two groups, those in the signature packet and those left out of it, each with its document key, filename…
+- **List Workflow Email Threads** (read-only): List the email threads of a workflow, one page per call.
+- **List Workflow Participants** (read-only): List the users who participate in a workflow (user id and email), one page per call, optionally narrowed to one email.
+- **List Workflow Role Eligible Assignees** (read-only): List the users who may be assigned to one role of a workflow, one page per call, plus the role's default assignee where Ironclad returns…
+- **List Workflow Schemas** (read-only): List the workflow templates that can be launched, with their launch-form schemas.
+- **List Workflow Signers** (read-only): List the signers of a workflow with name, email, role name, signature status and delegates.
+- **List Workflow Turn History** (read-only): List the turn history of a workflow, one page per call.
+- **List Workflows** (read-only): List the workflows the connected user can see, one page per call, optionally filtered by status, template, update time, free-text search…
+- **Pause Workflow**: Pause an active workflow that is in the Review step, recording a comment that explains why.
+- **Refresh Workflow From Attribute Source**: Only for an existing attribute source configuration, such as a Coupa or Salesforce workflow sync mapping.
+- **Remind Workflow Signer**: Email a signer a reminder that their signature is needed.
+- **Replace Record**: Replace a record with a new type, name and complete set of properties.
+- **Resume Workflow**: Resume a workflow that was paused with IRONCLAD_PAUSE_WORKFLOW, recording a comment.
+- **Revert Workflow To Review**: Move a workflow from the Sign step back to the Review step.
+- **Schedule Workflow Signature Request**: Schedule a workflow's signature request (the signature packet sent to the signers) to go out at a set time, optionally with a reminder…
+- **Send Workflow Signature Request**: Send a workflow's signature request (the signature packet sent to the signers) out for signature now.
+- **Supersede Record**: Mark a record as superseded on specified recorded and effective dates, optionally linking its replacement record.
+- **Terminate Record**: Terminate a record on specified recorded and effective dates, optionally linking the record that caused termination.
+- **Undo Record Lifecycle Action**: Reverse a specified lifecycle action previously applied to a record.
+- **Update Entity**: Change selected parts of an entity.
+- **Update Obligation**: Change an obligation's name, type or properties.
+- **Update Record**: Change selected parts of a record and leave the rest as it is.
+- **Update Scheduled Workflow Signature Request**: Change the send time or the reminder of the signature request already scheduled on a workflow with…
+- **Update Workflow Approval**: Approve a workflow on behalf of one approver role, or set that approval back to pending, as the user the connection acts as.
+- **Update Workflow Attributes**: Set or clear attribute (form field) values on a workflow that is in the Review step, and return the updated workflow.
+- **Update Workflow Role Assignment**: Assign a workflow role such as Archiver or Signature Coordinator to a different user.
+- **Update Workflow Signature Packet**: Replace the ordered list of documents in a workflow's signature packet, the documents a signature request sends to the signers.
+- **Update Workflow Signer**: Reassign a signer role of a workflow to another signer, or change an external signer's name or email.
+- **Upload Record Attachment**: Attach a file to a contract record under an attachment key.
+- **Upload Signed Workflow Document**: Upload a signed PDF to a workflow that is in the Sign step.
+- **Upload Workflow Document**: Upload a PDF or Word file into a document attribute of a workflow, with a required comment.

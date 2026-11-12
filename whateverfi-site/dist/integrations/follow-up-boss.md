@@ -1,0 +1,107 @@
+# Follow Up Boss
+
+Follow Up Boss is the leading CRM for high-growth real estate businesses. Get all your leads in one place & take control of your follow up so you can work smarter.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/follow-up-boss/.
+
+## Actions
+
+- **Create Call**: Add a call record to Follow Up Boss.
+- **Create Custom Field**: Create a custom field in Follow Up Boss.
+- **Create Deal**: Create a new deal in Follow Up Boss.
+- **Create Deal Custom Field**: Create a custom field for deals in Follow Up Boss.
+- **Create Email Marketing Events**: Notify Follow Up Boss about marketing emails sent, opens, clicks, bounces, unsubscribes and spam reports.
+- **Create Events**: Send in a lead or an event related to a lead in Follow Up Boss.
+- **Create Group**: Create a new Follow Up Boss group with specified members and distribution settings.
+- **Create Pipeline**: Create a new pipeline in Follow Up Boss.
+- **Create Reactions**: Add a reaction (emoji) to a Note, Call, or ThreadedReply.
+- **Create Stage**: Create a new stage in Follow Up Boss.
+- **Create Team**: Create a new team in Follow Up Boss.
+- **Delete Deal**: Delete a deal by its ID.
+- **Delete Group**: Delete a group by its ID.
+- **Delete Pipeline**: Delete a pipeline by its ID from Follow Up Boss.
+- **Delete Pond**: Delete a pond by its ID.
+- **Delete Stage**: Delete a Follow Up Boss stage by ID.
+- **Delete text message template**: Delete a text message template by ID.
+- **Get Deal** (read-only): Retrieve a deal by its ID from Follow Up Boss.
+- **Get Identity** (read-only): Retrieve identity and authentication information from Follow Up Boss.
+- **Get Me** (read-only): Retrieve information about the currently authenticated user.
+- **Get Pipeline** (read-only): Retrieve a pipeline by its ID from Follow Up Boss.
+- **Get User** (read-only): Retrieve a user by its ID from Follow Up Boss.
+- **List Appointments** (read-only): Search for appointments in Follow Up Boss.
+- **List Calls** (read-only): Search for calls in Follow Up Boss.
+- **List Custom Fields** (read-only): List all custom fields in Follow Up Boss.
+- **List Deal Custom Fields** (read-only): List all deal custom fields in Follow Up Boss.
+- **List Deals** (read-only): Search for and list deals from Follow Up Boss.
+- **List Events** (read-only): Search for and list events from Follow Up Boss.
+- **List Groups** (read-only): List all groups from Follow Up Boss.
+- **List Pipelines** (read-only): Search for pipelines in Follow Up Boss.
+- **List Stages** (read-only): Retrieve a list of stages from Follow Up Boss.
+- **List Templates** (read-only): List all email templates from Follow Up Boss.
+- **List Text Messages** (read-only): List text messages for a person or phone number from Follow Up Boss.
+- **List Users** (read-only): Search for and list users from Follow Up Boss.
+- **Update Deal**: Update an existing deal in Follow Up Boss.
+- **Apply Action Plan to Person**: Apply an Action Plan to a person in Follow Up Boss.
+- **Create Appointment**: Create a new appointment in Follow Up Boss.
+- **Create appointment outcome**: Create an appointment outcome in Follow Up Boss.
+- **Create Appointment Type**: Create a new appointment type in Follow Up Boss.
+- **Create Email Marketing Campaign**: Create an email marketing campaign in Follow Up Boss.
+- **Create email template**: Create a new email template in Follow Up Boss.
+- **Create Ponds**: Create a new pond in Follow Up Boss.
+- **Create Text Message Template**: Create a text message template in Follow Up Boss.
+- **Delete Appointment**: Delete an appointment by ID.
+- **Delete Appointment Outcome**: Delete an appointment outcome by ID.
+- **Delete Appointment Type**: Delete an appointment type by its ID.
+- **Delete Custom Field**: Delete a custom field by its ID.
+- **Delete Deal Custom Field**: Delete a deal custom field by ID.
+- **Delete People Relationship**: Delete a people relationship by ID in Follow Up Boss.
+- **Delete Team**: Delete a team by its ID.
+- **Get Appointment** (read-only): Retrieve an appointment by its ID.
+- **Get Appointment Outcome** (read-only): Retrieve an appointment outcome by ID.
+- **Get Appointment Type** (read-only): Retrieve an appointment type by ID.
+- **Get Call** (read-only): Retrieve a call by its ID from Follow Up Boss.
+- **Get Deal Custom Field** (read-only): Retrieve a deal custom field by its ID from Follow Up Boss.
+- **Get Event** (read-only): Retrieve a single event by its ID from Follow Up Boss.
+- **Get Group** (read-only): Retrieve a group by its ID from Follow Up Boss.
+- **Get People Relationship** (read-only): Retrieve a people relationship by its ID from Follow Up Boss.
+- **Get Ponds** (read-only): Retrieve a pond by its ID from Follow Up Boss.
+- **Get Smart List** (read-only): Retrieve a Smart List by its ID from Follow Up Boss.
+- **Get Stage** (read-only): Retrieve a stage by its ID from Follow Up Boss.
+- **Get Team** (read-only): Retrieve a team by its ID from Follow Up Boss.
+- **Get Template** (read-only): Retrieve an email template by its ID from Follow Up Boss.
+- **Get Text Message** (read-only): Retrieve a text message by its ID from Follow Up Boss.
+- **Get Text Message Template** (read-only): Retrieve a text message template by its ID from Follow Up Boss.
+- **List Action Plans** (read-only): Get a list of Action Plans from Follow Up Boss.
+- **List Action Plans People** (read-only): List Action Plans applied to a particular person or list people on a particular Action Plan.
+- **List Appointment Outcomes** (read-only): List all appointment outcomes from Follow Up Boss.
+- **List Appointment Types** (read-only): List all appointment types from Follow Up Boss.
+- **List Email Marketing Campaigns** (read-only): List email marketing campaigns from Follow Up Boss.
+- **List Email Marketing Events** (read-only): Retrieve email marketing events from Follow Up Boss.
+- **List Groups Round Robin** (read-only): List groups with round-robin data from Follow Up Boss.
+- **List Inbox Apps** (read-only): List all inbox app installations from Follow Up Boss.
+- **List People Relationships** (read-only): List all people relationships from Follow Up Boss.
+- **List Ponds** (read-only): List all ponds from Follow Up Boss.
+- **List Smart Lists** (read-only): List Smart Lists from Follow Up Boss.
+- **List Team Inboxes** (read-only): List all shared team inboxes from Follow Up Boss.
+- **List Teams** (read-only): Get a list of teams from Follow Up Boss.
+- **List Text Message Templates** (read-only): List all text message templates from Follow Up Boss.
+- **List Timeframes** (read-only): Get a list of timeframes from Follow Up Boss.
+- **List Webhooks** (read-only): Retrieve a list of webhooks from Follow Up Boss.
+- **Merge Template**: Merge an email template with person data using Follow Up Boss API.
+- **Merge Text Message Template**: Merge a text message template with person data.
+- **Update Action Plan People Status**: Update the status of an Action Plan to Person relationship in Follow Up Boss.
+- **Update Appointment**: Update an existing appointment in Follow Up Boss.
+- **Update appointment outcome**: Update an existing appointment outcome in Follow Up Boss.
+- **Update Appointment Type**: Update an existing appointment type in Follow Up Boss.
+- **Update Call**: Update an existing call record in Follow Up Boss.
+- **Update Custom Fields**: Update an existing custom field in Follow Up Boss by its ID.
+- **Update Deal Custom Fields**: Update an existing deal custom field in Follow Up Boss.
+- **Update Email Marketing Campaign**: Update an existing email marketing campaign in Follow Up Boss.
+- **Update email template**: Update an existing email template in Follow Up Boss.
+- **Update Group**: Update an existing Follow Up Boss group with modified members and distribution settings.
+- **Update People Relationships**: Update details of a specific people relationship in Follow Up Boss.
+- **Update Pipeline**: Update an existing pipeline in Follow Up Boss.
+- **Update Ponds**: Update an existing pond in Follow Up Boss.
+- **Update Stage**: Update an existing stage in Follow Up Boss.
+- **Update Team**: Update an existing team in Follow Up Boss.
+- **Update Text Message Template**: Update an existing text message template in Follow Up Boss.

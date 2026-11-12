@@ -1,0 +1,130 @@
+# Hub Planner
+
+A Modern and Smart Resource Management, Planning & Scheduling tool with Time Sheets and Powerful Reporting. Ideal for Managing Global Teams of Resources.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/hub-planner/.
+
+## Actions
+
+- **Create Booking**: Create a new booking for a resource on a project in Hub Planner.
+- **Create Client**: Create a new client in Hub Planner.
+- **Create Project**: Create a new project in Hub Planner.
+- **Create Resource**: Create a new resource in Hub Planner.
+- **Create Time Entry**: Create a new time entry for a resource on a project in Hub Planner.
+- **Get Booking by ID** (read-only): Retrieve a specific booking by ID from Hub Planner.
+- **Get Client by ID** (read-only): Retrieve a specific client by ID from Hub Planner.
+- **Get Project** (read-only): Retrieve a specific project by ID from Hub Planner.
+- **Get Resource by ID** (read-only): Retrieve a specific resource by ID from Hub Planner.
+- **Get Time Entry by ID** (read-only): Retrieve a specific time entry by ID from Hub Planner.
+- **List Bookings** (read-only): Retrieve all bookings from Hub Planner with pagination support.
+- **List Clients** (read-only): Get all clients from Hub Planner.
+- **List Projects** (read-only): Retrieve all projects from Hub Planner.
+- **List Resources** (read-only): Get all resources from Hub Planner.
+- **List Time Entries** (read-only): Get all time entries from Hub Planner.
+- **Search Bookings** (read-only): Search bookings in Hub Planner with advanced filters.
+- **Search Clients** (read-only): Search clients with filters in Hub Planner.
+- **Search Projects** (read-only): Search projects with filters in Hub Planner.
+- **Search resources** (read-only): Search for resources with various filters in Hub Planner.
+- **Search Time Entries** (read-only): Search time entries with filters in Hub Planner.
+- **Add Clients to Project**: Add clients to a project by project ID.
+- **Add project custom field choices**: Add choices to a project custom field template of SELECT, RADIO, or CHECKBOX type.
+- **Add Project Tags**: Add tags to a Hub Planner project.
+- **Add Projects to Group**: Add projects to a project group in Hub Planner.
+- **Add Resource Custom Field Choices**: Add choices to a resource custom field template of SELECT, RADIO, or CHECKBOX type.
+- **Add Resource Tags**: Add tags to a resource in Hub Planner.
+- **Add Resources to Project**: Add resources to a project by project ID.
+- **Add Resources to Resource Group**: Add resources to a resource group by group ID.
+- **Create Billing Rate**: Create a new billing rate in Hub Planner.
+- **Create Booking Category**: Create a new booking category in Hub Planner.
+- **Create Cost Category**: Create a new project cost category in Hub Planner.
+- **Create Event**: Create a new event in Hub Planner.
+- **Create Holiday**: Create a new holiday in Hub Planner.
+- **Create Milestone**: Create a new milestone for a project in Hub Planner.
+- **Create Project Custom Field Template**: Create a new project custom field template in Hub Planner.
+- **Create Project Group**: Create a new project group in Hub Planner.
+- **Create Project Tag**: Create a new project tag in Hub Planner.
+- **Create Resource Custom Field Template**: Create a new resource custom field template in Hub Planner.
+- **Create Resource Tag**: Create a new resource tag in Hub Planner.
+- **Create Vacation**: Create a new vacation request for a resource in Hub Planner.
+- **Delete Billing Rate**: Delete a specific billing rate by ID in Hub Planner.
+- **Delete Booking**: Delete a specific booking by ID in Hub Planner.
+- **Delete Bookings**: Delete multiple bookings by IDs, resource ID, or project ID.
+- **Delete Client**: Delete a specific client by ID in Hub Planner.
+- **Delete Cost Category**: Delete a specific project cost category by ID in Hub Planner.
+- **Delete Event**: Delete a specific event by ID in Hub Planner.
+- **Delete Holiday**: Delete a specific holiday by ID in Hub Planner.
+- **Delete Milestone**: Delete a specific milestone by ID in Hub Planner.
+- **Delete Project**: Delete a specific project by ID in Hub Planner.
+- **Delete Project Custom Field Template**: Delete a project custom field template by its ID.
+- **Delete Project Group**: Delete a specific project group by ID in Hub Planner.
+- **Delete Project Tag**: Delete a specific project tag by ID in Hub Planner.
+- **Delete Projects**: Delete multiple projects by their IDs in a single operation.
+- **Delete Resource**: Delete a specific resource by ID.
+- **Delete Resource Custom Field Template**: Delete a specific resource custom field template by ID.
+- **Delete Resource Tag**: Delete a specific resource tag by ID in Hub Planner.
+- **Delete resources**: Delete multiple resources by their IDs in a single operation.
+- **Delete Time Entries**: Delete multiple time entries by their IDs in a single operation.
+- **Delete Time Entry**: Delete a specific time entry by ID in Hub Planner.
+- **Delete Vacation**: Delete a specific vacation by ID in Hub Planner.
+- **Get Billing Rate by ID** (read-only): Retrieve a specific billing rate by ID from Hub Planner.
+- **Get Booking Category by ID** (read-only): Retrieve a specific booking category by ID from Hub Planner.
+- **Get Cost Category** (read-only): Retrieve a specific project cost category by ID from Hub Planner.
+- **Get Event by ID** (read-only): Retrieve a specific event by ID from Hub Planner.
+- **Get Holiday by ID** (read-only): Retrieve a specific holiday by ID from Hub Planner.
+- **Get Milestone** (read-only): Retrieve a specific milestone by ID from Hub Planner.
+- **Get Project Custom Field Template** (read-only): Retrieve a specific project custom field template by ID.
+- **Get Project Custom Field Templates** (read-only): Retrieve all project custom field templates defined for your Hub Planner account.
+- **Get Project Group** (read-only): Retrieve a specific project group by ID from Hub Planner.
+- **Get Project Tags** (read-only): Retrieve all tags associated with a specific Hub Planner project.
+- **Get Resource Custom Field Template** (read-only): Retrieve a specific resource custom field template by ID from Hub Planner.
+- **Get Resource Custom Field Templates** (read-only): Retrieve custom field templates defined for resources in your Hub Planner account.
+- **Get Resource Tags** (read-only): Retrieve all tags associated with a specific resource from Hub Planner.
+- **Get Vacation by ID** (read-only): Retrieve a specific vacation by ID from Hub Planner.
+- **List Billing Rates** (read-only): Retrieve all billing rates from Hub Planner.
+- **List Booking Categories** (read-only): Retrieve all booking categories from Hub Planner.
+- **List Category Groups** (read-only): Get all category groups from Hub Planner.
+- **List Cost Categories** (read-only): Retrieve all project cost categories from Hub Planner.
+- **List Events** (read-only): Retrieve all events from Hub Planner.
+- **List Holidays** (read-only): Retrieve all public holidays from Hub Planner.
+- **List Project Groups** (read-only): Get all project groups from Hub Planner.
+- **List Project Managers** (read-only): Get all project managers from Hub Planner.
+- **List Project Tags** (read-only): Retrieve all project tags from Hub Planner.
+- **List Resource Groups** (read-only): Get all resource groups from Hub Planner.
+- **List Resource Tags** (read-only): Get all resource tags from Hub Planner.
+- **List Unassigned Work** (read-only): Retrieve all unassigned work from Hub Planner.
+- **List Vacations** (read-only): Retrieve all vacations from Hub Planner.
+- **Patch Booking**: Partially update an existing booking in Hub Planner.
+- **Patch Vacation**: Partially update an existing vacation by ID in Hub Planner.
+- **Remove Client From Projects**: Remove a client from one or more projects in Hub Planner.
+- **Remove Project From Groups**: Remove a project from one or more project groups in Hub Planner.
+- **Remove Project Tag**: Remove a tag from a Hub Planner project.
+- **Remove Resource from Projects**: Remove a resource from one or more projects in Hub Planner.
+- **Remove Resource Tag**: Remove a tag from a resource.
+- **Search Billing Rates** (read-only): Search billing rates in Hub Planner with filters.
+- **Search Booking Categories** (read-only): Search booking categories in Hub Planner with filters.
+- **Search Cost Categories** (read-only): Search project cost categories in Hub Planner with filters.
+- **Search Events** (read-only): Search events with filters in Hub Planner.
+- **Search Holidays** (read-only): Search holidays with filters in Hub Planner.
+- **Search Milestones** (read-only): Search milestones in Hub Planner with filters.
+- **Search Project Custom Fields** (read-only): Search project custom field templates by type, label, or required status.
+- **Search Resource Custom Field Templates** (read-only): Search resource custom field templates by type, label, or other properties.
+- **Search Vacations** (read-only): Search vacations in Hub Planner with advanced filters.
+- **Set Project Managers**: Set project managers for a Hub Planner project.
+- **Update Billing Rate**: Update an existing billing rate by ID in Hub Planner.
+- **Update Booking**: Update an existing booking in Hub Planner by ID.
+- **Update Booking Category**: Update an existing booking category by ID in Hub Planner.
+- **Update Client**: Update an existing client by ID in Hub Planner.
+- **Update Cost Category**: Update an existing project cost category by ID in Hub Planner.
+- **Update Event**: Update an existing event in Hub Planner by ID.
+- **Update Holiday**: Update an existing holiday by ID in Hub Planner.
+- **Update Hub Planner projects**: Update one or more projects in Hub Planner.
+- **Update Milestone**: Update an existing milestone by ID in Hub Planner.
+- **Update Project Custom Field Template**: Update an existing project custom field template in Hub Planner.
+- **Update Project Group**: Update an existing project group by ID in Hub Planner.
+- **Update Project Tag**: Update an existing project tag by ID in Hub Planner.
+- **Update Resource Custom Field Template**: Update an existing resource custom field template in Hub Planner.
+- **Update Resource Group**: Update an existing resource group by ID in Hub Planner.
+- **Update Resource Tag**: Update an existing resource tag by ID in Hub Planner.
+- **Update Resources**: Update one or more resources in Hub Planner.
+- **Update Time Entry**: Update an existing time entry by ID in Hub Planner.
+- **Update Vacation**: Update an existing vacation by ID in Hub Planner.

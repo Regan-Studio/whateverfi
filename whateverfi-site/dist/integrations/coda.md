@@ -1,0 +1,109 @@
+# Coda
+
+Collaborative workspace platform that transforms documents into powerful tools for team productivity and project management
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/coda/.
+
+## Actions
+
+- **Copy Document**: Creates a copy of an existing coda document.
+- **Insert/Update Rows in Coda Table**: This tool allows you to insert new rows into a coda table or update existing ones based on specified key columns.
+- **List the pack listings accessible to a user** (read-only): Get listings of public packs and packs created by you.
+- **Search Coda Documents** (read-only): This tool allows users to search for coda documents based on a query term.
+- **Search Table Rows** (read-only): Action to search for rows in a coda table based on specific criteria.
+- **Add a category for pack**: Add a publishing category for a given pack.
+- **Add a maker for pack**: Set a maker for a given pack.
+- **Add a permission for pack**: Create or modify user, workspace, or global permissions for a given pack.
+- **Add custom domain**: Add a custom domain to a published doc.
+- **Add permission**: Adds a new permission to the doc.
+- **Begin content export** (read-only): Initiate an export of content for the given page.
+- **Content export status** (read-only): Check the status of a page content export
+- **Create a new pack release**: Creates a new pack release based on an existing pack version.
+- **Create a page**: Create a new page in a doc.
+- **Create doc**: Creates a new coda doc, optionally copying an existing doc.
+- **Create pack**: Creates a new pack, essentially registering a new pack id.
+- **Delete a category for pack**: Delete a publishing category for a given pack.
+- **Delete a maker for pack**: Delete a maker for a given pack, who will not be displayed in the corresponding packs page.
+- **Delete a page**: Deletes the specified page.
+- **Delete a permission for pack**: Delete user, workspace, or global permissions for a given pack.
+- **Delete doc**: Deletes a doc.
+- **Delete multiple rows**: Deletes the specified rows from the table or view.
+- **Delete pack**: Delete a given pack.
+- **Delete permission**: Deletes an existing permission.
+- **Delete row**: Deletes the specified row from the table or view.
+- **Deletes a custom domain**: Deletes a custom domain from a published doc.
+- **Fetch grouped logs by pack org root ingestion id** (read-only): Retrieve the grouped logs of a pack for debugging purpose.
+- **Fetch ingestion executions for pack** (read-only): Retrieve the ingestion execution ids of a root ingestion for debugging purpose.
+- **Get a column** (read-only): Returns details about a column in a table.
+- **Get a control** (read-only): Returns info on a control.
+- **Get a formula** (read-only): Returns info on a formula.
+- **Get a page** (read-only): Returns details about a page.
+- **Get a row** (read-only): Returns details about a row in a table.
+- **Get a single pack** (read-only): Returns a single pack.
+- **Get a table** (read-only): Returns details about a specific table or view.
+- **Get acl settings** (read-only): Returns settings associated with acls for this coda doc.
+- **Get analytics last updated day** (read-only): Returns days based on pacific standard time when analytics were last updated.
+- **Get detailed listing information for a pack** (read-only): Get detailed listing information for a pack.
+- **Get doc analytics summary** (read-only): Returns summarized analytics data for available docs.
+- **Get doc categories** (read-only): Gets all available doc categories.
+- **Get info about a doc** (read-only): Returns metadata for the specified doc.
+- **Get mutation status** (read-only): Get the status for an asynchronous mutation to know whether or not it has been completed.
+- **Get pack analytics summary** (read-only): Returns summarized analytics data for packs the user can edit.
+- **Get sharing metadata** (read-only): Returns metadata associated with sharing for this coda doc.
+- **Get the difference between two pack versions** (read-only): Gets information about the difference between the specified previous version and next version of a pack.
+- **Get the next valid version for a pack** (read-only): Get the next valid version based on the proposed metadata.
+- **Get the source code for a pack version** (read-only): Get temporary links used to download the source code for the given packid and version
+- **Get user info** (read-only): Returns basic info about the current user.
+- **Gets custom doc domains providers** (read-only): Gets the provider (ie.
+- **Gets the json schema for pack configuration** (read-only): Returns a json schema applicable for customizing the pack using pack configurations.
+- **List available docs** (read-only): Returns a list of coda docs accessible by the user, and which they have opened at least once.
+- **List categories for pack** (read-only): List publishing categories for a given pack.
+- **List columns** (read-only): Returns a list of columns in a table.
+- **List controls** (read-only): Returns a list of controls in a coda doc.
+- **List custom doc domains** (read-only): List all custom domains for a published doc.
+- **List doc analytics** (read-only): Returns analytics data for available docs per day.
+- **List featured docs for a pack** (read-only): Returns a list of featured doc ids for a pack.
+- **List formulas** (read-only): Returns a list of named formulas in a coda doc.
+- **List makers for pack** (read-only): List makers for a given pack.
+- **List pack analytics** (read-only): Returns analytics data for packs the user can edit.
+- **List pack formula analytics** (read-only): Returns analytics data for pack formulas.
+- **List packs** (read-only): Get the list of accessible packs.
+- **List page analytics** (read-only): Returns analytics data for a given doc within the day.
+- **List pages** (read-only): Returns a list of pages in a coda doc.
+- **List permissions** (read-only): Returns a list of permissions for this coda doc.
+- **List permissions for a pack** (read-only): Get user, workspace, and/or global permissions for a given pack.
+- **List table rows** (read-only): Retrieves rows from a specific table within a coda document.
+- **List tables** (read-only): Returns a list of tables in a coda doc.
+- **List the releases for a pack** (read-only): Get the list of releases of a pack.
+- **List the versions for a pack** (read-only): Get the list of versions of a pack.
+- **List workspace roles** (read-only): Returns a list of the counts of users over time by role for the workspace.
+- **List workspace users** (read-only): Returns a list of members in the given workspace.
+- **Pack asset upload complete**: Note the completion of the upload of a pack asset.
+- **Pack source code upload complete**: Note the completion of the upload of a pack source code.
+- **Pack version upload complete**: Note the completion of the upload of a pack version bundle in order to create that pack version.
+- **Patch the system connection credentials of the pack**: Patch the system connection credentials of the pack.
+- **Publish doc**: Update publish settings for a doc.
+- **Push a button**: Pushes a button on a row in a table.
+- **Register pack version**: Registers a new pack version.
+- **Resolve browser link** (read-only): Given a browser link to a coda object, attempts to find it and return metadata that can be used to get more info on it.
+- **Retrieve the grouped logs of a pack** (read-only): Retrieve the grouped logs of a pack for debugging purpose.
+- **Retrieve the information for a specific log** (read-only): Retrieve the ingestion execution ids of a root ingestion for debugging purpose.
+- **Retrieve the logs of a ingestion** (read-only): Retrieve the logs of a ingestion for debugging purpose.
+- **Retrieve the logs of a pack** (read-only): Retrieve the logs of a pack for debugging purpose.
+- **Retrieve the oauth configuration of the pack** (read-only): Retrieve the oauth configuration of the pack for display purpose.
+- **Retrieve the system connection metadata of the pack** (read-only): Retrieve the system connection metadata of the pack.
+- **Search principals** (read-only): Searches for user and group principals matching the query that this doc can be shared with.
+- **Set the oauth configurations of the pack**: Set the oauth configurations of the pack, including client id and secret.
+- **Set the system connection credentials of the pack**: Set the system connection credentials of the pack.
+- **Trigger automation**: Triggers webhook-invoked automation
+- **Unpublish doc**: Unpublishes a doc.
+- **Update a page**: Update properties for a page.
+- **Update acl settings**: Update settings associated with acls for this coda doc.
+- **Update an existing pack release**: Update details of a pack release.
+- **Update doc**: Updates metadata for a doc.
+- **Update featured docs for a pack**: Create or replace the featured docs for a pack.
+- **Update pack**: Update an existing pack for non-versioned fields.
+- **Updates a custom domain**: Updates properties of a document's custom domain.
+- **Updates user role**: Updates the workspace user role of a user that matches the parameters.
+- **Upload a pack asset**: Request a signed s3 url to upload your pack asset.
+- **Upload pack source code**: Request a signed s3 url to upload your pack source code.

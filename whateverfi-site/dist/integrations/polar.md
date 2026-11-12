@@ -1,0 +1,189 @@
+# Polar
+
+Polar is a merchant-of-record platform for products, checkouts, customers, subscriptions, orders, benefits, and metrics.
+
+Category: Finance. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/polar/.
+
+## Actions
+
+- **Accept Dispute**: Accept a dispute, permanently conceding the chargeback and settling it as lost.
+- **Activate License Key**: Activate a license key instance.
+- **Activate License Key**: Activate a license key instance.
+- **Add Customer Payment Method**: Add a payment method to the authenticated customer.
+- **Add Portal Member**: Add a customer portal member.
+- **Assign Portal Seat**: Assign a seat using an authenticated customer or member session.
+- **Assign Seat**: Assign a customer seat.
+- **Cancel Subscription**: Cancel a subscription of the authenticated customer.
+- **Check Email Change Token** (read-only): Check if an email change verification token is still valid.
+- **Claim Seat**: Claim a customer seat without authentication using a one-time invitation token.
+- **Complete File Upload**: Complete a file upload.
+- **Confirm Checkout Session from Client**: Confirm a checkout session by client secret.
+- **Confirm Customer Payment Method**: Confirm a payment method for the authenticated customer.
+- **Confirm Retry Payment**: Confirm a retry payment using a Stripe confirmation token.
+- **Create Benefit**: Create a benefit, for example license keys, file downloads or Discord access.
+- **Create Checkout Link**: Create a checkout link.
+- **Create Checkout Session**: Create a checkout session.
+- **Create Custom Field**: Create an organization custom field for collecting structured customer or checkout data.
+- **Create Customer**: Create a customer.
+- **Create Customer Member**: Add a member to a customer by UUID.
+- **Create Customer Member by External ID**: Add a member to a uniquely identified external customer.
+- **Create Customer Session**: Create a customer session.
+- **Create Discount**: Create a discount.
+- **Create File**: Create a file.
+- **Create Meter**: Create a meter.
+- **Create Metric Dashboard**: Create a user-defined metric dashboard.
+- **Create Order**: Create a draft order for an off-session charge against a saved payment Organization Access Token permissions.
+- **Create Organization**: Create an organization.
+- **Create Product**: Create a product.
+- **Create Refund**: Create a refund.
+- **Create Subscription**: Create a subscription programmatically.
+- **Create Webhook Endpoint**: Create a webhook endpoint.
+- **Deactivate License Key**: Deactivate a license key instance.
+- **Deactivate License Key**: Deactivate a license key instance.
+- **Delete Benefit**: Delete a benefit.
+- **Delete Checkout Link**: Delete a checkout link.
+- **Delete Custom Field**: Permanently delete a custom field by ID.
+- **Delete Customer**: Delete a customer.
+- **Delete Customer by External ID**: Delete a customer by external ID.
+- **Delete Customer Member**: Permanently remove a member by customer UUID and member UUID.
+- **Delete Customer Member by External ID**: Permanently remove a member by customer and member external IDs.
+- **Delete Customer Payment Method**: Delete a payment method from the authenticated customer.
+- **Delete Discount**: Delete a discount.
+- **Delete File**: Delete a file.
+- **Delete Metric Dashboard**: Delete a user-defined metric dashboard.
+- **Delete Product**: Delete a product.
+- **Delete Webhook Endpoint**: Delete a webhook endpoint.
+- **Export Customers** (read-only): Export customers as a CSV file.
+- **Export Metrics** (read-only): Export metrics as a CSV file.
+- **Export Orders** (read-only): Export orders as a CSV file.
+- **Export Subscriptions** (read-only): Export subscriptions as a CSV file.
+- **Finalize Order**: Finalize a draft order and synchronously attempt an off-session charge.
+- **Generate Order Invoice**: Trigger generation of an order's invoice.
+- **Generate Order Invoice**: Trigger generation of an order's invoice.
+- **Get Activation** (read-only): Get a license key activation.
+- **Get Authenticated Portal User** (read-only): Get information about the currently authenticated portal user.
+- **Get Benefit** (read-only): Get a benefit by ID.
+- **Get Benefit Grant** (read-only): Get a benefit grant by ID for the authenticated customer.
+- **Get Checkout Link** (read-only): Get a checkout link by ID.
+- **Get Checkout Session** (read-only): Get a checkout session by ID.
+- **Get Checkout Session from Client** (read-only): Get a checkout session by client secret.
+- **Get Claim Info** (read-only): Inspect a one-time customer-seat invitation before claiming it, including the customer and subscription context.
+- **Get Custom Field** (read-only): Get one organization custom field and its validation settings by ID.
+- **Get Customer** (read-only): Get a customer by ID.
+- **Get Customer** (read-only): Get authenticated customer.
+- **Get Customer by External ID** (read-only): Get a customer by external ID.
+- **Get Customer Member** (read-only): Get a member by customer UUID and member UUID without changing membership.
+- **Get Customer Member by External ID** (read-only): Get a member by customer and member external IDs without changing membership.
+- **Get Customer Meter** (read-only): Get a customer meter by ID.
+- **Get Customer Meter** (read-only): Get a meter by ID for the authenticated customer.
+- **Get Customer State** (read-only): Get a customer state by ID.
+- **Get Customer State by External ID** (read-only): Get a customer state by external ID.
+- **Get Discount** (read-only): Get a discount by ID.
+- **Get Dispute** (read-only): Get a payment dispute by ID.
+- **Get Event** (read-only): Get an event by ID.
+- **Get License Key** (read-only): Get a license key.
+- **Get License Key** (read-only): Get a license key.
+- **Get Meter** (read-only): Get a meter by ID.
+- **Get Meter Quantities** (read-only): Get quantities of a meter over a time period.
+- **Get Metric Dashboard** (read-only): Get a user-defined metric dashboard by ID.
+- **Get Metrics** (read-only): Get metrics about your orders and subscriptions.
+- **Get Metrics Limits** (read-only): Get the interval limits for the metrics endpoint.
+- **Get Order** (read-only): Get an order by ID.
+- **Get Order** (read-only): Get an order by ID for the authenticated customer.
+- **Get Order Invoice** (read-only): Get an order's invoice data.
+- **Get Order Invoice** (read-only): Get an order's invoice data.
+- **Get Order Payment Status** (read-only): Get the current payment status for an order.
+- **Get Order Receipt** (read-only): Get a presigned URL to download an order's receipt PDF.
+- **Get Order Receipt** (read-only): Get a presigned URL to download an order's receipt PDF.
+- **Get Organization** (read-only): Get an organization by ID.
+- **Get Organization** (read-only): Get a customer portal's organization by slug.
+- **Get Payment** (read-only): Get a payment by ID.
+- **Get Portal Wallet** (read-only): Get a wallet by ID using an authenticated customer or member session.
+- **Get Product** (read-only): Get a product by ID.
+- **Get Subscription** (read-only): Get a subscription for the authenticated customer.
+- **Get Subscription** (read-only): Get a subscription by ID.
+- **Get Webhook Endpoint** (read-only): Get a webhook endpoint by ID.
+- **Ingest Events**: Ingest batch of events.
+- **Introspect Customer Session** (read-only): Introspect the current session and return its information.
+- **List Benefit Files** (read-only): List the downloadable files for a benefit with their download statistics.
+- **List Benefit Grants** (read-only): List benefit grants across all benefits accessible to the authenticated subject.
+- **List Benefit Grants** (read-only): List the individual grants for a benefit.
+- **List Benefit Grants** (read-only): List benefits grants of the authenticated customer.
+- **List Benefits** (read-only): List benefits.
+- **List Checkout Links** (read-only): List checkout links.
+- **List Checkout Sessions** (read-only): List checkout sessions.
+- **List Custom Fields** (read-only): List custom data fields configured for an organization and their validation settings.
+- **List Customer Members** (read-only): List members of a customer by UUID without changing membership.
+- **List Customer Members by External ID** (read-only): List members of a uniquely identified external customer without changing membership.
+- **List Customer Meters** (read-only): List customer meters.
+- **List Customer Payment Methods** (read-only): Get saved payment methods of a customer.
+- **List Customer Payment Methods** (read-only): Get saved payment methods of the authenticated customer.
+- **List Customer Payment Methods by External ID** (read-only): Get saved payment methods of a customer by external ID.
+- **List Customers** (read-only): List customers.
+- **List Discounts** (read-only): List discounts.
+- **List Disputes** (read-only): List payment disputes.
+- **List Downloadables** (read-only): List files the authenticated customer can download through granted benefits, optionally filtered by benefit.
+- **List Event Names** (read-only): List event names.
+- **List Event Types** (read-only): List event types with usage statistics.
+- **List Events** (read-only): List events.
+- **List Files** (read-only): List files.
+- **List License Keys** (read-only): Get license keys connected to the given organization & filters.
+- **List License Keys** (read-only): List license keys issued to the authenticated customer, with optional organization and benefit filters.
+- **List Meters** (read-only): List meters.
+- **List Meters** (read-only): List meters of the authenticated customer.
+- **List Metric Dashboards** (read-only): List user-defined metric dashboards.
+- **List Orders** (read-only): List orders.
+- **List Orders** (read-only): List orders of the authenticated customer.
+- **List Organizations** (read-only): List organizations.
+- **List Payments** (read-only): List payments.
+- **List Portal Claimed Subscriptions** (read-only): List subscriptions claimed through seats by the authenticated customer or member session.
+- **List Portal Members** (read-only): List customer portal members.
+- **List Portal Seats** (read-only): List seats for a subscription or order available to the authenticated customer or member session.
+- **List Portal Wallets** (read-only): List wallets available to the authenticated customer or member session.
+- **List Products** (read-only): List products.
+- **List Refunds** (read-only): List refunds.
+- **List Seats** (read-only): List seats assigned from organization subscriptions, including invitation and claim state.
+- **List Subscriptions** (read-only): List subscriptions of the authenticated customer.
+- **List Subscriptions** (read-only): List subscriptions.
+- **List Webhook Deliveries** (read-only): List webhook deliveries.
+- **List Webhook Endpoints** (read-only): List webhook endpoints.
+- **Redeliver Webhook Event**: Schedule the re-delivery of a webhook event.
+- **Remove Portal Member**: Permanently remove a customer portal member.
+- **Request Email Change**: Request an email change for the authenticated customer.
+- **Resend Invitation**: Resend the invitation email for an unclaimed customer seat.
+- **Resend Portal Seat Invitation**: Resend a pending seat invitation using an authenticated customer or member session.
+- **Reset Webhook Endpoint Secret**: Regenerate a webhook endpoint secret.
+- **Revoke Portal Seat**: Permanently revoke a seat using an authenticated customer or member session.
+- **Revoke Seat**: Permanently revoke a customer seat by ID.
+- **Revoke Subscription**: Revoke a subscription, i.e cancel immediately.
+- **Rotate License Key**: Rotate a license key.
+- **Rotate License Key**: Rotate a license key.
+- **Update Benefit**: Update a benefit.
+- **Update Benefit Grant**: Update a benefit grant for the authenticated customer.
+- **Update Checkout Link**: Update a checkout link.
+- **Update Checkout Session**: Update a checkout session.
+- **Update Checkout Session from Client**: Update a checkout session by client secret.
+- **Update Custom Field**: Update an organization custom field's label, validation, or data-collection settings.
+- **Update Customer**: Update a customer.
+- **Update Customer**: Update authenticated customer.
+- **Update Customer by External ID**: Update a customer by external ID.
+- **Update Customer Member**: Update a member by customer UUID and member UUID.
+- **Update Customer Member by External ID**: Update a member by customer and member external IDs.
+- **Update Discount**: Update a discount.
+- **Update Event Type**: Update an event type's label or dynamic label selector.
+- **Update File**: Update a file.
+- **Update License Key**: Update a license key.
+- **Update Meter**: Update a meter.
+- **Update Metric Dashboard**: Update a user-defined metric dashboard.
+- **Update Order**: Update an order.
+- **Update Order**: Update an order for the authenticated customer.
+- **Update Organization**: Update an organization.
+- **Update Portal Member**: Update a customer portal member's name or role.
+- **Update Product**: Update a product.
+- **Update Product Benefits**: Update benefits granted by a product.
+- **Update Subscription**: Update a subscription of the authenticated customer.
+- **Update Subscription**: Update a subscription.
+- **Update Webhook Endpoint**: Update a webhook endpoint.
+- **Validate License Key**: Validate a license key and optionally increment its usage count.
+- **Validate License Key**: Validate a license key and optionally increment its usage count.
+- **Verify Email Change**: Verify and apply an email change using the token from the verification email.

@@ -1,0 +1,504 @@
+# MongoDB
+
+Administer MongoDB Atlas organizations, projects, clusters, users, networking, backups, and related cloud resources with an Atlas OAuth service account.
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/mongodb/.
+
+## Actions
+
+- **Accept Group Stream Vpc Peering Connection**: Accept One Incoming VPC Peering Connection.
+- **Acknowledge Group Alert**: Acknowledge One Alert from One Project.
+- **Add Group API Key**: Assign One Organization API Key to One Project.
+- **Add Group Teams**: Add Multiple Teams to One Project.
+- **Add Group User Role**: Add One Project Role to One MongoDB Cloud User.
+- **Add Group Users**: Add One MongoDB Cloud User to One Project.
+- **Add Org Team User**: Add One MongoDB Cloud User to One Team.
+- **Add Org User Role**: Add One Organization Role to One MongoDB Cloud User.
+- **Authorize Group Cloud Provider Access Role**: Authorize One Cloud Provider Access Role.
+- **Cancel Group Cluster Backup Restore Job**: Cancel One Restore Job for One Cluster.
+- **Create Ephemeral Cluster**: Create One Ephemeral Atlas Cluster.
+- **Create Federation Setting Connected Org Config Role Mapping**: Create One Role Mapping in One Organization Configuration.
+- **Create Federation Setting Identity Provider**: Create One Identity Provider.
+- **Create Group**: Create One Project.
+- **Create Group Access List Entry**: Add Entries to Project IP Access List.
+- **Create Group Ai Model API Key**: Create New AI Model API Key.
+- **Create Group Alert Config**: Create One Alert Configuration in One Project.
+- **Create Group API Key**: Create and Assign One Organization API Key to One Project.
+- **Create Group Backup Export Bucket**: Create One Snapshot Export Bucket.
+- **Create Group Backup Private Endpoint**: Create One Object Storage Private Endpoint for Cloud Backups for One Cloud Provider in One Project.
+- **Create Group Cloud Provider Access**: Create One Cloud Provider Access Role.
+- **Create Group Cluster**: Create One Cluster in One Project.
+- **Create Group Cluster Backup Export**: Create One Snapshot Export Job.
+- **Create Group Cluster Backup Restore Job**: Create One Restore Job of One Cluster.
+- **Create Group Cluster Collection Restore Job**: Create One Collection Restore Job.
+- **Create Group Cluster Global Write Custom Zone Mapping**: Add One Custom Zone Mapping to One Global Cluster.
+- **Create Group Cluster Global Write Managed Namespace**: Create One Managed Namespace in One Global Cluster.
+- **Create Group Cluster Index Rolling Index**: Create One Rolling Index.
+- **Create Group Cluster Online Archive**: Create One Online Archive.
+- **Create Group Cluster Overload Simulation**: Create One Overload Protection Simulation.
+- **Create Group Cluster Search Deployment**: Create Search Nodes.
+- **Create Group Cluster Search Index**: Create One Atlas Search Index.
+- **Create Group Container**: Create One Network Peering Container.
+- **Create Group Custom Db Role Role**: Create One Custom Role.
+- **Create Group Data Federation**: Create One Federated Database Instance in One Project.
+- **Create Group Database User**: Create One Database User in One Project.
+- **Create Group Database User Cert**: Create One X.509 Certificate for One Database User.
+- **Create Group Encryption At Rest Private Endpoint**: Create One Private Endpoint for Encryption at Rest Using Customer Key Management for One Cloud Provider in One Project.
+- **Create Group Flex Cluster**: Create One Flex Cluster in One Project.
+- **Create Group Flex Cluster Backup Restore Job**: Create One Restore Job for One Flex Cluster.
+- **Create Group Integration**: Create One Third-Party Service Integration.
+- **Create Group Live Migration**: Create One Migration for One Local Managed Cluster to MongoDB Atlas.
+- **Create Group Log Integration**: Create One Log Integration.
+- **Create Group MCP Config**: Create One MCP Configuration for One Project.
+- **Create Group MCP Config Secret**: Create One Secret for One Project MCP Configuration.
+- **Create Group Metric Integration**: Create One Metric Integration.
+- **Create Group Peer**: Create One Network Peering Connection.
+- **Create Group Private Endpoint Endpoint Service**: Create One Private Endpoint Service for One Provider.
+- **Create Group Private Endpoint Endpoint Service Endpoint**: Create One Private Endpoint for One Provider.
+- **Create Group Private Network Setting Endpoint Id**: Create One Federated Database Instance and Online Archive Private Endpoint for One Project.
+- **Create Group Service Account**: Create One Project Service Account.
+- **Create Group Service Account Access List**: Add Access List Entries for One Project Service Account.
+- **Create Group Service Account Secret**: Create One Project Service Account Secret.
+- **Create Group Standby Link**: Create Standby Link.
+- **Create Group Standby Link Failover**: Create Standby Link Failover.
+- **Create Group Stream Connection**: Create One Stream Connection.
+- **Create Group Stream Connection Failover Connection**: Create One Failover Stream Connection.
+- **Create Group Stream Private Link Connection**: Create One Private Link Connection.
+- **Create Group Stream Processor**: Create One Stream Processor.
+- **Create Group Stream Workspace**: Create One Stream Workspace.
+- **Create Group Streams Workspace Private Endpoint**: Create One Workspace Private Endpoint for Atlas Stream Processing.
+- **Create Org**: Create One Organization.
+- **Create Org API Key**: Create One Organization API Key.
+- **Create Org API Key Access List Entry**: Create One Access List Entry for One Organization API Key.
+- **Create Org Billing Cost Explorer Usage Process**: Create One Cost Explorer Query Process.
+- **Create Org Invoice Report**: Create One Invoice Report.
+- **Create Org Live Migration Link Token**: Create One Link-Token.
+- **Create Org Log Integration**: Create One Organization Log Integration.
+- **Create Org MCP Config**: Create One MCP Configuration for One Organization.
+- **Create Org MCP Config Secret**: Create One Secret for One Organization MCP Configuration.
+- **Create Org Resource Policy**: Create One Atlas Resource Policy.
+- **Create Org Sandbox Config**: Create One Sandbox Configuration for an Organization.
+- **Create Org Service Account**: Create One Organization Service Account.
+- **Create Org Service Account Access List**: Add Access List Entries for One Organization Service Account.
+- **Create Org Service Account Secret**: Create One Organization Service Account Secret.
+- **Create Org Team**: Create One Team in One Organization.
+- **Create Org User**: Add One MongoDB Cloud User to One Organization.
+- **Cutover Group Live Migration**: Cut Over One Migrated Cluster.
+- **Deauthorize Group Cloud Provider Access Role**: Deauthorize One Cloud Provider Access Role.
+- **Defer Group Maintenance Window**: Defer One Maintenance Window for One Project.
+- **Delete Federation Setting**: Delete One Federation Settings Instance.
+- **Delete Federation Setting Connected Org Config Role Mapping**: Remove One Role Mapping from One Organization.
+- **Delete Federation Setting Identity Provider**: Delete One Identity Provider.
+- **Delete Group**: Remove One Project.
+- **Delete Group Access List Entry**: Remove One Entry from One Project IP Access List.
+- **Delete Group Ai Model API Key**: Delete Existing AI Model API Key.
+- **Delete Group Alert Config**: Remove One Alert Configuration from One Project.
+- **Delete Group Backup Export Bucket**: Delete One Snapshot Export Bucket.
+- **Delete Group Backup Private Endpoint**: Delete One Object Storage Private Endpoint for Cloud Backups for One Cloud Provider from One Project.
+- **Delete Group Cluster**: Remove One Cluster from One Project.
+- **Delete Group Cluster Backup Schedule**: Remove All Cloud Backup Schedules.
+- **Delete Group Cluster Backup Snapshot**: Remove One Replica Set Cloud Backup.
+- **Delete Group Cluster Backup Snapshot Sharded Cluster**: Remove One Sharded Cluster Cloud Backup.
+- **Delete Group Cluster Global Write Custom Zone Mapping**: Remove All Custom Zone Mappings from One Global Cluster.
+- **Delete Group Cluster Global Write Managed Namespaces**: Remove One Managed Namespace from One Global Cluster.
+- **Delete Group Cluster Online Archive**: Remove One Online Archive.
+- **Delete Group Cluster Overload Simulation**: Delete One Overload Protection Simulation.
+- **Delete Group Cluster Private Endpoint Connection String**: Delete One Private Endpoint Connection String from One Cluster.
+- **Delete Group Cluster Search Deployment**: Delete Search Nodes.
+- **Delete Group Cluster Search Index**: Remove One Atlas Search Index by ID.
+- **Delete Group Cluster Search Index By Name**: Remove One Atlas Search Index by Name.
+- **Delete Group Container**: Remove One Network Peering Container.
+- **Delete Group Custom Db Role Role**: Remove One Custom Role from One Project.
+- **Delete Group Data Federation**: Remove One Federated Database Instance from One Project.
+- **Delete Group Data Federation Limit**: Delete One Query Limit for One Federated Database Instance.
+- **Delete Group Database User**: Remove One Database User from One Project.
+- **Delete Group Flex Cluster**: Remove One Flex Cluster from One Project.
+- **Delete Group Integration**: Remove One Third-Party Service Integration.
+- **Delete Group Limit**: Remove One Project Limit.
+- **Delete Group Log Integration**: Remove One Log Integration.
+- **Delete Group MCP Config**: Delete One MCP Configuration for One Project.
+- **Delete Group MCP Config Secret**: Delete One Secret for One Project MCP Configuration.
+- **Delete Group Metric Integration**: Remove One Metric Integration.
+- **Delete Group Peer**: Remove One Network Peering Connection.
+- **Delete Group Private Endpoint Endpoint Service**: Remove One Private Endpoint Service for One Provider.
+- **Delete Group Private Endpoint Endpoint Service Endpoint**: Remove One Private Endpoint for One Provider.
+- **Delete Group Private Network Setting Endpoint Id**: Remove One Federated Database Instance and Online Archive Private Endpoint from One Project.
+- **Delete Group Service Account**: Remove One Project Service Account.
+- **Delete Group Service Account Access List Entry**: Remove One Access List Entry from One Project Service Account.
+- **Delete Group Service Account Secret**: Delete One Project Service Account Secret.
+- **Delete Group Standby Link**: Delete Standby Link.
+- **Delete Group Stream Connection**: Delete One Stream Connection.
+- **Delete Group Stream Connection Failover Connection**: Delete One Stream Failover Connection.
+- **Delete Group Stream Private Link Connection**: Delete One Private Link Connection.
+- **Delete Group Stream Processor**: Delete One Stream Processor.
+- **Delete Group Stream Vpc Peering Connection**: Delete One VPC Peering Connection.
+- **Delete Group Stream Workspace**: Delete One Stream Workspace.
+- **Delete Group User Security LDAP User To Dn Mapping**: Remove LDAP User to DN Mapping.
+- **Delete Org**: Remove One Organization.
+- **Delete Org API Key**: Remove One Organization API Key.
+- **Delete Org API Key Access List Entry**: Remove One Access List Entry for One Organization API Key.
+- **Delete Org Live Migration Link Tokens**: Remove One Link-Token.
+- **Delete Org Log Integration**: Remove One Organization Log Integration.
+- **Delete Org MCP Config**: Delete One MCP Configuration for One Organization.
+- **Delete Org MCP Config Secret**: Delete One Secret for One Organization MCP Configuration.
+- **Delete Org Resource Policy**: Delete One Atlas Resource Policy.
+- **Delete Org Sandbox Config**: Delete the Default Sandbox Configuration and Disable Sandbox.
+- **Delete Org Service Account**: Delete One Organization Service Account.
+- **Delete Org Service Account Access List Entry**: Remove One Access List Entry from One Organization Service Account.
+- **Delete Org Service Account Secret**: Delete One Organization Service Account Secret.
+- **Delete Org Team**: Remove One Team from One Organization.
+- **Disable Group Backup Compliance Policy**: Disable Backup Compliance Policy Settings.
+- **Disable Group Managed Slow Ms**: Disable Managed Slow Operation Threshold.
+- **Disable Group User Security Customer X.509**: Disable Customer-Managed X.509.
+- **Download Group Cluster Log** (read-only): Download Logs for One Cluster Host in One Project.
+- **Download Group Cluster Online Archive Query Logs** (read-only): Download Online Archive Query Logs.
+- **Download Group Data Federation Query Logs** (read-only): Download Query Logs for One Federated Database Instance.
+- **Download Group Flex Cluster Backup**: Download One Flex Cluster Snapshot.
+- **Download Group Stream Audit Logs** (read-only): Download Audit Logs for One Atlas Stream Processing Workspace.
+- **Download Group Stream Operational Logs** (read-only): Download Operational Logs for One Atlas Stream Processing Workspace.
+- **Enable Group Managed Slow Ms**: Enable Managed Slow Operation Threshold.
+- **End Group Cluster Outage Simulation**: End One Outage Simulation.
+- **Generate Group Sandbox Cluster Description** (read-only): Return Cluster Description from Sandbox Template Configuration.
+- **Generate Org Invoice And Download Report** (read-only): Generate and Download Invoice Report.
+- **Get Default Group Limit** (read-only): Return One User-Configurable Project Limit and Description.
+- **Get Ephemeral Cluster** (read-only): Return One Ephemeral Atlas Cluster.
+- **Get Federation Setting Connected Org Config** (read-only): Return One Organization Configuration from One Federation.
+- **Get Federation Setting Connected Org Config Role Mapping** (read-only): Return One Role Mapping from One Organization.
+- **Get Federation Setting Identity Provider** (read-only): Return One Identity Provider by ID.
+- **Get Federation Setting Identity Provider Metadata** (read-only): Return Metadata of One Identity Provider.
+- **Get Group** (read-only): Return One Project.
+- **Get Group Access List Entry** (read-only): Return One Project IP Access List Entry.
+- **Get Group Access List Status** (read-only): Return Status of One Project IP Access List Entry.
+- **Get Group Activity Feed** (read-only): Return Pre-Filtered Activity Feed Link for One Project.
+- **Get Group Ai Model API Cloud Geography Model Group Name Rate Limits** (read-only): Return Single AI Model Rate Limit for One Group.
+- **Get Group Ai Model API Key** (read-only): Return Single AI Model API Key for One Group.
+- **Get Group Ai Model API Rate Limits** (read-only): Return AI Model Rate Limits for One Group.
+- **Get Group Alert** (read-only): Return One Alert from One Project.
+- **Get Group Alert Alert Configs** (read-only): Return a Page of Alert Configurations Set for One Alert.
+- **Get Group Alert Config** (read-only): Return One Alert Configuration from One Project.
+- **Get Group Alert Config Alerts** (read-only): Return a Page of Open Alerts for One Alert Configuration.
+- **Get Group Audit Log** (read-only): Return Auditing Configuration for One Project.
+- **Get Group AWS Custom DNS** (read-only): Return One Custom DNS Configuration for Atlas Clusters on AWS.
+- **Get Group Backup Compliance Policy** (read-only): Return Backup Compliance Policy Settings.
+- **Get Group Backup Export Bucket** (read-only): Return One Snapshot Export Bucket.
+- **Get Group Backup Private Endpoint** (read-only): Return One Object Storage Private Endpoint for Cloud Backups for One Cloud Provider in One Project.
+- **Get Group By Name** (read-only): Return One Project by Name.
+- **Get Group Cloud Provider Access** (read-only): Return One Cloud Provider Access Role.
+- **Get Group Cluster** (read-only): Return One Cluster from One Project.
+- **Get Group Cluster Adaptive Settings** (read-only): Return Adaptive Settings for One Cluster.
+- **Get Group Cluster Backup Export** (read-only): Return One Snapshot Export Job.
+- **Get Group Cluster Backup Restore Job** (read-only): Return One Restore Job for One Cluster.
+- **Get Group Cluster Backup Schedule** (read-only): Return One Cloud Backup Schedule.
+- **Get Group Cluster Backup Snapshot** (read-only): Return One Replica Set Cloud Backup.
+- **Get Group Cluster Backup Snapshot Database** (read-only): Return One Database in One Snapshot.
+- **Get Group Cluster Backup Snapshot Database Collection** (read-only): Return One Collection in One Database in One Snapshot.
+- **Get Group Cluster Backup Snapshot Sharded Cluster** (read-only): Return One Sharded Cluster Cloud Backup.
+- **Get Group Cluster Coll Stat Namespaces** (read-only): Return Ranked Namespaces from One Cluster.
+- **Get Group Cluster Collection Restore Job** (read-only): Return One Collection Restore Job for One Cluster.
+- **Get Group Cluster Collection Restore Job Collection** (read-only): Return One Collection State for One Collection Restore Job.
+- **Get Group Cluster Global Writes** (read-only): Return One Managed Namespace in One Global Cluster.
+- **Get Group Cluster Online Archive** (read-only): Return One Online Archive.
+- **Get Group Cluster Outage Simulation** (read-only): Return One Outage Simulation.
+- **Get Group Cluster Overload Simulation** (read-only): Return One Overload Protection Simulation.
+- **Get Group Cluster Private Endpoint Connection String** (read-only): Return One Private Endpoint Connection String for One Cluster.
+- **Get Group Cluster Process Args** (read-only): Return Advanced Configuration Options for One Cluster.
+- **Get Group Cluster Query Shape** (read-only): Return One Query Shape.
+- **Get Group Cluster Query Shape Insight Details** (read-only): Return Query Shape Details.
+- **Get Group Cluster Search Deployment** (read-only): Return All Search Nodes.
+- **Get Group Cluster Search Index** (read-only): Return One Atlas Search Index by ID.
+- **Get Group Cluster Search Index By Name** (read-only): Return One Atlas Search Index by Name.
+- **Get Group Cluster SQL Interface** (read-only): Return SQL Interface Status.
+- **Get Group Cluster Status** (read-only): Return Status of All Cluster Operations.
+- **Get Group Container** (read-only): Return One Network Peering Container.
+- **Get Group Custom Db Role Role** (read-only): Return One Custom Role in One Project.
+- **Get Group Data Federation** (read-only): Return One Federated Database Instance in One Project.
+- **Get Group Data Federation Limit** (read-only): Return One Federated Database Instance Query Limit for One Project.
+- **Get Group Database User** (read-only): Return One Database User from One Project.
+- **Get Group Db Access History Cluster** (read-only): Return Database Access History for One Cluster by Cluster Name.
+- **Get Group Db Access History Process** (read-only): Return Database Access History for One Cluster by Hostname.
+- **Get Group Encryption At Rest** (read-only): Return One Configuration for Encryption at Rest Using Customer-Managed Keys for One Project.
+- **Get Group Encryption At Rest Private Endpoint** (read-only): Return One Private Endpoint for Encryption at Rest Using Customer Key Management for One Cloud Provider in One Project.
+- **Get Group Event** (read-only): Return One Event from One Project.
+- **Get Group Flex Cluster** (read-only): Return One Flex Cluster from One Project.
+- **Get Group Flex Cluster Backup Restore Job** (read-only): Return One Restore Job for One Flex Cluster.
+- **Get Group Flex Cluster Backup Snapshot** (read-only): Return One Snapshot for One Flex Cluster.
+- **Get Group Host Fts Metric Index Measurements** (read-only): Return Atlas Search Metrics for One Index in One Namespace.
+- **Get Group Integration** (read-only): Return One Third-Party Service Integration.
+- **Get Group IP Addresses** (read-only): Return All IP Addresses for One Project.
+- **Get Group Limit** (read-only): Return One Limit for One Project.
+- **Get Group Live Migration** (read-only): Return One Migration Job.
+- **Get Group Live Migration Validate Status** (read-only): Return One Migration Validation Job.
+- **Get Group Log Integration** (read-only): Return One Log Integration.
+- **Get Group Maintenance Window** (read-only): Return One Maintenance Window for One Project.
+- **Get Group Managed Slow Ms** (read-only): Return Managed Slow Operation Threshold Status.
+- **Get Group MCP Config** (read-only): Return One MCP Configuration for One Project.
+- **Get Group MCP Config Secret** (read-only): Return One Secret for One Project MCP Configuration.
+- **Get Group Metric Integration** (read-only): Return One Metric Integration.
+- **Get Group Mongo Db Versions** (read-only): Return a Page of Available MongoDB LTS Versions for Clusters in One Project.
+- **Get Group Peer** (read-only): Return One Network Peering Connection in One Project.
+- **Get Group Private Endpoint Endpoint Service** (read-only): Return One Private Endpoint Service for One Provider.
+- **Get Group Private Endpoint Endpoint Service Endpoint** (read-only): Return One Private Endpoint for One Provider.
+- **Get Group Private Endpoint Regional Mode** (read-only): Return Regionalized Private Endpoint Status.
+- **Get Group Private Network Setting Endpoint Id** (read-only): Return One Federated Database Instance and Online Archive Private Endpoint in One Project.
+- **Get Group Process** (read-only): Return One MongoDB Process by ID.
+- **Get Group Process Coll Stat Namespaces** (read-only): Return Ranked Namespaces from One Host.
+- **Get Group Process Database** (read-only): Return One Database for One MongoDB Process.
+- **Get Group Process Database Measurements** (read-only): Return Measurements for One Database in One MongoDB Process.
+- **Get Group Process Disk** (read-only): Return Measurements for One Disk.
+- **Get Group Process Disk Measurements** (read-only): Return Measurements of One Disk for One MongoDB Process.
+- **Get Group Process Measurements** (read-only): Return Measurements for One MongoDB Process.
+- **Get Group Sample Dataset Load** (read-only): Return Status of Sample Dataset Load for One Cluster.
+- **Get Group Service Account** (read-only): Return One Project Service Account.
+- **Get Group Settings** (read-only): Return Project Settings.
+- **Get Group Standby Link** (read-only): Return One Standby Link.
+- **Get Group Standby Link Failover** (read-only): Return One Standby Link Failover.
+- **Get Group Stream Account Details** (read-only): Return Account ID and VPC ID for One Project and Region.
+- **Get Group Stream Connection** (read-only): Return One Stream Connection.
+- **Get Group Stream Connection Failover Connection** (read-only): Return One Stream Failover Connection.
+- **Get Group Stream Private Link Connection** (read-only): Return One Private Link Connection.
+- **Get Group Stream Processor** (read-only): Return One Stream Processor.
+- **Get Group Stream Processors** (read-only): Return a Page of Stream Processors in One Stream Workspace.
+- **Get Group Stream Workspace** (read-only): Return One Stream Workspace.
+- **Get Group Streams Workspace Private Endpoint** (read-only): Return One Workspace Private Endpoint for Atlas Stream Processing.
+- **Get Group Team** (read-only): Return One Team in One Project.
+- **Get Group User** (read-only): Return One MongoDB Cloud User in One Project.
+- **Get Group User Security** (read-only): Return LDAP or X.509 Configuration.
+- **Get Group User Security LDAP Verify** (read-only): Return Status of LDAP Configuration Verification in One Project.
+- **Get Org** (read-only): Return One Organization.
+- **Get Org Activity Feed** (read-only): Return Pre-Filtered Activity Feed Link for One Organization.
+- **Get Org Ai Model API Cloud Geography Model Group Name Rate Limits** (read-only): Return Single AI Model Rate Limit for One Organization.
+- **Get Org Ai Model API Key** (read-only): Return Single AI Model API Key for One Organization.
+- **Get Org Ai Model API Rate Limits** (read-only): Return AI Model Rate Limits for One Organization.
+- **Get Org API Key** (read-only): Return One Organization API Key.
+- **Get Org API Key Access List Entry** (read-only): Return One Access List Entry for One Organization API Key.
+- **Get Org Associated Invoices** (read-only): Return Associated Invoices.
+- **Get Org Billing Cost Explorer Usage** (read-only): Return Usage Details for One Cost Explorer Query.
+- **Get Org Delegation Settings** (read-only): Return Delegation Settings for One Organization.
+- **Get Org Event** (read-only): Return One Event from One Organization.
+- **Get Org Federation Settings** (read-only): Return Federation Settings for One Organization.
+- **Get Org Groups** (read-only): Return a Page of Projects in One Organization.
+- **Get Org Invoice** (read-only): Return One Invoice for One Organization.
+- **Get Org Invoice Csv** (read-only): Return One Invoice as CSV for One Organization.
+- **Get Org Invoice Report** (read-only): Return One Invoice Report.
+- **Get Org Log Integration** (read-only): Return One Organization Log Integration.
+- **Get Org Maintenance Settings** (read-only): Return Maintenance Settings for One Organization.
+- **Get Org MCP Config** (read-only): Return One MCP Configuration for One Organization.
+- **Get Org MCP Config Secret** (read-only): Return One Secret for One Organization MCP Configuration.
+- **Get Org Non Compliant Resources** (read-only): Return All Non-Compliant Resources.
+- **Get Org Resource Policy** (read-only): Return One Atlas Resource Policy.
+- **Get Org Sandbox Config** (read-only): Return Default Sandbox Configuration for One Organization.
+- **Get Org Service Account** (read-only): Return One Organization Service Account.
+- **Get Org Service Account Groups** (read-only): Return a Page of Service Account Project Assignments.
+- **Get Org Settings** (read-only): Return Settings for One Organization.
+- **Get Org Team** (read-only): Return One Team by ID.
+- **Get Org Team By Name** (read-only): Return One Team by Name.
+- **Get Org User** (read-only): Return One MongoDB Cloud User in One Organization.
+- **Get Rate Limit** (read-only): Return One Rate Limit.
+- **Get Sku** (read-only): Return One Stock Keeping Unit.
+- **Get System Status** (read-only): Return the Status of This MongoDB Application.
+- **Grant Group Cluster Mongo Db Employee Access**: Grant MongoDB Employee Cluster Access for One Cluster.
+- **Inspect Group Standby Link Failover Readiness** (read-only): Inspect Failover Readiness for One Standby Link.
+- **Invite Group Service Account**: Assign One Service Account to One Project.
+- **List Alert Config Matcher Field Names** (read-only): Return All Alert Configuration Matchers Field Names.
+- **List Cluster Details** (read-only): Return a Page of Authorized Clusters in All Projects.
+- **List Control Plane IP Addresses** (read-only): Return All Control Plane IP Addresses.
+- **List Default Group Limits** (read-only): Return Descriptions of User-Configurable Project Limits.
+- **List Event Types** (read-only): Return a Page of Event Types.
+- **List Federation Setting Connected Org Config Role Mappings** (read-only): Return All Role Mappings from One Organization.
+- **List Federation Setting Connected Org Configs** (read-only): Return a Page of Organization Configurations from One Federation.
+- **List Federation Setting Identity Providers** (read-only): Return a Page of Identity Providers in One Federation.
+- **List Group Access List Entries** (read-only): Return a Page of Project IP Access List Entries.
+- **List Group Ai Model API Keys** (read-only): Return AI Model API Keys for One Group.
+- **List Group Alert Configs** (read-only): Return a Page of Alert Configurations in One Project.
+- **List Group Alerts** (read-only): Return a Page of Alerts from One Project.
+- **List Group API Keys** (read-only): Return a Page of Organization API Keys Assigned to One Project.
+- **List Group Backup Export Buckets** (read-only): Return a Page of Snapshot Export Buckets.
+- **List Group Backup Private Endpoints** (read-only): Return Object Storage Private Endpoints for Cloud Backups for One Cloud Provider in One Project.
+- **List Group Cloud Provider Access** (read-only): Return All Cloud Provider Access Roles.
+- **List Group Cluster Backup Exports** (read-only): Return a Page of Snapshot Export Jobs.
+- **List Group Cluster Backup Restore Jobs** (read-only): Return a Page of Restore Jobs for One Cluster.
+- **List Group Cluster Backup Snapshot Database Collections** (read-only): Return Collections in One Database in One Snapshot.
+- **List Group Cluster Backup Snapshot Databases** (read-only): Return Databases in One Snapshot.
+- **List Group Cluster Backup Snapshot Sharded Clusters** (read-only): Return All Sharded Cluster Cloud Backups.
+- **List Group Cluster Backup Snapshots** (read-only): Return a Page of Replica Set Cloud Backups.
+- **List Group Cluster Coll Stat Measurements** (read-only): Return Cluster-Level Query Latency.
+- **List Group Cluster Coll Stat Pinned Namespaces** (read-only): Return Pinned Namespaces.
+- **List Group Cluster Collection Restore Job Collections** (read-only): Return a Page of Collection States for One Collection Restore Job.
+- **List Group Cluster Collection Restore Jobs** (read-only): Return a Page of Collection Restore Jobs for One Cluster.
+- **List Group Cluster Online Archives** (read-only): Return a Page of Online Archives for One Cluster.
+- **List Group Cluster Overload Simulations** (read-only): Return a Page of Overload Protection Simulations.
+- **List Group Cluster Performance Advisor Drop Index Suggestions** (read-only): Return All Suggested Indexes to Drop.
+- **List Group Cluster Performance Advisor Schema Advice** (read-only): Return Schema Advice.
+- **List Group Cluster Performance Advisor Suggested Indexes** (read-only): Return All Suggested Indexes.
+- **List Group Cluster Private Endpoint Connection Strings** (read-only): Return a Page of Private Endpoint Connection Strings for One Cluster.
+- **List Group Cluster Provider Regions** (read-only): Return a Page of Cloud Provider Regions.
+- **List Group Cluster Query Shape Insight Summaries** (read-only): Return Query Statistic Summaries.
+- **List Group Cluster Query Shapes** (read-only): Return a Page of Query Shapes.
+- **List Group Cluster Search Index** (read-only): Return All Atlas Search Indexes for One Collection.
+- **List Group Cluster Search Indexes** (read-only): Return All Atlas Search Indexes for One Cluster.
+- **List Group Clusters** (read-only): Return a Page of Clusters in One Project.
+- **List Group Coll Stat Metrics** (read-only): Return All Metric Names.
+- **List Group Container All** (read-only): Return a Page of Network Peering Containers in One Project.
+- **List Group Containers** (read-only): Return a Page of Network Peering Containers in One Project for One Cloud Provider.
+- **List Group Custom Db Role Roles** (read-only): Return All Custom Roles in One Project.
+- **List Group Data Federation** (read-only): Return All Federated Database Instances in One Project.
+- **List Group Data Federation Limits** (read-only): Return All Query Limits for One Federated Database Instance.
+- **List Group Database User Certs** (read-only): Return a Page of X.509 Certificates Assigned to One Database User.
+- **List Group Database Users** (read-only): Return a Page of Database Users in One Project.
+- **List Group Encryption At Rest Private Endpoints** (read-only): Return Private Endpoints for Encryption at Rest Using Customer Key Management for One Cloud Provider in One Project.
+- **List Group Events** (read-only): Return Events from One Project.
+- **List Group Flex Cluster Backup Restore Jobs** (read-only): Return a Page of Restore Jobs for One Flex Cluster.
+- **List Group Flex Cluster Backup Snapshots** (read-only): Return a Page of Snapshots for One Flex Cluster.
+- **List Group Flex Clusters** (read-only): Return a Page of Flex Clusters from One Project.
+- **List Group Host Fts Metric Index Measurements** (read-only): Return All Atlas Search Index Metrics for One Namespace.
+- **List Group Host Fts Metric Measurements** (read-only): Return Atlas Search Hardware and Status Metrics.
+- **List Group Host Fts Metrics** (read-only): Return All Atlas Search Metric Types for One Process.
+- **List Group Integrations** (read-only): Return a Page of Active Third-Party Service Integrations.
+- **List Group Limits** (read-only): Return All Limits for One Project.
+- **List Group Log Integrations** (read-only): Return a Page of Active Log Integrations.
+- **List Group MCP Config Secrets** (read-only): Return a Page of Secrets for One Project MCP Configuration.
+- **List Group MCP Configs** (read-only): Return a Page of MCP Configurations for One Project.
+- **List Group Metric Integrations** (read-only): Return a Page of Active Metric Integrations.
+- **List Group Peers** (read-only): Return a Page of Network Peering Connections in One Project.
+- **List Group Private Endpoint Endpoint Service** (read-only): Return All Private Endpoint Services for One Provider.
+- **List Group Private Network Setting Endpoint Ids** (read-only): Return a Page of Federated Database Instance and Online Archive Private Endpoints in One Project.
+- **List Group Process Coll Stat Measurements** (read-only): Return Host-Level Query Latency.
+- **List Group Process Databases** (read-only): Return Available Databases for One MongoDB Process.
+- **List Group Process Disks** (read-only): Return Available Disks for One MongoDB Process.
+- **List Group Process Performance Advisor Namespaces** (read-only): Return All Namespaces for One Host.
+- **List Group Process Performance Advisor Slow Query Logs** (read-only): Return Slow Queries.
+- **List Group Process Performance Advisor Suggested Indexes** (read-only): Return a Page of Suggested Indexes.
+- **List Group Processes** (read-only): Return a Page of MongoDB Processes in One Project.
+- **List Group Service Account Access List** (read-only): Return a Page of Access List Entries for One Project Service Account.
+- **List Group Service Accounts** (read-only): Return a Page of Project Service Accounts.
+- **List Group Standby Link Failovers** (read-only): Return a Page of Standby Link Failovers.
+- **List Group Standby Links** (read-only): Return a Page of Standby Links for One Project.
+- **List Group Stream Active Vpc Peering Connections** (read-only): Return a Page of Active Incoming VPC Peering Connections.
+- **List Group Stream Connection Failover Connections** (read-only): Return a Page of Stream Failover Connections.
+- **List Group Stream Connections** (read-only): Return a Page of Connections of the Stream Workspaces.
+- **List Group Stream Private Link Connections** (read-only): Return a Page of Private Link Connections.
+- **List Group Stream Vpc Peering Connections** (read-only): Return a Page of VPC Peering Connections.
+- **List Group Stream Workspaces** (read-only): Return a Page of Stream Workspaces in One Project.
+- **List Group Streams Workspace Private Endpoints** (read-only): Return a Page of Workspace Private Endpoints for Atlas Stream Processing.
+- **List Group Teams** (read-only): Return a Page of Teams in One Project.
+- **List Group Users** (read-only): Return a Page of MongoDB Cloud Users in One Project.
+- **List Groups** (read-only): Return a Page of Projects.
+- **List Org Ai Model API Keys** (read-only): Return AI Model API Keys for One Organization.
+- **List Org API Key Access List Entries** (read-only): Return a Page of Access List Entries for One Organization API Key.
+- **List Org API Keys** (read-only): Return a Page of Organization API Keys.
+- **List Org Events** (read-only): Return Events from One Organization.
+- **List Org Invoice Pending** (read-only): Return All Pending Invoices for One Organization.
+- **List Org Invoice Reports** (read-only): Return a Page of Invoice Reports for One Invoice.
+- **List Org Invoices** (read-only): Return a Page of Invoices for One Organization.
+- **List Org Live Migration Available Projects** (read-only): Return All Projects Available for Migration.
+- **List Org Log Integrations** (read-only): Return a Page of Organization Log Integrations.
+- **List Org MCP Config Secrets** (read-only): Return a Page of Secrets for One Organization MCP Configuration.
+- **List Org MCP Configs** (read-only): Return a Page of MCP Configurations for One Organization.
+- **List Org Resource Policies** (read-only): Return All Atlas Resource Policies.
+- **List Org Sandbox Config** (read-only): Return Sandbox Configuration IDs for an Organization.
+- **List Org Service Account Access List** (read-only): Return a Page of Access List Entries for One Organization Service Account.
+- **List Org Service Accounts** (read-only): Return a Page of Organization Service Accounts.
+- **List Org Team Users** (read-only): Return a Page of MongoDB Cloud Users Assigned to One Team.
+- **List Org Teams** (read-only): Return a Page of Teams in One Organization.
+- **List Org Users** (read-only): Return a Page of MongoDB Cloud Users in One Organization.
+- **List Orgs** (read-only): Return a Page of Organizations.
+- **List Rate Limits** (read-only): Return a Page of Rate Limits.
+- **List Skus** (read-only): Return a Page of Stock Keeping Units.
+- **Migrate Group**: Migrate One Project to Another Organization.
+- **Pin Group Cluster Coll Stat Pinned Namespaces**: Pin Namespaces.
+- **Pin Group Cluster Feature Compatibility Version**: Pin Feature Compatibility Version for One Cluster in One Project.
+- **Reject Group Stream Vpc Peering Connection**: Reject One Incoming VPC Peering Connection.
+- **Remove Federation Setting Connected Org Config**: Remove One Organization Configuration from One Federation.
+- **Remove Group API Key**: Unassign One Organization API Key from One Project.
+- **Remove Group Team**: Remove One Team from One Project.
+- **Remove Group User**: Remove One MongoDB Cloud User from One Project.
+- **Remove Group User Role**: Remove One Project Role from One MongoDB Cloud User.
+- **Remove Org Team User**: Remove One MongoDB Cloud User from One Team.
+- **Remove Org User**: Remove One MongoDB Cloud User from One Organization.
+- **Remove Org User Role**: Remove One Organization Role from One MongoDB Cloud User.
+- **Rename Org Team**: Rename One Team.
+- **Request Group Encryption At Rest Private Endpoint Deletion**: Delete One Private Endpoint for Encryption at Rest Using Customer Key Management for One Cloud Provider from One Project.
+- **Request Group Sample Dataset Load**: Load Sample Dataset into One Cluster.
+- **Reset Group Ai Model API Cloud Geography Model Group Name Rate Limits**: Reset AI Model Rate Limit for One Model Group.
+- **Reset Group Ai Model API Rate Limits**: Reset AI Model Rate Limits for Group.
+- **Reset Group Maintenance Window**: Reset One Maintenance Window for One Project.
+- **Reset Org Maintenance Settings**: Reset Maintenance Settings for One Organization.
+- **Restart Group Cluster Primaries**: Test Failover for One Cluster.
+- **Revoke Federation Setting Identity Provider Jwks**: Revoke JWKS from One OIDC Identity Provider.
+- **Revoke Group Cluster Mongo Db Employee Access**: Revoke MongoDB Employee Cluster Access for One Cluster.
+- **Search Org Invoice Line Items** (read-only): Return a Page of Line Items for One Invoice by Invoice ID.
+- **Set Group Data Federation Limit**: Configure One Query Limit for One Federated Database Instance.
+- **Set Group Limit**: Set One Project Limit.
+- **Start Group Cluster Outage Simulation**: Start One Outage Simulation.
+- **Start Group Stream Processor**: Start One Stream Processor.
+- **Start Group Stream Processor With**: Start One Stream Processor With Options.
+- **Stop Group Stream Processor**: Stop One Stream Processor.
+- **Take Group Cluster Backup Snapshots**: Take One On-Demand Snapshot.
+- **Tenant Group Flex Cluster Upgrade**: Upgrade One Flex Cluster.
+- **Toggle Group Alert Config**: Toggle State of One Alert Configuration in One Project.
+- **Toggle Group AWS Custom DNS**: Update State of One Custom DNS Configuration for Atlas Clusters on AWS.
+- **Toggle Group Maintenance Window Auto Defer**: Toggle Automatic Deferral of Maintenance for One Project.
+- **Toggle Group Private Endpoint Regional Mode**: Toggle Regionalized Private Endpoint Status.
+- **Unpin Group Cluster Coll Stat Unpin Namespaces**: Unpin Namespaces.
+- **Unpin Group Cluster Feature Compatibility Version**: Unpin Feature Compatibility Version for One Cluster in One Project.
+- **Update Federation Setting Connected Org Config**: Update One Organization Configuration in One Federation.
+- **Update Federation Setting Connected Org Config Role Mapping**: Update One Role Mapping in One Organization.
+- **Update Federation Setting Identity Provider**: Update One Identity Provider.
+- **Update Group**: Update One Project.
+- **Update Group Ai Model API Cloud Geography Model Group Name Rate Limits**: Update AI Model Rate Limit.
+- **Update Group Ai Model API Key**: Update Existing AI Model API Key.
+- **Update Group Alert Config**: Update One Alert Configuration in One Project.
+- **Update Group API Key Roles**: Update Organization API Key Roles for One Project.
+- **Update Group Audit Log**: Update Auditing Configuration for One Project.
+- **Update Group Backup Compliance Policy**: Update Backup Compliance Policy Settings.
+- **Update Group Backup Export Bucket**: Update One Export Bucket Private Networking Settings.
+- **Update Group Cluster**: Update One Cluster in One Project.
+- **Update Group Cluster Adaptive Settings**: Update Adaptive Settings for One Cluster.
+- **Update Group Cluster Backup Schedule**: Update Cloud Backup Schedule for One Cluster.
+- **Update Group Cluster Backup Snapshot**: Update Expiration Date for One Cloud Backup.
+- **Update Group Cluster Coll Stat Pinned Namespaces**: Add Pinned Namespaces.
+- **Update Group Cluster Online Archive**: Update One Online Archive.
+- **Update Group Cluster Process Args**: Update Advanced Configuration Options for One Cluster.
+- **Update Group Cluster Query Shape**: Update Query Shape Rejection Status.
+- **Update Group Cluster Search Deployment**: Update Search Nodes.
+- **Update Group Cluster Search Index**: Update One Atlas Search Index by ID.
+- **Update Group Cluster Search Index By Name**: Update One Atlas Search Index by Name.
+- **Update Group Cluster SQL Interface**: Update SQL Interface Status.
+- **Update Group Container**: Update One Network Peering Container.
+- **Update Group Custom Db Role Role**: Update One Custom Role in One Project.
+- **Update Group Data Federation**: Update One Federated Database Instance in One Project.
+- **Update Group Database User**: Update One Database User in One Project.
+- **Update Group Encryption At Rest**: Update Encryption at Rest Configuration in One Project.
+- **Update Group Flex Cluster**: Update One Flex Cluster in One Project.
+- **Update Group Integration**: Update One Third-Party Service Integration.
+- **Update Group Log Integration**: Update One Log Integration.
+- **Update Group Maintenance Window**: Update One Maintenance Window for One Project.
+- **Update Group MCP Config**: Update One MCP Configuration for One Project.
+- **Update Group Metric Integration**: Update One Metric Integration.
+- **Update Group Peer**: Update One Network Peering Connection.
+- **Update Group Private Endpoint Endpoint Service**: Update One Private Endpoint Service for One Provider.
+- **Update Group Service Account**: Update One Project Service Account.
+- **Update Group Settings**: Update Project Settings.
+- **Update Group Stream Connection**: Update One Stream Connection.
+- **Update Group Stream Connection Failover Connection**: Update One Stream Failover Connection.
+- **Update Group Stream Private Link Connection**: Update One Private Link Connection.
+- **Update Group Stream Processor**: Update One Stream Processor.
+- **Update Group Stream Workspace**: Update One Stream Workspace.
+- **Update Group Team**: Update Team Roles in One Project.
+- **Update Group User Security**: Update LDAP or X.509 Configuration.
+- **Update Org**: Update One Organization.
+- **Update Org API Key**: Update One Organization API Key.
+- **Update Org Delegation Settings**: Update Delegation Settings for One Organization.
+- **Update Org Log Integration**: Update One Organization Log Integration.
+- **Update Org Maintenance Settings**: Update Maintenance Settings for One Organization.
+- **Update Org MCP Config**: Update One MCP Configuration for One Organization.
+- **Update Org Resource Policy**: Update One Atlas Resource Policy.
+- **Update Org Sandbox Config**: Update an Existing Sandbox Configuration.
+- **Update Org Service Account**: Update One Organization Service Account.
+- **Update Org Settings**: Update Settings for One Organization.
+- **Update Org User**: Update One MongoDB Cloud User in One Organization.
+- **Upgrade Group Cluster Tenant Upgrade**: Upgrade One Shared-Tier Cluster.
+- **Validate Group Live Migrations** (read-only): Validate One Migration Request.
+- **Validate Org Resource Policies** (read-only): Validate One Atlas Resource Policy.
+- **Verify Group User Security LDAP** (read-only): Verify LDAP Configuration in One Project.
+- **With Group Stream Sample Connections**: Create One Stream Workspace with Sample Connections.

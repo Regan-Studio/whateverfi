@@ -1,0 +1,253 @@
+# PlanetScale
+
+Manage PlanetScale organizations, databases, branches, deploy requests, backups, workflows, insights, and infrastructure through delegated OAuth access.
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/planetscale/.
+
+## Actions
+
+- **Add a member to a team**: Add a member to a team.
+- **Add a shard to a Neki shard configuration profile**: Add a shard to a Neki shard configuration profile.
+- **Add shards to a Neki branch**: Add shards to a Neki branch.
+- **Add shards to a Neki shard configuration profile**: Add shards to a Neki shard configuration profile.
+- **Assign shards to a Neki shard configuration profile**: Assign shards to a Neki shard configuration profile.
+- **Cancel a change request**: Cancel a branch resize change request.
+- **Cancel a change request for a Neki admin**: Cancel a change request for a Neki admin.
+- **Cancel a change request for a Neki branch**: Cancel a change request for a Neki branch.
+- **Cancel a change request for a Neki router**: Cancel a change request for a Neki router.
+- **Cancel a change request for a Neki shard configuration profile**: Cancel a change request for a Neki shard configuration profile.
+- **Cancel a change request for a Neki sidecar**: Cancel a change request for a Neki sidecar.
+- **Cancel a queued deploy request**: Cancel a queued deploy request.
+- **Cancel a resize request**: Cancel a resize request.
+- **Check deploy request storage** (read-only): Checks whether the deploy request's target branch cluster has enough storage to safely deploy the schema changes.
+- **Close a deploy request**: Close a deploy request.
+- **Complete a gated deploy request**: Complete a gated deploy request.
+- **Complete a revert**: Complete a revert.
+- **Complete an errored deploy**: Complete an errored deploy.
+- **Create a backup**: Create a backup.
+- **Create a backup policy**: Create a backup policy.
+- **Create a billing payment method setup**: Create a hosted checkout session for adding or replacing an organization's payment method.
+- **Create a bouncer**: Create a bouncer.
+- **Create a branch**: Create a branch.
+- **Create a database**: Create a database.
+- **Create a deploy request**: Create a deploy request.
+- **Create a log signature**: Creates a signed token that can be used to access branch logs.
+- **Create a new query patterns report**: Create a new query patterns report.
+- **Create a password**: Create a password.
+- **Create a read-only replica**: Create a read-only replica.
+- **Create a router for a Neki branch**: Create a router for a Neki branch.
+- **Create a shard configuration profile for a Neki branch**: Create a shard configuration profile for a Neki branch.
+- **Create a switchover**: Moves the primary of a Postgres branch.
+- **Create a traffic budget**: Create a traffic budget.
+- **Create a traffic rule**: Create a traffic rule.
+- **Create a webhook**: Create a webhook.
+- **Create an Insights agent run**: Create an Insights agent run.
+- **Create an IP restriction entry**: Create an IP restriction entry.
+- **Create an organization team**: Create an organization team.
+- **Create role credentials**: Create role credentials.
+- **Delete a backup**: Delete a backup.
+- **Delete a backup policy**: Delete a backup policy.
+- **Delete a bouncer**: Delete a bouncer.
+- **Delete a branch**: Delete a branch.
+- **Delete a database**: Delete a database.
+- **Delete a password**: Delete a password.
+- **Delete a query patterns report**: Delete a query patterns report.
+- **Delete a read-only replica**: Delete a read-only replica.
+- **Delete a router from a Neki branch**: Delete a router from a Neki branch.
+- **Delete a shard configuration profile for a Neki branch**: Delete a shard configuration profile for a Neki branch.
+- **Delete a traffic budget**: Delete a traffic budget.
+- **Delete a traffic rule**: Delete a traffic rule.
+- **Delete a webhook**: Delete a webhook.
+- **Delete an IP restriction entry**: Delete an IP restriction entry.
+- **Delete an organization team**: Delete an organization team.
+- **Delete an SSO domain**: Delete a verified or pending SSO domain.
+- **Delete role credentials**: Delete role credentials.
+- **Delete the current billing payment method**: Delete the current payment method for an organization.
+- **Demote a branch**: Demotes a branch from production to development.
+- **Disable directory sync**: Disable directory sync for the organization.
+- **Disable organization SSO**: Disable SSO and directory sync for the organization.
+- **Disable safe migrations for a branch**: Disable safe migrations for a branch.
+- **Dismiss a schema recommendation**: Dismiss a schema recommendation.
+- **Download a finished query patterns report** (read-only): Download a finished query patterns report.
+- **Enable force cutover for a deploy request**: Enable force cutover for a deploy request.
+- **Enable organization SSO**: Enable the SSO add-on and return a URL for verifying an email domain.
+- **Enable safe migrations for a branch**: Enable safe migrations for a branch.
+- **Get a backup** (read-only): Get a backup.
+- **Get a backup policy** (read-only): Get a backup policy.
+- **Get a billing payment method setup** (read-only): Get the state of a billing payment method setup.
+- **Get a bouncer** (read-only): Get a bouncer.
+- **Get a branch** (read-only): Get a branch.
+- **Get a branch change request** (read-only): Get a branch change request.
+- **Get a branch resize request** (read-only): Get a branch resize request.
+- **Get a branch schema** (read-only): Get a branch schema.
+- **Get a change request for a Neki admin** (read-only): Get a change request for a Neki admin.
+- **Get a change request for a Neki branch** (read-only): Get a change request for a Neki branch.
+- **Get a change request for a Neki router** (read-only): Get a change request for a Neki router.
+- **Get a change request for a Neki shard configuration profile** (read-only): Get a change request for a Neki shard configuration profile.
+- **Get a change request for a Neki sidecar** (read-only): Get a change request for a Neki sidecar.
+- **Get a database** (read-only): Get a database.
+- **Get a deploy request** (read-only): Get a deploy request.
+- **Get a deployment** (read-only): Get the deployment for a deploy request.
+- **Get a maintenance schedule** (read-only): Get a maintenance schedule.
+- **Get a password** (read-only): Get a password.
+- **Get a read-only replica** (read-only): Get a read-only replica.
+- **Get a role** (read-only): Get a role.
+- **Get a router for a Neki branch** (read-only): Get a router for a Neki branch.
+- **Get a schema recommendation** (read-only): Get a schema recommendation.
+- **Get a shard configuration profile for a Neki branch** (read-only): Get a shard configuration profile for a Neki branch.
+- **Get a shard for a Neki branch** (read-only): Get a shard for a Neki branch.
+- **Get a shard in a Neki shard configuration profile** (read-only): Get a shard in a Neki shard configuration profile.
+- **Get a sidecar for a Neki branch** (read-only): Get a sidecar for a Neki branch.
+- **Get a switchover** (read-only): Get a switchover.
+- **Get a team member** (read-only): Get a team member.
+- **Get a traffic budget** (read-only): Get a traffic budget.
+- **Get a webhook** (read-only): Get a webhook.
+- **Get an Insights agent run** (read-only): Get an Insights agent run.
+- **Get an invoice** (read-only): Get an invoice.
+- **Get an IP restriction entry** (read-only): Get an IP restriction entry.
+- **Get an organization** (read-only): Get an organization.
+- **Get an organization member** (read-only): Get an organization member by a user ID or membership ID returned by list_organization_members.
+- **Get an organization team** (read-only): Get an organization team.
+- **Get an SSO domain** (read-only): Get a registered SSO email domain and its verification state.
+- **Get bouncer resize requests** (read-only): Get bouncer resize requests.
+- **Get bouncer resize requests** (read-only): Get bouncer resize requests.
+- **Get branch change requests** (read-only): Get branch change requests.
+- **Get branch resize requests** (read-only): Get branch resize requests.
+- **Get current metric values** (read-only): Get current metric values.
+- **Get current tablet metrics** (read-only): Get current tablet metrics.
+- **Get current user** (read-only): Get the user associated with the current OAuth access token.
+- **Get database throttler configurations** (read-only): Get database throttler configurations.
+- **Get deploy request throttler configurations** (read-only): Get deploy request throttler configurations.
+- **Get invoice line items** (read-only): Get the line items for an invoice.
+- **Get invoices** (read-only): Get the invoices for an organization.
+- **Get OAuth token info** (read-only): Inspect whether the current OAuth access token is active and return its scopes and expiry.
+- **Get organization SSO status** (read-only): Get SSO add-on status, identity provider connection state, directory sync, and verified domains.
+- **Get read-only replica change requests** (read-only): Get read-only replica change requests.
+- **Get table storage metrics** (read-only): Get table storage metrics.
+- **Get table storage metrics by keyspace** (read-only): Get table storage metrics by keyspace.
+- **Get the admin for a Neki branch** (read-only): Get the admin for a Neki branch.
+- **Get the current billing payment method** (read-only): Get the current payment method for an organization.
+- **Get the data topology for a Neki branch** (read-only): Get the data topology for a Neki branch.
+- **Get the default postgres role** (read-only): Get the default postgres role.
+- **Get the default shard configuration profile for a Neki branch** (read-only): Get the default shard configuration profile for a Neki branch.
+- **Get the deploy queue** (read-only): The deploy queue returns the current list of deploy requests in the order they will be deployed.
+- **Get time-series metrics** (read-only): Retrieve time-series metrics for a database branch.
+- **Get time-series metrics for SQL queries** (read-only): Get time-series metrics for SQL queries.
+- **Get time-series metrics grouped by query tags** (read-only): Get time-series metrics grouped by query tags.
+- **Get time-series tablet metrics** (read-only): Get time-series tablet metrics.
+- **Lint a branch schema** (read-only): Lint a branch schema.
+- **List admin size SKUs for a Neki branch** (read-only): List admin size SKUs for a Neki branch.
+- **List audit logs** (read-only): List audit logs.
+- **List available cluster sizes** (read-only): List available cluster sizes for an organization.
+- **List available Postgres versions** (read-only): List the published Postgres versions available to the requested engine.
+- **List backup policies** (read-only): List backup policies.
+- **List backups** (read-only): List backups.
+- **List bouncers** (read-only): List bouncers.
+- **List branch anomalies** (read-only): List branch anomalies.
+- **List branch queries** (read-only): List branch queries.
+- **List branch query errors** (read-only): List branch query errors.
+- **List branches** (read-only): List branches.
+- **List change requests for a Neki admin** (read-only): List change requests for a Neki admin.
+- **List change requests for a Neki branch** (read-only): List change requests for a Neki branch.
+- **List change requests for a Neki router** (read-only): List change requests for a Neki router.
+- **List change requests for a Neki shard configuration profile** (read-only): List change requests for a Neki shard configuration profile.
+- **List change requests for a Neki sidecar** (read-only): List change requests for a Neki sidecar.
+- **List cluster extensions** (read-only): List cluster extensions.
+- **List cluster parameters** (read-only): Returns the parameters for a branch.
+- **List database regions** (read-only): List database regions.
+- **List databases** (read-only): List databases.
+- **List deploy operations** (read-only): List deploy operations for a deploy request.
+- **List deploy request reviews** (read-only): List deploy request reviews.
+- **List deploy requests** (read-only): List deploy requests for a database.
+- **List extensions for a Neki shard configuration profile** (read-only): List extensions for a Neki shard configuration profile.
+- **List generated query patterns reports** (read-only): List generated query patterns reports.
+- **List Insights agent runs** (read-only): List Insights agent runs.
+- **List Insights Agent schedules** (read-only): List Insights Agent schedules.
+- **List IP restriction entries** (read-only): List IP restriction entries.
+- **List maintenance schedules** (read-only): List maintenance schedules.
+- **List maintenance windows** (read-only): List maintenance windows.
+- **List organization members** (read-only): List organization members.
+- **List organization SSO domains** (read-only): List email domains registered for organization SSO.
+- **List organizations** (read-only): When using a service token, returns the list of organizations the service token has access to.
+- **List parameters for a Neki admin** (read-only): List parameters for a Neki admin.
+- **List parameters for a Neki router** (read-only): List parameters for a Neki router.
+- **List parameters for a Neki shard configuration profile** (read-only): List parameters for a Neki shard configuration profile.
+- **List parameters for a Neki sidecar** (read-only): List parameters for a Neki sidecar.
+- **List passwords** (read-only): List passwords.
+- **List queries for an error fingerprint** (read-only): List queries for an error fingerprint.
+- **List query statistics grouped by tag** (read-only): List query statistics grouped by tag.
+- **List query tags** (read-only): List query tags.
+- **List read-only regions** (read-only): List read-only regions for the database's default branch.
+- **List read-only replicas** (read-only): List read-only replicas.
+- **List regions for an organization** (read-only): List regions for an organization.
+- **List roles** (read-only): List roles.
+- **List router size SKUs for a Neki branch** (read-only): List router size SKUs for a Neki branch.
+- **List routers for a Neki branch** (read-only): List routers for a Neki branch.
+- **List schema recommendations** (read-only): List schema recommendations.
+- **List shard configuration profiles for a Neki branch** (read-only): List shard configuration profiles for a Neki branch.
+- **List shards for a Neki branch** (read-only): List shards for a Neki branch.
+- **List shards for a Neki shard configuration profile** (read-only): List shards for a Neki shard configuration profile.
+- **List sidecars for a Neki branch** (read-only): List sidecars for a Neki branch.
+- **List switchovers** (read-only): List switchovers.
+- **List team members** (read-only): List team members.
+- **List teams in an organization** (read-only): List teams in an organization.
+- **List traffic budgets** (read-only): List traffic budgets.
+- **List traffic budgets affecting a query fingerprint** (read-only): List traffic budgets affecting a query fingerprint.
+- **List webhooks** (read-only): List webhooks for a database.
+- **Open the directory sync portal**: Return a URL for configuring directory sync.
+- **Open the SSO configuration portal**: Return a URL for configuring the identity provider.
+- **Promote a branch**: Promotes a branch from development to production.
+- **Queue a deploy request**: Queue a deploy request.
+- **Reassign objects owned by one role to another role**: Reassign objects owned by one role to another role.
+- **Remove a member from a team**: Remove a member from a team.
+- **Remove a member from an organization**: Remove a member from an organization.
+- **Remove a shard from a Neki branch**: Remove a shard from a Neki branch.
+- **Remove a shard from a Neki shard configuration profile**: Remove a shard from a Neki shard configuration profile.
+- **Remove shards from a Neki shard configuration profile**: Remove shards from a Neki shard configuration profile.
+- **Renew a password**: Renew a password.
+- **Renew role expiration**: Renew role expiration.
+- **Reset a role's password**: Reset a role's password.
+- **Reset default credentials**: Reset default credentials.
+- **Retrieve a branch anomaly** (read-only): Retrieve a branch anomaly.
+- **Retrieve a branch query** (read-only): Retrieve a branch query.
+- **Retrieve a query tag** (read-only): Retrieve a query tag.
+- **Retrieve a summary of query statistics** (read-only): Retrieve a summary of query statistics.
+- **Retrieve query statistics** (read-only): Retrieve query statistics.
+- **Review a deploy request**: Review a deploy request by either approving or commenting on the deploy request.
+- **Run maintenance for a Neki shard configuration profile**: Run maintenance for a Neki shard configuration profile.
+- **Run maintenance for a Postgres branch**: Run maintenance for a Postgres branch.
+- **Run maintenance for selected Neki shard configuration profiles**: Run maintenance for selected Neki shard configuration profiles.
+- **Set the data topology for a Neki branch**: Set the data topology for a Neki branch.
+- **Set the default shard configuration profile for a Neki branch**: Set the default shard configuration profile for a Neki branch.
+- **Show the status of a query patterns report** (read-only): Show the status of a query patterns report.
+- **Skip revert period**: Skips the revert period for a deploy request.
+- **Start SSO domain verification**: Enable SSO if needed and return a URL for verifying an email domain.
+- **Test a webhook**: Sends a test event to the webhook.
+- **Update a backup**: Update a backup.
+- **Update a backup policy**: Update a backup policy.
+- **Update a branch**: Update a branch.
+- **Update a password**: Update a password.
+- **Update a read-only replica**: Update a read-only replica.
+- **Update a router for a Neki branch**: Update a router for a Neki branch.
+- **Update a shard configuration profile for a Neki branch**: Update a shard configuration profile for a Neki branch.
+- **Update a shard for a Neki branch**: Update a shard for a Neki branch.
+- **Update a shard in a Neki shard configuration profile**: Update a shard in a Neki shard configuration profile.
+- **Update a sidecar for a Neki branch**: Update a sidecar for a Neki branch.
+- **Update a traffic budget**: Update a traffic budget.
+- **Update a webhook**: Update a webhook.
+- **Update an Insights Agent schedule**: Update an Insights Agent schedule.
+- **Update an IP restriction entry**: Update an IP restriction entry.
+- **Update an organization**: Update an organization.
+- **Update an organization team**: Update an organization team.
+- **Update auto-apply for deploy request**: Enables or disabled the auto-apply setting for a deploy request.
+- **Update auto-delete branch for deploy request**: Enables or disabled the auto-delete branch setting for a deploy request.
+- **Update database settings**: Update database settings.
+- **Update database throttler configurations**: Update database throttler configurations.
+- **Update deploy request throttler configurations**: Update deploy request throttler configurations.
+- **Update organization member role**: Update organization member role.
+- **Update role name**: Update role name.
+- **Update safe migrations for a branch**: Update safe migrations for a branch.
+- **Update the admin for a Neki branch**: Update the admin for a Neki branch.
+- **Upsert a bouncer resize request**: Upsert a bouncer resize request.
+- **Upsert a change request for cluster size, replicas, storage, or parameters**: Upsert a change request for cluster size, replicas, storage, or parameters.
+- **Upsert a resize request**: Upsert a resize request.

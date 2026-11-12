@@ -1,0 +1,99 @@
+# Elastic Email
+
+Elastic Email provides transactional email delivery, email marketing, contact and campaign management, reporting, verification, and account administration APIs.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/elastic-email/.
+
+## Actions
+
+- **Add Contact List Members**: Add selected existing contacts to a named Elastic Email contact list.
+- **Add Contacts**: Add up to 1000 Elastic Email contacts and optionally assign them to existing lists.
+- **Add Suppressions**: Add up to 1000 email addresses to Elastic Email's bounce, complaint, or unsubscribe suppression records.
+- **Adjust Subaccount Credits**: Add or remove email credits from a managed Elastic Email subaccount.
+- **Check Domain Restriction** (read-only): Check whether Elastic Email restricts a domain or identifies it as a free-provider domain.
+- **Create Campaign**: Create a campaign.
+- **Create Contact List**: Create a contact list, optionally with initial email members.
+- **Create Domain**: Create a sending or tracking domain in the connected Elastic Email account.
+- **Create Inbound Route**: Create a new inbound email route.
+- **Create Segment**: Create a dynamic contact segment from a name and SQL-like rule.
+- **Create Subaccount**: Create a managed subaccount with optional initial email settings.
+- **Create Template**: Create a new email template with its name, content, and scope.
+- **Create Webhook**: Create a webhook subscription for selected email events.
+- **Delete Campaign**: Delete one campaign by exact name.
+- **Delete Contact**: Delete one contact by exact email address.
+- **Delete Contact List**: Delete one contact list by exact name.
+- **Delete Contacts**: Permanently delete 1-10 contacts by exact email address.
+- **Delete Domain**: Delete one configured domain from the connected Elastic Email account.
+- **Delete Email Verification**: Delete one saved email verification result by exact email address.
+- **Delete File**: Permanently delete one stored file by its exact name.
+- **Delete Inbound Route**: Permanently delete one inbound email route by its public ID.
+- **Delete Segment**: Delete one Elastic Email dynamic contact segment by its exact name.
+- **Delete Suppression**: Remove one email address from Elastic Email suppression records.
+- **Delete Template**: Delete one Elastic Email template by its exact name.
+- **Delete Verification File**: Delete one uploaded verification file job by its VerificationID.
+- **Delete Webhook**: Delete one webhook subscription by its public WebhookID.
+- **Download File** (read-only): Download a stored Elastic Email file by its exact name.
+- **Download Verification File Results** (read-only): Download the ZIP result archive for a completed verification file job.
+- **Get Account Statistics** (read-only): Return aggregate Elastic Email delivery statistics for a time interval.
+- **Get Campaign** (read-only): Return one Elastic Email campaign by its exact name.
+- **Get Contact** (read-only): Return one Elastic Email contact by email address.
+- **Get Contact Export Status** (read-only): Get the current status of an asynchronous contact export job.
+- **Get Contact List** (read-only): Return one Elastic Email contact list by its exact name.
+- **Get Credential Metadata** (read-only): Get one Elastic Email API-key or SMTP credential's audit metadata without returning its secret token.
+- **Get Domain** (read-only): Return detailed DNS and certificate state for one Elastic Email domain.
+- **Get Email Job Status** (read-only): Return delivery status and optional recipient-level details for an Elastic Email transaction.
+- **Get Email Preview** (read-only): Return the rendered preview, attachment metadata, and delivery status for an Elastic Email message ID.
+- **Get Email Verification** (read-only): Return the saved Elastic Email verification result for one email address.
+- **Get Event Export Status** (read-only): Get the current status of an asynchronous global or channel event export.
+- **Get File Info** (read-only): Return metadata for a stored Elastic Email file without downloading it.
+- **Get Inbound Route** (read-only): Return one Elastic Email inbound route by its public ID.
+- **Get Segment** (read-only): Return one Elastic Email dynamic contact segment by its exact name.
+- **Get Statistics Breakdown** (read-only): Return one Elastic Email campaign or channel delivery summary by exact name.
+- **Get Subaccount** (read-only): Return one managed Elastic Email subaccount by its login email.
+- **Get Suppression** (read-only): Return suppression details for one Elastic Email address.
+- **Get Template** (read-only): Return one Elastic Email template by its exact name.
+- **Get Verification File Results** (read-only): Return one page of detailed results and metadata for a verification file.
+- **Get Webhook** (read-only): Return one Elastic Email webhook subscription by its public ID.
+- **Import Contacts**: Start an asynchronous contact import using exactly one source.
+- **Import Suppressions**: Upload CSV content containing bounced, complained, or unsubscribed email addresses for asynchronous suppression import.
+- **List Campaigns** (read-only): Find campaigns by optional name fragment and return one page.
+- **List Contact List Members** (read-only): Return one page of contacts in a named Elastic Email contact list.
+- **List Contact Lists** (read-only): Return one page of contact lists from the connected Elastic Email account.
+- **List Contacts** (read-only): Return one page of contacts from the connected Elastic Email account.
+- **List Credential Metadata** (read-only): List API-key or SMTP credential metadata without returning secret tokens.
+- **List Domains** (read-only): Return all sending and tracking domains configured for the account.
+- **List Email Verifications** (read-only): Return one page of individual email verification results.
+- **List Files** (read-only): Return one page of stored files and metadata.
+- **List Inbound Routes** (read-only): Return all inbound email routing rules in their current order.
+- **List Segments** (read-only): Return one page of dynamic contact segments.
+- **List Statistics Breakdowns** (read-only): Return one page of campaign or channel delivery summaries.
+- **List Subaccounts** (read-only): Return one page of managed subaccounts without credentials or passwords.
+- **List Suppressions** (read-only): Return one page of all suppressed addresses or only addresses suppressed for bounce, complaint, or unsubscribe reasons.
+- **List Templates** (read-only): Return one page of templates for the required visibility scopes.
+- **List Verification Files** (read-only): Return all uploaded verification file jobs and their current statuses.
+- **List Webhooks** (read-only): Return one page of webhook subscriptions.
+- **Pause Campaign**: Pause an active Elastic Email campaign by exact name, cancelling messages that are still waiting to be sent.
+- **Remove Contact List Members**: Remove selected contacts from a named Elastic Email contact list without deleting the contacts.
+- **Reorder Inbound Routes**: Set the processing order of Elastic Email inbound routing rules.
+- **Search Delivery Events** (read-only): Search all delivery events, one transaction's events, or one channel's events and return one page.
+- **Send Email**: Send an email to one or more recipients using inline content or a saved template.
+- **Send Merge File Email**: Send personalized email to recipients listed in a CSV merge-data file.
+- **Send Transactional Email**: Send one transactional message with To, CC, and BCC recipient groups.
+- **Set Default Sender Domain**: Set the domain of a verified sender email as the account default.
+- **Start Contact Export**: Start an asynchronous export of all contacts or contacts selected by one filter rule or a list of email addresses.
+- **Start Event Export**: Start an asynchronous export for all events or one channel.
+- **Start Verification File**: Start bulk verification for a previously uploaded CSV file.
+- **Trigger Campaign Automation**: Enter one contact email into an irreversible automation that may send email or execute later steps and cannot be undone.
+- **Update Campaign**: Update an existing active or paused campaign.
+- **Update Contact**: Update the first name, last name, or custom fields for one Elastic Email contact.
+- **Update Contact List**: Update an Elastic Email contact list by providing at least one change.
+- **Update Domain**: Update certificate, VERP, or custom bounce settings for an Elastic Email domain.
+- **Update Inbound Route**: Replace an existing inbound route definition by public ID.
+- **Update Segment**: Replace an existing dynamic contact segment's name and rule.
+- **Update Subaccount Email Settings**: Replace email limits and sender settings for a managed subaccount.
+- **Update Template**: Replace an existing email template's name, content, and scope.
+- **Update Webhook**: Update a webhook URL, event notification flags, name, or enabled state.
+- **Upload File**: Store a base64-encoded file in the connected Elastic Email account.
+- **Upload Verification File**: Upload a CSV containing an email column for a later bulk verification job.
+- **Verify Domain**: Ask Elastic Email to re-check a domain's DNS configuration.
+- **Verify Email**: Run verification for one email address and return its deliverability assessment.

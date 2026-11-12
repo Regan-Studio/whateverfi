@@ -1,0 +1,789 @@
+# GitHub
+
+GitHub is a code hosting platform for version control and collaboration, offering Git-based repository management, issue tracking, and continuous integration features
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/github/.
+
+## Actions
+
+- **Add a repository collaborator**: Adds a github user as a repository collaborator, or updates their permission if already a collaborator.
+- **Add assignees to an issue**: Adds or removes assignees for a github issue.
+- **Add email for auth user**: Adds one or more email addresses (which will be initially unverified) to the authenticated user's github account.
+- **Add labels to an issue**: Adds labels (provided in the request body) to a repository issue.
+- **Approve a workflow run for a fork pull request**: Approves a workflow run from a forked repository's pull request.
+- **Compare two commits** (read-only): Compares two commit points (commits, branches, tags, or shas) within a repository or across forks, using base...head or owner.
+- **Create a blob**: Creates a git blob in a repository, requiring content and encoding ('utf-8' or 'base64').
+- **Create a commit**: Creates a new commit in a github repository.
+- **Create a pull request**: Creates a pull request in a github repository, requiring existing base and head branches.
+- **Create a reference**: Creates a git reference (e.g., a branch or tag) in a repository.
+- **Create a release**: Creates a release in a github repository for a specified tag.
+- **Create a tree**: Creates a new git tree object in a repository, defining file/directory structure by specifying tree entries, optionally building on a base…
+- **Create an issue**: Creates a new issue in a github repository, requiring the repository to exist and have issues enabled.
+- **Create an issue comment**: Creates a new comment on an existing github issue or pull request within the specified repository.
+- **Create an organization repository**: Creates a new repository within a specified github organization, with options for detailed configuration including visibility, features,…
+- **Create or update file contents**: Creates a new file or updates an existing file in a github repository.
+- **Delete a repository**: Permanently deletes the specified repository.
+- **Find Pull Requests** (read-only): Ai-optimized pull request search with smart filtering by repo, author, state, labels, and merge status.
+- **Find Repositories** (read-only): Ai-optimized repository search with smart filtering by language, stars, topics, and ownership.
+- **Get a pull request** (read-only): Retrieves a specific pull request from a github repository using its owner, repository name, and pull request number.
+- **Get a reference** (read-only): Retrieves a specific git reference (e.g., a branch, tag, or fully qualified like 'heads/main') from a github repository.
+- **Get repository content** (read-only): Retrieves a file's base64 encoded content or a directory's metadata (but not a listing of its contents) from a github repository path.
+- **List branches** (read-only): Lists branches for an existing github repository, with an option to filter by protection status.
+- **List deployments** (read-only): Lists deployments for a specified repository.
+- **List organizations for a user** (read-only): Lists public organizations for a specified github user.
+- **List organizations for the authenticated user** (read-only): Lists organizations the authenticated github user is a member of, returning details for each organization.
+- **List pull requests** (read-only): Lists pull requests for a specified github repository with ai-friendly filtering.
+- **List pull requests files** (read-only): Lists all files (including additions, modifications, and removals) associated with a specific pull request in a github repository.
+- **List repositories for the authenticated user** (read-only): Lists repositories for the authenticated user.
+- **List repositories starred by the authenticated user** (read-only): Lists repositories the authenticated user has starred, optionally sorted and paginated, including star creation timestamps via…
+- **List repository contributors** (read-only): Lists contributors to a specified repository, sorted by number of contributions in descending order.
+- **List repository issues** (read-only): Lists issues (which include pull requests) for a specified, existing github repository, with options for filtering, sorting, and pagination.
+- **List stargazers** (read-only): Lists users who have starred the specified github repository, which must exist.
+- **Search issues and pull requests** (read-only): Searches github for issues and pull requests.
+- **Star a repository for the authenticated user**: Stars an existing and accessible repository for the authenticated user.
+- **Update a reference**: Updates a git reference (e.g., a branch or tag) to a specific commit sha, creating the reference if it doesn't exist.
+- **Accept a repository invitation**: Accepts a pending repository invitation that has been issued to the authenticated user.
+- **Add a repository to an app installation**: Adds a repository to a github app installation, granting the app access.
+- **Add a selected repository to a user secret**: Grants a specified repository access to an authenticated user's existing codespaces secret, enabling codespaces created for that…
+- **Add app access restrictions**: Replaces github app access restrictions for an existing protected branch.
+- **Add or update team membership for a user**: Adds a github user to a team or updates their role (member or maintainer), inviting them to the organization if not already a member.
+- **Add or update team project permissions**: Grants or updates a team's permissions ('read', 'write', or 'admin') for a specific project, which must exist within the specified…
+- **Add or update team repository permissions**: Sets or updates a team's permission level for a repository within an organization.
+- **Add org runner labels**: Adds new custom labels to an existing self-hosted runner for an organization.
+- **Add project collaborator**: Adds a specified github user as a collaborator to an existing organization project with a given permission level.
+- **Add repo to org secret with selected access**: Adds a repository to an existing organization-level github actions secret that is configured for 'selected' repository access.
+- **Add runner labels**: Adds and appends custom labels to a self-hosted repository runner, which must be registered and active.
+- **Add selected repo to org secret**: Grants an existing repository access to an existing organization-level dependabot secret.
+- **Add selected repository to an organization secret**: Adds a repository to an organization secret's access list when the secret's visibility is 'selected'.
+- **Add selected repository to an organization variable**: Grants a repository access to an organization-level github actions variable, if that variable's visibility is set to 'selected…
+- **Add social accounts for the authenticated user**: Adds one or more social media links (which must be valid, full urls for platforms supported by github) to the authenticated user's public…
+- **Add status check contexts**: Adds status check contexts (provided in the request body, e.g., {"contexts".
+- **Add team access restrictions**: Overwrites the list of teams (and their child teams) granted push access to a protected branch.
+- **Add user access restrictions**: Sets/replaces list of users allowed to push to a protected branch.
+- **Add users to codespaces access for an organization**: Sets or replaces the list of organization members granted codespaces access billed to the organization.
+- **Assign an organization role to a team**: Assigns an existing organization-level role (identified by role id) to a team (identified by team slug) within a github organization…
+- **Assign an organization role to a user**: Assigns a specific organization role to a user who is a member or an outside collaborator in a github organization, using a valid role id.
+- **Authuserdockerconflictpackageslist** (read-only): Lists docker packages for the authenticated user that encountered conflicts during the docker migration process.
+- **Block a user**: Blocks an existing individual github user (not an organization or your own account), preventing them from interacting with your account…
+- **Block a user from an organization**: Blocks an existing github user from an existing organization, preventing their contributions, collaboration, and forking of the…
+- **Cancel a GitHub Pages deployment**: Cancels an existing, ongoing or queued github pages deployment for a repository using its pages deployment id.
+- **Cancel a workflow run**: Cancels a workflow run in a github repository if it is in a cancellable state (e.g., 'in progress' or 'queued').
+- **Check a token** (read-only): Checks if a github app or oauth access token is valid for the specified client id and retrieves its details, typically to verify its…
+- **Check if a gist is starred** (read-only): Checks if a gist, identified by gist id, is starred by the authenticated user, returning an empty response (204) if starred, or a 404…
+- **Check if a user can be assigned** (read-only): Verifies if a github user can be assigned to issues in a repository.
+- **Check if a user can be assigned to an issue** (read-only): Checks if a specified github user can be assigned to a given issue within a repository.
+- **Check if a user follows another user** (read-only): Checks if a github user username follows target user.
+- **Check if a user is a repository collaborator** (read-only): Checks if a user is a collaborator on a specified github repository, returning a 204 status if they are, or a 404 status if they are not…
+- **Check if a user is blocked by an organization** (read-only): Checks if a github user is blocked by an organization.
+- **Check if a user is blocked by the authenticated user** (read-only): Checks if the specified github user is blocked by the authenticated user.
+- **Check if person is followed by authenticated user** (read-only): Checks if the authenticated github user follows a target github user.
+- **Check if pull request merged** (read-only): Checks if a specified github pull request has been merged, indicated by a 204 http status (merged) or 404 (not merged/found).
+- **Check if repo starred by auth user** (read-only): Determine if the authenticated user has starred a specific github repository, which is confirmed by an http 204 status (resulting in an…
+- **Check private vulnerability reporting status** (read-only): Checks if private vulnerability reporting is enabled for the specified repository.
+- **Check team permissions for a project** (read-only): Checks if a team has 'read', 'write', or 'admin' permissions for an organization's specific classic project, returning the project's…
+- **Check team permissions for a repository** (read-only): Checks a team's permissions for a specific repository within an organization, including permissions inherited from parent teams.
+- **Clear repository cache by key**: Deletes github actions caches from a repository matching a specific key and an optional git ref, used to manage storage or clear…
+- **Clear self-hosted runner org labels**: Removes all custom labels from a self-hosted runner for an organization.
+- **Configure JIT runner for an org**: Generates a jit configuration for a github organization's new self-hosted runner to run a single job then unregister.
+- **Configure OIDC subject claim template**: Sets or updates the oidc subject claim customization template for an existing github organization by specifying which claims (e.g.,…
+- **Convert an organization member to outside collaborator**: Converts an existing organization member, who is not an owner, to an outside collaborator, restricting their access to explicitly granted…
+- **Create a check run**: Creates a new check run for a specific commit in a repository, used by external services to report status, detailed feedback, annotations,…
+- **Create a check suite**: Creates a new check suite for a specific commit (head sha) in an original repository (not a fork).
+- **Create a codespace for the authenticated user**: Creates a github codespace for the authenticated user, requiring a json request body with either repository id (integer) or a pull request…
+- **Create a codespace from a pull request**: Creates a github codespace for an open pull request in a codespaces-enabled repository, with options to customize its configuration.
+- **Create a codespace in a repository**: Creates a github codespace for the authenticated user in a specified repository, which must be accessible and use a valid…
+- **Create a commit comment**: Creates a comment on a specific commit, or on a specific line if path and position are provided.
+- **Create a commit status**: Sets a commit's status (e.g., error, failure, pending, success from ci/cd) for a given sha.
+- **Create a custom deployment protection rule on an environment**: Enables a custom deployment protection rule for an existing environment in a repository by linking a configured github app (via…
+- **Create a custom organization role**: Creates a custom role with defined permissions within a github organization.
+- **Create a dependency snapshot**: Creates a snapshot of a repository's dependencies to populate the github dependency graph and enable security alerts.
+- **Create a deploy key**: Creates a deploy key for a repository.
+- **Create a deployment**: Creates a github deployment for an existing repository, targeting a specific ref (branch, tag, or sha) that must also exist within the…
+- **Create a deployment branch policy**: Creates a deployment branch or tag policy for an existing environment in a github repository, using a ruby file.fnmatch pattern (where *…
+- **Create a deployment status**: Creates a status for an existing deployment, updating its operational state, associated urls, and description.
+- **Create a discussion**: Creates a new discussion post on a specific team's page within an organization.
+- **Create a discussion comment**: Creates a new comment on an existing team discussion within a github organization.
+- **Create a fork**: Creates a fork of an accessible repository, optionally into a specific organization, with a new name, or copying only the default branch.
+- **Create a gist**: Creates a new gist on github with provided files, an optional description, and public/secret visibility.
+- **Create a gist comment**: Creates a new comment on a specified github gist.
+- **Create a GitHub App from a manifest**: Use this action to finalize a github app's creation by exchanging the temporary code (received as a url parameter during the app manifest…
+- **Create a github pages deployment**: Creates a github pages deployment for a repository using a specified artifact and oidc token, provided github pages is enabled and the…
+- **Create a github pages site**: Configures or updates github pages for a repository, setting build type and source.
+- **Create a label**: Creates a new label in a specified github repository, provided the repository exists and the user has write permissions.
+- **Create a milestone**: Creates a milestone in a github repository for tracking progress on issues or pull requests.
+- **Create a project card**: Creates a project card in a github project column.
+- **Create a project column**: Creates a new column in a github project (classic).
+- **Create a registration token for a repository**: Generates a time-limited token required to register a new self-hosted runner with a specific repository.
+- **Create a registration token for an organization**: Generates a temporary (one-hour) registration token to add a new self-hosted runner to an organization for github actions.
+- **Create a remove token for a repository**: Generates a temporary (one-hour validity) token required to unregister and remove a self-hosted runner from a repository.
+- **Create a remove token for an organization**: Generates a token, valid for one hour, to authenticate removing a self-hosted runner from an organization.
+- **Create a reply for a review comment**: Posts a reply to a specific review comment on a github pull request, requiring the repository, pull request, and original comment to…
+- **Create a repository dispatch event**: Triggers a github actions workflow or a webhook on a repository by creating a repository dispatch event, allowing programmatic triggering…
+- **Create a repository for the authenticated user**: Creates a new repository for the authenticated user, optionally within an organization if team id is specified.
+- **Create a repository from an unpublished codespace**: Publishes the specified codespace to a new repository, using the codespace's current state as the initial commit.
+- **Create a repository project**: Creates a new classic project board within a specified repository.
+- **Create a repository ruleset**: Creates a uniquely named ruleset for a repository, defining rules for branches or tags with specified enforcement, conditions, and bypass…
+- **Create a repository using a template**: Creates a new repository from an existing template repository.
+- **Create a repository variable**: Creates a new, unencrypted variable in a repository for github actions workflows.
+- **Create a repository webhook**: Creates a webhook for a specified repository.
+- **Create a review comment for a pull request**: Creates a review comment on a pull request's diff, targeting a specific line, range of lines, an entire file, or replying to an existing…
+- **Create a review for a pull request**: Creates a pull request review, allowing approval, change requests, or comments.
+- **Create a scoped access token**: Exchanges a user-to-server token for a new, fine-grained scoped access token for a github app, requiring client id, access token, either…
+- **Create a tag object**: Creates an annotated git tag object in a repository, pointing to an existing git object (commit, tree, or blob) defined by its sha and…
+- **Create a tag protection state for a repository**: Creates a tag protection rule for a repository using a glob pattern.
+- **Create a team**: Creates a new team in an organization, optionally with maintainers, repositories, specific privacy, notification settings, or a parent team.
+- **Create a temporary private fork**: Creates a temporary private fork of the specified repository to address a security vulnerability, linking the fork to a ghsa id that must…
+- **Create a user project**: Creates a new github project board for the authenticated user to organize and track issues, pull requests, and notes.
+- **Create a workflow dispatch event**: Manually triggers a github actions workflow identified by workflow id at a given ref, if the workflow is configured to accept workflow…
+- **Create an autolink reference for a repository**: Creates a repository autolink to automatically convert text references (e.g., 'ticket-123') into hyperlinks, using a unique key prefix and…
+- **Create an environment variable**: Creates an encrypted environment variable for a pre-existing environment within a github repository.
+- **Create an organization project**: Creates a new classic project board within a specified github organization.
+- **Create an organization variable**: Creates a new, uniquely named github actions variable for an organization, with configurable repository access visibility (all, private,…
+- **Create an organization webhook**: Creates a webhook for a github organization to deliver event notifications to a configured url.
+- **Create commit signature protection**: Enables commit signature protection for a specified branch, requiring all new commits to be signed.
+- **Create JIT runner config for repo**: Generates a temporary just-in-time (jit) configuration for a new self-hosted github actions runner for a repository.
+- **Create or update a custom property for an organization**: Creates a new custom property (name must be unique for creation) or updates an existing one for an organization to define metadata for its…
+- **Create or update a repository secret**: Creates or updates a github actions secret within a specific repository.
+- **Create or update a secret for the authenticated user**: Creates or updates a codespaces secret for the authenticated user.
+- **Create or update an environment**: Creates a new environment or updates an existing one in a github repository, allowing configuration of deployment protection rules such as…
+- **Create or update an environment secret**: Creates or updates an environment secret with an encrypted value that was encrypted using the public key identified by key id for the…
+- **Create or update an organization secret**: Creates or updates an organization secret for github actions, requiring its value to be pre-encrypted via libsodium using the…
+- **Create or update custom properties for an organization**: Creates new custom property schemas or updates existing ones in bulk for a specified organization.
+- **Create or Update Organization Secret with LibSodium**: Creates or updates a dependabot organization secret, requiring the secret value to be pre-encrypted with libsodium using the…
+- **Create or update repo secret with encrypted value**: Creates or updates a dependabot secret in a repository using an encrypted value (pre-encrypted with libsodium using the repository's…
+- **Create or update repository custom property values**: Creates or updates up to 30 custom property values for a repository.
+- **Create reaction for a commit comment**: Creates an emoji reaction for a commit comment.
+- **Create reaction for a pull request review comment**: Adds a specified reaction to a pull request review comment within a github repository.
+- **Create reaction for a release**: Creates an emoji reaction for a specific, existing release in a github repository.
+- **Create reaction for a team discussion**: Creates a reaction for a team discussion within a github organization.
+- **Create reaction for a team discussion comment**: Adds a reaction to a team discussion comment, requiring the specified organization, team, discussion, and comment to exist.
+- **Create reaction for an issue**: Creates a reaction for a specified issue within a github repository.
+- **Create reaction for an issue comment**: Creates a reaction for a specific comment on an issue within a github repository.
+- **Customize OIDC subject claim template** (read-only): Retrieves the openid connect (oidc) subject claim customization template for a repository, which defines the sub claim structure in oidc…
+- **Decline a repository invitation**: Declines a specific, pending repository invitation for the authenticated user, identified by its invitation id.
+- **Delete a code scanning analysis from a repository**: Deletes a specific code scanning analysis by its id from a repository.
+- **Delete a codespace for the authenticated user**: Deletes a specific codespace owned by the authenticated user.
+- **Delete a codespace from the organization**: Permanently deletes a specific codespace belonging to a member of the specified organization.
+- **Delete a commit comment**: Deletes a specific commit comment, identified by its comment id, from the specified repository.
+- **Delete a commit comment reaction**: Deletes a reaction from a commit comment in a github repository.
+- **Delete a custom organization role**: Deletes a custom organization role (which should not be actively assigned) by its id.
+- **Delete a deploy key**: Deletes a specific deploy key from a repository.
+- **Delete a deployment**: Permanently deletes a specified *inactive* deployment from a repository.
+- **Delete a deployment branch policy**: Deletes a specific deployment branch or tag policy, identified by its id, from a given environment within a repository.
+- **Delete a discussion**: Deletes a specific team discussion, identified by its number, from an organization's team.
+- **Delete a discussion comment**: Deletes a specific comment from an existing team discussion within an organization, provided the specified organization, team, discussion,…
+- **Delete a file**: Deletes a file by path from a github repository, requiring a commit message and the file's current blob sha to confirm the deletion.
+- **Delete a gist**: Permanently deletes an existing github gist, specified by its gist id.
+- **Delete a gist comment**: Deletes a specific comment from a github gist using its gist id and comment id.
+- **Delete a GitHub Pages site**: Deletes the github pages site for the specified repository.
+- **Delete a label**: Permanently removes an existing label from a repository.
+- **Delete a milestone**: Deletes the specified milestone if it exists.
+- **Delete a package for a user**: Deletes a package owned by the specified user, requiring admin permissions for the authenticated user.
+- **Delete a package for an organization**: Deletes a specific package in an organization.
+- **Delete a package for the authenticated user**: Permanently deletes a specific package owned by the authenticated user.
+- **Delete a package version for the authenticated user**: Deletes an existing package version associated with the authenticated user.
+- **Delete a pending review for a pull request**: Deletes a pending (unsubmitted) review from a pull request.
+- **Delete a project**: Deletes the github project specified by project id if the project exists and the projects feature is enabled for its repository or…
+- **Delete a project card**: Deletes a project card from a github 'project (classic)'.
+- **Delete a project column**: Deletes a project column by its id from a github project (classic).
+- **Delete a pull request comment reaction**: Deletes a specific reaction from a pull request review comment, provided the comment and reaction exist on that comment within the…
+- **Delete a reference**: Deletes a git reference from a repository.
+- **Delete a release**: Permanently deletes a specific release, its assets, and potentially its associated git tag from a repository.
+- **Delete a release asset**: Deletes a specific release asset from a github repository.
+- **Delete a release reaction**: Deletes a reaction from a github release, provided the repository, release, and reaction exist.
+- **Delete a repository invitation**: Deletes an active repository invitation, permanently revoking a user's access to collaborate on the specified repository.
+- **Delete a repository ruleset**: Permanently deletes a repository ruleset.
+- **Delete a repository secret**: Deletes a named github actions secret from a specified repository.
+- **Delete a repository subscription**: Deletes the authenticated user's subscription to a specified repository if it exists, effectively 'unwatching' it.
+- **Delete a repository variable**: Deletes a named variable (e.g., for github actions workflows) from a repository.
+- **Delete a repository webhook**: Deletes a specific webhook from a repository.
+- **Delete a review comment for a pull request**: Deletes a specific pull request review comment.
+- **Delete a secret for the authenticated user**: Deletes an existing codespaces secret for the authenticated user by secret name.
+- **Delete a self hosted runner from a repository**: Removes a specific self-hosted runner (by runner id) from a repository, if registered there.
+- **Delete a self hosted runner from an organization**: Deletes an existing and registered self-hosted runner from an organization, typically returning 204 no content on success.
+- **Delete a tag protection state for a repository**: Permanently deletes a specific tag protection rule, identified by its id, from the given repository.
+- **Delete a team**: Deletes a team (and any child teams) from an organization.
+- **Delete a thread subscription**: Call this to mute a specific notification thread by deleting the user's subscription.
+- **Delete a workflow run**: Deletes a specific workflow run from a repository.
+- **Delete access restrictions**: Removes all user, team, and app-based access restrictions from a protected branch.
+- **Delete admin branch protection**: Removes admin enforcement from a protected branch (branch name cannot contain wildcard characters) in a repository.
+- **Delete an app authorization**: Revokes a single, specific oauth access token for an oauth app, not all authorizations for the app.
+- **Delete an app token**: Revokes an oauth access token for a github app, if the app exists and the token was issued to it.
+- **Delete an artifact**: Deletes a github artifact by its id within a repository, typically resulting in an empty response (http 204 no content) on success.
+- **Delete an autolink reference from a repository**: Deletes a specific autolink reference (which automatically links external resource ids like jira-123 to urls) from the specified repository.
+- **Delete an environment**: Deletes an existing deployment environment from an existing repository.
+- **Delete an environment secret**: Deletes an existing and accessible secret from a specified environment within a github repository, returning an empty dictionary on…
+- **Delete an environment variable**: Deletes a named environment variable from a specified, existing environment within a github repository.
+- **Delete an issue comment**: Permanently deletes a specific comment by its id from an issue or pull request, if the repository exists and the comment id is valid.
+- **Delete an issue comment reaction**: Deletes a reaction from an issue comment in a repository.
+- **Delete an issue reaction**: Permanently removes a specific reaction from an issue in a github repository.
+- **Delete an organization**: Deletes a github organization and its repositories.
+- **Delete an organization secret**: Permanently deletes a secret from a github organization, making it inaccessible to github actions workflows or other tools.
+- **Delete an organization variable**: Deletes a named github actions variable from a specified organization.
+- **Delete an organization webhook**: Deletes a specific webhook, identified by hook id, from an existing organization.
+- **Delete authenticated user email address**: Sends an empty request body to delete /user/emails to attempt deletion of user email addresses.
+- **Delete branch protection**: Removes all protection rules from a specific branch in a github repository.
+- **Delete commit signature protection**: Disables gpg commit signature protection for a specific branch in a github repository, meaning commits pushed to this branch no longer…
+- **Delete dependabot secret by name**: Deletes a specific dependabot secret, identified by its name, from a given repository if both the repository and secret exist.
+- **Delete GitHub Actions cache by ID**: Deletes a specific github actions cache from a repository using its unique cache id.
+- **Delete package version for a user**: Permanently and irreversibly deletes a specific version of a package owned by the specified user.
+- **Delete package version for an organization**: Deletes a specific package version within an organization.
+- **Delete pull request review protection**: Disables the requirement for pull request reviews before merging for a specific, existing branch in an existing repository.
+- **Delete repo codespace secret by name**: Deletes a specific codespace secret from a repository by its name.
+- **Delete social accounts for the authenticated user**: Deletes currently linked social media account urls from the authenticated user's github profile.
+- **Delete team discussion comment reaction**: Deletes a reaction from a team discussion comment, given the organization name, team slug, discussion number, comment number, and reaction…
+- **Delete team discussion reaction**: Permanently deletes a specific reaction from a team discussion within an organization.
+- **Delete workflow run logs**: Deletes all logs for a specific workflow run in a github repository, provided the repository and run exist.
+- **Disable a custom protection rule for an environment**: Disables a specific, currently active custom deployment protection rule for an existing environment within a github repository.
+- **Disable a workflow**: Disables a specified workflow (by id or filename) in a given github repository, preventing new automatic triggers.
+- **Disable private vulnerability reporting for a repository**: Disables private vulnerability reporting for an existing github repository, preventing direct private vulnerability reports to maintainers…
+- **Disablerepositoryactionsinorg**: Disables github actions for a specific repository within an organization.
+- **Dismiss a review for a pull request**: Dismisses a review on a pull request with a mandatory explanatory message.
+- **Download a repository archive ZIP** (read-only): Downloads a repository's source code as a zip archive for a specific git reference (branch, tag, or commit sha).
+- **Download a repository tarball** (read-only): Downloads a repository's source code as a tarball (.tar.gz) archive for a specific git reference, if the repository is accessible.
+- **Download an artifact** (read-only): Downloads a specific github repository artifact, returning a temporary url to its 'zip' archive, valid for one minute.
+- **Download job logs for a workflow run** (read-only): Downloads logs for a specific job in a github actions workflow run, contingent on the repository's existence and the job id being valid…
+- **Download workflow run attempt logs** (read-only): Downloads a zip archive of logs for a specific workflow run attempt.
+- **Download workflow run logs** (read-only): Downloads logs for a specific github actions workflow run, typically archived as a zip file, if logs are available (e.g., not expired and…
+- **Enable a workflow**: Reactivates a currently disabled github actions workflow within a repository using its numerical id.
+- **Enable GitHub actions in selected repositories**: Sets the specific repositories that can use github actions within an organization by replacing the current list.
+- **Enable private vulnerability reporting for a repository**: Enables private vulnerability reporting for a repository, allowing security researchers to privately submit vulnerability reports to…
+- **Enable repo for Github Actions**: Enables github actions for a repository if the organization's actions permissions are set to allow for 'selected repositories'.
+- **Encrypt and update dev secret**: Creates or updates a repository's development environment secret using an encrypted value and its corresponding key id.
+- **Encrypt org dev env secret**: Creates or updates an organization's github codespaces secret using an encrypted value and its corresponding public key id.
+- **Encrypt org secrets using public key** (read-only): Retrieves an organization's public key, which must be used to encrypt secret values before they are configured for codespaces.
+- **Export a codespace for the authenticated user**: Triggers an export of a user's specified codespace, automatically stopping it if active, and returns its export status and download url.
+- **Export an SBOM for a repository** (read-only): Exports the software bill of materials (sbom) in spdx json format for a repository, if its dependency graph is enabled and it has at least…
+- **Fetchpublickeyforsecretencryption** (read-only): Retrieves the public key for an existing github organization, required for encrypting dependabot secrets.
+- **Follow a user**: Allows the authenticated user to follow the github user specified by username.
+- **Force cancel a workflow run**: Forcefully cancels an existing github actions workflow run, bypassing normal cancellation conditions.
+- **Fork a gist**: Forks a specified public gist, creating a copy under the authenticated user's account.
+- **Generate release notes content for a release** (read-only): Generates markdown release notes content (listing changes, pull requests, and contributors) for a github repository release, customizable…
+- **Get a blob** (read-only): Retrieves the raw, typically base64-encoded, content of a file (blob) from a github repository using its sha hash, if the repository and…
+- **Get a branch** (read-only): Retrieves detailed information for a specified branch within a github repository.
+- **Get a check run** (read-only): Retrieves detailed information for a specific check run within a github repository.
+- **Get a check suite** (read-only): Retrieves a specific check suite (a collection of check runs) by its id from a repository accessible to the authenticated user.
+- **Get a classroom** (read-only): Retrieves details for a specific github classroom.
+- **Get a code of conduct** (read-only): Retrieves the full details of a specific github code of conduct using its unique key.
+- **Get a code scanning alert** (read-only): Retrieves a specific code scanning alert, which identifies potential code vulnerabilities or errors, by its number from the specified…
+- **Get a code scanning analysis for a repository** (read-only): Retrieves detailed information for a specific code scanning analysis on an accessible repository, identified by its analysis id.
+- **Get a code scanning default setup configuration** (read-only): Gets the default setup configuration for code scanning in a repository, including state, languages, query suite, and schedule for a…
+- **Get a CodeQL database for a repository** (read-only): Gets an existing codeql database (including a download url) for a specified language in an accessible repository, if one has been…
+- **Get a codespace for the authenticated user** (read-only): Call to retrieve detailed information for a codespace name belonging to the authenticated user, ensuring the codespace exists and is…
+- **Get a commit** (read-only): Retrieves a specific commit from a repository by its owner, name, and a valid commit reference (sha, branch, or tag), supporting…
+- **Get a commit comment** (read-only): Retrieves the full details of a specific commit comment in a github repository, using its unique identifier.
+- **Get a commit object** (read-only): Retrieves detailed information (including author, committer, message, tree, parents, verification) for a specific commit in a github…
+- **Get a custom deployment protection rule** (read-only): Retrieves a specific custom deployment protection rule (used by github apps for external validation or manual approval of deployments) for…
+- **Get a custom property for an organization** (read-only): Retrieves the definition (schema) of a specific, existing custom property for an organization.
+- **Get a delivery for a repository webhook** (read-only): Retrieves a specific delivery for a repository webhook, identified by its hook id and delivery id.
+- **Get a deploy key** (read-only): Gets a specific deploy key, identified by its key id, for the github repository specified by owner and repo.
+- **Get a deployment** (read-only): Gets a specific deployment by id from a repository, provided the repository and deployment id exist.
+- **Get a deployment branch policy** (read-only): Retrieves a specific deployment branch policy for an environment in a repository, identified by its unique id.
+- **Get a deployment status** (read-only): Retrieves a specific deployment status by its id for a given deployment within a github repository.
+- **Get a diff of the dependencies between commits** (read-only): Gets the dependency diff between two git revisions in a repository, where 'basehead' specifies the revisions and 'name' can optionally…
+- **Get a discussion** (read-only): Fetches a specific discussion by its number from a team within an organization.
+- **Get a discussion comment** (read-only): Fetches a specific comment from a team discussion within a specific organization.
+- **Get a dns health check for github pages** (read-only): Retrieves the dns health check status (e.g., cname/a records, https) for a github pages site.
+- **Get a gist** (read-only): Fetches a specific github gist by its gist id, returning comprehensive details if the gist exists.
+- **Get a gist comment** (read-only): Retrieves a specific gist comment by its id and the gist's id.
+- **Get a gist revision** (read-only): Retrieves a specific revision of a gist.
+- **Get a GitHub Pages site** (read-only): Retrieves information for a github pages site, which must be enabled for the repository.
+- **Get a gitignore template** (read-only): Retrieves a specific .gitignore template from github by its name, which must be an existing template in github's collection.
+- **Get a job for a workflow run** (read-only): Retrieves detailed information for a specific job within a github actions workflow run, given its job id which must be valid for the…
+- **Get a label** (read-only): Retrieves a specific label by its name from a specified github repository.
+- **Get a license** (read-only): Call this action to retrieve comprehensive details for a specific software license recognized by github, using its unique license key.
+- **Get a milestone** (read-only): Retrieves detailed information for a specific milestone within a github repository by its number.
+- **Get a package for a user** (read-only): Retrieves metadata for a specific package owned by a github user, using package type, name, and username as identifiers.
+- **Get a package for an organization** (read-only): Retrieves a specific package (by type and name) from an organization, if both the package and organization exist.
+- **Get a package for the authenticated user** (read-only): Retrieves detailed information for a specific package owned by the authenticated user.
+- **Get a package version for a user** (read-only): Retrieves a specific public package version associated with a github user.
+- **Get a package version for an organization** (read-only): Retrieves detailed information for a specific version of a package within an organization.
+- **Get a project** (read-only): Retrieves detailed information for a specific github project using its unique project id.
+- **Get a project card** (read-only): Retrieves all details of a specific project card, given its unique card id.
+- **Get a project column** (read-only): Retrieves detailed information for a specific project column.
+- **Get a release** (read-only): Gets a specific release from a github repository, provided the repository is accessible and the release exists.
+- **Get a release asset** (read-only): Gets metadata for a specific release asset in a github repository, including a browser download url for downloading the asset.
+- **Get a release by tag name** (read-only): Gets a release from a github repository by its tag name.
+- **Get a repository** (read-only): Retrieves detailed information about an existing and accessible github repository.
+- **Get a repository public key** (read-only): Gets a repository's public key for encrypting secrets to be used in github actions, if the repository exists and is accessible.
+- **Get a repository readme** (read-only): Fetches the readme file (if it exists and is accessible) from a specified github repository, returning its base64-encoded content and…
+- **Get a repository readme for a directory** (read-only): Retrieves the readme file from a specified directory within a github repository, optionally at a given commit, branch, or tag.
+- **Get a repository rule suite** (read-only): Gets detailed information for a specific repository rule suite by its id, including its evaluation status and the results of its…
+- **Get a repository ruleset** (read-only): Retrieves a specific repository ruleset by its id.
+- **Get a repository secret** (read-only): Gets metadata (name, creation/update timestamps) for an existing repository secret, excluding its encrypted value.
+- **Get a repository subscription** (read-only): Gets the authenticated user's subscription details for a repository, indicating if they receive notifications.
+- **Get a repository variable** (read-only): Gets a specific github actions variable by name from an accessible repository.
+- **Get a repository webhook** (read-only): Returns the configuration of an existing webhook for a given repository.
+- **Get a review comment for a pull request** (read-only): Retrieves a specific pull request review comment by its id, provided the repository exists, is accessible, and the comment id is valid.
+- **Get a review for a pull request** (read-only): Retrieves a specific review for a pull request using its owner, repository, pull request number, and review id.
+- **Get a secret for the authenticated user** (read-only): Retrieves metadata (name, timestamps, visibility.
+- **Get a self hosted runner for a repository** (read-only): Gets a specific self-hosted runner for a repository by its unique id.
+- **Get a self hosted runner for an organization** (read-only): Retrieves detailed information about a specific self-hosted runner registered within a github organization.
+- **Get a tag** (read-only): Retrieves detailed information for a specific git tag object from a github repository, using the sha of the tag object itself.
+- **Get a team by name** (read-only): Retrieves a github team by its slug from a specific organization.
+- **Get a thread** (read-only): Retrieves a specific github notification thread using its unique thread id.
+- **Get a thread subscription for the authenticated user** (read-only): Retrieves the authenticated user's subscription details for a specific notification thread, identified by thread id.
+- **Get a tree** (read-only): Retrieves a git tree (directory listing) from a github repository using its sha, branch name, or tag name, optionally fetching all nested…
+- **Get a user** (read-only): Retrieves the public profile information for an existing github user, specified by their username.
+- **Get a webhook configuration for a repository** (read-only): Returns the configuration for an existing webhook on the specified repository.
+- **Get a webhook configuration for an organization** (read-only): Retrieves the configuration for a specific webhook associated with a github organization.
+- **Get a webhook delivery for an organization webhook** (read-only): Returns detailed information for a specific delivery attempt of a webhook configured for the specified github organization.
+- **Get a workflow** (read-only): Retrieves detailed information for a specific github actions workflow in a repository, identified by either its numeric id or its filename.
+- **Get a workflow run** (read-only): Gets a specific workflow run by its id from a github repository.
+- **Get a workflow run attempt** (read-only): Retrieves detailed information for a specific attempt of a workflow run in a github repository, including its status, conclusion, and…
+- **Get access restrictions** (read-only): Lists users, teams, and github apps with push access to a branch.
+- **Get admin branch protection** (read-only): Checks if repository administrators are subject to the branch protection rules on a specific branch.
+- **Get all API versions** (read-only): Retrieves all officially supported, date-based (e.g., "2022-11-28") versions of the github rest api from the /versions endpoint.
+- **Get all autolinks of a repository** (read-only): Retrieves all autolinks (e.g., for jira issues) configured for a repository.
+- **Get all codes of conduct** (read-only): Retrieves all available codes of conduct from github, often used to select one for a repository.
+- **Get all commonly used licenses** (read-only): Retrieves a list of commonly used software licenses from github, optionally filtering for 'featured' licenses whose specific selection…
+- **Get all contributor commit activity** (read-only): Retrieves commit activity (total commits, weekly additions/deletions/commits) for all contributors to a repository.
+- **Get all custom properties for an organization** (read-only): Gets the schema definitions for all custom properties configured for an organization, not the specific values assigned to repositories.
+- **Get all custom property values for a repository** (read-only): Gets all custom property values for a repository, which may include default values or be empty if no properties are explicitly set.
+- **Get all deployment protection rules for an environment** (read-only): Lists all enabled custom deployment protection rules for a specific environment in a repository.
+- **Get all gitignore templates** (read-only): Retrieves all available .gitignore template names from github (e.g., 'python', 'node', 'java'), used for generating .gitignore files.
+- **Get all organization roles for an organization** (read-only): Lists all custom organization roles for an existing github organization.
+- **Get all repository rulesets** (read-only): Retrieves all rulesets for a github repository, which define conditions and actions for repository interactions (e.g., branch protections).
+- **Get all repository topics** (read-only): Retrieves all topics for a specified, existing, and accessible repository.
+- **Get all requested reviewers for a pull request** (read-only): Gets all users and teams requested to review a specific pull request in a repository.
+- **Get all status check contexts** (read-only): Fetches all required status check contexts for a protected branch.
+- **Get allowed actions and workflows for a repository** (read-only): Gets the settings for allowed actions and reusable workflows that can be run in the specified repository.
+- **Get allowed actions and workflows for an org** (read-only): Retrieves the github actions permissions policy, including allowed actions and reusable workflows, for a specified organization.
+- **Get an app** (read-only): Retrieves publicly available information for an existing github app, identified by its unique url-friendly app slug.
+- **Get an artifact** (read-only): Gets a specific artifact for a repository by artifact id.
+- **Get an assignment** (read-only): Retrieves detailed information for a specific github classroom assignment if the authenticated user is an administrator of the classroom.
+- **Get an autolink reference of a repository** (read-only): Retrieves a specific autolink reference (which automatically hyperlinks text like 'jira-123' to an external system) for a repository using…
+- **Get an environment** (read-only): Get an environment
+- **Get an environment public key** (read-only): Retrieves the public key for a specified github repository environment, used to encrypt secrets for github actions.
+- **Get an environment secret** (read-only): Get an environment secret
+- **Get an environment variable** (read-only): Get an environment variable
+- **Get an issue** (read-only): Get an issue
+- **Get an issue comment** (read-only): Get an issue comment
+- **Get an issue event** (read-only): Get an issue event
+- **Get an organization** (read-only): Get an organization
+- **Get an organization public key** (read-only): Get an organization public key
+- **Get an organization role** (read-only): Retrieves a specific github organization role by its id.
+- **Get an organization secret** (read-only): Gets an organization secret's metadata (e.g., name, creation/update dates, visibility), but not its encrypted value.
+- **Get an organization variable** (read-only): Retrieves details (name, value, visibility, timestamps) of a specific, existing variable for an existing github organization.
+- **Get an organization webhook** (read-only): Retrieves the full configuration, including subscribed events and delivery settings, for an existing organization webhook.
+- **Get apps with access to the protected branch** (read-only): Lists github apps with push access to a repository's protected branch.
+- **Get assignment grades** (read-only): Retrieves all grades for an existing github classroom assignment.
+- **Get authenticated user package version** (read-only): Retrieves detailed information for an existing specific package version associated with the authenticated user, identified by its type,…
+- **Get branch protection** (read-only): Retrieves branch protection settings for a specific, existing, and accessible branch in a github repository.
+- **Get commit authors** (read-only): Fetches commit authors identified during a repository import, used to map authors from an external vcs to github accounts.
+- **Get commit signature protection** (read-only): Gets the commit signature protection status for a branch in a repository.
+- **Get community profile metrics** (read-only): Retrieves a repository's community profile metrics, including health percentage and the presence of key community files (e.g., readme,…
+- **Get contextual information for a user** (read-only): Gets contextual hovercard information for a github user.
+- **Get custom OIDC subject claim template** (read-only): Retrieves the openid connect (oidc) subject claim customization template for a github organization, which defines how the sub claim in…
+- **Get default attributes for a codespace** (read-only): Get pre-flight data (e.g., default location, devcontainer path) for creating a codespace in a given repository (must exist and be…
+- **Get default workflow permissions for a repository** (read-only): Gets the default workflow permissions (read or write) for the github token and whether it can approve pull request reviews in an existing…
+- **Get default workflow permissions for an organization** (read-only): Gets the default github token workflow permissions and settings for a github organization.
+- **Get details about a codespace export** (read-only): Retrieves detailed information about a specific export of a codespace.
+- **Get emojis** (read-only): Lists all emojis available for use on github, including custom and unicode emojis.
+- **Get feeds** (read-only): Fetches a list of available github feed urls for the authenticated user.
+- **Get github actions cache usage for a repository** (read-only): Retrieves the total count of active github actions caches and their combined size in bytes for a specified repository.
+- **Get GitHub Actions cache usage for an organization** (read-only): Retrieves total github actions cache usage statistics for an organization, including active cache count and size across all repositories.
+- **Get GitHub Actions permissions for a repository** (read-only): Gets the github actions permissions policy for a repository, including its enabled status and the scope of allowed actions.
+- **Get github actions permissions for an organization** (read-only): Gets the github actions permissions for a specified organization, detailing repository enablement and allowed actions policies.
+- **Get GitHub API root** (read-only): Retrieves a map of all top-level github rest api resource urls and their templates.
+- **Get github meta information** (read-only): Fetches github's publicly available metadata, useful for configuring network security policies or ip allow-listing.
+- **Get github pages build** (read-only): Retrieves detailed information about a specific github pages build for a repository, which must have github pages enabled.
+- **Get information about a sarif upload** (read-only): Retrieves detailed information, including processing status and results url, about a specific sarif (static analysis results interchange…
+- **Get interaction restrictions for a repository** (read-only): Retrieves active interaction restrictions for a repository, detailing which user groups are limited from activities like commenting or…
+- **Get interaction restrictions for an organization** (read-only): Retrieves interaction restrictions for an organization, showing which github user types can interact with its public repositories and when…
+- **Get interaction restrictions for public repositories** (read-only): Retrieves currently active interaction restrictions for the authenticated user's public repositories.
+- **Get large files** (read-only): Lists files larger than 100mb identified during a previous source import for the specified repository.
+- **Get latest pages build** (read-only): Retrieves information about the most recent github pages build for a repository, which must exist, be accessible, have github pages…
+- **Get octocat** (read-only): Fetches an ascii art representation of github's octocat, suitable for text-based displays.
+- **Get org dev environment secret safely** (read-only): Retrieves metadata for a specific secret available to an organization's github codespaces without exposing its encrypted value.
+- **Get page views** (read-only): Retrieves page view statistics for a repository over the last 14 days, including total views, unique visitors, and a daily or weekly…
+- **Get pending deployments for a workflow run** (read-only): Retrieves pending deployment environments for a specific workflow run that are awaiting approval due to protection rules.
+- **Get project permission for a user** (read-only): Retrieves a collaborator's permission level (admin, write, read, or none) for an existing github project.
+- **Get public key for secret encryption** (read-only): Retrieves a repository's public key for encrypting github codespaces secrets.
+- **Get public key for the authenticated user** (read-only): Retrieves the authenticated user's public github key, used to encrypt secrets for github codespaces.
+- **Get pull request review protection** (read-only): Retrieves the pull request review protection settings for a specific branch in a github repository, if such protection is configured.
+- **Get rate limit status for the authenticated user** (read-only): Retrieves the authenticated user's current github api rate limit status, including usage and limits across different resource categories.
+- **Get repository clones** (read-only): Retrieves the total number of clones and a breakdown of clone activity (daily or weekly) for a specified repository over the preceding 14…
+- **Get repository development environment secret** (read-only): Gets metadata (name, creation/update timestamps) for a specific, existing development environment secret (codespaces secret) in a…
+- **Get repository permissions for a user** (read-only): Retrieves a specific user's permission level ('admin', 'write', 'read', or 'none') for a given repository, where 'maintain' role is…
+- **Get repository secret securely** (read-only): Retrieves metadata for an existing dependabot secret in a repository, without exposing its encrypted value.
+- **Get rules for a branch** (read-only): Retrieves all active rules for a specific branch in a github repository, excluding rules in 'evaluate' or 'disabled' status.
+- **Get single org secret without decryption** (read-only): Retrieves metadata (e.g., name, creation/update timestamps, visibility) for an organization's dependabot secret, without its encrypted…
+- **Get status checks protection** (read-only): Retrieves the status check protection settings for a specific branch in a github repository, if status check protection is enabled for it.
+- **Get team membership for a user** (read-only): Retrieves a user's role and membership status within a specific team in an organization.
+- **Get teams with access to the protected branch** (read-only): Lists teams with explicit push access to a protected branch, provided team restrictions are configured in the branch's protection settings.
+- **Get the authenticated user** (read-only): Gets the profile information for the currently authenticated github user, including potentially private details based on user settings.
+- **Get the combined status for a specific reference** (read-only): Retrieves the aggregated commit status (e.g., success, failure, pending) from all checks for a specific reference (sha, branch, or tag) in…
+- **Get the hourly commit count for each day** (read-only): Retrieves the 'punch card' data, showing hourly commit counts for each day of the week for an existing and accessible repository.
+- **Get the last year of commit activity** (read-only): Fetches weekly commit totals and daily commit counts for the last 52 weeks for a specified github repository.
+- **Get the latest release** (read-only): Fetches the latest official (non-prerelease, non-draft) release for a github repository.
+- **Get the license for a repository** (read-only): Retrieves the license file and its details for a repository, optionally from a specific git reference (branch, tag, or commit sha).
+- **Get the review history for a workflow run** (read-only): Retrieves the detailed approval history for a specific workflow run in a github repository, detailing each review's environment, state,…
+- **Get the status of a GitHub Pages deployment** (read-only): Retrieves the status of a specific github pages deployment for a repository, which must have github pages enabled.
+- **Get the weekly commit activity** (read-only): Fetches the weekly commit activity (additions and deletions per week) for a repository over the past year.
+- **Get the weekly commit count** (read-only): Retrieves the weekly commit count for a repository, detailing commits by the owner and all contributors over the last 52 weeks.
+- **Get the zen of github** (read-only): Retrieves a random quote from github's 'zen of github' collection, reflecting github's design philosophies and offering humorous insights,…
+- **Get top referral paths** (read-only): Fetches the top 10 most viewed content paths for a repository from the last 14 days.
+- **Get top referral sources** (read-only): Fetches the top 10 websites that referred traffic to a repository within the last 14 days.
+- **Get users with access to the protected branch** (read-only): Lists users with explicit push access to a protected branch, provided its protection rule restricts pushes to specific users.
+- **Get workflow external access level** (read-only): Gets the access level settings for a private repository, determining how workflows outside this repository can use its actions and…
+- **Get workflow run usage** (read-only): Gets the billable time, in milliseconds, for a specific workflow run, detailing time spent on various operating systems.
+- **Get workflow usage** (read-only): Gets the billable time (in milliseconds, broken down by runner os) for a specific workflow within a repository for the current billing…
+- **List accepted assignments for an assignment** (read-only): Lists accepted assignments (student repositories created after acceptance) for an existing github classroom assignment, identified by its…
+- **List app installations for user token** (read-only): Lists github app installations accessible to the authenticated user via their access token, including installation details, permissions,…
+- **List artifacts for a repository** (read-only): Lists github actions workflow artifacts for a specified repository, which must exist.
+- **List assigned issues for authenticated user** (read-only): Lists github issues for the authenticated user, defaulting to 'assigned' but filterable by other interactions, state, labels, and time,…
+- **List assignees** (read-only): Lists users who can be assigned to issues in a repository, typically those with push access.
+- **List assignments for a classroom** (read-only): Lists all assignments for a given github classroom classroom id.
+- **List authenticated user's repository invitations** (read-only): Lists all pending repository invitations for the authenticated user.
+- **List available machine types for a repository** (read-only): Lists machine types available for github codespaces in a repository, optionally using a git ref to check compatibility based on prebuild…
+- **List branches for head commit** (read-only): Lists branches in an accessible repository where the provided commit sha is the head, useful for identifying development lines based on…
+- **List check run annotations** (read-only): Lists annotations for a specific check run in a github repository, detailing issues like errors or warnings on particular code lines.
+- **List check runs for a git reference** (read-only): Lists check runs for a given git reference within a repository.
+- **List check runs in a check suite** (read-only): Lists check runs for a specific check suite in a github repository, optionally filtering by check name or status.
+- **List check suites for a git reference** (read-only): Lists check suites for a git reference (commit sha, branch, or tag) in a repository, optionally filtering by github app id or check run…
+- **List child teams** (read-only): Lists the immediate child teams of a parent team within an organization.
+- **List classrooms** (read-only): Lists github classrooms to which the authenticated user has administrative access.
+- **List code scanning alerts for a repository** (read-only): Lists code scanning alerts for a repository, optionally filtering by tool (which must have produced scan results for the repository), git…
+- **List code scanning alerts for an organization** (read-only): Lists code scanning alerts for a github organization.
+- **List code scanning analyses for a repository** (read-only): Lists code scanning analyses for an existing repository, optionally filtering by tool (name or guid), git reference, or sarif id.
+- **List codeowners errors** (read-only): Lists syntax errors in a repository's codeowners file, which must be located at the root, .github/, or docs/ directory for the specified…
+- **List CodeQL databases for a repository** (read-only): Lists all codeql databases for a repository where codeql analysis has been previously run and completed.
+- **List codespaces for a user in organization** (read-only): Lists all github codespaces owned by a specified member of a given organization.
+- **List codespaces for the authenticated user** (read-only): Lists github codespaces for the authenticated user, optionally filtering by repository id and supporting pagination.
+- **List codespaces for the organization** (read-only): Lists active/pending github codespaces for an existing organization.
+- **List comments for a pull request review** (read-only): Lists all comments for a specific review on a github pull request.
+- **List commit comments** (read-only): Retrieves all comments for a specific commit in a github repository, supporting pagination.
+- **List commit comments for a repository** (read-only): Lists all commit comments for a specified repository, which must exist and be accessible.
+- **List commit statuses for a reference** (read-only): Lists commit statuses for a specific reference (commit sha, branch, or tag) in a repository, useful for tracking ci/test outcomes.
+- **List commits** (read-only): Retrieves commits for a repository, optionally filtering by sha (must be valid commit sha or existing branch), path, author, committer, or…
+- **List commits on a pull request** (read-only): Lists commits for a pull request.
+- **List custom property values for organization repositories** (read-only): Lists custom property values for repositories in a specified, existing organization, optionally filtered by a repository query.
+- **List deliveries for a repository webhook** (read-only): Retrieves delivery attempts for a specific repository webhook to inspect its history.
+- **List deliveries for an organization webhook** (read-only): Retrieves a list of webhook deliveries for a specific webhook in an organization, allowing inspection of delivery history and details.
+- **List deploy keys** (read-only): Lists deploy ssh keys for a specified repository.
+- **List deployment branch policies** (read-only): Lists all deployment branch policies for a specified environment in a github repository.
+- **List deployment statuses** (read-only): Lists all statuses for a given deployment in a repository.
+- **List discussion comments** (read-only): Lists all comments for a specific team discussion within an organization.
+- **List discussions** (read-only): Lists discussions for a specific team within an organization, with options for sorting, pagination, and filtering by pinned status.
+- **List email addresses for the authenticated user** (read-only): Lists all email addresses for the authenticated user, including their primary status, verification status, and visibility.
+- **List environment custom deployment rules** (read-only): Lists all custom deployment protection rule integrations for a repository environment.
+- **List environment secrets** (read-only): Lists the names and metadata (not values) of secrets for a specified, existing environment within an existing github repository.
+- **List environment variables** (read-only): Lists all environment variables, which are plaintext key-value pairs for github actions workflows, for a specified environment within a…
+- **List environments** (read-only): Retrieves all deployment environments for a specified repository, which are used to configure protection rules and secrets for different…
+- **List events for the authenticated user** (read-only): Lists public events for the specified github user, or private events if authenticated as that user, in reverse chronological order.
+- **List events received by the authenticated user** (read-only): Lists events a specific github user received from followed users and watched repositories.
+- **List followers of a user** (read-only): Lists followers for a specified, existing github user.
+- **List followers of the authenticated user** (read-only): Lists users following the authenticated github user, returning an empty list if the user has no followers.
+- **List forks** (read-only): Lists forks for a specified repository, which must exist, with options for sorting and pagination.
+- **List gist comments** (read-only): Lists comments for a specified github gist.
+- **List gist commits** (read-only): Lists all commits for a specified gist.
+- **List gist forks** (read-only): Lists all forks for a given github gist id.
+- **List gists for a user** (read-only): Lists public gists for a specified github user.
+- **List gists for the authenticated user** (read-only): Lists gists for the authenticated user, with optional filtering by update time and pagination.
+- **List github actions caches for a repository** (read-only): Lists github actions caches for a repository, with options to filter by git reference or cache key, and to sort and paginate results.
+- **List GitHub Pages builds** (read-only): Lists github pages builds for a repository.
+- **List global security advisories**: Lists github's global security advisories, filterable by various attributes including id, type, ecosystem, severity, and dates.
+- **List installation requests for the authenticated app** (read-only): Lists pending installation requests made by users or organizations for the authenticated github app.
+- **List instances of a code scanning alert** (read-only): Lists all instances of a specific code scanning alert, optionally filtered by git ref.
+- **List issue comments** (read-only): Lists comments for a specified issue in a github repository.
+- **List issue comments for a repository** (read-only): Lists issue comments, including those on pull requests, for an accessible repository.
+- **List issue events** (read-only): Retrieves a list of all events for a specific issue within a github repository.
+- **List issue events for a repository** (read-only): Lists all issue events (e.g., closed, reopened, assigned) for a specified repository.
+- **List issues for user** (read-only): Lists github issues for the authenticated user across visible repositories, with filtering by user relationship, state, labels, an iso…
+- **List jobs for a workflow run** (read-only): Lists jobs for a specific workflow run in a github repository.
+- **List jobs for a workflow run attempt** (read-only): Lists jobs, including details like id, status, and steps, for a specific attempt of a github actions workflow run.
+- **List labels for a repository** (read-only): Retrieves all labels for a specified, existing github repository.
+- **List labels for a self-hosted runner for a repository** (read-only): Lists all labels assigned to a specific self-hosted runner registered with the given repository.
+- **List labels for a self-hosted runner for an organization** (read-only): Lists all labels assigned to a specific self-hosted runner within a github organization, which are used to route workflows.
+- **List labels for an issue** (read-only): Lists all labels for a specified issue in a github repository.
+- **List labels for issues in a milestone** (read-only): Lists all labels for issues within a specific milestone in a repository.
+- **List machine types for a codespace** (read-only): Lists available machine types for a specific, accessible codespace, enabling it to be transitioned to a new hardware configuration.
+- **List matching references** (read-only): Lists all git references (branches or tags) in a repository that start with the provided partial reference path (e.g., heads/my-feature or…
+- **List milestones** (read-only): Lists milestones, which track progress for groups of issues and pull requests, for an existing repository, allowing filtering by state and…
+- **List notifications for the authenticated user** (read-only): Lists notifications for the authenticated user, sorted by most recent update, with filtering and pagination options.
+- **List org level codespaces secrets** (read-only): Lists all codespaces secrets available for a specified organization, which must exist.
+- **List org resource access tokens** (read-only): Lists approved fine-grained personal access tokens (pats) with access to resources in a github organization, optionally filtering by…
+- **List org resources with personal tokens** (read-only): Retrieves a list of an organization's fine-grained personal access token requests (pending, approved, or denied), with options for…
+- **List organization Dependabot secrets without values** (read-only): Lists all dependabot secrets (metadata like names, creation/update timestamps, but not their encrypted values) for a specified…
+- **List organization events for the authenticated user** (read-only): Lists events within a specified organization that were performed by the authenticated user, whose username (path parameter) must match the…
+- **List organization fine-grained permissions** (read-only): Retrieves all fine-grained permissions for a specified github organization, essential for creating or updating custom roles.
+- **List organization issues assigned to the authenticated user** (read-only): Lists issues for the authenticated user within a specified github organization, with options to filter by involvement type, state, labels,…
+- **List organization members** (read-only): Lists public and concealed members of a github organization.
+- **List organization projects** (read-only): Lists projects for a specified github organization, optionally filtering by state and supporting pagination.
+- **List organization repositories** (read-only): Retrieves a list of repositories for a specified github organization, allowing filtering by type and sorting.
+- **List organization repositories with Github Actions enabled** (read-only): Lists repositories in an organization with github actions enabled, for use when the organization's policy restricts actions to a specific…
+- **List organization secrets** (read-only): Lists github actions secrets available for a specified organization.
+- **List organization variables** (read-only): Lists all github actions variables for a specified organization.
+- **List organization webhooks** (read-only): Lists all webhooks for a specified github organization.
+- **List organizations** (read-only): Lists github organizations for the authenticated user, sorted by id in ascending order.
+- **List outside collaborators for an organization** (read-only): Lists outside collaborators for a github organization, with options to filter (e.g., by 2fa status) and paginate results.
+- **List owned package versions** (read-only): Lists all versions for an existing package owned by the authenticated user, identified by its type and name.
+- **List package versions for a package owned by a user** (read-only): Lists all versions of a public package owned by a specific github user, identified by package type, package name, and username.
+- **List package versions for an organization package** (read-only): Lists all versions for a specified package, if it exists and is owned by the given github organization.
+- **List packages for a user** (read-only): Lists packages for a specified github user, filterable by package type and visibility.
+- **List packages for an organization** (read-only): Lists github packages for an organization, noting specific interpretations for package type and visibility parameters.
+- **List packages for the authenticated user's namespace** (read-only): Lists packages of a specific type and visibility within the authenticated user's namespace on github.
+- **List pending team invitations** (read-only): Lists all pending membership invitations for a specified team within an organization.
+- **List people the authenticated user follows** (read-only): Lists people the authenticated user follows.
+- **List project cards** (read-only): Lists all project cards for a given column id, which must correspond to an existing project column.
+- **List project collaborators** (read-only): Fetches a list of collaborators for a specified, existing github project.
+- **List project columns** (read-only): Lists all of a github project's columns (e.g., 'to do', 'in progress').
+- **List public email addresses for the authenticated user** (read-only): Lists the public email addresses for the authenticated user.
+- **List public events** (read-only): Lists public github events, which may be delayed by up to 5 minutes, with support for pagination.
+- **List public events for a network of repositories** (read-only): Retrieves public events (up to 90 days old, newest first) for a github repository network, including the repository and its forks.
+- **List public events for a user** (read-only): Retrieves a list of public events for a specified github user, in reverse chronological order.
+- **List public events received by a user** (read-only): Lists public events for a specified github user (e.g., activities in repositories they watch or are involved in).
+- **List public gists** (read-only): Lists public gists from github, optionally filtering by a 'since' timestamp and supporting pagination.
+- **List public keys for a user** (read-only): Lists the verified public ssh keys for a specified github user.
+- **List public organization events** (read-only): Lists public events for a specified github organization, which must exist.
+- **List public organization members** (read-only): Lists users who have publicly declared their membership in a specified, existing github organization.
+- **List public repositories** (read-only): Lists all public repositories on github.
+- **List pull requests associated with a commit** (read-only): Lists pull requests for a commit.
+- **List reactions for a commit comment** (read-only): Lists reactions for a specific commit comment.
+- **List reactions for a pull request review comment** (read-only): Lists reactions for a pull request review comment in a repository, optionally filtering by reaction type.
+- **List reactions for a release** (read-only): Lists all reactions, or optionally filters reactions by a specific content type, for a given github release.
+- **List reactions for a team discussion** (read-only): Lists reactions for an existing team discussion within an organization.
+- **List reactions for a team discussion comment** (read-only): Lists reactions for a specific comment in a team discussion within an organization, optionally filtering by content type.
+- **List reactions for an issue** (read-only): Lists reactions for a specific, existing issue within an accessible github repository, optionally filtering by content type.
+- **List reactions for an issue comment** (read-only): Lists reactions for a specific issue comment in a github repository, optionally filtering by content type.
+- **List release assets** (read-only): Lists assets (e.g., compiled binaries, source code archives) for a specific github release, identified by release id which must be valid…
+- **List releases** (read-only): Retrieves a list of all releases (published, draft, and prerelease) for a specified repository.
+- **List repo access by token** (read-only): Lists repositories in an organization that a fine-grained personal access token (pat request id) has requested access to.
+- **List repo codespaces for authenticated user** (read-only): Lists codespaces the authenticated user can access within a specified, existing repository.
+- **List repo dev container configs for user** (read-only): Lists the devcontainer.json configurations available in a specified repository for use with github codespaces.
+- **List repo secrets without values** (read-only): Lists all codespaces secrets available in a specific repository, without their encrypted values.
+- **List repos accessible to app installation** (read-only): Lists repositories an app installation can access.
+- **List repos with ghactions cache usage** (read-only): Retrieves a paginated list of github actions cache usage statistics for repositories within an existing github organization.
+- **List repositories accessible to the user access token** (read-only): Lists repositories accessible to the authenticated user through a specific github app installation (identified by installation id).
+- **List repositories for a user** (read-only): Lists public repositories for a specified github user, who must have an existing account.
+- **List repositories starred by a user** (read-only): Lists repositories a valid and existing github user has starred.
+- **List repositories watched by a user** (read-only): Lists repositories a given github user is watching.
+- **List repositories watched by the authenticated user** (read-only): Lists repositories the authenticated user is watching (subscribed to for notifications).
+- **List repository activities** (read-only): Lists activities for a github repository, ensuring the repository exists and is accessible.
+- **List repository collaborators** (read-only): Lists collaborators for a specified repository, provided it exists and is accessible to the authenticated user.
+- **List repository events** (read-only): Lists chronological events (e.g., code pushes, issue activities, pr actions, forks) for a specified, existing github repository.
+- **List repository invitations** (read-only): Retrieves all pending (unaccepted or undeclined) collaboration invitations for a specified github repository.
+- **List repository languages** (read-only): Lists the programming languages used in a github repository, returning a byte count for each language.
+- **List repository notifications for the authenticated user** (read-only): Retrieves notifications for the authenticated user from a specified repository, to which the user must have access.
+- **List repository organization secrets** (read-only): Lists names of organization-level secrets shared with the specified repository.
+- **List repository organization variables** (read-only): Lists organization variables accessible to a specific repository.
+- **List repository projects** (read-only): Lists projects associated with a specific repository.
+- **List repository rule suites** (read-only): Lists rule suite evaluations for a repository, allowing filtering by ref (non-wildcard), time period, actor, and result.
+- **List repository secrets** (read-only): Lists metadata for all secrets in a github repository, excluding their encrypted values.
+- **List repository secrets without decrypting** (read-only): Lists metadata (e.g., name, creation/update dates) for all dependabot secrets in a repository.
+- **List repository tags** (read-only): Lists tags for a specified github repository.
+- **List repository teams** (read-only): Lists all teams with explicit permission to access the specified repository.
+- **List repository variables** (read-only): Lists plain text key-value variables for github actions workflows within a specific, accessible repository.
+- **List repository webhooks** (read-only): Retrieves a list of webhooks for a repository, which must exist and be accessible.
+- **List repository workflows** (read-only): Lists all github actions workflows for a specified repository, which must exist and be accessible.
+- **List review comments in a repository** (read-only): Lists all review comments on all pull requests within a specified repository.
+- **List review comments on a pull request** (read-only): Lists all review comments on a specific pull request within a github repository.
+- **List reviews for a pull request** (read-only): Lists submitted reviews chronologically for a specific pull request within a github repository.
+- **List runner applications for a repository** (read-only): Lists available self-hosted runner application binaries for a specific repository, including their os, architecture, and download url.
+- **List runner applications for an organization** (read-only): Lists downloadable github actions runner application binaries, used for setting up self-hosted runners, for an existing github organization.
+- **List secrets for the authenticated user** (read-only): Lists all codespaces secrets accessible to the authenticated user for use within github codespaces.
+- **List selected repos for secret access** (read-only): Lists repositories within a specified organization that have been granted access to a particular dependabot secret.
+- **List selected repositories for a user secret** (read-only): Lists repositories that have access to the specified user secret for the authenticated user's codespaces, provided the user has codespaces…
+- **List selected repositories for an organization secret** (read-only): Lists repositories within an organization that have explicit access to a specific organization secret, which must have its visibility set…
+- **List selected repositories for an organization variable** (read-only): Lists repositories in an organization that can access a specific organization variable.
+- **List self hosted runners for a repository** (read-only): Lists all self-hosted runners configured for a repository.
+- **List self hosted runners for an organization** (read-only): Lists self-hosted runners for a github organization, optionally filtering by name and paginating results, providing details for each…
+- **List social accounts for a user** (read-only): Lists social media accounts publicly linked to an existing github user's profile.
+- **List social accounts for the authenticated user** (read-only): Lists all social media accounts linked to the authenticated user's github profile.
+- **List starred gists** (read-only): Retrieves a list of gists starred by the authenticated user.
+- **List stubbed subscriptions for the authenticated user** (read-only): Lists the authenticated user's stubbed (test/example data, not live) github marketplace subscriptions, useful for development or testing.
+- **List subscriptions for the authenticated user** (read-only): Lists the authenticated user's active github marketplace subscriptions.
+- **List tag protection states for a repository** (read-only): Lists all active tag protection rules for a repository, defining patterns to prevent matching tags from being created or deleted.
+- **List team members** (read-only): Lists members of a specific team within an organization, including members of child teams.
+- **List team projects** (read-only): Lists github projects accessible to a specific team within an organization.
+- **List team repositories** (read-only): Lists repositories accessible to a specific team within a github organization.
+- **List teams** (read-only): Lists teams for a specified github organization.
+- **List teams assigned to an organization role** (read-only): Lists teams assigned to a specific role within a github organization.
+- **List teams for the authenticated user** (read-only): Lists all teams across all organizations to which the authenticated user belongs, supporting pagination.
+- **List the people a user follows** (read-only): Lists github users that a valid github username is following, supporting pagination.
+- **List timeline events for an issue** (read-only): Lists chronological events (e.g., comments, commits, label changes) for a specific issue in a github repository.
+- **List token access repositories** (read-only): Lists repositories in an organization accessible by a specific fine-grained personal access token.
+- **List user projects** (read-only): Retrieves a list of projects for a specified github user, optionally filtering by state and supporting pagination.
+- **List users** (read-only): Retrieves all github users (individuals and organizations) in chronological order of their sign-up date.
+- **List users assigned org role** (read-only): Lists users assigned to a specific role within a github organization.
+- **List users blocked by an organization** (read-only): Lists users blocked by a specified github organization.
+- **List users blocked by the authenticated user** (read-only): Lists users blocked by the authenticated user, returning an empty list if no users are blocked.
+- **List watchers** (read-only): Retrieves a list of users watching a specific repository.
+- **List workflow run artifacts** (read-only): Lists artifacts (e.g., build outputs, test results) for a specific workflow run in a github repository.
+- **List workflow runs for a repository** (read-only): Lists workflow runs for a repository, allowing filtering by actor, branch, event, status, creation date, check suite id, or head sha.
+- **List workflow runs for a workflow** (read-only): Lists runs for a specified, existing workflow (identified by id or filename like main.yml) in a github repository, with filtering options.
+- **Lock an issue**: Locks an existing github issue's conversation, preventing further comments.
+- **Manage access control for organization codespaces**: Sets the codespaces access control policy for a github organization, determining which members can use them.
+- **Manage custom properties for org repos**: Creates or updates values for an organization's predefined custom properties across multiple repositories (up to 30).
+- **Manage secrets in selected repositories with proper access** (read-only): Lists repositories within an organization that have been explicitly granted access to a specific organization secret.
+- **Map a commit author**: Updates git author information (name and/or email) for an author id obtained during a repository import, to correctly attribute commits.
+- **Mark a thread as done**: Marks the github notification thread (identified by thread id) as done or read for the authenticated user, effectively archiving it.
+- **Mark a thread as read**: Marks an existing github notification thread, identified by its thread id, as read.
+- **Mark notifications as read**: Marks notifications as read or unread, optionally for those updated at or before a last read at timestamp.
+- **Mark repository notifications as read**: Marks notifications in a repository as read.
+- **Merge a branch**: Merges a head branch or commit sha into a base branch in a repository.
+- **Merge a pull request**: Merges an open and mergeable pull request in a repository, optionally specifying merge commit details, a merge method, and a required head…
+- **Move a project card**: Moves a project card to a specified position, optionally into a new column.
+- **Move a project column**: Moves a column within a github project (classic) to a new position.
+- **Ping a repository webhook**: Pings an existing webhook on a repository to test its configuration and reachability by github.
+- **Ping an organization webhook**: Sends a 'ping' event to a specified, existing organization webhook to test its configuration and ensure it correctly receives events.
+- **Privately report a security vulnerability**: Privately reports a security vulnerability for a repository.
+- **Re-run a job from a workflow run**: Re-runs a specific job and any dependent jobs from a github actions workflow run in the specified repository, optionally enabling debug…
+- **Redeliver a delivery for a repository webhook**: Redelivers a specific, previously made webhook delivery (delivery id) for a repository's webhook (hook id).
+- **Redeliver a delivery for an organization webhook**: Redelivers a specific webhook delivery for a webhook within an organization, to resend an event that previously failed or was not processed.
+- **Remove a custom property for an organization**: Deletes a custom property, specified by custom property name, from an existing organization (org) for which the property is currently…
+- **Remove a label from an issue**: Removes a label currently applied to a specific issue in a repository.
+- **Remove a project from a team**: Removes a project from a team within an organization.
+- **Remove a repository collaborator**: Removes a collaborator from a specified github repository, provided the repository exists and the user is an existing collaborator.
+- **Remove a repository from a team**: Disassociates a repository from a team.
+- **Remove a repository from an app installation**: Removes a repository from a github app installation for the authenticated user, given a valid installation id and the repository id of a…
+- **Remove a selected repository from a user secret**: Removes a selected repository's access to a user's codespaces secret.
+- **Remove all labels from an issue**: Removes all labels from a specified issue in a github repository.
+- **Remove all organization roles for a team**: Revokes all organization roles for a team in an organization.
+- **Remove all organization roles for a user**: Revokes all assigned organization-level roles from a specified user (who must be a member of the organization) within a github…
+- **Remove an organization member**: Removes a user, who must currently be a member, from a github organization, revoking their membership and access rights.
+- **Remove an organization role from a team**: Revokes an organization role that a team currently possesses within an organization.
+- **Remove an organization role from a user**: Removes a custom organization role from a user within a github organization, provided the organization exists, the user is a member, and…
+- **Remove app access restrictions**: Removes all github app access restrictions from a protected branch in a repository.
+- **Remove assignees from an issue**: Removes specified assignees from a github issue.
+- **Remove custom label from repo runner**: Removes a custom label from a repository's self-hosted runner.
+- **Remove custom label from self hosted runner**: Removes a currently assigned custom label (name) from a self-hosted runner (runner id) in an organization (org).
+- **Remove custom labels from self hosted repo runner**: Removes all custom labels from a self-hosted runner registered at the repository level, leaving only its default labels and any labels…
+- **Remove interaction restrictions for a repository**: Removes all interaction restrictions for a repository, enabling all users to comment, open issues, and create pull requests by lifting any…
+- **Remove interaction restrictions for an organization**: Removes all interaction restrictions from public repositories in the specified github organization, allowing all users to resume…
+- **Remove org dev env secret by name**: Deletes a github codespaces secret from an organization by its name.
+- **Remove org secret by name**: Permanently removes a specific dependabot secret, by its secret name, from the github org, making it unavailable to dependabot for that…
+- **Remove outside collaborator from an organization**: Removes a user, who must be an outside collaborator, from the specified github organization, revoking their access to all its repositories.
+- **Remove public org membership**: Makes an authenticated user's public membership in an organization private (without removing them from the organization).
+- **Remove requested reviewers from a pull request**: Removes currently assigned user logins and/or team slugs from a github pull request's list of requested reviewers.
+- **Remove selected repo from org secret**: Revokes a specific repository's access to an organization-level dependabot secret, applicable only when the secret has 'selected'…
+- **Remove selected repository from an organization secret**: Removes a specific repository's access to an organization-level secret.
+- **Remove selected repository from an organization variable**: Removes a repository's access to an organization variable, if the variable's visibility is 'selected' and the repository is in its access…
+- **Remove status check contexts**: Removes specified status check contexts (passed in the request body as an array of strings) from a protected branch in a repository.
+- **Remove status check protection**: Removes status check protection from a branch, disabling required status checks for merging pull requests.
+- **Remove team access restrictions**: Removes all team-based access restrictions from a specified protected branch.
+- **Remove team membership for a user**: Removes a user from a specific team within an organization.
+- **Remove user access restrictions**: Removes active user-level access restrictions from a specified protected branch, enabling users with repository write access to push or…
+- **Remove user as a collaborator**: Removes a user as a collaborator from an organization project.
+- **Remove user public repo interaction restrictions**: Removes all interaction restrictions (limitations on comments, issues, or pull requests) from all public repositories owned by the…
+- **Remove users from codespaces access for an organization**: Removes selected users from github codespaces billing access for an existing organization.
+- **Removerepofromorgdevenvsecret**: Removes a repository's access to an organization-level codespaces secret, if it was previously granted.
+- **Rename a branch**: Renames an existing branch in a github repository.
+- **Render a markdown document** (read-only): Renders markdown to html.
+- **Replace all repository topics**: Replaces all topics of a repository.
+- **Replace org secret visibility to selected**: Sets an existing dependabot organization secret's visibility to 'selected' and replaces the full list of repositories that can access it…
+- **Replace repository access for an org Codespaces secret**: Replaces the list of repositories that can access an existing organization-level codespaces secret with the provided valid repository ids…
+- **Request a github pages build**: Manually triggers a github pages build for a repository if github pages is enabled, useful for deployments not automatically built or for…
+- **Request reviewers for a pull request**: Requests user and/or team reviewers for an open pull request in a repository.
+- **Rerequest a check run**: Triggers a re-run of a specific check run in a github repository, which resets its status to 'queued', clears its conclusion, and triggers…
+- **Rerequest a check suite**: Triggers a new run of an existing check suite within a repository, useful for re-running checks without new code.
+- **Rerun a workflow**: Re-runs a specific github actions workflow run identified by its owner, repository, and run id, optionally enabling debug logging.
+- **Rerun failed jobs from a workflow run**: Re-runs all failed jobs and their dependent jobs from a specified workflow run if the run contains previously failed jobs.
+- **Reset a token**: Invalidates the provided oauth access token and generates a new one for the github oauth app identified by client id, used for token…
+- **Restore a package for a user**: Restores a user-owned package previously deleted from github packages, if restorable under github's data retention policy (typically…
+- **Restore a package for an organization**: Restores a package in an organization, provided it was deleted within the last 30 days.
+- **Restore a package for the authenticated user**: Restores a package deleted by the authenticated user within the last 30 days, if its namespace and version are still available.
+- **Restore a package version for the authenticated user**: Restores a package version that was deleted by the authenticated user within the last 30 days.
+- **Restore package version for a user**: Restores a specific, user-owned package version if it was deleted within the last 30 days and its original namespace and version name are…
+- **Restore package version for an organization**: Restores a package version for an organization, provided it was deleted within the last 30 days.
+- **Retrieve repo public key for encryption** (read-only): Gets a repository's public key, used to encrypt secrets for dependabot.
+- **Review access with personal token**: Approves or denies a pending fine-grained personal access token request for organization resources.
+- **Review Custom Deployment Rules For Workflow Run**: Approves or rejects pending custom deployment protection rules for a workflow run by posting a review with environment name (str), state…
+- **Review pending deployments for a workflow run**: Approves or rejects pending deployments for a specific workflow run that are in a 'waiting' state within specified, configured environments.
+- **Review resource requests with fine grained tokens**: Approves or denies fine-grained personal access token requests for an organization.
+- **Revoke an installation access token**: Revokes the github app's current installation access token, immediately invalidating it for api authentication.
+- **Search code** (read-only): Searches code file contents and paths on the default branch of github repositories using a query string.
+- **Search commits** (read-only): Finds commits on github using a query string (q) supporting keywords and qualifiers, with options for sorting and pagination.
+- **Search labels** (read-only): Searches for labels within a github repository by keywords in their names or descriptions.
+- **Search repositories** (read-only): Searches github repositories using a flexible query (keywords, qualifiers) with sorting, ordering, and pagination.
+- **Search topics** (read-only): Finds topics on github using keywords and qualifiers with github's search syntax, supporting pagination.
+- **Search users** (read-only): Searches for users on github by criteria like username, email, location, followers, or repository associations, using a flexible query…
+- **Set a repository subscription**: Sets the authenticated user's notification subscription for a repository.
+- **Set a thread subscription**: Sets whether a github notification thread is ignored (muted) or unignored (unmuted), for a thread id that must identify an existing…
+- **Set admin branch protection**: Enables administrator enforcement on a branch, making existing protection rules also apply to administrators.
+- **Set allowed actions and workflows for an organization**: Sets the github actions permissions for an existing organization, specifying allowed github-owned actions, verified creator actions, and…
+- **Set app access restrictions**: Replaces the list of github apps permitted to push to a protected branch.
+- **Set custom labels for a self-hosted runner for an organization**: Sets the custom labels for a self-hosted runner in an organization.
+- **Set custom labels for repo runner**: Replaces all custom labels for a specific self-hosted runner in a repository.
+- **Set custom OIDC subject claim template**: Sets the openid connect (oidc) subject claim template for a github repository, allowing use of the default template or a custom one…
+- **Set default workflow permissions for a repository**: Sets the default permissions for the github token within a repository and configures whether github actions can approve pull requests.
+- **Set default workflow permissions for an organization**: Updates an organization's default github token permissions for workflows and whether github actions can approve pull requests.
+- **Set github actions permissions for a repository**: Sets github actions permissions for a repository, enabling/disabling actions and defining the policy for allowed actions and reusable…
+- **Set GitHub Actions permissions for an organization**: Sets the github actions permissions policy for an organization, specifying which repositories can run actions and which actions/workflows…
+- **Set interaction restrictions for a repository**: Temporarily limits which github users (e.g., existing users, contributors only) can interact (comment, open issues, create pull requests)…
+- **Set interaction restrictions for an organization**: Limits interactions (comments, new issues, prs) in an organization's public repositories by user type and duration, typically to mitigate…
+- **Set interaction restrictions for your public repositories**: Sets or updates temporary interaction restrictions for all public repositories owned by the authenticated user, overriding any…
+- **Set labels for an issue**: Replaces all existing labels on a github issue with a new set of labels.
+- **Set primary email visibility**: Sets the visibility ('public' or 'private') of the authenticated user's primary email address on github, if one is configured.
+- **Set repo allowed actions**: Sets allowed github actions and reusable workflows for a repository, managing permissions for github-owned, verified creator, or specific…
+- **Set selected repositories for a user secret**: Defines the list of repositories permitted to access a specific codespaces secret for the authenticated user.
+- **Set selected repositories for an organization secret**: Replaces the list of repositories that can access an organization secret.
+- **Set selected repositories for an organization variable**: Replaces the list of repositories that can access an organization-level variable.
+- **Set status check contexts**: Replaces required status check contexts for a protected branch, requiring admin permissions.
+- **Set team access restrictions**: Sets team push access for a protected branch by replacing all current teams with a new list of valid team slugs (provided in the request…
+- **Set user access restrictions**: Replaces the list of users with push access to a protected branch using a request body (not in this schema) containing an array of github…
+- **Set workflow access level outside repository**: Sets the access level for workflows outside a repository to use actions and reusable workflows within that repository.
+- **Star a gist**: Stars a github gist identified by gist id.
+- **Start a codespace for the authenticated user**: Initiates the startup process for an existing github codespace (identified by codespace name) if it's in a startable state like…
+- **Stop a codespace for an organization user**: Stops a codespace, which must be currently running, for a specified member of an organization.
+- **Stop a codespace for the authenticated user**: Stops a running or available codespace for the authenticated user, pausing its execution and billing.
+- **Submit a review for a pull request**: Finalizes a pending pull request review (identified by review id) with a required event (approve, request changes, comment) and an…
+- **Sync a fork branch with the upstream repository**: Synchronizes a branch in a forked github repository with its upstream counterpart, assuming the repository is a fork, the branch exists,…
+- **Test the push repository webhook**: Triggers a simulated push event to test a repository's push webhook.
+- **Transfer a repository**: Initiates a repository transfer to a new owner (who must accept the request).
+- **Unblock a user**: Unblocks a github user, provided they are currently blocked by the authenticated user.
+- **Unblock a user from an organization**: Unblocks a user from an organization, allowing renewed interaction with its resources, provided the user is currently blocked (otherwise,…
+- **Unfollow a user**: Unfollows an existing github user.
+- **Unlock a user repository**: Unlocks a repository (repo name) that was locked as part of a user migration (migration id), making it usable or deletable.
+- **Unlock an issue**: Unlocks a currently locked github issue in the specified repository, allowing new comments and interactions.
+- **Unlock an organization repository**: Unlocks an organization repository previously locked by a github migration.
+- **Unstar a gist**: Removes a star from the specified gist.
+- **Unstar a repository**: Removes the authenticated user's star from a specified repository, which must already be starred by the user.
+- **Update a check run**: Updates an existing check run for a specific commit in a repository, allowing modifications to its status, conclusion, output, and other…
+- **Update a code scanning alert**: Updates a specific code scanning alert in a github repository, primarily to change its state (e.g., 'open' or 'dismissed').
+- **Update a code scanning default setup configuration**: Updates the default setup configuration for code scanning in a repository.
+- **Update a codespace for the authenticated user**: Updates an existing github codespace's machine type, display name, or recent folders for the authenticated user.
+- **Update a commit comment**: Changes the body of an existing commit comment.
+- **Update a custom organization role**: Updates an existing custom role in an organization by modifying its name, description, or permissions.
+- **Update a deployment branch policy**: Updates the name pattern of an existing deployment branch policy for a specific environment in a repository.
+- **Update a discussion**: Updates the title and/or body of a specific team discussion within an organization.
+- **Update a discussion comment**: Updates the body of a comment in a team's discussion within an organization.
+- **Update a gist**: Updates a gist's description, and/or its files (including content, filename changes, or deletion).
+- **Update a gist comment**: Updates an existing comment on a specified gist.
+- **Update a label**: Updates an existing label's name, color, or description within a specified repository.
+- **Update a milestone**: Updates a milestone in a repository, identified by owner, repo, and milestone number, by allowing modification of its title, state,…
+- **Update a project**: Updates an existing github project's attributes if the github projects feature is enabled and at least one modifiable field is provided.
+- **Update a pull request**: Updates an existing pull request, allowing changes to attributes like title, body, state, base branch, and maintainer modification settings.
+- **Update a pull request branch**: Updates an open pull request's head branch by merging the latest changes from its base branch, if mergeable and repository merging is…
+- **Update a release**: Updates an existing release in a github repository, allowing modification of its attributes.
+- **Update a release asset**: Updates the name, label, or state of a release asset in a github repository, requiring at least one of these properties to be provided for…
+- **Update a repository**: Updates settings for an existing github repository, such as name, description, visibility, merge strategies, and security configurations.
+- **Update a repository invitation**: Updates an active repository invitation to modify the invited user's permissions.
+- **Update a repository ruleset**: Updates an existing repository ruleset, identified by ruleset id for a given repository, allowing partial updates to its configuration…
+- **Update a repository variable**: Updates the name and/or value of an existing github actions variable in a repository.
+- **Update a repository webhook**: Updates the url, content type, secret, ssl verification, events, or active status for an existing repository webhook, specified by owner,…
+- **Update a review comment for a pull request**: Updates the body of an existing review comment on a pull request.
+- **Update a review for a pull request**: Updates the body text of an existing pull request review.
+- **Update a team**: Updates a team's settings (e.g., name, description, privacy, parent team) within a github organization, identified by its slug and…
+- **Update a webhook configuration for a repository**: Updates the configuration (e.g., payload url, content type, secret, ssl verification) for an existing webhook in a specified repository.
+- **Update a webhook configuration for an organization**: Updates the configuration (url, content type, secret, ssl verification) for an existing webhook within a specified organization.
+- **Update an environment variable**: Updates an existing environment variable's name and/or value in a specific github repository environment.
+- **Update an existing project card**: Updates an existing project card's note and/or archived status, identified by its card id.
+- **Update an existing project column**: Updates the name of an existing column, identified by column id, in a github project (classic).
+- **Update an issue**: Updates an existing github issue's title, body, state, milestone, labels, or assignees.
+- **Update an issue comment**: Updates an existing comment on an issue or pull request within a specified repository.
+- **Update an organization**: Updates an organization's settings.
+- **Update an organization variable**: Updates an existing github actions organization variable's name, value, or visibility (all, private, selected), requiring selected…
+- **Update an organization webhook**: Updates the configuration (url, content type, secret, ssl verification), subscribed events, active status, or name of an existing webhook…
+- **Update branch protection**: Updates the protection settings for an existing branch in a repository, which must not contain wildcard characters.
+- **Update git lfs preference**: Sets the git large file storage (lfs) preference for a repository, typically before initiating a source import.
+- **Update information about a github pages site**: Updates the configuration for a github pages site (e.g., custom domain, https, build type, source).
+- **Update pull request review protection**: Updates pull request review protection settings (e.g., required approvals, review dismissal, bypass allowances) for a branch.
+- **Update repository preferences for check suites**: Updates repository preferences for automatic check suite creation on code pushes, allowing configuration for specific github apps that…
+- **Update resource access with tokens**: Revokes organization access for the personal access tokens identified by pat ids.
+- **Update status check protection**: Updates required status checks for a branch, optionally requiring it to be up-to-date before merging.
+- **Update the authenticated user**: Updates the authenticated user's github profile.
+- **Update token org access**: Revokes a fine-grained personal access token's access to an organization, usable only by github apps when the token has existing access to…
+- **Upload an analysis as sarif data**: Uploads a gzipped and base64 encoded sarif file to a github repository for a specific commit and reference.
+- **Verify dev container permissions accepted** (read-only): Verifies if the authenticated user has accepted permissions for a specific devcontainer configuration in a repository, typically to ensure…

@@ -1,0 +1,172 @@
+# OpenWeb Ninja
+
+OpenWeb Ninja provides native APIs for web search, AI answers, e-commerce, finance, jobs, maps, news, real estate, contact enrichment, traffic, and web scraping.
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/openweb-ninja/.
+
+## Actions
+
+- **Agent Search** (read-only): Search for real estate agents by location and optionally by name.
+- **AI Mode** (read-only): Send a prompt to Google AI Mode and return its structured answer and sources.
+- **Alerts and Jams** (read-only): Get Waze alerts and traffic jams in a geographic area.
+- **Amazon Best Sellers** (read-only): Get one page of Amazon best sellers for a category.
+- **Amazon Deal Products** (read-only): Get one page of products belonging to an Amazon deal.
+- **Amazon Deals** (read-only): Get one page of Amazon deals with category, rating, price, discount, brand, and Prime filters.
+- **Amazon Influencer Post Products** (read-only): Get one page of products related to an Amazon influencer List post.
+- **Amazon Influencer Posts** (read-only): Get one page of an Amazon influencer's posts.
+- **Amazon Product Offers** (read-only): Get one page of seller offers and product details for Amazon ASINs.
+- **Amazon Product Reviews** (read-only): Get one page of Amazon product reviews with optional filters.
+- **Amazon Products by Category** (read-only): Get one page of Amazon products in a category with pricing and listing filters.
+- **Amazon Seller Products** (read-only): Get one page of products sold by an Amazon seller.
+- **Amazon Seller Reviews** (read-only): Get one page of Amazon seller reviews and feedback.
+- **Amazon Top Product Reviews** (read-only): Get top reviews for an Amazon product by ASIN.
+- **App Categories** (read-only): Get the full list of Google Play app categories.
+- **App Reviews** (read-only): Get one page of Google Play app reviews.
+- **Area Search (Bounding Box)** (read-only): Search businesses within a rectangular area defined by its bottom-left (south-west) and top-right (north-east) corner coordinates.
+- **Area Search (Radius)** (read-only): Search businesses within a circular area defined by a center coordinate point (lat, lng) and a radius in meters.
+- **Autocomplete local business query** (read-only): Return geographic place, business, address, and query predictions.
+- **Autocomplete Waze location** (read-only): Return Waze place, point-of-interest, location, and address predictions.
+- **Autocomplete web search** (read-only): Get Google Search query suggestions and available Knowledge Graph information.
+- **Bulk autocomplete web searches** (read-only): Get query suggestions for up to 50 web searches in one request.
+- **Bulk search local businesses** (read-only): Search for local businesses with up to 20 queries in one request.
+- **Bulk search web** (read-only): Perform real-time web searches for up to 100 queries in one request.
+- **Business Details** (read-only): Get full local-business details, including optional contact enrichment.
+- **Business Photo Details** (read-only): Get captions, ownership, and other details for business photos.
+- **Business Photos** (read-only): Get one page of photos for a Google Maps business.
+- **Business Posts** (read-only): Get one page of Google Maps posts published by a business owner.
+- **Business Review Details** (read-only): Get detailed reviews by business and review-author ID.
+- **Business Reviews** (read-only): Get one page of reviews for a Google Maps business.
+- **Business Reviews** (read-only): Get one page of Yelp business reviews.
+- **Business Search** (read-only): Search for Yelp businesses by query / keyword and location.
+- **Calculate local rank grid coordinates** (read-only): Calculate a geographic coordinate grid from a center point and radius.
+- **Category Search** (read-only): Search all Trustpilot categories.
+- **Chat with ChatGPT** (read-only): Chat with ChatGPT with continuous conversation support.
+- **Chat with Copilot** (read-only): Chat with Copilot with web access and continuous conversation support.
+- **Chat with Gemini** (read-only): Chat with Google Gemini with web access and continuous conversation support.
+- **Company Interviews** (read-only): Get one page of Glassdoor interview reports for a company.
+- **Company Jobs** (read-only): Get one page of jobs posted by a Glassdoor company.
+- **Company Overview** (read-only): Get an employer overview and company details from Glassdoor.
+- **Company Reviews** (read-only): Get one page of filtered Glassdoor employer reviews.
+- **Company Reviews** (read-only): Get one page of filtered Trustpilot company reviews.
+- **Company Salaries** (read-only): Get one page of Glassdoor salary data for a company.
+- **Company Search** (read-only): Search for employers on Glassdoor.
+- **Company Search** (read-only): Search for companies / businesses on Trustpilot.
+- **Consumer Reviews** (read-only): Get one page of reviews written by a Trustpilot consumer.
+- **Convert Amazon ASIN to GTIN** (read-only): Convert an Amazon ASIN to GTIN, EAN, or UPC identifiers.
+- **Convert Amazon GTIN to ASIN** (read-only): Find Amazon products by GTIN, EAN, UPC, or ISBN.
+- **Currency Exchange Rate** (read-only): Get currency, forex, or cryptocurrency exchange rates.
+- **Currency News** (read-only): Get the latest news related to a forex or cryptocurrency pair.
+- **Currency Time Series** (read-only): Get forex time series and key events for a selected period.
+- **Deals** (read-only): Search one page of product deals on Google Shopping.
+- **eBay Products by Category** (read-only): Browse one page of eBay products in a category with listing filters.
+- **Estimate job salary** (read-only): Estimate salary for a job title, location, and experience range.
+- **Exact Matches** (read-only): Find web pages containing an exact match for an image.
+- **Fetch web page** (read-only): Fetch a web page with optional JavaScript rendering and load controls.
+- **Full Grid Search** (read-only): Get a business's local-search ranking across a coordinate grid.
+- **Full Story Coverage** (read-only): Get full coverage for a news story, including related articles and posts.
+- **Get AI overview** (read-only): Get a Google Search AI Overview with text and reference links.
+- **Get Amazon influencer profile** (read-only): Get profile details from an Amazon Influencer store page.
+- **Get Amazon product category list** (read-only): Get Amazon product categories for a marketplace country.
+- **Get Amazon product details** (read-only): Get detailed Amazon product information for one or more ASINs.
+- **Get Amazon product review details** (read-only): Get details for a specific Amazon product review.
+- **Get Amazon promo code details** (read-only): Get products offered by an Amazon promotion code.
+- **Get Amazon seller profile** (read-only): Get profile details from an Amazon seller profile page.
+- **Get API usage** (read-only): Get plan, subscription status, billing period, and quota for an API product.
+- **Get company financial statement** (read-only): Get a public company's income statement, balance sheet, or cash-flow statement.
+- **Get company job salary** (read-only): Get estimated salary for a job title at a company.
+- **Get Costco product details** (read-only): Get full details for a Costco product by item identifier.
+- **Get driving directions** (read-only): Get driving directions from an origin to a destination.
+- **Get eBay product details** (read-only): Get details for an eBay listing by item ID.
+- **Get enriched local business details** (read-only): Get full local business details with optional contact and review-keyword enrichments.
+- **Get event details** (read-only): Get details for an event by its event identifier.
+- **Google Shopping Product Details** (read-only): Get full details for a Google Shopping product ID.
+- **Google Shopping Product Price History** (read-only): Get a Google Shopping product's price history across selected stores.
+- **Home Depot Item Lookup** (read-only): Look up Home Depot products by model or item number, one page at a time.
+- **Home Depot Product Details** (read-only): Get full details for a Home Depot product by item number or URL.
+- **Image Search** (read-only): Search image by url and get visual matches, knowledge graph, and products found on the web.
+- **Image to Text (OCR)** (read-only): Extract paragraph-, sentence-, and word-level text from an image.
+- **Job Details** (read-only): Get full details, application options, reviews, and salary insights for jobs.
+- **Job Search** (read-only): Search Glassdoor jobs and return one cursor-controlled page.
+- **Job Search** (read-only): Search for jobs posted on any public job site across the web on the largest job aggregate in the world (Google for Jobs).
+- **Keyword Search at Coordinate Point** (read-only): Get search results at the specified coordinate point without any rank comparison data.
+- **Language List** (read-only): Get valid news languages for a country code.
+- **List Play Store Top Chart** (read-only): Return one Google Play chart selected by app or game and ranking type.
+- **List Trustpilot Category Companies** (read-only): Return one page of companies in a Trustpilot category using the selected order.
+- **Local Headlines (Geo)** (read-only): Get geo-targeted local news headlines.
+- **Market Trends** (read-only): Get the latest market trends and relevant news.
+- **Object Detection** (read-only): Detect landmarks, products, plants, animals, and other objects in an image.
+- **Play Store App Details** (read-only): Get full details for one or more Play Store applications.
+- **Product Offers** (read-only): Get one page of Google Shopping offers for a product.
+- **Product Offers** (read-only): Get available seller offers for a Walmart product.
+- **Product Reviews** (read-only): Get one page of Google Shopping product reviews.
+- **Product Reviews** (read-only): Get one page of customer reviews for a Home Depot product.
+- **Product Reviews** (read-only): Get one page of customer reviews for a Walmart product.
+- **Product Reviews** (read-only): Get one page of Wayfair product reviews by SKU.
+- **Product Search** (read-only): Search Amazon products and offers and return one result page.
+- **Product Search** (read-only): Search eBay products by keyword and return one listing page.
+- **Product Search** (read-only): Search for products on Walmart with pagination support and multiple filters and options such as sort by, price range, location, and more.
+- **Products By Category** (read-only): Browse one page of Home Depot products in a category.
+- **Products By Category** (read-only): Get one page of products from a Walmart category.
+- **Ranking at Coordinate Point** (read-only): Get a business's local-search ranking at a geographic coordinate.
+- **Redfin Market Trends** (read-only): Get Redfin housing market trends for a region.
+- **Redfin Property Details** (read-only): Get complete Redfin property details by property ID or listing URL.
+- **Related Web Questions** (read-only): Get Google's People Also Ask questions, optionally including answers and sources.
+- **Reverse Geocoding** (read-only): Resolve latitude and longitude to place or address details.
+- **Reverse Image Search** (read-only): Find web pages that use or visually match an image URL.
+- **Salary Estimate** (read-only): Get Glassdoor salary estimates by job title and location.
+- **Scrape By URL** (read-only): Scrape and parse a full Amazon page URL.
+- **Scrape Contacts from Website** (read-only): Find emails, phone numbers, and social links associated with website domains.
+- **Search** (read-only): Search Costco products by keyword and offset.
+- **Search** (read-only): Find financial securities, currencies, and crypto assets.
+- **Search** (read-only): Search Google Maps for local businesses with optional contact enrichment.
+- **Search** (read-only): Search Google Shopping and return one offset-controlled product page.
+- **Search** (read-only): Search Home Depot products and return one result page.
+- **Search** (read-only): Search local businesses on Google Maps with an option to pull emails and social profile links from their website (see the…
+- **Search** (read-only): Search news articles by query with an option to limit the results to a specific time range.
+- **Search** (read-only): Search for apps on the Store.
+- **Search** (read-only): Search Redfin property listings by location (5-digit US zip code, Canadian postal-code area, or a Redfin URL).
+- **Search** (read-only): Search Google Videos for any query and get real-time video results.
+- **Search** (read-only): Search for Wayfair products by keyword or browse by brand/manufacturer.
+- **Search** (read-only): Search for properties by location (county, neighborhood, city, or zip code) with support for the filters and options available on…
+- **Search Books** (read-only): Search books and other publications and return one result page.
+- **Search Business Locations** (read-only): Returns a list of found Google My Business locations based on search query, including Service Area Businesses (SAB).
+- **Search by Coordinates** (read-only): Search Redfin property listings within a geographic bounding box defined by Northeast (NE) and Southwest (SW) latitude/longitude corners.
+- **Search by Coordinates** (read-only): Search for properties in a specific geographic location, by a center latitude, longitude point and a diameter.
+- **Search by Coordinates Point** (read-only): Search for EV charging stations near geographic coordinates.
+- **Search by Location** (read-only): Search for EV charging stations near a named location.
+- **Search by Polygon** (read-only): Search Redfin property listings within a custom polygon area.
+- **Search by Polygon** (read-only): Search for properties in a specific geographic polygon area.
+- **Search Emails** (read-only): Search the web for email addresses matching a query and domain.
+- **Search Events** (read-only): Search for local or online events in real time.
+- **Search Forums** (read-only): Search discussions and forums across the web.
+- **Search Images** (read-only): Search the web for images with format, size, color, and rights filters.
+- **Search In Area** (read-only): Search businesses in a specific geographic area defined by a center coordinate point and zoom level.
+- **Search Nearby** (read-only): Search businesses near by specific geographic coordinates.
+- **Search Shorts** (read-only): Get real-time short video search results from across the web with pagination and filtering support.
+- **Search Social Links** (read-only): Get social profile links by search query or keywords.
+- **Search the Web** (read-only): Search the web with standard, full, or lightweight result detail.
+- **Seller Feedback** (read-only): Get one page of feedback and reviews for an eBay seller.
+- **Stock / Company Overview** (read-only): Get stock or public-company details.
+- **Stock News** (read-only): Get the latest news related to a stock.
+- **Stock Quote** (read-only): Get stock-market quotes from Google Finance or Yahoo Finance.
+- **Stock Time Series** (read-only): Get a stock time series from Google Finance or Yahoo Finance.
+- **Store Reviews** (read-only): Get one page of Google Shopping store reviews.
+- **Top Headlines** (read-only): Get the latest top news stories for a country.
+- **Topic Headlines** (read-only): Get the latest news headlines for a topic or publication.
+- **Topic News By Section** (read-only): Get articles from a section of a news topic or publication.
+- **Traffic Alerts** (read-only): Get live traffic incidents within a geographic bounding box.
+- **Trustpilot Category Details** (read-only): Get full details and category relationships for a Trustpilot category.
+- **Trustpilot Company Details** (read-only): Get full Trustpilot details for a company domain.
+- **Trustpilot Consumer Details** (read-only): Get the full details of a Trustpilot consumer.
+- **Venues** (read-only): Get Waze venues in a geographic rectangle.
+- **Visual Matches** (read-only): Find visually similar images on the web, optionally refined by a query.
+- **Walmart Product Details** (read-only): Get details for a Walmart product by product ID.
+- **Wayfair Product Details** (read-only): Get detailed Wayfair product information by SKU.
+- **Waze Driving Directions** (read-only): Get Waze driving routes and alerts between two coordinate pairs.
+- **Yelp Business Details** (read-only): Fetch details for one or multiple Yelp businesses.
+- **Zillow Agent Active Listings** (read-only): Get one page of an agent's current Zillow for-sale listings.
+- **Zillow Agent Rental Listings** (read-only): Get one page of an agent's current Zillow rental listings.
+- **Zillow Agent Sold Listings** (read-only): Get one page of an agent's past Zillow sales.
+- **Zillow Property by Address** (read-only): Get detailed Zillow property information by street address.
+- **Zillow Property Details** (read-only): Get detailed Zillow property information by ZPID or listing URL.
+- **Zillow Zestimate** (read-only): Get the Zestimate value for a Zillow property.

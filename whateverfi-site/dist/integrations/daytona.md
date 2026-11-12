@@ -1,0 +1,122 @@
+# Daytona
+
+Daytona is a development environment management platform that provides cloud-based development workspaces with API access for automation
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/daytona/.
+
+## Actions
+
+- **Archive Sandbox**: Archives a sandbox in the Daytona platform.
+- **Cancel Organization Invitation**: Cancels a pending organization invitation.
+- **Check Sandbox Access** (read-only): Checks if the authenticated user has access to a specific sandbox.
+- **Checkout Git Branch**: [DEPRECATED] Checkout a branch or commit in a git repository within a sandbox.
+- **Clone Repository**: Clones a Git repository into a sandbox toolbox.
+- **Create API Key**: Creates a new API key for the organization.
+- **Create Docker Registry**: Creates a new Docker registry for the organization.
+- **Create Folder in Sandbox**: Creates a new folder inside a sandbox's filesystem.
+- **Create Organization**: Creates a new organization in Daytona.
+- **Create Organization Invitation**: Creates an invitation to join an organization with specified roles and permissions.
+- **Create Organization Role**: Creates a new organization role with specified permissions.
+- **Create Process Session**: Creates a new session in the sandbox for process management.
+- **Create PTY Session**: Creates a new PTY (pseudo-terminal) session in a sandbox.
+- **Create Sandbox**: Creates a new sandbox environment for development or testing purposes.
+- **Create Sandbox Backup**: Initiates a backup operation for an existing sandbox environment.
+- **Create Snapshot**: Creates a new snapshot resource that can be used as a base image for sandboxes.
+- **Create SSH Access**: Creates SSH access credentials for a sandbox environment.
+- **Create Volume**: Creates a new volume for storing data that can be attached to sandboxes.
+- **Deactivate Snapshot**: Deactivates a snapshot in the Daytona platform.
+- **Delete API Key**: Deletes an API key by its name.
+- **Delete API Key for User**: Deletes an API key for a specific user.
+- **Delete Docker Registry**: Deletes a Docker registry from the Daytona platform.
+- **Delete Git Branch**: Deletes a branch from a git repository inside a sandbox by its name.
+- **Delete Organization**: Deletes an organization.
+- **Delete Organization OTEL Config**: Deletes the OpenTelemetry (OTEL) configuration for an organization.
+- **Delete Organization Role**: Deletes an organization role.
+- **Delete PTY Session**: Deletes a PTY session and terminates the associated process.
+- **Delete Recording**: Deletes a recording from the Daytona platform by its ID.
+- **Delete Sandbox**: Deletes a sandbox from the Daytona platform by its ID or name.
+- **Delete Sandbox File**: Deletes a file inside a sandbox by its path.
+- **Delete Session**: Deletes a session from the Daytona platform by its ID.
+- **Delete Snapshot**: Deletes a snapshot from the Daytona platform by its ID.
+- **Delete Volume**: Deletes a volume from the Daytona platform by its ID.
+- **Download File (Deprecated)** (read-only): [DEPRECATED] Downloads a file from a sandbox's toolbox filesystem.
+- **Download Multiple Files** (read-only): Downloads multiple files from a sandbox as a multipart/form-data bundle.
+- **Enroll in SMS MFA**: Enrolls the authenticated user in SMS-based multi-factor authentication.
+- **Execute Command**: Executes a shell command within a running sandbox via the toolbox proxy.
+- **Expire Signed Port Preview URL**: Expires a signed preview URL for a sandbox port.
+- **Find In Files (Deprecated)** (read-only): [DEPRECATED] Searches for text or patterns in files within a sandbox.
+- **Focus Accessibility Node**: Focuses an accessibility node in a sandbox's computer use system.
+- **Get API Key** (read-only): Retrieves an API key by its name.
+- **Get Authenticated User** (read-only): Retrieves the profile of the authenticated user.
+- **Get Available Account Providers** (read-only): Retrieves all available account providers that can be used to authenticate and link accounts.
+- **Get Build Logs URL** (read-only): Retrieves the build logs URL for a specific sandbox by its ID or name.
+- **Get Commit History** (read-only): Gets commit history from a repository in a sandbox toolbox.
+- **Get Computer Use Status** (read-only): Retrieves the status of all VNC desktop processes in a sandbox.
+- **Get Daytona Config** (read-only): Retrieves the Daytona platform configuration including URLs, OIDC settings, analytics, rate limits, and other platform-level settings.
+- **Get Daytona Health Status** (read-only): Retrieves the current health status of the Daytona service.
+- **Get Display Info** (read-only): Retrieves information about displays connected to a sandbox.
+- **Get Docker Registry** (read-only): Retrieves details of a specific Docker registry by its unique identifier.
+- **Get Entrypoint Logs** (read-only): Retrieves entrypoint logs for a sandbox session.
+- **Get File Info (Deprecated)** (read-only): [DEPRECATED] Gets file info inside a sandbox toolbox.
+- **Get Git History (Deprecated)** (read-only): [DEPRECATED] Get commit history from a git repository in a sandbox toolbox.
+- **Get Organization** (read-only): Retrieves detailed information about an organization by its unique identifier.
+- **Get Organization Audit Logs** (read-only): Retrieves audit logs for an organization.
+- **Get Organization Invitations Count** (read-only): Retrieves the count of organization invitations for the authenticated user.
+- **Get Organization Usage Overview** (read-only): Retrieves the current usage overview for an organization, including CPU, memory, disk, snapshot, and volume usage metrics across all…
+- **Get Process Status** (read-only): Retrieves the status of a specific VNC process in a sandbox.
+- **Get Project Dir (Deprecated)** (read-only): [DEPRECATED] Gets the project directory path within a sandbox toolbox.
+- **Get PTY Session** (read-only): Retrieves information about a PTY (pseudo-terminal) session in a sandbox.
+- **Get Push Access** (read-only): Retrieves temporary storage access credentials for pushing objects to object storage.
+- **Get Sandbox** (read-only): Retrieves details of a specific sandbox by its ID or name.
+- **Get Session (Deprecated)** (read-only): [DEPRECATED] Retrieves details of a specific session in a sandbox toolbox.
+- **Get Session Command Logs** (read-only): Retrieves logs for a specific command executed within a session.
+- **Get Snapshot** (read-only): Retrieves details of a specific snapshot by its ID or name.
+- **Get Snapshot Build Logs** (read-only): Retrieves build logs for a specific snapshot.
+- **Get Toolbox Proxy URL** (read-only): Retrieves the toolbox proxy URL for a sandbox by its ID or name.
+- **Get Transient Push Access** (read-only): Retrieves temporary registry access credentials for pushing snapshots.
+- **Get User Home Dir (Deprecated)** (read-only): [DEPRECATED] Gets the user home directory path for a sandbox.
+- **Get Volume** (read-only): Retrieves details of a specific volume by its ID.
+- **Get Windows** (read-only): Retrieves information about all windows in a sandbox.
+- **Get Work Dir (Deprecated)** (read-only): [DEPRECATED] Retrieves the working directory path of a sandbox toolbox.
+- **Get Working Directory** (read-only): Gets the current working directory inside a sandbox toolbox.
+- **List API Keys** (read-only): Lists all API keys for the organization.
+- **List Available Regions** (read-only): Lists all available regions for the organization.
+- **List Files (Deprecated)** (read-only): [DEPRECATED] Lists files and directories in a sandbox toolbox.
+- **List Git Branches (Deprecated)** (read-only): [DEPRECATED] Lists all git branches from a repository in a sandbox toolbox.
+- **List Organization Invitations** (read-only): Lists all pending organization invitations.
+- **List Organization Invitations for User** (read-only): Lists all organization invitations for the authenticated user.
+- **List organization members** (read-only): Lists all members of a specific organization.
+- **List organization roles** (read-only): Lists all roles available in an organization.
+- **List Organizations** (read-only): Lists all organizations that the authenticated user has access to.
+- **List Process Sessions** (read-only): Lists all active process sessions in a sandbox.
+- **List PTY Sessions** (read-only): Lists all active PTY sessions in a sandbox.
+- **List registries** (read-only): Lists all docker registries available in the organization.
+- **List Sandboxes** (read-only): Lists all sandboxes for the organization.
+- **List Sandboxes Paginated** (read-only): Lists all sandboxes with pagination support.
+- **List shared regions** (read-only): List all shared regions.
+- **List Snapshots** (read-only): Lists all snapshots for the organization.
+- **List Volumes** (read-only): Lists all volumes in the organization.
+- **Replace In Files**: Replaces text or patterns in multiple files within a sandbox.
+- **Replace Sandbox Labels**: Replaces all labels on a sandbox with a new set of key-value pairs.
+- **Resize PTY Session**: Resizes an active PTY session with new terminal dimensions.
+- **Revoke SSH Access**: Revokes SSH access credentials for a sandbox environment.
+- **Search Files** (read-only): [DEPRECATED] Search for files inside a sandbox toolbox.
+- **Set Auto Delete Interval**: Sets the auto-delete interval for a sandbox.
+- **Set Autostop Interval**: Sets the auto-stop interval for a sandbox in the Daytona platform.
+- **Set Sandbox Auto Archive Interval**: Sets the auto-archive interval for a sandbox.
+- **Start Computer Use**: Starts all VNC desktop processes (Xvfb, xfce4, x11vnc, novnc) for a sandbox.
+- **Start LSP Server**: Starts an LSP server process inside a sandbox project.
+- **Start Sandbox**: Starts a sandbox in the Daytona platform.
+- **Start VNC Process**: Restarts a specific VNC process within a sandbox in the Daytona platform.
+- **Stop LSP Server**: Stops an LSP server process inside a sandbox project.
+- **Stop Sandbox**: Stops a running sandbox in the Daytona platform.
+- **Take Compressed Screenshot** (read-only): Takes a compressed screenshot of the entire screen in a sandbox.
+- **Unlink Account**: Unlinks a connected provider account (such as GitHub, GitLab, or Bitbucket) from the authenticated user's Daytona profile.
+- **Update Docker Registry**: Updates a Docker registry configuration.
+- **Update Experimental Config**: Updates experimental configuration for an organization on the Daytona platform.
+- **Update Last Activity**: Updates the last activity timestamp for a sandbox in the Daytona platform.
+- **Update Organization Invitation**: Updates an organization invitation with new role and permissions.
+- **Update Organization OpenTelemetry Config**: Updates the OpenTelemetry configuration for an organization.
+- **Update Organization Role**: Updates an organization role with a new name, description, and permissions.
+- **Update Public Status**: Updates the public visibility status of a sandbox in the Daytona platform.
+- **Update Sandbox Default Limited Network Egress**: Updates the sandbox default limited network egress setting for an organization.

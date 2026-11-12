@@ -1,0 +1,182 @@
+# Rillet
+
+Rillet is an ERP that automates accounting workflows, including revenue recognition, close management, reporting, accounts receivable, and accounts payable.
+
+Category: Finance. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/rillet/.
+
+## Actions
+
+- **Adds members to a customer family**: Adds customers to a family and moves members already in it, in one call.
+- **Amends a contract**: Applies a contract amendment when you need to add items, retire items, or change pricing/invoicing after go-live.
+- **Applies a vendor credit to bills**: Allocates an existing vendor credit balance against specific open bills, reducing net amounts payable similar to a targeted vendor payment.
+- **Completes a close checklist task**: Marks the task as prepared, recorded as completed by the connected user at the current time.
+- **Create a charge**: Create a charge
+- **Create a reimbursement**: Create a reimbursement
+- **Create an auto-payment setup link**: Kicks off the setup of auto-payment for a customer.
+- **Creates a bank account**: Registers a treasury bank account with currency, institution identifiers, and linkage to the GL cash account used during transaction import.
+- **Creates a bank transaction**: Inserts a single bank feed line such as a wire, ACH, or adjustment when automated imports miss a statement row.
+- **Creates a bill**: Accrues a new accounts-payable bill against a vendor with subsidiary context, line items, and due dates your approval workflow consumes.
+- **Creates a bill payment**: Books a cash or scheduled disbursement that settles all or part of a bill, updating the outstanding payable and linking treasury activity.
+- **Creates a chart of accounts**: Initializes the entire chart of accounts for a bare organization in one atomic call.
+- **Creates a contract**: Rillet supports two contract scope types.
+- **Creates a credit memo**: Opens a customer credit memo that reduces receivable exposure before you allocate it to specific invoices.
+- **Creates a customer**: Creates a new customer in the Accounts Receivable catalog.
+- **Creates a customer family**: Creates a family from customers that do not already belong to one.
+- **Creates a draft contract**: Stages a contract in the "draft" holding state instead of creating it directly as an active contract.
+- **Creates a field**: Defines a new custom field (text, number, pick list, etc.) that can be attached to supported Rillet entities for reporting and automation.
+- **Creates a field value**: Adds a selectable value to a pick-list style custom field so users and APIs can tag entities with consistent taxonomy.
+- **Creates a journal entry**: Posts a balanced manual journal entry with explicit debit and credit lines, posting date, and subsidiary scope for GL corrections.
+- **Creates a product**: Creates a new product (good or service) that can be referenced on contracts and invoices.
+- **Creates a reimbursement payment**: Records a cash payment that settles all or part of a reimbursement.
+- **Creates a vendor**: Adds a vendor master record the accounts-payable team can select on bills, vendor credits, and payments.
+- **Creates a vendor credit**: Records a new vendor credit memo amount that reduces future payables without yet touching specific bills.
+- **Creates an account**: Adds an account to the chart of accounts for the organization.
+- **Creates an external reference type**: Creates a type for use in external_references.
+- **Creates an invoice**: A matching creation approval workflow returns HTTP 202 with invoice_id, approval_request_id, and status PENDING.
+- **Creates an invoice payment**: Records a manual cash receipt against an open invoice by amount, effective date, and a GL account code that maps to a funded cash account.
+- **Deletes a bank account**: Removes a bank account definition when the entity closed the account or you mistakenly created a duplicate connector mapping.
+- **Deletes a bank transaction**: Removes a bank transaction row that was imported twice or created in error before it affects reconciled cash balances.
+- **Deletes a bill**: Removes a bill that should no longer drive AP balances, typically while it remains in draft or was created in error.
+- **Deletes a bill payment**: Reverses a previously recorded bill payment when the disbursement failed or was duplicated, restoring the bill balance accordingly.
+- **Deletes a charge**: Drops a charge that should not influence spend reporting, for example duplicate imports from a card processor feed.
+- **Deletes a contract**: Permanently removes a contract when your business rules allow deletion.
+- **Deletes a credit memo**: Removes a credit memo that should no longer affect AR balances, typically while it is still draft or unused.
+- **Deletes a customer**: Permanently deletes a customer.
+- **Deletes a document from a contract**: Removes one attachment from a contract.
+- **Deletes a document from a draft contract**: Removes one attachment from a draft contract.
+- **Deletes a document from an invoice**: Removes one attachment from an invoice and deletes the stored file.
+- **Deletes a draft contract**: Permanently removes a draft contract along with its line items and external references.
+- **Deletes a field value**: Retires a pick-list option that should no longer be selectable while keeping older records intact for read-only history.
+- **Deletes a journal entry**: Deletes a manual journal entry that should be excluded from the ledger, typically prior to period lock while corrections remain allowed.
+- **Deletes a product**: Permanently removes a product or bundle.
+- **Deletes a reimbursement**: Removes a reimbursement that was created prematurely or duplicated during intake so it no longer blocks payroll totals.
+- **Deletes a reimbursement payment**: Reverses an uncleared reimbursement payment that was recorded in error.
+- **Deletes a usage record**: Removes the usage entry for a single contract item on a specific calendar date.
+- **Deletes a vendor**: Removes a vendor you no longer expect to pay.
+- **Deletes a vendor credit**: Permanently removes a vendor credit that should not remain in the subledger.
+- **Deletes an invoice**: Permanently removes an invoice when your policy allows it (for example draft or voided states).
+- **Deletes an invoice payment**: Reverses a previously recorded uncleared invoice payment, restoring the invoice balance accordingly.
+- **Dissolves a customer family**: Dissolves the grouping.
+- **Ends an open-ended contract**: Sets an explicit end date on a contract that previously had no close date (open-ended).
+- **Get Current Organization** (read-only): Return the organization associated with the connected Rillet credentials, including its ID, currency, timezone, and trade name.
+- **Get Financial Report** (read-only): Return either a trial balance for a date range or a balance sheet as of a date, with optional subsidiary and book filters.
+- **Gets API key information** (read-only): Confirms the caller’s API key is recognized and returns basic identity metadata such as organization context when authentication succeeds.
+- **Gets payment method** (read-only): Returns the payment method configured for auto-payment for the given customer.
+- **List Accounting Reference Data** (read-only): Return one complete Rillet reference collection selected by resource.
+- **List Bank Transactions** (read-only): Return one page of bank transactions, optionally filtered by bank account, subsidiary, transaction-date range, or update time.
+- **List Bills** (read-only): Return one page of bills, optionally filtered by subsidiary, vendor, payment status, or update time.
+- **List Contracts** (read-only): Return one page of contracts, optionally filtered by subsidiary, customer, lifecycle status, or inclusive/exclusive start and end date…
+- **List Customers** (read-only): Return one page of accounts-receivable customers, optionally filtered by name, external reference, or update time.
+- **List Invoices** (read-only): Return one page of invoices, optionally filtered by subsidiary, customer, payment status, overdue state, external reference, or update time.
+- **List Journal Entries** (read-only): Return one page of journal entries, optionally filtered by subsidiary, book, posting-date range, account IDs, or update time.
+- **List Vendors** (read-only): Return one page of accounts-payable vendors, optionally limited to records updated after a timestamp.
+- **Lists all approval workflows** (read-only): Returns every approval workflow in the organization tied to the API credentials, active and inactive, grouped by the kind of record they…
+- **Lists all charges** (read-only): Pages card or out-of-pocket employee charges awaiting policy review, subsidiary allocation, or conversion into reimbursable payables.
+- **Lists all contract item usage records** (read-only): Returns historical usage quantities for a contract item, newest first, with optional pagination cursors.
+- **Lists all credit memos** (read-only): Returns customer credit memos with pagination and filters for application state, customer, and subsidiaries.
+- **Lists all customer families** (read-only): Returns customer families with pagination and optional search or update filters.
+- **Lists all draft contracts** (read-only): Returns draft contracts with cursor pagination.
+- **Lists all invoice payments** (read-only): Pages every customer payment recorded against invoices across the organization, independent of which invoice it settled.
+- **Lists all metadata definitions** (read-only): Returns the organization's metadata definitions.
+- **Lists all products** (read-only): Returns sellable products and services for accounts receivable (contracts, invoices).
+- **Lists all reimbursements** (read-only): Surfaces reimbursement requests created from approved charges or manual submissions, including subsidiary and freshness filters for…
+- **Lists all vendor credits** (read-only): Returns vendor credits with pagination and filters for vendor, subsidiary, and freshness.
+- **Lists bill payments** (read-only): Enumerates disbursements recorded against a specific bill, useful when reconciling vendor statements to internal cash movements.
+- **Lists close checklist tasks** (read-only): Returns the month-end close checklist for one accounting month.
+- **Lists documents attached to a contract** (read-only): Returns all attached documents, including those uploaded through the Rillet application or imported from Salesforce.
+- **Lists documents attached to a draft contract** (read-only): Returns all attached documents, including those uploaded through the Rillet application or imported from Salesforce.
+- **Lists documents attached to a manual journal entry** (read-only): Returns all attached documents, including those uploaded through the Rillet application.
+- **Lists documents attached to an invoice** (read-only): Returns all attached documents, including those uploaded through the Rillet application.
+- **Lists journal entries with reporting currency amounts** (read-only): Returns journal entries with line item amounts converted to the reporting currency.
+- **Lists organization members** (read-only): Returns the identity of each member of the organization tied to the API credentials.
+- **Lists payments for a given invoice** (read-only): Returns every payment attempt tied to a single invoice, including successful, uncleared, and failed rows with their public status.
+- **Lists reimbursement payments** (read-only): Lists payments recorded against a reimbursement so external systems can reconcile its paid balance.
+- **Lists role assignments** (read-only): Returns which organization member is assigned which role and the scope of that assignment.
+- **Lists roles** (read-only): Returns every role defined in the organization along with the flat set of permission keys it grants.
+- **Lists the members of a customer family** (read-only): Returns the members of a customer family with pagination.
+- **Matches bank transactions to existing records**: Matches bank transactions to existing records.
+- **Matches bank transactions with new quick entries**: Creates a separate quick entry for each bank transaction in transaction_ids, using the same requested details.
+- **Matches two bank transactions as a transfer**: Matches two bank transactions as a transfer.
+- **Patches account metadata**: Partial update.
+- **Patches bill metadata**: Partial update.
+- **Patches contract metadata**: Partial update.
+- **Patches customer metadata**: Partial update.
+- **Patches invoice metadata**: Partial update.
+- **Permanently cancels a pending milestone**: Permanently forfeits a pending milestone allocation on a FULL contract without redistributing it or automatically issuing a refund.
+- **Preview the invoice schedule for a contract** (read-only): Computes and returns the invoice schedule the given contract would produce, without creating the contract or persisting anything.
+- **Previews contract amendment** (read-only): Preview a contract that has been amended.
+- **Reconciles credit memo applications**: Full reconcile of credit memo applications.
+- **Records or corrects a milestone completion**: Creates or fully replaces the current completion on a milestone in a FULL contract.
+- **Refreshes a bundle**: Updates the details the bundle keeps for each component product to the products' current values.
+- **Removes a member from a customer family**: Removes one customer from the family.
+- **Renames a customer family**: Changes the family's name.
+- **Reports API or MCP bugs and missing features**: Found something surprising, confusing, or missing while using the API or MCP tools?
+- **Retrieves a bank account** (read-only): Returns configuration and status for a single bank account, including identifiers downstream connectors need when refreshing balances.
+- **Retrieves a bank account balance** (read-only): Returns the latest stored bank balance on or before the requested date in the bank account's native currency.
+- **Retrieves a bank transaction** (read-only): Fetches one bank transaction with counterparty text, amounts, and links to the Rillet transactions it settled.
+- **Retrieves a bill** (read-only): Returns the authoritative bill record including vendor linkage, approval state, open balance, and document references.
+- **Retrieves a charge** (read-only): Fetches a single charge with merchant metadata, amounts, and workflow state so reviewers can decide coding before reimbursement.
+- **Retrieves a contract** (read-only): Returns the expanded contract including items, schedules, and metadata required before updates or amendments.
+- **Retrieves a credit memo** (read-only): Loads the full credit memo payload, including remaining balance, applications, and tax metadata you must echo on PUT updates.
+- **Retrieves a customer** (read-only): Returns a single customer record including billing profile details, which are needed for updates.
+- **Retrieves a customer family** (read-only): Returns a single customer family with its name, root parent and member count.
+- **Retrieves a draft contract** (read-only): Returns a draft contract by id, including its line items and any attached external references.
+- **Retrieves a journal entry** (read-only): Retrieves a journal entry with every line, account reference, and reconciliation flag needed for close review or downstream edits.
+- **Retrieves a pending invoice creation proposal** (read-only): Retrieve the captured contents of an invoice awaiting creation approval.
+- **Retrieves a product** (read-only): Returns a single product or bundle definition, including pricing configuration used on contracts and invoices.
+- **Retrieves a reimbursement** (read-only): Returns the full reimbursement packet with employee linkage, funding instructions, and approval history for a single id.
+- **Retrieves a subsidiary** (read-only): Returns one subsidiary by id for the authenticated organization.
+- **Retrieves a vendor** (read-only): Fetches the full vendor profile including identifiers you must echo back on PUT updates.
+- **Retrieves a vendor credit** (read-only): Loads a single vendor credit including remaining balance and application history.
+- **Retrieves account metadata** (read-only): Returns this account's metadata values keyed by definition key.
+- **Retrieves an approval workflow** (read-only): Returns one approval workflow.
+- **Retrieves an invoice** (read-only): Returns invoice details including line items, tax breakdown, and linkage to contracts or customers.
+- **Retrieves ARR waterfall report** (read-only): Returns the ARR waterfall dataset for the requested month with optional breakdown dimensions, subsidiary filters, and pagination cursors…
+- **Retrieves bill metadata** (read-only): Returns this bill's metadata values keyed by definition key.
+- **Retrieves cash flow statement report** (read-only): Returns a cash flow statement report for the specified date range.
+- **Retrieves contract metadata** (read-only): Returns this contract's metadata values keyed by definition key.
+- **Retrieves customer metadata** (read-only): Returns this customer's metadata values keyed by definition key.
+- **Retrieves executive P&L report** (read-only): Returns an executive profit and loss report with margins for the specified date range.
+- **Retrieves income statement report** (read-only): Returns an income statement (profit and loss) report for the specified date range.
+- **Retrieves invoice metadata** (read-only): Returns this invoice's metadata values keyed by definition key.
+- **Retrieves last book closed period** (read-only): Returns the most recently closed accounting period for book-close workflows, including closed-on timestamps your automation can cache.
+- **Returns service health** (read-only): Lightweight liveness probe that returns HTTP 200 when the service process is running, without exercising downstream databases or queues.
+- **Reverses a milestone completion**: Removes the current completion and its recognition effect without cancelling the milestone, issuing a credit, or changing its allocation.
+- **Signs off a close checklist task as reviewer**: Records the connected user's review sign-off on a completed task.
+- **Unapplies all credit memo applications**: Removes every application from this credit memo, reverting all invoice allocations.
+- **Updates a bank transaction**: Adjusts memo, categorization, or reconciliation metadata on an existing bank transaction without re-importing the entire feed batch.
+- **Updates a bill**: IMPORTANT.
+- **Updates a close checklist task**: Partial update of one task's details and assignments.
+- **Updates a credit memo**: IMPORTANT.
+- **Updates a customer**: Updates a single customer record in the catalog.
+- **Updates a draft contract**: Replaces the draft contract identified by draft_contract_id with the supplied payload.
+- **Updates a field**: Changes labels, validation rules, or visibility metadata on an existing custom field without recreating historical values.
+- **Updates a field value**: Renames or reorders a pick-list entry while preserving its underlying id so historical records stay linked to the same option.
+- **Updates a journal entry**: Replaces the lines and header metadata on an existing manual journal entry, subject to the same balancing rules as creation.
+- **Updates a product**: Updates a single product or bundle definition in the catalog.
+- **Updates a vendor**: IMPORTANT.
+- **Updates a vendor credit**: IMPORTANT.
+- **Updates account metadata**: IMPORTANT.
+- **Updates an approval workflow**: Replaces an approval workflow's definition.
+- **Updates an invoice**: IMPORTANT.
+- **Updates an invoice payment**: Replaces the amount, date, and cash account on an existing uncleared invoice payment.
+- **Updates bill metadata**: IMPORTANT.
+- **Updates contract metadata**: IMPORTANT.
+- **Updates credit memo taxes**: Refreshes tax quotes on an existing credit memo using the same structured payload as invoice tax updates, stamped with taxesCalculatedAt…
+- **Updates customer metadata**: Full replacement.
+- **Updates invoice metadata**: IMPORTANT.
+- **Updates invoice sent status**: Marks whether an invoice has been delivered to the customer, which downstream workflows use for collections cadence and compliance…
+- **Updates invoice taxes**: Recalculates or replaces tax lines on an existing invoice using the supplied tax payload.
+- **Updates metadata for multiple accounts**: Patches metadata on up to 1,000 accounts in one atomic request.
+- **Updates metadata for multiple bills**: Patches metadata on up to 1,000 bills in one atomic request.
+- **Updates metadata for multiple contracts**: Patches metadata on up to 1,000 contracts in one atomic request.
+- **Updates metadata for multiple customers**: Patches metadata on up to 1,000 customers in one atomic request.
+- **Updates metadata for multiple invoices**: Patches metadata on up to 1,000 invoices in one atomic request.
+- **Uploads a document**: Attaches a document (PDF, TXT, JPG/JPEG, PNG, GIF, XLSX/XLS, DOCX/DOC, CSV, RTF, TIFF/TIF, BMP, Pages, Numbers, PPTX, or PPT) such as an…
+- **Uploads a document to a charge**: Attaches a receipt (PDF, TXT, JPG/JPEG, PNG, GIF, XLSX/XLS, DOCX/DOC, CSV, RTF, TIFF/TIF, BMP, Pages, Numbers, PPTX, or PPT) to an…
+- **Uploads a document to a contract**: Attaches one PDF, JPEG, PNG, or XLSX file to an existing contract.
+- **Uploads a document to a draft contract**: Attaches one PDF, JPEG, PNG, or XLSX file to an existing draft contract.
+- **Uploads a document to a manual journal entry**: Appends one PDF, JPEG, PNG, or XLSX of at most 20 MiB to an existing manual journal entry.
+- **Uploads a document to a reimbursement**: Attaches a receipt (PDF, TXT, JPG/JPEG, PNG, GIF, XLSX/XLS, DOCX/DOC, CSV, RTF, TIFF/TIF, BMP, Pages, Numbers, PPTX, or PPT) to an…
+- **Uploads a document to an invoice**: Attaches one PDF, JPEG, PNG, or XLSX file to an existing invoice.
+- **Upserts a usage record**: Creates usage records on dates where previously no usage was recorded.

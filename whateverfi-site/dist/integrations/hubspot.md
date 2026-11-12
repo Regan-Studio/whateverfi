@@ -1,0 +1,261 @@
+# HubSpot
+
+HubSpot is an inbound marketing, sales, and customer service platform integrating CRM, email automation, and analytics to facilitate lead nurturing and seamless customer experiences
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/hubspot/.
+
+## Actions
+
+- **Create product**: Creates a new hubspot product.
+- **Create tickets**: Creates multiple hubspot tickets in a batch, each with its own properties and associations.
+- **Get pipeline stage audit** (read-only): Retrieves a reverse chronological list of all mutations (changes) for a specific pipeline stage.
+- **List products with paging** (read-only): Retrieves a paginated list of products from hubspot crm, optionally including specific properties, their history, associated object ids,…
+- **Add asset association**: Associates an existing asset ('form', 'object list', or 'external web url') with a specified hubspot marketing campaign.
+- **Add token to event template**: Adds a new custom data token to an existing event template for a specified hubspot application, optionally populating a crm object…
+- **Archive a batch of campaigns**: Archives a batch of up to 50 marketing campaigns, hiding them from active views rather than permanently deleting them.
+- **Archive a batch of quotes by id**: Archives a batch of existing, non-archived quotes by their ids.
+- **Archive a CRM object by ID**: Archives a specific hubspot crm object by its type and id, moving it to the recycling bin.
+- **Archive batch of companies by id**: Archives a batch of companies by their unique ids.
+- **Archive batch of contacts by id**: Archives a batch of existing contacts by their hubspot crm ids, rendering them inactive.
+- **Archive batch of deals by id**: Archives a batch of existing deals by their unique hubspot ids, removing them from active views and reports (soft delete).
+- **Archive batch of feedback submissions by id**: Asynchronously archives a batch of hubspot feedback submissions using their unique ids, which must correspond to valid and existing…
+- **Archive batch of line items by id**: Archives a batch of existing line items by their unique ids in hubspot crm.
+- **Archive batch of objects by id**: Archives a batch of existing, non-archived crm objects of a specified objecttype by their ids, effectively hiding them from active use.
+- **Archive batch of properties**: Archives a batch of properties by their internal names for a specified hubspot crm object type.
+- **Archive companies**: Archives multiple hubspot companies by their ids.
+- **Archive company**: Archives an existing company in hubspot crm by its companyid, moving it to a recycling bin from which it can be restored, rather than…
+- **Archive contact**: Archives a hubspot contact by its id.
+- **Archive contact by id**: Archives a contact in hubspot crm by its id, moving it to the recycling bin.
+- **Archive contacts**: Archives multiple hubspot contacts by their ids.
+- **Archive deals**: Archives multiple hubspot deals by their ids.
+- **Archive email**: Archives the hubspot email specified by emailid by moving it to the recycling bin, making it inaccessible unless restored.
+- **Archive emails**: Archives multiple hubspot emails by their ids.
+- **Archive feedback submission**: Archives an existing, non-archived feedback submission in hubspot crm by its id, moving it to the recycling bin (not permanently deleting…
+- **Archive line item by id**: Archives a specific hubspot line item by its id, moving it to a recoverable state.
+- **Archive product**: Archives a hubspot product by its id.
+- **Archive products**: Archives multiple hubspot products by their ids.
+- **Archive property by object type and name**: Archives a specified crm property by its object type and name, moving it to the recycling bin.
+- **Archive property group**: Archives a hubspot property group, making it inactive and hidden (not permanently deleted, allowing potential restoration) with immediate…
+- **Archive quote object by id**: Archives a hubspot quote object by id to the recycling bin.
+- **Archive ticket**: Archives a hubspot ticket by its id.
+- **Archive tickets**: Archives multiple hubspot tickets by their ids.
+- **Audit pipeline changes by id** (read-only): Retrieves a reverse chronological audit log of all changes for a specific, existing hubspot crm pipeline, which is identified by its…
+- **Batch read companies by properties** (read-only): Batch-retrieves hubspot company records by their ids, allowing custom id properties, specific properties to fetch, and historical data.
+- **Batch update quotes**: Updates multiple existing hubspot quotes in a batch.
+- **Cancel active import**: Cancels an active hubspot data import job using its importid.
+- **Clone marketing email**: Duplicates an existing hubspot marketing email, identified by its id, into a new draft.
+- **Configure calling extension settings**: Configures or updates settings for a hubspot app's calling extension, including its name, ui url, iframe dimensions, isready status, and…
+- **Create a batch of companies**: Creates multiple company records in hubspot crm in a single batch operation, processing up to 100 companies per request.
+- **Create a new marketing email**: Creates a new marketing email in hubspot, allowing comprehensive configuration of content, recipients, sender details, a/b testing,…
+- **Create a new property group**: Creates a new, empty property group for a specified crm object type in hubspot, requiring a unique group name for that object type.
+- **Create A/B test variation**: Creates a new a/b test variation for an existing hubspot email, using its contentid.
+- **Create association for object type**: Creates the *definition* (schema) of a new association in hubspot, specifying how two crm object types relate (not an actual link between…
+- **Create batch of contacts**: Creates up to 100 new contact records in hubspot crm, optionally associating them with existing crm objects.
+- **Create batch of deals**: Creates multiple deals in hubspot crm.
+- **Create batch of feedback submissions**: Creates a batch of feedback submissions in hubspot, ideal for bulk imports.
+- **Create batch of objects**: Creates multiple crm objects of a specified objecttype (e.g., contacts, companies, deals) in a single batch operation, where each object…
+- **Create batch of properties**: Efficiently creates multiple crm properties in a single batch for a specified hubspot object type (e.g., 'contacts', 'companies', custom…
+- **Create batch of quotes**: Creates multiple hubspot crm quotes in a batch, ideal for bulk operations.
+- **Create campaign**: Creates a new hubspot campaign.
+- **Create campaigns**: Creates multiple hubspot campaigns in a single batch operation.
+- **Create companies**: Creates multiple new hubspot companies in a single batch operation.
+- **Create company**: Creates a new hubspot company.
+- **Create contact**: Creates a new hubspot contact.
+- **Create contacts**: Creates multiple new hubspot contacts in a single batch operation.
+- **Create CRM object with properties**: Creates a new hubspot crm object (e.g., contact, company, custom object) with specified properties (using valid internal names) and…
+- **Create deal**: Creates a new hubspot deal.
+- **Create deals**: Creates multiple deals in hubspot crm.
+- **Create email**: Creates a new hubspot email.
+- **Create emails**: Creates multiple hubspot emails in a single batch operation.
+- **Create event template for app**: Creates a new event template for a hubspot app, defining structure, custom properties (tokens), and appearance (markdown with handlebars)…
+- **Create feedback submission**: Creates a new hubspot feedback submission to record customer feedback (e.g., survey responses, support interactions), optionally…
+- **Create line item**: Creates a new hubspot line item.
+- **Create line items**: Creates multiple hubspot line items in a single batch operation.
+- **Create multiple timeline events batch**: Creates multiple immutable timeline events in a batch, ideal for bulk data imports or real-time synchronizations, using a valid event…
+- **Create new object schema with custom properties**: Creates a new custom object schema in hubspot crm with unique naming for schema and properties, defined display/required/searchable…
+- **Create or update draft version**: Creates or updates the draft version of a marketing email identified by emailid.
+- **Create pipeline for object type**: Creates a new hubspot pipeline for a specified crm objecttype (e.g., 'deals', 'tickets'), requiring the pipeline label be unique for that…
+- **Create pipeline stage**: Creates a new stage in a specified hubspot crm pipeline for a given object type, such as 'deals' or 'tickets'.
+- **Create products**: Creates multiple hubspot products in a single batch operation.
+- **Create property for specified object type**: Creates a new custom property for a specified hubspot crm object type.
+- **Create quote object**: Creates a new quote object in hubspot crm with specified properties and associations.
+- **Create ticket**: Creates a new hubspot ticket.
+- **Create timeline event based on template**: Creates an immutable custom timeline event on a crm object's record using a specified, existing event template (identified by…
+- **Create workflow**: Creates a new hubspot workflow to automate processes.
+- **Delete a marketing email**: Deletes an existing marketing email, either permanently (default) or by archiving if archived is true.
+- **Delete calling extension settings**: Permanently deletes the settings for a calling extension app, specified by its appid, rendering it unusable for all connected hubspot…
+- **Delete campaign**: Permanently deletes a marketing campaign from hubspot using its campaignguid.
+- **Delete contact for gdpr compliance**: Irreversibly deletes a hubspot contact for gdpr compliance (identified via objectid and idproperty).
+- **Delete pipeline by id**: Permanently deletes a hubspot pipeline and all its stages by pipelineid and objecttype.
+- **Delete pipeline stage by id**: Permanently deletes a specific pipeline stage for an objecttype (e.g., 'deals', 'tickets') that supports pipelines.
+- **Delete schema by object type**: Permanently deletes a hubspot custom object schema, specified by its objecttype, after all associated crm records have been deleted.
+- **Delete timeline event template**: Permanently and irreversibly deletes a specific timeline event template, identified by its eventtemplateid, from the application appid.
+- **Delete video conferencing app settings**: Irreversibly deletes all settings for a video conferencing application identified by its appid in hubspot, removing its configuration and…
+- **Delete workflow**: Permanently deletes a hubspot workflow by its id.
+- **Fetch contact ids** (read-only): Fetches hubspot contact ids for a specified campaignguid (must be a valid uuid of an existing campaign) and contacttype, supporting date…
+- **Fetch import error details** (read-only): Fetches a paginated list of read-only error details for a specific hubspot crm import, requiring a valid importid for a processed import.
+- **Fetch recording settings by app ID** (read-only): Fetches call recording settings for a specified, existing hubspot calling extension app.
+- **Fetch revenue** (read-only): Fetches a revenue attribution report for a specified, existing marketing campaign, optionally using a specific attribution model and date…
+- **GDPR delete**: Permanently deletes a contact and associated content for gdpr compliance.
+- **Get a revision of a marketing email** (read-only): Retrieves a specific, previously saved revision of a marketing email using its unique email id and revision id.
+- **Get active imports list** (read-only): Retrieves a list of currently active import jobs in hubspot for monitoring ongoing data operations.
+- **Get aggregated statistic intervals** (read-only): Retrieves aggregated statistics for marketing emails (e.g., send counts), grouped by specified time intervals within a defined time range.
+- **Get aggregated statistics** (read-only): Retrieves aggregated statistics for marketing emails, optionally within an iso8601 formatted time range, by email ids, or specific email…
+- **Get all marketing emails for a HubSpot account** (read-only): Fetches a list of marketing emails from a hubspot account, with options for filtering, sorting, pagination, and including performance…
+- **Get all workflows** (read-only): Retrieves a list of workflow summaries (id, name, type, status) from hubspot, using the 'limit' parameter for pagination.
+- **Get campaign** (read-only): Retrieves a hubspot campaign by its id.
+- **Get campaign metrics** (read-only): Retrieves key attribution metrics for an existing marketing campaign, identified by its campaignguid, within an optional date range.
+- **Get campaigns** (read-only): Retrieves multiple hubspot campaigns.
+- **Get company** (read-only): Retrieves a hubspot company by its id.
+- **Get contact IDs** (read-only): Gets hubspot contact ids for a specified campaign and contact interaction type.
+- **Get deal** (read-only): Retrieves a hubspot deal by its id.
+- **Get deals** (read-only): Retrieves multiple hubspot deals by their ids.
+- **Get draft version of a marketing email** (read-only): Retrieves the draft version of a marketing email by its emailid.
+- **Get emails** (read-only): Retrieves multiple hubspot emails by their ids.
+- **Get import record information** (read-only): Retrieves a comprehensive summary of a specific hubspot crm import record by its importid, including status, progress, updates, results,…
+- **Get Marketing Emails** (read-only): Fetches a list of marketing emails from hubspot, supporting filtering by creation/update timestamps, pagination, and sorting.
+- **Get product** (read-only): Retrieves a hubspot product by its id.
+- **Get products** (read-only): Retrieves multiple hubspot products by their ids.
+- **Get quote by id** (read-only): Retrieves a specific hubspot quote by its unique identifier.
+- **Get revisions of a marketing email** (read-only): Retrieves a paginated list of all historical versions (including full state like content, settings, metadata) for a specified, existing…
+- **Get specific event template for app** (read-only): Retrieves detailed information about a specific event template for a given application in hubspot's crm timeline.
+- **Get the details of a specified marketing email** (read-only): Retrieves detailed information for a specific marketing email in hubspot using its unique email id, optionally including performance…
+- **Get the variation of an A/B marketing email** (read-only): Retrieves the alternate variation of a specified a/b marketing email.
+- **Get ticket** (read-only): Retrieves a hubspot ticket by its id.
+- **Get tickets** (read-only): Retrieves multiple hubspot tickets by their ids.
+- **Get workflow by ID** (read-only): Retrieves comprehensive details for an existing hubspot workflow by its unique id.
+- **Get workflow email campaigns** (read-only): Retrieves email campaigns associated with a specific hubspot workflow id.
+- **Initiate data import process**: Call this action to start an asynchronous data import into hubspot crm using uploaded files and a detailed importrequest json…
+- **List all event templates for app** (read-only): Retrieves all event templates associated with a valid appid for an existing application in hubspot's crm timeline.
+- **List assets** (read-only): Lists assets of a specific assettype for a given hubspot marketing campaignguid, optionally including performance metrics for a date range.
+- **List association types** (read-only): Lists all valid association types between two specified hubspot crm object types.
+- **List companies** (read-only): Retrieves a paginated list of hubspot companies.
+- **List contacts** (read-only): Retrieves a paginated list of hubspot contacts.
+- **List contacts page** (read-only): Retrieves a paginated list of hubspot contacts, optionally specifying properties, historical values, and associations.
+- **List deals** (read-only): Retrieves a paginated list of hubspot deals.
+- **List Emails** (read-only): Retrieves a paginated list of hubspot emails, allowing selection of specific properties (with or without history), associated object ids,…
+- **List feedback submissions page** (read-only): Retrieves a paginated list of feedback submissions from hubspot, allowing specification of properties (including history), associated…
+- **List quotes page** (read-only): Retrieves a paginated list of quotes, allowing selection of specific properties, property history, associated object ids, and filtering by…
+- **List tickets** (read-only): Retrieves a paginated list of hubspot tickets.
+- **Merge contacts**: Merges two hubspot contacts into one.
+- **Merge deals**: Merges two hubspot deals into one.
+- **Merge emails**: Merges two hubspot emails into one.
+- **Merge products**: Merges two hubspot products into one.
+- **Merge tickets**: Merges two hubspot tickets into one.
+- **Merge two companies of same type**: Merges two existing company records of the same type in hubspot crm, where objectidtomerge is absorbed into primaryobjectid.
+- **Merge two contacts of same type**: Merges a hubspot contact (objectidtomerge) into another contact (primaryobjectid), deleting the former and making primaryobjectid absorb…
+- **Merge two deals of same type**: Permanently merges two hubspot crm deals of the same type, typically to eliminate duplicates or consolidate related sales opportunities.
+- **Merge two feedback submissions**: Merges two existing feedback submissions by id, primarily for consolidating duplicates or related feedback.
+- **Merge two line items of same type**: Merges two line items, objectidtomerge into primaryobjectid, which must be of the same type.
+- **Merge two objects of same type**: Merges two distinct hubspot crm objects of the same objecttype, consolidating data into primaryobjectid (which is preserved) and deleting…
+- **Merge two quotes of same type**: Merges two distinct quotes of the same type by consolidating objectidtomerge into primaryobjectid (e.g., for combining information or…
+- **Modify calling extension settings**: Updates settings (e.g., display name, ui url/dimensions, feature flags) for an existing calling extension app, identified by appid.
+- **Partial update quote by quote id**: Performs a partial update on an existing hubspot quote's specified properties, identifying the quote by quoteid (either its internal id or…
+- **Partially update company object by id**: Partially updates specified properties of an existing hubspot company, identified by its companyid (optionally using idproperty as the…
+- **Partially update contact**: Partially updates specified properties for an existing hubspot contact, identified by its valid contactid.
+- **Partially update CRM object by ID**: Partially updates specified properties of a crm object (e.g., contact, company, deal) identified by its type and id, or optionally by a…
+- **Partially update deal by id**: Partially updates specified properties of an existing hubspot crm deal, identified by its dealid or an optional custom unique idproperty.
+- **Partially update pipeline by id**: Partially updates a crm pipeline's label, display order, or restores an archived pipeline by setting archived to false.
+- **Partially update property group**: Partially updates a property group's displayorder or label for a specified crm objecttype in hubspot.
+- **Permanently delete company for GDPR compliance**: Permanently deletes a company (identified by objectid) and its associated data from hubspot for gdpr compliance.
+- **Permanently delete contact for GDPR**: Irreversibly deletes a hubspot contact for gdpr.
+- **Permanently delete contact for GDPR compliance**: Irreversibly erases a hubspot contact and associated data per a gdpr request.
+- **Permanently delete contact via GDPR**: Permanently deletes a hubspot contact and all its associated data for gdpr compliance, identifying the contact by its id or another unique…
+- **Permanently delete deal for GDPR compliance**: Permanently deletes a hubspot deal for gdpr compliance, identified by its unique id or a specified property value.
+- **Permanently delete GDPR contact and content**: Permanently and irreversibly deletes an existing hubspot contact and associated content for gdpr compliance, optionally blocklisting the…
+- **Permanently delete line items for gdpr**: Permanently deletes a specified line item and its associated content for gdpr compliance.
+- **Permanently delete quote for GDPR compliance**: Permanently and irreversibly deletes a hubspot **quote** (not a contact, despite the action's internal naming) to comply with gdpr's…
+- **Publish or send a marketing email**: Publishes or sends a specified hubspot marketing email that is valid and ready for sending.
+- **Purge schema by object type**: Permanently and irreversibly deletes the schema for an existing objecttype in hubspot crm.
+- **Read a batch of CRM object properties** (read-only): Reads definitions (metadata, not values) for a batch of crm object properties for a specified objecttype, supporting partial success.
+- **Read a CRM property by name** (read-only): Reads a specific crm property definition for a given hubspot object type by its internal name.
+- **Read a page of deals** (read-only): Retrieves a paginated list of hubspot crm deals.
+- **Read a page of objects by type** (read-only): Retrieves a paginated list of objects for a specified and valid hubspot crm object type (e.g., 'contacts', 'companies', 'deals', or custom…
+- **Read a property group** (read-only): Retrieves metadata for a specific property group of a given crm object type, detailing its structure and attributes, but not the actual…
+- **Read all properties for object type** (read-only): Retrieves definitions and metadata (not actual values) for properties of a specified hubspot crm object type (e.g., 'contacts',…
+- **Read Batch Emails** (read-only): Retrieves a batch of hubspot email objects by their internal ids or values of a specified unique property, allowing targeted property…
+- **Read batch feedback submissions by id or property** (read-only): Retrieves up to 100 feedback submissions in a batch using their ids or a specified unique idproperty, optionally including specified…
+- **Read batch of contacts by id or properties** (read-only): Reads a batch of hubspot contacts by their ids or a specified unique idproperty, optionally including property history and filtering by…
+- **Read batch of crm objects by id or property values** (read-only): Reads a batch of crm objects of a specified objecttype using their hubspot ids or unique property values from the inputs list, allowing…
+- **Read batch of line items by id or property values** (read-only): Retrieves a batch of hubspot crm line items by their ids, or optionally by values of a custom unique property defined in idproperty.
+- **Read batch of quotes by property values** (read-only): Efficiently retrieves a batch of hubspot crm quotes by their ids (or a specified unique property), optionally including archived quotes,…
+- **Read budget** (read-only): Fetches detailed budget (total, spent, remaining) and spend information for a marketing campaign, including an 'order' field for…
+- **Read contact** (read-only): Retrieves a hubspot contact by its id.
+- **Read contacts** (read-only): Reads multiple hubspot contacts by their ids.
+- **Read crm contact by id** (read-only): Retrieves a hubspot crm contact by its unique internal hubspot id, allowing selection of properties, historical values, associated…
+- **Read crm object by id** (read-only): Retrieves a specific crm object (e.g., contact, company, deal, ticket) by its id or a unique property, optionally including specific…
+- **Read feedback submission by id** (read-only): Reads a hubspot feedback submission by its id, optionally using a custom unique 'idproperty', and allows specifying properties to return…
+- **Read property groups for object type** (read-only): Retrieves all property groups in a single call for a specified hubspot crm object type (e.g., 'contacts', 'companies'), returning only the…
+- **Remove asset association**: Disassociates an asset (form, object list, or external web url) from a hubspot campaign.
+- **Remove association from schema**: Permanently removes a specified association definition (type) from a hubspot object's schema, preventing future creations of this…
+- **Remove deal**: Removes a hubspot deal by its id.
+- **Remove deal object by id**: Archives a hubspot deal by its dealid, moving it to the recycling bin when it's no longer relevant, created in error, or needs removal…
+- **Remove token from event template**: Removes a token from a hubspot event template, preventing its inclusion in new events created from that template.
+- **Render event detail template** (read-only): Renders detailed information for a specific hubspot crm timeline event using a predefined event template, ignoring extradata references in…
+- **Render event header or detail as html** (read-only): Renders an event's header or detail template as html for a specified event on the hubspot crm timeline, using a given event template id…
+- **Replace all properties of pipeline**: Overwrites an entire crm pipeline (specified by objecttype and pipelineid) and all its stages with a new definition, returning the updated…
+- **Replace pipeline stage properties**: Replaces all properties of a specified pipeline stage.
+- **Reset draft**: Resets a marketing email's draft to its currently published (live) version, discarding all unpublished changes.
+- **Restore a revision of a marketing email**: Restores a specific, existing, non-active revision of a marketing email to become the new live version for that email.
+- **Restore a revision of a marketing email to draft state**: Restores a specific revision of a marketing email to a draft state, overwriting any existing draft.
+- **Retrieve a batch of deals by IDs or property values** (read-only): Retrieves a batch of hubspot crm deals by their hubspot ids or values of a specified unique idproperty.
+- **Retrieve all object schemas** (read-only): Retrieves all object schema definitions (not data records) for a hubspot account, supporting retrieval of either active or archived schemas.
+- **Retrieve all pipelines for specified object type** (read-only): Retrieves all pipelines in hubspot for a specified crm object type, such as deals or tickets.
+- **Retrieve calling settings for app** (read-only): Retrieves the read-only calling extension settings for a specific hubspot app.
+- **Retrieve company object by id** (read-only): Retrieves a specific hubspot company by its id (or an alternative unique property value if idproperty is specified), optionally including…
+- **Retrieve deal by id** (read-only): Fetches a hubspot crm deal by its id, optionally including specific properties, their history, and associations.
+- **Retrieve existing object schema** (read-only): Fetches the detailed schema definition for a specified, existing standard or custom hubspot crm object type.
+- **Retrieve line item by id** (read-only): Retrieves a hubspot crm line item by its id or a specified unique property (idproperty).
+- **Retrieve line items list** (read-only): Fetches a paginated list of hubspot crm line items, allowing selection of specific properties (including history), associated object ids,…
+- **Retrieve owner by ID or user ID** (read-only): Retrieves a specific hubspot crm owner by their id, with options to specify id type (owner or user) and to include archived records.
+- **Retrieve owners** (read-only): Retrieves a list of all owners in the hubspot crm, including their id, first name, last name, email, and user id.
+- **Retrieve page of companies** (read-only): Retrieves a paginated list of companies from hubspot, using an 'after' cursor from a previous response for subsequent pages.
+- **Retrieve page of crm owners** (read-only): Retrieves a paginated list of crm owners from hubspot, optionally filtering by email or archived status.
+- **Retrieve pipeline stage by id** (read-only): Fetches detailed properties and metadata (e.g., label, display order, custom properties) for a specific stage within a hubspot crm…
+- **Retrieve pipeline stages** (read-only): Fetches all stages for a specified hubspot crm object type and pipeline id.
+- **Retrieve timeline event by ids** (read-only): Retrieves a specific hubspot crm timeline event by its eventtemplateid (for an existing template) and eventid (for an existing event),…
+- **Retrieve video conference settings by id** (read-only): Retrieves video conference application settings, such as webhook urls and user/account management configurations, for a specified appid.
+- **Return pipeline by id** (read-only): Retrieves a specific pipeline by its id and crm object type, detailing its stages and properties.
+- **Search campaigns** (read-only): Searches for hubspot campaigns.
+- **Search companies** (read-only): Searches for hubspot companies using flexible criteria and filters.
+- **Search company objects** (read-only): Searches hubspot company objects using a text query, complex filter groups (anded within, ored between), sorting, and specific property…
+- **Search contacts by criteria** (read-only): Searches for hubspot contacts using a text query, specific filter criteria (filters in a group are anded, groups are ored), sorting, and…
+- **Search crm objects by criteria** (read-only): Searches hubspot crm objects (e.g., 'contacts', 'companies') by objecttype using complex criteria including filters, sorting, and…
+- **Search deals** (read-only): Searches for hubspot deals using flexible criteria and filters.
+- **Search deals by criteria** (read-only): Searches hubspot deals using complex criteria (text queries, property filters, sorting, pagination) for targeted retrieval beyond simple…
+- **Search emails** (read-only): Searches for hubspot emails using flexible criteria and filters.
+- **Search feedback submissions** (read-only): Searches for feedback submissions in hubspot crm using text query, filter groups, sorting, and pagination, returning specified properties.
+- **Search line items by criteria** (read-only): Searches hubspot line items using criteria including filters, sorting, and pagination.
+- **Search products** (read-only): Searches for hubspot products using flexible criteria and filters.
+- **Search quotes by criteria** (read-only): Searches hubspot crm quotes using a text query, complex filter criteria, sorting, and pagination.
+- **Search tickets** (read-only): Searches for hubspot tickets using flexible criteria and filters.
+- **Set call recording settings**: Configures the url (urltoretrieveauthedrecording) that hubspot uses to retrieve call recordings for a specified third-party calling app…
+- **Update a batch of campaigns**: Updates properties for up to 50 existing hubspot marketing campaigns in a single batch operation.
+- **Update a batch of contacts**: Updates specified properties for a batch of up to 100 hubspot contacts, identified by their vids.
+- **Update a batch of deals**: Updates properties for multiple existing hubspot crm deals in a batch.
+- **Update a batch of line items**: Updates a batch of existing hubspot crm line items in a single operation, identifying each by its primary id or a unique idproperty (which…
+- **Update a batch of objects by id or property values**: Performs a batch update on a valid objecttype where properties are writeable and any idproperty used is designated unique.
+- **Update a marketing email**: Updates properties of an existing marketing email identified by its emailid.
+- **Update batch feedback submissions**: Updates a batch of hubspot feedback submissions.
+- **Update batch of companies**: Updates specified properties for multiple existing hubspot companies in a batch, identifying each company by its hubspot id or by a unique…
+- **Update calling app recording settings**: Updates the recording settings, such as the url for retrieving authenticated recordings, for a specific calling extension app identified…
+- **Update campaign**: Partially updates specific, writable properties of an existing hubspot marketing campaign identified by campaignguid.
+- **Update companies**: Updates multiple hubspot companies in a single batch operation.
+- **Update company**: Updates properties for an existing hubspot company.
+- **Update contact**: Updates properties for an existing hubspot contact.
+- **Update contacts**: Updates multiple hubspot contacts in a single batch operation.
+- **Update deal**: Updates properties for an existing hubspot deal.
+- **Update deals**: Updates multiple hubspot deals in a single batch operation.
+- **Update emails**: Updates multiple hubspot emails in a single batch operation.
+- **Update existing event template**: Updates an existing hubspot event template's name, display templates, and tokens.
+- **Update existing object schema**: Updates an existing custom object schema's metadata in hubspot, such as its description, labels, display properties, required properties,…
+- **Update feedback submission by id**: Partially updates writable properties of an existing hubspot feedback submission, identified by its feedbacksubmissionid (which can be an…
+- **Update line item object partially**: Partially updates specified properties of an existing hubspot line item, identified by lineitemid (as hubspot object id or value of…
+- **Update pipeline stage by ids**: Partially updates a hubspot crm pipeline stage identified by objecttype, pipelineid, and stageid, requiring metadata in the request.
+- **Update product**: Updates properties for an existing hubspot product.
+- **Update products**: Updates multiple hubspot products in a single batch operation.
+- **Update specific CRM property**: Updates attributes of an existing hubspot crm property, identified by its objecttype and propertyname.
+- **Update ticket**: Updates properties for an existing hubspot ticket.
+- **Update tickets**: Updates multiple hubspot tickets in a single batch operation.
+- **Update token on event template**: Updates the label or options of an existing token within a specified hubspot crm event template.
+- **Update video conference app settings**: Updates interaction urls (for creating/updating/deleting meetings, fetching accounts, verifying users) for a video conference application…

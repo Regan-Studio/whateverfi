@@ -1,0 +1,149 @@
+# Cal
+
+Cal simplifies meeting coordination by providing shareable booking pages, calendar syncing, and availability management to streamline the scheduling process
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/cal/.
+
+## Actions
+
+- **Connect to calendar** (read-only): Initiates or checks the external connection status for a specified calendar, possibly returning a redirect url for user authorization to…
+- **Create or update team profile**: Creates a new team profile, or updates one if a 'slug' matches, customizing branding, scheduling, privacy, and operational details.
+- **Get organization ID** (read-only): Retrieves all organization ids associated with the currently authenticated user.
+- **Get teams list** (read-only): Retrieves all teams the user belongs to, including their names and members.
+- **List event types** (read-only): Retrieves cal event types, filterable by username (required if eventslug is provided), multiple usernames, or organization details…
+- **Reserve slot for event**: Temporarily reserves an available time slot for an existing and bookable event type, useful for high-demand slots to prevent…
+- **Retrieve calendar busy times** (read-only): To find busy calendar slots for scheduling/conflict detection, call this with a valid credentialid, an externalid accessible by it, and a…
+- **Retrieve calendar list** (read-only): Retrieves a list of all calendar summaries (no event details) associated with the authenticated user's account.
+- **Retrieve my information** (read-only): Retrieves the authenticated user's core profile information (e.g., name, email, timezone).
+- **Retrieve team memberships** (read-only): Retrieves a list of memberships, detailing member roles and statuses, for an existing team specified by teamid, with support for pagination.
+- **Retrieve users in organization** (read-only): Retrieves users associated with a specific organization id, excluding individual scheduling or calendar data.
+- **Add member to team**: Adds a new member to a specified team within an organization by creating a team membership.
+- **Add organization attribute option**: Adds a new option to an organization's attribute, requiring a display value and a slug unique for that attribute.
+- **Add selected calendar**: Links a new external calendar or updates an existing link to one, enabling synchronization with the cal application by specifying the…
+- **Assign or create attribute option for user**: Assigns an existing attribute option (using attributeoptionid) or creates a new one (using value) for a user, linking it to a specified…
+- **Cancel booking via uid**: Cancels an existing and active cal.com booking using its unique identifier (uid).
+- **Check calendar availability** (read-only): Retrieves free/busy availability for a specified calendar to aid scheduling without revealing event details.
+- **Check gcal synchronization status** (read-only): Call this read-only action to verify the connection and synchronization status of a user's google calendar integration with cal.
+- **Check ics feed calendar endpoint** (read-only): Checks an ics feed url (expected as a query parameter) to verify its validity, accessibility, and icalendar data integrity.
+- **Check Stripe status** (read-only): Verifies if stripe is correctly connected to the cal scheduling system and functional for processing payments, reporting only on the…
+- **Check team stripe integration status** (read-only): Retrieves the stripe integration status and related information for a team, primarily to verify account connection, subscription details,…
+- **Confirm booking by uid**: Confirms an existing booking by bookinguid if the booking exists and is in a state allowing confirmation (e.g., not already cancelled or…
+- **Connect conferencing app**: Connects or reconnects cal.com with a specified conferencing application to enable future virtual meeting scheduling, but does not itself…
+- **Create membership for organization**: Creates a new membership or updates an existing one for a user within an organization.
+- **Create oauth client user**: Creates a new managed user for an oauth client, setting profile and scheduling preferences.
+- **Create OAuth client webhook configuration**: Creates a webhook for an existing oauth client to send real-time cal.com event notifications (e.g., booking created, meeting ended) to the…
+- **Create organization attributes**: Creates a new custom attribute for an existing organization, used to enhance data collection for event bookings or user profiles.
+- **Create organization webhook by org ID**: Creates a webhook for a specified, existing organization, sending notifications for selected trigger events to a designated, publicly…
+- **Create phone call event**: Schedules a phone call event in cal.com using existing eventtype, organization, and team ids.
+- **Create phone call for event type**: Creates a phone call template associated with an existing event type and team, for defining reusable call configurations like numbers and…
+- **Create team event type**: Creates a new event type for a specified team in cal.com.
+- **Create team event types with custom options**: Creates a highly customizable cal.com team event type with extensive scheduling, booking, and host assignment options.
+- **Create team in organization**: Creates a new team with customizable attributes within an existing and accessible cal.com organization specified by orgid.
+- **Create team membership with role**: Adds a user to a team with a specified role, acceptance status, and impersonation settings.
+- **Create user availability schedule**: Creates a cal.com user availability schedule, defining its name, timezone, weekly recurring availability, and specific date overrides.
+- **Create user schedule in organization**: Creates a new schedule defining a user's availability with weekly slots and date-specific overrides in an organization.
+- **Create webhook for event type**: Creates a webhook for an existing eventtypeid in cal.com, sending notifications for specified triggers to a subscriberurl that handles…
+- **Decline booking with reason**: Declines a pending booking using its bookinguid, optionally with a reason.
+- **Delete conference app connection**: Disconnects the specified conferencing application (e.g., 'zoom', 'google meet') for the cal.com account, immediately terminating any…
+- **Delete event type by id**: Permanently deletes an existing event type by its id, which invalidates its scheduling links.
+- **Delete event type in team**: Permanently removes an event type's configuration from a team's scheduling options (e.g., for cleanup).
+- **Delete membership in team**: Permanently remove a user's membership from a specific team within an organization, which revokes their team-associated access but does…
+- **Delete oauth client user**: Irreversibly revokes a specific user's association with a given oauth client, without deleting the user's cal account.
+- **Delete oauth client webhook**: Permanently deletes a specific webhook subscription of an oauth client in the cal application, stopping its notifications.
+- **Delete org webhook**: Permanently deletes an organization's webhook, which stops all its notifications.
+- **Delete organization attribute**: Permanently deletes an existing attribute (specified by attributeid) from an existing organization (specified by orgid).
+- **Delete organization attribute option**: Permanently deletes a specified option from an organization's attribute, typically to remove an unnecessary configuration choice.
+- **Delete organization membership**: Irreversibly deletes a user's membership from an organization, removing all associated access and permissions.
+- **Delete schedule by id**: Permanently deletes a specific schedule using its unique identifier, which must correspond to an existing schedule.
+- **Delete selected calendars**: Removes a specified, currently selected calendar from the user's active list within the application, without deleting it from the external…
+- **Delete selected slot**: Deletes a previously selected time slot from the cal schedule using its uid.
+- **Delete team by id**: Permanently and irreversibly deletes an existing team and all its associated data from the cal system, using the team's unique teamid.
+- **Delete team from organization**: Permanently and irreversibly deletes a specific team (and all its associated data, members, and linked projects/events) from an…
+- **Delete team memberships by id**: Irreversibly removes a user's team membership in the cal application, revoking access to that specific team.
+- **Delete user attribute option**: Removes a custom attribute option (e.g., skill, role) currently assigned to a user within an organization.
+- **Delete user from organization**: Permanently removes a user from a specific organization (user's system-wide account is unaffected), revoking their access rights therein.
+- **Delete user schedule**: Permanently deletes a specific user's schedule, provided the organization, user, and schedule (identified by orgid, userid, and…
+- **Delete webhook by id**: Permanently deletes an existing webhook by its webhookid, stopping future notifications.
+- **Delete webhook for event type**: Permanently deletes a specific webhook for an event type, halting its real-time notifications.
+- **Delete webhooks for event type**: Call this to irreversibly delete all webhooks for a specific eventtypeid if the event type exists.
+- **Disconnect calendar using credential id**: Disconnects a calendar integration by its provider name and credential id, irreversibly revoking cal's access.
+- **Fetch all bookings** (read-only): Fetches a list of bookings, optionally filtered by status, attendee, date range, or by event/team ids (which must belong to/include the…
+- **Fetch event type details** (read-only): Fetches all configuration settings and characteristics for a single event type (identified by orgid, teamid, and eventtypeid), which must…
+- **Fetch organization attribute by id** (read-only): Retrieves a specific attribute of an organization, useful for fetching a single data point instead of the entire organization record.
+- **Fetch provider access token** (read-only): Fetches an oauth access token for the specified clientid to authenticate api calls.
+- **Fetch schedule by id** (read-only): Fetches comprehensive details for a specific, existing schedule using its scheduleid.
+- **Fetch user schedule by org id** (read-only): Fetches a specific user's schedule, potentially including events and availability, using orgid, userid, and scheduleid.
+- **Fetch webhook by event type id** (read-only): Retrieves details for a single, specific webhook using its webhookid and associated eventtypeid.
+- **Force refresh user oauth client**: Forces an immediate refresh of oauth tokens for a specified user and client, bypassing the normal expiration cycle, typically when…
+- **Get all timezones** (read-only): Retrieves all supported time zone identifiers (e.g., 'america/new york', 'europe/london') and their associated metadata, excluding…
+- **Get available slots info** (read-only): Retrieves available time slots for scheduling by considering existing bookings and availability, based on criteria like a specified time…
+- **Get conference OAuth authorization url** (read-only): Generates an oauth 2.0 authorization url for a supported conferencing app to initiate or refresh its integration with cal.com.
+- **Get default schedule details** (read-only): Retrieves the cal system's global default schedule configuration, not custom or user-specific ones.
+- **Get event type by team id** (read-only): Retrieves a specific event type by its id, requiring that the event type is associated with the given team id.
+- **Get google calendar oauth authentication url** (read-only): Generates the initial google calendar oauth 2.0 authorization url for user redirection to begin the authentication and authorization…
+- **Get oauth clients user** (read-only): Retrieves users associated with a specific oauth client (identified by a valid clientid) for auditing access or managing permissions.
+- **Get organization schedules** (read-only): Retrieves a list of schedules (e.g., events, appointments) for an organization, providing basic schedule information, not detailed…
+- **Get organization teams event types** (read-only): Retrieves event types, including names, durations, and custom settings for team scheduling, for all teams within an existing organization…
+- **Get organization user schedules** (read-only): Fetches all schedule information for a specific user within an organization.
+- **Get schedule for user in team** (read-only): Fetches all scheduled events or appointments for a specified user within their team and organization.
+- **Get stripe connect info** (read-only): Retrieves stripe connect account details (id, charges/payouts status, verification, settings) for the user's linked cal.com account.
+- **Get team details by organization ID and team ID** (read-only): Retrieves comprehensive details (e.g., members, roles, metadata) for a specific team using its teamid within an organization specified by…
+- **Get team information by team ID** (read-only): Fetches comprehensive details for an existing team using its unique id.
+- **Get webhook by id** (read-only): Retrieves details for an existing and accessible webhook by its id.
+- **Handle conferencing oauth callback for app**: Processes an oauth 2.0 callback for a conferencing app, exchanging the code and state for access credentials.
+- **List organization memberships** (read-only): Retrieves all memberships for a given organization, including user details, roles, status, and membership dates.
+- **List team event types by org and team id** (read-only): Retrieves all event types for a specific team within an organization, optionally filtering by a specific event slug.
+- **Mark booking absent for UID**: Marks the host and/or specified attendees as absent for an existing booking, typically used after a scheduled event to record no-shows.
+- **Modify org attribute by id**: Partially updates an organization attribute using orgid and attributeid, allowing modification of its name, slug, type, or enabled status.
+- **Modify organization membership by id**: Updates an organization membership's status (accepted), role, or impersonation settings, identified by orgid and membershipid in the path.
+- **Patch organization attribute option**: Partially updates a specific option for an organization's attribute, modifying its 'value' and/or 'slug'.
+- **Patch organization user details**: Partially updates details for a user that exists within the specified organization.
+- **Patch team details by ID**: Updates specified details for an existing team identified by teamid.
+- **Patch webhook event type**: Updates configuration (e.g., payload template, active status, url, triggers, secret) for an existing webhook tied to a specific event type.
+- **Post a new booking request**: Creates a new booking for an active event type, scheduling it for a specified start time (preferably in the future) with primary attendee…
+- **Post calendar credentials**: Submit/update authentication credentials (passed in the request body) for an existing calendar, enabling cal to connect with external…
+- **Post user to organization**: Adds a new user to an existing organization (identified by orgid in path), requiring user's email and allowing extensive optional profile…
+- **Post webhook event**: Creates a new cal.com webhook subscription to send real-time notifications for specified calendar events to a publicly accessible…
+- **Reassign booking to another user**: Reassigns an existing, active booking to a specified, authorized user.
+- **Reassign booking with uid**: Reassigns the specified booking to a new team member, who is determined by the system rather than being specified in the request.
+- **Refresh oauth token for client id**: Refreshes an oauth access token for a specified clientid and managed user using their refreshtoken, enabling continued api access when the…
+- **Reschedule booking by uid**: Reschedules an existing booking (identified by bookinguid) to a new time, provided the new slot's availability is confirmed beforehand.
+- **Retrieve attribute options for org** (read-only): Retrieves all available options for a specific attribute within a designated organization, requiring valid and associated orgid and…
+- **Retrieve booking details by uid** (read-only): Fetches comprehensive details for an existing booking, identified by its bookinguid.
+- **Retrieve current team for organization** (read-only): Retrieves details of the team(s) for the currently authenticated user within the specified organization orgid.
+- **Retrieve default conferencing settings** (read-only): Retrieves an account's or organization's read-only default conferencing settings in cal.com (e.g., video platform, meeting duration) to…
+- **Retrieve event type by id** (read-only): Retrieves comprehensive details for a specific, existing cal.com event type using its unique id.
+- **Retrieve membership from organization** (read-only): Retrieves detailed information about a specific membership within a particular organization.
+- **Retrieve OAuth client user by ID** (read-only): Retrieves detailed information for an existing user specifically associated with an existing oauth client.
+- **Retrieve oauth client webhook by id** (read-only): Retrieves a specific webhook using its webhookid and the clientid of its associated oauth client.
+- **Retrieve organization attributes** (read-only): Retrieves detailed attributes (e.g., configurations, settings, metadata) for an organization, identified by its orgid, which must…
+- **Retrieve organization attributes options** (read-only): Fetches all available attribute options for a specific user within a given organization, provided the organization and user exist and the…
+- **Retrieve organization webhook by id** (read-only): Retrieves detailed information, including configuration and status, for a specific webhook by its id (webhookid) within a given…
+- **Retrieve organization webhooks by org ID** (read-only): Retrieves a list of webhooks for an organization specified by orgid, supporting pagination.
+- **Retrieve provider details** (read-only): Retrieves detailed information for an existing provider in the cal scheduling system using their unique client id.
+- **Retrieve schedules list** (read-only): Retrieves a comprehensive list of all schedules associated with the authenticated user's cal.com account or organization.
+- **Retrieve team details in organization** (read-only): Retrieves a paginated list of teams and their details for a specific organization id.
+- **Retrieve team event types** (read-only): Retrieves event types for a team within the cal scheduling system.
+- **Retrieve team membership by id** (read-only): Retrieves detailed information, including role and status, for a specific team membership using its id, for a given organization and team.
+- **Retrieve team membership details** (read-only): Retrieves detailed attributes for a specific team membership by its id and the team id, such as member information, role, and status.
+- **Retrieve team memberships for organization** (read-only): Retrieves all user memberships, including their roles and states, for a specific team within an organization.
+- **Retrieve v2 conferencing info** (read-only): Retrieves an authenticated cal user's or organization's video conferencing configurations, capabilities, and installed apps, useful for…
+- **Retrieve webhook details for oauth client** (read-only): Retrieves a list of webhooks for a specific oauth client, supporting pagination.
+- **Retrieve webhooks for event type** (read-only): Retrieves a paginated list of webhooks (including urls, subscribed events, and status) for a specified, existing event type id, useful for…
+- **Retrieve webhooks list** (read-only): Retrieves a paginated list of webhooks from the user's cal scheduling system account, which are used for real-time notifications on events…
+- **Save calendar entry**: Saves or updates a calendar's settings using a get request, typically for data already on the server or simple updates via query parameters.
+- **Save calendar ics feeds**: Imports and saves one or more publicly accessible external icalendar (ics) feed urls into the cal.com calendar system.
+- **Save OAuth credentials via GCal API**: Completes the google calendar oauth 2.0 flow by exchanging the code and state (received from google's redirect after user consent) for…
+- **Save stripe details**: Completes the stripe oauth flow by saving stripe details.
+- **Set default conferencing app**: Sets the specified, valid, and configured conferencing application as the default for new meetings for the authenticated user.
+- **Update destination calendar integration**: Updates the destination calendar for syncing events, using integration and externalid (typically from /calendars endpoint).
+- **Update OAuth client user settings**: Updates specified profile and scheduling preference fields for a user associated with an oauth client.
+- **Update oauth client webhook**: Updates specified properties of an existing webhook for an oauth client.
+- **Update schedule by ID**: Updates an existing schedule by its id, allowing partial modification of properties.
+- **Update team information by id**: Updates an existing team's information by its id within a specified organization.
+- **Update team membership by id**: Updates specified properties (e.g., acceptance status, role, impersonation settings) of an existing team membership, identified by teamid…
+- **Update team membership properties**: Updates attributes like acceptance status, role, or impersonation settings for an existing team membership.
+- **Update user profile details**: Updates the profile information and preferences for the authenticated user, affecting only the fields provided in the request.
+- **Update user schedule in organization**: Modifies an existing schedule for a specified user within an organization by updating only the provided fields.
+- **Update webhook by id**: Updates an existing cal.com webhook by its webhookid, allowing partial modification of its attributes.
+- **Update webhook for organization**: Use this action to modify settings of an already created webhook for an organization, such as its target url, active status, or the events…

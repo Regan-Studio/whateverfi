@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Built WhatEverFi marketing site is committed for Cloudflare Pages
+!whateverfi-site/dist/

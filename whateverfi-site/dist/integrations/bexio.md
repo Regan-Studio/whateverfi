@@ -1,0 +1,317 @@
+# bexio
+
+bexio is a Swiss business management platform for accounting, invoicing, contacts, projects, banking, expenses, and payroll.
+
+Category: Finance. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/bexio/.
+
+## Actions
+
+- **Accept Quote**: Accept a quote.
+- **Archive Project**: Archive a project.
+- **Cancel Invoice**: Cancel an invoice.
+- **Cancel Payment**: Cancel a payment.
+- **Check Bill Document Number** (read-only): Validate whether document number is available or not.
+- **Check Expense Document Number** (read-only): Validate whether document number is available or not.
+- **Copy Invoice**: Copy a invoice.
+- **Copy Quote**: Copy a quote.
+- **Create Additional Address**: Create additional address.
+- **Create Bill**: Create new Bill.
+- **Create Business Activity**: Create business activity.
+- **Create Calendar Year**: Create calendar year.
+- **Create Comment**: Create a comment.
+- **Create Contact**: Create contact.
+- **Create Contact Group**: Create contact group.
+- **Create Contact Relation**: Create contact relation.
+- **Create Contacts Bulk**: Bulk create contacts.
+- **Create Country**: Create country.
+- **Create Currency**: Create a currency.
+- **Create Default Position**: Create a default position.
+- **Create Delivery From Order**: Create delivery from order.
+- **Create Discount Position**: Create a discount position.
+- **Create Employee**: Create employee.
+- **Create Employee Absence**: Create absence for employee.
+- **Create Expense**: Create new Expense.
+- **Create Fictional User**: Create a fictional user.
+- **Create File**: Create new file.
+- **Create Invoice**: Create invoice.
+- **Create Invoice From Order**: Create invoice from order.
+- **Create Invoice From Quote**: Create invoice from quote.
+- **Create Invoice Payment**: Create payment.
+- **Create Invoice Reminder**: Create reminder.
+- **Create Item**: Create item.
+- **Create Item Position**: Create an item position.
+- **Create Manual Entry**: Create manual entry.
+- **Create Milestone**: Create milestone.
+- **Create Note**: Create note.
+- **Create Order**: Create order.
+- **Create Order From Quote**: Create order from quote.
+- **Create Outgoing Payment**: Create new Outgoing Payment.
+- **Create Pagebreak Position**: Create a pagebreak position.
+- **Create Payment**: Create a payment.
+- **Create Project**: Create project.
+- **Create Purchase Order**: Create a purchase order.
+- **Create Quote**: Create quote.
+- **Create Salutation**: Create salutation.
+- **Create Subposition Position**: Create a sub position.
+- **Create Subtotal Position**: Create a subtotal position.
+- **Create Task**: Create task.
+- **Create Text Position**: Create a text position.
+- **Create Timesheet**: Create timesheet.
+- **Create Title**: Create title.
+- **Create Unit**: Create unit.
+- **Create Work Package**: Create work package.
+- **Decline Quote**: Decline a quote.
+- **Delete Additional Address**: Delete an additional address.
+- **Delete Bill**: Delete Bill.
+- **Delete Contact**: Delete a contact.
+- **Delete Contact Group**: Delete a contact group.
+- **Delete Contact Relation**: Delete a contact relation.
+- **Delete Country**: Delete a country.
+- **Delete Currency**: Delete a currency.
+- **Delete Default Position**: Delete a default position.
+- **Delete Discount Position**: Delete a discount position.
+- **Delete Employee Absence**: Deleting employee absence with given id.
+- **Delete Expense**: Delete Expense.
+- **Delete Fictional User**: Delete a fictional user.
+- **Delete File**: Delete a existing file.
+- **Delete Invoice**: Delete an invoice.
+- **Delete Invoice Payment**: Delete a payment.
+- **Delete Invoice Reminder**: Delete a reminder.
+- **Delete Item**: Delete an item.
+- **Delete Item Position**: Delete a item position.
+- **Delete Manual Compound Entry File**: Delete connection between file and manual compound entry.
+- **Delete Manual Entry**: Delete manual entry.
+- **Delete Manual Entry File**: Delete connection between file and manual entry line.
+- **Delete Milestone**: Delete a milestone.
+- **Delete Note**: Delete a note.
+- **Delete Order**: Delete an order.
+- **Delete Order Repetition**: Delete a repetition.
+- **Delete Outgoing Payment**: Delete Outgoing Payment.
+- **Delete Pagebreak Position**: Delete a pagebreak position.
+- **Delete Payment**: Delete a payment.
+- **Delete Project**: Delete a project.
+- **Delete Purchase Order**: Delete a purchase order.
+- **Delete Quote**: Delete a quote.
+- **Delete Salutation**: Delete a salutation.
+- **Delete Subposition Position**: Delete a sub position.
+- **Delete Subtotal Position**: Delete a subtotal position.
+- **Delete Task**: Delete a task.
+- **Delete Tax**: Delete a tax.
+- **Delete Text Position**: Delete a text position.
+- **Delete Timesheet**: Delete a timesheet.
+- **Delete Title**: Delete a title.
+- **Delete Unit**: Delete a unit.
+- **Delete Work Package**: Delete a work package.
+- **Download File** (read-only): Download file.
+- **Download Paystub Pdf** (read-only): Download paystub pdf for employee for given month.
+- **Duplicate Bill**: Create a duplicate of the selected bill.
+- **Duplicate Expense**: Create a duplicate of the selected expense.
+- **Get Additional Address** (read-only): Return the additional address.
+- **Get Bank Account** (read-only): Return the single bank account.
+- **Get Bill** (read-only): Return Bill.
+- **Get Business Year** (read-only): Return the business year.
+- **Get Calendar Year** (read-only): Return the calendar year.
+- **Get Comment** (read-only): Return the comment.
+- **Get Company Profile** (read-only): Return company profile.
+- **Get Contact** (read-only): Return the contact.
+- **Get Contact Group** (read-only): Return the contact group.
+- **Get Contact Relation** (read-only): Return the contact relation.
+- **Get Country** (read-only): Return the country.
+- **Get Currency** (read-only): Return the currency.
+- **Get Current User** (read-only): Return the authenticated user.
+- **Get Default Position** (read-only): Return the default position.
+- **Get Delivery** (read-only): Return the delivery.
+- **Get Discount Position** (read-only): Return the discount position.
+- **Get Employee** (read-only): Retrieve a single employee on a specific date.
+- **Get Employee Absence** (read-only): Retrieving absence for employee with given absence id.
+- **Get Expense** (read-only): Return Expense.
+- **Get Fictional User** (read-only): Return the fictional User.
+- **Get File** (read-only): Return metadata for a single file.
+- **Get File Usage** (read-only): Return file usage.
+- **Get Invoice** (read-only): Return the invoice.
+- **Get Invoice Payment** (read-only): Return the payment.
+- **Get Invoice Pdf** (read-only): Return PDF.
+- **Get Invoice Reminder** (read-only): Return the reminder.
+- **Get Invoice Reminder Pdf** (read-only): Return reminder PDF.
+- **Get Item** (read-only): Return the item.
+- **Get Item Position** (read-only): Return the item position.
+- **Get Manual Compound Entry File** (read-only): Return file of manual compound entry.
+- **Get Manual Entry File** (read-only): Return file of manual entry line.
+- **Get Milestone** (read-only): Return the milestone.
+- **Get Next Reference Number** (read-only): Return next reference number.
+- **Get Note** (read-only): Return the note.
+- **Get Order** (read-only): Return the order.
+- **Get Order Pdf** (read-only): Return PDF.
+- **Get Order Repetition** (read-only): Return repetition.
+- **Get Outgoing Payment** (read-only): Return Outgoing Payment.
+- **Get Pagebreak Position** (read-only): Return the pagebreak position.
+- **Get Payment** (read-only): Return a payment.
+- **Get Permissions** (read-only): Return access information of logged in user.
+- **Get Project** (read-only): Return the project.
+- **Get Purchase Order** (read-only): Return the single purchase order.
+- **Get Quote** (read-only): Return the quote.
+- **Get Quote Pdf** (read-only): Return PDF.
+- **Get Salutation** (read-only): Return the salutation.
+- **Get Subposition Position** (read-only): Return the sub position.
+- **Get Subtotal Position** (read-only): Return the subtotal position.
+- **Get Task** (read-only): Return the task.
+- **Get Tax** (read-only): Return the tax.
+- **Get Text Position** (read-only): Return the text position.
+- **Get Timesheet** (read-only): Return the timesheet.
+- **Get Title** (read-only): Return the title.
+- **Get Unit** (read-only): Return the unit.
+- **Get User** (read-only): Return the user.
+- **Get Vat Period** (read-only): Return the vat period.
+- **Get Work Package** (read-only): Return the work package.
+- **Issue Delivery**: Issue a delivery.
+- **Issue Invoice**: Issue an invoice.
+- **Issue Quote**: Issue a quote.
+- **List Account Groups** (read-only): Return one page of account groups.
+- **List Accounts** (read-only): Return one page of accounts.
+- **List Additional Addresses** (read-only): Return one page of additional addresses.
+- **List Bank Accounts** (read-only): Return one page of bank accounts.
+- **List Bills** (read-only): Return Bills, one page at a time.
+- **List Business Activities** (read-only): Return one page of business activities.
+- **List Business Years** (read-only): Return one page of business years.
+- **List Calendar Years** (read-only): Return one page of calendar years.
+- **List Comments** (read-only): Return one page of comments.
+- **List Communication Types** (read-only): Return one page of communication types.
+- **List Company Profile** (read-only): Return one page of company profiles.
+- **List Contact Groups** (read-only): Return one page of contact groups.
+- **List Contact Relations** (read-only): Return one page of contact relations.
+- **List Contact Sectors** (read-only): Return one page of contact sectors.
+- **List Contacts** (read-only): Return one page of contacts.
+- **List Countries** (read-only): Return one page of countries.
+- **List Currencies** (read-only): Return one page of currencies.
+- **List Currency Codes** (read-only): Return one page of possible currency codes.
+- **List Default Positions** (read-only): Return one page of default positions.
+- **List Deliveries** (read-only): Return one page of deliveries.
+- **List Discount Positions** (read-only): Return one page of discount positions.
+- **List Document Settings** (read-only): Return one page of document settings.
+- **List Document Template** (read-only): List document templates.
+- **List Employee Absences** (read-only): Retrieving absences of employee for given year.
+- **List Employees** (read-only): Retrieves all active employees.
+- **List Exchange Rates For Currency** (read-only): Return exchange rates for currencies.
+- **List Expenses** (read-only): Return Expenses, one page at a time.
+- **List Fictional Users** (read-only): Return one page of fictional users.
+- **List Files** (read-only): Return one page of files.
+- **List Invoice Payments** (read-only): Return one page of payments.
+- **List Invoice Reminders** (read-only): Return one page of reminders.
+- **List Invoices** (read-only): Return one page of invoices.
+- **List Item Positions** (read-only): Return one page of item positions.
+- **List Items** (read-only): Return one page of items.
+- **List Journal Entries** (read-only): Journal, one page at a time.
+- **List Languages** (read-only): Return one page of languages.
+- **List Manual Compound Entry Files** (read-only): Return files of manual compound entry, one page at a time.
+- **List Manual Entries** (read-only): Return one page of manual entries.
+- **List Manual Entry Files** (read-only): Return files of manual entry line, one page at a time.
+- **List Milestones** (read-only): Return one page of milestones.
+- **List Notes** (read-only): Return one page of notes.
+- **List Orders** (read-only): Return one page of orders.
+- **List Outgoing Payments** (read-only): Retrieve Outgoing Payments, one page at a time.
+- **List Pagebreak Positions** (read-only): Return one page of pagebreak positions.
+- **List Payment Types** (read-only): Return one page of payment types.
+- **List Payments** (read-only): Return one page of payments.
+- **List Project Status** (read-only): Project status.
+- **List Project Type** (read-only): Project types.
+- **List Projects** (read-only): Return one page of projects.
+- **List Purchase Orders** (read-only): Return one page of purchase orders.
+- **List Quotes** (read-only): Return one page of quotes.
+- **List Salutations** (read-only): Return one page of salutations.
+- **List Stock Areas** (read-only): Return one page of stock areas.
+- **List Stock Locations** (read-only): Return one page of stock locations.
+- **List Subposition Positions** (read-only): Return one page of sub positions.
+- **List Subtotal Positions** (read-only): Return one page of subtotal positions.
+- **List Task Priorities** (read-only): Task priorities, one page at a time.
+- **List Task Status** (read-only): Task status, one page at a time.
+- **List Tasks** (read-only): Return one page of tasks.
+- **List Taxes** (read-only): Return one page of taxes.
+- **List Text Positions** (read-only): Return one page of text positions.
+- **List Time Sheet Status** (read-only): Timesheet status, one page at a time.
+- **List Timesheets** (read-only): Return one page of timesheets.
+- **List Titles** (read-only): Return one page of titles.
+- **List Units** (read-only): Return one page of units.
+- **List Users** (read-only): Return one page of users.
+- **List Vat Periods** (read-only): Return one page of vat periods.
+- **List Work Packages** (read-only): Return one page of work packages.
+- **Mark As Sent Invoice**: Mark invoice as sent.
+- **Mark As Sent Invoice Reminder**: Mark reminder as sent.
+- **Mark As Sent Quote**: Mark quote as sent.
+- **Mark As Unsent Invoice Reminder**: Mark reminder as unsent.
+- **Preview File** (read-only): Return file preview.
+- **Reissue Quote**: Reissue a quote.
+- **Restore Contact**: Restore a contact.
+- **Revert Issue Invoice**: Sets issued invoice to draft.
+- **Revert Issue Quote**: Revert issue a quote.
+- **Search Accounts** (read-only): Search Accounts, one page at a time.
+- **Search Additional Addresses** (read-only): Search additional addresses, one page at a time.
+- **Search Business Activities** (read-only): Search business activities, one page at a time.
+- **Search Calendar Years** (read-only): Search calendar years, one page at a time.
+- **Search Communication Types** (read-only): Search communication types, one page at a time.
+- **Search Contact** (read-only): Search contacts, one page at a time.
+- **Search Contact Groups** (read-only): Search contact groups, one page at a time.
+- **Search Contact Relations** (read-only): Search contact relations, one page at a time.
+- **Search Contact Sectors** (read-only): Search contact sectors, one page at a time.
+- **Search Countries** (read-only): Search countries, one page at a time.
+- **Search Files** (read-only): Search files, one page at a time.
+- **Search Invoices** (read-only): Search invoices, one page at a time.
+- **Search Items** (read-only): Search items, one page at a time.
+- **Search Languages** (read-only): Search languages, one page at a time.
+- **Search Notes** (read-only): Search notes, one page at a time.
+- **Search Orders** (read-only): Search orders, one page at a time.
+- **Search Payment Types** (read-only): Search payment types, one page at a time.
+- **Search Projects** (read-only): Search projects, one page at a time.
+- **Search Quotes** (read-only): Search quotes, one page at a time.
+- **Search Reminders** (read-only): Search invoice reminders.
+- **Search Salutations** (read-only): Search salutations, one page at a time.
+- **Search Stock Areas** (read-only): Search stock areas, one page at a time.
+- **Search Stock Locations** (read-only): Search stock locations, one page at a time.
+- **Search Tasks** (read-only): Search tasks, one page at a time.
+- **Search Timesheets** (read-only): Search timesheets, one page at a time.
+- **Search Titles** (read-only): Search titles, one page at a time.
+- **Search Units** (read-only): Search units, one page at a time.
+- **Send Invoice**: Send an invoice.
+- **Send Invoice Reminder**: Send a reminder.
+- **Send Quote**: Send a quote.
+- **Unarchive Project**: Unarchive a project.
+- **Update Additional Address**: Edit an additional address.
+- **Update Bill**: Update Bill.
+- **Update Bill Booking Status**: Update Bill status.
+- **Update Contact**: Edit a contact.
+- **Update Contact Group**: Edit a contact group.
+- **Update Contact Relation**: Edit a contact relation.
+- **Update Country**: Edit a country.
+- **Update Currency**: Update a currency.
+- **Update Default Position**: Edit a default position.
+- **Update Discount Position**: Edit a discount position.
+- **Update Employee**: Update employee.
+- **Update Employee Absence**: Updating existing absence.
+- **Update Expense**: Update Expense.
+- **Update Expense Booking Status**: Update Expense status.
+- **Update Fictional User**: Update a fictional User.
+- **Update File**: Update existing file.
+- **Update Invoice**: Edit an invoice.
+- **Update Item**: Edit an item.
+- **Update Item Position**: Edit an item position.
+- **Update Manual Entry**: Update manual entry.
+- **Update Milestone**: Edit a milestone.
+- **Update Note**: Edit a note.
+- **Update Order**: Edit an order.
+- **Update Order Repetition**: Edit a repetition.
+- **Update Outgoing Payment**: Edit Outgoing Payment.
+- **Update Pagebreak Position**: Edit a pagebreak position.
+- **Update Payment**: Update a payment.
+- **Update Project**: Edit a project.
+- **Update Purchase Order**: Update a single purchase order.
+- **Update Quote**: Edit a quote.
+- **Update Salutation**: Edit a salutation.
+- **Update Subposition Position**: Edit a sub position.
+- **Update Subtotal Position**: Edit a subtotal position.
+- **Update Task**: Edit a task.
+- **Update Text Position**: Edit a text position.
+- **Update Timesheet**: Edit a timesheet.
+- **Update Title**: Edit a title.
+- **Update Unit**: Edit a unit.
+- **Update Work Package**: Edit a work package.
+- **Upload Manual Compound Entry File**: Add file to manual compound entry.
+- **Upload Manual Entry File**: Add file to manual entry line.

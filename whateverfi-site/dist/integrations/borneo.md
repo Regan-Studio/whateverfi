@@ -1,0 +1,161 @@
+# Borneo
+
+Borneo is a data security and privacy platform designed for sensitive data discovery and remediation.
+
+Category: Security & Ops. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/borneo/.
+
+## Actions
+
+- **Create new asset**: Creates a new asset in the borneo integration platform.
+- **Access scan iteration by id** (read-only): Retrieves detailed information about a specific scan iteration in the borneo integration platform.
+- **Add discovered recipients**: Adds multiple discovered recipients to the system as confirmed recipients.
+- **Archive discovered recipient**: Archives a specific discovered recipient in the borneo platform.
+- **Create and schedule cloud resource scan**: The createscan endpoint initiates a new scan operation in the borneo integration platform, allowing users to configure and schedule data…
+- **Create dashboard user**: Creates a new dashboard user in the borneo integration platform with specified roles, organizational access, and authentication settings.
+- **Create department with translations**: Creates a new department in the borneo integration platform.
+- **Create domain with polling frequency**: Creates a new domain within the borneo integration platform, allowing for automatic polling and management of connected systems or…
+- **Create dpia for processing activity**: Creates a new data protection impact assessment (dpia) for a specific processing activity in the borneo application.
+- **Create employee with json payload**: Creates a new employee record in the borneo integration platform.
+- **Create headquarter entry**: Creates a new headquarters entry in the borneo integration platform.
+- **Create legal document entry**: Creates or uploads a new legal document in the borneo integration platform with specified metadata.
+- **Create new infotype category**: Creates a new infotype category in the borneo integration platform, allowing users to organize and group related sensitive data types.
+- **Create processing activity**: Creates a new processing activity in the borneo integration platform.
+- **Create processing activity threshold**: Creates a new threshold for a specific data processing activity in the context of lopdp (law on personal data protection) compliance.
+- **Create recipient with details**: Creates a new recipient in the borneo integration platform.
+- **Create threshold for processing activity**: Creates a new threshold for a specific data processing activity in the borneo integration platform.
+- **Delete asset by id**: The deleteasset endpoint removes a specific asset from the borneo integration platform.
+- **Delete category by label**: Deletes a specific category from the borneo integration platform using its unique label.
+- **Delete dashboard report by id**: Deletes a specific dashboard report from the borneo integration platform.
+- **Delete data breach by id**: Deletes a specific data breach evaluation record from the borneo system.
+- **Delete department by id**: Deletes a specific department from the borneo platform using its unique identifier.
+- **Delete domain by id**: Deletes a specific domain from the borneo integration platform.
+- **Delete dpia by id**: Deletes a specific data protection impact assessment (dpia) from the borneo system.
+- **Delete employee by id**: Deletes an employee record from the borneo system using the specified employee id.
+- **Delete headquarters by id**: Deletes a specific headquarters record from the borneo system.
+- **Delete legal document by id**: Deletes a specific legal document from the borneo platform using its unique identifier.
+- **Delete lopdp threshold by id**: This endpoint deletes a specific lopdp (local public data protection) threshold from the borneo integration platform.
+- **Delete processing activity by id**: Deletes a specific processing activity from the borneo integration platform.
+- **Delete recipient by id**: Deletes a specific recipient from the borneo integration platform.
+- **Delete tag from resource**: The deletetags endpoint removes specified tags from resources in the borneo integration platform.
+- **Delete threshold by id**: Deletes a specific threshold from the borneo integration platform.
+- **Disable dashboard user by username**: Disables a specified user account in the borneo dashboard, preventing further access to the system.
+- **Download dashboard report** (read-only): The downloaddashboardreport endpoint allows users to download specific types of dashboard reports from the borneo integration platform.
+- **Download dashboard report edition** (read-only): Downloads a specific dashboard report edition from the borneo integration platform.
+- **Enable dashboard user**: Enables dashboard access for a specified user in the borneo integration platform.
+- **Evaluate data breach impact**: This endpoint allows users to evaluate and document details of a data breach incident.
+- **Export filtered leaf resources** (read-only): The listleafresources endpoint exports a comprehensive list of leaf resources in the borneo integration platform, allowing for extensive…
+- **Export insight page using scanid** (read-only): The exportpageinsight endpoint allows users to export filtered inspection results from a specific scan in the borneo integration platform.
+- **Export inventory resource list** (read-only): Exports a filtered and sorted list of inventory resources from the borneo integration platform.
+- **Export processing activities list** (read-only): This endpoint exports a filtered list of processing activities in specified formats and languages.
+- **Export recipients list with filter** (read-only): The exportrecipientslist endpoint generates and exports a list of recipients based on specified criteria.
+- **Fetch dashboard report by id** (read-only): Retrieves a specific dashboard report from the borneo integration platform.
+- **Fetch data breach evaluation** (read-only): Retrieves detailed information about a specific evaluated data breach incident.
+- **Filter and list inspection results** (read-only): The insightlistpost endpoint retrieves a list of inspection results from the borneo integration platform.
+- **Filter and sort assets list** (read-only): The listassets endpoint retrieves a customized list of assets from borneo.
+- **Filter employee list** (read-only): The filteremployeelist endpoint allows you to retrieve a filtered list of employees based on specified criteria.
+- **Filter recipients list** (read-only): The filterrecipientslist endpoint allows users to retrieve a filtered list of recipients based on specified criteria.
+- **Get category by label** (read-only): Retrieves detailed information about a specific category within borneo's data classification system using the category's unique label.
+- **Get cloud account by id** (read-only): Retrieves detailed information about a specific cloud account within the borneo integration platform.
+- **Get dashboard report edition by id** (read-only): Retrieves a specific edition of a dashboard report from the borneo integration platform.
+- **Get department filter list** (read-only): The filterdepartmentlist endpoint allows users to retrieve a filtered list of departments from the borneo integration platform.
+- **Get domain by id** (read-only): Retrieves detailed information about a specific domain within the borneo integration platform.
+- **Get headquarters by id** (read-only): Retrieves detailed information about a specific headquarters registered in the borneo system.
+- **Get insight by type and id** (read-only): Retrieves a specific insight from the borneo platform based on its type and unique identifier.
+- **Get resource inventory by id** (read-only): Retrieves detailed inventory information for a specific resource identified by its unique resourceid.
+- **Get scan by scanid** (read-only): Retrieves detailed information about a specific data scan performed by borneo's data risk remediation platform.
+- **Get threshold by id** (read-only): Retrieves detailed information about a specific threshold setting in the borneo integration platform.
+- **Get user profile by id** (read-only): Retrieves the user profile information for a specific user in the borneo integration platform.
+- **List dashboard report editions** (read-only): Lists the editions of a specific dashboard report in the borneo integration platform.
+- **List dashboard reports with filters** (read-only): Retrieves a list of dashboard reports from the borneo integration platform, allowing for filtered, paginated, and sorted results.
+- **List dashboard users with filters** (read-only): Lists and filters dashboard users in the borneo integration platform based on specified criteria.
+- **List data breach filters** (read-only): Retrieves a list of available filter options for data breaches in the borneo platform.
+- **List data breaches with filters** (read-only): The listdatabreaches endpoint retrieves a list of data breaches based on specified filter conditions, allowing for detailed searching and…
+- **List departments with sort and pagination** (read-only): The listdepartments endpoint retrieves a list of departments within the borneo integration platform.
+- **List discovered document** (read-only): Retrieves a list of discovered documents in the borneo integration platform, allowing for flexible querying, filtering, and sorting of…
+- **List discovered infotypes** (read-only): The listdiscoveredinfotypes endpoint retrieves discovered info types from borneo, supporting flexible querying, filtering, sorting, and…
+- **List discovered recipients** (read-only): Lists and retrieves discovered recipients in the borneo integration platform.
+- **List domains with pagination and sorting** (read-only): Retrieves a list of domains in the borneo integration platform with support for pagination and custom sorting.
+- **List employees with filters** (read-only): Retrieves a list of employees based on specified filtering and sorting criteria.
+- **List error details from filtered scan iterations** (read-only): The errorlist endpoint retrieves errors related to scan iterations in borneo.
+- **List events with filters** (read-only): Lists and retrieves events based on specified criteria, with options for filtering, sorting, and pagination.
+- **List filter options for recipients** (read-only): Lists the available filters for recipients in the borneo integration platform based on the specified filter type.
+- **List filtered sorted categories** (read-only): The listcategories endpoint allows users to retrieve a list of categories from the borneo integration platform.
+- **List headquarters with sorting** (read-only): The headquarters list endpoint retrieves a paginated list of headquarters records from borneo.
+- **List insight filters** (read-only): The list-filters endpoint retrieves a list of available filters for data insights, specifically focused on file extension filters.
+- **List inventory resources with filters** (read-only): Retrieves a comprehensive list of resources from borneo's inventory.
+- **List issues with filters** (read-only): The listissues endpoint allows users to retrieve a filtered and sorted list of issues from the borneo integration platform.
+- **List leaf resources with filters** (read-only): The listleafresources endpoint retrieves and filters leaf resources from borneo's catalog.
+- **List legal documents with pagination** (read-only): Retrieves a paginated and sortable list of legal documents based on specified filter criteria.
+- **List or filter recipients** (read-only): The listrecipients endpoint retrieves a paginated and filtered list of recipients from the borneo application.
+- **List processing activities** (read-only): Listprocessingactivities retrieves a list of processing activities with extensive filtering, sorting, and pagination.
+- **List processing activities filters** (read-only): This endpoint retrieves a list of available filters for processing activities in the pops (processing of personal data) dashboard.
+- **List scan execution results** (read-only): The listscanexecutions endpoint retrieves and filters inspection results from scan executions in the borneo integration platform.
+- **List scan iterations with filter** (read-only): The listscaniterations endpoint allows users to retrieve a paginated list of scan iterations with customizable filtering, sorting, and…
+- **List scans with filters** (read-only): The list scans endpoint retrieves a filtered and sorted list of scans from the borneo integration platform.
+- **List toms with filter and pagination options** (read-only): The listtoms endpoint retrieves a filtered, sorted, and paginated list of toms from the borneo integration platform.
+- **List user profile with filters and sorting** (read-only): The listuserprofiles endpoint retrieves a paginated and filterable list of user profiles from borneo.
+- **Mark scan false positives by id**: Marks specified reports as false positives within a given scan in the borneo platform.
+- **Pause scan by id**: The pausescan endpoint allows users to temporarily halt an ongoing scan process in the borneo integration platform.
+- **Poll domain by id**: This endpoint allows you to initiate a poll operation or submit data for a specific domain within the borneo integration platform.
+- **Post accounts with filter and sort options** (read-only): The listaccounts endpoint retrieves a filtered and sorted list of accounts from the borneo platform.
+- **Post classification stats** (read-only): Retrieves statistical information about resource classifications based on the specified filter criteria.
+- **Post connector with filtering options** (read-only): Retrieves a filtered and sorted list of connectors from the borneo integration platform.
+- **Post current dashboard user**: Retrieves or updates information about the currently authenticated user in the borneo dashboard.
+- **Post dashboard report**: Creates or schedules a dashboard report in the borneo integration platform for privacy operations and data discovery.
+- **Post data breach information**: Creates a new data breach report in the borneo platform.
+- **Post discovered recipient by id**: Updates or processes information for a specific discovered recipient user in the borneo integration platform.
+- **Post filtered access logs** (read-only): The listaccesslogs endpoint retrieves and filters access logs from the borneo integration platform.
+- **Post log audit records with filter criteria** (read-only): The retrieveauditlogs endpoint fetches filtered audit logs from borneo.
+- **Post resource lineage filter** (read-only): Retrieves the lineage information for a specified resource within the borneo integration platform.
+- **Post resource stats with deleted resources** (read-only): Retrieves statistics about resources within the borneo integration platform.
+- **Post scan resource status** (read-only): Retrieves and filters the resource status for a specific scan iteration in the borneo integration platform.
+- **Post support chat query** (read-only): The post /support/chat endpoint handles chat support interactions in borneo.
+- **Put tom status and note**: Updates a specific technical operating model (tom) in the borneo integration platform.
+- **Remove dashboard user by username**: Removes a specified user from the dashboard in the borneo integration platform.
+- **Reset dashboard user password**: Initiates a password reset process for a specified dashboard user in the borneo platform.
+- **Resume scan by id**: The resumedatascan endpoint allows users to resume a previously paused or interrupted data scan operation within the borneo integration…
+- **Retrieve account details by id** (read-only): Retrieves detailed information for a specific account within the borneo integration platform.
+- **Retrieve asset by id** (read-only): Retrieves detailed information about a specific asset within the borneo integration platform.
+- **Retrieve connector by id** (read-only): Retrieves detailed information about a specific connector in the borneo integration platform.
+- **Retrieve data breach by id** (read-only): Retrieves detailed information about a specific data breach incident using its unique identifier.
+- **Retrieve data resource statistics** (read-only): Retrieves comprehensive statistical information about data resources across the borneo integration platform.
+- **Retrieve department information** (read-only): Retrieves detailed information about a specific department within the borneo integration platform.
+- **Retrieve discovered document by id** (read-only): Retrieves detailed information about a specific discovered document within the borneo system.
+- **Retrieve discovered infotype by id** (read-only): Retrieves detailed information about a specific discovered infotype from the borneo platform.
+- **Retrieve discovered recipient by id** (read-only): Retrieves detailed information about a specific discovered recipient using their unique identifier.
+- **Retrieve dpia by id** (read-only): Retrieves a specific data protection impact assessment (dpia) using its unique identifier.
+- **Retrieve employee details by id** (read-only): Retrieves detailed information for a specific employee within the borneo integration platform.
+- **Retrieve error details by id** (read-only): The geterrordetails endpoint retrieves detailed information about a specific error in the borneo integration platform using its unique…
+- **Retrieve issue by id** (read-only): Retrieves detailed information about a specific issue in the borneo system.
+- **Retrieve legal document by id** (read-only): Retrieves a specific legal document from the borneo system using its unique identifier.
+- **Retrieve lopdp threshold by id** (read-only): Retrieves detailed information about a specific lopdp (logical object data point) threshold configuration within the borneo integration…
+- **Retrieve processing activity by id** (read-only): Retrieves detailed information about a specific processing activity within the borneo platform.
+- **Retrieve recipient details** (read-only): Retrieves detailed information about a specific recipient identified by their unique recipientid within the borneo integration platform.
+- **Retrieve recipient processing activities** (read-only): Retrieves a paginated list of processing activities associated with a specific recipient in the borneo integration platform.
+- **Retrieve resource catalog by id** (read-only): Retrieves detailed information about a specific resource from the borneo catalog using its unique identifier.
+- **Retrieve resource columns** (read-only): Retrieves column information for resources in the borneo integration platform.
+- **Retrieve tom by id** (read-only): Retrieves detailed information about a specific tom resource using its unique identifier.
+- **Scan legal document byid**: Initiates a scanning process for a specified legal document within the borneo integration platform.
+- **Stop scan via scanid**: Stops an ongoing scan operation in the borneo integration platform.
+- **Submit chat feedback**: The submitchatfeedback endpoint allows users to provide feedback on a chat support interaction within the borneo integration platform.
+- **Submit detailed scan results** (read-only): Retrieves detailed insights for a specific scan iteration of a particular resource in the borneo integration platform.
+- **Trigger dashboard report by report id**: Triggers the generation or retrieval of a specific dashboard report in the borneo integration platform.
+- **Update asset information by id**: The updateasset endpoint allows you to modify the details of an existing asset in the borneo integration platform.
+- **Update category infotypes**: Updates the infotypes associated with a specific category in the borneo integration platform.
+- **Update dashboard report frequency and recipients**: Updates the settings of an existing dashboard report in the borneo integration platform.
+- **Update dashboard user details**: Updates the information of an existing dashboard user in the borneo integration platform.
+- **Update dashboard user roles**: Updates the roles and department associations for a specified user across multiple organizations in the borneo dashboard.
+- **Update data breach entry**: The updatedatabreach endpoint allows users to create or update detailed information about a specific data breach incident in the borneo…
+- **Update department name**: This endpoint updates the information of an existing department within the borneo integration platform.
+- **Update discovered document status**: This endpoint updates the status of a specific discovered document in the borneo integration platform.
+- **Update discovered infotype status**: Updates the status of a specific discovered infotype in the borneo integration platform.
+- **Update domain details**: Updates the properties of an existing domain within the borneo integration platform.
+- **Update dpia by id**: Updates an existing data protection impact assessment (dpia) in the borneo system.
+- **Update employee by id**: Updates the information of an existing employee in the borneo integration platform.
+- **Update headquarter details by id**: Updates the information for an existing headquarter in the borneo integration platform.
+- **Update lopdp threshold by id**: Updates the lopdp (likely operational privacy data protection) threshold settings for a specific threshold identified by the…
+- **Update processing activity details**: This endpoint updates an existing processing activity in a data privacy management system.
+- **Update recipient details by id**: Updates the information of an existing recipient in the borneo integration platform.
+- **Update recipient status via id**: Updates the status and automation status of a specific recipient in the borneo integration platform.
+- **Update threshold by id**: Updates an existing threshold in the borneo integration platform with new settings and information related to data processing and…
+- **Verify email with id and token**: Completes the email verification process for a user account in the borneo integration platform.

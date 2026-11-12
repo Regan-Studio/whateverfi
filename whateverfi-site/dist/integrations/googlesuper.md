@@ -1,0 +1,229 @@
+# Google Super
+
+Google Super App combines all Google services including Drive, Calendar, Gmail, Sheets, Analytics, Ads, and more, providing a unified platform for seamless integration and management of your digital life.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/googlesuper/.
+
+## Actions
+
+- **Add file sharing preference**: Modifies sharing permissions for an existing google drive file, granting a specified role to a user, group, domain, or 'anyone'.
+- **Add Sheet to Spreadsheet**: Adds a new sheet (worksheet) to a spreadsheet.
+- **Append Dimension**: Append new rows or columns to a sheet, increasing its size.
+- **Batch Clear Spreadsheet Values**: Clear one or more ranges of values from a spreadsheet.
+- **Batch Clear Values By Data Filter**: Clears one or more ranges of values from a spreadsheet using data filters.
+- **Batch get spreadsheet** (read-only): Retrieves data from specified cell ranges in a google spreadsheet.
+- **Batch Get Spreadsheet Values by Data Filter**: Return one or more ranges of values from a spreadsheet that match the specified data filters.
+- **Batch update spreadsheet**: Updates a specified range in a google sheet with given values, or appends them as new rows if first cell location is omitted.
+- **Clear Basic Filter**: Clear the basic filter from a sheet.
+- **Copy Google Document**: Create a copy of an existing google document.
+- **Copy Sheet to Another Spreadsheet**: Copy a single sheet from a spreadsheet to another spreadsheet.
+- **Create a calendar**: Creates a new, empty google calendar with the specified title (summary).
+- **Create a folder**: Creates a new folder in google drive, optionally within a parent folder specified by its id or name.
+- **Create a Google Sheet**: Creates a new google spreadsheet in google drive using the provided title.
+- **Create Comment**: Create a comment on a file.
+- **Create Document Markdown**: Creates a new google docs document, optionally initializing it with a title and content provided as markdown text.
+- **Create email draft**: Creates a gmail email draft, supporting to/cc/bcc, subject, plain/html body (ensure is html=true for html), attachments, and threading.
+- **Create Event**: Creates an event on a google calendar, needing rfc3339 utc start/end times (end after start) and write access to the calendar.
+- **Create Expanded Data Set**: Create an expanded data set for a property.
+- **Create File or Folder**: Creates a new file or folder with metadata.
+- **Create Footer**: Create a new footer in a google document.
+- **Create Footnote**: Create a new footnote in a google document.
+- **Create Header**: Create a new header in a google document.
+- **Create Named Range**: Create a new named range in a google document.
+- **Create Paragraph Bullets**: Add bullets to paragraphs within a specified range in a google document.
+- **Create Reply**: Create a reply to a comment in google drive.
+- **Create Shared Drive**: Create a new shared drive.
+- **Create Shortcut to File/Folder**: Create a shortcut to a file or folder in google drive.
+- **Delete Calendar**: Deletes a secondary calendar.
+- **Delete Comment**: Deletes a comment from a file.
+- **Delete Content Range in Document**: Delete a range of content from a google document.
+- **Delete Dimension (Rows/Columns)**: Delete specified rows or columns from a sheet in a google spreadsheet.
+- **Delete Draft**: Permanently deletes a specific gmail draft using its id.
+- **Delete event**: Deletes a specified event by event id from a google calendar (calendar id).
+- **Delete Footer**: Delete a footer from a google document.
+- **Delete Header**: Deletes the header from the specified section or the default header if no section is specified.
+- **Delete message**: Permanently deletes a specific email message by its id from a gmail mailbox.
+- **Delete Named Range**: Delete a named range from a google document.
+- **Delete Paragraph Bullets**: Remove bullets from paragraphs within a specified range in a google document.
+- **Delete Permission**: Deletes a permission from a file by permission id.
+- **Delete Reply**: Delete a specific reply by reply id.
+- **Delete Shared Drive**: Permanently delete a shared drive.
+- **Delete Sheet**: Delete a sheet (worksheet) from a spreadsheet.
+- **Delete Table**: Delete an entire table from a google document.
+- **Delete Table Column**: Delete a column from a table in a google document.
+- **Delete Table Row**: Delete a row from a table in a google document.
+- **Distance Matrix**: Calculates travel distance and time for a matrix of origins and destinations.
+- **Download a file from Google Drive** (read-only): Downloads a file from google drive by its id.
+- **Embed Google Map**: Generate an embeddable google map url and html iframe code.
+- **Empty Trash**: Permanently delete all of the user's trashed files.
+- **Fetch emails** (read-only): Fetches a list of email messages from a gmail account, supporting filtering, pagination, and optional full content retrieval.
+- **Fetch message by message ID** (read-only): Fetches a specific email message by its id, provided the message id exists and is accessible to the authenticated user id.
+- **Find event** (read-only): Finds events in a specified google calendar using text query, time ranges (event start/end, last modification), and event types.
+- **Generate File IDs** (read-only): Generates a set of file ids which can be provided in create or copy requests.
+- **Get about** (read-only): Retrieve information about the user, the user's drive, and system capabilities.
+- **Get Account**: Retrieve a single account by its resource name.
+- **Get Changes Start Page Token** (read-only): Get the starting pagetoken for listing future changes in google drive.
+- **Get Charts from Spreadsheet**: Retrieve a list of all charts from a specified google sheets spreadsheet.
+- **Get Comment** (read-only): Get a comment by id.
+- **Get conference record** (read-only): Get conference record
+- **Get Event Instances** (read-only): Returns instances of the specified recurring event.
+- **Get File Metadata** (read-only): Get a file's metadata by id.
+- **Get Gmail attachment** (read-only): Retrieves a specific attachment by id from a message in a user's gmail mailbox, requiring valid message and attachment ids.
+- **Get Google Calendar** (read-only): Retrieves a specific google calendar, identified by calendar id, to which the authenticated user has access.
+- **Get Participant Session**: Get a specific participant session from a conference record.
+- **Get Permission** (read-only): Gets a permission by id.
+- **Get Reply** (read-only): Get a specific reply to a comment on a file.
+- **Get Revision** (read-only): Get a specific revision's metadata by revision id.
+- **Get Shared Drive** (read-only): Get a shared drive by id.
+- **Get sheet names** (read-only): Lists all worksheet names from a specified google spreadsheet (which must exist), useful for discovering sheets before further operations.
+- **Get Spreadsheet by Data Filter**: Returns the spreadsheet at the given id, filtered by the specified data filters.
+- **Get spreadsheet info** (read-only): Retrieves comprehensive metadata for a google spreadsheet using its id, excluding cell data.
+- **Hide Shared Drive**: Hide a shared drive from the default view.
+- **Insert Calendar into List**: Inserts an existing calendar into the user's calendar list.
+- **Insert Dimension in Google Sheet**: Insert new rows or columns into a sheet at a specified location.
+- **Insert Inline Image**: Insert an image from a given uri at a specified location in a google document as an inline image.
+- **Insert Page Break**: Insert a page break into a google document.
+- **Insert Table Column**: Insert a new column into a table in a google document.
+- **Insert Table in Google Doc**: Insert a table into a google document.
+- **Insert Text into Document**: Insert a string of text at a specified location within a google document.
+- **List Accounts**: List all accounts accessible by the caller.
+- **List Audiences**: List all audiences on a property.
+- **List Changes** (read-only): List the changes for a user or shared drive.
+- **List Charts from Spreadsheet**: Retrieve a list of charts with their ids and metadata from a google sheets spreadsheet.
+- **List Comments** (read-only): List all comments for a file in google drive.
+- **List Conference Records**: List conference records.
+- **List drafts** (read-only): Retrieves a paginated list of email drafts from a user's gmail account.
+- **List File Labels** (read-only): List the labels on a file.
+- **List File Revisions** (read-only): List a file's revisions.
+- **List Files and Folders** (read-only): List a user's files and folders in google drive.
+- **List Participant Sessions**: List all participant sessions for a specific conference record in google meet.
+- **List Permissions** (read-only): List a file's permissions.
+- **List Replies to Comment** (read-only): List replies to a comment in google drive.
+- **List Shared Drives** (read-only): List the user's shared drives.
+- **Modify File Labels**: Modifies the set of labels applied to a file.
+- **Move File**: Move a file from one folder to another in google drive.
+- **Move to Trash**: Moves an existing, non-deleted email message to the trash for the specified user.
+- **Patch Calendar**: Partially updates (patches) an existing google calendar, modifying only the fields provided.
+- **Patch Event**: Updates specified fields of an existing event in a google calendar using patch semantics (array fields like attendees are fully replaced…
+- **Patch Label**: Patches the specified label.
+- **Query Free/Busy Information** (read-only): Returns free/busy information for a set of calendars.
+- **Replace All Text in Document**: Replace all occurrences of a specified text string with another text string throughout a google document.
+- **Replace Image in Document**: Replace a specific image in a document with a new image from a uri.
+- **Reply to email thread**: Sends a reply within a specific gmail thread using the original thread's subject, requiring a valid thread id and correctly formatted…
+- **Search Developer Metadata**: Search for developer metadata in a spreadsheet.
+- **Search People** (read-only): Searches contacts by matching the query against names, nicknames, emails, phone numbers, and organizations, optionally including 'other…
+- **Search Spreadsheets** (read-only): Search for google spreadsheets using various filters including name, content, date ranges, and more.
+- **Send Draft**: Sends the specified, existing draft to the recipients in the to, cc, and bcc headers.
+- **Send Email**: Sends an email via gmail api using the authenticated user's google profile display name, requiring is html=true if the body contains html…
+- **Set Basic Filter**: Set a basic filter on a sheet in a google spreadsheet.
+- **Stop Watch Channel**: Stop watching resources through a specified channel.
+- **Sync Events** (read-only): Synchronizes google calendar events, performing a full sync if no sync token is provided or if a 410 gone error (due to an expired token)…
+- **Text Search** (read-only): Searches for places on google maps using a textual query (e.g., "restaurants in london", "eiffel tower").
+- **Unhide Shared Drive**: Unhide a shared drive.
+- **Unmerge Table Cells**: Unmerge previously merged cells in a table.
+- **Untrash File**: Restore a file from the trash.
+- **Update Calendar**: Updates metadata for a calendar.
+- **Update Comment**: Update an existing comment on a google drive file.
+- **Update Document Style**: Update the overall document style, such as page size, margins, and default text direction.
+- **Update File (Metadata)**: Updates file metadata.
+- **Update File Revision Metadata**: Updates metadata of a file revision (e.g., keepforever, publish).
+- **Update Google event**: Updates an existing event by event id in a google calendar.
+- **Update Google Meet Space**: Updates a meeting space.
+- **Update Permission**: Update a permission with patch semantics.
+- **Update Reply**: Update a reply to a comment on a google drive file.
+- **Update Shared Drive**: Update the metadata for a shared drive.
+- **Update Sheet Properties**: Update properties of a sheet (worksheet) within a google spreadsheet, such as its title, index, visibility, tab color, or grid properties.
+- **Update Spreadsheet Properties**: Update properties of a spreadsheet, such as its title, locale, or auto-recalculation settings.
+- **Update Table Row Style**: Update the style of a table row in a google document.
+- **Upload File**: Uploads a file (max 5mb) to google drive, moving it to a specified folder if a valid folder id is provided, otherwise uploads to root.
+- **Watch Drive Changes**: Subscribe to changes for a user or shared drive in google drive.
+- **Add Enrichment**: Adds an enrichment at a specified position in a defined album.
+- **Add or remove to customer list**: Addorremovetocustomerlist tool will add a contact to a customer list in google ads.
+- **Aggregate Column Data** (read-only): Searches for rows where a specific column matches a value and performs mathematical operations on data from another column.
+- **Append Values to Spreadsheet**: Append values to a spreadsheet.
+- **Batch Add Media Items**: Adds one or more media items to an album in google photos.
+- **Batch Create Media Items**: Unified action to upload media files and create them as items in google photos.
+- **Batch Get Media Items** (read-only): Returns the list of media items for the specified media item identifiers.
+- **Batch Update Values by Data Filter**: Update values in ranges matching data filters.
+- **Clear Calendar**: Clears a primary calendar.
+- **Clear spreadsheet values**: Clears cell content (preserving formatting and notes) from a specified a1 notation range in a google spreadsheet.
+- **Clear tasks**: Permanently clears all completed tasks from a specified google tasks list.
+- **Copy file**: Duplicates an existing file in google drive, identified by its file id.
+- **Create a document**: Creates a new google docs document using the provided title as filename and inserts the initial text at the beginning if non-empty,…
+- **Create a File from Text**: Creates a new file in google drive from provided text content (up to 10mb), supporting various formats including automatic conversion to…
+- **Create a Meet**: Creates a new google meet space, optionally configuring its access type and entry point access controls.
+- **Create a task list**: Creates a new task list with the specified title.
+- **Create Album**: Creates a new album in google photos.
+- **Create Chart in Google Sheets**: Create a chart in a google sheets spreadsheet using the specified data range and chart type.
+- **Create customer list**: Createcustomerlist tool will create a customer list in google ads.
+- **Create label**: Creates a new label with a unique name in the specified user's gmail account.
+- **Create sheet from JSON**: Creates a new google spreadsheet and populates its first worksheet from sheet json, which must be non-empty as its first item's keys…
+- **Create spreadsheet column**: Creates a new column in a google spreadsheet, requiring a valid spreadsheet id and an existing sheet id.
+- **Create spreadsheet row**: Inserts a new, empty row into a specified sheet of a google spreadsheet at a given index, optionally inheriting formatting from the row…
+- **Delete folder or file**: Delete a file or folder in google drive.
+- **Delete task**: Deletes a specified task from a given task list in google tasks.
+- **Delete task list**: Permanently deletes an existing google task list, identified by tasklist id, along with all its tasks.
+- **Download Photos Media Item** (read-only): Downloads a media item from google photos and returns it as a file.
+- **Edit File**: Updates an existing google drive file by overwriting its entire content with new text (max 10mb).
+- **Execute SQL on Spreadsheet**: Execute sql queries against google sheets tables.
+- **Fetch Message by Thread ID** (read-only): Retrieves messages from a gmail thread using its thread id, where the thread must be accessible by the specified user id.
+- **Find file** (read-only): List or search for files and folders in google drive.
+- **Find folder** (read-only): Find a folder in google drive by its name and optionally a parent folder.
+- **Find free slots** (read-only): Finds both free and busy time slots in google calendars for specified calendars within a defined time range (defaults to the current day…
+- **Find worksheet by title** (read-only): Finds a worksheet by its exact, case-sensitive title within a google spreadsheet.
+- **Format cell**: Applies text and background cell formatting to a specified range in a google sheets worksheet.
+- **Forward email message**: Forward an existing gmail message to specified recipients, preserving original body and attachments.
+- **Get Album** (read-only): Returns the album based on the specified albumid.
+- **Get Campaign By Id** (read-only): Getcampaignbyid tool will return details of a campaign in google ads.
+- **Get campaign by name** (read-only): Getcampaignbyname tool will run a sql getcampaignbyname in google ads.
+- **Get contacts** (read-only): Fetches contacts (connections) for the authenticated google account, allowing selection of specific data fields and pagination.
+- **Get current date and time** (read-only): Gets the current date and time, allowing for a specific timezone offset.
+- **Get customer lists** (read-only): Getcustomerlists tool will list all customer lists in google ads.
+- **Get directions** (read-only): Fetches detailed directions between an origin and a destination, supporting intermediate waypoints and various travel modes.
+- **Get document by id**: Retrieves an existing google document by its id.
+- **Get Meet details** (read-only): Retrieve details of a google meet space using its unique identifier.
+- **Get People** (read-only): Retrieves either a specific person's details (using resource name) or lists 'other contacts' (if other contacts is true), with person…
+- **Get Profile** (read-only): Retrieves key gmail profile information (email address, message/thread totals, history id) for a user.
+- **Get recordings by conference record ID** (read-only): Retrieves recordings from google meet for a given conference record id.
+- **Get Route** (read-only): Calculates one or more routes between two specified locations using various travel modes and preferences.
+- **Get Table Schema** (read-only): This action is used to get the schema of a table in a google spreadsheet, call this action to get the schema of a table in a spreadsheet…
+- **Get Task** (read-only): Retrieve a specific google task if its task id and parent tasklist id are known.
+- **Get task list** (read-only): Retrieves a specific task list from the user's google tasks if the tasklist id exists for the authenticated user.
+- **Get transcripts by conference record ID** (read-only): Retrieves all transcripts for a specific google meet conference using its conferencerecord id.
+- **Insert Task**: Creates a new task in a given tasklist id, optionally as a subtask of an existing task parent or positioned after an existing task…
+- **List ACL Rules** (read-only): Retrieves the list of access control rules (acls) for a specified calendar, providing the necessary 'rule id' values required for updating…
+- **List Albums** (read-only): Lists all albums shown to a user in the albums tab of google photos.
+- **List Events** (read-only): Returns events on the specified calendar.
+- **List Gmail labels** (read-only): Retrieves a list of all system and user-created labels for the specified gmail account.
+- **List Google Calendars** (read-only): Retrieves calendars from the user's google calendar list, with options for pagination and filtering.
+- **List Media Items** (read-only): Lists all media items from a user's google photos library.
+- **List Settings** (read-only): Returns all user settings for the authenticated user.
+- **List Tables in Spreadsheet** (read-only): This action is used to list all tables in a google spreadsheet, call this action to get the list of tables in a spreadsheet.
+- **List task lists** (read-only): Fetches the authenticated user's task lists from google tasks.
+- **List Tasks** (read-only): Retrieves tasks from a google tasks list.
+- **List threads** (read-only): Retrieves a list of email threads from a gmail account, identified by user id (email address or 'me'), supporting filtering and pagination.
+- **Look up spreadsheet row** (read-only): Finds the first row in a google spreadsheet where a cell's entire content exactly matches the query string, searching within a specified…
+- **Modify email labels**: Adds and/or removes specified gmail labels for a message.
+- **Modify thread labels**: Adds or removes specified existing label ids from a gmail thread, affecting all its messages.
+- **Move Event**: Moves an event to another calendar, i.e., changes an event's organizer.
+- **Move Task**: Moves the specified task to another position in the destination task list.
+- **Nearby search** (read-only): Searches for places (e.g., restaurants, parks) within a specified circular area, with options to filter by place types and customize the…
+- **Patch Task**: Partially updates an existing task (identified by task id) within a specific google task list (identified by tasklist id), modifying only…
+- **Patch task list**: Updates the title of an existing google tasks task list.
+- **Query Spreadsheet Table** (read-only): This action is used to query a table in a google spreadsheet, call this action to query a table in a spreadsheet.
+- **Quick Add Event**: Parses natural language text to quickly create a basic google calendar event with its title, date, and time, suitable for simple scheduling.
+- **Remove attendee from event**: Removes an attendee from a specified event in a google calendar.
+- **Remove label**: Permanently deletes a specific, existing user-created gmail label by its id for a user.
+- **Search Documents** (read-only): Search for google documents using various filters including name, content, date ranges, and more.
+- **Search Media Items** (read-only): Searches for media items in a user's google photos library.
+- **Update ACL Rule**: Updates an access control rule for the specified calendar.
+- **Update Album**: Updates an album's title or cover photo in google photos.
+- **Update Calendar List Entry**: Updates an existing entry on the user\'s calendar list.
+- **Update Document Markdown**: Replaces the entire content of an existing google docs document with new markdown text.
+- **Update existing document**: Applies programmatic edits, such as text insertion, deletion, or formatting, to a specified google doc using the batchupdate api method.
+- **Update Media Item**: Updates a media item's description in google photos.
+- **Update Task**: Updates the specified task.
+- **Update Task List**: Updates the authenticated user's specified task list.
+- **Upload Media**: Upload a media file to google photos.
+- **Watch Events**: Watch for changes to events resources.
+- **Watch Settings**: Watch for changes to settings resources.

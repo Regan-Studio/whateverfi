@@ -1,0 +1,216 @@
+# Clover
+
+Manage Clover merchant, inventory, customer, employee, order, payment, cash, notification, app, and print data through the regional Platform REST API.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/clover/.
+
+## Actions
+
+- **Apply Modification To Line Item**: Applies a modifier to an order line item and snapshots the modifier's current name and price as a modification record.
+- **Apply Order Service Charge**: Applies a configured merchant service charge or creates an ad-hoc order-fee line item on an order.
+- **Checkout Atomic Order** (read-only): Calculates and previews an order cart, including totals, taxes, discounts, and service charges, without persisting an order.
+- **Create Address For Customer**: Adds a postal address to an existing customer record.
+- **Create App Billing Metered Event**: Records metered app usage and bills the merchant at the configured price.
+- **Create Atomic Order**: Creates an order with line items, modifiers, discounts, and service charges while Clover calculates inventory-based totals and taxes.
+- **Create Attribute**: Creates an inventory variant attribute within an item group, optionally with its initial options.
+- **Create Authorization On Payment**: Create an authorization for a payment.
+- **Create Customer**: Creates a customer record for the connected merchant with the supplied identity and contact details.
+- **Create Customer Card**: Creates a vaulted credit or debit card record for a customer.
+- **Create Discount**: Creates a merchant inventory discount with a fixed amount or percentage for later application.
+- **Create Discount On Line Item**: Applies a named fixed-amount or percentage discount to one order line item.
+- **Create Discount On Order**: Applies a named fixed-amount or percentage discount to an order subtotal, not a specific line item.
+- **Create Email Address For Customer**: Adds an email address to an existing customer record.
+- **Create Employee**: Creates a merchant employee profile with a required name and optional login, contact, and role details.
+- **Create Inventory Item**: Creates an inventory item.
+- **Create Item Category**: Creates an inventory category used to organize items in Clover Register.
+- **Create Item Category Associations**: Creates one or more associations between inventory items and categories or subcategories.
+- **Create Item Group**: Creates an item group for related inventory variants and their attributes.
+- **Create Item Modifier Group Associations**: Creates an association between an inventory item and a modifier group so the group's modifiers can be applied to that item.
+- **Create Item Option Associations**: Creates one or more associations between Clover options and inventory items.
+- **Create Item Stock**: Creates the stock quantity and optional low-stock alert threshold for one inventory item.
+- **Create Item Tax Rate Associations**: Creates one or more associations between inventory items and tax rates.
+- **Create Merchant Opening Hours**: Creates merchant opening hours.
+- **Create Modifier**: Creates a named modifier with a price adjustment inside a specific modifier group.
+- **Create Modifier Group**: Creates a new modifier group.
+- **Create Multiple Inventory Items**: Creates multiple inventory items in one request.
+- **Create Notification For App**: Send a message to devices that have the connected Clover app installed and are listening for notifications.
+- **Create Notification For Device**: Push a message to a device that has the connected Clover app installed and is listening for notifications.
+- **Create Option**: Creates a named option within an inventory attribute, such as Small for a Size attribute.
+- **Create Order Line Item**: Creates one line item for a standard or Multiple Service Charges order.
+- **Create Order Line Items Bulk**: Creates up to 100 priced line items for either a standard or Multiple Service Charges order.
+- **Create Order Type Category Associations**: Creates associations that limit an order type to specific merchant categories.
+- **Create Order Type For Merchant**: Creates a custom order type for the merchant, such as dine-in, delivery, or takeout.
+- **Create Payment Record On Order**: Records an externally processed payment on an order for bookkeeping.
+- **Create Phone Number For Customer**: Adds a phone number to an existing customer record.
+- **Create Role**: Creates a merchant employee role based on a Clover system role.
+- **Create Shift For Employee**: Creates a time-clock shift for one employee, including clock-in/out times, cash tips, or override details.
+- **Create Subcategory**: Creates a subcategory within a parent inventory category.
+- **Create Tag**: Creates an inventory tag for reporting, with optional item and printer associations.
+- **Create Tag Item Associations**: Creates one or more associations between Clover tags and inventory items.
+- **Create Tax Rate**: Creates a merchant tax rate as a percentage or flat amount, optionally making it the default or associating items.
+- **Create Tender**: Creates a merchant-level custom tender and returns its generated identifier.
+- **Delete All Line Items In Order**: Deletes every line item from an order.
+- **Delete App Billing Metered Event**: Deletes an unbilled app metered event.
+- **Delete Attribute**: Deletes an inventory variant attribute.
+- **Delete Authorization**: Permanently delete a payment authorization.
+- **Delete Categories**: Permanently deletes the categories identified by a comma-separated list of category IDs.
+- **Delete Customer**: Deletes a customer from the connected merchant.
+- **Delete Customer Address**: Deletes one address from a customer.
+- **Delete Customer Card**: Deletes one vaulted card record from a customer.
+- **Delete Customer Email Address**: Deletes one email address from a customer.
+- **Delete Customer Phone Number**: Deletes one phone number from a customer.
+- **Delete Employee**: Deletes an employee from the connected merchant.
+- **Delete Inventory Discount**: Deletes a merchant inventory discount.
+- **Delete Inventory Item**: Deletes an inventory item.
+- **Delete Item Category**: Deletes an inventory category.
+- **Delete Item Group**: Deletes an inventory item group.
+- **Delete Item Stock**: Deletes the stock record for an inventory item.
+- **Delete Line Item Discount**: Removes a discount from an order line item.
+- **Delete Merchant Opening Hours**: Deletes one merchant opening-hours interval.
+- **Delete Modifier**: Deletes one modifier from a modifier group.
+- **Delete Modifier Group**: Deletes a modifier group and every modifier in it.
+- **Delete Modifier Groups**: Permanently deletes the modifier groups identified by a comma-separated list of IDs, including every modifier in those groups.
+- **Delete Multiple Inventory Items**: Permanently deletes the inventory items identified by a comma-separated list of item IDs.
+- **Delete Option**: Deletes an option from an inventory attribute.
+- **Delete Order**: Deletes an order.
+- **Delete Order Discount**: Removes a discount from an order.
+- **Delete Order Line Item**: Deletes a line item from an order.
+- **Delete Order Type**: Deletes a merchant order type.
+- **Delete Role**: Deletes a merchant employee role.
+- **Delete Shift**: Deletes one employee shift.
+- **Delete Subcategory**: Deletes a subcategory and reassigns its items to the parent category.
+- **Delete Tag**: Deletes an inventory tag.
+- **Delete Tags**: Permanently deletes the tags identified by a comma-separated list of tag IDs.
+- **Delete Tax Rate**: Deletes a merchant tax rate.
+- **Delete Tender**: Deletes a merchant tender.
+- **Exchange Order Line Item**: Creates a replacement line item under the client-supplied line_item_id and exchanges old_line_item_id for it.
+- **Export Customers Csv** (read-only): Exports customers as CSV.
+- **Export Shifts CSV** (read-only): Exports merchant shifts as CSV for a required effective clock-in time window.
+- **Get App Billing Metered Event** (read-only): Returns one metered billing event recorded for a merchant's app subscription.
+- **Get Attribute** (read-only): Returns one inventory variant attribute with the item-group and option references present in Clover's response.
+- **Get Authorization** (read-only): Retrieve one Clover payment authorization by identifier.
+- **Get Category** (read-only): Returns one inventory category, including its Register sort order and optional item expansion.
+- **Get Configured Service Charge** (read-only): Returns one service charge configured for the merchant, identified by service_charge_id.
+- **Get Credit Refund** (read-only): Retrieve one Clover credit refund, including its credit, order, device, employee, and transaction details.
+- **Get Customer** (read-only): Returns one customer profile, with addresses, email addresses, phone numbers, cards, or metadata when expanded.
+- **Get Default Service Charge** (read-only): Returns the merchant's default configured service charge.
+- **Get Device Provisioned To Merchant** (read-only): Returns one Clover device provisioned to the connected merchant.
+- **Get Discount** (read-only): Returns one merchant inventory discount, including its fixed amount or percentage.
+- **Get Employee** (read-only): Returns one merchant employee profile, with assigned roles or related shifts, payments, and orders when expanded.
+- **Get Inventory Item** (read-only): Returns one inventory item with pricing, availability, SKU, and requested related resources.
+- **Get Item Group** (read-only): Returns one inventory item group and its related variants or attributes when expanded.
+- **Get Item Stock** (read-only): Returns the current stock quantity and alert threshold for one inventory item.
+- **Get Item Subcategory Associations** (read-only): Returns an inventory item and, with expand=categories.items, its category and subcategory associations.
+- **Get Merchant** (read-only): Returns the connected merchant's business profile and requested related resources.
+- **Get Merchant Address** (read-only): Returns the connected merchant's business address.
+- **Get Merchant App Billing Information** (read-only): Returns a merchant's app-billing status, including the current subscription tier and trial status.
+- **Get Merchant Opening Hours** (read-only): Returns one merchant opening-hours interval by identifier.
+- **Get Merchant Payment Gateway Configuration** (read-only): Returns the connected merchant's payment-gateway configuration and supported capabilities.
+- **Get Merchant Properties** (read-only): Returns the connected merchant's operational properties and feature settings.
+- **Get Modifier** (read-only): Returns one modifier from a specific modifier group, including its name and price adjustment.
+- **Get Modifier Group** (read-only): Returns one modifier group and its configuration, with related modifiers or items when expanded.
+- **Get Option For Attribute** (read-only): Returns one option from a specific inventory attribute, including its item references.
+- **Get Order** (read-only): Returns one order with totals, state, and any related resources requested through expand.
+- **Get Order Line Item** (read-only): Returns one line item from any order, including age-restriction or Multiple Service Charges fields when Clover provides them.
+- **Get Order Type** (read-only): Returns one merchant order type, including taxability and category-filter settings.
+- **Get Payment** (read-only): Retrieve one Clover payment, including amount, tax, tip, and result status.
+- **Get Print Event** (read-only): Get a print event for the connected Clover merchant by event ID.
+- **Get Refund** (read-only): Retrieve one Clover refund, including associated payment, tax, tip, and transaction details.
+- **Get Role** (read-only): Returns one merchant employee role and its base system role.
+- **Get Service Charge Applied To Order** (read-only): Returns one service-charge line item already applied to an order.
+- **Get Shift** (read-only): Retrieves one shift by ID.
+- **Get Tag** (read-only): Returns one inventory tag and its item or printer associations when expanded.
+- **Get Tax Exemption Rule** (read-only): Returns one tax exemption rule that links order types and items to excluded tax rates.
+- **Get Tax Rate** (read-only): Returns one merchant tax rate, including its rate, type, and default status.
+- **Get Tender** (read-only): Returns one merchant tender and its payment-handling settings.
+- **Get Tip Suggestion** (read-only): Returns one merchant tip suggestion, including its percentage or flat amount.
+- **Get Voided Line Item Totals** (read-only): Returns deleted line-item and order totals for a required caller-supplied deletedTime window.
+- **List App Billing Metered Events** (read-only): Lists billing events recorded for one app metered-event type, such as reservation.
+- **List Attributes** (read-only): Lists inventory variant attributes, such as size or color.
+- **List Authorizations** (read-only): List payment authorizations for the connected merchant.
+- **List Cash Events** (read-only): List cash events for the merchant, one device, or one employee.
+- **List Categories** (read-only): Lists inventory categories in Register sort order, optionally with associated items.
+- **List Categories Of Item** (read-only): Retrieves all categories of an item.
+- **List Category Subcategories** (read-only): Returns a category with its subcategories expanded by default.
+- **List Configured Service Charges** (read-only): Lists service charges configured for the merchant.
+- **List Credit Refunds** (read-only): List credit refunds for the connected merchant, including associated tax and transaction details.
+- **List Customers** (read-only): Lists customer records for the connected merchant, optionally filtered or expanded with related contact data.
+- **List Devices Provisioned To Merchant** (read-only): Lists Clover devices provisioned to the connected merchant, optionally filtered by documented device fields.
+- **List Discounts** (read-only): Lists the merchant's inventory discounts.
+- **List Discounts For Order** (read-only): Lists discounts currently applied at the order level.
+- **List Employee Orders** (read-only): Lists one employee's orders through Clover's exact /employees/{empId}/orders route, which requires Read employees, while preserving a…
+- **List Employees** (read-only): List employees for the connected Clover merchant, optionally filtered or expanded.
+- **List Inventory Items** (read-only): Lists inventory items for the connected merchant.
+- **List Inventory Without Revenue Class** (read-only): Lists inventory items that have no revenue-class tag.
+- **List Item Groups** (read-only): Lists item groups used to organize related inventory variants and attributes.
+- **List Item Stocks** (read-only): Lists stock quantities and alert thresholds for the merchant's inventory items.
+- **List Item Tags** (read-only): Lists inventory tags associated with one item.
+- **List Items By Tax Rate** (read-only): Lists inventory items associated with the specified tax rate.
+- **List Items For Tag** (read-only): Lists inventory items associated with one tag.
+- **List Items In Category** (read-only): Retrieves all items in a category.
+- **List Items In Modifier Group** (read-only): Retrieves a list of all items in a single modifier group.
+- **List Merchant Opening Hours** (read-only): Lists the connected merchant's opening-hours intervals.
+- **List Modifier Groups** (read-only): Lists modifier groups that organize selectable item modifiers.
+- **List Modifiers** (read-only): Retrieves all modifiers from all modifier groups.
+- **List Modifiers In Modifier Group** (read-only): Retrieves a list of modifiers in a single modifier group.
+- **List Options** (read-only): Lists options across all inventory variant attributes.
+- **List Options For Attribute** (read-only): Retrieves all available variants or options associated with an attribute.
+- **List Order Line Items** (read-only): Lists line items from any order, including age-restriction or Multiple Service Charges fields when Clover provides them.
+- **List Order Types** (read-only): Lists merchant-defined order types and their system-type or category settings.
+- **List Orders** (read-only): Lists orders through Clover's merchant /orders route, which requires Read orders, with filtering, expansion, and offset pagination.
+- **List Payments** (read-only): List payments for the merchant, one order, or one employee.
+- **List Refunds** (read-only): List merchant refunds, including taxes and tips.
+- **List Roles** (read-only): Retrieves all system and employee roles for a merchant's business.
+- **List Service Charges Applied To Order** (read-only): Lists service-charge line items already applied to an order.
+- **List Shifts** (read-only): List shifts for the connected merchant or, when employee_id is provided, for one employee.
+- **List System Order Types** (read-only): Lists Clover's system order-type categories used to classify merchant-defined order types, such as takeout.
+- **List Tag Item Associations** (read-only): Lists every association between the merchant's inventory tags and items.
+- **List Tags** (read-only): Lists the merchant's inventory tags.
+- **List Tax Exemption Rules** (read-only): Lists tax exemption rules that link order types and items to tax rates excluded from those items.
+- **List Tax Rates** (read-only): Lists percentage and flat-amount tax rates.
+- **List Tenders** (read-only): Retrieves all tenders for a merchant.
+- **List Tip Suggestions** (read-only): Retrieves all tip suggestions for a merchant, for example.
+- **Record Voided Line Items**: Records voided line items on an order for reporting, including their quantities and reasons.
+- **Remove Item Category Associations**: Permanently removes specific item-category associations or all associations on one supplied side.
+- **Remove Item Modifier Group Associations**: Permanently removes a specific item-modifier-group association or all associations on one supplied side.
+- **Remove Item Option Associations**: Permanently removes specific option-item associations or all associations on one supplied side.
+- **Remove Item Tax Rate Associations**: Permanently removes specific item-tax-rate associations or all associations on one supplied side.
+- **Remove Modification From Line Item**: Removes an applied modifier snapshot from an order line item.
+- **Remove Order Service Charge**: Permanently removes a configured service charge or order-fee line item from an order.
+- **Remove Tag Item Associations**: Permanently removes specific tag-item associations or all associations on one supplied side.
+- **Submit Print Request**: Queues content for the merchant's default order printer.
+- **Update Address For Customer**: Updates one postal address on an existing customer record.
+- **Update Attribute**: Updates an inventory variant attribute, including its name, item group, or option references.
+- **Update Authorization**: Update a payment authorization.
+- **Update Category**: Updates an inventory category's name, Register sort order, color, or item associations.
+- **Update Category Sort Orders**: Updates Register menu sort positions for up to 1,000 inventory categories in one request.
+- **Update Customer**: Updates one customer's identity, contact, marketing, or metadata fields using the supplied values.
+- **Update Customer Card**: Updates a customer's vaulted credit or debit card record.
+- **Update Discount**: Updates a merchant inventory discount's name, fixed amount, percentage, or approval reference.
+- **Update Email Address For Customer**: Updates one email address on an existing customer record.
+- **Update Employee**: Updates one employee's name, login, contact, or role details using the supplied fields.
+- **Update Inventory Item**: Updates one inventory item's supplied fields.
+- **Update Inventory Items**: Patches multiple existing inventory items in one request without replacing omitted fields.
+- **Update Item Group**: Updates an inventory item group's name, member items, or variant attributes.
+- **Update Item Stock**: Updates the stock quantity or low-stock alert threshold for one inventory item.
+- **Update Merchant**: Updates the connected merchant's business profile using the supplied fields.
+- **Update Merchant Opening Hours**: Updates one merchant opening-hours interval, including its day and start or end time.
+- **Update Merchant Properties**: Updates the connected merchant's operational properties and feature settings.
+- **Update Modifier**: Updates a modifier's name, price adjustment, or availability.
+- **Update Modifier Group**: Updates a modifier group's name, selection rules, or item references.
+- **Update Modifier Group Sort Orders**: Update the priorities for a collection of up to 200 modifier groups at a time.
+- **Update Option**: Updates a named option within a specific inventory attribute, including its item associations.
+- **Update Order**: Updates one order using the supplied order fields.
+- **Update Order Line Item**: Updates one line item on either a standard or Multiple Service Charges order using the supplied fields.
+- **Update Order Type**: Updates a merchant order type's label, taxability, system classification, or category settings.
+- **Update Payment**: Update payment line-item allocations or the employee on an uncaptured preauthorization.
+- **Update Phone Number For Customer**: Updates one phone number on an existing customer record.
+- **Update Role**: Updates a merchant employee role's name, base system role, or employee references.
+- **Update Shift**: Updates one employee shift's clock-in/out times, cash tips, or override details.
+- **Update Subcategory**: Updates a subcategory's name or color within its parent inventory category.
+- **Update Tag**: Updates an inventory tag's name, reporting behavior, or item and printer associations.
+- **Update Tax Rate**: Updates a merchant tax rate's name, rate, type, or default status.
+- **Update Tender**: Updates a merchant tender's label, availability, cash-drawer, tipping, or processing settings.
+- **Update Tip Suggestion**: Updates a merchant tip suggestion's name, percentage, flat amount, or enabled status.
+- **Upsert Custom Order**: Creates or updates a custom order for merchants with or without Multiple Service Charges.
+- **Upsert Customer Metadata**: Creates or updates a customer's note, birthday, and business-name metadata.

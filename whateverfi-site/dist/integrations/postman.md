@@ -1,0 +1,154 @@
+# Postman
+
+Postman is an API platform for building, testing, and managing APIs with powerful collaboration features.
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/postman/.
+
+## Actions
+
+- **Create a Collection**: Create a new Postman collection in a specific workspace or the default workspace.
+- **Create an API**: Create a new API in Postman.
+- **Create Collection**: Create a new Postman collection with specified name and configuration.
+- **Get All APIs** (read-only): Get all APIs accessible to the authenticated user with optional workspace filtering.
+- **Get All APIs in Workspace** (read-only): Get all APIs in a specific Postman workspace.
+- **Get All Collections** (read-only): Get all collections accessible to the authenticated user with optional workspace filtering.
+- **Get All Collections** (read-only): Get all collections accessible to the authenticated user.
+- **Get All Environments** (read-only): Get all environments accessible to the authenticated user with optional workspace filtering.
+- **Get All Workspaces** (read-only): Get all workspaces accessible to the authenticated user with optional type filtering.
+- **Get an Environment** (read-only): Retrieve detailed information about a specific environment in Postman.
+- **Get API Information** (read-only): Retrieve information about a specific API in Postman.
+- **Get Workspace Details** (read-only): Get detailed information about a specific workspace by its ID.
+- **Create a Collection Comment**: Create a comment on an API's collection.
+- **Create a Folder**: Create a folder in a Postman collection.
+- **Create a Folder Comment**: Create a comment on a folder.
+- **Create a Fork**: Create a fork from an existing collection into a workspace.
+- **Create a Mock Server**: Create a new mock server in a Postman collection.
+- **Create a Monitor**: Create a new monitor in a specific workspace to run a collection on a schedule.
+- **Create a Pull Request**: Create a pull request for a forked collection into its parent collection.
+- **Create a Request Comment**: Create a comment on a request.
+- **Create a Response**: Create a request response in a Postman collection.
+- **Create a Response Comment**: Create a comment on a response.
+- **Create a Spec**: Create an API specification in Postman's Spec Hub.
+- **Create a Webhook**: Create a webhook that triggers a collection with a custom payload.
+- **Create a Workspace**: Create a new workspace in Postman.
+- **Create an API**: Create a new API in a Postman workspace.
+- **Create an Environment**: Create a new environment in a Postman workspace.
+- **Create API Schema**: Create a schema for an API in Postman.
+- **Create API Version Relations**: Create new relations for an API version.
+- **Create Collection from Schema**: Create a collection from a schema and link it to an API with specified relations.
+- **Create Environment**: Create a new Postman environment with specified name and variables.
+- **Create Environment Fork**: Create a fork from an existing environment into a workspace.
+- **Create Mock Server**: Create a new mock server for a Postman collection.
+- **Create Mock Server Response**: Create a server response on a Postman mock server.
+- **Create Monitor**: Create a new monitor to run a collection on a schedule.
+- **Create or Update a Schema File**: Create or update an API schema file in Postman.
+- **Create Request in Collection**: Create a new request in a Postman collection.
+- **Create Spec File**: Create a new file in an API specification.
+- **Create Webhook**: Create a new webhook for a Postman collection.
+- **Delete a Collection**: Permanently delete a collection from Postman.
+- **Delete a collection's comment**: Delete a comment from an API's collection.
+- **Delete a Folder**: Delete a folder in a Postman collection.
+- **Delete a Folder's Comment**: Delete a comment from a folder.
+- **Delete a Request's Comment**: Delete a comment from a request.
+- **Delete a Response**: Delete a response in a Postman collection.
+- **Delete a Response's Comment**: Delete a comment from a response.
+- **Delete a Schema File**: Delete a file in an API schema.
+- **Delete a Spec**: Delete an API specification from Postman.
+- **Delete a Workspace**: Delete a Postman workspace permanently.
+- **Delete an API**: Delete an API from Postman.
+- **Delete an API's Comment**: Delete a comment from an API.
+- **Delete an environment**: Delete an environment permanently in Postman.
+- **Delete Mock Server Response**: Delete a mock server's server response.
+- **Delete Monitor**: Delete a monitor by its ID.
+- **Delete Spec File**: Delete a file from an API specification.
+- **Duplicate a Collection**: Create a duplicate of a collection in another workspace.
+- **Fork Collection**: Create a fork of a collection in a specified workspace.
+- **Generate Collection from Spec**: Generate a Postman collection from an OpenAPI 2.0, 3.0, or 3.1 specification.
+- **Generate Spec from Collection**: Generate an API specification from a Postman collection.
+- **Get All API Releases** (read-only): Get all releases for a specific API version in Postman.
+- **Get All API Specifications** (read-only): Get all API specifications in a workspace.
+- **Get All API Versions** (read-only): Get all published versions of a specific API in Postman.
+- **Get All Forked Collections** (read-only): Retrieve all forked collections for the authenticated user.
+- **Get All Groups** (read-only): Get all user groups in a Postman team.
+- **Get All Linked Relations** (read-only): Retrieve all linked relations for a specific API version in Postman.
+- **Get All Mock Servers** (read-only): Get all active mock servers accessible to the authenticated user.
+- **Get All Monitors** (read-only): Get all monitors accessible to the authenticated user with optional workspace filtering.
+- **Get All Team Users** (read-only): Get information about all users on the Postman team.
+- **Get All Test Relations** (read-only): Retrieve all test relations for a specific API version.
+- **Get All Workspace Roles** (read-only): Get information about all roles in a workspace based on the team's plan.
+- **Get API Comments** (read-only): Retrieve all comments left by users in an API.
+- **Get API Schema** (read-only): Retrieve information about an API schema from Postman.
+- **Get API Specification** (read-only): Retrieve information about an API specification in Postman.
+- **Get API Version** (read-only): Get information about a specific API version in Postman.
+- **Get Async Collection Update Status** (read-only): Get the status of an asynchronous collection update task.
+- **Get Authenticated User** (read-only): Get information about the authenticated user.
+- **Get Billing Account Details** (read-only): Retrieve Postman billing account details for the authenticated team.
+- **Get Collection Access Keys** (read-only): Retrieve all personal and team collection access keys for the authenticated user.
+- **Get Collection Comments** (read-only): Retrieve all comments left by users in an API's collection.
+- **Get Collection Pull Requests** (read-only): Get information about a collection's pull requests including source and destination IDs, status, and URLs.
+- **Get Collection Roles** (read-only): Get information about all roles in a collection.
+- **Get Collection's Forks** (read-only): Get all forks of a specific collection.
+- **Get Contract Test Relations** (read-only): Retrieve contract test relations for a specific API version.
+- **Get documentation relations** (read-only): Get documentation relations for a specific API version.
+- **Get Duplication Task Status** (read-only): Get the status of a collection duplication task.
+- **Get Environment Forks** (read-only): Retrieve all forked environments for a specific environment.
+- **Get Environment Relations** (read-only): Get environment relations for a specific API version.
+- **Get Folder Comments** (read-only): Retrieve all comments left by users in a folder.
+- **Get Folder Information** (read-only): Retrieve information about a folder in a Postman collection.
+- **Get Generated Specification** (read-only): Retrieve the API specification generated for a Postman collection.
+- **Get Integration Test Relations** (read-only): Get integration test relations for a specific API version.
+- **Get Monitor Information** (read-only): Retrieve information about a specific monitor in Postman.
+- **Get Request Comments** (read-only): Retrieve all comments left by users in a request.
+- **Get Request Information** (read-only): Retrieve information about a specific request in a Postman collection.
+- **Get Resource Types** (read-only): Get all resource types supported by Postman's SCIM API.
+- **Get Response Comments** (read-only): Retrieve all comments left by users in a response.
+- **Get Response Information** (read-only): Retrieve information about a saved response in a Postman collection.
+- **Get Schema File Contents** (read-only): Get the contents of an API schema file at a specified path.
+- **Get Schema Files** (read-only): Retrieve files in an API schema from Postman.
+- **Get Service Provider Configuration** (read-only): Get Postman's SCIM API service provider configuration information.
+- **Get Source Collection Status** (read-only): Check whether there is a change between a forked collection and its parent (source) collection.
+- **Get Spec Definition** (read-only): Get the complete contents of an API specification's definition.
+- **Get Spec File Contents** (read-only): Get the contents of an API specification's file.
+- **Get Spec's Generated Collections** (read-only): Retrieve all collections generated from an API specification in Postman.
+- **Get Specification Files** (read-only): Retrieve all files in an API specification from Postman.
+- **Get Team User** (read-only): Get information about a user on the Postman team.
+- **Get Test Suite Relations** (read-only): Get test suite relations for a specific API version.
+- **Get Unclassified Relations** (read-only): Get unclassified relations for an API version in Postman.
+- **Get Workspace Activity Feed** (read-only): Get a workspace's activity feed showing who added or removed collections, environments, or elements, and users joining or leaving.
+- **Get Workspace Global Variables** (read-only): Get a workspace's global variables.
+- **Get Workspace Roles** (read-only): Get the roles of users, user groups, and partners in a workspace.
+- **Import OpenAPI Definition**: Import an OpenAPI definition into Postman as a new collection.
+- **Import OpenAPI Specification**: Import an OpenAPI specification into Postman as a new collection.
+- **List Account Invoices** (read-only): Get all invoices for a Postman billing account filtered by status.
+- **Merge a Fork**: Merge a forked collection back into its parent collection.
+- **Merge a forked environment**: Merge a forked environment back into its parent environment.
+- **Publish a Mock Server**: Publish a mock server in Postman.
+- **Pull Source Changes into Fork**: Pull changes from a parent (source) collection into a forked collection.
+- **Replace an Environment's Data**: Completely replace an environment's data with new variables and values.
+- **Replace Collection Data Asynchronously**: Replace the entire contents of a collection asynchronously.
+- **Resolve a Comment Thread**: Resolve a comment thread and any associated replies.
+- **Review a Pull Request**: Update the review status of a pull request by approving, declining, or unapproving it.
+- **Run a Monitor**: Trigger an immediate run of a monitor and retrieve its execution results.
+- **Sync Collection with API Schema**: Sync a collection attached to an API with the API schema.
+- **Sync Collection with Specification**: Sync a collection generated from an API specification.
+- **Sync Spec with Collection**: Sync an API specification with a linked collection.
+- **Transfer Folders**: Copy or move folders into a collection or folder.
+- **Transform Collection to OpenAPI** (read-only): Transform an existing Postman Collection into a stringified OpenAPI 3.0.3 definition.
+- **Update a Folder**: Update a folder in a Postman collection.
+- **Update a Folder's Comment**: Update a comment on a folder.
+- **Update a Mock Server**: Update an existing mock server.
+- **Update a Monitor**: Update an existing monitor in Postman.
+- **Update a Pull Request**: Update an open pull request in Postman.
+- **Update a Request's Comment**: Update a comment on a request.
+- **Update a Response**: Update a response in a Postman collection.
+- **Update a Response's Comment**: Update a comment on a response.
+- **Update a Server Response**: Update a mock server's server response.
+- **Update a Workspace**: Update an existing workspace in Postman.
+- **Update an API**: Update an existing API in Postman.
+- **Update an API's Comment**: Update a comment on an API.
+- **Update an Environment**: Update specific environment properties using JSON Patch operations (RFC 6902).
+- **Update Collection Properties**: Update specific collection properties like name, description, authentication, variables, or events.
+- **Update Request in Collection**: Update a request in a Postman collection.
+- **Update Spec File**: Update an API specification file's content.
+- **Update Spec Properties**: Update an API specification's properties such as its name.
+- **Update Workspace Global Variables**: Update and replace a workspace's global variables.

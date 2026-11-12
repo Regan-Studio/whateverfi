@@ -1,0 +1,137 @@
+# Tave
+
+Tave is the best Studio Management Application for Photographers, providing tools for client management, job tracking, and business operations.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/tave/.
+
+## Actions
+
+- **Apply Payment to Order**: Apply a payment to a specific order in Tave.
+- **Create Address Book Entry**: Create an entry in the address book.
+- **Create Job**: Create a new job in Tave (VSCO Workspace).
+- **Create Job Contact**: Create a job contact in Tave.
+- **Create Job Order**: Create an order on a job in Tave (VSCO Workspace).
+- **Create Payment**: Create a payment in Tave.
+- **Delete Job**: Delete a job by its ULID identifier.
+- **Get Address Book Entity** (read-only): Fetch a specific Address Book entity by its ULID.
+- **Get Job** (read-only): Fetch a specific job by ID from Tave.
+- **Get Job Contact** (read-only): Fetch a specific job contact by ID from Tave.
+- **Get Order** (read-only): Fetch a specific order by ID from Tave.
+- **Get Payment** (read-only): Fetch a specific payment by ID from Tave.
+- **List Address Book Contacts** (read-only): List contacts in the studio's address book.
+- **List Resource Job** (read-only): List jobs of a studio.
+- **List Resource Order** (read-only): Get a list of all orders.
+- **List Resource Payment** (read-only): Get a list of payments from Tave.
+- **Update Address Book Entry**: Update a specific entry in the Tave address book.
+- **Update Job**: Update a specific job in Tave (VSCO Workspace).
+- **Update Job Contact**: Update a specific job contact in Tave.
+- **Update Order**: Update a specific order in Tave (VSCO Workspace).
+- **Create Brand**: Create a new brand in VSCO Workspace.
+- **Create Custom Field**: Create a custom field in Tave for Jobs or Contacts.
+- **Create Discount**: Create a discount in Tave.
+- **Create Discount Type**: Create a new discount type in Tave.
+- **Create Event**: Create a new event in Tave (VSCO Workspace).
+- **Create Event Type**: Create a new event type in Tave.
+- **Create File**: Create a file in Tave.
+- **Create Gallery**: Create a new gallery in Tave (VSCO Workspace).
+- **Create Job Closed Reason**: Create a job closed reason in Tave.
+- **Create Job Role**: Create a job role in Tave (VSCO Workspace).
+- **Create Job Type**: Create a new job type in Tave.
+- **Create Job Worksheet**: Create a job using a worksheet in Tave (VSCO Workspace).
+- **Create Lead Source**: Create a lead source in Tave.
+- **Create Lead Status**: Create a lead status in Tave.
+- **Create Note**: Create a note in Tave (VSCO Workspace).
+- **Create Product**: Create a product in Tave.
+- **Create Product Type**: Create a product type in Tave.
+- **Create Profit Center**: Create a profit center in Tave.
+- **Create RestHook Subscription**: Create a RestHook webhook subscription in Tave.
+- **Create Tax Rate**: Create a tax rate in Tave.
+- **Create User**: Create a new user in Tave.
+- **Delete Address Book Entry**: Delete an entry in the address book.
+- **Delete Brand**: Delete a brand by its ULID.
+- **Delete Custom Field**: Delete a custom field by its ULID identifier.
+- **Delete Discount**: Delete a specific discount by its ULID.
+- **Delete Discount Type**: Delete a specific discount type by its ULID.
+- **Delete Event**: Delete an event by its ULID identifier.
+- **Delete Event Type**: Delete an event type by its ULID identifier.
+- **Delete Gallery**: Permanently delete a gallery by its ULID.
+- **Delete Job Closed Reason**: Delete a job closed reason by its ULID identifier.
+- **Delete Job Contact**: Delete a job contact by its ULID.
+- **Delete Job Role**: Delete a job role by its ULID identifier.
+- **Delete Job Type**: Delete a job type by its ULID.
+- **Delete Lead Source**: Delete a specific lead source by its ULID.
+- **Delete Lead Status**: Delete a specific lead status by its ULID.
+- **Delete Note**: Delete a note by its ULID identifier.
+- **Delete Payment**: Delete a specific payment by its ULID.
+- **Delete Product**: Delete a specific product by its ULID.
+- **Delete Product Type**: Delete a specific product type by its ULID.
+- **Delete Profit Center**: Delete a profit center by its ULID.
+- **Delete RestHook**: Unsubscribe from and delete a RestHook webhook subscription by its ULID.
+- **Delete Tax Group**: Delete a specific tax group by its ULID.
+- **Delete Tax Rate**: Delete a specific tax rate by its ULID.
+- **Delete User**: Delete a user by its ULID.
+- **Get Address Book Address** (read-only): Fetch the address associated with a given location ID.
+- **Get Brand** (read-only): Retrieve a specific brand from Tave by its ULID.
+- **Get Custom Field** (read-only): Fetch a specific custom field by ID from Tave.
+- **Get Discount** (read-only): Retrieve a specific discount by its ID.
+- **Get Discount Type** (read-only): Get a specific discount type by ID.
+- **Get Event** (read-only): Get a specific event by its ID.
+- **Get Event Type** (read-only): Retrieve a specific event type by ID.
+- **Get Gallery** (read-only): Retrieve a specific gallery by ID from Tave/VSCO Workspace.
+- **Get Job Closed Reason** (read-only): Retrieve a specific job closed reason by its ID.
+- **Get Job Role** (read-only): Retrieve a specific job role by its ID.
+- **Get Job Type** (read-only): Retrieve a specific job type by ID.
+- **Get Job Worksheet** (read-only): Fetch a Job Worksheet for a specific job by job ID.
+- **Get Lead Source** (read-only): Retrieve a specific lead source by its ID.
+- **Get Lead Status** (read-only): Retrieve a specific lead status by its ID.
+- **Get My Studio** (read-only): Retrieve information about your studio from Tave.
+- **Get Note** (read-only): Fetch a specific note by ID from Tave.
+- **Get Payment Method** (read-only): Retrieve a specific payment method by its ID.
+- **Get Product** (read-only): Retrieve a specific product by its ID.
+- **Get Product Type** (read-only): Retrieve a specific product type by its ID.
+- **Get Profit Center** (read-only): Retrieve a specific profit center by its ID.
+- **Get Tax Rate** (read-only): Retrieve a specific tax rate by its ULID.
+- **Get Timezone** (read-only): Retrieve a specific timezone by its ULID from Tave.
+- **Get User by ID** (read-only): Retrieve a specific user by their ULID identifier.
+- **List Brands** (read-only): List brands of a studio.
+- **List Discount Types** (read-only): Get a list of discount types from Tave.
+- **List Event Types** (read-only): List a studio's event types.
+- **List Files** (read-only): List files in Tave.
+- **List Galleries** (read-only): List all galleries for a studio.
+- **List Job Closed Reasons** (read-only): List a studio's job closed reasons.
+- **List Job Payments** (read-only): Get a list of payments for a specific job.
+- **List Job Roles** (read-only): List a studio's job roles.
+- **List Product Types** (read-only): Get a list of product types from Tave.
+- **List Resource Custom Fields** (read-only): List custom fields configured on a studio.
+- **List Resource Discount** (read-only): Get a list of discounts from Tave.
+- **List Resource Job Contact** (read-only): List a job's contacts.
+- **List Resource Job Orders** (read-only): List orders on a given job.
+- **List Resource Job Type** (read-only): List job types of a studio.
+- **List Resource Lead Source** (read-only): List lead sources of a studio.
+- **List Resource Lead Status** (read-only): List lead statuses of a studio.
+- **List Resource Note** (read-only): List notes from Tave.
+- **List Resource Payment Method** (read-only): Get a list of payment methods from Tave.
+- **List Resource Product** (read-only): Get a list of products from Tave.
+- **List Resource Profit Center** (read-only): List profit centers of a studio.
+- **List Resource Tax Groups** (read-only): Get a list of Tax Groups from Tave.
+- **List Resource Tax Rates** (read-only): Get a list of tax rates from Tave.
+- **List Resource Timezone** (read-only): Get a list of timezones from Tave.
+- **List Resource User** (read-only): List users of a studio.
+- **List REST Hooks** (read-only): List REST hooks configured in Tave.
+- **List Studio Events** (read-only): List a studio's events from Tave.
+- **Update Brand**: Update a specific brand in Tave.
+- **Update Custom Field**: Update a specific custom field in Tave.
+- **Update Event**: Update a specific event in Tave.
+- **Update Event Type**: Update an existing event type in Tave.
+- **Update Gallery**: Update a specific gallery in Tave (VSCO Workspace).
+- **Update Job Closed Reason**: Update a job closed reason in Tave.
+- **Update Job Role**: Update a job role in Tave.
+- **Update Job Type**: Update an existing job type in Tave.
+- **Update Lead Source**: Update a specific lead source in Tave.
+- **Update Lead Status**: Update a specific lead status in Tave.
+- **Update Note**: Update a specific note in Tave.
+- **Update Profit Center**: Update a specific profit center in Tave.
+- **Update Studio Readonly Mode**: Set studio readonly mode in Tave.
+- **Update Tax Group**: Update a specific tax group in Tave.
+- **Update Tax Rate**: Update a specific tax rate in Tave.
+- **Update User**: Update a specific user in Tave.

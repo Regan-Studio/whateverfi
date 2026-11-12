@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Configure the services bots reach beyond the model: web search, memory, MCP servers, apps, messaging, cloud coding agents and payments."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="theme-color" content="#FDFDFD"><meta property="og:title" content="Tools and integrations | WhatEverFi docs"><meta property="og:description" content="Configure the services bots reach beyond the model: web search, memory, MCP servers, apps, messaging, cloud coding agents and payments."><meta property="og:url" content="https://whateverfi.com/docs/self-host-integrations/"><meta property="og:type" content="website"><meta property="og:site_name" content="WhatEverFi"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://whateverfi.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="WhatEverFi. AI teammates you actually own. Your keys, your model, your machine."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Tools and integrations | WhatEverFi docs"><meta name="twitter:description" content="Configure the services bots reach beyond the model: web search, memory, MCP servers, apps, messaging, cloud coding agents and payments."><meta name="twitter:image" content="https://whateverfi.com/og-image.png"><meta name="twitter:image:alt" content="WhatEverFi. AI teammates you actually own. Your keys, your model, your machine."><link rel="canonical" href="https://whateverfi.com/docs/self-host-integrations/"><link rel="alternate" type="text/markdown" href="/docs/self-host-integrations.md"><link rel="alternate" type="application/rss+xml" title="WhatEverFi blog" href="/blog/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="describedby" type="text/plain" href="/llms.txt"><link rel="ai-catalog" type="application/ai-catalog+json" href="/.well-known/ai-catalog.json"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.png" type="image/png" sizes="128x128"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet"><title>Tools and integrations | WhatEverFi docs</title><link rel="stylesheet" href="/_astro/BaseLayout.WaYUuiGl.css"></head><body><a class="skip-link" href="#main">Skip to content</a><div class="page-shell"><div class="docs-topbar"><div class="docs-shell"><header class="site-header"><div class="site-header__left"><a class="brand-lockup" href="/" aria-label="WhatEverFi home"><img class="brand-lockup__mark" src="/brand/whateverfi-mark.png" width="36" height="36" alt="" aria-hidden="true"><span class="brand-lockup__word">WhatEverFi</span></a><div class="logo-menu" role="menu" aria-label="WhatEverFi home" data-logo-menu data-wordmark="/brand/kit/whateverfi-wordmark.svg" hidden><a role="menuitem" tabindex="-1" href="/" target="_blank" data-attr="logo-menu-new-tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>Open in new tab</a><button type="button" role="menuitem" tabindex="-1" data-logo-menu-copy data-attr="logo-menu-copy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"></rect><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path></svg>Copy wordmark as SVG</button><a role="menuitem" tabindex="-1" href="/brand/" data-attr="logo-menu-brand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2.5a1.5 1.5 0 0 0-1.1 2.5A2 2 0 0 1 12 22Z"></path><circle cx="7.5" cy="10.5" r="1"></circle><circle cx="10.5" cy="6.5" r="1"></circle><circle cx="15.5" cy="7.5" r="1"></circle></svg>Brand kit</a></div><a class="site-header__section" href="/docs/">Docs</a><nav class="site-nav" aria-label="Primary"><a href="/download/">Download</a><a href="/integrations/">Integrations</a><a href="/pricing/">Pricing</a></nav></div><div class="site-header__right"><button class="docs-search-trigger" type="button" aria-label="Search" aria-keyshortcuts="Meta+K Control+K"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg><span>Search</span><kbd>⌘K</kbd></button><a class="star-pill" href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener" aria-label="GitHub" data-attr="header-github"><span>GitHub</span></a><div class="site-header__cta"><a class="button button--primary button--small" href="https://app.whateverfi.com">Get started</a></div><details class="site-menu" data-site-menu><summary class="site-menu__toggle" aria-label="Menu"><svg class="site-menu__icon site-menu__icon--open" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"></path></svg><svg class="site-menu__icon site-menu__icon--close" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"></path></svg></summary><nav class="site-menu__panel" aria-label="Primary"><a href="/download/">Download</a><a href="/integrations/">Integrations</a><a href="/pricing/">Pricing</a><a href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener" data-attr="menu-github">GitHub</a></nav></details></div></header><script type="module">var e=document.querySelector(`[data-site-menu]`);e&&(e.addEventListener(`click`,t=>{t.target.closest(`a`)&&(e.open=!1)}),document.addEventListener(`click`,t=>{e.open&&!e.contains(t.target)&&(e.open=!1)}),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&(e.open=!1)}));var t=document.querySelector(`[data-logo-menu]`),n=t?.parentElement?.querySelector(`.brand-lockup`);if(t&&n){let e=()=>[...t.querySelectorAll(`[role=menuitem]`)],r=(e=!1)=>{t.hidden||(t.hidden=!0,e&&n.focus())};n.addEventListener(`contextmenu`,r=>{r.preventDefault(),t.hidden=!1;let i=r.clientX||n.getBoundingClientRect().left,a=r.clientY||n.getBoundingClientRect().bottom;t.style.left=`${Math.min(i,window.innerWidth-t.offsetWidth-8)}px`,t.style.top=`${Math.min(a,window.innerHeight-t.offsetHeight-8)}px`,e()[0]?.focus()}),t.querySelector(`[data-logo-menu-copy]`)?.addEventListener(`click`,()=>{let e=t.dataset.wordmark??``,n=fetch(e).then(async e=>{if(!e.ok)throw Error(`Wordmark request failed: ${e.status}`);return new Blob([await e.text()],{type:`text/plain`})});r(!0);let i=()=>window.location.assign(e);try{navigator.clipboard.write([new ClipboardItem({"text/plain":n})]).catch(i)}catch{i()}}),t.addEventListener(`click`,e=>{e.target.closest(`a`)&&r()}),t.addEventListener(`keydown`,t=>{let n=e(),i=n.indexOf(document.activeElement);t.key===`ArrowDown`||t.key===`ArrowUp`?(t.preventDefault(),n[(i+(t.key===`ArrowDown`?1:-1)+n.length)%n.length]?.focus()):t.key===`Escape`?(t.preventDefault(),r(!0)):t.key===`Tab`&&r()}),document.addEventListener(`pointerdown`,e=>{t.contains(e.target)||r()}),window.addEventListener(`scroll`,()=>r(),{passive:!0}),window.addEventListener(`blur`,()=>r())}</script></div></div><div class="docs-shell docs"><nav class="docs-nav docs-nav--desktop" aria-label="Docs"><div class="docs-nav__section"><p>Get started</p><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/troubleshooting/">Troubleshooting</a></li><li><a href="/docs/bots-and-chats/">Bots and chats</a></li><li><a href="/docs/import-an-agent/">Import an agent</a></li></ul></div><div class="docs-nav__section"><p>Using WhatEverFi</p><ul><li><a href="/docs/integrations/">Connect apps</a></li><li><a href="/docs/routines/">Routines</a></li><li><a href="/docs/pages/">Pages</a></li><li><a href="/docs/computer/">The bot&#39;s computer</a></li><li><a href="/docs/memory/">Memory</a></li><li><a href="/docs/skills/">Skills</a></li><li><a href="/docs/approvals/">Approvals</a></li><li><a href="/docs/groups/">Groups and teamwork</a></li><li><a href="/docs/voice-and-calls/">Voice and calls</a></li><li><a href="/docs/messaging-apps/">Chat apps</a></li></ul></div><div class="docs-nav__section"><p>Settings</p><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/model-subscriptions/">Model subscriptions</a></li><li><a href="/docs/spaces/">Spaces</a></li><li><a href="/docs/bot-secrets/">Reusable credentials</a></li><li><a href="/docs/account/">Account and billing</a></li></ul></div><div class="docs-nav__section"><p>Apps</p><ul><li><a href="/docs/desktop-app/">Desktop app</a></li><li><a href="/docs/mobile-app/">Mobile app</a></li></ul></div><div class="docs-nav__section"><p>Advanced</p><ul><li><a href="/docs/fleet-management/">Bots that manage bots</a></li><li><a href="/docs/build-a-plugin/">Build a plugin</a></li><li><a href="/docs/board/">Ticket board</a></li></ul></div><div class="docs-nav__section"><p>Self-hosting</p><ul><li><a href="/docs/self-host/">Overview</a></li><li><a href="/docs/self-host-configuration/">Configuration</a></li><li><a href="/docs/self-host-secrets/">Secrets</a></li><li><a href="/docs/self-host-production/">Production deployment</a></li><li><a href="/docs/self-host-upgrading/">Upgrading</a></li><li><a href="/docs/self-host-backups/">Backup and restore</a></li></ul></div><div class="docs-nav__section"><p>Configure your server</p><ul><li><a href="/docs/self-host-accounts/">Sign-in and accounts</a></li><li><a href="/docs/self-host-models/">Models</a></li><li><a href="/docs/self-host-integrations/" aria-current="page">Tools and integrations</a></li><li><a href="/docs/self-host-inbound-email/">Bot email addresses</a></li><li><a href="/docs/self-host-sandbox-providers/">Computer providers</a></li><li><a href="/docs/self-host-docker-computers/">Docker computers</a></li><li><a href="/docs/computer-runtime/">Computer runtime</a></li><li><a href="/docs/self-host-storage/">Storage and encryption</a></li><li><a href="/docs/self-host-clients/">Apps and clients</a></li><li><a href="/docs/self-host-billing/">Billing</a></li><li><a href="/docs/self-host-observability/">Logs and monitoring</a></li><li><a href="/docs/self-host-audit-log/">Audit log</a></li><li><a href="/docs/self-host-restricted-network/">Restricted networks</a></li></ul></div><div class="docs-nav__section"><p>Reference</p><ul><li><a href="/integrations/">Integrations</a></li></ul></div></nav><details class="docs-menu"><summary>Docs menu</summary><nav class="docs-nav" aria-label="Docs"><div class="docs-nav__section"><p>Get started</p><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/troubleshooting/">Troubleshooting</a></li><li><a href="/docs/bots-and-chats/">Bots and chats</a></li><li><a href="/docs/import-an-agent/">Import an agent</a></li></ul></div><div class="docs-nav__section"><p>Using WhatEverFi</p><ul><li><a href="/docs/integrations/">Connect apps</a></li><li><a href="/docs/routines/">Routines</a></li><li><a href="/docs/pages/">Pages</a></li><li><a href="/docs/computer/">The bot&#39;s computer</a></li><li><a href="/docs/memory/">Memory</a></li><li><a href="/docs/skills/">Skills</a></li><li><a href="/docs/approvals/">Approvals</a></li><li><a href="/docs/groups/">Groups and teamwork</a></li><li><a href="/docs/voice-and-calls/">Voice and calls</a></li><li><a href="/docs/messaging-apps/">Chat apps</a></li></ul></div><div class="docs-nav__section"><p>Settings</p><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/model-subscriptions/">Model subscriptions</a></li><li><a href="/docs/spaces/">Spaces</a></li><li><a href="/docs/bot-secrets/">Reusable credentials</a></li><li><a href="/docs/account/">Account and billing</a></li></ul></div><div class="docs-nav__section"><p>Apps</p><ul><li><a href="/docs/desktop-app/">Desktop app</a></li><li><a href="/docs/mobile-app/">Mobile app</a></li></ul></div><div class="docs-nav__section"><p>Advanced</p><ul><li><a href="/docs/fleet-management/">Bots that manage bots</a></li><li><a href="/docs/build-a-plugin/">Build a plugin</a></li><li><a href="/docs/board/">Ticket board</a></li></ul></div><div class="docs-nav__section"><p>Self-hosting</p><ul><li><a href="/docs/self-host/">Overview</a></li><li><a href="/docs/self-host-configuration/">Configuration</a></li><li><a href="/docs/self-host-secrets/">Secrets</a></li><li><a href="/docs/self-host-production/">Production deployment</a></li><li><a href="/docs/self-host-upgrading/">Upgrading</a></li><li><a href="/docs/self-host-backups/">Backup and restore</a></li></ul></div><div class="docs-nav__section"><p>Configure your server</p><ul><li><a href="/docs/self-host-accounts/">Sign-in and accounts</a></li><li><a href="/docs/self-host-models/">Models</a></li><li><a href="/docs/self-host-integrations/" aria-current="page">Tools and integrations</a></li><li><a href="/docs/self-host-inbound-email/">Bot email addresses</a></li><li><a href="/docs/self-host-sandbox-providers/">Computer providers</a></li><li><a href="/docs/self-host-docker-computers/">Docker computers</a></li><li><a href="/docs/computer-runtime/">Computer runtime</a></li><li><a href="/docs/self-host-storage/">Storage and encryption</a></li><li><a href="/docs/self-host-clients/">Apps and clients</a></li><li><a href="/docs/self-host-billing/">Billing</a></li><li><a href="/docs/self-host-observability/">Logs and monitoring</a></li><li><a href="/docs/self-host-audit-log/">Audit log</a></li><li><a href="/docs/self-host-restricted-network/">Restricted networks</a></li></ul></div><div class="docs-nav__section"><p>Reference</p><ul><li><a href="/integrations/">Integrations</a></li></ul></div></nav></details><main id="main" class="docs-main"><div class="docs-page-head"><p class="docs-eyebrow">Configure your server</p><button class="docs-copy-page" type="button" data-markdown="/docs/self-host-integrations.md"><svg class="docs-icon-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="docs-icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Copy page</span></button></div><article class="docs-prose" data-pagefind-body><h1 id="tools-and-integrations">Tools and integrations</h1>
+<p>Configure the services bots reach beyond the model: web search, memory, MCP servers, apps,
+messaging, cloud coding agents and payments.</p>
+<h2 id="web-search-and-page-reading">Web search and page reading</h2>
+<p>Builtin <code>web_search</code> and <code>web_fetch</code> use keyless HTTP search (DuckDuckGo HTML) and local
+Readability extraction by default. To choose <a href="https://docs.parallel.ai/integrations/mcp/search-mcp">Parallel Search MCP</a>,
+set <code>WEB_PROVIDER=parallel</code> in <code>.env</code> and restart both the API and worker. The same bot tools
+then return search excerpts and extracted page markdown through HTTPS MCP at
+<code>https://search.parallel.ai/mcp</code>. Search uses Fast mode without an account or API key.</p>
+<p>This option sends search queries and requested page URLs to Parallel, which retrieves pages
+on its servers. Conversation accounting uses an HMAC of internal IDs keyed by
+<code>ENCRYPTION_KEY</code> (shared by the API and worker), so deployments with distinct secrets send
+distinct session IDs. Rotating that secret resets the session IDs; the existing development-only
+encryption-key fallback also applies here. Anonymous access has service limits; rate-limit and provider errors are returned
+to the bot without switching providers. Per-bot disabled web tools remain disabled. Set
+<code>WEB_PROVIDER=keyless-http</code> (or remove the setting) to return to the default.</p>
+<p>To choose <a href="https://docs.keenable.ai">Keenable</a> instead, set <code>WEB_PROVIDER=keenable</code> and restart
+both the API and worker. The same bot tools then return search snippets and extracted page
+markdown through HTTPS MCP at <code>https://api.keenable.ai/mcp</code>, without an account or API key. This
+option sends search queries and requested page URLs to Keenable, which retrieves pages on its
+servers. Anonymous access is rate limited per IP address; set <code>KEENABLE_API_KEY</code> on the API and
+worker to send a key and lift those limits. Errors, per-bot disabled tools and the way back to
+the default work as described for Parallel.</p>
+<h2 id="self-hosted-memory">Self-hosted memory</h2>
+<p>Supermemory and Honcho can run on your own network. In <strong>Settings → Memory</strong>, choose <strong>Local</strong>
+and enter the instance’s base URL. The operator must set <code>MCP_ALLOW_PRIVATE_ENDPOINT=true</code>; workspace owners can then save a local endpoint. It must
+be loopback or resolve to private addresses (a Compose service name, an RFC1918 or unique-local
+address, or a <code>.internal</code> name such as Railway’s private network); WhatEverFi pins the resolved
+address for every request. Space members use the saved connection without seeing its key.</p>
+<p>For <a href="https://github.com/plastic-labs/honcho">Honcho</a>, enable <code>AUTH_USE_AUTH</code> on the Honcho
+server and use an admin JWT from its <code>scripts/generate_jwt.py --admin</code> as the key, so each Space
+gets its own workspace. A workspace-scoped JWT works when you enter that workspace. Honcho needs
+its own PostgreSQL with pgvector, an LLM provider, and an embedding provider; set
+<code>EMBEDDING_VECTOR_DIMENSIONS</code> before its first start. WhatEverFi stores only explicitly saved facts
+in Honcho; conversation summaries stay in WhatEverFi. Bots can forget a saved fact on Honcho v3.2 or
+later.</p>
+<h2 id="mcp-servers">MCP servers</h2>
+<p>Remote MCP servers and installed API / GraphQL connectors default to public HTTPS. The deployment
+owner can attach one on localhost, the same LAN, or a Docker network. Set
+<code>MCP_ALLOW_PRIVATE_ENDPOINT=true</code> on the API and worker to allow these for every user. Cloud
+metadata addresses stay blocked. Leave the flag unset on public installs.</p>
+<p>Remote MCP servers that use OAuth normally register WhatEverFi with their provider on the first
+<strong>Connect OAuth</strong>. Some providers only accept a client you create in their console. For those,
+enter the client ID (and secret, for a confidential client) under <strong>Advanced</strong> when adding the
+server, and add the <strong>Redirect URI</strong> shown there (<code>&lt;your web origin&gt;/mcp/oauth/callback</code>) to the
+client’s allowed redirect URIs. The client is stored encrypted with the server’s other
+credentials and survives <strong>Disconnect</strong>; switching to a different client drops the current grant.
+On first use the client is bound to the authorization server the MCP server pointed to, and WhatEverFi
+refuses to send it anywhere else afterwards. Replacing the client clears the binding.</p>
+<p>Stdio MCP servers can use OAuth too. They do not authorize themselves (the MCP spec has them
+read credentials from the environment), so WhatEverFi runs the flow for them. They are off unless
+the API and worker have <code>MCP_STDIO_ENABLED=true</code> and the command is listed in
+<code>MCP_STDIO_ALLOWED_COMMANDS</code>. A stdio server runs inside the API and worker with their access,
+so only admins (verified accounts listed in <code>RAKAZO_ADMIN_EMAILS</code>) can add or edit one, in
+<strong>Settings</strong> or through an agent import; with no admins listed, nobody can. Bots never add stdio servers. Everyone can still add remote servers, and a
+stdio server an admin added keeps working for everyone it is available to. When adding the
+server, enter the OAuth client, its
+<strong>Authorization server</strong> (the issuer, for example <code>https://accounts.google.com</code>) and the
+<strong>Scopes</strong>, then click <strong>Connect OAuth</strong> as for a remote server. Some providers issue a refresh
+token only when asked through extra parameters: for Google, set <strong>Authorization parameters</strong> to
+<code>access_type=offline&amp;prompt=consent</code>. Pass the grant to the process
+through its environment variables:</p>
+<ul>
+<li>A value can reference <code>{{oauth.access_token}}</code>, <code>{{oauth.refresh_token}}</code>,
+<code>{{oauth.client_id}}</code>, <code>{{oauth.client_secret}}</code>, <code>{{oauth.expires_at}}</code> (epoch milliseconds),
+<code>{{oauth.scope}}</code> or <code>{{oauth.token_type}}</code>, alone or inside other text.</li>
+<li>A variable can be a <strong>File</strong> instead: its template (often JSON, with the same references) is
+written to a private temporary directory when the process starts, and the variable receives
+the file’s path. Use this for packages that read a credentials or token file path.</li>
+</ul>
+<p>WhatEverFi refreshes the grant and restarts the process shortly before an access token it passed
+expires, so a long-running process never keeps a dead token. A process that only receives the
+refresh token refreshes on its own. Temporary files are removed when the process stops.</p>
+<p>A server launched as <code>npx [-y] &lt;package&gt;[@version]</code> (or <code>npx -p &lt;package&gt; &lt;bin&gt;</code>) is not
+downloaded on every start. WhatEverFi installs the package once, without running its install
+scripts, with <code>npm install</code> into
+<code>MCP_PACKAGES_DIR</code> (default <code>DATA_DIR/mcp-packages</code>, shared by the API and worker), then runs
+its bin directly; <code>npx</code> must still be in <code>MCP_STDIO_ALLOWED_COMMANDS</code>. The install has its own
+timeout, <code>MCP_STDIO_INSTALL_TIMEOUT_MS</code> (default 180000), separate from the handshake timeout
+<code>MCP_STDIO_STARTUP_TIMEOUT_MS</code> (default 30000). Pin a version so every start runs the same
+code; npm settings such as <code>NPM_CONFIG_REGISTRY</code> can be set in the server’s environment
+variables. Any other <code>npx</code> form (local paths, git and tarball URLs, unknown <code>npx</code> flags) is
+refused. <code>npx</code> is the only supported package launcher: other package managers and runners
+(<code>npm</code>, <code>pnpm</code>, <code>yarn</code>, <code>bun</code>, <code>bunx</code>, <code>deno</code>, <code>uv</code>, <code>uvx</code>, <code>pipx</code> and the like) are refused
+even when allowlisted. To run a server from another ecosystem, install it on the host and
+allowlist its binary. An allowlisted interpreter or shell (<code>node</code>, <code>python</code>, <code>sh</code>) runs any
+code passed in its arguments, so allowlist it only where that is acceptable. Each server runs as one process per user in each of the API and worker,
+shared by that user’s bots, and stops after <code>MCP_STDIO_IDLE_MS</code> (default 900000, 15 minutes)
+without use. When a server fails to start, the reason (including the end of its stderr, with
+credentials redacted) appears on the server in <strong>Settings</strong>, and its bots are told it is
+unavailable instead of silently losing its tools.</p>
+<p>Tool discovery keeps at most <code>MCP_MAX_TOOLS</code> tools (default 250) and reads at most
+<code>MCP_MAX_PAGES</code> pages (default 20) per server, for both remote and stdio MCP servers.
+Set positive safe integers in <code>.env</code>, for example <code>MCP_MAX_TOOLS=1000</code> and
+<code>MCP_MAX_PAGES=100</code>, to change them. Unset, blank or invalid values fall back to the
+respective default. Discovery stops when either bound is reached or the server has no
+next page, and remains subject to the existing response-size and timeout limits.
+Docker deployments need both settings on the API and worker; recreate those containers
+after changing them.</p>
+<p>A run never waits long on one server. It gives each server <code>MCP_DISCOVERY_TIMEOUT_MS</code> (default
+20000) to list its tools, then goes on without it; a package still installing finishes in the
+background and its tools appear on a later turn. After a failure, runs skip that server for 30
+seconds, doubling up to 5 minutes while it keeps failing. A successful <strong>Test connection</strong> or
+discovery, or a change to the server’s settings, ends the wait at once.</p>
+<p>If a server shows its tools in <strong>Settings</strong> but a bot never uses them, run the
+<a href="/docs/self-host/#reporting-a-problem">diagnostics report</a>. Its <strong>Assignment</strong> column names any
+space or owner mismatch that keeps the server’s tools from that bot.</p>
+<h2 id="apps-and-connectors">Apps and connectors</h2>
+<p>Plugins use <a href="https://composio.dev">Composio</a> when <code>COMPOSIO_API_KEY</code> is set. Pipedream is an
+alternative managed connector provider: set <code>PIPEDREAM_CLIENT_ID</code>, <code>PIPEDREAM_CLIENT_SECRET</code>,
+<code>PIPEDREAM_PROJECT_ID</code> and <code>PIPEDREAM_ENVIRONMENT</code> (<code>development</code> or <code>production</code>). Set them on the
+API and worker.</p>
+<p><code>INTEGRATIONS_CATALOG_URL</code> points API connector search at an
+<a href="https://integrations.sh/">integrations.sh</a>-compatible catalog, such as a mirror you host. Give the
+base URL; WhatEverFi appends <code>api/search</code>.</p>
+<h2 id="messaging-apps">Messaging apps</h2>
+<p>Optional messaging platforms (iMessage through Sendblue or Photon, Slack, WhatsApp, Telegram, Feishu/Lark) mount when their env credentials are set — see <code>.env.example</code>. The Lark adapter and official SDK load only when configured. Point a Feishu/Lark bot event subscription at <code>/api/v1/messaging/webhook/lark</code> (webhook/HTTP inbound only; do not enable long connection). Personal group linking works on iMessage and Telegram (see the Telegram privacy note below); WhatsApp and Feishu/Lark are direct-only, and Slack channels use workspace installations below. Telegram can run several bots side by side (<code>TELEGRAM_BOT_TOKEN_&lt;NAME&gt;</code> plus <code>TELEGRAM_WEBHOOK_SECRET_TOKEN_&lt;NAME&gt;</code>), for example one per space, so the same person can chat with a different WhatEverFi bot through each. Photon works the same way: each extra project (<code>PHOTON_PROJECT_ID_&lt;NAME&gt;</code> plus <code>PHOTON_PROJECT_SECRET_&lt;NAME&gt;</code>, and <code>PHOTON_WEBHOOK_SECRET_&lt;NAME&gt;</code> for webhooks) gives the person a different number, mounted as provider <code>photon-&lt;name&gt;</code>. Photon receives iMessage over an outbound stream from the API, so it works on a server with no public URL; on Photon’s shared lines the person texts first, and group chats are not available.</p>
+<p>Each platform turns on when its full set of credentials is present on the API and worker.
+Webhooks arrive at <code>/api/v1/messaging/webhook/&lt;provider&gt;</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iMessage and SMS (Sendblue)</td>
+<td><code>SENDBLUE_API_KEY_ID</code>, <code>SENDBLUE_API_SECRET</code>, <code>SENDBLUE_SIGNING_SECRET</code>, <code>SENDBLUE_PHONE_NUMBER</code></td>
+</tr>
+<tr>
+<td>WhatsApp Business Cloud</td>
+<td><code>WHATSAPP_ACCESS_TOKEN</code>, <code>WHATSAPP_PHONE_NUMBER_ID</code>, <code>WHATSAPP_APP_SECRET</code>, <code>WHATSAPP_VERIFY_TOKEN</code></td>
+</tr>
+<tr>
+<td>Telegram</td>
+<td><code>TELEGRAM_BOT_TOKEN</code>, <code>TELEGRAM_WEBHOOK_SECRET_TOKEN</code></td>
+</tr>
+<tr>
+<td>iMessage (Photon)</td>
+<td><code>PHOTON_PROJECT_ID</code>, <code>PHOTON_PROJECT_SECRET</code>; <code>PHOTON_WEBHOOK_SECRET</code> to receive by webhook instead of the stream; more projects as <code>PHOTON_PROJECT_ID_&lt;NAME&gt;</code> plus <code>PHOTON_PROJECT_SECRET_&lt;NAME&gt;</code></td>
+</tr>
+<tr>
+<td>Feishu/Lark</td>
+<td><code>LARK_APP_ID</code>, <code>LARK_APP_SECRET</code>, <code>LARK_VERIFICATION_TOKEN</code>; <code>LARK_ENCRYPT_KEY</code> when event encryption is on; <code>LARK_DOMAIN</code> (<code>feishu</code>, the default, or <code>lark</code>)</td>
+</tr>
+<tr>
+<td>Microsoft Teams</td>
+<td><code>TEAMS_APP_ID</code>, <code>TEAMS_APP_PASSWORD</code>, <code>TEAMS_APP_TENANT_ID</code> (single-tenant, direct messages only)</td>
+</tr>
+<tr>
+<td>Slack</td>
+<td>See below</td>
+</tr>
+</tbody>
+</table>
+<p>Telegram is webhook-only: Telegram sends the secret in <code>X-Telegram-Bot-Api-Secret-Token</code>, and the
+worker never long-polls. An extra bot named <code>&lt;NAME&gt;</code> (letters and digits) uses the provider
+<code>telegram-&lt;name&gt;</code> and the webhook <code>/api/v1/messaging/webhook/telegram-&lt;name&gt;</code>; see
+<a href="/docs/self-host-configuration/#settings-with-names-you-choose">settings with names you choose</a>.
+Telegram groups use personal group linking, like iMessage: each linked member approves their own
+bot, and the per-room listening settings belong to Slack team conversations only. In BotFather
+run <code>/setprivacy</code> on the bot and choose <strong>Disable</strong> (or make it a group admin), or the bot only
+receives group messages that mention it. Broadcast channel posts never start runs. For Lark,
+create a custom app with the Bot capability and subscribe it to <code>im.message.receive_v1</code>.</p>
+<p>People link a chat app to their account from <strong>Messaging</strong> settings. <code>MESSAGING_OPEN_SIGNUP=true</code>
+instead gives unknown senders their own chat-only accounts, whose runs use the deployment model.</p>
+<p>In rooms, a bot decides whether to answer ambient messages with its own model. To use a separate
+model for that decision, set both <code>TEAM_CHAT_JUDGE_PROVIDER</code> and <code>TEAM_CHAT_JUDGE_MODEL</code>.</p>
+<h3 id="microsoft-teams">Microsoft Teams</h3>
+<p>Register a single-tenant Azure bot with the Teams channel enabled. Set <code>TEAMS_APP_ID</code>,
+<code>TEAMS_APP_PASSWORD</code> (the client secret value), and <code>TEAMS_APP_TENANT_ID</code> on the server.
+Set its messaging endpoint to <code>https://your-domain.example/api/v1/messaging/webhook/teams</code>.
+Install the Teams app with the bot’s <code>personal</code> scope in your tenant; your administrator may
+need to allow custom apps. Microsoft JWT verification remains enabled.</p>
+<p>Choose <code>teams</code> under <strong>Settings → Messaging</strong>, then send the link code to the bot in a direct
+message. Replies and later messages use the linked conversation, including after a server
+restart. Starting a new DM by user address, Teams channels, and group chats are not supported.
+No Microsoft Graph history permissions are needed for this direct-message flow.</p>
+<h3 id="slack">Slack</h3>
+<p>For Slack workspace installations, set <code>SLACK_CLIENT_ID</code>, <code>SLACK_CLIENT_SECRET</code>, and
+<code>SLACK_SIGNING_SECRET</code> on the API and worker. Register the OAuth redirect URL
+<code>https://app.example.com/api/v1/messaging/install/slack/callback</code> using your public
+API origin (<code>API_URL</code>). Enable distribution in the Slack app’s Manage Distribution
+settings so other workspaces can install it. Enable Slack Events API delivery to
+<code>https://app.example.com/api/v1/messaging/webhook/slack</code>, with <code>app_mention</code>,
+<code>message.im</code>, <code>message.channels</code>, <code>message.groups</code>, <code>message.mpim</code>, and
+<code>app_uninstalled</code>. Enable the app’s Messages tab. The install flow requests the
+message/history, channel/user lookup, file read and write, and reaction-write scopes it uses;
+reinstall the Slack app after changing scopes. Socket Mode is not used.</p>
+<p>In Messaging settings, select <strong>Connect</strong> on the Slack row. The workspace answers as
+the first bot in your default space, whichever space is open. Each Slack workspace
+belongs to one WhatEverFi space and one installation owner; installing it from another
+space is rejected. To DM that bot, use <strong>Link DMs</strong> and send the code in a DM to the
+Slack app. Teammates in the same space can link their own bots the same way.
+Invite the Slack app to channels and mention it to receive replies there. The
+bot’s external conversations offer <strong>Mentions only</strong>, <strong>Listen</strong>, and room guidance.
+Workspace setup and personal linking are available on web, desktop and mobile.
+Mobile opens Slack authorization in the system browser; return to the app when it
+finishes. Channel listening settings currently live in the web/desktop interface.</p>
+<p>Tokens are encrypted with the configured secret store. Workers resolve the
+installation for every outbound operation, including queued replies; disconnecting
+an installation stops further delivery and unlinks its personal DMs. Slack’s signed
+<code>app_uninstalled</code> event also removes the installation. Disconnect removes WhatEverFi’s
+local credentials; remove the app in Slack to revoke Slack’s installation itself.
+The installation owner must retain space membership and an active bot. Workspace
+installations require a workspace-level bot token without Slack token rotation;
+Enterprise Grid org-wide installs and rotating tokens are rejected explicitly.</p>
+<p>The older <code>SLACK_BOT_TOKEN</code> plus <code>SLACK_SIGNING_SECRET</code> configuration still supports
+a single workspace. OAuth mode takes precedence when configured; existing static
+Slack identities/conversations must be relinked before using workspace installs.
+<code>TEAM_CHAT_BOT_ID</code> only selects a channel bot for the static configuration. It does
+not override workspace installations or personal DMs. Slack tools authorized from
+the Integrations screen are a separate connection from this messaging surface.</p>
+<h2 id="cloud-coding-agents">Cloud coding agents</h2>
+<p>Cloud agents delegate a repository task to a hosted coding agent and track its result in the bot’s chat. They are separate from the bot computer and its in-turn subagents. Web, Electron, and mobile show the same status and pull-request link.</p>
+<p>The default is <code>CLOUD_AGENT_PROVIDER=none</code>. Core workflows do not require Cursor or any other hosted coding provider.</p>
+<h3 id="enable-cursor">Enable Cursor</h3>
+<p>Configure the API and worker with the same values:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="dotenv"><code><span class="line"><span style="color:#FFAB70">CLOUD_AGENT_PROVIDER</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">cursor</span></span>
+<span class="line"><span style="color:#FFAB70">CLOUD_AGENT_SPACE_ID</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">example-space-id</span></span>
+<span class="line"><span style="color:#FFAB70">CURSOR_API_KEY</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">replace-with-your-key</span></span></code></pre>
+<p>The key and explicit Space ID are both required. Use a credential whose connected repositories may be accessed by members of that Space. Each created agent is additionally bound to its initiating user; another user cannot inspect, reply to, or cancel it by supplying an agent ID. The deployment key is never a model tool argument.</p>
+<p>The tools are <code>cloud_agent_launch</code>, <code>cloud_agent_status</code>, <code>cloud_agent_reply</code>, and <code>cloud_agent_cancel</code>. All three mutations participate in the existing action-approval rules and auto-review policy. As with other consequential tools, an empty rule set and disabled auto-review permit execution by default.</p>
+<p>Launch accepts a prompt, optional repository, images, and <code>openPr</code>. Raw environment variables are intentionally unsupported: passing secrets through model-generated tool arguments would persist them in ordinary history. Configure remote environment secrets directly with the provider.</p>
+<h3 id="recovery">Recovery</h3>
+<p>The database stores ownership and pending operations independently of chat cards. The worker and reconciler recover queue failures and interrupted launches. Cursor creates use a stable client agent ID, so retrying an accepted create does not create another remote agent.</p>
+<p>Each follow-up tracks its own remote run. When a follow-up response is lost, the worker observes the latest run instead of resending the prompt. Until it can distinguish the new run, status remains pending; it does not claim the older run completed the follow-up. Cancellation likewise remains pending until the remote state confirms it. If a request’s outcome remains unknown indefinitely, inspect the agent on the provider’s site.</p>
+<p>Clearing a chat, deleting or archiving its bot, or removing the owner’s Space membership causes pending remote work to be cancelled on the next reconciliation. Clearing a chat does not erase ownership or recreate the removed card. Terminal notifications are deduplicated in the durable record.</p>
+<p>The stored credential binding fails closed if the key or provider changes. Cancel or finish active agents before rotating credentials, changing the authorized Space, or disabling the provider. If changed prematurely, restore the previous configuration to reconcile those agents, or stop them directly with the provider. No existing agent is silently routed through a replacement credential.</p>
+<h3 id="offline-verification">Offline verification</h3>
+<p><code>CLOUD_AGENT_PROVIDER=emulator</code> runs the real Cursor adapter against an in-process Cursor HTTP emulator for development and web E2E. It is not durable across separate processes.</p>
+<p>The emulator models run creation, unknown run statuses, archived or expired agents, removed agents and runs, rejected keys, and rate limits without network calls. The conformance suite runs against it, and <code>pnpm test:integration</code> exercises the database lifecycle against the Cursor emulator: lost responses, stale run metadata, queue outages, ownership boundaries, cleared chats, worker restart, overlapping polls, and cancellation races.</p>
+<h2 id="payments">Payments</h2>
+<p>Bots can buy things with their user’s wallet. Each user connects their own wallet, and every purchase asks them to approve it in the wallet provider’s app or page before any card or token exists. Card numbers, security codes and payment tokens go straight to the merchant; they never reach the model, chat history, tool results, or logs.</p>
+<p>The default is <code>PAYMENT_WALLET_PROVIDER=none</code>. Core workflows do not require a wallet, and with none configured users see nothing related to payments.</p>
+<h3 id="enable-link">Enable Link</h3>
+<p>Configure the API and worker with the same values:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="dotenv"><code><span class="line"><span style="color:#FFAB70">PAYMENT_WALLET_PROVIDER</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">link</span></span>
+<span class="line"><span style="color:#6A737D"># Optional. Defaults to Link's public sign-in client.</span></span>
+<span class="line"><span style="color:#FFAB70">PAYMENT_WALLET_CLIENT_ID</span><span style="color:#F97583">=</span></span></code></pre>
+<p>Users then see a Link connect button in Settings. Connecting opens Link’s sign-in page with a code to confirm. Once connected, bots get <code>request_purchase</code>, <code>purchase_status</code> and <code>paid_request</code>. Each request names the amount and reason; the user approves or denies it in Link. A purchase also counts against the user’s <a href="/docs/approvals/#spending-limit">spending limit</a>, if they set one, before Link is asked.</p>
+<p>Link is available to users in the US and Canada only.</p>
+<p>Unknown or blank values fall back to <code>none</code> instead of failing at boot.</p>
+<h3 id="how-a-purchase-is-paid">How a purchase is paid</h3>
+<ul>
+<li><strong>Card.</strong> Approval issues a single-use card. The bot types it into the checkout on the purchase’s own HTTPS origin, in the page or in a known payment provider’s frame on it.</li>
+<li><strong>Pay token.</strong> A Stripe checkout that accepts Link pay tokens says so in the page snapshot, with its merchant account. The bot requests the purchase for that account, and after approval hands the token to the checkout, which then shows the user’s saved Link card. Tokens expire 30 minutes after approval.</li>
+<li><strong>Paid HTTP requests.</strong> <code>paid_request</code> sends an HTTPS request. If the server answers <code>402 Payment Required</code> with a Machine Payments Protocol challenge for Stripe, the amount comes from the challenge and the user approves it; the bot then sends the request again and it carries the payment. Other payment methods are never paid. The request is stored encrypted until it is sent, it may not carry credentials or cookies, and redirects are reported instead of followed. A payment token is used once; a refused paid request needs a new approval.</li>
+</ul>
+<h3 id="disconnecting">Disconnecting</h3>
+<p>Disconnecting in Settings revokes the connection with the provider. If the provider revokes it first (for example, the user signs out of the connection in Link), purchase tools stop working until the user connects again.</p>
+<h3 id="offline-wallet-verification">Offline wallet verification</h3>
+<p><code>PAYMENT_WALLET_PROVIDER=emulator</code> runs an in-process wallet for development and tests. Sign-in completes immediately; purchases are approved on the next status check, and amounts above 1,000.00 are denied. It fills the test card <code>4242 4242 4242 4242</code>, issues fake pay tokens, and pays Stripe challenges in 402 responses with a fake token. A shared conformance suite runs against the emulator and against the Link adapter backed by a fake Link API and a fake paid API, without network calls.</p>
+</article><footer class="docs-pager"><a href="/docs/self-host-models/"><span>Previous</span>Models</a><a class="docs-pager__next" href="/docs/self-host-inbound-email/"><span>Next</span>Bot email addresses</a></footer></main><aside class="docs-toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#web-search-and-page-reading">Web search and page reading</a></li><li><a href="#self-hosted-memory">Self-hosted memory</a></li><li><a href="#mcp-servers">MCP servers</a></li><li><a href="#apps-and-connectors">Apps and connectors</a></li><li><a href="#messaging-apps">Messaging apps</a></li><li><a href="#cloud-coding-agents">Cloud coding agents</a></li><li><a href="#payments">Payments</a></li></ul><div class="docs-toc__links"><a href="/docs/self-host-integrations.md">View as Markdown</a><a href="https://github.com/elie222/rakazo/edit/main/docs/self-host-integrations.md" target="_blank" rel="noopener">Edit on GitHub</a></div></aside></div><div class="container"><footer class="site-footer"><div class="site-footer__brand"><a class="brand-lockup" href="/" aria-label="WhatEverFi home"><img class="brand-lockup__mark" src="/brand/whateverfi-mark.png" width="36" height="36" alt="" aria-hidden="true"><span class="brand-lockup__word">WhatEverFi</span></a><nav class="site-footer__languages" aria-label="Language"><details class="language-menu"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>English<svg class="language-menu__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path></svg></summary><ul><li><a href="/" hreflang="en-US" lang="en" aria-current="true">English</a></li><li><a href="/de/" hreflang="de-DE" lang="de">Deutsch</a></li><li><a href="/ko/" hreflang="ko-KR" lang="ko">한국어</a></li><li><a href="/zh/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/ja/" hreflang="ja-JP" lang="ja">日本語</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/he/" hreflang="he" lang="he">עברית</a></li><li><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a></li><li><a href="/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a></li><li><a href="/pl/" hreflang="pl-PL" lang="pl">Polski</a></li></ul></details></nav><span class="site-footer__legal"><span>© 2026 <a href="https://regan.studio" target="_blank" rel="noopener">Regan.Studio</a></span><a href="/NOTICE.txt">Apache-2.0 · Open-source notices</a></span></div><nav class="site-footer__columns" aria-label="Footer"><div class="site-footer__column"><h2>Product</h2><ul><li><a href="/download/">Download</a></li><li><a href="/self-hosted-ai-agent/">Docs</a></li><li><a href="/enterprise/">Enterprise</a></li><li><a href="/sandboxes/">Sandboxes</a></li><li><a href="/integration-platforms/">Integration platforms</a></li><li><a href="/voice-providers/">Voice providers</a></li><li><a href="/plugins/submit/">Submit a plugin</a></li><li><a href="https://github.com/elie222/rakazo/releases" target="_blank" rel="noopener">Changelog</a></li><li><a href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener">GitHub</a></li></ul></div><div class="site-footer__column"><h2>Alternatives</h2><ul><li><a href="/grok-bot-alternative/">Grok Bot</a></li><li><a href="/muse-alternative/">Muse</a></li><li><a href="/dots-alternative/">Dots</a></li><li><a href="/instinct-alternative/">Instinct</a></li><li><a href="/hermes-alternative/">Hermes</a></li><li><a href="/claude-duet-alternative/">Claude Duet</a></li><li><a href="/hark-alternative/">Hark</a></li><li><a href="/openclaw-alternative/">OpenClaw</a></li><li><a href="/alternatives/">All</a></li></ul></div><div class="site-footer__column"><h2>Company</h2><ul><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/brand/">Brand</a></li><li><a href="/support/">Support</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li></ul></div></nav></footer></div><dialog class="docs-search" aria-label="Search docs"><div id="docs-search"></div></dialog></div></body></html><script type="module">var e=document.querySelector(`.docs-copy-page`)?.querySelectorAll(`svg`)??[];async function t(e,t){let n=t.then(e=>new Blob([e],{type:`text/plain`}));await navigator.clipboard.write([new ClipboardItem({"text/plain":n})]),e.dataset.copied=``,setTimeout(()=>delete e.dataset.copied,1500)}var n=document.querySelector(`.docs-prose`);n?.querySelectorAll(`h2[id], h3[id]`).forEach(e=>{let t=document.createElement(`a`);t.className=`docs-anchor`,t.href=`#${e.id}`,t.setAttribute(`aria-label`,`Link to ${e.textContent}`),t.textContent=`#`,e.append(t)}),n?.querySelectorAll(`pre`).forEach(n=>{let r=document.createElement(`button`);r.type=`button`,r.className=`docs-copy-code`,r.setAttribute(`aria-label`,`Copy code`),r.append(...[...e].map(e=>e.cloneNode(!0))),r.addEventListener(`click`,()=>t(r,Promise.resolve(n.querySelector(`code`)?.innerText??n.innerText)));let i=document.createElement(`div`);i.className=`docs-code`,n.replaceWith(i),i.append(n,r)});var r=document.querySelector(`.docs-copy-page`);r?.addEventListener(`click`,()=>t(r,fetch(r.dataset.markdown??``).then(e=>e.text())));var i=document.querySelector(`.docs-search`),a=document.querySelector(`.docs-search-trigger`),o;if(!/Mac|iPhone|iPad/.test(navigator.platform)){let e=a?.querySelector(`kbd`);e&&(e.textContent=`Ctrl K`)}function s(){let e=Object.assign(document.createElement(`link`),{rel:`stylesheet`,href:`/pagefind/pagefind-ui.css`}),t=Object.assign(document.createElement(`script`),{src:`/pagefind/pagefind-ui.js`});return document.head.append(e,t),new Promise((e,n)=>{t.onload=()=>{let{PagefindUI:t}=window;new t({element:`#docs-search`,showSubResults:!0,showImages:!1}),e()},t.onerror=n})}async function c(){i&&(o??=s(),i.showModal(),await o,i.querySelector(`input`)?.focus())}a?.addEventListener(`click`,c),i?.addEventListener(`click`,e=>{e.target===i&&i.close(),e.target.closest(`a`)&&i.close()}),document.addEventListener(`keydown`,e=>{(e.metaKey||e.ctrlKey)&&e.key.toLowerCase()===`k`&&(e.preventDefault(),i?.open?i.close():c())});var l=[...document.querySelectorAll(`.docs-toc li a`)],u=l.map(e=>document.getElementById(decodeURIComponent(e.hash.slice(1)))).filter(e=>e!==null);function d(){let e=window.innerHeight+window.scrollY>=document.body.scrollHeight-2?u.at(-1):u.findLast(e=>e.getBoundingClientRect().top<=120);for(let t of l)t.toggleAttribute(`data-active`,t.hash===`#${e?.id}`)}u.length>0&&(d(),window.addEventListener(`scroll`,d,{passive:!0}));</script>

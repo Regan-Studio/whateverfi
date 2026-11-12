@@ -1,0 +1,275 @@
+# freee
+
+Read freee Accounting and HR data, and manage Accounting partners and HR organizational groups.
+
+Category: Finance. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/freee/.
+
+## Actions
+
+- **Act On Approval Request**: Execute Approval Request Action.
+- **Act On Approval Requests Monthly Attendance**: 月次勤怠締め申請の承認操作
+- **Act On Approval Requests Overtime Work**: Action Approval Requests Overtime Work through the freee HR API.
+- **Act On Approval Requests Paid Holiday**: Action Approval Requests Paid Holiday through the freee HR API.
+- **Act On Approval Requests Special Holiday**: 特別休暇申請の承認操作
+- **Act On Approval Requests Work Time**: 勤務時間修正申請の承認操作
+- **Act On Expense Application**: Execute Expense Application Action.
+- **Act On Payment Request**: Act On Payment Request using the official freee Accounting API contract.
+- **Act On Purchase Request**: Act On Purchase Request using the official freee Accounting API contract.
+- **Bulk Update Employee Dependent Rules**: 従業員の家族情報の更新
+- **Create Account Group**: Create Account Group using the official freee Accounting API operation.
+- **Create Account Item**: 勘定科目の作成
+- **Create Accounting Partner**: Create a business partner in a freee Accounting company and return its generated partner ID.
+- **Create Accounting Section**: Create Accounting Section using the official freee Accounting API contract.
+- **Create Allowance**: Call the official freee HR operation to create allowance.
+- **Create Approval Request**: Create Approval Request using the official freee Accounting API operation.
+- **Create Approval Requests Monthly Attendance**: 月次勤怠締め申請の作成
+- **Create Approval Requests Overtime Work**: Create Approval Requests Overtime Work through the freee HR API.
+- **Create Approval Requests Paid Holiday**: Create Approval Requests Paid Holiday through the freee HR API.
+- **Create Approval Requests Special Holiday**: 特別休暇申請の作成
+- **Create Approval Requests Work Time**: 勤務時間修正申請の作成
+- **Create Deal**: 取引（収入・支出）の作成
+- **Create Deal Payment**: 取引（収入・支出）の支払行の作成
+- **Create Deal Renew**: Create Deal Renew using the official freee Accounting API operation.
+- **Create Deduction**: Create Deduction through the freee HR API.
+- **Create Employee**: Create Employee through the freee HR API.
+- **Create Employee Time Clock**: Call the official freee HR operation to create employee time clock.
+- **Create Expense Application**: Create Expense Application using the official freee Accounting API operation.
+- **Create Expense Application Currency**: Create Expense Application Currency using the official freee Accounting API contract.
+- **Create Expense Application Line Template**: 経費科目の作成
+- **Create HR Group**: Create an organizational group in a freee HR company, optionally beneath an existing parent group.
+- **Create Item**: Create Item using the official freee Accounting API contract.
+- **Create Journal Report**: Create Journal Report using the official freee Accounting API operation.
+- **Create Manual Journal**: Create Manual Journal using the official freee Accounting API operation.
+- **Create Payment Request**: Create Payment Request using the official freee Accounting API contract.
+- **Create Position**: 役職の作成
+- **Create Purchase Request**: Create Purchase Request using the official freee Accounting API contract.
+- **Create Receipt**: Create Receipt using the official freee Accounting API operation.
+- **Create Segment Tag**: セグメントタグの作成
+- **Create Tag**: Create Tag using the official freee Accounting API operation.
+- **Create Transfer**: Create Transfer using the official freee Accounting API contract.
+- **Create User Matcher**: 自動登録ルールの作成
+- **Create Wallet Transaction**: Create Wallet Transaction using the official freee Accounting API contract.
+- **Create Walletable**: Create Walletable using the official freee Accounting API operation.
+- **Delete Account Item**: 勘定科目の削除
+- **Delete Accounting Partner**: Permanently delete one business partner from a freee Accounting company.
+- **Delete Accounting Section**: Delete Accounting Section using the official freee Accounting API contract.
+- **Delete Approval Request**: Permanently delete the target with Delete Approval Request.
+- **Delete Deal**: 取引（収入・支出）の削除
+- **Delete Deal Payment**: 取引（収入・支出）の支払行の削除
+- **Delete Deal Renew**: Permanently delete the target with Delete Deal Renew.
+- **Delete Expense Application**: Permanently delete the target with Delete Expense Application.
+- **Delete Expense Application Currency**: Delete Expense Application Currency using the official freee Accounting API contract.
+- **Delete Expense Application Line Template**: 経費科目の削除
+- **Delete HR Group**: Permanently delete one organizational group from a freee HR company.
+- **Delete Item**: Delete Item using the official freee Accounting API contract.
+- **Delete Manual Journal**: Permanently delete the target with Delete Manual Journal.
+- **Delete Payment Request**: Delete Payment Request using the official freee Accounting API contract.
+- **Delete Purchase Request**: Delete Purchase Request using the official freee Accounting API contract.
+- **Delete Receipt**: Permanently delete the target with Delete Receipt.
+- **Delete Segment Tag**: セグメントタグの削除
+- **Delete Tag**: Permanently delete the target with Delete Tag.
+- **Delete Transfer**: Delete Transfer using the official freee Accounting API contract.
+- **Delete User Matcher**: 自動登録ルールの削除
+- **Delete Wallet Transaction**: Delete Wallet Transaction using the official freee Accounting API contract.
+- **Delete Walletable**: Permanently delete the target with Delete Walletable.
+- **Destroy Approval Requests Monthly Attendance**: 月次勤怠締め申請の削除
+- **Destroy Approval Requests Overtime Work**: Destroy Approval Requests Overtime Work through the freee HR API.
+- **Destroy Approval Requests Paid Holiday**: Destroy Approval Requests Paid Holiday through the freee HR API.
+- **Destroy Approval Requests Special Holiday**: 特別休暇申請の削除
+- **Destroy Approval Requests Work Time**: 勤務時間修正申請の削除
+- **Destroy Employee**: Destroy Employee through the freee HR API.
+- **Destroy Employee Allowance Rule**: Call the official freee HR operation to destroy employee allowance rule.
+- **Destroy Employee Deduction Rule**: Destroy Employee Deduction Rule through the freee HR API.
+- **Destroy Employee Work Record**: Call the official freee HR operation to destroy employee work record.
+- **Destroy Position**: 役職の削除
+- **Destroy Yearend Adjustment Housing Loan**: Call the official freee HR operation to destroy yearend adjustment housing loan.
+- **Destroy Yearend Adjustment Insurances**: Call the official freee HR operation to destroy yearend adjustment insurances.
+- **Destroy Yearend Adjustment Previous Job**: Call the official freee HR operation to destroy yearend adjustment previous job.
+- **Download Journal** (read-only): Download Journal using the official freee Accounting API operation.
+- **Download Receipt** (read-only): Download Receipt using the official freee Accounting API operation.
+- **Get Account Item** (read-only): 勘定科目の取得
+- **Get Accounting Capabilities** (read-only): Return the connected user's Accounting permissions for a company.
+- **Get Accounting Deal** (read-only): Return one income or expense deal with journal details, payments, adjustments, attached receipt metadata, and optional receivable or…
+- **Get Accounting Partner** (read-only): Return full details for one business partner in a freee Accounting company.
+- **Get Accounting Section** (read-only): Get Accounting Section using the official freee Accounting API contract.
+- **Get Allowance** (read-only): Call the official freee HR operation to get allowance.
+- **Get Approval Flow Route** (read-only): 申請経路の取得
+- **Get Approval Request** (read-only): Get Approval Request using the official freee Accounting API operation.
+- **Get Approval Request Form** (read-only): Get Approval Request Form using the official freee Accounting API operation.
+- **Get Approval Requests Monthly Attendance** (read-only): 月次勤怠締め申請の取得
+- **Get Approval Requests Monthly Attendances** (read-only): 月次勤怠締め申請一覧の取得
+- **Get Approval Requests Overtime Work** (read-only): Get Approval Requests Overtime Work through the freee HR API.
+- **Get Approval Requests Overtime Work Setting** (read-only): Get Approval Requests Overtime Work Setting through the freee HR API.
+- **Get Approval Requests Overtime Works** (read-only): Get Approval Requests Overtime Works through the freee HR API.
+- **Get Approval Requests Paid Holiday** (read-only): Get Approval Requests Paid Holiday through the freee HR API.
+- **Get Approval Requests Paid Holidays** (read-only): Get Approval Requests Paid Holidays through the freee HR API.
+- **Get Approval Requests Special Holiday** (read-only): 特別休暇申請の取得
+- **Get Approval Requests Special Holidays** (read-only): 特別休暇申請一覧の取得
+- **Get Approval Requests Work Time** (read-only): 勤務時間修正申請の取得
+- **Get Approval Requests Work Times** (read-only): 勤務時間修正申請一覧の取得
+- **Get Balance Sheet** (read-only): Return a freee Accounting balance sheet for a fiscal year or date range, with optional account, partner, item, section, or segment…
+- **Get Bank** (read-only): Get Bank using the official freee Accounting API operation.
+- **Get Bonuses Employee Payroll Statement** (read-only): Call the official freee HR operation to get bonuses employee payroll statement.
+- **Get Bonuses Employee Payroll Statements** (read-only): Call the official freee HR operation to get bonuses employee payroll statements.
+- **Get Company** (read-only): Return one freee Accounting company's settings and fiscal years, and optionally include selected accounting reference lists.
+- **Get Current Accounting User** (read-only): Return the connected freee Accounting user and company memberships.
+- **Get Current HR User** (read-only): Return the connected freee HR user, company memberships, HR roles, and linked employee IDs when available.
+- **Get Deduction** (read-only): Get Deduction through the freee HR API.
+- **Get Employee** (read-only): Get Employee through the freee HR API.
+- **Get Employee Allowance Rules** (read-only): Call the official freee HR operation to get employee allowance rules.
+- **Get Employee Bank Account Rule** (read-only): Call the official freee HR operation to get employee bank account rule.
+- **Get Employee Basic Pay Rule** (read-only): Call the official freee HR operation to get employee basic pay rule.
+- **Get Employee Deduction Rules** (read-only): Get Employee Deduction Rules through the freee HR API.
+- **Get Employee Dependent Rules** (read-only): 従業員の家族情報の取得
+- **Get Employee Group Memberships** (read-only): Get Employee Group Memberships through the freee HR API.
+- **Get Employee Group Memberships By Employee Id** (read-only): Get Employee Group Memberships By Employee Id through the freee HR API.
+- **Get Employee Health Insurance Rule** (read-only): Get Employee Health Insurance Rule through the freee HR API.
+- **Get Employee Profile Custom Fields Rule** (read-only): Get Employee Profile Custom Fields Rule through the freee HR API.
+- **Get Employee Profile Rule** (read-only): Get Employee Profile Rule through the freee HR API.
+- **Get Employee Time Clock** (read-only): Call the official freee HR operation to get employee time clock.
+- **Get Employee Time Clocks** (read-only): Call the official freee HR operation to get employee time clocks.
+- **Get Employee Time Clocks Available Types** (read-only): Call the official freee HR operation to get employee time clocks available types.
+- **Get Employee Welfare Pension Insurance Rule** (read-only): 従業員の厚生年金保険の取得
+- **Get Employee Work Record** (read-only): Call the official freee HR operation to get employee work record.
+- **Get Employee Work Record Summary** (read-only): Call the official freee HR operation to get employee work record summary.
+- **Get Employees** (read-only): Get Employees through the freee HR API.
+- **Get Employees Attendance Tag Summaries** (read-only): 勤怠タグ月次サマリの取得
+- **Get Employees Attendance Tags** (read-only): Get Employees Attendance Tags through the freee HR API.
+- **Get Employees Attendance Tags By Date** (read-only): Get Employees Attendance Tags By Date through the freee HR API.
+- **Get Employees Special Holidays** (read-only): 従業員の特別休暇一覧の取得
+- **Get Expense Application** (read-only): Get Expense Application using the official freee Accounting API operation.
+- **Get Expense Application Currency** (read-only): Get Expense Application Currency using the official freee Accounting API contract.
+- **Get Expense Application Form** (read-only): Get Expense Application Form using the official freee Accounting API contract.
+- **Get Expense Application Line Template** (read-only): 経費科目の取得
+- **Get HR Approval Flow Route** (read-only): Get one HR approval flow route and its approval steps from a freee company.
+- **Get HR Approval Flow Routes** (read-only): List approval flow routes available to HR workflows in a freee company.
+- **Get Invoice** (read-only): Get a current invoice by its freee Invoice API invoice ID.
+- **Get Item** (read-only): Get Item using the official freee Accounting API contract.
+- **Get Journal Report Status** (read-only): Get Journal Report Status using the official freee Accounting API operation.
+- **Get Manual Journal** (read-only): Get Manual Journal using the official freee Accounting API operation.
+- **Get Payment Request** (read-only): Get Payment Request using the official freee Accounting API contract.
+- **Get Purchase Request** (read-only): Get Purchase Request using the official freee Accounting API contract.
+- **Get Purchase Request Form** (read-only): Get Purchase Request Form using the official freee Accounting API contract.
+- **Get Quotation** (read-only): Get a current quotation by its freee Invoice API quotation ID.
+- **Get Receipt** (read-only): Get Receipt using the official freee Accounting API operation.
+- **Get Salaries Employee Payroll Statement** (read-only): 給与明細の取得
+- **Get Salaries Employee Payroll Statements** (read-only): 給与明細一覧の取得
+- **Get Tag** (read-only): Get Tag using the official freee Accounting API operation.
+- **Get Tax Code** (read-only): Get Tax Code using the official freee Accounting API contract.
+- **Get Transfer** (read-only): Get Transfer using the official freee Accounting API contract.
+- **Get Trial Bs Three Years** (read-only): 貸借対照表(３期間比較)の取得
+- **Get Trial Bs Two Years** (read-only): 貸借対照表(前年比較)の取得
+- **Get Trial Cr** (read-only): 製造原価報告書の取得
+- **Get Trial Cr Sections** (read-only): 製造原価報告書(部門比較)の取得
+- **Get Trial Cr Segment 1 Tags** (read-only): 製造原価報告書(セグメント１比較)の取得
+- **Get Trial Cr Segment 2 Tags** (read-only): 製造原価報告書(セグメント２比較)の取得
+- **Get Trial Cr Segment 3 Tags** (read-only): 製造原価報告書(セグメント３比較)の取得
+- **Get Trial Cr Three Years** (read-only): 製造原価報告書(３期間比較)の取得
+- **Get Trial Cr Two Years** (read-only): 製造原価報告書(前年比較)の取得
+- **Get Trial Pl** (read-only): 損益計算書の取得
+- **Get Trial Pl Sections** (read-only): 損益計算書(部門比較)の取得
+- **Get Trial Pl Segment 1 Tags** (read-only): 損益計算書(セグメント１比較)の取得
+- **Get Trial Pl Segment 2 Tags** (read-only): 損益計算書(セグメント２比較)の取得
+- **Get Trial Pl Segment 3 Tags** (read-only): 損益計算書(セグメント３比較)の取得
+- **Get Trial Pl Three Years** (read-only): 損益計算書(３期間比較)の取得
+- **Get Trial Pl Two Years** (read-only): 損益計算書(前年比較)の取得
+- **Get User Matcher** (read-only): 自動登録ルールの取得
+- **Get Wallet Transaction** (read-only): Get Wallet Transaction using the official freee Accounting API contract.
+- **Get Walletable** (read-only): Get Walletable using the official freee Accounting API operation.
+- **Get Yearend Adjustment Employee** (read-only): Call the official freee HR operation to get yearend adjustment employee.
+- **Get Yearend Adjustment Employees** (read-only): Call the official freee HR operation to get yearend adjustment employees.
+- **List Accounting Account Items** (read-only): List or search the chart-of-accounts items available in a freee Accounting company.
+- **List Accounting Deals** (read-only): List income or expense deals in a freee Accounting company with date, settlement, partner, and account-item filters.
+- **List Accounting Partners** (read-only): List or search non-archived business partners in a freee Accounting company, returning one bounded page per call.
+- **List Accounting Sections** (read-only): List organizational sections configured in a freee Accounting company, optionally filtered by update date.
+- **List Approval Flow Routes** (read-only): 申請経路一覧の取得
+- **List Approval Request Forms** (read-only): List Approval Request Forms using the official freee Accounting API operation.
+- **List Approval Requests** (read-only): List Approval Requests using the official freee Accounting API operation.
+- **List Banks** (read-only): List Banks using the official freee Accounting API operation.
+- **List Companies** (read-only): List freee Accounting companies associated with the connected user.
+- **List Company Taxes** (read-only): List Company Taxes using the official freee Accounting API contract.
+- **List Employees** (read-only): List one cursor-paginated page of current and former employees in a freee HR company.
+- **List Expense Application Currencies** (read-only): List Expense Application Currencies using the official freee Accounting API contract.
+- **List Expense Application Line Templates** (read-only): 経費科目一覧の取得
+- **List Expense Applications** (read-only): List Expense Applications using the official freee Accounting API operation.
+- **List Fixed Assets** (read-only): List Fixed Assets using the official freee Accounting API contract.
+- **List Form Selectables** (read-only): List Form Selectables using the official freee Accounting API contract.
+- **List General Ledgers** (read-only): List General Ledgers using the official freee Accounting API operation.
+- **List HR Allowances** (read-only): List configured allowance types in a freee HR company, optionally filtered by frequency and active status.
+- **List HR Deductions** (read-only): List configured deduction types in a freee HR company, optionally filtered by frequency and active status.
+- **List HR Groups** (read-only): List the organizational groups and hierarchy configured in a freee HR company.
+- **List HR Positions** (read-only): List job positions configured in a freee HR company, including their IDs, codes, and names.
+- **List Invoices** (read-only): List current invoices from the freee Invoice API.
+- **List Items** (read-only): List Items using the official freee Accounting API contract.
+- **List Manual Journals** (read-only): List Manual Journals using the official freee Accounting API operation.
+- **List Payment Requests** (read-only): List Payment Requests using the official freee Accounting API contract.
+- **List Purchase Request Forms** (read-only): List Purchase Request Forms using the official freee Accounting API contract.
+- **List Purchase Requests** (read-only): List Purchase Requests using the official freee Accounting API contract.
+- **List Quotations** (read-only): List current quotations from the freee Invoice API.
+- **List Receipts** (read-only): List Receipts using the official freee Accounting API operation.
+- **List Segment Tags** (read-only): セグメントタグ一覧の取得
+- **List Tags** (read-only): List Tags using the official freee Accounting API operation.
+- **List Tax Codes** (read-only): List Tax Codes using the official freee Accounting API contract.
+- **List Transfers** (read-only): List Transfers using the official freee Accounting API contract.
+- **List User Matchers** (read-only): 自動登録ルール一覧の取得
+- **List Users** (read-only): 事業所に所属するユーザー一覧の取得
+- **List Wallet Transactions** (read-only): List Wallet Transactions using the official freee Accounting API contract.
+- **List Walletables** (read-only): List Walletables using the official freee Accounting API operation.
+- **Post Yearend Adjustment Housing Loan**: Call the official freee HR operation to post yearend adjustment housing loan.
+- **Post Yearend Adjustment Insurances**: Call the official freee HR operation to post yearend adjustment insurances.
+- **Put Yearend Adjustment Dependents**: Call the official freee HR operation to put yearend adjustment dependents.
+- **Put Yearend Adjustment Employee**: Call the official freee HR operation to put yearend adjustment employee.
+- **Put Yearend Adjustment Housing Loan**: Call the official freee HR operation to put yearend adjustment housing loan.
+- **Put Yearend Adjustment Housing Loan Deduction**: Call the official freee HR operation to put yearend adjustment housing loan deduction.
+- **Put Yearend Adjustment Insurances**: Call the official freee HR operation to put yearend adjustment insurances.
+- **Put Yearend Adjustment Payroll And Bonus**: Call the official freee HR operation to put yearend adjustment payroll and bonus.
+- **Put Yearend Adjustment Previous Job**: Call the official freee HR operation to put yearend adjustment previous job.
+- **Update Account Item**: 勘定科目の更新
+- **Update Accounting Partner**: Update the name, availability, and common contact fields of an existing freee Accounting partner.
+- **Update Accounting Section**: Update Accounting Section using the official freee Accounting API contract.
+- **Update Approval Request**: Update Approval Request using the official freee Accounting API operation.
+- **Update Approval Requests Monthly Attendance**: Update a monthly-attendance request after it has been returned with feedback.
+- **Update Approval Requests Overtime Work**: Update an overtime-work request after it has been returned with feedback.
+- **Update Approval Requests Paid Holiday**: Update a paid-holiday request after it has been returned with feedback.
+- **Update Approval Requests Special Holiday**: Update a special-holiday request after it has been returned with feedback.
+- **Update Approval Requests Work Time**: Update a work-time correction request after it has been returned with feedback.
+- **Update Current User**: ログインユーザーの更新
+- **Update Deal**: 取引（収入・支出）の更新
+- **Update Deal Payment**: 取引（収入・支出）の支払行の更新
+- **Update Deal Renew**: Update Deal Renew using the official freee Accounting API operation.
+- **Update Employee**: Update Employee through the freee HR API.
+- **Update Employee Allowance Rules**: Call the official freee HR operation to update employee allowance rules.
+- **Update Employee Bank Account Rule**: Call the official freee HR operation to update employee bank account rule.
+- **Update Employee Basic Pay Rule**: Call the official freee HR operation to update employee basic pay rule.
+- **Update Employee Deduction Rules**: Update Employee Deduction Rules through the freee HR API.
+- **Update Employee Health Insurance Rule**: Update Employee Health Insurance Rule through the freee HR API.
+- **Update Employee Payroll Statement Remark**: 給与明細の備考の更新
+- **Update Employee Profile Rule**: Update Employee Profile Rule through the freee HR API.
+- **Update Employee Welfare Pension Insurance Rule**: 従業員の厚生年金保険の更新
+- **Update Employee Work Record**: Update an employee's daily work record.
+- **Update Employee Work Record Summary**: Call the official freee HR operation to update employee work record summary.
+- **Update Employees Attendance Tag Summaries**: 勤怠タグ月次サマリの更新
+- **Update Employees Attendance Tags**: Replace an employee's attendance tags for a date.
+- **Update Expense Application**: Update Expense Application using the official freee Accounting API operation.
+- **Update Expense Application Currency**: Update Expense Application Currency using the official freee Accounting API contract.
+- **Update Expense Application Form**: Update Expense Application Form using the official freee Accounting API contract.
+- **Update Expense Application Line Template**: 経費科目の更新
+- **Update Expense Application Parent Requests**: Link an approved general request to an in-progress or approved expense application, or unlink the current request by sending parent_id as…
+- **Update HR Group**: Update an existing organizational group in a freee HR company.
+- **Update Item**: Update Item using the official freee Accounting API contract.
+- **Update Manual Journal**: Update Manual Journal using the official freee Accounting API operation.
+- **Update Partner By Code**: Update Partner By Code using the official freee Accounting API operation.
+- **Update Payment Request**: Update Payment Request using the official freee Accounting API contract.
+- **Update Position**: 役職の更新
+- **Update Purchase Request**: Update Purchase Request using the official freee Accounting API contract.
+- **Update Receipt**: Update Receipt using the official freee Accounting API operation.
+- **Update Segment Tag**: セグメントタグの更新
+- **Update Tag**: Update Tag using the official freee Accounting API operation.
+- **Update Transfer**: Update Transfer using the official freee Accounting API contract.
+- **Update User Matcher**: 自動登録ルールの更新
+- **Update Walletable**: Update Walletable using the official freee Accounting API operation.
+- **Upsert Account Item By Code**: 勘定科目の更新（存在しない場合は作成）
+- **Upsert Accounting Section By Code**: Upsert Accounting Section By Code using the official freee Accounting API contract.
+- **Upsert Item By Code**: Upsert Item By Code using the official freee Accounting API contract.
+- **Upsert Partner By Code**: Upsert Partner By Code using the official freee Accounting API operation.
+- **Upsert Segment Tag By Code**: セグメントタグの更新（作成）

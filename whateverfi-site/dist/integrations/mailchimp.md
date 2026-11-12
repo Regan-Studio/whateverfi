@@ -1,0 +1,279 @@
+# Mailchimp
+
+Mailchimp is an email marketing and automation platform providing campaign templates, audience segmentation, and performance analytics to drive engagement and conversions
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/mailchimp/.
+
+## Actions
+
+- **Get campaign info** (read-only): Get information about a specific campaign.
+- **Get lists info** (read-only): Get information about all lists in the account.
+- **List campaigns** (read-only): Get all campaigns in an account.
+- **List recent activity** (read-only): Get up to the previous 180 days of daily detailed aggregated activity stats for a list, not including automation activity.
+- **Search members** (read-only): Search for list members.
+- **Send campaign**: Send a mailchimp campaign.
+- **Add automation**: Create a new classic automation in your mailchimp account.
+- **Add batch webhook**: Configure a webhook that will fire whenever any batch request completes processing.
+- **Add campaign**: Create a new mailchimp campaign.
+- **Add campaign feedback**: Add feedback on a specific campaign.
+- **Add campaign folder**: Create a new campaign folder.
+- **Add cart**: Add a new cart to a store.
+- **Add cart line item**: Add a new line item to an existing cart.
+- **Add connected site**: Create a new mailchimp connected site.
+- **Add customer**: Add a new customer to a store.
+- **Add domain to account**: Add a domain to the account.
+- **Add event**: Add an event for a list member.
+- **Add export**: Create a new account export in your mailchimp account.
+- **Add file**: Upload a new image or file to the file manager.
+- **Add folder**: Create a new folder in the file manager.
+- **Add interest category**: Create a new interest category.
+- **Add interest in category**: Create a new interest or 'group name' for a specific category.
+- **Add landing page**: Create a new mailchimp landing page.
+- **Add list**: Create a new list in your mailchimp account.
+- **Add member note**: Add a new note for a specific subscriber.
+- **Add member to list**: Add a new member to the list.
+- **Add member to segment**: Add a member to a static segment.
+- **Add merge field**: Add a new merge field for a specific audience.
+- **Add or remove member tags**: Add or remove tags from a list member.
+- **Add or update customer**: Add or update a customer.
+- **Add or update list member**: Add or update a list member.
+- **Add or update product variant**: Add or update a product variant.
+- **Add order**: Add a new order to a store.
+- **Add order line item**: Add a new line item to an existing order.
+- **Add product**: Add a new product to a store.
+- **Add product image**: Add a new image to the product.
+- **Add product variant**: Add a new variant to the product.
+- **Add promo code**: Add a new promo code to a store.
+- **Add promo rule**: Add a new promo rule to a store.
+- **Add segment**: Create a new segment in a specific list.
+- **Add store**: Add a new store to your mailchimp account.
+- **Add subscriber to workflow email**: Manually add a subscriber to a workflow, bypassing the default trigger settings.
+- **Add template**: Create a new template for the account.
+- **Add template folder**: Create a new template folder.
+- **Add webhook**: Create a new webhook for a specific list.
+- **Archive automation**: Archiving will permanently end your automation and keep the report data.
+- **Archive list member**: Archive a list member.
+- **Batch add or remove members**: Batch add/remove list members to static segment
+- **Batch subscribe or unsubscribe**: Batch subscribe or unsubscribe list members.
+- **Campaign abuse report details** (read-only): Get information about a specific abuse report for a campaign.
+- **Campaign statistics feedback** (read-only): Get feedback based on a campaign's statistics.
+- **Cancel campaign**: Cancel a regular or plain-text campaign after you send, before all of your recipients receive it.
+- **Create a survey campaign**: Utilize the list id and survey id to generate a campaign that links to your survey.
+- **Customer journeys api trigger for a contact**: Create a trigger step in the customer journey builder via the api.
+- **Customize signup form**: Customize a list's default signup form.
+- **Delete batch request**: Stops a batch request from running.
+- **Delete batch webhook**: Remove a batch webhook.
+- **Delete campaign**: Remove a campaign from your mailchimp account.
+- **Delete campaign feedback message**: Remove a specific feedback message for a campaign.
+- **Delete campaign folder**: Delete a specific campaign folder, and mark all the campaigns in the folder as 'unfiled'.
+- **Delete cart**: Delete a cart.
+- **Delete cart line item**: Delete a specific cart line item.
+- **Delete connected site**: Remove a connected site from your mailchimp account.
+- **Delete customer**: Delete a customer from a store.
+- **Delete domain**: Delete a verified domain from the account.
+- **Delete file**: Remove a specific file from the file manager.
+- **Delete folder**: Delete a specific folder in the file manager.
+- **Delete interest category**: Delete a specific interest category.
+- **Delete interest in category**: Delete interests or group names in a specific category.
+- **Delete landing page**: Delete a landing page.
+- **Delete list**: Delete a list from your mailchimp account.
+- **Delete list member**: Delete all personally identifiable information related to a list member, and remove them from a list.
+- **Delete merge field**: Delete a specific merge field.
+- **Delete note**: Delete a specific note for a specific list member.
+- **Delete order**: Delete an order.
+- **Delete order line item**: Delete a specific order line item.
+- **Delete product**: Delete a product.
+- **Delete product image**: Delete a product image.
+- **Delete product variant**: Delete a product variant.
+- **Delete promo code**: Delete a promo code from a store.
+- **Delete promo rule**: Delete a promo rule from a store.
+- **Delete segment**: Delete a specific segment in a list.
+- **Delete store**: Delete a store.
+- **Delete template**: Delete a specific template.
+- **Delete template folder**: Delete a specific template folder, and mark all the templates in the folder as 'unfiled'.
+- **Delete webhook**: Delete a specific webhook in a list.
+- **Delete workflow email**: Removes an individual classic automation workflow email.
+- **Get abuse report** (read-only): Get details about a specific abuse report.
+- **Get account export info** (read-only): Get information about a specific account export.
+- **Get authorized app info** (read-only): Get information about a specific authorized application.
+- **Get automated email subscriber** (read-only): Get information about a specific subscriber in a classic automation email queue.
+- **Get automation info** (read-only): Get a summary of an individual classic automation workflow's settings and content.
+- **Get batch operation status** (read-only): Get the status of a batch request.
+- **Get batch webhook info** (read-only): Get information about a specific batch webhook.
+- **Get campaign content** (read-only): Get the the html and plain-text content for a campaign.
+- **Get campaign feedback message** (read-only): Get a specific feedback message from a campaign.
+- **Get campaign folder** (read-only): Get information about a specific folder used to organize campaigns.
+- **Get campaign link details** (read-only): Get click details for a specific link in a campaign.
+- **Get campaign recipient info** (read-only): Get information about a specific campaign recipient.
+- **Get campaign report** (read-only): Get report details for a specific sent campaign.
+- **Get campaign send checklist** (read-only): Review the send checklist for a campaign, and resolve any issues before sending.
+- **Get cart info** (read-only): Get information about a specific cart.
+- **Get cart line item** (read-only): Get information about a specific cart line item.
+- **Get clicked link subscriber** (read-only): Get information about a specific subscriber who clicked a link in a specific campaign.
+- **Get connected site** (read-only): Get information about a specific connected site.
+- **Get conversation** (read-only): Api endpoint for conversations is deprecated, replaced by inbox.
+- **Get customer info** (read-only): Get information about a specific customer.
+- **Get domain info** (read-only): Get the details for a single domain on the account.
+- **Get facebook ad info** (read-only): Get details of a facebook ad.
+- **Get facebook ad report** (read-only): Get report of a facebook ad.
+- **Get file** (read-only): Get information about a specific file in the file manager.
+- **Get folder** (read-only): Get information about a specific folder in the file manager.
+- **Get growth history by month** (read-only): Get a summary of a specific list's growth activity for a specific month and year.
+- **Get information about all surveys for a list** (read-only): Get information about all available surveys for a specific list.
+- **Get interest category info** (read-only): Get information about a specific interest category.
+- **Get interest in category** (read-only): Get interests or 'group names' for a specific category.
+- **Get landing page content** (read-only): Get the the html for your landing page.
+- **Get landing page info** (read-only): Get information about a specific page.
+- **Get landing page report** (read-only): Get report of a landing page.
+- **Get latest chimp chatter** (read-only): Return the chimp chatter for this account ordered by most recent.
+- **Get list info** (read-only): Get information about a specific list in your mailchimp account.
+- **Get member info** (read-only): Get information about a specific list member, including a currently subscribed, unsubscribed, or bounced member.
+- **Get member note** (read-only): Get a specific note for a specific list member.
+- **Get merge field** (read-only): Get information about a specific merge field.
+- **Get message** (read-only): The conversation endpoint is outdated and replaced by inbox, which isn't supported by it.
+- **Get opened campaign subscriber** (read-only): Get information about a specific subscriber who opened a campaign.
+- **Get order info** (read-only): Get information about a specific order.
+- **Get order line item** (read-only): Get information about a specific order line item.
+- **Get product image info** (read-only): Get information about a specific product image.
+- **Get product info** (read-only): Get information about a specific product.
+- **Get product variant info** (read-only): Get information about a specific product variant.
+- **Get promo code** (read-only): Get information about a specific promo code.
+- **Get promo rule** (read-only): Get information about a specific promo rule.
+- **Get segment info** (read-only): Get information about a specific segment.
+- **Get store info** (read-only): Get information about a specific store.
+- **Get subscriber email activity** (read-only): Get a specific list member's activity in a campaign including opens, clicks, and bounces.
+- **Get subscriber removed from workflow** (read-only): Get information about a specific subscriber who was removed from a classic automation workflow.
+- **Get survey** (read-only): Get details about a specific survey.
+- **Get survey question report** (read-only): Get report for a survey question.
+- **Get survey report** (read-only): Get report for a survey.
+- **Get survey response** (read-only): Get a single survey response.
+- **Get template folder** (read-only): Get information about a specific folder used to organize templates.
+- **Get template info** (read-only): Get information about a specific template.
+- **Get unsubscribed member** (read-only): Get information about a specific list member who unsubscribed from a campaign.
+- **Get webhook info** (read-only): Get information about a specific webhook.
+- **Get workflow email info** (read-only): Get information about an individual classic automation workflow email.
+- **List abuse reports** (read-only): Get all abuse reports for a specific list.
+- **List account exports** (read-only): Get a list of account exports for a given account.
+- **List account orders** (read-only): Get information about an account's orders.
+- **List answers for question** (read-only): Get answers for a survey question.
+- **List api root resources** (read-only): Get links to all other resources available in the api.
+- **List authorized apps** (read-only): Get a list of an account's registered, connected applications.
+- **List automated email subscribers** (read-only): Get information about a classic automation email queue.
+- **List automated emails** (read-only): Get a summary of the emails in a classic automation workflow.
+- **List automations** (read-only): Get a summary of an account's classic automations.
+- **List batch requests** (read-only): Get a summary of batch requests that have been made.
+- **List batch webhooks** (read-only): Get all webhooks that have been configured for batches.
+- **List campaign details** (read-only): Get information about clicks on specific links in your mailchimp campaigns.
+- **List campaign feedback** (read-only): Get team feedback while you're working together on a mailchimp campaign.
+- **List campaign folders** (read-only): Get all folders used to organize campaigns.
+- **List campaign open details** (read-only): Get detailed information about any campaign emails that were opened by a list member.
+- **List campaign product activity** (read-only): Get breakdown of product activity for a campaign
+- **List campaign recipients** (read-only): Get information about campaign recipients.
+- **List campaign reports** (read-only): Get campaign reports.
+- **List cart line items** (read-only): Get information about a cart's line items.
+- **List carts** (read-only): Get information about a store's carts.
+- **List child campaign reports** (read-only): Get a list of reports with child campaigns for a specific parent campaign.
+- **List clicked link subscribers** (read-only): Get information about list members who clicked on a specific link in a campaign.
+- **List connected sites** (read-only): Get all connected sites in an account.
+- **List conversations** (read-only): List of conversations for an account is available via an endpoint, but it's deprecated in favor of inbox.
+- **List customers** (read-only): Get information about a store's customers.
+- **List domain performance stats** (read-only): Get statistics for the top-performing email domains in a campaign.
+- **List eepurl activity** (read-only): Get a summary of social activity for the campaign, tracked by eepurl.
+- **List email activity** (read-only): Get a list of member's subscriber activity in a specific campaign.
+- **List facebook ads** (read-only): Get list of facebook ads.
+- **List facebook ads reports** (read-only): Get reports of facebook ads.
+- **List facebook ecommerce report** (read-only): Get breakdown of product activity for an outreach.
+- **List folders** (read-only): Get a list of all folders in the file manager.
+- **List growth history data** (read-only): Get a month-by-month summary of a specific list's growth activity.
+- **List interest categories** (read-only): Get information about a list's interest categories.
+- **List interests in category** (read-only): Get a list of this category's interests.
+- **List landing pages** (read-only): Get all landing pages.
+- **List landing pages reports** (read-only): Get reports of landing pages.
+- **List locations** (read-only): Get the locations (countries) that the list's subscribers have been tagged to based on geocoding their ip address.
+- **List member events** (read-only): Get events for a contact.
+- **List member goal events** (read-only): Get the last 50 goal events for a member on a specific list.
+- **List member tags** (read-only): Get the tags on a list member.
+- **List members in segment** (read-only): Get information about members in a saved segment.
+- **List members info** (read-only): Get information about members in a specific mailchimp list.
+- **List merge fields** (read-only): Get a list of all merge fields for an audience.
+- **List messages** (read-only): Legacy "conversations" endpoint is deprecated.
+- **List order line items** (read-only): Get information about an order's line items.
+- **List orders** (read-only): Get information about a store's orders.
+- **List product** (read-only): Get information about a store's products.
+- **List product images** (read-only): Get information about a product's images.
+- **List product variants** (read-only): Get information about a product's variants.
+- **List promo codes** (read-only): Get information about a store's promo codes.
+- **List promo rules** (read-only): Get information about a store's promo rules.
+- **List recent member notes** (read-only): Get recent notes for a specific list member.
+- **List segments** (read-only): Get information about all available segments for a specific list.
+- **List sending domains** (read-only): Get all of the sending domains on the account.
+- **List signup forms** (read-only): Get signup forms for a specific list.
+- **List stored files** (read-only): Get a list of available images and files stored in the file manager for the account.
+- **List stores** (read-only): Get information about all stores in the account.
+- **List subscribers removed from workflow** (read-only): Get information about subscribers who were removed from a classic automation workflow.
+- **List survey question reports** (read-only): Get reports for survey questions.
+- **List survey reports** (read-only): Get reports for surveys.
+- **List survey responses** (read-only): Get responses to a survey.
+- **List template folders** (read-only): Get all folders used to organize templates.
+- **List templates** (read-only): Get a list of an account's available templates.
+- **List top email clients** (read-only): Get a list of the top email clients based on user-agent strings.
+- **List top open activities** (read-only): Get top open locations for a specific campaign.
+- **List unsubscribed members** (read-only): Get information about members who have unsubscribed from a specific campaign.
+- **List webhooks** (read-only): Get information about all webhooks for a specific list.
+- **Pause automated email**: Pause an automated email.
+- **Pause automation emails**: Pause all emails in a specific classic automation workflow.
+- **Pause rss campaign**: Pause an rss-driven campaign.
+- **Ping** (read-only): A health check for the api that won't return any account-specific information.
+- **Publish a survey**: Publish a survey that is in draft, unpublished, or has been previously published and edited.
+- **Publish landing page**: Publish a landing page that is in draft, unpublished, or has been previously published and edited.
+- **Remove list member from segment**: Remove a member from the specified static segment.
+- **Remove subscriber from workflow**: Remove a subscriber from any point in a classic automation workflow.
+- **Replicate campaign**: Replicate a campaign in saved or send status.
+- **Resend campaign**: Remove the guesswork for resending a campaign to certain segments.
+- **Resume rss campaign**: Resume an rss-driven campaign.
+- **Retrieve campaign abuse complaints** (read-only): Get a list of abuse complaints for a specific campaign.
+- **Retrieve folder contents** (read-only): Get a list of available images and files stored in this folder.
+- **Schedule campaign**: Schedule a campaign for delivery.
+- **Search campaigns** (read-only): Search all campaigns for the specified query terms.
+- **Search for tags on a list by name** (read-only): Search for tags on a list by name.
+- **Send test email**: Send a test email.
+- **Set campaign content**: Set the content for a campaign.
+- **Start automated email**: Start an automated email.
+- **Start automation emails**: Start all emails in a classic automation workflow.
+- **Start batch operation**: Begin processing a batch operations request.
+- **Unpublish a survey**: Unpublish a survey that has been published.
+- **Unpublish landing page**: Unpublish a landing page that is in draft or has been published.
+- **Unschedule campaign**: Unschedule a scheduled campaign that hasn't started sending.
+- **Update batch webhook**: Update a webhook that will fire whenever any batch request completes processing.
+- **Update campaign feedback message**: Update a specific feedback message for a campaign.
+- **Update campaign folder**: Update a specific folder used to organize campaigns.
+- **Update campaign settings**: Update some or all of the settings for a specific campaign.
+- **Update cart**: Update a specific cart.
+- **Update cart line item**: Update a specific cart line item.
+- **Update customer**: Update a customer.
+- **Update file**: Update a file in the file manager.
+- **Update folder**: Update a specific file manager folder.
+- **Update interest category**: Update a specific interest category.
+- **Update interest in category**: Update interests or 'group names' for a specific category.
+- **Update landing page**: Update a landing page.
+- **Update list member**: Update information for a specific list member.
+- **Update lists**: Update the settings for a specific list.
+- **Update merge field**: Update a specific merge field.
+- **Update note**: Update a specific note for a specific list member.
+- **Update order**: Update a specific order.
+- **Update order line item**: Update a specific order line item.
+- **Update product**: Update a specific product.
+- **Update product image**: Update a product image.
+- **Update product variant**: Update a product variant.
+- **Update promo code**: Update a promo code.
+- **Update promo rule**: Update a promo rule.
+- **Update store**: Update a store.
+- **Update template**: Update the name, html, or folder id of an existing template.
+- **Update template folder**: Update a specific folder used to organize templates.
+- **Update webhook**: Update the settings for an existing webhook.
+- **Update workflow email**: Update settings for a classic automation workflow email.
+- **Verify connected site script** (read-only): Verify that the connected sites script has been installed, either via the script url or fragment.
+- **Verify domain**: Verify a domain for sending.
+- **View default content** (read-only): Get the sections that you can edit in a template, including each section's default content.
+- **View recent activity** (read-only): Get a member's activity on a specific list, including opens, clicks, and unsubscribes.
+- **View recent activity 50** (read-only): Get the last 50 events of a member's activity on a specific list, including opens, clicks, and unsubscribes.

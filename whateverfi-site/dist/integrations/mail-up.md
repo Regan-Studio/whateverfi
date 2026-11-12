@@ -1,0 +1,159 @@
+# MailUp
+
+MailUp is an email and SMS marketing platform for managing lists, recipients, campaigns, and engagement statistics.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/mail-up/.
+
+## Actions
+
+- **Add Image**: Decode and store supplied base64 image data in either MailUp's shared console library or one list, returning the resulting full paths.
+- **Add Message Attachment**: Upload base64-encoded bytes into a specific attachment slot on one MailUp email message.
+- **Associate Personalization Endpoint With List**: Associate an existing MailUp personalization endpoint with one list.
+- **Batch Unsubscribe Recipients From List**: Remove multiple recipients' memberships from one MailUp list without deleting their global recipient records.
+- **Confirm SMS Numeric Sender**: Confirm a MailUp numeric SMS sender using the code previously delivered by the sender-confirmation flow.
+- **Copy Email Message**: Create a copy of one MailUp email message, optionally replacing its subject or internal notes.
+- **Count Message Sending Recipients** (read-only): Return MailUp's count of recipients to whom one email message was sent.
+- **Count Subscribers** (read-only): Return the subscribed-recipient count for a MailUp list or, when group_id is supplied, for one group in that list.
+- **Create Audience Group**: Create a recipient group in one MailUp list and return the complete group record.
+- **Create Content Source**: Create a named content-provider source in MailUp.
+- **Create Email Message**: Create a draft email campaign message in one MailUp list without sending it.
+- **Create Email Message from Template**: Create a new draft email message in a MailUp list from an existing template without sending it.
+- **Create List**: Create a MailUp mailing list without adding recipients or sending messages.
+- **Create Personalization Endpoint**: Create a MailUp endpoint used to obtain external personalization data.
+- **Create SMS Message**: Create a MailUp SMS draft without sending or consuming delivery credits.
+- **Create SMTP+ Account**: Create an SMTP+ user account for a MailUp list and return its generated credentials.
+- **Create Tag**: Create a named tag in one MailUp list for organizing email messages.
+- **Delete Audience Group**: Permanently delete one MailUp group.
+- **Delete Audience Recipient From List**: Delete one recipient record from one MailUp list only.
+- **Delete Audience Recipient Globally**: Permanently delete one MailUp recipient from every list in the account.
+- **Delete Content Source**: Permanently delete one MailUp content-provider source.
+- **Delete Email Message**: Permanently delete one MailUp email message from a list.
+- **Delete Email Sending Task**: Delete an existing MailUp email sending task record.
+- **Delete Image**: Permanently delete the image at an exact full MailUp path from provider storage.
+- **Delete List**: Permanently delete one MailUp list and its list-scoped configuration.
+- **Delete Message Attachment**: Permanently remove the attachment in one slot from a MailUp email message and return the remaining attachments.
+- **Delete Personalization Endpoint**: Permanently delete one MailUp personalization endpoint.
+- **Delete SMS Message**: Permanently delete one MailUp SMS draft without sending it.
+- **Delete Source Content**: Permanently delete one keyed content item from a MailUp content-provider source.
+- **Delete Tag**: Permanently delete one tag from a MailUp list.
+- **Disable Trusted Sender**: Disable a trusted sender registration by ID so it is no longer active for sending.
+- **Disassociate Personalization Endpoint From List**: Remove one MailUp personalization endpoint association from a list.
+- **Empty Audience Group**: Remove every recipient membership from one MailUp group.
+- **Find Recipients** (read-only): Find MailUp recipients by email address, mobile number, or both.
+- **Get Account Details** (read-only): Return the connected MailUp account identity, plan, trial status, expiry, and available credits.
+- **Get Account Info** (read-only): Return the authenticated MailUp account identity, console version, trial flag, and optional expiry/URL.
+- **Get Deferred Dispatch Date** (read-only): Get the first useful MailUp date for scheduling a sending task.
+- **Get Earliest Deferred SMS Dispatch Date** (read-only): Return MailUp's earliest useful scheduling date for one SMS sending task.
+- **Get Email Message** (read-only): Return the content, subject, tracking settings, tags, dynamic fields, and attachments for one MailUp email message.
+- **Get Email Template Details** (read-only): Return metadata and content for one email template in a MailUp list.
+- **Get Import Details** (read-only): Return the complete MailUp import configuration and nested valid/invalid row totals for one import ID.
+- **Get Import Sending** (read-only): Return the sending and message IDs for confirmation requests generated by one MailUp import.
+- **Get Import Status** (read-only): Return completion and recipient outcome counts for an asynchronous MailUp import ID.
+- **Get List** (read-only): Return configuration and sender details for one MailUp mailing list by ID.
+- **Get MailUp Login URL**: Create an ephemeral URL that logs a user into the MailUp platform.
+- **Get Message Statistics** (read-only): Return aggregate recipient, view, click, bounce, and unsubscription counts for one MailUp email message using five read-only statistics…
+- **Get Message Statistics Pages** (read-only): Return MailUp's precompiled public statistics-page URLs for one message.
+- **Get Personalization Endpoint** (read-only): Retrieve one MailUp personalization endpoint including its configured details.
+- **Get Recipient** (read-only): Return contact details, dynamic fields, and list membership states for one MailUp recipient ID.
+- **Get Recipient Statistics** (read-only): Return aggregate delivery, view, click, bounce, and unsubscription counts for one MailUp recipient using five rate-limited, read-only…
+- **Get SMS Message Details** (read-only): Return the complete XSD-defined content and settings for one MailUp SMS message.
+- **Get SMS Message Sending Report** (read-only): Return aggregate duration, cost, recipient-message, and billable SMS-part totals for one SMS message.
+- **Get SMS Numeric Sender Status** (read-only): Return the verification status code and description for one numeric MailUp SMS sender.
+- **Get SMTP+ Priority Codes** (read-only): List the SMTP+ priority codes available in MailUp.
+- **Get Tracking Status for Every List** (read-only): Get one recipient's email tracking status across every MailUp list.
+- **Get Tracking Status for List** (read-only): Get one recipient's email tracking status for a specific MailUp list.
+- **Get Trusted Sender** (read-only): Get one trusted sender registration by ID.
+- **Import Audience Recipient To Group**: Synchronously create or update one email recipient and add them to a MailUp group, returning the recipient ID.
+- **Import Audience Recipient To List**: Synchronously create or update one email recipient in a MailUp list and return the recipient ID.
+- **Import One SMS Recipient To Group**: Add or update one SMS recipient in a MailUp group and return the recipient ID.
+- **Import One SMS Recipient To List**: Add or update one SMS recipient in a MailUp list and return the recipient ID.
+- **Import Recipients**: Queue an asynchronous import that adds or updates a non-empty recipient batch in one MailUp list or group.
+- **Import SMS Recipients To Group**: Asynchronously add or update an SMS recipient batch in a MailUp group and return the import ID.
+- **Import SMS Recipients To List**: Asynchronously add or update an SMS recipient batch in a MailUp list and return the import ID.
+- **List Archived Email Messages** (read-only): Return one page of archived email messages from a specific MailUp list.
+- **List Audience Email Opt-Ins By List** (read-only): Return one page of subscribed and unsubscribed email recipients for a MailUp list with complete opt-in and opt-out details.
+- **List Audience Email Opt-Ins By Recipient** (read-only): Return one page of a MailUp recipient's email subscription status and opt-in/opt-out history across lists.
+- **List Audience SMS Opt-Ins By List** (read-only): Return one page of subscribed and unsubscribed SMS recipients for a MailUp list with complete opt-in and opt-out details.
+- **List Audience SMS Opt-Ins By Recipient** (read-only): Return one page of a MailUp recipient's SMS subscription status and opt-in/opt-out history across lists.
+- **List Content Sources** (read-only): Return one page of MailUp content-provider sources.
+- **List Country Codes** (read-only): Return MailUp's complete unpaged country-code reference for list sender settings.
+- **List Current User Email Messages** (read-only): Return one page of cloned and original email messages across lists for the current MailUp user.
+- **List Deferred SMS Sendings** (read-only): Return SMS sending tasks scheduled for deferred dispatch.
+- **List Dynamic Fields** (read-only): Return one page of recipient dynamic-field definitions and IDs.
+- **List Email Messages** (read-only): Return one page of email campaign messages in a MailUp list, including message IDs used by message editing, sending, and statistics tools.
+- **List Email Send History** (read-only): Return one page of completed send-history records for a specific MailUp email message.
+- **List Email Send History for List** (read-only): Return one page of send-history records across all email messages in one MailUp list.
+- **List Email Sendings** (read-only): Return one page of MailUp email sending tasks for one queue state.
+- **List Email Templates** (read-only): Return one page of email templates defined in a specific MailUp list.
+- **List Enabled Tags** (read-only): Return one page of enabled tags configured for a specific MailUp list.
+- **List Group Recipients** (read-only): Return one page of recipients currently associated with a MailUp group.
+- **List Groups** (read-only): Return one page of recipient groups in a MailUp list, including group IDs used by group-scoped tools.
+- **List Images** (read-only): Return all full image paths from either the console-wide shared library or one MailUp list.
+- **List Immediate SMS Sendings** (read-only): Return SMS sending tasks scheduled for immediate dispatch.
+- **List Import Status Codes** (read-only): Return MailUp's complete reference table for interpreting import status_code values.
+- **List Imports** (read-only): Return one page of MailUp recipient imports with status codes and row counts.
+- **List Last Sent SMS Messages** (read-only): Return the most recently sent SMS messages and their account-billing costs for one list.
+- **List List Recipients** (read-only): Return one page of recipients in a MailUp list for one subscription state.
+- **List List Scopes** (read-only): Return MailUp's complete unpaged list-purpose reference table for scope_code settings.
+- **List Lists** (read-only): Return one page of mailing lists available to the connected MailUp user, including the list IDs required by list-scoped tools.
+- **List Message Attachments** (read-only): Return all attachment slots currently configured on one MailUp email message.
+- **List Message Events** (read-only): Return one page of recipient-level delivery, view, click, bounce, or unsubscription statistics for a sent MailUp email message.
+- **List Message URL Click Details** (read-only): Return one page of clicked links for a MailUp message with each link's total and per-recipient click counts.
+- **List Message URL Clicks** (read-only): Return one page of links with at least one click for a MailUp message, with the click total for each URL or MailUp special-link label.
+- **List Non-Temporary SMS Errors** (read-only): Return undelivered SMS error totals grouped by originator address.
+- **List Pending SMS Recipients By List** (read-only): Return recipients whose SMS subscription is pending in one MailUp list.
+- **List Personalization Endpoints** (read-only): Return one page of MailUp personalization endpoints.
+- **List Personalization Endpoints By List** (read-only): Retrieve all personalization endpoints associated with one MailUp list.
+- **List Published Email Messages** (read-only): Return one page of email messages currently visible online for a specific MailUp list.
+- **List Recipient Activity** (read-only): Return one page of sent-email delivery, view, click, bounce, or unsubscription statistics for one MailUp recipient.
+- **List Recipient Bounce Details** (read-only): Return one page of messages that bounced for a MailUp recipient, including message subject, notes, and bounce classification when available.
+- **List Recipient Click Details** (read-only): Return one page of messages in which a MailUp recipient clicked, including each message's total and per-URL click counts.
+- **List Recipient Groups** (read-only): Return one page of groups to which a recipient belongs within one MailUp list.
+- **List SMS Message Send History** (read-only): Return sending attempts and recipient counts for one SMS message.
+- **List SMS Message Sending Report Details** (read-only): Return per-recipient delivery statuses and errors for one SMS message.
+- **List SMS Messages By List** (read-only): Return SMS campaign message summaries from one MailUp list.
+- **List SMS Recipients By Group** (read-only): Return recipients in one MailUp group using the SMS channel projection.
+- **List Source Contents** (read-only): Return one page of content items from one MailUp content-provider source.
+- **List Subscribed SMS Recipients By List** (read-only): Return recipients subscribed to the SMS channel in one MailUp list.
+- **List Temporary SMS Errors** (read-only): Return temporary undelivered SMS error totals grouped by originator address.
+- **List Time Zones** (read-only): Return MailUp's complete unpaged time-zone reference for list settings.
+- **List Trusted Senders** (read-only): Return one page of trusted sender registrations.
+- **List Unscheduled SMS Sendings** (read-only): Return SMS sending tasks that still need a dispatch schedule.
+- **List Unsubscribed SMS Recipients By List** (read-only): Return recipients unsubscribed from the SMS channel in one MailUp list.
+- **Register Trusted Sender**: Register an email address as a trusted sender and begin MailUp's authorization process.
+- **Request SMS Numeric Sender Confirmation Code**: Request the authentication code for a MailUp numeric SMS sender and return whether MailUp accepted the request.
+- **Reset SMTP+ Account**: Reset an existing SMTP+ user account and return a replacement password.
+- **Schedule Deferred Email Dispatch**: Queue an existing MailUp email campaign for deferred dispatch at the supplied UTC date in exact yyyy-MM-dd HH.
+- **Schedule Deferred SMS Dispatch**: Explicitly schedule an existing MailUp SMS sending for a supplied future Date.
+- **Schedule Immediate Email Dispatch**: Irreversibly move an existing inactive MailUp email sending task into the immediate sending queue, where delivery can begin.
+- **Schedule Immediate SMS Dispatch**: Explicitly queue an existing MailUp SMS sending for immediate dispatch.
+- **Send Email Message to Group**: Irreversibly enqueue, defer, or snapshot an existing MailUp email message for recipients in one group.
+- **Send Email Message to List**: Irreversibly enqueue, defer, or snapshot an existing MailUp email message for recipients in one list, optionally including or excluding…
+- **Send Email Message to Recipient**: Irreversibly enqueue, defer, or snapshot an existing MailUp email message for one recipient email address.
+- **Send SMS Message To Group**: Irreversibly send or schedule an existing SMS message to recipients in one MailUp group.
+- **Send SMS Message To List**: Irreversibly send or schedule an existing SMS message to recipients in one MailUp list.
+- **Send SMS Message To Recipient**: Irreversibly send an existing MailUp SMS message directly to one Prefix/Number.
+- **Set Email Message Dynamic Fields**: Enable or disable dynamic recipient-field substitution on one MailUp email message and return its complete current details.
+- **Set SMS Message Dynamic Fields**: Explicitly enable or disable dynamic recipient-field substitution for one MailUp SMS draft.
+- **Set Tracking for Every List**: Explicitly enable or disable email tracking for one recipient across every MailUp list.
+- **Set Tracking for List**: Explicitly enable or disable email tracking for one recipient on one MailUp list.
+- **Stop Email Sending Task**: Stop an existing MailUp email sending task and prevent its remaining queued email deliveries.
+- **Subscribe Audience Recipient To Group**: Add an existing MailUp recipient to one group.
+- **Subscribe Recipient To List**: Extend an already-subscribed email recipient's membership to one additional MailUp list.
+- **Subscribe SMS Recipient To Group**: Add an existing SMS recipient to one MailUp group.
+- **Subscribe SMS Recipient To List**: Subscribe an existing recipient to the SMS channel of one MailUp list.
+- **Unsubscribe Audience Recipient From Group**: Remove one recipient from a MailUp group without unsubscribing that recipient from the parent list.
+- **Unsubscribe Audience Recipient From Lists**: Unsubscribe one recipient from every explicitly supplied MailUp list ID in one request.
+- **Unsubscribe Recipient From List**: Unsubscribe an existing email recipient from one MailUp list and remove the recipient from every group owned by that list, without…
+- **Unsubscribe SMS Recipient From List**: Remove one recipient's SMS subscription from one MailUp list without deleting the recipient.
+- **Unsubscribe SMS Recipient From Lists**: Remove one recipient's SMS subscriptions from an explicit set of MailUp lists and report per-list results.
+- **Update Audience Group**: Update explicitly supplied fields of a MailUp group.
+- **Update Audience Recipient Detail**: Update explicitly supplied contact and dynamic-field details for a MailUp address-book recipient.
+- **Update Content Source**: Update supplied settings of one MailUp content-provider source.
+- **Update Email Message**: Update an existing MailUp email message's subject and content while preserving omitted settings.
+- **Update List**: Update only supplied settings on one MailUp list.
+- **Update Online Email Visibility**: Publish or hide one MailUp email message on the list's online archive.
+- **Update Personalization Endpoint**: Replace the configuration of one MailUp personalization endpoint.
+- **Update SMS Message**: Replace documented fields of one MailUp SMS draft without sending it.
+- **Update Source Contents**: Add or update content items in one MailUp content-provider source and return the activity ID.
+- **Update Tag**: Replace the name and optionally the enabled state of one tag in a MailUp list.

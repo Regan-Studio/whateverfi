@@ -1,0 +1,184 @@
+# Sentry
+
+Integrate Sentry to manage your error tracking and monitoring.
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/sentry/.
+
+## Actions
+
+- **Access project information** (read-only): Retrieves detailed information for a sentry project, given its existing organization and project id or slug.
+- **Add organization member via email**: Invites a new member (or re-invites an existing non-accepted member) to a sentry organization via email, allowing specification of…
+- **Create release for organization**: Creates a new sentry release for an existing organization, associating it with specified projects that must belong to that organization.
+- **Delete organization member**: Permanently removes a member from a sentry organization, revoking their access to that organization and all its associated projects.
+- **Get organization by id or slug** (read-only): Retrieves a sentry organization by its id or slug.
+- **Get organization release version** (read-only): Retrieves detailed information, including optional health data and statistics, for a specific release version within a sentry organization.
+- **Retrieve project issues list** (read-only): Retrieves a list of issues for a sentry project, defaulting to unresolved issues unless an empty query string is provided or specific…
+- **Retrieve team info** (read-only): Retrieves detailed information for an existing sentry team within its organization, optionally expanding related data (e.g., projects) or…
+- **Update project details**: Updates a sentry project's settings (e.g., name, slug, platform, bookmark status).
+- **Update project issue status and details**: Bulk update attributes of issues in a sentry project, targeting issues by a list of ids or by a query status (which implies updating all…
+- **Add a symbol source to a project**: Adds a new custom symbol source (http, gcs, or s3) to a project for fetching debug symbols.
+- **Add or remove user email by id**: Adds or removes a secondary email for an existing sentry user, determined by whether the email already exists for that user.
+- **Add team member in organization**: Adds an existing member of an organization to one of its teams.
+- **Add team to project**: Grants a sentry team access to a sentry project within the specified sentry organization.
+- **Create an external team**: Links an external team or channel (e.g., slack, github) to an existing sentry team, using a pre-configured integration for the specified…
+- **Create dashboard with widgets**: Creates a sentry dashboard with widgets for an organization.
+- **Create external user for organization**: Links a sentry user to an external identity provider's user within a sentry organization.
+- **Create organization alert rule**: Creates a sentry metric alert rule for an organization, mandating a 'critical' trigger, typically for a single project, where actions may…
+- **Create organization monitor**: Creates a new monitor (type 'cron job') within a sentry organization to track scheduled tasks, allowing configuration of its name, slug…
+- **Create organization team**: Creates a new team in a sentry organization, requiring either a 'slug' (preferred, as 'name' is deprecated) or 'name' to define the team.
+- **Create project key with optional rate limiting**: Creates a new client key (dsn) for an existing sentry project, with optional custom rate limit configuration.
+- **Create project rule for alerts**: Creates a sentry project alert rule by defining conditions, actions, and optional filters using specific json structures (detailed in…
+- **Create project webhook subscription**: Registers a new webhook subscription for a sentry project to send http post notifications to a specified url for given events, provided…
+- **Create release deploy for org**: Creates a new deploy record in sentry to track the introduction of a release version into a specific environment.
+- **Create scim group for organization**: Creates a new sentry team (scim group) within an organization where scim is enabled.
+- **Create sentry external issue link**: Links an existing sentry issue to an issue in an external service, or updates an existing link, requiring a configured sentry app…
+- **Create team project for organization**: Creates a new sentry project for an existing organization and team, allowing configuration of its name, slug, platform, and default alert…
+- **Create user for SAML integration**: Creates a new sentry organization member via a scim request for saml integration.
+- **Deactivate an organization member**: Deactivates and permanently deletes a sentry organization member by using a scim patch operation to set their 'active' attribute to 'false'.
+- **Delete a project symbol source**: Deletes a specific custom symbol source from a project.
+- **Delete a team from an organization (SCIM v2)**: Permanently and irreversibly deletes a specific team from a sentry organization via a scim v2 request, provided scim integration is…
+- **Delete an external team by id**: Unlinks a previously established external team from a sentry team.
+- **Delete dsyms for project**: Permanently removes a specific debug information file (dif), used for symbolicating crash reports, from the specified sentry project and…
+- **Delete external issue by uuid**: Unlinks an external issue (e.g., from jira/github), identified by external issue id, from the sentry app installation specified by uuid.
+- **Delete external user from organization**: Deletes the link between an external user (e.g., from an sso provider) and a sentry user within the specified sentry organization.
+- **Delete member from team**: Removes an organization member from a sentry team, revoking their team-specific permissions, provided the member is currently part of that…
+- **Delete org notification action**: Deletes a specific spike protection notification action for a sentry organization, where action id must be a valid action associated with…
+- **Delete organization alert rule**: Deletes a specific metric alert rule within a sentry organization.
+- **Delete organization dashboard**: Deletes a custom dashboard or tombstones (marks as deleted) a pre-built dashboard within a sentry organization.
+- **Delete organization discover query**: Permanently removes a specific saved discover query (a configuration for exploring event data) from a sentry organization.
+- **Delete organization integration**: Permanently deletes a specific integration previously installed for the sentry organization.
+- **Delete organization issue**: Permanently deletes a specific sentry issue, identified by its id, from an organization.
+- **Delete organization monitor**: Deletes a sentry cron monitor or, if environment is specified, only specific environments within that monitor.
+- **Delete organization release**: Permanently and irreversibly removes a sentry release, including all its associated files, identified by its version from the specified…
+- **Delete project by id**: Schedules a sentry project for asynchronous deletion within a specified organization, hiding it from most public views once the process…
+- **Delete project hook**: Deletes a specific service hook from a sentry project using its organization, project, and hook identifiers.
+- **Delete project issues**: Permanently removes specified issues from a sentry project.
+- **Delete project key**: Permanently deletes a specific client key (dsn) for a project, preventing it from being used to send events to sentry.
+- **Delete project monitor**: Deletes a sentry monitor, or optionally only its specified environments, for a given project.
+- **Delete project replay**: Permanently deletes a specific sentry session replay (a video-like reproduction of user interactions, including console logs and network…
+- **Delete project rule**: Permanently deletes a specific issue alert rule from an existing project within an existing sentry organization.
+- **Delete project team association**: Revokes a team's access to a sentry project.
+- **Delete release file**: Permanently deletes a specific file from an existing release, project, and organization.
+- **Delete release file by id**: Permanently deletes a specific build artifact (e.g., source map, application bundle) associated with a release.
+- **Delete team by organization and team slug**: Schedules a sentry team for asynchronous deletion, which releases the team's slug for reuse upon successful scheduling.
+- **Delete user emails by id**: Permanently removes a sentry user's email address.
+- **Delete user from org**: Removes a scim-managed member from a sentry organization that has scim enabled, permanently revoking their access.
+- **Enable spike protection for an organization**: Enables or updates spike protection for specified projects (or all projects using ['$all']) within an existing sentry organization, to…
+- **Fetch issue event by id** (read-only): Retrieves the 'latest', 'oldest', or 'recommended' event for a sentry issue, optionally filtered by environment(s).
+- **Fetch organization alert rules** (read-only): Retrieves a list of active metric alert rules for an existing sentry organization, identified by its id or slug.
+- **Fetch organization release threshold statuses** (read-only): Retrieves derived health statuses for release thresholds in a sentry organization for a given time range, optionally filtered by…
+- **Fetch organization replay count** (read-only): Retrieves the total count of session replays for a specified sentry organization, filterable by time range, environment, project, and query.
+- **Fetch organization replay details** (read-only): Retrieves detailed information for a specific replay session by id within a sentry organization, optionally filtering time-series data…
+- **Fetch organization replay selectors** (read-only): Fetches replay selectors (css selectors for session replays) for a sentry organization, filterable by various criteria.
+- **Fetch project environment details** (read-only): Retrieves detailed information for a specific environment within a sentry project.
+- **Fetch project ownership details** (read-only): Retrieves the ownership configuration, like codeowners rules or issue owner settings, for a specified sentry project.
+- **Fetch project release files** (read-only): Retrieves artifact files (e.g., source maps, debug information files) for a specific release version in a sentry project.
+- **Fetch project replay clicks** (read-only): Fetches a list of user click interactions for a specific sentry session replay, including the clicked dom element id and timestamp.
+- **Fetch replay recording segment** (read-only): Retrieves a specific recording segment for a sentry replay, requiring valid organization, project, replay, and segment identifiers.
+- **Fetch Tag Values for Issue** (read-only): Retrieves a list of distinct values for a specified tag key associated with an existing sentry issue, useful for understanding tag…
+- **Get activation of alert rule for organization** (read-only): Retrieves all activations (triggered instances) for a specific metric alert rule within a sentry organization.
+- **Get integration details by org** (read-only): Retrieves details for a specific integration, identified by integration id, installed within an existing sentry organization, identified…
+- **Get organization details** (read-only): Retrieves sentry organizations accessible via the current authentication, with scope varying between user (all in region) and api key…
+- **Get organization environments** (read-only): Retrieves a list of deployment environments (e.g., 'production', 'staging') for a sentry organization, optionally filtering by visibility.
+- **Get organization issue details** (read-only): Retrieves detailed information for a specific issue within a sentry organization.
+- **Get organization monitor by id or slug** (read-only): Retrieves detailed information for a specific monitor (e.g., a cron job or scheduled task) within an organization.
+- **Get organization sessions** (read-only): Retrieves time series data for an organization's sentry project release health sessions.
+- **Get organization stats summary** (read-only): Retrieves summarized event statistics for a sentry organization, aggregated by project, allowing queries for event counts or unique…
+- **Get project event stats** (read-only): Retrieves event statistics for a specified sentry project, returning data as [timestamp, count] pairs.
+- **Get project events** (read-only): Retrieves a list of error events for a specified project within a sentry organization, with options for pagination and detail level.
+- **Get project hook** (read-only): Retrieves detailed information for an existing service hook, identified by hook id, within a specific sentry project and organization.
+- **Get project list** (read-only): Retrieves a list of sentry projects (representing monitored applications or services), useful for discovery or selecting a project for…
+- **Get project monitor by id** (read-only): Retrieves detailed information for a specific sentry cron monitor, provided the organization, project, and monitor exist.
+- **Get project rule details** (read-only): Retrieves detailed information for a specific issue alert rule within a sentry project.
+- **Get scim group by team id** (read-only): Retrieves scim group information for a sentry team, if scim is enabled for the organization.
+- **Get sentry app installations for organization** (read-only): Retrieves a list of sentry app installations for a given organization, which must exist.
+- **Get team members by id or slug** (read-only): Retrieves a list of all active members for a sentry team, excluding users with pending invitations.
+- **Get who viewed replay by project** (read-only): Retrieves users who viewed a specific, existing session replay within a sentry project and organization.
+- **List a project's client keys** (read-only): Retrieves a list of client keys (dsns), used by sentry sdks to send events, for a specified project within an organization.
+- **List organization dashboards** (read-only): Retrieves a list of custom dashboards for a sentry organization, with pagination support.
+- **List organization members** (read-only): Lists all members, including those with pending invitations, for a sentry organization.
+- **List organization releases** (read-only): Retrieves a list of releases for an existing sentry organization, optionally filtering by a query string that matches the start of the…
+- **List organization repositories** (read-only): Retrieves a list of version control repositories for a specific sentry organization, which must exist and is identified by its id or slug.
+- **List organization user teams** (read-only): Retrieves a list of all teams that the authenticated user has access to within the specified sentry organization.
+- **List project users** (read-only): Retrieves users who have interacted with or are recognized within a specific sentry project, optionally filtered by a query.
+- **List SCIM v2 organization users** (read-only): Retrieves a paginated list of scim (system for cross-domain identity management) users for a sentry organization, allowing for filtering,…
+- **List teams in organization** (read-only): Lists teams for an existing sentry organization, optionally including project details and supporting pagination via a cursor.
+- **Modify organization monitor data**: Updates an existing sentry monitor's properties, requiring name and type (must be 'cron job'), and optionally slug, status, owner, or is…
+- **Modify organization notification action**: Modifies an organization's notification action, specifically for spike-protection triggers.
+- **Modify organization settings**: Updates settings for a sentry organization, such as name, slug, member roles, privacy, and integrations.
+- **Modify release file attributes**: Updates attributes (e.g., name, distribution) of a specific file within an existing release, identified by organization, version, and file…
+- **Patch SCIM group operations**: Performs scim patch operations (rfc 7644) to update attributes of a scim-enabled sentry team, provided scim integration is active for the…
+- **Retrieve alert rule details** (read-only): Retrieves detailed information for a specific metric alert rule within a sentry organization.
+- **Retrieve an organization's repository commits** (read-only): Retrieves a list of commits for a given repository within a sentry organization.
+- **Retrieve commit files for release** (read-only): Retrieves files changed in commits for a specified sentry release.
+- **Retrieve dsym files for project** (read-only): Retrieve a list of debug information files (dsym files) for a specified sentry project, used for symbolication to display human-readable…
+- **Retrieve event id for organization** (read-only): Resolves a sentry event id to its project and issue details within an accessible sentry organization.
+- **Retrieve files for release** (read-only): Retrieves artifact files for a specific release version in a sentry organization.
+- **Retrieve issue events by id** (read-only): Retrieves events for a specified sentry issue id, which must be an existing issue.
+- **Retrieve issue hashes for organization** (read-only): Retrieves a list of grouping checksums (hashes) generated by sentry for a specific issue within an organization, used for understanding…
+- **Retrieve issue tag details** (read-only): Retrieves detailed information (e.g., top values, counts) for a specific tag key on an existing sentry issue.
+- **Retrieve monitor checkins** (read-only): Retrieves the history of check-ins for a sentry monitor, providing insights into the health and performance of associated scheduled tasks.
+- **Retrieve monitor checkins by org** (read-only): Retrieves check-ins (pings/heartbeats of a monitored cron job or task) for a specific monitor within a sentry organization.
+- **Retrieve notification action by org id** (read-only): Retrieves details for a specific spike protection notification action, which defines alerts for triggered spike protection rules, within a…
+- **Retrieve org integration config** (read-only): Retrieves configuration for all integrations, or a specific integration if providerkey is given, for an existing sentry organization.
+- **Retrieve organization dashboard** (read-only): Fetches detailed information about a specific custom dashboard within a sentry organization.
+- **Retrieve organization events** (read-only): Retrieves discover event data for a sentry organization.
+- **Retrieve organization integrations list** (read-only): Retrieves a list of available integrations for an existing sentry organization.
+- **Retrieve organization member** (read-only): Retrieves details for a sentry organization member or pending invitee, including role, teams, and status, using their member id and the…
+- **Retrieve organization monitors** (read-only): Retrieves cron monitors for a sentry organization, including details of nested monitor environments.
+- **Retrieve organization projects** (read-only): Retrieves a list of sentry projects for a specified organization (which must be accessible), supporting pagination via cursor.
+- **Retrieve organization relay usage** (read-only): Retrieves relay usage information, primarily a list of trusted relays, for a specified sentry organization, which must have relay usage…
+- **Retrieve organization release commits** (read-only): Retrieves a list of commits for a given release version in an existing sentry organization, if the release exists.
+- **Retrieve organization replays** (read-only): Fetches session replays for a sentry organization.
+- **Retrieve organization SCIM groups** (read-only): Retrieves a paginated list of scim groups (teams) for a sentry organization.
+- **Retrieve organization stats v2** (read-only): Retrieves sentry organization event statistics.
+- **Retrieve project environments** (read-only): Retrieves a list of environments for an existing project within a sentry organization.
+- **Retrieve project event by id** (read-only): Retrieves detailed information for a specific sentry event using its id, organization identifier, and project identifier.
+- **Retrieve project filter data** (read-only): Retrieves a sentry project's current data filtering settings, used to ignore events from sources like localhost, web crawlers, or legacy…
+- **Retrieve project hooks** (read-only): Return a list of service hooks (webhooks) bound to a sentry project, used to send notifications to external services upon event occurrences.
+- **Retrieve project key details** (read-only): Retrieves details of a specific client key (dsn) for a sentry project, which is used by sentry sdks to send event data.
+- **Retrieve project members list** (read-only): Retrieves active organization members belonging to any team assigned to the specified sentry project.
+- **Retrieve project release file details** (read-only): Retrieves metadata (default) or raw content (if download is true) for a specific file within a sentry project's release version.
+- **Retrieve project rules by org and project id** (read-only): Retrieves a list of active issue alert rules associated with a specific project within an organization.
+- **Retrieve project symbol sources** (read-only): Retrieves custom symbol sources for a sentry project, either listing all or fetching a specific one if its id is provided.
+- **Retrieve project tag values** (read-only): Retrieves up to 1000 unique values for a specified tag key that has been recorded for events within a sentry project.
+- **Retrieve project teams** (read-only): Retrieves a list of teams with explicit access to a specific project within a sentry organization.
+- **Retrieve release commits** (read-only): Retrieves a list of commits associated with a specific release version within a sentry project.
+- **Retrieve release deployments** (read-only): Retrieves a list of all deployment records for a specific release version in an organization, detailing each deployment's environment and…
+- **Retrieve release file by id** (read-only): Retrieves a specific file's content or its metadata from a sentry release, using the download parameter to choose between raw content or…
+- **Retrieve replay recording segments** (read-only): Retrieves a paginated list of recording segments for a specific sentry replay, used for reconstructing or analyzing the replay.
+- **Retrieve saved discover queries** (read-only): Retrieves a list of saved discover queries for a sentry organization, optionally filtered and sorted.
+- **Retrieve saved discover query for organization** (read-only): Retrieves a specific saved discover query (a predefined set of filters and conditions for exploring event data) for a sentry organization.
+- **Retrieve short id for organization** (read-only): Resolves an existing sentry short id to its issue details within a valid sentry organization.
+- **Retrieve source map debug event** (read-only): Retrieves detailed debug information for diagnosing source map processing issues for a specific sentry event, stack trace frame, and…
+- **Retrieve team projects** (read-only): Retrieves a list of sentry projects for a specific team within an organization, supporting pagination via a cursor.
+- **Retrieve user email information** (read-only): Retrieves a list of email addresses for an existing sentry user, identified by their user id.
+- **Retrieve user feedback for project** (read-only): Retrieves user feedback for a project from sentry's older 'user reports' system, excluding feedback from the modern 'user feedback widget'.
+- **Retrieve user via SCIM API** (read-only): Retrieves an individual sentry organization member's details accessible via scim v2 using their member id, noting that firstname and…
+- **Save organization discover query**: Saves a new discover query with a unique name for a sentry organization, allowing reuse of search criteria for analyzing event data…
+- **Submit notification action API data**: Creates a sentry notification action for 'spike-protection' triggers, requiring integration id if service type is 'slack', 'pagerduty', or…
+- **Submit project user feedback**: Deprecated.
+- **Switch team role for member**: Changes a member's role within a sentry team, ensuring the member is already part of the team and that any organization-level role…
+- **Toggle project filter status**: Updates the status or configuration of a specific inbound data filter for a sentry project.
+- **Update a saved query for an organization**: Updates an existing discover saved query for a sentry organization.
+- **Update environment visibility**: Updates the visibility of a specific environment within a sentry project.
+- **Update external team integration**: Updates an existing external team integration's display name, provider, sentry integration id, or external id.
+- **Update external user for organization**: Updates attributes of an existing external user linkage (identified by external user id) within a sentry organization (specified by…
+- **Update issue attributes in organization**: Updates specified attributes of an existing sentry issue within a sentry organization, leaving other attributes unchanged.
+- **Update organization alert rules**: Replaces an existing sentry metric alert rule's configuration.
+- **Update organization dashboard**: Updates an existing custom dashboard, allowing modifications to its title, widgets, and data filters.
+- **Update organization member role**: Updates a sentry organization member's organization-level role (orgrole) and/or their team roles (teamroles), ensuring the initiator has…
+- **Update project key configuration**: Updates configuration settings (e.g., name, status, rate limits, sdk options) for an existing sentry client key (dsn), identified by key…
+- **Update project monitor**: Updates an existing sentry monitor (used for tracking recurring tasks/cron jobs) within a specific organization and project, allowing…
+- **Update project ownership settings**: Updates the ownership configuration settings (raw rules, fallthrough, auto-assignment, codeowners sync) for a sentry project.
+- **Update project release file details**: Updates the name (path) or distribution identifier of a specific file within an existing project release in sentry.
+- **Update Project Rule By Id**: Updates an existing sentry project issue alert rule by rule id, completely overwriting it.
+- **Update release details for organization**: Updates an existing sentry release's details for an organization, including its reference, url, release date, associated commits, or…
+- **Update symbol source settings**: Updates an existing custom symbol source's settings in a sentry project, such as its type, name, layout preferences, and connection…
+- **Update team information by organization id**: Updates the slug for an existing team within a sentry organization.
+- **Update user email**: Updates the primary email for a sentry user.
+- **Update webhook configuration**: Updates an existing sentry service hook's target url and subscribed event types for a given project and organization.
+- **Upload dsyms file to project**: Uploads a dsym (debug symbols) zip archive, containing an apple .dsym folder, to the specified sentry project for symbolicating crash…
+- **Upload file to project release**: Uploads a file to a sentry project release, for an existing organization, project, and version.
+- **Upload release file to organization**: Uploads a new file, such as a source map or debug information, to an existing release version in a sentry organization.
+- **View organization notification actions** (read-only): Retrieves spike protection notification actions for a sentry organization, filterable by project ids or slugs (slugs take precedence).

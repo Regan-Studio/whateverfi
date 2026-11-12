@@ -1,0 +1,167 @@
+# Dynatrace
+
+Dynatrace provides observability, analytics, automation, settings, documents, and telemetry APIs for monitored environments.
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/dynatrace/.
+
+## Actions
+
+- **Acquire Lock**: Acquire or extend the current user's lock on a document.
+- **Add Direct Share Recipients**: Add users or groups to an accessible Dynatrace direct share.
+- **Add Settings Object Accessor Permissions**: Grant read or write permissions on a settings object to one accessor.
+- **Autocomplete Grail Query** (read-only): Return structured Dynatrace Grail DQL completion suggestions at an optional cursor position.
+- **Bulk Delete Document**: Move up to 100 documents to trash in one request and return the outcome for each document.
+- **Cancel Execution**: Request cancellation of an active workflow execution.
+- **Cancel Grail Query**: Cancel a Grail query identified by its request token.
+- **Cancel Task Execution**: Request cancellation of an active task execution.
+- **Claim Environment Share**: Claim another user's environment share and gain its granted access to the shared document.
+- **Close Problem**: Close an open Dynatrace problem and add the supplied closing comment.
+- **Create Business Calendar**: Create a Dynatrace Automation business calendar.
+- **Create Direct Share**: Create a read or read-write direct share for a Dynatrace document.
+- **Create Document**: Create a Dynatrace document from metadata and up to 50 MB of binary content.
+- **Create Environment Share**: Create an environment-wide share link for a document owned by or reshareable by the connected user.
+- **Create Problem Comment**: Add a new visible comment to an existing Dynatrace problem.
+- **Create Scheduling Rule**: Create a Dynatrace scheduling rule from the official SDK rule contract.
+- **Create Workflow**: Create a Dynatrace workflow from its task and trigger definition.
+- **Delete Business Calendar**: Delete a Dynatrace Automation business calendar.
+- **Delete Direct Share**: Delete a direct share without deleting its Dynatrace document.
+- **Delete Document**: Move a document to the trash.
+- **Delete Environment Share**: Delete an environment share and revoke the document access granted through that share from all claimers.
+- **Delete Metric**: Irreversibly trigger deletion of one metric ingested through Metrics v2.
+- **Delete Metrics**: Irreversibly trigger bulk deletion of Metrics v2-ingested metrics selected by metric_selector and age.
+- **Delete Problem Comment**: Permanently delete one identified comment from an identified Dynatrace problem.
+- **Delete Scheduling Rule**: Permanently delete one scheduling rule by UUID.
+- **Delete Settings Object**: Delete a Dynatrace settings object using optimistic locking.
+- **Delete Settings Object Accessor Permissions**: Remove every permission a user, group, or all-users accessor has on a settings object.
+- **Delete Snapshot**: Irrevocably delete a snapshot without changing the document's current state.
+- **Delete Trashed Document**: Irreversibly destroy a trashed Dynatrace document owned by the connected user.
+- **Delete Trashed Workflow**: Permanently delete a workflow that is already in trash.
+- **Delete Webhook Handler**: Delete a webhook handler using an installed Dynatrace app as its context.
+- **Download Document Content** (read-only): Download the binary content of the latest document version or a specific snapshot, preserving the provider's filename and MIME type.
+- **Duplicate Business Calendar**: Create a copy of a Dynatrace Automation business calendar.
+- **Duplicate Scheduling Rule**: Duplicate a Dynatrace scheduling rule, optionally assigning a new title.
+- **Duplicate Workflow**: Create a new workflow by copying an existing Dynatrace workflow.
+- **Execute Grail Query** (read-only): Start an asynchronous Grail DQL query and return either its result or a request token for polling.
+- **Export Workflow** (read-only): Export a workflow as the provider's JSON WorkflowExport definition.
+- **Export Workflow History Record as JSON** (read-only): Export one historical workflow version as a transferable JSON workflow definition, including its tasks and configuration.
+- **Export Workflow Template** (read-only): Export the current workflow, or a historical version when version is supplied, as the provider's reusable YAML template envelope.
+- **Generate Schema Default Value** (read-only): Generate the default settings value for a Dynatrace schema and optional scope.
+- **Get Action Execution** (read-only): Return one Dynatrace Automation action execution.
+- **Get Action Execution Log** (read-only): Return the plain-text log for a Dynatrace Automation action execution.
+- **Get Business Calendar** (read-only): Return one Dynatrace Automation business calendar.
+- **Get Business Calendar History Record** (read-only): Return one historical version of a Dynatrace Automation business calendar.
+- **Get Direct Share** (read-only): Return an accessible Dynatrace direct share by its ID.
+- **Get Document** (read-only): Retrieve a document's metadata and binary content, optionally from a snapshot.
+- **Get Document Metadata** (read-only): Return metadata for the latest version or a specific snapshot of a document.
+- **Get Entity** (read-only): Return one monitored entity by its Dynatrace entity identifier.
+- **Get Entity Type** (read-only): Return the schema and relationship metadata for one Dynatrace entity type.
+- **Get Environment Share** (read-only): Retrieve an accessible Dynatrace environment share by its ID.
+- **Get Event** (read-only): Return one Dynatrace event by its event ID.
+- **Get Event Property** (read-only): Return details of one event property supported by the Dynatrace environment.
+- **Get Event Type** (read-only): Return details of one event type supported by the Dynatrace environment.
+- **Get Execution** (read-only): Return a workflow execution and its current asynchronous state.
+- **Get Execution Log** (read-only): Return the plain-text log for one workflow execution.
+- **Get Holiday Calendar** (read-only): Return a country's holidays, optionally bounded by an inclusive date range.
+- **Get Metric Descriptor** (read-only): Return the descriptor of one metric by its metric key.
+- **Get Problem** (read-only): Return details of one Dynatrace problem by its problem ID.
+- **Get Problem Comment** (read-only): Return one identified comment from a Dynatrace problem.
+- **Get Scheduling Rule** (read-only): Return one scheduling rule by UUID.
+- **Get Scheduling Rule History Record** (read-only): Return one historical version of a Dynatrace scheduling rule.
+- **Get Schema Definition** (read-only): Retrieve the complete definition of a Dynatrace settings schema.
+- **Get Settings Object** (read-only): Return a Dynatrace settings object by ID.
+- **Get Settings Object Accessor Permissions** (read-only): Return a user, group, or all-users accessor's permissions on one Dynatrace settings object.
+- **Get Settings Object Permissions** (read-only): Return every accessor and permission configured on a settings object.
+- **Get Snapshot Metadata** (read-only): Return metadata about a specific snapshot, not the snapshotted document content.
+- **Get Task Execution** (read-only): Return one task execution, including its asynchronous state and result.
+- **Get Task Execution Input** (read-only): Return the merged JSON inputs from all action executions belonging to a task execution.
+- **Get Task Execution Log** (read-only): Return the raw standard-output log for a task execution.
+- **Get Task Execution Result** (read-only): Return the merged JSON results from all action executions belonging to a task execution.
+- **Get Transitions** (read-only): Return workflow task transitions keyed by transition name for an execution.
+- **Get Webhook Handler** (read-only): Return one webhook handler for an installed Dynatrace app context.
+- **Get Workflow** (read-only): Return a workflow by UUID.
+- **Get Workflow Task** (read-only): Return one task definition from a Dynatrace workflow.
+- **Ingest Event**: Ingest one event into the connected Dynatrace environment.
+- **Ingest Metric Data Points**: Ingest newline-separated Dynatrace metric line protocol as raw text.
+- **Inspect Lock** (read-only): Inspect a document lock, including its owner and document version.
+- **Inspect Trashed Document** (read-only): Return metadata and deletion audit information for a trashed Dynatrace document owned by the connected user.
+- **Inspect Workflow History Record** (read-only): Retrieve one saved workflow history version for inspection, including its runtime and modification metadata.
+- **List All Event Logs** (read-only): Return all structured event log entries for a workflow execution.
+- **List Business Calendar History Records** (read-only): Return the change history for a Dynatrace Automation business calendar.
+- **List Business Calendars** (read-only): Return one page of Dynatrace Automation business calendars.
+- **List Direct Share Recipients** (read-only): Return one page of users and groups assigned to a direct share.
+- **List Direct Shares** (read-only): Return one page of direct shares accessible to the connected user.
+- **List Documents** (read-only): Return one page of documents accessible to the connected user.
+- **List Effective Settings Values** (read-only): Return one page of effective values, including schema defaults.
+- **List Entities** (read-only): Return one page of monitored entities matching an entity selector.
+- **List Entity Types** (read-only): Return one page of entity types from the connected Dynatrace environment.
+- **List Environment Share Claimers** (read-only): Return one page of users who claimed an accessible environment share.
+- **List Environment Shares** (read-only): Return one page of environment shares accessible to the connected user.
+- **List Event Properties** (read-only): Return one page of event properties supported by the Dynatrace environment.
+- **List Event Types** (read-only): Return one page of event types supported by the Dynatrace environment.
+- **List Events** (read-only): Return one page of events.
+- **List Execution Actions** (read-only): Return action identifiers assigned to tasks in a workflow execution.
+- **List Executions** (read-only): Return one filtered page of workflow executions and the offset for the next page.
+- **List Holiday Calendar Countries** (read-only): Return countries that can be used to retrieve a holiday calendar.
+- **List Labels** (read-only): Return one alphabetically sorted page of labels accessible to the connected user, optionally filtered by substring and document type.
+- **List Metric Descriptors** (read-only): Return one page of metric descriptors.
+- **List Problem Comments** (read-only): Return one page of comments attached to a Dynatrace problem.
+- **List Problems** (read-only): Return one filtered page of Dynatrace problems and a continuation cursor.
+- **List Schedule Timezones** (read-only): Return timezone names accepted by Dynatrace schedules.
+- **List Scheduling Rule History Records** (read-only): Return the version history records for a Dynatrace scheduling rule.
+- **List Scheduling Rules** (read-only): Return one page of scheduling rules matching optional search and ordering criteria.
+- **List Schema Definitions** (read-only): List all settings schemas available to the connected Dynatrace user.
+- **List Settings History** (read-only): Return one page of revision history for Dynatrace settings objects.
+- **List Settings Objects** (read-only): Return one page of persisted settings objects for one schema and scope.
+- **List Snapshots** (read-only): Return one page of a document's snapshots in descending version order.
+- **List Task Executions** (read-only): Return the task executions keyed by task name for a workflow execution.
+- **List Trashed Documents** (read-only): Return one page of documents owned by the connected user that currently reside in Dynatrace trash.
+- **List Trashed Workflows** (read-only): Return one page of workflows that have been moved to trash.
+- **List Webhook Handlers** (read-only): Return webhook handlers for an installed Dynatrace app context.
+- **List Workflow Actions** (read-only): Return action identifiers assigned to tasks in a workflow.
+- **List Workflow History Records** (read-only): Return the version history records for a Dynatrace workflow.
+- **List Workflow Tasks** (read-only): Return the workflow's task map keyed by task name, preserving each task definition.
+- **List Workflows** (read-only): Return one page of workflows matching optional filters.
+- **Parse Grail Query** (read-only): Parse a Dynatrace Grail DQL query into its recursive syntax tree without executing it.
+- **Patch Business Calendar**: Modify selected fields on a Dynatrace Automation business calendar.
+- **Patch Scheduling Rule**: Partially update one scheduling rule.
+- **Patch Workflow**: Patch selected fields on an existing Dynatrace workflow.
+- **Pause Execution**: Pause an active workflow execution.
+- **Permanently Delete Workflow**: Permanently delete an active workflow without moving it to trash.
+- **Poll Grail Query** (read-only): Return the current state and available result for an asynchronous Grail DQL request token.
+- **Query Metric Data Points** (read-only): Return metric data points.
+- **Release Lock**: Release the current user's lock on a document.
+- **Remove Direct Share Recipients**: Remove users or groups from an accessible Dynatrace direct share.
+- **Reorder Settings Objects**: Reorder objects in an ordered multi-object Dynatrace settings schema.
+- **Reset Workflow Throttles**: Clear the current throttle state for a Dynatrace workflow.
+- **Resolve Effective Permissions** (read-only): Resolve the connected user's effective settings permissions.
+- **Restore Business Calendar History Record**: Restore a historical version of a Dynatrace Automation business calendar.
+- **Restore Scheduling Rule History Record**: Restore a Dynatrace scheduling rule to a historical version.
+- **Restore Snapshot**: Reset a document to a selected snapshot without changing ownership or sharing.
+- **Restore Trashed Document**: Restore a Dynatrace document owned by the connected user from trash.
+- **Restore Trashed Workflow**: Restore a trashed workflow to the active workflow list.
+- **Restore Workflow History Record**: Restore a workflow to a selected historical version and deploy that restored version.
+- **Resume Execution**: Resume a paused workflow execution.
+- **Run Workflow**: Create an execution for a Dynatrace workflow, with optional idempotency qualifier and monitoring.
+- **Set Document Favorite**: Set whether an accessible Dynatrace document is a personal favorite for the connected user.
+- **Set Document Visibility**: Set a Dynatrace document's environment-wide visibility to public or private.
+- **Summarize Settings Value** (read-only): Generate display and search summaries for a Dynatrace multi-object settings value.
+- **Transfer Document Owner**: Transfer a document to a new owner.
+- **Transfer Settings Object Ownership**: Transfer a Dynatrace settings object to a user, group, or all users.
+- **Trash Workflow**: Move a workflow to trash so it can be restored later.
+- **Update Business Calendar**: Replace fields on a Dynatrace Automation business calendar.
+- **Update Document**: Update document metadata and/or binary content using optimistic locking, optionally creating a snapshot before the change.
+- **Update Document Content**: Completely replace a document's binary content using optimistic locking.
+- **Update Problem Comment**: Replace the content of one identified comment on an identified Dynatrace problem.
+- **Update Scheduling Rule**: Replace the mutable fields of one scheduling rule.
+- **Update Settings Object**: Update an existing Dynatrace settings object using optimistic locking.
+- **Update Settings Object Accessor Permissions**: Replace a user, group, or all-users accessor's permissions on a Dynatrace settings object.
+- **Update Workflow**: Replace fields on an existing Dynatrace workflow.
+- **Upsert Custom Device**: Create a custom device or update the device with the supplied customDeviceId.
+- **Upsert Settings Object**: Create a settings object or update the object matching its external ID.
+- **Upsert Webhook Handler**: Create or replace a webhook handler using an installed Dynatrace app as its context.
+- **Validate Settings Container** (read-only): Validate a settings container with a Dynatrace schema custom validator.
+- **Validate Settings Object Delete** (read-only): Validate deleting a settings object without applying the deletion.
+- **Validate Settings Object Update** (read-only): Validate a settings object update without applying it.
+- **Validate Settings Object Upsert** (read-only): Validate creating or updating a settings object without applying it.
+- **Validate Settings Property** (read-only): Validate one typed property value with a Dynatrace schema custom validator.
+- **Verify Grail Query** (read-only): Validate a DQL query without executing it and return semantic notifications.

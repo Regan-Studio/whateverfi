@@ -1,0 +1,101 @@
+# Constant Contact
+
+Email marketing and automation platform for small businesses
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/constant-contact/.
+
+## Actions
+
+- **Create Contact**: Create a new contact in Constant Contact.
+- **Create Contact List**: Create a new contact list in Constant Contact.
+- **Create Email Campaign**: Create a new email campaign in Constant Contact.
+- **Create Event**: Create a new event with default settings in Constant Contact.
+- **Get contact** (read-only): GET a contact by their unique ID.
+- **Get Event** (read-only): GET details for a single event by its unique ID.
+- **List Contact Lists** (read-only): GET all contact lists for the Constant Contact account.
+- **List contacts** (read-only): GET Contacts Collection to retrieve a list of contacts from Constant Contact.
+- **List Email Campaigns** (read-only): GET a collection of email campaigns from Constant Contact.
+- **List Events** (read-only): GET a collection of events from Constant Contact.
+- **Update Contact**: PUT (update) an existing contact in Constant Contact.
+- **Add Account Email Address**: Add a new email address to a Constant Contact account.
+- **Add Contact Taggings**: Add Tags to Contacts.
+- **Add list memberships**: Add Contacts to Lists creates an activity to add contacts to one or more contact lists.
+- **Copy Event**: POST (copy) an existing event in Constant Contact.
+- **Count Contact Consents** (read-only): GET contact consent counts for a Constant Contact account.
+- **Create contact delete activity**: Delete multiple contacts in bulk by submitting a contact_delete activity.
+- **Create contact from sign-up form**: Create or Update a Contact via sign-up form.
+- **Create contact tag**: POST (Create) a Tag.
+- **Create Custom Field**: Create a new custom field for contacts in Constant Contact.
+- **Create Resend to Non-openers**: Create a resend to non-openers campaign activity for an email campaign.
+- **Create Social Post**: Create a new social media post campaign.
+- **Delete contact**: DELETE a specific contact from your Constant Contact account.
+- **Delete Contact List**: Permanently deletes a contact list from Constant Contact by its ID.
+- **Delete contact list activity**: Delete one or more contact lists from your Constant Contact account by submitting a list delete activity.
+- **Delete contact tag**: Delete a specific contact tag from your Constant Contact account.
+- **Delete contact tags**: Delete one or more tags from contacts in Constant Contact.
+- **Delete custom field**: DELETE a specific contact custom field from your Constant Contact account.
+- **Delete custom fields**: Delete one or more custom fields from a Constant Contact account.
+- **Delete Email Campaign**: DELETE an Email Campaign from your Constant Contact account.
+- **Delete Segment**: Permanently deletes a segment from Constant Contact by its ID.
+- **Export Contacts** (read-only): Create a bulk activity that exports contacts to a CSV file.
+- **Get account physical address** (read-only): GET the Physical Address for the Account.
+- **Get account summary** (read-only): GET a summary of account details for a Constant Contact account.
+- **Get activity status** (read-only): GET the status of a specific bulk activity.
+- **Get contact activity summary report** (read-only): GET contact tracking activity summary for a specific contact.
+- **Get Contact List** (read-only): GET details for a specific contact list by its ID.
+- **Get Contact Open and Click Rates Report** (read-only): GET average open and click rates for a contact.
+- **Get Contact SMS Engagement History** (read-only): GET SMS Engagement History for a Contact.
+- **Get contact tag details** (read-only): GET Tag Details - Retrieves detailed information about a specific contact tag.
+- **Get Contacts Export File** (read-only): Retrieve the exported contacts file from a completed export contacts activity.
+- **Get custom field** (read-only): GET a custom field by its unique ID.
+- **Get Email Campaign Activity** (read-only): GET details for a specific email campaign activity by its ID.
+- **Get email campaign activity preview** (read-only): GET the HTML Preview of an Email Campaign Activity.
+- **Get Email Campaign Activity Schedule** (read-only): GET an email campaign activity schedule.
+- **Get email campaign activity send history** (read-only): GET the send history of an email campaign activity.
+- **Get email campaign details** (read-only): GET details for a single email campaign using its campaign ID.
+- **Get email campaign ID cross-references** (read-only): GET a collection of V2 and V3 API Email Campaign ID cross-references.
+- **Get Email Campaign Statistics Report** (read-only): GET statistics for one or more email campaigns.
+- **Get list ID cross-references** (read-only): GET a collection of V2 and V3 API List IDs cross-references.
+- **Get Partner Webhook Subscription** (read-only): GET details for a specific Partner Webhook Topic Subscription by its ID.
+- **Get resend to non-openers** (read-only): GET Details for a Resend to Non-openers Campaign Activity.
+- **Get Segment** (read-only): GET details for a specific segment by its unique ID.
+- **Import contacts from CSV file**: Import contacts into Constant Contact from a CSV file.
+- **Import contacts from JSON**: Bulk import contacts into Constant Contact using JSON format.
+- **List account email addresses** (read-only): GET a Collection of Account Email Addresses.
+- **List account user privileges** (read-only): Get the user privileges associated with your access token.
+- **List activity statuses** (read-only): GET a collection of bulk activities.
+- **List contact custom fields** (read-only): GET custom_fields Collection to retrieve all contact custom field definitions.
+- **List contact tags** (read-only): GET Details for All Tags - Retrieves all contact tags for the account.
+- **List Email Campaign Summaries Report** (read-only): GET an Email Campaigns Summary Report from Constant Contact.
+- **List Email Did Not Opens Report** (read-only): GET an Email Did Not Opens Report to retrieve a list of contacts who did not open a specific email campaign.
+- **List email forwards report** (read-only): GET an Email Forwards Report for a specific email campaign activity.
+- **List email opt-outs report** (read-only): GET an Email Opt-outs Report for a specific email campaign activity.
+- **List Email Unique Opens Report** (read-only): GET an email unique opens report for a campaign activity.
+- **List event track registrations** (read-only): GET registrations for an event track to retrieve a list of registrations.
+- **List Landing Page Contact Opens Report** (read-only): GET a Contacts Opens Landing Page Report.
+- **List Landing Page Unique Contact Adds Report** (read-only): GET a Unique Contacts Adds Landing Page Report for a specific landing page campaign activity.
+- **List Landing Page Unique Contact Clicks Report** (read-only): GET unique contact clicks data for a landing page campaign.
+- **List Landing Page Unique Contact Opens Report** (read-only): GET a Unique Contacts Opens Landing Page Report to retrieve a list of contacts who uniquely opened a specific landing page campaign.
+- **List landing page unique contact updates report** (read-only): GET a Unique Contacts Updates Landing Page Report for a specific landing page campaign activity.
+- **List Segments** (read-only): GET all segments for the Constant Contact account.
+- **List SMS Campaign Summaries Report** (read-only): GET an SMS Campaigns Summary Report.
+- **List Social Connections** (read-only): GET social network connections for a Constant Contact account.
+- **List Social Hashtag Groups** (read-only): GET hashtag groups - Retrieves a paginated list of social hashtag groups.
+- **List Social Profiles** (read-only): GET social media profiles from Constant Contact.
+- **Remove Contact Tagging**: Remove tagging from contacts in Constant Contact.
+- **Remove contacts from lists**: Create a Remove Contacts from Lists activity to remove contacts from one or more lists.
+- **Remove Tags from Contacts**: Remove tags from contacts in Constant Contact.
+- **Rename Email Campaign**: PATCH (Update) the name of an existing email campaign in Constant Contact.
+- **Rename Segment**: PATCH (rename) an existing segment in Constant Contact.
+- **Resubscribe Contact**: Resubscribe an unsubscribed contact to one or more contact lists.
+- **Undo Event Ticket Check-In**: Undo check-in for event tickets.
+- **Update Account Details**: PUT (update) Account Details for the authenticated user.
+- **Update Account Physical Address**: PUT (update) the Physical Address for an Account.
+- **Update Contact List**: PUT (update) an existing contact list in Constant Contact.
+- **Update Contact Tag**: PUT (Update) a Tag.
+- **Update Custom Field**: Update an existing contact custom field in Constant Contact.
+- **Update Email Campaign Activity**: PUT (Update) an Email Campaign Activity in Constant Contact.
+- **Update Event**: PATCH (update) an existing event in Constant Contact.
+- **Update Event Track Registration Payment Status**: Update the payment status for event track registrations in Constant Contact.
+- **Update Event Track Registrations**: PUT (update) registration status for event track registrations.
+- **Update Segment**: PUT (update) an existing segment in Constant Contact.

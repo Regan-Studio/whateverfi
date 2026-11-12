@@ -1,0 +1,118 @@
+# Aha!
+
+Aha! helps product teams set strategy, prioritize ideas, plan roadmaps, and manage product development work.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/aha/.
+
+## Actions
+
+- **Add Product Idea Portals**: Add idea portal links to a product without replacing existing links.
+- **Convert Feature to Epic**: Irreversibly convert an existing feature into an epic while preserving its data and relationships.
+- **Convert Requirement to Feature**: Irreversibly convert an existing requirement into a feature.
+- **Create Custom Field Option**: Create an option for one custom-field definition.
+- **Create Epic**: Create an epic in a release or in a workspace's default release.
+- **Create Feature**: Create a feature in a release with its documented planning fields.
+- **Create Goal**: Create a strategic goal in one Aha!
+- **Create Idea**: Create an idea in a product with the documented idea fields.
+- **Create Idea Theme**: Create an idea theme in a product.
+- **Create Initiative**: Create a strategic initiative in one Aha!
+- **Create Key Result**: Create a key result under one strategic goal.
+- **Create Parking-Lot Release**: Create a parking-lot release in a workspace.
+- **Create Product**: Create an Aha!
+- **Create Product Contributor**: Create an Aha!
+- **Create Product Roll-Up Release**: Create a roll-up release in a product line, optionally adding workspaces.
+- **Create Release Milestone**: Create a phase or milestone in an Aha!
+- **Create Requirement**: Create a requirement within one feature.
+- **Create To-Do**: Create a standalone personal to-do for the connected Aha!
+- **Create Workflow Status Time**: Create a workflow status interval for one supported parent record.
+- **Delete Custom Field Option**: Delete one option from an Aha!
+- **Delete Epic**: Delete an epic by ID.
+- **Delete Feature**: Delete one feature by ID or reference number.
+- **Delete Goal**: Delete one strategic goal.
+- **Delete Idea**: Delete an idea by ID or reference key.
+- **Delete Idea Theme**: Delete an idea theme by numeric ID.
+- **Delete Initiative**: Delete one strategic initiative.
+- **Delete Key Result**: Delete one key result.
+- **Delete Release**: Delete a release from a workspace.
+- **Delete Release Phase**: Delete a release phase by numeric ID.
+- **Delete Requirement**: Delete one requirement by ID or reference number.
+- **Delete To-Do**: Delete one to-do by its Aha!
+- **Delete User Custom Role**: Remove a user's custom role in one Aha!
+- **Delete User Product Role**: Remove a user's role in one Aha!
+- **Delete Workflow Status Time**: Delete a workflow status interval.
+- **Duplicate Release**: Create a duplicate of an existing release.
+- **Get Current User** (read-only): Return the connected Aha!
+- **Get Custom Layout** (read-only): Return one custom layout.
+- **Get Epic** (read-only): Return one Aha!
+- **Get Feature** (read-only): Return detailed information for one feature by internal ID or human-readable reference number.
+- **Get Goal** (read-only): Return one strategic goal by ID or reference number.
+- **Get Idea** (read-only): Return one idea by ID or reference number.
+- **Get Idea Theme** (read-only): Return one idea theme by ID.
+- **Get Identity Provider** (read-only): Return one identity provider configured for account SSO.
+- **Get Initiative** (read-only): Return one strategic initiative by ID or reference number.
+- **Get Key Result** (read-only): Return one key result by ID.
+- **Get Release** (read-only): Return one release by ID or reference number.
+- **Get Release Phase** (read-only): Return one release phase by ID.
+- **Get Requirement** (read-only): Return one requirement by ID or reference number.
+- **Get Roll-Up Release** (read-only): Return one roll-up release by ID or reference number.
+- **Get Strategic Model** (read-only): Return one strategic model by ID.
+- **Get Strategic Vision** (read-only): Return one strategic vision by ID.
+- **Get To-Do** (read-only): Return one to-do by its Aha!
+- **Get User** (read-only): Get a specific Aha!
+- **Get Workflow** (read-only): Return one workflow with its statuses and workflow kinds.
+- **Get Workflow Status Time** (read-only): Return one workflow status interval.
+- **Get Workspace** (read-only): Return one workspace and its applied template by ID.
+- **List All Custom Field Options** (read-only): Return all options configured for one custom-field definition.
+- **List Assigned Records** (read-only): List one page of records assigned to the connected Aha!
+- **List Assistant Usage** (read-only): Return one page of per-user AI assistant activity.
+- **List Audits** (read-only): Return one page of immutable Aha!
+- **List Child Releases** (read-only): Return releases under a roll-up release, one page at a time.
+- **List Custom Field Options** (read-only): Return selectable options for one custom-field definition.
+- **List Custom Fields** (read-only): Return custom-field definitions, keys, types, and worksheet metadata.
+- **List Custom Layouts** (read-only): Return custom layouts configured in the account.
+- **List Deletions** (read-only): Return records currently visible in the account recycle bin, one page at a time.
+- **List Epics** (read-only): Return one page of epics across the account or within a goal, initiative, release, or workspace.
+- **List Features** (read-only): Return one page of features across the account or within a goal, initiative, epic, workspace, or release.
+- **List Goals** (read-only): Return one page of strategic goals across the account or within an initiative or product.
+- **List Idea Portals** (read-only): Return idea portals configured in the account or linked to one product, one page at a time.
+- **List Idea Themes** (read-only): Return idea themes across the account, one page at a time.
+- **List Ideas** (read-only): Search and filter ideas across the account or within one product, returning one page at a time.
+- **List Identity Providers** (read-only): Return active identity providers available for account SSO.
+- **List Initiatives** (read-only): Return one page of strategic initiatives across the account or within a goal or product.
+- **List Key Results** (read-only): Return key results for one strategic goal, one page at a time.
+- **List Product Roll-Up Releases** (read-only): Return roll-up releases in one Aha!
+- **List Product Users** (read-only): List one page of users and roles associated with an Aha!
+- **List Related Ideas** (read-only): Find ideas related to a term, one page at a time.
+- **List Release Phases** (read-only): Return release phases across the account or within one release, one page at a time.
+- **List Releases** (read-only): Return releases associated with a workspace, goal, or initiative, one page at a time.
+- **List Requirements** (read-only): Return requirements for one feature, optionally updated since a timestamp, one page at a time.
+- **List Strategy Models** (read-only): Return strategy models configured in the account, one page at a time.
+- **List Strategy Visions** (read-only): Return strategic vision records in the account, one page at a time.
+- **List To-Dos** (read-only): Return one page of account, assigned-user, or associated-record to-dos.
+- **List User Custom Roles** (read-only): List one page of an Aha!
+- **List User Product Roles** (read-only): List one page of an Aha!
+- **List Users** (read-only): Return account users and their seat and administrator flags, one page at a time.
+- **List Workflow Status Times** (read-only): Return workflow status intervals for one supported parent record, one page at a time.
+- **List Workflows** (read-only): Return workflows and statuses configured for one workspace.
+- **List Workspaces** (read-only): Return Aha!
+- **Promote Idea**: Promote an idea to an epic, feature, initiative, or requirement.
+- **Replace Product Idea Portals**: Replace every idea portal link on a product.
+- **Restore Deleted Record**: Start restoring a record from the recycle bin within its retention period.
+- **Update Custom Field Option**: Update the value, color, or visibility of a custom-field option.
+- **Update Epic**: Update an epic by ID.
+- **Update Feature**: Update one feature's planning fields.
+- **Update Goal**: Update one strategic goal.
+- **Update Idea**: Update an existing idea.
+- **Update Idea Theme**: Update an idea theme.
+- **Update Initiative**: Update one strategic initiative.
+- **Update Key Result**: Update one key result.
+- **Update Product**: Update an Aha!
+- **Update Release**: Update a release by ID, optionally through a specified workspace, including dates, capacity, progress, parent, owner, goals, and…
+- **Update Release Phase**: Update a release phase's type, dates, description, or progress.
+- **Update Requirement**: Update one requirement.
+- **Update Roll-Up Release**: Update a roll-up release or add workspaces to it.
+- **Update To-Do**: Update an existing to-do's name or description.
+- **Update User**: Update an Aha!
+- **Update User Custom Roles**: Assign a custom role to an Aha!
+- **Update User Product Roles**: Assign a product role to an Aha!
+- **Update Workflow Status Time**: Update a workflow status interval.

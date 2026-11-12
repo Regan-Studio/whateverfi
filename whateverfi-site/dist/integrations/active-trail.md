@@ -1,0 +1,170 @@
+# ActiveTrail
+
+ActiveTrail is the world's friendliest email marketing platform, newsletter software and marketing automation software.
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/active-trail/.
+
+## Actions
+
+- **Create a New Group**: Create a new group in ActiveTrail.
+- **Create Contact**: Create a new contact in ActiveTrail.
+- **Create New Mailing List**: Create a new mailing list in ActiveTrail.
+- **Create Webhook**: Create a new webhook for event notifications in ActiveTrail.
+- **Delete Contact**: Remove a contact from the ActiveTrail account.
+- **Get All Campaign Reports** (read-only): Retrieve a full overview of all campaign reports with comprehensive metrics.
+- **Get All Groups** (read-only): Retrieve the full list of account groups with pagination and filtering.
+- **Get Automation Log** (read-only): Track contacts through automation journey by retrieving detailed logs.
+- **Get Automations** (read-only): List account automations with filtering and pagination.
+- **Get Campaign Details** (read-only): Retrieve detailed campaign information including name, subject, and settings.
+- **Get Campaign Report** (read-only): Retrieve an overview report for a specific campaign.
+- **Get Contact List** (read-only): Retrieve account contacts filtered by status and date range.
+- **Get Content Categories** (read-only): Retrieve all content categories from the ActiveTrail account.
+- **Get Mailing Lists** (read-only): Retrieve all mailing lists from the ActiveTrail account.
+- **Get Push Campaign Reports** (read-only): Retrieve push notification campaign performance metrics and reports.
+- **Get Push Campaigns** (read-only): Retrieve push notification campaigns with optional filtering by date, campaign ID, and search criteria.
+- **Get Segmentations** (read-only): Retrieve all segmentations from the ActiveTrail account.
+- **Get Signup Forms** (read-only): Retrieve all signup forms from the ActiveTrail account.
+- **Get SMS Campaign Reports** (read-only): Retrieve SMS campaign performance metrics and reports with filtering options.
+- **Get Templates** (read-only): Retrieve saved templates from the ActiveTrail account.
+- **Import New Contacts**: Import new contacts into a group in ActiveTrail.
+- **List Landing Pages** (read-only): Retrieve landing pages from ActiveTrail.
+- **List SMS Campaigns** (read-only): Retrieve SMS campaigns with optional filtering by date, search term, and type.
+- **Update Campaign**: Update draft campaigns in ActiveTrail.
+- **Update Contact**: Update an existing contact's information by ID.
+- **Add Group Member**: Add a member to a group in ActiveTrail.
+- **Create Campaign from Template**: Create a campaign using a specific template.
+- **Create Content Category**: Create a new content category in ActiveTrail account.
+- **Create or Update Group Member**: Create or update a member in a group.
+- **Create Order**: Create new orders in ActiveTrail commerce system.
+- **Create Smart Code Site**: Create a new Smart Code site in ActiveTrail.
+- **Create Template Category**: Create a new template category in ActiveTrail.
+- **Delete Automations**: Delete one or more automations from Active Trail.
+- **Delete Campaign**: Remove a campaign from ActiveTrail account.
+- **Delete content category**: Delete a specific content category by ID.
+- **Delete group by ID**: Delete a group by ID.
+- **Delete group member**: Delete a group member by ID.
+- **Delete Group Member**: Remove a member from a group in ActiveTrail.
+- **Delete Mailing List**: Remove a mailing list from ActiveTrail account.
+- **Delete Mailing List Member**: Remove a member from a mailing list in ActiveTrail.
+- **Delete Smart Code Site**: Remove a Smart Code site from ActiveTrail.
+- **Delete Template**: Remove a template from ActiveTrail account.
+- **Delete template category**: Delete a template category by ID.
+- **Delete webhook parameter**: Delete a given webhook parameter from your account's webhook configuration.
+- **Get Account Balance** (read-only): Retrieve email and SMS credit balance for the account.
+- **Get Account Merge Status** (read-only): Check if the account has awaited merges.
+- **Get ActiveCommerce Integration Data** (read-only): Retrieve the account's ActiveCommerce integration data.
+- **Get All Sent Campaigns** (read-only): Retrieve campaigns with optional filtering by date, mailing list, and search criteria.
+- **Get Automation Details** (read-only): Retrieve detailed configuration of a specific automation excluding step-by-step execution details.
+- **Get Automation Email Campaign Steps** (read-only): Retrieve all email campaign steps in an automation workflow.
+- **Get Automation Queue Logs** (read-only): Retrieve contacts that did not finish a specific automation.
+- **Get Automation SMS Campaign Steps** (read-only): Retrieve all SMS campaign steps in an automation workflow.
+- **Get Automation SMS Campaign Summary Report** (read-only): Retrieve SMS campaigns' summary reports for a specific automation.
+- **Get Automation Trigger Types** (read-only): Retrieve all available start trigger options for automations.
+- **Get Automation Update Actions** (read-only): Retrieve all types of actions that can update a contact in an automation.
+- **Get Campaign Bounced Emails by Type** (read-only): Retrieve bounced email details filtered by bounce type for a specific campaign.
+- **Get Campaign Bounces** (read-only): Retrieve bounce details by domain for a specific campaign.
+- **Get Campaign by ID** (read-only): Retrieve complete campaign information including send settings, design, template, and A/B test configuration.
+- **Get Campaign by ID (Copy)** (read-only): Retrieve complete campaign information including send settings, design, template, and A/B test configuration.
+- **Get Campaign Click Details Report** (read-only): Retrieve click details report for a specific campaign.
+- **Get Campaign Click-Through Data** (read-only): Access click-through data for a specific campaign.
+- **Get Campaign Complaints** (read-only): Retrieve contacts who reported a specific campaign as spam.
+- **Get Campaign Design** (read-only): Retrieve campaign design configuration including visual layout and HTML content.
+- **Get Campaign Domains Report** (read-only): Retrieve a report by domain for a specific campaign.
+- **Get Campaign Email Activity Report** (read-only): Retrieve all contacts' activity on a specific campaign.
+- **Get Campaign Opens** (read-only): Retrieve contacts who opened a specific campaign.
+- **Get Campaign Scheduling** (read-only): Retrieve campaign schedule configuration including timing and delivery settings.
+- **Get Campaign Segment Settings** (read-only): Retrieve campaign sending settings including target groups and sending restrictions.
+- **Get Campaign Sent Emails** (read-only): Retrieve contacts who received a specific campaign email.
+- **Get Campaign Spam Complaints** (read-only): Retrieve contacts who reported a specific campaign as spam.
+- **Get Campaign Template** (read-only): Retrieve template details associated with a specific campaign.
+- **Get Campaign Unopened Contacts** (read-only): Retrieve contacts who did not open a specific campaign.
+- **Get Campaign Unopened Contacts** (read-only): Retrieve contacts who did not open a specific campaign.
+- **Get Campaign Unsubscribed Contacts** (read-only): Retrieve contacts who unsubscribed from a specific email campaign.
+- **Get Click Details by Link ID** (read-only): Retrieve click details for a specific link within a campaign.
+- **Get Contact Activity** (read-only): Retrieve contact's email engagement history including opens and clicks.
+- **Get Contact Bounces** (read-only): Retrieve bounce activity for a specific contact by contact ID.
+- **Get Contact Fields** (read-only): Retrieve account contact fields filtered by type.
+- **Get Contact Groups** (read-only): Retrieve all groups associated with a specific contact.
+- **Get Contact Growth** (read-only): Retrieve executive report on contact growth showing daily active and inactive contact growth.
+- **Get Contact's Errors** (read-only): Retrieve bounce and error history for a specific contact.
+- **Get Contact's Mailing Lists** (read-only): Retrieve all mailing lists associated with a specific contact.
+- **Get Contacts Merges** (read-only): Retrieve contacts experiencing merge conflicts with filtering options.
+- **Get Contacts Subscription All Contacts** (read-only): Get contacts' subscription status and the source of their status (if known).
+- **Get Contacts Subscription Status** (read-only): Get statistics of contacts' statuses from specific dates.
+- **Get Contacts Subscription Unsubscribers** (read-only): Retrieve all contacts who unsubscribed and the source of their unsubscription status.
+- **Get Contacts Unsubscribers SMS** (read-only): Retrieve all contacts who unsubscribed from receiving SMS messages.
+- **Get Contacts With SMS State** (read-only): Retrieve account's contacts list with SMS subscription state.
+- **Get Customer Stats for Transactional Message** (read-only): Retrieve customer interaction statistics for a specific transactional message.
+- **Get Executive Report** (read-only): Retrieve executive performance reports for the ActiveTrail account.
+- **Get Group by ID** (read-only): Retrieve detailed information about a specific group by its unique identifier.
+- **Get Group Contents by ID** (read-only): Retrieve all group members by group ID with pagination and filtering.
+- **Get Group Details** (read-only): Retrieve detailed information about a specific group by its unique identifier.
+- **Get Group Events** (read-only): Retrieve all events for a specific group with optional filtering by event type, event date, and subscriber creation date.
+- **Get Group Information for Contact** (read-only): Retrieve all groups that a specific contact belongs to by contact ID.
+- **Get Landing Pages** (read-only): Retrieve landing pages from the ActiveTrail account with pagination support.
+- **Get List of All SMS Campaign Clickers** (read-only): Retrieve all contacts who clicked on links in an SMS campaign.
+- **Get Mailing List** (read-only): Retrieve detailed information about a specific mailing list by its unique identifier.
+- **Get Mailing List Members** (read-only): Retrieve all members belonging to a specific mailing list.
+- **Get Order** (read-only): Retrieve complete details of a specific order from ActiveTrail commerce system.
+- **Get Push Campaign Delivered Report** (read-only): Retrieve contacts who successfully received a specific push notification campaign.
+- **Get Push Campaign Failed Delivery Report** (read-only): Retrieve the failed delivery report for a specific push campaign.
+- **Get Push Campaign Opens** (read-only): Retrieve contacts who opened a specific push notification campaign.
+- **Get Push Campaign Report Summary** (read-only): Retrieve summary report information of Push campaigns by dates.
+- **Get Push Campaign Sent Report** (read-only): Retrieve contacts who were sent a specific push notification campaign.
+- **Get Segmentation Rule Field Types** (read-only): Retrieve dictionary of rule field types for segmentation.
+- **Get Segmentation Rule Operations** (read-only): Retrieve dictionary of rule operations for segmentation.
+- **Get Segmentation Rule Types** (read-only): Retrieve dictionary of segmentation rule types for automation.
+- **Get Sending Profiles** (read-only): Retrieve account email sending profiles.
+- **Get Sent Campaigns** (read-only): Retrieve a list of all sent campaigns from ActiveTrail.
+- **Get Signup Form** (read-only): Retrieve detailed information about a specific signup form by its unique identifier.
+- **Get Smart Code Sites** (read-only): Retrieve all Smart Code sites from the ActiveTrail account.
+- **Get SMS Campaign by ID** (read-only): Retrieve detailed information about a specific SMS campaign by its unique identifier.
+- **Get SMS Campaign Clickers** (read-only): Access link click data for SMS campaigns.
+- **Get SMS Campaign Delivered List** (read-only): Get a specific SMS campaign's delivered list data.
+- **Get SMS Campaign Delivered Report** (read-only): Retrieve delivery confirmations for a specific SMS campaign.
+- **Get SMS Campaign Failed Delivery Report** (read-only): Retrieve the failed delivery report for a specific SMS campaign.
+- **Get SMS Campaign Recipient Data** (read-only): Get a specific SMS campaign's 'sent to' data as a list.
+- **Get SMS Campaign Report Clicks** (read-only): Retrieve SMS clicks (on links) reports for a specific campaign.
+- **Get SMS Campaign Report Summary** (read-only): Retrieve summary report information of SMS campaigns by dates.
+- **Get SMS Campaign Sent Contacts Report** (read-only): Retrieve all contacts that an SMS campaign was sent to.
+- **Get SMS Campaign Unsubscribed Contacts** (read-only): Retrieve contacts who unsubscribed from a specific SMS campaign.
+- **Get SMS Campaign Unsubscribed List** (read-only): Get a specific SMS campaign's unsubscribed data as a list.
+- **Get SMS Operational Message by ID** (read-only): Retrieve operational SMS message details by unique identifier.
+- **Get SMS Sending Profiles** (read-only): Retrieve SMS sending profiles configured for the account.
+- **Get specific content category** (read-only): Retrieve specific category details by ID.
+- **Get Specific SMS Campaign** (read-only): Retrieve a specific SMS campaign by ID including full details like content, status, targeting, and scheduling.
+- **Get Template** (read-only): Retrieve detailed information about a specific template from the account's saved templates.
+- **Get Template Categories** (read-only): Retrieve all template categories from 'my templates' section.
+- **Get Template Content** (read-only): Retrieve HTML content of a specific template.
+- **Get Transactional Messages Classification** (read-only): Retrieve all classification options for operational/transactional messages.
+- **Get Transactional SMS Message** (read-only): Retrieve detailed information about a specific transactional SMS message by its unique identifier.
+- **Get Two-Way SMS Replies** (read-only): Retrieve virtual number SMS replies with filtering options.
+- **Get User Bounces by Campaign ID** (read-only): Retrieve specific user details of users that got a bounce by Campaign ID, filtered by bounce type.
+- **Get User Social Accounts** (read-only): Retrieve social media accounts connected to the ActiveTrail account.
+- **Get Webhook by ID** (read-only): Retrieve detailed information about a specific webhook by its unique identifier.
+- **Get Webhook Parameters** (read-only): Retrieve webhook parameters for a specified webhook ID.
+- **Get Webhooks** (read-only): List account webhooks with optional filtering.
+- **List Mailing Lists** (read-only): List mailing lists from ActiveTrail account.
+- **List Members Of A Mailing List** (read-only): Get all information of your mailing list members by page, limited to 50 contacts each time.
+- **List Sign-Up Forms** (read-only): Retrieve signup forms from the ActiveTrail account.
+- **List Transactional SMS Messages** (read-only): Retrieve all SMS transactional messages with pagination support.
+- **Remove Contact from Mailing List**: Remove a contact from a mailing list in ActiveTrail.
+- **Remove external contacts from group**: Remove contacts from a group via external ID.
+- **Rename Group**: Rename a group's name in ActiveTrail.
+- **Send Test Webhook Request**: Send a test webhook request with configurable URL and parameters.
+- **Test Webhook**: Send a test request for a given webhook by its ID.
+- **Update Campaign Design**: Update the design and HTML content of an email campaign in ActiveTrail.
+- **Update Campaign Details**: Update campaign details in ActiveTrail.
+- **Update Campaign Details**: Update a campaign's details by ID in ActiveTrail.
+- **Update Campaign Scheduling**: Configure send schedule for draft campaigns.
+- **Update Campaign Segment Settings**: Update campaign sending settings including groups and sending restrictions.
+- **Update Campaign Template**: Update the template associated with an email campaign in ActiveTrail.
+- **Update Contact Details**: Update an existing contact's information in ActiveTrail.
+- **Update content category**: Update a specific content category by ID.
+- **Update Group**: Update an existing group by ID.
+- **Update Order**: Modify existing orders in ActiveTrail commerce system.
+- **Update Smart Code Site**: Update an existing Smart Code site in ActiveTrail.
+- **Update Template**: Update an existing template in ActiveTrail account.
+- **Update Template Content**: Update the HTML content of an email template in ActiveTrail.
+- **Update Webhook**: Update an existing webhook configuration in ActiveTrail.
+- **Update Webhook Parameter**: Update a given webhook parameter configuration in your ActiveTrail account.

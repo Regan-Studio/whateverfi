@@ -1,0 +1,120 @@
+# Paystack
+
+Nigerian financial technology company that offers payment processing services to businesses in Africa.
+
+Category: Finance. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/paystack/.
+
+## Actions
+
+- **Bulk Create Transfer Recipients**: Create multiple transfer recipients in batches.
+- **Check Pending Charge** (read-only): Check the status of a pending charge transaction.
+- **Check Slug Availability** (read-only): Check if a custom slug is available for use when creating a payment page.
+- **Create Charge**: Initiate a payment by integrating the payment channel of your choice.
+- **Create Customer**: Create a customer on your Paystack integration.
+- **Create Payment Page**: Create a payment page on your Paystack integration.
+- **Create Payment Request**: Create a new payment request by issuing an invoice to a customer.
+- **Create Plan**: Create a plan for recurring payments on Paystack.
+- **Create Refund**: Initiate a refund for a previously completed transaction on Paystack.
+- **Create Split Configuration**: Create a split configuration for transaction revenue sharing.
+- **Create Storefront**: Create a digital storefront on Paystack to manage and display products.
+- **Create Subaccount**: Create a subaccount on your Paystack integration.
+- **Create Transfer Recipient**: Create a new recipient for transfers.
+- **Create Virtual Terminal**: Create a Virtual Terminal on your Paystack integration to accept payments.
+- **Export Transactions** (read-only): Export transactions from Paystack for a specific timeframe.
+- **Fetch Balance** (read-only): Fetch the available balance on your Paystack integration.
+- **Fetch balance ledger** (read-only): Fetch all pay-ins and pay-outs that went into your Paystack balance.
+- **Fetch Customer** (read-only): Get details of a customer on your integration.
+- **Fetch Payment Request Details** (read-only): Fetch details of a payment request from Paystack.
+- **Fetch Transaction** (read-only): Get details of a transaction carried out on your integration.
+- **Get Payment Request Totals** (read-only): Retrieve metrics for all pending and successful payment requests.
+- **Get Transaction Totals** (read-only): Get the total amount received on your Paystack account.
+- **Initialize Authorization**: Initialize a reusable authorization for recurring transactions.
+- **Initialize Transaction**: Initialize a transaction from your backend.
+- **Initiate Bulk Charge**: Initiate a bulk charge on your integration.
+- **List Banks** (read-only): Get a list of all supported banks and their properties on Paystack.
+- **List Customers** (read-only): List customers available on your integration.
+- **List Disputes** (read-only): List transaction disputes filed by customers on your Paystack integration.
+- **List Transactions** (read-only): List transactions that have occurred on your integration.
+- **List Transfers** (read-only): List all transfers carried out on your integration.
+- **Resolve Card BIN** (read-only): Get basic information about a card BIN (Bank Identification Number).
+- **Validate Bank Account** (read-only): Validate the authenticity of a customer's bank account before sending money.
+- **Validate Customer** (read-only): Validate a customer's identity on your Paystack integration.
+- **Verify Payment Request** (read-only): Verify the status of a previously created payment request on Paystack.
+- **Verify Transaction** (read-only): Confirm the status of a transaction using its reference.
+- **Add Products to Page**: Add products to a Paystack payment page.
+- **Add Products to Storefront**: Add previously created products to a Storefront.
+- **Add Split Code to Virtual Terminal**: Add a split code to a virtual terminal.
+- **Add Subaccount to Split**: Add a subaccount to a split configuration, or update the share of an existing subaccount.
+- **Archive Payment Request**: Archive a payment request to clean up records.
+- **Assign Destination to Virtual Terminal**: Assign WhatsApp destinations to a Virtual Terminal for payment notifications.
+- **Deactivate Authorization**: Deactivate an authorization when a card or payment method needs to be forgotten.
+- **Deactivate Virtual Terminal**: Deactivate a Virtual Terminal on your integration.
+- **Delete Product**: Delete a previously created product from Paystack by its ID.
+- **Delete Storefront**: Delete a previously created storefront from Paystack by its ID.
+- **Delete Transfer Recipient**: Delete a transfer recipient by setting it to inactive status.
+- **Disable OTP for Transfers**: Disable OTP requirement for programmatic transfers.
+- **Disable Subscription**: Disable a subscription on your Paystack integration.
+- **Duplicate Storefront**: Duplicate a previously created Storefront.
+- **Enable OTP for Transfers**: Enable OTP requirement for transfers.
+- **Fetch Bulk Charge Batch** (read-only): Retrieve a specific bulk charge batch by code.
+- **Fetch Mandate Authorizations** (read-only): Fetch the list of direct debit mandate authorizations associated with a customer.
+- **Fetch Payment Page** (read-only): Fetch details of a payment page on your Paystack integration.
+- **Fetch Payment Session Timeout** (read-only): Fetch the payment session timeout configured on your Paystack integration.
+- **Fetch Plan** (read-only): Get details of a plan on your integration.
+- **Fetch Product** (read-only): Get details of a product on your integration.
+- **Fetch Product Orders** (read-only): Fetch all orders for a particular product on your Paystack integration.
+- **Fetch Refund** (read-only): Get details of a refund on your integration.
+- **Fetch Split** (read-only): Get details of a split configuration for a transaction.
+- **Fetch Storefront** (read-only): Get the details of a previously created Storefront.
+- **Fetch Storefront Orders** (read-only): Fetch all orders in a Paystack storefront.
+- **Fetch Subaccount** (read-only): Get details of a subaccount on your integration.
+- **Fetch Subscription** (read-only): Get details of a subscription on your integration.
+- **Fetch Transaction Timeline** (read-only): Fetch the timeline of a transaction showing the steps taken from initiation to completion.
+- **Fetch Transfer Recipient** (read-only): Fetch details of a transfer recipient.
+- **Fetch Virtual Terminal** (read-only): Fetch a Virtual Terminal on your Paystack integration.
+- **Finalize Payment Request**: Finalize the creation of a draft payment request for a customer.
+- **Generate Update Subscription Link** (read-only): Generate a link for updating the card on a subscription.
+- **List Apple Pay Domains** (read-only): List all registered Apple Pay domains on your integration.
+- **List Bulk Charge Batches** (read-only): List bulk charge batches created on your integration.
+- **List Charges in Batch** (read-only): Retrieve the charges associated with a specified bulk charge batch.
+- **List countries** (read-only): Retrieve a list of countries that Paystack currently supports.
+- **List Mandate Authorizations** (read-only): Get a list of all direct debit mandates on your integration.
+- **List Orders** (read-only): List orders available on your integration.
+- **List Payment Pages** (read-only): List payment pages available on your Paystack integration.
+- **List Payment Requests** (read-only): List all previously created payment requests to your customers.
+- **List Plans** (read-only): List all subscription plans available on your integration.
+- **List Products** (read-only): List products available on your integration.
+- **List Refunds** (read-only): List refunds available on your integration.
+- **List Settlements** (read-only): List settlements made to your settlement accounts.
+- **List Splits** (read-only): List the transaction splits available on your integration.
+- **List states for address verification** (read-only): Retrieve a list of states for a country for address verification.
+- **List Storefront Products** (read-only): List all products in a Paystack storefront.
+- **List Storefronts** (read-only): List storefronts available on your integration.
+- **List Subaccounts** (read-only): List subaccounts available on your integration.
+- **List Subscriptions** (read-only): List all subscriptions available on your integration.
+- **List Transfer Recipients** (read-only): List transfer recipients available on your integration.
+- **List Virtual Terminals** (read-only): List virtual terminals available on your integration.
+- **Pause Bulk Charge**: Pause processing of a bulk charge batch.
+- **Publish Storefront**: Make a Storefront publicly available on Paystack.
+- **Remove Subaccount from Split**: Remove a subaccount from a split configuration.
+- **Resend OTP for Transfer**: Resend OTP for a transfer.
+- **Resume Bulk Charge Batch**: Resume processing of a previously paused bulk charge batch.
+- **Send Payment Request Notification**: Send an email notification to a customer for a previously created payment request.
+- **Send Subscription Update Link**: Send an email to the customer with a link to update the card on their subscription.
+- **Set Risk Action**: Set a customer's risk action by whitelisting or blacklisting them.
+- **Submit Phone**: Submit phone number when requested during a charge transaction.
+- **Trigger direct debit activation charge**: Trigger an activation charge on an inactive direct debit mandate for a customer.
+- **Unassign Destination from Virtual Terminal**: Unassign WhatsApp destinations from a Virtual Terminal.
+- **Unregister Apple Pay Domain**: Unregister a top-level domain or subdomain previously used for Apple Pay integration.
+- **Update Customer**: Update a customer's details on your Paystack integration.
+- **Update Payment Page**: Update a payment page on your Paystack integration.
+- **Update Payment Request**: Update a payment request on your Paystack integration.
+- **Update Payment Session Timeout**: Update the payment session timeout on your Paystack integration.
+- **Update Plan**: Update a plan's details on your Paystack integration.
+- **Update Product**: Update a product on your integration.
+- **Update Split Configuration**: Update a split configuration for transactions.
+- **Update Storefront**: Update the details of a previously created Storefront.
+- **Update Subaccount**: Update a subaccount's details on your Paystack integration.
+- **Update Transfer Recipient**: Update the details of a transfer recipient.
+- **Validate Order** (read-only): Validate a pay for me order on Paystack.
+- **Verify Storefront Slug** (read-only): Verify the availability of a slug before using it for a Storefront.

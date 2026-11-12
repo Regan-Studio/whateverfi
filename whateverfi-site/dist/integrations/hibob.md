@@ -1,0 +1,216 @@
+# HiBob
+
+HiBob is a human resources platform for managing people data, attendance, time off, hiring, goals, documents, and workforce planning.
+
+Category: Recruiting & HR. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/hibob/.
+
+## Actions
+
+- **Add a new item to an existing list**: Add a new item to an existing list.
+- **Archive Project**: Archive an attendance project.
+- **Archive Project Task**: Archive a project task.
+- **Archive skills**: Bulk-archive API-origin skills by source and externalId locator.
+- **Archive training content (bulk)**: Mark one or more LMS training content items as archived.
+- **Bulk create attendance entries**: Create one or more duration or start-end attendance entries.
+- **Bulk update attendance entries for an employee**: Update one or more attendance entries for a specific employee.
+- **Cancel Position**: Immediately cancel one workforce-planning position.
+- **Cancel time off request**: Cancel an employee's time off request.
+- **Clock in (create entry)**: Create an attendance entry by clocking in an employee.
+- **Clock out**: Record clock-out for an employee with an open clock-in.
+- **Create a deduction entry for an employee**: Creates a new deduction table entry for the employee.
+- **Create a dependent entry for an employee**: Creates a new dependent entry for the employee.
+- **Create a new bank account entry for a given employee**: Create a new bank account entry for a given employee.
+- **Create a new field**: Create a new field.
+- **Create a new work entry for a given employee**: Create a new work entry for a given employee.
+- **Create a right to work entry for an employee**: Creates a new right to work entry for the employee.
+- **Create an entitlement entry for an employee**: Creates a new entitlement table entry for the employee.
+- **Create company employee**: This endpoint allows you to create a new employee in the system.
+- **Create goals**: Creates up to 25 goals in HiBob.
+- **Create integration**: Create an LMS provider integration in Bob.
+- **Create key results**: Creates up to 25 key results for an existing goal.
+- **Create new custom table entry**: Create an entry in an employee's custom table from column-value pairs.
+- **Create Position**: Create workforce-planning positions with their required opening and optional budget.
+- **Create Position Budget**: Create a budget for a workforce-planning position.
+- **Create Position Opening**: Create one or more openings for a workforce-planning position.
+- **Create Project Task(s)**: Create one or more attendance project tasks.
+- **Create Project(s)**: Create one or more attendance projects.
+- **Create skills**: Bulk-create API-origin skills with per-item results.
+- **Create time off balance adjustment**: Add a manual balance or time-used adjustment for an employee.
+- **Create time off reason codes**: Create reason codes for a configured time off policy type.
+- **Create time off request**: Submit a time off request for an employee using one documented duration shape.
+- **Create training content (bulk insert)**: Create up to 500 training content items for an LMS integration.
+- **Creates a new employment entry for a given employee**: Creates a new employment entry for a given employee.
+- **Creates a new equity grant for a given employee**: Creates a new equity grant for a given employee.
+- **Creates a new salary entry for a given employee**: Creates a new salary entry for a given employee.
+- **Creates a new training records for a given employee**: Create a new training record in the Training table.
+- **Creates a new variable payment for a given employee**: Creates a new variable pay entry for the employee.
+- **Delete a deduction entry for an employee**: Deletes a deduction entry for the given employee.
+- **Delete a dependent entry for an employee**: Deletes a dependent entry for the given employee.
+- **Delete a Document from a Confidential Folder**: Delete a document from an employee's confidential folder.
+- **Delete a Document from a Custom Folder**: Delete a document from an employee's custom folder.
+- **Delete a Document from a Shared Folder**: Delete a document from an employee's shared folder.
+- **Delete a right to work entry for an employee**: Deletes a right to work entry for the given employee.
+- **Delete an attendance entry**: Permanently delete an attendance entry by ID.
+- **Delete an entitlement entry for an employee**: Deletes an entitlement entry for the given employee.
+- **Delete an existing field**: Delete an existing field.
+- **Delete an item from an existing list**: Delete an item from an existing list.
+- **Delete custom table entry**: Delete custom table entry.
+- **Delete goal**: Permanently deletes a goal by ID.
+- **Delete key result**: Permanently deletes a key result from a goal.
+- **Delete LMS integration**: Delete an LMS provider integration from Bob.
+- **Delete Position Opening**: Delete an opening from a workforce-planning position.
+- **Deletes a bank account entry from a given employee's bank accounts table**: Deletes a bank account entry from a given employee's bank accounts table.
+- **Deletes a salary entry from the employee's list**: Deletes a salary entry from the employee's list.
+- **Deletes a variable payment record for an employee**: Deletes a variable pay entry for the given employee.
+- **Deletes a work entry from a given employee's work history**: Deletes a work entry from a given employee's work history.
+- **Deletes an employment entry from a given employee's employment history**: Deletes an employment entry from a given employee's employment history.
+- **Deletes an equity grant for an employee**: Deletes an equity grant for an employee.
+- **Deletes any training records for an employee**: Deletes any training records for an employee.
+- **Download a report by the report name** (read-only): Downloads a report generated by the asynchronous report endpoint.
+- **Download list of documents of an employee** (read-only): Return an employee's documents with downloadable file references.
+- **Download the report by ID** (read-only): Returns a report data file in the specified format.
+- **Fetch attendance entries** (read-only): Retrieve one page of attendance entries for employees and dates.
+- **Fetch attendance summaries** (read-only): Retrieve one page of attendance summaries by employee and date range.
+- **Fetch daily attendance breakdown** (read-only): Retrieve one page of daily attendance breakdown data for employees.
+- **Get a specific company list by name** (read-only): Get a specific company list by name.
+- **Get a summary of all onboarding wizards** (read-only): List onboarding welcome wizards and their IDs for inviting employees.
+- **Get all company lists** (read-only): Get all company lists.
+- **Get all employee fields** (read-only): This endpoint retrieves only metadata about the employee fields and includes all employee fields.
+- **Get document folders metadata** (read-only): List Bob document folders and their identifiers.
+- **Get employee time off balance** (read-only): Retrieve an employee's balance for a policy type at a point in time.
+- **Get employer metadata** (read-only): Returns the field catalog for the employer object — the set of fields a client can read, with their types, validations, and status.
+- **Get goal cycle metadata** (read-only): Returns metadata describing the fields available on goal cycles.
+- **Get goal type metadata** (read-only): Returns metadata describing the fields available on goal types.
+- **Get goals metadata** (read-only): Returns metadata describing the fields available on goals.
+- **Get job ad** (read-only): Returns details of a job ad promoted on the Bob careers page.
+- **Get job family group metadata** (read-only): Returns metadata describing job-family-group fields.
+- **Get job family metadata** (read-only): Returns metadata describing job-family fields.
+- **Get job profiles metadata** (read-only): Returns metadata describing job-profile fields.
+- **Get job role metadata** (read-only): Returns metadata describing job-role fields.
+- **Get key results metadata** (read-only): Returns metadata describing the fields available on key results.
+- **Get Position Budget Metadata** (read-only): Get the field metadata for workforce-planning position budgets.
+- **Get Position Metadata** (read-only): Get the field metadata for workforce-planning positions.
+- **Get Position Opening Metadata** (read-only): Get the field metadata for workforce-planning position openings.
+- **Get Project Client Metadata** (read-only): Get metadata describing available project client fields.
+- **Get Project Metadata** (read-only): Get metadata describing available attendance project fields.
+- **Get Project Task Metadata** (read-only): Get metadata describing available project task fields.
+- **Get the report download URL for polling**: Asynchronously generates a report.
+- **Get time off policy details** (read-only): Retrieve details of a named time off policy.
+- **Get time off policy type** (read-only): Retrieve a configured time off policy type.
+- **Get time off request** (read-only): Retrieve one employee time off request by ID.
+- **Get work location metadata** (read-only): Returns the field catalog for the workLocation object — the set of fields a client can read, with their types, validations, and status.
+- **Import attendance data**: Import employee clock-in and clock-out events.
+- **Invite an employee with a welcome wizard ID**: Invite an employee to HiBob using an onboarding welcome wizard.
+- **List company job profiles** (read-only): Searches company job profiles and returns one page of matching profiles.
+- **List deduction entries for a list of employees** (read-only): Returns deduction table entries for all employees or a specific list of employees.
+- **List dependents for a list of employees** (read-only): Returns dependent entries for all employees or a specific list of employees.
+- **List employee's bank accounts** (read-only): Returns a list of the bank accounts table entries for a given employee.
+- **List employee's employment history** (read-only): Returns a list of employment history entries for a given employee.
+- **List employee's lifecycle status history** (read-only): Returns a list of historical lifecycle entries from the lifecycle table for an employee.
+- **List employee's salary history** (read-only): Returns a list of historical salary entries from the salary table in the payroll section for an employee.
+- **List employee's variable payments** (read-only): Returns a list of variable payments for a given employee.
+- **List employee's work history** (read-only): Returns a list of historical work entries from the work table for an employee.
+- **List employment history for a list of employees** (read-only): Returns a list of historical employment entries from the employment table for all employees or a specific list of employees.
+- **List entitlement entries for a list of employees** (read-only): Returns entitlement table entries for all employees or a specific list of employees.
+- **List equity grants for a list of employees** (read-only): Returns equity table entries for all employees or a specific list of employees.
+- **List job families** (read-only): Returns one page of job families from the company job catalog.
+- **List job family groups** (read-only): Returns one page of job-family groups from the company job catalog.
+- **List job roles** (read-only): Returns one page of job roles from the company job catalog.
+- **List open tasks** (read-only): Returns up to 5,000 open company tasks ordered by task ID.
+- **List payroll history (salaries) for a list of employees** (read-only): Returns a list of historical salary entries from the payroll table for all employees or a specific list of employees.
+- **List people out of office** (read-only): List people with time off requests in an inclusive date range.
+- **List people out today** (read-only): List people who are out on a selected date.
+- **List proficiency levels** (read-only): Lists the company's proficiency levels referenced by skill create and update operations.
+- **List right to work entries for a list of employees** (read-only): Returns right to work entries for all employees or a specific list of employees.
+- **List the employee's equity grants** (read-only): Returns a list of equity grants for a given employee.
+- **List the employee's training records** (read-only): Returns a list of training entries from the employee's Training table, for a given employee.
+- **List the lifecycle history for a list of employees** (read-only): Returns a list of historical lifecycle entries from the lifecycle table for all employees or a specific list of employees.
+- **List time off policy names** (read-only): List policy names belonging to a time off policy type.
+- **List time off policy types** (read-only): List configured time off policy type names.
+- **List time off reason codes** (read-only): List request reason codes configured for a policy type.
+- **List time off request changes** (read-only): List time off requests created, canceled, deleted, or pending since a point in time.
+- **List variable pay entries for a list of employees** (read-only): Returns variable pay table entries for all employees or a specific list of employees.
+- **List work history for a list of employees** (read-only): Returns a list of historical work entries from the work table for all employees or a specific list of employees.
+- **Mark a task as complete**: Marks a task as complete.
+- **Read all entries of the given custom table** (read-only): Read all entries of the given custom table.
+- **Read avatar URL for an employee email** (read-only): Returns the employee's avatar image URL without fetching the image.
+- **Read avatar URL for an employee ID** (read-only): Returns the employee's avatar image URL without fetching the image.
+- **Read company employee fields by employee ID** (read-only): Single-employee read endpoint (not bulk search).
+- **Read company reports** (read-only): Returns a list of all company reports with their details.
+- **Read metadata for specific custom table** (read-only): Read metadata for specific custom table.
+- **Read metadata of custom tables defined** (read-only): Read metadata of custom tables defined.
+- **Read payroll tables history** (read-only): List legacy payroll-table history, optionally filtered by department and inactive employees.
+- **Read tasks of a specific employee** (read-only): Returns tasks for a specific employee, optionally filtered by status.
+- **Read the public profile section of all active employees** (read-only): Returns a predefined list of fields for all active employees the service user can access.
+- **Restore Project**: Restore an archived attendance project.
+- **Restore Project Task**: Restore an archived project task.
+- **Revoke access to Bob for an employee**: Revoke an employee's access to HiBob without deleting the employee record.
+- **Schedule Position Cancellation**: Cancel multiple positions immediately or on a specified date.
+- **Search application form answers** (read-only): Searches application form answer records using filters and returns one page of results.
+- **Search applications** (read-only): Searches applications using filters and returns one page of results.
+- **Search calendar events** (read-only): Search holiday and company-closure calendar events for an inclusive date range.
+- **Search candidate educations** (read-only): Searches candidate education records and returns one page.
+- **Search candidate experiences** (read-only): Searches candidate work experience records and returns one page.
+- **Search candidate languages** (read-only): Searches candidate language records and returns one page.
+- **Search candidate professional association memberships** (read-only): Searches candidate professional association membership records and returns one page.
+- **Search candidate qualifications and licenses** (read-only): Searches candidate qualification and license records and returns one page.
+- **Search candidate skills** (read-only): Searches candidate skill records and returns one page.
+- **Search candidate volunteer experiences** (read-only): Searches candidate volunteer experience records and returns one page.
+- **Search candidates** (read-only): Searches candidates using filters and returns one page of results.
+- **Search employee calendars** (read-only): Resolve holiday calendars for employees and return one page of results.
+- **Search employers** (read-only): Searches employers in the caller's company.
+- **Search evaluation scorecard templates** (read-only): Searches evaluation scorecard templates and returns one page.
+- **Search evaluations** (read-only): Searches evaluation records and returns one page.
+- **Search for actual payments** (read-only): This endpoint allows you to search for actual payments based on various filters.
+- **Search for employees** (read-only): Search employee fields for many employees in one call.
+- **Search goal cycles** (read-only): Searches goal cycles and returns one page of matching records.
+- **Search goal types** (read-only): Searches goal types and returns one page of matching records.
+- **Search goals** (read-only): Searches goals and returns one page of matching records.
+- **Search interviews** (read-only): Searches interview records and returns one page.
+- **Search job ads** (read-only): Returns active job ads promoted on the Bob career page.
+- **Search job openings** (read-only): Searches job openings using filters and returns one page.
+- **Search key results** (read-only): Searches key results for a goal and returns one page.
+- **Search offers** (read-only): Searches offer records and returns one page.
+- **Search Position Budgets** (read-only): Return one page of workforce-planning position budgets.
+- **Search Position Openings** (read-only): Return one page of workforce-planning position openings.
+- **Search Positions** (read-only): Search workforce-planning positions using documented field filters.
+- **Search Project Clients** (read-only): Search project clients and return one page of results.
+- **Search Project Tasks** (read-only): Search attendance project tasks and return one page of results.
+- **Search Projects** (read-only): Search attendance projects and return one page of results.
+- **Search skills** (read-only): Searches API-origin skills with field projection, filters, and one-page cursor pagination.
+- **Search work locations** (read-only): Searches the work locations of a single employer, identified by the path parameter {employerId}.
+- **Set or update an employee's start date**: Set or change an employee's employment start date, with an optional reason.
+- **Submit xAPI statement**: Submit one xAPI statement to record learner progress for a course.
+- **Terminate company employee**: This changes the employee’s status to Terminated according to specified termination date.
+- **Update a bank account entry in the employee's bank accounts table**: This endpoint updates an entry in the employee’s Bank accounts table.
+- **Update a deduction entry for an employee**: Updates an existing deduction entry for the given employee.
+- **Update a dependent entry for an employee**: Updates an existing dependent entry for the given employee.
+- **Update a right to work entry for an employee**: Updates an existing right to work entry for the given employee.
+- **Update a variable payment for an employee**: Updates an existing variable pay entry for the given employee.
+- **Update a work entry in the employee's work history table**: This endpoint updates an entry in the employee’s work history table.
+- **Update an employee's email address**: Change an employee's email address.
+- **Update an employment entry from a given employee's employment history**: This endpoint updates an entry in the employee’s employment history table.
+- **Update an entitlement entry for an employee**: Updates an existing entitlement entry for the given employee.
+- **Update an existing field**: Update an existing field.
+- **Update an existing item from a list**: Update an existing item from a list.
+- **Update company employee**: This endpoint allows you to update specific fields in an employee's record in Bob.
+- **Update custom table entry**: Update an employee's custom-table entry from column-value pairs.
+- **Update goal**: Updates details of an existing goal.
+- **Update goal status**: Updates the status of an existing goal and optionally records a comment.
+- **Update key results details**: Updates details of one or more key results on a goal.
+- **Update key results progress**: Records progress values and optional check-in notes for key results.
+- **Update Position**: Update the mutable fields of one workforce-planning position.
+- **Update Position Budget**: Update a budget attached to a workforce-planning position.
+- **Update Position Opening**: Update an opening attached to a workforce-planning position.
+- **Update Project**: Update an attendance project's fields and employee audience.
+- **Update Project Task**: Update the name and billable state of a project task.
+- **Update skills**: Bulk-update API-origin skills resolved by source and externalId locator.
+- **Update training content (bulk patch)**: Update one or more training content items for an LMS integration.
+- **Updates an equity grant for an employee**: This endpoint updates an entry in the employee’s equity table.
+- **Upload employee's avatar by image url**: Upload an employee's Avatar by providing a URL to the image to upload.
+- **Upload file from a URL to a Confidential Folder**: Upload a document from a URL into an employee's confidential folder.
+- **Upload File from a URL to a Custom Folder**: Upload a document from a URL into an employee's custom folder.
+- **Upload file from a URL to a Shared Folder**: Upload a document from a URL into an employee's shared folder.
+- **Upload File to a Confidential Folder**: Upload a file directly into an employee's confidential folder.
+- **Upload File to a Custom Folder**: Upload a file directly into an employee's custom folder.
+- **Upload file to a Shared Folder**: Upload a file directly into an employee's shared folder.

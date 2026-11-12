@@ -1,0 +1,185 @@
+# Maxio
+
+Subscription billing and revenue management platform (formerly Chargify)
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/maxio/.
+
+## Actions
+
+- **Bulk Create Product Price Points**: Creates multiple product price points in a single API call.
+- **Cancel Delayed Cancellation**: Cancels a scheduled cancellation on a subscription.
+- **Create Component Price Point**: Creates a price point for a component in Maxio Advanced Billing.
+- **Create Customer**: Creates a new customer in Maxio/Chargify with the required fields.
+- **Create Metadata**: Creates metadata values for a resource in Maxio/Chargify Advanced Billing.
+- **Create Prepayment**: Creates a prepayment for a subscription.
+- **Create Product**: Create a new product within a product family in Maxio.
+- **Create Product Family**: Creates a new product family in Maxio/Chargify.
+- **Create Product Price Point**: Creates a price point for a product in Maxio Advanced Billing.
+- **Create Proforma Invoice**: Creates a proforma invoice for a subscription.
+- **Create Reason Code**: Creates a new churn reason code in Maxio/Chargify Advanced Billing.
+- **Create Signup Proforma Invoice**: Creates a proforma invoice for signup preview.
+- **Create Subscription**: Creates a new subscription in Maxio (Chargify) with specified product, customer, and payment details.
+- **Create Subscription Group With Signup**: Creates a subscription group with subscriptions and a shared payer in a single operation.
+- **Create Subscription Note**: Creates a note on a subscription in Maxio/Chargify Advanced Billing.
+- **Deduct Service Credit**: Deducts from a subscription's service credit balance.
+- **Issue Advance Invoice**: Issues an advance invoice for a subscription.
+- **Issue Service Credit**: Issues a service credit to a subscription.
+- **Preview Signup Proforma Invoice**: Previews a proforma invoice for signup.
+- **Refund Prepayment**: Refunds a prepayment made on a subscription.
+- **Update Component Price Point**: Updates a price point for a component in Maxio Advanced Billing.
+- **Update Customer**: Updates an existing customer in Maxio/Chargify.
+- **Update Product**: Updates an existing product in Maxio/Chargify.
+- **Update Product Price Point**: Updates a product price point in Maxio Advanced Billing.
+- **Update Reason Code**: Updates an existing churn reason code in Maxio/Chargify Advanced Billing.
+- **Update Subscription**: Updates an existing subscription's details in Maxio/Chargify.
+- **Update Subscription Note**: Updates an existing note on a subscription in Maxio/Chargify Advanced Billing.
+- **Void Advance Invoice**: Voids an advance invoice for a subscription.
+- **Allocate Component**: Creates an allocation for a component on a subscription.
+- **Apply Coupons to Subscription**: Applies one or more coupons to a subscription.
+- **Archive Component**: Archives a component to prevent new allocations.
+- **Archive Component Price Point**: Archives a component price point, making it inactive.
+- **Archive Coupon**: Archives a coupon to prevent new uses.
+- **Archive Offer**: Archives an offer to prevent new subscriptions from using it.
+- **Archive Product**: Archives a product to prevent new subscriptions from being created.
+- **Archive product price point**: Archives a product price point by its ID.
+- **Bulk Record Events**: Record multiple billable events in bulk for a subscription component.
+- **Bulk Reset Subscription Components Price Points**: Resets subscription component price points to their default values.
+- **Bulk Update Subscription Component Price Points**: Bulk updates component price points for a subscription.
+- **Clone Component Price Point**: Clones an existing component price point to create a new one.
+- **Create Component**: Creates a new component within a product family in Chargify.
+- **Create Coupon Subcodes**: Creates multiple subcodes for an existing coupon in Maxio Advanced Billing.
+- **Create Invoice**: Creates a one-time invoice for a subscription with custom line items.
+- **Create Metafields**: Creates metafield definitions for a resource type.
+- **Create or Update Coupon Currency Prices**: Create or update currency prices for a coupon in Maxio.
+- **Create Payment Profile**: Creates a new payment profile for a customer in Maxio (Chargify).
+- **Create Prepaid Usage Component**: Creates a prepaid usage component for pre-purchased units.
+- **Create Quantity Based Component**: Creates a quantity-based component for recurring units within a product family.
+- **Create Usage**: Records usage for a metered component on a subscription.
+- **Create Webhook Endpoint**: Creates a new webhook endpoint in Maxio Advanced Billing.
+- **Deactivate Event Based Component**: Deactivates an event-based component on a subscription.
+- **Delete Coupon Subcode**: Deletes a specific subcode from an existing coupon in Maxio Advanced Billing.
+- **Delete Customer**: Deletes a customer from Maxio/Chargify.
+- **Delete Prepaid Usage Allocation**: Deletes a prepaid usage allocation from a subscription component.
+- **Delete Reason Code**: Deletes a churn reason code from Maxio/Chargify Advanced Billing.
+- **Delete Subscription Group**: Deletes a subscription group and all its associated data.
+- **Delete Subscription Note**: Deletes a specific note from a subscription in Maxio Advanced Billing.
+- **Delete Subscription Payment Profile**: Removes a payment profile from a subscription in Maxio Advanced Billing.
+- **Delete Unused Payment Profile**: Permanently deletes an unused payment profile from Maxio/Chargify.
+- **Deliver Proforma Invoice**: Delivers a proforma invoice to the customer via email.
+- **Enable Webhooks**: Enables or disables webhooks for the Maxio/Chargify site.
+- **Export Invoices**: Initiates an invoices export job.
+- **Export Proforma Invoices** (read-only): Initiates an asynchronous export of proforma invoices data.
+- **Export Subscriptions**: Initiates an asynchronous export of subscription data from Maxio/Chargify.
+- **Find Coupon by Code** (read-only): Finds and retrieves a coupon by its unique code in Maxio Advanced Billing.
+- **Get MRR** (read-only): Returns monthly recurring revenue data for the site.
+- **Initiate Delayed Cancellation**: Schedules a subscription for cancellation at the end of its current billing period.
+- **Issue Invoice**: Issues a draft invoice for payment collection.
+- **List All Component Price Points** (read-only): Lists all component price points across the site.
+- **List All Product Price Points** (read-only): Lists all product price points across the site in Maxio Advanced Billing.
+- **List Allocations**: Lists all allocations for a component on a subscription.
+- **List Chargify.js Public Keys** (read-only): Lists all public keys for Chargify.js integration in Maxio Advanced Billing.
+- **List Component Price Points** (read-only): Lists all price points for a component in Maxio Advanced Billing.
+- **List Components** (read-only): Returns a list of all components across product families in Chargify.
+- **List Components for Product Family** (read-only): Lists all components within a product family in Maxio/Chargify.
+- **List Consolidated Invoice Segments** (read-only): Lists segments of a consolidated invoice.
+- **List Coupon Subcodes** (read-only): Lists all subcodes for an existing coupon in Maxio Advanced Billing.
+- **List Coupons for Product Family** (read-only): Lists all coupons within a product family.
+- **List Credit Notes** (read-only): Returns a list of credit notes from Maxio/Chargify.
+- **List Customer Subscriptions** (read-only): Lists all subscriptions for a specific customer in Maxio Advanced Billing.
+- **List Customers** (read-only): Returns a list of customers with optional filtering and pagination.
+- **List Events** (read-only): Returns a list of events for the site in Maxio Advanced Billing.
+- **List Exported Invoices**: Retrieves a list of exported invoices for a specific invoice export batch.
+- **List Exported Proforma Invoices** (read-only): Lists exported proforma invoice rows from a previously initiated export batch.
+- **List Exported Subscriptions** (read-only): Lists exported subscriptions from a subscription export batch in Maxio/Chargify.
+- **List Invoice Events** (read-only): Lists all invoice events from Maxio/Chargify with optional filtering.
+- **List Invoices** (read-only): Returns a list of invoices with optional filtering and pagination.
+- **List Metadata for Resource Type**: Lists all metadata definitions for a resource type in Maxio/Chargify Advanced Billing.
+- **List Metafields** (read-only): Lists all metafield definitions for a resource type in Maxio/Chargify Advanced Billing.
+- **List MRR Movements** (read-only): Returns MRR movement history showing changes in Monthly Recurring Revenue.
+- **List MRR Per Subscription** (read-only): Returns MRR broken down by subscription.
+- **List Offers** (read-only): Returns a list of all offers in Chargify.
+- **List Payment Profiles** (read-only): Returns a list of payment profiles in Maxio Advanced Billing.
+- **List Prepayments** (read-only): Lists all prepayments for a subscription in Maxio Advanced Billing.
+- **List Product Families** (read-only): Returns a list of all product families in Maxio/Chargify.
+- **List Product Price Points** (read-only): Lists all price points for a product in Maxio Advanced Billing.
+- **List Products** (read-only): Returns a list of all products from Maxio (Chargify).
+- **List Products for Product Family** (read-only): Lists all products within a product family in Maxio/Chargify.
+- **List Proforma Invoices** (read-only): Lists all proforma invoices for a specific subscription in Maxio Advanced Billing.
+- **List Reason Codes** (read-only): Returns a list of all churn reason codes in Maxio/Chargify Advanced Billing.
+- **List Service Credits** (read-only): Lists all service credits for a subscription in Maxio Advanced Billing.
+- **List Subscription Components** (read-only): Lists all components attached to a subscription in Maxio (Chargify).
+- **List Subscription Components For Site** (read-only): Lists all subscription components for a site.
+- **List Subscription Events** (read-only): Returns a list of events for a specific subscription in Maxio Advanced Billing.
+- **List Subscription Groups** (read-only): Returns a list of subscription groups with optional filtering and pagination.
+- **List Subscription Notes** (read-only): Lists all notes attached to a subscription in Maxio/Chargify Advanced Billing.
+- **List Subscriptions** (read-only): Returns a list of subscriptions with optional filtering and pagination.
+- **List Usages** (read-only): Lists all usage records for a component on a subscription.
+- **List Webhook Endpoints** (read-only): Returns a list of webhook endpoints configured in Maxio Advanced Billing.
+- **List Webhooks** (read-only): Returns a list of webhooks configured in Maxio Advanced Billing.
+- **Migrate Subscription Product**: Migrates a subscription to a different product in Maxio/Chargify Advanced Billing.
+- **Override Subscription**: Overrides cancellation settings of a subscription.
+- **Pause Subscription**: Pauses an active subscription in Maxio (Chargify) Advanced Billing.
+- **Preview Allocations** (read-only): Previews allocation charges before creating them for subscription components.
+- **Preview Customer Information Changes** (read-only): Previews customer information changes for an invoice.
+- **Preview Proforma Invoice** (read-only): Previews a proforma invoice for a subscription without actually creating it.
+- **Preview Renewal** (read-only): Previews the next renewal charges for a subscription in Maxio (Chargify).
+- **Preview Subscription** (read-only): Previews a subscription in Maxio (Chargify) before actual creation to see pricing and details.
+- **Preview Subscription Product Migration** (read-only): Previews a product migration before executing it.
+- **Promote Component Price Point to Default**: Promotes a component price point to be the default price point for its component.
+- **Promote Product Price Point to Default**: Promotes a product price point to be the default price point for a product.
+- **Reactivate Subscription**: Reactivates a canceled subscription in Maxio (Chargify) Advanced Billing.
+- **Reactivate Subscription Group**: Reactivates a canceled subscription group in Maxio/Chargify.
+- **Read Account Balances** (read-only): Retrieves the account balances for a subscription in Maxio Advanced Billing.
+- **Read Advance Invoice** (read-only): Retrieves an advance invoice for a subscription.
+- **Read Component** (read-only): Retrieves details of a specific component within a product family in Maxio/Chargify.
+- **Read Component by Handle** (read-only): Finds a component by its unique handle in Maxio/Chargify.
+- **Read Component Price Point** (read-only): Retrieves a specific component price point in Maxio Advanced Billing.
+- **Read Coupon** (read-only): Retrieves details of a specific coupon within a product family.
+- **Read Coupon Usage** (read-only): Retrieves usage statistics for a coupon.
+- **Read Credit Note** (read-only): Retrieves details of a specific credit note from Maxio/Chargify.
+- **Read Customer** (read-only): Retrieves details of a specific customer by their Chargify ID.
+- **Read Customer By Reference** (read-only): Looks up a customer by their external reference value.
+- **Read Events Count** (read-only): Returns a count of events for the site in Maxio Advanced Billing.
+- **Read Invoice** (read-only): Retrieves details of a specific invoice by its unique identifier (UID).
+- **Read Invoices Export Status** (read-only): Retrieves the status and details of an invoices export batch job.
+- **Read Offer** (read-only): Retrieves details of a specific offer by its ID from Maxio (Chargify).
+- **Read Payment Profile** (read-only): Retrieves details of a specific payment profile in Maxio Advanced Billing.
+- **Read Product** (read-only): Retrieves details of a specific product by its ID from Maxio (Chargify).
+- **Read Product By Handle** (read-only): Retrieves a single product from Maxio (Chargify) by its unique handle.
+- **Read Product Family** (read-only): Retrieves details of a specific product family in Maxio/Chargify.
+- **Read Product Price Point** (read-only): Retrieves a specific product price point in Maxio Advanced Billing.
+- **Read Proforma Invoice** (read-only): Retrieves a specific proforma invoice by its unique identifier.
+- **Read Proforma Invoices Export** (read-only): Retrieves the status and details of a proforma invoices export batch job.
+- **Read Reason Code** (read-only): Retrieves a specific churn reason code by its ID from Maxio/Chargify Advanced Billing.
+- **Read Site** (read-only): Retrieves details about the current Chargify/Maxio site.
+- **Read Site Stats** (read-only): Returns site-wide statistics for the Chargify site.
+- **Read Subscription** (read-only): Retrieves details of a specific subscription by its unique identifier (ID).
+- **Read Subscription By Reference** (read-only): Finds a subscription by its external reference identifier in Maxio Advanced Billing.
+- **Read Subscription Component** (read-only): Retrieves details of a component attached to a subscription in Maxio (Chargify).
+- **Read Subscription Note** (read-only): Retrieves a specific note attached to a subscription in Maxio/Chargify Advanced Billing.
+- **Read Subscriptions Export Status** (read-only): Retrieves the status and details of a subscriptions export batch job.
+- **Record Payment for Invoice**: Records a payment for an invoice.
+- **Refund Invoice**: Creates a refund for a paid invoice.
+- **Remove Coupon from Subscription**: Removes an applied coupon from a subscription in Maxio (Chargify) Advanced Billing.
+- **Remove Subscription from Group**: Removes a subscription from its subscription group in Maxio Advanced Billing.
+- **Reopen Invoice**: Reopens a voided or canceled invoice, changing its status back to open.
+- **Replay Webhooks**: Replays specified webhook deliveries in Maxio Advanced Billing.
+- **Resume Subscription**: Resumes a paused subscription in Maxio (Chargify) Advanced Billing.
+- **Retry Subscription**: Retries payment for a past due subscription in Maxio (Chargify) Advanced Billing.
+- **Revoke Billing Portal Access**: Revokes billing portal access for a customer.
+- **Send Invoice**: Sends an invoice to the customer via email.
+- **Send Request Update Payment Email**: Sends an email to the customer requesting they update their payment method.
+- **Unarchive Component Price Point**: Unarchives a component price point, restoring it to active status.
+- **Unarchive Offer**: Unarchives a previously archived offer, making it available for new subscriptions again.
+- **Unarchive product price point**: Unarchives a product price point by its ID.
+- **Update Automatic Subscription Resumption**: Updates automatic resumption settings for a paused subscription in Maxio (Chargify) Advanced Billing.
+- **Update Component**: Updates a component's details in Chargify.
+- **Update Coupon**: Updates an existing coupon within a product family in Maxio.
+- **Update Coupon Subcodes**: Updates all subcodes for an existing coupon in Maxio Advanced Billing.
+- **Update Invoice Customer Information**: Updates customer information on an invoice in Maxio/Chargify.
+- **Update Payment Profile**: Updates an existing payment profile in Maxio (Chargify).
+- **Update Prepaid Expiration**: Updates the expiration date of a prepaid usage allocation.
+- **Update Product Family Component**: Updates a component within its product family in Maxio/Chargify.
+- **Update Webhook Endpoint**: Updates an existing webhook endpoint in Maxio Advanced Billing.
+- **Validate Coupon** (read-only): Validates a coupon code for a product.
+- **Void Invoice**: Voids an open invoice to stop future collection.

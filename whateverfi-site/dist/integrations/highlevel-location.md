@@ -1,0 +1,562 @@
+# HighLevel Location
+
+HighLevel provides Location-scoped CRM, marketing, conversations, calendars, payments, and business automation APIs.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/highlevel-location/.
+
+## Actions
+
+- **Add an external outbound call**: Post the necessary fields for the API to add a new outbound call.
+- **Add an inbound message**: Post the necessary fields for the API to add a new inbound message.
+- **Add Contact to Campaign**: Add contact to Campaign Location PITs must be provisioned with the HighLevel permission.
+- **Add Contact to Workflow**: Add Contact to Workflow Location PITs must be provisioned with the HighLevel permission.
+- **Add custom audience member**: Add a member to a Facebook custom audience Location PITs must be provisioned with the HighLevel permission.
+- **Add Followers**: Add Followers Location PITs must be provisioned with the HighLevel permission.
+- **Add Followers**: Add up to 10 user IDs as followers of an opportunity and return the resulting follower list.
+- **Add message attachments**: Set attachments on an existing message (replaces existing).
+- **Add Tags**: Add Tags Location PITs must be provisioned with the HighLevel permission.
+- **Agent/Ai-Bot is typing a message indicator for live chat**: Set the typing indicator for a conversation started by a live-chat widget visitor.
+- **Apply user availability schedule to a calendar**: Associate a calendar with a schedule.
+- **Attach Action to Agent**: Creates and attach a new action for an AI agent.
+- **Batch update audience members**: Queue an asynchronous job to add, remove, or replace Facebook custom-audience members via CSV or smart lists.
+- **Bulk Delete / Trash Files or Folders**: Delete or trash multiple files and folders in the connected Location.
+- **Bulk Delete Social Planner Posts**: Idempotently soft-delete up to 50 Social Planner posts from HighLevel.
+- **Bulk Edit Products and Prices**: Edit fields on up to 30 products and nested prices in one request.
+- **Bulk Update Contact Business**: Submit a job to assign one business to up to 50 contacts, or remove their business association with remove_business=true.
+- **Bulk Update Contact Tags**: Add or remove tags for multiple contacts, including optionally removing all tags.
+- **Bulk Update Files / Folders**: Rename multiple files or folders in the connected Location's media storage.
+- **Bulk Update Product Reviews**: Update one or multiple product reviews.
+- **Bulk Update Products**: Bulk-update product prices, availability, collections, or currency, or permanently delete products when type is bulk-delete-products.
+- **Cancel a scheduled email message.**: Post the messageId for the API to delete a scheduled email message.
+- **Cancel a scheduled message.**: Post the messageId for the API to delete a scheduled message.
+- **Cancel an scheduled invoice**: API to cancel a scheduled invoice by schedule id.
+- **Check blog URL slug** (read-only): Check whether a URL slug is already used by a blog post in the connected HighLevel Location.
+- **Check Wallet Funds** (read-only): Check whether the connected HighLevel sub-account has sufficient wallet funds to be charged.
+- **Clone a queue item**: Duplicates an existing queue item at a specified order position.
+- **Clone Chat Widget**: Creates a copy of a chat widget in the connected sub-account.
+- **Connect Account (Step 3 of 3)**: Attach an account returned by SOCIAL_PLANNER_GET_OAUTH_ACCOUNTS (step 2 of the OAuth flow).
+- **Create & Send**: Create or update a text-to-pay invoice.
+- **Create a comment or reply**: Create a top-level post comment (isParentThread.
+- **Create a new brand board**: Create a brand board with logos, colors, and fonts in the connected HighLevel location.
+- **Create a new category queue**: Creates a queue in draft status for a category.
+- **Create a new item in the queue**: Adds a new post item to a queue.
+- **Create a template folder**: Create an email-template folder in the connected HighLevel location.
+- **Create Ad Platform Integration**: Connect one supported ad platform to the Location using the provider-specific account identifiers.
+- **Create Agent**: Create an Agent Studio agent with an initial staging version.
+- **Create an Agent**: Creates a new AI agent for the location.
+- **Create an email template**: Create a new email template in the connected HighLevel location.
+- **Create appointment**: Create an appointment.
+- **Create association**: Create a user-defined association between supported HighLevel object types.
+- **Create Block Slot**: Create a block slot for exactly one owner.
+- **Create blog post**: Create a blog post in the connected HighLevel Location.
+- **Create Brand Voice**: Create a brand voice in the connected location.
+- **Create Business**: Create a business in the connected HighLevel location.
+- **Create Calendar**: Create calendar in a location.
+- **Create Calendar Group**: Create Calendar Group Location PITs must be provisioned with the HighLevel permission.
+- **Create Calendar Resource**: Create calendar resource by resource type (Services V1) Location PITs must be provisioned with the HighLevel permission.
+- **Create Chat Widget**: Creates a new chat widget for the connected sub-account.
+- **Create Contact**: Create a new contact Location PITs must be provisioned with the HighLevel permission.
+- **Create Conversation**: Creates a new conversation with the data provided Location PITs must be provisioned with the HighLevel permission.
+- **Create conversation form**: Create a new Facebook conversation lead form.
+- **Create Coupon**: Create a promotional coupon.
+- **Create Custom Field**: Create a custom field for a custom object or Company (Business) object in the connected HighLevel location.
+- **Create Custom Field**: Create a custom field in the connected HighLevel Location.
+- **Create Custom Field Folder**: Create a custom field folder for a custom object in the connected HighLevel location.
+- **Create Custom Payment Integration**: Create a custom payment-provider association for the connected Location.
+- **Create Custom Value**: Create a custom value in the connected HighLevel Location.
+- **Create Email Campaign**: Create an email campaign draft without scheduling or sending it.
+- **Create Estimate Template**: Create a new estimate template.
+- **Create event calendar availability schedule**: Create or replace the availability schedule for an event calendar.
+- **Create Invoice**: API to create an invoice.
+- **Create Invoice from Estimate**: Create a new invoice from an existing estimate.
+- **Create Invoice Schedule**: API to create an invoice Schedule.
+- **Create Knowledge Base**: Create a knowledge base after explicit confirmation.
+- **Create Knowledge Base FAQ**: Create an FAQ after explicit confirmation.
+- **Create lead form**: Create a new LinkedIn lead gen form for an ad account Location PITs must be provisioned with the HighLevel permission.
+- **Create Link**: Create a trigger link in the connected HighLevel location.
+- **Create Media Folder**: Create a folder in the connected Location's media storage.
+- **Create New Estimate**: Create a new estimate.
+- **Create Note**: Create an appointment note.
+- **Create Note**: Create Note Location PITs must be provisioned with the HighLevel permission.
+- **Create notification**: Create Calendar notifications, either one or multiple.
+- **Create Object Record**: Create a business or custom object record with schema-defined fields.
+- **Create offline user list job**: Create a job to upload users to an existing Google Customer Match list.
+- **Create Opportunity**: Create an opportunity.
+- **Create or Send Proposal from Template**: Create a proposal or contract from a template for a contact in the connected HighLevel location.
+- **Create Order Fulfillment**: Create fulfillment history for an order.
+- **Create page lead form**: Create a new lead form on a Facebook page.
+- **Create Pipeline**: Create a pipeline with at least one stage in the connected HighLevel location.
+- **Create post**: Create a draft or publish/schedule content on connected external social networks.
+- **Create Price for a Product**: The "Create Price for a Product" API allows adding a new price associated with a specific product to the system.
+- **Create Product**: The "Create Product" API allows adding a new product to the system.
+- **Create Product Collection**: Create a new Product Collection for a specific location Location PITs must be provisioned with the HighLevel permission.
+- **Create Recurring Task**: Create Recurring Task Location PITs must be provisioned with the HighLevel permission.
+- **Create Redirect**: Create a URL redirect for the connected HighLevel Location.
+- **Create relation**: Create a relation between two records in the association definition's canonical first-object then second-object order.
+- **Create Service**: Create new service in a location.
+- **Create Service Booking**: Create a new service booking Location PITs must be provisioned with the HighLevel permission.
+- **Create Service Location**: Create a new service location Location PITs must be provisioned with the HighLevel permission.
+- **Create Shipping Carrier**: Create a shipping carrier after explicit confirmation.
+- **Create Shipping Rate**: Create a shipping rate after explicit confirmation.
+- **Create Shipping Zone**: Create a shipping zone after explicit confirmation.
+- **Create Tag**: Create a tag in the connected HighLevel Location.
+- **Create Task**: Create Task Location PITs must be provisioned with the HighLevel permission.
+- **Create template**: Create an invoice template.
+- **Create user availability schedule**: Create new schedule with specified rules, timezone, location, user and calendar associations.
+- **Create Voice AI Agent**: Create a Voice AI agent in the connected HighLevel Location.
+- **Create Voice AI Agent Action**: Create a behavior or capability for an existing Voice AI agent in the connected HighLevel Location.
+- **Create Wallet Charge**: Create a real wallet charge for the connected HighLevel Location.
+- **Create White-label Integration Provider**: Create a Location payment-provider integration backed by Authorize.net or NMI.
+- **Delete a Brand Board**: Delete a brand board from the connected HighLevel location.
+- **Delete a template**: Permanently delete one email template from the connected HighLevel location.
+- **Delete Account**: Delete account and account from group Location PITs must be provisioned with the HighLevel permission.
+- **Delete ad**: Permanently delete a Facebook ad.
+- **Delete Ad Account Connection**: Disconnect an ad account from one supported ad platform.
+- **Delete ad set**: Archive a Facebook ad set and remove its ads.
+- **Delete Agent**: Permanently delete an Agent Studio agent and all of its versions.
+- **Delete Agent**: Deletes an AI agent permanently.
+- **Delete an active post and schedule the next one**: Deletes a post that is currently scheduled and automatically triggers the scheduling of the next available post in the queue.
+- **Delete an item from a queue**: Deletes an item from a specific category queue.
+- **Delete association**: Permanently delete a user-defined association.
+- **Delete Brand Voice**: Delete a brand voice after explicit confirmation.
+- **Delete Business**: Permanently delete a business by ID.
+- **Delete Calendar**: Delete calendar by ID Location PITs must be provisioned with the HighLevel permission.
+- **Delete Calendar Resource**: Delete calendar resource by ID (Services V1) Location PITs must be provisioned with the HighLevel permission.
+- **Delete campaign**: Archive a Facebook campaign and its ad sets.
+- **Delete Campaign**: Delete an email campaign.
+- **Delete Chat Widget**: Soft-deletes a chat widget from the connected sub-account.
+- **Delete Contact**: Delete Contact Location PITs must be provisioned with the HighLevel permission.
+- **Delete Contact from Workflow**: Delete Contact from Workflow Location PITs must be provisioned with the HighLevel permission.
+- **Delete Conversation**: Delete the conversation details based on the conversation ID Location PITs must be provisioned with the HighLevel permission.
+- **Delete conversion**: Soft-delete a Google Ads conversion action by ID.
+- **Delete Coupon**: Permanently delete a coupon.
+- **Delete CSV**: Delete a CSV import and all its associated posts Location PITs must be provisioned with the HighLevel permission.
+- **Delete CSV Post**: Delete a specific post from a CSV import Location PITs must be provisioned with the HighLevel permission.
+- **Delete custom audience**: Delete a Facebook custom audience by ID Location PITs must be provisioned with the HighLevel permission.
+- **Delete Custom Field**: Delete a custom field from the connected HighLevel Location.
+- **Delete Custom Field By ID**: Permanently delete a custom field by ID.
+- **Delete Custom Field Folder**: Permanently delete a custom field folder from the connected HighLevel location.
+- **Delete Custom Payment Integration**: Permanently delete the connected Location's custom payment-provider association.
+- **Delete Custom Value**: Delete a custom value from the connected HighLevel Location.
+- **Delete Estimate**: Delete an existing estimate.
+- **Delete Estimate Template**: Delete an existing estimate template.
+- **Delete Event**: Delete event by ID Location PITs must be provisioned with the HighLevel permission.
+- **Delete Facebook integration**: Remove the Facebook ad integration from a location Location PITs must be provisioned with the HighLevel permission.
+- **Delete File or Folder**: Delete a file or folder from the connected HighLevel location's media storage.
+- **Delete Group**: Delete Group Location PITs must be provisioned with the HighLevel permission.
+- **Delete invoice**: Permanently delete a draft invoice by ID.
+- **Delete Knowledge Base**: Delete a knowledge base after explicit confirmation.
+- **Delete Knowledge Base FAQ**: Idempotently delete an FAQ after explicit confirmation.
+- **Delete Link**: Permanently delete a trigger link by ID.
+- **Delete Note**: Delete Note Location PITs must be provisioned with the HighLevel permission.
+- **Delete Note**: Delete Note Location PITs must be provisioned with the HighLevel permission.
+- **Delete Notification**: Delete notification Location PITs must be provisioned with the HighLevel permission.
+- **Delete Object Record**: Permanently delete a business or custom object record by ID.
+- **Delete Opportunity**: Delete Opportunity.
+- **Delete page connection**: Remove a Facebook page connection from a location.
+- **Delete Pipeline**: Permanently delete a pipeline and every opportunity in all its stages.
+- **Delete Post**: Soft-delete one Social Planner post from HighLevel idempotently through the bulk-delete operation.
+- **Delete Price by ID for a Product**: The "Delete Price by ID for a Product" API allows deleting a specific price associated with a particular product using its unique…
+- **Delete Product by ID**: The "Delete Product by ID" API allows deleting a specific product using its unique identifier.
+- **Delete Product Collection**: Delete specific product collection with Id .
+- **Delete Product Review**: Delete specific product review Location PITs must be provisioned with the HighLevel permission.
+- **Delete Recurring Task**: Delete Recurring Task Location PITs must be provisioned with the HighLevel permission.
+- **Delete Redirect By ID**: Permanently delete a URL redirect from the connected HighLevel Location.
+- **Delete relation**: Permanently delete one relation between associated records.
+- **Delete schedule**: API to delete an schedule by schedule id.
+- **Delete segment**: Delete a Google Ads audience segment by ID.
+- **Delete Service**: Delete a service catalog item by ID.
+- **Delete Service Booking**: Delete a service booking by ID Location PITs must be provisioned with the HighLevel permission.
+- **Delete Service Location**: Delete a service location by ID Location PITs must be provisioned with the HighLevel permission.
+- **Delete Shipping Carrier**: Delete a shipping carrier after explicit confirmation.
+- **Delete Shipping Rate**: Delete a shipping rate after explicit confirmation.
+- **Delete Shipping Zone**: Delete a shipping zone after explicit confirmation.
+- **Delete Tag**: Delete a tag from the connected HighLevel Location.
+- **Delete Task**: Delete Task Location PITs must be provisioned with the HighLevel permission.
+- **Delete template**: Permanently delete an invoice template by ID.
+- **Delete Trained Knowledge Base URLs**: Idempotently delete trained pages after explicit confirmation.
+- **Delete User**: Queue deletion of an existing HighLevel user.
+- **Delete user availability schedule**: Permanently remove a schedule and all its associated rules.
+- **Delete Voice AI Agent**: Permanently delete a Voice AI agent and its configuration from the connected HighLevel Location.
+- **Delete Voice AI Agent Action**: Permanently remove an action and its configuration from a Voice AI agent in the connected HighLevel Location.
+- **Delete Wallet Charge**: Delete a wallet charge.
+- **Disable Group**: Disable Group Location PITs must be provisioned with the HighLevel permission.
+- **Discard edit session changes**: Cancels the edit session and deletes all staged changes without affecting the live queue.
+- **Disconnect Custom Payment Provider Config**: Disconnect a custom provider's live or test payment configuration.
+- **Discover Website for Knowledge Base**: Start website discovery after explicit confirmation.
+- **Download transcription by Message ID** (read-only): Download the recording transcription for a message by passing the message id Location PITs must be provisioned with the HighLevel…
+- **Duplicate ad**: Duplicate an existing Facebook ad Location PITs must be provisioned with the HighLevel permission.
+- **Duplicate ad set**: Duplicate an existing Facebook ad set Location PITs must be provisioned with the HighLevel permission.
+- **Duplicate campaign**: Duplicate an existing Facebook campaign Location PITs must be provisioned with the HighLevel permission.
+- **Edit post**: Edit an existing Social Planner post and optionally republish or reschedule it on its connected external networks.
+- **Email Verification**: Verify an email address or a HighLevel contact's email.
+- **Execute Agent**: Execute an active Agent Studio agent and return its complete non-streaming response.
+- **Export messages by location ID** (read-only): Return one page of messages for the connected HighLevel location, with a cursor for continuation.
+- **Fetch a category queue by ID** (read-only): Retrieves the details of a single category queue by its unique ID.
+- **Fetch calendar view for an edit session** (read-only): Retrieves a calendar preview of scheduled posts based on draft items within an edit session.
+- **Fetch category queues for a location** (read-only): Retrieves a paginated list of all category queues for a given location, excluding any that have been marked as deleted.
+- **Fetch Count of Funnel Pages** (read-only): Count pages belonging to a HighLevel funnel, optionally filtered by name.
+- **Fetch Custom Payment Provider Config** (read-only): Fetch the custom payment-provider configuration for the connected Location.
+- **Fetch items from a queue** (read-only): Returns paginated queue items.
+- **Fetch List of Funnel Pages** (read-only): Return one offset-based page of pages belonging to a HighLevel funnel.
+- **Fetch List of Funnels** (read-only): Return one offset-based page of funnels for the connected HighLevel Location.
+- **Fetch Product Collections** (read-only): Fetch product collections for the connected HighLevel Location.
+- **Fetch Product Reviews** (read-only): API to fetch the Product Reviews Location PITs must be provisioned with the HighLevel permission.
+- **Fetch Product Store Stats** (read-only): API to fetch the total number of products, included in the store, and excluded from the store and other stats Location PITs must be…
+- **Fetch Redirects List** (read-only): Return one offset-based page of URL redirects for the connected HighLevel Location.
+- **Fetch Review Count as per status** (read-only): API to fetch the Review Count as per status Location PITs must be provisioned with the HighLevel permission.
+- **Fetch slot information for queue items** (read-only): Returns paginated slot information (scheduledDateTime, isSkipped) for queue items.
+- **Fetch Timezones** (read-only): Fetch the available timezones for the connected HighLevel Location.
+- **Generate Estimate Number** (read-only): Get the next estimate number for the given location.
+- **Generate Invoice Number** (read-only): Get the next invoice number for the given location.
+- **Get Accounts** (read-only): Get list of accounts and groups Location PITs must be provisioned with the HighLevel permission.
+- **Get Action by ID** (read-only): Retrieves detailed information about a specific action using its unique identifier.
+- **Get Ad Account** (read-only): Return one ad account or the selected account details for one ad platform.
+- **Get ad campaign group** (read-only): Retrieve a LinkedIn ad campaign group by ID Location PITs must be provisioned with the HighLevel permission.
+- **Get Ad Campaign Reporting** (read-only): Return reporting metrics for one Facebook or Google ad campaign.
+- **Get Ad Platform Integration** (read-only): Return the Location's integration state for one ad platform.
+- **Get Ad Platform User** (read-only): Return the current user from one connected ad platform.
+- **Get Ad Reporting** (read-only): Return aggregate reporting metrics for one connected ad platform.
+- **Get Affiliate** (read-only): Retrieve a single affiliate by id for a location.
+- **Get Agent** (read-only): Get one active Agent Studio agent and all of its non-deleted versions.
+- **Get Agent** (read-only): Retrieves a specific AI agent by its ID.
+- **Get all categories with their queue status** (read-only): Returns categories with status.
+- **Get All Notes** (read-only): Get All Notes Location PITs must be provisioned with the HighLevel permission.
+- **Get all Tasks** (read-only): Get all Tasks Location PITs must be provisioned with the HighLevel permission.
+- **Get an schedule** (read-only): API to get an schedule by schedule id.
+- **Get an template** (read-only): API to get an template by template id.
+- **Get Appointment** (read-only): Get appointment by ID Location PITs must be provisioned with the HighLevel permission.
+- **Get Appointments for Contact** (read-only): Get Appointments for Contact Location PITs must be provisioned with the HighLevel permission.
+- **Get assets** (read-only): Retrieve Google Ads creative assets for a location Location PITs must be provisioned with the HighLevel permission.
+- **Get association by ID** (read-only): Get a system- or user-defined association by its ID.
+- **Get association by key name** (read-only): Get a standard or user-defined association definition by its key name.
+- **Get associations by object key** (read-only): Get association definitions for a contact, opportunity, or custom-object key.
+- **Get audience by ID** (read-only): Retrieve a specific Google Ads combined audience by ID Location PITs must be provisioned with the HighLevel permission.
+- **Get audiences** (read-only): Retrieve Google Ads combined audiences for a location Location PITs must be provisioned with the HighLevel permission.
+- **Get Available Accounts (Step 2 of 3)** (read-only): Step 2 of the Social Planner OAuth flow.
+- **Get Available Shipping Rates** (read-only): Calculate available shipping-rate quotes without changing provider state.
+- **Get Blocked Slots** (read-only): Get blocked slots for exactly one owner.
+- **Get Brand Board** (read-only): Retrieve one brand board by ID from the connected HighLevel location.
+- **Get Brand Boards** (read-only): Return one page of brand boards for the connected HighLevel location.
+- **Get Brand Voice** (read-only): Get a brand voice from the connected location.
+- **Get Bulk Action Campaign by ID** (read-only): Get one bulk-action campaign from the connected HighLevel location.
+- **Get Business** (read-only): Retrieve one business by ID.
+- **Get Businesses by Location** (read-only): Return one offset-paginated page of businesses for the connected HighLevel location.
+- **Get Calendar** (read-only): Get calendar by ID Location PITs must be provisioned with the HighLevel permission.
+- **Get Calendar Events** (read-only): Get calendar events for exactly one owner.
+- **Get Calendar Resource** (read-only): Get calendar resource by ID (Services V1) Location PITs must be provisioned with the HighLevel permission.
+- **Get Calendars** (read-only): Get all calendars in a location.
+- **Get campaign group reporting** (read-only): Retrieve reporting metrics for a specific LinkedIn campaign group Location PITs must be provisioned with the HighLevel permission.
+- **Get Campaign Statistics** (read-only): Get statistics for an email, workflow, or bulk-action campaign.
+- **Get campaign with linked entities** (read-only): Retrieve a Facebook campaign with its linked adsets and ads Location PITs must be provisioned with the HighLevel permission.
+- **Get Campaigns** (read-only): Return campaigns for the connected HighLevel location, optionally filtered by status.
+- **Get categories by id** (read-only): Retrieve a specific category by its ID Location PITs must be provisioned with the HighLevel permission.
+- **Get categories by location id** (read-only): Retrieve all categories for a specific location with optional search and pagination Location PITs must be provisioned with the HighLevel…
+- **Get Chat Widget** (read-only): Returns a single chat widget by ID from the connected sub-account.
+- **Get Contact** (read-only): Retrieves a contact by its unique identifier.
+- **Get Contacts By BusinessId** (read-only): Get Contacts By BusinessId Location PITs must be provisioned with the HighLevel permission.
+- **Get Conversation** (read-only): Get the conversation details based on the conversation ID Location PITs must be provisioned with the HighLevel permission.
+- **Get Conversation Channel** (read-only): Get SMS or email channel providers configured for the connected HighLevel Location.
+- **Get conversation forms** (read-only): Retrieve Facebook conversation lead forms for a location Location PITs must be provisioned with the HighLevel permission.
+- **Get conversion by ID** (read-only): Retrieve a specific Google Ads conversion action by ID Location PITs must be provisioned with the HighLevel permission.
+- **Get conversion goals** (read-only): Retrieve Google Ads conversion goals for a location Location PITs must be provisioned with the HighLevel permission.
+- **Get conversion pixels** (read-only): Retrieve Facebook conversion pixels for a location.
+- **Get conversions** (read-only): Retrieve Google Ads conversion actions for a location Location PITs must be provisioned with the HighLevel permission.
+- **Get Coupon** (read-only): Retrieve coupon details by ID for the connected Location.
+- **Get CSV Post** (read-only): Get details of a specific CSV import including its posts Location PITs must be provisioned with the HighLevel permission.
+- **Get custom audience by ID** (read-only): Retrieve a specific Facebook custom audience by its ID Location PITs must be provisioned with the HighLevel permission.
+- **Get custom audiences** (read-only): Retrieve Facebook custom audiences for a location.
+- **Get Custom Field** (read-only): Get one custom field from the connected HighLevel Location.
+- **Get Custom Field / Folder By ID** (read-only): Get a custom field or folder by ID.
+- **Get Custom Fields** (read-only): List custom fields owned by the connected HighLevel Location.
+- **Get Custom Fields By Object Key** (read-only): List custom fields and folders for an object key in the connected HighLevel location.
+- **Get Custom Value** (read-only): Get one custom value from the connected HighLevel Location.
+- **Get Custom Values** (read-only): List custom values owned by the connected HighLevel Location.
+- **Get Details about individual product collection** (read-only): Get Details about individual product collection Location PITs must be provisioned with the HighLevel permission.
+- **Get Duplicate Contact** (read-only): Get Duplicate Contact.
+- **Get email by Id** (read-only): Get email by Id Location PITs must be provisioned with the HighLevel permission.
+- **Get Email Campaign by ID** (read-only): Get one email campaign from the connected HighLevel location.
+- **Get Email Template by ID** (read-only): Get one email template from the connected HighLevel location.
+- **Get Email, SMS, or WhatsApp Templates** (read-only): Return one offset-based page of templates from the connected HighLevel Location.
+- **Get entities** (read-only): List Facebook campaigns, ad sets, or ads that exist on Meta.
+- **Get entities** (read-only): Retrieve Google-side campaigns, ad groups, or ads through the current AD_MANAGER path.
+- **Get event calendar availability schedule** (read-only): Retrieve the availability schedule for a specific event calendar.
+- **Get Facebook Campaign Publishing Progress** (read-only): Return the current Meta publishing step counts and completion state for a Facebook campaign.
+- **Get Facebook pages** (read-only): Retrieve Facebook pages associated with the connected account Location PITs must be provisioned with the HighLevel permission.
+- **Get File by Slug** (read-only): Get metadata and a short-lived signed download URL for a HighLevel file share slug.
+- **Get Forms** (read-only): Return one offset-based page of forms for the connected HighLevel location.
+- **Get Forms Submissions** (read-only): Return one page of form submissions for the connected HighLevel location.
+- **Get Free Slots** (read-only): Get free slots for a calendar between a date range.
+- **Get Google Campaign by ID** (read-only): Retrieve a specific Google Ads campaign by ID, including its ad groups and ad content.
+- **Get Groups** (read-only): Get all calendar groups in a location.
+- **Get Instagram accounts for page** (read-only): Retrieve Instagram accounts linked to a specific Facebook page Location PITs must be provisioned with the HighLevel permission.
+- **Get invoice** (read-only): Get an invoice by ID.
+- **Get Invoice Settings** (read-only): Get the invoice settings for the given location.
+- **Get keyword ideas** (read-only): Retrieve keyword suggestions for Google Ads campaigns Location PITs must be provisioned with the HighLevel permission.
+- **Get Knowledge Base** (read-only): Get a knowledge base by ID.
+- **Get Knowledge Base Crawler Status** (read-only): Get crawler operation status.
+- **Get lead form by ID** (read-only): Retrieve a specific published or draft Facebook lead form by ID.
+- **Get lead forms** (read-only): Retrieve LinkedIn lead gen forms for an ad account Location PITs must be provisioned with the HighLevel permission.
+- **Get Link by ID** (read-only): Get a single trigger link by ID from the connected HighLevel location.
+- **Get Links** (read-only): Get all trigger links in the connected HighLevel location.
+- **Get List of Files / Folders** (read-only): Fetch files and folders from the connected HighLevel location's media storage.
+- **Get lost reason** (read-only): Get lost reason.
+- **Get Marketplace Installer Details** (read-only): Get company, Location, user, and installation details associated with the current HighLevel OAuth token for an app.
+- **Get message by message id** (read-only): Get message by message id.
+- **Get messages by conversation id** (read-only): Get messages by conversation id.
+- **Get Note** (read-only): Get Note Location PITs must be provisioned with the HighLevel permission.
+- **Get Notes** (read-only): Get Appointment Notes Location PITs must be provisioned with the HighLevel permission.
+- **Get notification** (read-only): Find Event notification by notificationId Location PITs must be provisioned with the HighLevel permission.
+- **Get notifications** (read-only): Get calendar notifications.
+- **Get Object Record** (read-only): Retrieve a business or custom object record by ID.
+- **Get Object Schema by Key** (read-only): Retrieve an object schema by key or ID, optionally including its fields.
+- **Get Opportunity** (read-only): Get Opportunity.
+- **Get Order by ID** (read-only): Retrieve one order by ID from the connected Location.
+- **Get page lead forms** (read-only): Retrieve lead forms for a Facebook page.
+- **Get Pipeline** (read-only): Retrieve one pipeline, including its stages and configuration.
+- **Get Pipelines** (read-only): Get Pipelines.
+- **Get post** (read-only): Get post Location PITs must be provisioned with the HighLevel permission.
+- **Get posts** (read-only): Get Social Planner posts.
+- **Get Price by ID for a Product** (read-only): The "Get Price by ID for a Product" API allows retrieving information for a specific price associated with a particular product using its…
+- **Get Product by ID** (read-only): The "Get Product by ID" API allows to retrieve information for a specific product using its unique identifier.
+- **Get Public Chat Widget Config** (read-only): Return a chat widget's public configuration by widget ID.
+- **Get Recording by Message ID** (read-only): Get the recording for a message by passing the message id Location PITs must be provisioned with the HighLevel permission.
+- **Get Recurring Task By Id** (read-only): Get Recurring Task By Id Location PITs must be provisioned with the HighLevel permission.
+- **Get relations by record ID** (read-only): Return a page of relations for a record, optionally filtered by association IDs.
+- **Get scheduled posts calendar view** (read-only): Returns scheduled posts from active queues within a date range.
+- **Get segment by ID** (read-only): Retrieve a specific Google Ads audience segment by ID Location PITs must be provisioned with the HighLevel permission.
+- **Get segments** (read-only): Retrieve Google Ads audience segments for a location Location PITs must be provisioned with the HighLevel permission.
+- **Get Service Booking by ID** (read-only): Get a specific service booking by ID Location PITs must be provisioned with the HighLevel permission.
+- **Get Service Bookings** (read-only): Retrieve service bookings for a location within a given date range, with an optional service location filter.
+- **Get Service by ID** (read-only): Get service by ID.
+- **Get Service Location by ID** (read-only): Get service location by ID Location PITs must be provisioned with the HighLevel permission.
+- **Get Service Locations** (read-only): Get all service locations Location PITs must be provisioned with the HighLevel permission.
+- **Get Services** (read-only): Get all services in a location.
+- **Get Shipping Carrier** (read-only): Get a shipping carrier by ID.
+- **Get Shipping Rate** (read-only): Get a shipping rate by ID.
+- **Get Shipping Zone** (read-only): Get a shipping zone by ID.
+- **Get Social Media Statistics** (read-only): Retrieve analytics data for multiple social media accounts.
+- **Get Store Settings** (read-only): Get store settings for the connected location.
+- **Get Sub-Account (Formerly Location)** (read-only): Get the Location bound to the connected HighLevel account.
+- **Get Subscription by ID** (read-only): Retrieve one payment subscription by ID from the connected Location.
+- **Get Surveys** (read-only): Return one offset-based page of surveys for the connected HighLevel location.
+- **Get Surveys Submissions** (read-only): Return one page of survey submissions for the connected HighLevel location.
+- **Get Tag by ID** (read-only): Get one tag from the connected HighLevel Location.
+- **Get Tags** (read-only): List tags owned by the connected HighLevel Location.
+- **Get tags by ids** (read-only): Retrieve specific tags by their IDs Location PITs must be provisioned with the HighLevel permission.
+- **Get tags by location id** (read-only): Retrieve all tags for a specific location with optional search and pagination Location PITs must be provisioned with the HighLevel…
+- **Get target interests** (read-only): Retrieve affinity and in-market audience options for Google Ads targeting.
+- **Get Task** (read-only): Get Task Location PITs must be provisioned with the HighLevel permission.
+- **Get the generation details** (read-only): Retrieves detailed information about AI responses including the System Prompt, Conversation history, Knowledge base, website, FAQ chunks,…
+- **Get Transaction by ID** (read-only): Retrieve one payment transaction by ID from the connected Location.
+- **Get transcription by Message ID** (read-only): Get the recording transcription for a message by passing the message id Location PITs must be provisioned with the HighLevel permission.
+- **Get Upload Status** (read-only): Get the status of all CSV imports for a location Location PITs must be provisioned with the HighLevel permission.
+- **Get User** (read-only): Retrieve one HighLevel user by ID.
+- **Get user availability schedule** (read-only): Retrieve a specific schedule by its unique identifier.
+- **Get Voice AI Agent** (read-only): Retrieve one Voice AI agent owned by the connected HighLevel Location.
+- **Get Voice AI Agent Action** (read-only): Retrieve one action configured for a Voice AI agent in the connected HighLevel Location.
+- **Get Voice AI Call Log** (read-only): Retrieve one Voice AI call log owned by the connected HighLevel Location.
+- **Get Wallet Charge** (read-only): Get the details of one HighLevel wallet charge by charge ID.
+- **Get Workflow** (read-only): Return the workflows available to the connected HighLevel location.
+- **Get Workflow Campaign by ID** (read-only): Get one workflow campaign from the connected HighLevel location.
+- **Import an email template**: Import an email template from a supported provider URL into the connected location.
+- **Import Courses**: Import course products into the connected HighLevel location.
+- **Like a comment**: Like a comment by its **Highlevel** comment ID (the _id returned by the list-comments endpoint — not the native platform ID).
+- **List Actions for an Agent** (read-only): List for actions for an agent Location PITs must be provisioned with the HighLevel permission.
+- **List Active Numbers** (read-only): List one page of active numbers and phone-account state for the connected HighLevel location.
+- **List Ad Accounts** (read-only): List ad accounts available through one connected ad platform.
+- **List Ad Reports** (read-only): List published reporting entities for one connected ad platform.
+- **List Affiliates** (read-only): Retrieve the list of affiliates for a location.
+- **List Agents** (read-only): List active Agent Studio agents for the connected Location, one page at a time.
+- **List associations** (read-only): Return a page of association definitions for the connected Location.
+- **List Available Phone Numbers** (read-only): Search external phone-provider inventory for numbers purchasable by the connected HighLevel location.
+- **List blog authors** (read-only): Return one offset-based page of blog authors for the connected HighLevel Location.
+- **List blog categories** (read-only): Return one offset-based page of blog categories for the connected HighLevel Location.
+- **List blog posts** (read-only): Return one offset-based page of posts for a blog in the connected HighLevel Location.
+- **List blogs** (read-only): Return one offset-based page of blogs for the connected HighLevel Location.
+- **List Brand Voices** (read-only): Return one page of brand voices for the connected location.
+- **List Bulk Action Campaigns** (read-only): Return one page of bulk-action campaigns for the connected HighLevel location.
+- **List Calendar Resources** (read-only): List calendar resources by resource type and location ID (Services V1) Location PITs must be provisioned with the HighLevel permission.
+- **List Chat Widgets** (read-only): Returns chat widgets for the connected sub-account with pagination and optional filters.
+- **List comments for a post or thread** (read-only): Paginated list of comments scoped to a post (parentId = postId) or a comment thread (parentId = commentId).
+- **List Commissions** (read-only): Retrieve the list of commissions for a location.
+- **List Coupons** (read-only): Return one offset page of coupons for the connected Location.
+- **List Email Campaigns** (read-only): Return one page of email campaigns for the connected HighLevel location.
+- **List Estimate Templates** (read-only): Get a list of estimate templates or a specific template by ID.
+- **List Estimates** (read-only): Get a paginated list of estimates.
+- **List Inventory** (read-only): The "List Inventory API allows the user to retrieve a paginated list of inventory items.
+- **List invoices** (read-only): API to get list of invoices.
+- **List Knowledge Base Crawler URLs** (read-only): Return one page of crawled website URLs.
+- **List Knowledge Base FAQs** (read-only): Return one page of FAQs.
+- **List Knowledge Bases** (read-only): Return one page of knowledge bases for the connected location.
+- **List Location Objects** (read-only): List standard and custom object schemas for the connected HighLevel location.
+- **List Number Pools** (read-only): List number pools for the connected HighLevel location.
+- **List Order Fulfillment** (read-only): List fulfillment history for one order in the connected Location.
+- **List Order Notes** (read-only): List notes for one payment order in the connected Location.
+- **List Orders** (read-only): Return one offset page of orders for the connected Location.
+- **List Payouts** (read-only): Retrieve the list of payouts for a location.
+- **List Prices for a Product** (read-only): The "List Prices for a Product" API allows retrieving a paginated list of prices associated with a specific product.
+- **List Products** (read-only): The "List Products" API allows to retrieve a paginated list of products.
+- **List Proposal Documents** (read-only): Return one page of proposal and contract documents for the connected HighLevel location.
+- **List Proposal Templates** (read-only): Return one page of proposal and contract templates for the connected HighLevel location.
+- **List schedules** (read-only): API to get list of schedules.
+- **List Shipping Carriers** (read-only): List shipping carriers.
+- **List Shipping Rates** (read-only): Return one page of shipping rates.
+- **List Shipping Zones** (read-only): Return one page of shipping zones.
+- **List Subscriptions** (read-only): Return one offset page of subscriptions for the connected Location.
+- **List templates** (read-only): Return one page of email templates and folders for the connected HighLevel location.
+- **List templates** (read-only): API to get list of templates.
+- **List Transactions** (read-only): Return one offset page of payment transactions for the connected Location.
+- **List user availability schedule** (read-only): Retrieve user availability schedules based on various filters including location, calendar, and user.
+- **List Voice AI Agents** (read-only): List Voice AI agents in the connected HighLevel Location.
+- **List Voice AI Call Logs** (read-only): List Voice AI call logs in the connected HighLevel Location with documented filters, sorting, and one-page continuation.
+- **List Wallet Charges** (read-only): Return one page of wallet charges visible to the connected HighLevel Location, with optional billing and date filters.
+- **List White-label Integration Providers** (read-only): Return one offset page of white-label payment integration providers for the connected Location.
+- **List Workflow Campaigns** (read-only): Return one page of workflow campaigns for the connected HighLevel location.
+- **Manage Auto payment for an schedule invoice**: API to manage auto payment for a schedule.
+- **Patch Chat Widget**: Partially updates a chat widget in the connected sub-account.
+- **Pause ad**: Pause a published Facebook ad.
+- **Pause ad set**: Pause a published Facebook ad set.
+- **Pause campaign**: Pause a published Facebook campaign.
+- **Preview Estimate Template** (read-only): Get a preview of an estimate template.
+- **Promote to Production**: Irreversibly promote an Agent Studio draft version to production.
+- **Publish ad**: Publish a Google ad and push it live Location PITs must be provisioned with the HighLevel permission.
+- **Publish ad campaign group**: Publish a LinkedIn ad campaign group and push it live Location PITs must be provisioned with the HighLevel permission.
+- **Publish campaign**: Publish a Facebook campaign and push it live to Facebook Location PITs must be provisioned with the HighLevel permission.
+- **Purchase Number for Location**: Purchase a phone number for the connected HighLevel location from external provider inventory.
+- **Record a manual payment for an invoice**: Record a manual payment against an invoice.
+- **Record Order Payment**: Record a real manual payment against an order.
+- **Remove Action from Agent**: Permanently deletes an action.
+- **Remove Contact From Campaign**: Remove Contact From Campaign Location PITs must be provisioned with the HighLevel permission.
+- **Remove Contact From Every Campaign**: Removes the contact from every campaign it is enrolled in.
+- **Remove custom audience member**: Remove a member from a Facebook custom audience Location PITs must be provisioned with the HighLevel permission.
+- **Remove Followers**: Remove Followers Location PITs must be provisioned with the HighLevel permission.
+- **Remove Followers**: Allows removal of one or all followers from an opportunity.
+- **Remove Tags**: Remove Tags Location PITs must be provisioned with the HighLevel permission.
+- **Remove user availability schedule from a calendar**: Remove a calendar from a schedule.
+- **Reset an item in a queue**: Reset a staged queue item to its original state.
+- **Resume ad**: Resume a paused Facebook ad.
+- **Resume ad set**: Resume a paused Facebook ad set.
+- **Resume campaign**: Resume a paused Facebook campaign.
+- **Save edit session changes**: Applies all staged changes to the live queue and closes the edit session.
+- **Schedule an schedule invoice**: API to schedule an schedule invoice to start sending to the customer.
+- **Schedule Campaign**: Start or schedule a draft or paused email campaign after validating recipients and schedule configuration.
+- **Search Ad Targeting** (read-only): Search targeting options on Facebook Ads, Google Ads, or LinkedIn Ads.
+- **Search Agents** (read-only): Search AI agents by lowercase name query.
+- **Search Contacts** (read-only): Search contacts using advanced filters and return one cursor-controlled page.
+- **Search Conversations** (read-only): Return one page of conversations for the connected HighLevel location and an opaque cursor for the next page.
+- **Search Object Records** (read-only): Return one page of business or custom object records matching a search expression.
+- **Search Opportunities** (read-only): Search opportunities based on combinations of advanced filters.
+- **Search Opportunity** (read-only): Search Opportunity.
+- **Search Trigger Links** (read-only): Return one offset-based page of trigger links matching a search query.
+- **Search Users** (read-only): Search users belonging to the connected HighLevel Location.
+- **Send a new message**: Send an external message to a contact through the selected channel.
+- **Send Estimate**: API to send estimate by estimate id.
+- **Send invoice**: API to send invoice by invoice id.
+- **Send Proposal Document**: Irreversibly send an existing proposal or contract to external recipients for the connected HighLevel location.
+- **Set Accounts**: Set social media accounts for a CSV import to publish posts to Location PITs must be provisioned with the HighLevel permission.
+- **Set Default Brand Voice**: Set the location's default brand voice, replacing the previous default, after explicit confirmation.
+- **Set default page**: Set the default Facebook page for a location.
+- **Start CSV Finalize**: Finalize a CSV import and schedule all posts for publishing Location PITs must be provisioned with the HighLevel permission.
+- **Start or resume an edit session**: Creates a draft copy of queue items for editing.
+- **Task Search Filter** (read-only): Return one offset-based page of tasks from the connected HighLevel Location.
+- **Train Discovered Knowledge Base URLs**: Queue discovered pages for training after explicit confirmation.
+- **Uninstall Marketplace Application**: Uninstall an application from the connected HighLevel Location.
+- **Unlike a comment**: Remove a like from a comment by its **Highlevel** comment ID (the _id returned by the list-comments endpoint — not the native platform ID).
+- **Update a Brand Board**: Update an existing brand board in the connected HighLevel location.
+- **Update Action**: Updates an existing action's configuration.
+- **Update ad status**: Pause or resume a LinkedIn ad, campaign, or ad group Location PITs must be provisioned with the HighLevel permission.
+- **Update Agent**: Update a specific Agent Studio version.
+- **Update Agent**: Fully replace the required personality, goal, and instructions of an existing AI agent.
+- **Update Agent Metadata**: Update an Agent Studio agent's name, description, or status.
+- **Update an email template**: Update selected fields of an email template in the connected HighLevel location.
+- **Update an item in a queue**: Updates the content or variations of a specific item within a category queue.
+- **Update Appointment**: Update appointment Location PITs must be provisioned with the HighLevel permission.
+- **Update association**: Update the first- and second-object labels of an association definition.
+- **Update Block Slot**: Update block slot by ID Location PITs must be provisioned with the HighLevel permission.
+- **Update blog post**: Update an existing blog post in the connected HighLevel Location.
+- **Update Brand Voice**: Update a brand voice after explicit confirmation.
+- **Update Business**: Update editable details of an existing business by ID.
+- **Update Calendar**: Update calendar by ID.
+- **Update Calendar Resource**: Update calendar resource by ID (Services V1) Location PITs must be provisioned with the HighLevel permission.
+- **Update Chat Widget**: Fully updates a chat widget in the connected sub-account.
+- **Update Contact**: Update a contact using contactId Location PITs must be provisioned with the HighLevel permission.
+- **Update Conversation**: Update the conversation details based on the conversation ID Location PITs must be provisioned with the HighLevel permission.
+- **Update Coupon**: Replace an existing coupon's promotional terms.
+- **Update custom audience**: Update name or description of a Facebook custom audience Location PITs must be provisioned with the HighLevel permission.
+- **Update Custom Field**: Update a custom field in the connected HighLevel Location.
+- **Update Custom Field By ID**: Update a custom field by ID in the connected HighLevel location.
+- **Update Custom Field Folder Name**: Rename a custom field folder in the connected HighLevel location.
+- **Update Custom Provider Capabilities**: Set whether the connected Location's custom payment provider supports subscription schedules.
+- **Update Custom Value**: Update a custom value in the connected HighLevel Location.
+- **Update Email Campaign**: Update selected fields of an email campaign draft.
+- **Update email message status**: Update delivery events, per-recipient statuses, and the overall message status for an email sent via a custom conversation provider.
+- **Update Estimate**: Update an existing estimate.
+- **Update estimate last visited at**: Update an estimate's last-visited timestamp by estimate ID.
+- **Update Estimate Template**: Update an existing estimate template.
+- **Update event calendar availability schedule**: Update the availability schedule for a specific event calendar.
+- **Update File / Folder**: Rename one file or folder in the connected Location's media storage.
+- **Update Followup Settings**: Update followupSettings for one or more advancedFollowup actions.
+- **Update Group**: Update Group by group ID Location PITs must be provisioned with the HighLevel permission.
+- **Update Inventory**: The Update Inventory API allows the user to bulk update the inventory for multiple items.
+- **Update invoice**: Update an invoice by invoice ID.
+- **Update Invoice Last Visited At**: Mark an invoice as last visited in the connected Location.
+- **Update Invoice Late Fees Configuration**: Replace late-fee settings on an invoice in the connected Location.
+- **Update Knowledge Base**: Update a knowledge base after explicit confirmation.
+- **Update Knowledge Base FAQ**: Update an FAQ after explicit confirmation.
+- **Update Link**: Update a trigger link's name and redirect destination.
+- **Update message status**: Post the necessary fields for the API to update message status.
+- **Update Note**: Update Note Location PITs must be provisioned with the HighLevel permission.
+- **Update Note**: Update Note Location PITs must be provisioned with the HighLevel permission.
+- **Update notification**: Update Event notification by id Location PITs must be provisioned with the HighLevel permission.
+- **Update Object Record**: Update a standard or custom object record with schema-defined fields.
+- **Update Object Schema**: Update a custom object's labels, description, and searchable fields, or update searchable fields for a standard object.
+- **Update Opportunity**: Update Opportunity.
+- **Update Opportunity Status**: Update Opportunity Status.
+- **Update Pipeline**: Update a pipeline.
+- **Update Price by ID for a Product**: Replace a product price by ID.
+- **Update Product by ID**: Update a product by ID.
+- **Update Product Collection**: Update a specific product collection with Id .
+- **Update Product Display Priorities**: Set product display priorities for a store in the connected Location.
+- **Update Product Review**: Update status, reply, etc of a particular review Location PITs must be provisioned with the HighLevel permission.
+- **Update Product Store Inclusion**: API to update the status of products in a particular store Location PITs must be provisioned with the HighLevel permission.
+- **Update queue settings or status**: Updates queue status (active/paused/deleted), time slots, or skip dates.
+- **Update Recurring Task**: Update Recurring Task Location PITs must be provisioned with the HighLevel permission.
+- **Update Redirect By ID**: Update the destination and action of an existing HighLevel URL redirect.
+- **Update schedule**: Replace an invoice schedule by schedule ID.
+- **Update scheduled recurring invoice**: Replace the contents of an invoice schedule that is already in scheduled state.
+- **Update Service**: Update service by ID.
+- **Update Service Booking**: Update an existing service booking.
+- **Update Service Location**: Update an existing service location Location PITs must be provisioned with the HighLevel permission.
+- **Update Shipping Carrier**: Update a shipping carrier after explicit confirmation.
+- **Update Shipping Rate**: Update a shipping rate after explicit confirmation.
+- **Update Shipping Zone**: Update a shipping zone after explicit confirmation.
+- **Update Tag**: Rename a tag in the connected HighLevel Location.
+- **Update Task**: Update Task Location PITs must be provisioned with the HighLevel permission.
+- **Update Task Completed**: Update Task Completed Location PITs must be provisioned with the HighLevel permission.
+- **Update template**: Update an invoice template by ID.
+- **Update Template Late Fees Configuration**: Replace an invoice template's late-fee configuration in the connected Location.
+- **Update Template Payment Methods Configuration**: Replace payment-method settings on an invoice template in the connected Location.
+- **Update User**: Update non-password fields of an existing HighLevel user.
+- **Update user availability schedule**: Modify an existing schedule by updating its rules, timezone, and name All fields are optional - only provided fields will be updated.
+- **Update Voice AI Agent**: Partially update a Voice AI agent in the connected HighLevel Location.
+- **Update Voice AI Agent Action**: Replace an existing Voice AI agent action configuration in the connected HighLevel Location.
+- **Upload CSV**: Upload a CSV file containing social media posts for bulk scheduling Location PITs must be provisioned with the HighLevel permission.
+- **Upload file attachments**: Post the necessary fields for the API to upload files.
+- **Upload File into Media Storage**: Upload a file or import a hosted file into HighLevel media storage.
+- **Upload File to Custom Fields**: Upload a file to a custom field for the connected HighLevel Location.
+- **Upload Files to Custom Fields**: Upload one or more files to file-upload custom fields on a contact in the connected HighLevel location.
+- **Upsert ad**: Create or update a Facebook ad.
+- **Upsert ad campaign group**: Create or update a LinkedIn ad campaign group with campaigns and ads Location PITs must be provisioned with the HighLevel permission.
+- **Upsert adset**: Create or update a Facebook ad set.
+- **Upsert assets**: Create or update Google Ads creative assets.
+- **Upsert audience**: Create or update a Google Ads combined audience.
+- **Upsert campaign**: Create or update a Facebook campaign.
+- **Upsert Contact**: The Upsert API will adhere to the configuration defined under the "Allow Duplicate Contact" setting at the Location level.
+- **Upsert conversion**: Create or update a Google Ads conversion action.
+- **Upsert conversion pixel**: Create or update a Facebook conversion pixel.
+- **Upsert Google campaign**: Create or update a full Google Ads campaign structure.
+- **Upsert Opportunity**: Upsert Opportunity.
+- **Upsert segment**: Create or update a Google Ads audience segment Location PITs must be provisioned with the HighLevel permission.
+- **Validate group slug**: Validate if group slug is available or not.
+- **Void invoice**: Void a non-draft invoice by ID without deleting its record.

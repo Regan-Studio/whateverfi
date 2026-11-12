@@ -1,0 +1,118 @@
+# Notra
+
+Create and manage content, AI agents, feedback workflows, and generative engine optimization data with Notra.
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/notra/.
+
+## Actions
+
+- **Approve GEO Content Brief**: Irreversibly approve a draft or failed brief and queue the paid Notra writer.
+- **Cancel Post Schedule**: Destructively cancel every post destination that has not started and clear failed destinations.
+- **Create Agent Session**: Starts a durable paid AI agent session with an initial user message and returns its session ID.
+- **Create Chat**: Create a paid Notra chat, persist the first message, and wait for the full assistant stream.
+- **Create Event Trigger**: Creates a persistent GitHub event automation that generates the selected content type for matching releases or pushes and can publish the…
+- **Create GEO Project**: Create a persistent GEO project linked to a brand identity.
+- **Create GEO Prompt**: Persist a custom prompt for future GEO scans.
+- **Create GEO Scan**: Irreversibly queue a paid GEO scan that records checks against configured answer engines.
+- **Create GEO Sequence**: Persist a one-to-five-turn GEO prompt sequence for tracked runs.
+- **Create GitHub Integration**: Connect a GitHub repository to Notra, enabling changelog generation and creating a webhook secret.
+- **Create Post**: Create a draft or published Notra post directly from supplied content without invoking AI generation.
+- **Create Schedule**: Creates a recurring schedule that generates one content type from the selected GitHub integrations.
+- **Create Skill**: Creates a custom skill.
+- **Create Webhook**: Create a paid outbound webhook subscription that causes persistent external deliveries.
+- **Delete Brand Identity**: Permanently delete a non-default brand identity and disable every schedule or event trigger that references it.
+- **Delete Event Trigger**: Delete an event trigger.
+- **Delete GEO Competitor**: Permanently stop tracking a competitor and return the remaining competitor list.
+- **Delete GEO Project**: Permanently delete a GEO project and cascade-delete its settings, prompts, sequences, competitors, scans, checks, and reports, while…
+- **Delete GEO Prompt**: Permanently stop tracking a GEO prompt.
+- **Delete GEO Sequence**: Permanently delete a tracked GEO prompt sequence so it can no longer be run.
+- **Delete Integration**: Permanently delete a Notra GitHub or Linear integration and disable every schedule or event trigger that targets it.
+- **Delete Post**: Permanently delete one Notra post by ID.
+- **Delete Schedule**: Deletes the schedule and stops future runs.
+- **Delete Skill**: Deletes a custom skill.
+- **Delete Webhook**: Permanently remove a Notra webhook subscription and cancel all deliveries that have not yet been sent.
+- **Generate Brand Identity**: Create a brand identity immediately and queue a paid, irreversible website-analysis job that fills its company, tone, and audience fields.
+- **Generate Post**: Queue a paid, irreversible AI post-generation job.
+- **Get Brand Identity** (read-only): Get one Notra brand identity by ID.
+- **Get Brand Identity Generation** (read-only): Get a brand identity analysis job.
+- **Get Chat** (read-only): Get one Notra chat and its complete message history by chat ID.
+- **Get Chat By External Channel** (read-only): Find the Notra chat linked to a Discord or Slack channel ID.
+- **Get Event Trigger** (read-only): Returns one GitHub event trigger with its event filters, monitored repositories, generated content type, and publishing settings.
+- **Get Feedback** (read-only): Returns one feedback entry with its classification, triage status, submission context, and timestamps.
+- **Get GEO Agent Readiness** (read-only): Get the latest stored agent-readiness report, any newer run state, score history, and comparison for a GEO project's website without…
+- **Get GEO Competitor Share** (read-only): Read paid-plan competitor share-of-voice metrics without starting a scan.
+- **Get GEO Competitor Visibility** (read-only): Read one competitor's paid-plan mention history without starting a scan.
+- **Get GEO Content Brief** (read-only): Read one stored paid-plan GEO content brief without approving or starting writer work.
+- **Get GEO Ingest Setup** (read-only): Read paid-plan traffic installation snippets and endpoints.
+- **Get GEO Language Share** (read-only): Read paid-plan GEO visibility by language without starting a scan.
+- **Get GEO Project** (read-only): Get one GEO project.
+- **Get GEO Prompt History** (read-only): Read stored paid-plan checks for a tracked prompt without starting a scan.
+- **Get GEO Prompt Result Detail** (read-only): Read one stored paid-plan prompt result without starting a scan.
+- **Get GEO Prompt Results** (read-only): Read stored paid-plan prompt answers and grounding data without starting or billing a scan.
+- **Get GEO Scan** (read-only): Get one GEO scan's status, progress and mentions by engine, including safe failure metadata.
+- **Get GEO Sentiment** (read-only): Read current and previous paid-plan GEO sentiment metrics without starting billed analysis.
+- **Get GEO Sentiment Analysis** (read-only): Read cached paid-plan thematic sentiment analysis.
+- **Get GEO Settings** (read-only): Get the complete GEO configuration and current scan state for a project.
+- **Get GEO Traffic Journey** (read-only): Read the paid-plan events in one AI traffic journey without changing tracking setup.
+- **Get GEO Traffic Log** (read-only): Read a bounded set of recent paid-plan AI traffic events without changing tracking setup.
+- **Get GEO Traffic Overview** (read-only): Get AI crawler, citation, referral, and conversion traffic totals, source breakdowns, and daily points for a GEO project.
+- **Get GEO Visibility Overview** (read-only): Get mention rates, checks, citations, visibility, and average positions by answer engine for a GEO project and date window.
+- **Get GEO Visibility Timeseries** (read-only): Read paid-plan daily GEO visibility metrics.
+- **Get Post** (read-only): Get one Notra post by ID, including its rendered content, markdown source, metadata, and publication status.
+- **Get Post Generation** (read-only): Get a post generation job and event log.
+- **Get Post Schedule** (read-only): Get a post's current publishing schedule and the state of every destination, or null when no schedule exists.
+- **Get Public API Status** (read-only): Check whether Notra's public API is reachable and discover its authentication metadata without a connected credential.
+- **Get Skill** (read-only): Returns a skill by name, including its full instructions and whether it is built into Notra.
+- **Get Webhook Delivery** (read-only): Get one Notra webhook delivery, including its serialized payload and complete attempt history.
+- **Get Workspace Context** (read-only): Return the workspace and authentication context bound to the connected Notra credential, optionally including pending workspace invitations.
+- **Import GEO Competitors**: Bulk create or update a project's persistent competitor list from up to 2,000 rows or CSV.
+- **Import GEO Prompts**: Bulk-persist up to 500 tracked prompts from rows or CSV.
+- **Issue Geo Ingest Token**: Returns the current tracking token together with the install snippets.
+- **List Agent Sessions** (read-only): Returns recent agent sessions and their linked chat IDs, origin surfaces, statuses, and timestamps.
+- **List Brand Identities** (read-only): List the workspace's brand identities, with the default first, for selecting brand context in content and GEO workflows.
+- **List Chats** (read-only): List the workspace's Notra chat sessions without loading message histories.
+- **List Event Triggers** (read-only): Returns the organization's GitHub event triggers, optionally filtered to triggers monitoring any of the supplied repository IDs.
+- **List Feedback** (read-only): List workspace feedback with optional triage-status, kind, and project filters.
+- **List GEO Changes** (read-only): Compare the two latest stored paid-plan GEO scans without starting a new scan.
+- **List GEO Competitors** (read-only): List competitors tracked for a GEO project.
+- **List GEO Content Briefs** (read-only): List stored paid-plan GEO briefs.
+- **List GEO Content Gaps** (read-only): Read paid-plan content opportunities and linked briefs.
+- **List GEO Projects** (read-only): List the connected workspace's paid GEO projects and their brand associations.
+- **List GEO Prompt Result Summaries** (read-only): Return one bounded page of stored paid-plan prompt result summaries.
+- **List GEO Prompts** (read-only): List custom and automatically derived prompts tracked for a GEO project.
+- **List GEO Scans** (read-only): List paginated GEO scans with planned, completed, mentioned, and failed check totals by engine plus safe failure metadata.
+- **List GEO Sentiment Evidence** (read-only): Return one bounded page of stored paid-plan sentiment evidence without starting analysis.
+- **List GEO Sequences** (read-only): List tracked multi-turn GEO prompt sequences.
+- **List GEO Shelf Sources** (read-only): Return one bounded page of paid-plan cited and tracked GEO sources without starting a scan.
+- **List GEO Traffic Journeys** (read-only): List a bounded set of paid-plan AI traffic journeys without changing tracking setup.
+- **List GEO Traffic Pages** (read-only): List a bounded paid-plan ranking of pages visited by AI traffic without changing tracking setup.
+- **List Integrations** (read-only): List enabled GitHub and Linear integrations and their IDs for use as Notra content-generation sources.
+- **List Post Authors** (read-only): List Notra post authors and their IDs for assigning authors to blog posts and changelogs.
+- **List Posts** (read-only): List the connected workspace's posts, with filters for publication status, content type, and brand identity.
+- **List Schedules** (read-only): Returns the organization's cron schedules, newest first.
+- **List Skills** (read-only): Returns the organization's skills sorted by name, including built-in system skills (isSystem.
+- **List Webhook Deliveries** (read-only): List Notra webhook delivery history at a specific offset, optionally filtered by delivery status.
+- **List Webhooks** (read-only): List Notra outbound webhook subscriptions without exposing their signing secrets.
+- **Plan GEO Content Brief**: Plan and save a GEO content brief.
+- **Post Chat Message**: Persist a message or tool-approval decisions in an existing paid Notra chat and wait for the full assistant stream.
+- **Replace GEO Settings**: Replace the project's GEO settings and re-arm its recurring scan.
+- **Retry Webhook Delivery**: Queue a paid redelivery of a failed webhook while retaining its prior attempt history.
+- **Rotate Geo Ingest Token**: Invalidates every tracking token previously issued for this organization and returns a fresh one.
+- **Run GEO Sequence**: Irreversibly execute every turn of a tracked sequence against every available answer engine and record checks, consuming paid Notra model…
+- **Schedule Post**: Schedule a paid future publication that marks the saved post published in Notra and can create and merge a GitHub pull request or post to…
+- **Send Agent Session Message**: Sends the next turn of an agent session.
+- **Start GEO Agent Readiness Scan**: Queue a paid readiness scan of the project's linked website.
+- **Stream Agent Session Events** (read-only): Fetch and parse the durable NDJSON event response for an agent session after Notra closes the response, including input.requested events…
+- **Submit Feedback**: Record feedback for the organization that owns the credential.
+- **Submit Organization Feedback**: Record feedback from an AI agent or integration by posting to the organization's feedback URL, as shown on the Feedback page in the…
+- **Suggest GEO Competitors** (read-only): Use Notra's paid discovery operation to suggest competitors for a domain.
+- **Update Brand Identity**: Update selected fields of a Notra brand identity.
+- **Update Event Trigger**: Replaces an existing GitHub event trigger's filters, monitored repositories, generated content type, and publishing settings.
+- **Update Feedback**: Changes a feedback entry's triage status and returns the updated entry.
+- **Update GEO Project**: Rename a GEO project or relink its brand identity.
+- **Update GEO Prompt**: Enable or disable a tracked prompt, or replace labels on a custom prompt.
+- **Update GEO Sequence**: Change a tracked sequence's name, turns, or enabled state.
+- **Update Post**: Update selected fields of an existing Notra post.
+- **Update Schedule**: Replaces the schedule.
+- **Update Skill**: Updates the name, description, or content of a skill.
+- **Upsert GEO Competitor**: Create, update, or rename a persistent tracked competitor, matching names case-insensitively, and return the full list.

@@ -1,0 +1,102 @@
+# Job Search
+
+Search approved job-listing sources through fixed RapidAPI Runtime provider hosts. Availability depends on the connected RapidAPI application's subscriptions and plan entitlements.
+
+Category: Recruiting & HR. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/job-search/.
+
+## Actions
+
+- **Count Active ATS Jobs** (read-only): Count active ATS jobs matching company, role, location, date, salary, and enrichment filters without returning job records.
+- **Count Active Job Board Jobs** (read-only): Count active LinkedIn, Wellfound, and Y Combinator jobs matching company, role, location, date, salary, and enrichment filters.
+- **Count Active LinkedIn Jobs** (read-only): Counts active LinkedIn jobs matching role, company, location, date, seniority, work arrangement, experience, salary, or visa-sponsorship…
+- **Count Daily International Jobs** (read-only): Count international job postings matching documented date, company, role, salary, and geography filters.
+- **Estimate Glassdoor Salary** (read-only): Estimate Glassdoor salary for a title, location, and experience range.
+- **Get Bing job** (read-only): Gets full details for a Bing job by its search-result ID.
+- **Get Glassdoor Company Overview** (read-only): Get an employer overview and ratings by Glassdoor company ID.
+- **Get Glassdoor Company Salaries** (read-only): Get salary data for a job title at one Glassdoor company.
+- **Get Indeed job** (read-only): Gets full details for an Indeed job by its search-result ID.
+- **Get International Job Statistics** (read-only): Get coverage and frequency statistics for a searchable international-job field.
+- **Get job salary ranges** (read-only): Compares reported salary ranges for a job title in a selected country.
+- **Get JSearch Company Job Salary** (read-only): Get salary data for a job title at a specified company.
+- **Get JSearch Estimated Salary** (read-only): Get estimated salary for a title, location, and experience range.
+- **Get JSearch Job Details** (read-only): Get full details for one JSearch job ID.
+- **Get LinkedIn job** (read-only): Gets full details for a LinkedIn job by its numeric search-result ID.
+- **Get Xing job** (read-only): Gets full details for a Xing job by its search-result ID.
+- **Get ZipRecruiter Estimated Salary** (read-only): Get ZipRecruiter's annual pay distribution for a title nationally or in one state or province.
+- **Get ZipRecruiter Job Details** (read-only): Get full details for up to 20 ZipRecruiter job IDs.
+- **Glassdoor Real-Time: Autocomplete Companies** (read-only): Returns company-name suggestions and identifiers for a partial name.
+- **Glassdoor Real-Time: Autocomplete Jobs** (read-only): Returns job-title suggestions for a partial query.
+- **Glassdoor Real-Time: Autocomplete Salaries** (read-only): Returns salary-title suggestions for a partial query.
+- **Glassdoor Real-Time: Get Company Base Info** (read-only): Returns core identity and profile information for a company ID.
+- **Glassdoor Real-Time: Get Company Interview Details** (read-only): Returns one interview report identified by an interview ID.
+- **Glassdoor Real-Time: Get Company Job Details** (read-only): Returns the detailed company-job listing identified by a listing ID and the query string supplied by a company jobs result.
+- **Glassdoor Real-Time: Get Company Overview** (read-only): Returns a company overview for a profile ID and company ID.
+- **Glassdoor Real-Time: Get Conversation Details** (read-only): Returns one Glassdoor conversation and its detailed content by conversation ID.
+- **Glassdoor Real-Time: Get Detailed Company Overview** (read-only): Returns the expanded company overview for a company ID.
+- **Glassdoor Real-Time: Get Job Details** (read-only): Returns the detailed job listing identified by a listing ID and the query string supplied by a general job-search result.
+- **Glassdoor Real-Time: Get Salary Details** (read-only): Returns the provider's salary-detail payload, distinct from a salary report selected by ID.
+- **Glassdoor Real-Time: Get Salary Report** (read-only): Returns one salary report for a provider salary ID.
+- **Glassdoor Real-Time: List Company Awards** (read-only): Lists awards associated with a company.
+- **Glassdoor Real-Time: List Company Benefits** (read-only): Returns a paginated list of employee-reported benefits for a company.
+- **Glassdoor Real-Time: List Company Interviews** (read-only): Returns a paginated list of interview reports for a company, with optional sorting.
+- **Glassdoor Real-Time: List Company Jobs** (read-only): Lists job openings for one company, with title, location, date, function, sort, and cursor filters.
+- **Glassdoor Real-Time: List Company Locations** (read-only): Lists locations associated with a company ID.
+- **Glassdoor Real-Time: List Company Photos** (read-only): Returns the provider's company photo collection.
+- **Glassdoor Real-Time: List Company Reviews** (read-only): Returns a paginated list of employee reviews for a company, with optional sorting.
+- **Glassdoor Real-Time: List Salary Filters** (read-only): Returns the provider's available salary-search filter metadata.
+- **Glassdoor Real-Time: Resolve Job Location** (read-only): Resolves a location name to Glassdoor job-location matches and identifiers.
+- **Glassdoor Real-Time: Resolve Salary Location** (read-only): Returns the provider's salary-location resolution payload for use with salary search.
+- **Glassdoor Real-Time: Search Companies** (read-only): Returns paginated company matches for a name query.
+- **Glassdoor Real-Time: Search Conversations** (read-only): Returns paginated Glassdoor conversation matches for a text query, ordered by relevance or recency.
+- **Glassdoor Real-Time: Search Jobs** (read-only): Searches job listings across companies and returns filtered, sortable, cursor-paginated results.
+- **Glassdoor Real-Time: Search Salaries** (read-only): Searches salary records by job title and returns paginated compensation results, with experience, function, location, and sort filters.
+- **Google Jobs: List Entry-Level Jobs** (read-only): Lists entry-level and junior roles, graduate programs, trainee positions, and jobs that do not require prior experience.
+- **Google Jobs: List Four-Day Work Week Jobs** (read-only): Lists positions offering a four-day work week or compressed schedule.
+- **Google Jobs: List Freelance Jobs** (read-only): Lists freelance, contractor, consulting, and other independent-work opportunities.
+- **Google Jobs: List High-Paying Jobs** (read-only): Lists high-compensation positions that the provider identifies as paying at least $100,000.
+- **Google Jobs: List Internships** (read-only): Lists internships, co-op positions, trainee programs, apprenticeships, and student opportunities.
+- **Google Jobs: List Jobs** (read-only): Lists aggregated job postings from sources including LinkedIn, Indeed, Jooble, ZipRecruiter, and Glassdoor.
+- **Google Jobs: List Jobs by Benefits** (read-only): Lists positions through the provider's benefits-and-perks route, including roles advertising health insurance, retirement plans, or stock…
+- **Google Jobs: List Jobs by Company** (read-only): Lists jobs through the provider's company-focused route using its documented optional company filter.
+- **Google Jobs: List Jobs by Company Size** (read-only): Lists jobs through the provider's company-size route for startup through enterprise employers.
+- **Google Jobs: List Jobs by Distance** (read-only): Lists job postings through the provider's distance-focused route.
+- **Google Jobs: List Jobs by Experience** (read-only): Lists jobs through the provider's experience-level route, covering career stages from entry level through executive roles.
+- **Google Jobs: List Jobs by Industry** (read-only): Lists jobs through the provider's industry-specific route for sectors such as healthcare, finance, and technology.
+- **Google Jobs: List Jobs by Job Type** (read-only): Lists job postings through the provider's job-type route.
+- **Google Jobs: List Jobs by Language** (read-only): Lists job postings through the provider's language-focused route.
+- **Google Jobs: List Jobs by Minimum Salary** (read-only): Lists jobs through the provider's minimum-salary route.
+- **Google Jobs: List Jobs by Salary** (read-only): Lists job postings through the provider's salary-focused route.
+- **Google Jobs: List Jobs by Sites** (read-only): Lists aggregated job postings through the provider's site-focused route.
+- **Google Jobs: List Jobs by Technology Stack** (read-only): Lists jobs through the provider's technology-stack route for technologies and programming languages such as React, Python, or AWS.
+- **Google Jobs: List Jobs with Relocation** (read-only): Lists positions offering relocation packages or assistance.
+- **Google Jobs: List Recent Jobs** (read-only): Lists recent job postings aggregated from multiple sources through the provider's recent-jobs route.
+- **Google Jobs: List Remote Jobs** (read-only): Lists remote and work-from-home job postings across industries and roles.
+- **Google Jobs: List Startup Jobs** (read-only): Lists opportunities at startups, early-stage companies, and venture-backed firms, including listings from startup-focused platforms.
+- **Google Jobs: List Trending Jobs** (read-only): Lists trending and highly viewed job openings from the past week.
+- **Google Jobs: List Visa Sponsorship Jobs** (read-only): Lists positions offering employer-sponsored work authorization such as H-1B sponsorship or work permits.
+- **Google Jobs: Search by Exact Job Title** (read-only): Searches through the provider's exact-job-title route using its documented optional title filter.
+- **List Active ATS Jobs** (read-only): List active ATS jobs with company, role, location, date, salary, and enrichment filters plus offset or cursor pagination.
+- **List Active Job Board Jobs** (read-only): List active LinkedIn, Wellfound, and Y Combinator jobs with company, role, location, date, salary, and enrichment filters plus pagination.
+- **List Active LinkedIn Jobs** (read-only): Searches active LinkedIn jobs by role, company, location, date, seniority, work arrangement, experience, salary availability, visa…
+- **List Distinct International Job Values** (read-only): List distinct values and counts for a searchable international-job field.
+- **List Expired LinkedIn Job IDs** (read-only): Lists IDs for LinkedIn jobs that expired within the selected one-hour, one-day, one-month, or six-month window.
+- **List Glassdoor Company Interviews** (read-only): List interview experiences for a Glassdoor company by job function, job title, location type, offer outcome, sort order, regional domain,…
+- **List Glassdoor Company Jobs** (read-only): List jobs posted by a Glassdoor company with location and function filters.
+- **List Glassdoor Company Reviews** (read-only): List and filter employee reviews for a Glassdoor company.
+- **List Glassdoor Company Salaries** (read-only): List paginated salary records for a Glassdoor company, optionally by title and location.
+- **List remote jobs** (read-only): Searches remote jobs by title, country, and employment type, with cursor pagination and optional company details or total count.
+- **List salary job titles** (read-only): Finds canonical job-title matches for a query and country before a salary-range lookup.
+- **Ping Jobs Search API** (read-only): Diagnostic endpoint that confirms provider reachability only.
+- **Search Bing jobs** (read-only): Searches Bing job listings by keywords and location, with posting-age, employment-type, remote-only, and pagination filters.
+- **Search Daily International Jobs** (read-only): Search international job postings with documented date, company, role, salary, geography, and pagination filters.
+- **Search Glassdoor Companies** (read-only): Search Glassdoor employers by name or company ID.
+- **Search Glassdoor Jobs** (read-only): Search Glassdoor jobs by query, location and location type, easy-apply or remote status, posting age, minimum company rating, regional…
+- **Search Indeed jobs** (read-only): Searches Indeed job listings with documented country, distance, sorting, and pagination filters.
+- **Search Indeed US jobs** (read-only): Search the Indeed Jobs API US feed by keyword and city or state, with offset pagination.
+- **Search jobs** (read-only): Searches Indeed, LinkedIn, ZipRecruiter, Glassdoor, and Google by keywords, location, posting age, job type, and remote status.
+- **Search jobs for Excel** (read-only): Searches Indeed, LinkedIn, ZipRecruiter, Glassdoor, and Google and returns the matching jobs as a downloadable Excel workbook.
+- **Search JSearch Jobs** (read-only): Search public job sites through JSearch by country, language, posting age, remote status, employment type, job requirements, radius,…
+- **Search LinkedIn jobs** (read-only): Searches LinkedIn job listings by keywords, organization, and location, with posting-age, employment-type, experience, workplace, and…
+- **Search LinkedIn organizations** (read-only): Finds LinkedIn organization IDs that can be passed to the LinkedIn jobs search action.
+- **Search Xing jobs** (read-only): Searches Xing job listings by keywords and location, with posting-age, employment-type, career-level, workplace, salary, and pagination…
+- **Search ZipRecruiter Jobs** (read-only): Search United States or Canadian ZipRecruiter postings by location, posting age, employment type, experience, remote status, salary range,…

@@ -1,0 +1,88 @@
+# Plain MCP
+
+Read and manage Plain support threads, customers, tenants, broadcasts, help-center content, Sidekick sessions, and workspace settings through Plain's hosted MCP server.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/plain-mcp/.
+
+## Actions
+
+- **Addgeneratedreply**: Add an AI-generated reply suggestion to a thread.
+- **Addlabels**: Add labels to a thread by label type IDs.
+- **Archivelabeltype**: Archive a label type to hide it from the active label list.
+- **Assignthread**: Assign a thread to a user or machine user.
+- **Bulkupsertthreadfields**: Bulk upsert (create or update) multiple thread field values in a single operation.
+- **Changethreadpriority**: Change the priority of a thread.
+- **Createbroadcast**: Create a new broadcast.
+- **Createbroadcastaudience**: Create a reusable broadcast audience.
+- **Createlabeltype**: Create a new label type for organizing threads.
+- **Createnote**: Create an internal note on a thread.
+- **Createsnippet**: Create a new snippet (reusable reply template) in the workspace.
+- **Createthread**: Create a new thread for a customer.
+- **Createthreadfieldschema**: Create a new thread field schema to capture structured data on threads.
+- **Createthreadlink**: Link a thread to an external entity (e.g.
+- **Createworkspaceslackintegrationfromauth**: Connect workspace Slack notifications using a Slack connection the workspace already has.
+- **Deletebroadcast**: Soft-delete a broadcast.
+- **Deletebroadcastaudience**: Soft-delete a broadcast audience.
+- **Deletethreadfieldschema**: Delete a thread field schema from the workspace.
+- **Deletethreadlink**: Remove a link between a thread and an external entity.
+- **Getattachmentdownloadurl**: Generate a short-lived download URL for an attachment on a thread.
+- **Getbroadcastaudiencedetails** (read-only): Fetch a single broadcast audience by its ID, or null if no audience with that ID exists.
+- **Getbroadcastaudiences** (read-only): Fetch a paginated list of the workspace's broadcast audiences, newest first.
+- **Getbroadcastdetails** (read-only): Fetch a single broadcast by its ID, including its authored content and who it is targeted at.
+- **Getbroadcasts** (read-only): Fetch a paginated list of the workspace's broadcasts, newest first.
+- **Getbroadcastsenddeliveries** (read-only): Fetch the individual recipients of one broadcast send — which channel got the message, which did not, and why.
+- **Getbroadcastsends** (read-only): Fetch the send history of one broadcast, newest first.
+- **Getcustomerdetails** (read-only): Fetch detailed information about a specific customer by their ID.
+- **Getcustomers** (read-only): Fetch a paginated list of customers from Plain.
+- **Getcustomerthreads** (read-only): Fetch first 10 threads for a specific customer.
+- **Gethelpcenterarticle** (read-only): Fetch detailed information for a specific help-center article by ID.
+- **Gethelpcenterarticlebyslug** (read-only): Fetch detailed information for a specific help-center article by slug.
+- **Gethelpcenterarticlegroups** (read-only): Fetch a paginated list of article groups for a specific help center.
+- **Gethelpcenterarticles** (read-only): Fetch a paginated list of articles for a specific help center.
+- **Gethelpcenters** (read-only): Fetch a paginated list of help centers.
+- **Getlabels** (read-only): Fetch a paginated list of label types from Plain.
+- **Getmyassignedthreads** (read-only): Fetch first 10 threads assigned to a specific user in Plain.
+- **Getmyuser** (read-only): Get the currently authenticated user's details.
+- **Getmyworkspace** (read-only): Get the currently authenticated user's workspace details.
+- **Getsidekicksession** (read-only): Poll a Sidekick session.
+- **Getsnippet** (read-only): Fetch a single snippet by ID, including soft-deleted snippets (where isDeleted is true).
+- **Getsnippets** (read-only): Fetch a paginated list of snippets from the workspace.
+- **Gettenantdetails** (read-only): Fetch detailed information about a specific tenant by their ID.
+- **Gettenants** (read-only): Fetch a paginated list of tenants from Plain.
+- **Getthreaddetails** (read-only): Fetch complete details for a specific thread including first 50 timeline entries.
+- **Getthreadfieldschemas** (read-only): Fetch a paginated list of thread field schemas from Plain.
+- **Getthreadknowledgesourcecitations** (read-only): Fetch the knowledge sources cited by AI agent replies on a thread.
+- **Getthreads** (read-only): Fetch threads with flexible filtering options.
+- **Getuserbyemail** (read-only): Look up a Plain user by their email address.
+- **Listsidekicksessions** (read-only): List Sidekick sessions in the workspace, most recent activity first.
+- **Markcustomerasspam**: Flag a customer as spam.
+- **Markthreadasdone**: Mark a thread as done (resolved).
+- **Markthreadastodo**: Mark a thread as todo (reopen or set as active).
+- **Mergethread**: Merge one Plain thread into another (a MERGED_INTO native thread link).
+- **Movelabeltype**: Move a label type to a different position in the label hierarchy.
+- **Removelabels**: Remove labels from a thread by label IDs.
+- **Reorderthreadfieldschemas**: Reorder multiple thread field schemas in a single operation.
+- **Replytothread**: Reply to the last message in a thread.
+- **Resolvesidekickapproval**: Approve or deny a Sidekick tool-call approval request.
+- **Searchbroadcasts** (read-only): Search broadcasts by name.
+- **Searchcustomers** (read-only): Search for customers by name, email, short name, or external ID.
+- **Searchtenants** (read-only): Search for tenants by name or external ID.
+- **Searchthreadlinkcandidates** (read-only): Search a connected issue tracker for external entities that can be linked to a thread via createThreadLink.
+- **Searchthreads** (read-only): Search threads by text content in title, description, or messages.
+- **Sendsidekickmessage**: Send a follow-up message into an existing Sidekick session.
+- **Sendtestbroadcast**: Send a test copy of a broadcast to Slack channels you name, so you can see what recipients will get before the real audience does.
+- **Snoozethread**: Snooze a thread for a specified duration.
+- **Startsidekicksession**: Start a new Sidekick session and return the handle used by every other Sidekick tool.
+- **Unarchivelabeltype**: Unarchive a previously archived label type to make it available again.
+- **Unassignthread**: Unassign a thread, removing the current assignee.
+- **Unmarkcustomerasspam**: Clear the spam flag from a customer, restoring their threads to the inbox and metrics.
+- **Updatebroadcast**: Update one or more fields of an existing broadcast.
+- **Updatebroadcastaudience**: Update a broadcast audience's name, filters, or both.
+- **Updatelabeltype**: Update an existing label type's properties.
+- **Updatethreadfieldschema**: Update an existing thread field schema's properties.
+- **Updatethreadtitle**: Update the title (subject line) of an existing thread.
+- **Upsertcustomer**: Create or update a customer.
+- **Upserthelpcenterarticle**: Create or update a help-center article.
+- **Upserttenant**: Create or update a tenant.
+- **Upserttenantfield**: Create or update a tenant field.
+- **Upsertthreadfield**: Upsert (create or update) a thread field value on a thread.

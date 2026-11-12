@@ -1,0 +1,92 @@
+# Asana
+
+Tool to help teams organize, track, and manage their work.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/asana/.
+
+## Actions
+
+- **Add Followers to Task**: Add followers to a task in asana.
+- **Add Supporting Relationship to Goal**: Add a supporting goal relationship to a goal.
+- **Add task to section**: Adds an existing task to a section, optionally positioning it before or after another task in that section.
+- **Create a section in a project**: Creates a new section in a project, optionally positioned relative to an existing section in the same project, and returns the full record…
+- **Create Allocation**: Creates a new allocation.
+- **Create Attachment for Task**: Upload an attachment to a task.
+- **Create Custom Field**: Create a new custom field in a workspace.
+- **Create Enum Option for Custom Field**: Create a new enum option for a custom field in asana.
+- **Create Project Status Update**: Create a new status update on a project.
+- **Create subtask**: Creates a new asana subtask under an existing parent task (task gid).
+- **Create task comment**: Adds a new text comment (story) to an existing asana task, appearing in its activity feed.
+- **Delete a project**: Delete a project.
+- **Delete a Tag**: Delete a specific tag by its gid.
+- **Delete a task**: Delete a task.
+- **Delete Allocation**: Delete an allocation by its id.
+- **Delete Attachment**: Delete an attachment by its globally unique identifier.
+- **Delete Custom Field**: Delete a custom field by its globally unique identifier.
+- **Duplicate Project**: Duplicate a project.
+- **Duplicate Task**: Duplicate a task
+- **Get a project** (read-only): Retrieves a specific asana project by its project gid, with an option to include additional fields for comprehensive details using opt…
+- **Get a task** (read-only): Retrieves full details for a specified task gid accessible by the user.
+- **Get Allocation**: Get an allocation by id.
+- **Get Allocations**: Get multiple allocations.
+- **Get Attachment**: Get a single attachment by its globally unique identifier.
+- **Get Audit Log Events**: Get audit log events for a workspace.
+- **Get current user** (read-only): Retrieves the authenticated user's full record, including accessible workspaces, often used as an initial call to establish user context…
+- **Get Custom Field**: Get a single custom field by its globally unique identifier.
+- **Get Custom Fields for Workspace**: Get all custom fields in a workspace.
+- **Get Events on a Resource**: Retrieve events on a resource to monitor changes.
+- **Get Goal**: Retrieve the full record for a single goal by its gid.
+- **Get Goal Relationships**: Retrieve goal relationships.
+- **Get Goals**: Retrieve multiple goals.
+- **Get Memberships**: Retrieve memberships for goals, projects, portfolios, or custom fields.
+- **Get Multiple Project Templates**: Retrieve multiple project templates.
+- **Get Objects via Typeahead**: Retrieve objects in a workspace via a typeahead search algorithm.
+- **Get Portfolio**: Retrieve the full record for a single portfolio by its gid.
+- **Get Portfolio Items**: Retrieve items in a portfolio.
+- **Get Portfolio Memberships**: Retrieve multiple portfolio memberships.
+- **Get Portfolios**: Retrieve multiple portfolios.
+- **Get Project Brief**: Retrieve a project's brief.
+- **Get Project Memberships**: Retrieve memberships from a project.
+- **Get Project Status**: Retrieve the full record for a single project status by its gid.
+- **Get Project Status Updates**: Get status updates for a specific project.
+- **Get Projects for Team**: Get a list of projects for a specific team in asana.
+- **Get Section**: Retrieve the full record for a single section by its gid.
+- **Get sections in a project** (read-only): Returns compact records for all sections (used to group tasks) in a specified project.
+- **Get Status Updates**: Retrieve status updates from an object.
+- **Get Stories for Task**: Get stories (comments, status updates, etc.) for a task.
+- **Get Story**: Retrieve a story.
+- **Get Tag**: Get a single tag by its globally unique identifier.
+- **Get Tags** (read-only): Get multiple tags in a workspace.
+- **Get Task Attachments**: Get the list of attachments for a given task, project, or project brief.
+- **Get Task Subtasks** (read-only): Retrieve multiple task subtasks from a workspace.
+- **Get Task Templates**: Retrieve multiple task templates from a workspace.
+- **Get Team Memberships**: Retrieve compact team membership records.
+- **Get teams in workspace** (read-only): Returns the compact records for all teams in the workspace visible to the authorized user.
+- **Get Time Periods**: Retrieve compact or full representations of time periods.
+- **Get User** (read-only): Get a user by their id.
+- **Get Users for Team** (read-only): Get users in a team.
+- **Get Users in Workspace** (read-only): Get users in a workspace or organization.
+- **Get Workspace Memberships**: Retrieve the workspace memberships for a specific workspace.
+- **Get Workspace Projects**: Retrieve the projects associated with a specific workspace.
+- **Insert or Reorder Enum Option for Custom Field**: Reorder an existing enum option or insert a new enum option for a custom field at a specific position.
+- **Remove Follower From Task**: Remove one or more followers from a task.
+- **Retrieve tasks for project** (read-only): Retrieves tasks from a specified asana project, allowing filtering by completion status and selection of optional fields for detailed…
+- **Submit Parallel Requests (Batch API)**: Submit multiple asana api requests in parallel using the batch api.
+- **Update a project**: Update a project.
+- **Update Allocation**: Update an existing allocation by its id.
+- **Update Custom Field**: Update a custom field by its globally unique identifier.
+- **Update Enum Option**: Update an enum option for a custom field.
+- **Update Tag**: Update an existing tag by its globally unique identifier.
+- **Create a project**: Creates a new asana project, requiring either a workspace or team gid for association, and returns the full project details.
+- **Create a tag in a workspace**: Creates a new tag, with properties like name and color defined in the request body, within a specific asana workspace (using workspace gid).
+- **Create task in asana with specific details**: Creates a new asana task.
+- **Create Team**: Create a new team in an asana workspace.
+- **Get a user task list** (read-only): Retrieves a specific user's task list from asana by its user task list gid, optionally returning extended details like name, owner, and…
+- **Get multiple projects** (read-only): Returns a list of projects, optionally filtered by workspace, team, or archived status, supporting pagination for large datasets.
+- **Get multiple tasks** (read-only): Retrieves a list of tasks, allowing filtering by assignee (requires workspace), project, section, completed since, and modified since.
+- **Get multiple users** (read-only): Returns a list of users in an asana workspace or organization, optionally filtered by workspace or team gid, with support for pagination…
+- **Get multiple workspaces** (read-only): Retrieves all workspaces accessible by the authenticated user, returning an empty list if the user has no accessible workspaces.
+- **Get Team**: Retrieve details of a specific team by its gid.
+- **Get Workspace**: Retrieve details of a specific workspace by its gid.
+- **Update a task**: Updates attributes of an existing asana task identified by its task gid.
+- **Update a team**: Update details of an existing team.

@@ -1,0 +1,104 @@
+# X MCP
+
+Search posts, users, news, trends, Spaces, and communities, and manage lists, bookmarks, chats, broadcasts, calls, and Article drafts through X's hosted MCP server.
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/x-mcp/.
+
+## Actions
+
+- **Accept chat message request**: Accept a Chat message request
+- **Add chat moderator**: Add a chat moderator
+- **Add conversation keys**: Add Conversation Keys
+- **Add lists member**: Add Lists Member
+- **Archive chat conversation**: Archive a Chat conversation
+- **Article create draft**: Create draft Article
+- **Cancel scheduled call**: Cancel a scheduled call
+- **Chat media download** (read-only): Download Chat Media.
+- **Chat media upload append**: Append Chat Media Upload.
+- **Chat media upload finalize**: Finalize Chat Media Upload.
+- **Chat media upload initialize**: Initialize Chat Media Upload.
+- **Create lists**: Create Lists
+- **Create scheduled broadcast**: Create a scheduled broadcast
+- **Create source**: Create a stream source
+- **Create users bookmark**: Create Bookmark
+- **Create users bookmark folder**: Create Bookmark Folder
+- **Delete scheduled broadcast**: Delete a scheduled broadcast
+- **Delete source**: Delete a stream source
+- **Delete users bookmark**: Delete Bookmark
+- **Follow list**: Follow List
+- **Get broadcast** (read-only): Get a broadcast
+- **Get broadcast chat** (read-only): Get broadcast chat history
+- **Get chat conversation** (read-only): Get Chat Conversation.
+- **Get chat conversation events** (read-only): Get Chat Conversation Events, newest first.
+- **Get chat conversations** (read-only): Get Chat Conversations.
+- **Get chat message request** (read-only): Get Chat Message Request
+- **Get chat message requests** (read-only): Get Chat Message Requests
+- **Get chat moderators** (read-only): Get chat moderators
+- **Get communities by** (read-only): Get Communities by ID
+- **Get lists by** (read-only): Get Lists by ID
+- **Get lists followers** (read-only): Get Lists Followers
+- **Get lists members** (read-only): Get Lists Members
+- **Get lists posts** (read-only): Get Lists Posts
+- **Get news** (read-only): Get news stories by ID Each returned story includes a url deeplinking to its x.com page.
+- **Get posts by** (read-only): Get Posts by ID Each returned post includes a url deeplinking to it on x.com.
+- **Get posts by ids** (read-only): Get Posts by IDs Each returned post includes a url deeplinking to it on x.com.
+- **Get posts counts recent** (read-only): Get Posts Counts Recent
+- **Get posts liking users** (read-only): Get Posts Liking Users
+- **Get posts quoted posts** (read-only): Get Posts Quoted Posts Each returned post includes a url deeplinking to it on x.com.
+- **Get posts reposted by** (read-only): Get Posts Reposted by
+- **Get scheduled broadcast** (read-only): Get a scheduled broadcast
+- **Get scheduled call** (read-only): Get a scheduled call
+- **Get source** (read-only): Get a stream source
+- **Get spaces by** (read-only): Get Spaces by ID
+- **Get spaces by creator ids** (read-only): Get Spaces by Creator IDs
+- **Get spaces by ids** (read-only): Get Spaces by IDs
+- **Get spaces posts** (read-only): Get Space Posts
+- **Get trends by woeid** (read-only): Get Trends by Woeid Each returned trend includes a url deeplinking to its x.com search.
+- **Get usage credits** (read-only): Get usage credits
+- **Get users bookmark folders** (read-only): Get Users Bookmark Folders
+- **Get users bookmarks** (read-only): Get Users Bookmarks Each returned post includes a url deeplinking to it on x.com.
+- **Get users bookmarks by folder** (read-only): Get Users Bookmarks by Folder ID Each returned post includes a url deeplinking to it on x.com.
+- **Get users by** (read-only): Get Users by ID
+- **Get users by username** (read-only): Get Users by Username
+- **Get users by usernames** (read-only): Get Users by Usernames
+- **Get users followed lists** (read-only): Get Users Followed Lists
+- **Get users liked posts** (read-only): Get Users Liked Posts Each returned post includes a url deeplinking to it on x.com.
+- **Get users list memberships** (read-only): Get Users List Memberships
+- **Get users me** (read-only): Get Users Me
+- **Get users me followers** (read-only): Get the authenticated user's followers
+- **Get users me following** (read-only): Get the users the authenticated user follows
+- **Get users mentions** (read-only): Get Users Mentions Each returned post includes a url deeplinking to it on x.com.
+- **Get users owned lists** (read-only): Get Users Owned Lists
+- **Get users pinned lists** (read-only): Get Users Pinned Lists
+- **Get users posts** (read-only): Get Users Posts Each returned post includes a url deeplinking to it on x.com.
+- **Get users public key** (read-only): Get public keys
+- **Get users public keys** (read-only): Get public keys
+- **Get users timeline** (read-only): Get Users Timeline Each returned post includes a url deeplinking to it on x.com.
+- **Go live scheduled broadcast**: Go live on a scheduled broadcast
+- **List broadcasts** (read-only): List broadcasts
+- **List scheduled broadcasts** (read-only): List scheduled broadcasts
+- **List scheduled calls** (read-only): List scheduled calls
+- **List sources** (read-only): List stream sources
+- **Mark chat conversation read**: Mark Conversation as Read
+- **Mark chat conversation unread**: Mark Conversation as Unread
+- **Mute broadcast chat user**: Mute or time out a user in a broadcast chat
+- **Pin list**: Pin List
+- **Remove chat moderator**: Remove a chat moderator
+- **Remove lists member by user**: Remove a List member
+- **Respond to scheduled call**: Respond to a scheduled call
+- **Schedule call**: Schedule a call
+- **Search communities** (read-only): Search Communities
+- **Search news** (read-only): Search News Each returned story includes a url deeplinking to its x.com page.
+- **Search posts all** (read-only): Search Posts All Each returned post includes a url deeplinking to it on x.com.
+- **Search spaces** (read-only): Search Spaces
+- **Search users** (read-only): Search Users
+- **Send chat message**: Send Chat Message
+- **Send chat typing indicator**: Send Typing Indicator
+- **Unarchive chat conversation**: Unarchive a Chat conversation
+- **Unfollow list**: Unfollow a List
+- **Unmute broadcast chat user**: Unmute a user in a broadcast chat
+- **Unpin list**: Unpin a List
+- **Update lists**: Update List
+- **Update scheduled broadcast**: Update a scheduled broadcast
+- **Update scheduled call**: Update a scheduled call
+- **Update source**: Rename a stream source

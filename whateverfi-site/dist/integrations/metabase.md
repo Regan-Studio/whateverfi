@@ -1,0 +1,274 @@
+# Metabase
+
+Metabase is an open-source business intelligence tool that lets you ask questions about your data and visualize answers as charts, graphs, and dashboards.
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/metabase/.
+
+## Actions
+
+- **Copy Card**: Create a copy of an existing Metabase card (question) by its ID.
+- **Copy Dashboard**: Copy an existing Metabase dashboard.
+- **Create Card**: Create a new Metabase card (question or model).
+- **Create Collection**: Create a new Metabase collection for organizing content.
+- **Create Dashboard**: Create a new Metabase dashboard.
+- **Delete Card**: Delete a Metabase card (question) by its ID.
+- **Delete Card**: Hard delete a Metabase card.
+- **Delete Dashboard**: Delete a Metabase dashboard by its ID.
+- **Delete Dashboard**: Hard delete a Metabase dashboard by its ID.
+- **Execute Dataset Query**: Execute a query against a Metabase database and retrieve results.
+- **Get all collections** (read-only): Retrieve all collections that the current user has read permissions for.
+- **Get All Databases** (read-only): Retrieve a list of all Database instances configured in Metabase.
+- **Get API Card** (read-only): List all cards (questions) available to the authenticated user in Metabase.
+- **Get Card by ID** (read-only): Retrieve a specific card (question) by its ID.
+- **Get Collection by ID** (read-only): Retrieve detailed information about a Metabase collection by its ID.
+- **Get Collection by ID** (read-only): Fetch a specific Metabase collection with standard details added.
+- **Get Collection Items** (read-only): Retrieve items from a specific Metabase collection.
+- **Get Current User** (read-only): Retrieve information about the currently authenticated user.
+- **Get Dashboard by ID** (read-only): Retrieve details of a specific Metabase dashboard by ID.
+- **Get Dashboard by ID** (read-only): Retrieve a dashboard by its ID from Metabase.
+- **Get Database By ID** (read-only): Retrieve a single database by ID from Metabase.
+- **Get Database Details** (read-only): Retrieve complete details for a specific database in Metabase.
+- **Get Table By ID** (read-only): Retrieve basic table information by ID from Metabase.
+- **Search Metabase objects** (read-only): Search Cards, Dashboards, Collections, Tables, Databases, and Pulses for a substring.
+- **Update Card by ID**: Update a specific card (question) by its ID.
+- **Update Collection**: Update an existing Metabase collection.
+- **Update Dashboard**: Update a Metabase dashboard by its ID.
+- **Update Dashboard**: Update a Metabase dashboard by ID.
+- **Update Database**: Update a Database in Metabase.
+- **Update Database Configuration**: Update a database configuration in Metabase.
+- **Bulk Move Cards**: Bulk move cards to a collection or remove them from collections.
+- **Bulk Move Cards to Collection**: Bulk move multiple Metabase cards into a target collection or remove them from collections.
+- **Cancel Current Remote Sync Task**: Cancel the current active Remote Sync task in Metabase Enterprise Edition.
+- **Check Database Health** (read-only): Check the health status of a specific database connection in Metabase.
+- **Check Password Complexity**: Check if a password meets Metabase's configured password complexity rules.
+- **Check Snippet Dependencies**: Check dependencies for a native query snippet in Metabase Enterprise Edition.
+- **Convert Query to Native SQL**: Convert a Metabase query to native SQL format.
+- **Copy Dashboard**: Create a copy of an existing Metabase dashboard.
+- **Create Bookmark**: Create a new bookmark for a Metabase item (card, dashboard, collection, or dataset).
+- **Create Bookmark**: Create a new bookmark for a Metabase item (card, dashboard, collection, or dataset).
+- **Create Bookmark**: Create a bookmark for a Metabase item (card, dashboard, or collection).
+- **Create Dashboard in Collection**: Create a new dashboard in a specific Metabase collection.
+- **Create Dashboard Subscription**: Create a dashboard subscription using Metabot tools.
+- **Create Field Dimension**: Set the dimension for a field at the specified ID in Metabase.
+- **Create Glossary Entry**: Create a new glossary entry in Metabase.
+- **Create Model Index**: Create a new model index in Metabase.
+- **Create native query snippet**: Create a new native query snippet in Metabase.
+- **Create Notification**: Create a new notification in Metabase.
+- **Create Pulse**: Create a new pulse (scheduled report/subscription) in Metabase.
+- **Create Timeline**: Create a new timeline in Metabase.
+- **Delete Action**: Delete an Action from Metabase.
+- **Delete Action**: Delete a Metabase action by its ID.
+- **Delete API Cache**: Delete/clear cached data in Metabase for specific entities.
+- **Delete Bookmark**: Delete a bookmark from a Metabase item (card, dashboard, or collection).
+- **Delete Bookmark**: Delete a bookmark by model and ID.
+- **Delete Field Dimension**: Remove the dimension associated with a field at the specified ID.
+- **Delete Glossary Entry**: Delete a glossary entry from Metabase.
+- **Delete Glossary Item**: Delete a glossary item by ID.
+- **Delete Model Index**: Delete a Metabase model index by its ID.
+- **Delete Model Index**: Delete a ModelIndex by ID from Metabase.
+- **Delete Timeline**: Delete a timeline by ID.
+- **Delete Timeline**: Delete a Metabase timeline and cascade delete all its associated events.
+- **Delete Timeline Event**: Delete a timeline event by ID.
+- **Delete Timeline Event**: Delete a Metabase timeline event.
+- **Delete User Key-Value**: Delete a user key-value pair from Metabase.
+- **Delete User Key-Value Pair**: Delete a user key-value pair by namespace and key.
+- **Delete User Subscriptions**: Delete all Alert and DashboardSubscription subscriptions for a User.
+- **Delete User Subscriptions**: Delete all Alert and DashboardSubscription subscriptions for a User.
+- **Disable Database Model Persistence**: Disable model persistence for a Metabase database.
+- **Discard Database Field Values**: Discard all saved field values for a specific database.
+- **Discard Database Field Values**: Discard all saved field values for a specific database.
+- **Discard Field Values**: Discard the FieldValues belonging to a Metabase field.
+- **Discard Field Values**: Discard cached FieldValues for a specific field.
+- **Discard Table Field Values**: Discard the FieldValues belonging to the Fields in a Metabase Table.
+- **Discard Table Field Values**: Discard cached FieldValues for all Fields belonging to a specific Table.
+- **Dismiss Database Spinner**: Dismiss the spinner for a specific database.
+- **Dismiss Database Sync Spinner**: Manually set the initial sync status of a Database and corresponding tables to complete.
+- **Execute Card Query**: Execute a query for a saved Metabase card/question and retrieve results.
+- **Execute Dashboard Card Query**: Execute a query for a specific card within a dashcard on a dashboard.
+- **Execute Dashboard Pivot Query**: Execute a pivot table query for a specific card on a dashboard.
+- **Execute Pivot Card Query**: Execute a pivot query on a Metabase card and return the results.
+- **Execute Pivot Table Query**: Execute a pivot table query and retrieve results.
+- **Filter Records**: Filter records from a Metabase data source using metabot tools.
+- **Generate Insights**: Generate insights for a table using Metabot tools.
+- **Generate Random Security Token** (read-only): Generate a cryptographically secure random token for Metabase.
+- **Get Action** (read-only): Retrieve a Metabase action by ID.
+- **Get Action Execute Parameters** (read-only): Fetch values for filling in action execution parameters.
+- **Get All Alerts** (read-only): Retrieve all alerts in Metabase.
+- **Get all Metabase actions** (read-only): Retrieve all actions available in the Metabase instance.
+- **Get all native query snippets** (read-only): Retrieve all native query snippets available in the Metabase instance.
+- **Get All Pulses** (read-only): Retrieve all pulses (scheduled reports/subscriptions) in Metabase.
+- **Get All Segments** (read-only): Retrieve all segments from Metabase.
+- **Get All Timelines** (read-only): Retrieve all timelines in Metabase.
+- **Get All User Key-Values in Namespace** (read-only): Retrieve all key-value pairs in a given namespace for the current user.
+- **Get API Glossary** (read-only): Retrieve all glossary items from Metabase.
+- **Get Automagic Comparison Dashboard** (read-only): Retrieve an automagic comparison dashboard comparing a cell in one entity with another entity.
+- **Get Automagic Dashboard** (read-only): Generate an automagic dashboard for a given entity.
+- **Get Automagic Dashboard** (read-only): Retrieve an automagic dashboard for a specified entity with its ID.
+- **Get automagic dashboard by rule** (read-only): Return an automagic dashboard for a specific entity using a dashboard template with rule prefix.
+- **Get Automagic Dashboard Candidates** (read-only): Retrieve automagic dashboard candidates for a specific database.
+- **Get Automagic Dashboard Cell Analysis** (read-only): Return an automagic dashboard analyzing a specific cell in an entity's data.
+- **Get Automagic Dashboard Cell Analysis** (read-only): Return an automagic dashboard analyzing a specific cell in an entity's data.
+- **Get Automagic Dashboard Cell Rule** (read-only): Fetch an automagic dashboard analyzing a specific cell in a table or query.
+- **Get Automagic Dashboard Cell Rule Analysis** (read-only): Fetch an automagic dashboard analyzing a specific cell using a template rule.
+- **Get Automagic Dashboard Query Metadata** (read-only): Retrieve all metadata for an automagic dashboard for the specified entity type and ID.
+- **Get Automagic Dashboard Query Metadata** (read-only): Retrieve all metadata for an automagic dashboard for a specific entity and ID.
+- **Get Automagic Dashboard with Rule and Template** (read-only): Retrieve an automagic dashboard for a specified entity using a specific rule prefix and dashboard template.
+- **Get Automagic Dashboards Compare** (read-only): Return an automagic comparison dashboard for entity with id compared with comparison-entity with comparison-entity-id-or-query.
+- **Get Billing API Version** (read-only): Retrieve the billing API version information for the Metabase Enterprise Edition instance.
+- **Get Card Dashboard Associations**: Retrieve dashboard associations for given card IDs.
+- **Get Card Dashboards** (read-only): Get a list of dashboards containing a specific card.
+- **Get Card Dashboards** (read-only): Get a list of dashboards that a specific card appears in.
+- **Get Card Query Metadata** (read-only): Get comprehensive query metadata for a Metabase card (saved question).
+- **Get Card Series** (read-only): Retrieve series data for a specific card.
+- **Get Card Series** (read-only): Fetch a list of cards compatible as series with a specified card.
+- **Get Card Table Foreign Keys** (read-only): Retrieve foreign key relationships for a card-based virtual table.
+- **Get Card Virtual Table Query Metadata** (read-only): Retrieve metadata for a virtual table created from a card (saved question).
+- **Get Collection Items** (read-only): Fetch items from a specific Metabase collection.
+- **Get Collection Timelines** (read-only): Retrieve timelines associated with a specific Metabase collection.
+- **Get Collection Timelines** (read-only): Fetch timelines associated with a specific Metabase collection.
+- **Get Collection Tree** (read-only): Retrieve the collection tree structure from Metabase.
+- **Get Current Remote Sync Task** (read-only): Retrieve the current remote sync task status in Metabase.
+- **Get Current User**: Retrieve information about the current authenticated user in a Metabase metabot conversation.
+- **Get Current User Login History** (read-only): Retrieve login history for the currently authenticated user.
+- **Get Dashboard Details**: Retrieve dashboard details for a Metabase metabot conversation.
+- **Get Dashboard HTML Preview** (read-only): Retrieve an HTML preview rendering of a dashboard.
+- **Get Dashboard Parameter Remapping** (read-only): Get parameter remapping for a dashboard parameter value.
+- **Get Dashboard Parameter Values** (read-only): Fetch available values for a specific dashboard parameter.
+- **Get Dashboard Params Remapping** (read-only): Fetch the remapped value for a given dashboard parameter in Metabase.
+- **Get Dashboard Query Metadata** (read-only): Get all of the required query metadata for the cards on a dashboard.
+- **Get Dashboard Related Entities** (read-only): Retrieve related entities for a Metabase dashboard.
+- **Get Dashboard Related Entities** (read-only): Retrieve related entities for a Metabase dashboard.
+- **Get Database Autocomplete Suggestions** (read-only): Retrieve autocomplete suggestions for table and field names in a database.
+- **Get Database Autocomplete Suggestions** (read-only): Get autocomplete suggestions for table and field names in a Metabase database.
+- **Get Database Card Autocomplete Suggestions** (read-only): Get card autocomplete suggestions for a specific database in Metabase.
+- **Get Database Card Autocomplete Suggestions** (read-only): Return a list of Card autocomplete suggestions for a given query in a given Database.
+- **Get Database Datasets** (read-only): Retrieve tables (models and metrics) from a virtual database schema in Metabase.
+- **Get Database Fields** (read-only): Retrieve all fields from a specific database in Metabase.
+- **Get Database Fields** (read-only): Retrieve all field metadata from a Metabase database.
+- **Get Database Healthcheck** (read-only): Check if a Metabase database can currently connect.
+- **Get Database Metadata** (read-only): Retrieve complete metadata for a specific database including all tables and fields.
+- **Get Database Metadata** (read-only): Retrieve complete metadata for a specific database including all tables and fields.
+- **Get Database Schemas** (read-only): Retrieve all schemas with tables for a specific database in Metabase.
+- **Get Database Settings Available** (read-only): Get all database-local settings and their availability for a given database.
+- **Get Database Syncable Schemas** (read-only): Retrieve all syncable schemas for a specific database in Metabase.
+- **Get Dataset Parameter Values**: Fetch parameter values for dataset fields in Metabase.
+- **Get Dataset Query Metadata**: Retrieve query metadata for a dataset query including databases, tables, fields, and snippets.
+- **Get Document Details via Metabot**: Retrieve document details using Metabase metabot tools.
+- **Get Embedding Hub Checklist** (read-only): Retrieve the embedding hub checklist status for Metabase Enterprise Edition.
+- **Get Entity Revision History** (read-only): Retrieve the revision history for a Metabase entity (dashboard, card, metric, or segment).
+- **Get Field Related Entities** (read-only): Retrieve related entities for a Metabase field.
+- **Get Field Remapping** (read-only): Fetch remapped field values for a specific field in Metabase.
+- **Get Field Summary** (read-only): Get summary statistics for a Metabase field by its ID.
+- **Get Field Values** (read-only): Retrieve distinct values for a Metabase field.
+- **Get Metabot Snippets**: Retrieve SQL snippets for a Metabase metabot conversation.
+- **Get Model Index Details** (read-only): Retrieve details of a specific model index by its ID.
+- **Get Model Index Values** (read-only): Retrieve indexed field values for a specific Metabase model.
+- **Get ModelIndex by ID** (read-only): Retrieve a ModelIndex by ID.
+- **Get Most Recently Viewed Dashboard** (read-only): Retrieve the most recently viewed dashboard for the authenticated user.
+- **Get Native Query Snippet by ID** (read-only): Retrieve a specific native query snippet by its ID.
+- **Get Native Query Snippet by ID** (read-only): Retrieve a specific native query snippet by its ID.
+- **Get Notifications** (read-only): Retrieve notifications from Metabase with optional filtering.
+- **Get Popular Items** (read-only): Get the list of 5 popular items on the Metabase instance.
+- **Get Public Card by UUID** (read-only): Fetch a publicly-accessible card by its public UUID and return card information including query definition, visualization settings, and…
+- **Get Public oEmbed Metadata** (read-only): Get oEmbed metadata for public Metabase resources.
+- **Get Public Pivot Card Query** (read-only): Fetch a publicly-accessible pivot card and return query results including data rows, column metadata, and query status.
+- **Get Pulse by ID** (read-only): Retrieve a specific pulse (subscription) by its ID.
+- **Get Pulse Form Input Configuration** (read-only): Retrieve configuration information for creating or updating Pulses (scheduled email reports).
+- **Get Pulse Preview Card** (read-only): Retrieve the HTML preview of a Metabase card formatted for pulse emails.
+- **Get Pulse Preview Card** (read-only): Get HTML rendering of a Metabase card by ID.
+- **Get Pulse Preview Card Info** (read-only): Retrieve preview information for a Metabase card formatted for pulse emails.
+- **Get Pulse Preview Card Info** (read-only): Get JSON object containing HTML rendering of a card and additional information.
+- **Get Pulse Preview Dashboard** (read-only): Retrieve the pulse preview for a specific dashboard by its ID.
+- **Get Query Details**: Get query details using Metabot tools API.
+- **Get Recent Activity Views** (read-only): Retrieve recently viewed items in Metabase.
+- **Get Resource Dependents** (read-only): Get dependents of a resource in Metabase's dependency graph.
+- **Get Revision by ID and Entity** (read-only): Retrieve a specific revision by ID and entity type.
+- **Get Revision History by ID** (read-only): Retrieve the complete revision history for a Metabase entity by its ID.
+- **Get Root Collection** (read-only): Fetch the Root Collection and its top-level objects.
+- **Get Root Collection Timelines** (read-only): Retrieve all timelines associated with the root collection.
+- **Get Search Weights** (read-only): Retrieve the current search weight configuration for the Metabase instance.
+- **Get Session Properties** (read-only): Retrieve all global session properties and their values that are public.
+- **Get Snippet Details**: Retrieve SQL snippet details via Metabase metabot tools.
+- **Get Stale Data By ID** (read-only): Retrieve stale data information by ID from Metabase Enterprise Edition.
+- **Get Stale Entities from Collection** (read-only): Retrieve stale entities (cards and dashboards) from a Metabase collection that haven't been used recently.
+- **Get Table Data** (read-only): Retrieve data from a specific table in Metabase.
+- **Get Table Data by ID** (read-only): Retrieve data from a specific Metabase table by ID.
+- **Get Table Details**: Retrieve comprehensive table details via Metabase metabot tools.
+- **Get Table Foreign Keys** (read-only): Retrieve foreign key relationships for a Metabase table.
+- **Get Table Foreign Keys** (read-only): Get all foreign keys whose destination is a field that belongs to a specific table.
+- **Get Table Query Metadata** (read-only): Retrieve metadata about a table useful for running queries.
+- **Get Table Query Metadata** (read-only): Get metadata about a Table useful for running queries.
+- **Get Timeline by ID** (read-only): Fetch a timeline by its ID from Metabase.
+- **Get Timeline by ID** (read-only): Fetch a timeline by its ID.
+- **Get Timeline Event** (read-only): Retrieve a timeline event by ID.
+- **Get Timeline Event** (read-only): Fetch a timeline event by ID.
+- **Get Uploaded Tables** (read-only): Retrieve all uploaded tables in Metabase Enterprise Edition.
+- **Get User Audit Info** (read-only): Get audit info for the current authenticated user.
+- **Get User Bookmarks** (read-only): Retrieve all bookmarks for the authenticated user.
+- **Get User by ID** (read-only): Retrieve a specific user by their ID.
+- **Get User by ID** (read-only): Fetch a Metabase user by their ID.
+- **Get User Key-Value by Namespace** (read-only): Retrieve all user key-value pairs for a specified namespace.
+- **Get User Key-Value Setting** (read-only): Retrieve a user-specific key-value pair from Metabase storage.
+- **Get User Key-Value Setting** (read-only): Retrieve a user-specific key-value pair from Metabase storage.
+- **Get User Recipients** (read-only): Retrieve users for recipient selection.
+- **Get Virtual Database Datasets** (read-only): Retrieve all datasets from a Metabase virtual database.
+- **Metabot Search**: Search Metabase entities using the metabot search API.
+- **Query Datasource via Metabot**: Query a Metabase datasource using Metabot tools.
+- **Record Recent Activity**: Record recent activity for a Metabase item.
+- **Remap Dataset Parameter Value**: Remap dataset parameter values in Metabase.
+- **Rescan Database Field Values**: Trigger a manual rescan of field values for a specific database.
+- **Rescan Field Values**: Manually trigger an update for the FieldValues for a specific field.
+- **Rescan Table Field Values**: Manually trigger an update for FieldValues for Fields belonging to a specific Table.
+- **Rescan Table Field Values**: Trigger a manual rescan of field values for a specific table.
+- **Revert Entity to Previous Revision**: Revert a Metabase entity (card, dashboard, document, or segment) to a previous revision.
+- **Run Card Pivot Query**: Run a pivot table query on a Metabase card (question).
+- **Run Card Query**: Run the query associated with a Card and return its results.
+- **Run Dashboard Pivot DashCard Query**: Run a pivot table query for a specific DashCard.
+- **Save Dashboard to Collection**: Save a denormalized dashboard description into a collection.
+- **Search Card Parameter Values** (read-only): Search for values of a specific parameter in a Metabase card.
+- **Search Card Parameter Values** (read-only): Fetch possible values for a card parameter that match a search query.
+- **Search dashboard parameter values** (read-only): Search for dashboard parameter values in Metabase.
+- **Search Dashboard Parameter Values** (read-only): Fetch possible values of a dashboard parameter that contain the search query.
+- **Search Dataset Parameter Values**: Search for parameter values in datasets when editing cards or dashboards.
+- **Search Field Values** (read-only): Search for field values in Metabase that start with a given string.
+- **Search Metabase Items (Metabot V2)**: Search Metabase items using the Metabot search v2 endpoint.
+- **Send Notification**: Trigger sending an unsaved notification in Metabase.
+- **Send Password Reset Email**: Send a password reset email when user has forgotten their password.
+- **Submit Bug Report to Slack**: Submit a bug report to Slack via Metabase's bug reporting endpoint.
+- **Submit Product Feedback**: Submit product feedback to Metabase.
+- **Sync Database Schema**: Trigger a schema synchronization for a specific database.
+- **Sync Table Schema**: Trigger a manual update of the schema metadata for a specific Table.
+- **Sync Table Schema**: Trigger a manual update of the schema metadata for a specific Table.
+- **Translate Entity IDs**: Translate Metabase entity IDs (21-character strings) to their numeric IDs.
+- **Trigger Database Field Values Rescan**: Trigger a manual scan of field values for a Database.
+- **Trigger Database Schema Sync**: Trigger a manual update of the schema metadata for a Database.
+- **Unpersist Card**: Unpersist a Metabase card/model.
+- **Unpersist Card**: Unpersist a Metabase card by its ID.
+- **Unpersist Database**: Disable model persistence for a specific database.
+- **Update Action**: Update an existing Action in Metabase.
+- **Update Action by ID**: Update an existing Metabase action by its ID.
+- **Update Bookmark Ordering**: Update the order of bookmarks for the authenticated user.
+- **Update Collection by ID**: Update an existing Metabase collection by its ID.
+- **Update Dashboard Cards**: Update dashboard cards and tabs.
+- **Update Dashboard Cards (Deprecated)**: Bulk update dashboard cards and tabs.
+- **Update Field Metadata**: Update a Metabase field by its ID.
+- **Update Field Metadata**: Update metadata for a Metabase field by its ID.
+- **Update Field Values**: Update field values and human-readable values for a Field whose semantic type is category/city/state/country or whose base type is…
+- **Update Glossary Entry**: Update an existing glossary entry in Metabase.
+- **Update Glossary Entry by ID**: Update an existing glossary entry in Metabase by its ID.
+- **Update Native Query Snippet**: Update an existing native query snippet by ID.
+- **Update Native Query Snippet by ID**: Update an existing native query snippet by its ID.
+- **Update Pulse**: Update an existing pulse (scheduled report/subscription) by ID.
+- **Update Pulse by ID**: Update an existing pulse (scheduled report/subscription) by ID.
+- **Update Search Weights**: Update search weights configuration in Metabase.
+- **Update Table by ID**: Update a Table in Metabase by its ID.
+- **Update Table Field Display Order**: Update the display order of fields in a Metabase table.
+- **Update Table Fields Order**: Reorder fields in a Metabase table.
+- **Update Table Metadata**: Update a Metabase table by its ID.
+- **Update Table Metadata**: Update a Metabase table metadata by its ID.
+- **Update Timeline**: Update a Metabase timeline by its ID.
+- **Update Timeline by ID**: Update an existing timeline by its ID.
+- **Update Timeline Event**: Update an existing Metabase timeline event by its ID.
+- **Update Timeline Event by ID**: Update an existing timeline event by its ID.
+- **Update User by ID**: Update an existing Metabase user by their ID.
+- **Validate Password Reset Token** (read-only): Validate a password reset token in Metabase.

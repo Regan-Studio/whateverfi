@@ -1,0 +1,366 @@
+# PostHog
+
+PostHog is an open-source product analytics platform tracking user interactions and behaviors to help teams refine features, improve funnels, and reduce churn
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/posthog/.
+
+## Actions
+
+- **List project group types by id** (read-only): Retrieve a list of group types within a specific project by providing the project id.
+- **List projects in organization with pagination** (read-only): Projects for the current organization.
+- **Add dashboard collaborators with access level**: Add collaborators to a specific project dashboard.
+- **Add member to organization role**: Add a member to an organization role by submitting their details and uuid in json/form, using organization and role ids.
+- **Add project specific member roles**: Add members with specific roles to a project by providing their user uuid and level (member or admin).
+- **Assign feature flag role based access**: Set up role-based access for a feature flag using project id and feature flag id.
+- **Bookmark project activity notification**: Create a bookmark for an activity notification in a project's activity log.
+- **Bulk create organization invites**: Post /api/organizations/{organization id}/invites/bulk/.
+- **Cancel insights for a project**: The "/api/projects/{project id}/insights/cancel/" endpoint allows users to cancel insights for a project by providing a project id and…
+- **Check pipeline destination updates** (read-only): Get the newest updates and plugin info for a pipeline destination by organization and destination id via get request to…
+- **Check pipeline import app updates** (read-only): Retrieve the latest update information for a specific pipeline import app by its id within an organization.
+- **Check pipeline plugin update status** (read-only): Get update status for a specific pipeline transformation plugin by its unique id within an organization.
+- **Check project s demo data generation status** (read-only): Projects for the current organization.
+- **Cohort duplication to static**: This endpoint duplicates a specified cohort as a static one within a project.
+- **Create a notebook in a project**: The api for interacting with notebooks.
+- **Create dashboard from template in project**: Create a new dashboard for a specified project from a template.
+- **Create domain with saml for organization**: Create a domain for a specific organization by post to /api/organizations/{id}/domains with json/form data.
+- **Create experiment exposure cohort**: Create a new exposure cohort for an experiment in a project by sending a post request with experiment details and feature flag data.
+- **Create feature flag dashboard**: Manage feature flags by creating, reading, updating, and deleting them.
+- **Create feature flags for project**: Manage feature flags by creating, reading, updating, and deleting them using posthog's javascript library or api endpoint.
+- **Create frontend app pipeline config**: Create a config for pipeline frontend apps within a specified project.
+- **Create funnel analysis for project persons**: This endpoint handles reading and deleting persons.
+- **Create new organization with configurable access**: Post /api/organizations/ - create a new organization with details like name, membership level, and features access.
+- **Create new project experiment**: Create a new experiment in a specific project using json, form, or multipart data.
+- **Create org proxy record with domain and status**: Create a proxy record for an org by sending org id in url and json/form/multipart data with domain, target cname, and status.
+- **Create organization invite with role and email**: Send invites with roles (member, admin, owner) via email to join an organization by id.
+- **Create organization role with feature flag levels**: Create a new role for the specified organization by supplying role details.
+- **Create person funnel correlation**: This endpoint is for reading and deleting persons.
+- **Create person path with format option**: This api endpoint is for reading and deleting users.
+- **Create pipeline destination config**: Create pipeline destination configurations for a specific project by submitting plugin and order details, among other configuration info,…
+- **Create pipeline destination config job**: Create a job for a pipeline destination config with a specific id within the specified project.
+- **Create pipeline import apps config job**: A job imports app settings into a project pipeline using project id and plugin config id, accepting json/form/multipart, and specifies…
+- **Create plugin job configuration**: Create a job-related configuration for a specific plugin by providing plugin and project ids.
+- **Create project action with format**: This post endpoint creates actions for a project, accepts various data types, requires project id and action data, optionally outputs in…
+- **Create project cohorts**: Create cohorts for a specified project by posting json-form data to "/api/projects/{project id}/cohorts/".
+- **Create project dashboard**: The post endpoint creates a dashboard within a project using a project id, accepting details in json/form formats.
+- **Create project insights with customizable parameters**: The post endpoint enables creating insights for projects using a project id and supports json/csv.
+- **Create project insights with format option**: Create project insights with optional csv/json format parameter.
+- **Create project pipeline app configs**: Create pipeline app configurations for a specified project via post, requiring a project id and json, form, or multipart payload.
+- **Create project pipeline frontend app job**: Create a job for a pipeline frontend app config in a project.
+- **Create project pipeline transformation config**: Create a pipeline transformation config within a specific project by posting json, form, or multipart data.
+- **Create project plugin configuration**: Create a new plugin configuration for a specified project by post to /api/projects/{project id}/plugin configs/.
+- **Create project subscription with delivery options**: Create a subscription for a given project by providing required details such as delivery method, frequency, and starting date.
+- **Create project surveys with questions and targets**: Create surveys in a project by providing a project id and details like type, questions, and targets in json, form-data, or urlencoded…
+- **Create project timing insights**: Create timing insights for a project by post to /api/projects/{project id}/insights/timing, supporting csv or json.
+- **Create query in project by id** (read-only): The /api/projects/{project id}/query/ post endpoint allows users to submit queries for a specific project by providing the project id in…
+- **Create retrieve retention insights for project**: Create and retrieve retention insights for a project using its id, allowing csv/json outputs.
+- **Create session recording in playlist**: The post endpoint generates a project's session recording, needing 'project id', 'short id', and 'session recording id' in the url, and…
+- **Create session recording playlists**: Create playlists of session recordings for a specified project.
+- **Create session recording summary** (read-only): Summarize a session recording by providing the project id and the recording's uuid.
+- **Create static cohort for feature flag**: Manage feature flags for apps with create, read, update, and delete operations using posthog's javascript library or dedicated endpoint.
+- **Crud operations for project annotations**: Create, read, update and delete annotations.
+- **Delete organization by uuid**: Delete an organization by its uuid.
+- **Delete organization project**: Projects for the current organization.
+- **Delete person and optionally associated events**: This endpoint is used to read and delete user data.
+- **Delete session recording by uuid**: Delete a session recording by providing the session's uuid and the associated project id.
+- **Delete survey by id**: Delete a survey by providing its uuid and the associated project id.
+- **Enable project early access feature**: Enables a new early access feature for a project using project id, payload with details, and personalapikeyauth.
+- **Fetch batch export details via uuid** (read-only): Retrieve logs for a specific batch export within a project by its uuid.
+- **Fetch export unsubscribe settings** (read-only): Retrieve pipeline transformation export unsubscribe configurations for a specified organization by its uuid.
+- **Fetch frontend app config status** (read-only): Retrieve activity details for a specific pipeline frontend app config by id within a project.
+- **Fetch organization details by uuid** (read-only): Retrieve organization details by uuid.
+- **Fetch organization pipeline app repositories** (read-only): Retrieve details of pipeline import app repositories for a specific organization by its uuid.
+- **Fetch pipeline transformation details** (read-only): Retrieve details of pipeline transformations from a specified organization's repository.
+- **Fetch project experiment secondary data** (read-only): Fetch secondary experiment data in a project by its unique id, using project and experiment ids as path parameters.
+- **Fetch project survey activity log** (read-only): Retrieve the activity log of surveys within a specific project by using the project id.
+- **Fetch session recording playlist details** (read-only): Retrieve session recording playlist details for a specific project by project id and playlist short id.
+- **Fetchpipelinedestinationdetails** (read-only): Use a get request to '/api/projects/{project id}/pipeline destination configs/{id}/activity/' to get details, status, config, and metrics…
+- **Flag annotation as deleted**: Hard delete of this model is not allowed.
+- **Generate project funnel correlation insight** (read-only): The /api/projects/{project id}/insights/funnel/correlation endpoint generates a correlation insight for funnel analysis in a project,…
+- **Initiate domain verification with saml config**: Post /api/organizations/{organization id}/domains/{id}/verify/.
+- **Initiate pipeline transformation job**: Create a pipeline transformation job for a specified plugin config in a project by posting to /api/projects/{project id}/pipeline…
+- **List and filter project events** (read-only): This endpoint for listing/filtering events is deprecated and maintained only for compatibility.
+- **List and manage project annotations** (read-only): Create, read, update and delete annotations.
+- **List and manage project feature flags** (read-only): Manage feature flags with creation, reading, updating, and deletion capabilities.
+- **List Batch Export Runs** (read-only): List runs for a batch export by batch export id within a project.
+- **List dashboard sharing configs** (read-only): Retrieve a list of dashboard sharing configurations for a specified project and dashboard.
+- **List feature flag role access details** (read-only): This get endpoint returns role access details for a feature flag in a project, needs 'project id' & 'feature flag id', and offers optional…
+- **List notebooks with filters and pagination** (read-only): The api for interacting with notebooks.
+- **List of project s session recording playlists** (read-only): Retrieve a list of session recording playlists for a specific project.
+- **List or delete persons with optional filters** (read-only): This endpoint is for reading/deleting persons.
+- **List organization domains with pagination** (read-only): Fetch a list of an organization's domains with pagination using limit and offset.
+- **List organization invites with pagination** (read-only): Retrieve a paginated list of invites for a specific organization, identified by organization id, with optional limit and offset query…
+- **List organization members with pagination** (read-only): Retrieve members list from an organization with 'limit' and 'offset' options using personalapikeyauth and organization id.
+- **List organization roles with pagination** (read-only): Fetch a paginated list of roles in an organization using its uuid.
+- **List organization s batch exports with pagination** (read-only): Retrieve paginated batch exports for an organization, with filters and optional limits.
+- **List organization s paginated proxy records** (read-only): Retrieve a paginated list of an organization's proxy records by id, with 'limit' and 'offset' options.
+- **List organization s pipeline destinations** (read-only): Retrieve a paginated list of an organization's pipeline destinations by id, with optional count and offset parameters.
+- **List organization s pipeline frontend apps** (read-only): Retrieve a paginated list of pipeline apps for an organization using 'plugin.
+- **List organization s pipeline import apps** (read-only): Retrieve a paginated list of pipeline import applications for a specified organization by id.
+- **List organization s pipeline transformations** (read-only): Retrieve paginated pipeline transformation lists for an organization using limit and offset, requiring a uuid and personalapikeyauth.
+- **List paginated surveys for a project** (read-only): Get paginated surveys for a project with its id, using 'limit' and 'offset'.
+- **List pipeline destination configs with pagination** (read-only): List pipeline destination configurations for a given project by id, with optional pagination through 'limit' and 'offset' query parameters.
+- **List pipeline frontend app configs** (read-only): Retrieve paginated configurations for pipeline frontend apps associated with a specified project.
+- **List project actions with pagination and filters** (read-only): Get paginated project actions with filters by format.
+- **List project batch exports with pagination** (read-only): Retrieve an indexed list of batch exports for a specified project with optional pagination.
+- **List project configuration plugin logs** (read-only): Retrieve logs for a specific plugin configuration within a project.
+- **List project dashboard collaborators** (read-only): Get dashboard collaborators list in a project using project string id and dashboard integer id.
+- **List project dashboard templates** (read-only): "retrieve a paginated list of dashboard templates for a specified project.
+- **List project dashboards with pagination** (read-only): Get paginated dashboards for a project by id, using 'limit' and 'offset'.
+- **List project early access features** (read-only): Retrieve a paginated list of a project's early access features by id with 'limit' and 'offset' parameters.
+- **List project experiments with pagination** (read-only): Get a paginated list of experiments within a project using 'limit' and 'offset' parameters.
+- **List project export items with pagination** (read-only): Retrieve a paginated list of export items for a specific project by id with optional 'limit' and 'offset' query parameters.
+- **List project membership details** (read-only): Retrieve a list of project membership details for a specified project by id.
+- **List project pipeline configurations** (read-only): Fetch paginated pipeline configuration list for a project by its id, utilizing optional limit and offset.
+- **List project plugin configurations** (read-only): Retrieve a paginated list of plugin configurations for a specific project by project id.
+- **List project session recordings** (read-only): Retrieve a paginated list of session recordings for a specific project, including viewing times and user interactions.
+- **List project subscriptions with pagination** (read-only): Retrieve a paginated list of subscriptions for a given project by its id.
+- **List session recording sharing configs** (read-only): Retrieve a list of sharing configurations for a specific session recording in a project, including creation timestamps and access tokens.
+- **List specific type groups with pagination** (read-only): List all groups of a specific group type.
+- **List unused organization pipeline transformations** (read-only): Retrieve a list of unused pipeline transformations for a specified organization, identified by uuid.
+- **List users with staff filter and pagination** (read-only): Api endpoint fetches a user list with staff filter, pagination (limit, offset), and requires a personal api key.
+- **Listorganizationpluginswithpagination** (read-only): Retrieve the list of plugins for a specified organization.
+- **Listprojectpipelineimportconfigs** (read-only): List pipeline import app configurations for a specified project, with pagination options 'limit' and 'offset'.
+- **Listrolemembershipspaginated** (read-only): Retrieve a paginated list of role memberships for a specific role within an organization, including membership details.
+- **Manage feature flag enrichment for usage dashboard**: Learn to manage feature flags (creation, access, modification, removal) using posthog's docs, with options to use a javascript library or…
+- **Manage project feature flags** (read-only): Learn to manage feature flags.
+- **Manage project feature flags for local evaluation** (read-only): Utilize feature flags to manage application features with creation, reading, updating, and deletion.
+- **Manage user feature flags**: Manage feature flags in your app with create, read, update, and delete options.
+- **Mark dashboard template as deleted**: Hard delete of this model is not allowed.
+- **Mark insight as viewed with configurable format**: The post endpoint marks an insight as viewed for a specified project, requires project id and id, supports csv or json formats, and…
+- **Mark project action as deleted**: Hard delete of this model is not allowed.
+- **Mark session recording playlist deleted**: Hard delete of this model is not allowed.
+- **Mark subscription as deleted by id**: Hard delete of this model is not allowed.
+- **Modify org info via uuid**: Put /api/organizations/{id}/.
+- **Move dashboard tile**: Endpoint to move a tile within a dashboard by id.
+- **Partial experiment update in project**: Endpoint enables partial updates to an experiment in a project using patch, needing project id, experiment id, and various payload types.
+- **Partial pipeline frontend app config update**: Patch method to partially update config of a pipeline frontend app for a project by id.
+- **Partial update of a project insight**: The patch endpoint supports partial insight updates in a project, allows format specification (csv/json), and requires personalapikeyauth…
+- **Partial update of a project s dashboard**: Endpoint patch /api/projects/{project id}/dashboards/{id}.
+- **Partial update of a project s feature flag**: Learn to manage feature flags (create, read, update, delete) using posthog's docs, with options for javascript library use or dedicated…
+- **Partial update of project notebook**: The api for interacting with notebooks.
+- **Partial update project annotation**: Create, read, update and delete annotations.
+- **Partially update project plugin config**: Update plugin configuration partially for a specified project using patch on '/api/projects/{project id}/plugin configs/{id}'.
+- **Partially update project property definition**: Patch /api/projects/{project id}/property definitions/{id}/.
+- **Persist session recording data by uuid**: Post /api/projects/{project id}/session recordings/{id}/persist.
+- **Person partial update via project id**: This endpoint allows reading and deleting individuals.
+- **Person property deletion endpoint**: This endpoint is for reading and deleting user data.
+- **Post Project Trends With Filters** (read-only): The /api/projects/{project id}/insights/trend/ endpoint provides project trends in csv/json, requires project id and optional parameters,…
+- **Prevent hard delete notebook by flagging**: Hard delete of this model is not allowed.
+- **Project Funnel Advanced Analytics** (read-only): The /api/projects/{project id}/insights/funnel/ endpoint generates customizable funnel insights for a project in either csv or json,…
+- **Rearrange frontend app pipeline configs**: Patch /api/projects/{project id}/pipeline frontend apps configs/rearrange/.
+- **Rearrange pipeline transformation configs**: Endpoint /api/projects/{project id}/pipeline transformation configs/rearrange/ allows for partial updates to the arrangement of pipeline…
+- **Rearrange project import app configurations**: Rearrange app import settings in a project using patch /api/projects/{project id}/...
+- **Rearrange project pipeline destination configs**: "patch /api/projects/{project id}/pipeline destination configs/rearrange/".
+- **Reconfigure plugin order and status in project**: Patch endpoint to reconfigure the order of plugins within a project by project id.
+- **Remove domain by uuid from organization**: Delete a specific domain by its uuid within an organization, given valid organization and domain ids.
+- **Remove early access feature from project**: Delete an early access feature by id from a specified project.
+- **Remove explicit project member by uuid**: Delete a specific user (by uuid) from the explicit members of a given project.
+- **Remove feature flag role access by id**: Delete /api/projects/{project id}/feature flags/{feature flag id}/role access/{id}.
+- **Remove member from organization by uuid**: Delete /api/organizations/{org id}/members/{user uuid}.
+- **Remove org pipeline import app by id**: Delete a specific pipeline import app plugin associated with an organization by id.
+- **Remove organization batch export by uuid**: Delete a specific batch export by its uuid in an organization.
+- **Remove organization pipeline destination**: Delete a specific pipeline destination in an organization by id.
+- **Remove organization pipeline transformation**: Delete a specific pipeline transformation plugin for an organization by id.
+- **Remove organization plugin by id**: Delete a specific plugin (by its integer id) from the organization (identified by uuid) with no response body on success.
+- **Remove organization proxy record**: Delete a proxy record by id for a specific organization.
+- **Remove organization role by id**: Delete a role with a specific uuid in an organization.
+- **Remove pipeline destination config**: Delete a pipeline destination configuration by specifying a unique integer id within a project.
+- **Remove pipeline frontend app by id**: Delete a specific pipeline frontend app by its id within an organization.
+- **Remove pipeline frontend app config**: Delete a pipeline frontend app configuration for a specific project.
+- **Remove pipeline import app config**: Delete a specific pipeline import app configuration using its id within a project.
+- **Remove pipeline transformation config by id**: Delete a specific pipeline transformation configuration by id within a project.
+- **Remove project dashboard collaborator**: Remove a collaborator from a project dashboard.
+- **Remove project event definition**: Delete an event definition by providing its uuid and the associated project id.
+- **Remove project experiment by id**: Delete a specific experiment by its unique integer id within a project.
+- **Remove project plugin configuration**: Delete /api/projects/{project id}/plugin configs/{id}/.
+- **Remove property definition by uuid**: Delete a property definition by providing its uuid and the associated project id.
+- **Remove rolemembership by uuid**: Delete /api/organizations/{org id}/roles/{role id}/role memberships/{id}.
+- **Remove session recording from playlist**: Delete a session recording from a playlist using its id within a specified project.
+- **Remove specific project batch export**: Delete a specific batch export by providing the uuid and project id.
+- **Remove specific project query**: (experimental)
+- **Retrieve and delete project person trends**: This endpoint is for reading and deleting persons.
+- **Retrieve app metrics by ids** (read-only): Retrieve app-specific metrics for a given project by providing the project id and app metric id.
+- **Retrieve app metrics error details** (read-only): Retrieves detailed error information for a specific app metric by id within a project.
+- **Retrieve async query status by id** (read-only): (experimental)
+- **Retrieve batch export details** (read-only): Retrieve details of a specific batch export by its uuid in a project.
+- **Retrieve batch export logs by uuid** (read-only): Retrieve logs for a specific batch export given by uuid within an organization.
+- **Retrieve batch export run logs** (read-only): Retrieve logs for a specific batch export run within a project.
+- **Retrieve cohort activity details** (read-only): Retrieve activity details for a specific cohort within a project.
+- **Retrieve cohort person details** (read-only): Retrieve details of persons within a cohort by its unique id in the specified project.
+- **Retrieve dashboard template details by uuid** (read-only): Fetch specific dashboard template details by uuid in a project with 'dashboard template.
+- **Retrieve dashboard template schema** (read-only): Retrieve the json schema for dashboard templates of a specific project.
+- **Retrieve event definition by uuid** (read-only): Retrieve an event definition by its uuid within a specified project.
+- **Retrieve event definitions by project id** (read-only): Retrieve definitions for events within a specified project by providing the unique project id.
+- **Retrieve experiment details by ids** (read-only): Access detailed experiment info within a project using unique experiment id & project id, with 'experiment.
+- **Retrieve experiments requiring flag implementation** (read-only): Retrieve details for experiments that require feature flag implementation in a specific project.
+- **Retrieve export unsubscribe configs** (read-only): Retrieve the configuration for unsubscribing from exports in the pipeline import apps for a specific organization.
+- **Retrieve feature flag activity details** (read-only): Manage feature flags (creation, reading, updating, and deleting) using posthog's guides or via javascript library/endpoint for…
+- **Retrieve feature flag details** (read-only): This guide details how to manage (create, read, update, delete) feature flags in applications using posthog's javascript library or…
+- **Retrieve feature flag role access details** (read-only): Retrieve details for a specific role's access to a feature flag within a project.
+- **Retrieve feature flags activity log** (read-only): Learn to manage feature flags by creating, reading, updating, and deleting them.
+- **Retrieve feature flags evaluation reasons** (read-only): Manage feature flags—create, read, update, delete—using the posthog javascript library or endpoint for user-specific flag status.
+- **Retrieve filtered project property definitions** (read-only): Get property definitions for a project using project id, with filters for event names, property types, exclusions, and numerical or…
+- **Retrieve funnel insights in project** (read-only): Gain insights from funnel analysis of a specific project by providing its id and having 'insight.
+- **Retrieve group property definitions by project id** (read-only): Retrieve property definitions for a group within a project by providing the project id.
+- **Retrieve group property values by index and key** (read-only): Retrieve property values by 'group type index' and 'key' within a 'project id'.
+- **Retrieve hedgehog configuration by uuid** (read-only): Retrieve user's hedgehog configuration details by their uuid.
+- **Retrieve historical app metrics export** (read-only): Retrieve historical export data for app metrics by supplying the project id and plugin config id.
+- **Retrieve important project activity log** (read-only): Retrieve a log of important changes for a specified project.
+- **Retrieve insight sharing configurations** (read-only): Retrieve sharing configurations for a specific insight within a project, requiring project and insight ids.
+- **Retrieve last viewed insights for user** (read-only): Returns basic details about the last 5 insights viewed by this user.
+- **Retrieve matching events for session recording** (read-only): Retrieves event ids matching a filter with one session id and at least one event/action criterion.
+- **Retrieve notebook activity for project** (read-only): The api for interacting with notebooks.
+- **Retrieve notebook activity log** (read-only): The api for interacting with notebooks.
+- **Retrieve notebook details** (read-only): The api for interacting with notebooks.
+- **Retrieve or delete person retention data** (read-only): This endpoint is for reading and deleting person data.
+- **Retrieve or delete project persons funnel data** (read-only): This api endpoint is for reading and deleting user data.
+- **Retrieve Org Pipeline Repo Details** (read-only): Retrieve details for repository pipeline destinations within a specific organization by its uuid.
+- **Retrieve org pipeline transformation activity** (read-only): Retrieve pipeline transformation activity details for a specific organization using its uuid.
+- **Retrieve organization pipeline frontend app details** (read-only): Retrieve pipeline frontend app details for an organization using its 'organization id' (uuid).
+- **Retrieve organization pipeline unsubscribe configs** (read-only): Retrieve unsubscribe config details for an organization's pipeline frontend apps.
+- **Retrieve organization plugin activity** (read-only): Retrieve activity details for plugins in a specified organization by id.
+- **Retrieve organization plugin details** (read-only): Retrieve a specific plugin's details for an organization.
+- **Retrieve organization plugin repository details** (read-only): Retrieve plugin repository details for a specific organization by its uuid, including plugin type, name, url, and more.
+- **Retrieve organization plugin unsubscribe configs** (read-only): Retrieve plugin export unsubscribe configurations for a specified organization by organization id.
+- **Retrieve organization project details** (read-only): Projects for the current organization.
+- **Retrieve organization role details** (read-only): Retrieve the details of a specific role within an organization using its uuid.
+- **Retrieve organization s unused pipeline apps** (read-only): Retrieve unused pipeline import apps for a specified organization.
+- **Retrieve paginated organization list** (read-only): Retrieve a paginated list of organizations with optional 'limit' and 'offset' query parameters.
+- **Retrieve person details by id** (read-only): This endpoint is used to read and delete persons.
+- **Retrieve person details by project** (read-only): This endpoint allows reading and deleting persons.
+- **Retrieve person lifecycle details** (read-only): This endpoint is for reading and deleting persons.
+- **Retrieve person properties timeline** (read-only): This endpoint allows reading and deleting individuals.
+- **Retrieve person s activity and delete options** (read-only): This endpoint is for reading and deleting persons.
+- **Retrieve person values by project** (read-only): This endpoint is for reading and deleting persons.
+- **Retrieve persons funnel correlation data** (read-only): This endpoint is for reading and deleting persons.
+- **Retrieve pipeline destination activity** (read-only): Retrieve activity details for pipeline destinations within an organization.
+- **Retrieve pipeline destination config details** (read-only): Retrieve details of a specific pipeline destination config for a project by its id.
+- **Retrieve pipeline destination details** (read-only): Fetch a pipeline destination's details by id and organization uuid, using a personalapikeyauth with read access to plugins.
+- **Retrieve pipeline destination frontend config** (read-only): Retrieve configuration details for a specific pipeline destination in a project by getting the frontend data of the config with a given id.
+- **Retrieve pipeline destination plugin details** (read-only): Retrieve details of a specific pipeline destination plugin within an organization by its unique id.
+- **Retrieve pipeline frontend app activity** (read-only): Retrieve activity details for pipeline front-end apps within a specified organization by organization id.
+- **Retrieve pipeline frontend app details** (read-only): Retrieves details of a specified pipeline frontend app within an organization.
+- **Retrieve pipeline frontend app source details** (read-only): Retrieve details for a specific pipeline frontend app's source by its id within an organization.
+- **Retrieve pipeline frontend plugin config** (read-only): Retrieve the frontend configuration for a specific plugin in a project's pipeline.
+- **Retrieve pipeline import app details** (read-only): Access specific pipeline import app details in an organization using its id and a valid organization uuid.
+- **Retrieve pipeline import app source details** (read-only): Retrieves source details of a pipeline import app by its id within a specified organization.
+- **Retrieve pipeline import apps activity** (read-only): Retrieve activity details of pipeline import apps for a given organization.
+- **Retrieve pipeline plugin details by id** (read-only): Retrieve pipeline transformation plugin details by id for a specified organization.
+- **Retrieve Pipeline Plugin Source** (read-only): Retrieve the source details of a pipeline transformation for a specific plugin by id within an organization.
+- **Retrieve pipeline transformation activity** (read-only): Retrieve the activity details of a specific pipeline transformation configuration in a project using its unique integer id.
+- **Retrieve pipeline transformation config** (read-only): Retrieve the configuration for a specific pipeline transformation plugin in a project by its id using a get request.
+- **Retrieve pipeline transformation frontend config** (read-only): Retrieve the frontend configuration details for a specific pipeline transformation by id within a given project.
+- **Retrieve plugin config activity** (read-only): Retrieve activity details for a specific plugin config within a project's pipeline import apps.
+- **Retrieve plugin config activity details** (read-only): Retrieve activity details for a specific plugin configuration within a project.
+- **Retrieve plugin config details** (read-only): Retrieve the configuration details of a specific plugin by its id for a given project.
+- **Retrieve plugin config frontend** (read-only): Retrieve the frontend configuration of an app's pipeline import by id within a specified project.
+- **Retrieve plugin frontend config** (read-only): Retrieve the frontend configuration of a specific plugin for a given project.
+- **Retrieve plugin source details** (read-only): Retrieve plugin source details by organization and plugin id.
+- **Retrieve plugin update info** (read-only): This endpoint retrieves update information for a specific plugin within an organization's pipeline frontend app by its integer id and the…
+- **Retrieve plugin update status** (read-only): Retrieve the latest update status for a specific plugin, identified by its integer id, within an organization specified by uuid.
+- **Retrieve project action details by id** (read-only): Get details on a project action by id.
+- **Retrieve project activity details** (read-only): Projects for the current organization.
+- **Retrieve project activity insights** (read-only): Retrieve activity insights for a specific project by project id, supporting csv or json formats.
+- **Retrieve project activity log with pagination** (read-only): Access a project's activity log using pagination and cursor-based navigation.
+- **Retrieve project annotation details** (read-only): Create, read, update and delete annotations.
+- **Retrieve project cohort details** (read-only): Retrieve detailed information about a specific cohort within a project using its id.
+- **Retrieve project cohorts activity log** (read-only): Retrieve activity log for a specific project's cohorts.
+- **Retrieve project cohorts with pagination** (read-only): Retrieve a paginated list of cohorts for a specific project using project id.
+- **Retrieve project draft sql query** (read-only): Retrieve the draft sql query for a specific project using its project id.
+- **Retrieve project early access feature details** (read-only): Retrieve details of a specific early access feature in a project by id.
+- **Retrieve project event details by id** (read-only): Retrieve details for a specific event by id within a project.
+- **Retrieve project event values** (read-only): Retrieve event values for a specific project by id.
+- **Retrieve project experiment results** (read-only): Retrieve experiment results within a project by project and experiment id.
+- **Retrieve project export details** (read-only): Retrieve detailed info on a specific export of a project using its unique id.
+- **Retrieve project funnel correlation insights** (read-only): Retrieve insights about funnel correlations for a specific project by id, offering results in json or csv.
+- **Retrieve project group details by key and type** (read-only): Retrieves specified group details within a project by group key and type index.
+- **Retrieve project insight activity data** (read-only): Retrieve insights activity for a specific project and insight id, offering data in json or csv format.
+- **Retrieve project insight details** (read-only): Retrieve details for a specific project insight by id, with options to format as json/csv, request refresh, and specify dashboard context.
+- **Retrieve project insights details** (read-only): Retrieve detailed insights for a specific project using its id.
+- **Retrieve project insights with pagination** (read-only): The get /api/projects/{project id}/insights/ endpoint retrieves a paginated list of insights for a specified project.
+- **Retrieve project member details by uuid** (read-only): Retrieve detailed information about a specific user's membership level and status within a project by their uuid.
+- **Retrieve project person activity** (read-only): This endpoint allows reading and deleting individuals.
+- **Retrieve project person cohorts** (read-only): This endpoint allows reading and deletion of persons.
+- **Retrieve project person stickiness** (read-only): This endpoint allows for reading and deleting persons.
+- **Retrieve project pipeline plugin config** (read-only): Retrieve configuration details of a specific plugin for a given project pipeline by id.
+- **Retrieve project session values** (read-only): Retrieve session values for a specified project.
+- **Retrieve project subscription details** (read-only): Retrieve a specific subscription for a project, identified by 'project id' and 'id'.
+- **Retrieve project trend insights** (read-only): Retrieve trend insights for a specific project, supporting csv or json formats.
+- **Retrieve properties and events association** (read-only): Allows a caller to provide a list of event names and a single property name returns a map of the event names to a boolean representing…
+- **Retrieve property definition details** (read-only): Retrieve details of a specific property definition by uuid within a project.
+- **Retrieve proxy record details** (read-only): Retrieve a specific proxy record's details by id within an organization.
+- **Retrieve related project groups** (read-only): Retrieve related groups for a specific project and user.
+- **Retrieve session property definitions** (read-only): Retrieve property definitions for a specific project by providing the project's id.
+- **Retrieve session recording details** (read-only): Retrieve detailed information about a specific session recording by providing the session's uuid and associated project id.
+- **Retrieve session recording error clusters** (read-only): Retrieve error clusters from session recordings for a specified project.
+- **Retrieve session recording playlist details** (read-only): Retrieve session recording playlists for a specified project and playlist short id.
+- **Retrieve session recording properties** (read-only): Retrieve properties of session recordings for a given project by id, including activity metrics, timestamps, and participant details.
+- **Retrieve session recording snapshots** (read-only): Snapshots for a session can be loaded from s3 (if old) or redis (if recent).
+- **Retrieve similar session recordings** (read-only): Retrieve similar session recordings for a given session by uuid within a project.
+- **Retrieve specific batch export details** (read-only): Retrieve details of a specific batch export for an organization by its uuid.
+- **Retrieve specific batch export run details** (read-only): Retrieve details for a specific batch export run within a project by id.
+- **Retrieve specific domain details** (read-only): Retrieve details of a specific domain within an organization using its uuid.
+- **Retrieve specific exported asset content** (read-only): Retrieve the content of a specific exported asset by id within a project.
+- **Retrieve specific historical plugin export** (read-only): Retrieve historical export data for a specific plugin configuration within a project.
+- **Retrieve specific project dashboard details** (read-only): Retrieve details of a specific dashboard within a project.
+- **Retrieve survey activity logs** (read-only): Retrieve activity logs for specific survey in a project, identified by uuids.
+- **Retrieve survey details with uuid and project id** (read-only): Retrieve survey details using survey uuid and associated project id.
+- **Retrieve survey responses count by project id** (read-only): Retrieve the count of survey responses for a specific project by its id.
+- **Retrieve unsubscribed pipeline configs** (read-only): Retrieve config details for unsubscribed pipeline destinations in an organization.
+- **Retrieve unused organization pipeline frontend apps** (read-only): Retrieve unused pipeline frontend apps for a specific organization by its uuid.
+- **Retrieve unused organization plugins** (read-only): Retrieve a list of unused plugins for a specified organization by its uuid.
+- **Retrieve user details for initiating 2fa setup** (read-only): The endpoint get /api/users/{uuid}/start 2fa setup/ fetches details for initiating 2fa setup for a user, providing information like email…
+- **Retrieve user profile and team details** (read-only): Fetch user info like profile, team, org, and notifications via uuid using personalapikeyauth ('user.
+- **Retrieveretentioninsights** (read-only): Retrieve retention insights for a specified project.
+- **Retrievespecificpipelinefrontendappconfig** (read-only): Retrieve the configuration details of a specific pipeline frontend app by providing its unique id and the associated project id.
+- **Retrieveunusedpipelinedestinations** (read-only): Retrieve unused pipeline destinations for a specified organization by id.
+- **Revoke organization invite**: Delete an organization invite by its uuid.
+- **Set insight deletion flag**: Hard delete of this model is not allowed.
+- **Soft delete a specific cohort by id**: Hard delete of this model is not allowed.
+- **Soft delete feature flag by setting status**: Hard delete of this model is not allowed.
+- **Soft delete project dashboard**: Hard delete of this model is not allowed.
+- **Split person entities in project**: This endpoint allows reading and deleting persons.
+- **Trigger project export with format option**: The /api/projects/{project id}/exports/ endpoint triggers a project export, requiring project id and export format.
+- **Update annotation details**: Create, read, update and delete annotations.
+- **Update early access project feature**: This patch endpoint updates a specific early access project feature.
+- **Update event definition by uuid**: Update an event definition by sending a put request to '/api/projects/{project id}/event definitions/{id}/' using the uuid and project id,…
+- **Update experiment details**: Update an experiment by sending a put request with project id and id, including new details as json/form data.
+- **Update feature flag configuration**: Manage feature flags for your app with creation, reading, updating, and deletion options.
+- **Update organization details by uuid**: Update specific details of an organization using its uuid.
+- **Update organization domain info and saml config**: Update a domain's info for a specific organization by id, including verification status and saml configuration.
+- **Update organization domain properties**: Updates selected properties of a domain in an organization via patch request, supports various data formats but saml fields are immutable.
+- **Update organization member by uuids**: Patch '/api/organizations/{id}/members/{uuid}'.
+- **Update organization member details**: Update member details in an organization by id and user uuid.
+- **Update organization s proxy record domain**: Update a proxy record's domain details for a specified organization and proxy record id using put.
+- **Update partial project cohort details**: Update partial cohort details for a specific project.
+- **Update partial role details in organization**: Patch /api/organizations/{organization id}/roles/{id}/.
+- **Update partial subscription details**: Patch /api/projects/{project id}/subscriptions/{id}/.
+- **Update partial survey details**: Update partial survey details by patch to /api/projects/{project id}/surveys/{id}/ with uuid.
+- **Update person properties**: Request data's "properties" will be updated on a person using "$set" event, affecting only listed properties without deletion or other…
+- **Update person property endpoint**: This endpoint allows for reading and deleting individuals.
+- **Update pipeline destination config**: Update the configuration for a pipeline destination in a project.
+- **Update pipeline frontend app config**: Update configuration for a specific pipeline frontend app by providing its id and the project id.
+- **Update pipeline plugin config**: Update a project-specific pipeline plugin configuration by supplying the project id and config id.
+- **Update pipeline transformation config**: Update a pipeline transformation configuration for a specific project and config id.
+- **Update plugin config for project**: Update a plugin config's partial details in a project by its id using patch.
+- **Update project action by id**: Put endpoint '/api/projects/{project id}/actions/{id}/' updates actions in a project by id, accepts json/form data, supports 'format'…
+- **Update project action with partial data**: Update an action within a project with a specified id.
+- **Update project cohort details**: Update cohort details of a specific project by id.
+- **Update project dashboard details**: Endpoint to update an existing dashboard within a project.
+- **Update project early access feature**: Update a specific early access feature of a project by providing the project id and feature id (uuid).
+- **Update project event definition**: Update an existing event definition for a specified project using its uuid.
+- **Update project group type metadata**: Patch /api/projects/{project id}/groups types/update metadata.
+- **Update project insight details**: Endpoint "/api/projects/{project id}/insights/{id}/" allows for updating an insight's details for a given project and insight id,…
+- **Update project member role by uuid**: Update a project member's role using their uuid in a specific project.
+- **Update project member s role by uuid**: Update explicit project membership using uuids.
+- **Update project notebook details**: The api for interacting with notebooks.
+- **Update project pipeline destination config**: Update a project's pipeline destination config by id via patch api request.
+- **Update project pipeline transformation config**: Update a specific pipeline transformation configuration for a project by providing a project id and configuration id.
+- **Update project plugin configuration**: Update project plugin config using its integer id and project string id.
+- **Update project property definition**: Update a property definition in a project by its uuid.
+- **Update project session recording playlist**: Update an existing session recording playlist for a project with the specified project id and playlist short id.
+- **Update project subscription details**: Update a subscription for a specific project.
+- **Update project survey details**: The /api/projects/{project id}/surveys/{id}/ put endpoint updates survey details in a project using survey uuid and project id, accepts…
+- **Update role details in organization**: Update an organization role by submitting its uuid and organization id in uuid format.
+- **Update session recording playlist partially**: Update session recording playlists using patch on the endpoint with project id and short id.
+- **Update specific proxy record fields**: Patch /api/organizations/{organization id}/proxy records/{id}/.

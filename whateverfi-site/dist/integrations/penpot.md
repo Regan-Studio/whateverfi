@@ -1,0 +1,98 @@
+# Penpot
+
+Open-source design and prototyping platform for collaborative design workflows
+
+Category: Design. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/penpot/.
+
+## Actions
+
+- **Create Access Token**: Create a personal access token for API authentication in Penpot.
+- **Create Comment Thread**: Create a new comment thread on a Penpot file at a specific position.
+- **Create File**: Create a new design file in a Penpot project.
+- **Create Project**: Create a new project within a team in Penpot.
+- **Create Team**: Create a new team in Penpot.
+- **Create Webhook**: Create a webhook for a team to receive event notifications.
+- **Get All Projects** (read-only): Retrieve all projects across all teams in Penpot.
+- **Get Comment Threads** (read-only): Retrieve all comment threads for a Penpot file.
+- **Get File** (read-only): Retrieve a Penpot file by its ID.
+- **Get File Info** (read-only): Retrieve basic information about a Penpot file by its ID.
+- **Get Project** (read-only): Retrieve detailed information about a specific Penpot project by its ID.
+- **Get Project Files** (read-only): Retrieve all files in a Penpot project.
+- **Get Team** (read-only): Retrieve team details by ID.
+- **Get Team Members** (read-only): List all members of a team in Penpot.
+- **Get Teams** (read-only): List all teams the authenticated user is a member of.
+- **Search Files** (read-only): Search for files by name or content in a Penpot team.
+- **Update File**: Update a Penpot file with changes.
+- **Update Profile**: Update the current authenticated user's profile information.
+- **Create Team Access Request**: Request an invitation to join a Penpot team.
+- **Delete Access Token**: Delete a personal access token from Penpot.
+- **Delete Comment**: Delete a comment from a Penpot design file.
+- **Delete File Snapshot**: Delete a file snapshot in Penpot.
+- **Delete Project**: Delete a project from Penpot.
+- **Delete Team**: Delete a team from Penpot.
+- **Delete Team Invitation**: Delete a pending team invitation in Penpot.
+- **Delete Team Member**: Remove a member from a team in Penpot.
+- **Delete Webhook**: Delete a webhook by its UUID.
+- **Duplicate File**: Duplicate a single file within the same team in Penpot.
+- **Duplicate Project**: Duplicate an entire Penpot project with all its files.
+- **Get Access Tokens** (read-only): List all personal access tokens for the authenticated user.
+- **Get Builtin Templates** (read-only): Get the list of builtin templates available in Penpot.
+- **Get Comment Thread** (read-only): Retrieve a specific comment thread from a Penpot file.
+- **Get Comments** (read-only): Retrieve all comments in a comment thread.
+- **Get File Libraries** (read-only): Retrieve libraries linked to a Penpot file.
+- **Get File Object Thumbnails** (read-only): Retrieve thumbnails for objects in a Penpot file.
+- **Get File Snapshots** (read-only): Retrieves all snapshots for a specific Penpot file.
+- **Get File Summary** (read-only): Retrieve a summary of file contents and statistics from Penpot.
+- **Get Font Variants** (read-only): Retrieve font variants for a team, file, project, or share in Penpot.
+- **Get Library File References** (read-only): Get files that reference a shared library.
+- **Get Library Usage** (read-only): Get usage statistics for a library.
+- **Get Owned Teams** (read-only): List teams owned by the current user.
+- **Get Page** (read-only): Retrieve page data from a Penpot file.
+- **Get Profiles for File Comments** (read-only): Retrieve profiles of users who have commented on a Penpot file.
+- **Get SSO Provider** (read-only): Retrieve SSO provider information for an email address.
+- **Get Subscription Usage** (read-only): Get subscription usage information for the current user.
+- **Get Team Deleted Files** (read-only): Retrieve deleted files from a team's trash in Penpot.
+- **Get Team Info** (read-only): Retrieve detailed information about a specific Penpot team by its ID.
+- **Get Team Invitations** (read-only): List pending invitations for a team in Penpot.
+- **Get Team Shared Files** (read-only): Retrieve shared library files for a Penpot team.
+- **Get Team Stats** (read-only): Retrieve statistics for a specific Penpot team by its ID.
+- **Get Team Users** (read-only): Retrieve users in a team by team ID or file ID.
+- **Get Unread Comment Threads** (read-only): Retrieve comment threads with unread comments for a specific team.
+- **Get View Only Bundle** (read-only): Retrieve data bundle for view-only file access in Penpot.
+- **Get Webhooks** (read-only): Retrieve all webhooks configured for a team.
+- **Has File Libraries** (read-only): Check if a Penpot file has linked libraries.
+- **Ignore File Library Sync Status**: Ignore library sync status updates for a file.
+- **Link File to Library**: Link a file to a library in Penpot.
+- **Lock File Snapshot**: Lock a file snapshot in Penpot to prevent deletion.
+- **Logout**: Clear the authentication cookie and logout the current session.
+- **Mark All Threads As Read**: Mark all comment threads as read in Penpot.
+- **Move Files**: Move files from one project to another in Penpot.
+- **Move Project**: Move a project to a different team in Penpot.
+- **Permanently Delete Team Files**: Permanently delete specified files from a Penpot team.
+- **Prepare Register Profile**: Prepare user registration by validating email and sending verification in Penpot.
+- **Push Audit Events**: Push audit events to Penpot for tracking system behavior and user actions.
+- **Register Profile**: Complete user registration with profile details using a verification token.
+- **Rename File**: Rename a design file in Penpot.
+- **Rename Project**: Rename an existing project in Penpot.
+- **Request Profile Recovery**: Request a password/profile recovery email.
+- **Restore Deleted Team Files**: Restore deleted files in a Penpot team.
+- **Restore File Snapshot**: Restore a Penpot file to a previous snapshot.
+- **Send User Feedback**: Send user feedback to Penpot.
+- **Set File Shared**: Set file sharing status in Penpot (enable/disable shared library).
+- **Unlink File from Library**: Unlink a file from a shared library in Penpot.
+- **Unlock File Snapshot**: Unlock a locked file snapshot in Penpot.
+- **Update Comment**: Update the content of an existing comment in a Penpot design file.
+- **Update Comment Thread**: Update the resolution status of a comment thread in Penpot.
+- **Update Comment Thread Frame**: Update the frame associated with a comment thread in Penpot.
+- **Update Comment Thread Position**: Update the position of a comment thread in Penpot.
+- **Update Comment Thread Status**: Update the status of a comment thread in Penpot (e.g., toggle resolved/unresolved).
+- **Update File Library Sync Status**: Update the synchronization status of a file->library link.
+- **Update File Snapshot**: Update a file snapshot metadata in Penpot.
+- **Update Font**: Update a font's metadata in Penpot.
+- **Update Profile Notifications**: Update notification settings for the authenticated user's profile.
+- **Update Profile Props**: Update custom properties for the authenticated user's profile.
+- **Update Project Pin**: Update the pin status of a project in Penpot.
+- **Update Team**: Update team settings in Penpot.
+- **Update Team Invitation Role**: Update the role of a pending team invitation in Penpot.
+- **Update Webhook**: Update an existing webhook configuration.
+- **Verify Token** (read-only): Verify an authentication or registration token in Penpot.

@@ -1,0 +1,255 @@
+# Fiber
+
+Fiber provides AI-powered people and company search, enrichment, contact discovery, and data validation APIs.
+
+Category: Recruiting & HR. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/fiber/.
+
+## Actions
+
+- **Add Companies to a Company Exclusion List**: Free persistent-state operation.
+- **Add Companies to Tracker List**: Free persistent-state operation.
+- **Add People to Tracker List**: Free persistent-state operation.
+- **Add Profiles to the Job Change List**: Billable operation.
+- **Add Prospects to a Prospect Exclusion List**: Free persistent-state operation.
+- **Archive an Audience**: Destructive or state-removing change.
+- **Archive Company Tracker List**: Destructive or state-removing change.
+- **Archive Person Tracker List**: Destructive or state-removing change.
+- **Build Audience from Search Parameters**: Billable asynchronous trigger.
+- **Bulk Company Logos**: Billable operation.
+- **Bulk Enrich Companies**: Billable and privacy-sensitive.
+- **Bulk Enrich People**: Billable and privacy-sensitive.
+- **Bulk Profile Pics**: Billable operation.
+- **Bulk Standardize LinkedIn Company Identifiers**: Billable operation.
+- **Cancel Batch Contact Reveal**: Irreversibly stop pending work in an existing batch contact-reveal task.
+- **Capture Webpage Screenshot**: Billable operation.
+- **Check Google Maps Search Progress** (read-only): Read-only asynchronous status check.
+- **Company Logo**: Billable operation.
+- **Company/School/Investor Typeahead**: Billable operation.
+- **Count Company Search Results**: Billable and privacy-sensitive.
+- **Count Employees Per Department**: Billable operation.
+- **Count Job Postings**: Billable and privacy-sensitive.
+- **Count People and Companies**: Billable and privacy-sensitive.
+- **Count People Search Results**: Billable and privacy-sensitive.
+- **Count Stealth/ex-stealth Founders**: Billable operation.
+- **Create a New Audience**: Free persistent-state operation.
+- **Create Company Exclusion List**: Free persistent-state operation.
+- **Create Company Exclusion List from Audience**: Free persistent-state operation.
+- **Create Company Tracker List**: Free persistent-state operation.
+- **Create Job Change List**: Free persistent-state operation.
+- **Create Person Tracker List**: Free persistent-state operation.
+- **Create Prospect Exclusion List**: Free persistent-state operation.
+- **Create Prospect Exclusion List from Audience**: Free persistent-state operation.
+- **Create Sandbox API Key**: Free persistent-state operation.
+- **Create Saved Search**: Billable operation.
+- **Create Webhook Endpoint**: Free persistent-state operation.
+- **Delete a Job Changes List**: Destructive or state-removing change.
+- **Delete Company Exclusion List**: Destructive or state-removing change.
+- **Delete Profiles from a Job Change List**: Destructive or state-removing change.
+- **Delete Prospect Exclusion List**: Destructive or state-removing change.
+- **Delete Webhook Endpoint**: Destructive or state-removing change.
+- **Download a Ranked Company List**: Billable operation.
+- **Download Your Past API Requests** (read-only): Free read.
+- **Enrich Company**: Billable and privacy-sensitive.
+- **Enrich Person**: Billable and privacy-sensitive.
+- **Estimate Enrichment Cost** (read-only): Free read.
+- **Export Audience Companies to CSV**: External-effect operation.
+- **Export Audience Prospects to CSV**: External-effect operation.
+- **Fetch Instagram Post Comments**: Billable operation.
+- **Fetch Instagram Post Details**: Billable operation.
+- **Fetch Instagram User Posts**: Billable operation.
+- **Fetch Instagram User Profile**: Billable operation.
+- **Fetch Instagram User Reels**: Billable operation.
+- **Fetch LinkedIn Company Posts**: Billable operation.
+- **Fetch LinkedIn Post Comments**: Billable operation.
+- **Fetch LinkedIn Post Reactions**: Billable operation.
+- **Fetch LinkedIn Profile Comments**: Billable operation.
+- **Fetch LinkedIn Profile Posts**: Billable operation.
+- **Fetch LinkedIn Profile Reactions**: Billable operation.
+- **Fetch Popular TikTok Songs**: Billable operation.
+- **Fetch Post Comments**: Billable operation.
+- **Fetch Real Estate Listings**: Billable operation.
+- **Fetch TikTok Comment Replies**: Billable operation.
+- **Fetch TikTok Song Details**: Billable operation.
+- **Fetch TikTok Trending Feed**: Billable operation.
+- **Fetch TikTok User Followers**: Billable operation.
+- **Fetch TikTok User Following**: Billable operation.
+- **Fetch TikTok User Profile**: Billable operation.
+- **Fetch TikTok User Videos**: Billable operation.
+- **Fetch TikTok Video Comments**: Billable operation.
+- **Fetch TikTok Video Details**: Billable operation.
+- **Fetch TikTok Video Transcript**: Billable operation.
+- **Fetch TikTok Videos Using a Song**: Billable operation.
+- **Fetch Twitter/X Tweet Details**: Billable operation.
+- **Fetch Twitter/X Tweet Quote Tweets**: Billable operation.
+- **Fetch Twitter/X Tweet Replies**: Billable operation.
+- **Fetch Twitter/X Tweet Retweeters**: Billable operation.
+- **Fetch Twitter/X User Followers**: Billable operation.
+- **Fetch Twitter/X User Following**: Billable operation.
+- **Fetch Twitter/X User Mentions**: Billable operation.
+- **Fetch Twitter/X User Profile**: Billable operation.
+- **Fetch Twitter/X User Tweets**: Billable operation.
+- **Fetch YouTube Channel Info and Videos**: Billable operation.
+- **Fetch YouTube Video Comments**: Billable operation.
+- **Fetch YouTube Video Details**: Billable operation.
+- **Fetch YouTube Video Transcript**: Billable operation.
+- **Find LinkedIn URL from X (Twitter) Handle**: Billable operation.
+- **Find Person by Email (lite, High-volume)**: Billable operation.
+- **Find Person by Email (single)**: Billable operation.
+- **Find Person by GitHub Username**: Billable operation.
+- **Find Person by Hashed Email (HEM)**: Billable operation.
+- **Find Person or Company by Phone (single)**: Billable operation.
+- **Find Work Email**: Billable and highly privacy-sensitive.
+- **Get a Google Maps Place**: Billable operation.
+- **Get a Job Changes List** (read-only): Free read.
+- **Get a Yelp Business Page**: Billable operation.
+- **Get API Key** (read-only): Free read.
+- **Get Audience Status** (read-only): Read-only asynchronous poll.
+- **Get Auto Top-up Settings** (read-only): Free read.
+- **Get Booking.com Property Details**: Billable operation.
+- **Get Companies in an Audience** (read-only): Free read.
+- **Get Company Exclusion List** (read-only): Free read.
+- **Get Company Revenue Estimate**: Billable operation.
+- **Get Company Scouting Report**: Billable operation.
+- **Get Company Tracker List** (read-only): Free read.
+- **Get Current Companies in Saved Search** (read-only): Free read.
+- **Get Current Profiles in Saved Search** (read-only): Free read.
+- **Get Enrichment Status** (read-only): Read-only asynchronous poll.
+- **Get Excluded Companies for Exclusion List** (read-only): Free read.
+- **Get Excluded Prospects for Exclusion List** (read-only): Free read.
+- **Get Flight Booking Options**: Billable operation.
+- **Get Google Maps Place Reviews**: Billable operation.
+- **Get Hotel Property Details**: Billable operation.
+- **Get Latest Saved Search Run** (read-only): Free read.
+- **Get Organization Credits** (read-only): Check Fiber API-key access, available organization credits, usage-period reset, and organization-specific operation prices.
+- **Get Organization Rate Limits** (read-only): Free read.
+- **Get Person Tracker List** (read-only): Free read.
+- **Get Prospect Exclusion Lists** (read-only): Free read.
+- **Get Prospects in an Audience** (read-only): Free read.
+- **Get Saved Search** (read-only): Free read.
+- **Get Saved Search Run** (read-only): Free read.
+- **Get Saved Search Run Companies** (read-only): Free read.
+- **Get Saved Search Run Profiles** (read-only): Free read.
+- **Get Saved Search Run Status** (read-only): Read-only asynchronous poll.
+- **Get Talent Flow Analysis for a Company**: Billable operation.
+- **Get Top Talent Sources/destinations for a Company**: Billable operation.
+- **Get Webhook Endpoint** (read-only): Free read.
+- **Get Yelp Business Reviews**: Billable operation.
+- **Job Title Synonym Expansion**: Billable operation.
+- **List Accelerators** (read-only): Free read.
+- **List All Audiences** (read-only): Free read.
+- **List All Job Changes Lists** (read-only): Free read.
+- **List API Keys** (read-only): Free read.
+- **List Available Tracker Rules** (read-only): Free read.
+- **List Company Tracker Lists** (read-only): Free read.
+- **List Countries and Regions** (read-only): Free read.
+- **List Flight Region Aliases** (read-only): Free read.
+- **List Hotel Amenity Filters** (read-only): Free read.
+- **List Hotel Brand Filters** (read-only): Free read.
+- **List Hotel Property Type Filters** (read-only): Free read.
+- **List Industries** (read-only): Free read.
+- **List Languages** (read-only): Free read.
+- **List NAICS Codes** (read-only): Free read.
+- **List Person Tracker Lists** (read-only): Free read.
+- **List Preset Metro Areas** (read-only): Free read.
+- **List Profile and Company Tags** (read-only): Free read.
+- **List Saved Search Runs** (read-only): Free read.
+- **List Saved Searches** (read-only): Free read.
+- **List Signals** (read-only): Free read.
+- **List Skills** (read-only): Free read.
+- **List Subdivisions by Country** (read-only): Free read.
+- **List Subreddit Posts**: Billable operation.
+- **List Technologies** (read-only): Free read.
+- **List Time Zones** (read-only): Free read.
+- **List Webhook Endpoints** (read-only): Free read.
+- **List Webhook Event Types** (read-only): Free read.
+- **List Your Past API Requests** (read-only): Free read.
+- **Lists All Profiles from a Job Change List** (read-only): Free read.
+- **Live Fetch LinkedIn Company**: Billable operation.
+- **Live Fetch LinkedIn Profile**: Billable operation.
+- **Location Typeahead**: Billable operation.
+- **Look Up a Financial Instrument**: Billable operation.
+- **Manually Spawn Saved Search Run**: Billable asynchronous trigger.
+- **Multi-source AI Search**: Billable operation.
+- **Natural Language Search**: Billable operation.
+- **Parse Natural Language to Search Params**: Billable operation.
+- **Poll Batch Contact Reveal** (read-only): Free read.
+- **Poll Batch Live Enrichment** (read-only): Read-only asynchronous poll.
+- **Poll Batch Social Media Lookup** (read-only): Read-only asynchronous poll.
+- **Poll Depth Chart Generation Result** (read-only): Read-only asynchronous poll.
+- **Poll Domain Lookup** (read-only): Read-only asynchronous poll.
+- **Poll Exhaustive Contact Reveal** (read-only): Free read.
+- **Poll GitHub Lookup** (read-only): Read-only asynchronous poll.
+- **Poll GitHub-to-LinkedIn Lookup** (read-only): Read-only asynchronous poll.
+- **Poll Google Maps Search Results** (read-only): Read-only asynchronous result retrieval.
+- **Poll Local Business Search** (read-only): Read-only asynchronous poll.
+- **Poll Mosaic Run Status** (read-only): Read-only asynchronous poll.
+- **Poll Social Media Lookup** (read-only): Read-only asynchronous poll.
+- **Preview a Signal** (read-only): Free read.
+- **Refresh Company Tracker List**: Billable operation.
+- **Refresh Person Tracker List**: Billable operation.
+- **Remove Companies from Tracker List**: Destructive or state-removing change.
+- **Remove Company from Company Exclusion List**: Destructive or state-removing change.
+- **Remove People from Tracker List**: Destructive or state-removing change.
+- **Remove Prospect from Prospect Exclusion List**: Destructive or state-removing change.
+- **Reschedule Company Tracker List Refresh**: Free persistent-state operation.
+- **Reschedule Person Tracker List Refresh**: Free persistent-state operation.
+- **Resolve Companies**: Billable and privacy-sensitive.
+- **Resolve Company to Blue Collar Job Board Identifier**: Billable operation.
+- **Resolve People**: Billable and privacy-sensitive.
+- **Reveal Contact Details**: Billable and highly privacy-sensitive.
+- **Reveal Contact Details Instant**: Billable and highly privacy-sensitive.
+- **Reveal Contact Details Lite**: Billable and highly privacy-sensitive.
+- **Reveal Contact Details Turbo**: Billable and highly privacy-sensitive.
+- **Reveal Identity-Checked Phone**: Billable and highly privacy-sensitive.
+- **Rotate Webhook Signing Secret**: External-effect operation.
+- **Search Blue Collar Job Listings**: Billable operation.
+- **Search Booking.com Properties**: Billable operation.
+- **Search Companies**: Billable and privacy-sensitive.
+- **Search Flight Deals**: Billable operation.
+- **Search Flights**: Billable operation.
+- **Search Google Maps Places**: Billable operation.
+- **Search Hotels**: Billable operation.
+- **Search Job Postings**: Billable and privacy-sensitive.
+- **Search LinkedIn Posts by Keywords**: Billable operation.
+- **Search People**: Billable and privacy-sensitive.
+- **Search People and Companies**: Billable and privacy-sensitive.
+- **Search Reddit Posts**: Billable operation.
+- **Search Stealth/ex-stealth Founders**: Billable operation.
+- **Search TikTok Hashtag Videos**: Billable operation.
+- **Search TikTok Users**: Billable operation.
+- **Search TikTok Videos by Keyword**: Billable operation.
+- **Search Twitter/X Tweets**: Billable operation.
+- **Search Within a Subreddit**: Billable operation.
+- **Search Yelp Businesses**: Billable operation.
+- **Search YouTube Videos**: Billable operation.
+- **Send Test Webhook Event**: External-effect operation.
+- **Set Audience Search Parameters**: Free persistent-state operation.
+- **Skills Typeahead** (read-only): Free read.
+- **Skip Next Saved Search Auto-run**: Free persistent-state operation.
+- **Standardize LinkedIn Company Identifier**: Billable operation.
+- **Standardize LinkedIn Profile Entity URN**: Billable operation.
+- **Start Batch Contact Reveal**: Billable, irreversible, and highly privacy-sensitive.
+- **Start Batch Live Enrichment**: Billable asynchronous trigger.
+- **Start Batch Social Media Lookup**: Billable asynchronous trigger.
+- **Start Depth Chart Generation**: Billable asynchronous trigger.
+- **Start Domain Lookup**: Billable asynchronous trigger.
+- **Start Exhaustive Contact Reveal**: Billable, irreversible, and highly privacy-sensitive.
+- **Start GitHub Lookup**: Billable asynchronous trigger.
+- **Start GitHub-to-LinkedIn Lookup**: Billable asynchronous trigger.
+- **Start Google Maps Search**: Billable asynchronous trigger.
+- **Start Local Business AI Search**: Billable asynchronous trigger.
+- **Start Mosaic CSV Healing**: Billable asynchronous trigger.
+- **Start Social Media Lookup**: Billable asynchronous trigger.
+- **Summarize All Tracker Lists** (read-only): Free read.
+- **TikTok Unified Search**: Billable operation.
+- **Trigger Audience Enrichment**: Billable asynchronous trigger.
+- **Undo Skip Next Saved Search Auto-run**: Free persistent-state operation.
+- **Update API Key Credit Limit**: Free persistent-state operation.
+- **Update API Key Expiration**: Free persistent-state operation.
+- **Update Company Tracker List**: Free persistent-state operation.
+- **Update Job Change List**: Free persistent-state operation.
+- **Update Person Tracker List**: Free persistent-state operation.
+- **Update Saved Search**: Free persistent-state operation.
+- **Update Webhook Endpoint**: Free persistent-state operation.
+- **Verify Email**: Billable and privacy-sensitive.
+- **Verify Phone**: Billable and highly privacy-sensitive.

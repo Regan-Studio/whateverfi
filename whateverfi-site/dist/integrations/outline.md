@@ -1,0 +1,109 @@
+# Outline
+
+Team knowledge base and wiki for managing documentation and collaboration
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/outline/.
+
+## Actions
+
+- **Create Collection**: Create a new collection in Outline.
+- **Create Document**: Create a new document in Outline.
+- **Create Group**: Create a new group in Outline.
+- **Create Template**: Create a new template in Outline.
+- **Delete Collection**: Delete a collection and all of its documents from Outline.
+- **Export Collection** (read-only): Export a collection in markdown, JSON, or HTML format.
+- **Export Document** (read-only): Export a document from Outline in Markdown, HTML, or PDF format.
+- **Get Collection Documents** (read-only): Retrieve a collection's document structure as a tree of navigation nodes.
+- **Get Collection Info** (read-only): Retrieve a collection by its unique identifier.
+- **Get Document Info** (read-only): Retrieve a document from Outline by its UUID, urlId, or shareId.
+- **Get User Info** (read-only): Retrieve a user by their unique identifier.
+- **List Collections** (read-only): List all collections that the authenticated user has access to.
+- **List Documents** (read-only): List all documents in your Outline workspace.
+- **List Groups** (read-only): List all groups in the workspace.
+- **List Templates** (read-only): List all templates available to the current user.
+- **List Users** (read-only): List all users in the workspace.
+- **Move Document**: Move a document to a new location or collection in Outline.
+- **Search Document Titles** (read-only): Search document titles in Outline workspace using keywords.
+- **Search Documents** (read-only): Search all documents in your Outline workspace using keywords.
+- **Update Collection**: Update an existing collection's properties in Outline.
+- **Update Document**: Update a document in Outline.
+- **Update Group**: Update an existing group's name in Outline.
+- **Update User**: Update a user's name, avatar, or language preference in Outline.
+- **Update User Role**: Change a user's role in Outline workspace.
+- **Activate User**: Activate a previously suspended user in Outline.
+- **Add Document User**: Add a user membership to a document.
+- **Add Group to Collection**: Add a group to a collection in Outline.
+- **Add Group to Document**: Give all members in a group access to a document.
+- **Add User to Collection**: Add a user to a collection with specified permissions.
+- **Add User to Group**: Add a user to a group.
+- **Archive Document**: Archive a document in Outline.
+- **Create Attachment**: Create an attachment in Outline.
+- **Create Comment**: Create a comment on an Outline document.
+- **Create OAuth Client**: Create a new OAuth client in Outline.
+- **Create Share**: Create a public share link for an Outline document.
+- **Create Star**: Create a star for a document or collection in Outline.
+- **Create Template from Document**: Create a template from an existing Outline document.
+- **Create View**: Create a view for a document.
+- **Delete Attachment**: Delete an attachment from Outline.
+- **Delete Comment**: Delete a comment in Outline.
+- **Delete Document**: Delete a document in Outline.
+- **Delete File Operation**: Delete a file operation and its associated files from Outline.
+- **Delete Group**: Delete a group from Outline.
+- **Delete OAuth Authentication**: Delete an OAuth authentication in Outline.
+- **Delete OAuth Client**: Delete an OAuth client from Outline.
+- **Delete Star**: Delete a star from a document in Outline.
+- **Delete Template**: Delete a template in Outline.
+- **Delete User**: Delete a user in Outline.
+- **Duplicate Document**: Duplicate an Outline document.
+- **Duplicate Template**: Duplicate an Outline template.
+- **Empty Documents Trash**: Permanently delete all documents in the trash.
+- **Export All Collections** (read-only): Export all collections and their documents in bulk.
+- **Get Attachment Redirect URL** (read-only): Retrieve an attachment redirect URL from Outline.
+- **Get authentication config** (read-only): Retrieve authentication configuration options for an Outline workspace.
+- **Get Comment** (read-only): Retrieve a comment by its ID from Outline.
+- **Get Document Children Structure** (read-only): Retrieve a document's child structure.
+- **Get File Operation Info** (read-only): Retrieve the details and current status of a file operation by its unique identifier.
+- **Get Group Info** (read-only): Retrieve a group by its unique identifier.
+- **Get OAuth Client Info** (read-only): Retrieve an OAuth client from Outline by its id or clientId.
+- **Get Revision Info** (read-only): Retrieve a revision by its ID from Outline.
+- **Get Share Info** (read-only): Retrieve a share object by its unique identifier or by the associated document ID.
+- **Get Template Info** (read-only): Retrieve a template by its unique identifier.
+- **Invite Users**: Invite users to the Outline workspace.
+- **List Archived Documents** (read-only): List all archived documents in the Outline workspace.
+- **List Collection Group Memberships** (read-only): List all group memberships for a specific collection in Outline.
+- **List collection memberships** (read-only): List all individual user memberships for a collection.
+- **List Comments** (read-only): Retrieve all comments with optional filtering by document or collection.
+- **List Data Attributes** (read-only): List all data attributes in Outline.
+- **List Deleted Documents** (read-only): List all deleted documents in the workspace that the current user has access to.
+- **List Document Group Memberships** (read-only): List a document's group memberships.
+- **List document memberships** (read-only): List users with direct membership to a document.
+- **List Document Users** (read-only): List all users with access to a document.
+- **List Draft Documents** (read-only): List all draft documents belonging to the current user.
+- **List Events** (read-only): List all events from the audit trail.
+- **List File Operations** (read-only): List all file operations for the workspace.
+- **List Group Memberships** (read-only): List all members of a specific group in Outline.
+- **List OAuth Authentications** (read-only): List all OAuth authentications for the current user.
+- **List OAuth Clients** (read-only): List all OAuth clients accessible to the authenticated user.
+- **List Recently Viewed Documents** (read-only): List all recently viewed documents by the current user.
+- **List Revisions** (read-only): List all revisions for a specific document.
+- **List Shares** (read-only): List all share links in the workspace.
+- **List Stars** (read-only): List all starred documents and collections for the authenticated user.
+- **List Views** (read-only): List all users that have viewed a specific document and the overall view count.
+- **Redirect File Operation** (read-only): Retrieve a file from Outline by file operation ID.
+- **Remove Collection Group**: Remove a group from a collection, revoking access for all group members.
+- **Remove Collection User**: Remove a user from a collection.
+- **Remove Document User**: Remove a user membership from a document.
+- **Remove Group from Document**: Remove a group from a document, revoking access for all group members.
+- **Remove Group User**: Remove a user from a group.
+- **Restore Document**: Restore a document in Outline.
+- **Restore Template**: Restore a previously deleted template in Outline.
+- **Retrieve Auth Info** (read-only): Retrieve authentication details for the current API key.
+- **Revoke Share**: Revoke a share in Outline, making the share link inactive so it can no longer be used to access the document.
+- **Rotate OAuth Client Secret**: Rotate the secret for an OAuth client in Outline.
+- **Suspend User**: Suspend a user in Outline.
+- **Unpublish Document**: Unpublish a document in Outline.
+- **Update Comment**: Update a comment in Outline.
+- **Update OAuth Client**: Update an existing OAuth client in Outline.
+- **Update Share**: Update a share in Outline.
+- **Update Star**: Update a star's position in the Outline sidebar.
+- **Update Template**: Update an existing template in Outline.

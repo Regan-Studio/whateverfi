@@ -1,0 +1,188 @@
+# Smartsheet
+
+Smartsheet is a collaborative work management platform for organizing projects, sheets, reports, dashboards, workflows, and teams.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/smartsheet/.
+
+## Actions
+
+- **Add Alternate Emails**: Add one or more alternate email addresses for a user.
+- **Add Attachment Version**: Upload a new binary or multipart version of an existing sheet or row file attachment.
+- **Add Cell Image**: Upload image bytes to a specific Smartsheet cell using the binary file marker contract.
+- **Add Columns**: Inserts one or more columns into a sheet.
+- **Add Favorites**: Adds one or more items to the user's Smartsheet favorites.
+- **Add Group**: Creates a new organization group.
+- **Add Group Members**: Adds one or more members to a group asynchronously.
+- **Add Report Columns**: Add columns to a report.
+- **Add Report Scope**: Add source sheets to a report by sheet or parent workspace.
+- **Add Rows**: Insert one row or a batch of up to 500 rows, preserving Smartsheet location specifiers for top, bottom, parent, and sibling placement.
+- **Add Summary Field Image**: Uploads raw image bytes to a sheet summary field.
+- **Add Summary Fields**: Creates one or more summary fields on a sheet.
+- **Add User**: Add a user to the organization account.
+- **Attach To Comment**: Attach a file or supported provider URL to a comment.
+- **Attach To Proof**: Attaches a file of up to 30 MB to a proof.
+- **Attach To Row**: Attach a file or supported provider URL to a row.
+- **Attach To Sheet**: Attach a file or supported provider URL to a sheet.
+- **Check Favorite** (read-only): Checks whether a specific Smartsheet item is a favorite.
+- **Copy Dashboard**: Creates a copy of a specified Smartsheet dashboard.
+- **Copy Folder**: Copies a Smartsheet folder.
+- **Copy Rows To Another Sheet**: Copy selected rows to the bottom of another Smartsheet sheet.
+- **Copy Sheet**: Creates a copy of the specified sheet.
+- **Copy Workspace**: Copies a Smartsheet workspace.
+- **Create Cross Sheet References**: Creates a cross-sheet reference and defines its source range.
+- **Create Discussion Comment**: Adds a comment to a discussion using JSON or multipart upload.
+- **Create Folder In Folder**: Creates a new folder inside an existing Smartsheet folder.
+- **Create Folder In Workspace**: Creates a new folder at the top level of a Smartsheet workspace.
+- **Create Proof**: Creates a proof on a row from an application/octet-stream file upload.
+- **Create Proof Discussion**: Creates a discussion on a proof using exactly application/json or multipart/form-data.
+- **Create Proof Request**: Creates and sends a proof request.
+- **Create Proof Version**: Creates a proof version from a binary file upload.
+- **Create Report**: Create a report from a scope, columns, definition, and destination.
+- **Create Row Discussion**: Creates a discussion on a row using JSON or multipart upload.
+- **Create Sheet Discussion**: Creates a discussion on a sheet using JSON or multipart upload.
+- **Create Sheet In Folder**: Creates a sheet from scratch or from the specified template in the specified folder.
+- **Create Sheet In Workspace**: Creates a sheet from scratch or from the specified template at the top-level of the specified workspace.
+- **Create Update Request**: Creates an update request and sends or schedules its email notification.
+- **Create Webhook**: Creates an inactive webhook owned by the connected API-token user.
+- **Create Workspace**: Creates a new Smartsheet workspace.
+- **Deactivate User**: Deactivate a user in the current plan, blocking all Smartsheet use without changing existing item permissions.
+- **Delete Alternate Email**: Delete an alternate email.
+- **Delete Asset Share**: Deletes a share for a Smartsheet asset.
+- **Delete Attachment**: Delete an attachment from a Smartsheet sheet.
+- **Delete Attachment Versions**: Delete every version of an attachment, effectively removing a multi-version attachment from its parent object.
+- **Delete Automation Rule**: Deletes an automation rule from a sheet.
+- **Delete Column**: Deletes a column from a sheet.
+- **Delete Comment**: Deletes the specified comment.
+- **Delete Dashboard**: Deletes a specified Smartsheet dashboard.
+- **Delete Discussion**: Deletes the specified discussion.
+- **Delete Favorite**: Removes one item from the user's Smartsheet favorites.
+- **Delete Folder**: Deletes a Smartsheet folder.
+- **Delete Group**: Deletes a group asynchronously.
+- **Delete Group Members**: Removes a member from a group asynchronously.
+- **Delete Multiple Favorites**: Removes multiple favorites of one type.
+- **Delete Proof**: Deletes an original proof and all its versions.
+- **Delete Proof Requests**: Deletes all requests in a proof.
+- **Delete Proof Version**: Deletes the current proof version identified by proof ID.
+- **Delete Report**: Delete a report by ID.
+- **Delete Report Column**: Delete a column from a report.
+- **Delete Rows**: Delete one or more rows from a Smartsheet sheet.
+- **Delete Sent Update Request**: Deletes a sent update request only while it is pending.
+- **Delete Sheet**: Deletes the sheet specified in the URL.
+- **Delete Summary Fields**: Deletes one or more summary fields from a sheet.
+- **Delete Update Request**: Terminates future scheduled delivery of an update request.
+- **Delete Webhook**: Permanently deletes a webhook owned by the connected API-token user.
+- **Delete Workspace**: Permanently deletes a Smartsheet workspace.
+- **Downgrade User**: Irreversibly downgrade a user's seat in a specified plan.
+- **Edit Comment**: Updates comment text.
+- **Get Alternate Email** (read-only): Get one alternate email.
+- **Get Asset Share** (read-only): Retrieves a specific share for a Smartsheet asset.
+- **Get Attachment** (read-only): Fetch attachment metadata and, for files, a temporary download URL and its lifetime.
+- **Get Automation Rule** (read-only): Returns an automation rule, including its action values.
+- **Get Column** (read-only): Gets the definition of a sheet column.
+- **Get Comment** (read-only): Gets the comment specified by comment ID.
+- **Get Contact** (read-only): Get a specified Smartsheet contact by contact ID.
+- **Get Cross Sheet Reference** (read-only): Gets a cross-sheet reference by ID.
+- **Get Current User** (read-only): Get the connected Smartsheet user's profile.
+- **Get Dashboard** (read-only): Gets a specified Smartsheet dashboard and its widgets.
+- **Get Dashboard Path** (read-only): Gets the hierarchical folder and workspace path of a dashboard.
+- **Get Dashboard Publish Status** (read-only): Gets the publish settings for a Smartsheet dashboard.
+- **Get Discussion** (read-only): Gets the discussion specified by discussion ID.
+- **Get Folder Metadata** (read-only): Gets the metadata of a Smartsheet folder.
+- **Get Folder Path** (read-only): Gets the hierarchical path of a folder within its workspace.
+- **Get Group** (read-only): Gets a group and its members.
+- **Get Image URLs** (read-only): Generate temporary read URLs for specified Smartsheet cell images.
+- **Get Proof** (read-only): Gets a proof, optionally including attachments or discussions.
+- **Get Report** (read-only): Get one report as a paged JSON object or an offloaded Excel or CSV file.
+- **Get Report Column** (read-only): Get one report column by its virtual ID.
+- **Get Report Definition** (read-only): Get a report's filters, grouping, summarizing, and sorting definition.
+- **Get Report Path** (read-only): Get the report's hierarchical folder and workspace path.
+- **Get Report Publish Status** (read-only): Get a report's publishing settings.
+- **Get Row** (read-only): Get a Smartsheet row by sheet and row ID, with optional related row data.
+- **Get Sent Update Request** (read-only): Gets the specified sent update request on the sheet.
+- **Get Server Info** (read-only): Get Smartsheet application constants, formats, and supported locales.
+- **Get Sheet** (read-only): Gets a sheet in the format specified, based on the sheet Id.
+- **Get Sheet Path** (read-only): Gets the hierarchical path of the sheet, showing its location within folders and workspace, if workspace-level access is provided.
+- **Get Sheet Publish Status** (read-only): Gets the sheet's 'Publish' settings.
+- **Get Sheet Summary** (read-only): Returns all summary fields defined on a sheet, including requested format or writer details.
+- **Get Sheet Version** (read-only): Gets the sheet version without loading the entire sheet.
+- **Get Update Request** (read-only): Gets an update request that has a future delivery schedule.
+- **Get User** (read-only): Get a Smartsheet user by ID.
+- **Get Webhook** (read-only): Gets a webhook owned by the connected API-token user, including its configured event patterns.
+- **Get Workspace Metadata** (read-only): Gets metadata for a specified Smartsheet workspace.
+- **Import Sheet Into Folder**: Imports CSV or XLSX data into a new sheet in the specified folder.
+- **Import Sheet Into Workspace**: Imports CSV or XLSX data into a new sheet in the specified workspace.
+- **List Alternate Emails** (read-only): List a user's alternate email addresses.
+- **List Asset Shares** (read-only): Retrieves one page of users and groups an asset is shared with and their access levels.
+- **List Attachment Versions** (read-only): Get one page of an attachment's versions, ordered from newest to oldest.
+- **List Automation Rules** (read-only): Returns one page of automation rules associated with a sheet.
+- **List Cell History** (read-only): Return one page of cell modification history.
+- **List Columns** (read-only): Gets one page of columns belonging to a sheet.
+- **List Contacts** (read-only): Get one page of the connected user's Smartsheet contacts and return a continuation cursor.
+- **List Cross Sheet References** (read-only): Lists one page of cross-sheet references for a sheet.
+- **List Dashboards** (read-only): Gets one page of dashboards the connected user can access.
+- **List Discussion Attachments** (read-only): Get one page of attachments in a Smartsheet discussion.
+- **List Events** (read-only): Fetch Smartsheet organization events for a System Admin.
+- **List Favorites** (read-only): Gets the user's favorites and returns one page with a continuation cursor.
+- **List Filtered Events** (read-only): Fetch events related to selected Smartsheet sheets and workspaces for a non-admin user.
+- **List Folder Children** (read-only): Returns one page of immediate resources inside a Smartsheet folder.
+- **List Org Groups** (read-only): Gets one page of all groups in an organization account, with a continuation cursor.
+- **List Org Sheets** (read-only): Gets a summarized list of all sheets owned by the members of the organization account.
+- **List Proof Attachments** (read-only): Gets one page of non-discussion attachments in a proof.
+- **List Proof Discussions** (read-only): Gets one page of discussions in a proof.
+- **List Proof Request Actions** (read-only): Gets one page of summarized request actions for a proof.
+- **List Proof Versions** (read-only): Gets one page of proof versions from newest to oldest.
+- **List Proofs** (read-only): Gets one page of proofs for a sheet.
+- **List Report Columns** (read-only): List one page of columns for a report.
+- **List Report Scope** (read-only): List one page of source sheets and workspaces in a report's scope.
+- **List Reports** (read-only): List all reports accessible to the connected user.
+- **List Row Attachments** (read-only): Get one page of row- and row-discussion-level attachments on a Smartsheet row.
+- **List Row Discussions** (read-only): Gets one page of discussions associated with a row.
+- **List Sent Update Requests** (read-only): Lists summarized sent update requests on the sheet.
+- **List Sheet Attachments** (read-only): Get one page of sheet-, row-, and discussion-level attachments on a sheet.
+- **List Sheet Discussions** (read-only): Gets one page of discussions associated with a sheet.
+- **List Sheets** (read-only): Gets a list of all sheets that the user has access to.
+- **List Summary Fields** (read-only): Returns one page of sheet summary fields and a continuation cursor.
+- **List Update Requests** (read-only): Gets one page of update requests with future schedules and a continuation cursor.
+- **List User Plans** (read-only): List one token-paginated page of plans to which a user belongs.
+- **List Users** (read-only): List organization users with optional email, plan, and seat filters.
+- **List Webhooks** (read-only): Gets one page of webhooks owned by the connected API-token user.
+- **List Workspace Children** (read-only): Retrieves one page of immediate child resources from a specified Smartsheet workspace.
+- **List Workspaces** (read-only): Retrieves one page of workspace metadata for workspaces the connected user can access.
+- **Make Alternate Email Primary**: Make a confirmed alternate address the user's primary email.
+- **Move Dashboard**: Moves a specified Smartsheet dashboard to another container.
+- **Move Folder**: Moves a Smartsheet folder to another container.
+- **Move Rows To Another Sheet**: Move selected rows to the bottom of another Smartsheet sheet.
+- **Move Sheet**: Moves the specified sheet to a new location.
+- **Reactivate User**: Reactivate a user deactivated less than 30 days ago.
+- **Remove Report Scope**: Remove source sheets from a report by sheet or parent workspace.
+- **Remove User From Organization**: Remove a user from the organization, optionally removing shares or transferring assets.
+- **Remove User From Plan**: Deactivate a user's membership in a plan while preserving ownership and read-only access.
+- **Reset Webhook Shared Secret**: Irreversibly rotates a webhook secret owned by the connected API-token user after explicit confirmation.
+- **Search Everything** (read-only): Searches all sheets that the user can access, for the specified text.
+- **Search Sheet** (read-only): Gets a list of the user's search results in a sheet, based on a query.
+- **Send Report By Email**: Send a report attachment by email.
+- **Send Rows By Email**: Send selected Smartsheet rows by email.
+- **Send Sheet By Email**: Sends the sheet as a PDF attachment via email to the designated recipients.
+- **Set Dashboard Publish Status**: Publishes or unpublishes a Smartsheet dashboard.
+- **Set Report Publish Status**: Set report publishing status and return the resulting public URL when enabled.
+- **Set Sheet Publish Status**: Sets the publish status of the sheet and returns the new status, including the URLs of any enabled publishings.
+- **Share Asset**: Shares a Smartsheet asset with specified users or groups.
+- **Sort Rows In Sheet**: Sort all rows in a Smartsheet sheet by one or more prioritized column criteria.
+- **Update Asset Share**: Updates the access level of a share for a Smartsheet asset.
+- **Update Automation Rule**: Updates an existing automation rule.
+- **Update Column**: Updates, moves, or renames a sheet column.
+- **Update Dashboard**: Renames a specified Smartsheet dashboard.
+- **Update Folder**: Updates a Smartsheet folder.
+- **Update Group**: Updates a group.
+- **Update Proof Status**: Sets a proof as complete or incomplete.
+- **Update Report Column**: Update a report column's title, position, visibility, or width.
+- **Update Report Definition**: Create or entirely replace a report definition.
+- **Update Rows**: Update one row or a batch of up to 500 rows, including cells and location operations such as moving, indenting, or outdenting.
+- **Update Sheet**: Updates the sheet specified in the URL.
+- **Update Summary Fields**: Updates summary fields on a sheet.
+- **Update Update Request**: Changes an update request that still has a future scheduled delivery.
+- **Update User**: Update user attributes.
+- **Update User Profile Image**: Upload a GIF, JPG, or PNG profile image using the provider's binary, multipart, or JSON URL form.
+- **Update Webhook**: Updates a webhook owned by the connected API-token user.
+- **Update Workspace**: Updates a Smartsheet workspace.
+- **Upgrade User**: Irreversibly upgrade a user's seat in a specified plan.

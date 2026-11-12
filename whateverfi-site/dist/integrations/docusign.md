@@ -1,0 +1,350 @@
+# DocuSign
+
+DocuSign provides eSignature and digital agreement solutions, enabling businesses to send, sign, track, and manage documents electronically
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/docusign/.
+
+## Actions
+
+- **Add contacts to contacts list**: Adds multiple contacts to a user's contacts list in docusign.
+- **Create Envelope From Template**: Creates and sends an envelope using a template.
+- **Get Account Templates** (read-only): Gets the definition of a template or templates in the specified account.
+- **Get Envelope** (read-only): Gets the status and basic information about an envelope from docusign.
+- **Get Envelope DocGen Form Fields** (read-only): Given an envelopeid, this method returns the sender fields found in that envelope's documents.
+- **Get Envelope Document Fields** (read-only): Retrieves the custom document field information from an existing envelope document.
+- **Get Template** (read-only): Gets a template definition from the specified account.
+- **Send Envelope**: Sends a draft envelope by updating its status to 'sent'.
+- **Update Envelope DocGen Form Fields**: This method dynamically generates an envelope's documents by populating its sender fields.
+- **Add envelope attachments**: Adds one or more envelope attachments to a draft or in-process envelope in docusign.
+- **Add existing brand to group**: This endpoint adds one or more existing brands to a specified group in docusign.
+- **Add members to signing group**: This endpoint adds one or more new members to a specified signing group within a docusign account.
+- **Add new users to a specified account**: This endpoint adds new users to a specified docusign account, allowing bulk creation of up to 500 users in a single call.
+- **Add or update user custom settings**: Adds or updates custom user settings for a specified docusign user.
+- **Add part to chunked upload**: Adds a chunk or part to an existing chunked upload in docusign.
+- **Add step to envelope workflow**: This endpoint adds a new step to an existing envelope's workflow in docusign.
+- **Add templates to document in envelope**: This endpoint adds pre-configured templates to a specific document within an existing envelope in docusign.
+- **Add templates to envelope**: This endpoint adds templates to an existing docusign envelope.
+- **Add user signature and initials images**: This endpoint allows you to add or update a user's signature and/or initials images in the docusign system.
+- **Add users to existing group**: Adds one or more existing docusign users to an existing group within a specified account.
+- **Addemailoverridestoenvelope**: Adds or modifies email override settings for a specific docusign envelope, allowing customization of the reply-to email address and name,…
+- **Addfiletoworkspace**: This endpoint adds a file to a specific folder within a docusign workspace.
+- **Addorupdateaccountstamps**: This endpoint allows you to add or update one or more account stamps in a docusign account.
+- **Addorupdateusersignature**: This endpoint allows you to add or update a user's signature in docusign.
+- **Applyactiontobulksendenvelopes**: This endpoint allows users to apply specific actions (resend, correct, or void) to all envelopes within a specified docusign bulk send…
+- **Changeusersinaccount**: This endpoint allows you to update information for one or more users within a docusign account.
+- **Closeusersinaccount**: Closes one or more users in a docusign account, preventing them from accessing account features without permanently deleting them.
+- **Commit chunked upload for envelopes**: This endpoint commits a chunked upload in docusign, finalizing the upload process and preparing the uploaded content for use in other api…
+- **Configure cloud storage redirect url**: This endpoint configures the redirect url information for one or more cloud storage providers associated with a specific user in docusign.
+- **Create a collaborative workspace**: This endpoint creates a new collaborative workspace in docusign, providing a shared area for document management and workflow collaboration.
+- **Create account custom field**: Creates a new custom field at the account level in docusign, making it available for all new envelopes associated with the account.
+- **Create brand profiles for account**: This endpoint creates brand profile files for a docusign account, customizing visual and textual elements.
+- **Create bulk send request**: This endpoint initiates a bulk send process for docusign, allowing users to send a single envelope or template to multiple recipients…
+- **Create bulk send test request** (read-only): This endpoint creates a bulk send test request to validate the compatibility between a bulk send list and an envelope or template for…
+- **Create connect configuration for account**: This endpoint creates a custom connect configuration for a specified docusign account, enabling webhook notifications for envelope and…
+- **Create custom document fields in envelope**: Creates custom document fields in an existing envelope document within docusign.
+- **Create custom fields for envelope**: This endpoint allows you to create or update custom fields for a specific docusign envelope.
+- **Create custom fields in template document**: Creates custom document fields in an existing template document within docusign.
+- **Create sender view url for envelope** (read-only): Creates a url for the sender view of a docusign envelope, enabling the embedding of docusign ui within an external application.
+- **Create signing group**: Creates one or more signing groups in a docusign account.
+- **Create template recipient preview url** (read-only): This endpoint generates a url that allows senders to preview the experience of a specific recipient for a docusign template.
+- **Create template workflow step**: This endpoint adds a new workflow step to an existing docusign template.
+- **Createbccemailarchiveconfiguration**: Creates a bcc email archive configuration for a docusign account, enabling automatic archiving of docusign-generated emails.
+- **Createcustomtabwithproperties**: Creates a custom tab with pre-defined properties for use in docusign envelopes.
+- **Createdocumentresponsivehtmlpreview** (read-only): Creates a preview of the responsive html version of a specific document within a docusign envelope.
+- **Creategroupsforaccount**: Creates one or more groups for a specified docusign account.
+- **Createidproofresourcetokenforrecipient**: Creates a resource token that allows a sender to retrieve identification data for a specific recipient using docusign's id evidence api.
+- **Createnewaccountpermissionprofile**: This endpoint creates a new permission profile for a docusign account, defining specific sets of permissions for user groups.
+- **Createnotaryjurisdictionobject**: Creates a new notary jurisdiction object in the docusign system.
+- **Createorupdateuserauthorizations**: Creates or updates multiple user authorizations in docusign, allowing an agent user to perform specific actions on behalf of a principal…
+- **Createpreviewofresponsivehtml** (read-only): Creates a preview of the responsive html version of a specific template document in docusign.
+- **Createpreviewofresponsivehtmlinenvelope** (read-only): Creates a preview of the responsive html versions of all documents in an envelope, allowing users to review how pdf documents will appear…
+- **Createrecipientmanualreviewlink**: Creates a url for manually reviewing a recipient's identity in docusign.
+- **Createrecipientpreviewforenvelope** (read-only): Creates a url for previewing the recipient's view of a draft envelope or template.
+- **Createrecipientviewurl** (read-only): Creates a url for embedding the docusign recipient view ui within an application, allowing users to sign documents directly in the app.
+- **Createtemplatedocumentcustomfields**: This endpoint creates custom document fields in an existing docusign template.
+- **Createtemplateresponsivehtmlpreview** (read-only): Creates a preview of the responsive html versions of all documents associated with a docusign template.
+- **Createurlfortemplateeditview** (read-only): Creates a url for embedding the docusign template edit view within an application.
+- **Createuserauthorizationforagentuser**: Creates a user authorization in docusign, enabling an agent user to perform specific actions on behalf of a principal user within the same…
+- **Delete account brand**: This endpoint deletes a specific brand from a docusign account.
+- **Delete account custom field**: Deletes an existing account custom field from a docusign account.
+- **Delete account permission profile**: This endpoint deletes a specific permission profile from a docusign account.
+- **Delete account stamp**: Deletes a specific account stamp (signature) from a docusign account.
+- **Delete bcc email archive configuration**: This endpoint deletes a bcc (blind carbon copy) email archive configuration from a specified docusign account.
+- **Delete brand profiles**: This endpoint allows you to delete one or more brand profiles from a docusign account.
+- **Delete chunked upload**: Deletes a chunked upload that has been committed but not yet consumed in the docusign system.
+- **Delete connect configuration**: Deletes a specified docusign connect configuration from the given account.
+- **Delete connect failure log entry**: Deletes one or all connect failure log entries for a specified docusign account.
+- **Delete connect oauth configuration**: Deletes the connect oauth configuration for a specified docusign account.
+- **Delete contact from account**: Deletes a specific contact from a docusign account.
+- **Delete custom document fields**: Deletes custom document fields from an existing envelope document in docusign.
+- **Delete custom fields in template**: This endpoint deletes specified custom fields from a docusign template.
+- **Delete custom tab information**: Deletes a specified custom tab from a docusign account.
+- **Delete custom user settings**: Deletes specified custom user settings for a single docusign user.
+- **Delete delayed routing rules for template**: Deletes the delayed routing rules for a specific template workflow step in docusign.
+- **Delete draft envelope attachments**: Deletes one or more envelope attachments from a draft envelope in docusign.
+- **Delete envelope scheduled sending rules**: Deletes the scheduled sending rules for a specific envelope's workflow in docusign.
+- **Delete envelope transfer rule**: Deletes a specific envelope transfer rule from a docusign account.
+- **Delete envelope workflow definition**: This endpoint deletes the workflow definition for a specified envelope in docusign.
+- **Delete envelope workflow step**: Deletes a specific workflow step from an envelope in docusign.
+- **Delete existing workspace logically**: Logically deletes an existing workspace in docusign.
+- **Delete members from signing group**: Removes one or more members from a specified docusign signing group.
+- **Delete notary jurisdiction**: Deletes a specified notary jurisdiction from the docusign system.
+- **Delete one or more signing groups**: Deletes one or more signing groups from a specified docusign account.
+- **Delete page from document in envelope**: Deletes a specific page from a document within an envelope in docusign.
+- **Delete page from template document**: Deletes a specific page from a document within a docusign template.
+- **Delete powerform by id**: This endpoint deletes a specific powerform identified by its unique id within a docusign account.
+- **Delete request log files**: Deletes all request log files associated with the docusign api.
+- **Delete scheduled sending rules**: Deletes all scheduled sending rules associated with a specific docusign template's workflow.
+- **Delete signature for captive recipients**: This endpoint deletes the signature for one or more captive (embedded) recipient records in docusign.
+- **Delete specific connect log entry**: Deletes a specified entry or all entries from the docusign connect log for a given account.
+- **Delete specified account**: Deletes (closes) a specified docusign account.
+- **Delete stamp image for account**: This endpoint deletes a specific stamp image associated with an account signature in docusign.
+- **Delete template lock**: Deletes the lock from a specified template in docusign.
+- **Delete template workflow step**: Deletes a specific workflow step from a template's workflow definition in docusign.
+- **Delete user authorization**: Deletes a specific user authorization within the docusign system.
+- **Delete user cloud storage authentication**: This endpoint deletes the user authentication information for a specified cloud storage provider in docusign.
+- **Delete user initials or signature image**: This endpoint deletes a specified initials image or signature image for a user in docusign.
+- **Delete user profile image**: Deletes the profile image of a specified user within a docusign account.
+- **Delete users from group**: Deletes one or more users from a specified group within a docusign account.
+- **Delete workflow definition for template**: Deletes the workflow definition associated with a specific template in docusign.
+- **Delete workspace files or folders**: This endpoint allows for the deletion of one or more files or sub-folders from a docusign workspace folder or root.
+- **Deletebrandfromgroup**: This endpoint allows users to delete one or more brands from a specified group within a docusign account.
+- **Deletebrandlogobytype**: This endpoint deletes a specific logo from an account brand in docusign.
+- **Deleteconnectlogentries**: Deletes a specified list of connect log entries for a docusign account.
+- **Deletecustomdocumentfieldsfromtemplate**: Deletes specified custom document fields from an existing template document in docusign.
+- **Deletedelayedroutingruleforenvelopestep**: This endpoint deletes the delayed routing object for a specific envelope's workflow step in docusign.
+- **Deleteenoteconfiguration**: Deletes an existing enote configuration associated with a specific docusign account.
+- **Deleteenvelopecustomfields**: This endpoint deletes envelope custom fields for draft and in-process envelopes in docusign.
+- **Deleteenvelopeemailsettings**: Deletes all existing email override settings for a specific envelope in docusign.
+- **Deleteenvelopelock**: The deleteenvelopelock endpoint removes the lock from a specified envelope in docusign, allowing it to be modified again.
+- **Deletemultiplecontactsfromaccount**: Deletes multiple contacts associated with a specific docusign account.
+- **Deletetemplatefromenvelopedocument**: This endpoint deletes a specified template from a document within an existing envelope in docusign.
+- **Deleteuserauthforcloudstorageproviders**: This endpoint deletes the user authentication information for one or more cloud storage providers associated with a specific docusign user…
+- **Deleteuserauthorizations**: The deleteuserauthorizations endpoint is used to remove one or more user authorizations for a specified principal user within a docusign…
+- **Deleteusergroup**: Deletes one or more existing user groups from a specified docusign account.
+- **Deprecated endpoint for tab blob**: This deprecated endpoint is used to update tab-related data (tab blobs) within a specific envelope in a docusign account.
+- **Exportbrandtoxmlfile** (read-only): This endpoint exports information about a docusign brand to an xml file.
+- **Fetchrecipientnamesforemail** (read-only): Retrieves a list of all names associated with a specified email address in docusign.
+- **Generateeditviewurlforenvelope** (read-only): Generates a url for accessing and editing an existing envelope within the docusign ui, allowing for embedded editing functionality in…
+- **Generateenvelopecorrectionurl** (read-only): Generates a url that allows embedding the envelope correction view of the docusign ui within an application.
+- **Generaterecipientsharedviewurl** (read-only): Generates a url that enables embedding the docusign ui recipient view of a shared envelope in your application.
+- **Get account billing charges list** (read-only): Retrieves a detailed list of recurring and usage charges for a specified docusign account.
+- **Get account password rules** (read-only): Retrieves the current password rules and security settings for a specified docusign account.
+- **Get account stamp image** (read-only): Retrieves the image file for a specific account stamp, signature, or initials in docusign.
+- **Get api request log settings** (read-only): Retrieves the current api request logging settings for the authenticated user in docusign.
+- **Get bcc email archive configurations** (read-only): Retrieves a list of bcc (blind carbon copy) email archive configurations associated with a specified docusign account.
+- **Get brand logo by type** (read-only): Retrieves a specific logo used in a brand for a docusign account.
+- **Get brands information for group** (read-only): Retrieves detailed brand information associated with a specific group within a docusign account.
+- **Get bulk send batch status** (read-only): Retrieves the general status of a specific bulk send batch in docusign.
+- **Get bulk send lists information** (read-only): Retrieves a list of bulk send lists belonging to the current user in a specified docusign account.
+- **Get docusign account contacts** (read-only): Retrieves contact information associated with a docusign account.
+- **Get envelope lock information** (read-only): Retrieves general information about an envelope lock in docusign.
+- **Get members of a signing group** (read-only): Retrieves the list of members in a specified docusign signing group.
+- **Get notary jurisdictions for user** (read-only): Retrieves a list of notary journals for a user in the docusign system.
+- **Get powerform senders** (read-only): Retrieves a list of users who have sent powerforms within a specified docusign account.
+- **Get request logging log file** (read-only): Retrieves detailed information for a single api request log entry from docusign's diagnostics service.
+- **Get signature information for recipient** (read-only): Retrieves detailed signature information for a specific signer or sign-in-person recipient within a docusign envelope.
+- **Get signing group information** (read-only): Retrieves comprehensive information about a specific signing group, including details about its members.
+- **Get template delayed routing rules** (read-only): Retrieves the delayed routing rules for a specific workflow step within a docusign template.
+- **Get template lock information** (read-only): Retrieves general information about a template lock in docusign.
+- **Get template notification information** (read-only): Retrieves the envelope notification, reminders, and expiration information for an existing template in docusign.
+- **Get template recipient document visibility** (read-only): This endpoint retrieves document visibility information for a specific recipient of a docusign template.
+- **Get template scheduled sending settings** (read-only): Retrieves the scheduled sending settings for a specified docusign template.
+- **Get templates for envelope document** (read-only): Retrieves the templates associated with a specific document within a docusign envelope.
+- **Get templates used in envelope** (read-only): This endpoint retrieves a list of server-side templates used in a specific docusign envelope.
+- **Get unsupported file types list** (read-only): Retrieves a comprehensive list of file types (both mime-types and file extensions) that are not supported for upload through the docusign…
+- **Get user authorization details** (read-only): Retrieves detailed information about a specific user authorization in docusign.
+- **Get user cloud storage provider configuration** (read-only): Retrieves the cloud storage provider configuration for a specific user within a docusign account.
+- **Get user information by id** (read-only): Retrieves detailed information about a specific user within a docusign account.
+- **Get users in group** (read-only): Retrieves a paginated list of users belonging to a specific group within a docusign account.
+- **Get workspace file** (read-only): Retrieves a binary version of a file from a docusign workspace.
+- **Get workspace folder contents** (read-only): Retrieves the contents of a specific workspace folder in docusign, including sub-folders and files.
+- **Getagentuserauthorizations** (read-only): Retrieves user authorizations for a specified agent user within a docusign account.
+- **Getbccemailarchivehistory** (read-only): Retrieves the history of changes made to a specific bcc email archive configuration for a docusign account.
+- **Getdefaultconsumerdisclosure** (read-only): Retrieves the default html-formatted electronic record and signature disclosure (ersd) associated with a docusign account.
+- **Getdowngradeplaninfoforaccount** (read-only): Retrieves detailed billing information related to a downgrade request for a specific docusign account.
+- **Getelectronicdisclosureforrecipient** (read-only): Retrieves the html-formatted electronic record and signature disclosure (ersd) for a specific envelope recipient in docusign.
+- **Getelectronicrecordandsignaturedisclosure** (read-only): Retrieves the html-formatted electronic record and signature disclosure (ersd) associated with a specific docusign account.
+- **Getenoteintegrationsettings** (read-only): Retrieves the enote integration settings for a specified docusign account.
+- **Getenvelopenotificationdefaults** (read-only): Retrieves the default email notification settings for envelopes in a docusign account.
+- **Getenvelopeworkflowdefinition** (read-only): Retrieves the workflow definition for a specified envelope in docusign.
+- **Getenvelopeworkflowdelayedroutingdefinition** (read-only): Retrieves the delayed routing rules for a specific workflow step within a docusign envelope.
+- **Getgroupsinformationforaccount** (read-only): Retrieves detailed information about groups associated with a specific docusign account.
+- **Getlistofaccountpermissionprofiles** (read-only): This endpoint retrieves a comprehensive list of permission profiles associated with a specified docusign account.
+- **Getnotaryjurisdictionobject** (read-only): Retrieves detailed information about a specific notary jurisdiction for the authenticated user.
+- **Getnotaryusersettings** (read-only): Retrieves the settings and information for the currently authenticated notary user in the docusign system.
+- **Getoriginalhtmldefinitionfortemplate** (read-only): Retrieves the original html definition for a specified docusign template.
+- **Getpageimagefromenvelope** (read-only): Retrieves an image of a specific page from a document within a docusign envelope.
+- **Getpdftranscriptofenvelopecomments** (read-only): Retrieves a pdf transcript containing all comments added by senders and recipients to documents within a specific envelope in a docusign…
+- **Getpermissionprofileforaccount** (read-only): This endpoint retrieves detailed information about a specific permission profile in a docusign account.
+- **Getrecipientdocumentvisibility** (read-only): Retrieves document visibility settings for a specific recipient within a docusign envelope.
+- **Getspecificbrandresourcefile** (read-only): Retrieves a specific branding resource file for customizing docusign experiences.
+- **Getspecifiedaccountstampinfo** (read-only): Retrieves detailed information about a specific account stamp (signature) in docusign.
+- **Getsupportedlanguagesforrecipients** (read-only): Retrieves a comprehensive list of supported languages that can be set for individual recipients when creating a docusign envelope.
+- **Gettabsblobforenvelope** (read-only): This deprecated endpoint retrieves the tabs blob associated with a specific envelope in docusign.
+- **Gettabsettingsforaccount** (read-only): Retrieves the current tab settings and functionality enabled for a specific docusign account.
+- **Gettemplatedocumenthtmldefinition** (read-only): Retrieves the html definition for a specific document within a docusign template.
+- **Geturlforembeddingdocusignui** (read-only): This endpoint returns a url that enables embedding the docusign ui in your applications, providing seamless integration of electronic…
+- **Getuserauthorizationsforprincipal** (read-only): Retrieves user authorizations for a specified principal user within a docusign account.
+- **Getwatermarkdetailsforaccount** (read-only): Retrieves and previews the watermark details for a specific docusign account.
+- **Getworkflowstepforenvelope** (read-only): Retrieves detailed information about a specific workflow step for a docusign template.
+- **Initiate new chunked upload**: Initiates a new chunked upload in docusign by sending the first part of the content.
+- **List billing invoices** (read-only): Retrieves a list of billing invoices for a specified docusign account.
+- **List brands for account** (read-only): Retrieves a comprehensive list of brands associated with a docusign account, including default brand profiles.
+- **List past due invoices** (read-only): Retrieves a list of past due invoices for a specified docusign account and indicates if payment can be made through the rest api.
+- **List registered notary jurisdictions** (read-only): Retrieves a paginated list of registered notary jurisdictions for the current user, who must be a notary.
+- **List users for account** (read-only): Retrieves a list of users for a specified docusign account.
+- **List workspaces** (read-only): Retrieves a list of docusign workspaces and their associated information for a specified account.
+- **Listbulksendbatchsummaries** (read-only): Retrieves a summary of bulk send batches for a docusign account.
+- **Listcloudstorageitems** (read-only): Retrieves a list of the user's items (files and folders) from a specified cloud storage provider integrated with docusign.
+- **Listenvelopeanddocumentcustomfields** (read-only): Retrieves a comprehensive list of envelope and document custom fields associated with a specific docusign account.
+- **Listenvelopeattachmentsbyenvelopeid** (read-only): Retrieves a list of envelope attachments associated with a specified envelope in docusign.
+- **Listpaymentgatewayaccountsinfo** (read-only): Retrieves a list of all payment gateway accounts associated with a specific docusign account, along with detailed information about each…
+- **Listresourcesforrestversionspecified** (read-only): Retrieves the base resources available for the docusign esignature rest api.
+- **Listsignatureprovidersforaccount** (read-only): Retrieves a list of signature providers available for a specified docusign account.
+- **Listworkspacefilepages** (read-only): Retrieves a workspace file as rasterized pages from a docusign workspace.
+- **Lock an envelope for editing**: This endpoint locks an envelope for editing, preventing other users or recipients from changing it.
+- **Locktemplateforediting**: This endpoint locks a specified docusign template for editing, preventing other users or recipients from modifying it during the lock…
+- **Modify tab settings for account**: This endpoint modifies the tab types and tab functionality that are enabled for a docusign account.
+- **Modifyaccountnotificationsettings**: This endpoint updates the default email notification settings for envelope senders and signers in a docusign account.
+- **Postpaymenttoinvoice**: Posts a payment to a past due invoice in the docusign system.
+- **Purchase additional envelopes**: This endpoint completes the purchase of additional envelopes for a docusign account through an internal workflow interaction with an…
+- **Queue downgrade billing plan request**: Queues a downgrade request for a docusign account's billing plan.
+- **Registercurrentuserasnotary**: This endpoint registers the current user as a notary in docusign, enabling remote online notarization capabilities.
+- **Remove bulk send list**: This endpoint deletes a specific bulk send list from a docusign account.
+- **Remove user signature information**: Removes the signature information for a specific user in docusign.
+- **Removegroupsharingpermissionsfortemplate**: Removes sharing permissions for specified member groups from a docusign template.
+- **Removetemplatesfromfavorites**: Removes one or more templates from an account's list of favorite templates in docusign.
+- **Republish connect data for envelope**: Republishes connect information for a specified envelope in docusign.
+- **Republish connect info for envelopes**: Republishes connect information for a specified set of envelopes in docusign.
+- **Retrieve billing invoice** (read-only): Retrieves a specific billing invoice for a docusign account, providing detailed information about charges and payment details.
+- **Retrieve billing plan details** (read-only): Retrieves comprehensive details of a specific docusign billing plan using its unique identifier.
+- **Retrieve chunked upload metadata** (read-only): Retrieves metadata for a specific chunked upload in docusign.
+- **Retrieve cloud storage provider configuration** (read-only): Retrieves the list of cloud storage providers enabled for a specific user in a docusign account, along with their configuration information.
+- **Retrieve connect failure logs** (read-only): Retrieves the connect failure log information for a specified docusign account.
+- **Retrieve connect log entry** (read-only): Retrieves a specific connect log entry for a docusign account.
+- **Retrieve connect logs** (read-only): Retrieves the 100 most recent connect log entries for a specified docusign account.
+- **Retrieve custom fields for envelope** (read-only): Retrieves custom field information for a specified envelope in docusign.
+- **Retrieve default disclosure for envelope** (read-only): Retrieves the default html-formatted electronic record and signature disclosure (ersd) for a specified envelope in docusign.
+- **Retrieve payment information list** (read-only): Retrieves a list of payment information for a specific docusign account.
+- **Retrieve pdf from specified template** (read-only): Retrieves one or more pdf documents from a specified docusign template.
+- **Retrieve rest api versions** (read-only): Retrieves the available rest api versions for docusign's service.
+- **Retrieve signer signature image information** (read-only): Retrieves the specified user's signature image from a docusign envelope.
+- **Retrieve template page image** (read-only): Retrieves a specific page image from a template document for display purposes.
+- **Retrieve user account settings** (read-only): Retrieves a comprehensive list of account settings and email notification preferences for a specified user within a docusign account.
+- **Retrieve user initials image for envelopes** (read-only): Retrieves the initials image for a specified user within a docusign envelope.
+- **Retrieve user profile information** (read-only): This endpoint retrieves comprehensive user profile information for a specified user within a docusign account.
+- **Retrieve user signature definitions** (read-only): This endpoint retrieves the signature definitions for a specified user within a docusign account.
+- **Retrieveaccountbillingplan** (read-only): Retrieves detailed billing plan information for a specified docusign account.
+- **Retrieveaccountbrandinformation** (read-only): Retrieves detailed information about a specific brand associated with a docusign account.
+- **Retrieveaccountenvelopepurgeconfig** (read-only): Retrieves the current envelope purge configuration for a specified docusign account.
+- **Retrieveaccountfavoritetemplates** (read-only): Retrieves the list of favorite templates associated with a specified docusign account.
+- **Retrieveaccountinformationforspecifiedaccount** (read-only): Retrieves comprehensive information for a specified docusign account, including account details, billing information, plan specifics, and…
+- **Retrieveaccountpasswordrules** (read-only): Retrieves the current password rules and security settings for a user's docusign account.
+- **Retrieveaccountprovisioninginfo** (read-only): Retrieves the account provisioning information for a docusign account.
+- **Retrieveaccountsealproviders** (read-only): Retrieves a list of electronic seal providers available for a specific docusign account.
+- **Retrieveaccountsettingsinformation** (read-only): Retrieves the comprehensive account settings information for a specified docusign account.
+- **Retrieveaccountsigninggroups** (read-only): Retrieves a comprehensive list of all signing groups within a specified docusign account.
+- **Retrieveaccountverificationworkflows** (read-only): Retrieves a list of identity verification workflows available for a docusign account.
+- **Retrieveallaccounttabs** (read-only): Retrieves a comprehensive list of all tabs associated with a specified docusign account.
+- **Retrieveapirequestlogfiles** (read-only): Retrieves a list of api request log entries from docusign, providing diagnostic information for developers.
+- **Retrieveavailableaccountstamps** (read-only): Retrieves a list of stamps available in a docusign account.
+- **Retrievebillingpaymentinfo** (read-only): Retrieves detailed information for a specified billing payment within a docusign account.
+- **Retrieveconnectconfigurationdetails** (read-only): Retrieves detailed information for a specific docusign connect configuration.
+- **Retrieveconnectconfigurations** (read-only): Retrieves all docusign custom connect definitions for a specified account.
+- **Retrieveconnectoauthconfiguration** (read-only): Retrieves the connect oauth configuration for a specified docusign account.
+- **Retrievecreditcardinfo** (read-only): This endpoint retrieves detailed credit card information associated with a specific docusign account.
+- **Retrievecustomfieldsfortemplate** (read-only): This endpoint retrieves the custom document fields for an existing template document in docusign.
+- **Retrievecustomtabinformation** (read-only): Retrieves detailed information about a specific custom tab associated with a docusign account.
+- **Retrievecustomusersettings** (read-only): Retrieves a list of custom user settings for a single user in docusign.
+- **Retrieveenvelopeattachment** (read-only): Retrieves a developer-only envelope attachment from a specific envelope in docusign.
+- **Retrieveenvelopeauditevents** (read-only): Retrieves the audit events for a specified envelope in docusign.
+- **Retrieveenvelopedocumentfields** (read-only): Retrieves custom document field information from an existing envelope document in docusign.
+- **Retrieveenvelopedocuments** (read-only): Retrieves one or more documents from a docusign envelope.
+- **Retrieveenvelopeemailoverrides** (read-only): Retrieves the email override settings for a specified envelope in docusign.
+- **Retrieveenvelopehtmldefinition** (read-only): Retrieves the original html definition used to generate the responsive html for a specific envelope in a docusign account.
+- **Retrieveenvelopenotificationdetails** (read-only): Retrieves the notification, reminder, and expiration settings for an existing envelope in docusign.
+- **Retrievehtmldefinitionforresponsivedocument** (read-only): This endpoint retrieves the html definition used to generate a dynamically sized responsive document within a docusign envelope.
+- **Retrieveitemsincloudstoragefolder** (read-only): Retrieves a list of items (files and folders) from a specified folder in an integrated cloud storage provider.
+- **Retrievelistofbillingplans** (read-only): Retrieves a comprehensive list of billing plans associated with a distributor in the docusign system.
+- **Retrievepowerformdataentries** (read-only): This endpoint retrieves data entries for a specific powerform within a docusign account.
+- **Retrievepropertiesaboutworkspace** (read-only): Retrieves detailed properties and information about a specific docusign workspace.
+- **Retrieveshareditemstatusforusers** (read-only): Retrieves shared item status for one or more users and types of items within a docusign account.
+- **Retrievetemplatecustomfields** (read-only): Retrieves the custom document field information from an existing template in docusign.
+- **Retrievetemplatedocumentpageimages** (read-only): Retrieves and returns images of pages from a specified template document in docusign.
+- **Retrieveuserprofileimage** (read-only): Retrieves the user profile picture for a specified user within a docusign account.
+- **Retrieveusersignatureimage** (read-only): Retrieves a specified user's signature or initials image from docusign.
+- **Retrieveusersignatureinformation** (read-only): This endpoint retrieves the detailed structure and information of a single user signature within a docusign account.
+- **Retrieveworkflowstepfortemplate** (read-only): Retrieves detailed information about a specific workflow step for a docusign envelope.
+- **Return all connect service users** (read-only): Retrieves all users from the configured connect service for a specific docusign account and connect configuration.
+- **Return users from connect service** (read-only): Retrieves users associated with a specific docusign connect configuration for a given account.
+- **Returnbrandresourcemetadataforaccount** (read-only): Retrieves metadata about the branding resources associated with a specific docusign account and brand.
+- **Returnenvelopetabdataforexistingenvelope** (read-only): Retrieves detailed form data from a docusign envelope, including the current values of form fields, recipient information, and envelope…
+- **Returns document page images based on input** (read-only): Retrieves images of document pages from a specific envelope in a docusign account.
+- **Returnscheduledsendingrulesforenvelope** (read-only): Retrieves the scheduled sending rules for a specific envelope in docusign.
+- **Returntemplateworkflowdefinition** (read-only): Retrieves the workflow definition for a specified docusign template.
+- **Revokeenvelopecorrectionurl**: This endpoint revokes the correction view url for a specific envelope in docusign, effectively disabling the ability to make further…
+- **Rotate page image for envelope**: This endpoint rotates a page image within a specific document of an envelope in docusign.
+- **Rotatetemplatepageimage**: Rotates a page image within a docusign template for display purposes.
+- **Set envelope purge config for account**: Sets the envelope purge configuration for a specified docusign account, allowing account administrators to define automatic document…
+- **Set initials image for accountless signer**: This endpoint allows you to update the initials image for a signer who does not have a docusign account within a specific envelope.
+- **Set shared access for users and templates**: This endpoint sets shared access for users and templates in docusign.
+- **Set signature image for no account signer**: This endpoint updates the signature image for an accountless signer in a docusign envelope.
+- **Set templates as account favorites**: This endpoint allows users to set one or more templates as account favorites in docusign.
+- **Set up connect oauth configuration**: Sets up connect oauth configuration for a specified docusign account using a custom authorization server.
+- **Setusersignatureimage**: Sets or updates a user's signature image, initials, or stamp in their docusign account.
+- **Share template with group**: This endpoint allows you to share a docusign template with a specified members group.
+- **Submit batch historical envelopes to webhook**: This endpoint submits a batch of existing envelopes to a specified webhook for historical publishing.
+- **Toggle api request logging**: This endpoint enables or disables api request logging for troubleshooting purposes in docusign.
+- **Update account password rules**: This endpoint updates the password rules for a docusign account.
+- **Update account stamp by id**: This endpoint allows you to update an existing account stamp (signature) in docusign.
+- **Update account watermark information**: This endpoint updates the watermark settings for a specified docusign account.
+- **Update billing plan for account**: Updates billing plan information, address, and payment details for a docusign account.
+- **Update connect oauth configuration**: This endpoint updates an existing connect oauth configuration for a docusign account.
+- **Update contacts information**: This endpoint updates one or more contacts associated with a docusign account.
+- **Update custom fields in envelope document**: This endpoint allows you to update existing custom document fields in a specific document within an envelope in docusign.
+- **Update custom tab information for account**: This endpoint updates the information for a custom tab associated with a specific docusign account.
+- **Update docusign connect configuration**: This endpoint updates an existing docusign connect configuration for a specified account.
+- **Update electronic record disclosure**: This endpoint updates the electronic record and signature disclosure (ersd) for a docusign account.
+- **Update envelope attachment**: Updates an existing attachment for a draft or in-process envelope in docusign.
+- **Update envelope custom fields**: This endpoint allows users to update custom fields for draft and in-process envelopes in docusign.
+- **Update envelope notification settings**: Updates the notification settings for a specific docusign envelope, including reminders and expirations.
+- **Update envelope scheduled sending rules**: Updates the scheduled sending rules for an envelope's workflow in docusign.
+- **Update envelope workflow definition**: Updates the workflow definition for a specified envelope in docusign.
+- **Update envelope workflow step**: Updates a specific workflow step for a docusign envelope, allowing for customization of envelope processing, including delayed routing and…
+- **Update group information**: Updates group information and modifies or sets permission profiles for specified groups within a docusign account.
+- **Update notary jurisdiction info**: Updates the jurisdiction information for a notary in the docusign system.
+- **Update signing group details**: Updates the details of a specified signing group within a docusign account, including the group name, email, and member information.
+- **Update template custom fields**: Updates the custom fields in a docusign template.
+- **Update Template Doc Visibility**: This endpoint updates document visibility settings for one or more recipients in a docusign template.
+- **Update template document custom fields**: This endpoint updates existing custom document fields in a specific document within a docusign template.
+- **Update template lock information**: This endpoint allows you to update the lock information for an already locked template in docusign.
+- **Update template notification settings**: This endpoint updates the notification structure for an existing docusign template.
+- **Update user account settings**: This endpoint updates the account settings and email notification types for a specified user in docusign.
+- **Update user information for specified user**: The user putuser endpoint allows updating user information for a specified user within a docusign account.
+- **Update user profile image**: Updates a user's profile image in docusign by uploading a new image file.
+- **Update user signature by id**: Updates or creates a user's signature and initials for a specified docusign account.
+- **Update workflow step for template**: This endpoint updates a specified workflow step for a docusign template.
+- **Updateaccountbrandsettings**: The updateaccountbrandsettings endpoint modifies or replaces an existing brand configuration for a docusign account.
+- **Updateaccountcustomfield**: This endpoint updates an existing account custom field in docusign.
+- **Updateaccountsettings**: Updates various settings for a specified docusign account.
+- **Updateaccountstamps**: This endpoint allows you to add or update one or more account stamps (signatures) for a docusign account.
+- **Updateaccountwatermarkpreview**: Updates and previews watermark settings for a docusign account.
+- **Updatebulksendbatchname**: Updates the name of an existing bulk send batch in docusign.
+- **Updatedocumentvisibilityrecipients**: This endpoint updates document visibility settings for one or more recipients within a specific docusign envelope.
+- **Updateenoteintegrationconfig**: Updates the enote integration configuration for a specific docusign account.
+- **Updateenvelopedelayedroutingrules**: Updates the delayed routing rules for a specific workflow step in a docusign envelope.
+- **Updateenvelopeemailsettings**: Updates the existing email override settings for a specified envelope in docusign.
+- **Updatelockforenvelope**: Updates the lock information for a locked envelope in docusign.
+- **Updatepermissionprofilesettings**: This endpoint updates an existing account permission profile in docusign.
+- **Updaterecipientdocumentvisibility**: This endpoint updates the document visibility settings for a specific recipient within a docusign envelope.
+- **Updatesigninggroupnames**: Updates the names of one or more existing signing groups in docusign.
+- **Updatetemplatedelayedroutingrules**: This endpoint updates the scheduled sending rules for a specific workflow step in a docusign template.
+- **Updatetemplaterecipientdocumentvisibility**: This endpoint updates the document visibility settings for a specific recipient in a docusign template.
+- **Updatetemplatescheduledsendingrules**: Updates the scheduled sending rules for a docusign template, allowing users to configure delayed sending for envelopes.
+- **Updatetemplateworkflowdefinition**: Updates the workflow definition for a specified template in docusign, allowing for customization of the document signing process.
+- **Updateuserauthorizationdates**: Updates the start and/or end dates for a specified user authorization in docusign.
+- **Updateusernotaryinformation**: The updateusernotaryinformation endpoint modifies a notary's profile and settings in docusign.
+- **Updateuserprofileinformation**: Updates a user's profile in docusign, including personal details, privacy settings, and user id card information.
+- **Updateworkspaceinformation**: Updates information about a specific docusign workspace.
+- **Updateworkspaceitemmetadata**: This endpoint updates the metadata for one or more specific files or folders in a docusign workspace.

@@ -1,0 +1,167 @@
+# BambooHR
+
+BambooHR is a cloud-based human resources management system (HRMS) that helps businesses manage their employees, payroll, and benefits.
+
+Category: Recruiting & HR. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/bamboohr/.
+
+## Actions
+
+- **Create new employee**: Creates a new employee record in the bamboohr system.
+- **Fetch employee directory** (read-only): Retrieves the employee directory for a specified bamboohr company.
+- **Get employee by id** (read-only): Retrieves detailed information for a specific employee within a company's bamboohr system.
+- **Update employee information via id**: Updates an employee's basic information in the bamboohr system.
+- **Access training category** (read-only): Retrieves all training categories for a specific company in bamboohr.
+- **Add benefit group employee record**: This endpoint allows you to associate an employee with a specific benefit group in bamboohr for a defined period.
+- **Add comment to employee goal**: This endpoint allows you to post a comment on a specific employee's goal within the bamboohr performance management system.
+- **Add employee goal**: This endpoint allows you to add a new goal for a specific employee in the bamboohr performance management system.
+- **Add or update list field values**: Adds new values or updates existing values for a specific list field in the bamboohr system.
+- **Add time tracking record**: This endpoint allows you to add a new time tracking record for an employee in the bamboohr system.
+- **Add webhook with monitoring fields**: The addwebhook endpoint allows you to create a new webhook in bamboohr, enabling real-time notifications for specific employee data changes.
+- **Adjust employee time off balance**: This endpoint allows you to adjust the time off balance for a specific employee in bamboohr.
+- **Adjust time tracking hours**: This endpoint allows you to adjust existing time tracking records in bamboohr.
+- **Aggregate employee goals** (read-only): Retrieves aggregated performance goal data for a specific employee within a company's bamboohr system.
+- **Aggregate employee goals** (read-only): Retrieves aggregated information about an employee's goals within the bamboohr performance management system.
+- **Aggregate employee goals by id** (read-only): Retrieves aggregated goal information for a specific employee within a company's bamboohr system.
+- **Approve timesheets for employees that are currently clocked in**: This endpoint will approve all timesheets for employees that are currently clocked in.
+- **Approve timesheets with timestamp**: The approvetimesheets endpoint enables managers or authorized personnel to approve multiple employee timesheets in a single api call…
+- **Calculate employee time off** (read-only): Retrieves the time off calculator information for a specific employee in bamboohr.
+- **Check employee clockin status** (read-only): Retrieves the current clock-in status for a specific employee within a company's bamboohr environment.
+- **Check employee goal creation permission** (read-only): This endpoint checks whether a specific employee has the permission to create goals within the bamboohr performance management system.
+- **Clock in employee with time and location**: This endpoint records a clock-in event for a specific employee in the bamboohr time tracking system.
+- **Clock out employee with location**: The clockoutemployee endpoint allows you to record an employee's clock-out time and location in the bamboohr time tracking system.
+- **Close employee goal**: The closeemployeegoal endpoint allows you to mark a specific performance goal as completed or closed for an individual employee in bamboohr.
+- **Create company benefit**: This endpoint creates a new company benefit in bamboohr.
+- **Create employee benefit entry**: Creates or updates an employee benefit in the bamboohr system.
+- **Create employee dependent record**: This endpoint allows you to create a new dependent for an existing employee in the bamboohr system.
+- **Create employee direct deposit account**: Updates the direct deposit account information for a specific employee in the bamboohr system.
+- **Create employee unpaid paystub**: Posts unpaid pay stubs for a specific employee in the bamboohr system.
+- **Create job opening post**: Creates a new job opening in the bamboohr applicant tracking system.
+- **Create time tracking project**: Creates a new time tracking project in bamboohr.
+- **Delete clock entries via ids**: Deletes multiple clock entries from the bamboohr time tracking system.
+- **Delete clock entry ids**: Deletes multiple clock entries from the bamboohr time tracking system.
+- **Delete company benefit by id**: Deletes a specific company benefit from the bamboohr system.
+- **Delete employee direct deposit accounts**: Deletes a specific direct deposit account associated with an employee in the bamboohr system.
+- **Delete employee file by id**: Deletes a specific file associated with an employee in the bamboohr system.
+- **Delete employee goal**: This endpoint deletes a specific goal associated with an employee in the bamboohr performance management system.
+- **Delete employee goal comment**: Deletes a specific comment on an employee's performance goal in the bamboohr system.
+- **Delete employee pay stub by id**: Deletes a specific employee pay stub from the bamboohr system.
+- **Delete employee table row**: This endpoint deletes a specific row from an employee's table in bamboohr.
+- **Delete employee training record**: Deletes a specific employee training record from the bamboohr system.
+- **Delete employee unpaid pay stub**: This endpoint deletes a specific unpaid pay stub for an employee in the bamboohr system.
+- **Delete employee withholding by id**: Deletes a specific employee withholding record from the bamboohr system.
+- **Delete file by id**: Deletes a specific file from the bamboohr system for a given company.
+- **Delete hour entries by ids**: Deletes multiple time tracking hour entries from the bamboohr system.
+- **Delete time tracking entry**: The deletetimetrackingentry endpoint allows for the deletion of a specific time tracking entry from the bamboohr system.
+- **Delete training category**: Deletes a specific training category from the bamboohr system for a given company.
+- **Delete training type by id**: Deletes a specific training type from the bamboohr system.
+- **Delete webhook by id**: The deletewebhook endpoint is used to remove a specific webhook from the bamboohr system.
+- **Edit Current Clock In Entry**: This endpoint allows an employee to clock in and record their work start time in the bamboohr time tracking system.
+- **Employee clock in via taskid**: Clocks in an employee in the bamboohr time tracking system, marking the start of their work period.
+- **Fetch applicant tracking jobs** (read-only): Retrieves a list of job postings from the company's applicant tracking system (ats) in bamboohr.
+- **Fetch applicant tracking statuses** (read-only): Retrieves a list of all applicant tracking statuses for a specific bamboohr company.
+- **Fetch application by id** (read-only): Retrieves detailed information about a specific job application from bamboohr's applicant tracking system.
+- **Fetch applications by company domain path** (read-only): Retrieves a list of applications submitted through the bamboohr applicant tracking system (ats).
+- **Fetch benefit groups** (read-only): Retrieves a list of benefit groups for a specific company in bamboohr.
+- **Fetch employee pay stub by id** (read-only): Retrieves detailed pay stub information for a specific employee within a company's bamboohr system.
+- **Fetch employee photo by size** (read-only): Retrieves an employee's photo from the bamboohr system in a specified size.
+- **Fetch employee withholding by id** (read-only): Retrieves the withholding information for a specific employee within a company's bamboohr system.
+- **Fetch employees changed for table** (read-only): Retrieves information about changes made to a specific table in the bamboohr system for a given company.
+- **Fetch goal alignment options** (read-only): Retrieves the available goal alignment options for a specific employee or the authenticated api user in bamboohr.
+- **Fetch hiring leads for applicant tracking** (read-only): Retrieves a list of hiring leads from the bamboohr applicant tracking system (ats) for a specified company.
+- **Fetch report by company domain and id** (read-only): Retrieves a specific report from the bamboohr system for a given company.
+- **Fetch time off policies** (read-only): Retrieves metadata about time off policies for a specific company in the bamboohr system.
+- **Fetch training types by domain** (read-only): Retrieves a list of training types configured in the company's bamboohr system.
+- **Generate custom report for company** (read-only): Creates a custom report in bamboohr with specified parameters.
+- **Get benefit coverages by company domain** (read-only): Retrieves the benefit coverages information for employees within a specific company in bamboohr.
+- **Get changed employees by company domain** (read-only): Retrieves a list of employees whose records have been changed in the bamboohr system for a specific company.
+- **Get employee clock entries** (read-only): Retrieves a specific clock entry for an employee from the bamboohr time tracking system.
+- **Get employee daily entries** (read-only): Retrieves a specific daily time tracking entry for an employee in bamboohr.
+- **Get employee goal aggregate** (read-only): Retrieves aggregated performance data for a specific employee's goal within the bamboohr system.
+- **Get employee project assignments** (read-only): Retrieves a list of projects assigned to a specific employee within a company's bamboohr account.
+- **Get employee project tasks** (read-only): Retrieves a list of tasks assigned to a specific employee for a particular project within a company's bamboohr account.
+- **Get Employee Table Rows** (read-only): Retrieves specific table data for a given employee from a company's bamboohr instance.
+- **Get employee time off policies** (read-only): Retrieves the time-off policies applicable to a specific employee within a bamboohr company account.
+- **Get payroll deductions by id** (read-only): Retrieves detailed information about a specific payroll deduction by its id for a given company in bamboohr.
+- **Get time off requests** (read-only): Retrieves a list of time off requests for a specific company in the bamboohr system.
+- **Get webhook by id** (read-only): Retrieves detailed information about a specific webhook registered in the bamboohr system.
+- **Get webhooks for company domain** (read-only): Retrieves a list of all webhooks configured for a specific company in bamboohr.
+- **Get whos out for company** (read-only): Retrieves a list of employees who are currently out of office or on leave within your organization.
+- **List benefit group employees** (read-only): Retrieves a list of employees associated with benefit groups within a specific bamboohr company instance.
+- **List employee goals filters** (read-only): Retrieves the available filters for an employee's performance goals in bamboohr.
+- **Modify employee withholding details**: This endpoint updates an employee's withholding information for tax purposes in the bamboohr system.
+- **Monitor webhook fields** (read-only): Retrieves a list of fields currently being monitored for webhook notifications in bamboohr.
+- **Post applicant comment**: This endpoint allows you to post a comment on a specific application in bamboohr's applicant tracking system.
+- **Post application status update**: Updates the status of a specific application in the bamboohr applicant tracking system.
+- **Post clock entries for time tracking**: The create clock entries endpoint allows you to add or update time tracking entries for employees in the bamboohr system.
+- **Post company login**: Authenticates a user with the bamboohr system, initiating a session for subsequent api calls.
+- **Post daily time tracking entries**: The addorupdatedailytimeentries endpoint allows you to create new or update existing daily time entries for employees in the bamboohr time…
+- **Post employee clock out**: This endpoint clocks out an employee in the bamboohr time tracking system, marking the end of their working hours.
+- **Post employee clock out datetime**: This endpoint records the clock-out time for a specific employee in the bamboohr time tracking system.
+- **Post employee paystub details**: Creates a new employee pay stub in the bamboohr system.
+- **Post employee table row update**: Updates a specific row in a custom table for an individual employee in bamboohr.
+- **Post employee training record**: This endpoint allows you to create a new training record for a specific employee in the bamboohr system.
+- **Post training category via domain**: Creates a new training category in the bamboohr system.
+- **Post training object for a company domain**: Creates a new training type in the bamboohr system with specified attributes and settings.
+- **Reopen employee goal**: Reopens a previously closed or completed goal for a specific employee in the bamboohr performance management system.
+- **Request employee time off**: This endpoint allows you to add or update a time off request for a specific employee in bamboohr.
+- **Retrieve all benefits deduction types** (read-only): Retrieves a comprehensive list of all deduction types configured in the bamboohr system for a specific company.
+- **Retrieve applicant location data** (read-only): Retrieves a list of locations associated with the applicant tracking system for a specific bamboohr company account.
+- **Retrieve benefit group plan costs** (read-only): Retrieves the costs associated with benefit group plans for a specific company in bamboohr.
+- **Retrieve benefit group plans** (read-only): Retrieves a list of benefit group plans for a specified company in bamboohr.
+- **Retrieve benefit plan coverage data** (read-only): Retrieves detailed information about benefit plan coverages for employees within a specific bamboohr company environment.
+- **Retrieve benefit plans by company domain** (read-only): Retrieves a list of benefit plans available for the specified company in bamboohr.
+- **Retrieve company benefit by id** (read-only): Retrieves detailed information about a specific company benefit offered by an organization using bamboohr.
+- **Retrieve company benefit type** (read-only): Retrieves a list of company benefit types available in the specified bamboohr company account.
+- **Retrieve company benefits** (read-only): Retrieves a comprehensive list of company-wide benefits offered by the organization as configured in bamboohr.
+- **Retrieve employee benefit filters** (read-only): Retrieves employee benefit information based on specified filters.
+- **Retrieve employee deduction details** (read-only): Retrieves detailed information about a specific employee deduction within a bamboohr company account.
+- **Retrieve employee dependent by id** (read-only): Retrieves detailed information about a specific employee's dependent in bamboohr.
+- **Retrieve employee dependents by company domain** (read-only): Retrieves a list of dependents for all employees in the company.
+- **Retrieve employee direct deposit account by id** (read-only): Retrieves detailed information about a specific employee's direct deposit account within a bamboohr company instance.
+- **Retrieve employee file by id** (read-only): Retrieves a specific file associated with an employee from the bamboohr system.
+- **Retrieve employee goal comments** (read-only): Retrieves comments associated with a specific goal for a particular employee within a company's bamboohr environment.
+- **Retrieve employee goal filters** (read-only): Retrieves the available filters for an employee's performance goals in bamboohr.
+- **Retrieve employee performance options** (read-only): Retrieves the list of employees with whom a specific employee's goals can be shared within bamboohr.
+- **Retrieve employee plan by id** (read-only): Retrieves detailed information about a specific employee plan within a company's bamboohr system.
+- **Retrieve employee project assignments** (read-only): Retrieves a list of time tracking projects assigned to a specific employee within a bamboohr company environment.
+- **Retrieve employee time off policies** (read-only): Retrieves the time off policies applicable to a specific employee within a bamboohr company.
+- **Retrieve employee timesheet data** (read-only): Retrieves a specific timesheet for a given employee within a bamboohr company environment.
+- **Retrieve employee training record** (read-only): Retrieves the training record for a specific employee within a bamboohr company account.
+- **Retrieve employee unpaid pay stubs by id** (read-only): Retrieves the unpaid pay stubs for a specific employee within a company's bamboohr account.
+- **Retrieve file by id** (read-only): Retrieves a specific employee file from the bamboohr system.
+- **Retrieve goals for employee performance** (read-only): Retrieves the performance goals for a specific employee within a company's bamboohr account.
+- **Retrieve meta fields for domain** (read-only): Retrieves metadata about available fields in the bamboohr api for a specific company.
+- **Retrieve meta lists** (read-only): Retrieves metadata about reference lists available in a company's bamboohr instance.
+- **Retrieve meta tables for companydomain** (read-only): Retrieves metadata information about the tables available in the bamboohr system for a specific company.
+- **Retrieve time off types** (read-only): Retrieves a list of available time off types for a specific company in bamboohr.
+- **Retrieve time tracking record by id** (read-only): Retrieves a specific time tracking record from bamboohr based on the provided company domain and record id.
+- **Retrieve timesheet entries** (read-only): Retrieves timesheet entries for a specific company in bamboohr.
+- **Retrieve timesheets using company domain** (read-only): Retrieves specific timesheet data from the bamboohr time tracking system.
+- **Retrieve user meta information** (read-only): Retrieves metadata about users within a specific company's bamboohr instance.
+- **Retrieve webhook log by id** (read-only): Retrieves the log entries for a specific webhook in a company's bamboohr instance.
+- **Share employee goal with others**: Updates the list of employees with whom a specific performance goal is shared in bamboohr.
+- **Store hour entries**: This endpoint allows you to store or update multiple time tracking hour entries for employees in bamboohr.
+- **Store time tracking clock entries**: The "store time tracking clock entries" endpoint allows you to create or update multiple time tracking entries for employees in bamboohr.
+- **Submit candidate application**: This endpoint creates a new job application in the bamboohr applicant tracking system.
+- **Update company benefit details**: Updates an existing company benefit in the bamboohr system.
+- **Update company file details**: Updates an existing company file in bamboohr, allowing modifications to the file's metadata such as name, category, and employee sharing…
+- **Update employee dependent details**: The updateemployeedependent endpoint allows you to modify the information of an existing employee dependent in the bamboohr system.
+- **Update employee goal**: Updates an existing employee goal in the bamboohr system.
+- **Update employee goal comment**: Updates a specific comment on an employee's goal in bamboohr's performance management system.
+- **Update employee goal progress**: Updates the progress of a specific employee's goal in bamboohr.
+- **Update employee goal with milestones**: This endpoint updates an existing employee goal with milestones in the bamboohr performance management system.
+- **Update employee specific file**: Updates an existing file associated with a specific employee in the bamboohr system.
+- **Update employee table row**: This endpoint allows you to update a specific row in an employee's table within bamboohr.
+- **Update employee table row by id**: Updates a specific row in a table associated with an employee's record in bamboohr.
+- **Update employee table row info**: This endpoint updates a specific row in an employee's table within bamboohr.
+- **Update employee time off history**: Adds a new time off history item to an employee's record in bamboohr.
+- **Update employee training record**: The updateemployeetrainingrecord endpoint allows you to update an existing training record for a specific employee in the bamboohr system.
+- **Update time off request status**: This endpoint updates the status of a specific time-off request in bamboohr.
+- **Update training category**: This endpoint allows you to update the name of an existing training category in bamboohr.
+- **Update training type by id**: Updates an existing training type in the bamboohr system.
+- **Update webhook for company domain**: Updates an existing webhook configuration in bamboohr.
+- **Upload employee file**: This endpoint allows you to upload a file to an employee's record in bamboohr.
+- **Upload employee photo by id**: Updates the photo for a specific employee in the bamboohr system.
+- **Upload file to company domain**: This endpoint allows you to upload files to the bamboohr system for a specific company.
+- **View company domain files** (read-only): The viewfile endpoint allows you to retrieve and view employee files stored in the bamboohr system.
+- **View employee files by id** (read-only): This endpoint allows you to view a specific file associated with an employee in the bamboohr system.

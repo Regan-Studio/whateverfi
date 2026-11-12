@@ -1,0 +1,101 @@
+# Clio Manage
+
+Clio Manage legal practice management for US, EU, Canada, and Australia accounts. Manage clients, matters, calendars, tasks, time, and billing.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/clio-manage/.
+
+## Actions
+
+- **Assign Task Template List**: Assign one Clio task template list to a matter, creating its tasks with assignee notifications disabled.
+- **Create Activity**: Create a Clio time or expense activity.
+- **Create Calendar**: Create a Clio custom calendar.
+- **Create Calendar Entry**: Create a Clio calendar entry.
+- **Create Communication**: Record a phone or email communication in Clio.
+- **Create Contact**: Create a Clio person or company, including new email addresses and phone numbers.
+- **Create Document Template**: Upload one non-sensitive file directly to Clio's documented multipart route and create a document template suitable for…
+- **Create Document Upload Initiation**: Create only the Clio document record and signed-upload initiation.
+- **Create Matter**: Create a Clio matter for a client.
+- **Create Matter Folder**: Create a subfolder inside a Clio Matter.
+- **Create Matter Note**: Create a note associated with a Clio Matter.
+- **Create Non-Empty Task Template List**: Create a Clio task-template list plus one to ten documented task templates, read it back to confirm it is non-empty, and clean up partial…
+- **Create Task**: Create a non-complete Clio task with assignee notifications disabled.
+- **Delete Activity**: Permanently delete one Clio time or expense activity by ID.
+- **Delete Bill**: Permanently delete an owned Draft or Pending Approval bill after exact ID, number, ETag, state, ownership, and confirmation checks.
+- **Delete Calendar**: Permanently delete one manually created Clio calendar after verifying it is an owner-controlled AdhocCalendar.
+- **Delete Calendar Entry**: Permanently delete a non-recurring Clio calendar entry or an explicitly scoped recurring occurrence, future sequence, or series.
+- **Delete Communication**: Permanently delete one recorded Clio communication after an exact-ID preflight and explicit confirmation.
+- **Delete Contact**: Permanently delete one Clio contact by ID.
+- **Delete Document**: Move a Clio document to trash after an exact ID-and-name preflight and explicit confirmation.
+- **Delete Document Template**: Permanently delete a Clio document template after an exact ID-and-filename preflight and explicit confirmation.
+- **Delete Folder**: Move a non-root, unlocked Clio folder to trash after an exact ID-and-name preflight and explicit confirmation.
+- **Delete Matter**: Permanently delete one Clio matter by ID.
+- **Delete Note**: Permanently delete one Clio note after an exact-ID preflight and explicit confirmation.
+- **Delete Task**: Permanently delete one Clio task by ID.
+- **Delete Task Template List**: Permanently delete a Clio task-template list after an exact ID-and-name preflight and explicit confirmation.
+- **Download Document** (read-only): Download the latest or a specified Clio document version as a managed file.
+- **Find Bill** (read-only): Exhaustively find Clio bills by exact client, matter, bill number, and state criteria.
+- **Find Company Contact** (read-only): Exhaustively find exact Clio company contacts without choosing an arbitrary duplicate.
+- **Find Contact by Custom Field** (read-only): Validate a Clio Contact custom field, exhaustively search its exact typed value, and report duplicate ambiguity.
+- **Find Matter** (read-only): Find by matter_id alone, or exhaustively search using display_number, description, or client_reference, optionally narrowed by client_id…
+- **Find Matter by Custom Field** (read-only): Validate a dynamic Matter custom field, exhaustively scan all exact provider candidates, and report zero, one, or every ambiguous exact…
+- **Find Newest Matter by Client Email** (read-only): Resolve exactly one contact by exact email, exhaust all of that client's matters, and select the greatest created_at with greatest ID as…
+- **Find or Create Company Contact**: Exhaustively preflight a Clio company identity using email or a complete custom-field ID/value pair, create only when absent, then…
+- **Find or Create Matter**: Choose either client_id or client_email, not both, plus client_reference or a complete custom-field ID/value pair.
+- **Find or Create Person Contact**: Exhaustively preflight a Clio person identity using email or a complete custom-field ID/value pair, create only when absent, then…
+- **Find Person Contact** (read-only): Exhaustively find exact Clio person contacts without choosing an arbitrary duplicate.
+- **Find User** (read-only): Find one Clio user using a single selector.
+- **Generate Document From Template**: Create a Clio document automation, then poll its documented status endpoint within the caller's bounded interval and timeout.
+- **Get Activity** (read-only): Get one Clio time or expense activity by ID, including billing state and its user and matter references.
+- **Get Bill** (read-only): Get one Clio bill with its ETag, lifecycle state, permitted transitions, and concrete financial totals.
+- **Get Calendar** (read-only): Get one Clio calendar by ID, including its type, permission, visibility, source, and colors.
+- **Get Calendar Entry** (read-only): Get one Clio calendar entry or expanded recurring occurrence by ID with recurrence, attendee, owner, and matter details.
+- **Get Communication** (read-only): Retrieve one recorded Clio communication.
+- **Get Contact** (read-only): Get one Clio person or company by its known ID, including primary and structured email and phone details.
+- **Get Current User** (read-only): Return the authenticated Clio user and role information for identity checks and default user references.
+- **Get Document** (read-only): Get one Clio document and its latest-version metadata by ID.
+- **Get Folder** (read-only): Retrieve one Clio folder by ID.
+- **Get Matter** (read-only): Get one Clio matter by ID with lifecycle, client, staffing, practice area, dates, and billing method.
+- **Get Matter Client** (read-only): Retrieve the client contact for one Clio matter.
+- **Get Note** (read-only): Retrieve one Clio matter or contact note.
+- **Get Task** (read-only): Get one Clio task by its known ID, including description, status, due date, priority, assignee, matter, and completion-notification state.
+- **Get User** (read-only): Get one Clio firm user by ID with identity, account role, locale, time zone, and default calendar information.
+- **List Activity Descriptions** (read-only): List selectable Clio activity descriptions and resolved rates for time entries.
+- **List Calendars** (read-only): List visible or writable Clio calendars to resolve the owner ID for calendar entries.
+- **List Communications** (read-only): Return one bounded page of recorded Clio email or phone communications.
+- **List Contact Email Addresses** (read-only): Return one bounded page of email addresses for a Clio contact.
+- **List Contact Phone Numbers** (read-only): Return one bounded page of phone numbers for a Clio contact.
+- **List Document Automations** (read-only): Return one bounded page of Clio document-generation automations.
+- **List Document Templates** (read-only): List Clio document templates and IDs for document automation.
+- **List Documents** (read-only): Return one bounded provider page of Clio documents.
+- **List Expense Categories** (read-only): List selectable Clio expense categories and rates for expense entries.
+- **List Folder Contents** (read-only): Return one bounded page of Clio documents and folders, optionally below a parent folder.
+- **List Folders** (read-only): Return one bounded page of Clio folders using documented filters.
+- **List Groups** (read-only): List Clio groups and IDs for matter assignments and user grouping.
+- **List Matter Contacts** (read-only): Return one bounded page of Clio matter-contact association records, including association ID and ETag, relationship label, is_client,…
+- **List Matter Protected Funds** (read-only): Return one bounded page of protected funds for a Clio matter.
+- **List Matter Related Contacts** (read-only): Return one bounded page of Clio related-contact relationship records, including relationship ID, contact_id, and whether the contact is…
+- **List Matter Stages** (read-only): List Clio matter stages and practice-area associations for selecting a matter stage.
+- **List Notes** (read-only): Return one bounded page of Clio matter or contact notes.
+- **List Practice Areas** (read-only): List Clio practice areas and IDs for matter and task-template selection.
+- **List Task Template Lists** (read-only): List Clio task template lists and IDs for assigning templates to matters.
+- **List Users** (read-only): List Clio users available for attorney, staff, task-assignee, and activity-user references.
+- **Preview Bill** (read-only): Render one Clio bill as HTML, cap the response at 2 MB, and offload it as a file instead of returning active HTML inline.
+- **Search Activities** (read-only): Search and filter Clio activities, including multiple activity IDs, one page at a time.
+- **Search Calendar Entries** (read-only): Search Clio calendar entries by time window, text, calendar, matter, or ID, one page at a time.
+- **Search Contacts** (read-only): Search and filter Clio contacts, including multiple contact IDs, one page at a time.
+- **Search Matters** (read-only): Search and filter Clio matters, including multiple matter IDs, one page at a time.
+- **Search Tasks** (read-only): Search and filter Clio tasks, including multiple task IDs, one page at a time.
+- **Start Document From Template**: Start Clio's asynchronous create-document-from-template generation and return the automation ID, current state, and any documents already…
+- **Transition Bill State**: Irreversibly transition a bill to paid, void, or deleted only after exact identity, ETag, expected current state, available transition,…
+- **Update Activity**: Update at least one field on an existing Clio time or expense activity, optionally using its ETag as a concurrency precondition.
+- **Update Bill**: Update ordinary bill presentation, financial, tax, discount, or interest fields using the required current ETag.
+- **Update Calendar**: Update at least one of an existing Clio calendar's name, color, source, or visibility after reading its current ETag.
+- **Update Calendar Entry**: Update at least one field on a Clio calendar entry without sending calendar notifications.
+- **Update Communication**: Update a recorded Clio communication using its current ETag, including explicitly confirmed irreversible deletion of external properties.
+- **Update Contact**: Update at least one field on a Clio person or company, including adding or updating nested email and phone records.
+- **Update Document Metadata**: Update only Clio document metadata with an If-Match ETag.
+- **Update Folder**: Rename, move, recategorize, or restore a Clio folder, and add, change, or explicitly and irreversibly delete external properties, using…
+- **Update Matter**: Update at least one field on an existing Clio matter, optionally using its ETag for concurrency safety.
+- **Update Note**: Update a Clio note using its current ETag.
+- **Update Task**: Update at least one field on an existing Clio task.
+- **Void Bill**: Irreversibly void an Unpaid bill after exact ID, number, ETag, state, and confirmation checks.

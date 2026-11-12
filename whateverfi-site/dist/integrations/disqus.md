@@ -1,0 +1,156 @@
+# Disqus
+
+Disqus is a discussion and community platform for managing forums, threads, posts, users, moderation, and organization settings.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/disqus/.
+
+## Actions
+
+- **Add Blacklist Entry**: Adds an entry to the blacklist.
+- **Add Forum Moderator**: Adds a moderator to a forum.
+- **Add Organization Admin**: Adds an admin to an organization.
+- **Add Whitelist Entry**: Adds an entry to the whitelist.
+- **Approve Posts**: Approves the requested post(s).
+- **Approve Thread**: Approve the specified moderated threads.
+- **Award Badge**: Used to award badges to users manually.
+- **Backfill Blacklist Counters**: Triggers Disqus's parameterless blacklist-counter backfill endpoint.
+- **Ban Post Author From Forum**: Ban the author of a post using the selected user, email, IP, shadow-ban, and retroactive-action options.
+- **Bulk Create Internal Forum Action History**: Creates many ActionHistory rows for backfilling from a JSON-encoded list of row dictionaries.
+- **Check And Update Username**: Updates username for the user, fails if username does not meet requirements, or is taken by another user.
+- **Close Threads**: Closes a thread.
+- **Create Category**: Creates a new category.
+- **Create Forum**: Creates a new forum.
+- **Create Forum Trusted Domain**: Adds a trusted domain to a forum Caveats.
+- **Create Internal Forum Action History**: Creates an ActionHistory row for backfilling.
+- **Create Post**: Creates a new post as the authenticated OAuth user.
+- **Create Thread**: Creates a new thread.
+- **Create Thread Reaction Images**: Used to save custom reactions that an admin creates Caveats.
+- **Delete Internal Forum Action History**: Deletes an ActionHistory row for backfilling.
+- **Delete Sso User**: Deletes an SSO user account and their comment history.
+- **Delete Thread Reaction Images**: Used to delete custom reactions of a forum Caveats.
+- **Disable Forum Ads**: Disable advertising for the specified forum.
+- **Dismiss Aet Banner**: Records the authenticated user's dismissal of the AET banner for a forum, changing that user's banner state.
+- **Export Aet Optouts**: Export opt-out records collected for a forum, either all records or those since the last partial export.
+- **Export Aet Subscribers**: Export subscribed users in either csv or json format.
+- **Export Forum**: Start an export for the specified forum.
+- **Export Organization Audit Log**: Export the audit log for the specified organization.
+- **Follow Forum**: Follow a forum.
+- **Follow User**: Follow a user.
+- **Generate Interesting Forum Content**: Internal only endpoint that causes the interesting content (forums) to be generated, but not returned.
+- **Get Application Usage** (read-only): Returns the API usage per day for this application.
+- **Get Category** (read-only): Returns category details.
+- **Get Customer Pulse Metadata** (read-only): Returns Customer Pulse metadata available to the authenticated application.
+- **Get Customer Pulse Segment** (read-only): Returns a bounded Customer Pulse segment snapshot available to the authenticated application.
+- **Get Forum** (read-only): Returns forum details.
+- **Get Forum Behind Click Setting** (read-only): Returns forum custom behind-a-click settings Caveats.
+- **Get Forum Category** (read-only): Returns forum category details.
+- **Get Forum Reaction Config** (read-only): Used to load any configured reactions for the forum, and all active images belong to that forum.
+- **Get Import** (read-only): Return details for an import group.
+- **Get Organization Billing Information** (read-only): Returns billing information related to an organization.
+- **Get Organization Current Plan** (read-only): Return the current SaaS plan for an organization and product.
+- **Get Page By Thread** (read-only): Returns a page by thread id.
+- **Get Pending Aet Export** (read-only): Returns pending AET subscriber-export status for a forum.
+- **Get Pending Aet Optout Export** (read-only): Returns pending AET opt-out-export status for a forum.
+- **Get Post** (read-only): Returns information about a post.
+- **Get Post Context** (read-only): Returns the hierarchical tree of a post (all parents).
+- **Get Thread** (read-only): Returns thread details.
+- **Get Thread Ratings Summary** (read-only): Returns average and total ratings for a thread.
+- **Get Thread Reaction Default Images** (read-only): Returns the metadata of the default reactions.
+- **Get Threads By Ids** (read-only): Returns an unsorted set of threads given a list of ids.
+- **Get User** (read-only): Returns details of a user.
+- **List Awarded Badges** (read-only): Returns one page of awarded badges for the user.
+- **List Badges** (read-only): Used to load any configured badges for the forum.
+- **List Blacklist Entries** (read-only): Returns one page of blacklist entries.
+- **List Categories** (read-only): Returns one page of categories from the categories/list endpoint across the supplied forum IDs.
+- **List Categories In Forum** (read-only): Returns one page of categories from the forums/listCategories endpoint for one forum.
+- **List Category Posts** (read-only): Returns one page of posts within a category.
+- **List Category Threads** (read-only): Returns one page of threads within a category, sorted by creation date.
+- **List Classified Forums Needing Favicons** (read-only): Gets forums that are classified in tempest (primarily means has a high quality score and is in english) Caveats.
+- **List Forum Categories** (read-only): Returns a list of forum categories Caveats.
+- **List Forum Followers** (read-only): Returns one page of users following a forum.
+- **List Forum Moderators** (read-only): Returns a list of all moderators on a forum.
+- **List Forum Posts** (read-only): Returns one page of posts within a forum.
+- **List Forum Threads** (read-only): Returns one page of threads within a forum, sorted by creation date.
+- **List Forum Trusted Domains** (read-only): Returns a list of forum trusted domains Caveats.
+- **List Forum User Moderation History** (read-only): Returns one page of moderation history for a given user on a forum.
+- **List Hot Threads** (read-only): Returns a list of threads sorted by hotness (date and likes).
+- **List Imports** (read-only): Return one page of imports for a forum.
+- **List Interesting Forums** (read-only): Return forums selected by the interesting-forums action.
+- **List Interesting Users** (read-only): Returns a list of interesting users.
+- **List Most Active Forum Users** (read-only): Returns one page of users active within a forum, ordered by most comments made.
+- **List Most Liked Forum Users** (read-only): Returns one page of users active within a forum, ordered by most likes received.
+- **List Organization Roles** (read-only): List all users with elevated roles in an organization.
+- **List Pages** (read-only): Returns one page of category objects with hot-thread page data for forums in each category.
+- **List Popular Posts** (read-only): Returns one page of posts ordered by recent likes.
+- **List Popular Threads** (read-only): Returns a list of threads sorted by number of posts made since interval.
+- **List Post Moderation History** (read-only): Returns one page of moderation history for a given post.
+- **List Post Reporters** (read-only): Return users who reported the specified moderated posts.
+- **List Posts** (read-only): Returns one page of posts ordered by creation date.
+- **List Random Pages** (read-only): Returns a random list of category objects with page data of HotThreads for forums in that given category.
+- **List Saas Packages** (read-only): Return SaaS packages available to the specified organization.
+- **List Thread Posts** (read-only): Returns one page of posts within a thread.
+- **List Thread Reactions** (read-only): Used to load the configured reactions for a thread.
+- **List Threads** (read-only): Returns one page of threads sorted by creation date.
+- **List Trending Threads** (read-only): Returns a list of trending threads.
+- **List User Active Forums** (read-only): Returns one page of forums a user has been active on.
+- **List User Activity** (read-only): Returns one page of activity made by the user.
+- **List User Followers** (read-only): Returns one page of users following a user.
+- **List User Following** (read-only): Returns one page of users a user is following.
+- **List User Following Channels** (read-only): Returns one page of channels a user is following.
+- **List User Following Forums** (read-only): Returns one page of forums a user is following.
+- **List User Forums** (read-only): Returns one page of forums a user owns.
+- **List User Moderated Channels** (read-only): Returns one page of channels that the user moderates.
+- **List User Most Active Forums** (read-only): Returns forums a user has recently been active on, sorted by the user's activity.
+- **List User Owned Channels** (read-only): Returns one page of channels that the user owns.
+- **List User Posts** (read-only): Returns one page of posts made by the user.
+- **List Users Who Voted On Thread** (read-only): Returns a list of users that voted on this thread.
+- **List Whitelist Entries** (read-only): Returns one page of whitelist entries.
+- **Mark Posts As Spam**: Marks the requested post(s) as spam.
+- **Open Threads**: Opens a thread.
+- **Remove Badge**: Used to remove badges from users.
+- **Remove Blacklist Entry**: Removes an entry from the blacklist.
+- **Remove Forum Default Avatar**: Switches a forum to use the regular default avatar instead of a custom one Caveats.
+- **Remove Forum Moderator**: Removes a moderator from a forum.
+- **Remove Forum Trusted Domain**: Removes a trusted domain from a forum Caveats.
+- **Remove Organization Admin**: Removes an admin from an organization.
+- **Remove Posts**: Deletes the requested post(s).
+- **Remove Threads**: Removes a thread.
+- **Remove User Follower**: Remove a user from set of followers.
+- **Remove Whitelist Entry**: Removes an entry from the whitelist.
+- **Replace Forum Badges**: Used to update the configured badges for a forum.
+- **Report Post**: Reports a post (flagging).
+- **Report User**: Report the specified user for the selected reason.
+- **Restore Posts**: Undeletes the requested post(s).
+- **Restore Threads**: Calls Disqus's restore endpoint for the requested threads.
+- **Save Forum Thread Reaction Template**: Used to save a new configuration for thread reactions for a forum.
+- **Set Organization Role**: Add a user with an arbitrary role to an organization.
+- **Set Thread Reactions For Forum**: Enables thread reactions for a forum, or disables them when requested.
+- **Set Thread Reactions For Thread**: Disables thread reactions for a thread, or enables them when requested.
+- **Spam Thread**: Mark the specified moderated threads as spam.
+- **Subscribe Anonymous User To Aet**: Allows an anonymous user to subscribe to AET banner for a forum.
+- **Subscribe Organization To Saas**: Subscribe an organization to the specified SaaS pricing option, optionally using a coupon or activation code.
+- **Subscribe Thread**: Subscribe the authenticated user to a thread.
+- **Subscribe To Aet**: Allows an authenticated user to subscribe to AET for a forum.
+- **Suggest Posts** (read-only): Return Apothecary suggestions for the specified posts.
+- **Toggle Badge Award Visibility**: Used to toggle the hidden status of a badge award across Disqus for a user Caveats.
+- **Unfollow Forum**: Unfollow a forum.
+- **Unfollow User**: Unfollow a user.
+- **Unsubscribe Organization From Saas**: Unsubscribe an organization from a SaaS product, immediately or at the documented default time.
+- **Unsubscribe Thread**: Unsubscribe the authenticated user from a thread.
+- **Update Forum**: Updates forum details.
+- **Update Forum Behind Click Setting**: Sets the forum custom behind-a-click settings Caveats.
+- **Update Forum Default Avatar**: Automatically crops avatar to the largest centered square and saves as the forum's default avatar.
+- **Update Forum Favicon**: Update the favicon for the specified forum.
+- **Update Internal Forum Action History**: Updates an ActionHistory row for backfilling.
+- **Update Organization Invoice Information**: Update information that appears in invoices we send to customers for stripe charges.
+- **Update Organization Payment Information**: Update an organization's payment information using the supplied payment token.
+- **Update Post**: Updates information on a post.
+- **Update Sso User Profile**: Updates SSO user profile attributes.
+- **Update Thread**: Updates information on a thread.
+- **Update Topic**: Update the specified topic using the documented topic fields.
+- **Update User Profile**: Updates user profile.
+- **Validate Forum Settings** (read-only): Validate the documented settings for a moderator-managed forum.
+- **Validate Organization Coupon** (read-only): Looks up a coupon string and validates against redeem_by and max_redemptions using CouponValidator.
+- **Vote Post**: Register a vote on a post.
+- **Vote Thread**: Register a vote on a thread.
+- **Vote Thread Reaction**: Used to vote on a reaction.

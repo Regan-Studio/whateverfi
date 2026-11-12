@@ -1,0 +1,460 @@
+# Twilio
+
+Use shared API_KEY credentials for production account REST and all 45 triggers; per-connection BASIC for account administration and cross-account tools; or account S2S OAuth for mapped actions.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/twilio/.
+
+## Actions
+
+- **Create Access Token**: Create a new enrollment Access Token for the Entity
+- **Create Account**: Create a new Twilio Subaccount from the account making the request
+- **Create Address**: Create Address using the Twilio api_v2010 REST API.
+- **Create Alpha Sender**: Create Alpha Sender using the Twilio messaging_v1 REST API.
+- **Create Application**: Create a new application within your account
+- **Create Brand Registration Otp**: Create Brand Registration Otp using the Twilio messaging_v1 REST API.
+- **Create Brand Registrations**: Create Brand Registrations using the Twilio messaging_v1 REST API.
+- **Create Brand Vetting**: Create Brand Vetting using the Twilio messaging_v1 REST API.
+- **Create Bucket**: Create a new Bucket for a Rate Limit
+- **Create Bulk Eligibility**: Create a bulk eligibility check for a set of numbers that you want to host in Twilio.
+- **Create Call**: Create a new outgoing call to phones, SIP-enabled endpoints or Twilio Client connections
+- **Create Call Recording**: Create a recording for the call
+- **Create Challenge**: Create a new Challenge for the Factor
+- **Create Challenge Passkeys**: Create a Passkeys Challenge
+- **Create Channel Sender**: Create Channel Sender using the Twilio messaging_v1 REST API.
+- **Create Configuration Address**: Create a new address configuration
+- **Create Conversation**: Create a new conversation in your account's default service
+- **Create Conversation Message**: Add a new message to the conversation
+- **Create Conversation Participant**: Add a new participant to the conversation
+- **Create Conversation Scoped Webhook**: Create a new webhook scoped to the conversation
+- **Create Conversation With Participants**: Create a new conversation with the list of participants in your account's default service
+- **Create Credential**: Add a new push notification credential to your account
+- **Create Destination Alpha Sender**: Create Destination Alpha Sender using the Twilio messaging_v1 REST API.
+- **Create Eligibility**: Create an eligibility check for a number that you want to host in Twilio.
+- **Create Entity**: Create a new Entity for the Service
+- **Create Execution**: Triggers a new Execution for the Flow
+- **Create External Campaign**: Create External Campaign using the Twilio messaging_v1 REST API.
+- **Create Flow**: Create a Flow.
+- **Create Incoming Phone Number**: Purchase a phone-number for the account.
+- **Create Incoming Phone Number Assigned Add On**: Assign an Add-on installation to the Number specified.
+- **Create Incoming Phone Number Local**: Create Incoming Phone Number Local using the Twilio api_v2010 REST API.
+- **Create Incoming Phone Number Mobile**: Create Incoming Phone Number Mobile using the Twilio api_v2010 REST API.
+- **Create Incoming Phone Number Toll Free**: Create Incoming Phone Number Toll Free using the Twilio api_v2010 REST API.
+- **Create Linkshortening Messaging Service**: Create Linkshortening Messaging Service using the Twilio messaging_v1 REST API.
+- **Create Message**: Send a message
+- **Create Message Feedback**: Create Message Feedback to confirm a tracked user action was performed by the recipient of the associated Message
+- **Create Messaging Configuration**: Create a new MessagingConfiguration for a service.
+- **Create New Factor**: Create a new Factor for the Entity
+- **Create New Factor Passkey**: Create a new Passkeys Factor for the Entity
+- **Create New Key**: Create New Key using the Twilio api_v2010 REST API.
+- **Create New Signing Key**: Create a new Signing Key for the account making the request.
+- **Create Notification**: Create a new Notification for the corresponding Challenge
+- **Create Participant**: Create Participant using the Twilio api_v2010 REST API.
+- **Create Payments**: create an instance of payments.
+- **Create Phone Number**: Create Phone Number using the Twilio messaging_v1 REST API.
+- **Create Porting Port In**: Allows to create a new port in request
+- **Create Porting Webhook Configuration**: Create a Webhook Configuration
+- **Create Queue**: Create a queue
+- **Create Rate Limit**: Create a new Rate Limit for a Service
+- **Create Realtime Transcription**: Create a Transcription
+- **Create Role**: Create a new user role in your account's default service
+- **Create Safelist**: Add a new phone number to SafeList.
+- **Create Sender Id Registration**: Creates a new sender ID registration and initializes an embedded Persona inquiry session.
+- **Create Sender Id Registration Embedded Session**: Creates a new embedded Persona inquiry session for an existing registration in DRAFT or TWILIO_REJECTED status.
+- **Create Service**: Create a new conversation service on your account
+- **Create Service**: Create Service using the Twilio messaging_v1 REST API.
+- **Create Service**: Create a new Verification Service.
+- **Create Service Conversation**: Create a new conversation in your service
+- **Create Service Conversation Message**: Add a new message to the conversation in a specific service
+- **Create Service Conversation Participant**: Add a new participant to the conversation in a specific service
+- **Create Service Conversation Scoped Webhook**: Create a new webhook scoped to the conversation in a specific service
+- **Create Service Conversation With Participants**: Create a new conversation with the list of participants in your account's default service
+- **Create Service Role**: Create a new user role in your service
+- **Create Service User**: Add a new conversation user to your service
+- **Create Short Code**: Create Short Code using the Twilio messaging_v1 REST API.
+- **Create Signing Request Configuration**: Synchronous operation to insert or update a configuration for the customer.
+- **Create Sip Auth Calls Credential List Mapping**: Create a new credential list mapping resource
+- **Create Sip Auth Calls Ip Access Control List Mapping**: Create a new IP Access Control List mapping
+- **Create Sip Auth Registrations Credential List Mapping**: Create a new credential list mapping resource
+- **Create Sip Credential**: Create a new credential resource.
+- **Create Sip Credential List**: Create a Credential List
+- **Create Sip Credential List Mapping**: Create a CredentialListMapping resource for an account.
+- **Create Sip Domain**: Create a new Domain
+- **Create Sip Ip Access Control List**: Create a new IpAccessControlList resource
+- **Create Sip Ip Access Control List Mapping**: Create a new IpAccessControlListMapping resource.
+- **Create Sip Ip Address**: Create a new IpAddress resource.
+- **Create Siprec**: Create a Siprec
+- **Create Sms Verification**: Initiate SMS verification for a caller ID
+- **Create Sms Verification Check**: Check SMS verification code
+- **Create Stream**: Create a Stream
+- **Create Token**: Create a new token for ICE servers
+- **Create Tollfree Verification**: Create a tollfree verification
+- **Create Us App To Person**: Create Us App To Person using the Twilio messaging_v1 REST API.
+- **Create Usage Trigger**: Create a new UsageTrigger
+- **Create User**: Add a new conversation user to your account's default service
+- **Create User Defined Message**: Create a new User Defined Message for the given Call SID.
+- **Create User Defined Message Subscription**: Subscribe to User Defined Messages for a given Call SID.
+- **Create Validation Request**: Create Validation Request using the Twilio api_v2010 REST API.
+- **Create Verification**: Create a new Verification using a Service
+- **Create Verification Check**: challenge a specific Verification Check.
+- **Create Voice Verification**: Initiate voice verification for a caller ID
+- **Create Webhook**: Create a new Webhook for the Service
+- **Delete Address**: Delete Address using the Twilio api_v2010 REST API.
+- **Delete Alpha Sender**: Delete Alpha Sender using the Twilio messaging_v1 REST API.
+- **Delete Application**: Delete the application by the specified application sid
+- **Delete Bucket**: Delete a specific Bucket.
+- **Delete Call**: Delete a Call record from your account.
+- **Delete Call Recording**: Delete a recording from your account
+- **Delete Channel Sender**: Delete Channel Sender using the Twilio messaging_v1 REST API.
+- **Delete Conference Recording**: Delete a recording from your account
+- **Delete Configuration Address**: Remove an existing address configuration
+- **Delete Conversation**: Remove a conversation from your account's default service
+- **Delete Conversation Message**: Remove a message from the conversation
+- **Delete Conversation Participant**: Remove a participant from the conversation
+- **Delete Conversation Scoped Webhook**: Remove an existing webhook scoped to the conversation
+- **Delete Credential**: Remove a push notification credential from your account
+- **Delete Destination Alpha Sender**: Delete Destination Alpha Sender using the Twilio messaging_v1 REST API.
+- **Delete Domain Cert V4**: Delete Domain Cert V4 using the Twilio messaging_v1 REST API.
+- **Delete Entity**: Delete a specific Entity.
+- **Delete Execution**: Delete the Execution and all Steps relating to it.
+- **Delete Factor**: Delete a specific Factor.
+- **Delete Flow**: Delete a specific Flow.
+- **Delete Incoming Phone Number**: Delete a phone-numbers belonging to the account used to make the request.
+- **Delete Incoming Phone Number Assigned Add On**: Remove the assignment of an Add-on installation from the Number specified.
+- **Delete Key**: Delete Key using the Twilio api_v2010 REST API.
+- **Delete Linkshortening Messaging Service**: Delete Linkshortening Messaging Service using the Twilio messaging_v1 REST API.
+- **Delete Media**: Delete the Media resource.
+- **Delete Message**: Deletes a Message resource from your account
+- **Delete Messaging Configuration**: Delete a specific MessagingConfiguration.
+- **Delete Outgoing Caller Id**: Delete the caller-id specified from the account
+- **Delete Participant**: Kick a participant from a given conference
+- **Delete Phone Number**: Delete Phone Number using the Twilio messaging_v1 REST API.
+- **Delete Porting Port In**: Allows to cancel a port in request by SID
+- **Delete Porting Port In Phone Number**: Allows to cancel a port in request phone number by SID
+- **Delete Porting Webhook Configuration Delete**: Allows the client to delete a webhook configuration.
+- **Delete Queue**: Remove an empty queue
+- **Delete Rate Limit**: Delete a specific Rate Limit.
+- **Delete Recording**: Delete a recording from your account
+- **Delete Recording Add On Result**: Delete a result and purge all associated Payloads
+- **Delete Recording Add On Result Payload**: Delete a payload from the result along with all associated Data
+- **Delete Recording Transcription**: Delete Recording Transcription using the Twilio api_v2010 REST API.
+- **Delete Role**: Remove a user role from your account's default service
+- **Delete Safelist**: Remove a phone number from SafeList.
+- **Delete Service**: Remove a conversation service with all its nested resources from your account
+- **Delete Service**: Delete Service using the Twilio messaging_v1 REST API.
+- **Delete Service**: Delete a specific Verification Service Instance.
+- **Delete Service Binding**: Remove a push notification binding from the conversation service
+- **Delete Service Conversation**: Remove a conversation from your service
+- **Delete Service Conversation Message**: Remove a message from the conversation
+- **Delete Service Conversation Participant**: Remove a participant from the conversation
+- **Delete Service Conversation Scoped Webhook**: Remove an existing webhook scoped to the conversation
+- **Delete Service Role**: Remove a user role from your service
+- **Delete Service User**: Remove a conversation user from your service
+- **Delete Service User Conversation**: Delete a specific User Conversation.
+- **Delete Short Code**: Delete Short Code using the Twilio messaging_v1 REST API.
+- **Delete Signing Key**: Delete Signing Key using the Twilio api_v2010 REST API.
+- **Delete Sip Auth Calls Credential List Mapping**: Delete a credential list mapping from the requested domain
+- **Delete Sip Auth Calls Ip Access Control List Mapping**: Delete an IP Access Control List mapping from the requested domain
+- **Delete Sip Auth Registrations Credential List Mapping**: Delete a credential list mapping from the requested domain
+- **Delete Sip Credential**: Delete a credential resource.
+- **Delete Sip Credential List**: Delete a Credential List
+- **Delete Sip Credential List Mapping**: Delete a CredentialListMapping resource from an account.
+- **Delete Sip Domain**: Delete an instance of a Domain
+- **Delete Sip Ip Access Control List**: Delete an IpAccessControlList from the requested account
+- **Delete Sip Ip Access Control List Mapping**: Delete an IpAccessControlListMapping resource.
+- **Delete Sip Ip Address**: Delete an IpAddress resource.
+- **Delete Tollfree Verification**: Delete a tollfree verification
+- **Delete Transcription**: Delete a transcription from the account used to make the request
+- **Delete Us App To Person**: Delete Us App To Person using the Twilio messaging_v1 REST API.
+- **Delete Usage Trigger**: Delete Usage Trigger using the Twilio api_v2010 REST API.
+- **Delete User**: Remove a conversation user from your account's default service
+- **Delete User Conversation**: Delete a specific User Conversation.
+- **Delete User Defined Message Subscription**: Delete a specific User Defined Message Subscription.
+- **Delete Webhook**: Delete a specific Webhook.
+- **Fetch Access Token** (read-only): Fetch an Access Token for the Entity
+- **Fetch Account** (read-only): Fetch the account specified by the provided Account Sid
+- **Fetch Address** (read-only): Fetch Address using the Twilio api_v2010 REST API.
+- **Fetch Alpha Sender** (read-only): Fetch Alpha Sender using the Twilio messaging_v1 REST API.
+- **Fetch Application** (read-only): Fetch the application specified by the provided sid
+- **Fetch Authorized Connect App** (read-only): Fetch an instance of an authorized-connect-app
+- **Fetch Available Phone Number Country** (read-only): Fetch Available Phone Number Country using the Twilio api_v2010 REST API.
+- **Fetch Balance** (read-only): Fetch the balance for an Account based on Account Sid.
+- **Fetch Brand Registrations** (read-only): Fetch Brand Registrations using the Twilio messaging_v1 REST API.
+- **Fetch Brand Vetting** (read-only): Fetch Brand Vetting using the Twilio messaging_v1 REST API.
+- **Fetch Bucket** (read-only): Fetch a specific Bucket.
+- **Fetch Bulk Eligibility** (read-only): Fetch an eligibility bulk check that you requested to host in Twilio.
+- **Fetch Call** (read-only): Fetch the call specified by the provided Call SID
+- **Fetch Call Notification** (read-only): Fetch Call Notification using the Twilio api_v2010 REST API.
+- **Fetch Call Recording** (read-only): Fetch an instance of a recording for a call
+- **Fetch Challenge** (read-only): Fetch a specific Challenge.
+- **Fetch Channel Sender** (read-only): Fetch Channel Sender using the Twilio messaging_v1 REST API.
+- **Fetch Conference** (read-only): Fetch an instance of a conference
+- **Fetch Conference Recording** (read-only): Fetch an instance of a recording for a call
+- **Fetch Configuration** (read-only): Fetch the global configuration of conversations on your account
+- **Fetch Configuration Address** (read-only): Fetch an address configuration
+- **Fetch Configuration Webhook** (read-only): Fetch Configuration Webhook using the Twilio conversations_v1 REST API.
+- **Fetch Connect App** (read-only): Fetch an instance of a connect-app
+- **Fetch Conversation** (read-only): Fetch a conversation from your account's default service
+- **Fetch Conversation Message** (read-only): Fetch a message from the conversation
+- **Fetch Conversation Message Receipt** (read-only): Fetch the delivery and read receipts of the conversation message
+- **Fetch Conversation Participant** (read-only): Fetch a participant of the conversation
+- **Fetch Conversation Scoped Webhook** (read-only): Fetch the configuration of a conversation-scoped webhook
+- **Fetch Credential** (read-only): Fetch a push notification credential from your account
+- **Fetch Deactivation** (read-only): Fetch a list of all United States numbers that have been deactivated on a specific date.
+- **Fetch Destination Alpha Sender** (read-only): Fetch Destination Alpha Sender using the Twilio messaging_v1 REST API.
+- **Fetch Domain Cert V4** (read-only): Fetch Domain Cert V4 using the Twilio messaging_v1 REST API.
+- **Fetch Domain Config** (read-only): Fetch Domain Config using the Twilio messaging_v1 REST API.
+- **Fetch Domain Config Messaging Service** (read-only): Fetch Domain Config Messaging Service using the Twilio messaging_v1 REST API.
+- **Fetch Domain Dns Validation** (read-only): Fetch Domain Dns Validation using the Twilio messaging_v1 REST API.
+- **Fetch Entity** (read-only): Fetch a specific Entity.
+- **Fetch Execution** (read-only): Retrieve an Execution
+- **Fetch Execution Context** (read-only): Retrieve the most recent context for an Execution.
+- **Fetch Execution Step** (read-only): Retrieve a Step.
+- **Fetch Execution Step Context** (read-only): Retrieve the context for an Execution Step.
+- **Fetch Factor** (read-only): Fetch a specific Factor.
+- **Fetch Flow** (read-only): Retrieve a specific Flow.
+- **Fetch Flow Revision** (read-only): Retrieve a specific Flow revision.
+- **Fetch Form** (read-only): Fetch the forms for a specific Form Type.
+- **Fetch Incoming Phone Number** (read-only): Fetch an incoming-phone-number belonging to the account used to make the request.
+- **Fetch Incoming Phone Number Assigned Add On** (read-only): Fetch an instance of an Add-on installation currently assigned to this Number.
+- **Fetch Incoming Phone Number Assigned Add On Extension** (read-only): Fetch an instance of an Extension for the Assigned Add-on.
+- **Fetch Key** (read-only): Fetch Key using the Twilio api_v2010 REST API.
+- **Fetch Linkshortening Messaging Service Domain Association** (read-only): Fetch Linkshortening Messaging Service Domain Association using the Twilio messaging_v1 REST API.
+- **Fetch Media** (read-only): Fetch a single Media resource associated with a specific Message resource
+- **Fetch Member** (read-only): Fetch a specific member from the queue
+- **Fetch Message** (read-only): Fetch a specific Message
+- **Fetch Messaging Configuration** (read-only): Fetch a specific MessagingConfiguration.
+- **Fetch Notification** (read-only): Fetch a notification belonging to the account used to make the request
+- **Fetch Outgoing Caller Id** (read-only): Fetch an outgoing-caller-id belonging to the account used to make the request
+- **Fetch Participant** (read-only): Fetch an instance of a participant
+- **Fetch Phone Number** (read-only): Fetch Phone Number using the Twilio messaging_v1 REST API.
+- **Fetch Porting Port In** (read-only): Fetch a port in request by SID
+- **Fetch Porting Port In Phone Number** (read-only): Fetch a phone number by port in request SID and phone number SID
+- **Fetch Porting Portability** (read-only): Check if a single phone number can be ported to Twilio
+- **Fetch Porting Webhook Configuration Fetch** (read-only): Allows to fetch the webhook configuration
+- **Fetch Queue** (read-only): Fetch an instance of a queue identified by the QueueSid
+- **Fetch Rate Limit** (read-only): Fetch a specific Rate Limit.
+- **Fetch Recording** (read-only): Fetch an instance of a recording
+- **Fetch Recording Add On Result** (read-only): Fetch an instance of an AddOnResult
+- **Fetch Recording Add On Result Payload** (read-only): Fetch an instance of a result payload
+- **Fetch Recording Add On Result Payload Data** (read-only): Fetch an instance of a result payload
+- **Fetch Recording Transcription** (read-only): Fetch Recording Transcription using the Twilio api_v2010 REST API.
+- **Fetch Role** (read-only): Fetch a user role from your account's default service
+- **Fetch Safelist** (read-only): Check if a phone number exists in SafeList.
+- **Fetch Service** (read-only): Fetch a conversation service from your account
+- **Fetch Service** (read-only): Fetch Service using the Twilio messaging_v1 REST API.
+- **Fetch Service** (read-only): Fetch specific Verification Service Instance.
+- **Fetch Service Binding** (read-only): Fetch a push notification binding from the conversation service
+- **Fetch Service Configuration** (read-only): Fetch the configuration of a conversation service
+- **Fetch Service Conversation** (read-only): Fetch a conversation from your service
+- **Fetch Service Conversation Message** (read-only): Fetch a message from the conversation
+- **Fetch Service Conversation Message Receipt** (read-only): Fetch the delivery and read receipts of the conversation message
+- **Fetch Service Conversation Participant** (read-only): Fetch a participant of the conversation
+- **Fetch Service Conversation Scoped Webhook** (read-only): Fetch the configuration of a conversation-scoped webhook
+- **Fetch Service Notification** (read-only): Fetch push notification service settings
+- **Fetch Service Role** (read-only): Fetch a user role from your service
+- **Fetch Service User** (read-only): Fetch a conversation user from your service
+- **Fetch Service User Conversation** (read-only): Fetch a specific User Conversation.
+- **Fetch Service Webhook Configuration** (read-only): Fetch a specific service webhook configuration.
+- **Fetch Short Code** (read-only): Fetch an instance of a short code
+- **Fetch Short Code** (read-only): Fetch Short Code using the Twilio messaging_v1 REST API.
+- **Fetch Signing Key** (read-only): Fetch Signing Key using the Twilio api_v2010 REST API.
+- **Fetch Sip Auth Calls Credential List Mapping** (read-only): Fetch a specific instance of a credential list mapping
+- **Fetch Sip Auth Calls Ip Access Control List Mapping** (read-only): Fetch a specific instance of an IP Access Control List mapping
+- **Fetch Sip Auth Registrations Credential List Mapping** (read-only): Fetch a specific instance of a credential list mapping
+- **Fetch Sip Credential** (read-only): Fetch a single credential.
+- **Fetch Sip Credential List** (read-only): Get a Credential List
+- **Fetch Sip Credential List Mapping** (read-only): Fetch a single CredentialListMapping resource from an account.
+- **Fetch Sip Domain** (read-only): Fetch an instance of a Domain
+- **Fetch Sip Ip Access Control List** (read-only): Fetch a specific instance of an IpAccessControlList
+- **Fetch Sip Ip Access Control List Mapping** (read-only): Fetch an IpAccessControlListMapping resource.
+- **Fetch Sip Ip Address** (read-only): Read one IpAddress resource.
+- **Fetch Test User** (read-only): Fetch flow test users
+- **Fetch Tollfree Verification** (read-only): Retrieve a tollfree verification
+- **Fetch Transcription** (read-only): Fetch an instance of a Transcription
+- **Fetch Us App To Person** (read-only): Fetch Us App To Person using the Twilio messaging_v1 REST API.
+- **Fetch Us App To Person Usecase** (read-only): Fetch Us App To Person Usecase using the Twilio messaging_v1 REST API.
+- **Fetch Usage Trigger** (read-only): Fetch and instance of a usage-trigger
+- **Fetch Usecase** (read-only): Fetch Usecase using the Twilio messaging_v1 REST API.
+- **Fetch User** (read-only): Fetch a conversation user from your account's default service
+- **Fetch User Conversation** (read-only): Fetch a specific User Conversation.
+- **Fetch Verification** (read-only): Fetch a specific Verification
+- **Fetch Verification Attempt** (read-only): Fetch a specific verification attempt.
+- **Fetch Verification Attempts Summary** (read-only): Get a summary of how many attempts were made and how many were converted.
+- **Fetch Webhook** (read-only): Fetch a specific Webhook.
+- **List Account** (read-only): Retrieves a collection of Accounts belonging to the account used to make the request
+- **List Address** (read-only): List Address using the Twilio api_v2010 REST API.
+- **List Alpha Sender** (read-only): List Alpha Sender using the Twilio messaging_v1 REST API.
+- **List Application** (read-only): Retrieve a list of applications representing an application within the requesting account
+- **List Authorized Connect App** (read-only): Retrieve a list of authorized-connect-apps belonging to the account used to make the request
+- **List Available Phone Number Country** (read-only): List Available Phone Number Country using the Twilio api_v2010 REST API.
+- **List Available Phone Number Local** (read-only): List Available Phone Number Local using the Twilio api_v2010 REST API.
+- **List Available Phone Number Mobile** (read-only): List Available Phone Number Mobile using the Twilio api_v2010 REST API.
+- **List Available Phone Number National** (read-only): List Available Phone Number National using the Twilio api_v2010 REST API.
+- **List Available Phone Number Shared Cost** (read-only): List Available Phone Number Shared Cost using the Twilio api_v2010 REST API.
+- **List Available Phone Number Toll Free** (read-only): List Available Phone Number Toll Free using the Twilio api_v2010 REST API.
+- **List Available Phone Number Voip** (read-only): List Available Phone Number Voip using the Twilio api_v2010 REST API.
+- **List Brand Registrations** (read-only): List Brand Registrations using the Twilio messaging_v1 REST API.
+- **List Brand Vetting** (read-only): List Brand Vetting using the Twilio messaging_v1 REST API.
+- **List Bucket** (read-only): Retrieve a list of all Buckets for a Rate Limit.
+- **List Call** (read-only): Retrieves a collection of calls made to and from your account
+- **List Call Event** (read-only): Retrieve a list of all events for a call.
+- **List Call Notification** (read-only): List Call Notification using the Twilio api_v2010 REST API.
+- **List Call Recording** (read-only): Retrieve a list of recordings belonging to the call used to make the request
+- **List Challenge** (read-only): Retrieve a list of all Challenges for a Factor.
+- **List Channel Sender** (read-only): List Channel Sender using the Twilio messaging_v1 REST API.
+- **List Conference** (read-only): Retrieve a list of conferences belonging to the account used to make the request
+- **List Conference Recording** (read-only): Retrieve a list of recordings belonging to the call used to make the request
+- **List Configuration Address** (read-only): Retrieve a list of address configurations for an account
+- **List Connect App** (read-only): Retrieve a list of connect-apps belonging to the account used to make the request
+- **List Conversation** (read-only): Retrieve a list of conversations in your account's default service
+- **List Conversation Message** (read-only): Retrieve a list of all messages in the conversation
+- **List Conversation Message Receipt** (read-only): Retrieve a list of all delivery and read receipts of the conversation message
+- **List Conversation Participant** (read-only): Retrieve a list of all participants of the conversation
+- **List Conversation Scoped Webhook** (read-only): Retrieve a list of all webhooks scoped to the conversation
+- **List Credential** (read-only): Retrieve a list of all push notification credentials on your account
+- **List Dependent Phone Number** (read-only): List Dependent Phone Number using the Twilio api_v2010 REST API.
+- **List Destination Alpha Sender** (read-only): List Destination Alpha Sender using the Twilio messaging_v1 REST API.
+- **List Entity** (read-only): Retrieve a list of all Entities for a Service.
+- **List Execution** (read-only): Retrieve a list of all Executions for the Flow.
+- **List Execution Step** (read-only): Retrieve a list of all Steps for an Execution.
+- **List Factor** (read-only): Retrieve a list of all Factors for an Entity.
+- **List Flow** (read-only): Retrieve a list of all Flows.
+- **List Flow Revision** (read-only): Retrieve a list of all Flows revisions.
+- **List Incoming Phone Number** (read-only): Retrieve a list of incoming-phone-numbers belonging to the account used to make the request.
+- **List Incoming Phone Number Assigned Add On** (read-only): Retrieve a list of Add-on installations currently assigned to this Number.
+- **List Incoming Phone Number Assigned Add On Extension** (read-only): Retrieve a list of Extensions for the Assigned Add-on.
+- **List Incoming Phone Number Local** (read-only): List Incoming Phone Number Local using the Twilio api_v2010 REST API.
+- **List Incoming Phone Number Mobile** (read-only): List Incoming Phone Number Mobile using the Twilio api_v2010 REST API.
+- **List Incoming Phone Number Toll Free** (read-only): List Incoming Phone Number Toll Free using the Twilio api_v2010 REST API.
+- **List Key** (read-only): List Key using the Twilio api_v2010 REST API.
+- **List Media** (read-only): Read a list of Media resources associated with a specific Message resource
+- **List Member** (read-only): Retrieve the members of the queue
+- **List Message** (read-only): Retrieve a list of Message resources associated with a Twilio Account
+- **List Messaging Configuration** (read-only): Retrieve a list of all Messaging Configurations for a Service.
+- **List Outgoing Caller Id** (read-only): Retrieve a list of outgoing-caller-ids belonging to the account used to make the request
+- **List Participant** (read-only): Retrieve a list of participants belonging to the account used to make the request
+- **List Participant Conversation** (read-only): Retrieve a list of all Conversations that this Participant belongs to by identity or by address.
+- **List Phone Number** (read-only): List Phone Number using the Twilio messaging_v1 REST API.
+- **List Port In Requests** (read-only): Retrieve a list of all PortInRequests for a user
+- **List Queue** (read-only): Retrieve a list of queues belonging to the account used to make the request
+- **List Rate Limit** (read-only): Retrieve a list of all Rate Limits for a service.
+- **List Recording** (read-only): Retrieve a list of recordings belonging to the account used to make the request
+- **List Recording Add On Result** (read-only): Retrieve a list of results belonging to the recording
+- **List Recording Add On Result Payload** (read-only): Retrieve a list of payloads belonging to the AddOnResult
+- **List Recording Transcription** (read-only): List Recording Transcription using the Twilio api_v2010 REST API.
+- **List Role** (read-only): Retrieve a list of all user roles in your account's default service
+- **List Service** (read-only): Retrieve a list of all conversation services on your account
+- **List Service** (read-only): List Service using the Twilio messaging_v1 REST API.
+- **List Service** (read-only): Retrieve a list of all Verification Services for an account.
+- **List Service Binding** (read-only): Retrieve a list of all push notification bindings in the conversation service
+- **List Service Conversation** (read-only): Retrieve a list of conversations in your service
+- **List Service Conversation Message** (read-only): Retrieve a list of all messages in the conversation
+- **List Service Conversation Message Receipt** (read-only): Retrieve a list of all delivery and read receipts of the conversation message
+- **List Service Conversation Participant** (read-only): Retrieve a list of all participants of the conversation
+- **List Service Conversation Scoped Webhook** (read-only): Retrieve a list of all webhooks scoped to the conversation
+- **List Service Participant Conversation** (read-only): Retrieve a list of all Conversations that this Participant belongs to by identity or by address.
+- **List Service Role** (read-only): Retrieve a list of all user roles in your service
+- **List Service User** (read-only): Retrieve a list of all conversation users in your service
+- **List Service User Conversation** (read-only): Retrieve a list of all User Conversations for the User.
+- **List Short Code** (read-only): Retrieve a list of short-codes belonging to the account used to make the request
+- **List Short Code** (read-only): List Short Code using the Twilio messaging_v1 REST API.
+- **List Signing Key** (read-only): List Signing Key using the Twilio api_v2010 REST API.
+- **List Signing Request Configuration** (read-only): Synchronous operation to retrieve configurations for the customer.
+- **List Sip Auth Calls Credential List Mapping** (read-only): Retrieve a list of credential list mappings belonging to the domain used in the request
+- **List Sip Auth Calls Ip Access Control List Mapping** (read-only): Retrieve a list of IP Access Control List mappings belonging to the domain used in the request
+- **List Sip Auth Registrations Credential List Mapping** (read-only): Retrieve a list of credential list mappings belonging to the domain used in the request
+- **List Sip Credential** (read-only): Retrieve a list of credentials.
+- **List Sip Credential List** (read-only): Get All Credential Lists
+- **List Sip Credential List Mapping** (read-only): Read multiple CredentialListMapping resources from an account.
+- **List Sip Domain** (read-only): Retrieve a list of domains belonging to the account used to make the request
+- **List Sip Ip Access Control List** (read-only): Retrieve a list of IpAccessControlLists that belong to the account used to make the request
+- **List Sip Ip Access Control List Mapping** (read-only): Retrieve a list of IpAccessControlListMapping resources.
+- **List Sip Ip Address** (read-only): Read multiple IpAddress resources.
+- **List Tollfree Verification** (read-only): List tollfree verifications
+- **List Transcription** (read-only): Retrieve a list of transcriptions belonging to the account used to make the request
+- **List Us App To Person** (read-only): List Us App To Person using the Twilio messaging_v1 REST API.
+- **List Usage Record** (read-only): Retrieve a list of usage-records belonging to the account used to make the request
+- **List Usage Record All Time** (read-only): List Usage Record All Time using the Twilio api_v2010 REST API.
+- **List Usage Record Daily** (read-only): List Usage Record Daily using the Twilio api_v2010 REST API.
+- **List Usage Record Last Month** (read-only): List Usage Record Last Month using the Twilio api_v2010 REST API.
+- **List Usage Record Monthly** (read-only): List Usage Record Monthly using the Twilio api_v2010 REST API.
+- **List Usage Record This Month** (read-only): List Usage Record This Month using the Twilio api_v2010 REST API.
+- **List Usage Record Today** (read-only): List Usage Record Today using the Twilio api_v2010 REST API.
+- **List Usage Record Yearly** (read-only): List Usage Record Yearly using the Twilio api_v2010 REST API.
+- **List Usage Record Yesterday** (read-only): List Usage Record Yesterday using the Twilio api_v2010 REST API.
+- **List Usage Trigger** (read-only): Retrieve a list of usage-triggers belonging to the account used to make the request
+- **List User** (read-only): Retrieve a list of all conversation users in your account's default service
+- **List User Conversation** (read-only): Retrieve a list of all User Conversations for the User.
+- **List Verification Attempt** (read-only): List all the verification attempts for a given Account.
+- **List Verification Template** (read-only): List all the available templates for a given Account.
+- **List Webhook** (read-only): Retrieve a list of all Webhooks for a Service.
+- **Send SMS**: Immediately send an irreversible outbound SMS or supported channel message from a sender owned by the specified Twilio account.
+- **Update Account**: Modify the properties of a given Account
+- **Update Address**: Update Address using the Twilio api_v2010 REST API.
+- **Update Application**: Updates the application's properties
+- **Update Brand Registrations**: Update Brand Registrations using the Twilio messaging_v1 REST API.
+- **Update Bucket**: Update a specific Bucket.
+- **Update Call**: Initiates a call redirect or terminates a call
+- **Update Call Recording**: Changes the status of the recording to paused, stopped, or in-progress.
+- **Update Challenge**: Verify a specific Challenge.
+- **Update Challenge Passkeys**: Approve a Passkeys challenge
+- **Update Conference**: Update Conference using the Twilio api_v2010 REST API.
+- **Update Conference Recording**: Changes the status of the recording to paused, stopped, or in-progress.
+- **Update Configuration**: Update the global configuration of conversations on your account
+- **Update Configuration Address**: Update an existing address configuration
+- **Update Configuration Webhook**: Update Configuration Webhook using the Twilio conversations_v1 REST API.
+- **Update Connect App**: Update a connect-app with the specified parameters
+- **Update Conversation**: Update an existing conversation in your account's default service
+- **Update Conversation Message**: Update an existing message in the conversation
+- **Update Conversation Participant**: Update an existing participant in the conversation
+- **Update Conversation Scoped Webhook**: Update an existing conversation-scoped webhook
+- **Update Credential**: Update an existing push notification credential on your account
+- **Update Domain Cert V4**: Update Domain Cert V4 using the Twilio messaging_v1 REST API.
+- **Update Domain Config**: Update Domain Config using the Twilio messaging_v1 REST API.
+- **Update Execution**: Update the status of an Execution to ended.
+- **Update Factor**: Update a specific Factor.
+- **Update Flow**: Update a Flow.
+- **Update Flow Validate**: Validate flow JSON definition
+- **Update Incoming Phone Number**: Update an incoming-phone-number instance.
+- **Update Key**: Update Key using the Twilio api_v2010 REST API.
+- **Update Member**: Dequeue a member from a queue and have the member's call begin executing the TwiML document at that URL
+- **Update Message**: Update a Message resource (used to redact Message body text and to cancel not-yet-sent messages)
+- **Update Messaging Configuration**: Update a specific MessagingConfiguration
+- **Update Outgoing Caller Id**: Updates the caller-id
+- **Update Participant**: Update the properties of the participant
+- **Update Passkeys Factor**: Verify a Passkeys Factor
+- **Update Payments**: update an instance of payments with different phases of payment flows.
+- **Update Queue**: Update the queue with the new parameters
+- **Update Rate Limit**: Update a specific Rate Limit.
+- **Update Realtime Transcription**: Stop a Transcription using either the SID of the Transcription resource or the name used when creating the resource
+- **Update Request Managed Cert**: Update Request Managed Cert using the Twilio messaging_v1 REST API.
+- **Update Role**: Update an existing user role in your account's default service
+- **Update Service**: Update Service using the Twilio messaging_v1 REST API.
+- **Update Service**: Update a specific Verification Service.
+- **Update Service Configuration**: Update configuration settings of a conversation service
+- **Update Service Conversation**: Update an existing conversation in your service
+- **Update Service Conversation Message**: Update an existing message in the conversation
+- **Update Service Conversation Participant**: Update an existing participant in the conversation
+- **Update Service Conversation Scoped Webhook**: Update an existing conversation-scoped webhook
+- **Update Service Notification**: Update push notification service settings
+- **Update Service Role**: Update an existing user role in your service
+- **Update Service User**: Update an existing conversation user in your service
+- **Update Service User Conversation**: Update a specific User Conversation.
+- **Update Service Webhook Configuration**: Update a specific Webhook.
+- **Update Short Code**: Update a short code with the following parameters
+- **Update Signing Key**: Update Signing Key using the Twilio api_v2010 REST API.
+- **Update Sip Credential**: Update a credential resource.
+- **Update Sip Credential List**: Update a Credential List
+- **Update Sip Domain**: Update the attributes of a domain
+- **Update Sip Ip Access Control List**: Rename an IpAccessControlList
+- **Update Sip Ip Address**: Update an IpAddress resource.
+- **Update Siprec**: Stop a Siprec using either the SID of the Siprec resource or the name used when creating the resource
+- **Update Stream**: Stop a Stream using either the SID of the Stream resource or the name used when creating the resource
+- **Update Test User**: Update flow test users
+- **Update Tollfree Verification**: Edit a tollfree verification
+- **Update Us App To Person**: Update Us App To Person using the Twilio messaging_v1 REST API.
+- **Update Usage Trigger**: Update an instance of a usage trigger
+- **Update User**: Update an existing conversation user in your account's default service
+- **Update User Conversation**: Update a specific User Conversation.
+- **Update Verification**: Update a Verification status
+- **Update Webhook**: Update Webhook using the Twilio verify_v2 REST API.

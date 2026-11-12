@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Choose the deployment's default model, connect local or OpenAI-compatible servers, and configure approvals, media generation and voice."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="theme-color" content="#FDFDFD"><meta property="og:title" content="Models | WhatEverFi docs"><meta property="og:description" content="Choose the deployment's default model, connect local or OpenAI-compatible servers, and configure approvals, media generation and voice."><meta property="og:url" content="https://whateverfi.com/docs/self-host-models/"><meta property="og:type" content="website"><meta property="og:site_name" content="WhatEverFi"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://whateverfi.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="WhatEverFi. AI teammates you actually own. Your keys, your model, your machine."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Models | WhatEverFi docs"><meta name="twitter:description" content="Choose the deployment's default model, connect local or OpenAI-compatible servers, and configure approvals, media generation and voice."><meta name="twitter:image" content="https://whateverfi.com/og-image.png"><meta name="twitter:image:alt" content="WhatEverFi. AI teammates you actually own. Your keys, your model, your machine."><link rel="canonical" href="https://whateverfi.com/docs/self-host-models/"><link rel="alternate" type="text/markdown" href="/docs/self-host-models.md"><link rel="alternate" type="application/rss+xml" title="WhatEverFi blog" href="/blog/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="describedby" type="text/plain" href="/llms.txt"><link rel="ai-catalog" type="application/ai-catalog+json" href="/.well-known/ai-catalog.json"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.png" type="image/png" sizes="128x128"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet"><title>Models | WhatEverFi docs</title><link rel="stylesheet" href="/_astro/BaseLayout.WaYUuiGl.css"></head><body><a class="skip-link" href="#main">Skip to content</a><div class="page-shell"><div class="docs-topbar"><div class="docs-shell"><header class="site-header"><div class="site-header__left"><a class="brand-lockup" href="/" aria-label="WhatEverFi home"><img class="brand-lockup__mark" src="/brand/whateverfi-mark.png" width="36" height="36" alt="" aria-hidden="true"><span class="brand-lockup__word">WhatEverFi</span></a><div class="logo-menu" role="menu" aria-label="WhatEverFi home" data-logo-menu data-wordmark="/brand/kit/whateverfi-wordmark.svg" hidden><a role="menuitem" tabindex="-1" href="/" target="_blank" data-attr="logo-menu-new-tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>Open in new tab</a><button type="button" role="menuitem" tabindex="-1" data-logo-menu-copy data-attr="logo-menu-copy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"></rect><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path></svg>Copy wordmark as SVG</button><a role="menuitem" tabindex="-1" href="/brand/" data-attr="logo-menu-brand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2.5a1.5 1.5 0 0 0-1.1 2.5A2 2 0 0 1 12 22Z"></path><circle cx="7.5" cy="10.5" r="1"></circle><circle cx="10.5" cy="6.5" r="1"></circle><circle cx="15.5" cy="7.5" r="1"></circle></svg>Brand kit</a></div><a class="site-header__section" href="/docs/">Docs</a><nav class="site-nav" aria-label="Primary"><a href="/download/">Download</a><a href="/integrations/">Integrations</a><a href="/pricing/">Pricing</a></nav></div><div class="site-header__right"><button class="docs-search-trigger" type="button" aria-label="Search" aria-keyshortcuts="Meta+K Control+K"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg><span>Search</span><kbd>⌘K</kbd></button><a class="star-pill" href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener" aria-label="GitHub" data-attr="header-github"><span>GitHub</span></a><div class="site-header__cta"><a class="button button--primary button--small" href="https://app.whateverfi.com">Get started</a></div><details class="site-menu" data-site-menu><summary class="site-menu__toggle" aria-label="Menu"><svg class="site-menu__icon site-menu__icon--open" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"></path></svg><svg class="site-menu__icon site-menu__icon--close" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"></path></svg></summary><nav class="site-menu__panel" aria-label="Primary"><a href="/download/">Download</a><a href="/integrations/">Integrations</a><a href="/pricing/">Pricing</a><a href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener" data-attr="menu-github">GitHub</a></nav></details></div></header><script type="module">var e=document.querySelector(`[data-site-menu]`);e&&(e.addEventListener(`click`,t=>{t.target.closest(`a`)&&(e.open=!1)}),document.addEventListener(`click`,t=>{e.open&&!e.contains(t.target)&&(e.open=!1)}),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&(e.open=!1)}));var t=document.querySelector(`[data-logo-menu]`),n=t?.parentElement?.querySelector(`.brand-lockup`);if(t&&n){let e=()=>[...t.querySelectorAll(`[role=menuitem]`)],r=(e=!1)=>{t.hidden||(t.hidden=!0,e&&n.focus())};n.addEventListener(`contextmenu`,r=>{r.preventDefault(),t.hidden=!1;let i=r.clientX||n.getBoundingClientRect().left,a=r.clientY||n.getBoundingClientRect().bottom;t.style.left=`${Math.min(i,window.innerWidth-t.offsetWidth-8)}px`,t.style.top=`${Math.min(a,window.innerHeight-t.offsetHeight-8)}px`,e()[0]?.focus()}),t.querySelector(`[data-logo-menu-copy]`)?.addEventListener(`click`,()=>{let e=t.dataset.wordmark??``,n=fetch(e).then(async e=>{if(!e.ok)throw Error(`Wordmark request failed: ${e.status}`);return new Blob([await e.text()],{type:`text/plain`})});r(!0);let i=()=>window.location.assign(e);try{navigator.clipboard.write([new ClipboardItem({"text/plain":n})]).catch(i)}catch{i()}}),t.addEventListener(`click`,e=>{e.target.closest(`a`)&&r()}),t.addEventListener(`keydown`,t=>{let n=e(),i=n.indexOf(document.activeElement);t.key===`ArrowDown`||t.key===`ArrowUp`?(t.preventDefault(),n[(i+(t.key===`ArrowDown`?1:-1)+n.length)%n.length]?.focus()):t.key===`Escape`?(t.preventDefault(),r(!0)):t.key===`Tab`&&r()}),document.addEventListener(`pointerdown`,e=>{t.contains(e.target)||r()}),window.addEventListener(`scroll`,()=>r(),{passive:!0}),window.addEventListener(`blur`,()=>r())}</script></div></div><div class="docs-shell docs"><nav class="docs-nav docs-nav--desktop" aria-label="Docs"><div class="docs-nav__section"><p>Get started</p><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/troubleshooting/">Troubleshooting</a></li><li><a href="/docs/bots-and-chats/">Bots and chats</a></li><li><a href="/docs/import-an-agent/">Import an agent</a></li></ul></div><div class="docs-nav__section"><p>Using WhatEverFi</p><ul><li><a href="/docs/integrations/">Connect apps</a></li><li><a href="/docs/routines/">Routines</a></li><li><a href="/docs/pages/">Pages</a></li><li><a href="/docs/computer/">The bot&#39;s computer</a></li><li><a href="/docs/memory/">Memory</a></li><li><a href="/docs/skills/">Skills</a></li><li><a href="/docs/approvals/">Approvals</a></li><li><a href="/docs/groups/">Groups and teamwork</a></li><li><a href="/docs/voice-and-calls/">Voice and calls</a></li><li><a href="/docs/messaging-apps/">Chat apps</a></li></ul></div><div class="docs-nav__section"><p>Settings</p><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/model-subscriptions/">Model subscriptions</a></li><li><a href="/docs/spaces/">Spaces</a></li><li><a href="/docs/bot-secrets/">Reusable credentials</a></li><li><a href="/docs/account/">Account and billing</a></li></ul></div><div class="docs-nav__section"><p>Apps</p><ul><li><a href="/docs/desktop-app/">Desktop app</a></li><li><a href="/docs/mobile-app/">Mobile app</a></li></ul></div><div class="docs-nav__section"><p>Advanced</p><ul><li><a href="/docs/fleet-management/">Bots that manage bots</a></li><li><a href="/docs/build-a-plugin/">Build a plugin</a></li><li><a href="/docs/board/">Ticket board</a></li></ul></div><div class="docs-nav__section"><p>Self-hosting</p><ul><li><a href="/docs/self-host/">Overview</a></li><li><a href="/docs/self-host-configuration/">Configuration</a></li><li><a href="/docs/self-host-secrets/">Secrets</a></li><li><a href="/docs/self-host-production/">Production deployment</a></li><li><a href="/docs/self-host-upgrading/">Upgrading</a></li><li><a href="/docs/self-host-backups/">Backup and restore</a></li></ul></div><div class="docs-nav__section"><p>Configure your server</p><ul><li><a href="/docs/self-host-accounts/">Sign-in and accounts</a></li><li><a href="/docs/self-host-models/" aria-current="page">Models</a></li><li><a href="/docs/self-host-integrations/">Tools and integrations</a></li><li><a href="/docs/self-host-inbound-email/">Bot email addresses</a></li><li><a href="/docs/self-host-sandbox-providers/">Computer providers</a></li><li><a href="/docs/self-host-docker-computers/">Docker computers</a></li><li><a href="/docs/computer-runtime/">Computer runtime</a></li><li><a href="/docs/self-host-storage/">Storage and encryption</a></li><li><a href="/docs/self-host-clients/">Apps and clients</a></li><li><a href="/docs/self-host-billing/">Billing</a></li><li><a href="/docs/self-host-observability/">Logs and monitoring</a></li><li><a href="/docs/self-host-audit-log/">Audit log</a></li><li><a href="/docs/self-host-restricted-network/">Restricted networks</a></li></ul></div><div class="docs-nav__section"><p>Reference</p><ul><li><a href="/integrations/">Integrations</a></li></ul></div></nav><details class="docs-menu"><summary>Docs menu</summary><nav class="docs-nav" aria-label="Docs"><div class="docs-nav__section"><p>Get started</p><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/troubleshooting/">Troubleshooting</a></li><li><a href="/docs/bots-and-chats/">Bots and chats</a></li><li><a href="/docs/import-an-agent/">Import an agent</a></li></ul></div><div class="docs-nav__section"><p>Using WhatEverFi</p><ul><li><a href="/docs/integrations/">Connect apps</a></li><li><a href="/docs/routines/">Routines</a></li><li><a href="/docs/pages/">Pages</a></li><li><a href="/docs/computer/">The bot&#39;s computer</a></li><li><a href="/docs/memory/">Memory</a></li><li><a href="/docs/skills/">Skills</a></li><li><a href="/docs/approvals/">Approvals</a></li><li><a href="/docs/groups/">Groups and teamwork</a></li><li><a href="/docs/voice-and-calls/">Voice and calls</a></li><li><a href="/docs/messaging-apps/">Chat apps</a></li></ul></div><div class="docs-nav__section"><p>Settings</p><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/model-subscriptions/">Model subscriptions</a></li><li><a href="/docs/spaces/">Spaces</a></li><li><a href="/docs/bot-secrets/">Reusable credentials</a></li><li><a href="/docs/account/">Account and billing</a></li></ul></div><div class="docs-nav__section"><p>Apps</p><ul><li><a href="/docs/desktop-app/">Desktop app</a></li><li><a href="/docs/mobile-app/">Mobile app</a></li></ul></div><div class="docs-nav__section"><p>Advanced</p><ul><li><a href="/docs/fleet-management/">Bots that manage bots</a></li><li><a href="/docs/build-a-plugin/">Build a plugin</a></li><li><a href="/docs/board/">Ticket board</a></li></ul></div><div class="docs-nav__section"><p>Self-hosting</p><ul><li><a href="/docs/self-host/">Overview</a></li><li><a href="/docs/self-host-configuration/">Configuration</a></li><li><a href="/docs/self-host-secrets/">Secrets</a></li><li><a href="/docs/self-host-production/">Production deployment</a></li><li><a href="/docs/self-host-upgrading/">Upgrading</a></li><li><a href="/docs/self-host-backups/">Backup and restore</a></li></ul></div><div class="docs-nav__section"><p>Configure your server</p><ul><li><a href="/docs/self-host-accounts/">Sign-in and accounts</a></li><li><a href="/docs/self-host-models/" aria-current="page">Models</a></li><li><a href="/docs/self-host-integrations/">Tools and integrations</a></li><li><a href="/docs/self-host-inbound-email/">Bot email addresses</a></li><li><a href="/docs/self-host-sandbox-providers/">Computer providers</a></li><li><a href="/docs/self-host-docker-computers/">Docker computers</a></li><li><a href="/docs/computer-runtime/">Computer runtime</a></li><li><a href="/docs/self-host-storage/">Storage and encryption</a></li><li><a href="/docs/self-host-clients/">Apps and clients</a></li><li><a href="/docs/self-host-billing/">Billing</a></li><li><a href="/docs/self-host-observability/">Logs and monitoring</a></li><li><a href="/docs/self-host-audit-log/">Audit log</a></li><li><a href="/docs/self-host-restricted-network/">Restricted networks</a></li></ul></div><div class="docs-nav__section"><p>Reference</p><ul><li><a href="/integrations/">Integrations</a></li></ul></div></nav></details><main id="main" class="docs-main"><div class="docs-page-head"><p class="docs-eyebrow">Configure your server</p><button class="docs-copy-page" type="button" data-markdown="/docs/self-host-models.md"><svg class="docs-icon-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="docs-icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Copy page</span></button></div><article class="docs-prose" data-pagefind-body><h1 id="models">Models</h1>
+<p>Choose the deployment’s default model, connect local or OpenAI-compatible servers, and configure
+approvals, media generation and voice.</p>
+<p>English | <a href="https://github.com/elie222/rakazo/blob/main/docs/zh-CN/self-host-models.md">简体中文</a></p>
+<h2 id="deployment-model">Deployment model</h2>
+<p>The deployment model is used by anyone who has not connected a model of their own. <code>PI_DEFAULT_PROVIDER</code>
+picks the provider and <code>PI_DEFAULT_MODEL</code> the model:</p>
+<table>
+<thead>
+<tr>
+<th><code>PI_DEFAULT_PROVIDER</code></th>
+<th>Key</th>
+<th>Default model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>openrouter</code> (default)</td>
+<td><code>OPENROUTER_API_KEY</code></td>
+<td><code>anthropic/claude-haiku-5.5</code></td>
+</tr>
+<tr>
+<td><code>anthropic</code></td>
+<td><code>ANTHROPIC_API_KEY</code></td>
+<td><code>claude-sonnet-5</code></td>
+</tr>
+<tr>
+<td><code>deepseek</code></td>
+<td><code>DEEPSEEK_API_KEY</code></td>
+<td><code>deepseek-flash</code></td>
+</tr>
+</tbody>
+</table>
+<p>Pick a vision-capable model so screenshot computer tools stay available.</p>
+<p>A provider that authenticates from the host needs no key: for Amazon Bedrock with an ECS task,
+IRSA or EC2 instance role, opt in with <code>PI_DEFAULT_CREDENTIALS=host</code> and set
+<code>PI_DEFAULT_PROVIDER=amazon-bedrock</code>, <code>PI_DEFAULT_MODEL</code> and <code>AWS_REGION</code>. With an instance
+role, keep <a href="/docs/self-host-docker-computers/#restricted-computer-egress">restricted computer egress</a> on so bot computers
+cannot read the role’s credentials from the metadata endpoint.</p>
+<p>Google Vertex works the same way with <code>PI_DEFAULT_PROVIDER=google-vertex</code>, using the host’s
+application default credentials (<code>GOOGLE_APPLICATION_CREDENTIALS</code>, <code>GOOGLE_CLOUD_PROJECT</code>,
+<code>GOOGLE_CLOUD_LOCATION</code>). Runs on host credentials are billed to that cloud account.</p>
+<p>The Compose files also pass the standard provider key variables the agent runtime reads itself
+(<code>OPENAI_API_KEY</code>, <code>GEMINI_API_KEY</code>, <code>MISTRAL_API_KEY</code>, <code>GROQ_API_KEY</code>, <code>XAI_API_KEY</code> and others) to
+the API and worker, for models that have no stored credential.</p>
+<p><code>RAKAZO_LIVE_MODEL_CATALOG=off</code> disables provider and Codex live catalog probing; the default is on.</p>
+<h2 id="approvals">Approvals</h2>
+<p>Approvals have three modes in <strong>Settings → Approvals</strong>: Never ask skips ordinary approval prompts, Auto lets an
+approval model pass actions that fit the request, and Ask asks before any change. A space starts
+in Auto, which asks like Ask until an approval model is available. Each
+person can allow or block single tools and sites in every mode, and a space can customize its
+approvals apart from the account.
+All modes still enforce block rules and safety checks. Purchases always require a person’s approval;
+unattended runs that cannot request approval refuse them.</p>
+<p>In <strong>Settings → Models → Approval model</strong>, each user can select a model
+from an existing connection and add ordered backups, independently of their main model. Personal
+connections use their own credentials; hosted calls follow the same WhatEverFi credit rules as chat.
+Backups are tried only when a checker fails. An explicit ask, including an uncertain decision,
+still requires a person.</p>
+<p>The deployment checker remains the default when no approval model is selected. For OpenRouter
+Jev, set <code>RAKAZO_AUTO_REVIEW_PROVIDER=openrouter</code> and
+<code>RAKAZO_AUTO_REVIEW_MODEL=typesafe/jev-1.14</code>; it uses <code>OPENROUTER_API_KEY</code> and the Decisions API.
+TypeSafe direct remains available through <code>RAKAZO_AUTO_REVIEW_PROVIDER=jev</code> and
+<code>TYPESAFE_API_KEY</code>. Core runs without either hosted service.</p>
+<p>With TypeSafe, <code>RAKAZO_AUTO_REVIEW_MODEL</code> defaults to <code>jev-latest</code>, and
+<code>RAKAZO_AUTO_REVIEW_MIN_CONFIDENCE</code> (0 to 1, default <code>0.5</code>) is the confidence below which Auto asks
+the person instead. <code>RAKAZO_AUTO_REVIEW_TIMEOUT_MS</code> (200 to 30000, default <code>10000</code>) bounds each
+check.</p>
+<h2 id="local-models">Local models</h2>
+<p>To use an operator-controlled OpenAI-compatible server such as Ollama, LM Studio, llama.cpp, or
+MLX, list its model IDs and an endpoint that both the API and worker processes can reach:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>RAKAZO_LOCAL_MODELS=qwen3:4b,llama3.1:8b,qwen3-vl</span></span>
+<span class="line"><span>RAKAZO_LOCAL_MODELS_URL=http://127.0.0.1:11434/v1</span></span>
+<span class="line"><span># Optional: key for a server that requires one, sent as the bearer token.</span></span>
+<span class="line"><span>RAKAZO_LOCAL_MODELS_API_KEY=</span></span>
+<span class="line"><span>RAKAZO_LOCAL_CONTEXT_WINDOW=32768</span></span>
+<span class="line"><span>RAKAZO_LOCAL_MAX_TOKENS=4096</span></span>
+<span class="line"><span># Optional: model ids on this endpoint that accept images (screenshot computer tools).</span></span>
+<span class="line"><span>RAKAZO_LOCAL_VISION_MODELS=qwen3-vl</span></span>
+<span class="line"><span># Optional: model ids on this endpoint that accept OpenAI-style reasoning_effort.</span></span>
+<span class="line"><span>RAKAZO_LOCAL_REASONING_MODELS=qwen3:4b</span></span></code></pre>
+<p>Set <code>RAKAZO_LOCAL_MODELS_API_KEY</code> when the server requires a key, such as LiteLLM, vLLM started
+with <code>--api-key</code>, or a company gateway. Every request to <code>RAKAZO_LOCAL_MODELS_URL</code> then sends it as
+<code>Authorization: Bearer</code>; unset, requests carry the placeholder <code>local</code>. Like the other deployment
+keys, it stays on the API and worker and is redacted from run output. Use HTTPS unless the network
+is trusted. To make a local model the deployment model, set <code>PI_DEFAULT_PROVIDER=local</code>,
+<code>PI_DEFAULT_MODEL</code> to one of <code>RAKAZO_LOCAL_MODELS</code> and <code>PI_DEFAULT_CREDENTIALS=host</code>.</p>
+<p>A model in <code>RAKAZO_LOCAL_REASONING_MODELS</code> offers thinking levels and sends the chosen level as
+<code>reasoning_effort</code> (<code>medium</code> by default, <code>none</code> when thinking is off). Other local models never
+receive the field.</p>
+<p><code>RAKAZO_LOCAL_MAX_TOKENS</code> is the output limit sent with every request to a local model, unless the
+connection sets its own max-tokens value. It never exceeds a quarter of
+<code>RAKAZO_LOCAL_CONTEXT_WINDOW</code>, so the prompt keeps the rest; a higher limit leaves less room for the
+prompt, so long chats are compacted sooner.</p>
+<p>The loopback default is suitable when running WhatEverFi from a source checkout. From containers,
+prefer a stable LAN RFC1918 address (not Compose service DNS alone). On Docker Desktop,
+<code>host.docker.internal</code> also works.
+On Docker Desktop, a bot computer shell can often reach services bound to host <code>127.0.0.1</code>
+through that same hostname. Do not run sensitive unauthenticated services on loopback while
+bots run, or firewall / block that path. Linux does not get <code>host.docker.internal</code> the same
+way by default.
+Only configure an endpoint you control: prompts, attachments, and tool results sent to that model
+leave WhatEverFi through this URL. Leave <code>RAKAZO_LOCAL_MODELS</code> blank to disable the provider.</p>
+<h2 id="ollama-cloud">Ollama Cloud</h2>
+<p>In <strong>Settings → Models</strong>, choose <strong>Ollama Cloud</strong>, paste an API key from ollama.com, then <strong>Find models</strong>. This uses an OpenAI-compatible connection with no environment configuration, and stays available when <code>RAKAZO_OPENAI_COMPAT_ALLOW_PUBLIC=0</code>.</p>
+<h2 id="openai-compatible-connections">OpenAI-compatible connections</h2>
+<p>Each user can also connect their own OpenAI-compatible endpoint from <strong>Connect a model</strong> /
+<strong>Settings → Models</strong> on web and mobile. Choose <strong>OpenAI-compatible</strong>, enter the server base URL
+(for example <code>http://127.0.0.1:8000/v1</code>), the exact model id, and an optional API key.
+Add optional request headers under <strong>Advanced</strong>; values are stored encrypted, and only their names
+are shown afterwards.
+Public hosts and ordinary hostnames need HTTPS when they receive an API key or custom headers,
+and must resolve only to public addresses. Set <code>RAKAZO_OPENAI_COMPAT_ALLOW_PUBLIC=0</code> on the API
+and worker to block them.
+Literal private IP, loopback, and <code>host.docker.internal</code> targets do not, but they are refused
+unless <code>MCP_ALLOW_PRIVATE_ENDPOINT=true</code> is set on the API and worker, which allows them for every
+user. This is checked on save, on model discovery, and on every run.
+With the Docker images install and the desktop app, a <code>localhost</code> or <code>127.0.0.1</code> connection
+reaches the computer running Docker (through <code>host.docker.internal</code>). On Linux, the model server
+must listen on an address the Docker bridge can reach, not only <code>127.0.0.1</code>.
+For a self-hosted endpoint whose hostname resolves to private IPs, set
+<code>RAKAZO_OPENAI_COMPAT_PRIVATE_HOSTS=models.example.test,other.example.test</code> in the deployment
+environment for both API and worker, then recreate those containers. Entries are exact hostnames
+(case-insensitive, optional trailing dot), not URLs, suffixes, or wildcards. These hosts ignore
+<code>RAKAZO_OPENAI_COMPAT_ALLOW_PUBLIC</code>; every DNS answer must be private, and metadata and
+link-local destinations remain blocked. This applies to discovery and model requests.
+HTTPS still validates the hostname’s certificate. Like private IP endpoints, trusted hostnames
+also permit HTTP with API keys; use HTTPS unless the network is trusted. Only allow hosts you
+control. Private endpoints require <code>MCP_ALLOW_PRIVATE_ENDPOINT=true</code> for the deployment; no app account bypasses that policy.
+If that endpoint’s model
+accepts images, enable <strong>Supports images</strong> under <strong>Advanced</strong> when connecting so attachments and
+screenshot computer tools stay available. Existing connections default to disabled. For centrally
+managed endpoints, the deployment-wide fallback remains
+<code>RAKAZO_OPENAI_COMPATIBLE_VISION_MODELS=gpt4o-vision,llava</code>.</p>
+<h2 id="thinking">Thinking</h2>
+<p>For servers that accept standard <code>reasoning_effort</code>, enable <strong>Supports thinking</strong> under
+<strong>Advanced</strong> when connecting. The setting is saved on the connection (no env var or restart).
+Existing connections default to disabled. Deployment-local models opt in through
+<code>RAKAZO_LOCAL_REASONING_MODELS</code>; reconnect through <strong>Settings → Models</strong> only to move to a personal
+connection.</p>
+<p>Enabled connections default to medium thinking. Web and desktop expose <strong>Thinking</strong> in a bot’s
+advanced settings; mobile inherits the same backend policy. WhatEverFi sends standard
+<code>reasoning_effort</code> (<code>minimal</code>, <code>low</code>, <code>medium</code>, <code>high</code>, or <code>none</code> when off); the server owns
+model-specific translation. Leave <strong>Supports thinking</strong> off when the server lacks standard effort
+support. Existing token limits still apply; effort is not a separate reasoning-token budget.</p>
+<h2 id="prompt-cache-capabilities">Prompt cache capabilities</h2>
+<p>The model connection API accepts <code>cacheCapabilities</code>, including <code>scope</code>,
+<code>retentionMs</code>, <code>minimumTokens</code>, and <code>retentionMode</code>. Declare a positive
+<code>retentionMs</code> only when the endpoint supports prefix reuse for that window.
+For these connections with usable history-retrieval tools, the runtime
+automatically uses cache-aware context:
+recent history remains bounded on a cold request, and subsequent requests keep
+that selected prefix while it is likely warm and fits the context budget.
+Connections with unknown retention or <code>retentionMode: "none"</code> retain the default
+retrieval policy. An explicit executor context strategy still takes precedence.
+Callers without usable history-retrieval tools keep fitting original history
+under the model’s context budget instead of replacing it with snapshots.</p>
+<p>Cache warmth is advisory. Changing instructions or tools, context pressure,
+worker eviction, or a process restart can require fresh prompt processing.
+These settings do not create backend KV snapshots or keep a model loaded;
+the inference server is responsible for retention and conversation switching.</p>
+<h2 id="paid-data-services">Paid data services</h2>
+<p>Bots can look up paid data (map places, search results, work emails, people and company profiles,
+social posts, SEO data) through one deployment account. It is off by default. Configure the worker
+(and API for inline execution):</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="dotenv"><code><span class="line"><span style="color:#FFAB70">PAID_SERVICES_PROVIDER</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">treg</span></span>
+<span class="line"><span style="color:#FFAB70">PAID_SERVICES_API_KEY</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">replace-with-org-scoped-token</span></span></code></pre>
+<p><code>PAID_SERVICES_PROVIDER</code> accepts <code>disabled</code> (the default), <code>treg</code>, or <code>fake</code> (for offline testing
+only). <code>PAID_SERVICES_BASE_URL</code> points at a self-hosted Treg instead of <code>https://treg.to</code>. Use an
+org-scoped token, and keep the account topped up or on automatic top-up: an empty balance makes
+every call fail.</p>
+<p>Bots get <code>service_search</code> and <code>service_call</code> in every run; <code>service_call</code> follows the bot’s
+approval mode like other actions. Only read-only lookups are offered: actions on accounts, generation tasks, and services that need the account’s own connections are left out.
+Each call has a cost ceiling the bot sets and the approval card shows (at most $2) that the
+provider enforces before it charges. When model credits are on, a call first holds that ceiling
+from the organization’s credits and then settles to what the provider charged plus 20%, never
+above the ceiling; calls the provider does not bill are
+free. A call that may have run without an answer keeps its hold for the credit
+reconciler to flag. Every call appears in Usage under the <code>services</code> provider.</p>
+<h2 id="image-and-video-generation">Image and video generation</h2>
+<p>Bot media tools are disabled by default. Configure the worker (and API for inline
+execution) with a provider and its generic HTTP connection:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="dotenv"><code><span class="line"><span style="color:#FFAB70">MEDIA_GENERATION_PROVIDER</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">fal</span></span>
+<span class="line"><span style="color:#FFAB70">MEDIA_GENERATION_BASE_URL</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">https://queue.fal.run</span></span>
+<span class="line"><span style="color:#FFAB70">MEDIA_GENERATION_API_KEY</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">replace-with-media-api-key</span></span>
+<span class="line"><span style="color:#FFAB70">MEDIA_GENERATION_IMAGE_MODEL</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">fal-ai/flux/schnell</span></span>
+<span class="line"><span style="color:#FFAB70">MEDIA_GENERATION_VIDEO_MODEL</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">fal-ai/wan/v2.2-a14b/text-to-video</span></span></code></pre>
+<p><code>MEDIA_GENERATION_PROVIDER</code> accepts <code>disabled</code> (the default), <code>fal</code>, or <code>fake</code>
+(for offline testing only). The base URL is optional and defaults to the URL above.
+Only set the image/video model fields for capabilities you want enabled. Compatible
+servers can use the same connection fields; models must support the corresponding
+fal queue API and Flux/Wan input and output shapes. Credentials stay on the server. Set these in
+your deployment secret configuration; never commit actual credentials.</p>
+<p>Bots use <code>generate_image</code> to attach one PNG or <code>generate_video</code> to submit a
+four-second MP4. The video tool returns a job ID and queued/running status. The
+worker keeps checking the job in the background, including after a restart, and
+posts the finished video to the chat that asked for it, once; the bot then gets a
+turn to follow up. A video that fails, or is still unfinished after an hour, is
+marked failed and the bot gets a turn to say so. The bot can also call the tool
+again with <code>jobId</code> to check progress. Use the existing per-bot tool switches and action approval rules to
+control access. Both tools require approval by default. Ticket board runs keep
+these chat-only media tools unavailable so ticket work stays on the board.</p>
+<p>Each run allows at most two submissions (including failures). Submissions are
+never retried automatically: a lost response can mean the provider accepted and
+charged for the request. Provider errors omit remote response bodies. Configure
+account budgets and rate limits with your provider; the run cap is not a currency
+budget. Provider 429 responses are returned without automatic retries. Outputs
+must fit both the 10 MiB media ceiling and the configured attachment limit;
+larger outputs are rejected.</p>
+<p>Images use existing inline chat rendering. MP4 files can be previewed with native
+video controls on web and Electron and opened/downloaded through the existing
+native file flow on mobile. No new mobile player or settings screen is required.</p>
+<h2 id="voice">Voice</h2>
+<h3 id="macos-voices">macOS voices</h3>
+<p>When the API runs on macOS, Voice settings also offers <strong>macOS</strong>, which needs no key. The API renders each reply with the built-in <code>/usr/bin/say</code> into an audio clip, so it plays on the listener’s device and stops like any other voice. Docker and Linux hosts do not list it.</p>
+<h3 id="spoken-summaries">Spoken summaries</h3>
+<p>Off by default. Set <code>VOICE_SUMMARY_MIN_CHARS</code> (for example <code>600</code>) to have a voice read a bot reply longer than that many characters as a short summary written by that bot’s own model. Each summary is an extra model call billed to the bot. The chat keeps the full reply, and if the summary call fails the full reply is read.</p>
+<h3 id="fish-audio">Fish Audio</h3>
+<p><code>FISH_TTS_MODEL</code> sets the Fish Audio speech model for connections that do not choose one (default
+<code>s2.1-pro</code>), and <code>FISH_ASR_MODEL</code> the transcription model (default <code>transcribe-1-pro</code>). Set them on
+the API and worker.</p>
+<h3 id="calls">Calls</h3>
+<p>Bots can call a user in the app, and users can hold to talk, when <code>PHONE_CALLS_ENABLED=true</code> is set on
+the API and worker. <code>PHONE_CALL_COOLDOWN_MINUTES</code> (default <code>2</code>) is the minimum time between a bot’s
+calls to the same person, and <code>PHONE_CALL_RING_SECONDS</code> (default <code>45</code>) how long an unanswered call
+rings.</p>
+<p>For native mobile ringing and optional APNs VoIP configuration, see <a href="/docs/self-host-clients/#mobile-incoming-calls">Mobile incoming calls</a>.</p>
+</article><footer class="docs-pager"><a href="/docs/self-host-accounts/"><span>Previous</span>Sign-in and accounts</a><a class="docs-pager__next" href="/docs/self-host-integrations/"><span>Next</span>Tools and integrations</a></footer></main><aside class="docs-toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#deployment-model">Deployment model</a></li><li><a href="#approvals">Approvals</a></li><li><a href="#local-models">Local models</a></li><li><a href="#ollama-cloud">Ollama Cloud</a></li><li><a href="#openai-compatible-connections">OpenAI-compatible connections</a></li><li><a href="#thinking">Thinking</a></li><li><a href="#prompt-cache-capabilities">Prompt cache capabilities</a></li><li><a href="#paid-data-services">Paid data services</a></li><li><a href="#image-and-video-generation">Image and video generation</a></li><li><a href="#voice">Voice</a></li></ul><div class="docs-toc__links"><a href="/docs/self-host-models.md">View as Markdown</a><a href="https://github.com/elie222/rakazo/edit/main/docs/self-host-models.md" target="_blank" rel="noopener">Edit on GitHub</a></div></aside></div><div class="container"><footer class="site-footer"><div class="site-footer__brand"><a class="brand-lockup" href="/" aria-label="WhatEverFi home"><img class="brand-lockup__mark" src="/brand/whateverfi-mark.png" width="36" height="36" alt="" aria-hidden="true"><span class="brand-lockup__word">WhatEverFi</span></a><nav class="site-footer__languages" aria-label="Language"><details class="language-menu"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>English<svg class="language-menu__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path></svg></summary><ul><li><a href="/" hreflang="en-US" lang="en" aria-current="true">English</a></li><li><a href="/de/" hreflang="de-DE" lang="de">Deutsch</a></li><li><a href="/ko/" hreflang="ko-KR" lang="ko">한국어</a></li><li><a href="/zh/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/ja/" hreflang="ja-JP" lang="ja">日本語</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/he/" hreflang="he" lang="he">עברית</a></li><li><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a></li><li><a href="/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a></li><li><a href="/pl/" hreflang="pl-PL" lang="pl">Polski</a></li></ul></details></nav><span class="site-footer__legal"><span>© 2026 <a href="https://regan.studio" target="_blank" rel="noopener">Regan.Studio</a></span><a href="/NOTICE.txt">Apache-2.0 · Open-source notices</a></span></div><nav class="site-footer__columns" aria-label="Footer"><div class="site-footer__column"><h2>Product</h2><ul><li><a href="/download/">Download</a></li><li><a href="/self-hosted-ai-agent/">Docs</a></li><li><a href="/enterprise/">Enterprise</a></li><li><a href="/sandboxes/">Sandboxes</a></li><li><a href="/integration-platforms/">Integration platforms</a></li><li><a href="/voice-providers/">Voice providers</a></li><li><a href="/plugins/submit/">Submit a plugin</a></li><li><a href="https://github.com/elie222/rakazo/releases" target="_blank" rel="noopener">Changelog</a></li><li><a href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener">GitHub</a></li></ul></div><div class="site-footer__column"><h2>Alternatives</h2><ul><li><a href="/grok-bot-alternative/">Grok Bot</a></li><li><a href="/muse-alternative/">Muse</a></li><li><a href="/dots-alternative/">Dots</a></li><li><a href="/instinct-alternative/">Instinct</a></li><li><a href="/hermes-alternative/">Hermes</a></li><li><a href="/claude-duet-alternative/">Claude Duet</a></li><li><a href="/hark-alternative/">Hark</a></li><li><a href="/openclaw-alternative/">OpenClaw</a></li><li><a href="/alternatives/">All</a></li></ul></div><div class="site-footer__column"><h2>Company</h2><ul><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/brand/">Brand</a></li><li><a href="/support/">Support</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li></ul></div></nav></footer></div><dialog class="docs-search" aria-label="Search docs"><div id="docs-search"></div></dialog></div></body></html><script type="module">var e=document.querySelector(`.docs-copy-page`)?.querySelectorAll(`svg`)??[];async function t(e,t){let n=t.then(e=>new Blob([e],{type:`text/plain`}));await navigator.clipboard.write([new ClipboardItem({"text/plain":n})]),e.dataset.copied=``,setTimeout(()=>delete e.dataset.copied,1500)}var n=document.querySelector(`.docs-prose`);n?.querySelectorAll(`h2[id], h3[id]`).forEach(e=>{let t=document.createElement(`a`);t.className=`docs-anchor`,t.href=`#${e.id}`,t.setAttribute(`aria-label`,`Link to ${e.textContent}`),t.textContent=`#`,e.append(t)}),n?.querySelectorAll(`pre`).forEach(n=>{let r=document.createElement(`button`);r.type=`button`,r.className=`docs-copy-code`,r.setAttribute(`aria-label`,`Copy code`),r.append(...[...e].map(e=>e.cloneNode(!0))),r.addEventListener(`click`,()=>t(r,Promise.resolve(n.querySelector(`code`)?.innerText??n.innerText)));let i=document.createElement(`div`);i.className=`docs-code`,n.replaceWith(i),i.append(n,r)});var r=document.querySelector(`.docs-copy-page`);r?.addEventListener(`click`,()=>t(r,fetch(r.dataset.markdown??``).then(e=>e.text())));var i=document.querySelector(`.docs-search`),a=document.querySelector(`.docs-search-trigger`),o;if(!/Mac|iPhone|iPad/.test(navigator.platform)){let e=a?.querySelector(`kbd`);e&&(e.textContent=`Ctrl K`)}function s(){let e=Object.assign(document.createElement(`link`),{rel:`stylesheet`,href:`/pagefind/pagefind-ui.css`}),t=Object.assign(document.createElement(`script`),{src:`/pagefind/pagefind-ui.js`});return document.head.append(e,t),new Promise((e,n)=>{t.onload=()=>{let{PagefindUI:t}=window;new t({element:`#docs-search`,showSubResults:!0,showImages:!1}),e()},t.onerror=n})}async function c(){i&&(o??=s(),i.showModal(),await o,i.querySelector(`input`)?.focus())}a?.addEventListener(`click`,c),i?.addEventListener(`click`,e=>{e.target===i&&i.close(),e.target.closest(`a`)&&i.close()}),document.addEventListener(`keydown`,e=>{(e.metaKey||e.ctrlKey)&&e.key.toLowerCase()===`k`&&(e.preventDefault(),i?.open?i.close():c())});var l=[...document.querySelectorAll(`.docs-toc li a`)],u=l.map(e=>document.getElementById(decodeURIComponent(e.hash.slice(1)))).filter(e=>e!==null);function d(){let e=window.innerHeight+window.scrollY>=document.body.scrollHeight-2?u.at(-1):u.findLast(e=>e.getBoundingClientRect().top<=120);for(let t of l)t.toggleAttribute(`data-active`,t.hash===`#${e?.id}`)}u.length>0&&(d(),window.addEventListener(`scroll`,d,{passive:!0}));</script>

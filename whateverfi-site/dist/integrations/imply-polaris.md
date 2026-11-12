@@ -1,0 +1,116 @@
+# Imply Polaris
+
+Imply Polaris is a fully managed real-time analytics platform for ingesting, querying, and visualizing event data.
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/imply-polaris/.
+
+## Actions
+
+- **Cancel Async Sql Query**: Cancel an async query in the project configured on the connected Imply Polaris account.
+- **Cancel Job**: Irreversibly cancel a Polaris ingestion job.
+- **Create Alert**: Create an alert in the project configured on the connected Imply Polaris account.
+- **Create Connection**: Create an Azure, Confluent, Schema Registry, Kafka, Kinesis, push-streaming, or S3 connection in the project configured on the connected…
+- **Create Dashboard**: Create a dashboard in the project configured on the connected Imply Polaris account.
+- **Create Dashboard Page**: Create a dashboard page in the project configured on the connected Imply Polaris account.
+- **Create Dashboard Page Tile**: Create a blank, Markdown, or data-cube visualization tile on a dashboard page.
+- **Create Data Cube**: Create a data cube in the project configured on the connected Imply Polaris account.
+- **Create Data Cube Dimension**: Create a data cube dimension in the project configured on the connected Imply Polaris account.
+- **Create Data Cube Measure**: Create a data cube measure in the project configured on the connected Imply Polaris account.
+- **Create Embedding Link**: Create an embedding link in the project configured on the connected Imply Polaris account.
+- **Create Embedding Link Secret Key**: Create a secret key for an embedding link in the project configured on the connected Imply Polaris account.
+- **Create Job**: Create a job in the project configured on the connected Imply Polaris account.
+- **Create Lookup**: Create a lookup in the project configured on the connected Imply Polaris account.
+- **Create Project**: Create a project through the connected Imply Polaris regional API.
+- **Create Report**: Create a report in the project configured on the connected Imply Polaris account.
+- **Create Table**: Create a table in the project configured on the connected Imply Polaris account.
+- **Delete Alert**: Delete an alert in the project configured on the connected Imply Polaris account.
+- **Delete Connection**: Delete a connection in the project configured on the connected Imply Polaris account.
+- **Delete Dashboard**: Delete a dashboard in the project configured on the connected Imply Polaris account.
+- **Delete Dashboard Page**: Delete a page in the project configured on the connected Imply Polaris account.
+- **Delete Dashboard Page Tile**: Delete a tile in the project configured on the connected Imply Polaris account.
+- **Delete Data Cube**: Delete a data cube in the project configured on the connected Imply Polaris account.
+- **Delete Data Cube Dimension**: Delete a dimension in the project configured on the connected Imply Polaris account.
+- **Delete Data Cube Measure**: Delete a measure in the project configured on the connected Imply Polaris account.
+- **Delete Embedding Link**: Delete an embedding link in the project configured on the connected Imply Polaris account.
+- **Delete Embedding Link Secret Key**: Delete a secret key for an embedding link in the project configured on the connected Imply Polaris account.
+- **Delete File**: Delete a file in the project configured on the connected Imply Polaris account.
+- **Delete Lookup**: Delete a lookup in the project configured on the connected Imply Polaris account.
+- **Delete Project**: Delete a project through the connected Imply Polaris regional API.
+- **Delete Report**: Delete a report in the project configured on the connected Imply Polaris account.
+- **Get Alert** (read-only): Get alert details in the project configured on the connected Imply Polaris account.
+- **Get Alert Evaluation** (read-only): Get alert evaluation details in the project configured on the connected Imply Polaris account.
+- **Get Async Sql Results** (read-only): Get one result page for an async query, or omit cursor to return all pages sequentially.
+- **Get Async Sql Status** (read-only): Get status of an async query in the project configured on the connected Imply Polaris account.
+- **Get Connection** (read-only): Get connection details in the project configured on the connected Imply Polaris account.
+- **Get Connection Metadata** (read-only): Get project-level connection metadata.
+- **Get Dashboard** (read-only): Get dashboard details in the project configured on the connected Imply Polaris account.
+- **Get Dashboard Page** (read-only): Get page details in the project configured on the connected Imply Polaris account.
+- **Get Dashboard Page Tile** (read-only): Get tile details in the project configured on the connected Imply Polaris account.
+- **Get Data Cube** (read-only): Get data cube details in the project configured on the connected Imply Polaris account.
+- **Get Data Cube Dimension** (read-only): Get dimension details in the project configured on the connected Imply Polaris account.
+- **Get Data Cube Measure** (read-only): Get measure details in the project configured on the connected Imply Polaris account.
+- **Get Embedding Link** (read-only): Get embedding link details in the project configured on the connected Imply Polaris account.
+- **Get File Metadata** (read-only): Get file details in the project configured on the connected Imply Polaris account.
+- **Get Job** (read-only): Get job details in the project configured on the connected Imply Polaris account.
+- **Get Job Logs** (read-only): Get job logs in the project configured on the connected Imply Polaris account.
+- **Get Job Metrics** (read-only): Get job metrics in the project configured on the connected Imply Polaris account.
+- **Get Job Progress** (read-only): Get job overall progress in the project configured on the connected Imply Polaris account.
+- **Get Job Status** (read-only): Get job execution status in the project configured on the connected Imply Polaris account.
+- **Get Lookup** (read-only): Get lookup details in the project configured on the connected Imply Polaris account.
+- **Get Network Policy** (read-only): Get whether the project's regional API IP allowlist is enabled and return entries keyed by IPv4 address or CIDR.
+- **Get Project** (read-only): Get project details through the connected Imply Polaris regional API.
+- **Get Report** (read-only): Get report details in the project configured on the connected Imply Polaris account.
+- **Get Report Evaluation** (read-only): Get report evaluation details in the project configured on the connected Imply Polaris account.
+- **Get Table** (read-only): Get table details in the project configured on the connected Imply Polaris account.
+- **List Alert Evaluations** (read-only): Get alert evaluations in the project configured on the connected Imply Polaris account.
+- **List Alerts** (read-only): List all alerts in the project configured on the connected Imply Polaris account.
+- **List Connections** (read-only): List all connections in the project configured on the connected Imply Polaris account.
+- **List Dashboard Data Cubes** (read-only): Get dashboard data cubes in the project configured on the connected Imply Polaris account.
+- **List Dashboard Page Tiles** (read-only): Get dashboard page tiles in the project configured on the connected Imply Polaris account.
+- **List Dashboard Pages** (read-only): Get dashboard pages in the project configured on the connected Imply Polaris account.
+- **List Dashboards** (read-only): List all dashboards in the project configured on the connected Imply Polaris account.
+- **List Data Cube Dimensions** (read-only): Get data cube dimensions in the project configured on the connected Imply Polaris account.
+- **List Data Cube Measures** (read-only): Get data cube measures in the project configured on the connected Imply Polaris account.
+- **List Data Cubes** (read-only): List all data cubes in the project configured on the connected Imply Polaris account.
+- **List Embedding Links** (read-only): Get embedding links in the project configured on the connected Imply Polaris account.
+- **List Files** (read-only): List one offset-based page of files.
+- **List Jobs** (read-only): List one page of jobs in the project configured on the connected Imply Polaris account, with a cursor when more results are available.
+- **List Lookup Aliases** (read-only): List all aliases for a lookup in the project configured on the connected Imply Polaris account.
+- **List Lookups** (read-only): List all lookups in the project configured on the connected Imply Polaris account.
+- **List Report Evaluations** (read-only): Get report evaluations in the project configured on the connected Imply Polaris account.
+- **List Reports** (read-only): List all reports in the project configured on the connected Imply Polaris account.
+- **List Tables** (read-only): List all tables in a project in the project configured on the connected Imply Polaris account.
+- **List Unused Table Segments** (read-only): List one page of unused table segments, with a cursor when another page may be available.
+- **Push Connection Events**: Push events to a Polaris connection in the project configured on the connected Imply Polaris account.
+- **Replace Alert**: Replace the complete alert in the project configured on the connected Imply Polaris account.
+- **Replace Dashboard**: Replace the complete dashboard in the project configured on the connected Imply Polaris account.
+- **Replace Dashboard Page**: Replace the complete page in the project configured on the connected Imply Polaris account.
+- **Replace Dashboard Page Tile**: Replace the complete tile in the project configured on the connected Imply Polaris account.
+- **Replace Data Cube**: Replace the complete data cube in the project configured on the connected Imply Polaris account.
+- **Replace Data Cube Dimension**: Replace the complete dimension in the project configured on the connected Imply Polaris account.
+- **Replace Data Cube Measure**: Replace the complete measure in the project configured on the connected Imply Polaris account.
+- **Replace Embedding Link**: Replace the complete embedding link in the project configured on the connected Imply Polaris account.
+- **Replace Report**: Replace the complete report in the project configured on the connected Imply Polaris account.
+- **Replace Table**: Replace the complete table in the project configured on the connected Imply Polaris account.
+- **Reset Job**: Reset job to apply streaming ingestion offset in the project configured on the connected Imply Polaris account.
+- **Run Job**: Start or resume a Polaris ingestion job.
+- **Run Sql Query** (read-only): Query precached data in the project configured on the connected Imply Polaris account.
+- **Start Async SQL Ingestion**: Irreversibly insert or replace table data by starting an asynchronous SQL ingestion job.
+- **Start Async Sql Query** (read-only): Start a read-only SELECT query asynchronously.
+- **Suspend Job**: Pause a running Polaris ingestion job so it can be resumed later.
+- **Test Connection** (read-only): Test a connection in the project configured on the connected Imply Polaris account.
+- **Update Alert**: Update specified alert properties in the project configured on the connected Imply Polaris account.
+- **Update Connection**: Update a connection in the project configured on the connected Imply Polaris account.
+- **Update Dashboard**: Update specified dashboard properties in the project configured on the connected Imply Polaris account.
+- **Update Dashboard Page**: Update specified page properties in the project configured on the connected Imply Polaris account.
+- **Update Dashboard Page Tile**: Update specified tile properties in the project configured on the connected Imply Polaris account.
+- **Update Data Cube**: Update specified data cube properties in the project configured on the connected Imply Polaris account.
+- **Update Data Cube Dimension**: Update specified dimension properties in the project configured on the connected Imply Polaris account.
+- **Update Data Cube Measure**: Update specified measure properties in the project configured on the connected Imply Polaris account.
+- **Update Embedding Link**: Update specified embedding link properties in the project configured on the connected Imply Polaris account.
+- **Update Lookup**: Update a lookup in the project configured on the connected Imply Polaris account.
+- **Update Network Policy**: Enable or disable the project's regional API IP allowlist and set entries keyed by IPv4 address or CIDR.
+- **Update Project**: Update a project through the connected Imply Polaris regional API.
+- **Update Report**: Update specified report properties in the project configured on the connected Imply Polaris account.
+- **Upload File**: Upload a file in the project configured on the connected Imply Polaris account.
+- **Upsert Lookup Aliases**: Create or update aliases for a lookup in the project configured on the connected Imply Polaris account.

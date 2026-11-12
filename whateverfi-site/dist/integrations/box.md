@@ -1,0 +1,281 @@
+# Box
+
+Box is a cloud content management platform for secure file storage, sharing, collaboration, and governance.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/box/.
+
+## Actions
+
+- **Create box sign request**: Creates a signature request.
+- **Create collaboration**: Adds a collaboration for a single user or a single group to a file or folder.
+- **Create comment**: Adds a comment by the user to a specific file, or as a reply to an other comment.
+- **Create folder**: Creates a new empty folder within the specified parent folder.
+- **Delete file**: Deletes a file, either permanently or by moving it to the trash.
+- **Download file** (read-only): Returns the contents of a file in binary format.
+- **Find file for shared link** (read-only): Returns the file represented by a shared link.
+- **Get file information** (read-only): Retrieves the details about a file.
+- **Get folder information** (read-only): Retrieves details for a folder, including the first 100 entries in the folder.
+- **List file comments** (read-only): Retrieves a list of comments for a file.
+- **List items in folder** (read-only): Retrieves a page of items in a folder.
+- **Request access token**: Request an access token using either a client-side obtained oauth 2.0 authorization code or a server-side jwt assertion.
+- **Search for content** (read-only): Searches for files, folders, web links, and shared files across the users content or across the entire enterprise.
+- **Update file**: Updates a file.
+- **Update folder**: Updates a folder.
+- **Add classification to file**: Adds a classification to a file by specifying the label of the classification to add.
+- **Add classification to folder**: Adds a classification to a folder by specifying the label of the classification to add.
+- **Add domain to list of allowed collaboration domains**: Creates a new entry in the list of allowed domains to allow collaboration for.
+- **Add initial classifications**: When an enterprise does not yet have any classifications, this api call initializes the classification template with an initial set of…
+- **Add or update user avatar**: Adds or updates a user avatar.
+- **Add shared link to file**: Adds a shared link to a file.
+- **Add shared link to folder**: Adds a shared link to a folder.
+- **Add shared link to web link**: Adds a shared link to a web link.
+- **Add user to group**: Creates a group membership.
+- **Apply watermark to file**: Applies or update a watermark on a file.
+- **Apply watermark to folder**: Applies or update a watermark on a folder.
+- **Ask question** (read-only): Sends an ai request to supported llms and returns an answer specifically focused on the user's question given the provided context.
+- **Assign legal hold policy**: Assign a legal hold to a file, file version, folder, or user.
+- **Assign retention policy**: Assigns a retention policy to an item.
+- **Assign storage policy**: Creates a storage policy assignment for an enterprise or user.
+- **Assign task**: Assigns a task to a user.
+- **Authorize user** (read-only): Authorize a user by sending them through the [box](https.
+- **Cancel box sign request**: Cancels a sign request.
+- **Change shield information barrier status**: Change status of shield information barrier with the specified id.
+- **Commit upload session**: Close an upload session and create a file from the uploaded chunks.
+- **Copy file**: Creates a copy of a file.
+- **Copy file request**: Copies an existing file request that is already present on one folder, and applies it to another folder.
+- **Copy folder**: Creates a copy of a folder within a destination folder.
+- **Create ai agent**: Creates an ai agent.
+- **Create box skill cards on file**: Applies one or more box skills metadata cards to a file.
+- **Create email alias**: Adds a new email alias to a user account..
+- **Create folder lock**: Creates a folder lock on a folder, preventing it from being moved and/or deleted.
+- **Create group**: Creates a new group of users in an enterprise.
+- **Create jobs to terminate user group session**: Validates the roles and permissions of the group, and creates asynchronous jobs to terminate the group's sessions.
+- **Create jobs to terminate users session**: Validates the roles and permissions of the user, and creates asynchronous jobs to terminate the user's sessions.
+- **Create legal hold policy**: Create a new legal hold policy.
+- **Create metadata cascade policy**: Creates a new metadata cascade policy that applies a given metadata template to a given folder and automatically cascades it down to any…
+- **Create metadata instance on file**: Applies an instance of a metadata template to a file.
+- **Create metadata instance on folder**: Applies an instance of a metadata template to a folder.
+- **Create metadata template**: Creates a new metadata template that can be applied to files and folders.
+- **Create retention policy**: Creates a retention policy.
+- **Create shield information barrier**: Creates a shield information barrier to separate individuals/groups within the same firm and prevents confidential information passing…
+- **Create shield information barrier report**: Creates a shield information barrier report for a given barrier.
+- **Create shield information barrier segment**: Creates a shield information barrier segment.
+- **Create shield information barrier segment member**: Creates a new shield information barrier segment member.
+- **Create shield information barrier segment restriction**: Creates a shield information barrier segment restriction object.
+- **Create slack integration mapping**: Creates a [slack integration mapping](https.
+- **Create task**: Creates a single task on a file.
+- **Create teams integration mapping**: Creates a [teams integration mapping](https.
+- **Create terms of service**: Creates a terms of service for a given enterprise and type of user.
+- **Create terms of service status for new user**: Sets the status for a terms of service for a user.
+- **Create upload session**: Creates an upload session for a new file.
+- **Create upload session for existing file**: Creates an upload session for an existing file.
+- **Create user**: Creates a new managed user in an enterprise.
+- **Create user exemption from collaboration domain restrictions**: Create user exemption from collaboration domain restrictions.
+- **Create user invite**: Invites an existing external user to join an enterprise.
+- **Create web link**: Creates a web link object within a folder.
+- **Create webhook**: Creates a webhook.
+- **Create zip download**: Creates a request to download multiple files and folders as a single zip archive file.
+- **Delete ai agent**: Deletes an ai agent using the provided parameters.
+- **Delete file request**: Deletes a file request permanently.
+- **Delete folder**: Deletes a folder, either permanently or by moving it to the trash.
+- **Delete folder lock**: Deletes a folder lock on a given folder.
+- **Delete retention policy**: Permanently deletes a retention policy.
+- **Delete shield information barrier segment**: Deletes the shield information barrier segment based on provided id.
+- **Delete shield information barrier segment member by id**: Deletes a shield information barrier segment member based on provided id.
+- **Delete shield information barrier segment restriction by id**: Delete shield information barrier segment restriction by id.
+- **Delete slack integration mapping**: Deletes a [slack integration mapping](https.
+- **Delete teams integration mapping**: Deletes a [teams integration mapping](https.
+- **Delete user**: Deletes a user.
+- **Delete user avatar**: Removes an existing user avatar.
+- **Download zip archive** (read-only): Returns the contents of a zip archive in binary format.
+- **Extract metadata freeform** (read-only): Sends an ai request to supported large language models (llms) and extracts metadata in form of key-value pairs.
+- **Extract metadata structured** (read-only): Sends an ai request to supported large language models (llms) and returns extracted metadata as a set of key-value pairs.
+- **Find app item for shared link** (read-only): Returns the app item represented by a shared link.
+- **Find folder for shared link** (read-only): Return the folder represented by a shared link.
+- **Find metadata template by instance id** (read-only): Finds a metadata template by searching for the id of an instance of the template.
+- **Find web link for shared link** (read-only): Returns the web link represented by a shared link.
+- **Force apply metadata cascade policy to folder**: Force the metadata on a folder with a metadata cascade policy to be applied to all of its children.
+- **Generate text** (read-only): Sends an ai request to supported large language models (llms) and returns generated text based on the provided prompt.
+- **Get ai agent by agent id** (read-only): Gets an ai agent using the agent id parameter.
+- **Get ai agent default configuration** (read-only): Get the ai agent default config
+- **Get allowed collaboration domain** (read-only): Returns a domain that has been deemed safe to create collaborations for within the current enterprise.
+- **Get box sign request by id** (read-only): Gets a sign request by id.
+- **Get box sign template by id** (read-only): Fetches details of a specific box sign template.
+- **Get classification on file** (read-only): Retrieves the classification metadata instance that has been applied to a file.
+- **Get classification on folder** (read-only): Retrieves the classification metadata instance that has been applied to a folder.
+- **Get collaboration** (read-only): Retrieves a single collaboration.
+- **Get collection by id** (read-only): Retrieves a collection by its id.
+- **Get comment** (read-only): Retrieves the message and metadata for a specific comment, as well as information on the user who created the comment.
+- **Get current user** (read-only): Retrieves information about the user who is currently authenticated.
+- **Get device pin** (read-only): Retrieves information about an individual device pin.
+- **Get events long poll endpoint** (read-only): The listevents endpoint provides information about the events available in the box system.
+- **Get file request** (read-only): Retrieves the information about a file request.
+- **Get file thumbnail** (read-only): Retrieves a thumbnail, or smaller image representation, of a file.
+- **Get file version** (read-only): Retrieve a specific version of a file.
+- **Get file version legal hold** (read-only): Retrieves information about the legal hold policies assigned to a file version.
+- **Get file versions under retention** (read-only): Returns a list of file versions under retention for a retention policy assignment.
+- **Get files under retention** (read-only): Returns a list of files under retention for a retention policy assignment.
+- **Get group** (read-only): Retrieves information about a group.
+- **Get group membership** (read-only): Retrieves a specific group membership.
+- **Get legal hold policy** (read-only): Retrieve a legal hold policy.
+- **Get legal hold policy assignment** (read-only): Retrieve a legal hold policy assignment.
+- **Get metadata cascade policy** (read-only): Retrieve a specific metadata cascade policy assigned to a folder.
+- **Get metadata instance on file** (read-only): Retrieves the instance of a metadata template that has been applied to a file.
+- **Get metadata instance on folder** (read-only): Retrieves the instance of a metadata template that has been applied to a folder.
+- **Get metadata template by id** (read-only): Retrieves a metadata template by its id.
+- **Get metadata template by name** (read-only): Retrieves a metadata template by its scope and templatekey values.
+- **Get retention on file** (read-only): Returns information about a file version retention.
+- **Get retention policy** (read-only): Retrieves a retention policy.
+- **Get retention policy assignment** (read-only): Retrieves a retention policy assignment
+- **Get shared link for file** (read-only): Gets the information for a shared link on a file.
+- **Get shared link for folder** (read-only): Gets the information for a shared link on a folder.
+- **Get shared link for web link** (read-only): Gets the information for a shared link on a web link.
+- **Get shield information barrier report by id** (read-only): Retrieves a shield information barrier report by its id.
+- **Get shield information barrier segment member by id** (read-only): Retrieves a shield information barrier segment member by its id.
+- **Get shield information barrier segment restriction by id** (read-only): Retrieves a shield information barrier segment restriction based on provided id.
+- **Get shield information barrier segment with specified id** (read-only): Retrieves shield information barrier segment based on provided id..
+- **Get shield information barrier with specified id** (read-only): Get shield information barrier based on provided id.
+- **Get storage policy** (read-only): Fetches a specific storage policy.
+- **Get storage policy assignment** (read-only): Fetches a specific storage policy assignment.
+- **Get task** (read-only): Retrieves information about a specific task.
+- **Get task assignment** (read-only): Retrieves information about a task assignment.
+- **Get terms of service** (read-only): Fetches a specific terms of service.
+- **Get trashed file** (read-only): Retrieves a file that has been moved to the trash.
+- **Get trashed folder** (read-only): Retrieves a folder that has been moved to the trash.
+- **Get trashed web link** (read-only): Retrieves a web link that has been moved to the trash.
+- **Get upload session** (read-only): Return information about an upload session.
+- **Get user** (read-only): Retrieves information about a user in the enterprise.
+- **Get user avatar** (read-only): Retrieves an image of a the user's avatar.
+- **Get user exempt from collaboration domain restrictions** (read-only): Returns a users who has been exempt from the collaboration domain restrictions.
+- **Get user invite status** (read-only): Returns the status of a user invite.
+- **Get watermark for folder** (read-only): Retrieve the watermark for a folder.
+- **Get watermark on file** (read-only): Retrieve the watermark for a file.
+- **Get web link** (read-only): Retrieve information about a web link.
+- **Get webhook** (read-only): Retrieves a specific webhook
+- **Get zip download status** (read-only): Returns the download status of a zip archive, allowing an application to inspect the progress of the download as well as the number of…
+- **List ai agents** (read-only): Lists ai agents based on the provided parameters.
+- **List all classifications** (read-only): Retrieves the classification metadata template and lists all the classifications available to this enterprise.
+- **List all collections** (read-only): Retrieves all collections for a given user.
+- **List all file versions** (read-only): Retrieve a list of the past versions for a file.
+- **List all global metadata templates** (read-only): Used to retrieve all generic, global metadata templates available to all enterprises using box.
+- **List all legal hold policies** (read-only): Retrieves a list of legal hold policies that belong to an enterprise.
+- **List all metadata templates for enterprise** (read-only): Used to retrieve all metadata templates created to be used specifically within the user's enterprise
+- **List all webhooks** (read-only): Returns all defined webhooks for the requesting application.
+- **List allowed collaboration domains** (read-only): Returns the list domains that have been deemed safe to create collaborations for within the current enterprise.
+- **List box sign requests** (read-only): Gets signature requests created by a user.
+- **List box sign templates** (read-only): Gets box sign templates created by a user.
+- **List box skill cards on file** (read-only): List the box skills metadata cards that are attached to a file.
+- **List collection items** (read-only): Retrieves the files and/or folders contained within this collection.
+- **List enterprise device pins** (read-only): Retrieves all the device pins within an enterprise.
+- **List enterprise users** (read-only): Returns a list of all users for the enterprise along with their user id, public name, and login.
+- **List file app item associations** (read-only): **this is a beta feature, which means that its availability might be limited.** returns all app items the file is associated with.
+- **List file collaborations** (read-only): Retrieves a list of pending and active collaborations for a file.
+- **List file version legal holds** (read-only): Get a list of file versions on legal hold for a legal hold assignment.
+- **List file version retentions** (read-only): Retrieves all file version retentions for the given enterprise.
+- **List folder app item associations** (read-only): **this is a beta feature, which means that its availability might be limited.** returns all app items the folder is associated with.
+- **List folder collaborations** (read-only): Retrieves a list of pending and active collaborations for a folder.
+- **List folder locks** (read-only): Retrieves folder lock details for a given folder.
+- **List group collaborations** (read-only): Retrieves all the collaborations for a group.
+- **List groups for enterprise** (read-only): Retrieves all of the groups for a given enterprise.
+- **List legal hold policy assignments** (read-only): Retrieves a list of items a legal hold policy has been assigned to.
+- **List members of group** (read-only): Retrieves all the members for a group.
+- **List metadata cascade policies** (read-only): Retrieves a list of all the metadata cascade policies that are applied to a given folder.
+- **List metadata instances on file** (read-only): Retrieves all metadata for a given file.
+- **List metadata instances on folder** (read-only): Retrieves all metadata for a given folder.
+- **List parts** (read-only): Return a list of the chunks uploaded to the upload session so far.
+- **List pending collaborations** (read-only): Retrieves all pending collaboration invites for this user.
+- **List previous file versions for legal hold policy assignment** (read-only): List previous file versions for legal hold policy assignment
+- **List recently accessed items** (read-only): Returns information about the recent items accessed by a user, either in the last 90 days or up to the last 1000 items accessed.
+- **List retention policies** (read-only): Retrieves all of the retention policies for an enterprise.
+- **List retention policy assignments** (read-only): Returns a list of all retention policy assignments associated with a specified retention policy.
+- **List shield information barrier reports** (read-only): Lists shield information barrier reports.
+- **List shield information barrier segment members** (read-only): Lists shield information barrier segment members based on provided segment ids.
+- **List shield information barrier segment restrictions** (read-only): Lists shield information barrier segment restrictions based on provided segment id.
+- **List shield information barrier segments** (read-only): Retrieves a list of shield information barrier segment objects for the specified information barrier id.
+- **List shield information barriers** (read-only): Retrieves a list of shield information barrier objects for the enterprise of jwt.
+- **List slack integration mappings** (read-only): Lists [slack integration mappings](https.
+- **List storage policies** (read-only): Fetches all the storage policies in the enterprise.
+- **List storage policy assignments** (read-only): Fetches all the storage policy assignment for an enterprise or user.
+- **List task assignments** (read-only): Lists all of the assignments for a given task.
+- **List tasks on file** (read-only): Retrieves a list of all the tasks for a file.
+- **List teams integration mappings** (read-only): Lists [teams integration mappings](https.
+- **List terms of service user statuses** (read-only): Retrieves an overview of users and their status for a terms of service, including whether they have accepted the terms and when.
+- **List terms of services** (read-only): Returns the current terms of service text and settings for the enterprise.
+- **List trashed items** (read-only): Retrieves the files and folders that have been moved to the trash.
+- **List user and enterprise events** (read-only): Returns up to a year of past events for a given user or for the entire enterprise.
+- **List user s email aliases** (read-only): Retrieves all email aliases for a user.
+- **List user s groups** (read-only): Retrieves all the groups for a user.
+- **List users exempt from collaboration domain restrictions** (read-only): Returns a list of users who have been exempt from the collaboration domain restrictions.
+- **List workflows** (read-only): Returns list of workflows that act on a given folder id, and have a flow with a trigger type of workflow manual start.
+- **Permanently remove file**: Permanently deletes a file that is in the trash.
+- **Permanently remove folder**: Permanently deletes a folder that is in the trash.
+- **Permanently remove web link**: Permanently deletes a web link that is in the trash.
+- **Preflight check before upload** (read-only): Performs a check to verify that a file will be accepted by box before you upload the entire file.
+- **Promote file version**: Promote a specific version of a file.
+- **Query files folders by metadata** (read-only): Create a search using sql-like syntax to return items that match specific metadata.
+- **Refresh access token**: Refresh an access token using its client id, secret, and refresh token.
+- **Remove box skill cards from file**: Removes any box skills cards metadata from a file.
+- **Remove classification from file**: Removes any classifications from a file.
+- **Remove classification from folder**: Removes any classifications from a folder.
+- **Remove collaboration**: Deletes a single collaboration.
+- **Remove comment**: Permanently deletes a comment.
+- **Remove device pin**: Deletes an individual device pin.
+- **Remove domain from list of allowed collaboration domains**: Removes a domain from the list of domains that have been deemed safe to create collaborations for within the current enterprise.
+- **Remove email alias**: Removes an email alias from a user.
+- **Remove file version**: Move a file version to the trash.
+- **Remove group**: Permanently deletes a group.
+- **Remove legal hold policy**: Delete an existing legal hold policy.
+- **Remove metadata cascade policy**: Deletes a metadata cascade policy.
+- **Remove metadata instance from file**: Deletes a piece of file metadata.
+- **Remove metadata instance from folder**: Deletes a piece of folder metadata.
+- **Remove metadata template**: Delete a metadata template and its instances.
+- **Remove retention policy assignment**: Removes a retention policy assignment applied to content.
+- **Remove shared link from file**: Removes a shared link from a file.
+- **Remove shared link from folder**: Removes a shared link from a folder.
+- **Remove shared link from web link**: Removes a shared link from a web link.
+- **Remove task**: Removes a task from a file.
+- **Remove upload session**: Abort an upload session and discard all data uploaded.
+- **Remove User Domain Exemption**: Removes a user's exemption from the restrictions set out by the allowed list of domains for collaborations.
+- **Remove user from group**: Deletes a specific group membership.
+- **Remove watermark from file**: Removes the watermark from a file.
+- **Remove watermark from folder**: Removes the watermark from a folder.
+- **Remove web link**: Deletes a web link.
+- **Remove webhook**: Deletes a webhook.
+- **Resend box sign request**: Resends a signature request email to all outstanding signers.
+- **Restore file**: Restores a file that has been moved to the trash.
+- **Restore file version**: Restores a specific version of a file after it was deleted.
+- **Restore folder**: Restores a folder that has been moved to the trash.
+- **Restore web link**: Restores a web link that has been moved to the trash.
+- **Review files on legal hold policy assignment** (read-only): Get a list of files with current file versions for a legal hold assignment.
+- **Revoke access token**: Revoke an active access token, effectively logging a user out that has been previously authenticated.
+- **Starts workflow based on request body**: Initiates a flow with a trigger type of workflow manual start.
+- **Transfer owned folders**: Transfers ownership of a specific folder (with id 0) from one user to another in the box cloud storage system.
+- **Unassign legal hold policy**: Remove a legal hold from an item.
+- **Unassign storage policy**: Delete a storage policy assignment.
+- **Unassign task**: Deletes a specific task assignment.
+- **Update ai agent**: Updates an ai agent.
+- **Update all box skill cards on file**: An alternative method that can be used to overwrite and update all box skill metadata cards on a file.
+- **Update collaboration**: Updates a collaboration.
+- **Update comment**: Update the message of a comment.
+- **Update file request**: Updates a file request.
+- **Update group**: Updates a specific group.
+- **Update group membership**: Updates a user's group membership.
+- **Update legal hold policy**: Update legal hold policy.
+- **Update retention policy**: Updates a retention policy.
+- **Update shared link on file**: Updates a shared link on a file.
+- **Update shared link on folder**: Updates a shared link on a folder.
+- **Update shared link on web link**: Updates a shared link on a web link.
+- **Update shield information barrier segment with specified id**: Update shield information barrier segment with specified id
+- **Update slack integration mapping**: Updates a [slack integration mapping](https.
+- **Update storage policy assignment**: Updates a specific storage policy assignment.
+- **Update task**: Updates a task.
+- **Update task assignment**: Updates a task assignment.
+- **Update teams integration mapping**: Updates a [teams integration mapping](https.
+- **Update terms of service**: Updates a specific terms of service.
+- **Update terms of service status for existing user**: Updates the status for a terms of service for a user.
+- **Update user**: Updates a managed or app user in an enterprise.
+- **Update web link**: Updates a web link object.
+- **Update webhook**: Updates a webhook.
+- **Upload file**: Uploads a small file to box.
+- **Upload file version**: Update a file's content.
+- **Upload part of file**: Uploads a chunk of a file for an upload session.

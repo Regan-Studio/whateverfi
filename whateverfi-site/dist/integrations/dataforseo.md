@@ -1,0 +1,348 @@
+# DataForSEO
+
+SEO data and analytics platform providing SERP data, backlinks, keywords, and competitive intelligence
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/dataforseo/.
+
+## Actions
+
+- **Create App Data Google App List Task**: Create Google Play Store app list retrieval tasks.
+- **Create Business Data Trustpilot Search Task**: Create Trustpilot search tasks for retrieving business profiles.
+- **Create Keywords Data Google Keywords For Keywords Task**: Create Google Keywords For Keywords tasks for keyword research and analysis.
+- **Create Merchant Amazon Sellers Task**: Create Merchant Amazon Sellers tasks.
+- **Create On Page Task**: Create an On Page crawl task for analyzing websites.
+- **Create SERP Google Organic Task**: Create Google Organic SERP tasks for retrieving top search engine results.
+- **Get App Data Google App Info HTML By ID** (read-only): Retrieve raw HTML results for a Google Play app information task by ID.
+- **Get Appendix Status** (read-only): Get current operational status of all DataForSEO APIs and endpoints.
+- **Get Backlinks Summary Live** (read-only): Get a comprehensive overview of backlinks data for a domain, subdomain, or webpage.
+- **Get Business Data Google Reviews Task** (read-only): Retrieve Google Reviews task results by task ID.
+- **Get Keywords Data Google Keywords For Keywords Task** (read-only): Retrieve Google Keywords For Keywords task results by task ID.
+- **Get Live ChatGPT LLM Responses** (read-only): Retrieve live structured responses from ChatGPT AI models via DataForSEO.
+- **Get Merchant Amazon Products Task (Advanced)** (read-only): Retrieve advanced Amazon Products task results by task ID.
+- **Get On Page Pages** (read-only): Retrieve crawled pages with on-page metrics and optimization data.
+- **Get SERP Google Organic Task (Advanced)** (read-only): Retrieve advanced Google Organic SERP task results by task ID.
+- **List Business Data Google Languages** (read-only): List available languages for DataForSEO Google Business Data API.
+- **List Gemini LLM Models** (read-only): List available Gemini LLM response models with their capabilities.
+- **List Google App List Ready Tasks** (read-only): Retrieve completed Google App List tasks that are ready for collection.
+- **List Google Reviews Ready Tasks** (read-only): Retrieve completed Google Reviews tasks that are ready for collection.
+- **List Keywords Data Google Languages** (read-only): List available languages for DataForSEO Google Keywords Data API.
+- **List Keywords For Keywords Ready Tasks** (read-only): Retrieve completed Google Keywords For Keywords tasks that are ready for collection.
+- **List Merchant Amazon Products Ready Tasks** (read-only): Retrieve completed Merchant Amazon Products tasks that are ready for collection.
+- **List On Page Ready Tasks** (read-only): Retrieve completed On Page tasks that haven't been collected yet.
+- **List SERP Google Languages** (read-only): List available languages for DataForSEO Google SERP API.
+- **List SERP Google Organic Ready Tasks** (read-only): Retrieve completed SERP Google Organic tasks that are ready for collection.
+- **Create App Data Apple App Reviews Task**: Create Apple App Store reviews retrieval tasks.
+- **Create App Data Google App Reviews Task**: Create Google Play app reviews retrieval tasks.
+- **Create Apple App Searches Task**: Create Apple App Store search tasks via DataForSEO API.
+- **Create Bing Search Volume Task**: Create a Bing Search Volume task for keyword analysis.
+- **Create Google Keywords For Category Task**: Create a Google Keywords For Category task to retrieve keyword suggestions for a specific product/service category.
+- **Create Keywords Data Bing Audience Estimation Task**: Create a Bing Audience Estimation task for ad campaign planning.
+- **Create Keywords Data Google Trends Explore Task**: Create Google Trends Explore tasks for analyzing keyword popularity over time.
+- **Create On Page Lighthouse Task**: Create an On Page Lighthouse audit task for measuring web page quality based on Google's Lighthouse.
+- **Create SERP Google Autocomplete Task**: Create Google Autocomplete SERP tasks.
+- **Create SERP Google Events Task**: Create Google Events SERP tasks via DataForSEO API.
+- **Create SERP Google Finance Explore Task**: Create Google Finance Explore SERP tasks.
+- **Create SERP Google Local Finder Task**: Create Google Local Finder SERP tasks for retrieving local business search results.
+- **Create SERP Google Maps Task**: Create Google Maps SERP tasks.
+- **Create SERP Seznam Organic Task**: Create a SERP Seznam Organic search task.
+- **Create SERP YouTube Video Subtitles Task**: Create YouTube video subtitles extraction tasks.
+- **Create YouTube Video Comments Task**: Create YouTube Video Comments SERP tasks.
+- **Force Stop On Page Crawl**: Force stop On Page crawl tasks.
+- **Get AI Keyword Data Available Filters** (read-only): Retrieve available filters for DataForSEO AI Keyword Data API endpoints.
+- **Get AI Keyword Data Locations And Languages** (read-only): Retrieve the full list of locations and languages supported in AI Keyword Data API.
+- **Get AI Optimization Chat GPT LLM Scraper HTML by ID** (read-only): Retrieve AI Optimization Chat GPT LLM Scraper task results in HTML format.
+- **Get AI Optimization ChatGPT LLM Scraper Task (Advanced)** (read-only): Retrieve advanced ChatGPT LLM scraper task results by task ID.
+- **Get AI Optimization Gemini LLM Scraper Task Advanced** (read-only): Retrieve advanced AI Optimization Gemini LLM scraper task results by task ID.
+- **Get AI Optimization HTML Result** (read-only): Retrieve AI optimization LLM scraper HTML results by task ID.
+- **Get AI Optimization LLM Mentions Top Domains Live** (read-only): Get live aggregated LLM mentions grouped by most frequently mentioned domains.
+- **Get AI Optimization LLM Scraper Task HTML** (read-only): Retrieve HTML results from a DataForSEO AI Optimization LLM scraper task.
+- **Get App Data Google App Info Task HTML By ID** (read-only): Retrieve HTML content for a Google Play app by task ID.
+- **Get App Data Google App List Task Advanced By ID** (read-only): Retrieve Google Play app list results for a previously created task.
+- **Get App Data Google App Reviews Task Advanced By ID** (read-only): Retrieve Google Play app review results for a previously created task.
+- **Get App Data Google App Reviews Task HTML** (read-only): Retrieve HTML content for Google Play app reviews by task ID.
+- **Get App Data Google App Searches HTML By ID** (read-only): Retrieve raw HTML results for a Google Play app searches task by ID.
+- **Get App Data Google App Searches Task Advanced By ID** (read-only): Retrieve Google Play app search results for a previously created task.
+- **Get Appendix Errors** (read-only): Retrieve the complete list of DataForSEO API error codes and HTTP status codes.
+- **Get Appendix User Data** (read-only): Retrieve current user account data including balance, rate limits, spending statistics, and pricing information.
+- **Get Apple App Info Advanced by ID** (read-only): Get detailed Apple App Store information for a previously submitted task.
+- **Get Apple App Info Task Advanced** (read-only): Retrieve advanced results for a previously created Apple App Info task.
+- **Get Apple App List Task Results** (read-only): Retrieve Apple App Store app list results for a previously created task.
+- **Get Apple App Searches Task Advanced** (read-only): Retrieve Apple App Searches task results from DataForSEO.
+- **Get Backlinks Bulk Pages Summary Live** (read-only): Get comprehensive backlinks summary data for multiple pages, domains, or subdomains in a single request.
+- **Get Backlinks Bulk Spam Score Live** (read-only): Get spam scores for multiple domains, subdomains, or pages in a single request.
+- **Get Bing Keyword Performance Locations And Languages** (read-only): Retrieve the full list of locations and languages supported in Bing Keyword Performance API endpoints.
+- **Get Bing Keyword Suggestions for URL Task** (read-only): Retrieve Bing keyword suggestions for a URL from a previously created task.
+- **Get Bing Related Keywords Live** (read-only): Retrieve Bing related keywords appearing in 'searches related to' SERP element.
+- **Get Bing Search Volume Task By ID** (read-only): Retrieve Bing search volume task results by task ID.
+- **Get Bulk Keyword Difficulty Live**: Retrieve bulk keyword difficulty scores from DataForSEO Labs.
+- **Get Business Data Business Listings Available Filters** (read-only): Retrieve available filters for Business Data Business Listings API endpoints.
+- **Get Business Data Google Extended Reviews Task** (read-only): Retrieve Google Business extended reviews data by task ID.
+- **Get Business Data Google Hotel Info Task Advanced By ID** (read-only): Retrieve Google Hotel Info task results by task ID.
+- **Get Business Data Google Hotel Searches Task By ID** (read-only): Retrieve Google Hotel Searches task results by task ID.
+- **Get Business Data Google My Business Info Task** (read-only): Retrieve Google My Business information by task ID.
+- **Get Business Data Google My Business Updates Task By ID** (read-only): Retrieve Google My Business updates and posts by task ID.
+- **Get Business Data Google Questions And Answers Task** (read-only): Retrieve Google Business questions and answers data by task ID.
+- **Get Business Data Google Reviews Task By ID** (read-only): Retrieve Google Reviews task results by task ID.
+- **Get Business Data TripAdvisor Reviews Task By ID** (read-only): Retrieve TripAdvisor Reviews task results by task ID.
+- **Get Business Data TripAdvisor Search Task** (read-only): Retrieve TripAdvisor search results by task ID.
+- **Get Business Data TripAdvisor Search Task By ID** (read-only): Retrieve TripAdvisor Search task results by task ID.
+- **Get Business Data Trustpilot Search Task By ID** (read-only): Retrieve Trustpilot search task results by task ID.
+- **Get ChatGPT LLM Scraper Locations By Country** (read-only): Retrieve available ChatGPT LLM Scraper locations filtered by country ISO code.
+- **Get Content Analysis Available Filters** (read-only): Retrieve available filters for DataForSEO Content Analysis API endpoints.
+- **Get DataForSEO Labs Available Filters** (read-only): Retrieve available filters for DataForSEO Labs API endpoints.
+- **Get DataForSEO Labs Google Available History** (read-only): Retrieve available historical dates for DataForSEO Labs domain metrics.
+- **Get DataForSEO Labs Google Top Searches Live** (read-only): Retrieve top Google search keywords with comprehensive metrics including search volume, competition, CPC, trends, and intent data.
+- **Get DataForSEO Labs Status** (read-only): Retrieve last update dates for DataForSEO Labs data sources (Google, Bing, and Amazon).
+- **Get DataForSEO Trends Locations By Country** (read-only): Retrieve DataForSEO Trends locations filtered by country ISO code.
+- **Get Domain Analytics Technologies Available Filters** (read-only): Retrieve available filters for DataForSEO Domain Analytics Technologies API endpoints.
+- **Get Domain Analytics Technologies Technology Stats Live** (read-only): Retrieve historical technology adoption statistics across domains.
+- **Get Domain Analytics Whois Available Filters** (read-only): Retrieve available filters for Domain Analytics Whois API endpoints.
+- **Get Gemini LLM Responses Task Results** (read-only): Retrieve structured Gemini LLM responses from a specific task by ID.
+- **Get Gemini LLM Scraper HTML Results** (read-only): Retrieve HTML results for a completed Gemini LLM Scraper task by its unique ID.
+- **Get Gemini LLM Scraper HTML Results** (read-only): Retrieve HTML-formatted results for a completed Gemini LLM Scraper task.
+- **Get Gemini LLM Scraper Locations** (read-only): Retrieve available locations for DataForSEO's Gemini LLM Scraper.
+- **Get Google Ads Keywords For Site Task** (read-only): Retrieve Google Ads Keywords For Site task results by task ID.
+- **Get Google App Searches Task Advanced** (read-only): Retrieve Google Play Store app search results from DataForSEO.
+- **Get Google Historical Bulk Traffic Estimation Live** (read-only): Get historical monthly traffic volumes for up to 1000 domains, subdomains, or webpages on Google over a specified time range.
+- **Get Google Trends Locations By Country** (read-only): Retrieve available Google Trends locations filtered by country ISO code.
+- **Get Keywords Data Bing Audience Estimation Industries** (read-only): Retrieve the list of industries supported by Bing Ads Audience Estimation endpoint.
+- **Get Keywords Data Bing Keyword Suggestions For URL Live** (read-only): Get Bing keyword suggestions based on a target URL with search volume, competition, and CPC metrics.
+- **Get Keywords Data Bing Keyword Suggestions For URL Task By ID** (read-only): Retrieve Bing keyword suggestions for URL task results by task ID.
+- **Get Keywords Data Bing Keywords For Keywords Task By ID** (read-only): Retrieve Bing Keywords For Keywords task results by task ID.
+- **Get Keywords Data Bing Keywords For Site Task** (read-only): Retrieve Bing Keywords For Site task results by task ID.
+- **Get Keywords Data Bing Search Volume Task** (read-only): Retrieve Bing search volume task results by task ID.
+- **Get Keywords Data Google Ad Traffic By Keywords Task** (read-only): Retrieve Google Ad Traffic by Keywords task results by task ID.
+- **Get Keywords Data Google Ads Ad Traffic By Keywords Task** (read-only): Retrieve Google Ads Ad Traffic By Keywords task results by task ID.
+- **Get Keywords Data Google Ads Keywords For Keywords Live** (read-only): Retrieve Google Ads keyword suggestions for specified keywords with comprehensive metrics.
+- **Get Keywords Data Google Ads Keywords For Keywords Task** (read-only): Retrieve Google Ads Keywords For Keywords task results by task ID.
+- **Get Keywords Data Google Ads Keywords For Site Task By ID** (read-only): Retrieve Google Ads keyword data for a specific site by task ID.
+- **Get Keywords Data Google Ads Search Volume Task** (read-only): Retrieve Google Ads Search Volume task results by task ID.
+- **Get Keywords Data Google Ads Status** (read-only): Get current status of Google Ads keyword data updates.
+- **Get Keywords Data Google Adwords Status** (read-only): Get current status of Google AdWords keyword data updates.
+- **Get Keywords Data Google Keywords For Category Live** (read-only): Retrieve live Google keywords for a specific product/service category.
+- **Get Keywords Data Google Search Volume Task** (read-only): Retrieve Google Search Volume task results by task ID.
+- **Get Keywords Data Google Trends Explore Task** (read-only): Retrieve Google Trends Explore task results by task ID.
+- **Get LLM Mentions Available Filters** (read-only): Fetch available filters for AI Optimization LLM Mentions API endpoints.
+- **Get LLM Scraper Locations** (read-only): Retrieve available locations for DataForSEO ChatGPT LLM Scraper.
+- **Get Merchant Amazon ASIN Task Advanced By ID** (read-only): Retrieve Amazon product information by ASIN task ID.
+- **Get Merchant Amazon ASIN Task HTML** (read-only): Retrieve raw HTML results for an Amazon ASIN merchant task by ID.
+- **Get Merchant Amazon Products Task HTML By ID** (read-only): Retrieve raw HTML results for a Merchant Amazon Products task by ID.
+- **Get Merchant Amazon Sellers Task Advanced** (read-only): Retrieve Amazon sellers task results from DataForSEO.
+- **Get Merchant Amazon Sellers Task HTML By ID** (read-only): Retrieve raw HTML results for a Merchant Amazon Sellers task by ID.
+- **Get Merchant Google Product Info Task (Advanced)** (read-only): Retrieve advanced Google Product Info task results by task ID.
+- **Get Merchant Google Products Task (Advanced)** (read-only): Retrieve advanced Google Shopping Products task results by task ID.
+- **Get Merchant Google Products Task HTML** (read-only): Retrieve raw HTML results for a Merchant Google Products task by ID.
+- **Get Merchant Google Sellers Task (Advanced)** (read-only): Retrieve advanced Google Sellers task results by task ID.
+- **Get On Page Duplicate Content** (read-only): Retrieve duplicate content analysis for a specific page using the SimHash algorithm.
+- **Get On Page Duplicate Tags** (read-only): Retrieve pages with duplicate title or description tags from On Page crawl tasks.
+- **Get On Page Keyword Density** (read-only): Get keyword density and keyword frequency data from an On Page task.
+- **Get On Page Lighthouse Audits** (read-only): Retrieve the complete list of available Lighthouse audits for the OnPage API.
+- **Get On Page Lighthouse Task Get Json** (read-only): Retrieve On Page Lighthouse task results in JSON format.
+- **Get On Page Links** (read-only): Retrieve internal and external links detected on a target website by task ID.
+- **Get On Page Non Indexable** (read-only): Retrieve non-indexable pages from an On-Page crawl task by task ID.
+- **Get On Page Pages By Resource** (read-only): Retrieve pages that use a specific resource from a completed OnPage crawl task.
+- **Get On Page Summary** (read-only): Retrieve On Page Summary information for a scanned website by task ID.
+- **Get SERP Baidu Locations By Country** (read-only): Retrieve supported Baidu SERP locations by country.
+- **Get SERP Baidu Organic Task (Advanced)** (read-only): Retrieve advanced Baidu Organic SERP task results by task ID.
+- **Get SERP Bing Organic Task Regular By ID** (read-only): Retrieve Bing Organic SERP task results by task ID.
+- **Get SERP Google Ads Advertisers Advanced** (read-only): Retrieve Google Ads Advertisers task results by task ID.
+- **Get SERP Google Ads Advertisers Live Advanced** (read-only): Get live Google Ads Advertisers results via DataForSEO API.
+- **Get SERP Google Ads Advertisers Task (Advanced)** (read-only): Retrieve Google Ads Advertisers task results by task ID.
+- **Get SERP Google Ads Advertisers Task Advanced** (read-only): Retrieve Google Ads advertiser transparency data for a previously created task.
+- **Get SERP Google Ads Search Live Advanced** (read-only): Get live Google Ads Search advanced results.
+- **Get SERP Google AI Mode Task Advanced Results** (read-only): Retrieve Google AI Mode SERP task results by task ID.
+- **Get SERP Google Autocomplete Task (Advanced)** (read-only): Retrieve Google Autocomplete task results by task ID.
+- **Get SERP Google Dataset Info Task (Advanced)** (read-only): Retrieve Google Dataset Info task results by task ID.
+- **Get SERP Google Dataset Search Task (Advanced)** (read-only): Retrieve Google Dataset Search task results by task ID.
+- **Get SERP Google Finance Explore Task (Advanced)** (read-only): Retrieve Google Finance Explore task results by task ID.
+- **Get SERP Google Finance Markets Task HTML By ID** (read-only): Retrieve raw HTML results for a Google Finance Markets SERP task by ID.
+- **Get SERP Google Finance Quote HTML By ID** (read-only): Retrieve raw HTML results for a Google Finance Quote task by ID.
+- **Get SERP Google Finance Quote Task (Advanced)** (read-only): Retrieve Google Finance Quote task results by task ID.
+- **Get SERP Google Finance Ticker Search Task (Advanced)** (read-only): Retrieve Google Finance Ticker Search task results by task ID.
+- **Get SERP Google Images Task (Advanced)** (read-only): Retrieve Google Images SERP task results by task ID.
+- **Get SERP Google Images Task HTML By ID** (read-only): Retrieve raw HTML results for a Google Images SERP task by ID.
+- **Get SERP Google Jobs Task (Advanced)** (read-only): Retrieve Google Jobs SERP task results by task ID.
+- **Get SERP Google Local Finder Task (Advanced)** (read-only): Retrieve Google Local Finder SERP task results by task ID.
+- **Get SERP Google Maps Task (Advanced)** (read-only): Retrieve Google Maps SERP task results by task ID.
+- **Get SERP Google News Task (Advanced)** (read-only): Retrieve Google News SERP task results by task ID.
+- **Get SERP Google Organic Task HTML By ID** (read-only): Retrieve raw HTML results for a Google Organic SERP task by ID.
+- **Get SERP Google Organic Task HTML By ID** (read-only): Retrieve raw HTML results for a Google Organic SERP task by ID.
+- **Get SERP Google Organic Task Regular By ID** (read-only): Retrieve Google Organic SERP task results by task ID.
+- **Get SERP Google Search By Image HTML** (read-only): Retrieve raw HTML results for a Google Search By Image SERP task by ID.
+- **Get SERP Google Search By Image HTML By ID** (read-only): Retrieve raw HTML results for a Google Search By Image task by ID.
+- **Get SERP Naver Organic Task (Advanced)** (read-only): Retrieve advanced Naver Organic SERP task results by task ID.
+- **Get SERP Naver Organic Task (Advanced)** (read-only): Retrieve advanced Naver Organic SERP task results by task ID.
+- **Get SERP Naver Organic Task Regular By ID** (read-only): Retrieve Naver Organic SERP task results by task ID.
+- **Get SERP Seznam Organic Task (Advanced)** (read-only): Retrieve advanced Seznam Organic SERP task results by task ID.
+- **Get SERP Seznam Organic Task (Advanced)** (read-only): Retrieve Seznam Organic SERP task results by task ID.
+- **Get Serp Seznam Organic Task Get Regular By Id** (read-only): Retrieve Seznam Organic SERP task results by task ID.
+- **Get SERP Yahoo Organic Task (Advanced)** (read-only): Retrieve Yahoo Organic SERP task results by task ID.
+- **Get SERP Yahoo Organic Task (Advanced)** (read-only): Retrieve Yahoo Organic SERP task results by task ID.
+- **Get SERP Yahoo Organic Task Regular By ID** (read-only): Retrieve Yahoo Organic SERP task results by task ID.
+- **Get SERP YouTube Video Subtitles Task Advanced By ID** (read-only): Retrieve YouTube video subtitles from a specific task by ID.
+- **Get YouTube Video Comments Task (Advanced)** (read-only): Retrieve advanced YouTube Video Comments SERP task results by task ID.
+- **List AI Optimization ChatGPT LLM Scraper Languages** (read-only): List available languages for DataForSEO ChatGPT LLM Scraper.
+- **List AI Optimization Claude LLM Tasks Ready** (read-only): List completed AI Optimization Claude LLM response tasks that are ready for collection.
+- **List AI Optimization Gemini LLM Scraper Tasks Ready** (read-only): Retrieve completed Gemini LLM Scraper tasks that haven't been collected yet.
+- **List AI Optimization LLM Mentions Filters** (read-only): Retrieve available filters for AI Optimization LLM Mentions endpoint.
+- **List AI Optimization LLM Mentions Locations and Languages** (read-only): Retrieve the full list of locations and languages supported in DataForSEO AI Optimization LLM Mentions API.
+- **List AI Optimization Perplexity LLM Response Models** (read-only): List available Perplexity AI models for LLM responses with their capabilities.
+- **List App Data Apple Categories** (read-only): Retrieve the complete list of app categories available on Apple App Store.
+- **List App Data Apple Languages** (read-only): List available languages for DataForSEO Apple App Data API.
+- **List App Data Errors** (read-only): Retrieve information about App Data API tasks that returned errors within the past 7 days.
+- **List App Data Google App Listings Categories** (read-only): List all available Google Play app categories with their listing counts.
+- **List App Data Google Categories** (read-only): List available Google Play app categories.
+- **List App Data Google Languages** (read-only): List available languages for DataForSEO Google App Data API.
+- **List App Data Ready Tasks** (read-only): Retrieve completed App Data tasks that are ready for collection.
+- **List App Data Task IDs** (read-only): Retrieve a list of App Data task IDs within a specified time period.
+- **List Apple App Data Locations** (read-only): Retrieve the list of Apple App Store locations supported in DataForSEO App Data API.
+- **List Apple App List Ready Tasks** (read-only): Retrieve completed Apple App List tasks that are ready for collection.
+- **List Apple App Searches Tasks Ready** (read-only): Retrieve list of completed Apple App Searches tasks that are ready for collection.
+- **List Backlinks Available Filters** (read-only): Retrieve available filters for DataForSEO Backlinks API endpoints.
+- **List Backlinks Errors** (read-only): Retrieve information about Backlinks API tasks that returned errors within the past 7 days.
+- **List Baidu Organic Fixed Tasks** (read-only): Retrieve re-parsed Baidu organic SERP tasks that haven't been collected yet.
+- **List Bing Audience Estimation Ready Tasks** (read-only): Retrieve completed Keywords Data Bing Audience Estimation tasks that are ready for collection.
+- **List Bing Keyword Performance Ready Tasks** (read-only): Retrieve completed Bing Keyword Performance tasks that are ready for collection.
+- **List Bing Keywords For Keywords Ready Tasks** (read-only): Retrieve completed Bing Keywords For Keywords tasks that are ready for collection.
+- **List Bing Keywords For Site Ready Tasks** (read-only): Retrieve completed Bing Keywords For Site tasks that are ready for collection.
+- **List Bing Search Volume History Locations** (read-only): Retrieve the list of locations and languages supported by Bing Search Volume History endpoint.
+- **List Bing Search Volume History Ready Tasks** (read-only): Retrieve completed Bing Search Volume History tasks that are ready for collection.
+- **List Bing Search Volume Ready Tasks** (read-only): Retrieve completed Keywords Data Bing Search Volume tasks that are ready for collection.
+- **List Business Data Business Listings Categories** (read-only): List Business Data Business Listings categories by business count.
+- **List Business Data Business Listings Filters** (read-only): Retrieve available filters for DataForSEO Business Listings API endpoints.
+- **List Business Data Business Listings Locations** (read-only): List available locations for Business Listings data.
+- **List Business Data Errors** (read-only): Retrieve information about Business Data API tasks that returned errors within the past 7 days.
+- **List Business Data Google Hotel Searches Tasks Ready** (read-only): Retrieve completed Business Data Google Hotel Searches tasks ready for collection.
+- **List Business Data Ready Tasks** (read-only): Retrieve completed Business Data tasks that are ready for collection.
+- **List Business Data TripAdvisor Languages** (read-only): List available TripAdvisor languages supported in Business Data API.
+- **List Chat GPT AI Models** (read-only): Retrieve the list of available Chat GPT AI models from DataForSEO.
+- **List ChatGPT LLM Scraper Locations** (read-only): Retrieve the list of available locations for DataForSEO ChatGPT LLM Scraper.
+- **List Claude LLM Response Models** (read-only): List available Claude AI models for AI optimization and LLM responses.
+- **List Content Analysis Available Filters** (read-only): Retrieve available filters for DataForSEO Content Analysis API.
+- **List Content Analysis Categories** (read-only): List all available Content Analysis categories based on Google product and service categories.
+- **List Content Analysis Languages** (read-only): List available languages supported in Content Analysis API.
+- **List Content Analysis Locations** (read-only): List available locations supported in Content Analysis API.
+- **List DataForSEO Labs Categories** (read-only): Retrieve the complete hierarchical list of Google categories used by DataForSEO Labs.
+- **List DataForSEO Labs Errors** (read-only): Retrieve information about DataForSEO Labs API tasks that returned errors within the past 7 days.
+- **List DataForSEO Labs Google Categories for Keywords Languages** (read-only): List available languages for DataForSEO Labs Google Categories for Keywords API.
+- **List DataForSEO Labs Locations and Languages** (read-only): List available locations and languages supported in DataForSEO Labs API.
+- **List Domain Analytics Errors** (read-only): Retrieve information about Domain Analytics API tasks that returned errors within the past 7 days.
+- **List Domain Analytics Task IDs** (read-only): Retrieve a list of Domain Analytics task IDs within a specified time period.
+- **List Domain Analytics Technologies** (read-only): Retrieve the complete list of available technologies in DataForSEO Domain Analytics API, organized by groups and categories.
+- **List Domain Analytics Technologies Filters** (read-only): Retrieve available filters for DataForSEO Domain Analytics Technologies API endpoints.
+- **List Domain Analytics Technologies Languages** (read-only): List available languages for Domain Analytics Technologies API.
+- **List Domain Analytics Technologies Locations** (read-only): List available locations supported in Domain Analytics Technologies API.
+- **List Domain Analytics Whois Filters** (read-only): Retrieve available filters for DataForSEO Domain Analytics Whois API endpoint.
+- **List Gemini LLM Responses Tasks Ready** (read-only): Retrieve a list of completed Gemini LLM response tasks that haven't been collected yet.
+- **List Gemini LLM Scraper Languages** (read-only): Retrieve the list of available languages for DataForSEO AI Optimization Gemini LLM Scraper API.
+- **List Gemini LLM Scraper Locations** (read-only): List available locations for AI Optimization Gemini LLM Scraper.
+- **List Google Ad Traffic by Keywords Ready Tasks** (read-only): Retrieve completed Google Ad Traffic by Keywords tasks that are ready for collection.
+- **List Google Ads Ad Traffic by Keywords Ready Tasks** (read-only): Retrieve completed Google Ads Ad Traffic by Keywords tasks that are ready for collection.
+- **List Google Ads Keywords For Keywords Ready Tasks** (read-only): Retrieve completed Google Ads Keywords For Keywords tasks that are ready for collection.
+- **List Google Ads Search Volume Ready Tasks** (read-only): Retrieve completed Google Ads Search Volume tasks that are ready for collection.
+- **List Google App Info Ready Tasks** (read-only): Retrieve completed Google App Info tasks that are ready for collection.
+- **List Google App Reviews Ready Tasks** (read-only): Retrieve completed Google App Reviews tasks that are ready for collection.
+- **List Google App Searches Ready Tasks** (read-only): Retrieve completed Google App Searches tasks that are ready for collection.
+- **List Google Autocomplete Fixed Tasks** (read-only): Retrieve re-parsed Google autocomplete SERP tasks that haven't been collected yet.
+- **List Google Dataset Search Fixed Tasks** (read-only): Retrieve re-parsed Google Dataset Search SERP tasks that haven't been collected yet.
+- **List Google Events Fixed Tasks** (read-only): Retrieve re-parsed Google Events SERP tasks that haven't been collected yet.
+- **List Google Extended Reviews Ready Tasks** (read-only): Retrieve completed Google Extended Reviews tasks that are ready for collection.
+- **List Google Hotel Info Ready Tasks** (read-only): Retrieve completed Google Hotel Info tasks that are ready for collection.
+- **List Google Images Fixed Tasks** (read-only): Retrieve re-parsed Google Images SERP tasks that haven't been collected yet.
+- **List Google Jobs Fixed Tasks** (read-only): Retrieve re-parsed Google Jobs SERP tasks that haven't been collected yet.
+- **List Google Local Finder Fixed Tasks** (read-only): Retrieve re-parsed Google Local Finder SERP tasks that haven't been collected yet.
+- **List Google Local Finder Ready Tasks** (read-only): Retrieve completed SERP Google Local Finder tasks that are ready for collection.
+- **List Google Maps Fixed Tasks** (read-only): Retrieve re-parsed Google Maps SERP tasks that haven't been collected yet.
+- **List Google My Business Info Ready Tasks** (read-only): Retrieve completed Google My Business Info tasks that are ready for collection.
+- **List Google My Business Updates Ready Tasks** (read-only): Retrieve completed Google My Business Updates tasks that are ready for collection.
+- **List Google News Fixed Tasks** (read-only): Retrieve re-parsed Google News SERP tasks that haven't been collected yet.
+- **List Google Organic Fixed Tasks** (read-only): Retrieve re-parsed Google Organic SERP tasks that haven't been collected yet.
+- **List Google Questions And Answers Ready Tasks** (read-only): Retrieve completed Google Questions And Answers tasks that are ready for collection.
+- **List Google Search By Image Fixed Tasks** (read-only): Retrieve re-parsed Google Search by Image SERP tasks that haven't been collected yet.
+- **List Google Search Volume Ready Tasks** (read-only): Retrieve completed Google Search Volume tasks that are ready for collection.
+- **List Google Trends Explore Ready Tasks** (read-only): Retrieve completed Google Trends Explore tasks that are ready for collection.
+- **List Keywords Data Bing Audience Estimation Job Functions** (read-only): Retrieve the list of job functions with job_function_id supported by Bing Ads Audience Estimation endpoint.
+- **List Keywords Data Bing Keyword Suggestions For URL Languages** (read-only): List available languages for DataForSEO Bing Keyword Suggestions API.
+- **List Keywords Data Bing Keyword Suggestions For URL Tasks Ready** (read-only): Retrieve completed Bing Keyword Suggestions For URL tasks that haven't been collected yet.
+- **List Keywords Data Bing Languages** (read-only): List available languages for DataForSEO Bing Keywords Data API.
+- **List Keywords Data Clickstream Data Locations And Languages** (read-only): Retrieve the full list of locations and languages supported in DataForSEO Clickstream Data API.
+- **List Keywords Data Dataforseo Trends Locations** (read-only): List available locations supported in DataForSEO Trends API.
+- **List Keywords Data Endpoints** (read-only): Retrieve all available Keywords Data API endpoints.
+- **List Keywords Data Errors** (read-only): Retrieve Keywords Data API tasks that returned errors within the past 7 days.
+- **List Keywords Data Google Ads Keywords For Site Tasks Ready** (read-only): Retrieve completed Google Ads Keywords For Site tasks that haven't been collected yet.
+- **List Keywords Data Google Ads Languages** (read-only): List available languages for DataForSEO Keywords Data Google Ads API.
+- **List Keywords Data Google Categories** (read-only): List available Google AdWords product/service categories.
+- **List Keywords Data Google Keywords For Site Tasks Ready** (read-only): Retrieve completed Google Keywords For Site tasks that haven't been collected yet.
+- **List Keywords Data Google Trends Categories** (read-only): List available Google Trends categories for Keywords Data API.
+- **List Keywords Data Google Trends Languages** (read-only): List available languages for DataForSEO Google Trends API.
+- **List Keywords Data Google Trends Locations** (read-only): List available Google Trends locations for Keywords Data API.
+- **List Merchant Amazon Asin Ready Tasks** (read-only): Retrieve completed Merchant Amazon Asin tasks that are ready for collection.
+- **List Merchant Amazon Languages** (read-only): List available languages for DataForSEO Amazon Merchant Data API.
+- **List Merchant Amazon Sellers Ready Tasks** (read-only): Retrieve completed Merchant Amazon Sellers tasks that are ready for collection.
+- **List Merchant Errors** (read-only): Retrieve information about Merchant API tasks that returned errors within the past 7 days.
+- **List Merchant Google Languages** (read-only): List available languages for DataForSEO Merchant Google API.
+- **List Merchant Google Product Info Ready Tasks** (read-only): Retrieve completed Merchant Google Product Info tasks that are ready for collection.
+- **List Merchant Google Products Ready Tasks** (read-only): Retrieve completed Merchant Google Products tasks that are ready for collection.
+- **List Merchant Google Reviews Ready Tasks** (read-only): Retrieve completed Merchant Google Reviews tasks that are ready for collection.
+- **List Merchant Google Sellers Ready Tasks** (read-only): Retrieve completed Merchant Google Sellers tasks that are ready for collection.
+- **List Merchant Ready Tasks** (read-only): Retrieve completed Merchant tasks that are ready for collection.
+- **List Naver Organic Fixed Tasks** (read-only): Retrieve re-parsed Naver organic SERP tasks that haven't been collected yet.
+- **List On Page Lighthouse Languages** (read-only): List available languages for DataForSEO On Page Lighthouse API.
+- **List On Page Lighthouse Tasks Ready** (read-only): Retrieve the list of completed On Page Lighthouse tasks that haven't been collected yet.
+- **List On Page Resources** (read-only): Retrieve resources from a completed OnPage crawl task.
+- **List OnPage Available Filters** (read-only): Retrieve available filters for DataForSEO OnPage API endpoints.
+- **List OnPage Errors** (read-only): Retrieve information about OnPage API tasks that returned errors within the past 7 days.
+- **List OnPage Lighthouse Versions** (read-only): List available Lighthouse versions for OnPage API audits.
+- **List Ready AI Optimization LLM Response Tasks** (read-only): List completed AI optimization LLM response tasks that are ready for result collection.
+- **List Serp Baidu Languages** (read-only): List available languages for DataForSEO Baidu SERP API.
+- **List SERP Baidu Organic Ready Tasks** (read-only): Retrieve completed SERP Baidu Organic tasks that are ready for collection.
+- **List SERP Bing Languages** (read-only): List available languages for DataForSEO Bing SERP API.
+- **List SERP Bing Organic Ready Tasks** (read-only): Retrieve completed SERP Bing Organic tasks that are ready for collection.
+- **List SERP Bing Organic Tasks Fixed** (read-only): Retrieve list of re-parsed Bing Organic SERP tasks that haven't been collected yet.
+- **List SERP Endpoints** (read-only): Retrieve the complete list of available SERP API endpoints for task setup.
+- **List SERP Errors** (read-only): Retrieve SERP API tasks that returned errors within the past 7 days.
+- **List SERP Google Ads Advertisers Locations** (read-only): List available Google Ads advertiser locations for SERP API queries.
+- **List SERP Google Ads Advertisers Ready Tasks** (read-only): Retrieve completed SERP Google Ads Advertisers tasks that are ready for collection.
+- **List SERP Google Ads Search Locations** (read-only): List available Google Ads Search locations for SERP API.
+- **List SERP Google Ads Search Ready Tasks** (read-only): Retrieve completed SERP Google Ads Search tasks that are ready for collection.
+- **List SERP Google AI Mode Languages** (read-only): List available languages for DataForSEO Google AI Mode SERP API.
+- **List SERP Google AI Mode Ready Tasks** (read-only): Retrieve completed SERP Google AI Mode tasks that are ready for collection.
+- **List SERP Google AI Mode Tasks Fixed** (read-only): Retrieve re-parsed SERP Google AI Mode tasks that haven't been collected yet.
+- **List SERP Google Autocomplete Ready Tasks** (read-only): Retrieve completed SERP Google Autocomplete tasks that are ready for collection.
+- **List SERP Google Dataset Info Fixed Tasks** (read-only): Retrieve re-parsed Google Dataset Info tasks that haven't been collected yet.
+- **List SERP Google Dataset Info Ready Tasks** (read-only): Retrieve completed SERP Google Dataset Info tasks that are ready for collection.
+- **List SERP Google Dataset Search Ready Tasks** (read-only): Retrieve completed SERP Google Dataset Search tasks that are ready for collection.
+- **List SERP Google Events Ready Tasks** (read-only): Retrieve completed SERP Google Events tasks that are ready for collection.
+- **List SERP Google Finance Explore Ready Tasks** (read-only): Retrieve completed SERP Google Finance Explore tasks that are ready for collection.
+- **List SERP Google Finance Markets Ready Tasks** (read-only): Retrieve completed SERP Google Finance Markets tasks that are ready for collection.
+- **List SERP Google Finance Quote Ready Tasks** (read-only): Retrieve completed SERP Google Finance Quote tasks that are ready for collection.
+- **List SERP Google Finance Ticker Search Ready Tasks** (read-only): Retrieve completed SERP Google Finance Ticker Search tasks that are ready for collection.
+- **List SERP Google Images Ready Tasks** (read-only): Retrieve completed SERP Google Images tasks that are ready for collection.
+- **List SERP Google Jobs Ready Tasks** (read-only): Retrieve completed SERP Google Jobs tasks that are ready for collection.
+- **List SERP Google Maps Ready Tasks** (read-only): Retrieve completed SERP Google Maps tasks that are ready for collection.
+- **List SERP Google News Ready Tasks** (read-only): Retrieve completed SERP Google News tasks that are ready for collection.
+- **List SERP Google Search By Image Ready Tasks** (read-only): Retrieve completed SERP Google Search By Image tasks that are ready for collection.
+- **List SERP Naver Organic Ready Tasks** (read-only): Retrieve completed SERP Naver Organic tasks that are ready for collection.
+- **List SERP Ready Tasks** (read-only): Retrieve completed SERP tasks that are ready for collection.
+- **List Serp Seznam Languages** (read-only): List available languages for DataForSEO Seznam SERP API.
+- **List SERP Task IDs** (read-only): Retrieve a list of SERP task IDs within a specified time period.
+- **List SERP Yahoo Languages** (read-only): List available languages for DataForSEO Yahoo SERP API.
+- **List SERP YouTube Languages** (read-only): List available languages for DataForSEO YouTube SERP API.
+- **List SERP YouTube Video Info Ready Tasks** (read-only): Retrieve completed SERP YouTube Video Info tasks that are ready for collection.
+- **List SERP YouTube Video Subtitles Fixed Tasks** (read-only): Retrieve re-parsed SERP YouTube Video Subtitles tasks that haven't been collected yet.
+- **List SERP YouTube Video Subtitles Ready Tasks** (read-only): Retrieve completed SERP YouTube Video Subtitles tasks that are ready for collection.
+- **List Seznam Organic Fixed Tasks** (read-only): Retrieve re-parsed Seznam organic SERP tasks that haven't been collected yet.
+- **List Seznam Organic SERP Ready Tasks** (read-only): Retrieve completed Seznam Organic SERP tasks that are ready for collection.
+- **List TripAdvisor Reviews Ready Tasks** (read-only): Retrieve completed TripAdvisor Reviews tasks that are ready for collection.
+- **List TripAdvisor Search Ready Tasks** (read-only): Retrieve completed TripAdvisor Search tasks that are ready for collection.
+- **List Trustpilot Reviews Ready Tasks** (read-only): Retrieve completed Trustpilot Reviews tasks that are ready for collection.
+- **List Trustpilot Search Ready Tasks** (read-only): Retrieve completed Trustpilot Search tasks that are ready for collection.
+- **List Yahoo Organic Fixed Tasks** (read-only): Retrieve re-parsed Yahoo organic SERP tasks that haven't been collected yet.
+- **List Yahoo Organic SERP Ready Tasks** (read-only): Retrieve completed Yahoo Organic SERP tasks that are ready for collection.
+- **List YouTube Organic Ready Tasks** (read-only): Retrieve completed YouTube Organic SERP tasks that are ready for collection.
+- **List YouTube Video Comments Fixed Tasks** (read-only): Retrieve re-parsed YouTube Video Comments SERP tasks that haven't been collected yet.
+- **List YouTube Video Comments Ready Tasks** (read-only): Retrieve completed YouTube video comments SERP tasks that are ready for collection.
+- **List YouTube Video Info Fixed Tasks** (read-only): Retrieve re-parsed YouTube Video Info SERP tasks that haven't been collected yet.
+- **Post Keywords Data Google Search Volume Task**: Submit a Google search volume task for specified keywords.
+- **Post On Page Summary**: Retrieve On Page Summary information for multiple scanned websites via POST request.
+- **Resend Appendix Webhooks**: Resend webhooks (pingbacks and postbacks) for completed tasks.

@@ -1,0 +1,255 @@
+# Deputy
+
+Manage workforce scheduling, employees, timesheets, leave, locations, and other tenant resources in Deputy.
+
+Category: Recruiting & HR. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/deputy/.
+
+## Actions
+
+- **Add My Memo Comment**: Add a comment to the specified memo for the connected user.
+- **Add resource comment**: Add comment text to one Deputy resource record.
+- **Amend Employee ABP Data**: Update employee data through Deputy's legacy amendment route and return its untyped result object.
+- **Apply Timesheet Operation**: Apply a non-clock timesheet operation.
+- **Archive Location**: Archive the selected Deputy company or location so it is no longer active.
+- **Autobuild Roster**: Start an asynchronous job that creates unpublished Deputy shifts for selected areas and dates using staffing, coverage, or historical…
+- **Autobuild Roster from Agreed Hours**: Create Deputy shifts from selected employees' agreed-hours profiles for specified areas, locations, and dates.
+- **Autobuild Roster from GFE**: Start Deputy's documented GFE-based automatic roster-build operation using the supplied inputs.
+- **Autofill Roster**: Start an asynchronous job that assigns candidate employees to selected open Deputy shifts using bounded search and optimization settings.
+- **Bulk create or update resource records**: Create or update multiple records of one resource type.
+- **Cancel My Roster Offer**: Cancel the existing offer for the specified roster record.
+- **Cancel Roster Autofill**: Cancel the roster autofill operation identified by the supplied Deputy cancellation object.
+- **Cascade Location Settings**: Update documented settings for a Deputy company and cascade those values to eligible child records.
+- **Check Department** (read-only): Return Deputy's untyped department-check object for the specified department ID.
+- **Check GFE Roster Autobuild**: Check or advance Deputy's documented GFE-based roster-autobuild job using its job key and request object.
+- **Check My NPS Eligibility** (read-only): Return whether the connected Deputy user can submit an NPS response.
+- **Check Roster Autobuild from Agreed Hours**: Check or advance Deputy's documented roster autobuild-from-agreed-hours job using its job key and request object.
+- **Check Roster Publish Allowance** (read-only): Return whether the connected user may publish the specified number of rosters.
+- **Check Timesheet Approval Allowance** (read-only): Return the approval-allowance result for the requested number of timesheets.
+- **Claim My Open Rosters**: Assign eligible published open rosters that do not require approval to the connected employee, closing those openings.
+- **Copy Company Roster Template**: Create a roster-template copy for a Deputy company from the supplied template data.
+- **Copy Roster**: Copy Deputy roster data using the supplied source and destination settings.
+- **Copy Rosters in Batch**: Copy multiple rosters in one request using the supplied source and destination settings.
+- **Count My Colleagues** (read-only): Return the number of colleagues visible to the connected Deputy user.
+- **Count Real Employees** (read-only): Return the count of employees Deputy's legacy API classifies as real employees.
+- **Create Company**: Add a Deputy location with its workplace name, address, and optional workplace, timezone, parent-company, and payroll settings.
+- **Create Contracted-Hours Template**: Create a Deputy contracted-hours template using the supplied documented template object.
+- **Create Department**: Create a Deputy department from the supplied documented department fields.
+- **Create Employee**: Create a Deputy employee using the supplied name, location, and optional employment details.
+- **Create Employee**: Create one or more Deputy employees with each employee's first name, last name, and location ID.
+- **Create Employee**: Create a Deputy employee using the supplied documented employee fields.
+- **Create Employee Leave**: Create a new employee leave record.
+- **Create Employee Unavailability**: Create a recurring unavailability record for a specific supervised employee.
+- **Create Multiple Departments**: Create multiple Deputy departments from the supplied documented department data.
+- **Create or replace resource record**: Create a resource record, or fully replace the matching record when the supplied data identifies one.
+- **Create or update Contactaddress**: Create or update contact-address data for the connected Deputy user.
+- **Create or update Nps**: Create or update the connected Deputy user's Net Promoter Score response.
+- **Create or Update Roster**: Create or update a Deputy roster using the supplied documented roster object.
+- **Create or Update Roster Timesheet Data**: Create or update Deputy's documented roster-timesheet record using the supplied relationship object.
+- **Create or update Todo**: Create or update a to-do item for the connected Deputy user.
+- **Create or update Unavail**: Create or update an unavailability record for the connected Deputy user.
+- **Create resource record**: Create an Employee, Leave, OperationalUnit, Roster, or Timesheet record from typed agent-facing fields.
+- **Create Workplace**: Create a new workplace in the connected Deputy account using the supplied workplace details.
+- **Decline Gamingfy Item**: Decline the Gamingfy item identified by the supplied request object, changing its state.
+- **Delete Contracted-Hours Template**: Permanently delete an employee contracted-hours template by template ID.
+- **Delete Department**: Permanently delete the Deputy department identified by department ID.
+- **Delete Employee Account**: Permanently delete the selected employee's Deputy account.
+- **Delete Employee Invitations**: Delete the employee invitation data selected by Deputy's zero-input invitation endpoint.
+- **Delete Location**: Permanently delete the Deputy company or location identified by company ID.
+- **Delete My Memo Comment**: Delete a comment from the specified memo.
+- **Delete My Preference**: Delete one preference for the connected Deputy user by preference key.
+- **Delete My To-Do Item**: Delete a to-do item belonging to the connected user by its numeric ID.
+- **Delete My Token**: Invalidate the Deputy token identified by its documented token ID or token value.
+- **Delete resource comment**: Permanently delete one comment from a Deputy resource record.
+- **Delete resource record**: Permanently delete an Employee, Leave, OperationalUnit, Roster, or Timesheet record by ID.
+- **Delete Roster Template**: Permanently delete a Deputy roster template by template ID.
+- **Delete Unavailability**: Permanently delete a self or supervised employee unavailability record by ID.
+- **Discard Roster Changes**: Discard the Deputy roster state selected by the supplied documented object.
+- **End Employee Timesheet**: Clock off an employee and end the selected active timesheet using Deputy's documented clock-off object.
+- **Find matching resource record** (read-only): Find the closest existing record matching a partial typed record before deciding whether to create or update it.
+- **Get Bulk Location Settings Job Result** (read-only): Get the check result for a Deputy bulk company-settings job by job ID.
+- **Get Bulk Timesheet Job Result** (read-only): Get the check result for a Deputy bulk timesheet job by job ID.
+- **Get Company Memos** (read-only): Get memos for a Deputy company by company ID.
+- **Get Company Rosters by Date** (read-only): Get roster data for a Deputy company on the specified date.
+- **Get Company Subordinate Contact Addresses** (read-only): Get subordinate contact addresses for the specified Deputy company.
+- **Get Company Timezone** (read-only): Get the timezone configured for the connected user's Deputy company.
+- **Get Department** (read-only): Get a Deputy department by its department ID.
+- **Get Department Location** (read-only): Return Deputy's untyped department-location lookup object for the specified ID.
+- **Get Department Weather** (read-only): Get current weather or weather for a specified date for one Deputy department.
+- **Get Employee** (read-only): Get the Deputy employee record with the specified employee ID.
+- **Get Employee Contracted Hours** (read-only): Get contracted-hours information for the specified Deputy employee.
+- **Get Employee Demo Data** (read-only): Get the employee demo result exposed by Deputy's legacy supervisor API.
+- **Get Employee HR Onboarding** (read-only): Get HR onboarding information for the specified Deputy employee.
+- **Get Employee Invitation Information** (read-only): Get the invitation information returned by Deputy's zero-input employee invitation endpoint.
+- **Get Employee Leave Information** (read-only): Get Deputy leave information for the specified employee.
+- **Get Employee Leave Setup Information** (read-only): Get leave information for an employee using Deputy's required leave setup selector.
+- **Get Employee Login Management State** (read-only): Read login-management information for the specified employee without changing login access.
+- **Get Employee Payroll Connection** (read-only): Read payroll connection information for the specified Deputy employee.
+- **Get Employee Payroll Sync Information** (read-only): Read payroll synchronization information for the specified employee without starting a sync.
+- **Get Employee Related Resource Data** (read-only): Get data for the specified employee-related resource category through Deputy's generic legacy route.
+- **Get Employee Role Management Data** (read-only): Read the employee-role management data exposed by Deputy.
+- **Get Employee Shift Information** (read-only): Get current shift information for an employee, optionally broadened across all companies by the required scope flag.
+- **Get Employee Timesheet by Date** (read-only): Get Deputy timesheet information for an employee on the specified date.
+- **Get Employee Unavailability** (read-only): Get Deputy unavailability information for the specified employee.
+- **Get Employee Validation Result** (read-only): Get Deputy's read-only validation result for the specified employee.
+- **Get Flagged Location By Coordinates** (read-only): Get Deputy location data for the supplied coordinates using the specified location lookup flag.
+- **Get Location By Coordinates** (read-only): Get Deputy location data for the specified latitude and longitude.
+- **Get Location Settings** (read-only): Get the configured settings for a Deputy company or location by company ID.
+- **Get Location Weather** (read-only): Get current weather or weather for a specified date for locations in one Deputy company.
+- **Get Locations By Company** (read-only): Get location records for the specified Deputy company.
+- **Get Memo Reactions** (read-only): Get reactions for the specified Deputy record type and record ID.
+- **Get My Department Tasks** (read-only): Get department-related task data available to the connected Deputy user.
+- **Get My Department Tasks By Date** (read-only): Get department-related task data for the connected Deputy user on the supplied date.
+- **Get My Emergency Contact Addresses** (read-only): Get emergency contact addresses for the connected Deputy user.
+- **Get My Feed By Date** (read-only): Get feed records for the connected Deputy user on the specified date.
+- **Get My Feed By Range** (read-only): Get feed records for the connected Deputy user over the supplied start-to-end interval.
+- **Get My Feed Summary By Range** (read-only): Get a summary of the connected Deputy user's feed over the supplied start-to-end interval.
+- **Get My Gamingfy Setup** (read-only): Get Gamingfy setup data for the selected list or decline operation.
+- **Get My Leave By Setup** (read-only): Get leave data for the connected Deputy user using the specified setup selector.
+- **Get My Memo** (read-only): Get a Deputy memo by its memo ID.
+- **Get My Memo Summary** (read-only): Get memo summary data for the connected Deputy user.
+- **Get My Photo** (read-only): Get the connected Deputy user's photo.
+- **Get My Preference** (read-only): Get one preference for the connected Deputy user by its preference key.
+- **Get My Roster** (read-only): Get one roster record available to the connected Deputy user by roster ID.
+- **Get My Roster By Date Range** (read-only): Get the connected user's roster records between the specified start and end dates.
+- **Get My Roster Offer Recommendation** (read-only): Get the offer recommendation for a roster by roster ID.
+- **Get My Roster Offer Status** (read-only): Get the offer status for a roster by roster ID.
+- **Get My Roster Publish Count** (read-only): Return the publish-related roster count for the connected Deputy user.
+- **Get My Setup Apps** (read-only): Get Deputy setup app configuration available to the connected user.
+- **Get My Support Access** (read-only): Get Deputy support-access status or configuration for the connected user's account.
+- **Get My Widget Information** (read-only): Get Deputy widget metadata available to the connected user.
+- **Get My Widget Run Data** (read-only): Get run-related widget data available to the connected Deputy user.
+- **Get My Workplace Setup** (read-only): Return the connected Deputy user's workplaces, departments, role, permissions, and setup capabilities without contact or address details.
+- **Get OAuth Identity** (read-only): Get OAuth Identity.
+- **Get Open Rosters By Date Range** (read-only): Get open roster data between the supplied dates, waiting up to the specified maximum wait time.
+- **Get Pending Roster Swap Approval Details** (read-only): Get pending-approval swap details for a roster by roster ID.
+- **Get Real Employee Records** (read-only): Get the employee subset Deputy's legacy API classifies as real employees.
+- **Get resource field metadata** (read-only): Get Deputy's field metadata for the selected resource type.
+- **Get resource history** (read-only): Get the change history for one Deputy resource record.
+- **Get resource record** (read-only): Get one Company, Employee, Leave, OperationalUnit, Roster, or Timesheet record by its numeric ID.
+- **Get resource record at time** (read-only): Get one Deputy resource record as it existed at the specified Unix timestamp.
+- **Get Roster Autobuild Job Result** (read-only): Get the status or result of an automatic Deputy roster-build job by job key.
+- **Get Roster Autofill Job Result** (read-only): Get the status or result of an automatic Deputy roster-fill job by job key.
+- **Get Roster Bids** (read-only): Get bids for a roster by roster ID.
+- **Get Roster Manager Notification Information** (read-only): Get Deputy's manager-notification information for the specified roster.
+- **Get Roster Recommendation** (read-only): Get a roster recommendation for the connected employee or supervised employees.
+- **Get Roster Recommendation Status** (read-only): Get the current recommendation status for a Deputy roster by roster ID.
+- **Get Roster Swap Details** (read-only): Get swap details for a roster belonging to the connected employee or supervised employees.
+- **Get Rosters by Date** (read-only): Get Deputy roster data for the specified date.
+- **Get Subordinate Contact Addresses** (read-only): Get contact addresses for employees subordinate to the connected Deputy user.
+- **Get Team Memos** (read-only): Get memos for a Deputy team by team ID.
+- **Get Timesheet Details** (read-only): Get detailed timesheet data for the connected employee or supervised employees.
+- **Get Timesheet History** (read-only): Get timesheet change history for the connected employee or supervised employees.
+- **Get Timesheet Setup** (read-only): Get timesheet setup information for the connected employee or supervised employees.
+- **Get User Memos** (read-only): Get memos for a Deputy user by user ID.
+- **Get Widget Run** (read-only): Get run information for the specified Deputy widget ID.
+- **Invite Employee to Deputy**: Invite the selected employee to Deputy, sending a one-way external invitation that cannot be recalled.
+- **List All Locations** (read-only): List all locations available to the connected Deputy account.
+- **List All My Contact Addresses** (read-only): List all contact addresses available to the connected Deputy user.
+- **List Companies and Locations** (read-only): List Deputy companies, workplaces, and payroll entities, or return one company when company_id is provided.
+- **List Company Roster Templates** (read-only): List roster templates for a Deputy company without changing them.
+- **List Company Rosters by Date** (read-only): Get a paginated roster result for a Deputy company and date, with an explicit selector for including open rosters.
+- **List Contracted-Hours Templates** (read-only): List the contracted-hours templates available for supervised employees.
+- **List Employees** (read-only): Return one page of Deputy employees, or one exact employee when employee_id is provided, without contact, address, payroll, tax, bank,…
+- **List Gamingfy Items** (read-only): List Gamingfy setup items without changing their state.
+- **List Leave Records** (read-only): Return one page of employee leave records, or one leave record when leave_id is provided, without reasons, comments, medical or attachment…
+- **List Location Kiosk Authentication Modes** (read-only): List the kiosk authentication modes allowed for locations in the specified Deputy company.
+- **List My Colleagues** (read-only): List colleagues visible to the connected Deputy user.
+- **List My Completed Tasks** (read-only): List completed tasks available to the connected Deputy user.
+- **List My Contact Addresses** (read-only): List contact addresses available to the connected Deputy user.
+- **List My Memos** (read-only): List memos available to the connected Deputy user.
+- **List My Notifications** (read-only): List notifications visible to the connected Deputy user.
+- **List My Open Rosters** (read-only): List open roster records available to the connected Deputy user.
+- **List My Read Memos** (read-only): List memos marked as read for the connected Deputy user.
+- **List My Roster Bids** (read-only): List roster bids available to the connected Deputy user.
+- **List My Rosters From Timestamp** (read-only): List the connected user's roster records from a start timestamp using the specified ordering direction and result limit.
+- **List My Tasks** (read-only): List tasks available to the connected Deputy user.
+- **List My Timesheets By Range** (read-only): List the connected user's timesheets between the specified start and end values.
+- **List My Timesheets From Timestamp** (read-only): List the connected user's timesheets from a start timestamp using the specified ordering direction and result limit.
+- **List My To-Do Items** (read-only): List to-do items assigned to the connected Deputy user.
+- **List My Tokens** (read-only): List Deputy token records available to the connected user.
+- **List My Training Records** (read-only): List training records available to the connected Deputy user.
+- **List My Unavailability By Date Range** (read-only): List the connected Deputy user's unavailability records between the specified start and end dates.
+- **List My Unread Memos** (read-only): List unread memos for the connected Deputy user.
+- **List Operational Units** (read-only): Return one page of Deputy operational units (areas or departments), or one unit when operational_unit_id is provided.
+- **List Recent Rosters** (read-only): List Deputy rosters from the previous 12 hours through the next 36 hours.
+- **List resource comments** (read-only): List comments attached to one Deputy resource record.
+- **List resource records** (read-only): List raw Company, Employee, Leave, OperationalUnit, Roster, or Timesheet records.
+- **List Roster Shifts** (read-only): Return one page of scheduled Deputy roster shifts, or one exact shift when roster_id is provided, without comments, costs, creator…
+- **List Roster Swaps** (read-only): List roster swaps in a date range for the connected employee or supervised employees.
+- **List Roster System Templates** (read-only): List Deputy roster system templates using the required provider-defined numeric mode.
+- **List Simplified Locations** (read-only): Get Deputy's simplified location list for lightweight location selection.
+- **List States And Countries** (read-only): List Deputy's supported countries and their states for setup and address selection.
+- **List Supervised Employees** (read-only): Get full Deputy records for all employees visible to the connected supervisor.
+- **List Timesheets** (read-only): Return one page of worked-time records, or one timesheet when timesheet_id is provided.
+- **Manage Employee Leave**: Update leave-management state for the leave record or request identified in the supplied object and return Deputy's untyped result object.
+- **Notify All Recommended Employees**: Send immediate, non-recallable workforce notifications to every recommended employee for a roster.
+- **Notify Recommended Employee**: Send an immediate, non-recallable workforce notification to the selected recommended employee for a roster.
+- **Offer My Roster**: Create an offer for the specified roster record using the supplied offer details.
+- **Postpone My NPS Response**: Postpone the connected Deputy user's NPS response or prompt.
+- **Process Employee Invitation**: Process an employee invitation using Deputy's documented invitation payload.
+- **Publish Roster**: Publish the Deputy roster selected by the supplied publication object, making the schedule externally visible.
+- **Query Locations Pending Approval** (read-only): Query locations awaiting approval for the connected Deputy user using a Deputy query object.
+- **Reactivate Employee**: Reactivate a terminated Deputy employee, returning the employee to active status.
+- **Recalculate Timesheets in Bulk**: Recalculate the selected timesheets in bulk.
+- **Replace Employee Contracted Hours**: Update contracted-hours details for an existing Deputy employee by employee ID.
+- **Replace resource record**: Replace an existing Employee, Leave, OperationalUnit, Roster, or Timesheet record with a non-atomic safety check.
+- **Replace Unavailability**: Replace a self or supervised employee unavailability record by ID.
+- **Request My Roster Bid**: Create pending bids for the connected employee on eligible published open rosters that require approval.
+- **Reset Employee Gender Data**: Reset employee gender data using Deputy's documented reset object.
+- **Reset Employee Two-Factor Authentication**: Reset the selected employee's two-factor authentication, invalidating the current second-factor setup so it must be configured again.
+- **Reset Roster Recommendations**: Reset recommendations for a roster.
+- **Resolve Address And Timezone From Coordinates** (read-only): Resolve an address and timezone from the supplied geographic coordinates without changing Deputy data.
+- **Resolve Coordinates And Timezone From Address** (read-only): Resolve geographic coordinates and a timezone from the supplied address without changing Deputy data.
+- **Run My Setup SF Operation**: Submit setup data to Deputy's legacy setup route and return its untyped result object.
+- **Save Company Roster Template**: Save changes to roster-template data for a Deputy company.
+- **Search My Colleagues** (read-only): Search colleague records visible to the connected Deputy user using a Deputy query object.
+- **Search resource records** (read-only): Search one Deputy resource type with typed filters, sorting, offset pagination, and optional related-record expansion.
+- **Search Supervised Employees** (read-only): Search supervised employees using Deputy's employee query filters and return matching employee records.
+- **Send Email To Customer Experience**: Immediately send the supplied email to Deputy Customer Experience.
+- **Send Employee Account Reset**: Send the selected employee Deputy's account-reset communication.
+- **Send Employee Login Communication**: Send Deputy's login communication to the selected employee.
+- **Set Employee Award from Library**: Apply an award from Deputy's library to selected employment agreements.
+- **Set Employee Award from Template**: Apply a proven Deputy award contract template to selected employee agreements.
+- **Set Employee Workplace Association**: Associate an employee with a workplace or remove that relationship.
+- **Set Location Google Place ID**: Set or replace the Google Place ID associated with a Deputy company or location.
+- **Set Memo Read State**: Mark a memo log read or unread for the connected Deputy user.
+- **Set My Preference**: Set the connected Deputy user's preference identified by key to the supplied value.
+- **Set Task Completion**: Complete or restore a task belonging to the connected Deputy user.
+- **Start Employee Timesheet**: Clock on an employee and start a timesheet using Deputy's documented clock-on object.
+- **Submit My NPS Response**: Submit a Net Promoter Score response for the connected Deputy user.
+- **Synchronize Employee Payroll Data**: Run Deputy's documented HR payroll synchronization operation for the specified employee.
+- **Terminate Employee**: Terminate the specified Deputy employee.
+- **Toggle Employee Timesheet Break**: Toggle an employee timesheet between paused and resumed break states.
+- **Update Company Memo**: Apply the supplied memo change for the specified Deputy company.
+- **Update Contracted-Hours Template**: Apply Deputy's documented mutation to a contracted-hours template using the supplied template object.
+- **Update Contracted-Hours Template**: Update a Deputy contracted-hours template by template ID using the supplied documented fields.
+- **Update Department**: Update a Deputy department's location, name, address, payroll export name, display order, or area type by department ID.
+- **Update Departments for Location**: Update the collection of department records associated with the specified Deputy location and return Deputy's untyped result object.
+- **Update Employee**: Update documented fields for an existing Deputy employee by employee ID.
+- **Update Employee Contracted Hours**: Apply Deputy's documented contracted-hours mutation to an existing employee.
+- **Update Employee HR Onboarding**: Assign an HR onboarding record ID to the specified Deputy employee.
+- **Update Employee Photo**: Update the selected employee's photo using Deputy's documented photo object.
+- **Update Employee Related Resource**: Apply the supplied object to the selected employee-related category.
+- **Update Location**: Update documented fields for a Deputy company or location by ID.
+- **Update Location Settings**: Update documented settings for one Deputy company or location by company ID.
+- **Update My Completed Tasks**: Apply the supplied completion change to tasks for the connected Deputy user.
+- **Update My Department Tasks**: Apply the supplied department-task change for the connected Deputy user.
+- **Update My Department Tasks By Date**: Apply the supplied department-task change for the connected Deputy user on the specified date.
+- **Update My Emergency Contact Address**: Update emergency contact information for the connected Deputy user.
+- **Update My Memo Feed**: Apply provider-defined changes to the connected Deputy user's memo or newsfeed state.
+- **Update My Memo Summary**: Update memo summary state for the connected Deputy user using the supplied request values.
+- **Update My Photo**: Update the connected Deputy user's named photo using the supplied photo request body.
+- **Update My Preference**: Update the connected Deputy user's named preference using the supplied preference value.
+- **Update My Roster Swap**: Request, cancel, accept, recommend, decline, or decline all for the specified roster swap.
+- **Update My Support Access**: Change Deputy support access for the connected user's account using the supplied support-access setting.
+- **Update My Task**: Update the specified task for the connected Deputy user using the supplied request values.
+- **Update My Task State**: Apply provider-defined changes to the connected Deputy user's task state.
+- **Update resource record**: Update an existing Employee, Leave, OperationalUnit, Roster, or Timesheet record using Deputy's documented complete resource schema.
+- **Update Roster Recommendations**: Update employee recommendations for the specified roster using the supplied object and return Deputy's untyped result object.
+- **Update Settings for All Locations**: Update the supplied Deputy location settings across all locations.
+- **Update Team Memo**: Apply the supplied memo change for the specified Deputy team.
+- **Update User Memo**: Apply the supplied memo change for the specified Deputy user.
+- **Validate Employee Data** (read-only): Validate employee data before creating or updating an employee.
+- **Validate Employee Data** (read-only): Validate the supplied employee object through Deputy's legacy PUT validation route and return the validation result.
+- **Validate Workplace** (read-only): Validate the supplied Deputy workplace details and return the result without changing the workplace.
+- **Withdraw My Roster Bid**: Change the connected employee's pending bids on the specified rosters to withdrawn.

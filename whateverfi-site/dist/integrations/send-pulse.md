@@ -1,0 +1,624 @@
+# SendPulse
+
+SendPulse is a multichannel marketing platform for email, SMS, chatbots, CRM, automation, web push, and transactional messaging.
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/send-pulse/.
+
+## Actions
+
+- **Activate Bulk Email Sender**: Verify and activate a SendPulse sender email address using its code.
+- **Add a contact to a deal**: Adds a previously created contact to the specified deal
+- **Add a domain**: Add a domain using the official SendPulse smtp API.
+- **Add a note to a deal**: Adds a note to the specified deal
+- **Add Bulk Email Sender**: Register a new sender email address and begin its verification process.
+- **Add comment to task**: Add an internal comment to a SendPulse CRM task.
+- **Add Contact Attribute Value**: Store a value for an existing SendPulse CRM contact attribute.
+- **Add Contact Comment**: Add a comment to a SendPulse CRM contact.
+- **Add Contact Company Relation**: Associate a SendPulse CRM contact with a company.
+- **Add Contact Emails**: Add email addresses to a SendPulse CRM contact.
+- **Add Contact Messenger**: Add a messenger account to a SendPulse CRM contact.
+- **Add Contact Phone**: Add a phone number to a SendPulse CRM contact.
+- **Add Custom Tab Relation**: Relate a SendPulse CRM custom tab to entities or attributes.
+- **Add Deal Attribute**: Store a value for an existing SendPulse CRM deal attribute.
+- **Add Emails to Bulk Email Blacklist**: Globally suppress one or more email addresses from SendPulse email communications.
+- **Add Mailing List Contacts**: Add a batch of contacts to a Bulk Email mailing list, optionally assign tags, and optionally send a double-opt-in confirmation email.
+- **Add phone number to the blacklist**: Add phone number to the blacklist using the official SendPulse viber API.
+- **Add phone numbers to a mailing list**: Add phone numbers to a mailing list using the official SendPulse sms API.
+- **Add phone numbers with complex variables**: Add phone numbers with complex variables using the official SendPulse sms API.
+- **Add product to deal**: Attach a SendPulse CRM product, quantity, and price to a deal.
+- **Add SMS Blacklist Entries**: Globally suppress phone numbers from future SendPulse SMS messages.
+- **Add Tag to Contact**: Add an existing SendPulse CRM tag to a contact.
+- **Approve manual payment.**: Set approval status for manually created payment
+- **Assign Facebook Contact Operator**: Assign a responsible operator to a SendPulse Facebook contact chat.
+- **Assign Instagram Contact Operator**: Assign a responsible operator to a SendPulse Instagram chatbot contact's chat.
+- **Assign Instagram Contact Tags**: Assign one or more tags to a SendPulse Instagram chatbot contact.
+- **Assign Live Chat Contact Operator**: Assign a responsible operator to a SendPulse Live Chat contact's chat.
+- **Assign tag to email**: Assign tag to email using the official SendPulse bulk-email API.
+- **Assign tag to phone**: Assign tag to phone using the official SendPulse bulk-email API.
+- **Assign Telegram Contact Operator**: Assign an operator as responsible for a SendPulse Telegram contact chat.
+- **Assign TikTok Contact Operator**: Assign an operator to a TikTok contact chat.
+- **Assign TikTok Contact Tags**: Assign one or more tags to a TikTok contact.
+- **Assign Viber Chatbot Contact Operator**: Assign an operator as responsible for a SendPulse Viber chatbot contact's chat.
+- **Assign Viber Chatbot Contact Tags**: Assign one or more tags to a SendPulse Viber chatbot contact.
+- **Assign Viber Chatbot Contact Variables**: Assign values to one or more variables on a SendPulse Viber chatbot contact.
+- **Assign WhatsApp Contact Operator**: Assign a SendPulse operator as responsible for a WhatsApp contact chat.
+- **Assign WhatsApp Contact Tags**: Assign one or more tags to a SendPulse WhatsApp contact.
+- **Attach Call to Deal**: Attach a telephony call to a SendPulse CRM deal.
+- **Attach entity to task**: Attach specified CRM contacts, deals, or tasks to a SendPulse CRM task.
+- **Batch Create Company Messengers**: Create multiple messenger records for a SendPulse CRM company.
+- **Batch Create Company Phones**: Create multiple phone records for a SendPulse CRM company.
+- **Batch Create CRM Company Emails**: Add multiple email addresses to a CRM company in one request.
+- **Batch Store Contact Attribute Values**: Store multiple attribute values for a SendPulse CRM contact.
+- **Calculate SMS Campaign Cost** (read-only): Estimate the SendPulse price and currency for an SMS campaign without sending it.
+- **Cancel a campaign before sending has started**: Cancel a campaign before sending has started using the official SendPulse sms API.
+- **Cancel Bulk Email Campaign**: Stop a pending or processing Bulk Email campaign.
+- **Cancel manual payment**: Set payment status to canceled for manually created payment.
+- **Change a phone number for a contact**: Change a phone number for a contact using the official SendPulse bulk-email API.
+- **Change Deal Pipeline**: Move a SendPulse CRM deal to a pipeline and step.
+- **Change task order**: Changes order of a task in the current step or in another.
+- **Check File Exists** (read-only): Check whether a file exists at a SendPulse File Manager path.
+- **Close Facebook Contact Chat**: Close a SendPulse Facebook contact chat and lower its queue priority.
+- **Close Instagram Contact Chat**: Close a SendPulse Instagram contact chat and lower its queue priority.
+- **Close Live Chat Contact Chat**: Close a SendPulse Live Chat contact's chat and lower its priority.
+- **Close Telegram Contact Chat**: Close a SendPulse Telegram contact chat and lower its priority.
+- **Close TikTok Contact Chat**: Close a TikTok contact chat and lower its queue priority.
+- **Close Viber Contact Chat**: Close a Viber contact chat and lower its queue priority.
+- **Close WhatsApp Contact Chat**: Close a SendPulse WhatsApp contact chat and lower its queue priority.
+- **Create  payment**: Record a manual payment for a SendPulse CRM contact or deal.
+- **Create a campaign for a list of phone numbers**: Create a campaign for a list of phone numbers using the official SendPulse sms API.
+- **Create a campaign for a mailing list**: Create a campaign for a mailing list using the official SendPulse sms API.
+- **Create a deal attribute**: Create a custom deal attribute in a SendPulse CRM pipeline.
+- **Create a new pipeline step**: Create a stage in a specified SendPulse CRM deal pipeline.
+- **Create a new product**: Create a SendPulse CRM product with pricing, inventory, and category details.
+- **Create a tag**: Create a tag using the official SendPulse bulk-email API.
+- **Create a task tag**: Create a task tag
+- **Create a template**: Create a template using the official SendPulse bulk-email API.
+- **Create a Viber campaign**: Create a Viber campaign using the official SendPulse viber API.
+- **Create attribute value**: Set a custom attribute value on a SendPulse CRM task.
+- **Create Bulk Email Campaign**: Create, send, schedule, or save a draft SendPulse email campaign.
+- **Create checklist without items in task**: Create one empty checklist on a SendPulse CRM task.
+- **Create Company Phone**: Create a phone record for a SendPulse CRM company.
+- **Create Contact**: Create a SendPulse CRM contact with a responsible team member and basic identity fields.
+- **Create Contact Attribute**: Create a custom attribute for SendPulse CRM contacts.
+- **Create Contact Tag**: Create a tag for SendPulse CRM contacts.
+- **Create CRM Attachment**: Attach one previously uploaded File Manager file to a CRM entity.
+- **Create CRM Attachments Batch**: Attach a batch of previously uploaded files to CRM entities.
+- **Create CRM Board**: Create a CRM task board with optional responsible-user and color settings.
+- **Create CRM Board Attribute**: Create a typed custom attribute on a CRM task board.
+- **Create CRM Board Step**: Create a workflow step in a CRM task board.
+- **Create CRM Checklist Item**: Create an item in an existing CRM task checklist.
+- **Create CRM Company**: Create a company record in SendPulse CRM.
+- **Create CRM Company Attribute**: Create a typed custom attribute for CRM company records.
+- **Create CRM Company Email**: Add one email address to a CRM company record.
+- **Create CRM Company Messenger**: Connect one messenger contact record to a CRM company.
+- **Create Custom Tab**: Create a custom tab for a SendPulse CRM entity type.
+- **Create Deal**: Create a deal in a SendPulse CRM pipeline.
+- **Create Education Student**: Create a SendPulse Education student and optionally enroll them in a course tariff.
+- **Create Facebook Contact Note**: Create an internal operator note for a SendPulse Facebook contact.
+- **Create File Manager Directory**: Create a directory in SendPulse File Manager.
+- **Create Instagram Contact Note**: Create an internal operator note for a SendPulse Instagram contact.
+- **Create Live Chat Contact Note**: Create an operator note for a SendPulse Live Chat contact.
+- **Create Mailing List**: Create an empty Bulk Email mailing list and return its new ID.
+- **Create managers from category**: Assign CRM managers to a SendPulse manager-settings section.
+- **Create multiple checklists with items in task**: Create multiple checklists and their items on a SendPulse CRM task.
+- **Create new pipeline**: Create a SendPulse CRM deal pipeline with its initial stages and settings.
+- **Create Popup Project**: Create a SendPulse project that can contain popup widgets.
+- **Create Product Sections**: Create sections and their attribute values for a SendPulse CRM product.
+- **Create tasks**: Create a SendPulse CRM task with ownership, scheduling, and optional recurrence.
+- **Create Telegram Contact Note**: Create an internal operator note for a SendPulse Telegram contact.
+- **Create TikTok Contact Note**: Create an internal operator note for a TikTok contact.
+- **Create Verification Report**: Start generating a downloadable SendPulse mailing-list verification report.
+- **Create Viber Chatbot Contact Note**: Create an internal operator note for a SendPulse Viber chatbot contact.
+- **Create Web Push Campaign**: Create and queue a SendPulse browser notification campaign.
+- **Create WhatsApp Contact**: Create a contact in a SendPulse WhatsApp bot audience.
+- **Create WhatsApp Contact Note**: Create an internal operator note for a SendPulse WhatsApp contact.
+- **Delete Automation Event Logs**: Permanently clear SendPulse Automation 360 event logs.
+- **Delete Bulk Email Sender**: Permanently remove an authorized Bulk Email sender address.
+- **Delete Bulk Email Tag**: Permanently delete a tag and remove it from assigned contacts.
+- **Delete CRM Attachment**: Permanently detach a file attachment from SendPulse CRM.
+- **Delete CRM Checklist Item**: Permanently delete an item from a SendPulse CRM checklist.
+- **Delete CRM Company**: Permanently delete a company from SendPulse CRM.
+- **Delete CRM Company Attribute**: Permanently delete a company attribute from SendPulse CRM.
+- **Delete CRM Company Email**: Remove an email address from a SendPulse CRM company.
+- **Delete CRM Company Messenger**: Remove a messenger from a SendPulse CRM company.
+- **Delete CRM Company Phone**: Remove a phone number from a SendPulse CRM company.
+- **Delete CRM Contact Attribute**: Permanently delete a contact attribute from SendPulse CRM.
+- **Delete CRM Contact Attribute Value**: Remove an attribute value from a SendPulse CRM contact.
+- **Delete CRM Contact By ID**: Permanently remove a SendPulse CRM contact by ID.
+- **Delete CRM Contact Comment**: Remove a note from a SendPulse CRM contact.
+- **Delete CRM Contact Company Relation**: Remove the relation between a SendPulse CRM contact and company.
+- **Delete CRM Contact Email**: Remove an email address from a SendPulse CRM contact.
+- **Delete CRM Contact Phone**: Remove a phone number from a SendPulse CRM contact.
+- **Delete CRM Contact Tag**: Permanently delete a contact tag from SendPulse CRM.
+- **Delete CRM Contact Tag From Contact**: Remove a tag association from a SendPulse CRM contact.
+- **Delete CRM Custom Tab**: Permanently delete a custom tab from SendPulse CRM.
+- **Delete CRM Custom Tab Relation**: Remove attribute relations from a SendPulse CRM custom tab.
+- **Delete CRM Deal**: Permanently delete a deal from SendPulse CRM.
+- **Delete CRM Deal Attribute**: Remove an attribute from a SendPulse CRM deal.
+- **Delete CRM Deal Comment**: Remove a note from a SendPulse CRM deal.
+- **Delete CRM Pipeline Attribute**: Delete a deal attribute from a SendPulse CRM pipeline.
+- **Delete CRM Pipeline Step**: Delete a step from a SendPulse CRM pipeline.
+- **Delete CRM Product**: Delete a SendPulse CRM product by ID.
+- **Delete CRM Product Category**: Delete a SendPulse CRM product category by ID.
+- **Delete CRM Product Section**: Delete a section from a SendPulse CRM product.
+- **Delete CRM Task**: Delete a SendPulse CRM task by ID.
+- **Delete CRM Task Attribute Value**: Delete a value from a SendPulse CRM task attribute.
+- **Delete CRM Task Checklist**: Delete a checklist from a SendPulse CRM task.
+- **Delete CRM Task Tag**: Delete a SendPulse CRM task tag by ID.
+- **Delete Education Student**: Permanently delete a student and associated education data from the school.
+- **Delete Email Globally**: Permanently remove an email address from every Bulk Email mailing list.
+- **Delete Facebook Contact**: Permanently remove a contact from a SendPulse Facebook bot audience.
+- **Delete Facebook Contact Note**: Permanently remove an operator note from a SendPulse Facebook contact.
+- **Delete Facebook Contact Tag**: Remove a tag from a SendPulse Facebook contact.
+- **Delete Facebook Contact Variable**: Delete one variable value from a SendPulse Facebook contact.
+- **Delete Files**: Permanently delete 1-25 File Manager files sequentially and return an ordered outcome for every path.
+- **Delete Instagram Contact**: Permanently remove a contact and its history from a SendPulse Instagram bot audience.
+- **Delete Instagram Contact Note**: Permanently remove an operator note from a SendPulse Instagram contact.
+- **Delete Instagram Contact Variable**: Delete a variable value from a SendPulse Instagram chatbot contact.
+- **Delete Live Chat Contact**: Remove a contact from the SendPulse Live Chat audience and subscribers list.
+- **Delete Live Chat Contact Note**: Delete an operator note from a SendPulse Live Chat contact.
+- **Delete Live Chat Contact Variable**: Delete a variable value from a SendPulse Live Chat contact.
+- **Delete Mailing List**: Permanently delete one Bulk Email mailing list and its membership.
+- **Delete Managers From CRM Manager Setting**: Remove responsible managers from a SendPulse CRM settings category.
+- **Delete Popup**: Permanently delete a SendPulse popup and its display rules and statistics.
+- **Delete SMS Campaign**: Permanently delete an SMS campaign that has not started.
+- **Delete Telegram Contact**: Remove a SendPulse Telegram contact from the audience and subscriber list.
+- **Delete Telegram Contact Note**: Delete an operator note from a SendPulse Telegram contact.
+- **Delete Telegram Contact Tag**: Remove a tag from a SendPulse Telegram contact.
+- **Delete Telegram Contact Variable**: Delete a variable value from a SendPulse Telegram contact by variable ID or name.
+- **Delete TikTok Contact**: Permanently remove a contact from a TikTok bot audience.
+- **Delete TikTok Contact Note**: Permanently delete an internal operator note for a TikTok contact.
+- **Delete TikTok Contact Variable Value**: Permanently delete one variable value from a TikTok contact.
+- **Delete Viber Chatbot Contact**: Permanently remove a contact from a SendPulse Viber chatbot audience.
+- **Delete Viber Chatbot Contact Note**: Permanently remove an operator note from a SendPulse Viber chatbot contact.
+- **Delete Viber Chatbot Contact Variable**: Delete one variable from a SendPulse Viber chatbot contact.
+- **Delete WhatsApp Contact**: Permanently remove a contact from a SendPulse WhatsApp bot audience.
+- **Delete WhatsApp Contact Note**: Permanently remove an operator note from a SendPulse WhatsApp contact.
+- **Delete WhatsApp Contact Variable Value**: Delete one stored variable value from a SendPulse WhatsApp contact.
+- **Detach CRM Contact From Task**: Detach a contact from a SendPulse CRM task.
+- **Detach CRM Deal From Task**: Detach a deal from a SendPulse CRM task.
+- **Detach CRM Product From Deal**: Detach a SendPulse CRM product from a deal.
+- **Detach CRM Tag From Task**: Detach a tag from a SendPulse CRM task.
+- **Detach CRM Task From Task**: Detach a child task from another SendPulse CRM task.
+- **Disable Facebook Contact**: Disable a SendPulse Facebook contact so campaigns and autoflows are not sent to them.
+- **Disable Instagram Contact**: Disable an Instagram chatbot contact so campaigns and autoflows are no longer sent.
+- **Disable Live Chat Contact**: Disable a Live Chat contact so campaigns and autoflows are no longer sent.
+- **Disable Telegram Contact**: Disable a SendPulse Telegram contact so campaigns and autoflows are no longer sent.
+- **Disable TikTok Contact**: Disable a TikTok contact without deleting its data.
+- **Disable Viber Chatbot Contact**: Disable a SendPulse Viber chatbot contact so the contact can no longer interact with the bot.
+- **Disable WhatsApp Contact**: Disable a WhatsApp contact from receiving campaigns and autoflows.
+- **Download Verification Report**: Download a generated SendPulse verification report.
+- **Edit a template**: Edit a template using the official SendPulse bulk-email API.
+- **Enable Facebook Contact**: Enable a SendPulse Facebook contact so campaigns and autoflows can resume.
+- **Enable Instagram Contact**: Enable an Instagram chatbot contact to receive campaigns and autoflows.
+- **Enable Live Chat Contact**: Enable a Live Chat contact to receive campaigns and autoflows.
+- **Enable Telegram Contact**: Enable a SendPulse Telegram contact to receive campaigns and autoflows.
+- **Enable TikTok Contact**: Re-enable a TikTok contact for campaigns and autoflows.
+- **Enable Viber Chatbot Contact**: Enable a previously disabled SendPulse Viber chatbot contact.
+- **Enable WhatsApp Contact**: Enable a WhatsApp contact to receive campaigns and autoflows.
+- **Facebook Get Account** (read-only): Returns information about your current account pricing plan, the number of messages in your plan, bots, contacts, list of tags, and…
+- **Facebook Get Bot Statistics** (read-only): Returns general statistics info by bot
+- **Facebook Get Chat Messages** (read-only): Returns a list of all messages in correspondence with the specified subscriber
+- **Facebook Get Chats** (read-only): Returns a list of chats with subscribers with information about the contact and the last message received from the contact
+- **Facebook Get Contact** (read-only): Returns information on the selected contact.
+- **Facebook Get Contact Notes** (read-only): Returns a list of existing operator notes by contact
+- **Facebook Get Contact Pause Automation** (read-only): Returns the time remaining until autoflows are stopped for this contact
+- **Facebook Get Contacts By Tag** (read-only): Returns a list of contacts by tag for the specified bot
+- **Facebook Get Contacts By Variable** (read-only): Returns a list of contacts by variable identifier or variable name for the specified bot
+- **Facebook Get Flows** (read-only): Returns a list of created flows for the selected bot and information for each.
+- **Facebook Get Triggers** (read-only): Returns the list of created triggers for the selected bot with information about each of them.
+- **Facebook List Bot Variables** (read-only): Returns a list of variables for the selected bot with information about each.
+- **Facebook List Tags** (read-only): Returns the list of created tags for the selected bot with information about each of them.
+- **Filter File Manager Files** (read-only): Filter files in a SendPulse File Manager directory by date range and sort order.
+- **Get a list of chats** (read-only): Returns a list of chats with subscribers with information about the contact and the last message received from the contact
+- **Get a list of chats** (read-only): Returns a list of chats with subscribers with information about the contact and the last message received from the contact
+- **Get a list of contact's operator notes** (read-only): Returns a list of existing operator notes by contact
+- **Get a list of contact's operator notes** (read-only): Returns a list of existing operator notes by contact
+- **Get a list of contacts by tag** (read-only): Returns a list of contacts by tag for the specified bot
+- **Get a list of contacts by tag** (read-only): Returns a list of contacts by tag for the specified bot
+- **Get a list of flows** (read-only): Returns a list of created flows for the selected bot and information for each.
+- **Get a list of messages** (read-only): Returns a list of all messages in correspondence with the specified subscriber
+- **Get a list of messages** (read-only): Returns a list of all messages in correspondence with the specified subscriber
+- **Get a list of tags** (read-only): Returns the list of created tags for the selected bot with information about each of them.
+- **Get a list of tags** (read-only): Returns the list of created tags for the selected bot with information about each of them.
+- **Get a list of triggers** (read-only): Returns the list of created triggers for the selected bot with information about each of them.
+- **Get a list of triggers** (read-only): Returns the list of created triggers for the selected bot with information about each of them.
+- **Get a list of variables** (read-only): Returns a list of variables for the selected bot with information about each.
+- **Get a list of variables** (read-only): Returns a list of variables for the selected bot with information about each.
+- **Get account info** (read-only): Returns information about your current account pricing plan, the number of messages in your plan, bots, contacts, list of tags, and…
+- **Get account info** (read-only): Returns information about your current account pricing plan, the number of messages in your plan, bots, contacts, list of tags, and…
+- **Get Account Overview** (read-only): Return the connected SendPulse account identity, balances, enabled product plans, and usage limits.
+- **Get Action Element Stats** (read-only): Get execution statistics for an Automation 360 action element.
+- **Get Aggregated Popup NPS Statistics** (read-only): Get aggregated NPS results for a SendPulse popup and optional time range.
+- **Get All CRM Payments** (read-only): Retrieve payments belonging to the connected SendPulse account.
+- **Get Automation Flow Stats** (read-only): Return aggregate flow performance and per-element statistics for one Automation 360 flow.
+- **Get Bulk Email Address Info** (read-only): Find the Bulk Email mailing lists that contain a specific email address.
+- **Get Bulk Email Balance** (read-only): Retrieve the SendPulse account balance and its currency.
+- **Get Bulk Email Balance By Currency** (read-only): Retrieve the SendPulse account balance for a specific currency.
+- **Get Bulk Email Blacklist** (read-only): Retrieve all email addresses on the account-wide Bulk Email blacklist.
+- **Get Bulk Email Campaign Cost By List** (read-only): Estimate the cost of sending a Bulk Email campaign to one mailing list.
+- **Get Bulk Email Campaign Country Statistics** (read-only): Retrieve the geographic breakdown of opens for a Bulk Email campaign.
+- **Get Bulk Email Campaign Referral Statistics** (read-only): Retrieve per-link click counts for a Bulk Email campaign.
+- **Get Bulk Email Contact Count** (read-only): Return the total number of contacts in a Bulk Email mailing list, optionally active contacts only.
+- **Get Bulk Email Contacts By Variable** (read-only): Find contacts in one Bulk Email mailing list whose custom variable equals a value.
+- **Get Bulk Email Mailing List** (read-only): Retrieve metadata and subscriber counts for one Bulk Email mailing list.
+- **Get Bulk Email Mailing List Variables** (read-only): Retrieve the custom variable definitions available on one Bulk Email mailing list.
+- **Get Bulk Email Senders** (read-only): List sender identities authorized for SendPulse Bulk Email campaigns.
+- **Get Bulk Email Subscriber Campaign Statistics** (read-only): Get campaign engagement statistics for a SendPulse Bulk Email subscriber.
+- **Get Bulk Email Subscriber Details** (read-only): Get mailing-list membership and acquisition details for a SendPulse email subscriber.
+- **Get Bulk Email Tags** (read-only): Retrieve all tags created for the SendPulse account.
+- **Get Bulk Email Template by ID** (read-only): Retrieve metadata for a SendPulse email template by ID.
+- **Get Bulk Email Template by Slug** (read-only): Retrieve a SendPulse email template by its unique name slug.
+- **Get Bulk Email Templates** (read-only): Retrieve one page of SendPulse system or account email templates.
+- **Get calls** (read-only): Search SendPulse CRM telephony calls by date, direction, state, or assignee.
+- **Get calls by deal** (read-only): List telephony calls associated with a SendPulse CRM deal.
+- **Get Campaigns By Bulk Email Mailing List** (read-only): Retrieve one page of campaigns that target a specific Bulk Email mailing list.
+- **Get Chatbot Account** (read-only): Return the connected SendPulse account's Chatbots plan, quotas, usage statistics, and connected channel services.
+- **Get Condition Element Stats** (read-only): Get branch statistics for an Automation 360 condition element.
+- **Get Contact Calls** (read-only): List telephony calls associated with a SendPulse CRM contact.
+- **Get contact info via a contact ID** (read-only): Returns information on the selected contact.
+- **Get contact info via a contact ID** (read-only): Returns information on the selected contact.
+- **Get Contact List by Email** (read-only): Find SendPulse CRM contacts by full or partial email address.
+- **Get contacts by variable** (read-only): Returns contacts by variable identifier or variable name for the specified bot
+- **Get contacts by variable** (read-only): Returns contacts by variable identifier or variable name for the specified bot
+- **Get Contacts List** (read-only): Search and list SendPulse CRM contacts.
+- **Get Course Tariffs** (read-only): Get all pricing tariffs available for an Education course.
+- **Get CRM Board Attributes** (read-only): Get attributes configured for a SendPulse CRM task board.
+- **Get CRM Board By ID** (read-only): Get one SendPulse CRM task board by ID.
+- **Get CRM Boards** (read-only): Get all SendPulse CRM task boards.
+- **Get CRM Category Product** (read-only): Retrieve full CRM product details in a specific category context.
+- **Get CRM Companies List** (read-only): Retrieve CRM companies using structured filters, sorting, limit, and offset.
+- **Get CRM Companies Short Data** (read-only): Retrieve lightweight CRM company records using structured filters and sorting.
+- **Get CRM Company Attributes** (read-only): Get the SendPulse CRM company attribute list.
+- **Get CRM Company By ID** (read-only): Get one SendPulse CRM company by ID.
+- **Get CRM Company Emails** (read-only): Get email addresses associated with a SendPulse CRM company.
+- **Get CRM Company History** (read-only): Get one page of SendPulse CRM company history with a continuation cursor.
+- **Get CRM Company Messengers** (read-only): Get messenger accounts associated with a SendPulse CRM company.
+- **Get CRM Company Phones** (read-only): Get phone numbers associated with a SendPulse CRM company.
+- **Get CRM Contact Attribute Values** (read-only): Retrieve the configured attribute values for a CRM contact.
+- **Get CRM Contact Attributes** (read-only): Get the SendPulse CRM contact attribute list.
+- **Get CRM Contact by External ID** (read-only): Look up a CRM contact by an external system contact ID.
+- **Get CRM Contact by ID** (read-only): Retrieve identity, ownership, channels, and related data for a CRM contact.
+- **Get CRM Contact by Messenger External ID** (read-only): Look up a CRM contact by its external messenger contact ID.
+- **Get CRM Contact Deals** (read-only): Retrieve all CRM deals associated with a contact.
+- **Get CRM Contact EDU Payments** (read-only): Retrieve EDU course payment history for a CRM contact.
+- **Get CRM Contact EDU Statistics** (read-only): Retrieve course, lesson, and test progress for a CRM contact.
+- **Get CRM Contact History** (read-only): Retrieve a CRM contact's activity history within a required date range.
+- **Get CRM Custom Tabs** (read-only): Retrieve custom CRM tab definitions grouped by entity type.
+- **Get CRM Deal** (read-only): Retrieve details for a CRM deal by ID.
+- **Get CRM Deal Attribute Values** (read-only): Retrieve configured attribute values for a CRM deal.
+- **Get CRM Deal Contacts** (read-only): Retrieve contacts associated with a CRM deal.
+- **Get CRM Deal History** (read-only): Retrieve a CRM deal's history within a required date range.
+- **Get CRM Deal Notes** (read-only): Retrieve notes and their attachments for a CRM deal.
+- **Get CRM Deal Payments** (read-only): Retrieve payments associated with a CRM deal.
+- **Get CRM Manager Settings Managers** (read-only): Retrieve all managers available in CRM manager settings.
+- **Get CRM Managers by Section** (read-only): Retrieve managers assigned to a CRM manager settings section.
+- **Get CRM Messenger Types** (read-only): Retrieve messenger types supported by SendPulse CRM.
+- **Get CRM Payments by Contact ID** (read-only): Retrieve payments associated with a CRM contact.
+- **Get CRM Pipeline by ID** (read-only): Retrieve a CRM pipeline, including its steps and settings, by ID.
+- **Get CRM Pipeline Steps** (read-only): Retrieve steps configured for a CRM pipeline.
+- **Get CRM Product by ID** (read-only): Retrieve the complete CRM product record by ID.
+- **Get CRM Product Categories** (read-only): Retrieve the complete hierarchical CRM product category tree.
+- **Get CRM Products by Contact Deals** (read-only): Retrieve products associated with CRM deals linked to a contact.
+- **Get CRM Products by Deal ID** (read-only): Retrieve products, quantities, and pricing attached to a CRM deal.
+- **Get CRM Task by ID** (read-only): Retrieve the complete state of a CRM task by ID.
+- **Get CRM Task Checklists** (read-only): Retrieve all checklists associated with a CRM task.
+- **Get CRM Task History** (read-only): Retrieve a CRM task audit trail within a required date-time range.
+- **Get CRM Task Repeat Templates** (read-only): Retrieve predefined templates for recurring CRM tasks.
+- **Get CRM Task Tags** (read-only): Retrieve all tags available for CRM tasks.
+- **Get CRM Users** (read-only): Retrieve active confirmed team members available for CRM assignments.
+- **Get Daily SMTP Bounces** (read-only): Get one page of SendPulse SMTP bounce records for a 24-hour period.
+- **Get Deals List** (read-only): Search and list SendPulse CRM deals.
+- **Get Directory Contents** (read-only): Get files and nested folders in a SendPulse File Manager directory.
+- **Get Education Courses** (read-only): Get all Education courses associated with the connected account.
+- **Get Education Schools** (read-only): Get the schools registered in the connected SendPulse Education account.
+- **Get Education Student Audience** (read-only): Search and filter the SendPulse Education student audience.
+- **Get Education Tags** (read-only): Get the complete list of tags available in SendPulse Education.
+- **Get Email Campaign** (read-only): Return configuration, recipient counts, status, and delivery statistics for one Bulk Email campaign.
+- **Get Email Element Stats** (read-only): Get engagement statistics for an Automation 360 email element.
+- **Get Email From Bulk Email Mailing List** (read-only): Retrieve one contact's subscription status and variables from a specific mailing list.
+- **Get File Storage Overview** (read-only): Return the File Manager directory tree, file and directory counts, and raw storage usage and quota values.
+- **Get Filter Element Stats** (read-only): Get branch statistics for an Automation 360 filter element.
+- **Get Flow Conversions** (read-only): Get conversion metrics for an Automation 360 flow.
+- **Get general statistics info by bot** (read-only): Returns general statistics info by bot
+- **Get general statistics info by bot** (read-only): Returns general statistics info by bot
+- **Get Goal Element Stats** (read-only): Get achievement statistics for an Automation 360 goal element.
+- **Get information for a list of emails** (read-only): Get information for a list of emails using the official SendPulse smtp API.
+- **Get Instagram Bot Statistics** (read-only): Get aggregate subscriber and outgoing-message statistics for an Instagram bot.
+- **Get Instagram Chat Messages** (read-only): Get one page of messages exchanged with an Instagram chatbot contact.
+- **Get Instagram Chatbot Account** (read-only): Get pricing-plan limits and usage for the Instagram chatbot service.
+- **Get Instagram Chats** (read-only): Get one page of chats for an Instagram bot.
+- **Get Instagram Contact** (read-only): Get an Instagram chatbot contact by contact ID.
+- **Get Instagram Contact Automation Pause** (read-only): Get the remaining automation pause for an Instagram chatbot contact.
+- **Get Instagram Contact Notes** (read-only): Get internal operator notes for an Instagram chatbot contact.
+- **Get Instagram Contacts by Tag** (read-only): Get one page of Instagram chatbot contacts matching a tag.
+- **Get Instagram Contacts by Variable** (read-only): Get one page of Instagram chatbot contacts matching a variable value.
+- **Get Instagram Flows** (read-only): Get one page of automation flows for an Instagram bot.
+- **Get Instagram Tags** (read-only): Get one page of tags for an Instagram bot.
+- **Get Invited Team Members** (read-only): List all team members invited to the connected SendPulse account.
+- **Get Live Chat Bot Statistics** (read-only): Get aggregate subscriber and outgoing-message statistics for a Live Chat bot.
+- **Get Live Chat Chatbot Account** (read-only): Get pricing-plan limits and usage for the Live Chat chatbot service.
+- **Get Live Chat Chats** (read-only): Get one page of chats for a Live Chat bot.
+- **Get Live Chat Contact** (read-only): Get a Live Chat chatbot contact by contact ID.
+- **Get Live Chat Contact Automation Pause** (read-only): Get the remaining automation pause for a Live Chat chatbot contact.
+- **Get Live Chat Contact Notes** (read-only): Get internal operator notes for a Live Chat chatbot contact.
+- **Get Live Chat Contacts by Tag** (read-only): Get one page of Live Chat chatbot contacts matching a tag.
+- **Get Live Chat Contacts by Variable** (read-only): Get one page of Live Chat chatbot contacts matching a variable value.
+- **Get Live Chat Flows** (read-only): Get one page of automation flows for a Live Chat bot.
+- **Get Live Chat Messages** (read-only): Get one page of messages exchanged with a Live Chat chatbot contact.
+- **Get Live Chat Triggers** (read-only): Get one page of automation triggers for a Live Chat bot.
+- **Get Mailing List Verification** (read-only): Return summary counts and one page of email-level results for a mailing-list verification job.
+- **Get Messenger Element Stats** (read-only): Get execution statistics for an Automation 360 messenger element.
+- **Get Multiple Bulk Email Contacts** (read-only): Retrieve mailing-list membership information for multiple email addresses.
+- **Get Multiple Email Campaign Statistics** (read-only): Retrieve SendPulse campaign engagement statistics for multiple email addresses.
+- **Get Popup Conditions** (read-only): Get all available targeting and display conditions for SendPulse popups.
+- **Get Popup NPS Statistics** (read-only): Get NPS variant vote totals and button details for a SendPulse popup.
+- **Get Popup Statistics** (read-only): Get engagement statistics for a SendPulse popup and optional time range.
+- **Get Popup Subscriber** (read-only): Get detailed information about a SendPulse popup subscriber.
+- **Get Popup Tariff Limits** (read-only): Get the authenticated account's SendPulse popup plan limits.
+- **Get products by filter** (read-only): Search SendPulse CRM products by category, price, stock, visibility, or text filters.
+- **Get Project Popup Statistics** (read-only): Get aggregate engagement statistics for all popups in a SendPulse project.
+- **Get Push Element Stats** (read-only): Get delivery and engagement statistics for an Automation 360 push element.
+- **Get Recipient Bulk Email Campaign Info** (read-only): Retrieve delivery details for one recipient in one Bulk Email campaign.
+- **Get remaining time for automation pause** (read-only): Returns the time remaining until autoflows are stopped for this contact
+- **Get remaining time for automation pause** (read-only): Returns the time remaining until autoflows are stopped for this contact
+- **Get Single Email Verification Result** (read-only): Get SendPulse verification results for one email address.
+- **Get SMS Blacklist** (read-only): Get the SendPulse SMS phone-number suppression list.
+- **Get SMS Campaign Information** (read-only): Get SendPulse delivery and spend information for an SMS campaign.
+- **Get SMS Element Stats** (read-only): Get delivery statistics for an Automation 360 SMS element.
+- **Get SMS Number Information** (read-only): Get profile and variable information for a phone number in a SendPulse mailing list.
+- **Get SMTP Allowed Domains** (read-only): List SMTP sender domains and their SPF, DKIM, and DMARC validation status.
+- **Get SMTP Bounce Total** (read-only): Get the total SendPulse SMTP bounce count for the last 24-hour period.
+- **Get SMTP Email Information** (read-only): Get delivery, SMTP response, and tracking details for a SendPulse SMTP email.
+- **Get SMTP Email Total** (read-only): Get the cumulative count of emails sent through SendPulse SMTP.
+- **Get SMTP Emails** (read-only): Get one page of historical SendPulse SMTP delivery records.
+- **Get SMTP IP Addresses** (read-only): List outbound IP addresses used by the SendPulse SMTP relay.
+- **Get SMTP Senders** (read-only): List verified email addresses authorized to send through SendPulse SMTP.
+- **Get SMTP Unsubscribed Users** (read-only): Get one page of email addresses suppressed from SendPulse SMTP delivery.
+- **Get Start Element Stats** (read-only): Get execution statistics for an Automation 360 start element.
+- **Get Student Course Statistics** (read-only): Get a student's enrollment, progress, assessment, and tariff statistics across Education courses.
+- **Get Students By Course** (read-only): Get a filtered page of students enrolled in a SendPulse Education course.
+- **Get Subscribers By Popup** (read-only): Get subscribers acquired through a specific SendPulse popup.
+- **Get tasks** (read-only): Retrieves a list of tasks based on selected filters
+- **Get Verification Progress** (read-only): Get the current progress of a SendPulse mailing-list verification.
+- **Get Viber Blacklist** (read-only): Retrieve one page of globally blacklisted Viber contacts.
+- **Get Viber Campaign Recipients** (read-only): Retrieve recipient-level delivery records for a Viber campaign.
+- **Get Viber Campaign Statistics** (read-only): Retrieve delivery and engagement statistics for a Viber campaign.
+- **Get Viber Sender Profile** (read-only): Retrieve configuration and verification status for a Viber sender ID.
+- **Get Web Push Campaign Statistics** (read-only): Get delivery and redirect statistics for a SendPulse web push campaign.
+- **Get Web Push Campaigns** (read-only): Get one page of historical SendPulse web push campaigns.
+- **Get Web Push Subscriber Total** (read-only): Get the total subscriber count for a SendPulse Web Push website.
+- **Get Web Push Subscriptions** (read-only): Get one page of subscribers for a SendPulse Web Push website.
+- **Get Web Push Variables** (read-only): List custom segmentation variables for a SendPulse Web Push website.
+- **Get Web Push Website Code** (read-only): Get the JavaScript integration code for a SendPulse Web Push website.
+- **Get Web Push Website Information** (read-only): Get status and subscriber counts for a SendPulse Web Push website.
+- **Get Web Push Website Total** (read-only): Get the number of websites configured for SendPulse Web Push.
+- **Get Web Push Websites** (read-only): Get one page of websites connected to SendPulse Web Push.
+- **Get WhatsApp Bot Statistics** (read-only): Return aggregate subscriber and outgoing-message statistics for a SendPulse WhatsApp bot.
+- **Get WhatsApp Chatbot Account** (read-only): Return the SendPulse WhatsApp chatbot plan, limits, and usage statistics.
+- **Get WhatsApp Contact Automation Pause** (read-only): Return the remaining automation pause information for a SendPulse WhatsApp contact.
+- **Get WhatsApp Contact by ID** (read-only): Return SendPulse WhatsApp contact information by contact ID.
+- **Get WhatsApp Contact by Phone** (read-only): Return SendPulse WhatsApp contact information by phone number and bot ID.
+- **List Automation Flows** (read-only): Return one page of Automation 360 flows available to the connected account.
+- **List Campaigns** (read-only): List email, SMS, or transactional Viber campaigns using channel-specific filters and pagination.
+- **List Chatbot Bots** (read-only): List connected bots across all SendPulse chatbot services or return one page for a selected channel.
+- **List Chatbot Dialogs** (read-only): Return one page of recent dialogs across connected SendPulse chatbot services.
+- **List CRM Contact Tags** (read-only): Get SendPulse CRM contact tags with optional exact or partial name filters.
+- **List CRM Deal Attributes by Pipeline** (read-only): List deal attribute definitions for a CRM pipeline.
+- **List CRM Manager Settings Sections** (read-only): Retrieve all sections configured in CRM manager settings.
+- **List CRM Pipeline Attributes** (read-only): Retrieve deal attribute definitions configured for a CRM pipeline.
+- **List CRM Pipelines** (read-only): Return CRM pipelines, their stages, and settings for account-state discovery and ID lookup.
+- **List Instagram Bot Variables** (read-only): Get one page of variables defined for an Instagram bot.
+- **List Instagram Triggers** (read-only): Get one page of automation triggers for an Instagram bot.
+- **List Live Chat Tags** (read-only): Get one page of tags for a Live Chat bot.
+- **List Mailing List Contacts** (read-only): Return one page of contacts and custom variables from a Bulk Email mailing list.
+- **List Mailing List Verifications** (read-only): Return one page of mailing-list verification jobs with status and result counts.
+- **List Mailing Lists** (read-only): Return one page of Bulk Email mailing lists with subscriber counts and status.
+- **List Messaging Senders** (read-only): List configured sender identities for either the SMS or transactional Viber service.
+- **List Popup Projects** (read-only): Get one page of SendPulse popup projects.
+- **List Popups By Project** (read-only): Get one page of popups associated with a SendPulse popup project.
+- **List Quiz Popups By Project** (read-only): Get one page of quiz popups associated with a SendPulse popup project.
+- **List Student Groups By Course** (read-only): List all student groups associated with an Education course.
+- **List Subscribers By Popup Project** (read-only): List subscribers associated with a SendPulse popup project.
+- **List Viber Chatbot Flows** (read-only): Return flows configured for a SendPulse Viber chatbot bot.
+- **List Viber Chatbot Tags** (read-only): Return one page of tags configured for a SendPulse Viber chatbot bot.
+- **List Viber Chatbot Triggers** (read-only): Return one page of triggers configured for a SendPulse Viber chatbot bot.
+- **List Viber Chatbot Variables** (read-only): Return one page of variables configured for a SendPulse Viber chatbot bot.
+- **List WhatsApp Bot Variables** (read-only): Return one page of variables configured for a SendPulse WhatsApp bot.
+- **List WhatsApp Chat Messages** (read-only): Return one page of messages exchanged with a SendPulse WhatsApp contact.
+- **List WhatsApp Chats** (read-only): Return one page of chats for a SendPulse WhatsApp bot.
+- **List WhatsApp Contact Notes** (read-only): Return operator notes for a SendPulse WhatsApp contact and bot.
+- **List WhatsApp Contacts by Tag** (read-only): Return one page of SendPulse WhatsApp contacts matching a tag.
+- **List WhatsApp Contacts by Variable** (read-only): Return one page of SendPulse WhatsApp contacts matching a variable value.
+- **List WhatsApp Flows** (read-only): Return flows configured for a SendPulse WhatsApp bot.
+- **List WhatsApp Tags** (read-only): Return one page of tags configured for a SendPulse WhatsApp bot.
+- **List WhatsApp Templates** (read-only): Return message templates configured for a SendPulse WhatsApp bot.
+- **List WhatsApp Triggers** (read-only): Return one page of triggers configured for a SendPulse WhatsApp bot.
+- **Live Chat List Bot Variables** (read-only): Returns a list of variables for the selected bot with information about each.
+- **Mark Education Students As Paid**: Mark one or more SendPulse Education students as paid for a course.
+- **Mark Facebook Contact Messages Read**: Mark all messages from a SendPulse Facebook contact as read.
+- **Mark Facebook Contact Unread**: Mark the last message from a SendPulse Facebook contact as unread.
+- **Mark Instagram Contact Messages Read**: Mark all messages from a SendPulse Instagram contact as read.
+- **Mark Instagram Contact Unread**: Mark the last message from a SendPulse Instagram contact as unread.
+- **Mark Live Chat Contact Messages Read**: Mark all messages from a SendPulse Live Chat contact as read.
+- **Mark Live Chat Contact Unread**: Mark the last message from a SendPulse Live Chat contact as unread.
+- **Mark Telegram Contact Messages Read**: Mark all messages from a SendPulse Telegram contact as read.
+- **Mark Telegram Contact Unread**: Mark the last message from a SendPulse Telegram contact as unread.
+- **Mark TikTok Contact Chat Unread**: Mark the last message from a SendPulse TikTok contact as unread.
+- **Mark TikTok Contact Messages Read**: Mark all messages from a SendPulse TikTok contact as read.
+- **Mark Viber Chatbot Contact Messages Read**: Mark all messages from a SendPulse Viber chatbot contact as read.
+- **Mark Viber Chatbot Contact Unread**: Mark the last message from a SendPulse Viber chatbot contact as unread.
+- **Mark WhatsApp Contact Chat Unread**: Mark the last message from a SendPulse WhatsApp contact as unread.
+- **Mark WhatsApp Contact Messages Read**: Mark all messages from a SendPulse WhatsApp contact as read.
+- **Open Facebook Contact Chat**: Mark a SendPulse Facebook contact chat as open and increase its queue priority.
+- **Open Instagram Contact Chat**: Increase an Instagram chatbot contact's chat priority by marking it open.
+- **Open Live Chat Contact Chat**: Increase a SendPulse Live Chat contact's chat priority by marking it open.
+- **Open Telegram Contact Chat**: Open a SendPulse Telegram contact chat and increase its priority.
+- **Open TikTok Contact Chat**: Open a TikTok contact chat and increase its queue priority.
+- **Open Viber Chatbot Contact Chat**: Open a SendPulse Viber chatbot contact chat and raise its queue priority.
+- **Open WhatsApp Contact Chat**: Mark a WhatsApp contact chat as open to increase its support priority.
+- **Pause Facebook Contact Autoflows**: Pause autoflows for a SendPulse Facebook contact for a specified number of minutes.
+- **Pause Instagram Contact Autoflows**: Pause autoflows for a SendPulse Instagram chatbot contact for a specified number of minutes.
+- **Pause Live Chat Contact Automation**: Pause autoflows for a SendPulse Live Chat contact for a specified duration.
+- **Pause Telegram Contact Autoflows**: Pause autoflows for a SendPulse Telegram contact for a specified number of minutes.
+- **Pause TikTok Contact Automation**: Pause all autoflows for a TikTok contact for a specified duration.
+- **Pause Viber Chatbot Contact Automations**: Pause automated flows for a SendPulse Viber chatbot contact for a specified duration.
+- **Pause WhatsApp Contact Automation**: Pause autoflows for a SendPulse WhatsApp contact for a specified duration.
+- **React to Telegram Message**: Send an emoji reaction to a specific message from a SendPulse Telegram contact.
+- **React to WhatsApp Chat Message**: Apply an emoji reaction to a specific inbound SendPulse WhatsApp message.
+- **Remove CRM Contact Messenger**: Remove a messenger from a SendPulse CRM contact.
+- **Remove CRM Deal Contact**: Remove a contact association from a SendPulse CRM deal.
+- **Remove CRM Deal Expiration**: Remove the expiration setting from a SendPulse CRM deal.
+- **Remove Emails From Bulk Email Blacklist**: Remove consented email addresses from the account-wide Bulk Email blacklist.
+- **Remove Instagram Contact Tag**: Remove a tag from a SendPulse Instagram chatbot contact.
+- **Remove Live Chat Contact Tag**: Remove a tag from a SendPulse Live Chat contact.
+- **Remove Mailing List Contacts**: Remove a batch of email addresses from one Bulk Email mailing list without globally blacklisting them.
+- **Remove Numbers From SMS Blacklist**: Remove explicitly re-consented phone numbers from the account-wide SMS blacklist.
+- **Remove Numbers From Viber Blacklist**: Remove explicitly re-consented phone numbers from the Viber blacklist.
+- **Remove SMS Numbers From Mailing List**: Remove phone numbers from one mailing list without globally blacklisting them.
+- **Remove SMTP Unsubscribes**: Remove explicitly re-consented email addresses from the SMTP unsubscribe list.
+- **Remove Student From Course**: Permanently remove a student's enrollment from an Education course.
+- **Remove TikTok Contact Tag**: Remove a tag from a TikTok contact.
+- **Remove Viber Chatbot Contact Tag**: Remove a tag from a SendPulse Viber chatbot contact.
+- **Remove WhatsApp Contact Tag**: Remove one tag from a SendPulse WhatsApp contact.
+- **Reorder CRM Checklist Item**: Change the position of an item within a CRM task checklist.
+- **Request Bulk Email Sender Activation Code**: Request a new activation email for an unverified SendPulse Bulk Email sender.
+- **Resubscribe a recipient**: Resubscribe a recipient using the official SendPulse smtp API.
+- **Resume Facebook Contact Automation**: Remove an automation pause and resume autoflows for a SendPulse Facebook contact.
+- **Resume Instagram Contact Automation**: Remove an automation pause so a SendPulse Instagram contact resumes autoflows.
+- **Resume Live Chat Contact Autoflows**: Remove an automation pause and resume autoflows for a SendPulse Live Chat contact.
+- **Resume Telegram Contact Autoflows**: Resume paused autoflows for a SendPulse Telegram contact.
+- **Resume TikTok Contact Automation**: Remove an automation pause from a TikTok contact.
+- **Resume Viber Chatbot Contact Automations**: Remove an automation pause and resume automated flows for a SendPulse Viber chatbot contact.
+- **Resume WhatsApp Contact Automation**: Remove an automation pause and resume autoflows for a WhatsApp contact.
+- **Run Facebook Flow**: Launch a selected SendPulse Facebook flow for a contact with optional one-time data.
+- **Run Facebook Flow by Trigger**: Launch a SendPulse Facebook flow for a contact using a trigger keyword.
+- **Run Instagram Flow**: Launch a selected SendPulse Instagram chatbot flow for a contact, optionally with one-time external data.
+- **Run Instagram Flow by Trigger**: Launch a SendPulse Instagram chatbot flow by trigger keyword for a contact.
+- **Run Live Chat Flow**: Launch a SendPulse Live Chat flow by ID for a contact.
+- **Run Live Chat Flow by Trigger**: Launch a SendPulse Live Chat flow by trigger keyword for a contact.
+- **Run Telegram Flow**: Launch a Telegram chatbot flow by ID for a contact.
+- **Run Telegram Flow by Trigger**: Launch a Telegram chatbot flow by trigger keyword for a contact.
+- **Run TikTok Flow**: Launch a TikTok chatbot flow by ID for a contact.
+- **Run TikTok Flow by Trigger**: Launch a TikTok chatbot flow by trigger keyword for a contact.
+- **Run Viber Chatbot Flow**: Run a specific SendPulse Viber chatbot flow for a contact.
+- **Run Viber Chatbot Flow by Trigger**: Run the SendPulse Viber chatbot flow associated with a trigger keyword for a contact.
+- **Run WhatsApp Flow**: Launch a SendPulse WhatsApp flow by ID for one contact.
+- **Run WhatsApp Flow by Trigger**: Launch a SendPulse WhatsApp flow for one contact using a trigger keyword.
+- **Search Files** (read-only): Search recursively for File Manager files by keyword within a directory path.
+- **Search SMTP Unsubscribe Status** (read-only): Check whether an email address is suppressed from SendPulse SMTP sending.
+- **Send an email**: Send an email using the official SendPulse smtp API.
+- **Send Facebook Chatbot Campaign**: Send immediately or schedule a campaign to subscribers of a SendPulse Facebook bot.
+- **Send Facebook Contact Message**: Send text, media, or template content to a SendPulse Facebook contact.
+- **Send Facebook Typing Indicator**: Send a transient typing indicator to a SendPulse Facebook contact.
+- **Send Instagram Chatbot Campaign**: Send immediately or schedule a campaign to active subscribers of a SendPulse Instagram bot.
+- **Send Live Chat Contact Message**: Send one or more messages to a SendPulse Live Chat contact.
+- **Send Message to Instagram Contact**: Send one or more text, image, file, or structured messages to an Instagram chatbot contact.
+- **Send Telegram Chatbot Campaign**: Send immediately or schedule a campaign to subscribers of a SendPulse Telegram bot.
+- **Send Telegram Contact Message**: Send text, media, a carousel, or an action message to a SendPulse Telegram contact.
+- **Send Text to Facebook Contact**: Send a text message to a SendPulse Facebook contact.
+- **Send Text to Telegram Contact**: Send a text message to a specified SendPulse Telegram contact.
+- **Send TikTok Chatbot Campaign**: Send immediately or schedule a campaign to a TikTok bot audience.
+- **Send TikTok Contact Message**: Send one or more messages directly to a TikTok contact.
+- **Send Viber Chatbot Campaign**: Send immediately or schedule a campaign to a Viber bot audience.
+- **Send Viber Chatbot Contact Message**: Send one or more messages to a SendPulse Viber chatbot contact.
+- **Send WhatsApp Chatbot Campaign**: Send immediately or schedule a campaign to active subscribers of a SendPulse WhatsApp bot.
+- **Send WhatsApp Contact Message**: Send a typed free-form message to a SendPulse WhatsApp contact.
+- **Send WhatsApp Message by Phone**: Send a typed free-form WhatsApp message to a contact by phone number.
+- **Send WhatsApp Template by Phone**: Send an approved WhatsApp template message to a contact by phone number.
+- **Send WhatsApp Template Campaign**: Send immediately or schedule an approved template campaign to subscribers of a SendPulse WhatsApp bot.
+- **Send WhatsApp Template to Contact**: Send an approved WhatsApp template message to a SendPulse contact.
+- **Send WhatsApp Typing Indicator**: Send a typing indicator to a SendPulse WhatsApp contact.
+- **Set Facebook Contact Tags**: Assign one or more tags to a SendPulse Facebook contact.
+- **Set Facebook Contact Variables**: Add or update one or more variables on a SendPulse Facebook contact.
+- **Set Instagram Contact Variables**: Add or update variable values for a SendPulse Instagram chatbot contact.
+- **Set Live Chat Contact Name**: Update the display name of a SendPulse Live Chat contact.
+- **Set Live Chat Contact Tags**: Assign one or more tags to a SendPulse Live Chat contact.
+- **Set Live Chat Contact Variables**: Add or update variable values for a SendPulse Live Chat contact.
+- **Set Popup State**: Enable or disable a SendPulse popup on its website.
+- **Set Telegram Contact Tags**: Assign one or more tags to a SendPulse Telegram contact.
+- **Set Telegram Contact Variables**: Add or update one or more variables on a SendPulse Telegram contact.
+- **Set TikTok Contact Variables**: Assign or update variable values for a TikTok contact.
+- **Set Web Push Subscriber State**: Activate or deactivate a SendPulse web push subscriber.
+- **Set WhatsApp Contact Name**: Update the display name of a SendPulse WhatsApp contact.
+- **Set WhatsApp Contact Variables**: Add or update variable values for a SendPulse WhatsApp contact.
+- **Set/unset the parent task**: Set or clear the parent relationship for a SendPulse CRM task.
+- **Store users categories**: Create a category for organizing SendPulse CRM products.
+- **Telegram Get Account** (read-only): Returns information about your current account pricing plan, the number of messages in your plan, bots, contacts, list of tags, and…
+- **Telegram Get Bot Statistics** (read-only): Returns general statistics info by bot
+- **Telegram Get Chat Messages** (read-only): Returns a list of all messages in correspondence with the specified subscriber
+- **Telegram Get Contact** (read-only): Returns information on the selected contact.
+- **Telegram Get Contact By Telegram Id** (read-only): Returns a bot contact by Telegram ID.
+- **Telegram Get Contact Notes** (read-only): Returns a list of existing operator notes by contact
+- **Telegram Get Contact Pause Automation** (read-only): Returns the time remaining until autoflows are stopped for this contact
+- **Telegram Get Contacts By Tag** (read-only): Returns a list of contacts by tag for the specified bot
+- **Telegram Get Contacts By Variable** (read-only): Returns contacts by variable identifier or variable name for the specified bot
+- **Telegram Get Flows** (read-only): Returns a list of created flows for the selected bot and information for each.
+- **Telegram List Chats** (read-only): Returns a list of chats with subscribers with information about the contact and the last message received from the contact
+- **Unassign Facebook Contact Operators**: Remove the responsible operator assignment from a SendPulse Facebook contact chat.
+- **Unassign Instagram Contact Operators**: Remove all responsible operators assigned to an Instagram chatbot contact's chat.
+- **Unassign Live Chat Contact Operators**: Remove the responsible operator assignment from a SendPulse Live Chat contact.
+- **Unassign tag from email**: Unassign tag from email using the official SendPulse bulk-email API.
+- **Unassign tag from phone**: Unassign tag from phone using the official SendPulse bulk-email API.
+- **Unassign Telegram Contact Operator**: Remove the assigned responsible operator from a SendPulse Telegram contact chat.
+- **Unassign TikTok Contact Operator**: Remove the assigned operator from a TikTok contact chat.
+- **Unassign Viber Chatbot Contact Operators**: Unassign responsible operators from a SendPulse Viber chatbot contact's chat.
+- **Unassign WhatsApp Contact Operators**: Remove the responsible operator assignment from a WhatsApp contact chat.
+- **Unsubscribe a recipient**: Unsubscribe a recipient using the official SendPulse smtp API.
+- **Unsubscribe Emails from Mailing List**: Mark up to 100 email contacts as unsubscribed within one SendPulse mailing list.
+- **Update a company attribute**: Update a company attribute
+- **Update a contact attribute**: Update a contact attribute
+- **Update a deal attribute**: Update a deal attribute
+- **Update a note to a deal**: Updates the selected note in the specified deal.
+- **Update a pipeline step**: Update a pipeline step
+- **Update a tag**: Update a tag using the official SendPulse bulk-email API.
+- **Update a tag**: Updates the specified tag with a new name.
+- **Update a task by ID**: Update a task by ID
+- **Update a task tag**: Update a task tag
+- **Update attribute for board**: Update a custom attribute configured on a SendPulse CRM task board.
+- **Update board by ID**: Update the name and settings of a SendPulse CRM task board by ID.
+- **Update Bulk Email Campaign**: Update the name or subject of a pending SendPulse email campaign.
+- **Update Bulk Email Contact Variables**: Update custom variables for an email contact in a SendPulse mailing list.
+- **Update checklist item**: Update the text or completion state of a SendPulse CRM checklist item.
+- **Update checklist without items in task**: Rename one checklist on a SendPulse CRM task without changing its items.
+- **Update comment in task**: Edit an existing internal comment on a SendPulse CRM task.
+- **Update company**: Update identity, ownership, contact channels, or attributes for a SendPulse CRM company.
+- **Update contact attribute value**: Updates the attribute for the specified contact.
+- **Update contact note**: Updates the note of the specified contact.
+- **Update custom tabs**: Update the name and entity placement of a SendPulse CRM custom tab.
+- **Update email**: Replace an email address associated with a SendPulse CRM company.
+- **Update Facebook Contact Note**: Replace an existing operator note for a SendPulse Facebook contact.
+- **Update file attachment**: First, the file must be uploaded to the file manager, and then the file can be attached.
+- **Update information about a deal by its ID**: Updates information in the specified deal.
+- **Update information about a pipeline by its ID**: Update the name, currency, or settings of a SendPulse CRM deal pipeline.
+- **Update information about messenger of the contact**: Updates information about a given messenger for the specified contact.
+- **Update information about the contact**: Update identity, ownership, channels, tags, or attributes for a SendPulse CRM contact.
+- **Update Instagram Contact Note**: Update an existing operator note for a SendPulse Instagram chatbot contact.
+- **Update Live Chat Contact Note**: Replace the text of an operator note for a SendPulse Live Chat contact.
+- **Update Mailing List**: Rename an existing Bulk Email mailing list.
+- **Update managers from category**: Replace manager assignments in a SendPulse CRM manager-settings section.
+- **Update messenger**: Update a messenger account associated with a SendPulse CRM company.
+- **Update multiple checklists with items in task**: Replace multiple checklists and their items on a SendPulse CRM task.
+- **Update or create deal expiration**: Create or update expiration and notification settings for a SendPulse CRM deal.
+- **Update phone**: Replace a phone number associated with a SendPulse CRM company.
+- **Update price in product**: Replace the configured prices for a SendPulse CRM product.
+- **Update product by id**: Update details, pricing, stock, or visibility for a SendPulse CRM product.
+- **Update Product Sections**: Replace or update sections and their attribute values for a SendPulse CRM product.
+- **Update quantity or amount products in deal**: Update quantities and prices for products attached to a SendPulse CRM deal.
+- **Update SMS Contact Variables**: Change custom variables for one SMS contact in a SendPulse address book.
+- **Update steps for board**: Update a SendPulse CRM task-board step name, color, or display order.
+- **Update task attribute value**: Update a custom attribute value on a SendPulse CRM task.
+- **Update Telegram Contact Note**: Update an existing internal operator note for a Telegram contact.
+- **Update the deal attribute value**: Updates the deal attribute with the new value.
+- **Update the email address of the contact**: Updates the email address of the specified contact
+- **Update the phone number of the contact**: Updates the phone number of the specified contact.
+- **Update TikTok Contact Note**: Update an existing internal operator note for a TikTok contact.
+- **Update users category by id**: Rename or move a SendPulse CRM product category by ID.
+- **Update variables for multiple phone numbers**: Update variables for multiple phone numbers using the official SendPulse sms API.
+- **Update Viber Chatbot Contact Note**: Replace the text of an operator note on a SendPulse Viber chatbot contact.
+- **Update WhatsApp Contact Note**: Update an existing internal operator note for a WhatsApp contact.
+- **Upload File**: Upload one file to an existing File Manager directory and return the provider-reported absolute path when available.
+- **Upload files**: Upload one or more files for later attachment to SendPulse CRM records.
+- **Verify Mailing List**: Start verification of a SendPulse mailing list.
+- **Verify Single Email**: Start a SendPulse verification for one email address.
+- **View Verification Report** (read-only): View metadata and a sample from a generated SendPulse verification report.

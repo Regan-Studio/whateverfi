@@ -1,0 +1,112 @@
+# Freshsales
+
+Personalize engagement, shorten your sales cycle, and grow your business with Freshsales
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/freshsales/.
+
+## Actions
+
+- **Add Marketing List Contacts**: Add contacts to a Freshsales marketing list.
+- **Bulk Assign Contact Owner**: Replace the owner of up to 100 Freshsales contacts using explicit contact and owner IDs.
+- **Bulk Assign CPQ Record Owners**: Queue one owner assignment for selected CPQ products or documents.
+- **Bulk Delete CPQ Records**: Queue soft deletion of selected CPQ products or documents so they remain restorable.
+- **Bulk Restore CPQ Records**: Queue restoration of selected soft-deleted CPQ products or documents using the PUT methods in Freshsales' official cURL examples.
+- **Bulk Update CPQ Records**: Queue one shared-field update for selected CPQ products or documents.
+- **Clone Contact**: Create a new Freshsales contact by cloning an existing contact and applying field overrides.
+- **Clone Custom Module Record**: Create a new Freshsales custom-module record by cloning an existing record and applying field overrides.
+- **Clone Deal**: Clone a Freshsales deal, optionally overriding fields on the new deal.
+- **Clone Sales Account**: Clone a Freshsales sales account, optionally overriding fields on the new account.
+- **Create Appointment**: Create a Freshsales appointment, optionally linked to a CRM record or attendees, and return its ID and related records.
+- **Create Contact**: Create a Freshsales contact identified by email addresses, mobile number, Twitter username, or external ID and return its ID and contact…
+- **Create CPQ Document**: Create a Freshsales quote or other CPQ document and return its confirmed ID.
+- **Create CPQ Product**: Create a Freshsales CPQ product and return the provider-confirmed product ID.
+- **Create Custom Field**: Create a persistent custom field on one explicit Freshsales entity form.
+- **Create Custom Module**: Create a tenant-wide Freshsales custom-module definition and return its ID and internal entity name.
+- **Create Custom Module Record**: Create one record in a named Freshsales custom module and return its record ID and fields.
+- **Create Deal**: Create a Freshsales deal associated with exactly one existing or new sales account.
+- **Create Document Link**: Attach a web document URL to one explicit Freshsales CRM record.
+- **Create Marketing List**: Create an empty Freshsales marketing list.
+- **Create Note**: Create a Freshsales note on one lead, contact, sales account, or deal.
+- **Create Sales Account**: Create a Freshsales sales account with standard, parent-account, or tenant-defined fields.
+- **Create Sales Activity**: Create a Freshsales sales activity with all provider-mandatory time, owner, type, and CRM-target fields.
+- **Create Task**: Create a Freshsales task with every provider-mandatory assignment, due-date, and CRM-target field.
+- **Delete Appointment**: Delete one Freshsales appointment by ID.
+- **Delete Contacts**: Delete one or more Freshsales contacts through ordinary deletion rather than permanent forget.
+- **Delete CPQ Document**: Soft-delete one Freshsales CPQ document so it can be restored.
+- **Delete CPQ Product**: Soft-delete one Freshsales CPQ product so it can be restored.
+- **Delete Custom Module**: Delete a Freshsales custom-module definition and change the tenant's CRM schema.
+- **Delete Custom Module Records**: Delete one or more records from a named Freshsales custom module through ordinary deletion.
+- **Delete Deals**: Ordinarily delete one deal or bulk-delete multiple deals.
+- **Delete Sales Accounts**: Ordinarily delete one account or bulk-delete multiple accounts.
+- **Delete Sales Activity**: Delete one Freshsales sales activity after confirming the provider success code.
+- **Delete Task**: Delete one Freshsales task and return provider-confirmed deletion fields.
+- **Get Appointment** (read-only): Return one Freshsales appointment and its related attendees, users, conferences, and notes.
+- **Get Bulk Upsert Job Status** (read-only): Get bounded, single-request progress and failure details for one Freshsales bulk-upsert job.
+- **Get Contact** (read-only): Return one Freshsales contact by ID, optionally including related resources.
+- **Get CPQ Document** (read-only): Get one Freshsales CPQ document, optionally including product line items.
+- **Get CPQ Product** (read-only): Get one Freshsales CPQ product, optionally including pricing.
+- **Get Custom Module** (read-only): Return one Freshsales custom-module definition by ID, including the entity name required by custom-module record tools.
+- **Get Custom Module Record** (read-only): Return one record by ID from a named Freshsales custom module.
+- **Get Deal** (read-only): Get one Freshsales deal by ID, optionally with related resources.
+- **Get Sales Account** (read-only): Get one Freshsales sales account by ID, optionally with related resources.
+- **Get Sales Activity** (read-only): Get one Freshsales sales activity by ID.
+- **Get Task** (read-only): Get one Freshsales task by ID, optionally with collaborators and its CRM target.
+- **List Appointments** (read-only): Return one page selected by Freshsales's required appointment filter.
+- **List Configuration Options** (read-only): List one Freshsales configuration option family for IDs needed by CRM operations.
+- **List Contact Activities** (read-only): Return activity history for one Freshsales contact.
+- **List Contact Document Associations** (read-only): List the file and web-link associations attached to one Freshsales contact, including referenced links, users, and provider totals.
+- **List Contact Fields** (read-only): List Freshsales contact field definitions, internal names, types, choices, and tenant form metadata for use in contact create and update…
+- **List Contact Views** (read-only): List saved Freshsales contact views and their IDs for use with contact listing tools.
+- **List Contacts by View** (read-only): Return one explicitly numbered page from a saved Freshsales contact view, including shaped page totals and the next page number when…
+- **List CPQ Document Related Products** (read-only): List the typed product records associated with one Freshsales CPQ document.
+- **List Custom Module Records** (read-only): Return one saved-view page of records from a named Freshsales custom module and a page cursor when more records are available.
+- **List Custom Module Views** (read-only): List saved views for a Freshsales custom module and return the view IDs needed to list its records.
+- **List Deal Fields** (read-only): List standard and tenant-defined Freshsales deal field definitions.
+- **List Deal Views** (read-only): List saved Freshsales deal views and their IDs.
+- **List Deals by View** (read-only): Return one numbered page from a saved Freshsales deal view.
+- **List Entity Forms** (read-only): List Freshsales forms for a standard or custom entity so callers can obtain an explicit form ID before creating a custom field.
+- **List Marketing List Contacts** (read-only): Return one documented page of contacts in a Freshsales marketing list.
+- **List Marketing Lists** (read-only): Return one documented page of Freshsales marketing lists.
+- **List Sales Account Fields** (read-only): List standard and tenant-defined Freshsales sales-account field definitions.
+- **List Sales Account Views** (read-only): List saved Freshsales sales-account views and their IDs.
+- **List Sales Accounts by View** (read-only): Return one numbered page from a saved Freshsales sales-account view.
+- **List Sales Activities** (read-only): Return one bounded Freshsales sales-activity page (25 records by default, 100 maximum) and an explicit next page number.
+- **List Sales Activity Fields** (read-only): List standard and tenant-defined Freshsales sales-activity field definitions.
+- **List Tasks** (read-only): Return one Freshsales task page for exactly one documented status/due-date filter.
+- **Log Phone Call for Existing Record**: Create an irreversible manual call log for one existing Freshsales lead, contact, or sales account and optionally create a note.
+- **Log Phone Call for New Record**: Create a new Freshsales contact and an irreversible manual call log associated with it, optionally with a note.
+- **Lookup Records by Exact Field** (read-only): Look up exact matches across one or more Freshsales lead, contact, sales-account, or deal types using one compatible standard or custom…
+- **Move Marketing List Contacts**: Move selected contacts or every contact from one Freshsales marketing list to a different destination list.
+- **Permanently Delete Note**: Permanently delete one Freshsales note.
+- **Permanently Forget Contact**: Permanently and irreversibly erase one Freshsales contact and associated data.
+- **Permanently Forget CPQ Document**: Permanently and irreversibly delete one CPQ document and all associated data.
+- **Permanently Forget Custom Module Record**: Permanently and irreversibly erase one Freshsales custom-module record and associated data.
+- **Permanently Forget Deal**: IRREVERSIBLE.
+- **Permanently Forget Sales Account**: IRREVERSIBLE.
+- **Remove Marketing List Contacts**: Remove selected contacts or every contact from one Freshsales marketing list.
+- **Restore CPQ Document**: Restore one soft-deleted Freshsales CPQ document.
+- **Restore CPQ Product**: Restore one soft-deleted Freshsales CPQ product.
+- **Search Contacts by Exact Filters** (read-only): Find exact-match Freshsales contacts with explicit field/operator/value rules.
+- **Search Records** (read-only): Fuzzy-search Freshsales users, standard CRM records, and custom-module records in one bounded request.
+- **Start Bulk Contact Upsert**: Start an asynchronous upsert of up to 100 Freshsales contacts.
+- **Start Bulk Deal Upsert**: Start an asynchronous upsert of up to 100 deals.
+- **Start Bulk Sales Account Upsert**: Start an asynchronous upsert of up to 100 sales accounts.
+- **Update Appointment**: Update selected fields or attendees on an existing Freshsales appointment and return the updated appointment and related records.
+- **Update Contact**: Update selected fields on an existing Freshsales contact and return the updated contact.
+- **Update Contact Team Memberships**: Add, update, or remove Freshsales contact-team memberships using explicit contact, user, and designation IDs.
+- **Update CPQ Document**: Update document fields or replace its complete product list through the one official PUT contract.
+- **Update CPQ Product**: Update product fields or add, overwrite, and delete product prices through the one official PUT contract.
+- **Update Custom Module**: Update selected display, icon, navigation, or description settings on an existing Freshsales custom-module definition.
+- **Update Custom Module Record**: Update selected fields on one record in a named Freshsales custom module and return the updated record.
+- **Update Deal**: Update a Freshsales deal, its contact associations, or replace all deal products.
+- **Update Deal Team Memberships**: Add, update, or remove team memberships for one Freshsales deal.
+- **Update Marketing List**: Rename an existing Freshsales marketing list.
+- **Update Note**: Replace the text and target association of an existing Freshsales note.
+- **Update or Mark Task Done**: Update a Freshsales task through the single documented PUT path.
+- **Update Sales Account**: Update standard or tenant-defined fields on a Freshsales sales account.
+- **Update Sales Account Team Memberships**: Add, update, or remove team memberships for one Freshsales sales account.
+- **Update Sales Activity**: Update selected fields on one existing Freshsales sales activity.
+- **Upload and Attach Document**: Upload a required file as multipart/form-data and attach it to one explicit Freshsales CRM record.
+- **Upsert Contact**: Create or update one Freshsales contact matched by a unique identifier and return the resulting contact.
+- **Upsert Deal**: Create or update a deal by one unique standard or tenant-defined field.
+- **Upsert Sales Account**: Create or update a sales account by one unique standard or tenant-defined field.

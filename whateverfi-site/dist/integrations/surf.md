@@ -1,0 +1,130 @@
+# Surf
+
+Surf provides AI-ready financial, crypto, prediction-market, equity, on-chain, news, search, and web data through a unified API.
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/surf/.
+
+## Actions
+
+- **Account Portfolio** (read-only): Return a Hyperliquid wallet's point-in-time portfolio across perpetuals, spot, vaults, and HYPE staking.
+- **Aggregated Project Detail** (read-only): Return a crypto project's profile with selectable overview, token market, legacy tokenomics, funding, team, contract, social, and…
+- **Aggregated Wallet Detail** (read-only): Return a wallet's cross-chain portfolio with selectable balance, token, label, NFT, and approval sub-resources, plus its per-chain USD…
+- **Airdrop Activities** (read-only): Return one page of airdrop activities with project, reward, status, fundraising, and social metrics.
+- **Airdrop Search** (read-only): Return one page of airdrop opportunities filtered by project keyword, lifecycle phase, reward type, task type, or open-task availability.
+- **Blockchain SQL Query** (read-only): Synchronously run one read-only ClickHouse SELECT or WITH query against Surf's blockchain tables with a 30-second timeout.
+- **Blockchain Structured Query** (read-only): Query an on-chain table with structured fields, filters, sorting, and row limits instead of raw SQL.
+- **Bridge Protocol Ranking** (read-only): Return one page of bridge protocols ranked by USD transfer volume over a selected time range, including transfer counts.
+- **Cancel Asynchronous Blockchain SQL Job**: Durably request cancellation of an asynchronous blockchain SQL job and return its current state.
+- **Closed Trade Funding and Leverage** (read-only): Return immutable funding and leverage context for one closed Hyperliquid trade using the composite key from the trades action.
+- **Closed Trades** (read-only): Return one page of a wallet's closed Hyperliquid position lifecycles, newest close first, with entry and exit prices, size, hold time,…
+- **Closed Trades Aggregate** (read-only): Aggregate a wallet's closed Hyperliquid trades by UTC day, symbol, direction, notional-size tier, or holding-time tier.
+- **Cross-Platform Daily Comparison (Polymarket <> Kalshi)** (read-only): Return one page of daily volume and open-interest comparisons for a specific matched Polymarket and Kalshi market pair.
+- **Cross-Platform Prediction Market Matcher** (read-only): Return one page of matching Polymarket and Kalshi markets with match confidence, activity, volume, current probabilities, and price spread.
+- **Crypto News Feed** (read-only): Return one page of crypto news from major sources, optionally filtered by publisher, project, or publication time.
+- **Current Onchain Gas Price** (read-only): Return the current gas price for one supported EVM chain in both wei and Gwei.
+- **DeFi Protocol Ranking** (read-only): Return one page of DeFi protocols ranked by TVL, fees, revenue, volume, or users.
+- **DEX Protocol Activity** (read-only): Return active traders, trade count, and USD volume for one DEX protocol or router contract as either a total aggregate or a newest-first…
+- **DEX Token OHLCV Price** (read-only): Return USD DEX-pool-weighted OHLCV bars for one token identified by chain and contract address.
+- **Download Asynchronous Blockchain SQL Results** (read-only): Return a completed asynchronous blockchain SQL job's retained results as structured JSON or a downloadable CSV.
+- **Equity Balance Sheet** (read-only): Return standardized balance-sheet periods for a US-listed equity.
+- **Equity Cash Flow** (read-only): Return paginated standardized cash-flow periods for a US-listed equity.
+- **Equity Financial Metrics** (read-only): Return paginated standardized financial ratios, growth measures, per-share values, and valuation metrics for a US-listed equity.
+- **Equity Financial Overview** (read-only): Return a paginated financial overview for a US-listed equity.
+- **Equity Income Statement** (read-only): Return standardized income-statement periods for a US-listed equity.
+- **Equity Listings** (read-only): Return one page of current verified active stock listings for the issuer resolved from the requested ticker.
+- **Equity Metadata** (read-only): Return lightweight identity, logo, and latest USD price metadata for one or more US-listed stocks or ETFs.
+- **Equity Price Candles** (read-only): Return historical OHLCV candles and the latest traded price for a US-listed equity.
+- **Equity Profile** (read-only): Return a standardized stock company profile or ETF product profile, including its business description and source-update metadata.
+- **Equity SEC Filings** (read-only): Return one page of verified periodic SEC filings for a US equity, including canonical filing metadata, document URLs, statement coverage,…
+- **Equity Segment Financials** (read-only): Return one page of provider-reported product and operating or geographic segment facts for a US-listed equity.
+- **ETF Flow History** (read-only): Return daily spot ETF flow history for BTC, ETH, XRP, SOL, or HYPE, including net USD flow, closing token price, settlement status, and…
+- **ETF Holdings** (read-only): Return one page from a stored ETF or index-fund portfolio snapshot plus its immediately previous snapshot, ordered newest to oldest.
+- **Exchange Flow Exchanges** (read-only): Return one page of Surf's curated aggregate and high-coverage individual exchange filters for BTC or ETH exchange-flow metrics.
+- **Exchange Funding Rate History** (read-only): Return historical funding rate records for a perpetual contract.
+- **Exchange Historical Candles** (read-only): Return one page of persisted OHLCV candles for a covered Bithumb, Upbit, HashKey, bitFlyer, Coinone, or Korbit spot market.
+- **Exchange Listing Events** (read-only): Return one page of historical exchange listing and delisting events, filtered by date range and optionally by token, exchange, product, or…
+- **Exchange Long/Short Ratio History** (read-only): Return historical long/short ratios for a perpetual contract.
+- **Exchange Market Coverage** (read-only): Return one page of covered spot markets on Bithumb, Upbit, HashKey, bitFlyer, Coinone, and Korbit with ticker metrics, candle…
+- **Exchange OHLCV Candlesticks** (read-only): Return exchange OHLCV candlesticks with high, low, and total-volume statistics for the returned period.
+- **Exchange Order Book Depth** (read-only): Return bid and ask order-book levels for an exchange market, including spread, spread percentage, mid-price, and total bid and ask depth.
+- **Exchange Perpetual Contract Snapshot** (read-only): Return a perpetual futures snapshot for a trading pair, including current funding, open interest, mark price, and index price data.
+- **Exchange Ticker Price** (read-only): Return the real-time ticker for an exchange trading pair, including the last price, best bid and ask, 24-hour high, low, volume, and price…
+- **Exchange Trading Pairs** (read-only): Return trading pairs available on an exchange, including base and quote currencies, market type, active status, and default fee rates.
+- **Fear & Greed Index History** (read-only): Return Bitcoin Fear and Greed Index history, including each 0-100 index value, its classification, and the Bitcoin price at that time.
+- **Fills** (read-only): Return one page of a wallet's individual Hyperliquid fills with realized PnL, fees, liquidity direction, and an opaque cursor.
+- **Fund Portfolio** (read-only): Return one page of a fund's investment rounds, sorted by the selected field.
+- **Fund Profile Detail** (read-only): Return a crypto VC fund's full profile, including its description, jurisdiction, unique invested-project count, links, X accounts, team…
+- **Fund Ranking** (read-only): Return one page of crypto VC funds ranked by fund tier or number of invested projects, including up to five top portfolio projects per fund.
+- **Fund Search** (read-only): Return one page of crypto investment funds matching a name keyword, including fund identity, tier, type, logo, and top invested projects.
+- **Fundraising Event Search** (read-only): Return one page of source-backed fundraising and token-sale events, or the latest fundraising timeline when no query is provided.
+- **Futures Market Overview** (read-only): Return a single ranked snapshot of futures market data across all tracked tokens, including open interest, funding rate, long/short ratio,…
+- **Get Asynchronous Blockchain SQL Job** (read-only): Return durable job status, elapsed time, ClickHouse progress counters, retry semantics, and result links for an asynchronous blockchain…
+- **Get Wallet Labels Batch** (read-only): Return entity names, entity types, and labels for up to 100 wallet addresses in one request.
+- **Kalshi Events** (read-only): Return one page of Kalshi events with their nested markets, optionally filtered by event ticker.
+- **Kalshi Markets** (read-only): Return one page of Kalshi markets with status, payout type, volume, and open interest.
+- **Kalshi Open Interest History** (read-only): Return daily open-interest history for one Kalshi market over a selected time window.
+- **Kalshi Orderbook History** (read-only): Return one page of historical YES-side bid and ask snapshots for a Kalshi market.
+- **Kalshi Price History** (read-only): Return hourly or daily OHLC price history for one Kalshi market, or the latest price from recent trades.
+- **Kalshi Trades** (read-only): Return one page of real-time individual trades for a Kalshi market, with taker side, outcome prices, notional volume, and timestamp.
+- **Kalshi Volume History** (read-only): Return daily notional trading-volume history for one Kalshi market over a selected time window.
+- **Large Liquidation Orders** (read-only): Return one offset page of individual large liquidation orders above a USD threshold.
+- **Latest Equity Filings** (read-only): Return the most recently accepted periodic SEC filings across US equities.
+- **Latest Equity Financials** (read-only): Return the most recently published current-serving TTM financials across US equities, optionally filtered by a minimum current market…
+- **Liquidation by Exchange** (read-only): Return a single ranked snapshot of total, long-side, and short-side liquidation volumes by exchange for a token and aggregation window.
+- **Liquidation Chart** (read-only): Return time-bucketed aggregate long- and short-side liquidation volumes for a token on a specific exchange and interval.
+- **Market Candles** (read-only): Return Hyperliquid market OHLCV candles ordered by open time ascending for a required half-open [from_, to) window.
+- **Market Correlations** (read-only): Return one page of 30-day Pearson price-correlation pairs between Polymarket markets in one category.
+- **News Article Detail** (read-only): Return the full content and metadata of one news article by an ID obtained from Surf news feed or search results.
+- **News Article Search** (read-only): Return one page of crypto news articles matching a keyword or phrase, ranked by relevance with matching fragments highlighted when…
+- **On-Chain Indicator** (read-only): Return daily on-chain indicator history for BTC or ETH, including NUPL, SOPR, MVRV, Puell Multiple, NVM, NVT, NVT Golden Cross, and…
+- **On-Chain Table Schema** (read-only): Discover logical on-chain tables and columns before writing SQL or structured queries.
+- **Open & Recent Orders** (read-only): Return a wallet's live resting orders and recent terminal orders.
+- **Open Positions** (read-only): Return a wallet's open Hyperliquid perpetual positions with leverage, unrealized PnL, ROE, funding, liquidation risk, and its cross-margin…
+- **Options Market Data** (read-only): Return options market data for one supported token, including open interest, 24-hour volume, put/call ratio, and max pain price by exchange.
+- **Polymarket Events** (read-only): Return one page of Polymarket events with aggregated status and volume plus their nested markets and outcomes, filtered by event slug.
+- **Polymarket Leaderboard** (read-only): Return one page of Polymarket traders ranked by realized PnL, trading volume, or trade count, including aggregate position outcomes.
+- **Polymarket Markets** (read-only): Return one page of Polymarket markets with outcomes, status, volume, and condition identifiers, filtered by market slug.
+- **Polymarket OHLCV Candlesticks** (read-only): Return OHLCV candlesticks for a Polymarket market for price-chart and bar visualizations.
+- **Polymarket Open Interest History** (read-only): Return daily open-interest history in USD for one Polymarket market over a selected time window.
+- **Polymarket Orderbook History** (read-only): Return one page of historical bid and ask depth snapshots for a Polymarket token.
+- **Polymarket Price History** (read-only): Return hourly or daily outcome-price history for one Polymarket market, or its latest price snapshot.
+- **Polymarket Smart Money** (read-only): Return one page of Polymarket smart-wallet analytics.
+- **Polymarket Trades** (read-only): Return one page of Polymarket trades or wallet activity, filtered by market, wallet, outcome, minimum amount, or time range.
+- **Polymarket Volume History** (read-only): Return aggregate Polymarket trading volume in USD and trade count as a time series for volume-trend analysis.
+- **Polymarket Volume Split (YES/NO)** (read-only): Return Polymarket trading volume split into YES and NO outcome sides for hourly, daily, or weekly intervals, including total volume and…
+- **Polymarket Wallet Positions** (read-only): Return one page of open Polymarket positions for a specific proxy wallet, including market identifiers, share size, valuation, and profit…
+- **Prediction Market Analytics** (read-only): Return one page of prediction-market analytics with daily trends, top markets by open interest, momentum distribution, and per-market…
+- **Preflight Blockchain SQL Query** (read-only): Validate and estimate a read-only ClickHouse SELECT or WITH query without executing it.
+- **Project AI News** (read-only): Return one page of AI-generated news and signal analysis for a project identified by Surf UUID or fuzzy name.
+- **Project DeFi Metrics** (read-only): Return one page of historical metric points for a single DeFi protocol.
+- **Project Event Search** (read-only): Return one page of project events for a Surf project identified by exact UUID or fuzzy name, optionally filtered by event type.
+- **Project Search** (read-only): Return one page of crypto projects matching a project name or token ticker.
+- **Public Sale / Crowdsale** (read-only): Return public sale information for a project resolved by Surf UUID, name, or token symbol, including sale type, status, dates, token…
+- **Search Prediction Markets** (read-only): Return one page of Polymarket and Kalshi markets with identifiers, status, volume, open interest, trade counts, current probability, and…
+- **Signal Detail** (read-only): Return one project signal card by Surf token UUID or project slug, including its score, classified state, score dimensions, market data,…
+- **Signal Projects** (read-only): Return one page of ranked project signal cards for a 24-hour or 7-day window.
+- **Submit Asynchronous Blockchain SQL Job**: Submit a read-only ClickHouse SQL query for durable background execution and return its stable job and query identifiers immediately.
+- **Technical Indicator** (read-only): Return a technical indicator for a trading pair on a given exchange and candlestick interval.
+- **Token DEX Trade History** (read-only): Return one page of recent DEX swaps for a token contract on Ethereum, Base, BSC, Arbitrum, or Tron.
+- **Token Generation Event** (read-only): Return Token Generation Event status for a project resolved by Surf UUID, name, or token symbol, including the current status, last…
+- **Token Holders** (read-only): Return one page of top token holders for a contract address.
+- **Token Price History** (read-only): Return historical prices for one listed token in a selected quote currency.
+- **Token Rankings** (read-only): Return one page of tokens ranked by market capitalization, 24-hour price change, or 24-hour trading volume, optionally filtered by token…
+- **Token Symbol Resolution** (read-only): Resolve an exact token ticker symbol to one page of likely contract-address candidates on supported chains.
+- **Token Transfer Activity Summary** (read-only): Return aggregate transfer activity for a token contract over a selected window, including transfer count, approximate unique senders and…
+- **Token Transfer History** (read-only): Return one page of recent transfers for a token contract on Ethereum, Base, Solana, Tron, BSC, or Arbitrum.
+- **Token Unlock Schedule** (read-only): Return token unlock time-series with cumulative amounts, allocation breakdowns, total supply denominator, and unlocked-supply percentage.
+- **Top Token Signals** (read-only): Return one page of daily or weekly top-token project signal cards with latest price, price changes, dimension scores, compact signals, and…
+- **Top Transfer Counterparties** (read-only): Return one page of a token's top receivers or senders over a selected window, ranked by transfer count, token amount, or USD value.
+- **Trader Leaderboard** (read-only): Return one page of Hyperliquid traders ranked by PnL, win rate, or volume, with trade activity, account age, human-likeness, and market…
+- **Trading Performance** (read-only): Return a wallet's lifetime funding-excluded realized trading performance, live open positions, unrealized PnL, and perpetual clearinghouse…
+- **Transaction Details by Hash** (read-only): Look up one EVM transaction by chain and hash.
+- **Wallet DeFi Protocol Positions** (read-only): Return one page of a wallet's DeFi protocol positions across lending, staking, liquidity pools, and farming, including token breakdowns…
+- **Wallet Net Worth History** (read-only): Return about 24 hours of total wallet net worth in USD at five-minute intervals for one EVM address.
+- **Wallet Search** (read-only): Return one page of wallet entities matching an ENS name, address label, or wallet-address prefix, including associated labels and known…
+- **Wallet Transaction History** (read-only): Return one page of a wallet's on-chain transactions, classified by type and valued in the chain's native token.
+- **Wallet Transfer History** (read-only): Return one page of ERC-20 or SPL token transfers involving a wallet, with token identity, USD value, and incoming or outgoing flow.
+- **Web Page Fetch** (read-only): Fetch one web page and convert its content to clean markdown, optionally limiting extraction, removing elements, or waiting for dynamic…
+- **Web Search** (read-only): Return one page of web pages matching a keyword or phrase, optionally restricted to specific domains and including full page content.
+- **X Tweets by IDs** (read-only): Return normalized X posts by numeric ID.
+- **Yield Pool Ranking** (read-only): Return one page of individual DeFi yield pools ranked by APY or TVL, optionally filtered by protocol.

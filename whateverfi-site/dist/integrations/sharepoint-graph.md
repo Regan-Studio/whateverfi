@@ -1,0 +1,168 @@
+# SharePoint Graph
+
+SharePoint Graph uses Microsoft Graph to access SharePoint sites, lists, list items, document libraries, files, folders, and sharing capabilities.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/sharepoint-graph/.
+
+## Actions
+
+- **Add Column To SharePoint Content Type**: Add a column (column link) to a SharePoint site or list content type.
+- **Add Content Type Copy From Hub**: Add a copy of a content type from the tenant content type hub to a SharePoint site or list.
+- **Add Content Type Copy To SharePoint List**: Copy a site content type into a SharePoint list.
+- **Add SharePoint Workbook Chart**: Add a chart to a worksheet in an Excel workbook stored in SharePoint.
+- **Add SharePoint Workbook Named Item**: Add a named item at the workbook scope in an Excel workbook stored in SharePoint.
+- **Add SharePoint Workbook Table**: Add a table to an Excel workbook stored in SharePoint.
+- **Add SharePoint Workbook Table Row**: Add rows to an Excel workbook table stored in SharePoint.
+- **Add SharePoint Workbook Worksheet**: Add a worksheet to an Excel workbook stored in SharePoint.
+- **Apply SharePoint Workbook Table Column Filter**: Apply a filter to a column of an Excel workbook table stored in SharePoint.
+- **Assign Sensitivity Label To SharePoint Drive Item**: Assign a Microsoft Purview sensitivity label to a SharePoint drive item.
+- **Calculate SharePoint Workbook**: Recalculate an Excel workbook stored in SharePoint.
+- **Check In SharePoint Drive Item**: Check in a SharePoint drive item.
+- **Checkout SharePoint Drive Item**: Checkout SharePoint Drive Item.
+- **Clear SharePoint Workbook Range**: Clear the contents and/or formatting of a range in a SharePoint Excel workbook.
+- **Close SharePoint Workbook Session**: Close an Excel workbook session.
+- **Copy SharePoint Drive Item**: Start an asynchronous copy of a SharePoint drive item.
+- **Create Microsoft Graph Subscription**: Create a Microsoft Graph webhook subscription.
+- **Create SharePoint Folder**: Create a folder inside a SharePoint drive folder.
+- **Create SharePoint List**: Create a SharePoint list.
+- **Create SharePoint List Column**: Create a SharePoint list column definition.
+- **Create SharePoint List Item**: Create a SharePoint list item.
+- **Create SharePoint Sharing Link**: Create a sharing link for a SharePoint drive item.
+- **Create SharePoint Site Column**: Create a SharePoint site column definition.
+- **Create SharePoint Site Content Type**: Create a SharePoint site content type.
+- **Create SharePoint Site Page**: Create a modern SharePoint site page.
+- **Create SharePoint Site Permission**: Grant an application (Sites.Selected) permission on a SharePoint site.
+- **Create SharePoint Upload Session**: Create an upload session for large SharePoint file uploads.
+- **Create SharePoint Workbook Session**: Create an Excel workbook session for a workbook stored in SharePoint.
+- **Delete Microsoft Graph Subscription**: Delete a Microsoft Graph webhook subscription.
+- **Delete SharePoint Drive Item**: Delete a SharePoint drive item.
+- **Delete SharePoint Drive Item Permission**: Delete a sharing permission from a SharePoint drive item.
+- **Delete SharePoint Drive Item Version**: Delete a SharePoint drive item version.
+- **Delete SharePoint List**: Delete a SharePoint list.
+- **Delete SharePoint List Column**: Delete a SharePoint list column definition.
+- **Delete SharePoint List Content Type**: Delete a SharePoint list content type.
+- **Delete SharePoint List Item**: Delete a SharePoint list item.
+- **Delete SharePoint Share Permission**: Revoke the sharing-link permission for a shared SharePoint or OneDrive item.
+- **Delete SharePoint Site Column**: Delete a SharePoint site column definition.
+- **Delete SharePoint Site Content Type**: Delete a SharePoint site content type.
+- **Delete SharePoint Site Page**: Delete a SharePoint site page.
+- **Delete SharePoint Site Permission**: Revoke an application (Sites.Selected) permission from a SharePoint site.
+- **Delete SharePoint Workbook Range**: Delete a range from a SharePoint Excel workbook and shift the remaining cells.
+- **Delete SharePoint Workbook Table**: Delete a table from an Excel workbook stored in SharePoint.
+- **Delete SharePoint Workbook Worksheet**: Delete a worksheet in an Excel workbook stored in SharePoint.
+- **Discard SharePoint Drive Item Checkout**: Discard SharePoint Drive Item Checkout.
+- **Download SharePoint Drive Item** (read-only): Download a SharePoint drive item.
+- **Download SharePoint Drive Item By Path** (read-only): Download a SharePoint drive item by path.
+- **Download SharePoint Drive Item Version** (read-only): Download the binary content of an earlier (non-current) version of a file in a SharePoint document library.
+- **Execute Microsoft Graph Batch** (read-only): Execute a Microsoft Graph JSON batch request.
+- **Extract SharePoint Drive Item Sensitivity Labels** (read-only): Extract the Microsoft Purview sensitivity labels currently applied to a SharePoint drive item.
+- **Follow SharePoint Sites**: Follow one or more SharePoint sites for a user.
+- **Get All SharePoint Sites** (read-only): Enumerate all SharePoint sites across geographies in the organization.
+- **Get Current Microsoft Graph User** (read-only): Get the current Microsoft Graph user for delegated SharePoint Graph connections.
+- **Get Microsoft Graph Subscription** (read-only): Get a Microsoft Graph webhook subscription.
+- **Get Root SharePoint Site** (read-only): Get the tenant's root SharePoint site.
+- **Get Sensitivity Label** (read-only): Get a Microsoft Purview sensitivity label by its ID.
+- **Get SharePoint Content Type Column** (read-only): Get a single column of a SharePoint site or list content type.
+- **Get SharePoint Content Type Published Status** (read-only): Check whether a SharePoint content type is published to the content type hub.
+- **Get SharePoint Default Drive** (read-only): Get the default document library drive for a SharePoint site.
+- **Get SharePoint Document Comments** (read-only): Extract comments from a SharePoint Word .docx drive item.
+- **Get SharePoint Drive** (read-only): Get a SharePoint document library drive by drive ID.
+- **Get SharePoint Drive Item** (read-only): Get a SharePoint drive item by ID.
+- **Get SharePoint Drive Item Analytics** (read-only): Get item analytics for a SharePoint drive item.
+- **Get SharePoint Drive Item By Path** (read-only): Get a SharePoint drive item by path.
+- **Get SharePoint Drive Item Permission** (read-only): Get a single sharing permission on a SharePoint drive item.
+- **Get SharePoint Drive Item Version** (read-only): Get a specific SharePoint drive item version.
+- **Get SharePoint List** (read-only): Get a SharePoint list by ID or display name.
+- **Get SharePoint List Column** (read-only): Get a SharePoint list column definition.
+- **Get SharePoint List Content Type** (read-only): Get a SharePoint list content type.
+- **Get SharePoint List Item** (read-only): Get a SharePoint list item.
+- **Get SharePoint List Item Fields** (read-only): Get field values for a SharePoint list item.
+- **Get SharePoint List Item Version** (read-only): Get a specific SharePoint list item version.
+- **Get SharePoint Shared Item** (read-only): Access a shared SharePoint or OneDrive item by share ID or encoded sharing URL.
+- **Get SharePoint Site** (read-only): Get a SharePoint site by Microsoft Graph site ID.
+- **Get SharePoint Site Column** (read-only): Get a SharePoint site column definition.
+- **Get SharePoint Site Content Type** (read-only): Get a SharePoint site content type.
+- **Get SharePoint Site Page** (read-only): Get a SharePoint site page as a Microsoft Graph sitePage resource.
+- **Get SharePoint Site Page Web Part** (read-only): Get a single web part on a SharePoint site page.
+- **Get SharePoint Site Permission** (read-only): Get a single application (Sites.Selected) permission on a SharePoint site.
+- **Get SharePoint Special Folder** (read-only): Get a SharePoint special folder by name.
+- **Get SharePoint Workbook Chart Image** (read-only): Render an Excel worksheet chart stored in SharePoint as a base64-encoded image.
+- **Get SharePoint Workbook Named Item** (read-only): Get a named item defined at the workbook scope in an Excel workbook stored in SharePoint.
+- **Get SharePoint Workbook Used Range** (read-only): Get the used range of an Excel worksheet stored in SharePoint.
+- **Get SharePoint Workbook Worksheet** (read-only): Get an Excel worksheet in a SharePoint workbook.
+- **Grant SharePoint Share Permission**: Grant users access to a shared SharePoint or OneDrive link via an encoded sharing URL.
+- **Insert SharePoint Workbook Range**: Insert a cell or range in an Excel workbook stored in SharePoint, shifting existing cells.
+- **Invite Users To SharePoint Drive Item**: Invite recipients to a SharePoint drive item.
+- **List Followed SharePoint Sites** (read-only): List the SharePoint sites followed by the signed-in user.
+- **List Microsoft Graph Subscriptions** (read-only): List Microsoft Graph webhook subscriptions.
+- **List Recent Drive Items** (read-only): List recent drive items for the delegated (signed-in) user.
+- **List Sensitivity Labels** (read-only): List the Microsoft Purview sensitivity labels available to the tenant.
+- **List SharePoint Content Type Columns** (read-only): List the columns of a SharePoint site or list content type.
+- **List SharePoint Drive Delta** (read-only): Track changes in a SharePoint drive using Microsoft Graph delta.
+- **List SharePoint Drive Item Children** (read-only): List children under a folder drive item.
+- **List SharePoint Drive Item Children By Path** (read-only): List the children of a SharePoint folder addressed by its path under the drive root.
+- **List SharePoint Drive Item Permissions** (read-only): List sharing permissions on a SharePoint drive item.
+- **List SharePoint Drive Item Thumbnails** (read-only): Retrieve the available thumbnail sets (small, medium, large) for a SharePoint drive item.
+- **List SharePoint Drive Item Versions** (read-only): List versions for a SharePoint drive item.
+- **List SharePoint Drive Root Children** (read-only): List children in the root of a SharePoint drive.
+- **List SharePoint List Columns** (read-only): List column definitions for a SharePoint list.
+- **List SharePoint List Content Types** (read-only): List content types for a SharePoint list.
+- **List SharePoint List Item Delta** (read-only): Track changes to SharePoint list items using Microsoft Graph delta.
+- **List SharePoint List Item Versions** (read-only): List versions for a SharePoint list item.
+- **List SharePoint List Items** (read-only): List items in a SharePoint list.
+- **List SharePoint Lists** (read-only): List SharePoint lists in a site.
+- **List SharePoint Share Permission** (read-only): Get the sharing-link permission details for a shared SharePoint or OneDrive item.
+- **List SharePoint Site Changes** (read-only): Get newly created, updated, or deleted SharePoint sites using delta tracking.
+- **List SharePoint Site Columns** (read-only): List column definitions for a SharePoint site.
+- **List SharePoint Site Content Types** (read-only): List content types for a SharePoint site.
+- **List SharePoint Site Drives** (read-only): List document library drives for a SharePoint site.
+- **List SharePoint Site Page Web Parts** (read-only): List web parts on a SharePoint site page.
+- **List SharePoint Site Pages** (read-only): List modern SharePoint site pages as Microsoft Graph sitePage resources.
+- **List SharePoint Site Permissions** (read-only): List the application (Sites.Selected) permissions granted on a SharePoint site.
+- **List SharePoint Sites** (read-only): Search for SharePoint sites available through Microsoft Graph.
+- **List SharePoint Subsites** (read-only): List subsites for a SharePoint site.
+- **List SharePoint Workbook Charts** (read-only): List charts on a worksheet in an Excel workbook stored in SharePoint.
+- **List SharePoint Workbook Named Items** (read-only): List named items defined at the workbook scope in an Excel workbook stored in SharePoint.
+- **List SharePoint Workbook Table Columns** (read-only): List columns in an Excel workbook table stored in SharePoint.
+- **List SharePoint Workbook Table Rows** (read-only): List rows in an Excel workbook table stored in SharePoint.
+- **List SharePoint Workbook Tables** (read-only): List tables in an Excel workbook stored in SharePoint.
+- **List SharePoint Workbook Worksheets** (read-only): List worksheets in an Excel workbook stored in SharePoint.
+- **Merge SharePoint Workbook Range**: Merge the cells of a range in a SharePoint Excel workbook into a single cell.
+- **Move SharePoint Drive Item**: Move a SharePoint drive item by updating its parentReference.
+- **Preview SharePoint Drive Item** (read-only): Get a short-lived embeddable preview URL for a SharePoint drive item.
+- **Publish SharePoint Content Type**: Publish a SharePoint content type from the content type hub site.
+- **Publish SharePoint Site Page**: Publish a SharePoint site page.
+- **Read SharePoint Workbook Range** (read-only): Read a cell or range from an Excel workbook stored in SharePoint.
+- **Reauthorize Microsoft Graph Subscription**: Reauthorize a Microsoft Graph webhook subscription.
+- **Resolve SharePoint Site By Path** (read-only): Resolve a SharePoint site from its hostname and server-relative path.
+- **Restore SharePoint Drive Item Version**: Restore a previous version of a SharePoint drive item.
+- **Restore SharePoint List Item Version**: Restore a previous version of a SharePoint list item.
+- **Run Microsoft Graph Search Query** (read-only): Run Microsoft Graph search across SharePoint-supported entities.
+- **Run SharePoint Workbook Function** (read-only): Run an Excel workbook function for a workbook stored in SharePoint.
+- **Search SharePoint Drive Items** (read-only): Search items in a SharePoint drive.
+- **Sort SharePoint Workbook Range**: Sort a cell range in an Excel workbook stored in SharePoint.
+- **Unfollow SharePoint Sites**: Unfollow one or more SharePoint sites for a user.
+- **Unmerge SharePoint Workbook Range**: Unmerge previously merged cells of a range in a SharePoint Excel workbook.
+- **Unpublish SharePoint Content Type**: Unpublish a SharePoint content type from the content type hub site.
+- **Update Microsoft Graph Subscription**: Update a Microsoft Graph webhook subscription.
+- **Update SharePoint Drive Item**: Update drive item metadata such as name or description.
+- **Update SharePoint Drive Item Permission**: Update the roles of a direct sharing permission on a SharePoint drive item.
+- **Update SharePoint List**: Update SharePoint list metadata.
+- **Update SharePoint List Column**: Update a SharePoint list column definition.
+- **Update SharePoint List Content Type**: Update a SharePoint list content type.
+- **Update SharePoint List Item**: Update a SharePoint list item.
+- **Update SharePoint List Item Fields**: Update field values for a SharePoint list item.
+- **Update SharePoint Site**: Update editable SharePoint site metadata (description).
+- **Update SharePoint Site Column**: Update a SharePoint site column definition.
+- **Update SharePoint Site Content Type**: Update a SharePoint site content type.
+- **Update SharePoint Site Page**: Update editable metadata and layout for a SharePoint site page.
+- **Update SharePoint Site Page Web Part**: Update the properties of a web part on a SharePoint site page.
+- **Update SharePoint Site Permission**: Update the roles of an application (Sites.Selected) permission on a SharePoint site.
+- **Update SharePoint Workbook Range**: Update a cell or range in an Excel workbook stored in SharePoint.
+- **Update SharePoint Workbook Range Fill**: Update the fill of a cell or range in an Excel workbook stored in SharePoint.
+- **Update SharePoint Workbook Range Font**: Update the font of a cell or range in an Excel workbook stored in SharePoint.
+- **Update SharePoint Workbook Range Format**: Update the format of a cell or range in an Excel workbook stored in SharePoint.
+- **Update SharePoint Workbook Table**: Update properties of a table in an Excel workbook stored in SharePoint.
+- **Update SharePoint Workbook Worksheet**: Update worksheet metadata in an Excel workbook stored in SharePoint.
+- **Upload Bytes To SharePoint Upload Session** (read-only): Upload one byte range (chunk) of a file to an existing SharePoint upload session, or get the session status or cancel it.
+- **Upload SharePoint File**: Upload a file of any size to SharePoint via a chunked Microsoft Graph upload session, creating the destination folder path if needed.

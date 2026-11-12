@@ -1,0 +1,172 @@
+# Smokeball
+
+Smokeball legal practice management actions for matters, contacts, tasks, documents, billing, and firm records.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/smokeball/.
+
+## Actions
+
+- **Add Contact Tags**: Adds one or more tags to an existing contact by contact id.
+- **Add Matter File**: Register a new matter file and return a sensitive presigned PUT URL valid for 1 hour that authorizes its content upload.
+- **Add Matter Files Batch**: Register a migration batch of matter files and return one sensitive presigned PUT URL, valid for 1 hour, per item in request order.
+- **Add Matter Layout**: Adds a layout item using a restricted documented subset.
+- **Add Matter Layout Contact**: Adds a new contact on a specified layout.
+- **Add Matter Role**: Appends a new role in the specified matter.
+- **Add Matter Role Relationship**: Appends a new relationship with an existing role in the specified matter.
+- **Add Matter Tags**: Adds one or more tags to an existing matter by matter id.
+- **Create Activity Code**: Creates an activity code.
+- **Create Authorization Group**: Creates an authorization group.
+- **Create Authorization Policy**: Creates an authorization policy.
+- **Create Bank Account Requisition**: Submit an irreversible financial requisition against a trust account.
+- **Create Bank Account Transaction**: Submit an irreversible financial Deposit transaction against the specified bank account and matter, with a dollar amount limited to 2…
+- **Create Contact**: Creates a contact.
+- **Create Contact Relation**: Creates a relation for a specified contact.
+- **Create Event**: Creates a calendar event.
+- **Create Event Reminder**: Creates a new reminder for an event.
+- **Create File Preview**: Get or request a PDF preview of the current file version.
+- **Create Firm**: Creates a firm for the current authenticated client and registers an existing user as a staff member and firm owner.
+- **Create Matter**: Creates a new matter or Lead.
+- **Create Matter Expense**: Creates an expense for the specified matter.
+- **Create Matter Fee**: Creates a fee for the specified matter.
+- **Create Matter Folder**: Creates a new folder under the specified matter.
+- **Create Matter Memo**: Creates a memo on the specified matter.
+- **Create Notification**: Send a notification to the specified staff member, including its displayed message and optional toast message, icons, color, and Smokeball…
+- **Create Staff Member**: Creates a staff member in the firm associated with the authenticated client.
+- **Create Subtask**: Creates a subtask for a specified task.
+- **Create Task**: Creates a task.
+- **Create Task Document**: Links an existing document to the specified task.
+- **Create User**: Create a persistent user login using Default or Auth0.
+- **Create Webhook Subscription**: Create a persistent webhook subscription that sends every selected event type to the external eventNotificationUrl until the subscription…
+- **Delete Activity Code**: Deletes an activity code.
+- **Delete Authorization Group**: Delete an authorization group.
+- **Delete Contact**: Deletes a specified contact.
+- **Delete Contact Relation**: Deletes a relation for a specified contact.
+- **Delete Event**: Deletes a specified event.
+- **Delete Event Reminder**: Deletes a specified event reminder.
+- **Delete Matter**: Deletes a specified matter.
+- **Delete Matter Expense**: Deletes an expense.
+- **Delete Matter Fee**: Deletes a fee.
+- **Delete Matter File**: Deletes a specified matter file.
+- **Delete Matter Folder**: Deletes a folder belonging to the specified matter.
+- **Delete Matter Memo**: Deletes a specified memo.
+- **Delete Staff Member**: Sets the staff member from the firm associated with the authenticated client as a former staff member.
+- **Delete Subtask**: Deletes a specified subtask of a specified task.
+- **Delete Task**: Deletes a specified task.
+- **Delete Task Document**: Unlinks the specified document from the task without deleting the underlying document.
+- **Delete Webhook Subscription**: Deletes and unsubscribes from the specified webhook subscription.
+- **Get Activity Code** (read-only): Retrieves one activity code by id.
+- **Get Authorization Group** (read-only): Retrieves one authorization group by id.
+- **Get Authorization Policy** (read-only): Retrieves one authorization policy by its reference.
+- **Get Bank Account** (read-only): Retrieves one bank account by id.
+- **Get Bank Account Transaction** (read-only): Retrieves one transaction by bank account id and transaction id, including its type, amount, dates, references, associated matter and…
+- **Get Contact** (read-only): Retrieves one contact by id.
+- **Get Contact Relation** (read-only): Retrieves a relation for a specified contact if associated with the authenticated client.
+- **Get Contacts Batch** (read-only): Return contacts matching up to 500 supplied IDs in request order.
+- **Get Event** (read-only): Retrieves one calendar event by id.
+- **Get File Download Url** (read-only): Return a sensitive presigned GET URL and metadata for downloading the current or specified version of a matter file.
+- **Get File Preview** (read-only): Return a sensitive presigned URL to the PDF preview of the file's current version.
+- **Get File Version Preview** (read-only): Return a sensitive presigned URL to the PDF preview of a specific document version.
+- **Get Firm** (read-only): Retrieves the details of the firm associated with the authenticated client.
+- **Get Layout Design** (read-only): Retrieves one layout design by id.
+- **Get Matter** (read-only): Retrieves one matter by id with its documented fields, including any item, role, layout, and tag details Smokeball returns for it.
+- **Get Matter Archive** (read-only): Retrieves the archive record of a matter.
+- **Get Matter Billing Configuration** (read-only): Retrieves the billing configuration for the specified matter.
+- **Get Matter Expense** (read-only): Retrieves one expense on a matter by matter id and expense id.
+- **Get Matter Fee** (read-only): Retrieves one fee on a matter by matter id and fee id.
+- **Get Matter File** (read-only): Retrieves metadata for a file belonging to the specified matter, including its download-details link.
+- **Get Matter Folder Path** (read-only): Returns the full folder hierarchy (path) as a collection ordered from the root folder down to the supplied folder.
+- **Get Matter Invoice** (read-only): Retrieves one invoice on a matter by matter id and invoice id.
+- **Get Matter Invoice Download Url** (read-only): Return a sensitive download URL, its expiry timestamp, version, and status for the specified invoice.
+- **Get Matter Item** (read-only): Retrieves one item on a matter by matter id and item id.
+- **Get Matter Layout** (read-only): Retrieves one layout item on a matter by item id, including its name, description, hierarchy and order, layout design link, values, and…
+- **Get Matter Memo** (read-only): Retrieves one memo on a matter by matter id and memo id.
+- **Get Matter Role** (read-only): Retrieves one role on a matter by matter id and role id.
+- **Get Matter Role Relationship** (read-only): Retrieves one relationship on a matter role by relationship id, including its name, associated contact link, and representative links.
+- **Get Matter Stage Info** (read-only): Retrieves a matter's current stage information, including its stage set, current stage, version id, and last-updated timestamp.
+- **Get Matter Type** (read-only): Retrieves one matter type by id.
+- **Get Notification** (read-only): Retrieves one notification by id.
+- **Get Protected Bank Account Balance** (read-only): Retrieves one protected-funds record by bank account id and protection id, including its amount, reason, dates, current protection state,…
+- **Get Referral Type** (read-only): Retrieves one referral type by id.
+- **Get Staff Member** (read-only): Retrieves a staff member (based on staff id parameter provided) in the firm associated with the authenticated client.
+- **Get Stage Set** (read-only): Returns the stage set identified by stage_set_id, including its configured matter stages.
+- **Get Stage Set Stage** (read-only): Retrieves one stage of a stage set by stage-set id and stage id.
+- **Get Subtask** (read-only): Retrieves the subtask identified by subtask_id within the specified task_id.
+- **Get Task** (read-only): Retrieves one task by id.
+- **Get Task Document** (read-only): Retrieves one document attached to a task by task id and document id, including its document type, deletion state, associated task, and…
+- **Get User** (read-only): Retrieves the Smokeball user identified by user_id.
+- **Get Webhook Subscription** (read-only): Returns the webhook subscription identified by webhook_subscription_id, including its callback and subscribed events.
+- **List Activity Codes** (read-only): Returns a list of activity codes.
+- **List Authorization Groups** (read-only): Return the authorization groups for the firm associated with the authenticated client.
+- **List Bank Account Matter Balances** (read-only): Returns a list of bank account matter balances.
+- **List Bank Accounts** (read-only): Returns bank accounts available to the authenticated firm, optionally filtered by account type or matter identifier.
+- **List Contact Relations** (read-only): Return relations for a contact associated with the authenticated client.
+- **List Contact Tags** (read-only): Lists the tags currently on one contact, by contact id, as a plain string collection under value.
+- **List Contacts** (read-only): Returns a list of contacts.
+- **List Event Reminders** (read-only): Returns the collection of reminders for an event The native root response is returned under data as an explicit Composio normalization.
+- **List Events** (read-only): Returns a list of events.
+- **List File History** (read-only): Returns the full list of history entries for the specified file.
+- **List Firm Matter Stage Mappings** (read-only): Returns a list of stage to matter mappings in the firm.
+- **List Folder History** (read-only): Returns a list of history entries for the specified folder.
+- **List Layout Designs** (read-only): Returns a list of layout designs.
+- **List Matter Expenses** (read-only): Returns a list of expenses for the specified matter.
+- **List Matter Fees** (read-only): Returns a list of fees for the specified matter.
+- **List Matter Files** (read-only): Returns a paged list of non-deleted files associated with a matter.
+- **List Matter Folder Contents** (read-only): Returns non-deleted folders and files directly under a matter's root document folder, or directly under folder_id when supplied, with…
+- **List Matter Invoices** (read-only): Returns a list of invoices for the specified matter.
+- **List Matter Items** (read-only): Returns the versioned item collection for a matter.
+- **List Matter Layout Contacts** (read-only): Returns a list of contacts on a specified layout.
+- **List Matter Layouts** (read-only): Returns a collection of layout items on a specified matter.
+- **List Matter Memos** (read-only): Returns a list of memos on the specified matter.
+- **List Matter Role Relationships** (read-only): Returns associated relationships for a specified matter and role group.
+- **List Matter Roles** (read-only): Returns associated roles for a specified matter.
+- **List Matter Tags** (read-only): Returns the tags assigned to the matter identified by matter_id.
+- **List Matter Type Categories** (read-only): Returns a list of all the possible matter type categories.
+- **List Matter Types** (read-only): Returns a paginated list of matter types based on search criteria.
+- **List Matters** (read-only): Returns one page of matters.
+- **List Referral Types** (read-only): Returns referral types, including custom referral types.
+- **List Staff** (read-only): Retrieves a paginated list of staff members in the firm associated with the authenticated client.
+- **List Stage Sets** (read-only): Returns a list of stage sets for the firm.
+- **List Subtasks** (read-only): Returns a list of subtasks for a specified task if associated with the authenticated client.
+- **List Task Documents** (read-only): Returns a list of document links for the specified task, if associated with the authenticated client.
+- **List Tasks** (read-only): Returns a list of tasks.
+- **List Webhook Event Types** (read-only): Lists the event type names a webhook subscription can subscribe to, as a plain string collection under value.
+- **List Webhook Subscriptions** (read-only): Returns existing webhook subscriptions.
+- **Merge Matter Layout**: Merges layout data using a restricted documented subset.
+- **Patch Matter**: Patches a matter or Lead, including lead-to-matter conversion and matter-type changes.
+- **Patch Matter Archive**: Updates the specified matter archive.
+- **Patch Matter Billing Configuration**: Changes only the supplied billing configuration fields for the specified matter.
+- **Patch Matter Expense**: Changes only the supplied expense fields for the specified matter.
+- **Patch Matter Fee**: Patches a fee for the specified matter.
+- **Patch Matter File**: Partially updates a file's metadata on the specified matter.
+- **Patch Matter Folder**: Partially updates a folder belonging to the specified matter.
+- **Protect Bank Account Funds**: Protects funds in a trust bank account.
+- **Remove Contact Tag**: Removes one tag from a contact.
+- **Remove Matter Layout**: Removes a layout matter item from a matter.
+- **Remove Matter Layout Contact**: Removes a contact from a specified layout, deleting the associated role or relationship from the matter.
+- **Remove Matter Role**: Removes a specified role from a matter.
+- **Remove Matter Role Relationship**: Removes a relationship from a role in a matter.
+- **Remove Matter Tag**: Removes the tag from the matter without deleting from the account.
+- **Search Files** (read-only): Search files across the account using a required full-text query and documented filters.
+- **Unprotect Bank Account Funds**: Unprotects funds in a trust bank account.
+- **Update Activity Code**: Updates an activity code.
+- **Update Authorization Group**: Updates a specified authorization group.
+- **Update Authorization Policy**: Updates a specified authorization policy.
+- **Update Contact**: Updates a specified contact.
+- **Update Contact Relation**: Updates a relation for a specified contact.
+- **Update Event**: Updates an event.
+- **Update Event Reminder**: Updates an existing reminder for an event.
+- **Update Firm**: Updates firm details for the current authenticated client.
+- **Update Matter**: Updates a specified matter.
+- **Update Matter Archive**: Replaces the specified matter archive by applying the full editable archive representation.
+- **Update Matter Billing Configuration**: Replaces the specified matter's billing configuration by applying its full editable representation.
+- **Update Matter Expense**: Replaces the expense by applying its full editable representation for the specified matter.
+- **Update Matter Fee**: Replaces the fee by applying its full editable representation for the specified matter.
+- **Update Matter File**: Replace all editable file fields using PUT.
+- **Update Matter Folder**: Replaces the editable fields of a folder belonging to the specified matter.
+- **Update Matter Memo**: Updates a specified memo.
+- **Update Matter Role**: Updates a specified role on a matter.
+- **Update Matter Role Relationship**: Updates a specified relationship on a matter.
+- **Update Staff Member**: Updates a staff member in the firm associated with the authenticated client.
+- **Update Subtask**: Updates a specified subtask of a specified task.
+- **Update Task**: Updates a specified task.
+- **Update Webhook Subscription**: Update a persistent webhook subscription's name, event types, external eventNotificationUrl, and signing key.

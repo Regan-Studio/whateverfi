@@ -1,0 +1,132 @@
+# Glide MCP
+
+Build, manage, and operate Glide apps, projects, data, and workflows through Glide's hosted MCP server.
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/glide-mcp/.
+
+## Actions
+
+- **Add app assets**: Promote user attachments into the project's public app-asset storage and return an app-local path — /assets/<sha256>/<filename> — for each.
+- **Ai models list** (read-only): List the AI models available to deployed apps that declare an ai binding.
+- **Ai query usage** (read-only): Query AI Gateway request logs for this project's deployed apps.
+- **App authenticated link**: Create a pre-authenticated link to an app.
+- **App bind custom domain**: Bind a custom domain to a published app (e.g.
+- **App claim vanity slug**: Claim a globally unique vanity subdomain for an app (e.g.
+- **App custom domain status** (read-only): Check the status of an app's custom domain.
+- **App delete**: Delete an app.
+- **App get** (read-only): Get details of a specific app by slug.
+- **App list** (read-only): List all apps for the project (deployed, pending, or errored — excludes deleted).
+- **App list versions** (read-only): Get version history for a deployed app.
+- **App promote**: Promote a specific version of an app to production.
+- **App publish**: Promote a version of an app to production.
+- **App release vanity slug**: Release a vanity subdomain so it can be claimed by another app.
+- **App request read** (read-only): Make an authenticated HTTP request to THIS project's own app backend (the routes you write in server.ts) and get the response back — use…
+- **App request write**: Make an authenticated HTTP request to THIS project's own app backend (the routes you write in server.ts) and get the response back — use…
+- **App rollback**: Roll an app back to a previous version.
+- **App runtime errors** (read-only): Read build, client-runtime, and retained server-error history for this project.
+- **App set access**: Set the app's access level — the same setting the user sees in the Share dialog.
+- **App set icon**: Set the icon for one of the project's apps.
+- **App set name**: Rename an app's user-facing name when the user explicitly asks to rename it.
+- **App set presentation**: Set how one of the project's apps presents itself when installed, shared, or indexed.
+- **App unbind custom domain**: Unbind a custom domain from an app.
+- **Auth audit query** (read-only): Query recent tool-dispatch audit rows for this project.
+- **Auth audit trace** (read-only): Fetch every audit entry sharing a given traceId, reconstructing one turn's full effect chain.
+- **Auth check** (read-only): Dry-run an authorization check for the caller without executing anything.
+- **Auth list actions** (read-only): Introspect the project worker's tool registry — returns every registered tool with its authz-relevant metadata.
+- **Auth whoami** (read-only): Return the verified ActorContext for the caller — actorId, actorType, orgId, projectId, delegation chain (if any), and correlation IDs…
+- **Bash**: Run a short Bash script in a sandboxed shell.
+- **Billing lookup** (read-only): Look up live Glide pricing and billing facts.
+- **Cancel workflow run**: Stop an in-flight workflow run (running / paused / waiting) by its run id — the same Stop the dashboard offers.
+- **Create workflow app trigger**: Register that a deployed app in this project may start a workflow from its own server code — the way a button in the app kicks off a run.
+- **Create workflow data trigger**: Start a workflow whenever rows in one of this project's tables are inserted, updated or deleted — by the app's users (a form submit), in…
+- **Create workflow schedule**: Schedule a deployed workflow to run automatically — either RECURRING or ONE-TIME.
+- **Create workflow webhook**: Give a deployed workflow a PUBLIC URL that an external POST fires a run on — for EXTERNAL systems only (Stripe, Zapier, partner callbacks,…
+- **Db backup connection** (read-only): Return a read-only connection string for a G3-managed backup branch.
+- **Db backup create**: Create a read-only backup branch from a timestamp or Postgres LSN within the Neon history window.
+- **Db backup delete**: Delete a G3-managed database backup branch.
+- **Db backup list** (read-only): List all G3-managed database backup branches for this project.
+- **Db backup status** (read-only): Show whether the project database is provisioned, the Neon history window, and the active branch.
+- **Db compute**: Read or change the project database's compute ceiling.
+- **Db execute**: Run any SQL statement against the project's Postgres database — SELECT, INSERT, UPDATE, DELETE, or DDL.
+- **Db get** (read-only): Get details for a single project database by name.
+- **Db health** (read-only): Health check for the project database, read-only.
+- **Db ingest data source**: Bulk-load a CSV/JSON/XLSX attachment into a Postgres table in one step.
+- **Db list** (read-only): List the databases provisioned for this project.
+- **Db list tables** (read-only): List all public tables and SQL views in the project's Postgres database (if provisioned), including relation comments plus column schemas…
+- **Db restore from backup**: Restore the live project database from a G3-managed backup branch.
+- **Db restore to point**: Restore the live project database to a timestamp or LSN.
+- **Db select** (read-only): Run a single read-only statement (SELECT … or WITH … SELECT …) against the project's Postgres database, inside a SET TRANSACTION READ ONLY…
+- **Delete trigger**: Permanently remove a live integration trigger — the external event stops starting the workflow.
+- **Delete workflow app trigger**: Delete an app trigger by id (from list_workflow_app_triggers).
+- **Delete workflow data trigger**: Delete a data trigger by id (from list_workflow_data_triggers).
+- **Delete workflow webhook**: Permanently delete a webhook by id (from list_workflow_webhooks).
+- **Enable trigger**: Make an external event START A WORKFLOW (e.g.
+- **File copy**: Copy a file in the project workspace from source to destination without removing the original.
+- **File delete**: Delete a file from the project workspace.
+- **File edit**: In-place edit of a workspace file.
+- **File history** (read-only): List the mutation history of workspace files — every write, edit, delete, move, and copy, newest first, with a ledger id per entry.
+- **File inspect** (read-only): Inspect a file from the workspace.
+- **File list** (read-only): List files in the project workspace.
+- **File move**: Move (rename) a file in the project workspace from source to destination.
+- **File read** (read-only): Read a file or directory from the project workspace.
+- **File restore**: Restore one workspace file to the state it had AFTER a specific file_history entry (pass that entry's historyId).
+- **File search** (read-only): Search file contents in the project workspace using a text query.
+- **File stat** (read-only): Check whether a file exists in the project workspace and return its size in bytes.
+- **File write**: Write (or overwrite) a file in the project workspace.
+- **Get workflow run** (read-only): Inspect one workflow run — returns the run status, its input (the payload the run was triggered with — event.payload in the workflow's…
+- **Get workflow step output** (read-only): Read the FULL value of one workflow step's output — the run's final output, or the run's INPUT (the trigger payload / event.payload.
+- **Integration actions** (read-only): Get the COMPLETE input schema + description for specific tool slugs (from integration_search's recommended/related lists).
+- **Integration search** (read-only): Find the right integration tools for a task (e.g.
+- **List active triggers** (read-only): List this project's LIVE integration triggers (the ones enable_trigger created) — each with its triggerId (needed for set_trigger_enabled…
+- **List triggers** (read-only): List the event triggers available for a connected toolkit — call this to find the exact trigger slug BEFORE enable_trigger.
+- **List workflow app triggers** (read-only): List this project's app triggers — each with its id, the UI app that fires it, the workflow it starts, its label, and enabled state.
+- **List workflow apps** (read-only): List this project's workflows with their WORKFLOW-LEVEL enabled state — the app master switch (set_workflow_enabled) that decides whether…
+- **List workflow data triggers** (read-only): List this project's data triggers — each with its id, the workflow it starts, the table and changes it watches, its label, and whether it…
+- **List workflow runs** (read-only): List recent runs of this project's workflows — each with its run id, status (complete / errored / running / paused / …), source, and a…
+- **List workflow schedules** (read-only): List cron schedules for this project's workflows — each with its id (needed to pause or remove it), cron, timezone (null = UTC), enabled…
+- **List workflow webhooks** (read-only): List this project's workflow webhook triggers — each with its id (needed to rotate/enable/delete it), label, enabled state, and URL.
+- **Log clear**: Delete all debug log entries for the project.
+- **Log query** (read-only): Query recent debug logs for the project.
+- **Org member role lookup** (read-only): Look up the calling actor's role on the org they are scoped to.
+- **Org model policy lookup** (read-only): Look up the AI model policy for the org the calling actor is scoped to.
+- **Project create**: Create a new project in this org.
+- **Project delete**: Soft-delete one or more projects in this org by ID or unique name.
+- **Project get** (read-only): Get metadata for the project — name, org, orgSlug, and creation date.
+- **Project list** (read-only): List all projects in this org.
+- **Project lookup** (read-only): Look up a single project by id.
+- **Project rename**: Rename a project owned by this org.
+- **Project search** (read-only): Find projects in this org by name, by the name of an app inside them, or by what a chat about them was called.
+- **Project set accent color**: Set the project's accent (brand) color.
+- **Remove workflow schedule**: Permanently delete a workflow schedule by id (from list_workflow_schedules).
+- **Resource list** (read-only): List supported non-secret infrastructure metadata for the project.
+- **Rotate workflow webhook**: Regenerate a webhook's URL by id (from list_workflow_webhooks) — the OLD URL stops working immediately and a new one is returned.
+- **Run backend code**: Run a short snippet of server-side JavaScript/TypeScript in this project's real backend runtime — with the same env a deployed server.ts…
+- **Run workflow**: Run a workflow once, right now (on demand) — a manual trigger, no schedule.
+- **Secret delete**: Delete a project secret.
+- **Secret list** (read-only): List project secrets as metadata only.
+- **Send feedback**: Send Markdown feedback to the Glide team about GlideOS itself.
+- **Set trigger enabled**: Pause or resume a live integration trigger without deleting it (its config and identity survive — re-enabling is instant, no re-connect).
+- **Set workflow app trigger enabled**: Turn an app trigger off or back on by id (from list_workflow_app_triggers).
+- **Set workflow data trigger enabled**: Turn a data trigger off or back on by id (from list_workflow_data_triggers).
+- **Set workflow enabled**: Enable or disable an ENTIRE workflow — the app-level master switch, by appName or appId.
+- **Set workflow schedule enabled**: Enable (resume) or disable (pause) ONE existing workflow schedule by id — get the id from list_workflow_schedules.
+- **Set workflow webhook enabled**: Enable (resume) or disable (pause) a webhook by id — get the id from list_workflow_webhooks.
+- **Set workflow webhook header auth**: Require (or stop requiring) a SECRET HEADER on a webhook's inbound requests, by id (from list_workflow_webhooks) — an optional second…
+- **Spreadsheet extract assets**: Batch-extract embedded images from an xlsx directly into the project workspace as files under attachments/, WITHOUT routing the image…
+- **Spreadsheet grep** (read-only): Search all cells (and sheet names) in an xlsx attachment for a regex pattern.
+- **Spreadsheet inspect range** (read-only): Inspect a rectangular range of an xlsx — JSON row objects + a compact formatting section, or an exhaustive formatting report.
+- **Spreadsheet list features** (read-only): Survey the structural and visual features of an xlsx in a single call.
+- **Spreadsheet list macros** (read-only): List the VBA macros in an xlsm (macro-enabled Excel) workbook.
+- **Spreadsheet read cell comment** (read-only): Read the full text + any reply chain for one cell comment OR Note in an xlsx.
+- **Spreadsheet read macro source** (read-only): Return the decompressed VBA source code for one named module in an xlsm workbook.
+- **Spreadsheet read pivot definition** (read-only): Return the full definition of one pivot table.
+- **Spreadsheet read table definition** (read-only): Return the full definition of one Excel Table (the structured-range object that powers Table[Column] formulas + autofilter).
+- **Spreadsheet render**: Render one sheet of an xlsx — or one A1 range of it — to a PNG, the way Excel draws it.
+- **Suggest apps**: Search the published App Store catalog for installable templates.
+- **Ui add glide components**: Install Glide components from the catalog into an app by copying each canonical source into…
+- **Update preview**: Update the preview build of a React + Hono full-stack app.
+- **Update workflow data trigger**: Change a data trigger by id (from list_workflow_data_triggers).
+- **Update workflow schedule**: Edit an existing workflow schedule IN PLACE by id (from list_workflow_schedules) — change its cadence and/or enabled state WITHOUT…
+- **Use app store app**: Install a published App Store app by cloning its entire project — apps, workspace files, and data — which is dramatically faster and…
+- **Wait for workflow run** (read-only): Wait for a workflow run to finish and return its result — call this ONCE after run_workflow instead of polling get_workflow_run.
+- **Workspace restore**: Point-in-time restore of a directory subtree.

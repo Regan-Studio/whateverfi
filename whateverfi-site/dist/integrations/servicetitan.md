@@ -1,0 +1,593 @@
+# ServiceTitan
+
+ServiceTitan is field service management software for home and commercial service contractors, covering customers, jobs, dispatch, estimates, invoicing, inventory, memberships, payroll, and reporting.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/servicetitan/.
+
+## Actions
+
+- **Activate Employee Account**: Activate a ServiceTitan employee's login account.
+- **Activate Technician Account**: Activate a ServiceTitan technician's login account with the required license type and, optionally, assign a truck.
+- **Add Credit Memo Splits**: Apply a credit memo to one or more invoices in ServiceTitan by adding splits, each an invoice id and an amount.
+- **Add Customer Tag**: Add one tag type to one customer in ServiceTitan.
+- **Add Equipment to Equipment System**: Attach existing installed equipment to a ServiceTitan equipment system, by system id and a list of installed equipment ids.
+- **Add Location Tag**: Add one tag type to one location in ServiceTitan.
+- **Add Tags To Customers**: Add one or more tag types to several customers in ServiceTitan in one call.
+- **Approve Purchase Order Request**: Approve a ServiceTitan purchase order request by its request id.
+- **Assign Technician Skills**: Assign existing skills to a ServiceTitan technician.
+- **Assign Technicians to Appointment**: Assign one or more technicians to a ServiceTitan job appointment.
+- **Attach Job Equipment**: Attach one or more equipment items to a ServiceTitan job.
+- **Attach Job to Project**: Attach an existing ServiceTitan job to a project.
+- **Bulk Create Installed Equipment**: Create up to 1000 installed equipment records in ServiceTitan in one atomic request.
+- **Bulk Create Pricebook Items**: Create many ServiceTitan pricebook items in one request.
+- **Bulk Delete Technician Shifts**: Delete every ServiceTitan technician shift in a date range, for all technicians.
+- **Bulk Update Pricebook Items**: Update many ServiceTitan pricebook items in one request.
+- **Cancel Inventory Receipt**: Cancel a ServiceTitan inventory receipt by id, optionally recording a cancellation reason.
+- **Cancel Inventory Return**: Cancel a ServiceTitan vendor return by id, optionally recording a cancellation reason.
+- **Cancel Job**: Cancel a ServiceTitan job with a cancel reason and memo.
+- **Cancel Purchase Order**: Cancel a ServiceTitan purchase order by id, optionally recording a cancellation reason.
+- **Cancel Report Data Query**: Cancel a long-running report data query in ServiceTitan and release its query_token.
+- **Confirm Appointment**: Mark a ServiceTitan job appointment as confirmed.
+- **Create Adjustment Invoice**: Create an adjustment invoice against an existing invoice in ServiceTitan, for example a refund or a write-off.
+- **Create Appointment**: Add a new appointment to an existing ServiceTitan job, with start and end times and optional technicians.
+- **Create Arrival Window**: Create a ServiceTitan arrival window with a start time and duration for a set of business units.
+- **Create Booking**: Create a booking in ServiceTitan, an incoming request that office staff later book as a job or dismiss.
+- **Create Booking Contact**: Add a contact entry (phone, email or fax) to a booking in ServiceTitan for a given booking provider.
+- **Create Booking Provider Tag**: Create a booking provider tag in ServiceTitan, the label that identifies one source of bookings.
+- **Create Budget Code**: Create a full ServiceTitan budget code from a list of segment item IDs.
+- **Create Business Hours**: Set the ServiceTitan business hours by sending the open time ranges for weekdays, Saturday and Sunday.
+- **Create Campaign**: Create a marketing campaign in ServiceTitan.
+- **Create Campaign Category**: Create a marketing campaign category in ServiceTitan.
+- **Create Campaign Cost**: Create the cost record of a marketing campaign for one month in ServiceTitan.
+- **Create Contact**: Create a contact (a person record with name and title) in ServiceTitan.
+- **Create Contact Method**: Add a contact method (phone, mobile phone, email or fax) to a contact in ServiceTitan.
+- **Create Contact Relationship**: Link a contact to a customer, location or booking in ServiceTitan.
+- **Create Customer**: Create a customer in ServiceTitan together with its first location or locations.
+- **Create Customer Contact**: Add a contact entry (phone, mobile phone, email or fax) to a customer in ServiceTitan.
+- **Create Customer Note**: Add a note to a customer in ServiceTitan.
+- **Create Employee**: Create an office employee in ServiceTitan with a role and positions.
+- **Create Equipment System**: Create an equipment system at a ServiceTitan customer location, optionally attaching installed equipment to it.
+- **Create Equipment Type**: Create an equipment type in ServiceTitan for classifying installed equipment.
+- **Create Estimate**: Create an estimate in ServiceTitan on a job or project, with its line items.
+- **Create Estimate Template**: Create an estimate template in ServiceTitan from a list of pricebook items.
+- **Create External Call Attribution**: Attribute a phone call tracked by outside call-tracking software to a web session in ServiceTitan Marketing Ads.
+- **Create Finding**: Create a finding in ServiceTitan to record an issue or observation at a customer location, with an urgency level and optional links to…
+- **Create Finding Attachment**: Add an attachment to a ServiceTitan finding by linking a file URL with a file name and media type.
+- **Create GL Account**: Create a general ledger (GL) account in ServiceTitan and return the created account.
+- **Create GPS Pings**: Send GPS location pings for technician vehicles or units to ServiceTitan for a configured GPS provider, so they plot on the Dispatch Map.
+- **Create Gross Pay Item**: Create a gross pay item inside an existing payroll in ServiceTitan and return its id.
+- **Create Installed Equipment**: Create a record of equipment installed at a ServiceTitan customer location, with serial number, warranty dates, and an optional parent…
+- **Create Inventory Adjustment**: Create an inventory adjustment in ServiceTitan that changes stock quantities at one inventory location.
+- **Create Inventory Receipt**: Record a receipt of items against an existing ServiceTitan purchase order.
+- **Create Inventory Return**: Create a vendor return in ServiceTitan inventory, recording items sent back to a vendor from an inventory location.
+- **Create Inventory Return Type**: Create a vendor return type in ServiceTitan inventory, with its vendor-credit, sales-tax and default settings.
+- **Create Invoice Task**: Create a task on an invoice in ServiceTitan from a task template.
+- **Create Invoice Template**: Create a membership invoice template in ServiceTitan from a list of line items.
+- **Create Job**: Book a new ServiceTitan job for a customer and location, with at least one appointment.
+- **Create Job Attribution**: Attribute an existing job to a web session in ServiceTitan Marketing Ads.
+- **Create Job Note**: Add a note to a ServiceTitan job, optionally pinned to the top.
+- **Create Job Type**: Create a ServiceTitan job type with its name, priority, duration, business units, skills and default tags.
+- **Create Journal Entry**: Create a journal entry with debit and credit lines in ServiceTitan.
+- **Create Labor Type**: Create a payroll labor type in ServiceTitan and return its id.
+- **Create Lead**: Create a lead in ServiceTitan.
+- **Create Lead Follow Up**: Schedule a follow-up on a lead in ServiceTitan by setting the next follow-up date, with an optional note.
+- **Create Lead Note**: Add a note to a lead in ServiceTitan.
+- **Create Location**: Create a location (service address) in ServiceTitan under an existing customer.
+- **Create Location Contact**: Add a contact entry (phone, mobile phone, email or fax) to a location in ServiceTitan.
+- **Create Location Note**: Add a note to a location in ServiceTitan.
+- **Create Membership Sale Invoice**: Sell a membership to a customer in ServiceTitan by creating a membership sale invoice.
+- **Create Non Job Appointment**: Block time on a ServiceTitan technician's schedule for a non-customer activity such as a meeting, training or time off, optionally…
+- **Create Opt Outs**: Opt one or more phone numbers out of contact in ServiceTitan.
+- **Create Partial Budget Code**: Create a partial ServiceTitan budget code from segment bindings, where a segment may be left without an item.
+- **Create Payroll Adjustment**: Create a payroll adjustment, a manual earning or deduction for one employee or technician, in ServiceTitan and return its id.
+- **Create Pricebook Category**: Create a category in the ServiceTitan pricebook, as a Services or Materials category.
+- **Create Pricebook Discount or Fee**: Create a discount or a fee in the ServiceTitan pricebook.
+- **Create Pricebook Equipment**: Create an equipment item in the ServiceTitan pricebook catalog, with pricing, warranty, vendors, and categories.
+- **Create Pricebook Material**: Create a material in the ServiceTitan pricebook, with cost, pricing, vendors, and categories.
+- **Create Pricebook Material Markup**: Create a material markup tier in the ServiceTitan pricebook.
+- **Create Pricebook Service**: Create a service in the ServiceTitan pricebook, with pricing, warranty, categories, and linked materials and equipment.
+- **Create Project**: Create a ServiceTitan project at a location to group related jobs.
+- **Create Project Note**: Add a note to a ServiceTitan project, optionally pinned to the top.
+- **Create Proposal Template**: Create a proposal template in ServiceTitan that assigns an estimate template to each option of a proposal type.
+- **Create Purchase Order**: Create a purchase order in ServiceTitan for items ordered from a vendor.
+- **Create Purchase Order Markup**: Create a purchase order markup tier in ServiceTitan.
+- **Create Purchase Order Type**: Create a purchase order type in ServiceTitan, with its receiving, tax, payroll, and alert settings.
+- **Create Subtask**: Create a subtask under an existing task in ServiceTitan Task Management, assigned to an employee.
+- **Create Tag Type**: Create a tag type in ServiceTitan with a name and a hex color.
+- **Create Task**: Create an office task in ServiceTitan Task Management, assigned to an employee.
+- **Create Team**: Create a ServiceTitan dispatch team with a name and active flag.
+- **Create Technician**: Create a field technician in ServiceTitan with a role, positions and license type.
+- **Create Technician Rating**: Record a rating from 0 to 10 for a technician on a specific job in ServiceTitan.
+- **Create Technician Shift**: Create a ServiceTitan shift (Normal, OnCall or TimeOff) for one or more technicians, optionally repeating daily or weekly.
+- **Create Technician Skill**: Create a new skill in ServiceTitan and assign it to one technician in the same call.
+- **Create Timesheet Activity**: Create a timesheet activity, a block of recorded time for one employee or technician, in ServiceTitan and return its id.
+- **Create Truck**: Create a truck inventory location in ServiceTitan.
+- **Create Vendor**: Create an inventory vendor (supplier) in ServiceTitan.
+- **Create Web Booking Attribution**: Attribute an existing booking to a web session in ServiceTitan Marketing Ads.
+- **Create Web Lead Form Attribution**: Attribute an existing lead captured from a web form to a web session in ServiceTitan Marketing Ads.
+- **Create Zone**: Create a ServiceTitan dispatch zone from zip codes, cities, territory numbers, service days and business units.
+- **Deactivate Employee Account**: Deactivate a ServiceTitan employee's login account.
+- **Deactivate Estimate Template**: Deactivate an estimate template in ServiceTitan.
+- **Deactivate Proposal Template**: Deactivate a proposal template in ServiceTitan.
+- **Deactivate Technician Account**: Deactivate a ServiceTitan technician's login account.
+- **Delete Appointment**: Delete a ServiceTitan job appointment by ID.
+- **Delete Booking Contact**: Remove one contact entry from a booking in ServiceTitan for a given booking provider.
+- **Delete Contact**: Delete a contact in ServiceTitan by its GUID.
+- **Delete Contact Method**: Delete one contact method from a contact in ServiceTitan.
+- **Delete Contact Relationship**: Remove the link between a contact and a customer, location or booking in ServiceTitan.
+- **Delete Customer Contact**: Remove one contact entry from a customer in ServiceTitan.
+- **Delete Customer Note**: Delete one note from a customer in ServiceTitan.
+- **Delete Equipment System**: Delete a ServiceTitan equipment system by id.
+- **Delete Estimate Item**: Remove one line item from an estimate in ServiceTitan.
+- **Delete Finding Attachment**: Remove an attachment from a ServiceTitan finding, by finding id and attachment id.
+- **Delete Gross Pay Item**: Delete a gross pay item in ServiceTitan by its id.
+- **Delete Invoice Item**: Delete one line item from an invoice in ServiceTitan.
+- **Delete Job Attachment**: Delete one attachment from a job in ServiceTitan.
+- **Delete Journal Entry**: Delete a journal entry in ServiceTitan.
+- **Delete Location Contact**: Remove one contact entry from a location in ServiceTitan.
+- **Delete Location Note**: Delete one note from a location in ServiceTitan.
+- **Delete Non Job Appointment**: Delete a ServiceTitan non-job appointment by its ID.
+- **Delete Payroll Adjustment**: Delete a payroll adjustment in ServiceTitan by its id.
+- **Delete Pricebook Category**: Delete a category from the ServiceTitan pricebook by id.
+- **Delete Pricebook Discount or Fee**: Delete a discount or fee from the ServiceTitan pricebook by id.
+- **Delete Pricebook Equipment**: Delete an equipment item from the ServiceTitan pricebook catalog by id.
+- **Delete Pricebook Material**: Delete a material from the ServiceTitan pricebook by id.
+- **Delete Pricebook Service**: Delete a service from the ServiceTitan pricebook by id.
+- **Delete Project Daily Log Attachment**: Delete one attachment from a ServiceTitan project daily log.
+- **Delete Purchase Order Markup**: Delete a ServiceTitan purchase order markup tier by id.
+- **Delete Team**: Delete a ServiceTitan dispatch team by its ID.
+- **Delete Technician Shift**: Delete one ServiceTitan technician shift by its ID.
+- **Delete Technician Skill**: Remove a skill from a ServiceTitan technician by deleting the technician-skill association, whose ID has the form {technicianId}_{skillId}.
+- **Delete Timesheet Activity**: Delete a timesheet activity in ServiceTitan by its id.
+- **Delete Zone**: Delete a ServiceTitan dispatch zone by its ID.
+- **Detach Job Equipment**: Detach one or more equipment items from a ServiceTitan job in a single call.
+- **Detach Job from Project**: Detach a ServiceTitan job from whichever project it belongs to.
+- **Dismiss Booking**: Dismiss a booking in ServiceTitan for a given booking provider, marking it as not converted to a job.
+- **Dismiss Estimate**: Mark an estimate as dismissed in ServiceTitan, for a quote the customer will not accept.
+- **Dismiss Lead**: Dismiss a lead in ServiceTitan so it needs no further follow-up.
+- **Export Appointment Assignments** (read-only): Export ServiceTitan technician-to-appointment assignments in bulk as a continuation feed.
+- **Export Appointments** (read-only): Export ServiceTitan job appointments in bulk as a continuation feed.
+- **Export Bookings** (read-only): Export bookings from ServiceTitan as a change feed for bulk sync, one batch per call.
+- **Export Business Units** (read-only): Export feed of business units from ServiceTitan for bulk sync.
+- **Export Calls** (read-only): Export feed of phone calls from ServiceTitan for bulk sync.
+- **Export Customer Contacts** (read-only): Export customer contact entries from ServiceTitan as a change feed for bulk sync, one batch per call.
+- **Export Customers** (read-only): Export customers from ServiceTitan as a change feed for bulk sync, one batch per call.
+- **Export Employees** (read-only): Export feed of employees from ServiceTitan for bulk sync.
+- **Export Equipment Systems** (read-only): Export equipment systems from ServiceTitan as a continuation feed for bulk sync.
+- **Export Estimates** (read-only): Export estimates from ServiceTitan as a change feed for bulk sync, one batch per call.
+- **Export Gross Pay Items** (read-only): Export gross pay items from ServiceTitan as a continuation feed for bulk sync.
+- **Export Installed Equipment** (read-only): Export installed equipment records from ServiceTitan as a continuation feed for bulk sync.
+- **Export Inventory Adjustments** (read-only): Export inventory adjustments from ServiceTitan as a continuation feed for bulk sync, with no filters.
+- **Export Inventory Bills** (read-only): Export inventory bills from ServiceTitan as a continuation feed for bulk sync.
+- **Export Inventory Returns** (read-only): Export vendor returns from ServiceTitan inventory as a continuation feed for bulk sync, with no filters.
+- **Export Inventory Transfers** (read-only): Export inventory transfers from ServiceTitan as a continuation feed for bulk sync, with no filters.
+- **Export Invoice Items** (read-only): Export invoice line items from ServiceTitan as a continuation feed for bulk sync.
+- **Export Invoice Templates** (read-only): Export feed of membership invoice templates from ServiceTitan for bulk sync.
+- **Export Invoices** (read-only): Export invoices from ServiceTitan as a continuation feed for bulk sync.
+- **Export Job Canceled Logs** (read-only): Export ServiceTitan job canceled logs (who canceled which job, when, and why) in bulk as a continuation feed.
+- **Export Job History** (read-only): Export the status history of all ServiceTitan jobs in bulk as a continuation feed.
+- **Export Job Notes** (read-only): Export notes from all ServiceTitan jobs in bulk as a continuation feed.
+- **Export Jobs** (read-only): Export ServiceTitan jobs in bulk as a continuation feed that includes active, inactive and deleted records.
+- **Export Leads** (read-only): Export leads from ServiceTitan as a change feed for bulk sync, one batch per call.
+- **Export Location Contacts** (read-only): Export location contact entries from ServiceTitan as a change feed for bulk sync, one batch per call.
+- **Export Locations** (read-only): Export locations from ServiceTitan as a change feed for bulk sync, one batch per call.
+- **Export Membership Status Changes** (read-only): Export feed of customer membership status changes from ServiceTitan, across all memberships.
+- **Export Membership Types** (read-only): Export feed of membership types from ServiceTitan for bulk sync.
+- **Export Memberships** (read-only): Export feed of customer memberships from ServiceTitan for bulk sync.
+- **Export Payments** (read-only): Export customer payments from ServiceTitan as a continuation feed for bulk sync.
+- **Export Payroll Activity Codes** (read-only): Export payroll activity codes (earning codes) from ServiceTitan as a continuation feed for bulk sync.
+- **Export Payroll Adjustments** (read-only): Export payroll adjustments from ServiceTitan as a continuation feed for bulk sync.
+- **Export Payroll Job Splits** (read-only): Export payroll job splits (each technician's split of a job) from ServiceTitan as a continuation feed for bulk sync.
+- **Export Payroll Job Timesheets** (read-only): Export job timesheets (technician dispatch, arrival and completion times on job appointments) from ServiceTitan as a continuation feed for…
+- **Export Payroll Settings** (read-only): Export employee and technician payroll settings from ServiceTitan as a continuation feed for bulk sync.
+- **Export Pricebook Categories** (read-only): Export pricebook categories from ServiceTitan as a continuation feed for bulk sync.
+- **Export Pricebook Equipment** (read-only): Export pricebook equipment items from ServiceTitan as a continuation feed for bulk sync.
+- **Export Pricebook Materials** (read-only): Export pricebook materials from ServiceTitan as a continuation feed for bulk sync.
+- **Export Pricebook Services** (read-only): Export pricebook services from ServiceTitan as a continuation feed for bulk sync.
+- **Export Project Notes** (read-only): Export notes from all ServiceTitan projects in bulk as a continuation feed.
+- **Export Projects** (read-only): Export ServiceTitan projects in bulk as a continuation feed that includes active, inactive and deleted records.
+- **Export Purchase Orders** (read-only): Export purchase orders from ServiceTitan as a continuation feed for bulk sync.
+- **Export Receipts** (read-only): Export inventory receipts from ServiceTitan as a continuation feed for bulk sync.
+- **Export Recurring Service Events** (read-only): Export feed of recurring service events from ServiceTitan for bulk sync.
+- **Export Recurring Service Types** (read-only): Export feed of recurring service types from ServiceTitan for bulk sync.
+- **Export Recurring Services** (read-only): Export feed of location recurring services from ServiceTitan for bulk sync.
+- **Export Service Agreements** (read-only): Export feed of service agreements from ServiceTitan for bulk sync.
+- **Export Tag Types** (read-only): Export feed of tag types from ServiceTitan for bulk sync.
+- **Export Technician Ratings** (read-only): Export technician ratings from ServiceTitan as a change feed for bulk sync, one batch per call.
+- **Export Technicians** (read-only): Export feed of technicians from ServiceTitan for bulk sync.
+- **Export Timesheet Activities** (read-only): Export timesheet activities from ServiceTitan as a continuation feed for bulk sync.
+- **Export Timesheet Activity Categories** (read-only): Export timesheet activity categories from ServiceTitan as a continuation feed for bulk sync.
+- **Export Timesheet Activity Types** (read-only): Export timesheet activity types from ServiceTitan as a continuation feed for bulk sync.
+- **Export Timesheet Codes** (read-only): Export timesheet codes from ServiceTitan as a continuation feed for bulk sync.
+- **Get AP Bill** (read-only): Get one accounts-payable (vendor) bill in ServiceTitan by its id, including items and expense items.
+- **Get Appointment** (read-only): Get one ServiceTitan job appointment by its ID, including its schedule, arrival window, status and confirmation flag.
+- **Get Arrival Window** (read-only): Get one ServiceTitan arrival window by its ID.
+- **Get Arrival Window Configuration** (read-only): Get the tenant-wide ServiceTitan arrival window setting.
+- **Get Booking** (read-only): Get one booking in ServiceTitan by id, across all booking providers.
+- **Get Booking Provider Tag** (read-only): Get one booking provider tag in ServiceTitan by its id.
+- **Get Business Hours** (read-only): Get the ServiceTitan business hours.
+- **Get Business Unit** (read-only): Get one business unit in ServiceTitan by id, including its name, address, email and phone.
+- **Get Call** (read-only): Get one phone call in ServiceTitan by id, with the linked job, customer, campaign and agent.
+- **Get Call Recording** (read-only): Download the audio recording of one call from ServiceTitan as an audio/mpeg file.
+- **Get Call Voicemail** (read-only): Download the voicemail audio left on one call from ServiceTitan as an audio/mpeg file.
+- **Get Campaign** (read-only): Get one marketing campaign in ServiceTitan by id.
+- **Get Campaign Category** (read-only): Get one marketing campaign category in ServiceTitan by id.
+- **Get Campaign Cost** (read-only): Get one campaign cost record in ServiceTitan by the cost record's id, not the campaign id.
+- **Get Campaign Cost Summary** (read-only): Get the total cost of each marketing campaign in ServiceTitan over a date range.
+- **Get Cancel Reasons by Job IDs** (read-only): Get the cancel reason recorded on each of the given ServiceTitan jobs.
+- **Get Capacity** (read-only): Calculate real-time ServiceTitan capacity and technician availability for a time frame, optionally for given business units and a job type.
+- **Get Contact** (read-only): Get one contact (a person record with name and title) in ServiceTitan by its GUID.
+- **Get Contact Method** (read-only): Get one contact method of a contact in ServiceTitan.
+- **Get Contact Method Preference** (read-only): Get one communication preference of a contact method in ServiceTitan by preference name.
+- **Get Customer** (read-only): Get one customer in ServiceTitan by id, including bill-to address, balance, custom fields and tags.
+- **Get Email Channel Cost** (read-only): Get the cost of the email marketing channel in ServiceTitan over a date range.
+- **Get Employee** (read-only): Get one office employee in ServiceTitan by id, including name, email, phone, role and positions.
+- **Get Employee Payroll Settings** (read-only): Get the payroll settings of one office employee in ServiceTitan.
+- **Get Equipment System** (read-only): Get one ServiceTitan equipment system by id, including the installed equipment attached to it.
+- **Get Equipment Type** (read-only): Get one ServiceTitan equipment type by id.
+- **Get Estimate** (read-only): Get one estimate in ServiceTitan by its id, including its status, totals and line items.
+- **Get Estimate Template** (read-only): Get one estimate template in ServiceTitan by its id, with its items.
+- **Get Expense Transaction** (read-only): Get one expense transaction in ServiceTitan by its id.
+- **Get Finding** (read-only): Get one ServiceTitan finding by id.
+- **Get Finding Attachment** (read-only): Get one attachment of a ServiceTitan finding, by finding id and attachment id.
+- **Get GL Account** (read-only): Get one general ledger (GL) account in ServiceTitan by its id.
+- **Get Hold Reasons by Job IDs** (read-only): Get the hold reason recorded on each of the given ServiceTitan jobs and on their appointments.
+- **Get Installed Equipment** (read-only): Get one ServiceTitan installed equipment record by id.
+- **Get Invoice Template** (read-only): Get one membership invoice template in ServiceTitan by its id, with its line items and total.
+- **Get Job** (read-only): Get one ServiceTitan job by its ID, including customer, location, job type, status and first and last appointment IDs.
+- **Get Job Booked Log** (read-only): Get the booked log of one ServiceTitan job.
+- **Get Job Equipment** (read-only): Get the IDs of the equipment items attached to one ServiceTitan job.
+- **Get Job History** (read-only): Get the history entries of one ServiceTitan job.
+- **Get Job Type** (read-only): Get one ServiceTitan job type by its ID.
+- **Get Journal Entry** (read-only): Get one journal entry in ServiceTitan by its id.
+- **Get Labor Type** (read-only): Get one payroll labor type in ServiceTitan by its id.
+- **Get Lead** (read-only): Get one lead in ServiceTitan by id.
+- **Get Location** (read-only): Get one location in ServiceTitan by id.
+- **Get Location Preferred Technician** (read-only): Get the id of the preferred technician of a location in ServiceTitan.
+- **Get Membership** (read-only): Get one customer membership in ServiceTitan by its id, including status, dates, billing template and payment settings.
+- **Get Membership Type** (read-only): Get one membership type in ServiceTitan by its id.
+- **Get Non Job Appointment** (read-only): Get one ServiceTitan non-job appointment by its ID.
+- **Get Payment Term** (read-only): Get one payment term (for example net 30) in ServiceTitan by its id.
+- **Get Payment Type** (read-only): Get one payment type in ServiceTitan by its id.
+- **Get Payroll Activity Code** (read-only): Get one payroll activity code (earning code) in ServiceTitan by its id.
+- **Get Payroll Adjustment** (read-only): Get one payroll adjustment in ServiceTitan by its id.
+- **Get Pricebook Category** (read-only): Get one ServiceTitan pricebook category by id, including its subcategories.
+- **Get Pricebook Discount or Fee** (read-only): Get one discount or fee from the ServiceTitan pricebook by id.
+- **Get Pricebook Equipment** (read-only): Get one equipment item from the ServiceTitan pricebook catalog by id.
+- **Get Pricebook Material** (read-only): Get one material from the ServiceTitan pricebook by id.
+- **Get Pricebook Material Markup** (read-only): Get one material markup tier from the ServiceTitan pricebook by id.
+- **Get Pricebook Service** (read-only): Get one service from the ServiceTitan pricebook by id, including its linked materials and equipment.
+- **Get Project** (read-only): Get one ServiceTitan project by its ID, including status, customer, location, managers and key dates.
+- **Get Project Daily Log** (read-only): Get one daily log of a ServiceTitan project by its ID, with health, section notes, summaries and the attachment list.
+- **Get Project Status** (read-only): Get one ServiceTitan project status definition by its ID.
+- **Get Project Sub Status** (read-only): Get one ServiceTitan project sub status definition by its ID.
+- **Get Project Type** (read-only): Get one ServiceTitan project type by its ID.
+- **Get Proposal Template** (read-only): Get one proposal template in ServiceTitan by its id, with its estimate assignments.
+- **Get Provider Booking** (read-only): Get one booking in ServiceTitan that belongs to a given booking provider.
+- **Get Purchase Order** (read-only): Get one ServiceTitan purchase order by id, including its items and current status.
+- **Get Purchase Order Markup** (read-only): Get one ServiceTitan purchase order markup tier by id.
+- **Get Recurring Service** (read-only): Get one location recurring service in ServiceTitan by its id, including its recurrence schedule and invoice template ids.
+- **Get Recurring Service Type** (read-only): Get one recurring service type in ServiceTitan by its id.
+- **Get Remittance Vendor** (read-only): Get one remittance vendor in ServiceTitan by its id.
+- **Get Report** (read-only): Get a report's definition in ServiceTitan.
+- **Get Report Data** (read-only): Run a report in ServiceTitan and return one page of rows with the column headers.
+- **Get Report Data Query Result** (read-only): Poll a long-running report data query in ServiceTitan by its query_token.
+- **Get Router Performance** (read-only): Get performance counts for one Scheduling Pro router in ServiceTitan over a time window.
+- **Get Scheduler Performance** (read-only): Get performance metrics for one Scheduling Pro scheduler in ServiceTitan over a time window, such as sessions, completion rates and jobs…
+- **Get Service Agreement** (read-only): Get one service agreement in ServiceTitan by id, with its price, dates, status and terms.
+- **Get Task** (read-only): Get one task in ServiceTitan Task Management by id, with its comments and attachments.
+- **Get Task Reference Data** (read-only): Get the reference data needed to create tasks in ServiceTitan.
+- **Get Team** (read-only): Get one ServiceTitan dispatch team by its ID.
+- **Get Technician** (read-only): Get one technician in ServiceTitan by id, including name, contact details, home address, zones and license type.
+- **Get Technician Payroll Settings** (read-only): Get the payroll settings of one technician in ServiceTitan.
+- **Get Technician Shift** (read-only): Get one ServiceTitan technician shift by its ID.
+- **Get Technician Skill** (read-only): Get one ServiceTitan technician skill by its ID, which is a string of the form {technicianId}_{skillId}.
+- **Get Technician Tracking URL** (read-only): Get the ServiceTitan tracking URL for one technician on one appointment, which shows the technician's progress toward the customer.
+- **Get Timesheet Activity** (read-only): Get one timesheet activity in ServiceTitan by its id.
+- **Get Timesheet Activity Category** (read-only): Get one timesheet activity category in ServiceTitan by its id.
+- **Get Timesheet Activity Type** (read-only): Get one timesheet activity type in ServiceTitan by its id.
+- **Get Timesheet Code** (read-only): Get one timesheet code in ServiceTitan by its id.
+- **Get Vendor** (read-only): Get one ServiceTitan inventory vendor by id, including contact details, tax rate, and delivery option.
+- **Get Well Known GL Accounts** (read-only): Get the ids of the tenant's default general ledger accounts in ServiceTitan.
+- **Get Zone** (read-only): Get one ServiceTitan dispatch zone by its ID, including its zip codes, cities, service days, business units and technicians.
+- **Hold Appointment**: Put a ServiceTitan job appointment on hold with a hold reason and memo.
+- **Import Sms Opt Ins**: Record SMS marketing opt-ins in ServiceTitan for phone numbers whose consent was collected outside it.
+- **List Ad Performance** (read-only): List ad performance rows from ServiceTitan Marketing Ads for a time window, segmented by campaign, ad group or keyword, one page per call.
+- **List AP Bill Custom Field Types** (read-only): List the custom field type definitions available for AP bills in ServiceTitan, one page per call.
+- **List AP Bills** (read-only): List accounts-payable (vendor) bills in ServiceTitan with their line items, one page per call.
+- **List AP Credit Custom Field Types** (read-only): List the custom field type definitions available for AP credits in ServiceTitan, one page per call.
+- **List AP Credits** (read-only): List accounts-payable credits (vendor credits) in ServiceTitan, one page per call.
+- **List AP Payment Custom Field Types** (read-only): List the custom field type definitions available for AP payments in ServiceTitan, one page per call.
+- **List AP Payments** (read-only): List accounts-payable payments (payments made to vendors) in ServiceTitan, one page per call.
+- **List Appointment Assignments** (read-only): List technician-to-appointment assignments in ServiceTitan, one page per call, filtered by appointment, job, technician or appointment…
+- **List Appointments** (read-only): List ServiceTitan job appointments, one page per call, filtered by job, project, technician, customer, status or start/modified date ranges.
+- **List Arrival Windows** (read-only): List the arrival windows configured in ServiceTitan, one page per call.
+- **List Attributed Leads** (read-only): List leads with their marketing attribution in ServiceTitan for a time window, one page per call.
+- **List Bank Deposit Transactions** (read-only): List the transactions (payments and journal entries) that make up one bank deposit in ServiceTitan, one page per call.
+- **List Bank Deposits** (read-only): List bank deposits in ServiceTitan, one page per call.
+- **List Booking Contacts** (read-only): List the contact entries (phone, email, fax) on one booking in ServiceTitan, one page per call.
+- **List Booking Provider Tags** (read-only): List booking provider tags in ServiceTitan, one page per call.
+- **List Bookings** (read-only): List bookings in ServiceTitan across all booking providers, one page per call.
+- **List Budget Code Segment Item Children** (read-only): List the child items under one item of a company-level budget code segment in ServiceTitan, one page per call.
+- **List Budget Code Segment Items** (read-only): List the items of one company-level budget code segment in ServiceTitan, one page per call.
+- **List Budget Code Segments** (read-only): List the company-level budget code segments of the ServiceTitan work breakdown structure.
+- **List Budget Codes** (read-only): List company-level ServiceTitan budget codes, one page per call, optionally filtered by budget code, segment or segment item IDs.
+- **List Business Units** (read-only): List business units in ServiceTitan, the divisions of the company that revenue and work are tracked and reported under.
+- **List Call Reasons** (read-only): List call reasons in ServiceTitan, one page per call.
+- **List Calls** (read-only): List phone calls recorded in ServiceTitan, inbound and outbound, filtered by campaign, agent, phone number, minimum duration, tag or…
+- **List Campaign Categories** (read-only): List marketing campaign categories in ServiceTitan, one page per call.
+- **List Campaign Costs** (read-only): List monthly campaign cost records in ServiceTitan across all campaigns, one page per call, filtered by year, month or campaign.
+- **List Campaign Costs For Campaign** (read-only): List the monthly cost records of one marketing campaign in ServiceTitan, one page per call.
+- **List Campaigns** (read-only): List marketing campaigns in ServiceTitan, one page per call, filtered by name, tracking phone number, ids or dates.
+- **List Capacity Warnings** (read-only): List all capacity awareness warnings of ServiceTitan Marketing Ads, which flag campaigns whose business units are near their capacity…
+- **List Client Specific Pricing Rate Sheets** (read-only): List client-specific pricing rate sheets in the ServiceTitan pricebook, each with its per-SKU price exceptions.
+- **List Contact Method Preferences** (read-only): List the communication preferences set on one contact method in ServiceTitan.
+- **List Contact Methods** (read-only): List contact methods across ServiceTitan contacts, one page per call.
+- **List Contact Preference Types** (read-only): List the communication preference types that can be set on a contact method in ServiceTitan, with each one's name and data type.
+- **List Contact Relationships** (read-only): List the customers, locations and bookings a contact is linked to in ServiceTitan, one page per call.
+- **List Contacts** (read-only): List contacts (person records with name and title) in ServiceTitan, one page per call.
+- **List Contacts For Relationship** (read-only): List the contacts in ServiceTitan attached to one relationship id, one page per call.
+- **List Credit Memo Custom Field Types** (read-only): List the custom field type definitions available for credit memos in ServiceTitan, one page per call.
+- **List Credit Memo Items** (read-only): List credit memo line items across credit memos in ServiceTitan, one page per call.
+- **List Credit Memos** (read-only): List customer credit memos in ServiceTitan, one page per call.
+- **List Customer Contacts** (read-only): List contact entries for one or more ServiceTitan customers, or by modified-date range, one page per call.
+- **List Customer Custom Field Types** (read-only): List the custom field types defined for customers in ServiceTitan, one page per call.
+- **List Customer Notes** (read-only): List the notes on one customer in ServiceTitan, one page per call.
+- **List Customers** (read-only): List customers in ServiceTitan, one page per call, filtered by name, address, phone, ids or dates.
+- **List Dynamic Value Set Values** (read-only): List the allowed values of a report parameter's dynamic value set in ServiceTitan, as rows of key and display name.
+- **List Employee Payrolls** (read-only): List the payrolls (pay period records) of one office employee in ServiceTitan, one page per call.
+- **List Employees** (read-only): List employees in ServiceTitan, the office staff such as CSRs, dispatchers and bookkeepers, filtered by name, email or user id.
+- **List Equipment Systems** (read-only): List equipment systems in ServiceTitan, the named groups of installed equipment at a customer location (for example one HVAC system),…
+- **List Equipment Types** (read-only): List the equipment types defined in ServiceTitan for classifying installed equipment, filtered by name or date range.
+- **List Estimate Items** (read-only): List estimate line items in ServiceTitan across estimates, or for one estimate when estimate_id is given.
+- **List Estimate Status Changes** (read-only): Return the status change history of one estimate in ServiceTitan, each with its UTC timestamp.
+- **List Estimate Templates** (read-only): List estimate templates in ServiceTitan, the reusable sets of pricebook items that estimates and proposal templates are built from.
+- **List Estimates** (read-only): List estimates in ServiceTitan, filtered by job, project, location, seller, status, total amount, or sold/created/modified time.
+- **List Expense Transaction Custom Field Types** (read-only): List the custom field type definitions available for expense transactions in ServiceTitan, one page per call.
+- **List Expense Transactions** (read-only): List expense transactions (for example card expenses) in ServiceTitan, one page per call.
+- **List Finding Attachments** (read-only): List the attachments of one ServiceTitan finding, by finding id.
+- **List Findings** (read-only): List findings in ServiceTitan, the issues or observations recorded at customer locations, filtered by location, installed equipment,…
+- **List Form Submissions** (read-only): List filled-in form submissions in ServiceTitan with their answers, filtered by form, status, submitter, submission time, or the record…
+- **List Forms** (read-only): List form definitions in ServiceTitan, filtered by name, published status, or whether they have conditional logic or triggers.
+- **List GL Account Types** (read-only): List general ledger account types in ServiceTitan, one page per call.
+- **List GL Accounts** (read-only): List general ledger (GL) accounts in ServiceTitan, one page per call.
+- **List Gross Pay Items** (read-only): List gross pay items (earnings such as timesheet time, bonuses, salary and reimbursements) in ServiceTitan, one page per call.
+- **List Installed Equipment** (read-only): List equipment installed at ServiceTitan customer locations, filtered by location, equipment system, parent, or date range.
+- **List Installed Equipment Custom Field Types** (read-only): List the custom field types defined for ServiceTitan installed equipment, with each type's data type and options.
+- **List Intacct Business Unit Mappings** (read-only): List how ServiceTitan business units map to Sage Intacct locations, departments and classes.
+- **List Inventory Adjustments** (read-only): List inventory adjustments in ServiceTitan, filtered by type, inventory location, business unit, invoice, batch, sync status, or date range.
+- **List Inventory Bill Custom Field Types** (read-only): List the custom field type definitions available for inventory bills in ServiceTitan, one page per call.
+- **List Inventory Bills** (read-only): List inventory bills (vendor bills created from purchase orders and receipts) in ServiceTitan, one page per call.
+- **List Inventory Receipts** (read-only): List inventory receipts in ServiceTitan, the records of items received against purchase orders, filtered by purchase order, vendor, bill,…
+- **List Inventory Return Types** (read-only): List vendor return types in ServiceTitan inventory.
+- **List Inventory Returns** (read-only): List vendor returns in ServiceTitan inventory, filtered by vendor, purchase order, job, inventory location, business unit, or return date.
+- **List Inventory Templates** (read-only): List ServiceTitan inventory templates with their items, each item carrying a minimum and maximum quantity.
+- **List Inventory Transfers** (read-only): List inventory transfers in ServiceTitan, the movements of stock between inventory locations, filtered by status, source or destination…
+- **List Invoice Custom Field Types** (read-only): List the custom field type definitions available for invoices in ServiceTitan, one page per call.
+- **List Invoice Tasks** (read-only): List the workflow tasks attached to one invoice in ServiceTitan, one page per call.
+- **List Invoice Templates** (read-only): Look up membership invoice templates in ServiceTitan by id (ids is required, max 50).
+- **List Invoices** (read-only): List customer invoices in ServiceTitan, one page per call.
+- **List Job Attachments** (read-only): List the files attached to one job in ServiceTitan.
+- **List Job Cancel Reasons** (read-only): List the cancel reasons configured in ServiceTitan, one page per call.
+- **List Job Canceled Logs** (read-only): List the canceled-log entries of one ServiceTitan job, one page per call.
+- **List Job Custom Field Types** (read-only): List the custom field types available for ServiceTitan jobs, one page per call.
+- **List Job Hold Reasons** (read-only): List the hold reasons configured in ServiceTitan, one page per call.
+- **List Job Notes** (read-only): List the notes on one ServiceTitan job, one page per call.
+- **List Job Types** (read-only): List ServiceTitan job types, one page per call, filtered by name, priority, duration or dates.
+- **List Jobs** (read-only): List ServiceTitan jobs, one page per call, filtered by status, customer, location, project, technician, job type or date ranges for…
+- **List Journal Entries** (read-only): List journal entries in ServiceTitan, one page per call (page_size max 500).
+- **List Journal Entry Details** (read-only): List one journal entry's amounts in ServiceTitan aggregated by GL account, business unit, transaction and pricebook item, one page per…
+- **List Journal Entry Summary** (read-only): List one journal entry's amounts in ServiceTitan aggregated by GL account and business unit, one page per call (page_size max 500).
+- **List Labor Types** (read-only): List payroll labor types in ServiceTitan, one page per call.
+- **List Lead Notes** (read-only): List the notes on one lead in ServiceTitan, one page per call.
+- **List Leads** (read-only): List leads in ServiceTitan, one page per call, filtered by status, customer, dates or the name and phone given on the lead.
+- **List Location Contacts** (read-only): List contact entries for one or more ServiceTitan locations, or by created or modified date range, one page per call.
+- **List Location Custom Field Types** (read-only): List the custom field types defined for locations in ServiceTitan, one page per call.
+- **List Location Labor Rates** (read-only): List the hourly labor rates set per customer location and labor type in ServiceTitan, one page per call.
+- **List Location Notes** (read-only): List the notes on one location in ServiceTitan, one page per call.
+- **List Locations** (read-only): List locations in ServiceTitan, one page per call, filtered by customer, name, address, ids or dates.
+- **List Membership Custom Field Types** (read-only): List the custom field types defined for customer memberships in ServiceTitan.
+- **List Membership Status Changes** (read-only): Return the status change history of one customer membership in ServiceTitan.
+- **List Membership Type Discounts** (read-only): List the discounts granted by one membership type in ServiceTitan.
+- **List Membership Type Duration Billing Items** (read-only): List the duration and billing options of one membership type in ServiceTitan, with their prices.
+- **List Membership Type Recurring Service Items** (read-only): List the recurring services included in one membership type in ServiceTitan.
+- **List Membership Types** (read-only): List membership types in ServiceTitan, the templates that memberships are sold from.
+- **List Memberships** (read-only): List customer memberships in ServiceTitan, filtered by customer, status, duration, billing frequency or created/modified time.
+- **List Non Job Appointments** (read-only): List ServiceTitan non-job appointments (technician time blocked for non-customer activities), one page per call, filtered by technician,…
+- **List Non Job Timesheets** (read-only): List non-job timesheets (time recorded against timesheet codes) in ServiceTitan, one page per call.
+- **List Opt Outs** (read-only): Return every phone number that has opted out of contact in ServiceTitan, with its opt-out type.
+- **List Payment Custom Field Types** (read-only): List the custom field type definitions available for payments in ServiceTitan, one page per call.
+- **List Payment Terms** (read-only): List payment terms (the due-date rules attached to invoices and bills) in ServiceTitan, one page per call.
+- **List Payment Types** (read-only): List payment types (for example cash, check, credit card) in ServiceTitan, one page per call.
+- **List Payments** (read-only): List payments received from customers in ServiceTitan, one page per call.
+- **List Payroll Activity Codes** (read-only): List payroll activity codes (earning codes that map earnings to a payroll processor's codes) in ServiceTitan, one page per call.
+- **List Payroll Adjustments** (read-only): List payroll adjustments (manually entered earnings or deductions) in ServiceTitan, one page per call.
+- **List Payroll Job Splits** (read-only): List payroll job splits across jobs in ServiceTitan, one page per call.
+- **List Payroll Job Timesheets** (read-only): List technician job timesheets across jobs in ServiceTitan (dispatch, arrive, cancel and done times), one page per call.
+- **List Payroll Job Timesheets for Job** (read-only): List the technician timesheets recorded on one job in ServiceTitan (dispatch, arrive, cancel and done times), one page per call.
+- **List Payroll Settings** (read-only): List the payroll settings (hourly rate, hire date, manager, external payroll id) of employees and technicians in ServiceTitan, one page…
+- **List Payrolls** (read-only): List payrolls (one employee's or technician's pay period record) across all staff in ServiceTitan, one page per call.
+- **List Pricebook Categories** (read-only): List pricebook categories in ServiceTitan, optionally only Services or Materials categories.
+- **List Pricebook Discounts and Fees** (read-only): List discounts and fees in the ServiceTitan pricebook, with optional search text and category filters.
+- **List Pricebook Equipment** (read-only): List equipment items in the ServiceTitan pricebook (sellable catalog entries such as furnaces), with optional search text and category…
+- **List Pricebook Material Cost Types** (read-only): List the cost types that can be assigned to materials in the ServiceTitan pricebook.
+- **List Pricebook Material Markups** (read-only): List the material markup tiers in the ServiceTitan pricebook, each a from/to range with the markup percent applied to it.
+- **List Pricebook Materials** (read-only): List materials in the ServiceTitan pricebook, with optional search text, category, and cost type filters.
+- **List Pricebook Services** (read-only): List services in the ServiceTitan pricebook, with optional search text and category filters.
+- **List Project Budget Code Segment Item Children** (read-only): List the child items under one item of a budget code segment within a ServiceTitan project, one page per call.
+- **List Project Budget Code Segment Items** (read-only): List the items of one budget code segment within a ServiceTitan project, one page per call.
+- **List Project Budget Code Segments** (read-only): List the budget code segments of one ServiceTitan project's work breakdown structure.
+- **List Project Budget Codes** (read-only): List the budget codes of one ServiceTitan project, one page per call, optionally filtered by budget code, segment or segment item IDs.
+- **List Project Custom Field Types** (read-only): List the custom field types available for ServiceTitan projects, one page per call.
+- **List Project Daily Logs** (read-only): List the daily logs of one ServiceTitan project, one page per call, optionally limited to a date range.
+- **List Project Notes** (read-only): List the notes on one ServiceTitan project, one page per call.
+- **List Project Statuses** (read-only): List the project statuses configured in ServiceTitan, one page per call.
+- **List Project Sub Statuses** (read-only): List the project sub statuses configured in ServiceTitan, one page per call, optionally for one parent status.
+- **List Project Types** (read-only): List the project types configured in ServiceTitan, one page per call.
+- **List Projects** (read-only): List ServiceTitan projects, one page per call, filtered by customer, location, status, job, technician, manager or date ranges.
+- **List Proposal Templates** (read-only): List proposal templates in ServiceTitan, which map the options of a proposal type to estimate templates.
+- **List Proposal Types** (read-only): List proposal types in ServiceTitan with their options.
+- **List Provider Booking Contacts** (read-only): List the contact entries on one booking in ServiceTitan that belongs to a given booking provider, one page per call.
+- **List Provider Bookings** (read-only): List the bookings in ServiceTitan that belong to one booking provider, one page per call.
+- **List Purchase Order Markups** (read-only): List the purchase order markup tiers in ServiceTitan, each a from/to range with the markup percent applied to it.
+- **List Purchase Order Requests** (read-only): List purchase order requests in ServiceTitan, filtered by request status, number, job, project, technician, or date range.
+- **List Purchase Order Types** (read-only): List purchase order types in ServiceTitan.
+- **List Purchase Orders** (read-only): List purchase orders in ServiceTitan, filtered by status, number, job, project, technician, inventory location, or date range.
+- **List Recurring Service Events** (read-only): List recurring service events in ServiceTitan, the visits generated from a location's recurring services, filtered by location, job,…
+- **List Recurring Service Types** (read-only): List recurring service types in ServiceTitan, the templates that location recurring services are created from, filtered by membership…
+- **List Recurring Services** (read-only): List location recurring services in ServiceTitan (a recurring service type applied to one location), filtered by membership, location or…
+- **List Remittance Vendors** (read-only): List remittance vendors (the pay-to parties for vendor payments) in ServiceTitan, one page per call.
+- **List Report Categories** (read-only): List the report categories in ServiceTitan.
+- **List Reports** (read-only): List the reports in one report category in ServiceTitan, with id, name and description.
+- **List Reviews** (read-only): List customer reviews collected by ServiceTitan Marketing Reputation, one page per call, filtered by date, rating, source, technician,…
+- **List Router Sessions** (read-only): List the customer booking sessions that went through one Scheduling Pro router in ServiceTitan, with outcome, customer details and any job…
+- **List Scheduler Sessions** (read-only): List the customer booking sessions of one Scheduling Pro scheduler in ServiceTitan, with customer details, outcome and any job or booking…
+- **List Schedulers** (read-only): List the online booking schedulers set up in ServiceTitan Scheduling Pro, with their status and default flag.
+- **List Service Agreement Custom Field Types** (read-only): List the custom field types defined for service agreements in ServiceTitan.
+- **List Service Agreements** (read-only): List service agreements in ServiceTitan, the maintenance contracts for commercial customers, filtered by customer, business unit, status…
+- **List Tag Types** (read-only): List tag types in ServiceTitan, the labels that can be put on customers, jobs, locations and other records.
+- **List Tasks** (read-only): List office tasks in ServiceTitan Task Management, one page per call, filtered by status, priority, assignee, customer, job, project or…
+- **List Tax Zones** (read-only): List tax zones and their tax rates in ServiceTitan, one page per call.
+- **List Teams** (read-only): List ServiceTitan dispatch teams, one page per call.
+- **List Technician Payrolls** (read-only): List the payrolls (pay period records) of one technician in ServiceTitan, one page per call.
+- **List Technician Ratings** (read-only): List technician ratings in ServiceTitan, one page per call, filtered by technician, job or dates.
+- **List Technician Shifts** (read-only): List ServiceTitan technician shifts, one page per call, filtered by technician, shift type (Normal, OnCall, TimeOff), time range, or text…
+- **List Technician Skills** (read-only): List ServiceTitan technician skills, one page per call, optionally for one technician.
+- **List Technicians** (read-only): List technicians in ServiceTitan, the field staff who work jobs, filtered by name or user id.
+- **List Timesheet Activities** (read-only): List timesheet activities (blocks of time recorded against an activity type, from the Timesheets API) in ServiceTitan, one page per call.
+- **List Timesheet Activity Categories** (read-only): List timesheet activity categories, the groups that activity types belong to, in ServiceTitan, one page per call.
+- **List Timesheet Activity Types** (read-only): List timesheet activity types in ServiceTitan, one page per call.
+- **List Timesheet Codes** (read-only): List timesheet codes in ServiceTitan, one page per call.
+- **List Trucks** (read-only): List trucks in ServiceTitan inventory, the vehicle inventory locations assigned to technicians.
+- **List User Roles** (read-only): List user roles in ServiceTitan, the permission sets assigned to employees and technicians.
+- **List Vehicle Events** (read-only): List historical driving events for FleetPro vehicles in ServiceTitan, by VIN and time window.
+- **List Vehicle GPS Records** (read-only): List historical GPS positions for FleetPro vehicles in ServiceTitan, by VIN and time window.
+- **List Vehicles** (read-only): List every FleetPro vehicle in ServiceTitan with its VIN, name and driver.
+- **List Vendor Custom Field Types** (read-only): List the custom field types defined for ServiceTitan vendors, with each type's data type and options.
+- **List Vendors** (read-only): List inventory vendors (suppliers) in ServiceTitan, filtered by name, ids, active status, external data, or date range.
+- **List Warehouses** (read-only): List warehouses in ServiceTitan inventory.
+- **List Zones** (read-only): List ServiceTitan dispatch zones, one page per call.
+- **Lookup Opt Outs** (read-only): Check the opt-out status of specific phone numbers in ServiceTitan.
+- **Mark AP Bills as Exported**: Mark one or more AP bills as exported to an external accounting system in ServiceTitan.
+- **Mark AP Credits as Exported**: Mark one or more AP credits as exported to an external accounting system in ServiceTitan.
+- **Mark AP Payments as Exported**: Mark one or more AP payments as exported to an external accounting system in ServiceTitan.
+- **Mark Bank Deposits as Exported**: Mark one or more bank deposits as exported to an external accounting system in ServiceTitan.
+- **Mark Credit Memos as Exported**: Mark one or more credit memos as exported to an external accounting system in ServiceTitan.
+- **Mark Expense Transactions as Exported**: Mark one or more expense transactions as exported in ServiceTitan.
+- **Mark Inventory Bills as Exported**: Mark one or more inventory bills as exported to an external accounting system in ServiceTitan.
+- **Mark Invoices as Exported**: Mark one or more invoices as exported to an external accounting system in ServiceTitan.
+- **Mark Recurring Service Event Complete**: Mark a recurring service event complete in ServiceTitan by linking it to a job.
+- **Mark Recurring Service Event Incomplete**: Mark a recurring service event incomplete in ServiceTitan by unlinking it from a job.
+- **Match Budget Codes** (read-only): Check budget code strings against the company-level ServiceTitan budget codes.
+- **Match Project Budget Codes** (read-only): Check budget code strings against the budget codes of one ServiceTitan project.
+- **Reject Purchase Order Request**: Reject a ServiceTitan purchase order request by its request id, with a required rejection reason.
+- **Remove Appointment Confirmation**: Remove the confirmation from a ServiceTitan job appointment, returning it to unconfirmed.
+- **Remove Appointment Hold**: Remove the hold from a ServiceTitan job appointment that was put on hold.
+- **Remove Customer Tag**: Remove one tag type from one customer in ServiceTitan.
+- **Remove Equipment from Equipment System**: Detach installed equipment from a ServiceTitan equipment system, by system id and a list of installed equipment ids.
+- **Remove Job Cancellation**: Undo the cancellation of a ServiceTitan job that was canceled.
+- **Remove Location Tag**: Remove one tag type from one location in ServiceTitan.
+- **Remove Tags From Customers**: Remove one or more tag types from several customers in ServiceTitan in one call.
+- **Replace Contact**: Replace a contact in ServiceTitan with the values sent.
+- **Replace Contact Method**: Replace a contact method of a contact in ServiceTitan with the values sent.
+- **Replace Journal Entry**: Replace an external journal entry in ServiceTitan, including all of its lines.
+- **Reschedule Appointment**: Move a ServiceTitan job appointment to a new start and end time, and optionally a new arrival window.
+- **Sell Estimate**: Mark an estimate as sold in ServiceTitan and credit the sale to a technician.
+- **Send Employee Account Invite**: Send an account invitation to a ServiceTitan employee.
+- **Send Employee Password Reset Link**: Send a password reset link to a ServiceTitan employee.
+- **Send Technician Account Invite**: Send an account invitation to a ServiceTitan technician.
+- **Send Technician Password Reset Link**: Send a password reset link to a ServiceTitan technician.
+- **Set Appointment Summary**: Set the work-performed summary for one technician on a ServiceTitan job appointment.
+- **Set Arrival Window Active**: Activate or deactivate a ServiceTitan arrival window by setting its active flag.
+- **Set Business Unit External Data**: Attach external data (key/value pairs owned by an application GUID) to a business unit in ServiceTitan.
+- **Start Report Data Query** (read-only): Start a long-running report data query in ServiceTitan.
+- **Submit Lead Form**: Submit a lead form to ServiceTitan with a person's name and optional email, phone, address and summary, creating a lead and returning its…
+- **Unassign Technicians from Appointment**: Remove one or more technicians from a ServiceTitan job appointment.
+- **Unsell Estimate**: Revert a sold estimate to unsold in ServiceTitan.
+- **Update AP Bill Custom Fields**: Set custom field values on one or more AP bills in ServiceTitan.
+- **Update AP Credit Custom Fields**: Set custom field values on one or more AP credits in ServiceTitan.
+- **Update AP Payment Custom Fields**: Set custom field values on one or more AP payments in ServiceTitan.
+- **Update Appointment Special Instructions**: Replace the special instructions text on a ServiceTitan job appointment.
+- **Update Arrival Window**: Replace the start time, duration and business units of a ServiceTitan arrival window.
+- **Update Arrival Window Configuration**: Change the tenant-wide ServiceTitan arrival window setting that decides whether a job's default start time is the start or the end of the…
+- **Update Booking**: Update fields of an existing booking in ServiceTitan for a given booking provider.
+- **Update Booking Contact**: Update one contact entry on a booking in ServiceTitan for a given booking provider.
+- **Update Booking Provider Tag**: Update the name or description of a booking provider tag in ServiceTitan.
+- **Update Call**: Update a call record in ServiceTitan.
+- **Update Campaign**: Update a marketing campaign in ServiceTitan.
+- **Update Campaign Category**: Rename a marketing campaign category in ServiceTitan or change its active flag.
+- **Update Campaign Cost**: Change the daily cost of an existing campaign cost record in ServiceTitan.
+- **Update Client Specific Pricing Rate Sheet**: Update the per-SKU price exceptions of a client-specific pricing rate sheet in the ServiceTitan pricebook, by rate sheet id.
+- **Update Contact**: Update a contact's name, title, reference id or archived flag in ServiceTitan.
+- **Update Contact Method**: Update the value or memo of a contact method in ServiceTitan.
+- **Update Contact Method Preference**: Set the value of one communication preference on a contact method in ServiceTitan.
+- **Update Credit Memo**: Update a credit memo's summary, date, business unit or active flag in ServiceTitan.
+- **Update Credit Memo Custom Fields**: Set custom field values on one or more credit memos in ServiceTitan.
+- **Update Customer**: Update fields of a customer in ServiceTitan.
+- **Update Customer Contact**: Update one contact entry on a customer in ServiceTitan.
+- **Update Employee**: Update an office employee in ServiceTitan.
+- **Update Employee Payroll Settings**: Update the payroll settings of one office employee in ServiceTitan.
+- **Update Equipment System**: Update a ServiceTitan equipment system by id.
+- **Update Equipment Type**: Rename a ServiceTitan equipment type or change its active status, by id.
+- **Update Estimate**: Update an estimate in ServiceTitan.
+- **Update Estimate Template**: Update an estimate template in ServiceTitan.
+- **Update Expense Transaction Custom Fields**: Set custom field values on one or more expense transactions in ServiceTitan.
+- **Update Finding**: Update a ServiceTitan finding by id.
+- **Update Finding Attachment**: Update the file name, URL, or media type of an attachment on a ServiceTitan finding.
+- **Update GL Account**: Update a general ledger (GL) account in ServiceTitan.
+- **Update Gross Pay Item**: Update a gross pay item in ServiceTitan and return its id.
+- **Update Installed Equipment**: Update fields of a ServiceTitan installed equipment record by id.
+- **Update Inventory Adjustment**: Update fields of an existing ServiceTitan inventory adjustment by id.
+- **Update Inventory Adjustment Custom Fields**: Set custom field values on one or more ServiceTitan inventory adjustments in a single request.
+- **Update Inventory Bill Custom Fields**: Set custom field values on one or more inventory bills in ServiceTitan.
+- **Update Inventory Receipt Custom Fields**: Set custom field values on one or more ServiceTitan inventory receipts in a single request.
+- **Update Inventory Return**: Update fields of an existing ServiceTitan vendor return by id.
+- **Update Inventory Return Custom Fields**: Set custom field values on one or more ServiceTitan inventory returns in a single request.
+- **Update Inventory Return Type**: Update a ServiceTitan vendor return type by id.
+- **Update Inventory Transfer**: Update an existing ServiceTitan inventory transfer by id.
+- **Update Inventory Transfer Custom Fields**: Set custom field values on one or more ServiceTitan inventory transfers in a single request.
+- **Update Invoice**: Update an invoice's header fields, line items or payment settlement status in ServiceTitan.
+- **Update Invoice Custom Fields**: Set custom field values on one or more invoices in ServiceTitan.
+- **Update Invoice Item**: Update one line item on an invoice in ServiceTitan.
+- **Update Invoice Task**: Update the name, status, assignee, due date or description of a task on an invoice in ServiceTitan.
+- **Update Invoice Template**: Update a membership invoice template in ServiceTitan.
+- **Update Job**: Update fields of a ServiceTitan job.
+- **Update Job Type**: Update fields of a ServiceTitan job type.
+- **Update Journal Entry**: Update a journal entry's status (Open or Closed) and custom fields in ServiceTitan.
+- **Update Journal Entry Sync Status**: Record the result of syncing a journal entry to an external accounting system in ServiceTitan by setting its sync status.
+- **Update Labor Type**: Replace a payroll labor type in ServiceTitan.
+- **Update Lead**: Update fields of a lead in ServiceTitan.
+- **Update Location**: Update fields of a location in ServiceTitan.
+- **Update Location Contact**: Update one contact entry on a location in ServiceTitan.
+- **Update Location Preferred Technician**: Set the preferred technician of a location in ServiceTitan.
+- **Update Membership**: Update a customer membership in ServiceTitan.
+- **Update Non Job Appointment**: Replace a ServiceTitan non-job appointment.
+- **Update Payment**: Update a customer payment record in ServiceTitan.
+- **Update Payment Custom Fields**: Set custom field values on one or more payments in ServiceTitan.
+- **Update Payment Status**: Set the status (Pending, Posted or Exported) of one or more customer payments in ServiceTitan in one call.
+- **Update Payroll Adjustment**: Update a payroll adjustment in ServiceTitan with a PUT.
+- **Update Pricebook Category**: Update fields of a ServiceTitan pricebook category by id and return the updated category.
+- **Update Pricebook Discount or Fee**: Update fields of a discount or fee in the ServiceTitan pricebook by id.
+- **Update Pricebook Equipment**: Update fields of an equipment item in the ServiceTitan pricebook catalog by id.
+- **Update Pricebook Material**: Update fields of a material in the ServiceTitan pricebook by id.
+- **Update Pricebook Material Markup**: Replace a material markup tier in the ServiceTitan pricebook by id.
+- **Update Pricebook Service**: Update fields of a service in the ServiceTitan pricebook by id.
+- **Update Project**: Update fields of a ServiceTitan project.
+- **Update Proposal Template**: Update a proposal template in ServiceTitan.
+- **Update Purchase Order**: Update fields of an existing ServiceTitan purchase order by id.
+- **Update Purchase Order Custom Fields**: Set custom field values on one or more ServiceTitan purchase orders in a single request.
+- **Update Purchase Order Markup**: Update a ServiceTitan purchase order markup tier by id.
+- **Update Purchase Order Type**: Update a ServiceTitan purchase order type by id.
+- **Update Recurring Service**: Update a location recurring service in ServiceTitan.
+- **Update Tag Type**: Update a tag type in ServiceTitan.
+- **Update Technician**: Update a technician in ServiceTitan.
+- **Update Technician Payroll Settings**: Update the payroll settings of one technician in ServiceTitan.
+- **Update Technician Shift**: Update fields of a ServiceTitan technician shift.
+- **Update Timesheet Activity**: Replace a timesheet activity in ServiceTitan.
+- **Update Truck**: Update a ServiceTitan truck by id.
+- **Update Vendor**: Update fields of an existing ServiceTitan inventory vendor by id.
+- **Update Vendor Custom Fields**: Set custom field values on one or more ServiceTitan vendors in a single request.
+- **Update Warehouse**: Update the external data attached to a ServiceTitan warehouse by id.
+- **Update Zone**: Update fields of a ServiceTitan dispatch zone.
+- **Upsert Estimate Item**: Add a line item to an estimate in ServiceTitan, or update an existing one when item_id is given.
+- **Upsert Project Daily Log**: Create or update the daily log of a ServiceTitan project for one date.

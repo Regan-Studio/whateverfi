@@ -1,0 +1,149 @@
+# FuseAI
+
+FuseAI is an AI-powered sales platform for prospecting, enrichment, campaigns, signal agents, research, and revenue analytics.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/fuseai/.
+
+## Actions
+
+- **Activate Agent**: Activate a draft FuseAI signal agent and begin monitoring.
+- **Add List Members**: Add up to 5,000 existing contacts to a Fuse prospect list by contact ID.
+- **Approve Campaign**: Approve a draft or stopped FuseAI campaign and start its sending scheduler.
+- **Approve Scheduled Sends**: Approve selected FuseAI queued sends that are waiting for review.
+- **Autocomplete Agent Field** (read-only): Resolve free text to canonical region, industry, title, or school values accepted by Fuse agent configuration filters.
+- **Autocomplete Company Search Field** (read-only): Suggest canonical company names, domains, investor domains, or fully qualified headquarters city values for Fuse company-search filters.
+- **Autocomplete Prospect Search Field** (read-only): Suggest canonical values for a free-text prospect-search field without consuming search credits.
+- **Cancel Research Run**: WARNING.
+- **Commit Import**: Commit a parsed spreadsheet import into an existing contact list or a destination list created or reused by name.
+- **Copy Prospect List Rows**: Copy up to 10,000 filtered rows from one contact list into an existing or create-or-reused destination contact list.
+- **Create Campaign**: Create a FuseAI draft campaign from one or more prospect lists.
+- **Create Campaign Step**: Add one email, LinkedIn, InMail, dialer, or task step at an unused position in a FuseAI campaign sequence.
+- **Create Campaign Template**: Save an owned FuseAI campaign's current steps and schedule settings as a reusable template.
+- **Create Companies Watcher Agent**: Create a FuseAI agent that watches companies from one or more existing lists for job postings, LinkedIn posts, press mentions, or funding…
+- **Create Company Department Headcount Agent**: Create a FuseAI agent that finds companies whose selected department has a specified employee count.
+- **Create Company Headcount Growth Agent**: Create a FuseAI agent that finds companies within a specified year-over-year headcount growth range.
+- **Create First Department Hire Agent**: Create a FuseAI agent that finds companies making their first hire in a specified department.
+- **Create First International Hire Agent**: Create a FuseAI agent that finds companies making their first hire outside their home country.
+- **Create Folder**: Create a folder for contact lists, company lists, campaigns, or agents.
+- **Create Funding Announcements Agent**: Create a FuseAI agent that monitors funding announcements by round type and company filters.
+- **Create Headcount Growth Over Baseline Agent**: Create a FuseAI agent that finds companies whose headcount grew by a specified percentage over a historical baseline.
+- **Create Job Changes Watcher Agent**: Create a FuseAI agent that watches people in one or more existing lists for company or title changes.
+- **Create Job Keyword Match Agent**: Create a FuseAI agent that finds companies posting jobs matching title or description terms in one region.
+- **Create Knowledge Hub**: Create a FuseAI knowledge hub from one or more websites and optional text notes.
+- **Create Knowledge Hub Page**: Add a user-authored Markdown page to a completed FuseAI knowledge hub.
+- **Create Large Import Upload Target**: Create a short-lived external PUT target for a CSV, XLS, or XLSX import file over 10 MiB and up to 50 MiB.
+- **Create LinkedIn Post Engagement Agent**: Create a FuseAI agent that collects people who liked or commented on up to 50 specific LinkedIn posts.
+- **Create LinkedIn Profile Agent**: Create a FuseAI agent that collects reactors or commenters from recent posts by up to 50 LinkedIn profiles.
+- **Create LinkedIn Topic Discovery Agent**: Create a FuseAI agent that finds authors, and optionally reactors, of LinkedIn posts matching specified topics and filters.
+- **Create List Column**: Create a plain custom column on a Fuse prospect list.
+- **Create People Watcher Agent**: Create a FuseAI agent that watches people from one or more existing contact lists for LinkedIn profile or post updates.
+- **Create Person Discovery Via Filters Agent**: Create a FuseAI agent that discovers people matching explicit filters.
+- **Create Person Starting New Job Agent**: Create a FuseAI agent that watches one industry for people starting new jobs.
+- **Create Prospect List**: Create an empty contact or company prospect list owned by the connected FuseAI user.
+- **Create Regional Job Discovery Agent**: Create a FuseAI agent that finds companies posting jobs in one region, optionally filtered by industry, company size, and headquarters…
+- **Create Saved Search**: Store a reusable people or company search under a display name.
+- **Create Smart Column**: Create an AI-powered column on a FuseAI prospect list and start its first asynchronous, credit-consuming research run over the selected…
+- **Create Two Country Workforce Agent**: Create an unbilled draft of FuseAI's provider-defined signal agent for companies with an employee distribution across two countries.
+- **Create Web Monitor Agent**: Create a FuseAI agent that repeatedly searches the web for matching people or companies.
+- **Decline Scheduled Sends**: Permanently stop selected queued FuseAI sends.
+- **Delete Agent**: Permanently delete a FuseAI agent and tear down its provider subscriptions.
+- **Delete Campaign**: Stop and delete a campaign.
+- **Delete Campaign Step**: Permanently remove one sequence step from a FuseAI campaign.
+- **Delete Campaign Template**: Permanently delete a saved FuseAI campaign template.
+- **Delete Folder**: Permanently delete a folder without deleting the lists, campaigns, or agents it contained.
+- **Delete Knowledge Hub**: Soft-delete a FuseAI knowledge hub so it no longer appears in reads or grounds campaigns.
+- **Delete Knowledge Hub Attachment**: Delete a document attached to a FuseAI knowledge-hub note.
+- **Delete Knowledge Hub Page**: Permanently remove a page from a FuseAI knowledge hub and its knowledge store.
+- **Delete Learned Fact**: Retire a learned fact so it stops contributing to the team's knowledge hubs after the next daily learning run.
+- **Delete List Column**: Permanently delete a custom or smart column from a prospect list, including all values stored in that column.
+- **Delete Prospect List**: Delete a prospect list and its custom columns.
+- **Delete Saved Search**: Permanently delete a saved people or company search.
+- **Derive Company List**: Create a company list from the companies represented by a contact list.
+- **Duplicate Agent**: Copy an owned FuseAI agent of any status into a new, unbilled draft.
+- **Duplicate Campaign**: Copy an owned FuseAI campaign into a fresh draft with the same sequence steps, schedule settings, and source lists.
+- **Enrich List**: Start an asynchronous, credit-consuming enrichment of a Fuse contact list.
+- **Export Campaign Leads** (read-only): Export every enrolled lead in an owned FuseAI campaign as an inline CSV document.
+- **Export List**: Start an asynchronous CSV export of an entire FuseAI prospect list.
+- **Generate Campaign Step Preview** (read-only): Render one campaign step for a sample contact, resolving variables and spintax without saving content or sending a message.
+- **Get Agent** (read-only): Return one signal agent's stored configuration, lifecycle status, and source-list metadata.
+- **Get Agent Analytics** (read-only): Return team signal-agent performance for a rolling 7-, 30-, or 90-day window, including totals, type and status breakdowns, and prospects…
+- **Get Campaign** (read-only): Return one campaign's lifecycle and initialization state.
+- **Get Campaign Analytics** (read-only): Return account-wide email and LinkedIn campaign totals and time series over a rolling 7-, 30-, or 90-day window, plus top LinkedIn…
+- **Get Campaign Stats** (read-only): Return one campaign's email send, open, click, and reply totals, plus percentage changes for the current UTC calendar month versus the…
+- **Get Company Filter Options** (read-only): Return the complete accepted vocabularies for enum-backed company-search filters, including industries, tags, NAICS codes, countries, and…
+- **Get Credit Balance** (read-only): Return the connected user's available credit balance for checking whether billable Fuse operations can run.
+- **Get Credit Usage** (read-only): Return the workspace credit-spend ledger for a date range and optional team members.
+- **Get Current User** (read-only): Return the connected user's ID, email address, and display name.
+- **Get Dialer Analytics** (read-only): Return campaign and team power-dialer call totals and time series for a rolling 7-, 30-, or 90-day window.
+- **Get Enrichment Analytics** (read-only): Return enrichment totals and zero-filled time series for enriched emails, enriched phones, saved contacts, and searched prospects over a…
+- **Get Job** (read-only): Poll a Fuse asynchronous job, including a list export job returned by EXPORT_LIST, and return its status, operation type, row count,…
+- **Get Knowledge Hub** (read-only): Return one knowledge hub's full detail, including websites, notes, build status, and default status.
+- **Get Knowledge Hub Attachment** (read-only): Return a knowledge-hub note attachment's filename, MIME type, byte size, and presigned download URL.
+- **Get Prospect Filter Options** (read-only): Return the complete accepted prospect-search vocabulary, each field's required value shape, and the role-to-sub-role mapping.
+- **Get Prospect List** (read-only): Return one prospect list's metadata, processing status, row count, enrichment metrics, and optionally its column definitions.
+- **Get Prospect List Filter Values** (read-only): Return the distinct company names or web domains stored in a prospect list for use in row filters and exclusion sets.
+- **Get Research Run** (read-only): Return one research run's current state, credit usage, markdown report, and resulting prospect list.
+- **Get Saved Search** (read-only): Return one saved people or company search by ID, including filters that can be sent to the matching search operation.
+- **Get Smart Column** (read-only): Return a smart column's definition, provider restriction, rerun cost, and current run state.
+- **Get Smart Column Cell Provenance** (read-only): Return the reasoning, research steps, source URLs, and computation metadata behind one smart-column cell.
+- **Get Smart Column Job Status** (read-only): Poll a smart-column run and return its progress, terminal state, row counts, credit usage, and lifecycle timestamps.
+- **Get Website Intent Analytics** (read-only): Return website intent metrics, a zero-filled visitor time series, and the top visiting companies and identified people over a rolling 7-,…
+- **Get Website Tracking** (read-only): Return the account's website-tracking configuration, including tracked domains and pages, the installation script, and monthly credit usage.
+- **List Agent Types** (read-only): Return all available agent types across signal, watcher, and scrape categories, with their creation slugs and display names.
+- **List Agents** (read-only): Return one page of the connected user's agents across every kind, including their lifecycle state, results-list references, and…
+- **List Campaign Leads** (read-only): Return one page of a campaign's enrolled leads with sequence progress, engagement state, recorded outcomes, and first-contact details.
+- **List Campaign Steps** (read-only): Return a campaign's ordered sequence steps, including each step's channel, content mode, delay, manual subject and body, and AI topic and…
+- **List Campaign Templates** (read-only): Return up to the 100 most recent campaign templates visible to the workspace, including saved schedules and full step sequences.
+- **List Campaign Variables** (read-only): List the custom and smart-column personalization variables available to a campaign.
+- **List Campaigns** (read-only): Return one page of the connected user's campaigns with headline delivery and engagement analytics, optionally filtered by name, type,…
+- **List Contact Activities** (read-only): Return one newest-first page of a contact's email, LinkedIn, call, CRM, and scheduled campaign activity timeline.
+- **List Folders** (read-only): Return every folder of one requested kind owned by the connected user.
+- **List Integrations** (read-only): Return the CRM integrations connected by the team.
+- **List Knowledge Hub Pages** (read-only): Return the knowledge pages used to ground campaign generation for a knowledge hub, including each page's full Markdown content and origin.
+- **List Knowledge Hubs** (read-only): Return all knowledge hubs owned by the connected user, including each hub's build status and whether it is the default for AI campaign…
+- **List Learned Facts** (read-only): Return active anonymized facts learned from the team's emails, LinkedIn messages, calls, and meeting transcripts.
+- **List List Columns** (read-only): Return a prospect list's custom and smart column definitions.
+- **List Prospect List Rows** (read-only): Return one page of contacts or companies from a prospect list, including resource IDs, enrichment fields, list memberships, and custom…
+- **List Prospect Lists** (read-only): Return one page of the connected user's prospect lists, optionally filtered by list kind, folder, or a case-insensitive name substring.
+- **List Research Providers** (read-only): Return the Deep Research providers available to the connected user, with their capabilities, credential readiness, and run availability.
+- **List Research Run Events** (read-only): Return one page of a research run's durable progress log in ascending event sequence order, including its current lifecycle status.
+- **List Research Runs** (read-only): List up to 50 research runs that are currently in flight for the connected account, newest first.
+- **List Saved Searches** (read-only): Return the connected user's saved people and company searches.
+- **List Scheduled Sends** (read-only): Return one page from a campaign's send queue for a required status, optionally restricted to one delivery channel.
+- **List Sending Accounts** (read-only): List connected email mailboxes or LinkedIn seats available for campaign sending, including connection status and channel-specific account…
+- **List Team Members** (read-only): Return up to 100 active members of the connected user's team, including their Fuse user IDs, email addresses, and display names.
+- **List Website Visitors** (read-only): Return one page of the connected team's all-time deanonymized website visitor feed, grouped by identified people or visiting companies.
+- **List Writing Styles** (read-only): Return the account's writing styles accepted by AI campaigns.
+- **Pause Agent**: WARNING.
+- **Preview Import**: Parse and preview a CSV, XLS, or XLSX import without writing contacts to a destination list.
+- **Push List To CRM**: Start an asynchronous push to a connected CRM.
+- **Refresh Knowledge Hub Website**: Start an external re-crawl of one website already attached to a FuseAI knowledge hub and regenerate the knowledge pages derived from that…
+- **Regenerate Campaign Step Topics**: Rebuild the topic plan and titles across all AI-generated steps in a FuseAI campaign so the sequence follows one narrative.
+- **Regenerate Knowledge Hub Page**: Regenerate a generated FuseAI knowledge-hub page from its cached website and note sources, discarding manual edits, re-indexing the new…
+- **Remove List Members**: Remove up to 5,000 contacts from a prospect list by contact ID.
+- **Rename Folder**: Rename a contact-list, company-list, campaign, or agent folder.
+- **Rerun Smart Column**: Start an asynchronous rerun of a smart column for all covered rows or only rows that have not been computed.
+- **Resolve Contact By LinkedIn URL** (read-only): Resolve an existing workspace contact ID from a LinkedIn profile URL.
+- **Save Company Search To List**: Run a company search and asynchronously save up to 10,000 matches into a created, reused, or existing company list.
+- **Save Prospect Search To List**: Run a people search and asynchronously save up to 10,000 matches into a created, reused, or existing contact list.
+- **Search Companies**: Return one metered page of companies matching literal filters, a saved company search, or a natural-language query.
+- **Search Prospects**: Return one metered page of people matching literal filters, a saved people search, or a natural-language query.
+- **Set Default Knowledge Hub**: Make one of the connected FuseAI user's knowledge hubs the default used when a campaign does not specify a knowledge hub.
+- **Skip Scheduled Send**: WARNING.
+- **Start Research Run**: Start an autonomous FuseAI Deep Research run and return immediately with its ID.
+- **Stop Campaign**: Stop an owned FuseAI campaign.
+- **Update Agent**: Update one or more type-specific config fields on a FuseAI draft agent.
+- **Update Campaign**: Update one or more settings on a FuseAI campaign, including its schedule, source and exclusion lists, enrollment rules, tracking,…
+- **Update Campaign Step**: Update the content, AI topic, or delay of one FuseAI campaign sequence step.
+- **Update Column Values**: Write up to 500 values into one custom column on a Fuse prospect list, keyed by contact row ID.
+- **Update Contact**: Promote an existing email address, phone number, or both to be a contact's primary values.
+- **Update Knowledge Hub**: Rename a FuseAI knowledge hub or merge websites and notes into it.
+- **Update Knowledge Hub Page**: Replace the title, Markdown content, or both for a page in a completed FuseAI knowledge hub.
+- **Update Learned Fact**: Correct the claim text or category of an active FuseAI learned fact.
+- **Update Prospect List**: Rename a Fuse prospect list or move it into an existing or newly named folder.
+- **Update Saved Search**: Rename a saved people or company search, replace all of its filters, or do both.
+- **Update Scheduled Send**: Replace the copy or send time of a queued FuseAI campaign send before it goes out.
+- **Update Smart Column**: Rename a FuseAI smart column, change its research prompt, or change a Deep Research provider restriction.
+- **Update Website Tracking**: Replace FuseAI's tracked domains and page labels, change the monthly visitor deanonymization credit cap, or do both.
+- **Upload Knowledge Hub Attachment**: Attach a document to one note in a completed FuseAI knowledge hub.
+- **Upload List Contacts**: Create up to 500 raw contacts and add them to a contact prospect list without enrichment or deduplication.

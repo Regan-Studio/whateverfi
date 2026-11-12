@@ -1,0 +1,81 @@
+# Microsoft Entra ID
+
+Manage Microsoft Entra ID directory resources through Microsoft Graph v1.0, including users, groups, applications, roles, devices, policies, and audit data.
+
+Category: Security & Ops. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/microsoft-entra-id/.
+
+## Actions
+
+- **Add Administrative Unit Member**: Add one existing user, group, or device to an assigned-membership Microsoft Entra administrative unit, bringing that object into the…
+- **Add Application Owner**: Add an existing user or service principal as an owner of an application registration, granting authority to administer it.
+- **Add Directory Role Member**: Assign a principal to an activated Microsoft Entra directory role, granting that role's tenant-wide administrative access.
+- **Add Group Member**: Add an existing directory object as a direct member of an assigned-membership Microsoft Entra group.
+- **Add Group Owner**: Add an existing user or service principal as an owner of a Microsoft 365 or security group, granting authority to modify the group.
+- **Add Service Principal Owner**: Add an existing user or service principal as an owner of an enterprise application/service principal, granting authority to administer it.
+- **Assign User Licenses**: Add and remove Microsoft product licenses for one Entra user in a single request.
+- **Create Administrative Unit**: Create an assigned or dynamic Microsoft Entra administrative unit for scoping directory administration.
+- **Create App Role Assignment**: Assign an application role to a user, group, or client service principal.
+- **Create Application**: Create a Microsoft Entra application registration with allowlisted platform, role, and API permission settings, without creating or…
+- **Create Group**: Create a Microsoft 365, assigned security, or dynamic-membership group.
+- **Create Role Assignment**: Grant a user, role-assignable group, or service principal a Microsoft Entra directory role, conferring the role's administrative access at…
+- **Create Service Principal**: Create an enterprise application (service principal) for an existing application ID without accepting or creating password or key…
+- **Create User**: Create a Microsoft Entra tenant user with the required sign-in profile and an initial password.
+- **Delete Administrative Unit**: Delete a Microsoft Entra administrative unit and remove its administrative scope.
+- **Delete Application**: Delete a Microsoft Entra application registration by its directory Object ID.
+- **Delete Group**: Delete a Microsoft Entra group and its associated group resources.
+- **Delete Service Principal**: Delete a Microsoft Entra enterprise application/service principal.
+- **Delete User**: Delete a tenant user and remove the directory identity.
+- **Disable User**: Disable a Microsoft Entra user without deleting the directory object.
+- **Get Administrative Unit** (read-only): Get one Microsoft Entra administrative unit by directory object ID.
+- **Get Application** (read-only): Get one application registration by its directory Object ID, not its Application (client) ID, returning only credential-safe properties.
+- **Get Conditional Access Policy** (read-only): Get one Microsoft Entra Conditional Access policy by object ID.
+- **Get Device** (read-only): Get one Microsoft Entra device by its directory Object ID, not its distinct Device Registration Service deviceId value.
+- **Get Directory Audit** (read-only): Get one Microsoft Entra directory audit event by its event ID.
+- **Get Directory Role** (read-only): Get one Microsoft Entra directory role that is activated in the tenant by its activated role object ID.
+- **Get Domain** (read-only): Get one tenant domain by its fully qualified domain name.
+- **Get Group** (read-only): Get one tenant group by directory object ID.
+- **Get Organization** (read-only): Get the connected Microsoft Entra tenant's organization record by tenant organization ID.
+- **Get Role Assignment** (read-only): Get one unified Microsoft Entra directory role assignment by its assignment ID, including its principal, role definition, and directory or…
+- **Get Service Principal** (read-only): Get one Microsoft Entra enterprise application/service principal by its directory Object ID, not its Application (client) ID, returning…
+- **Get Sign In** (read-only): Get one retained Microsoft Entra sign-in event by event ID.
+- **Get Subscribed SKU** (read-only): Get one commercial product subscription acquired by the Microsoft Entra tenant using its subscribed-SKU object ID.
+- **Get User** (read-only): Get one tenant user by directory object ID or user principal name.
+- **Get User Manager** (read-only): Get the directory object recorded as a user's manager.
+- **List Administrative Unit Members** (read-only): List users, groups, and devices directly assigned to a Microsoft Entra administrative unit.
+- **List Administrative Unit Scoped Role Members** (read-only): List the legacy scoped-role memberships that grant users administrative access within one Microsoft Entra administrative unit.
+- **List Administrative Units** (read-only): List Microsoft Entra administrative units with optional OData filtering, search, field selection, relationship expansion, and cursor…
+- **List App Role Assignments** (read-only): List users, groups, and client service principals granted application roles on a resource service principal, with OData filtering, field…
+- **List Application Owners** (read-only): List the users and service principals that own an application registration.
+- **List Applications** (read-only): List Microsoft Entra application registrations with OData filtering, search, ordering, and cursor pagination.
+- **List Conditional Access Policies** (read-only): List read-only Microsoft Entra Conditional Access policy definitions, including conditions, grant controls, and session controls, with…
+- **List Devices** (read-only): List devices registered in the Microsoft Entra tenant with optional advanced OData queries and cursor pagination.
+- **List Directory Audits** (read-only): List retained Microsoft Entra directory audit events with documented OData filtering, activity-time ordering, and opaque cursor pagination.
+- **List Directory Role Members** (read-only): List principals currently assigned to one activated Microsoft Entra directory role.
+- **List Directory Roles** (read-only): List Microsoft Entra directory roles that are activated in the tenant.
+- **List Domains** (read-only): List verified and unverified domains configured for the Microsoft Entra tenant, with documented OData query controls and cursor pagination.
+- **List Group Members** (read-only): List a group's direct members.
+- **List Group Owners** (read-only): List the users and service principals that own a group.
+- **List Groups** (read-only): List tenant groups with general OData options, or list only dynamic-membership groups with a fixed safe filter and membership-rule fields.
+- **List Organizations** (read-only): Return the connected Microsoft Entra tenant's organization record.
+- **List Role Assignments** (read-only): List unified Microsoft Entra directory role assignments, including the assigned principal, role definition, and directory or application…
+- **List Service Principal Owners** (read-only): List directory objects that own an enterprise application/service principal.
+- **List Service Principals** (read-only): List Microsoft Entra enterprise applications and service principals with OData filtering, search, ordering, and cursor pagination.
+- **List Sign Ins** (read-only): List retained Microsoft Entra sign-in events, newest first.
+- **List Subscribed SKUs** (read-only): List commercial product subscriptions acquired by the Microsoft Entra tenant, including assigned-license counts, prepaid-unit…
+- **List User Direct Reports** (read-only): List directory objects that directly report to one user, with optional OData filtering, search, ordering, field selection, and safe cursor…
+- **List User License Details** (read-only): List one tenant user's assigned product licenses and the provisioning state of their included service plans.
+- **List User Memberships** (read-only): List groups, directory roles, and administrative units a user directly belongs to.
+- **List Users** (read-only): List tenant users with optional OData filtering, search, ordering, field selection, and a safe continuation cursor.
+- **Remove Administrative Unit Member**: Remove a user, group, or device from a Microsoft Entra administrative unit, ending administration scoped through that membership.
+- **Remove App Role Assignment**: Remove an app-role assignment from a Microsoft Entra resource service principal.
+- **Remove Application Owner**: Remove an owner from a Microsoft Entra application registration, revoking that principal's authority to administer the application.
+- **Remove Directory Role Member**: Remove a principal from an activated Microsoft Entra directory role, revoking the role's tenant-wide administrative access.
+- **Remove Group Member**: Remove a direct member from an assigned-membership Microsoft Entra group, revoking access inherited through that membership.
+- **Remove Group Owner**: Remove a user or service principal as an owner of a Microsoft Entra group, revoking that principal's authority to administer the group.
+- **Remove Role Assignment**: Remove a unified Microsoft Entra directory role assignment and revoke the principal's administrative access at that assignment's scope.
+- **Remove Service Principal Owner**: Remove an owner from a Microsoft Entra enterprise application/service principal, revoking that principal's authority to administer it.
+- **Update Administrative Unit**: Update explicitly supplied profile or dynamic-membership properties of one Microsoft Entra administrative unit.
+- **Update Application**: Update explicitly supplied, allowlisted settings of one Microsoft Entra application registration.
+- **Update Group**: Update explicitly supplied, allowlisted properties of one Microsoft Entra group, including its dynamic membership rule or processing state.
+- **Update Service Principal**: Update explicitly supplied, allowlisted settings of one Microsoft Entra enterprise application/service principal.
+- **Update User**: Update allowlisted, non-credential profile properties for one Microsoft Entra user.

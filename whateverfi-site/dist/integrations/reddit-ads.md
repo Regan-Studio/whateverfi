@@ -1,0 +1,91 @@
+# Reddit Ads
+
+Reddit Ads API for managing advertising campaigns, conversions, and account data on Reddit.
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/reddit-ads/.
+
+## Actions
+
+- **Get A Report** (read-only): Generate a metrics report for ad performance based on specified fields and breakdowns.
+- **Get Ad Account by ID** (read-only): Retrieve details for a specific Reddit ad account by ID.
+- **Get Ad Group** (read-only): Get an ad group by its ID from Reddit Ads API.
+- **Get App Last Fired At Report** (read-only): Retrieve the last time mobile conversion events were fired for a specific app ID.
+- **Get Authenticated Member** (read-only): Get the authenticated member's information from the Reddit Ads API.
+- **Get Business by ID** (read-only): Get business details by ID from the Reddit Ads API.
+- **Get Campaign by ID** (read-only): Retrieve a specific Reddit Ads campaign by its ID.
+- **Get Channel Planning Reach** (read-only): Retrieve estimated reach data for a given set of targeting parameters.
+- **Get Child Funding Instruments** (read-only): Retrieve a list of Funding Instrument Allocations for a parent funding instrument.
+- **Get Custom Audience** (read-only): Retrieve a custom audience by ID from Reddit Ads API.
+- **Get Lead Gen Form by ID** (read-only): Retrieve details for a specific lead generation form by ID from Reddit Ads.
+- **Get Pixel Last Fired At Report** (read-only): Retrieve the last time conversion events were fired for a specific conversion pixel.
+- **Get Post by ID** (read-only): Retrieve a promoted or organic Reddit post by its ID.
+- **Get Product Catalog** (read-only): Retrieve a specific product catalog by ID from the Reddit Ads API.
+- **Get Product Feed** (read-only): Retrieve metadata for a specific product feed by ID.
+- **Get Product Set** (read-only): Retrieve metadata for a specific product set by ID from the Reddit Ads API.
+- **Get Profile by ID** (read-only): Retrieve details for a specific profile by ID from the Reddit Ads API.
+- **Get Saved Audience** (read-only): Retrieve a saved audience by ID from Reddit Ads API.
+- **Get SKAdNetwork Availability** (read-only): Get SKAdNetwork IDs availability quota for an iOS app.
+- **List Ad Accounts By Business** (read-only): Get a list of ad accounts under a business on Reddit Ads.
+- **List Ad Groups** (read-only): List ad groups for a Reddit ad account.
+- **List Campaigns** (read-only): List campaigns by ad account with pagination support.
+- **List Carriers** (read-only): Retrieve all available carriers from Reddit Ads API for targeting purposes.
+- **List Communities** (read-only): List targetable communities matched by their names.
+- **List Devices** (read-only): Retrieve all available devices from Reddit Ads API for targeting purposes.
+- **List Funding Instruments** (read-only): List funding instruments (payment methods) for a Reddit Ads ad account.
+- **List Geolocations** (read-only): Fetch a list of geolocations from Reddit Ads API.
+- **List Industries** (read-only): Retrieve all available industries from Reddit Ads API.
+- **List Interests** (read-only): Retrieve all available interests from Reddit Ads API for targeting purposes.
+- **List Lead Gen Forms** (read-only): List lead generation forms for a Reddit Ads ad account.
+- **List My Businesses** (read-only): Retrieve details of businesses associated with the provided access token.
+- **List Posts by Profile** (read-only): List up to 1,000 of the most recent posts for a specified profile.
+- **List Product Catalogs** (read-only): Retrieve details for all product catalogs belonging to a business.
+- **List Product Feeds** (read-only): Retrieve metadata for all feeds in a product catalog.
+- **List Product Sets** (read-only): Retrieve all product sets in a catalog.
+- **List Products In Product Catalog** (read-only): Retrieve all products in a Reddit Ads product catalog.
+- **List Products In Product Set** (read-only): Retrieve all products in a Reddit Ads product set.
+- **List Saved Audiences** (read-only): List saved audiences for a Reddit ad account.
+- **List Structured Posts** (read-only): List structured posts for a profile or retrieve up to 10 specific structured posts by ID.
+- **List Time Zones** (read-only): Retrieve all available time zones from Reddit Ads API for campaign scheduling.
+- **List User Custom Audiences** (read-only): List all Custom Audiences under an ad account.
+- **Query Ad Accounts** (read-only): Query ad accounts by business with optional filtering by actors, assets, roles, or custom filter string.
+- **Query funding instruments by business** (read-only): Query funding instruments (credit lines) by business with pagination support.
+- **Search Communities** (read-only): Search for Reddit communities based on their name or topic.
+- **Update Ad Account**: Update a Reddit ad account configuration.
+- **Update Business**: Update a business by ID in Reddit Ads.
+- **Update Product Catalog**: Update a product catalog's name or attached Pixel IDs in Reddit Ads.
+- **Update Product Feed**: Update a product feed's metadata in Reddit Ads.
+- **Update Product Set**: Update a product set's name and filter rules in Reddit Ads.
+- **Update Saved Audience**: Update a saved audience by ID in Reddit Ads.
+- **Validate Geolocations** (read-only): Validate a list of geolocations for use in Reddit Ads targeting.
+- **Batch Delete Products**: Delete multiple products from a Reddit Ads product catalog in a single request.
+- **Create Ad Group**: Create a new ad group within a Reddit Ads campaign.
+- **Create Batch Products**: Create or update multiple products in a catalog in a single batch operation.
+- **Create Custom Audience**: Create a new Custom Audience in Reddit Ads.
+- **Create Lead Gen Form**: Create a new lead generation form in Reddit Ads.
+- **Create Product Catalog**: Create a new product catalog.
+- **Create Product Feed**: Create a new feed for a product catalog.
+- **Create Product Set**: Create a new product set in a product catalog.
+- **Create Reddit Ads Campaign**: Create a new Reddit Ads campaign for the specified ad account.
+- **Create Reddit Post**: Create a new Reddit post for a specified profile.
+- **Create Saved Audience**: Create a saved audience for a Reddit Ads ad account with targeting criteria.
+- **Create Structured Post Creation Job**: Create a structured post creation job on Reddit Ads.
+- **Delete Custom Audience**: Delete a Custom Audience by ID from Reddit Ads.
+- **Delete Product Catalog**: Delete a product catalog by ID from Reddit Ads.
+- **Delete Product Feed**: Delete a feed in a catalog by ID from Reddit Ads.
+- **Delete Product Set**: Delete a product set by ID from Reddit Ads.
+- **Do Keyword Validations**: Validate a list of keywords for targeting and check their brand safety status.
+- **Generate Inspiration Creative Summary**: Get AI-generated summary of best practices followed by an inspiration creative ad.
+- **Get ad account history** (read-only): Get changelog history for a Reddit ad account with filtering options.
+- **Get Structured Post by ID** (read-only): Retrieve a structured post by its ID from the Reddit Ads API.
+- **List 3rd Party Audiences** (read-only): Retrieve all available 3rd party audiences from Reddit Ads API for targeting purposes.
+- **List Ads** (read-only): List ads by ad account on Reddit Ads platform.
+- **List Catalog Imports** (read-only): Retrieve all imports for a catalog.
+- **List Communities Suggestions** (read-only): Fetch suggested communities for given community names from Reddit Ads API.
+- **List Pixels By Ad Account** (read-only): List pixels by ad account.
+- **List Pixels by Business** (read-only): List all pixels associated with a specific business.
+- **List Profiles By Ad Account** (read-only): List profiles by ad account from Reddit Ads API.
+- **List Profiles By Business** (read-only): List profiles by business.
+- **Update Campaign**: Update a campaign by ID in Reddit Ads.
+- **Update Custom Audience Users**: Update users in a Reddit Ads Custom Audience by adding or removing user identifiers.
+- **Update Post**: Update a Reddit post by ID.
+- **Update Structured Post**: Update a structured post by ID.

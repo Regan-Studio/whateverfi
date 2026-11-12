@@ -1,0 +1,953 @@
+# Ambiguous MCP
+
+Operate an Ambiguous workspace through its provider-hosted MCP server, including documents, spreadsheets, tasks, CRM, calendar, mail, chat, and administration. Uses the connected account’s workspace-scoped API key. Some tools send external messages, delete data, change access, or consume the workspace action allowance.
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/ambiguous-mcp/.
+
+## Actions
+
+- **Ack mentions activity**: Acknowledge the Mentions & reactions inbox after it has been displayed.
+- **Ack thread activity**: Acknowledge readable Threads inbox activity on entry without advancing personal read cursors or clearing explicit manual unread intent.
+- **Add conditional format**: Add a conditional formatting rule to a spreadsheet.
+- **Add connected element**: Extend a flow.
+- **Add deal line item**: Add a line item to a deal.
+- **Add forwarding address**: Add a forwarding address (sends verification email).
+- **Add pipeline member**: Add (or update the role of) a user or team on a CRM pipeline.
+- **Add shared drive member**: Add a member (manager-only).
+- **Add sheet column**: Add a column to a sheet tab.
+- **Add sheet rows**: Append rows to a sheet tab.
+- **Add sheet tab**: Add a new tab to a sheet.
+- **Add slide**: Add a new slide to an existing presentation.
+- **Add task attachment**: Attach a Drive file to a task.
+- **Add team member**: Add a user to a team with an optional role (admin or member).
+- **Admin integration delete**: disconnect an integration
+- **Admin integration update**: update integration config
+- **Admin integrations list** (read-only): list all integrations for workspace
+- **Admin integrations slack channels** (read-only): list Slack channels via bot token
+- **Admin invite delete**: Revoke (cancel) a pending invite.
+- **Admin invite resend**: Resend invite email + refresh expiry.
+- **Admin invites list** (read-only): List pending, accepted, and expired workspace invites, pending first and then newest.
+- **Admin mail suppression create**: manually add a suppression
+- **Admin mail suppression delete**: remove a suppression
+- **Admin mail suppressions list** (read-only): list suppressed addresses
+- **Admin notification defaults get** (read-only): Read workspace-default email notification prefs.
+- **Admin notification defaults update**: Partially update workspace-default email notification prefs.
+- **Admin usage export** (read-only): Export usage stats as CSV
+- **Admin usage timeseries** (read-only): Daily creation counts (last 14 days, split into "last 7" + "prior 7" windows) for the four hero metrics on the Overview tab.
+- **Admin user get** (read-only): Get one workspace user's full admin record by id.
+- **Admin user reset password**: Create and email a one-hour password-reset link.
+- **Admin user suspend**: Suspend a user account.
+- **Admin user unsuspend**: Unsuspend a user account.
+- **Admin workspace logo delete**: Remove workspace logo (admin only)
+- **Analytics annotations list** (read-only): List a project's annotations, oldest date first.
+- **Analytics catalog overrides list** (read-only): List catalog metadata overrides for the workspace.
+- **Analytics catalog stats** (read-only): Per-event last_seen_at and 30-day volume for the workspace's tracked events.
+- **Analytics cohorts get** (read-only): Read a saved cohort's name, stored criteria and member-count snapshot by ID, without recomputing its audience.
+- **Analytics cohorts list** (read-only): List saved cohort reports in the active workspace, including their definitions and stored member counts.
+- **Analytics dashboards get** (read-only): Read a saved analytics dashboard's name, stored query and tile layout by ID.
+- **Analytics dashboards list** (read-only): List the saved analytics dashboards of one Analytics project (project_id), including their tile layouts.
+- **Analytics events get** (read-only): Read one Analytics evidence event owned by the caller's source workspace.
+- **Analytics events list** (read-only): List source-owned Analytics evidence with bounded filters and stable pagination.
+- **Analytics funnels get** (read-only): Read a saved funnel report's name and stored conversion query definition by ID, without running the funnel.
+- **Analytics funnels list** (read-only): List saved funnel reports in the active workspace, including their names and conversion query definitions.
+- **Analytics insights get** (read-only): Read a saved insights report's name and stored query definition by ID, without executing the query.
+- **Analytics insights list** (read-only): List saved insights reports in the active workspace, including their names and query definitions.
+- **Analytics metric definitions list** (read-only): List metric definitions visible in the named Analytics project, or its workspace default when omitted.
+- **Analytics metric value** (read-only): Read one number from a saved insight or funnel over a window.
+- **Analytics metrics upsert**: Upsert external metric rows (ad spend, cloud spend, incident minutes) keyed by metric, grain, period and dimensions.
+- **Analytics mv metadata** (read-only): Get materialized view name and last refresh time.
+- **Analytics projects access request create**: Ask the project's owners for access at viewer or editor.
+- **Analytics projects access request current** (read-only): Return whether the caller has an open access request for the project.
+- **Analytics projects access request decide**: Approve at viewer or editor, or decline, an open access request.
+- **Analytics projects get** (read-only): Read one Analytics project, its view and the caller's role.
+- **Analytics projects list** (read-only): List the Analytics projects the caller holds a role on, each with its view and the caller's role.
+- **Analytics projects permissions list** (read-only): List the project's members.
+- **Analytics query execute** (read-only): Execute an ad-hoc analytics query (events/insights/funnel/retention/cohort).
+- **Analytics restricted marks list** (read-only): List the workspace's restricted event names, trait keys and metric keys.
+- **Analytics retentions get** (read-only): Read a saved retention report's name and stored query definition by ID, without computing retention.
+- **Analytics retentions list** (read-only): List saved retention reports in the active workspace, including their names and query definitions.
+- **Analytics settings get** (read-only): Get the workspace's analytics settings — the timezone calendar windows such as today-7d and day/week/month buckets resolve in.
+- **Analytics user timeline** (read-only): Get a user's event timeline with session grouping (30-min inactivity split).
+- **Analytics users aggregates** (read-only): List analytics user profiles from the materialized view (faster at high volume, nightly refresh).
+- **Analytics users list** (read-only): List analytics user profiles (paginated, searchable).
+- **Analytics write key list** (read-only): List all writeKeys for the workspace (plaintext never returned on list).
+- **Append sheet values**: Append rows of values to a sheet at the first empty row in a range.
+- **Apply deal template**: Create a new deal from a saved deal template.
+- **Apply master to slide**: Link a master slide to a specific slide by 0-based index.
+- **Apply task template**: Create a new task by applying a template's defaults.
+- **Apply transition to all**: Apply a slide transition to every slide in the deck.
+- **Archive mail thread**: Archive every inbox-folder message in a thread
+- **Asset get content** (read-only): An image inside a doc, sheet, slide deck, canvas board, wiki page or task description is an asset of that container, not a Drive file.
+- **Assign role**: Assign a role to a user.
+- **Auth whoami** (read-only): Return the current authenticated user's profile (works with both JWT and API-key auth), including active workspace name + ID and agent…
+- **Automations enqueue**: Queue an enabled automation for background execution.
+- **Batch archive emails**: Archive multiple emails in one atomic call.
+- **Batch clear sheet values**: Clear all cell values in multiple ranges atomically.
+- **Batch file permissions** (read-only): Batch-fetch permissions for up to 50 files by ID.
+- **Batch get contacts** (read-only): Fetch multiple CRM contacts by their IDs in a single request (max 100).
+- **Batch get deals** (read-only): Fetch multiple CRM deals by their IDs in a single request (max 100).
+- **Batch get files** (read-only): Batch-fetch up to 50 files by ID.
+- **Batch get sheet values** (read-only): Fetch multiple disjoint ranges from a spreadsheet in a single request.
+- **Batch modify emails**: Batch modify multiple emails in one atomic call.
+- **Batch trash emails**: Trash multiple emails in one atomic call.
+- **Block sender**: Block a sender (address or domain).
+- **Book event resources**: Book one or more resources (rooms, equipment) for an existing event.
+- **Browse public channels** (read-only): Browse the workspace's public channels, including the ones the caller has not joined, each with a joined flag and member count.
+- **Bulk archive tasks**: Archive up to 100 tasks at once.
+- **Bulk copy files**: Copy multiple files to a folder (max 100).
+- **Bulk delete contacts**: Delete many CRM contacts in a single operation.
+- **Bulk delete deals**: Delete many CRM deals at once by their ids.
+- **Bulk delete messages**: Soft-delete up to 100 messages in a channel.
+- **Bulk delete tasks**: Soft-delete multiple tasks at once by ID.
+- **Bulk export contacts** (read-only): Export selected contacts as CSV or vCard.
+- **Bulk export deals** (read-only): Export selected deals as CSV
+- **Bulk move files**: Move multiple files to a folder (max 100).
+- **Bulk update contacts**: Update many CRM contacts in a single operation.
+- **Bulk update deals**: Update many CRM deals in a single operation.
+- **Bulk update tasks**: Update multiple tasks at once by ID.
+- **Calendar conflicts** (read-only): Detect attendee scheduling conflicts.
+- **Calendar event export ics** (read-only): Export single event as .ics.
+- **Calendar event meeting notes create**: Create a meeting-notes doc for an event, or — when document_id is given — link that existing doc and grant attendees access.
+- **Calendar event meeting notes unlink**: Unlink meeting-notes doc.
+- **Calendar event reminders create**: Add a reminder to a calendar event.
+- **Calendar event reminders list** (read-only): List event reminders.
+- **Calendar event reminders set**: Replace reminder list.
+- **Calendar event unbook resources**: Release every resource booked for a calendar event.
+- **Calendar export ics** (read-only): Export entire calendar as .ics.
+- **Calendar external auth url** (read-only): Start external provider OAuth.
+- **Calendar external calendars enable sync**: Enable two-way sync.
+- **Calendar external calendars list** (read-only): List calendars on connection.
+- **Calendar external connection delete**: Disconnect external account.
+- **Calendar external connections list** (read-only): List connected external accounts.
+- **Calendar external force sync**: Schedule every mirror calendar on this connection for an immediate background pull.
+- **Calendar external synced disable**: Disable sync for one calendar.
+- **Calendar import ics url**: Import an .ics feed by URL.
+- **Calendar reminder delete**: Delete one calendar event reminder by id.
+- **Calendar resource delete**: Delete a bookable calendar resource by id.
+- **Calendar resource get** (read-only): Get one bookable calendar resource by id.
+- **Calendar resource update**: Update a bookable calendar resource's details.
+- **Calendar resources create**: Create a bookable resource.
+- **Calendar upcoming reminders** (read-only): Reminders due to fire within the next window_hours (default 24, max 168), soonest first.
+- **Calendars create**: Create a calendar in the current workspace.
+- **Calendars delete**: Delete a calendar and every event on it.
+- **Calendars permissions get** (read-only): Get a single user's permission entry on a calendar, including their role, display name, and email.
+- **Calendars update**: Update calendar fields.
+- **Cancel scheduled email**: Cancel a scheduled email
+- **Cancel scheduled message**: Cancel a pending scheduled message so it's never sent.
+- **Cancel scheduler booking**: Cancel a booking as its host.
+- **Change coworker manager**: Reassign the accountable human (manager) for a coworker.
+- **Chat channel create**: Create a chat channel in the workspace.
+- **Chat channel delete**: Delete a chat channel and its messages.
+- **Chat channel get** (read-only): Get a specific channel by UUID, with members.
+- **Chat channel group remove**: Remove a group from channel (clean up fan-out rows)
+- **Chat channel join**: Self-join a public channel (no body required)
+- **Chat channel last messages** (read-only): Batch-fetch the latest message preview for multiple channels in one request.
+- **Chat channel leave**: Leave a chat channel you belong to.
+- **Chat channel member remove**: Remove a member from a chat channel.
+- **Chat channel members add**: Add member(s) or a group
+- **Chat channel notification preference**: Choose your channel notification preference, not mute/unmute.
+- **Chat channel notification prefs**: Update the caller's per-channel notification preferences (unread_display.
+- **Chat channel update**: Update a chat channel's name, topic or settings.
+- **Chat draft create saved**: Create a saved (named) draft for the caller.
+- **Chat draft delete**: Delete a draft owned by the caller.
+- **Chat draft update**: Update a saved draft owned by the caller.
+- **Chat drafts list** (read-only): The caller's chat drafts (inflight + saved), newest first.
+- **Chat emoji image** (read-only): Serve custom emoji image from GCS
+- **Chat mentions inbox** (read-only): Messages from other users that @-mention the caller.
+- **Chat message delete**: Delete one message from a chat channel.
+- **Chat message update**: Edit message or pin/unpin
+- **Chat preferences** (read-only): Workspace-level chat preferences readable by any authenticated member (default_reactions).
+- **Chat reactions inbox** (read-only): Messages authored by the caller that carry reactions from other users.
+- **Chat saved ids list** (read-only): Get saved message IDs for a channel (for UI bookmarked state)
+- **Chat sidebar create section**: Create a custom chat-sidebar section for the caller.
+- **Chat sidebar delete section**: Delete a chat-sidebar section owned by the caller.
+- **Chat sidebar list sections** (read-only): The caller's custom chat-sidebar sections, ordered by position.
+- **Chat sidebar reorder sections**: Reorder the caller's chat-sidebar sections.
+- **Chat sidebar update section**: Rename a chat-sidebar section or set its channels.
+- **Chat thread activity list** (read-only): List thread-activity inbox for the current user.
+- **Chat thread get** (read-only): Get the replies in a chat message's thread.
+- **Check availability** (read-only): Check free/busy availability for one or more users in a given time range.
+- **Check resource availability** (read-only): Check if a specific resource (room, equipment) is free in a time range.
+- **Check workspace slug** (read-only): Check whether a workspace slug is available.
+- **Claim document**: Make an unclaimed document yours.
+- **Clear calendar**: Delete ALL events from a calendar.
+- **Clear reminder**: Clear a pending reminder on a saved message.
+- **Clear sheet validation**: Remove a data validation rule from a spreadsheet by range.
+- **Clear user status**: Clear the current user's status (emoji + text + expiresAt).
+- **Code comment update**: Edit or delete an owned comment.
+- **Code connections list** (read-only): List repositories offered by the workspace GitHub installation.
+- **Code pull auto merge**: Enable or cancel durable Code auto-merge using the PR review policy and GitHub checks.
+- **Code pull changes since review** (read-only): Compare the caller's last reviewed head with the current head.
+- **Code pull comment**: Start a discussion or reply to a thread.
+- **Code pull commit** (read-only): Read the diff for one commit in this pull request.
+- **Code pull create**: Create or adopt a GitHub pull request with an accountable Ambiguous author.
+- **Code pull export** (read-only): Export the complete review record with original anchors and attribution as versioned JSON or Markdown.
+- **Code pull get** (read-only): Read a native review, its revision, discussion, checks and merge blockers.
+- **Code pull merge**: Merge the confirmed pull request version into its existing target after fresh revision, authorization, review-policy and GitHub checks.
+- **Code pull refresh**: Reconcile with current GitHub state.
+- **Code pull review**: Submit a review for the specified comparison as an authenticated user or agent with repository review permission.
+- **Code pull update**: Edit metadata, assign reviewers, follow, close, reopen or mark ready.
+- **Code pulls list** (read-only): Permission-filtered pull request inbox.
+- **Code repositories list** (read-only): List repositories the caller can read, with their Code role.
+- **Code repository compare** (read-only): Compare two repository refs before opening a pull request.
+- **Code repository connect**: Connect a repository from this workspace's existing GitHub installation.
+- **Code repository grant**: Grant or revoke a workspace user or team.
+- **Code repository grants** (read-only): Read repository access grants.
+- **Code repository metadata** (read-only): Read the repository labels and milestones available for pull requests.
+- **Code repository principals** (read-only): List workspace users and teams available for an explicit repository grant.
+- **Code repository reviewers** (read-only): List currently eligible Ambiguous reviewers, including agents.
+- **Code repository update**: Update the default target branch, review policy or connection.
+- **Code review dismiss**: Dismiss a blocking review with an auditable reason.
+- **Code review resolve**: Resolve or reopen a review without changing its verdict.
+- **Compute pivot table** (read-only): Compute the result of a persisted pivot table — applies row/column grouping, value aggregation, sort orders, and any matching slicer…
+- **Compute wiki rollups** (read-only): Compute and return rollup values for all rows in the database.
+- **Copy sheet to**: Copy a sheet tab from one spreadsheet to another.
+- **Coworkers conversation get** (read-only): Proxy (workspace-isolated).
+- **Coworkers conversations list** (read-only): Proxy (workspace-isolated).
+- **Coworkers execution cancel**: Kill switch.
+- **Coworkers execution get** (read-only): Get one execution with full trace data — task row, parent/children lineage, conversation, reasoning cycles, and tool-call activities.
+- **Coworkers executions list** (read-only): Proxy.
+- **Coworkers monitored channels add**: Proxy (workspace-isolated).
+- **Coworkers monitored channels list** (read-only): Proxy (workspace-isolated).
+- **Coworkers monitored channels remove**: Proxy (workspace-isolated).
+- **Coworkers playbook versions create**: Append a new version.
+- **Coworkers playbook versions get** (read-only): Get one historical version's instructions and subtasks.
+- **Coworkers playbook versions list** (read-only): List all versions of a playbook, newest first.
+- **Coworkers playbooks archive**: Archive a playbook.
+- **Coworkers playbooks create**: Create a playbook and its initial version.
+- **Coworkers playbooks delete**: Delete a playbook and its versions.
+- **Coworkers playbooks get** (read-only): Get one playbook with its current version's instructions and subtasks.
+- **Coworkers playbooks list** (read-only): List the coworker's playbooks (metadata + current version pointer).
+- **Coworkers playbooks update**: Edit playbook metadata in place (title, objective).
+- **Coworkers rotate token**: Rotate the management token used to talk to the coworker service.
+- **Create canvas**: Create a new (empty) canvas — a Miro-style infinite whiteboard.
+- **Create canvas element**: Add one element to a board — a sticky, text, shape, image, codeBlock, frame, swimlane, connector, or metric.
+- **Create chart**: Embed a chart on a tab of the sheet.
+- **Create contact**: Create a new CRM contact (person or company).
+- **Create contact group**: Create a named contact group for organizing contacts.
+- **Create crm property definition**: Define a typed custom property for contacts or deals.
+- **Create crm view**: Create a saved CRM view.
+- **Create data connector**: Create a new data connector that fetches data into specific cells of a sheet.
+- **Create deal**: Create a new CRM deal (revenue opportunity).
+- **Create deal template**: Create a deal template — a reusable preset for creating deals with standard pipeline/stage/amount and line items.
+- **Create doc**: Create a new doc.
+- **Create draft email**: Create a draft email without sending it.
+- **Create event**: Create a new calendar event.
+- **Create folder**: Create a new folder in Drive.
+- **Create form**: Create a new form for collecting data (surveys, feedback, registrations, quizzes).
+- **Create form variant**: Create a new A/B test variant by duplicating the parent form.
+- **Create mail label**: Create a mail label for organizing threads.
+- **Create mail rule**: Create a mail rule that acts on matching messages.
+- **Create mail template**: Create a reusable mail template for composing.
+- **Create named range**: Create a named range or named expression on a spreadsheet.
+- **Create pipeline**: Create a new CRM pipeline with ordered stages.
+- **Create pivot table**: Create a pivot table from sheet data.
+- **Create presentation**: Create a new presentation deck.
+- **Create product**: Create a product in the workspace catalog.
+- **Create project**: Create a new project to group related tasks.
+- **Create project update**: Post a status update on a project.
+- **Create quote**: Create a CRM quote (proposal) with line items.
+- **Create resource comment**: Create a comment on a document, task, wiki page, mail conversation, pull request, or code review.
+- **Create role**: Create a custom role with specific permissions.
+- **Create scheduler link**: Create a scheduler link (booking page).
+- **Create scoring rule**: Create a lead scoring rule.
+- **Create sequence**: Create a multi-step CRM sequence (email/wait/task/call/branch steps).
+- **Create shared drive**: Create a shared drive.
+- **Create sheet**: Create a new spreadsheet.
+- **Create sheet image**: Create editable floating images with cell anchors and CSS pixel geometry.
+- **Create sheet picture group**: Create editable picture groups with cell anchors and CSS pixel geometry.
+- **Create sheet shape**: Create editable floating shapes with editable text, cell anchors and CSS pixel geometry.
+- **Create sign document**: Create a draft signing document.
+- **Create sign template**: Create a reusable signing template from field layout and signer roles.
+- **Create slicer**: Add a slicer to a tab of the sheet.
+- **Create slide master**: Create a new master slide for a deck.
+- **Create subtask**: Create a subtask under the given parent task.
+- **Create task**: Create a new task.
+- **Create team**: Create a new team in the workspace.
+- **Create wiki page**: Create a new wiki page within a space.
+- **Create wiki page version**: Create a manual snapshot of the current wiki page state.
+- **Create wiki space**: Create a new wiki space (a top-level container for pages).
+- **Create wiki synced block**: Create a synced block — a reusable content fragment that can be embedded in multiple wiki pages and stays in sync everywhere it's used.
+- **Create workspace invite**: Create workspace invites.
+- **Crm contact file attach**: Attach a Drive file to a contact.
+- **Crm contact file detach**: Detach a file from a contact
+- **Crm contact files list** (read-only): List files attached to a contact
+- **Crm contact photo get** (read-only): Serve the photo image stored for a CRM contact.
+- **Crm deal activities** (read-only): List activities for deal (owner-scoped)
+- **Crm deal file attach**: Attach a Drive file to a deal.
+- **Crm deal file detach**: Detach a file from a deal
+- **Crm deal files list** (read-only): List files attached to a deal
+- **Crm quote pdf** (read-only): Export quote as PDF (or printable HTML with ?format=html)
+- **Cycles add tasks**: Add tasks to the cycle.
+- **Cycles analytics** (read-only): Burndown + summary analytics for the cycle.
+- **Cycles complete**: Complete a cycle.
+- **Cycles create**: Create a new cycle.
+- **Cycles delete**: Delete a cycle.
+- **Cycles get** (read-only): Get one task cycle and its dates by id.
+- **Cycles list** (read-only): List cycles in the active workspace.
+- **Cycles remove tasks**: Remove tasks from the cycle.
+- **Cycles update**: Update cycle fields.
+- **Cycles velocity** (read-only): Cross-cycle velocity (last N closed cycles).
+- **Decide access request**: Approve an open access request at a named role, or decline it.
+- **Decide mail approval**: Approve and send, request changes, reject, or (as the sender) withdraw one submitted email.
+- **Delete activity**: Delete one logged CRM activity by id.
+- **Delete canvas element**: Delete one element from a board by id.
+- **Delete chart**: Remove a chart from the sheet.
+- **Delete conditional format**: Delete a conditional formatting rule from a spreadsheet by its ID.
+- **Delete contact**: Delete a CRM contact (owner-scoped).
+- **Delete contact group**: Delete a contact group.
+- **Delete contact photo**: Delete a CRM contact's profile photo.
+- **Delete coworker**: Delete a coworker (revokes API key + tears down config).
+- **Delete crm property definition**: Delete a custom-property definition.
+- **Delete crm view**: Delete a saved CRM view.
+- **Delete custom emoji**: Delete a custom emoji from the workspace.
+- **Delete data connector**: Delete a data connector.
+- **Delete deal**: Delete a CRM deal (owner-scoped).
+- **Delete deal line item**: Delete a deal line item.
+- **Delete deal template**: Delete a deal template (does not affect deals previously created from it).
+- **Delete document version**: Delete a version snapshot of a document.
+- **Delete email**: Delete one email message by id.
+- **Delete event**: Delete a calendar event.
+- **Delete file**: Delete a file or folder from Drive.
+- **Delete form**: Delete a form and all its responses.
+- **Delete form response**: Delete a single form response.
+- **Delete form variant**: Delete an A/B test variant (and its underlying duplicated form).
+- **Delete mail label**: Delete one mail label from this mailbox.
+- **Delete mail rule**: Delete one mail rule by id.
+- **Delete mail template**: Delete one saved mail template by id.
+- **Delete named range**: Delete a named range from a spreadsheet by name.
+- **Delete pipeline**: Delete a CRM pipeline and all of its stages.
+- **Delete pivot table**: Remove a pivot table from the sheet.
+- **Delete product**: Delete a product from the workspace catalog.
+- **Delete project**: Delete a project by ID.
+- **Delete quote**: Delete a CRM quote and its line items.
+- **Delete recurring event future**: Delete this and all future occurrences of a recurring event by adding an UNTIL clause to the master's RRULE, ending the series the day…
+- **Delete recurring event single**: Delete a single occurrence of a recurring event by adding the occurrence date to the master's excluded_dates.
+- **Delete resource comment**: Delete an existing document, task, wiki, mail-thread or Code comment by its comment ID.
+- **Delete role**: Delete a custom role.
+- **Delete scheduler link**: Delete a scheduler link.
+- **Delete scoring rule**: Delete a lead scoring rule.
+- **Delete sequence**: Delete a sequence (and all its enrollments).
+- **Delete shared drive**: Delete a shared drive (destructive, manager-only).
+- **Delete sheet columns**: Delete columns atomically and return the bounded change receipt for undo or redo.
+- **Delete sheet image**: Delete editable floating images with cell anchors and CSS pixel geometry.
+- **Delete sheet picture group**: Delete editable picture groups with cell anchors and CSS pixel geometry.
+- **Delete sheet rows**: Delete rows from a sheet tab by 0-based index.
+- **Delete sheet shape**: Delete editable floating shapes with editable text, cell anchors and CSS pixel geometry.
+- **Delete slicer**: Remove a slicer from the sheet.
+- **Delete slide master**: Delete an unused master slide.
+- **Delete team**: Permanently delete a team from the workspace.
+- **Delete user**: Irreversibly delete a member.
+- **Delete wiki page**: Move a wiki page to Trash, together with every page beneath it.
+- **Delete wiki synced block**: Soft-delete a synced block.
+- **Detach master from slide**: Detach a slide from its master.
+- **Docs create named range**: Create a named range (template placeholder) on a document.
+- **Docs delete named range**: Delete a named range (template placeholder) from a document by name.
+- **Docs list named ranges** (read-only): List all named ranges (template placeholders) defined on a document.
+- **Documents asset create**: Add an image to a doc, sheet, slide deck or canvas board as one of its own assets and get back the URL its body should store…
+- **Documents comment delete**: Delete a comment.
+- **Documents comment reaction add**: Add an emoji reaction to a comment.
+- **Documents comment reaction remove**: Remove the caller's emoji reaction from a comment.
+- **Documents comment resolve**: Edit your own comment or resolve a thread.
+- **Documents comment thread mark read**: Mark one comment thread read for the requester, clearing its unread badge.
+- **Documents comment thread mark unread**: Mark one comment thread unread for the requester so it stays flagged until reopened, even when its only comments are the requester's own.
+- **Documents comments create**: Add a threaded comment.
+- **Documents comments list** (read-only): List threaded comments.
+- **Documents comments mark read**: Advance the requester's last-seen marker so the unread badge clears.
+- **Documents delete**: Soft-delete a document (move to trash).
+- **Documents duplicate**: Make a copy.
+- **Documents permanent delete**: Permanently delete a trashed document.
+- **Documents pin**: Toggle pinned state.
+- **Documents restore**: Restore a trashed document.
+- **Documents shared with me** (read-only): Documents shared with the calling account through an explicit permission grant, across every workspace and every identity the account owns.
+- **Documents star**: Toggle starred state.
+- **Documents thumbnail** (read-only): Content-derived thumbnail for doc/sheet/slide cards.
+- **Documents trash list** (read-only): Find all deleted native Docs, Sheets, Slides and Canvas items owned by the caller.
+- **Documents version get** (read-only): Get a version's metadata + serialized content snapshot.
+- **Documents version revert**: Revert the document to a prior version.
+- **Documents versions create**: Create a manual snapshot (forces past the 5-minute throttle).
+- **Documents versions list** (read-only): List version snapshots, newest-first, cursor-paginated (default 50 per page).
+- **Drive file confirm upload**: Confirm a presigned upload completed successfully.
+- **Drive file content** (read-only): A file's bytes.
+- **Drive file import**: Add a file to Drive from JSON, for clients that cannot send multipart.
+- **Drive file request create**: Create a revocable, write-only public file request for a folder.
+- **Drive file request remint**: Replace a live file request's capability token without changing its request identity, limits, upload progress, or expiry.
+- **Drive file request revoke**: Revoke a folder's public file request immediately.
+- **Drive file requests list** (read-only): List the caller's file requests for one owned Drive folder.
+- **Drive file tag attach**: Attach one of your tags to a Drive file, a doc/sheet/slide, or a form, so one tag can group a PDF with the document it belongs to.
+- **Drive file tag detach**: Detach a tag from a Drive file, a doc/sheet/slide, or a form.
+- **Drive file update**: Rename, move, or star/unstar a file.
+- **Drive file upload init**: Initiate a file upload.
+- **Drive files recent** (read-only): Recently used files for the current user — files they opened in the last 30 days (their own views, including files shared with them that…
+- **Drive files shared with me** (read-only): Files shared with the current user through a direct, team or external grant, newest share first (sort=modified orders by last modified…
+- **Drive files starred** (read-only): Files the current user has starred.
+- **Drive files suggested** (read-only): Files the current user is likely to want next, each with the reason it is suggested.
+- **Drive folder ancestors** (read-only): Breadcrumb chain (root → leaf) for a folder.
+- **Drive publish gallery**: Publish a folder as an anyone-with-link gallery.
+- **Drive revoke gallery**: Revoke a folder gallery.
+- **Drive shared drive folder create**: Create a folder inside a shared drive.
+- **Drive tag create**: Create a new tag in the user's catalog.
+- **Drive tag delete**: Delete a tag (cascades to all file assignments).
+- **Drive tag files list** (read-only): List everything you tagged with the given tag.
+- **Drive tag update**: Rename, recolor, or reorder a tag.
+- **Drive tags list** (read-only): Current user's tag catalog.
+- **Duplicate slide**: Deep-copy a slide within the same deck.
+- **Duplicate task**: Clone a task — copies title (appends ' (copy)'), description, priority, project, goal, cycle, estimate, due/start date, recurrence, custom…
+- **Edit recurring event all**: Edit all occurrences in a recurring series.
+- **Edit recurring event future**: Edit this and all future occurrences of a recurring event by splitting the series at the given date.
+- **Edit recurring event single**: Edit a single occurrence of a recurring event, creating an exception without affecting other occurrences.
+- **Empty trash**: Permanently delete the trashed files the user holds the owner rung on.
+- **Enroll contact in sequence**: Enroll a contact in a CRM sequence so they begin receiving the automated steps (emails, tasks, calls).
+- **Ensure wiki reverse relation**: Auto-create the reverse relation property on the target database if missing.
+- **Export document** (read-only): Export a document, sheet, or slide to one of its supported standard formats.
+- **Export drive file** (read-only): Export a workspace document (Doc, Sheet, or Slide) to a file format via its Drive ID.
+- **Export form responses** (read-only): Download all matching form responses as CSV with field labels, display values, blank unanswered cells, and ISO submission timestamps.
+- **Find and replace in deck**: Find and replace text across all slides in a presentation.
+- **Formatter set** (read-only): Set a flat map of fields on the node output.
+- **Get account erasure outcome** (read-only): Read a deleted member's durable erasure outcome and notice-delivery state.
+- **Get activity** (read-only): Get a single activity by ID.
+- **Get billing bonuses** (read-only): Return the workspace's full earned-bonus history, newest-first — perpetual activation bonuses merged with one-time activation grants.
+- **Get billing quota** (read-only): Return the workspace's unified action-meter view.
+- **Get calendar** (read-only): Get a single calendar by ID.
+- **Get calendar colors** (read-only): Get the available color palette for calendars and events.
+- **Get canvas** (read-only): Get a full canvas by id, including every element in data.elements.
+- **Get canvas elements** (read-only): Batch-fetch specific elements of a board by id — pass ids as a comma-separated list (max 500) and only those elements are returned, never…
+- **Get canvas frame** (read-only): Get a frame (or swimlane) element and its children — every element whose frameId points at it.
+- **Get canvas manifest** (read-only): Get a bounded manifest of a board — element ids, types, and bounds only (no style/content).
+- **Get channel messages** (read-only): Get recent messages from a chat channel.
+- **Get channel read receipts** (read-only): Get per-member read positions for a channel — who has read up to which message.
+- **Get contact** (read-only): Get a single CRM contact by ID, including full details.
+- **Get contact score** (read-only): Get a contact's current lead score with a breakdown of which scoring rules matched and how many points each contributed.
+- **Get cover thumbnail** (read-only): Get the PNG thumbnail bytes for the first slide (cover image) of a presentation.
+- **Get coworker** (read-only): Get one AI coworker's configuration by id.
+- **Get coworker status** (read-only): Get a coworker's runtime status (proxied from coworker service).
+- **Get crm analytics** (read-only): Get analytics for accessible deals, optionally scoped to one pipeline.
+- **Get crm metrics** (read-only): Get pipeline metrics summary.
+- **Get crm reports** (read-only): Get CRM revenue, deals-by-source, pipeline-by-owner, and activity reports for accessible records, optionally scoped to one pipeline.
+- **Get current workspace** (read-only): Get the active workspace (name, slug, logo).
+- **Get data connector** (read-only): Get a single data connector by ID, including its config and last-run status.
+- **Get deal** (read-only): Get a single CRM deal by ID, including full details.
+- **Get deal template** (read-only): Get a single deal template with its line items and resolved pipeline/stage names.
+- **Get detailed user presence** (read-only): Get detailed presence for a set of users — online (≤5min), idle (5–30min), or offline — plus the lastActiveAt timestamp.
+- **Get docs page layout default** (read-only): Get the caller's default layout for new Docs.
+- **Get document** (read-only): Get a single document by ID, including its full content and comments.
+- **Get document footnotes** (read-only): Get the footnotes from a document.
+- **Get document headers footers** (read-only): Get the default, first-page, and even-page headers and footers from a document as ProseMirror JSON nodes (or null if not set).
+- **Get document page style** (read-only): Get the page-level formatting for a document.
+- **Get drive storage** (read-only): Get Drive storage usage.
+- **Get drive storage breakdown** (read-only): Storage breakdown by file type.
+- **Get email** (read-only): Get a single email by ID, including full Markdown body, sender, recipients (to/cc/bcc), subject, and timestamps.
+- **Get email attachment url** (read-only): Get an attachment download URL.
+- **Get email calendar invite** (read-only): Get calendar invite embedded in an email.
+- **Get email deliverability** (read-only): Get email deliverability statistics (sent/bounced/complained/opened rates) for the past 30 days.
+- **Get email opens** (read-only): Fetch open events for an email (sender only) Returns the rollup (first/last seen, open count) plus up to the most recent 50 individual…
+- **Get email signature** (read-only): Get the workspace default email signature (Markdown).
+- **Get entity preview** (read-only): Look up a hover-card style preview of any referenced entity (document, task, contact, deal, channel, chat message, user, event, file, wiki…
+- **Get event** (read-only): Get a single calendar event by ID, including full details.
+- **Get event instances** (read-only): List individual occurrences of a recurring event within a date range.
+- **Get feedback** (read-only): Read back one submission by its receipt.
+- **Get file info** (read-only): Get detailed information about a file or folder in Drive.
+- **Get form** (read-only): Get a form's full details including field schema, settings, publish status, and slug.
+- **Get form ab analytics** (read-only): Get A/B test comparison analytics for a form with variants.
+- **Get form analytics** (read-only): Get analytics for a form.
+- **Get form response** (read-only): Get a single form response by ID.
+- **Get mail approval** (read-only): Read one submitted email exactly as it will send — From, Reply-To, the complete To/Cc/Bcc set, subject, body with signature applied,…
+- **Get mail approval attachment url** (read-only): Presigned URL for one frozen attachment, addressed by its position in the manifest.
+- **Get mail rule** (read-only): Get one mail rule's conditions and actions by id.
+- **Get mail signature** (read-only): Get the effective email signature.
+- **Get mail template** (read-only): Get one saved mail template by id.
+- **Get mail thread** (read-only): Get all emails in a thread + muted flag.
+- **Get message readers** (read-only): List the users who have read a specific message (i.e.
+- **Get module availability** (read-only): Which productivity modules are enabled for the caller's workspace.
+- **Get my access request** (read-only): Whether you have an open access request for a document, spreadsheet, presentation, canvas, Drive item, form, wiki page, or calendar, task,…
+- **Get notification keywords** (read-only): Get the current user's notification keywords.
+- **Get ooo status** (read-only): Check out-of-office status for one or more users.
+- **Get pipeline** (read-only): Get a single CRM pipeline by ID with its ordered stages and its visibility — workspace when the pipeline is shared with the whole…
+- **Get presentation** (read-only): Get a presentation's full data including all slides and their elements.
+- **Get product** (read-only): Get one CRM product from the catalog by id.
+- **Get project** (read-only): Get a single project by ID, including task count, visibility, and metadata.
+- **Get quote** (read-only): Get a single CRM quote with its line items and linked deal/contact/company/owner.
+- **Get read receipts default** (read-only): Get read-receipts default for new compose.
+- **Get resolved presence** (read-only): Cold-hydrate the resolved presence dot for a set of users in the current workspace.
+- **Get scheduler link** (read-only): Get a single scheduler link (owner-scoped) with its settings and booking count.
+- **Get security settings** (read-only): Get workspace security settings (require_2fa, session_timeout_hours, password_min_length, ip_allowlist).
+- **Get sequence** (read-only): Get a single sequence with its full step list and current enrollment count.
+- **Get settings** (read-only): Get all workspace settings.
+- **Get shared drive** (read-only): Get shared drive details.
+- **Get sheet** (read-only): Get a spreadsheet's structured data including columns, rows, and formulas.
+- **Get sheet range** (read-only): Get a rectangular range of cell values from a sheet.
+- **Get sign audit** (read-only): Get the append-only audit trail for a visible signing document.
+- **Get sign document** (read-only): Get a signing document with signers and fields.
+- **Get slide thumbnail** (read-only): Get the PNG thumbnail bytes for a specific slide.
+- **Get snooze presets** (read-only): Get the user's custom snooze quick-presets.
+- **Get swipe actions** (read-only): Get the caller's own mail-row swipe actions.
+- **Get task** (read-only): Get a single task by ID, including full details.
+- **Get team** (read-only): Get details of a single team including its first 10 members.
+- **Get undo send setting** (read-only): Get undo-send duration preference.
+- **Get unread counts** (read-only): Get the full unread projection (mail inbox, per-channel chat badges with mute/preference resolved, notifications, total).
+- **Get usage stats** (read-only): Get workspace usage statistics including storage breakdown by user and module, active user count, API call volume, and per-module adoption…
+- **Get user presence** (read-only): Get online status (true = online within the last 5 minutes) for a set of users in the current workspace.
+- **Get user status** (read-only): Get the current user's active chat status (emoji + text) and DND-until timestamp.
+- **Get users notification preferences** (read-only): Return the user's notification preferences, merged with defaults so newly-added keys always render.
+- **Get vacation settings** (read-only): Get vacation auto-reply settings.
+- **Get wiki database row** (read-only): Get a single database row by id.
+- **Get wiki page** (read-only): Get a wiki page's full details including Markdown content, child pages, backlinks (pages that link to this page), and metadata.
+- **Get wiki page version** (read-only): Get a wiki page version's full content (title + markdown body).
+- **Get wiki space graph** (read-only): Get backlink graph data for a wiki space.
+- **Get wiki synced block** (read-only): Get a synced block by ID.
+- **Get workspace** (read-only): Get the current workspace details (id, name, slug).
+- **Grant access**: Share a document, spreadsheet, presentation, canvas, Drive item, form, wiki page, or calendar with exactly one user_id or named team_id…
+- **Group slide elements**: Group existing top-level elements on a slide into a single group.
+- **Home digest** (read-only): Workspace-home roll-up.
+- **Insert page break**: Insert a page break into a document at a given position.
+- **Insert page number**: Insert a page number placeholder into a document.
+- **Insert section break**: Insert a section break into a document at a given position.
+- **Invite user**: Invite a human by email with a member or admin role.
+- **Leave resource**: Remove your own direct grant on a document, spreadsheet, presentation, canvas, Drive item, form, wiki page, or calendar.
+- **List access** (read-only): List named/team grants, workspace/link tiers and pending invitations for a document, spreadsheet, presentation, canvas, Drive item, form,…
+- **List activity** (read-only): List recent workspace activity (last 30 days).
+- **List address book** (read-only): List the caller's address book.
+- **List archived threads** (read-only): List archived threads (one per thread)
+- **List blocked senders** (read-only): List all blocked senders for current user's mailbox
+- **List calendar events** (read-only): List events scoped to a single calendar by its id — the RESTful path variant of list_events (/api/calendars/events?calendar_id=…).
+- **List calendars** (read-only): List the user's calendars.
+- **List channels** (read-only): List the user's chat channels.
+- **List charts** (read-only): List every chart across every tab of the sheet.
+- **List conditional formats** (read-only): List all conditional formatting rules on a spreadsheet.
+- **List contact activities** (read-only): List activities (notes, calls, emails, meetings, tasks) on a specific contact's timeline.
+- **List contact group members** (read-only): List all contacts that are members of a contact group.
+- **List contact groups** (read-only): List all contact groups in the workspace with their member counts.
+- **List contacts** (read-only): List CRM contacts.
+- **List crm activities** (read-only): List recent CRM activity visible to the current user across contact and deal timelines.
+- **List crm property definitions** (read-only): List the workspace's typed custom-property definitions for contacts and deals, including relation properties that link a record to another…
+- **List crm views** (read-only): List the user's saved CRM views (filter + sort presets for contacts/companies/deals).
+- **List crm workspace users** (read-only): List all users (humans and agents) in the current workspace who can own CRM records.
+- **List custom emojis** (read-only): List all custom emojis uploaded to the current workspace.
+- **List data connector run history** (read-only): List recent execution history for a data connector.
+- **List data connectors** (read-only): List data connectors registered on a sheet.
+- **List deal line items** (read-only): List all line items for a deal, plus the computed total.
+- **List deal templates** (read-only): List deal templates in the workspace (reusable deal presets.
+- **List deals** (read-only): List CRM deals.
+- **List documents** (read-only): List the current user's documents.
+- **List drafts** (read-only): List the unsent draft emails in this mailbox.
+- **List drive folders** (read-only): List only folders (not files) in Drive — useful for folder pickers.
+- **List email attachments** (read-only): List attachments for an email
+- **List enrollment events** (read-only): Get the event log for a single sequence enrollment (step-executed, email-opened, email-replied, branch-taken, completed).
+- **List event resources** (read-only): List resources currently booked for an event (rooms, equipment).
+- **List events** (read-only): List calendar events across all of the user's calendars.
+- **List feedback** (read-only): List the caller's own submissions, newest first, as public projections (see get_feedback).
+- **List files** (read-only): List files and folders in the user's Drive.
+- **List folder children** (read-only): List the direct children of one folder, named in the path.
+- **List form responses** (read-only): List responses submitted to a form.
+- **List form variants** (read-only): List A/B test variants for a form.
+- **List forms** (read-only): List the user's forms.
+- **List forwarding addresses** (read-only): List forwarding addresses + recent log.
+- **List identity api keys** (read-only): List the calling user's own API keys.
+- **List inbox** (read-only): List the user's received emails (inbox).
+- **List mail approvals** (read-only): List email submissions awaiting a human decision.
+- **List mail by label** (read-only): List emails with a specific label
+- **List mail labels** (read-only): List every mail label in this mailbox.
+- **List mail rules** (read-only): List mail rules / filters.
+- **List mail templates** (read-only): List the saved mail templates in this mailbox.
+- **List muted threads** (read-only): List muted threads (inbox view for muted conversations)
+- **List my teams** (read-only): List teams the current user belongs to, with their role (admin or member) in each.
+- **List my workspaces** (read-only): List workspaces the current user belongs to (human users may have multiple).
+- **List named ranges** (read-only): List named ranges and named expressions on a spreadsheet.
+- **List pinned messages** (read-only): List all pinned messages in a channel.
+- **List pipeline members** (read-only): List the members of a CRM pipeline.
+- **List pipelines** (read-only): List all CRM pipelines with their stages.
+- **List pivot tables** (read-only): List every pivot table across every tab of the sheet.
+- **List products** (read-only): List products in the workspace catalog.
+- **List project updates** (read-only): List status updates for a project, newest first.
+- **List projects** (read-only): List accessible projects in the current workspace, optionally filtering by a case-insensitive name query before pagination.
+- **List protected ranges** (read-only): List all protected ranges on a spreadsheet.
+- **List quotes** (read-only): List CRM quotes/proposals.
+- **List resource comments** (read-only): Read comments on a document, task, wiki page, mail conversation, pull request, or code review.
+- **List resources** (read-only): List bookable resources (rooms, equipment) in the workspace.
+- **List roles** (read-only): List all roles in the workspace (system roles + custom roles).
+- **List running executions** (read-only): List in-flight executions across every coworker in the active workspace.
+- **List saved messages** (read-only): List all messages the current user has saved (bookmarked) across all channels.
+- **List scheduled mail** (read-only): List scheduled (unsent) emails
+- **List scheduled messages** (read-only): List all pending scheduled messages for the current user across all channels.
+- **List scheduler bookings** (read-only): List all bookings (across all scheduler links) owned by the current user.
+- **List scheduler link bookings** (read-only): List all bookings for a single scheduler link (owner-scoped).
+- **List scheduler links** (read-only): List the user's scheduler links (Calendly-style booking pages).
+- **List scorable fields** (read-only): List the contact fields that can be used in scoring rules (lifecycle_stage, industry, title, website, custom_properties.*, etc.) and the…
+- **List scoring rules** (read-only): List all lead scoring rules for the workspace.
+- **List send as addresses** (read-only): List available send-as addresses for current user
+- **List sent mail** (read-only): List the emails sent from this mailbox.
+- **List sequence enrollments** (read-only): List all enrollments for a sequence, including each contact's current step, status, and next execute time.
+- **List sequences** (read-only): List all CRM email/task sequences (multi-step automated outreach campaigns).
+- **List shared drive files** (read-only): List files in a shared drive.
+- **List shared drive members** (read-only): List shared drive members.
+- **List shared drives** (read-only): List shared drives user is a member of.
+- **List sheet images** (read-only): List editable floating images with cell anchors and CSS pixel geometry.
+- **List sheet picture groups** (read-only): List editable picture groups with cell anchors and CSS pixel geometry.
+- **List sheet shapes** (read-only): List editable floating shapes with editable text, cell anchors and CSS pixel geometry.
+- **List sheet validations** (read-only): List all data validation rules on a spreadsheet.
+- **List sheets** (read-only): List the current user's spreadsheets (owned + shared).
+- **List sign documents** (read-only): List signing documents in the workspace.
+- **List sign templates** (read-only): List reusable signing templates.
+- **List slicers** (read-only): List every slicer across every tab of the sheet.
+- **List slide masters** (read-only): List the master slide templates registered on a presentation.
+- **List snoozed mail** (read-only): List the snoozed emails in this mailbox.
+- **List starred mail** (read-only): List the starred emails in this mailbox.
+- **List task attachments** (read-only): List Drive files attached to a task.
+- **List task templates** (read-only): List task templates in the workspace.
+- **List tasks** (read-only): List tasks in the workspace.
+- **List teams** (read-only): List workspace teams visible to the current user.
+- **List trashed files** (read-only): Find deleted Drive file rows and folders the caller owns, trashed themselves, or holds the owner rung on (a folder above it is theirs, or…
+- **List user statuses** (read-only): List active chat statuses (emoji + text + DND) for users in the workspace.
+- **List users** (read-only): List workspace members and agents with identity, role, status, storage usage, and timestamps.
+- **List wiki page databases** (read-only): List all inline databases hosted on a wiki page.
+- **List wiki page versions** (read-only): List the saved version snapshots for a wiki page (most recent first).
+- **List wiki space pages** (read-only): List pages in a wiki space with offset/limit pagination.
+- **List wiki spaces** (read-only): List all wiki spaces.
+- **List wiki synced blocks by page** (read-only): List synced blocks that were originally created on a specific page.
+- **Log activity**: Log an activity on a CRM contact or deal timeline.
+- **Mail alias create**: Add a new alias on a verified workspace domain
+- **Mail alias delete**: Delete a send-from alias address by id.
+- **Mail alias set default**: Set alias as default send-as identity
+- **Mail aliases list** (read-only): List all aliases for current user's mailbox
+- **Mail blocklist clear**: Unblock by raw pattern (convenience for "Unblock sender" button)
+- **Mail blocklist remove**: Unblock a sender by their blocklist entry id.
+- **Mail bulk modify**: Apply one bulk action to emails chosen by id or search query.
+- **Mail export eml** (read-only): Export a message as RFC 5322 EML, returning retained source octets when available.
+- **Mail external auth url** (read-only): Start connected-mailbox (Gmail) OAuth — returns the consent URL.
+- **Mail external connection delete**: Disconnect a connected mailbox.
+- **Mail external connection test** (read-only): Verify a connected mailbox by fetching its Gmail profile.
+- **Mail external connections list** (read-only): List connected mailboxes.
+- **Mail folder counts** (read-only): Per-folder badge counts for sidebar Returns { inbox.
+- **Mail label counts** (read-only): Per-label unread counts for sidebar badges.
+- **Mail message unsubscribe**: One-click unsubscribe.
+- **Mail shared mailbox assignees** (read-only): The people who can hold a thread in this shared mailbox — team grants flattened to their members.
+- **Mail shared mailbox create**: Create a shared mailbox and address it on a workspace domain (admin only)
+- **Mail shared mailbox delete**: Retire a shared mailbox (admin only).
+- **Mail shared mailbox get** (read-only): Get one shared mailbox and its members
+- **Mail shared mailbox member add**: Grant a user or a team access to a shared mailbox (admin only)
+- **Mail shared mailbox member remove**: Revoke a user's or team's access to a shared mailbox (admin only)
+- **Mail shared mailbox restore**: Restore a retired shared mailbox (admin only).
+- **Mail shared mailbox update**: Rename a shared mailbox's display name.
+- **Mail shared mailboxes list** (read-only): List the shared mailboxes the caller holds, or every one in the workspace with scope=managed (admin only)
+- **Mail smart compose** (read-only): Suggest a short continuation of an email draft being written.
+- **Mail thread mute status** (read-only): Check if a thread is muted
+- **Mail trash list** (read-only): List trashed (soft-deleted) emails — the caller's own rows in folder='trash'.
+- **Mail unread summary** (read-only): Unread mail summary for a cross-module unread view.
+- **Mark all channels read**: Mark all channels as read for the current user.
+- **Mark channel read**: Mark a channel as read up to a specific message.
+- **Mark channel unread**: Mark a channel as unread starting from a specific message.
+- **Mark email read**: Update email status (read/unread, starred, snoozed)
+- **Mark thread read**: Mark a thread as fully read up to the latest reply.
+- **Mark thread unread**: Mark a thread as unread so it reappears in the threads inbox with an unread badge.
+- **Merge contacts**: Merge two CRM contacts that represent the same person/company.
+- **Migrate document source**: Activate source-preserving editing on an existing document.
+- **Modify contact group members**: Bulk add or remove contacts from a contact group.
+- **Move sheet column**: Move a column to a new position.
+- **Move sheet row**: Move a row to a new zero-based position, carrying its values, formatting, geometry and dependent references.
+- **Notifications dismiss**: Soft-delete (hide from default feed).
+- **Notifications list** (read-only): List notifications for the current user.
+- **Notifications mark all read**: Mark every unread notification in the optional resource/event scope as read.
+- **Notifications mark read**: Mark a single notification read.
+- **Notifications mark unread**: Convenience alias for PATCH /api/notifications/.
+- **Notifications mute create**: Create or refresh your in-app/live notification suppression rule for resourceId, eventType, or both.
+- **Notifications mute delete**: Remove a mute rule by id.
+- **Notifications mutes list** (read-only): List active mute rules.
+- **Notifications snooze**: Hide until {until.
+- **Notifications undismiss**: Restore a dismissed notification.
+- **Patch canvas element**: Update one element's fields (geometry, style, text, connector endpoints, lock).
+- **Patch users notification preferences**: Partial update of notification preferences.
+- **Pause coworker**: Pause coworker (stops scheduled executions).
+- **Permanent delete file**: Permanently delete a trashed file.
+- **Poll close**: Close a poll to further voting (creator or channel admin).
+- **Poll create**: Create a poll in a channel.
+- **Poll delete**: Delete a poll (creator or channel admin).
+- **Poll get** (read-only): Poll details (question, options, the caller's votes).
+- **Poll get by message** (read-only): Poll results for the poll attached to a chat message.
+- **Poll results** (read-only): Tallied poll results (respects anonymity).
+- **Poll unvote**: Remove the caller's vote for a poll option.
+- **Poll vote**: Cast a vote for a poll option.
+- **Project members add**: Add a member.
+- **Project members list** (read-only): List project members.
+- **Project members remove**: Remove a grant from the project.
+- **Project members update role**: Change a member's role.
+- **Project notification pref get** (read-only): Get the caller's notification preference for the project.
+- **Project notification pref set**: Set the caller's notification preference (level) for the project.
+- **Project templates apply**: Create a new project from a template.
+- **Project templates create**: Create a project template.
+- **Project templates delete**: Delete a project template.
+- **Project templates get** (read-only): Get a single project template.
+- **Project templates list** (read-only): List project templates in the workspace.
+- **Project updates delete**: Delete a status update.
+- **Project updates edit**: Edit a status update.
+- **Protect range**: Protect a range in a spreadsheet.
+- **Publish calendar**: Publish a calendar as a public read-only .ics feed URL (no auth required).
+- **Publish form**: Publish a form so it accepts public responses.
+- **Query wiki database** (read-only): Query rows from an inline database with optional view, filter, and sort.
+- **Realtime exchange connection capability**: Exchange the caller's normal credential (JWT or ak_ API key) for a short-lived realtime connection capability scoped to exactly the…
+- **Realtime exchange resource capability**: Exchange the caller's normal credential for a short-lived capability over ONE object-scoped channel.
+- **Recalculate lead scores**: Recalculate lead scores for all contacts in the workspace.
+- **Register custom domain**: Register a custom email domain as a pending row.
+- **Remove access**: Remove a named grant, pending invitation or link access on a document, spreadsheet, presentation, canvas, Drive item, form, wiki page, or…
+- **Remove forwarding address**: Remove a forwarding address
+- **Remove pipeline member**: Remove a user or team from a CRM pipeline.
+- **Remove role**: Remove a role from a user.
+- **Remove shared drive member**: Remove a shared drive member (manager-only.
+- **Remove sheet column**: Remove a column from a sheet tab by column ID.
+- **Remove sheet tab**: Remove a sheet tab by name.
+- **Remove slide**: Remove the slide at the given zero-based index.
+- **Remove task attachment**: Remove a file attachment from a task.
+- **Rename document version**: Rename a version snapshot of a document.
+- **Rename sheet tab**: Rename an existing sheet tab.
+- **Reorder mail labels**: Reorder the mail labels shown in the sidebar.
+- **Reorder mail rules**: Reorder the mail rules to change which runs first.
+- **Reorder slides**: Reorder slides in a presentation.
+- **Replace named range content**: Replace all content within a named range with new content.
+- **Replace shapes with image**: Replace text placeholder elements with an image across all slides.
+- **Replace sheet tab**: Replace a sheet tab's columns and/or rows wholesale.
+- **Request access**: Ask the owner of a document, spreadsheet, presentation, canvas, Drive item, form, wiki page, or calendar, task, project, or CRM pipeline…
+- **Reschedule scheduled email**: Change the delivery time of a pending scheduled email without changing its content.
+- **Resend forwarding verification**: Resend verification email
+- **Restore file**: Restore a file from trash.
+- **Restore sheet structure**: Undo or redo a structural change receipt without overwriting unrelated later edits.
+- **Restore task**: Restore a soft-deleted task when the caller has task editor access.
+- **Restore wiki synced block**: Restore a previously deleted synced block.
+- **Resume coworker**: Resume a paused coworker.
+- **Revert wiki page version**: Revert a wiki page to a previous version snapshot.
+- **Revoke api key**: Revoke an API key.
+- **Revoke identity api key**: Revoke (permanently delete) one of the calling user's own API keys.
+- **Rotate calendar publish url**: Rotate a published calendar's read-only subscription URL.
+- **Rsvp email invite**: RSVP to a calendar invite on an email.
+- **Rsvp event**: RSVP to a calendar event that the user is invited to.
+- **Run data connector**: Execute a data connector.
+- **Save message**: Bookmark an EXISTING chat message in the current user's private Later/saved list.
+- **Scan business card** (read-only): OCR a photo of a business card and extract structured contact fields (name, title, company, email, phone, website, address, notes).
+- **Search calendar events** (read-only): Full-text search across all calendar events for the current workspace.
+- **Search chat messages** (read-only): Find existing chat messages by keyword, phrase, or topic across the caller's accessible channels.
+- **Search mail** (read-only): Full-text + operator search (Gmail-style.
+- **Search palette** (read-only): Cross-module command-palette search — every module including chat messages.
+- **Search wiki** (read-only): Case-insensitive substring search across wiki page titles and Markdown content.
+- **Search workspace** (read-only): Search across every module in the user's workspace (docs, sheets, slides, canvas, tasks, contacts, deals, channels, chat messages, wiki,…
+- **Send draft email**: Send a previously created draft email.
+- **Send email**: Send an email from the current user.
+- **Send message**: Post a NEW message visible to the chat channel's members, or send a thread reply.
+- **Send quote**: Send a CRM quote via email to the contact.
+- **Send scheduled message now**: Deliver a pending scheduled message immediately instead of waiting for its scheduled time.
+- **Send test notification email**: Send a test notification email (useful for checking email rendering and deliverability).
+- **Set channel archived**: Archive or unarchive a chat channel.
+- **Set channel muted**: Mute or unmute a chat channel for yourself, including DMs, temporarily or indefinitely.
+- **Set deck fonts**: Set the heading and/or body font across a whole presentation.
+- **Set default send as**: Set the user's default send-as address.
+- **Set docs page layout default**: Set the caller's default layout for new Docs (pageless_default.
+- **Set document footnotes**: Set footnote body content on a document.
+- **Set document headers footers**: Set default, first-page, and even-page headers and footers.
+- **Set email archived**: Archive an email or return it to the inbox.
+- **Set email signature**: Set the workspace default email signature.
+- **Set mail signature**: Set personal email signature.
+- **Set mail thread assignee**: Assign a shared-mailbox conversation to a member, or clear its assignment with user_id=null.
+- **Set mail thread muted**: Mute or unmute a mail conversation.
+- **Set notification keywords**: Replace the current user's notification keyword list.
+- **Set pinned header rows**: Set the number of pinned (repeating) header rows on a table in a document.
+- **Set reaction**: Add or remove your emoji reaction on a chat message or a document, task, wiki, mail-thread or Code comment.
+- **Set read receipts default**: Toggle the default for new compose windows
+- **Set reminder**: Remind only the signed-in user about an existing chat message at a future time.
+- **Set resource starred**: Add or remove favorites (star/unstar) for documents, spreadsheets, presentations, canvases, Drive items, forms, channels or teams.
+- **Set sheet validation**: Set a data-validation rule on a spreadsheet cell range in A1 notation.
+- **Set snooze presets**: Set the user's custom snooze quick-presets (up to 10).
+- **Set swipe actions**: Set the caller's own mail-row swipe actions — one action per direction, chosen from archive, trash, read, star, snooze.
+- **Set task archived**: Archive or unarchive a task.
+- **Set task subscription**: Subscribe or unsubscribe yourself from a task's notifications.
+- **Set undo send setting**: Set undo-send duration (seconds).
+- **Set user dnd**: Enable or disable Do-Not-Disturb for the current user.
+- **Set user status**: Set the current user's chat status — an emoji, short text (<=100 chars), and optional auto-clear timestamp.
+- **Set vacation settings**: Update vacation auto-reply settings.
+- **Set visibility**: Set broad access to a document, spreadsheet, presentation, canvas, Drive item, form, wiki page, or calendar.
+- **Shared with me hide**: Hide one row from the caller's own Shared-with-me list.
+- **Shared with me list** (read-only): Everything shared with the calling account through a direct grant, a team grant, or a bound external grant, across docs / sheets / slides,…
+- **Shared with me undo leave**: Undo a "Remove me".
+- **Sheet get data** (read-only): Get the spreadsheet as the structured JSON canvas.
+- **Sheet update cells**: Update specific cells in a spreadsheet.
+- **Sign add field**: Add a signature field to a signing document.
+- **Sign add signer**: Add a signer or CC recipient.
+- **Sign get certificate** (read-only): Download the Certificate of Completion for a completed document.
+- **Sign get references** (read-only): List signing documents that use this document as a source.
+- **Sign prepare send**: Validate signers and render the PDF preview (draft → preview_pending).
+- **Sign remove field**: Remove a field from a signing document.
+- **Sign remove signer**: Remove a signer or CC recipient from a draft signing document.
+- **Sign reorder signers**: Atomically set the sequential signing order.
+- **Sign update field**: Reassign, reposition, resize, or change requiredness for a field on a draft signing document.
+- **Sign verify document** (read-only): Verify the integrity and signature of a completed document.
+- **Slide apply template**: Apply a slide template — built-in or workspace — to the deck or to a single slide.
+- **Slide layouts list** (read-only): List the slide-level layouts the editor knows about.
+- **Slide save as template**: Save an existing deck as a reusable workspace template.
+- **Slide star**: Star a deck.
+- **Slide stars list** (read-only): List IDs of slide decks the current user has starred.
+- **Slide templates list** (read-only): List the built-in slide deck templates.
+- **Slide unstar**: Unstar a deck.
+- **Slide use template**: Start a new deck from a template — built-in or workspace.
+- **Snooze email**: Snooze an email until a datetime.
+- **Snooze reminder**: Re-snooze an existing saved message by updating its remind_at time.
+- **Sort sheet**: Sort a tab's rows by one column, optionally within an exact filter range.
+- **Start task timer**: Start a time-tracking timer on a task for the current user.
+- **Stop task timer**: Stop the current user's active timer.
+- **Submit feedback**: Tell Ambiguous what happened in your own words.
+- **Submit form**: Submit a response to a published form, identified by its public slug or form ID.
+- **Task asset create**: Add an image to a task description as one of its own assets and get back the URL its body should store (/api/assets/{id}/content).
+- **Task collaborators add**: Share a task with one workspace member.
+- **Task collaborators list** (read-only): List the collaborators on a task — the people holding editor on it (and its subtasks) without a role on its project.
+- **Task collaborators remove**: Revoke a task collaborator's grant.
+- **Tasks activity** (read-only): List audit-log activity entries for a task (status changes, assignments, comments, label edits, etc.).
+- **Tasks batch** (read-only): Batch-fetch up to 50 tasks by ID.
+- **Tasks by key** (read-only): Resolve a workspace-scoped task key (e.g.
+- **Tasks delete**: Soft-delete a task.
+- **Tasks export** (read-only): Export authorized tasks matching the selected filters as CSV (default) or JSON.
+- **Tasks favorites add**: Pin a saved task view or project in your Tasks sidebar.
+- **Tasks favorites list** (read-only): List your Tasks-sidebar pins.
+- **Tasks favorites remove**: Unpin a saved task view or project from your Tasks sidebar, matching resource_type and resource_id.
+- **Tasks favorites reorder**: Reorder your Tasks-sidebar view/project pins using ordered_ids (favorite-row IDs, top-to-bottom), not resource IDs.
+- **Tasks inbox count** (read-only): Count of triage-bucket tasks (untriaged + projects in 'triage' status).
+- **Tasks labels assign**: Assign a label to a task.
+- **Tasks labels create**: Create a workspace task label.
+- **Tasks labels delete**: Delete a task label.
+- **Tasks labels list** (read-only): List task labels visible in the workspace, grouped by group_name.
+- **Tasks labels remove**: Remove a label assignment from a task.
+- **Tasks labels update**: Update a task label.
+- **Tasks pr links** (read-only): List GitHub pull requests linked to a task (via the integration-links service).
+- **Tasks relations batch** (read-only): Batch-fetch every relation type for up to 200 tasks.
+- **Tasks relations create**: Create a relation between two tasks.
+- **Tasks relations delete**: Delete a task relation edge.
+- **Tasks relations list** (read-only): List edges in the task-relations graph for a task (related, blocking, blocked_by, duplicate).
+- **Tasks remove subscriber**: Remove another user's subscription from a task.
+- **Tasks sla dashboard** (read-only): Aggregate SLA metrics for the workspace (compliance rates, avg times, counts per status).
+- **Tasks sla thresholds** (read-only): Get the workspace's SLA thresholds (response + resolution times per priority).
+- **Tasks subscribed** (read-only): List task IDs the caller is subscribed to (manual + auto-subscribed via creator/assignee/comment).
+- **Tasks subscription status** (read-only): Check whether the current user is subscribed to a task (and the reason if so).
+- **Tasks subscriptions list** (read-only): List all users subscribed to a task (with the reason each is subscribed).
+- **Tasks subtasks** (read-only): List immediate subtasks of a task (parent_task_id = .
+- **Tasks templates delete**: Delete a task template.
+- **Tasks templates get** (read-only): Get a single task template by ID.
+- **Tasks templates update**: Update a task template.
+- **Tasks views create**: Create a saved task view (filter + layout).
+- **Tasks views delete**: Delete a saved task view.
+- **Tasks views layout get** (read-only): Get the caller's layout preferences for a view, or fall back to the view's defaults.
+- **Tasks views layout update**: Upsert the caller's layout preferences for a view (per-project scope optional).
+- **Tasks views list** (read-only): List task views accessible to the caller (own + shared + system defaults).
+- **Tasks views update**: Update a saved task view (rename, change filters or layout defaults, toggle sharing).
+- **Teams cancel join request**: Cancel your own pending join request for this team.
+- **Teams get subscription** (read-only): Get the caller's email-delivery preference for the team.
+- **Teams join**: Join a team.
+- **Teams leave**: Leave a team.
+- **Teams members list** (read-only): Paginated member list.
+- **Teams members remove**: Remove a member.
+- **Teams members update role**: Change a member's role.
+- **Teams requests approve**: Approve a join request — adds the user as a member.
+- **Teams requests deny**: Deny a join request.
+- **Teams requests list** (read-only): List pending join requests.
+- **Teams searchable** (read-only): Search teams visible to the caller for the share dialog.
+- **Teams update subscription**: Update the caller's email-delivery preference for the team.
+- **Transfer ownership**: Make another principal owner of a document, spreadsheet, presentation, canvas, Drive item or form.
+- **Trash mail thread**: Trash all messages in a thread atomically.
+- **Unblock sender**: Unblock by id or pattern.
+- **Undo send email**: Undo an in-flight send within the undo-send window.
+- **Unenroll contact from sequence**: Permanently remove a contact from a CRM sequence (terminal — sets status to 'unenrolled').
+- **Unfurl link** (read-only): Fetch OpenGraph / link-preview metadata for a URL (title, description, image, site name, favicon).
+- **Ungroup slide elements**: Dissolve a group element on a slide back into independent top-level elements.
+- **Unprotect range**: Remove a protected range from a spreadsheet by its ID.
+- **Unpublish calendar**: Revoke the public .ics feed for a calendar, making it private again.
+- **Unpublish form**: Unpublish a form so it stops accepting public responses.
+- **Unsave message**: Remove a saved (bookmarked) message from the user's saved list.
+- **Untrash email**: Restore a trashed email to inbox
+- **Untrash mail thread**: Restore all trashed messages in a thread to inbox.
+- **Update access**: Change an existing named user/team grant on a document, spreadsheet, presentation, canvas, Drive item, form, wiki page, or calendar.
+- **Update api key**: Update an API key's name, scopes, or rate limit.
+- **Update canvas**: Update canvas-level metadata (title, preview cover).
+- **Update canvas timer**: Control a board's shared brainstorm countdown.
+- **Update channel member role**: Change a channel member's role to 'admin' or 'member'.
+- **Update chart**: Patch a chart's config — type, title, data range, overlay position, or series styling.
+- **Update conditional format**: Update a conditional formatting rule by ID.
+- **Update contact**: Update an existing CRM contact's fields.
+- **Update contact group**: Update an existing contact group's name, color, or sort order.
+- **Update coworker**: Update coworker metadata (persona, focus areas, display name, avatar).
+- **Update crm property definition**: Update a custom-property definition's label or select options.
+- **Update crm view**: Update a saved CRM view (rename, change filters, toggle default/shared).
+- **Update data connector**: Update a data connector's name, config, target cells, or refresh schedule.
+- **Update deal**: Update an existing CRM deal's fields.
+- **Update deal line item**: Update a deal line item (quantity, price, discount, name/description).
+- **Update deal template**: Update a deal template.
+- **Update deck settings**: Update deck-level settings.
+- **Update document**: Edit an existing document inline.
+- **Update document page style**: Set page-level formatting for a document.
+- **Update draft email**: Update an existing draft email.
+- **Update event**: Update an existing calendar event.
+- **Update form**: Update an existing form's title, description, fields, settings, or publish status.
+- **Update form variant**: Update an A/B test variant's name, traffic weight, or active status.
+- **Update identity api key**: Update name, scopes, or rate_limit on the calling user's own API key.
+- **Update mail label**: Update a mail label's name, color or sidebar order.
+- **Update mail rule**: Update a mail rule's conditions or actions.
+- **Update mail template**: Update a saved mail template's subject or body.
+- **Update named range**: Update a named range or named expression with either an A1 range or an exact literal Excel expression.
+- **Update pipeline**: Update a pipeline's name or stages.
+- **Update pivot table**: Patch a pivot table's config — source range, row/column/value fields, totals toggles, source-tab name.
+- **Update product**: Update a CRM product's name, price or other fields.
+- **Update project**: Update a project's name, description, icon, or color.
+- **Update quote**: Update a CRM quote.
+- **Update resource comment**: Update an existing task, wiki, mail-thread or Code comment by its comment ID.
+- **Update role**: Update a custom role's name or permissions.
+- **Update scheduled message**: Edit the content or scheduled send time of a pending scheduled message before it's sent.
+- **Update scheduler link**: Update a scheduler link (rename, change availability, toggle active, etc.).
+- **Update scoring rule**: Update a lead scoring rule (name, field, operator, value, points, is_active).
+- **Update security settings**: Update workspace security settings.
+- **Update sequence**: Update a sequence (rename, description, toggle active, replace step list).
+- **Update settings**: Update workspace settings (name, logo, timezone, etc.).
+- **Update shared drive**: Update a shared drive (manager-only).
+- **Update shared drive member**: Update a member role (manager-only).
+- **Update sheet image**: Update editable floating images with cell anchors and CSS pixel geometry.
+- **Update sheet merges**: Replace the complete merged-cell range collection for a sheet tab using zero-based inclusive startRow, startCol, endRow and endCol…
+- **Update sheet picture group**: Update editable picture groups with cell anchors and CSS pixel geometry.
+- **Update sheet shape**: Update editable floating shapes with editable text, cell anchors and CSS pixel geometry.
+- **Update sheet validation settings**: Set worksheet validation prompt suppression without replacing cells, rules, or presentation.
+- **Update sign document**: Update a draft signing document.
+- **Update slicer**: Patch a slicer's config — source range, target column, selected values, overlay position, or title.
+- **Update slide**: Update an existing slide in a presentation.
+- **Update slide master**: Update a master slide's name, background, or elements.
+- **Update task**: Update a task.
+- **Update team**: Update a team's settings (name, slug, description, email, parent, visibility, join policy, posting policy, icon, color).
+- **Update user**: Update a member's role, status, or storage quota.
+- **Update wiki page**: Update an existing wiki page's content, title, icon, or parent.
+- **Update wiki synced block**: Update a synced block's content.
+- **Update workspace**: Update workspace name or slug.
+- **Use mail template**: Record template use.
+- **Use sign template**: Create a new draft document from a template, populating fields with placeholder signer roles.
+- **Users list** (read-only): List users in the active workspace.
+- **Verify domain**: Trigger DNS verification for a workspace domain.
+- **Verify domain ownership**: Verify custom domain ownership via DNS TXT record.
+- **Webhooks create**: Register a new webhook.
+- **Webhooks delete**: Delete one webhook subscription by id.
+- **Webhooks deliveries list** (read-only): List recent delivery attempts (status, response, retries).
+- **Webhooks event types** (read-only): List event types an agent can subscribe to.
+- **Webhooks get** (read-only): Get one webhook subscription's config by id.
+- **Webhooks list** (read-only): List webhook registrations owned by the caller.
+- **Webhooks test**: Send a test ping payload to the webhook URL.
+- **Webhooks update**: Update a webhook (url, events, description, active, headers).
+- **Wiki database create**: Create an inline database on a wiki page.
+- **Wiki database get** (read-only): Get an inline database with its full row set.
+- **Wiki database row create**: Append a row to an inline database.
+- **Wiki database row delete**: Delete a database row.
+- **Wiki database row update**: Update properties or sort order on a database row.
+- **Wiki database update**: Update an inline database's name, schema, or views.
+- **Wiki native backup** (read-only): Export a separately labeled, digest-bound native Wiki backup containing the complete workspace Wiki graph.
+- **Wiki native restore**: Restore a native Wiki backup into its empty source workspace.
+- **Wiki page asset create**: Add an image to a wiki page (its body or its cover) as one of its own assets and get back the URL its body should store…
+- **Wiki page backlinks list** (read-only): List wiki pages that contain [[link]] references to this page.
+- **Wiki page children list** (read-only): List the immediate child pages of a wiki page.
+- **Wiki page database create**: Create an inline database on a specific wiki page.
+- **Wiki page duplicate**: Duplicate a wiki page (and optionally its descendants) into a target space + parent.
+- **Wiki page export** (read-only): Export a wiki page to docx, pdf, html, or md.
+- **Wiki page permanent delete**: Permanently delete a trashed wiki page.
+- **Wiki page restore**: Restore a trashed wiki page and its children.
+- **Wiki space delete**: Delete a wiki space and all of its pages.
+- **Wiki space get** (read-only): Get a wiki space by slug, with its full page tree.
+- **Wiki space member add**: Add a user as a direct member of a wiki space with a given role.
+- **Wiki space member remove**: Remove a direct member from a wiki space.
+- **Wiki space members list** (read-only): List distinct members of a space — the owner plus everyone with a page-level permission inside it.
+- **Wiki space update**: Update a wiki space.
+- **Wiki trash list** (read-only): List trashed (soft-deleted) wiki pages in the workspace.

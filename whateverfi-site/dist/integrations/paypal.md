@@ -1,0 +1,82 @@
+# Paypal
+
+Online payment system that allows money transfers and serves as an electronic alternative to traditional payment methods
+
+Category: Finance. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/paypal/.
+
+## Actions
+
+- **Activate billing plan**: Activates a billing plan in PayPal, making it available for subscription signups.
+- **Create Subscription**: Creates a new PayPal subscription based on a billing plan.
+- **Get Refund Details** (read-only): Retrieves details for a PayPal refund by its ID.
+- **Get Subscription Details** (read-only): Retrieves the details of a PayPal subscription by its ID.
+- **Add Batch Tracking Information**: Add tracking information for multiple PayPal transactions in a single request.
+- **Braintree Ping** (read-only): Sends a ping query to the PayPal Braintree GraphQL API.
+- **Cancel Invoice Reminders**: Cancels the automatic payment reminders for a PayPal invoice.
+- **Capture subscription payment**: Captures an authorized payment on a PayPal subscription.
+- **Charge Payment Method**: Charges a payment method and captures funds immediately using Braintree GraphQL API.
+- **Create a billing plan**: Creates a PayPal billing plan for subscription billing.
+- **Create a web experience profile**: Creates a PayPal web experience profile for customizing checkout.
+- **Create a webhook**: Creates a PayPal webhook endpoint to receive notifications about events.
+- **Create a webhook lookup**: Creates a new PayPal webhook lookup to verify a webhook signature.
+- **Create billing plan (legacy)**: Creates a PayPal billing plan using the legacy payments API (POST /v1/payments/billing-plans).
+- **Create invoice**: Creates a PayPal draft invoice.
+- **Create PayPal payment**: Creates a PayPal payment using the v1 Payments API.
+- **Create Product**: Creates a new product in PayPal's catalog.
+- **Create template**: Creates a PayPal invoice template.
+- **Deactivate Plan**: Deactivates a PayPal billing plan, making it unavailable for new subscriptions while preserving existing subscriptions.
+- **Delete Invoice**: Deletes a PayPal invoice by its ID.
+- **Delete Invoice External Payment**: Permanently deletes an external payment from a specified PayPal invoice.
+- **Delete invoice payment record**: Deletes a payment record from a PayPal invoice.
+- **Delete Invoice Refund Record**: Permanently deletes a refund record from a specified PayPal invoice.
+- **Delete Payment Resource**: Deletes a PayPal payment resource.
+- **Delete Template**: Deletes a PayPal invoice template by its ID.
+- **Delete Web Experience Profile**: Deletes a PayPal web experience profile by its ID.
+- **Delete Webhook**: Deletes a PayPal webhook by its ID.
+- **Fetch Braintree Node** (read-only): Fetches any object that extends the Node interface using its ID.
+- **Finalize Braintree Dispute**: Finalizes a Braintree dispute after adding evidence, submitting it to the cardholder's bank for review.
+- **Find eligible PayPal payment methods** (read-only): Find a list of eligible payment methods for a customer.
+- **Generate Invoice QR Code** (read-only): Generates a QR code image for a PayPal invoice using the v2 invoicing API.
+- **Generate Next Invoice Number** (read-only): Generates the next invoice number from PayPal's invoicing service.
+- **Generate Next Invoice Number (v2)** (read-only): Generates the next invoice number from PayPal's invoicing service using the v2 API.
+- **Generate PayPal Client Token**: Generate a client token for PayPal JavaScript SDK integration.
+- **Get Invoice** (read-only): Retrieves detailed information about a specific PayPal invoice by its ID.
+- **Get Invoice QR Code** (read-only): Generates a QR code image for a PayPal invoice.
+- **Get Invoice Template** (read-only): Retrieves detailed information about a specific PayPal invoice template by its ID.
+- **Get Payment Details** (read-only): Retrieves details for a PayPal payment by its ID using the deprecated v1 Payments API.
+- **Get PayPal User Info** (read-only): Retrieves user claims from PayPal using OpenID Connect.
+- **Get Plan** (read-only): Retrieves details for a specific PayPal billing plan by its ID.
+- **Get Product** (read-only): Retrieves detailed information about a specific PayPal product by its ID.
+- **Get User Info** (read-only): Retrieves user profile information from PayPal.
+- **Get Web Profile** (read-only): Retrieves detailed information about a PayPal web experience profile by its ID.
+- **Get Webhook** (read-only): Retrieves detailed information about a specific PayPal webhook by its ID.
+- **Get Webhook Lookup** (read-only): Retrieves detailed information about a specific PayPal webhook lookup by its ID.
+- **List billing plans** (read-only): Lists billing plans from PayPal with optional filtering and pagination.
+- **List Billing Subscriptions** (read-only): Lists PayPal billing subscriptions for the merchant account.
+- **List Legacy Billing Plans** (read-only): Lists billing plans using the legacy PayPal payments API (v1/payments/billing-plans).
+- **List Payments** (read-only): Lists payment information for authorized payments.
+- **List PayPal Disputes** (read-only): List PayPal customer disputes with optional filtering by date, transaction, or state.
+- **List PayPal Invoice Templates** (read-only): List invoice templates from PayPal.
+- **List PayPal Invoices** (read-only): List invoices from PayPal with pagination support.
+- **List PayPal Products** (read-only): List products from the PayPal product catalog.
+- **List web experience profiles** (read-only): Lists web experience profiles from PayPal with optional pagination.
+- **List webhook event type subscriptions** (read-only): Lists event type subscriptions for a specific PayPal webhook.
+- **List webhook event types** (read-only): Lists all available PayPal webhook event types to which you can subscribe.
+- **List webhook lookups** (read-only): Lists all webhook lookups associated with your PayPal application.
+- **List Webhooks** (read-only): Lists webhooks configured for an application or PayPal account.
+- **Query Braintree Report** (read-only): Queries Braintree reports via GraphQL API.
+- **Retrieve Payment Resource** (read-only): Retrieve a PayPal payment resource by its ID.
+- **Search PayPal Invoices** (read-only): Search for PayPal invoices based on various filter criteria.
+- **Simulate Webhook Event**: Simulates a webhook event to test your webhook integration.
+- **Update billing plan (partial)**: Partially updates a PayPal billing plan using JSON Patch (RFC 6902) operations.
+- **Update checkout order (partial)**: Partially updates a PayPal checkout order using JSON Patch (RFC 6902) operations.
+- **Update Dispute**: Partially update a PayPal dispute using JSON Patch operations.
+- **Update Invoice (Full)**: Fully updates a PayPal invoice by replacing the entire invoice with the provided data.
+- **Update product (partial)**: Partially updates a PayPal product using JSON Patch (RFC 6902) operations.
+- **Update Subscription**: Update a PayPal subscription using JSON Patch operations.
+- **Update template**: Fully updates a PayPal invoice template.
+- **Update web experience profile**: Updates a PayPal web experience profile.
+- **Update web experience profile (partial)**: Partially updates a PayPal web experience profile using JSON Patch (RFC 6902) operations.
+- **Update Webhook**: Updates a PayPal webhook using JSON Patch (RFC 6902) operations.
+- **Verify Payment Method via Braintree**: Verifies a multi-use payment method to ensure it has passed fraud rules and is associated with a valid account.
+- **Verify Webhook Signature** (read-only): Verifies the signature of a PayPal webhook notification to confirm its authenticity.

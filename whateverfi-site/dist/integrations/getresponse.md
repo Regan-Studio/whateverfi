@@ -1,0 +1,221 @@
+# GetResponse
+
+Manage GetResponse email marketing, contacts, campaigns, automation, ecommerce, and account resources.
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/getresponse/.
+
+## Actions
+
+- **Account information** (read-only): Return information about the connected GetResponse account.
+- **Add a new tag**: Add a new tag.
+- **Billing information** (read-only): Return billing, plan, allowance, payment, and add-on information.
+- **Cancel A/B test**: Schedule cancellation of an A/B test.
+- **Cancel sending the newsletter**: Cancel newsletter sending and turn the newsletter into a draft.
+- **Choose A/B test winner**: Choose the winning message variant for a subject A/B test.
+- **Create 'From' address**: Create a GetResponse sender name and email address.
+- **Create a contact import**: Start an asynchronous contact import into a campaign.
+- **Create a custom event**: Create a custom event definition with typed attributes.
+- **Create a custom field**: Create a custom field definition.
+- **Create a file**: Create a File Library file from base64-encoded content.
+- **Create a folder**: Create a File Library folder.
+- **Create a new contact**: Submit a contact for asynchronous creation in a campaign.
+- **Create a predefined field**: Create a campaign-specific predefined field in GetResponse.
+- **Create a subject A/B test**: Create a subject-line A/B test with two to five variants and start or schedule delivery to its selected recipients.
+- **Create a suppression list**: Create a new suppression list.
+- **Create address**: Create an address in the connected GetResponse account.
+- **Create and send newsletter**: Create a newsletter and immediately queue delivery, or schedule it when send_settings.sendOn is supplied.
+- **Create autoresponder**: Create an autoresponder that automatically delivers its message when the configured trigger and timing conditions are met.
+- **Create campaign**: Create a campaign (contact list).
+- **Create cart**: Create a cart with its selected product variants.
+- **Create category**: Create a shop category.
+- **Create meta field**: Create a meta field in a shop.
+- **Create multiple contacts at once**: Submit multiple contacts for asynchronous creation in one campaign.
+- **Create newsletter draft**: Create a newsletter draft without sending or scheduling delivery.
+- **Create order**: Create an ecommerce order and trigger matching Make a purchase workflows unless additional_flags is skipAutomation.
+- **Create product**: Create a product and its nested ecommerce data in a shop.
+- **Create product variant**: Create a product variant with images, meta fields, and taxes.
+- **Create RSS newsletter**: Create and configure an RSS-to-email newsletter, which can deliver new feed content when enabled.
+- **Create search contacts**: Create a saved contact search from condition sections.
+- **Create shop**: Create an ecommerce shop.
+- **Create tax**: Create a tax for a shop.
+- **Create the custom report**: Schedule a one-time custom report.
+- **Create transactional email template**: Create a reusable transactional email template.
+- **Current status of your GetResponse badge** (read-only): Return the current GetResponse badge status.
+- **Delete 'From' address**: Delete a GetResponse 'From' address, optionally replacing its references with another address.
+- **Delete a contact by contact ID**: Permanently remove a contact.
+- **Delete a custom event**: Delete a custom event definition by ID.
+- **Delete a custom field**: Delete a custom field definition by ID.
+- **Delete a predefined field**: Delete an existing GetResponse predefined field.
+- **Delete a suppression list**: Delete a suppression list by ID.
+- **Delete A/B test**: Delete an A/B test.
+- **Delete address**: Delete an existing GetResponse account address.
+- **Delete autoresponder**: Permanently delete an autoresponder.
+- **Delete cart**: Delete a cart from a shop.
+- **Delete category**: Delete a category from a shop.
+- **Delete file by file ID**: Permanently delete a File Library file by ID.
+- **Delete folder by folder ID**: Permanently delete a File Library folder by ID.
+- **Delete meta field**: Delete a meta field from a shop.
+- **Delete newsletter**: Delete a newsletter by ID.
+- **Delete order**: Delete an order from a shop.
+- **Delete product**: Delete a product from a shop.
+- **Delete product variant**: Delete a product variant.
+- **Delete RSS newsletter**: Permanently delete an RSS newsletter.
+- **Delete search contacts**: Delete a saved contact search.
+- **Delete shop**: Delete an ecommerce shop.
+- **Delete tag by ID**: Delete a tag by ID.
+- **Delete tax by ID**: Delete a tax from a shop.
+- **Delete transactional email template**: Permanently delete a transactional email template.
+- **Disable callbacks**: Disable all account-wide callbacks.
+- **Enable or update callbacks configuration**: Enable or update the account-wide callback URL and event subscriptions.
+- **Get a custom event by ID** (read-only): Get a custom event definition by ID.
+- **Get a custom field** (read-only): Get a custom field definition by ID.
+- **Get a list of addresses** (read-only): Return one filtered page of GetResponse addresses and a continuation cursor.
+- **Get a list of contact activities** (read-only): Get one page of contact activities and a continuation cursor.
+- **Get a list of custom fields** (read-only): Get one page of custom field definitions and a continuation cursor.
+- **Get a list of custom reports** (read-only): Get one page of custom reports.
+- **Get a list of landing pages** (read-only): Return one filtered page of legacy landing pages and a continuation cursor.
+- **Get a list of product variants** (read-only): Get one page of product variants and a continuation cursor.
+- **Get a list of shops** (read-only): Get one page of shops and a continuation cursor.
+- **Get a list of SMS sender names** (read-only): Get SMS sender names.
+- **Get a list of taxes** (read-only): Get one page of taxes for a shop and a continuation cursor.
+- **Get a predefined field by ID** (read-only): Get detailed information about one GetResponse predefined field.
+- **Get a product list** (read-only): Get one page of products and a continuation cursor.
+- **Get a single 'From' address by ID** (read-only): Get a single GetResponse 'From' address by its ID.
+- **Get a single A/B test** (read-only): Get a single A/B test by ID.
+- **Get a single automated SMS message by its ID** (read-only): Get an automated SMS message.
+- **Get a single category by ID** (read-only): Get a category by shop ID and category ID.
+- **Get a single custom report by ID** (read-only): Get custom report status and generated files by ID.
+- **Get a single form or popup by ID** (read-only): Get a resource from GetResponse's combined Forms and Popups product family by popup ID.
+- **Get a single landing page by ID** (read-only): Get a current landing page by ID.
+- **Get a single newsletter** (read-only): Get a single newsletter by its ID.
+- **Get a single order by ID** (read-only): Get one ecommerce order by its shop and order IDs.
+- **Get a single product by ID** (read-only): Get a product and its nested ecommerce data by ID.
+- **Get a single product variant by ID** (read-only): Get a product variant and its nested ecommerce data by ID.
+- **Get a single shop by ID** (read-only): Get an ecommerce shop by ID.
+- **Get a single SMS message by its ID** (read-only): Get an SMS message.
+- **Get a single subject A/B test** (read-only): Get a single subject A/B test by ID.
+- **Get a single tax by ID** (read-only): Get a tax by shop ID and tax ID.
+- **Get a single template by ID** (read-only): Get a transactional email template by ID.
+- **Get a single Website by ID** (read-only): Get a website by ID.
+- **Get a suppression list by ID** (read-only): Get a suppression list by ID.
+- **Get a webinar by ID** (read-only): Get a webinar by ID.
+- **Get a workflow by ID** (read-only): Get a workflow and its subscriber statistics by ID.
+- **Get an address by ID** (read-only): Get one GetResponse account address by its ID.
+- **Get an import by ID** (read-only): Get import details and processing statistics by ID.
+- **Get autoresponder** (read-only): Get one autoresponder and its delivery and trigger settings.
+- **Get autoresponder statistics** (read-only): Return one page of delivery statistics for one autoresponder.
+- **Get autoresponder thumbnail** (read-only): Download an autoresponder thumbnail image.
+- **Get callbacks configuration** (read-only): Return whether account-wide callbacks are configured, plus their URL and enabled event types when configured.
+- **Get campaign** (read-only): Get a campaign (contact list) by its campaign ID.
+- **Get campaign blocklist** (read-only): Return the blocklist masks configured for a campaign (contact list).
+- **Get campaign statistics** (read-only): Get one of six campaign metrics.
+- **Get campaign statistics summary** (read-only): Get subscriber, newsletter, trigger, landing-page, and webform totals by campaign.
+- **Get cart by ID** (read-only): Get a cart and its selected variants by ID.
+- **Get click tracked link details** (read-only): Get click tracked link details by click-track ID.
+- **Get contact details by contact ID** (read-only): Get contact details by contact ID.
+- **Get contact list** (read-only): Get one page of contacts and a continuation cursor.
+- **Get contact's consent fields** (read-only): Get the consent fields assigned to a contact.
+- **Get contacts by search contacts ID** (read-only): Get one page of contacts matching a saved contact search.
+- **Get contacts from a single campaign** (read-only): List the contacts directly related to one campaign using the campaign-membership endpoint, with relationship-specific filters and a…
+- **Get details for landing page statistics** (read-only): Get performance statistics for an existing landing page.
+- **Get details for the SMS message statistics** (read-only): Get SMS message statistics.
+- **Get details for website statistics** (read-only): Get performance statistics for an existing website.
+- **Get file by ID** (read-only): Get File Library metadata and direct URLs for one file by ID.
+- **Get form by ID** (read-only): Get a resource from GetResponse's standalone modern Forms product by form ID.
+- **Get GDPR field details** (read-only): Get a GetResponse GDPR field and its latest consent-text version.
+- **Get images list** (read-only): Return one page of GetResponse Multimedia images.
+- **Get Legacy Form by ID** (read-only): Get a legacy form by ID.
+- **Get Legacy Forms** (read-only): Return one filtered page of legacy forms and a continuation cursor.
+- **Get newsletter statistics** (read-only): Return one page of statistics for a newsletter and a continuation cursor.
+- **Get newsletter thumbnail** (read-only): Download a newsletter thumbnail with its provider content type.
+- **Get RSS newsletter by ID** (read-only): Get one RSS newsletter and its delivery configuration.
+- **Get RSS newsletter statistics by ID** (read-only): Return one page of delivery statistics for one RSS newsletter.
+- **Get search contacts by contact ID** (read-only): Get a saved contact search by ID.
+- **Get shop carts** (read-only): Get one page of shop carts and a continuation cursor.
+- **Get single landing page by ID** (read-only): Get a legacy landing page by ID.
+- **Get statistics for a single form or popup** (read-only): Get performance statistics for an existing form or popup.
+- **Get storage space information** (read-only): Get the File Library storage limit and current usage in bytes.
+- **Get suppression lists** (read-only): Get one page of suppression lists and a continuation cursor.
+- **Get tag by ID** (read-only): Get a tag by ID.
+- **Get the ecommerce general performance statistics** (read-only): Get aggregate ecommerce order and revenue performance statistics.
+- **Get the ecommerce revenue statistics** (read-only): Get ecommerce revenue and order statistics over time.
+- **Get the GDPR fields list** (read-only): Return one page of GetResponse GDPR fields and a continuation cursor.
+- **Get the list of 'From' addresses** (read-only): Return one filtered page of GetResponse 'From' addresses and a continuation cursor.
+- **Get the list of automated SMS messages** (read-only): Return one page of automated SMS messages.
+- **Get the list of Facebook Pixels** (read-only): List Facebook Pixels assigned to the connected GetResponse account.
+- **Get the list of files** (read-only): Return one page of File Library files with filters and sorting.
+- **Get the list of folders** (read-only): Return one page of File Library folders with filters and sorting.
+- **Get the list of form variants (A/B tests)** (read-only): Get all A/B test variants for a modern form.
+- **Get the list of forms** (read-only): Return one filtered page of modern forms and a continuation cursor.
+- **Get the list of landing pages** (read-only): Return one filtered page of current landing pages and a continuation cursor.
+- **Get the list of orders** (read-only): Get one page of orders and a continuation cursor.
+- **Get the list of SMS messages** (read-only): Return one page of SMS messages.
+- **Get the list of tags** (read-only): Get one page of tags and a continuation cursor.
+- **Get the list of transactional email templates** (read-only): Get one page of transactional email templates and a continuation cursor.
+- **Get the list of transactional emails** (read-only): Get one page of transactional email history.
+- **Get the list of websites** (read-only): Return one filtered page of websites and a continuation cursor.
+- **Get the meta field by ID** (read-only): Get a meta field by shop ID and meta field ID.
+- **Get the overall statistics of transactional emails** (read-only): Get aggregate transactional email statistics.
+- **Get the predefined fields list** (read-only): Return one filtered page of GetResponse predefined fields and a continuation cursor.
+- **Get the shop categories list** (read-only): Get one page of shop categories and a continuation cursor.
+- **Get the shop meta fields** (read-only): Get one page of shop meta fields and a continuation cursor.
+- **Get tracking JavaScript code snippets** (read-only): Get the JavaScript snippets used to track purchases, abandoned carts, and visited URLs.
+- **Get transactional email details by transactional email ID** (read-only): Get transactional email details by ID.
+- **History of logins** (read-only): Return one page of account login history and a continuation cursor.
+- **List A/B tests** (read-only): Return one page of A/B tests and a continuation cursor.
+- **List autoresponder statistics** (read-only): Return one filtered page of statistics across autoresponders.
+- **List autoresponders** (read-only): Return one filtered page of autoresponders and a continuation cursor.
+- **List campaigns** (read-only): Return one page of GetResponse campaigns (contact lists), with filters and sorting.
+- **List click tracked links** (read-only): Return one page of click tracked links and a continuation cursor.
+- **List custom events** (read-only): Return one filtered page of custom event definitions and a continuation cursor.
+- **List forms and popups** (read-only): Return one filtered page of forms and popups and a continuation cursor.
+- **List imports** (read-only): Return one filtered page of contact imports and a continuation cursor.
+- **List newsletter statistics** (read-only): Return one page of total newsletter statistics and a continuation cursor.
+- **List newsletters** (read-only): Return one page of newsletters and a continuation cursor.
+- **List of Industry Tags** (read-only): Return one page of industry tags and a continuation cursor.
+- **List of timezones** (read-only): List timezones in the connected account's language context.
+- **List RSS newsletter statistics** (read-only): Return one filtered page of statistics across RSS newsletters.
+- **List RSS newsletters** (read-only): Return one filtered page of RSS newsletters and a continuation cursor.
+- **List saved contact searches** (read-only): Get one page of saved contact searches and a continuation cursor.
+- **List subject A/B tests** (read-only): Return one page of subject A/B tests and a continuation cursor.
+- **List subscription confirmation templates** (read-only): List unpaginated body or subject templates for subscription-confirmation emails in one language.
+- **List webinars** (read-only): Return one filtered page of webinars and a continuation cursor.
+- **List workflows** (read-only): Return one page of workflows and a continuation cursor.
+- **Returns account blocklist masks** (read-only): Returns account blocklist masks.
+- **Search contacts using conditions** (read-only): Search contacts using supplied conditions without creating or changing a saved search.
+- **Send an SMS message**: Immediately send an SMS to selected GetResponse contacts or imported phone numbers.
+- **Send limits** (read-only): Return the connected account's email sending allowances and usage.
+- **Send newsletter draft**: Send an existing newsletter draft using the supplied recipient and delivery settings.
+- **Send transactional email**: Send a direct or template-based transactional email.
+- **Set a 'From' address as default**: Set an existing GetResponse 'From' address as the account default.
+- **Trigger a custom event**: Trigger an existing custom event for a contact.
+- **Turn on/off the GetResponse Badge**: Enable or disable the selected GetResponse account badge type.
+- **Update a custom event**: Update a custom event definition and its attributes.
+- **Update a custom field**: Update a custom field definition's visibility and assigned values.
+- **Update a predefined field**: Update the value of an existing GetResponse predefined field.
+- **Update a suppression list by ID**: Replace a suppression list's masks and optionally rename it.
+- **Update a workflow**: Set a workflow to active, inactive, or incomplete (draft).
+- **Update account**: Update supplied profile fields on the connected GetResponse account.
+- **Update account blocklist**: Update the account-wide blocklist.
+- **Update address**: Update only the supplied fields of an existing GetResponse address.
+- **Update autoresponder**: Update an autoresponder's content, status, delivery timing, or trigger settings.
+- **Update campaign**: Update a GetResponse campaign (contact list) and its confirmation or profile settings.
+- **Update campaign blocklist**: Add, delete, or replace blocklist masks for a campaign (contact list).
+- **Update cart**: Update a cart and its selected variants.
+- **Update category**: Update a category's supplied fields.
+- **Update contact details**: Update contact details.
+- **Update meta field**: Update a meta field's supplied fields.
+- **Update order**: Update the supplied fields of an ecommerce order.
+- **Update product**: Update a product and its nested ecommerce data.
+- **Update product variant**: Update a product variant and its nested ecommerce data.
+- **Update RSS newsletter**: Update an RSS newsletter's content, status, delivery, or audience settings.
+- **Update search contacts**: Replace a saved contact search's name and condition sections.
+- **Update shop**: Update a shop's supplied fields.
+- **Update tax**: Update a tax's supplied fields.
+- **Update transactional email template**: Update the subject or content of a transactional email template.
+- **Upload image**: Upload an image file to GetResponse Multimedia.
+- **Upsert custom fields by search contacts**: Submit an asynchronous request to add or update custom fields for contacts matching a saved contact search.
+- **Upsert product categories**: Assign categories to a product and optionally set its default category without removing existing assignments.
+- **Upsert product meta fields**: Assign meta fields to a product without removing existing assignments.
+- **Upsert the custom fields of a contact**: Add or update a contact's custom fields without removing other assigned custom fields.
+- **Upsert the tags of a contact**: Add tags to a contact without unassigning the contact's existing tags.

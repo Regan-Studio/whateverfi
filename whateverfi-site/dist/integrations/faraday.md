@@ -1,0 +1,125 @@
+# Faraday
+
+Faraday lets you embed AI in workflows throughout your stack-to make your favorite tools perform even better
+
+Category: Other. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/faraday/.
+
+## Actions
+
+- **Create Cohorts**: Create a new cohort in Faraday.
+- **Create Dataset**: Create a new dataset in Faraday.
+- **Create Outcome**: Create a new outcome.
+- **Create Persona Set**: Create a new persona set.
+- **Create Scope**: Create a new scope in Faraday.
+- **Create Target**: Create a target in Faraday.
+- **Delete Cohort**: Permanently delete a cohort from Faraday.
+- **Delete Outcome**: Delete an outcome by its UUID.
+- **Delete Scope**: Delete a scope by its UUID.
+- **Force Update Cohort**: Trigger a rerun for a cohort.
+- **Force Update Outcome**: Trigger a rerun for an outcome resource.
+- **Force Update Scope**: Trigger a rerun for a scope resource.
+- **Force Update Target**: Trigger a rerun for a target.
+- **Get Cohort** (read-only): Retrieve a specific cohort by ID.
+- **Get Current Account** (read-only): Retrieve the current account information.
+- **Get Current Account Billing** (read-only): Retrieve billing information about the current account.
+- **Get Dataset** (read-only): Retrieve a dataset by its UUID.
+- **Get Outcome** (read-only): Retrieve an outcome by its ID.
+- **Get Persona Set** (read-only): Retrieve a persona set by its UUID.
+- **Get Scope** (read-only): Retrieve detailed information about a Faraday scope by its UUID.
+- **Get Target** (read-only): Retrieve a specific target by its UUID from Faraday.
+- **List Cohorts** (read-only): List all cohorts in your Faraday account.
+- **List Connections** (read-only): List all connections configured in Faraday.
+- **List Outcomes** (read-only): List all outcomes for the account.
+- **List Persona Sets** (read-only): List all persona sets.
+- **List Scopes** (read-only): List all scopes.
+- **List Targets** (read-only): List all targets in your Faraday account.
+- **Update Cohort**: Update a cohort's configuration using JSON Merge Patch semantics.
+- **Update Outcome**: Update an outcome's configuration using JSON Merge Patch semantics.
+- **Update Scope**: Update a Faraday scope's configuration using JSON Merge Patch semantics.
+- **Update Target**: Update a target's configuration in Faraday.
+- **Archive Cohort**: Archive a cohort in Faraday.
+- **Archive Connection**: Archive a connection in Faraday.
+- **Archive Dataset**: Archive a dataset in Faraday.
+- **Archive Outcome**: Archive an outcome in Faraday.
+- **Archive Persona Set**: Archive a persona set in Faraday.
+- **Archive Place**: Archive a place in Faraday.
+- **Archive Scope**: Archive a scope in Faraday.
+- **Archive Stream**: Archive a stream in Faraday.
+- **Archive Target**: Archive a target in Faraday.
+- **Archive Trait**: Archive a trait in Faraday.
+- **Create Account**: Create a new Faraday account with specified name and branding.
+- **Create Place**: Create a new place in Faraday.
+- **Create Stream**: Create a new stream or find an existing stream by name.
+- **Create Target Preview**: Start a preview delivery for a target.
+- **Create Trait**: Create a new trait in Faraday.
+- **Create Webhook Endpoint**: Create a new webhook endpoint.
+- **Delete Account**: Delete an account by its UUID.
+- **Delete All Orphaned Traits**: Delete all orphaned traits from Faraday.
+- **Delete Connection**: Delete a Faraday connection by its UUID.
+- **Delete Dataset**: Delete a dataset from Faraday.
+- **Delete Persona Set**: Delete a persona set.
+- **Delete Place**: Delete a place by its UUID.
+- **Delete Stream**: Delete a stream by its UUID or name.
+- **Delete Target**: Delete a target by its UUID.
+- **Delete Upload**: Permanently deletes a file from a Faraday dataset directory.
+- **Delete Webhook Endpoint**: Delete a webhook endpoint by its UUID.
+- **Force Update Connection**: Trigger a rerun for a Faraday connection.
+- **Force Update Dataset**: Trigger a rerun for a dataset.
+- **Force Update Persona Set**: Trigger a rerun for a persona set resource.
+- **Force Update Place**: Trigger a rerun for a place.
+- **Force Update Stream**: Trigger a rerun for a stream.
+- **Force Update Trait**: Trigger a rerun for a trait.
+- **Get Account** (read-only): Retrieve detailed information about a Faraday account by its UUID.
+- **Get Accounts Billing** (read-only): Get billing information about your account.
+- **Get Cohort Membership Analysis** (read-only): Get cohort membership counts over time for a specific cohort.
+- **Get Connection Datasets** (read-only): Retrieve all datasets that use a specific connection.
+- **Get Connection Targets** (read-only): Retrieve all targets that use a specific connection.
+- **Get Dataset Ingress Logs** (read-only): Retrieve dataset ingress metrics over time.
+- **Get Dependency Graph** (read-only): Retrieve the complete dependency graph for all resources on an account.
+- **Get Market Opportunity Analyses** (read-only): Retrieve all market opportunity analyses from Faraday.
+- **Get Persona Set Analysis Dimensions** (read-only): Get various trait breakdown information about a persona set.
+- **Get Persona Set Analysis Flow** (read-only): Retrieve the flow of persona sets over time, showing how individuals move between different personas.
+- **Get Place** (read-only): Retrieve a specific place by its UUID.
+- **Get Scope Analysis** (read-only): Get analysis for a scope including outcomes and recommenders with probability distributions.
+- **Get Scope Datasets** (read-only): Retrieve all datasets associated with a Faraday scope.
+- **Get Scope Efficacy** (read-only): Retrieve efficacy metrics for a scope.
+- **Get Scope Payload Cohorts** (read-only): Get payload cohorts for a specific scope.
+- **Get Scope Payload Outcomes** (read-only): Retrieve payload outcomes for a specific scope.
+- **Get Scope Payload Persona Sets** (read-only): Get payload persona sets for a specific scope.
+- **Get Scope Payload Recommenders** (read-only): Retrieve payload recommenders for a specific scope.
+- **Get Scope Population Cohorts** (read-only): Get population cohorts for a specific scope.
+- **Get Scope Population Exclusion Cohorts** (read-only): Get population exclusion cohorts for a scope.
+- **Get Scope Targets** (read-only): Get all targets for a specific scope.
+- **Get Stream** (read-only): Retrieve a stream by its UUID or name.
+- **Get Streams Analysis** (read-only): Get the count of stream events emitted over a time period.
+- **Get Target Analysis** (read-only): Retrieve a target's analysis including geographic distributions and trait breakdowns.
+- **Get Trait** (read-only): Retrieve a specific trait by ID.
+- **Get Trait Analysis Dimensions** (read-only): Retrieve the percentage of the US population that falls into each category of a trait.
+- **Get Traits CSV** (read-only): Retrieve all user-defined and Faraday-provided traits in CSV format.
+- **Get Upload** (read-only): Download a previously uploaded file from a Faraday dataset directory.
+- **Get Usages** (read-only): Retrieve usage statistics for your Faraday account.
+- **Get Webhook Endpoint** (read-only): Retrieve a webhook endpoint by its UUID.
+- **List Accounts** (read-only): List all Faraday accounts accessible by the current user.
+- **List Attributes** (read-only): List all attributes in the feature store.
+- **List Feature Stores** (read-only): List all feature stores.
+- **List Places** (read-only): List all places in Faraday.
+- **List Recommenders** (read-only): List all recommenders.
+- **List Streams** (read-only): List all streams in your Faraday account.
+- **List Uploaded Files** (read-only): Retrieve the list of previously uploaded files in Faraday.
+- **List Webhook Endpoints** (read-only): List all webhook endpoints configured for the account.
+- **Unarchive Cohort**: Unarchive a previously archived cohort.
+- **Unarchive Dataset**: Unarchive a dataset in Faraday.
+- **Unarchive Outcome**: Unarchive an outcome in Faraday.
+- **Unarchive Persona Set**: Unarchive a previously archived persona set.
+- **Unarchive Place**: Unarchive a previously archived place.
+- **Unarchive Scope**: Unarchive a previously archived scope.
+- **Unarchive Stream**: Unarchive a stream in Faraday.
+- **Unarchive Trait**: Unarchive a trait.
+- **Update Account**: Update an account's name or branding settings.
+- **Update Connection**: Update a Faraday connection's name or options.
+- **Update Dataset**: Update a dataset configuration using JSON Merge Patch semantics.
+- **Update Persona Set**: Edit a persona set's configuration using JSON Merge Patch.
+- **Update Place**: Update a place's name, addresses, or geojson geometry.
+- **Update Stream**: Update a stream's properties using JSON Merge Patch semantics.
+- **Update Trait**: Update a trait's properties using JSON Merge Patch semantics.
+- **Update Webhook Endpoint**: Update a webhook endpoint's configuration.

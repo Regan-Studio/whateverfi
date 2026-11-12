@@ -1,0 +1,95 @@
+# Canvas
+
+Canvas is a learning management system supporting online courses, assignments, grading, and collaboration, widely used by schools and universities for virtual classrooms
+
+Category: Other. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/canvas/.
+
+## Actions
+
+- **Create a course**: Creates a new course in canvas within a specified account, with comprehensive configuration options.
+- **Fetch Data** (read-only): Fetches a specific category of canvas data (e.g., accounts, courses, users) by setting exactly one get * boolean flag to true and…
+- **Get all assignments** (read-only): Retrieves assignments for a specified canvas course.
+- **Get Canvas accounts** (read-only): Retrieves all canvas accounts accessible to the authenticated user.
+- **Get Current User** (read-only): Retrieves detailed information about the currently authenticated user from the canvas lms.
+- **Get submission files** (read-only): Retrieves files from a student's canvas assignment submission, processing text, binary, and zip files, and providing s3 download urls if…
+- **List courses** (read-only): Retrieves a list of the current user's courses from canvas, optionally filtered by enrollment type and state.
+- **Update course settings**: Updates various settings for an existing course in canvas, identified by course id.
+- **Create a page for a course**: Creates a new wiki page in a specified canvas course, with options for title, html body, editing permissions, publication, and designation…
+- **Create a quiz question**: Creates a new question for an existing quiz within a course.
+- **Create account notification**: Creates a global notification within a canvas account, ensuring end at is after start at and any specified notification roles are valid.
+- **Create an assignment**: Creates a new assignment within a specified course in canvas lms.
+- **Create appointment group**: Creates a new appointment group in canvas for schedulable time slots within specified course or group contexts.
+- **Create assignment override**: Creates an assignment override to adjust due/unlock/lock dates for an assignment in a course, targeting specific students (requires…
+- **Create Calendar Event**: Creates a calendar event with options for recurrence (finite rrule series only), section-specific timings, and blackout dates within a…
+- **Create communication channel**: Creates a new communication channel (e.g., email, sms, push) for an existing canvas user to receive notifications.
+- **Create content share**: Shares a canvas content item to specified users, if the sender has necessary permissions and receiver ids are valid.
+- **Create conversation**: Send messages in canvas by creating a new conversation or adding to an existing one.
+- **Create discussion entry**: Create a new entry in a canvas discussion topic.
+- **Create discussion topic**: Creates a new discussion topic in a specified canvas course, allowing comprehensive configuration of its content, type, publication…
+- **Create enrollment**: Enrolls a user in a canvas course with a specified role and status.
+- **Create Folder**: Creates a new folder in canvas within a specified context (e.g., course, user) and optional parent folder.
+- **Create Module**: Creates a new organizational module within a specified canvas lms course, with options for availability, sequencing, and prerequisites.
+- **Create Quiz**: Creates a new quiz with various settings in a specified existing canvas course.
+- **Delete a folder**: Permanently deletes an existing folder specified by its unique id.
+- **Delete an assignment**: Soft-deletes a specific assignment within a course, returning the assignment object with its workflow state updated to 'deleted'.
+- **Delete appointment group**: Permanently deletes an existing appointment group by its id.
+- **Delete quiz**: Permanently deletes the quiz identified by quiz id from the course identified by course id.
+- **Edit a quiz**: Modifies an existing canvas quiz.
+- **Edit assignment**: Updates an existing assignment in a canvas course (identified by course id and assignment id).
+- **Export content**: Initiate an asynchronous export of content (e.g., common cartridge, qti, zip) from an existing canvas course, returning an export id and…
+- **Get a single course** (read-only): Retrieves detailed information for a specific canvas course using its course id, which must be valid, and allows for including additional…
+- **Get all users** (read-only): Retrieves a list of users for a specified canvas account id (use 'self' for the current user's root account), supporting filtering,…
+- **Get assignment** (read-only): Retrieves detailed information for a specific assignment within a given course in canvas.
+- **Get Assignment Rubric** (read-only): Fetches the detailed rubric for a specified assignment within a canvas course.
+- **Get Course Activity** (read-only): Retrieves daily activity analytics, such as page views and participation events, for a specified canvas course.
+- **Get current grades** (read-only): Fetches current, aggregated grade data from canvas analytics for a specified account id.
+- **Get department level completed grades** (read-only): Retrieves the distribution of final grades (0-100, binned to whole numbers) for all completed courses in a canvas account, where each data…
+- **Get department level current statistics** (read-only): Fetches a snapshot of current numerical statistics for a canvas account, requiring its valid id.
+- **Get department level term statistics** (read-only): Retrieves department-level academic term statistics (e.g., enrollment, activity, grades) for a specified account and term in canvas,…
+- **Get department-level completed statistics** (read-only): Retrieves numeric statistics for all completed courses for a specified canvas account id.
+- **Get enrollment by ID** (read-only): Retrieves a specific enrollment by its id within a given account.
+- **Get gradebook history days** (read-only): Retrieves a chronological list of dates with grading activity and the active graders for a specified course.
+- **Get Page for a Course** (read-only): Retrieves a specific content page (wiki or content page) by its url or numeric id from a specified canvas course.
+- **Get quiz submissions** (read-only): Retrieves all submissions for a specific quiz within a course.
+- **Get report status** (read-only): Retrieves the status of a previously initiated report in a canvas account, specified by its type and id.
+- **Get single submission** (read-only): Retrieves a specific submission for an assignment made by a particular user within a designated course.
+- **Get term grade data** (read-only): Retrieves department-level aggregated grade data for a specific academic term within a canvas account.
+- **Get user assignment analytics** (read-only): Fetches detailed assignment-level analytics for a specific student in a designated course, including submission details and class…
+- **Get user course progress** (read-only): Retrieves the academic progress of a specific user within a given course.
+- **Get user participation analytics** (read-only): Retrieves page view activity and participation details for a specific student enrolled in a designated course.
+- **Get User Profile** (read-only): Retrieves profile information for an existing canvas user.
+- **Grade or comment on a submission**: Updates a student's assignment submission with a grade, comment, sticker, or status change.
+- **List Accounts for Course Admins** (read-only): Retrieves canvas accounts visible to the current user due to their course-level administrative roles.
+- **List all folders** (read-only): Retrieves the first page of folders for a specified canvas course id.
+- **List appointment groups** (read-only): Retrieves a list of canvas appointment groups based on specified filters.
+- **List assignment submissions** (read-only): Retrieves submissions for a specific assignment within a course, optionally including related resources or grouping by student group for…
+- **List Available Reports** (read-only): Lists available reports (including those that can be or have been generated) for a valid canvas account id.
+- **List calendar events for a user** (read-only): Retrieves calendar events and assignments for a specific user from canvas lms, supporting extensive filtering options detailed in the…
+- **List communication channels** (read-only): Retrieves a list of communication channels associated with a specific user in canvas.
+- **List communication messages** (read-only): Retrieves communication messages from canvas.
+- **List content exports** (read-only): Retrieves a paginated list of content exports from canvas for a specified, existing course.
+- **List Course Users** (read-only): Retrieves a paginated list of users for a given canvas course id (which must be an existing course), supporting various filtering,…
+- **List Courses for a User** (read-only): Retrieves a list of courses in canvas for a specified user id, requiring observer or admin permissions to view courses for others.
+- **List Discussion Entries** (read-only): Retrieve paginated discussion entries for a specific discussion topic in a course.
+- **List Discussion Topics** (read-only): Retrieves a paginated list of discussion topics or announcements for a specified course.
+- **List Files** (read-only): Fetches metadata (id, name, size, type, urls) for all files within a specified canvas course.
+- **List folders** (read-only): Retrieves a list of immediate sub-folders within the specified folder id.
+- **List pages for a course** (read-only): Retrieves a list of wiki pages associated with a specific, existing course in canvas.
+- **List Quizzes in Course** (read-only): Retrieves a paginated list of quizzes for a specified, valid canvas course, optionally filtering by a search term in the quiz title.
+- **List sent content shares** (read-only): Retrieves content shares sent by the specified user to other users or courses within canvas.
+- **List submissions** (read-only): Fetches gradebook history submissions for a specific course, assignment, grader, and date from canvas.
+- **List submissions for multiple assignments** (read-only): Retrieves submissions from a canvas course for specified assignments and/or students.
+- **List uncollated submission versions** (read-only): Retrieves a feed of uncollated submission versions from the gradebook history for a course.
+- **List users in account** (read-only): Use this action to retrieve all users associated with a specific, existing canvas account id.
+- **Reply to discussion entry**: Reply to a discussion entry.
+- **Retrieve enrollment term** (read-only): Retrieves detailed information for a specific enrollment term within a given root account in canvas.
+- **Start a Report**: Initiates an asynchronous report generation for a canvas account, using a valid report type for the account.
+- **Translate File Reference** (read-only): Resolves a file's migration id to its current representation within a specific canvas course.
+- **Update Appointment Group**: Updates an existing canvas appointment group by its id.
+- **Update course**: Updates an existing course, specified by its id, with new attributes or triggers a lifecycle event like 'conclude' or 'delete'.
+- **Update file**: Modifies an existing file's name or relocates it to a new parent folder.
+- **Update page for a course**: Updates an existing wiki page in a canvas course.
+- **Update quiz submission scores**: Updates scores, comments for questions, and/or applies fudge points to a specific quiz submission attempt.
+- **Update User Settings**: Updates a canvas user's preferences for various interface elements and content interaction behaviors.
+- **Upload a course file**: Uploads a file to an accessible canvas course, optionally to a specific folder (created if a non-existent parent folder path is provided)…
+- **Upload submission file**: Uploads a submission file for an assignment in a canvas course for a specified user id.

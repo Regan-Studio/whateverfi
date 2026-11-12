@@ -1,0 +1,913 @@
+# Infisical
+
+Infisical is a secrets management platform; this integration supports delegated read-only OAuth access and machine identity Token Auth in Infisical US Cloud.
+
+Category: Security & Ops. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/infisical/.
+
+## Actions
+
+- **Check Auth0 Client Secret Rotation Credentials** (read-only): Check whether the active credentials for the specified Auth0 Client Secret Rotation are still valid against the upstream system.
+- **Check AWS IAM User Secret Rotation Credentials** (read-only): Check whether the active credentials for the specified AWS IAM User Secret Rotation are still valid against the upstream system.
+- **Check Azure Client Secret Rotation Credentials** (read-only): Check whether the active credentials for the specified Azure Client Secret Rotation are still valid against the upstream system.
+- **Check Cloudflare API Token Rotation Credentials** (read-only): Check whether the active credentials for the specified Cloudflare API Token Rotation are still valid against the upstream system.
+- **Check Cloudflare R2 Access Key Rotation Credentials** (read-only): Check whether the active credentials for the specified Cloudflare R2 Access Key Rotation are still valid against the upstream system.
+- **Check Convex Access Key Rotation Credentials** (read-only): Check whether the active credentials for the specified Convex Access Key Rotation are still valid against the upstream system.
+- **Check Databricks Service Principal Secret Rotation Credentials** (read-only): Check whether the active credentials for the specified Databricks Service Principal Secret Rotation are still valid against the upstream…
+- **Check Datadog API Key Rotation Credentials** (read-only): Check whether the active credentials for the specified Datadog API Key Rotation are still valid against the upstream system.
+- **Check Datadog Application Key Rotation Credentials** (read-only): Check whether the active credentials for the specified Datadog Application Key Rotation are still valid against the upstream system.
+- **Check DBT Service Token Rotation Credentials** (read-only): Check whether the active credentials for the specified DBT Service Token Rotation are still valid against the upstream system.
+- **Check Fireworks Secret Rotation Credentials** (read-only): Check whether the active credentials for the specified Fireworks Secret Rotation are still valid against the upstream system.
+- **Check GCP Service Account Key Rotation Credentials** (read-only): Check whether the active credentials for the specified GCP Service Account Key Rotation are still valid against the upstream system.
+- **Check HP ILO Local Account Rotation Credentials** (read-only): Check whether the active credentials for the specified HP iLO Local Account Rotation are still valid against the upstream system.
+- **Check LDAP Password Rotation Credentials** (read-only): Check whether the active credentials for the specified LDAP Password Rotation are still valid against the upstream system.
+- **Check Lite Llmapi Key Rotation Credentials** (read-only): Check whether the active credentials for the specified LiteLLM API Key Rotation are still valid against the upstream system.
+- **Check Microsoft SQL Server Credentials Rotation Credentials** (read-only): Check whether the active credentials for the specified Microsoft SQL Server Credentials Rotation are still valid against the upstream…
+- **Check Mongodb Credentials Rotation Credentials** (read-only): Check whether the active credentials for the specified MongoDB Credentials Rotation are still valid against the upstream system.
+- **Check MYSQL Credentials Rotation Credentials** (read-only): Check whether the active credentials for the specified MySQL Credentials Rotation are still valid against the upstream system.
+- **Check Okta Client Secret Rotation Credentials** (read-only): Check whether the active credentials for the specified Okta Client Secret Rotation are still valid against the upstream system.
+- **Check Openai Service Account Rotation Credentials** (read-only): Check whether the active credentials for the specified OpenAI Service Account Rotation are still valid against the upstream system.
+- **Check Openrouter API Key Rotation Credentials** (read-only): Check whether the active credentials for the specified OpenRouter API Key Rotation are still valid against the upstream system.
+- **Check Oracledb Credentials Rotation Credentials** (read-only): Check whether the active credentials for the specified OracleDB Credentials Rotation are still valid against the upstream system.
+- **Check Postgresql Credentials Rotation Credentials** (read-only): Check whether the active credentials for the specified PostgreSQL Credentials Rotation are still valid against the upstream system.
+- **Check Redis Credentials Rotation Credentials** (read-only): Check whether the active credentials for the specified Redis Credentials Rotation are still valid against the upstream system.
+- **Check Salesforce OAUTH Credentials Rotation Credentials** (read-only): Check whether the active credentials for the specified Salesforce OAuth Credentials Rotation are still valid against the upstream system.
+- **Check Snowflake User Key Pair Rotation Credentials** (read-only): Check whether the active credentials for the specified Snowflake User Key Pair Rotation are still valid against the upstream system.
+- **Check Stripe API Key Rotation Credentials** (read-only): Check whether the active credentials for the specified Stripe API Key Rotation are still valid against the upstream system.
+- **Check Supabase API Key Rotation Credentials** (read-only): Check whether the active credentials for the specified Supabase API Key Rotation are still valid against the upstream system.
+- **Check Unix Linux Local Account Rotation Credentials** (read-only): Check whether the active credentials for the specified Unix/Linux Local Account Rotation are still valid against the upstream system.
+- **Check Windows Local Account Rotation Credentials** (read-only): Check whether the active credentials for the specified Windows Local Account Rotation are still valid against the upstream system.
+- **Count Machine Identities** (read-only): Return per-scope counts of machine identities matching the given search filter.
+- **Create Environment**: Create a new Environment using the supplied configuration.
+- **Create Many Secrets**: Create many secrets.
+- **Create Project**: Create a new project.
+- **Create Secret**: Create a new Secret using the supplied configuration.
+- **Create Secret Folder**: Create a new Secret Folder using the supplied configuration.
+- **Create Secret Import**: Create secret imports.
+- **Create Secret Tag**: Create a new Secret Tag using the supplied configuration.
+- **Decrypt With KMS Key** (read-only): Decrypt data with KMS key.
+- **Delete Environment**: Delete the Environment selected by the request parameters.
+- **Delete Many Secrets**: Delete many secrets.
+- **Delete Project**: Delete the Project selected by the request parameters.
+- **Delete Secret**: Delete the Secret selected by the request parameters.
+- **Delete Secret Folder**: Delete a folder.
+- **Delete Secret Import**: Delete secret imports.
+- **Delete Secret Tag**: Delete the Secret Tag selected by the request parameters.
+- **Duplicate Secret**: Duplicate one or more static secrets into another environment.
+- **Dynamic Secrets Get** (read-only): Run Dynamic Secrets Get with the supplied inputs.
+- **Dynamic Secrets Get Lease** (read-only): Run Dynamic Secrets Get Lease with the supplied inputs.
+- **Dynamic Secrets List** (read-only): Run Dynamic Secrets List with the supplied inputs.
+- **Dynamic Secrets List Leases** (read-only): Run Dynamic Secrets List Leases with the supplied inputs.
+- **Encrypt With KMS Key** (read-only): Encrypt data with KMS key.
+- **Export Signer Certificate** (read-only): Export the signer's leaf certificate as PEM.
+- **Generate Mac With KMS Key** (read-only): Generate an HMAC (MAC) for data with a KMS key.
+- **Get Acme Certificate Authority** (read-only): Retrieve the Acme Certificate Authority selected by the request parameters.
+- **Get ACME Profile Directory** (read-only): Get the ACME directory URLs for a certificate profile.
+- **Get ACME Profile Nonce** (read-only): Generate a new ACME nonce for a certificate profile.
+- **Get ADCS App Connection** (read-only): Get the specified Microsoft ADCS Connection by ID.
+- **Get ADCS App Connection By Name** (read-only): Get the specified Microsoft ADCS Connection by name.
+- **Get ADCS Certificate Authority** (read-only): Get an ADCS certificate authority by ID.
+- **Get ADCS Templates** (read-only): Get available certificate templates from ADCS CA.
+- **Get Anthropic App Connection** (read-only): Get the specified Anthropic Connection by ID.
+- **Get Anthropic App Connection By Name** (read-only): Get the specified Anthropic Connection by name.
+- **Get Auth0 App Connection** (read-only): Get the specified Auth0 Connection by ID.
+- **Get Auth0 App Connection By Name** (read-only): Get the specified Auth0 Connection by name.
+- **Get Auth0 Client Secret Rotation** (read-only): Get the specified Auth0 Client Secret Rotation by ID.
+- **Get Auth0 Client Secret Rotation By Name** (read-only): Get the specified Auth0 Client Secret Rotation by name, secret path, environment and project ID.
+- **Get Auth0 Client Secret Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Auth0 Client Secret Rotation.
+- **Get AWS Acm Public CA Certificate Authority** (read-only): Retrieve the AWS Acm Public CA Certificate Authority selected by the request parameters.
+- **Get AWS App Connection** (read-only): Get the specified AWS Connection by ID.
+- **Get AWS App Connection By Name** (read-only): Get the specified AWS Connection by name.
+- **Get AWS Certificate Manager PKI Sync** (read-only): Get the specified AWS Certificate Manager PKI Sync by ID.
+- **Get AWS Elastic Load Balancer PKI Sync** (read-only): Get the specified AWS Elastic Load Balancer PKI Sync by ID.
+- **Get AWS Parameter Store Secret Sync** (read-only): Get the specified AWS Parameter Store Sync by ID.
+- **Get AWS Parameter Store Secret Sync By Name** (read-only): Get the specified AWS Parameter Store Sync by name and project ID.
+- **Get AWS Pca Certificate Authority** (read-only): Retrieve the AWS Pca Certificate Authority selected by the request parameters.
+- **Get AWS Secrets Manager PKI Sync** (read-only): Get the specified AWS Secrets Manager PKI Sync by ID.
+- **Get AWS Secrets Manager Secret Sync** (read-only): Get the specified AWS Secrets Manager Sync by ID.
+- **Get AWS Secrets Manager Secret Sync By Name** (read-only): Get the specified AWS Secrets Manager Sync by name and project ID.
+- **Get Awsiam User Secret Rotation** (read-only): Get the specified AWS IAM User Secret Rotation by ID.
+- **Get Awsiam User Secret Rotation By Name** (read-only): Get the specified AWS IAM User Secret Rotation by name, secret path, environment and project ID.
+- **Get Awsiam User Secret Rotation Generated Credentials** (read-only): Get the generated credentials for the specified AWS IAM User Secret Rotation.
+- **Get Azure AD CS Certificate Authority** (read-only): Get an Azure AD CS certificate authority by ID.
+- **Get Azure Adcs App Connection** (read-only): Get the specified Azure ADCS (Web Enrollment) Connection by ID.
+- **Get Azure Adcs App Connection By Name** (read-only): Get the specified Azure ADCS (Web Enrollment) Connection by name.
+- **Get Azure ADCS Templates** (read-only): Get available certificate templates from Azure AD CS CA.
+- **Get Azure App Configuration App Connection** (read-only): Get the specified Azure App Configuration Connection by ID.
+- **Get Azure App Configuration App Connection By Name** (read-only): Get the specified Azure App Configuration Connection by name.
+- **Get Azure App Configuration Secret Sync** (read-only): Get the specified Azure App Configuration Sync by ID.
+- **Get Azure App Configuration Secret Sync By Name** (read-only): Get the specified Azure App Configuration Sync by name and project ID.
+- **Get Azure Client Secret Rotation** (read-only): Get the specified Azure Client Secret Rotation by ID.
+- **Get Azure Client Secret Rotation By Name** (read-only): Get the specified Azure Client Secret Rotation by name, secret path, environment and project ID.
+- **Get Azure Client Secret Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Azure Client Secret Rotation.
+- **Get Azure Client Secrets App Connection** (read-only): Get the specified Azure Client Secrets Connection by ID.
+- **Get Azure Client Secrets App Connection By Name** (read-only): Get the specified Azure Client Secrets Connection by name.
+- **Get Azure Devops App Connection** (read-only): Get the specified Azure DevOps Connection by ID.
+- **Get Azure Devops App Connection By Name** (read-only): Get the specified Azure DevOps Connection by name.
+- **Get Azure Devops Secret Sync** (read-only): Get the specified Azure DevOps Sync by ID.
+- **Get Azure Devops Secret Sync By Name** (read-only): Get the specified Azure DevOps Sync by name and project ID.
+- **Get Azure DNS App Connection** (read-only): Get the specified Azure DNS Connection by ID.
+- **Get Azure DNS App Connection By Name** (read-only): Get the specified Azure DNS Connection by name.
+- **Get Azure Entra Id App Connection** (read-only): Get the specified Azure Entra ID Connection by ID.
+- **Get Azure Entra Id App Connection By Name** (read-only): Get the specified Azure Entra ID Connection by name.
+- **Get Azure Entra Id Scim Secret Sync** (read-only): Get the specified Azure Entra ID SCIM Sync by ID.
+- **Get Azure Entra Id Scim Secret Sync By Name** (read-only): Get the specified Azure Entra ID SCIM Sync by name and project ID.
+- **Get Azure Key Vault App Connection** (read-only): Get the specified Azure Key Vault Connection by ID.
+- **Get Azure Key Vault App Connection By Name** (read-only): Get the specified Azure Key Vault Connection by name.
+- **Get Azure Key Vault PKI Sync** (read-only): Get the specified Azure Key Vault PKI Sync by ID.
+- **Get Azure Key Vault Secret Sync** (read-only): Get the specified Azure Key Vault Sync by ID.
+- **Get Azure Key Vault Secret Sync By Name** (read-only): Get the specified Azure Key Vault Sync by name and project ID.
+- **Get Bitbucket App Connection** (read-only): Get the specified Bitbucket Connection by ID.
+- **Get Bitbucket App Connection By Name** (read-only): Get the specified Bitbucket Connection by name.
+- **Get Bitbucket Secret Sync** (read-only): Get the specified Bitbucket Sync by ID.
+- **Get Bitbucket Secret Sync By Name** (read-only): Get the specified Bitbucket Sync by name and project ID.
+- **Get CA Auto Renewal Config** (read-only): Get auto-renewal configuration for a CA.
+- **Get CA Certificate** (read-only): Get current CA cert and cert chain of a CA.
+- **Get CA Certificate By ID** (read-only): Get a certificate issued for an internal certificate authority by ID.
+- **Get CA Certificate DER** (read-only): Get DER-encoded certificate of CA.
+- **Get CA Certificates** (read-only): Get list of past and current CA certificates for a CA.
+- **Get CA Crls** (read-only): Get list of CRLs of the CA.
+- **Get CA Csr** (read-only): Get CA CSR.
+- **Get CA Signing Config** (read-only): Get the signing configuration for a CA.
+- **Get Camunda App Connection** (read-only): Get the specified Camunda Connection by ID.
+- **Get Camunda App Connection By Name** (read-only): Get the specified Camunda Connection by name.
+- **Get Camunda Secret Sync** (read-only): Get the specified Camunda Sync by ID.
+- **Get Camunda Secret Sync By Name** (read-only): Get the specified Camunda Sync by name and project ID.
+- **Get Certificate** (read-only): Retrieve the Certificate selected by the request parameters.
+- **Get Certificate Body** (read-only): Get certificate body of certificate.
+- **Get Certificate Bundle** (read-only): Get certificate bundle including the certificate, chain, and private key.
+- **Get Certificate Cleanup Config** (read-only): Get the certificate cleanup configuration.
+- **Get Certificate Policy** (read-only): Retrieve the Certificate Policy selected by the request parameters.
+- **Get Certificate Private Key** (read-only): Get certificate private key.
+- **Get Certificate Profile** (read-only): Retrieve the Certificate Profile selected by the request parameters.
+- **Get Certificate Profile By Slug** (read-only): Retrieve the Certificate Profile By Slug selected by the slug.
+- **Get Certificate Profile Latest Active Bundle** (read-only): Get latest active certificate bundle for a profile.
+- **Get Certificate Request** (read-only): Get certificate request.
+- **Get Checkly App Connection** (read-only): Get the specified Checkly Connection by ID.
+- **Get Checkly App Connection By Name** (read-only): Get the specified Checkly Connection by name.
+- **Get Checkly Secret Sync** (read-only): Get the specified Checkly Sync by ID.
+- **Get Checkly Secret Sync By Name** (read-only): Get the specified Checkly Sync by name and project ID.
+- **Get Chef App Connection** (read-only): Get the specified Chef Connection by ID.
+- **Get Chef App Connection By Name** (read-only): Get the specified Chef Connection by name.
+- **Get Chef PKI Sync** (read-only): Get the specified Chef PKI Sync by ID.
+- **Get Chef Secret Sync** (read-only): Get the specified Chef Sync by ID.
+- **Get Chef Secret Sync By Name** (read-only): Get the specified Chef Sync by name and project ID.
+- **Get Circleci App Connection** (read-only): Get the specified CircleCI Connection by ID.
+- **Get Circleci App Connection By Name** (read-only): Get the specified CircleCI Connection by name.
+- **Get Circleci Secret Sync** (read-only): Get the specified CircleCI Sync by ID.
+- **Get Circleci Secret Sync By Name** (read-only): Get the specified CircleCI Sync by name and project ID.
+- **Get Cloud66 App Connection** (read-only): Get the specified Cloud 66 Connection by ID.
+- **Get Cloud66 App Connection By Name** (read-only): Get the specified Cloud 66 Connection by name.
+- **Get Cloud66 Secret Sync** (read-only): Get the specified Cloud 66 Sync by ID.
+- **Get Cloud66 Secret Sync By Name** (read-only): Get the specified Cloud 66 Sync by name and project ID.
+- **Get Cloudflare API Token Rotation** (read-only): Get the specified Cloudflare API Token Rotation by ID.
+- **Get Cloudflare API Token Rotation By Name** (read-only): Get the specified Cloudflare API Token Rotation by name, secret path, environment and project ID.
+- **Get Cloudflare API Token Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Cloudflare API Token Rotation.
+- **Get Cloudflare App Connection** (read-only): Get the specified Cloudflare Connection by ID.
+- **Get Cloudflare App Connection By Name** (read-only): Get the specified Cloudflare Connection by name.
+- **Get Cloudflare Custom Certificate PKI Sync** (read-only): Get the specified Cloudflare Custom SSL Certificate PKI Sync by ID.
+- **Get Cloudflare Pages Secret Sync** (read-only): Get the specified Cloudflare Pages Sync by ID.
+- **Get Cloudflare Pages Secret Sync By Name** (read-only): Get the specified Cloudflare Pages Sync by name and project ID.
+- **Get Cloudflare R2 Access Key Rotation** (read-only): Get the specified Cloudflare R2 Access Key Rotation by ID.
+- **Get Cloudflare R2 Access Key Rotation By Name** (read-only): Get the specified Cloudflare R2 Access Key Rotation by name, secret path, environment and project ID.
+- **Get Cloudflare R2 Access Key Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Cloudflare R2 Access Key Rotation.
+- **Get Cloudflare Secrets Store Secret Sync** (read-only): Get the specified Cloudflare Secrets Store Sync by ID.
+- **Get Cloudflare Secrets Store Secret Sync By Name** (read-only): Get the specified Cloudflare Secrets Store Sync by name and project ID.
+- **Get Cloudflare Workers Secret Sync** (read-only): Get the specified Cloudflare Workers Sync by ID.
+- **Get Cloudflare Workers Secret Sync By Name** (read-only): Get the specified Cloudflare Workers Sync by name and project ID.
+- **Get Convex Access Key Rotation** (read-only): Get the specified Convex Access Key Rotation by ID.
+- **Get Convex Access Key Rotation By Name** (read-only): Get the specified Convex Access Key Rotation by name, secret path, environment and project ID.
+- **Get Convex Access Key Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Convex Access Key Rotation.
+- **Get Convex App Connection** (read-only): Get the specified Convex Connection by ID.
+- **Get Convex App Connection By Name** (read-only): Get the specified Convex Connection by name.
+- **Get Databricks App Connection** (read-only): Get the specified Databricks Connection by ID.
+- **Get Databricks App Connection By Name** (read-only): Get the specified Databricks Connection by name.
+- **Get Databricks Secret Sync** (read-only): Get the specified Databricks Sync by ID.
+- **Get Databricks Secret Sync By Name** (read-only): Get the specified Databricks Sync by name and project ID.
+- **Get Databricks Service Principal Secret Rotation** (read-only): Get the specified Databricks Service Principal Secret Rotation by ID.
+- **Get Databricks Service Principal Secret Rotation By Name** (read-only): Get the specified Databricks Service Principal Secret Rotation by name, secret path, environment and project ID.
+- **Get Databricks Service Principal Secret Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Databricks Service Principal Secret Rotation.
+- **Get Datadog API Key Rotation** (read-only): Get the specified Datadog API Key Rotation by ID.
+- **Get Datadog API Key Rotation By Name** (read-only): Get the specified Datadog API Key Rotation by name, secret path, environment and project ID.
+- **Get Datadog API Key Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Datadog API Key Rotation.
+- **Get Datadog App Connection** (read-only): Get the specified Datadog Connection by ID.
+- **Get Datadog App Connection By Name** (read-only): Get the specified Datadog Connection by name.
+- **Get Datadog Application Key Rotation** (read-only): Get the specified Datadog Application Key Rotation by ID.
+- **Get Datadog Application Key Rotation By Name** (read-only): Get the specified Datadog Application Key Rotation by name, secret path, environment and project ID.
+- **Get Datadog Application Key Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Datadog Application Key Rotation.
+- **Get Daytona App Connection** (read-only): Get the specified Daytona Connection by ID.
+- **Get Daytona App Connection By Name** (read-only): Get the specified Daytona Connection by name.
+- **Get Daytona Secret Sync** (read-only): Get the specified Daytona Sync by ID.
+- **Get Daytona Secret Sync By Name** (read-only): Get the specified Daytona Sync by name and project ID.
+- **Get Dbt App Connection** (read-only): Get the specified DBT Connection by ID.
+- **Get Dbt App Connection By Name** (read-only): Get the specified DBT Connection by name.
+- **Get Dbt Service Token Rotation** (read-only): Get the specified DBT Service Token Rotation by ID.
+- **Get Dbt Service Token Rotation By Name** (read-only): Get the specified DBT Service Token Rotation by name, secret path, environment and project ID.
+- **Get Dbt Service Token Rotation Generated Credentials** (read-only): Get the generated credentials for the specified DBT Service Token Rotation.
+- **Get Devin App Connection** (read-only): Get the specified Devin Connection by ID.
+- **Get Devin App Connection By Name** (read-only): Get the specified Devin Connection by name.
+- **Get Devin Secret Sync** (read-only): Get the specified Devin Sync by ID.
+- **Get Devin Secret Sync By Name** (read-only): Get the specified Devin Sync by name and project ID.
+- **Get Digicert App Connection** (read-only): Get the specified DigiCert Connection by ID.
+- **Get Digicert App Connection By Name** (read-only): Get the specified DigiCert Connection by name.
+- **Get Digicert Certificate Authority** (read-only): Retrieve the Digicert Certificate Authority selected by the request parameters.
+- **Get Digital Ocean App Connection** (read-only): Get the specified DigitalOcean App Platform Connection by ID.
+- **Get Digital Ocean App Connection By Name** (read-only): Get the specified DigitalOcean App Platform Connection by name.
+- **Get Digital Ocean App Platform Secret Sync** (read-only): Get the specified Digital Ocean App Platform Sync by ID.
+- **Get Digital Ocean App Platform Secret Sync By Name** (read-only): Get the specified Digital Ocean App Platform Sync by name and project ID.
+- **Get DNS Made Easy App Connection** (read-only): Get the specified DNS Made Easy Connection by ID.
+- **Get DNS Made Easy App Connection By Name** (read-only): Get the specified DNS Made Easy Connection by name.
+- **Get Doppler App Connection** (read-only): Get the specified Doppler Connection by ID.
+- **Get Doppler App Connection By Name** (read-only): Get the specified Doppler Connection by name.
+- **Get Dynamic Secret Validation Rule** (read-only): Get a dynamic-secret validation rule by ID.
+- **Get Environment By ID** (read-only): Get Environment by ID.
+- **Get Environment By Slug** (read-only): Get Environment by slug.
+- **Get External Infisical App Connection** (read-only): Get the specified Infisical Connection by ID.
+- **Get External Infisical App Connection By Name** (read-only): Get the specified Infisical Connection by name.
+- **Get External Infisical Secret Sync** (read-only): Get the specified Infisical Sync by ID.
+- **Get External Infisical Secret Sync By Name** (read-only): Get the specified Infisical Sync by name and project ID.
+- **Get F5 Big Ip App Connection** (read-only): Get the specified F5 BIG-IP Connection by ID.
+- **Get F5 Big Ip App Connection By Name** (read-only): Get the specified F5 BIG-IP Connection by name.
+- **Get F5 Big Ip PKI Sync** (read-only): Get the specified F5 BIG-IP PKI Sync by ID.
+- **Get Fireworks App Connection** (read-only): Get the specified Fireworks Connection by ID.
+- **Get Fireworks App Connection By Name** (read-only): Get the specified Fireworks Connection by name.
+- **Get Fireworks Secret Rotation** (read-only): Get the specified Fireworks Secret Rotation by ID.
+- **Get Fireworks Secret Rotation By Name** (read-only): Get the specified Fireworks Secret Rotation by name, secret path, environment and project ID.
+- **Get Fireworks Secret Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Fireworks Secret Rotation.
+- **Get Flyio App Connection** (read-only): Get the specified Fly.io Connection by ID.
+- **Get Flyio App Connection By Name** (read-only): Get the specified Fly.io Connection by name.
+- **Get Flyio Secret Sync** (read-only): Get the specified Fly.io Sync by ID.
+- **Get Flyio Secret Sync By Name** (read-only): Get the specified Fly.io Sync by name and project ID.
+- **Get GCP App Connection** (read-only): Get the specified GCP Connection by ID.
+- **Get GCP App Connection By Name** (read-only): Get the specified GCP Connection by name.
+- **Get GCP Certificate Manager PKI Sync** (read-only): Get the specified GCP Certificate Manager PKI Sync by ID.
+- **Get GCP Secret Manager Secret Sync** (read-only): Get the specified GCP Secret Manager Sync by ID.
+- **Get GCP Secret Manager Secret Sync By Name** (read-only): Get the specified GCP Secret Manager Sync by name and project ID.
+- **Get GCP Service Account Key Rotation** (read-only): Get the specified GCP Service Account Key Rotation by ID.
+- **Get GCP Service Account Key Rotation By Name** (read-only): Get the specified GCP Service Account Key Rotation by name, secret path, environment and project ID.
+- **Get GCP Service Account Key Rotation Generated Credentials** (read-only): Get the generated credentials for the specified GCP Service Account Key Rotation.
+- **Get Git Hub App Connection** (read-only): Get the specified GitHub Connection by ID.
+- **Get Git Hub App Connection By Name** (read-only): Get the specified GitHub Connection by name.
+- **Get Git Hub Radar App Connection** (read-only): Get the specified GitHub Radar Connection by ID.
+- **Get Git Hub Radar App Connection By Name** (read-only): Get the specified GitHub Radar Connection by name.
+- **Get Git Hub Secret Sync** (read-only): Get the specified GitHub Sync by ID.
+- **Get Git Hub Secret Sync By Name** (read-only): Get the specified GitHub Sync by name and project ID.
+- **Get Git Lab App Connection** (read-only): Get the specified GitLab Connection by ID.
+- **Get Git Lab App Connection By Name** (read-only): Get the specified GitLab Connection by name.
+- **Get Git Lab Secret Sync** (read-only): Get the specified GitLab Sync by ID.
+- **Get Git Lab Secret Sync By Name** (read-only): Get the specified GitLab Sync by name and project ID.
+- **Get GoDaddy App Connection** (read-only): Get the specified GoDaddy Connection by ID.
+- **Get GoDaddy App Connection By Name** (read-only): Get the specified GoDaddy Connection by name.
+- **Get GoDaddy Certificate Authority** (read-only): Get a GoDaddy certificate authority by ID.
+- **Get H Pi Lo Local Account Rotation** (read-only): Get the specified HP iLO Local Account Rotation by ID.
+- **Get H Pi Lo Local Account Rotation By Name** (read-only): Get the specified HP iLO Local Account Rotation by name, secret path, environment and project ID.
+- **Get H Pi Lo Local Account Rotation Generated Credentials** (read-only): Get the generated credentials for the specified HP iLO Local Account Rotation.
+- **Get Hashicorp Vault App Connection** (read-only): Get the specified Hashicorp Vault Connection by ID.
+- **Get Hashicorp Vault App Connection By Name** (read-only): Get the specified Hashicorp Vault Connection by name.
+- **Get Hashicorp Vault Secret Sync** (read-only): Get the specified Hashicorp Vault Sync by ID.
+- **Get Hashicorp Vault Secret Sync By Name** (read-only): Get the specified Hashicorp Vault Sync by name and project ID.
+- **Get Hasura Cloud App Connection** (read-only): Get the specified Hasura Cloud Connection by ID.
+- **Get Hasura Cloud App Connection By Name** (read-only): Get the specified Hasura Cloud Connection by name.
+- **Get Hasura Cloud Secret Sync** (read-only): Get the specified Hasura Cloud Sync by ID.
+- **Get Hasura Cloud Secret Sync By Name** (read-only): Get the specified Hasura Cloud Sync by name and project ID.
+- **Get Heroku App Connection** (read-only): Get the specified Heroku Connection by ID.
+- **Get Heroku App Connection By Name** (read-only): Get the specified Heroku Connection by name.
+- **Get Heroku Secret Sync** (read-only): Get the specified Heroku Sync by ID.
+- **Get Heroku Secret Sync By Name** (read-only): Get the specified Heroku Sync by name and project ID.
+- **Get Hpe Ilo App Connection** (read-only): Get the specified HPE iLO Connection by ID.
+- **Get Hpe Ilo App Connection By Name** (read-only): Get the specified HPE iLO Connection by name.
+- **Get HSM Connector** (read-only): Get an HSM connector by ID.
+- **Get Humanitec App Connection** (read-only): Get the specified Humanitec Connection by ID.
+- **Get Humanitec App Connection By Name** (read-only): Get the specified Humanitec Connection by name.
+- **Get Humanitec Secret Sync** (read-only): Get the specified Humanitec Sync by ID.
+- **Get Humanitec Secret Sync By Name** (read-only): Get the specified Humanitec Sync by name and project ID.
+- **Get Identity Auth Template By ID** (read-only): Get identity auth template by ID.
+- **Get Identity Auth Templates By Authentication Method** (read-only): Get identity auth templates by authentication method.
+- **Get Identity Project Additional Privilege** (read-only): Retrieve details of a specific privilege by id.
+- **Get Identity Project Additional Privilege By Slug** (read-only): Retrieve details of a specific privilege by slug.
+- **Get Internal Certificate Authority** (read-only): Retrieve the Internal Certificate Authority selected by the request parameters.
+- **Get Keeper App Connection** (read-only): Get the specified Keeper Connection by ID.
+- **Get Keeper App Connection By Name** (read-only): Get the specified Keeper Connection by name.
+- **Get Keeper Password Manager Secret Sync** (read-only): Get the specified Keeper Password Manager Sync by ID.
+- **Get Keeper Password Manager Secret Sync By Name** (read-only): Get the specified Keeper Password Manager Sync by name and project ID.
+- **Get Kemp Loadmaster App Connection** (read-only): Get the specified Kemp LoadMaster Connection by ID.
+- **Get Kemp Loadmaster App Connection By Name** (read-only): Get the specified Kemp LoadMaster Connection by name.
+- **Get Kemp Loadmaster PKI Sync** (read-only): Get the specified Kemp LoadMaster PKI Sync by ID.
+- **Get KMS Key By Id** (read-only): Get KMS key by ID.
+- **Get KMS Key By Name** (read-only): Get KMS key by name.
+- **Get KMS Key Private Key** (read-only): Export the private key (or key material) for a KMS key.
+- **Get KMS Key Public Key** (read-only): Get the public key for a KMS key that is used for signing and verifying data.
+- **Get Laravel Forge App Connection** (read-only): Get the specified Laravel Forge Connection by ID.
+- **Get Laravel Forge App Connection By Name** (read-only): Get the specified Laravel Forge Connection by name.
+- **Get Laravel Forge Secret Sync** (read-only): Get the specified Laravel Forge Sync by ID.
+- **Get Laravel Forge Secret Sync By Name** (read-only): Get the specified Laravel Forge Sync by name and project ID.
+- **Get Ldap App Connection** (read-only): Get the specified LDAP Connection by ID.
+- **Get Ldap App Connection By Name** (read-only): Get the specified LDAP Connection by name.
+- **Get Ldap Password Rotation** (read-only): Get the specified LDAP Password Rotation by ID.
+- **Get Ldap Password Rotation By Name** (read-only): Get the specified LDAP Password Rotation by name, secret path, environment and project ID.
+- **Get Ldap Password Rotation Generated Credentials** (read-only): Get the generated credentials for the specified LDAP Password Rotation.
+- **Get Linux Server PKI Sync** (read-only): Get the specified Linux Server PKI Sync by ID.
+- **Get Lite Llmapi Key Rotation** (read-only): Get the specified LiteLLM API Key Rotation by ID.
+- **Get Lite Llmapi Key Rotation By Name** (read-only): Get the specified LiteLLM API Key Rotation by name, secret path, environment and project ID.
+- **Get Lite Llmapi Key Rotation Generated Credentials** (read-only): Get the generated credentials for the specified LiteLLM API Key Rotation.
+- **Get Litellm App Connection** (read-only): Get the specified LiteLLM Connection by ID.
+- **Get Litellm App Connection By Name** (read-only): Get the specified LiteLLM Connection by name.
+- **Get Machine Identity By Id** (read-only): Get a machine identity by id.
+- **Get Machine Identity Details** (read-only): Get details for the calling machine identity, including the organization it belongs to.
+- **Get Microsoft Intune App Connection** (read-only): Get the specified Microsoft Intune Connection by ID.
+- **Get Microsoft Intune App Connection By Name** (read-only): Get the specified Microsoft Intune Connection by name.
+- **Get Microsoft Sql Server Credentials Rotation** (read-only): Get the specified Microsoft SQL Server Credentials Rotation by ID.
+- **Get Microsoft Sql Server Credentials Rotation By Name** (read-only): Get the specified Microsoft SQL Server Credentials Rotation by name, secret path, environment and project ID.
+- **Get Microsoft Sql Server Credentials Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Microsoft SQL Server Credentials Rotation.
+- **Get Mongo Db App Connection** (read-only): Get the specified MongoDB Connection by ID.
+- **Get Mongo Db App Connection By Name** (read-only): Get the specified MongoDB Connection by name.
+- **Get Mongo Db Credentials Rotation** (read-only): Get the specified MongoDB Credentials Rotation by ID.
+- **Get Mongo Db Credentials Rotation By Name** (read-only): Get the specified MongoDB Credentials Rotation by name, secret path, environment and project ID.
+- **Get Mongo Db Credentials Rotation Generated Credentials** (read-only): Get the generated credentials for the specified MongoDB Credentials Rotation.
+- **Get Ms Sql App Connection** (read-only): Get the specified Microsoft SQL Server Connection by ID.
+- **Get Ms Sql App Connection By Name** (read-only): Get the specified Microsoft SQL Server Connection by name.
+- **Get My Sql App Connection** (read-only): Get the specified MySQL Connection by ID.
+- **Get My Sql App Connection By Name** (read-only): Get the specified MySQL Connection by name.
+- **Get My Sql Credentials Rotation** (read-only): Get the specified MySQL Credentials Rotation by ID.
+- **Get My Sql Credentials Rotation By Name** (read-only): Get the specified MySQL Credentials Rotation by name, secret path, environment and project ID.
+- **Get My Sql Credentials Rotation Generated Credentials** (read-only): Get the generated credentials for the specified MySQL Credentials Rotation.
+- **Get Netlify App Connection** (read-only): Get the specified Netlify Connection by ID.
+- **Get Netlify App Connection By Name** (read-only): Get the specified Netlify Connection by name.
+- **Get Netlify Secret Sync** (read-only): Get the specified Netlify Sync by ID.
+- **Get Netlify Secret Sync By Name** (read-only): Get the specified Netlify Sync by name and project ID.
+- **Get Netscaler App Connection** (read-only): Get the specified NetScaler Connection by ID.
+- **Get Netscaler App Connection By Name** (read-only): Get the specified NetScaler Connection by name.
+- **Get Netscaler PKI Sync** (read-only): Get the specified NetScaler PKI Sync by ID.
+- **Get Northflank App Connection** (read-only): Get the specified Northflank Connection by ID.
+- **Get Northflank App Connection By Name** (read-only): Get the specified Northflank Connection by name.
+- **Get Northflank Secret Sync** (read-only): Get the specified Northflank Sync by ID.
+- **Get Northflank Secret Sync By Name** (read-only): Get the specified Northflank Sync by name and project ID.
+- **Get Nutanix Prism Central App Connection** (read-only): Get the specified Nutanix Prism Central Connection by ID.
+- **Get Nutanix Prism Central App Connection By Name** (read-only): Get the specified Nutanix Prism Central Connection by name.
+- **Get Nutanix Prism Central PKI Sync** (read-only): Get the specified Nutanix Prism Central PKI Sync by ID.
+- **Get Oci App Connection** (read-only): Get the specified OCI Connection by ID.
+- **Get Oci App Connection By Name** (read-only): Get the specified OCI Connection by name.
+- **Get Oci Vault Secret Sync** (read-only): Get the specified OCI Vault Sync by ID.
+- **Get Oci Vault Secret Sync By Name** (read-only): Get the specified OCI Vault Sync by name and project ID.
+- **Get Octopus Deploy App Connection** (read-only): Get the specified Octopus Deploy Connection by ID.
+- **Get Octopus Deploy App Connection By Name** (read-only): Get the specified Octopus Deploy Connection by name.
+- **Get Octopus Deploy Secret Sync** (read-only): Get the specified Octopus Deploy Sync by ID.
+- **Get Octopus Deploy Secret Sync By Name** (read-only): Get the specified Octopus Deploy Sync by name and project ID.
+- **Get Okta App Connection** (read-only): Get the specified Okta Connection by ID.
+- **Get Okta App Connection By Name** (read-only): Get the specified Okta Connection by name.
+- **Get Okta Client Secret Rotation** (read-only): Get the specified Okta Client Secret Rotation by ID.
+- **Get Okta Client Secret Rotation By Name** (read-only): Get the specified Okta Client Secret Rotation by name, secret path, environment and project ID.
+- **Get Okta Client Secret Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Okta Client Secret Rotation.
+- **Get Ona App Connection** (read-only): Get the specified Ona Connection by ID.
+- **Get Ona App Connection By Name** (read-only): Get the specified Ona Connection by name.
+- **Get Ona Secret Sync** (read-only): Get the specified Ona Sync by ID.
+- **Get Ona Secret Sync By Name** (read-only): Get the specified Ona Sync by name and project ID.
+- **Get One Password App Connection** (read-only): Get the specified 1Password Connection by ID.
+- **Get One Password App Connection By Name** (read-only): Get the specified 1Password Connection by name.
+- **Get One Password Secret Sync** (read-only): Get the specified 1Password Sync by ID.
+- **Get One Password Secret Sync By Name** (read-only): Get the specified 1Password Sync by name and project ID.
+- **Get Open Ai Service Account Rotation** (read-only): Get the specified OpenAI Service Account Rotation by ID.
+- **Get Open Ai Service Account Rotation By Name** (read-only): Get the specified OpenAI Service Account Rotation by name, secret path, environment and project ID.
+- **Get Open Ai Service Account Rotation Generated Credentials** (read-only): Get the generated credentials for the specified OpenAI Service Account Rotation.
+- **Get Open Router App Connection** (read-only): Get the specified OpenRouter Connection by ID.
+- **Get Open Router App Connection By Name** (read-only): Get the specified OpenRouter Connection by name.
+- **Get Openai App Connection** (read-only): Get the specified OpenAI Connection by ID.
+- **Get Openai App Connection By Name** (read-only): Get the specified OpenAI Connection by name.
+- **Get Openrouter API Key Rotation** (read-only): Get the specified OpenRouter API Key Rotation by ID.
+- **Get Openrouter API Key Rotation By Name** (read-only): Get the specified OpenRouter API Key Rotation by name, secret path, environment and project ID.
+- **Get Openrouter API Key Rotation Generated Credentials** (read-only): Get the generated credentials for the specified OpenRouter API Key Rotation.
+- **Get Oracle Db App Connection** (read-only): Get the specified OracleDB Connection by ID.
+- **Get Oracle Db App Connection By Name** (read-only): Get the specified OracleDB Connection by name.
+- **Get Oracle Db Credentials Rotation** (read-only): Get the specified OracleDB Credentials Rotation by ID.
+- **Get Oracle Db Credentials Rotation By Name** (read-only): Get the specified OracleDB Credentials Rotation by name, secret path, environment and project ID.
+- **Get Oracle Db Credentials Rotation Generated Credentials** (read-only): Get the generated credentials for the specified OracleDB Credentials Rotation.
+- **Get Ovh App Connection** (read-only): Get the specified OVH Connection by ID.
+- **Get Ovh App Connection By Name** (read-only): Get the specified OVH Connection by name.
+- **Get Ovh Secret Sync** (read-only): Get the specified OVH Sync by ID.
+- **Get Ovh Secret Sync By Name** (read-only): Get the specified OVH Sync by name and project ID.
+- **Get Palo Alto Networks App Connection** (read-only): Get the specified Palo Alto Networks Connection by ID.
+- **Get Palo Alto Networks App Connection By Name** (read-only): Get the specified Palo Alto Networks Connection by name.
+- **Get Palo Alto Networks PKI Sync** (read-only): Get the specified Palo Alto Networks PKI Sync by ID.
+- **Get Palo Alto Networks Ssl Tls Profile PKI Sync** (read-only): Get the specified Palo Alto Networks SSL/TLS Profile PKI Sync by ID.
+- **Get PKI Application** (read-only): Get an application by id.
+- **Get PKI Application ACME Directory** (read-only): Get the ACME directory URLs for a profile attached to a PKI application.
+- **Get PKI Application By Name** (read-only): Get an application by name.
+- **Get PKI Application Enrollment** (read-only): Get the enrollment state for a profile on an application.
+- **Get PKI Application Permissions** (read-only): Get the actor's effective resource permissions on this application.
+- **Get PKI Discovery** (read-only): Get a PKI discovery configuration by ID.
+- **Get PKI Discovery Config** (read-only): Get PKI discovery configuration limits and defaults.
+- **Get PKI Discovery Latest Scan** (read-only): Get the latest scan for a PKI discovery configuration.
+- **Get PKI Installation** (read-only): Get a PKI certificate installation by ID with linked certificates.
+- **Get PKI Sync** (read-only): Get a PKI Sync by ID.
+- **Get Portainer App Connection** (read-only): Get the specified Portainer Connection by ID.
+- **Get Portainer App Connection By Name** (read-only): Get the specified Portainer Connection by name.
+- **Get Portainer Secret Sync** (read-only): Get the specified Portainer Sync by ID.
+- **Get Portainer Secret Sync By Name** (read-only): Get the specified Portainer Sync by name and project ID.
+- **Get Postgre Sql Credentials Rotation** (read-only): Get the specified PostgreSQL Credentials Rotation by ID.
+- **Get Postgre Sql Credentials Rotation By Name** (read-only): Get the specified PostgreSQL Credentials Rotation by name, secret path, environment and project ID.
+- **Get Postgre Sql Credentials Rotation Generated Credentials** (read-only): Get the generated credentials for the specified PostgreSQL Credentials Rotation.
+- **Get Postgres App Connection** (read-only): Get the specified PostgreSQL Connection by ID.
+- **Get Postgres App Connection By Name** (read-only): Get the specified PostgreSQL Connection by name.
+- **Get Powerdns App Connection** (read-only): Get the specified PowerDNS Connection by ID.
+- **Get Powerdns App Connection By Name** (read-only): Get the specified PowerDNS Connection by name.
+- **Get Project By Id** (read-only): Retrieve the Project By Id selected by the request parameters.
+- **Get Project By Slug** (read-only): Get project details by slug.
+- **Get Project Group Membership** (read-only): Get project group membership by group ID.
+- **Get Project Identity Membership By Id** (read-only): Get project identity membership by identity ID.
+- **Get Project Machine Identity By Id** (read-only): Get an identity by ID in a project.
+- **Get Project Membership By Username** (read-only): Return project user memberships.
+- **Get Project Role By ID** (read-only): Get a project role by ID.
+- **Get Project Role By Slug** (read-only): Get a project role by its slug.
+- **Get Project Template By ID** (read-only): Get a project template by ID.
+- **Get Qovery App Connection** (read-only): Get the specified Qovery Connection by ID.
+- **Get Qovery App Connection By Name** (read-only): Get the specified Qovery Connection by name.
+- **Get Qovery Secret Sync** (read-only): Get the specified Qovery Sync by ID.
+- **Get Qovery Secret Sync By Name** (read-only): Get the specified Qovery Sync by name and project ID.
+- **Get Railway App Connection** (read-only): Get the specified Railway Connection by ID.
+- **Get Railway App Connection By Name** (read-only): Get the specified Railway Connection by name.
+- **Get Railway Secret Sync** (read-only): Get the specified Railway Sync by ID.
+- **Get Railway Secret Sync By Name** (read-only): Get the specified Railway Sync by name and project ID.
+- **Get Raw Secrets From Imports** (read-only): Get raw secrets resolved from secret imports for a project location.
+- **Get Redis App Connection** (read-only): Get the specified Redis Connection by ID.
+- **Get Redis App Connection By Name** (read-only): Get the specified Redis Connection by name.
+- **Get Redis Credentials Rotation** (read-only): Get the specified Redis Credentials Rotation by ID.
+- **Get Redis Credentials Rotation By Name** (read-only): Get the specified Redis Credentials Rotation by name, secret path, environment and project ID.
+- **Get Redis Credentials Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Redis Credentials Rotation.
+- **Get Render App Connection** (read-only): Get the specified Render Connection by ID.
+- **Get Render App Connection By Name** (read-only): Get the specified Render Connection by name.
+- **Get Render Secret Sync** (read-only): Get the specified Render Sync by ID.
+- **Get Render Secret Sync By Name** (read-only): Get the specified Render Sync by name and project ID.
+- **Get Rundeck App Connection** (read-only): Get the specified Rundeck Connection by ID.
+- **Get Rundeck App Connection By Name** (read-only): Get the specified Rundeck Connection by name.
+- **Get Rundeck Secret Sync** (read-only): Get the specified Rundeck Sync by ID.
+- **Get Rundeck Secret Sync By Name** (read-only): Get the specified Rundeck Sync by name and project ID.
+- **Get S3 Compatible App Connection** (read-only): Get the specified S3-Compatible Storage Connection by ID.
+- **Get S3 Compatible App Connection By Name** (read-only): Get the specified S3-Compatible Storage Connection by name.
+- **Get Salesforce App Connection** (read-only): Get the specified Salesforce Connection by ID.
+- **Get Salesforce App Connection By Name** (read-only): Get the specified Salesforce Connection by name.
+- **Get Salesforce O Auth Credentials Rotation** (read-only): Get the specified Salesforce OAuth Credentials Rotation by ID.
+- **Get Salesforce O Auth Credentials Rotation By Name** (read-only): Get the specified Salesforce OAuth Credentials Rotation by name, secret path, environment and project ID.
+- **Get Salesforce O Auth Credentials Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Salesforce OAuth Credentials Rotation.
+- **Get Secret By ID** (read-only): Get a secret by ID.
+- **Get Secret By Name** (read-only): Get a secret by name.
+- **Get Secret Folder By Id** (read-only): Get folder by id.
+- **Get Secret Import** (read-only): Get single secret import.
+- **Get Secret Reference Dependency Tree** (read-only): Get Infisical's dependency-tree representation for a selected secret, including each node's secret key, environment, path, project, and…
+- **Get Secret Reference Tree** (read-only): Get Infisical's secret-reference tree for a selected secret, including its root-level resolved value when returned.
+- **Get Secret Rotation Validation Rule** (read-only): Get a secret-rotation validation rule by ID.
+- **Get Secret Tag By Id** (read-only): Retrieve the Secret Tag By Id selected by the request parameters.
+- **Get Secret Tag By Slug** (read-only): Retrieve the Secret Tag By Slug selected by the slug.
+- **Get Signer Approval Policy** (read-only): Read the signer's approval policy (steps, approvers, limits).
+- **Get Signer By Id** (read-only): Get a code signing signer by ID.
+- **Get Signer Permissions** (read-only): Get the actor's effective resource permissions on this signer.
+- **Get Signer Public Key** (read-only): Get the public key for a code signing signer.
+- **Get Signing Operation** (read-only): Get a signing operation with its full client context.
+- **Get Smb App Connection** (read-only): Get the specified Windows (SMB) Connection by ID.
+- **Get Smb App Connection By Name** (read-only): Get the specified Windows (SMB) Connection by name.
+- **Get Snowflake App Connection** (read-only): Get the specified Snowflake Connection by ID.
+- **Get Snowflake App Connection By Name** (read-only): Get the specified Snowflake Connection by name.
+- **Get Snowflake Secret Sync** (read-only): Get the specified Snowflake Sync by ID.
+- **Get Snowflake Secret Sync By Name** (read-only): Get the specified Snowflake Sync by name and project ID.
+- **Get Snowflake User Key Pair Rotation** (read-only): Get the specified Snowflake User Key Pair Rotation by ID.
+- **Get Snowflake User Key Pair Rotation By Name** (read-only): Get the specified Snowflake User Key Pair Rotation by name, secret path, environment and project ID.
+- **Get Snowflake User Key Pair Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Snowflake User Key Pair Rotation.
+- **Get Spacelift App Connection** (read-only): Get the specified Spacelift Connection by ID.
+- **Get Spacelift App Connection By Name** (read-only): Get the specified Spacelift Connection by name.
+- **Get Spacelift Secret Sync** (read-only): Get the specified Spacelift Sync by ID.
+- **Get Spacelift Secret Sync By Name** (read-only): Get the specified Spacelift Sync by name and project ID.
+- **Get Ssh App Connection** (read-only): Get the specified SSH Connection by ID.
+- **Get Ssh App Connection By Name** (read-only): Get the specified SSH Connection by name.
+- **Get Static Secret Validation Rule** (read-only): Get a static-secret validation rule by ID.
+- **Get Stripe API Key Rotation** (read-only): Get the specified Stripe API Key Rotation by ID.
+- **Get Stripe API Key Rotation By Name** (read-only): Get the specified Stripe API Key Rotation by name, secret path, environment and project ID.
+- **Get Stripe API Key Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Stripe API Key Rotation.
+- **Get Stripe App Connection** (read-only): Get the specified Stripe Connection by ID.
+- **Get Stripe App Connection By Name** (read-only): Get the specified Stripe Connection by name.
+- **Get Supabase API Key Rotation** (read-only): Get the specified Supabase API Key Rotation by ID.
+- **Get Supabase API Key Rotation By Name** (read-only): Get the specified Supabase API Key Rotation by name, secret path, environment and project ID.
+- **Get Supabase API Key Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Supabase API Key Rotation.
+- **Get Supabase App Connection** (read-only): Get the specified Supabase Connection by ID.
+- **Get Supabase App Connection By Name** (read-only): Get the specified Supabase Connection by name.
+- **Get Supabase Secret Sync** (read-only): Get the specified Supabase Sync by ID.
+- **Get Supabase Secret Sync By Name** (read-only): Get the specified Supabase Sync by name and project ID.
+- **Get Teamcity App Connection** (read-only): Get the specified TeamCity Connection by ID.
+- **Get Teamcity App Connection By Name** (read-only): Get the specified TeamCity Connection by name.
+- **Get Teamcity Secret Sync** (read-only): Get the specified TeamCity Sync by ID.
+- **Get Teamcity Secret Sync By Name** (read-only): Get the specified TeamCity Sync by name and project ID.
+- **Get Template Usage By Template ID** (read-only): Get template usage by template ID.
+- **Get Terraform Cloud App Connection** (read-only): Get the specified Terraform Cloud Connection by ID.
+- **Get Terraform Cloud App Connection By Name** (read-only): Get the specified Terraform Cloud Connection by name.
+- **Get Terraform Cloud Secret Sync** (read-only): Get the specified Terraform Cloud Sync by ID.
+- **Get Terraform Cloud Secret Sync By Name** (read-only): Get the specified Terraform Cloud Sync by name and project ID.
+- **Get Travis CI App Connection** (read-only): Get the specified Travis CI Connection by ID.
+- **Get Travis CI App Connection By Name** (read-only): Get the specified Travis CI Connection by name.
+- **Get Travis CI Secret Sync** (read-only): Get the specified Travis CI Sync by ID.
+- **Get Travis CI Secret Sync By Name** (read-only): Get the specified Travis CI Sync by name and project ID.
+- **Get Trigger Dev App Connection** (read-only): Get the specified Trigger.dev Connection by ID.
+- **Get Trigger Dev App Connection By Name** (read-only): Get the specified Trigger.dev Connection by name.
+- **Get Trigger Dev Secret Sync** (read-only): Get the specified Trigger.dev Sync by ID.
+- **Get Trigger Dev Secret Sync By Name** (read-only): Get the specified Trigger.dev Sync by name and project ID.
+- **Get Ultradns App Connection** (read-only): Get the specified UltraDNS Connection by ID.
+- **Get Ultradns App Connection By Name** (read-only): Get the specified UltraDNS Connection by name.
+- **Get Unix Linux Local Account Rotation** (read-only): Get the specified Unix/Linux Local Account Rotation by ID.
+- **Get Unix Linux Local Account Rotation By Name** (read-only): Get the specified Unix/Linux Local Account Rotation by name, secret path, environment and project ID.
+- **Get Unix Linux Local Account Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Unix/Linux Local Account Rotation.
+- **Get Venafi App Connection** (read-only): Get the specified Venafi TLS Protect Cloud Connection by ID.
+- **Get Venafi App Connection By Name** (read-only): Get the specified Venafi TLS Protect Cloud Connection by name.
+- **Get Venafi TPP App Connection** (read-only): Get the specified Venafi TPP Connection by ID.
+- **Get Venafi TPP App Connection By Name** (read-only): Get the specified Venafi TPP Connection by name.
+- **Get Venafi TPP Certificate Authority** (read-only): Get a Venafi TPP certificate authority by ID.
+- **Get Vercel App Connection** (read-only): Get the specified Vercel Connection by ID.
+- **Get Vercel App Connection By Name** (read-only): Get the specified Vercel Connection by name.
+- **Get Vercel Secret Sync** (read-only): Get the specified Vercel Sync by ID.
+- **Get Vercel Secret Sync By Name** (read-only): Get the specified Vercel Sync by name and project ID.
+- **Get Windmill App Connection** (read-only): Get the specified Windmill Connection by ID.
+- **Get Windmill App Connection By Name** (read-only): Get the specified Windmill Connection by name.
+- **Get Windmill Secret Sync** (read-only): Get the specified Windmill Sync by ID.
+- **Get Windmill Secret Sync By Name** (read-only): Get the specified Windmill Sync by name and project ID.
+- **Get Windows Local Account Rotation** (read-only): Get the specified Windows Local Account Rotation by ID.
+- **Get Windows Local Account Rotation By Name** (read-only): Get the specified Windows Local Account Rotation by name, secret path, environment and project ID.
+- **Get Windows Local Account Rotation Generated Credentials** (read-only): Get the generated credentials for the specified Windows Local Account Rotation.
+- **Get Windows Server PKI Sync** (read-only): Get the specified Windows Server PKI Sync by ID.
+- **Get Winrm App Connection** (read-only): Get the specified Windows (WinRM) Connection by ID.
+- **Get Winrm App Connection By Name** (read-only): Get the specified Windows (WinRM) Connection by name.
+- **Get Zabbix App Connection** (read-only): Get the specified Zabbix Connection by ID.
+- **Get Zabbix App Connection By Name** (read-only): Get the specified Zabbix Connection by name.
+- **Get Zabbix Secret Sync** (read-only): Get the specified Zabbix Sync by ID.
+- **Get Zabbix Secret Sync By Name** (read-only): Get the specified Zabbix Sync by name and project ID.
+- **List Acme Certificate Authorities** (read-only): List Acme Certificate Authorities visible to the connected identity.
+- **List ADCS App Connections** (read-only): List the Microsoft ADCS Connections for the current organization or project.
+- **List ADCS Available App Connections** (read-only): List the Microsoft ADCS Connections the current user has permission to establish connections within this project.
+- **List ADCS Certificate Authorities** (read-only): List ADCS certificate authorities.
+- **List Anthropic App Connections** (read-only): List the Anthropic Connections for the current organization or project.
+- **List Anthropic Available App Connections** (read-only): List the Anthropic Connections the current user has permission to establish connections within this project.
+- **List App Connection Options** (read-only): List the available App Connection Options.
+- **List App Connections** (read-only): List all the App Connections for the current organization or project.
+- **List Auth0 App Connections** (read-only): List the Auth0 Connections for the current organization or project.
+- **List Auth0 Available App Connections** (read-only): List the Auth0 Connections the current user has permission to establish connections within this project.
+- **List Auth0 Client Secret Rotations** (read-only): List the Auth0 Client Secret Rotations for the specified project.
+- **List Available Project Identities** (read-only): List available identities for project membership.
+- **List AWS Acm Public CA Certificate Authorities** (read-only): List AWS Acm Public CA Certificate Authorities visible to the connected identity.
+- **List AWS App Connections** (read-only): List the AWS Connections for the current organization or project.
+- **List AWS Available App Connections** (read-only): List the AWS Connections the current user has permission to establish connections within this project.
+- **List AWS Certificate Manager PKI Syncs** (read-only): List the AWS Certificate Manager PKI Syncs.
+- **List AWS Elastic Load Balancer Listeners** (read-only): List HTTPS/TLS listeners for the specified AWS Elastic Load Balancer.
+- **List AWS Elastic Load Balancer PKI Syncs** (read-only): List the AWS Elastic Load Balancer PKI Syncs.
+- **List AWS Elastic Load Balancers** (read-only): List AWS Elastic Load Balancers available for the specified connection and region.
+- **List AWS Parameter Store Secret Syncs** (read-only): List the AWS Parameter Store Syncs for the specified project.
+- **List AWS Pca Certificate Authorities** (read-only): List AWS Pca Certificate Authorities visible to the connected identity.
+- **List AWS Secrets Manager PKI Syncs** (read-only): List the AWS Secrets Manager PKI Syncs.
+- **List AWS Secrets Manager Secret Syncs** (read-only): List the AWS Secrets Manager Syncs for the specified project.
+- **List Awsiam User Secret Rotations** (read-only): List the AWS IAM User Secret Rotations for the specified project.
+- **List Azure AD CS Certificate Authorities** (read-only): List Azure AD CS certificate authorities.
+- **List Azure Adcs App Connections** (read-only): List the Azure ADCS (Web Enrollment) Connections for the current organization or project.
+- **List Azure Adcs Available App Connections** (read-only): List the Azure ADCS (Web Enrollment) Connections the current user has permission to establish connections within this project.
+- **List Azure App Configuration App Connections** (read-only): List the Azure App Configuration Connections for the current organization or project.
+- **List Azure App Configuration Available App Connections** (read-only): List the Azure App Configuration Connections the current user has permission to establish connections within this project.
+- **List Azure App Configuration Secret Syncs** (read-only): List the Azure App Configuration Syncs for the specified project.
+- **List Azure Client Secret Rotations** (read-only): List the Azure Client Secret Rotations for the specified project.
+- **List Azure Client Secrets App Connections** (read-only): List the Azure Client Secrets Connections for the current organization or project.
+- **List Azure Client Secrets Available App Connections** (read-only): List the Azure Client Secrets Connections the current user has permission to establish connections within this project.
+- **List Azure Devops App Connections** (read-only): List the Azure DevOps Connections for the current organization or project.
+- **List Azure Devops Available App Connections** (read-only): List the Azure DevOps Connections the current user has permission to establish connections within this project.
+- **List Azure Devops Secret Syncs** (read-only): List the Azure DevOps Syncs for the specified project.
+- **List Azure DNS App Connections** (read-only): List the Azure DNS Connections for the current organization or project.
+- **List Azure DNS Available App Connections** (read-only): List the Azure DNS Connections the current user has permission to establish connections within this project.
+- **List Azure Entra Id App Connections** (read-only): List the Azure Entra ID Connections for the current organization or project.
+- **List Azure Entra Id Available App Connections** (read-only): List the Azure Entra ID Connections the current user has permission to establish connections within this project.
+- **List Azure Entra Id Scim Secret Syncs** (read-only): List the Azure Entra ID SCIM Syncs for the specified project.
+- **List Azure Key Vault App Connections** (read-only): List the Azure Key Vault Connections for the current organization or project.
+- **List Azure Key Vault Available App Connections** (read-only): List the Azure Key Vault Connections the current user has permission to establish connections within this project.
+- **List Azure Key Vault PKI Syncs** (read-only): List the Azure Key Vault PKI Syncs.
+- **List Azure Key Vault Secret Syncs** (read-only): List the Azure Key Vault Syncs for the specified project.
+- **List Bitbucket App Connections** (read-only): List the Bitbucket Connections for the current organization or project.
+- **List Bitbucket Available App Connections** (read-only): List the Bitbucket Connections the current user has permission to establish connections within this project.
+- **List Bitbucket Secret Syncs** (read-only): List the Bitbucket Syncs for the specified project.
+- **List Camunda App Connections** (read-only): List the Camunda Connections for the current organization or project.
+- **List Camunda Available App Connections** (read-only): List the Camunda Connections the current user has permission to establish connections within this project.
+- **List Camunda Secret Syncs** (read-only): List the Camunda Syncs for the specified project.
+- **List Cert Manager Users** (read-only): List Certificate Manager users.
+- **List Certificate Authorities** (read-only): List certificate authorities.
+- **List Certificate Policies** (read-only): List Certificate Policies visible to the connected identity.
+- **List Certificate Profile Certificates** (read-only): List Certificate Profile Certificates visible to the connected identity.
+- **List Certificate Profiles** (read-only): List Certificate Profiles visible to the connected identity.
+- **List Checkly App Connections** (read-only): List the Checkly Connections for the current organization or project.
+- **List Checkly Available App Connections** (read-only): List the Checkly Connections the current user has permission to establish connections within this project.
+- **List Checkly Secret Syncs** (read-only): List the Checkly Syncs for the specified project.
+- **List Chef App Connections** (read-only): List the Chef Connections for the current organization or project.
+- **List Chef Available App Connections** (read-only): List the Chef Connections the current user has permission to establish connections within this project.
+- **List Chef PKI Syncs** (read-only): List the Chef PKI Syncs.
+- **List Chef Secret Syncs** (read-only): List the Chef Syncs for the specified project.
+- **List Circleci App Connections** (read-only): List the CircleCI Connections for the current organization or project.
+- **List Circleci Available App Connections** (read-only): List the CircleCI Connections the current user has permission to establish connections within this project.
+- **List Circleci Secret Syncs** (read-only): List the CircleCI Syncs for the specified project.
+- **List Cloud66 App Connections** (read-only): List the Cloud 66 Connections for the current organization or project.
+- **List Cloud66 Available App Connections** (read-only): List the Cloud 66 Connections the current user has permission to establish connections within this project.
+- **List Cloud66 Secret Syncs** (read-only): List the Cloud 66 Syncs for the specified project.
+- **List Cloudflare API Token Rotations** (read-only): List the Cloudflare API Token Rotations for the specified project.
+- **List Cloudflare App Connections** (read-only): List the Cloudflare Connections for the current organization or project.
+- **List Cloudflare Available App Connections** (read-only): List the Cloudflare Connections the current user has permission to establish connections within this project.
+- **List Cloudflare Custom Certificate PKI Syncs** (read-only): List the Cloudflare Custom SSL Certificate PKI Syncs.
+- **List Cloudflare Pages Secret Syncs** (read-only): List the Cloudflare Pages Syncs for the specified project.
+- **List Cloudflare R2 Access Key Rotations** (read-only): List the Cloudflare R2 Access Key Rotations for the specified project.
+- **List Cloudflare Secrets Store Secret Syncs** (read-only): List the Cloudflare Secrets Store Syncs for the specified project.
+- **List Cloudflare Workers Secret Syncs** (read-only): List the Cloudflare Workers Syncs for the specified project.
+- **List Convex Access Key Rotations** (read-only): List the Convex Access Key Rotations for the specified project.
+- **List Convex App Connections** (read-only): List the Convex Connections for the current organization or project.
+- **List Convex Available App Connections** (read-only): List the Convex Connections the current user has permission to establish connections within this project.
+- **List Databricks App Connections** (read-only): List the Databricks Connections for the current organization or project.
+- **List Databricks Available App Connections** (read-only): List the Databricks Connections the current user has permission to establish connections within this project.
+- **List Databricks Secret Syncs** (read-only): List the Databricks Syncs for the specified project.
+- **List Databricks Service Principal Secret Rotations** (read-only): List the Databricks Service Principal Secret Rotations for the specified project.
+- **List Datadog API Key Rotations** (read-only): List the Datadog API Key Rotations for the specified project.
+- **List Datadog App Connections** (read-only): List the Datadog Connections for the current organization or project.
+- **List Datadog Application Key Rotations** (read-only): List the Datadog Application Key Rotations for the specified project.
+- **List Datadog Available App Connections** (read-only): List the Datadog Connections the current user has permission to establish connections within this project.
+- **List Daytona App Connections** (read-only): List the Daytona Connections for the current organization or project.
+- **List Daytona Available App Connections** (read-only): List the Daytona Connections the current user has permission to establish connections within this project.
+- **List Daytona Secret Syncs** (read-only): List the Daytona Syncs for the specified project.
+- **List Dbt App Connections** (read-only): List the DBT Connections for the current organization or project.
+- **List Dbt Available App Connections** (read-only): List the DBT Connections the current user has permission to establish connections within this project.
+- **List Dbt Service Token Rotations** (read-only): List the DBT Service Token Rotations for the specified project.
+- **List Devin App Connections** (read-only): List the Devin Connections for the current organization or project.
+- **List Devin Available App Connections** (read-only): List the Devin Connections the current user has permission to establish connections within this project.
+- **List Devin Secret Syncs** (read-only): List the Devin Syncs for the specified project.
+- **List Digicert App Connections** (read-only): List the DigiCert Connections for the current organization or project.
+- **List Digicert Available App Connections** (read-only): List the DigiCert Connections the current user has permission to establish connections within this project.
+- **List Digicert Certificate Authorities** (read-only): List Digicert Certificate Authorities visible to the connected identity.
+- **List Digital Ocean App Connections** (read-only): List the DigitalOcean App Platform Connections for the current organization or project.
+- **List Digital Ocean App Platform Secret Syncs** (read-only): List the Digital Ocean App Platform Syncs for the specified project.
+- **List Digital Ocean Available App Connections** (read-only): List the DigitalOcean App Platform Connections the current user has permission to establish connections within this project.
+- **List DNS Made Easy App Connections** (read-only): List the DNS Made Easy Connections for the current organization or project.
+- **List DNS Made Easy Available App Connections** (read-only): List the DNS Made Easy Connections the current user has permission to establish connections within this project.
+- **List Doppler App Connections** (read-only): List the Doppler Connections for the current organization or project.
+- **List Doppler Available App Connections** (read-only): List the Doppler Connections the current user has permission to establish connections within this project.
+- **List Dynamic Secret Validation Rules** (read-only): List dynamic-secret validation rules for a project.
+- **List External Infisical App Connections** (read-only): List the Infisical Connections for the current organization or project.
+- **List External Infisical Available App Connections** (read-only): List the Infisical Connections the current user has permission to establish connections within this project.
+- **List External Infisical Secret Syncs** (read-only): List the Infisical Syncs for the specified project.
+- **List F5 Big Ip App Connections** (read-only): List the F5 BIG-IP Connections for the current organization or project.
+- **List F5 Big Ip Available App Connections** (read-only): List the F5 BIG-IP Connections the current user has permission to establish connections within this project.
+- **List F5 Big Ip PKI Syncs** (read-only): List the F5 BIG-IP PKI Syncs.
+- **List Fireworks App Connections** (read-only): List the Fireworks Connections for the current organization or project.
+- **List Fireworks Available App Connections** (read-only): List the Fireworks Connections the current user has permission to establish connections within this project.
+- **List Fireworks Secret Rotations** (read-only): List the Fireworks Secret Rotations for the specified project.
+- **List Flyio App Connections** (read-only): List the Fly.io Connections for the current organization or project.
+- **List Flyio Available App Connections** (read-only): List the Fly.io Connections the current user has permission to establish connections within this project.
+- **List Flyio Secret Syncs** (read-only): List the Fly.io Syncs for the specified project.
+- **List GCP App Connections** (read-only): List the GCP Connections for the current organization or project.
+- **List GCP Available App Connections** (read-only): List the GCP Connections the current user has permission to establish connections within this project.
+- **List GCP Certificate Manager PKI Syncs** (read-only): List the GCP Certificate Manager PKI Syncs.
+- **List GCP Secret Manager Secret Syncs** (read-only): List the GCP Secret Manager Syncs for the specified project.
+- **List GCP Service Account Key Rotations** (read-only): List the GCP Service Account Key Rotations for the specified project.
+- **List Git Hub App Connections** (read-only): List the GitHub Connections for the current organization or project.
+- **List Git Hub Available App Connections** (read-only): List the GitHub Connections the current user has permission to establish connections within this project.
+- **List Git Hub Radar App Connections** (read-only): List the GitHub Radar Connections for the current organization or project.
+- **List Git Hub Radar Available App Connections** (read-only): List the GitHub Radar Connections the current user has permission to establish connections within this project.
+- **List Git Hub Secret Syncs** (read-only): List the GitHub Syncs for the specified project.
+- **List Git Lab App Connections** (read-only): List the GitLab Connections for the current organization or project.
+- **List Git Lab Available App Connections** (read-only): List the GitLab Connections the current user has permission to establish connections within this project.
+- **List Git Lab Secret Syncs** (read-only): List the GitLab Syncs for the specified project.
+- **List GoDaddy App Connections** (read-only): List the GoDaddy Connections for the current organization or project.
+- **List GoDaddy Available App Connections** (read-only): List the GoDaddy Connections the current user has permission to establish connections within this project.
+- **List GoDaddy Certificate Authorities** (read-only): List GoDaddy certificate authorities.
+- **List H Pi Lo Local Account Rotations** (read-only): List the HP iLO Local Account Rotations for the specified project.
+- **List Hashicorp Vault App Connections** (read-only): List the Hashicorp Vault Connections for the current organization or project.
+- **List Hashicorp Vault Available App Connections** (read-only): List the Hashicorp Vault Connections the current user has permission to establish connections within this project.
+- **List Hashicorp Vault Secret Syncs** (read-only): List the Hashicorp Vault Syncs for the specified project.
+- **List Hasura Cloud App Connections** (read-only): List the Hasura Cloud Connections for the current organization or project.
+- **List Hasura Cloud Available App Connections** (read-only): List the Hasura Cloud Connections the current user has permission to establish connections within this project.
+- **List Hasura Cloud Secret Syncs** (read-only): List the Hasura Cloud Syncs for the specified project.
+- **List Heroku App Connections** (read-only): List the Heroku Connections for the current organization or project.
+- **List Heroku Available App Connections** (read-only): List the Heroku Connections the current user has permission to establish connections within this project.
+- **List Heroku Secret Syncs** (read-only): List the Heroku Syncs for the specified project.
+- **List Hpe Ilo App Connections** (read-only): List the HPE iLO Connections for the current organization or project.
+- **List Hpe Ilo Available App Connections** (read-only): List the HPE iLO Connections the current user has permission to establish connections within this project.
+- **List HSM Connector Keys** (read-only): List keys available through an HSM connector.
+- **List HSM Connector Linked Resources** (read-only): List resources linked to an HSM connector.
+- **List HSM Connectors** (read-only): List HSM connectors.
+- **List Humanitec App Connections** (read-only): List the Humanitec Connections for the current organization or project.
+- **List Humanitec Available App Connections** (read-only): List the Humanitec Connections the current user has permission to establish connections within this project.
+- **List Humanitec Secret Syncs** (read-only): List the Humanitec Syncs for the specified project.
+- **List Identity Auth Templates** (read-only): List identity auth templates.
+- **List Identity Project Additional Privileges** (read-only): List privileges for the specified identity by project.
+- **List Internal Certificate Authorities** (read-only): List Internal Certificate Authorities visible to the connected identity.
+- **List Keeper App Connections** (read-only): List the Keeper Connections for the current organization or project.
+- **List Keeper Available App Connections** (read-only): List the Keeper Connections the current user has permission to establish connections within this project.
+- **List Keeper Password Manager Secret Syncs** (read-only): List the Keeper Password Manager Syncs for the specified project.
+- **List Kemp Load Master Virtual Services** (read-only): List the Virtual Services available on the Kemp LoadMaster for the specified connection.
+- **List Kemp Loadmaster App Connections** (read-only): List the Kemp LoadMaster Connections for the current organization or project.
+- **List Kemp Loadmaster Available App Connections** (read-only): List the Kemp LoadMaster Connections the current user has permission to establish connections within this project.
+- **List Kemp Loadmaster PKI Syncs** (read-only): List the Kemp LoadMaster PKI Syncs.
+- **List KMS Key Signing Algorithms** (read-only): List all available signing algorithms for a KMS key.
+- **List KMS Keys** (read-only): List KMS keys.
+- **List Laravel Forge App Connections** (read-only): List the Laravel Forge Connections for the current organization or project.
+- **List Laravel Forge Available App Connections** (read-only): List the Laravel Forge Connections the current user has permission to establish connections within this project.
+- **List Laravel Forge Secret Syncs** (read-only): List the Laravel Forge Syncs for the specified project.
+- **List Ldap App Connections** (read-only): List the LDAP Connections for the current organization or project.
+- **List Ldap Available App Connections** (read-only): List the LDAP Connections the current user has permission to establish connections within this project.
+- **List Ldap Password Rotations** (read-only): List the LDAP Password Rotations for the specified project.
+- **List Linux Server PKI Syncs** (read-only): List the Linux Server PKI Syncs.
+- **List Lite Llmapi Key Rotations** (read-only): List the LiteLLM API Key Rotations for the specified project.
+- **List Litellm App Connections** (read-only): List the LiteLLM Connections for the current organization or project.
+- **List Litellm Available App Connections** (read-only): List the LiteLLM Connections the current user has permission to establish connections within this project.
+- **List Machine Identities** (read-only): List machine identities.
+- **List Microsoft Intune App Connections** (read-only): List the Microsoft Intune Connections for the current organization or project.
+- **List Microsoft Intune Available App Connections** (read-only): List the Microsoft Intune Connections the current user has permission to establish connections within this project.
+- **List Microsoft Sql Server Credentials Rotations** (read-only): List the Microsoft SQL Server Credentials Rotations for the specified project.
+- **List Mongo Db App Connections** (read-only): List the MongoDB Connections for the current organization or project.
+- **List Mongo Db Available App Connections** (read-only): List the MongoDB Connections the current user has permission to establish connections within this project.
+- **List Mongo Db Credentials Rotations** (read-only): List the MongoDB Credentials Rotations for the specified project.
+- **List Ms Sql App Connections** (read-only): List the Microsoft SQL Server Connections for the current organization or project.
+- **List Ms Sql Available App Connections** (read-only): List the Microsoft SQL Server Connections the current user has permission to establish connections within this project.
+- **List My Sql App Connections** (read-only): List the MySQL Connections for the current organization or project.
+- **List My Sql Available App Connections** (read-only): List the MySQL Connections the current user has permission to establish connections within this project.
+- **List My Sql Credentials Rotations** (read-only): List the MySQL Credentials Rotations for the specified project.
+- **List Netlify App Connections** (read-only): List the Netlify Connections for the current organization or project.
+- **List Netlify Available App Connections** (read-only): List the Netlify Connections the current user has permission to establish connections within this project.
+- **List Netlify Secret Syncs** (read-only): List the Netlify Syncs for the specified project.
+- **List Netscaler App Connections** (read-only): List the NetScaler Connections for the current organization or project.
+- **List Netscaler Available App Connections** (read-only): List the NetScaler Connections the current user has permission to establish connections within this project.
+- **List Netscaler PKI Syncs** (read-only): List the NetScaler PKI Syncs.
+- **List Northflank App Connections** (read-only): List the Northflank Connections for the current organization or project.
+- **List Northflank Available App Connections** (read-only): List the Northflank Connections the current user has permission to establish connections within this project.
+- **List Northflank Secret Syncs** (read-only): List the Northflank Syncs for the specified project.
+- **List Nutanix Prism Central App Connections** (read-only): List the Nutanix Prism Central Connections for the current organization or project.
+- **List Nutanix Prism Central Available App Connections** (read-only): List the Nutanix Prism Central Connections the current user has permission to establish connections within this project.
+- **List Nutanix Prism Central PKI Syncs** (read-only): List the Nutanix Prism Central PKI Syncs.
+- **List Oci App Connections** (read-only): List the OCI Connections for the current organization or project.
+- **List Oci Available App Connections** (read-only): List the OCI Connections the current user has permission to establish connections within this project.
+- **List Oci Vault Secret Syncs** (read-only): List the OCI Vault Syncs for the specified project.
+- **List Octopus Deploy App Connections** (read-only): List the Octopus Deploy Connections for the current organization or project.
+- **List Octopus Deploy Available App Connections** (read-only): List the Octopus Deploy Connections the current user has permission to establish connections within this project.
+- **List Octopus Deploy Secret Syncs** (read-only): List the Octopus Deploy Syncs for the specified project.
+- **List Okta App Connections** (read-only): List the Okta Connections for the current organization or project.
+- **List Okta Available App Connections** (read-only): List the Okta Connections the current user has permission to establish connections within this project.
+- **List Okta Client Secret Rotations** (read-only): List the Okta Client Secret Rotations for the specified project.
+- **List Ona App Connections** (read-only): List the Ona Connections for the current organization or project.
+- **List Ona Available App Connections** (read-only): List the Ona Connections the current user has permission to establish connections within this project.
+- **List Ona Secret Syncs** (read-only): List the Ona Syncs for the specified project.
+- **List One Password App Connections** (read-only): List the 1Password Connections for the current organization or project.
+- **List One Password Available App Connections** (read-only): List the 1Password Connections the current user has permission to establish connections within this project.
+- **List One Password Secret Syncs** (read-only): List the 1Password Syncs for the specified project.
+- **List Open Ai Service Account Rotations** (read-only): List the OpenAI Service Account Rotations for the specified project.
+- **List Open Router App Connections** (read-only): List the OpenRouter Connections for the current organization or project.
+- **List Open Router Available App Connections** (read-only): List the OpenRouter Connections the current user has permission to establish connections within this project.
+- **List Openai App Connections** (read-only): List the OpenAI Connections for the current organization or project.
+- **List Openai Available App Connections** (read-only): List the OpenAI Connections the current user has permission to establish connections within this project.
+- **List Openrouter API Key Rotations** (read-only): List the OpenRouter API Key Rotations for the specified project.
+- **List Oracle Db App Connections** (read-only): List the OracleDB Connections for the current organization or project.
+- **List Oracle Db Available App Connections** (read-only): List the OracleDB Connections the current user has permission to establish connections within this project.
+- **List Oracle Db Credentials Rotations** (read-only): List the OracleDB Credentials Rotations for the specified project.
+- **List Ovh App Connections** (read-only): List the OVH Connections for the current organization or project.
+- **List Ovh Available App Connections** (read-only): List the OVH Connections the current user has permission to establish connections within this project.
+- **List Ovh Secret Syncs** (read-only): List the OVH Syncs for the specified project.
+- **List Palo Alto Networks App Connections** (read-only): List the Palo Alto Networks Connections for the current organization or project.
+- **List Palo Alto Networks Available App Connections** (read-only): List the Palo Alto Networks Connections the current user has permission to establish connections within this project.
+- **List Palo Alto Networks PKI Syncs** (read-only): List the Palo Alto Networks PKI Syncs.
+- **List Palo Alto Networks Ssl Tls Profile PKI Syncs** (read-only): List the Palo Alto Networks SSL/TLS Profile PKI Syncs.
+- **List PKI Alert Certificates** (read-only): List certificates matching a PKI alert's filter rules.
+- **List PKI Application Group Members** (read-only): List group members of an application.
+- **List PKI Application Identity Members** (read-only): List identity members of an application.
+- **List PKI Application Profiles** (read-only): List profiles attached to an application.
+- **List PKI Application User Members** (read-only): List user members of an application.
+- **List PKI Applications** (read-only): List PKI Applications visible to the connected identity.
+- **List PKI Discoveries** (read-only): List PKI discovery configurations.
+- **List PKI Discovery Scans** (read-only): Get scan history for a PKI discovery configuration.
+- **List PKI Installations** (read-only): List PKI certificate installations.
+- **List PKI Sync Certificates** (read-only): List all certificates associated with a PKI Sync.
+- **List PKI Sync Options** (read-only): List the available PKI Sync Options.
+- **List PKI Syncs** (read-only): List all the PKI Syncs.
+- **List Portainer App Connections** (read-only): List the Portainer Connections for the current organization or project.
+- **List Portainer Available App Connections** (read-only): List the Portainer Connections the current user has permission to establish connections within this project.
+- **List Portainer Secret Syncs** (read-only): List the Portainer Syncs for the specified project.
+- **List Postgre Sql Credentials Rotations** (read-only): List the PostgreSQL Credentials Rotations for the specified project.
+- **List Postgres App Connections** (read-only): List the PostgreSQL Connections for the current organization or project.
+- **List Postgres Available App Connections** (read-only): List the PostgreSQL Connections the current user has permission to establish connections within this project.
+- **List Powerdns App Connections** (read-only): List the PowerDNS Connections for the current organization or project.
+- **List Powerdns Available App Connections** (read-only): List the PowerDNS Connections the current user has permission to establish connections within this project.
+- **List Project Certificate Authorities** (read-only): List certificate authorities available to a project.
+- **List Project Certificate Templates** (read-only): List certificate templates available to a project.
+- **List Project Group Memberships** (read-only): List project group memberships.
+- **List Project Identity Memberships** (read-only): List project identity memberships.
+- **List Project Machine Identities** (read-only): List identities in a project.
+- **List Project PKI Alerts** (read-only): List PKI alerts for a project.
+- **List Project PKI Collections** (read-only): List PKI certificate collections for a project.
+- **List Project PKI Subscribers** (read-only): List PKI subscribers for a project.
+- **List Project Roles** (read-only): List roles defined for a project.
+- **List Project Templates** (read-only): List project templates for the current organization.
+- **List Project User Memberships** (read-only): List user memberships for a project.
+- **List Projects** (read-only): List Projects visible to the connected identity.
+- **List Qovery App Connections** (read-only): List the Qovery Connections for the current organization or project.
+- **List Qovery Available App Connections** (read-only): List the Qovery Connections the current user has permission to establish connections within this project.
+- **List Qovery Secret Syncs** (read-only): List the Qovery Syncs for the specified project.
+- **List Railway App Connections** (read-only): List the Railway Connections for the current organization or project.
+- **List Railway Available App Connections** (read-only): List the Railway Connections the current user has permission to establish connections within this project.
+- **List Railway Secret Syncs** (read-only): List the Railway Syncs for the specified project.
+- **List Redis App Connections** (read-only): List the Redis Connections for the current organization or project.
+- **List Redis Available App Connections** (read-only): List the Redis Connections the current user has permission to establish connections within this project.
+- **List Redis Credentials Rotations** (read-only): List the Redis Credentials Rotations for the specified project.
+- **List Render App Connections** (read-only): List the Render Connections for the current organization or project.
+- **List Render Available App Connections** (read-only): List the Render Connections the current user has permission to establish connections within this project.
+- **List Render Secret Syncs** (read-only): List the Render Syncs for the specified project.
+- **List Rundeck App Connections** (read-only): List the Rundeck Connections for the current organization or project.
+- **List Rundeck Available App Connections** (read-only): List the Rundeck Connections the current user has permission to establish connections within this project.
+- **List Rundeck Secret Syncs** (read-only): List the Rundeck Syncs for the specified project.
+- **List S3 Compatible App Connections** (read-only): List the S3-Compatible Storage Connections for the current organization or project.
+- **List S3 Compatible Available App Connections** (read-only): List the S3-Compatible Storage Connections the current user has permission to establish connections within this project.
+- **List Salesforce App Connections** (read-only): List the Salesforce Connections for the current organization or project.
+- **List Salesforce Available App Connections** (read-only): List the Salesforce Connections the current user has permission to establish connections within this project.
+- **List Salesforce O Auth Credentials Rotations** (read-only): List the Salesforce OAuth Credentials Rotations for the specified project.
+- **List Secret Folders** (read-only): List Secret Folders visible to the connected identity.
+- **List Secret Imports** (read-only): Get secret imports.
+- **List Secret Rotation Options** (read-only): List the available Secret Rotation Options.
+- **List Secret Rotation Validation Rules** (read-only): List secret-rotation validation rules for a project.
+- **List Secret Rotations** (read-only): List all the Secret Rotations for the specified project.
+- **List Secret Sync Options** (read-only): List the available Secret Sync Options.
+- **List Secret Syncs** (read-only): List all the Secret Syncs for the specified project.
+- **List Secret Tags** (read-only): List Secret Tags visible to the connected identity.
+- **List Secret Validation Rules** (read-only): List every Secret Validation Rule in the specified project, of any type.
+- **List Secrets** (read-only): List Secrets visible to the connected identity.
+- **List Signer Effective Identity Members** (read-only): List machine identities that can act on this signer either directly or via a group that's a signer member.
+- **List Signer Effective User Members** (read-only): List users that can act on this signer either through a direct membership or through a group that's a signer member.
+- **List Signer Group Members** (read-only): List group members of a signer.
+- **List Signer Identity Members** (read-only): List machine identity members of a signer.
+- **List Signer Requests** (read-only): List signing approval requests for a signer.
+- **List Signer User Members** (read-only): List user members of a signer.
+- **List Signers** (read-only): List code signing signers.
+- **List Signing Operations** (read-only): List signing operations for a signer.
+- **List Smb App Connections** (read-only): List the Windows (SMB) Connections for the current organization or project.
+- **List Smb Available App Connections** (read-only): List the Windows (SMB) Connections the current user has permission to establish connections within this project.
+- **List Snowflake App Connections** (read-only): List the Snowflake Connections for the current organization or project.
+- **List Snowflake Available App Connections** (read-only): List the Snowflake Connections the current user has permission to establish connections within this project.
+- **List Snowflake Secret Syncs** (read-only): List the Snowflake Syncs for the specified project.
+- **List Snowflake User Key Pair Rotations** (read-only): List the Snowflake User Key Pair Rotations for the specified project.
+- **List Spacelift App Connections** (read-only): List the Spacelift Connections for the current organization or project.
+- **List Spacelift Available App Connections** (read-only): List the Spacelift Connections the current user has permission to establish connections within this project.
+- **List Spacelift Secret Syncs** (read-only): List the Spacelift Syncs for the specified project.
+- **List Ssh App Connections** (read-only): List the SSH Connections for the current organization or project.
+- **List Ssh Available App Connections** (read-only): List the SSH Connections the current user has permission to establish connections within this project.
+- **List Static Secret Validation Rules** (read-only): List static-secret validation rules for a project.
+- **List Stripe API Key Rotations** (read-only): List the Stripe API Key Rotations for the specified project.
+- **List Stripe App Connections** (read-only): List the Stripe Connections for the current organization or project.
+- **List Stripe Available App Connections** (read-only): List the Stripe Connections the current user has permission to establish connections within this project.
+- **List Supabase API Key Rotations** (read-only): List the Supabase API Key Rotations for the specified project.
+- **List Supabase App Connections** (read-only): List the Supabase Connections for the current organization or project.
+- **List Supabase Available App Connections** (read-only): List the Supabase Connections the current user has permission to establish connections within this project.
+- **List Supabase Secret Syncs** (read-only): List the Supabase Syncs for the specified project.
+- **List Teamcity App Connections** (read-only): List the TeamCity Connections for the current organization or project.
+- **List Teamcity Available App Connections** (read-only): List the TeamCity Connections the current user has permission to establish connections within this project.
+- **List Teamcity Secret Syncs** (read-only): List the TeamCity Syncs for the specified project.
+- **List Terraform Cloud App Connections** (read-only): List the Terraform Cloud Connections for the current organization or project.
+- **List Terraform Cloud Available App Connections** (read-only): List the Terraform Cloud Connections the current user has permission to establish connections within this project.
+- **List Terraform Cloud Secret Syncs** (read-only): List the Terraform Cloud Syncs for the specified project.
+- **List Travis CI App Connections** (read-only): List the Travis CI Connections for the current organization or project.
+- **List Travis CI Available App Connections** (read-only): List the Travis CI Connections the current user has permission to establish connections within this project.
+- **List Travis CI Secret Syncs** (read-only): List the Travis CI Syncs for the specified project.
+- **List Trigger Dev App Connections** (read-only): List the Trigger.dev Connections for the current organization or project.
+- **List Trigger Dev Available App Connections** (read-only): List the Trigger.dev Connections the current user has permission to establish connections within this project.
+- **List Trigger Dev Secret Syncs** (read-only): List the Trigger.dev Syncs for the specified project.
+- **List Ultradns App Connections** (read-only): List the UltraDNS Connections for the current organization or project.
+- **List Ultradns Available App Connections** (read-only): List the UltraDNS Connections the current user has permission to establish connections within this project.
+- **List Unix Linux Local Account Rotations** (read-only): List the Unix/Linux Local Account Rotations for the specified project.
+- **List Venafi App Connections** (read-only): List the Venafi TLS Protect Cloud Connections for the current organization or project.
+- **List Venafi Available App Connections** (read-only): List the Venafi TLS Protect Cloud Connections the current user has permission to establish connections within this project.
+- **List Venafi TPP App Connections** (read-only): List the Venafi TPP Connections for the current organization or project.
+- **List Venafi TPP Available App Connections** (read-only): List the Venafi TPP Connections the current user has permission to establish connections within this project.
+- **List Venafi TPP Certificate Authorities** (read-only): List Venafi TPP certificate authorities.
+- **List Vercel App Connections** (read-only): List the Vercel Connections for the current organization or project.
+- **List Vercel Available App Connections** (read-only): List the Vercel Connections the current user has permission to establish connections within this project.
+- **List Vercel Secret Syncs** (read-only): List the Vercel Syncs for the specified project.
+- **List Windmill App Connections** (read-only): List the Windmill Connections for the current organization or project.
+- **List Windmill Available App Connections** (read-only): List the Windmill Connections the current user has permission to establish connections within this project.
+- **List Windmill Secret Syncs** (read-only): List the Windmill Syncs for the specified project.
+- **List Windows Local Account Rotations** (read-only): List the Windows Local Account Rotations for the specified project.
+- **List Windows Server PKI Syncs** (read-only): List the Windows Server PKI Syncs.
+- **List Winrm App Connections** (read-only): List the Windows (WinRM) Connections for the current organization or project.
+- **List Winrm Available App Connections** (read-only): List the Windows (WinRM) Connections the current user has permission to establish connections within this project.
+- **List Zabbix App Connections** (read-only): List the Zabbix Connections for the current organization or project.
+- **List Zabbix Available App Connections** (read-only): List the Zabbix Connections the current user has permission to establish connections within this project.
+- **List Zabbix Secret Syncs** (read-only): List the Zabbix Syncs for the specified project.
+- **Move Secret Folder**: Move a folder and its static-secret contents to a new path, optionally in a different environment.
+- **Move Secrets**: Move secrets to another path or environment.
+- **Preview PKI Alert Certificates** (read-only): Preview certificates matching supplied PKI alert filter rules.
+- **Restore Environment**: Restore a soft-deleted environment.
+- **Reveal Certificate Profile ACME EAB Secret** (read-only): Reveal the ACME EAB secret for a certificate profile.
+- **Reveal PKI Application Acme Eab Secret** (read-only): Reveal the ACME EAB secret for a profile on an application.
+- **Search Certificate Requests** (read-only): Search and filter certificate requests.
+- **Search Machine Identities** (read-only): Search machine identities across organization and/or project scopes.
+- **Search PKI Sync Certificate Orders** (read-only): Resolve certificate orders to the certificate each one currently holds.
+- **Search PKI Sync Filter Certificates** (read-only): List the certificates a set of filters matches, for an existing PKI Sync or an Application.
+- **Search Project Certificates** (read-only): Search and filter certificates within a project.
+- **Sign Data** (read-only): Sign a pre-hashed digest with a code signing signer.
+- **Sign Intermediate CA** (read-only): Create intermediate CA certificate from parent CA.
+- **Sign With KMS Key** (read-only): Sign data with a KMS key.
+- **Update Environment**: Update the Environment selected by the request parameters.
+- **Update Many Secrets**: Update many secrets.
+- **Update Project**: Update the Project selected by the request parameters.
+- **Update Secret**: Update the Secret selected by the request parameters.
+- **Update Secret Folder**: Update the Secret Folder selected by the request parameters.
+- **Update Secret Folders Batch**: Update folders by batch.
+- **Update Secret Import**: Update secret imports.
+- **Update Secret Tag**: Update the Secret Tag selected by the request parameters.
+- **Verify Mac With KMS Key** (read-only): Verify an HMAC (MAC) for data with a KMS key.
+- **Verify With KMS Key** (read-only): Verify data signatures with a KMS key.

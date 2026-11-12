@@ -1,0 +1,426 @@
+# Linode
+
+Linode provides cloud infrastructure APIs for compute, networking, storage, Kubernetes, databases, DNS, and account operations.
+
+Category: Security & Ops. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/linode/.
+
+## Actions
+
+- **Acknowledge agreements**: Acknowledge agreements.
+- **Add a configuration profile interface**: Add a configuration profile interface.
+- **Add a Linode interface**: Add a Linode interface.
+- **Add a NAT Gateway IP address**: Add a NAT Gateway IP address.
+- **Add images to a share group**: Add images to a share group.
+- **Allocate an IP address**: Allocate an IP address.
+- **Allocate an IPv4 address**: Allocate an IPv4 address.
+- **Allow CORS access to an Object Storage bucket (E0/E1)**: Allow CORS access to an Object Storage bucket (E0/E1).
+- **Apply a Linode's firewalls**: Apply a Linode's firewalls.
+- **Assign a placement group**: Assign a placement group.
+- **Assign IP addresses**: Assign IP addresses.
+- **Assign IPv4s to Linodes**: Assign IPv4s to Linodes.
+- **Attach a volume**: Attach a volume.
+- **Boot a Linode**: Boot a Linode.
+- **Boot a Linode into rescue mode**: Boot a Linode into rescue mode.
+- **Cancel backups**: Cancel backups.
+- **Cancel Object Storage**: Cancel Object Storage.
+- **Clone a disk**: Clone a disk.
+- **Clone a domain**: Clone a domain.
+- **Clone a Linode**: Clone a Linode.
+- **Clone a volume**: Clone a volume.
+- **Clone an alert definition**: Clone an alert definition.
+- **Close a support ticket**: Close a support ticket.
+- **Configure IPv4 sharing**: Configure IPv4 sharing.
+- **Create a configuration profile**: Create a configuration profile.
+- **Create a domain**: Create a domain.
+- **Create a domain record**: Create a domain record.
+- **Create a firewall**: Create a firewall.
+- **Create a firewall device**: Create a firewall device.
+- **Create a Kubernetes cluster**: Create a Kubernetes cluster.
+- **Create a managed contact**: Create a managed contact.
+- **Create a managed service**: Create a managed service.
+- **Create a NAT Gateway**: Create a NAT Gateway.
+- **Create a node**: Create a node.
+- **Create a node pool**: Create a node pool.
+- **Create a NodeBalancer**: Create a billable NodeBalancer without a listening configuration.
+- **Create a NodeBalancer config**: Create a non-TLS TCP, HTTP, or UDP NodeBalancer config without inline nodes.
+- **Create a placement group**: Create a placement group.
+- **Create a PostgreSQL connection pool**: Create a PostgreSQL connection pool.
+- **Create a reply**: Create a reply.
+- **Create a resource lock**: Create a resource lock.
+- **Create a Rule Set**: Create a Rule Set.
+- **Create a share group**: Create a share group.
+- **Create a snapshot**: Create a snapshot.
+- **Create a StackScript**: Create a StackScript.
+- **Create a stream**: Create a stream.
+- **Create a support ticket attachment**: Create a support ticket attachment.
+- **Create a tag**: Create a tag.
+- **Create a volume**: Create a volume.
+- **Create a VPC**: Create a VPC.
+- **Create a VPC subnet**: Create a VPC subnet.
+- **Create an alert definition**: Create an alert definition.
+- **Create an email alert channel**: Create an email-only Monitor alert channel.
+- **Create an empty disk**: Create an empty disk without deploying an image or login credentials.
+- **Create an empty Linode**: Create a billable empty offline Linode without an image, disks, or login access.
+- **Create an image**: Create an image.
+- **Create an IPv6 range**: Create an IPv6 range.
+- **Create an Object Storage bucket**: Create an Object Storage bucket.
+- **Create or restore a MySQL Managed Database**: Create or restore a MySQL Managed Database.
+- **Create or restore a PostgreSQL Managed Database**: Create or restore a PostgreSQL Managed Database.
+- **Create or restore a Valkey Managed Database**: Create or restore a Valkey Managed Database.
+- **Delete a configuration profile**: Delete a configuration profile.
+- **Delete a configuration profile interface**: Delete a configuration profile interface.
+- **Delete a disk**: Delete a disk.
+- **Delete a domain**: Delete a domain.
+- **Delete a domain record**: Delete a domain record.
+- **Delete a firewall**: Delete a firewall.
+- **Delete a firewall device**: Delete a firewall device.
+- **Delete a Kubernetes cluster**: Delete a Kubernetes cluster.
+- **Delete a Linode**: Delete a Linode.
+- **Delete a Linode interface**: Delete a Linode interface.
+- **Delete a managed contact**: Delete a managed contact.
+- **Delete a managed service monitor**: Delete a managed service monitor.
+- **Delete a MySQL Managed Database**: Delete a MySQL Managed Database.
+- **Delete a NAT Gateway**: Delete a NAT Gateway.
+- **Delete a node**: Delete a node.
+- **Delete a node pool**: Delete a node pool.
+- **Delete a NodeBalancer**: Delete a NodeBalancer.
+- **Delete a NodeBalancer config**: Permanently delete a NodeBalancer config.
+- **Delete a NodeBalancer's node**: Delete a NodeBalancer's node.
+- **Delete a notification channel**: Delete a notification channel.
+- **Delete a placement group**: Delete a placement group.
+- **Delete a PostgreSQL connection pool**: Delete a PostgreSQL connection pool.
+- **Delete a PostgreSQL Managed Database**: Delete a PostgreSQL Managed Database.
+- **Delete a resource lock**: Delete a resource lock.
+- **Delete a Rule Set**: Delete a Rule Set.
+- **Delete a share group**: Delete a share group.
+- **Delete a StackScript**: Delete a StackScript.
+- **Delete a stream**: Delete a stream.
+- **Delete a tag**: Delete a tag.
+- **Delete a Valkey Managed Database**: Delete a Valkey Managed Database.
+- **Delete a VLAN**: Delete a VLAN.
+- **Delete a volume**: Delete a volume.
+- **Delete a VPC**: Delete a VPC.
+- **Delete a VPC subnet**: Delete a VPC subnet.
+- **Delete an alert definition**: Delete an alert definition.
+- **Delete an image**: Delete an image.
+- **Delete an IPv4 address**: Delete an IPv4 address.
+- **Delete an IPv6 range**: Delete an IPv6 range.
+- **Delete the control plane access control list**: Delete the control plane access control list.
+- **Detach a volume**: Detach a volume.
+- **Disable a managed service monitor**: Disable a managed service monitor.
+- **Enable a managed service monitor**: Enable a managed service monitor.
+- **Enable backups**: Enable backups.
+- **Enable Linode Managed**: Enable Linode Managed.
+- **Enroll in a Beta program**: Enroll in a Beta program.
+- **Get a backup** (read-only): Get a backup.
+- **Get a Beta program** (read-only): Get a Beta program.
+- **Get a bucket's TLS/SSL certificate** (read-only): Get a bucket's TLS/SSL certificate.
+- **Get a child account** (read-only): Get a child account.
+- **Get a config** (read-only): Get a config.
+- **Get a configuration profile** (read-only): Get a configuration profile.
+- **Get a configuration profile interface** (read-only): Get a configuration profile interface.
+- **Get a dashboard** (read-only): Get a dashboard.
+- **Get a disk** (read-only): Get a disk.
+- **Get a domain** (read-only): Get a domain.
+- **Get a domain record** (read-only): Get a domain record.
+- **Get a domain zone file** (read-only): Get a domain zone file.
+- **Get a firewall** (read-only): Get a firewall.
+- **Get a firewall device** (read-only): Get a firewall device.
+- **Get a firewall rule version** (read-only): Get a firewall rule version.
+- **Get a firewall template** (read-only): Get a firewall template.
+- **Get a kernel** (read-only): Get a kernel.
+- **Get a Kubernetes cluster** (read-only): Get a Kubernetes cluster.
+- **Get a Linode** (read-only): Get a Linode.
+- **Get a Linode interface** (read-only): Get a Linode interface.
+- **Get a Linode's IP address** (read-only): Get a Linode's IP address.
+- **Get a Linode's managed settings** (read-only): Get a Linode's managed settings.
+- **Get a Longview plan** (read-only): Get a Longview plan.
+- **Get a Longview subscription** (read-only): Get a Longview subscription.
+- **Get a managed contact** (read-only): Get a managed contact.
+- **Get a Managed Databases engine** (read-only): Get a Managed Databases engine.
+- **Get a Managed Databases type** (read-only): Get a Managed Databases type.
+- **Get a managed issue** (read-only): Get a managed issue.
+- **Get a managed service monitor** (read-only): Get a managed service monitor.
+- **Get a month's Linode statistics** (read-only): Get a month's Linode statistics.
+- **Get a MySQL Managed Database** (read-only): Get a MySQL Managed Database.
+- **Get a MySQL Managed Database SSL certificate** (read-only): Get a MySQL Managed Database SSL certificate.
+- **Get a NAT Gateway** (read-only): Get a NAT Gateway.
+- **Get a NAT Gateway IP address** (read-only): Get a NAT Gateway IP address.
+- **Get a node** (read-only): Get a node.
+- **Get a node pool** (read-only): Get a node pool.
+- **Get a NodeBalancer** (read-only): Get a NodeBalancer.
+- **Get a NodeBalancer's backend IPv6 prefix** (read-only): Get a NodeBalancer's backend IPv6 prefix.
+- **Get a NodeBalancer's node** (read-only): Get a NodeBalancer's node.
+- **Get a notification channel** (read-only): Get a notification channel.
+- **Get a placement group** (read-only): Get a placement group.
+- **Get a PostgreSQL connection pool** (read-only): Get a PostgreSQL connection pool.
+- **Get a PostgreSQL Managed Database** (read-only): Get a PostgreSQL Managed Database.
+- **Get a PostgreSQL Managed Database SSL certificate** (read-only): Get a PostgreSQL Managed Database SSL certificate.
+- **Get a Prefix List** (read-only): Get a Prefix List.
+- **Get a profile's login** (read-only): Get a profile's login.
+- **Get a region** (read-only): Get a region.
+- **Get a region's VPC availability** (read-only): Get a region's VPC availability.
+- **Get a reserved IP address** (read-only): Get a reserved IP address.
+- **Get a resource lock** (read-only): Get a resource lock.
+- **Get a Rule Set** (read-only): Get a Rule Set.
+- **Get a share group** (read-only): Get a share group.
+- **Get a StackScript** (read-only): Get a StackScript.
+- **Get a stream** (read-only): Get a stream.
+- **Get a stream's history** (read-only): Get a stream's history.
+- **Get a support ticket** (read-only): Get a support ticket.
+- **Get a type** (read-only): Get a type.
+- **Get a user's access level** (read-only): Get a user's access level.
+- **Get a Valkey Managed Database** (read-only): Get a Valkey Managed Database.
+- **Get a Valkey Managed Database SSL certificate** (read-only): Get a Valkey Managed Database SSL certificate.
+- **Get a volume** (read-only): Get a volume.
+- **Get a volume quota** (read-only): Get a volume quota.
+- **Get a VPC** (read-only): Get a VPC.
+- **Get a VPC configuration** (read-only): Get a VPC configuration.
+- **Get a VPC subnet** (read-only): Get a VPC subnet.
+- **Get Account Summary** (read-only): Return billing status, current balance, promotions, and enabled cloud capabilities for the connected Linode account, excluding contact and…
+- **Get an account login** (read-only): Get an account login.
+- **Get an alert definition** (read-only): Get an alert definition.
+- **Get an enrolled Beta program** (read-only): Get an enrolled Beta program.
+- **Get an event** (read-only): Get an event.
+- **Get an image** (read-only): Get an image.
+- **Get an invoice** (read-only): Get an invoice.
+- **Get an IP address** (read-only): Get an IP address.
+- **Get an IPv6 range** (read-only): Get an IPv6 range.
+- **Get an LKE Kubernetes version (any tier)** (read-only): Get an LKE Kubernetes version (any tier).
+- **Get an LKE Kubernetes version (non-enterprise)** (read-only): Get an LKE Kubernetes version (non-enterprise).
+- **Get an Object Storage bucket** (read-only): Get an Object Storage bucket.
+- **Get an Object Storage global quota** (read-only): Get an Object Storage global quota.
+- **Get an Object Storage object ACL configuration** (read-only): Get an Object Storage object ACL configuration.
+- **Get an Object Storage quota** (read-only): Get an Object Storage quota.
+- **Get available services for a region** (read-only): Get available services for a region.
+- **Get CORS Object Storage bucket access (E0/E1)** (read-only): Get CORS Object Storage bucket access (E0/E1).
+- **Get Current Profile** (read-only): Return the connected Linode user's stable identity and security-related profile settings without contact or referral details.
+- **Get daily Linode statistics** (read-only): Get daily Linode statistics.
+- **Get details for a supported service type** (read-only): Get details for a supported service type.
+- **Get monthly network transfer stats** (read-only): Get monthly network transfer stats.
+- **Get NAT Gateway account settings** (read-only): Get NAT Gateway account settings.
+- **Get network usage** (read-only): Get network usage.
+- **Get networking information** (read-only): Get networking information.
+- **Get NodeBalancer statistics** (read-only): Get NodeBalancer statistics.
+- **Get Object Storage global quota usage data** (read-only): Get Object Storage global quota usage data.
+- **Get Object Storage quota usage data** (read-only): Get Object Storage quota usage data.
+- **Get Object Storage transfer data** (read-only): Get Object Storage transfer data.
+- **Get Region Plan Availability** (read-only): Return availability for every Linode compute plan in one region, including plans that are currently unavailable.
+- **Get reserved IP pricing** (read-only): Get reserved IP pricing.
+- **Get the account delegation for a child account** (read-only): Get the account delegation for a child account.
+- **Get the control plane access control list** (read-only): Get the control plane access control list.
+- **Get the default role assignment for delegate users** (read-only): Get the default role assignment for delegate users.
+- **Get this month's network transfer stats** (read-only): Get this month's network transfer stats.
+- **Get user's account delegations** (read-only): Get user's account delegations.
+- **Get volume quota usage data** (read-only): Get volume quota usage data.
+- **Get your account delegations** (read-only): Get your account delegations.
+- **Import a domain**: Import a domain.
+- **List a Linode's firewalls** (read-only): List a Linode's firewalls.
+- **List a Linode's network interface history** (read-only): List a Linode's network interface history.
+- **List a Linode's volumes** (read-only): List a Linode's volumes.
+- **List a NAT Gateway's IP addresses** (read-only): List a NAT Gateway's IP addresses.
+- **List a VPC's IPv4 addresses** (read-only): List a VPC's IPv4 addresses.
+- **List a VPC's IPv6 addresses** (read-only): List a VPC's IPv6 addresses.
+- **List agreements** (read-only): List agreements.
+- **List alert definitions** (read-only): List alert definitions.
+- **List alert definitions for a service type** (read-only): List alert definitions for a service type.
+- **List alerts for a notification channel** (read-only): List alerts for a notification channel.
+- **List available roles** (read-only): List available roles.
+- **List available services** (read-only): List available services.
+- **List backups** (read-only): List backups.
+- **List Beta programs** (read-only): List Beta programs.
+- **List child accounts** (read-only): List child accounts.
+- **List configs** (read-only): List configs.
+- **List configuration profile interfaces** (read-only): List configuration profile interfaces.
+- **List configuration profiles** (read-only): List configuration profiles.
+- **List dashboards** (read-only): List dashboards.
+- **List dashboards for a service type** (read-only): List dashboards for a service type.
+- **List default firewalls** (read-only): List default firewalls.
+- **List disks** (read-only): List disks.
+- **List domain records** (read-only): List domain records.
+- **List domains** (read-only): List domains.
+- **List enrolled Beta programs** (read-only): List enrolled Beta programs.
+- **List entities** (read-only): List entities.
+- **List entities assigned to an alert definition** (read-only): List entities assigned to an alert definition.
+- **List events** (read-only): List events.
+- **List firewall devices** (read-only): List firewall devices.
+- **List firewall rule versions** (read-only): List firewall rule versions.
+- **List firewall rules** (read-only): List firewall rules.
+- **List firewall rules with expanded Prefix Lists and Rule Sets** (read-only): List firewall rules with expanded Prefix Lists and Rule Sets.
+- **List firewall templates** (read-only): List firewall templates.
+- **List firewalls** (read-only): List firewalls.
+- **List Instance Types** (read-only): Return one page of Linode compute plans with hardware specifications, transfer allowances, and base, regional, and backup pricing for cost…
+- **List interfaces using a NAT Gateway IP** (read-only): List interfaces using a NAT Gateway IP.
+- **List invoice items** (read-only): List invoice items.
+- **List invoices** (read-only): List invoices.
+- **List IP addresses** (read-only): List IP addresses.
+- **List IPv6 pools** (read-only): List IPv6 pools.
+- **List IPv6 ranges** (read-only): List IPv6 ranges.
+- **List Kernels** (read-only): Return one page of Linode kernels with architecture, virtualization compatibility, version, build date, and deprecation status.
+- **List Kubernetes API endpoints** (read-only): List Kubernetes API endpoints.
+- **List Kubernetes clusters** (read-only): List Kubernetes clusters.
+- **List Kubernetes types** (read-only): List Kubernetes types.
+- **List Linode Instances** (read-only): Return one page of compute instances owned by the connected account, including identifiers and operational metadata needed for inventory…
+- **List Linode interface firewalls** (read-only): List Linode interface firewalls.
+- **List Linode interface settings** (read-only): List Linode interface settings.
+- **List Linode interfaces** (read-only): List Linode interfaces.
+- **List Linode NodeBalancers** (read-only): List Linode NodeBalancers.
+- **List LKE Kubernetes versions (any tier)** (read-only): List LKE Kubernetes versions (any tier).
+- **List LKE Kubernetes versions (non-enterprise)** (read-only): List LKE Kubernetes versions (non-enterprise).
+- **List logins** (read-only): List logins.
+- **List Longview subscriptions** (read-only): List Longview subscriptions.
+- **List Longview types** (read-only): List Longview types.
+- **List maintenance policies** (read-only): List maintenance policies.
+- **List maintenances** (read-only): List maintenances.
+- **List managed contacts** (read-only): List managed contacts.
+- **List Managed Databases** (read-only): List Managed Databases.
+- **List Managed Databases engines** (read-only): List Managed Databases engines.
+- **List Managed Databases types** (read-only): List Managed Databases types.
+- **List managed issues** (read-only): List managed issues.
+- **List managed Linode settings** (read-only): List managed Linode settings.
+- **List managed services** (read-only): List managed services.
+- **List managed stats** (read-only): List managed stats.
+- **List metrics for a service type** (read-only): List metrics for a service type.
+- **List MySQL Managed Database advanced parameters** (read-only): List MySQL Managed Database advanced parameters.
+- **List MySQL Managed Databases** (read-only): List MySQL Managed Databases.
+- **List NAT Gateway interfaces** (read-only): List NAT Gateway interfaces.
+- **List NAT Gateway types** (read-only): List NAT Gateway types.
+- **List NAT Gateways** (read-only): List NAT Gateways.
+- **List Network Transfer Prices** (read-only): Return current base and region-specific network transfer prices for estimating Linode data-transfer costs.
+- **List node pools** (read-only): List node pools.
+- **List NodeBalancer firewalls** (read-only): List NodeBalancer firewalls.
+- **List NodeBalancer types** (read-only): List NodeBalancer types.
+- **List NodeBalancers** (read-only): List NodeBalancers.
+- **List nodes** (read-only): List nodes.
+- **List notification channels** (read-only): List notification channels.
+- **List notifications** (read-only): List notifications.
+- **List Object Storage bucket contents** (read-only): List Object Storage bucket contents.
+- **List Object Storage buckets** (read-only): List Object Storage buckets.
+- **List Object Storage buckets per region** (read-only): List Object Storage buckets per region.
+- **List Object Storage endpoints** (read-only): List Object Storage endpoints.
+- **List Object Storage global quotas** (read-only): List Object Storage global quotas.
+- **List Object Storage quotas** (read-only): List Object Storage quotas.
+- **List Object Storage types** (read-only): List Object Storage types.
+- **List placement groups** (read-only): List placement groups.
+- **List PostgreSQL connection pools** (read-only): List PostgreSQL connection pools.
+- **List PostgreSQL Managed Database advanced parameters** (read-only): List PostgreSQL Managed Database advanced parameters.
+- **List PostgreSQL Managed Databases** (read-only): List PostgreSQL Managed Databases.
+- **List Prefix Lists** (read-only): List Prefix Lists.
+- **List Public Images** (read-only): Return one page of public Linode operating-system images and lifecycle metadata.
+- **List Regions** (read-only): Return one page of Linode regions with status, location, service capabilities, site type, and placement limits for deployment planning.
+- **List regions' availability** (read-only): List regions' availability.
+- **List regions' VPC availability** (read-only): List regions' VPC availability.
+- **List replies** (read-only): List replies.
+- **List reserved IP addresses** (read-only): List reserved IP addresses.
+- **List resource locks** (read-only): List resource locks.
+- **List Rule Sets** (read-only): List Rule Sets.
+- **List share groups** (read-only): List share groups.
+- **List share groups by image** (read-only): List share groups by image.
+- **List shared images by group** (read-only): List shared images by group.
+- **List SSO user exceptions** (read-only): List SSO user exceptions.
+- **List SSO-required users** (read-only): List SSO-required users.
+- **List StackScripts** (read-only): List StackScripts.
+- **List streams** (read-only): List streams.
+- **List support tickets** (read-only): List support tickets.
+- **List supported service types** (read-only): List supported service types.
+- **List tagged objects** (read-only): List tagged objects.
+- **List tags** (read-only): List tags.
+- **List user logins** (read-only): List user logins.
+- **List Valkey Managed Database advanced parameters** (read-only): List Valkey Managed Database advanced parameters.
+- **List Valkey Managed Databases** (read-only): List Valkey Managed Databases.
+- **List VLANs** (read-only): List VLANs.
+- **List volume quotas** (read-only): List volume quotas.
+- **List volume types** (read-only): List volume types.
+- **List volumes** (read-only): List volumes.
+- **List VPC configurations** (read-only): List VPC configurations.
+- **List VPC default and forbidden IPv4 ranges** (read-only): List VPC default and forbidden IPv4 ranges.
+- **List VPC IPv4 addresses** (read-only): List VPC IPv4 addresses.
+- **List VPC IPv6 addresses** (read-only): List VPC IPv6 addresses.
+- **List VPC subnets** (read-only): List VPC subnets.
+- **List VPCs** (read-only): List VPCs.
+- **Mark an event as seen**: Mark an event as seen.
+- **Migrate a Linode**: Migrate a Linode.
+- **Open a support ticket**: Open a support ticket.
+- **Patch a MySQL Managed Database**: Patch a MySQL Managed Database.
+- **Patch a PostgreSQL Managed Database**: Patch a PostgreSQL Managed Database.
+- **Patch a Valkey Managed Database**: Patch a Valkey Managed Database.
+- **Preview Linode interface upgrade** (read-only): Preview the Linode interface upgrade.
+- **Reboot a Linode**: Reboot a Linode.
+- **Rebuild a Linode**: Rebuild a Linode.
+- **Rebuild a NodeBalancer config**: Rebuild a non-TLS NodeBalancer config.
+- **Recycle a node**: Recycle a node.
+- **Recycle a node pool**: Recycle a node pool.
+- **Recycle cluster nodes**: Recycle cluster nodes.
+- **Remove a NAT Gateway IP address**: Remove a NAT Gateway IP address.
+- **Remove an Object Storage bucket**: Remove an Object Storage bucket.
+- **Reorder configuration profile interfaces**: Reorder configuration profile interfaces.
+- **Replicate an image**: Replicate an image.
+- **Reserve a public IPv4 address**: Reserve a public IPv4 address.
+- **Resize a disk**: Resize a disk.
+- **Resize a Linode**: Resize a Linode.
+- **Resize a volume**: Resize a volume.
+- **Restore a backup**: Restore a backup.
+- **Resume a MySQL Managed Database**: Resume a MySQL Managed Database.
+- **Resume a PostgreSQL Managed Database**: Resume a PostgreSQL Managed Database.
+- **Resume a Valkey Managed Database**: Resume a Valkey Managed Database.
+- **Revoke access to a shared image**: Revoke access to a shared image.
+- **Share IP addresses**: Share IP addresses.
+- **Shut down a Linode**: Shut down a Linode.
+- **Suspend a MySQL Managed Database**: Suspend a MySQL Managed Database.
+- **Suspend a PostgreSQL Managed Database**: Suspend a PostgreSQL Managed Database.
+- **Suspend a Valkey Managed Database**: Suspend a Valkey Managed Database.
+- **Unassign a placement group**: Unassign a placement group.
+- **Unreserve an IP address**: Unreserve an IP address.
+- **Update a configuration profile**: Update a configuration profile.
+- **Update a configuration profile interface**: Update a configuration profile interface.
+- **Update a disk**: Update a disk.
+- **Update a domain**: Update a domain.
+- **Update a domain record**: Update a domain record.
+- **Update a firewall**: Update a firewall.
+- **Update a Kubernetes cluster**: Update a Kubernetes cluster.
+- **Update a Linode**: Update a Linode.
+- **Update a Linode interface**: Update a Linode interface.
+- **Update a Linode's firewalls**: Update a Linode's firewalls.
+- **Update a Linode's managed settings**: Update a Linode's managed settings.
+- **Update a Longview plan**: Update a Longview plan.
+- **Update a managed contact**: Update a managed contact.
+- **Update a managed service monitor**: Update a managed service monitor.
+- **Update a MySQL Managed Database**: Update a MySQL Managed Database.
+- **Update a node**: Update a node.
+- **Update a node pool**: Update a node pool.
+- **Update a NodeBalancer**: Update a NodeBalancer.
+- **Update a NodeBalancer config**: Update at least one field on a non-TLS TCP, HTTP, or UDP NodeBalancer config.
+- **Update a NodeBalancer's firewalls**: Update a NodeBalancer's firewalls.
+- **Update a placement group**: Update a placement group.
+- **Update a PostgreSQL connection pool**: Update a PostgreSQL connection pool.
+- **Update a PostgreSQL Managed Database**: Update a PostgreSQL Managed Database.
+- **Update a Rule Set**: Update a Rule Set.
+- **Update a share group**: Update a share group.
+- **Update a shared image**: Update a shared image.
+- **Update a StackScript**: Update a StackScript.
+- **Update a stream**: Update a stream.
+- **Update a user's access level**: Update a user's access level.
+- **Update a Valkey Managed Database**: Update a Valkey Managed Database.
+- **Update a volume**: Update a volume.
+- **Update a VPC**: Update a VPC.
+- **Update a VPC subnet**: Update a VPC subnet.
+- **Update an alert definition**: Update an alert definition.
+- **Update an email alert channel**: Update an alert channel with email-only details.
+- **Update an image**: Update an image.
+- **Update an IP address**: Update an IP address.
+- **Update an IP address's RDNS for a Linode**: Update an IP address's RDNS for a Linode.
+- **Update an object's ACL configuration**: Update an object's ACL configuration.
+- **Update CORS access to an Object Storage bucket (E0/E1)**: Update CORS access to an Object Storage bucket (E0/E1).
+- **Update default firewalls**: Update default firewalls.
+- **Update firewall rules**: Update firewall rules.
+- **Update Linode interface settings**: Update Linode interface settings.
+- **Update NAT Gateway label**: Update NAT Gateway label.
+- **Update reserved IP address tags**: Update reserved IP address tags.
+- **Update SSO user exceptions**: Update SSO user exceptions.
+- **Update SSO-required users**: Update SSO-required users.
+- **Update the account delegation for a child account**: Update the account delegation for a child account.
+- **Update the control plane access control list**: Update the control plane access control list.
+- **Update the default role assignment for delegate users**: Update the default role assignment for delegate users.
+- **Update your account**: Update your account.
+- **Upgrade a Linode**: Upgrade a Linode.
+- **Upgrade to Linode interfaces**: Irreversibly upgrade legacy configuration interfaces to Linode interfaces.

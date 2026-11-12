@@ -1,0 +1,228 @@
+# Zoho WorkDrive
+
+Zoho WorkDrive is a cloud file management and team collaboration platform for organizing, sharing, searching, and governing business content.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/zoho-work-drive/.
+
+## Actions
+
+- **Abort Workflow for a File/Folder**: Abort an active workflow instance permanently after exact-ID confirmation.
+- **Add a File to the Index View**: Set a WorkDrive Writer file as its folder's default Index View.
+- **Add File to Template Category**: Associate one Zoho-format template file with a template category.
+- **Add Folder Customization**: Enable customization for an existing WorkDrive folder.
+- **Add Group to Team Folder**: Add one WorkDrive group to a team folder with a selected access role.
+- **Add Label to File or Folder**: Apply a WorkDrive label to a file or folder.
+- **Add Member to Group**: Add one Zoho user to a WorkDrive group with a specified group role.
+- **Add Member to Team Folder**: Add one WorkDrive user to a team folder with a selected access role.
+- **Allow Viewer to Download**: Allow or prevent viewer-level users from downloading team-folder files.
+- **Archive Team Folder**: Archive a team folder while preserving its data, roles, and sharing permissions.
+- **Assign or Remove Template Admin Role**: Assign or remove organization template-admin privileges for a WorkDrive team member.
+- **Associate File/Folder to Data Template**: Associate one file or folder with a data template and field values.
+- **Associate Multiple Files/Folders to Data Template**: Associate multiple files or folders with data templates in one request.
+- **Change Data Template Description**: Change the description of an existing data template.
+- **Change Label Color**: Change only the color of an existing WorkDrive label.
+- **Change Preferred Team**: Set a WorkDrive team as the authenticated user's preferred team, which becomes the default team shown after login.
+- **Change Team Description**: Change or clear a WorkDrive team's description.
+- **Change Team Folder Description**: Change the description of an existing WorkDrive team folder.
+- **Change Team Folder Name**: Change the name of an existing WorkDrive team folder.
+- **Change Team Member Role**: Change a WorkDrive team member's permissions to Member, Admin, or Super Admin.
+- **Change Team Name**: Change the display name of a WorkDrive team.
+- **Change Template Library View Preference**: Update the connected user's sort, filter, or layout preference for a template library.
+- **Check in File**: Check in a WorkDrive file so team members can edit and view changes.
+- **Check out File**: Check out a WorkDrive file to restrict other users from editing it.
+- **Commit Session (Normal Upload)**: Commit a completed chunk upload session and create or update its file.
+- **Commit Session for Revision Upload**: Commit a completed chunk upload session as the top version of an existing WorkDrive file.
+- **Convert File to Zoho Format**: Convert a supported WorkDrive file into a native Zoho Office file.
+- **Copy File or Folder**: Copy one WorkDrive file or folder into a destination folder.
+- **Copy Multiple Files or Folders**: Copy multiple WorkDrive files or folders into one destination folder.
+- **Create Comment**: Create a new top-level comment on a WorkDrive file.
+- **Create Custom Field**: Create a custom field within an existing data template.
+- **Create Customized Folder**: Create a WorkDrive folder with folder customization enabled.
+- **Create Data Template**: Create a new data template in a specified WorkDrive team.
+- **Create Download Link**: Create an externally usable URL that exposes a WorkDrive file or folder for direct download.
+- **Create External Collection**: Create a collection link that accepts files from people outside the WorkDrive team.
+- **Create Folder**: Create an ordinary folder inside a folder or team folder.
+- **Create Group**: Create a new WorkDrive group in a specified team or organization.
+- **Create Internal Collection**: Create a collection link restricted to signed-in members of the WorkDrive team.
+- **Create Label**: Create a WorkDrive label for a specific team member.
+- **Create Link File**: Create a WorkDrive link file that opens a specified web URL.
+- **Create Native Zoho File**: Create an empty Zoho Writer, Sheet, or Show file in WorkDrive.
+- **Create Reply**: Create a reply to an existing WorkDrive comment.
+- **Create Session (Normal Upload)**: Create a WorkDrive chunk upload session for a new file.
+- **Create Session for Revision Upload**: Create a chunk upload session for a new top version of an existing WorkDrive file.
+- **Create Share Link**: Create an externally usable URL that exposes a WorkDrive file or folder with viewer, comment, editor, or upload access.
+- **Create Team Folder**: Create a public or private team folder in a WorkDrive team.
+- **Create Template Category**: Create a category in a My Templates or Org Templates library.
+- **Create ZIP File**: Create a ZIP file in WorkDrive from selected files and folders.
+- **Create ZIP Progress** (read-only): Fetch ZIP creation progress using the WMS progress key.
+- **Delete Category**: Marks the specified template category deleted using WorkDrive status 61.
+- **Delete Collection**: Permanently delete a WorkDrive file collection after exact-ID confirmation.
+- **Delete Comment**: Permanently delete one WorkDrive comment or reply.
+- **Delete Custom Field**: Permanently delete a custom field after exact-ID confirmation.
+- **Delete Data Template**: Permanently delete a data template after exact-ID confirmation.
+- **Delete File Version**: Permanently delete one historical WorkDrive file version.
+- **Delete Group**: Permanently delete a WorkDrive group and remove all of its memberships after exact-ID confirmation.
+- **Delete Label**: Permanently delete a WorkDrive label after exact-ID confirmation.
+- **Delete Member from Team Folder**: Remove one user or group from a WorkDrive team folder after exact-ID confirmation.
+- **Delete Shared Link**: Permanently revoke one external WorkDrive share link so its URL no longer grants access.
+- **Delete Team Folder**: Permanently delete a WorkDrive team folder after exact-ID confirmation.
+- **Delete Team Member**: Remove a member from a WorkDrive team.
+- **Disable Collection**: Stop an active WorkDrive file collection from accepting submissions.
+- **Disassociate Files/Folders from Data Template**: Remove a file/folder and data-template association after exact-ID confirmation.
+- **Download File** (read-only): Download the binary content of a WorkDrive file or a specific version.
+- **Edit Comment**: Replace the content of an existing WorkDrive comment.
+- **Empty My Folders Trash**: Permanently delete every item in one My Folders trash.
+- **Empty Team Folder Trash**: Permanently delete every item in one team folder's trash.
+- **Enable Collection**: Reactivate a completed WorkDrive file collection.
+- **Enable Editing for File**: Re-enable editing on a WorkDrive file that was marked as final.
+- **Enable External Sharing**: Enable or disable external sharing for a team folder.
+- **Enable My Folders File Conversion**: Enable or disable automatic document conversion for a member's My Folders space.
+- **Enable Team Folder File Conversion**: Enable or disable automatic document conversion for a team folder.
+- **Enable/Disable Data Template**: Enable or disable an existing data template.
+- **External To Internal**: Restrict an external WorkDrive collection to signed-in team users.
+- **Follow Files or Folders**: Follow one or more WorkDrive files or folders.
+- **Generate Embed Code for a File or Folder**: Publish a WorkDrive file or folder with view-only access for embedding.
+- **Generate File Summary**: Ask WorkDrive to generate an AI summary of a specified file.
+- **Get Actions for a Transition** (read-only): Fetch the during or after actions configured for a workflow transition.
+- **Get All Labels of the User** (read-only): Retrieve all labels associated with a WorkDrive team member.
+- **Get all Templates from a Template Library** (read-only): Retrieves one provider page of template files from the specified template library.
+- **Get all Templates in a Template Category** (read-only): Retrieves one provider page of template files under the specified template category.
+- **Get Associated Data Templates** (read-only): Fetch data-template metadata associated with a WorkDrive file or folder.
+- **Get Category Info** (read-only): Retrieves information for a specific template category using the category ID.
+- **Get Collection Info** (read-only): Retrieve the settings and current state of a WorkDrive file collection.
+- **Get Comment Info** (read-only): Retrieve detailed information about a specific WorkDrive comment.
+- **Get Current Team Member** (read-only): Return the authenticated user's membership details for a specific WorkDrive team.
+- **Get Current User** (read-only): Return the authenticated WorkDrive user's identity and account capabilities for ID and team discovery.
+- **Get During Actions for an Instance Transition** (read-only): Retrieve the during-actions configured for a transition in a workflow instance.
+- **Get Favorited Files** (read-only): Return one offset page of files favorited by a WorkDrive team member.
+- **Get File Comments** (read-only): Fetch the comments and replies returned for a WorkDrive file.
+- **Get File Query** (read-only): Ask Zia a question about a WorkDrive file and inspect indexing status.
+- **Get File Summary** (read-only): Retrieve a WorkDrive file summary or its current generation status.
+- **Get File Thumbnail URL** (read-only): Fetch file details and the provider-hosted thumbnail URL when available.
+- **Get File Versions** (read-only): Retrieve the version record returned for a WorkDrive file.
+- **Get File/Folder Breadcrumbs** (read-only): Fetch the location and folder hierarchy of a WorkDrive file or folder.
+- **Get File/Folder Collaboration Info** (read-only): Retrieve the audience, role, status, and expiration details for one existing WorkDrive file or folder collaboration permission.
+- **Get File/Folder External Share Links** (read-only): Fetch external share links for a WorkDrive file or folder.
+- **Get File/Folder Resource Property** (read-only): Fetch storage, retention, DLP, and additional properties for a resource.
+- **Get File/Folder Statistics** (read-only): Fetch view, download, upload, and link activity for a WorkDrive resource.
+- **Get Files in My Folders** (read-only): Return one cursor or offset page of files from a My Folders space.
+- **Get Files in Shared with Me** (read-only): Return one offset page of files shared with a WorkDrive team member.
+- **Get Folders in My Folders** (read-only): Return one offset page of folders from a My Folders space.
+- **Get Folders in Shared with Me** (read-only): Return one offset page of folders shared with a WorkDrive team member.
+- **Get Group Info** (read-only): Retrieve detailed information about a specific WorkDrive group.
+- **Get Group Member Info** (read-only): Retrieve detailed information about one WorkDrive group member.
+- **Get Groups in a Team** (read-only): Return one offset-based page of groups belonging to a WorkDrive team, optionally filtered by group type.
+- **Get Label** (read-only): Retrieve the details of a specific WorkDrive label.
+- **Get Labeled Files** (read-only): Return one offset page of labeled files for a WorkDrive team member.
+- **Get Link Info** (read-only): Return the exposure and access settings for one external WorkDrive share link.
+- **Get List Of All Collection Links** (read-only): List all file collection links available in a WorkDrive team.
+- **Get List Of All Collection Submissions** (read-only): List one offset-based page of submissions received through a collection.
+- **Get List Of All The Submitted Files** (read-only): List the files uploaded in a specific WorkDrive collection submission.
+- **Get list of Categories** (read-only): Retrieves one provider page of template categories in a specified template library.
+- **Get List of Custom Fields** (read-only): Retrieve the custom fields configured for a data template.
+- **Get List of Data Templates in a Team** (read-only): Return the data templates available in a specific WorkDrive team.
+- **Get List of Group Members** (read-only): Retrieve the members of a specific WorkDrive group.
+- **Get List of Recent Changes** (read-only): Return one page of recent file and folder changes from a WorkDrive start or continuation token.
+- **Get List of Sub Folders** (read-only): Return one offset page of subfolders in a WorkDrive team folder.
+- **Get List of Workflows in a Team** (read-only): Retrieve the workflows configured for a WorkDrive team.
+- **Get My Folders ID** (read-only): Return the My Folders private-space ID for a WorkDrive team member.
+- **Get My Folders Links** (read-only): Return shared links for a My Folders resource.
+- **Get My Templates Library ID** (read-only): Retrieves one provider page of template library details for the specified team member.
+- **Get Org Templates Library ID** (read-only): Retrieves one provider page of template library details for the specified team.
+- **Get Preview Metadata** (read-only): Retrieve preview URLs, status, and size metadata for a WorkDrive file.
+- **Get Public Templates Library ID** (read-only): Retrieves one provider page of public template libraries.
+- **Get Recent Files** (read-only): Return one offset page of files recently accessed by a WorkDrive team member.
+- **Get Resource** (read-only): Return metadata for one WorkDrive file or folder by resource ID.
+- **Get Start Token** (read-only): Create a start token for monitoring changes under My Folders, a team folder, or a subfolder from a point within the last 31 days.
+- **Get Suggested Files** (read-only): List file suggestions for a WorkDrive team member, optionally filtered by suggestion source.
+- **Get Team Folder Info** (read-only): Retrieve metadata and access capabilities for one WorkDrive team folder.
+- **Get Team Folder Links** (read-only): Retrieve one offset page of custom or download links for a team folder.
+- **Get Team Folder Members** (read-only): Retrieve members and roles shared on a WorkDrive team folder.
+- **Get Team Folder MyDraft Files** (read-only): Return one offset page of the connected user's drafts in a team folder.
+- **Get Team Folder Settings** (read-only): Retrieve sharing, conversion, download, and retention settings for a team folder.
+- **Get Team Folder Trashed Files** (read-only): Return one offset page of trashed resources from a WorkDrive team folder.
+- **Get Team Folder Unread Files** (read-only): Return unread resources in a WorkDrive team folder, optionally filtered by type.
+- **Get Team Info** (read-only): Return profile and configuration details for a WorkDrive team, including its name, description, member counts, and current-user permissions.
+- **Get Team Member Collaborators** (read-only): Return users and groups with whom a WorkDrive team member has shared files or folders.
+- **Get Team Member Info** (read-only): Retrieve profile, status, and role information for one WorkDrive team member.
+- **Get Team Member's Groups** (read-only): Return the WorkDrive groups to which a specified team member belongs.
+- **Get Team Members** (read-only): Return members of a WorkDrive team, optionally selecting member ZUIDs or searching by keyword.
+- **Get Team Settings** (read-only): Retrieve administrator-level sharing, storage, retention, and feature settings for a WorkDrive team.
+- **Get Template Library Info** (read-only): Retrieves the details of a specific template library using its library ID.
+- **Get Template Library Permissions** (read-only): Retrieves one provider page of sharing permissions for a template library.
+- **Get Trashed Files in My Folders** (read-only): Return one offset page of trashed resources from a My Folders space.
+- **Get Users for an Instance Transition** (read-only): List pending or completed assignees and approvers for a workflow-instance transition.
+- **Get Workflow Instance** (read-only): Retrieve one workflow instance with its state, transitions, and metadata.
+- **Get Workflow Instances for a File/Folder** (read-only): List workflow instances associated with a specific WorkDrive file or folder.
+- **Get Workflow Instances for a User** (read-only): List workflow instances created by or assigned to a WorkDrive team member.
+- **Get Workflow Instances for a Workflow** (read-only): List instances created from a specific workflow, with status, state, and time filters.
+- **Internal To External**: Open an internal WorkDrive collection to external uploaders and configure requested uploader data.
+- **Invite New Member to Team**: Invite one email address to a WorkDrive team with a Member, Admin, or Super Admin role.
+- **List Folder Items** (read-only): List direct child files and folders inside an ordinary WorkDrive folder.
+- **List My Teams** (read-only): Return WorkDrive teams available to the authenticated user without requiring a user ID.
+- **List Resource Collaborators** (read-only): List people and permission records that currently have access to a WorkDrive file or folder.
+- **List Team Folder Items** (read-only): List one page of files and folders at the root of a WorkDrive team folder, with optional resource type, extension, projection, cursor, and…
+- **List Team Folders** (read-only): List the team folders in a WorkDrive team, optionally filtering by membership type.
+- **Mark File as Final**: Mark a WorkDrive file as final so it can no longer be edited.
+- **Mark File as Ready**: Mark a newly created WorkDrive file as ready for use.
+- **Mark File/Folder as Favorites**: Mark one WorkDrive file or folder as a favorite.
+- **Mark Multiple Files or Folders as Favorites**: Mark one or more WorkDrive files or folders as favorites.
+- **Move Multiple Files or Folders**: Move one or more WorkDrive files or folders to one destination folder.
+- **Move Multiple Files or Folders to Trash**: Move one or more WorkDrive files or folders to Trash.
+- **Move Resource**: Move one WorkDrive file or folder to a different parent folder within an allowed space.
+- **Multi Download Progress** (read-only): Check whether a WorkDrive multi-download ZIP is complete or still processing.
+- **Perform Transition for a Workflow Instance**: Perform a valid transition for a workflow instance, supplying any configured mandatory during-action values.
+- **Permanent Delete File/Folder**: Permanently delete one WorkDrive file or folder from trash.
+- **Permanently Delete Multiple Files or Folders**: Permanently delete one or more WorkDrive resources that are in Trash.
+- **Pin Team Folder**: Pin a WorkDrive team folder for quick access.
+- **Prepare Multiple Files for Download**: Start WorkDrive ZIP packaging for multiple resources and return the provider's tracking metadata.
+- **Remove a File from the Index View**: Remove a WorkDrive Writer file as its folder's Index View.
+- **Remove File/Folder from Favorites**: Remove one WorkDrive file or folder from favorites.
+- **Remove Folder Customization**: Remove custom attributes and settings from a WorkDrive folder.
+- **Remove Group Member**: Remove one existing member from a WorkDrive group after exact-ID confirmation.
+- **Remove Label from File or Folder**: Remove a WorkDrive label from a file or folder after exact-ID confirmation.
+- **Remove Multiple Files or Folders from Favorites**: Remove one or more WorkDrive files or folders from favorites.
+- **Remove Resource Access**: Revoke one collaborator permission from a WorkDrive file or folder without deleting the resource.
+- **Remove Template Category**: Removes a specified template file from a template category after exact-ID confirmation.
+- **Rename Category**: Renames the specified template category.
+- **Rename Data Template**: Rename an existing data template.
+- **Rename Group**: Change the name of an existing WorkDrive group.
+- **Rename Label**: Change only the name of an existing WorkDrive label.
+- **Rename Resource**: Rename one WorkDrive file or folder without moving it.
+- **Reopen Comment**: Reopen a previously resolved parent WorkDrive comment thread.
+- **Resolve Comment**: Mark a parent WorkDrive comment thread as resolved.
+- **Restore File Version**: Restore one historical WorkDrive file version as the latest top version.
+- **Restore Multiple Files or Folders**: Restore one or more WorkDrive files or folders from Trash.
+- **Restore Resource**: Restore one trashed WorkDrive file or folder to its original location.
+- **Save File as Template**: Save a Zoho-format WorkDrive file as a reusable template in a template library.
+- **Search Based on Data Template** (read-only): Search one WorkDrive team for files and folders associated with a data template, optionally narrowing by typed custom-field criteria.
+- **Search Resources** (read-only): Search file names or contents across a team, My Folders, one team folder, one folder, or items shared with a user.
+- **Share File or Folder with Everyone on the Internet**: Create persistent public view access to a WorkDrive file or folder for anyone on the internet.
+- **Share File or Folder with Group Members**: Grant every member of one WorkDrive group access to a file or folder.
+- **Share Resource**: Grant one person access to a WorkDrive file or folder.
+- **Share Team Folder with Entire Team**: Grant every member of the WorkDrive team a selected role on one team folder.
+- **Start Workflow for a File/Folder**: Start an active workflow on a WorkDrive file or folder, including configured initial during-action values.
+- **Suspend Team Member**: Temporarily suspend a WorkDrive team member.
+- **Trash Resource**: Move one WorkDrive file or folder to Trash.
+- **UnArchive Team Folder**: Reactivate an archived team folder with its data, roles, and sharing intact.
+- **Unfollow Files or Folders**: Stop following one or more WorkDrive files or folders.
+- **Unpin Team Folder**: Remove a team folder from the connected user's pinned team-folder list.
+- **Unzip File**: Extract all content from a WorkDrive ZIP file into a destination folder without merging names.
+- **Update Collection Settings**: Update the name, expiration, upload limit, or uploader-folder behavior of an active collection.
+- **Update Custom Field**: Update an existing custom field's name, required flag, or choices.
+- **Update File/Folder Share Expiration**: Change when an existing WorkDrive file or folder collaboration expires.
+- **Update File/Folder Share Permissions**: Replace the role on one existing WorkDrive collaboration.
+- **Update Group Description**: Update the description of an existing WorkDrive group.
+- **Update Group Member Role**: Change an existing WorkDrive group member to Group Admin or Group Member.
+- **Update Link Download Setting**: Allow or restrict downloads through an existing external WorkDrive share link.
+- **Update Link Expiry Setting**: Set when an existing external WorkDrive share link will stop granting access.
+- **Update Link file**: Replace the web URL associated with a WorkDrive Link file.
+- **Update Link Password Setting**: Enable, replace, or remove password protection on an external WorkDrive share link.
+- **Update Team Folder Member Role**: Change the access role of one existing WorkDrive team-folder membership.
+- **Update Values of Associated Files/Folders**: Replace custom field values on an existing data-template association.
+- **Upload File**: Upload actual file content to a WorkDrive folder using the provider's multipart endpoint.
+- **Upload File Chunk**: Upload one sequential chunk to an existing WorkDrive upload session through the connection's regional stream endpoint.
+- **Upload Large File**: Upload a file through WorkDrive's regional stream endpoint for files larger than 250 MB.
+- **Upload New File Version**: Upload replacement content as the top version of an existing WorkDrive file.
+- **Upload Progress** (read-only): Check the progress or error state of a WorkDrive stream upload.
+- **Upload Session Progress** (read-only): Return progress details for an ongoing WorkDrive chunk upload session.

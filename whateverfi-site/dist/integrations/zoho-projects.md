@@ -1,0 +1,550 @@
+# Zoho Projects
+
+Manage Zoho Projects portals, projects, tasks, issues, time logs, users, forums, events, custom fields, and WorkDrive-backed documents across regional data centers.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/zoho-projects/.
+
+## Actions
+
+- **Activate Client User**: Restore a deactivated client user's portal access.
+- **Activate User**: Restore a deactivated user's portal access.
+- **Add Attachments to Comments**: Upload one image for display within comment content.
+- **Add Bug Resolution (V3)**: Add a resolution through the V3 bug_id contract.
+- **Add Category**: Add a new category for forums in a specific project.
+- **Add Client User**: Invite one or more client users to a portal and assign projects and rates.
+- **Add Currency**: Add a new currency to the organisation.
+- **Add Custom Domain**: Add a custom domain for the portal.
+- **Add Custom Module Record Comment**: Add a comment to a record.
+- **Add Event**: Add a new event to a specific project.
+- **Add Event Comment**: Add a comment to a specific event in a project.
+- **Add Forum**: Add a new forum to a specific project.
+- **Add Forum Comment**: Add a comment to a specific forum in a project.
+- **Add Issue Comment**: Add a comment to an issue.
+- **Add Issue Followers**: Receive updates or notifications about the issue in a project.
+- **Add Issue Resolution (V3.1)**: Add a resolution through the V3.1 issue_id contract and return the created resolution list.
+- **Add Leaves**: Create a leave in the Zoho Projects portal.
+- **Add Or Update Task Followers**: API to add or update followers to a given task.
+- **Add Phase Comment**: Add a comment to a phase with optional notifications and attachments.
+- **Add Phase Followers**: Add users as followers of a phase.
+- **Add Portal Customers**: Add customers to the Zoho Projects portal.
+- **Add Project Client User**: Grant one or more client users access to a project.
+- **Add Project Comment**: Add a comment to a project.
+- **Add Project Customers**: Create new customer within a project in the Zoho Projects portal.
+- **Add Project User**: Grant one or more portal users access to a project.
+- **Add Task Comment**: Add a new comment to a task.
+- **Add Task Dependency**: Create a dependency between two tasks in a project.
+- **Add Task Followers**: Add followers to a task.
+- **Add Task List Comment**: Add a comment to a task list.
+- **Add Team (Project)**: Add an existing team to a specific project.
+- **Add Time Log**: Add a time log to a project.
+- **Add User**: Invite one or more users to a portal with roles, profiles, projects, and rates.
+- **Apply Blueprint Transition**: Execute transition in a blueprint.
+- **Associate Attachment**: Note.
+- **Associate attachments**: Associate attachments for all entities
+- **Associate Bugs to Task (V3 Optional IDs)**: Use the V3 /tasks/{task_id}/bugs contract to associate bugs with a task.
+- **Associate Customers To Project**: Associate customers to a project.
+- **Associate Forums**: Link one or more forums to a task.
+- **Associate Issue Attachments**: Associate attachments with an issue.
+- **Associate Issues to Task (V3 Required IDs)**: Use the V3 /tasks/{task_id}/associate-bugs contract to associate a required list of bug IDs with a task.
+- **Associate Multiple attachments**: Associate Multiple attachments for all entities
+- **Associate Project Contacts**: Associate existing contacts with a project.
+- **Associate Project Folders**: Associate folder(s) to a project.
+- **Associate Project Team Folders**: Associate an existing team folder to a project.
+- **Associate Tags To Entity**: Associate tags with a module in a project.
+- **Associate Task Attachments**: Associate attachments to a task.
+- **Associate Tasks**: Associate tasks with a specific issue.
+- **Attach Files**: Upload one file and associate it with a record in Zoho Projects.
+- **Bulk Add Time Logs**: Add multiple time log entries to a specific portal.
+- **Bulk Associate Tasks**: Associate multiple tasks with multiple issues in a project.
+- **Bulk Create Tasks**: Create multiple tasks in a project in one request.
+- **Bulk Delete Time Logs**: Remove multiple time log entries from a specific portal.
+- **Bulk Link Issues (V3 String Link Type)**: Link source issue_ids to linking_issue_ids with the V3 contract, using a string link_type and receiving no content.
+- **Bulk Update Portal Users**: Modify profiles, roles, reporting lines, business hours, or rates for portal users.
+- **Bulk Update Resource Skill Levels**: Update the proficiency level of up to 100 resources for a skill.
+- **Bulk Update Tasks**: Modify multiple tasks at once in the Zoho Projects portal.Note.
+- **Bulk Update Time Logs**: Update multiple time log entries in the Zoho Projects portal.
+- **Bulk Update User Skill Levels**: Update the proficiency level of up to 100 portal users for a skill.
+- **Change Link Type**: Change the link type between two issues.
+- **Check Custom Module Record Follower** (read-only): Verify whether the user is a follower.
+- **Clone Issue**: Clone an issue in a project.
+- **Clone Phase**: Clone a phase and its configuration within a project.
+- **Clone Task**: Clone a task to create multiple instances within the project.
+- **Clone Task List**: Create a task list in the specified project by cloning an existing task list from a project, project template, or task template.
+- **Close Task List**: Modify status of the task list as closed in a project.
+- **Convert Contact To Client User**: Convert contact to a client user in the Zoho Projects portal.
+- **Convert Task List To Template**: Convert a task list into a template in a project.
+- **Convert Task To Task List**: to make the parent task as Tasklist.
+- **Convert To Subtask**: Convert a task into a subtask under a specified parent task in the project.
+- **Convert To Task**: Convert a subtask into a root task in the project.
+- **Count Custom Module Record Attachments** (read-only): Retrieve the count of attachments from a record.
+- **Count Custom Module Record Comments** (read-only): Retrieve the total number of comments for a record.
+- **Count Custom Module Record Edits** (read-only): Retrieve the total number of edits made to a record within a module.
+- **Count Custom Module Records** (read-only): Retrieve the count of records from a module.
+- **Create Baseline**: Create a baseline based on the current schedules in a project.
+- **Create Bulk Options**: Create options for a custom-module field in bulk.
+- **Create Bulk Read Job**: Create a bulk read job to export records of a module from the Zoho Projects portal.
+- **Create Business Hours**: Create a business calendar in the Zoho Projects portal.
+- **Create Contacts**: Create new contacts in the Zoho Projects portal.
+- **Create Custom Module Export**: Pass project_id to scope the export to a single project.
+- **Create Custom Module Import**: Initiate an import operation for a module by uploading a file.
+- **Create Custom Module Record**: Create a record in a custom module.
+- **Create Default Task List**: Create Default tasklist for a Project.
+- **Create Extension Property**: Store all the entity or app properties of the extension.
+- **Create Holiday List**: Create a holiday list in the Zoho Projects portal.
+- **Create Invitation Template**: Create a portal invitation email template.
+- **Create Issue**: Create an issue in a project.
+- **Create Layout**: Create or clone a layout in a module.
+- **Create Module**: Create a custom module in the portal.
+- **Create Or Update Field**: Create a field or update an existing field in a module layout.
+- **Create Or Update Link Type**: Create or update a link type in a project.
+- **Create Or Update Section**: Add or update a layout section.
+- **Create Phase**: Create a phase with owner, status, dates, tags, position, template settings, and budget details.
+- **Create Profile**: Create or clone a profile in a portal.
+- **Create Project**: Create a new project in the Zoho Projects portal.
+- **Create Project Export**: Create a project export in the Zoho Projects portal.
+- **Create Project Folder**: Create a folder under a project team folder or folder.
+- **Create Project Group**: Add a new project group in the Zoho Projects portal.
+- **Create Project Team Folder**: Create a team folder in a project.
+- **Create Role**: Create a role in a portal.
+- **Create Skill**: Create a skill in a Zoho Projects portal.
+- **Create Tags**: Create new tags in the Zoho Projects portal.
+- **Create Task**: Add a task to the project.
+- **Create Task List**: Add a Task list to the project.
+- **Create Team**: Create a new team in a specific portal.
+- **Deactivate Client User**: Revoke a client user's portal access without deleting the account.
+- **Deactivate User**: Revoke a user's portal access without deleting the account.
+- **Delete Bug Resolution (V3)**: Remove a resolution through the V3 bug_id contract.
+- **Delete Business Hours**: Remove a business calendar from the Zoho Projects portal.
+- **Delete Category**: Delete a forum category from a specific project.
+- **Delete Client User**: Remove a client user from the Zoho Projects portal.
+- **Delete Client User From Project**: Remove a client user from the project.
+- **Delete Contact**: Remove a contact from the Zoho Projects portal.
+- **Delete Currency**: Remove a currency configured for the Zoho Projects portal.
+- **Delete Custom Domain**: Remove the custom domain configuration from the Zoho Projects portal.
+- **Delete Custom Module Export**: Remove a portal-level Custom Module export.
+- **Delete Custom Module Import**: Remove an import entry from the table.
+- **Delete Custom Module Record**: Remove a record permanently from the recycle bin.
+- **Delete Custom Module Record Comment**: Remove a comment from a record.
+- **Delete Custom View**: Remove a task custom view from the Zoho Projects portal.
+- **Delete Customer**: Remove the client company from the Zoho Projects portal.
+- **Delete Customer From Project**: Remove a customer from the project.
+- **Delete Dependency**: Remove a task dependency between tasks in a project.
+- **Delete Event**: Remove a specific event from a project.
+- **Delete Event Comment**: Delete a comment associated with an event in a project within the Zoho Projects portal.
+- **Delete Extension Property**: Remove the entity or app property from the extension.
+- **Delete Field**: Remove a field from a custom module.
+- **Delete Folder**: Delete a Folder.
+- **Delete Forum**: Delete a forum from a specific project.
+- **Delete Forum Comment**: Delete a comment from a specific forum in a project.
+- **Delete Holiday List**: Remove a holiday list from the Zoho Projects portal.
+- **Delete Invitation Template**: Delete a portal invitation email template.
+- **Delete Issue**: Remove an issue from a project.
+- **Delete Issue Comment**: Remove a comment from an issue.
+- **Delete Issue Resolution (V3.1)**: Remove a resolution through the V3.1 issue_id contract with the documented bugs.DELETE grant.
+- **Delete Layout**: Remove a layout from a module.
+- **Delete Leave**: Remove a leave from the Zoho Projects portal.
+- **Delete Link Type**: Delete a link type in a project.
+- **Delete Module**: Permanently remove a module from trash.
+- **Delete Or Disassociate Field Options**: Remove or disassociate options from a field.
+- **Delete Phase Comment**: Remove a comment from a phase.
+- **Delete Profile**: Delete a profile and migrate affected users.
+- **Delete Project**: Permanently delete a project that has already been moved to the trash.
+- **Delete Project Comment**: Delete Comment in a Project.
+- **Delete Project Contacts**: Remove contacts from a project.
+- **Delete Project Export**: Remove a project export from the Zoho Projects portal.
+- **Delete Project Group**: Remove a project group from the Zoho Projects portal.
+- **Delete Project User**: Remove a user's access to a project.
+- **Delete Records**: Permanently remove selected records from the recycle bin.
+- **Delete Role**: Delete a role and migrate affected users.
+- **Delete Section**: Remove a section from a layout.
+- **Delete Skill**: Permanently delete a skill from a Zoho Projects portal.
+- **Delete Tag**: Remove a tag from the Zoho Projects portal.
+- **Delete Task**: Remove a task from the project.
+- **Delete Task Comment**: Remove a comment from a task.
+- **Delete Task List**: Remove a task list from the project.
+- **Delete Task List Comment**: Remove a comment from a task list.
+- **Delete Team**: Remove a specific team from a portal.
+- **Delete Team Folder**: Remove a team folder from a project.
+- **Delete Time Log**: Remove the time log from a project.
+- **Delete Timer**: Remove a timer entry from the Zoho Projects portal.
+- **Delete User**: Permanently remove a user from a portal.
+- **Disassociate Attachment**: Dissociate an attachment from an issue.
+- **Disassociate Attachment**: Disassociate for all entities
+- **Disassociate Field**: Remove a field from a layout.
+- **Disassociate Forums**: Disassociate multiple forums from a task.
+- **Disassociate Issue**: Disassociate bug from a task.
+- **Disassociate Multiple attachments**: Disassociate Multiple attachments for all entities
+- **Disassociate Project Contact**: Disassociate a contact from a project.
+- **Disassociate Project Folders**: Disassociate folder(s) from a project.
+- **Disassociate Tags From Entity**: Remove associated tags from a module in a project.
+- **Disassociate Task**: Remove task association from an issue.
+- **Disassociate Team Folder**: Disassociate team folder(s) from a project.
+- **Empty Recycle Bin**: Permanently delete all records from a portal's recycle bin.
+- **Export Custom Module Record Status Timeline**: Exports status timeline of a record.
+- **Export Portal Users**: Start an asynchronous export of portal users.
+- **Export Project Users**: Start an asynchronous export of project users.
+- **Export Status Timeline**: Export the status timeline of tasks from a portal.
+- **Export Task Status Timeline**: Create an export of task status timeline data across the portal.
+- **Follow Custom Module Record**: Add a follower to the record.
+- **Follow Forum**: Follow a specific forum in a project to receive notifications.
+- **Follow Issue**: Add or update followers to an issue in a project.
+- **Follow Task**: Follow a task in a project.
+- **Follow Task List**: Follow a task list to receive updates and notifications.
+- **Get Associated Projects** (read-only): Retrieve one page of projects associated with teams in a portal.
+- **Get Attachment** (read-only): Retrieve attachments of a comment.
+- **Get Attachment Details** (read-only): Get attachments details by attachment id
+- **Get Blueprint Transition Fields** (read-only): Retrieve data of the action that is set to execute during the transition.
+- **Get Bug Resolution (V3)** (read-only): Retrieve a bug resolution through the V3 bug_id contract.
+- **Get Bug Status Transitions (V3)** (read-only): Retrieve status-transition history through the V3 bug_id contract.
+- **Get Bulk Read Fields** (read-only): Retrieve the field metadata for the specified modules from the Zoho Projects portal.
+- **Get Business Hour Details** (read-only): Retrieve details of the business hours using its ID.
+- **Get Comment Details** (read-only): Fetch Single Comment Detail.
+- **Get Contact Details** (read-only): Retrieve details of a contact from the Zoho Projects portal.
+- **Get Custom Domain** (read-only): Retrieve custom domain details for the portal.
+- **Get Custom Module Export** (read-only): Retrieve the details of a specific portal-level Custom Module export, including its file format, selected fields, filter criteria,…
+- **Get Custom Module Fields** (read-only): Retrieve fields and metadata available in a custom module.
+- **Get Custom Module Import** (read-only): Retrieve the details of an import operation.
+- **Get Custom Module Import Errors** (read-only): Retrieve the error details of the import operation.
+- **Get Custom Module Import File** (read-only): Retrieve the details of the uploaded files for mapping in import operation.
+- **Get Custom Module Record** (read-only): Retrieve details of a specific record.
+- **Get Custom Module Record Comment** (read-only): Retrieve the details of a specific comment from a record.
+- **Get Custom Module Record Edit** (read-only): Retrieve edits made to a record using a specific audit ID.
+- **Get Custom Module Record Status Timeline** (read-only): Retrieve the status timeline of a record.
+- **Get Custom Module Record View** (read-only): Get detail of the custom view.
+- **Get Custom View Details** (read-only): Retrieve the details of a project custom view, along with its associated fields.
+- **Get Custom View Details From Project** (read-only): Retrieve the details of a custom view along with its fields.
+- **Get Data Backup Status** (read-only): Check whether a portal backup is in progress or completed and return its download URL when ready.
+- **Get Default Approver** (read-only): Retrieve the default approver of the user in a project.
+- **Get Default Layout** (read-only): Retrieve the default layout configured for a module.
+- **Get Event Comment By ID** (read-only): Retrieve the details of a specific event comment using its comment ID.
+- **Get Event Details** (read-only): Retrieve the details of a specific event in a project.
+- **Get Extension Configuration** (read-only): Retrieve the configuration of the extension.
+- **Get Extension Property** (read-only): Retrieve one page of entity or app properties from an extension.
+- **Get Field Configuration** (read-only): Retrieve supported field types and field limits for a module.
+- **Get Field Info For Custom Module** (read-only): Retrieve fields and metadata for a custom module, one page at a time.
+- **Get Forum Comment** (read-only): Retrieve a specific comment from a forum in a project.
+- **Get Forum Comment By ID** (read-only): Retrieve the details of a specific forum comment using its comment ID.
+- **Get Forum Details** (read-only): Retrieve the details of a specific forum in a project.
+- **Get Holiday List Details** (read-only): Retrieve holiday list details using its ID.
+- **Get Invitation Template** (read-only): Retrieve one portal invitation email template.
+- **Get Issue Comment** (read-only): Retrieve a specific comment on an issue.
+- **Get Issue Description** (read-only): Retrieve the description of the issue in a project.
+- **Get Issue Details** (read-only): Retrieve details of an issue in a project.
+- **Get Issue Resolution (V3.1)** (read-only): Retrieve an issue resolution through the V3.1 issue_id contract, which returns the resolution list directly.
+- **Get Issue Status Timeline (V3.1)** (read-only): Retrieve status-transition history through the V3.1 issue_id contract as a direct timeline list.
+- **Get Layout Details** (read-only): Retrieve complete layout details, including its sections.
+- **Get Leave Details** (read-only): Retrieve specific leave details from the Zoho Projects portal.
+- **Get Link Types** (read-only): Get all link types for a project.
+- **Get Module** (read-only): Retrieve one module's configuration.
+- **Get My Portal Permissions** (read-only): Retrieve the current user's record-level or field-level portal permissions.
+- **Get My Project Permissions** (read-only): Retrieve the current user's record-level or field-level project permissions.
+- **Get Owner Allocated Work** (read-only): Retrieve allocated work details of an existing user or resource from the Zoho Projects portal.
+- **Get Phase** (read-only): Retrieve complete details for a phase by ID.
+- **Get Phase Status Timeline** (read-only): Retrieve the status transition history of a phase.
+- **Get Portal Budget Settings** (read-only): Retrieve the budget settings configured for the Zoho Projects portal.
+- **Get Portal Currency Settings** (read-only): Retrieve the currency settings configured for the Zoho Projects portal.
+- **Get Portal Custom View Details** (read-only): Get portal Custom View Details.
+- **Get Portal Date Time Settings** (read-only): Get the date and time settings of the portal.
+- **Get Portal Details** (read-only): Retrieve details and business settings for a Zoho Projects portal.
+- **Get Portal Folder Details** (read-only): Return folder details available in a portal.
+- **Get Portal License Details** (read-only): Note.
+- **Get Portal Time Log Report** (read-only): Retrieve time log reports from the Zoho Projects portal.
+- **Get Portal User** (read-only): Retrieve a portal user by ZPUID or email address.
+- **Get Portal User Export** (read-only): Retrieve a portal user export job and its output URLs.
+- **Get Profile Details** (read-only): Retrieve a profile and its configuration from a portal.
+- **Get Profile Permissions** (read-only): Retrieve record-level or field-level permissions for a profile.
+- **Get Project Attachments** (read-only): Get attachments details by Entity id
+- **Get Project Custom View Details** (read-only): Retrieve the details of a custom task view.
+- **Get Project Details** (read-only): Retrieve details of a project.
+- **Get Project Export Form** (read-only): Retrieve the Project export form from the Zoho Projects portal.
+- **Get Project Folder Settings** (read-only): Retrieve details of the folder settings from a project.
+- **Get Project Team Folder Details** (read-only): Retrieve the team folder or folder settings from a project.
+- **Get Project Team Folder Settings** (read-only): Retrieve the team folder settings of a project.
+- **Get Project Time Log Report** (read-only): Retrieve time log reports from a project.
+- **Get Project User** (read-only): Retrieve a project user by ZPUID or email address.
+- **Get Project User Export** (read-only): Retrieve a project user export job and its output URLs.
+- **Get Project User Permissions** (read-only): Retrieve record-level or field-level permissions for one project user.
+- **Get Projects Teams** (read-only): Retrieve one page of teams and members associated with a project.
+- **Get Role Details** (read-only): Retrieve a role from a portal.
+- **Get Search Results** (read-only): Retrieve search results from the Zoho Projects portal.
+- **Get Search Results in a Project** (read-only): Retrieve search results from a project
+- **Get Skill** (read-only): Retrieve a skill and its associated users from a Zoho Projects portal.
+- **Get Status Timeline** (read-only): Retrieve the status change timeline for a task.
+- **Get Task Count** (read-only): Displays the total number of tasks associated with each project.
+- **Get Task Details** (read-only): Retrieve the details of a specific task in a project.
+- **Get Task Details From Baseline** (read-only): Retrieve task details captured under a specific baseline.
+- **Get Task List** (read-only): Retrieve the details of a specific task list.
+- **Get Task List Comment** (read-only): Retrieve a specific comment from a task list.
+- **Get Team Details** (read-only): Retrieve one page of teams and their details in a portal.
+- **Get Team Users** (read-only): Retrieve one page of users associated with teams in a portal.
+- **Get Time Log By Reference** (read-only): Retrieve time log details from a project.
+- **Get Time Log Client Report** (read-only): Get time log client report.
+- **Get Time Log Details** (read-only): Retrieve time log details from a project.
+- **Get Time Log Project Report** (read-only): Get time log project report.
+- **Get Time Log Report Count** (read-only): Retrieve time log report count.
+- **Get Time Log Settings** (read-only): Retrieve the time log settings for a specific portal.
+- **Get Time Log Settings Metadata** (read-only): Retrieve the metadata for time log settings in a specific portal.
+- **Get Timer Details By Log ID** (read-only): Retrieve timer details for a specific time log entry in a project.
+- **Get User Audit Log** (read-only): Return one page of audit records for a portal user.
+- **Get User License Details** (read-only): Retrieve portal and client user license usage and availability.
+- **Get Users Allocated Work** (read-only): Retrieve allocated work details of multiple users or resources from the Zoho Projects portal.
+- **Get Workload Report** (read-only): Retrieve workload report details from the Zoho projects portal.
+- **Get Workload Report Metadata** (read-only): Retrieve workload report meta details from the Zoho projects portal.
+- **Get Workload Task Details** (read-only): Retrieve the workload details of a task from the Zoho Projects portal.
+- **Grant Profile Access**: Grant record-level or field-level actions to a profile.
+- **Invoke Custom Function**: Execute a custom function in the Zoho Projects portal.
+- **Link Bugs**: Establish a link between multiple issues.
+- **Link Issues (V3.1 Structured Link Type)**: Link one or more source issues to one or more target issues with the V3.1 contract and a link_type object containing an ID or name.
+- **Link Tasks To Issues**: Link multiple tasks to multiple issues in a project.
+- **List Baselines** (read-only): Retrieve all baselines from a project.
+- **List Blocking Waiting Tasks** (read-only): Retrieve details of a blocking waiting tasks for a given task.
+- **List Blueprint Transitions** (read-only): Retrieve actions that are set to execute after transition.
+- **List Blueprints** (read-only): Retrieve one page of blueprints from the Zoho Projects portal.
+- **List Business Hour Users** (read-only): Retrieve the list of users associated to the business hours from the Zoho Projects portal.
+- **List Business Hours** (read-only): Retrieve the list of business hours from the Zoho Projects portal.
+- **List Categories** (read-only): Retrieve one page of forum categories in a project.
+- **List Custom Module Exports** (read-only): Retrieve scheduled and completed exports for a portal-level Custom Module.
+- **List Custom Module Profile Permissions** (read-only): Retrieve custom-module permissions for multiple profiles.
+- **List Custom Module Record Attachments** (read-only): Retrieve all attachments of a record.
+- **List Custom Module Record Comments** (read-only): Retrieve one page of comments for a custom-module record.
+- **List Custom Module Record Edits** (read-only): Retrieve one page of changes made to a custom-module record.
+- **List Custom Module Record Followers** (read-only): Retrieve the list of followers from the record.
+- **List Custom Module Records** (read-only): Retrieve the list of records from a module.
+- **List Customer Contacts** (read-only): Retrieve contacts belonging to a specific portal customer.
+- **List Customer Projects** (read-only): Retrieve one page of projects associated with a customer.
+- **List Customers** (read-only): Retrieve customer details from the Zoho Projects portal.
+- **List Customers By Client User** (read-only): Retrieve customers and client users from the Zoho Projects portal.
+- **List Data Backup History** (read-only): Retrieve previously generated portal backups with their status and download links.
+- **List Entity Integrations** (read-only): Retrieve the integration details of a module from the Zoho Projects portal.
+- **List Event Comments** (read-only): Retrieve one page of comments on an event in a project.
+- **List Field Layouts** (read-only): Retrieve layouts associated with a field, one page at a time.
+- **List Field Options** (read-only): Retrieve selectable options for a field, one page at a time.
+- **List Field Projects** (read-only): Retrieve projects associated with a field, one page at a time.
+- **List Followers Of Issue** (read-only): Retrieve followers of an issue in a project.
+- **List Forum Comments** (read-only): Retrieve one page of comments from a forum in a project.
+- **List Forum Followers** (read-only): Retrieve all followers of a specific forum in a project.
+- **List Forum Tasks** (read-only): Retrieve one page of tasks linked to a forum in a project.
+- **List Forums In Project** (read-only): Retrieve one page of forums in a project.
+- **List Global Statuses** (read-only): Retrieve global statuses for a module, one page at a time.
+- **List Holiday Business Hours** (read-only): Retrieve business hours associated with the holiday list.
+- **List Holiday Lists** (read-only): Retrieve holiday lists from the Zoho Projects portal.
+- **List Holidays** (read-only): Retrieve holidays for the specified year from the Zoho Projects portal.
+- **List IANA Time Zones** (read-only): Retrieve the list of IANA timezones from the Zoho Projects portal.
+- **List Integration Module Fields** (read-only): Retrieve fields from an external service module for mapping.
+- **List Integration Service Modules** (read-only): Retrieve modules available within an external service.
+- **List Integration Services** (read-only): Retrieve external services available for integration fields.
+- **List Invitation Templates** (read-only): Return one page of portal invitation email templates.
+- **List Issue Activities** (read-only): Retrieve activities performed on issues in a project.
+- **List Issue Attachments** (read-only): Retrieve all attachments of an issue.
+- **List Issue Comments** (read-only): Retrieve one page of comments on an issue.
+- **List Issue Custom Views** (read-only): Retrieve custom views of the portal.
+- **List Issue Followers** (read-only): Retrieve the followers of an issue in a project.
+- **List Issue Tasks** (read-only): Retrieve tasks associated to a specific issue.
+- **List Issues By Portal** (read-only): Retrieve one page of issues across a portal.
+- **List Layout Records** (read-only): Retrieve entities associated with a layout, one page at a time.
+- **List Layouts** (read-only): Retrieve module layouts, one page at a time.
+- **List Leaves** (read-only): Retrieve one page of leaves from the Zoho Projects portal.
+- **List Linked Bugs** (read-only): Retrieve all linked issues of an issue.
+- **List Linked Issues** (read-only): Retrieve one page of issues linked to a specific issue.
+- **List Modules** (read-only): Retrieve portal modules and configuration, one page at a time.
+- **List Multiple Workload Group Owners** (read-only): Retrieve the list of records across multiple groups in the workload report.
+- **List My Custom Module Imports** (read-only): Retrieve the list of import operations.
+- **List My Project Groups** (read-only): Retrieve project groups associated with a user.
+- **List Participants** (read-only): Retrieve one page of participants for an event in a portal.
+- **List Phase Activities** (read-only): Return one page of activities performed on a phase.
+- **List Phase Comments** (read-only): Return one page of comments on a phase.
+- **List Phase Followers** (read-only): Return one page of users following a phase.
+- **List Phases** (read-only): Return one page of phases across a portal with sorting, custom-view, ID, and structured-filter controls.
+- **List Portal Bug Task Mappings** (read-only): Retrieve the tasks associated with issues.
+- **List Portal Pinned Time Logs** (read-only): Retrieve all pinned entries from the time logs weekly form for a specific portal.
+- **List Portal Task Attachments** (read-only): Return task attachments across the portal for the documented project-to-task mapping.
+- **List Portal Task Status History** (read-only): Retrieve one page of task status transitions across a portal.
+- **List Portal User Export History** (read-only): Return one page of portal user export jobs.
+- **List Portal Users** (read-only): Return one page of portal users, client users, and contacts.
+- **List Portals** (read-only): Retrieve all portals accessible to the current user, including company, owner, profile, plan, timezone, and environment details.
+- **List Profile Permissions** (read-only): Retrieve record-level or field-level permissions for multiple profiles.
+- **List Profiles** (read-only): Retrieve one page of profiles and their configurations in a portal.
+- **List Project Bug Task Mappings** (read-only): Retrieve the tasks associated with an issue.
+- **List Project Client Users** (read-only): Retrieve customers and client users associated with a project.
+- **List Project Comments** (read-only): Retrieve comments from a project.
+- **List Project CRM Accounts** (read-only): Retrieve CRM accounts associated with a project.
+- **List Project CRM Contacts** (read-only): Retrieve CRM contacts associated with a project.
+- **List Project CRM Deals** (read-only): Retrieve CRM deals associated with a project in the Zoho Projects portal.
+- **List Project Custom Views** (read-only): Retrieve the custom views available for a specific project.
+- **List Project Customer Contacts** (read-only): Retrieve one page of customer contacts associated with a project.
+- **List Project Customers** (read-only): Retrieve details of customers associated with a project.
+- **List Project Events** (read-only): Retrieve one page of events scheduled within a project.
+- **List Project Exports** (read-only): Retrieve the details of project exports from the Zoho Projects portal.
+- **List Project Groups** (read-only): Retrieve one page of project groups from a Zoho Projects portal.
+- **List Project Issue Custom Views** (read-only): Retrieve custom views of a project.
+- **List Project Issues** (read-only): Retrieve one page of issues in a project.
+- **List Project Modules** (read-only): Get Project Associated Modules Details.
+- **List Project Phases** (read-only): Return one page of phases in a project with sorting, custom-view, ID, and structured-filter controls.
+- **List Project Pinned Time Logs** (read-only): Retrieve all pinned entries from the time logs weekly form for a specific project.
+- **List Project Status Updates** (read-only): Retrieve the status from a project.
+- **List Project Tags** (read-only): Retrieve tags from a project.
+- **List Project Task Custom Views** (read-only): Retrieve one page of task custom views configured for a project.
+- **List Project Task Lists** (read-only): Retrieve task lists associated with a specific project.
+- **List Project Task Status History** (read-only): Retrieve one page of task status transitions across a project.
+- **List Project Team Folders** (read-only): Return the team folders associated with a project, optionally filtered by association and available action.
+- **List Project Time Logs** (read-only): Retrieve one page of time logs from a project.
+- **List Project User Export History** (read-only): Return one page of project user export jobs.
+- **List Project User Permissions** (read-only): Retrieve record-level or field-level permissions for project users.
+- **List Project Users** (read-only): Return one page of users associated with a project.
+- **List Projects** (read-only): Retrieve one page of projects from a Zoho Projects portal.
+- **List Resource Skills** (read-only): Retrieve one page of skills associated with a portal resource.
+- **List Roles** (read-only): Retrieve one page of roles from a portal.
+- **List Running Timers** (read-only): Retrieve one page of running timers from a Zoho Projects portal.
+- **List Skill History** (read-only): Retrieve audit history for a skill, optionally continuing with a provider token.
+- **List Skill Resources** (read-only): Retrieve one page of resources associated with a skill.
+- **List Skill Users** (read-only): Retrieve one page of portal users associated with a skill.
+- **List Skills** (read-only): Retrieve one page of skills configured for a Zoho Projects portal.
+- **List Tagged Projects** (read-only): Get associated projects for tags.
+- **List Tags** (read-only): Retrieve one page of tags from a Zoho Projects portal.
+- **List Task Associated Bugs** (read-only): Get Associated Bugs from a task.
+- **List Task Attachments** (read-only): Get all attachments of a Task.
+- **List Task Comments** (read-only): Retrieve one page of comments from a task.
+- **List Task Followers** (read-only): Retrieve followers for a task.
+- **List Task Forums** (read-only): Retrieve multiple forums from a task.
+- **List Task Issues** (read-only): Retrieve issues associated to a specific task.
+- **List Task List Comments** (read-only): Retrieve multiple comments from a task list.
+- **List Task List Followers** (read-only): Retrieve the list of followers for a specific task list.
+- **List Task Lists By Portal** (read-only): Retrieve task lists from the Zoho Projects portal.
+- **List Task Lists From Template** (read-only): Retrieves task lists that are associated with a template in the Zoho Projects portal.
+- **List Tasks By Portal** (read-only): Retrieve one page of tasks across all projects in a portal.
+- **List Tasks By Project** (read-only): Retrieve one page of tasks in a project.
+- **List Tasks From Task List Template** (read-only): Retrieve tasks from a task list template.
+- **List Time Logs** (read-only): Retrieve one page of time logs across a Zoho Projects portal.
+- **List Trashed Records** (read-only): Retrieve one page of records in a portal's recycle bin, optionally filtered and sorted.
+- **List User Projects** (read-only): Retrieve one page of projects associated with a portal user.
+- **List User Skills** (read-only): Retrieve one page of skills associated with a portal user.
+- **List User Subordinates** (read-only): Return one page of descendants in a user's reporting hierarchy.
+- **List User Teams** (read-only): Retrieve one page of teams associated with a user.
+- **List Workload Group Owners** (read-only): Retrieve the list of records that belong to a specific group in the workload report.
+- **List Workload Groups** (read-only): Retrieve the groups from the workload report.
+- **Mark Comment As Best Answer**: Mark a specific comment as the best answer in a forum.
+- **Mark Custom View As Favorite Project**: Mark a time log custom view as favourite in a project.
+- **Mark View As Favourite Portal**: Mark a time log custom view as favourite across portal.
+- **Move Issue**: Move an issue to another project.
+- **Move Phase**: Move a phase to another project.
+- **Move Records To Trash**: Move records to the recycle bin while retaining the ability to restore them.
+- **Move Task**: Move a task to a different task list or milestone within a project.
+- **Pause Timer**: Pause a running timer in the Zoho Projects portal.
+- **Pin Time Log**: Pin a time log in the Zoho Projects Portal.
+- **Post Project Status Update**: Create a new status in a project.
+- **Remove Default Invitation Template**: Remove an invitation email template's default status.
+- **Remove Issue Followers**: Remove followers from an issue in a project.
+- **Remove Phase Followers**: Remove users from a phase's followers.
+- **Remove Project Team**: Remove a specific team from a project.
+- **Remove View From Favorites Portal**: Remove a custom view from favorites at the portal level.
+- **Remove View From Favorites Project**: Remove a custom view from the favorite views for a project.
+- **Reorder Tasks**: Update the order of tasks within a task list.
+- **Restore Custom Module Record**: Restore the trashed record from recycle bin.
+- **Restore Module**: Restore a module from trash.
+- **Restore Project**: Restore a project from the trash.
+- **Restore Records From Trash**: Restore selected records from the recycle bin within the retention period.
+- **Resume Timer**: Resume a paused timer in the Zoho Projects portal.
+- **Revoke Profile Access**: Revoke record-level or field-level actions from a profile.
+- **Schedule Data Backup**: Schedule generation of a downloadable portal backup, or return an existing backup generated within the last 24 hours.
+- **Send Timer Notification**: Send the documented timer notification to affected Zoho Projects users.
+- **Set Custom View As Default Portal**: Set a time log custom view as the default view across the portal.
+- **Set Custom View As Default Project**: Set a time log custom view as the default view in a project.
+- **Set Default Business Hours**: Set default business hours in the Zoho Projects portal.
+- **Set Default Invitation Template**: Set an invitation email template as the portal default.
+- **Set Default Profile**: Set a profile as the portal default.
+- **Set Default Role**: Set a role as the portal default.
+- **Set Default View Portal**: Set a custom view as the default view at the portal level.
+- **Set Default View Project**: Set a custom task view as the default view for a project.
+- **Set Favorite View Project**: Set a custom view as a favourite for a project.
+- **Set Favourite View Portal**: Set a custom view as a favourite at the portal level.
+- **Set Project Primary Customer**: Modify the primary customer for a project.
+- **Set Resource Skills**: Associate or dissociate skills for a portal resource.
+- **Set User Skills**: Associate or dissociate skills for a portal user.
+- **Start Timer**: Start a new timer for a module.
+- **Stop Timer**: Stop a running timer in the Zoho Projects portal.
+- **Trash Custom Module Record**: Move a record to recycle bin within Zoho Projects portal.
+- **Trash Module**: Move a module to trash.
+- **Trash Phase**: Move a phase to the project recycle bin.
+- **Trash Project**: Move a project to the trash.
+- **Unfollow Custom Module Record**: Remove a follower from the record.
+- **Unfollow Forum**: Unfollow a specific forum in a project to stop receiving notifications.
+- **Unfollow Issue**: Remove followers from an issue in a project.
+- **Unfollow Task**: API to unfollow a given task.
+- **Unfollow Task List**: Unfollow a task list to stop receiving its notifications.
+- **Unlink Bugs**: Remove the link between issues in a project.
+- **Unlink Issues**: Unlink multiple issues at once in a project.
+- **Unlink Tasks From Issues**: Unlink multiple tasks from multiple issues in a project.
+- **Unmark Comment As Best Answer**: Remove the best answer designation from a specific comment in a forum.
+- **Unmark View As Favourite Portal**: Unmark a time log custom view as favourite across portal.
+- **Unmark View As Favourite Project**: Unmark a time log custom view as favourite in a project.
+- **Unpin Time Log Entry**: Remove a pinned time log from the Zoho Projects portal.
+- **Update Bug Resolution (V3 PUT)**: Replace a bug resolution with the V3 PUT bug_id contract.
+- **Update Business Hour Users**: Associate/disassociate user from the business hours.
+- **Update Business Hours**: Modify the work hours by archiving the business hours and creating a new one in the Zoho Projects portal.
+- **Update Category**: Update a forum category in a specific project.
+- **Update Contact**: Update a contact in the Zoho Projects portal.
+- **Update Currency**: Update an existing currency configured for the Zoho Projects portal.
+- **Update Custom Domain Status**: Update the custom domain status.
+- **Update Custom Module Export**: Every field is replaced by the value sent, so pass the complete configuration rather than only the keys that changed.
+- **Update Custom Module Export Status**: Toggle a portal-level Custom Module scheduled export on or off.
+- **Update Custom Module Import**: Modify the details of an import operation.
+- **Update Custom Module Record**: Modify details of an existing record.
+- **Update Custom Module Record Comment**: Modify details of an existing comment in a record.
+- **Update Custom Module Record Followers**: Add multiple followers to a custom-module record.
+- **Update Customer**: Modify customer details in the Zoho Projects portal.
+- **Update Customer Projects**: Modify the projects associated with customer in the Zoho Projects portal.
+- **Update Default Approver**: Modify the default time log approver of the user in a project.
+- **Update Default View**: Mark a custom view as the default view for a project.
+- **Update Dependency**: Modify the dependency between tasks in a project.
+- **Update Event**: Update details of an event in the Zoho Projects portal.
+- **Update Event Comment**: Update an existing comment associated with an event in a project within the Zoho Projects portal.
+- **Update Extension Property**: Modify the entity or app property in an extension.
+- **Update Favorite View**: Mark a custom view as a favorite view for a project.
+- **Update Field Options**: Rename or reorder existing options for a field.
+- **Update Forum**: Update a forum in a specific project.
+- **Update Forum Comment**: Update a comment in a specific forum in a project.
+- **Update Holiday List**: Modify the details of an holiday list in the Zoho Projects portal.
+- **Update Invitation Template**: Modify a portal invitation email template.
+- **Update Issue**: Modify an issue in a project.
+- **Update Issue Comment**: Update a comment on an issue.
+- **Update Issue Resolution (V3.1 PATCH)**: Update an issue resolution with the V3.1 PATCH issue_id contract and return the updated resolution list.
+- **Update Layout**: Modify an existing layout.
+- **Update Leave**: Update the leave details in the Zoho Projects portal.
+- **Update Link Type**: Modify the link type between two linked issues.
+- **Update Module**: Modify a custom module's configuration.
+- **Update Phase**: Update a phase's name, owner, status, dates, tags, position, template settings, or budget details.
+- **Update Phase Comment**: Update a phase comment and its optional notifications or attachments.
+- **Update Portal Budget Settings**: Update the budget settings configured for the Zoho Projects portal.
+- **Update Portal Date Time Settings**: Update date and time settings for the portal.
+- **Update Portal User**: Modify a portal user's profile, role, reporting line, projects, rates, or skills.
+- **Update Profile**: Update a profile in a portal.
+- **Update Project**: Modify details of an existing project.
+- **Update Project Comment**: Modify an existing comment.
+- **Update Project Export**: Modify the details of an existing project export in the Zoho Projects portal.
+- **Update Project Folder Details**: Modify folder settings in a project.
+- **Update Project Group**: Update details of a project group.
+- **Update Project Team Folder Details**: Modify the settings of a team folder in a project.
+- **Update Project User Details**: Modify a user's rates or profile within a project.
+- **Update Project User Permissions**: Grant or revoke project permissions for a user.
+- **Update Resource Skill Level**: Update one resource's proficiency level for a skill.
+- **Update Role**: Update a role in a portal.
+- **Update Skill**: Update a skill's name or description.
+- **Update Skill Resources**: Associate or dissociate resources for a skill.
+- **Update Skill Settings**: Enable or disable the skill feature for a Zoho Projects portal.
+- **Update Skill Users**: Associate or dissociate portal users for a skill.
+- **Update Status**: Activate or deactivate a module.
+- **Update Tag**: Update a tag in the Zoho Projects portal.
+- **Update Task**: Modify details of the task in a project.
+- **Update Task Comment**: Modify a comment in a task.
+- **Update Task List**: Modify details of the task list in a project.
+- **Update Task List Comment**: Modify a comment in a task list.
+- **Update Team**: Modify the details of a specific team in a portal.
+- **Update Time Log**: Modify the time log in a project.
+- **Update Time Log Pin**: Update an existing pinned entry in the time logs for a portal.
+- **Update Time Log Settings**: Modify the time log settings of a project.
+- **Update Timer Notes By Log ID**: Modify the notes for a timer associated with a specific time log entry in a project.
+- **Update User Skill Level**: Update one portal user's proficiency level for a skill.
+- **Upload Global Attachments**: Upload one file at portal level and store it in a project folder.
+- **Upload PDF Logo**: Upload the logo file used in task Gantt PDF exports.
+- **Upsert Custom Workload Report**: Create or Update a custom workload report in the Zoho projects portal.
+- **Validate Custom Domain** (read-only): Validate custom domain configuration.

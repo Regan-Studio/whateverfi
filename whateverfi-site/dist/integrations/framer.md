@@ -1,0 +1,164 @@
+# Framer
+
+Framer is a website builder and design platform whose Server API supports project publishing, CMS, localization, canvas, asset, code, and agent workflows.
+
+Category: Design. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/framer/.
+
+## Actions
+
+- **Add Collection Fields**: Create or update typed field definitions in a CMS collection.
+- **Add Collection Items**: Create or update CMS collection items with typed, tagged field values.
+- **Add Component Instance**: Insert a component instance by component module URL.
+- **Add Detached Component Layers**: Insert editable component layers using the current editor selection/context without retaining an instance.
+- **Add Enum Case**: Add a case to an enum field or enum variable.
+- **Add Image**: Upload one image and insert it using the current editor selection/context.
+- **Add Images**: Upload and insert multiple images using the current editor selection/context.
+- **Add Managed Collection Items**: Add or synchronize managed CMS items with typed, tagged field values and stable external IDs.
+- **Add Redirects**: Create project redirects, or update existing redirects by including their IDs.
+- **Add SVG**: Insert an SVG on the canvas or replace the selected SVG.
+- **Add Text**: Insert text using the current editor selection/context.
+- **Apply Agent Changes**: Execute Framer's agent command DSL on a project page.
+- **Clone Design Page**: Clone a design page by node ID, optionally requesting a name.
+- **Clone Node**: Clone a node by ID.
+- **Clone Web Page**: Clone a web page by node ID, optionally requesting a route path.
+- **Create Branch**: Create a Framer project branch from the active branch or a specified base, then switch the editor and API session to the new branch.
+- **Create Branch For Agent**: Create an agent branch from the active branch and switch to it.
+- **Create Code File**: Create a Framer code file with initial source content.
+- **Create Collection**: Create a user-owned CMS collection in the connected Framer project.
+- **Create Color Style**: Create a reusable color style in the connected Framer project.
+- **Create Component Node**: Create a smart component node with a name.
+- **Create Design Page**: Create a design page.
+- **Create Frame Node**: Create a frame node, optionally below a parent.
+- **Create Locale**: Create a project locale.
+- **Create Managed Collection**: Create a plugin-managed CMS collection in the connected project.
+- **Create Text Node**: Create a text node, optionally below a parent.
+- **Create Text Style**: Create a reusable text style in the connected Framer project.
+- **Create Web Page**: Create a web page at a route path.
+- **Delete Branch**: Delete an explicit project branch, switching to its base if active.
+- **Delete Branch For Agent**: Delete a branch in the agent workflow.
+- **Deploy**: Promote an existing Framer deployment to explicit domains or to the project's configured production domains.
+- **Export SVG** (read-only): Export a node as serialized SVG through Framer's dedicated WebSocket side channel.
+- **Flatten Component Instance For Agent**: Replace a component instance with editable local layers.
+- **Get Active Branch** (read-only): Get the branch currently active for the Framer editor and API session, including its base, contributor state, and creator metadata.
+- **Get Active Branch For Agent** (read-only): Get metadata for the branch active in the Framer agent session.
+- **Get Agent Context** (read-only): Get dynamic project context for Framer's agent command and query APIs.
+- **Get Agent System Prompt** (read-only): Get Framer's static agent prompt, including its command and project-query DSL references.
+- **Get Ancestors For Agent** (read-only): Get a node's ancestors from its parent through the page root.
+- **Get Branch Changes** (read-only): Get semantic changes in a branch relative to its base branch.
+- **Get Branch Changes For Agent** (read-only): Get a summarized changelog for a project branch relative to its base.
+- **Get Branches** (read-only): Return every project branch, a selected set, or one branch by passing zero, many, or one branch ID.
+- **Get Branches For Agent** (read-only): List project branches available to the Framer agent session.
+- **Get Canvas Root** (read-only): Get the root node of the current canvas.
+- **Get Change Contributors** (read-only): Get contributors who changed the project in an optional version range.
+- **Get Changed Paths** (read-only): Get page paths added, removed, or modified between the active project version and its previously published version.
+- **Get Children** (read-only): Get a node's canvas children.
+- **Get Code File** (read-only): Get one Framer code file by ID or project-relative path.
+- **Get Code File Version Content** (read-only): Get the source content of a saved Framer code file version.
+- **Get Code File Versions** (read-only): List saved versions of a Framer code file.
+- **Get Code Files** (read-only): List code files and their current contents in the connected Framer project.
+- **Get Collection** (read-only): Get one CMS collection by its node ID.
+- **Get Collection Fields** (read-only): List all field definitions in a CMS collection, including dividers.
+- **Get Collection Items** (read-only): List items and typed field values in a CMS collection.
+- **Get Collections** (read-only): List managed and user-owned CMS collections in the connected Framer project.
+- **Get Color Style** (read-only): Get one reusable color style by ID.
+- **Get Color Styles** (read-only): List reusable color styles in the connected Framer project.
+- **Get Current User** (read-only): Get the Framer user whose identity and project permissions are represented by the connected project API key.
+- **Get Custom Code** (read-only): Get custom HTML and disabled state for all four project document injection locations.
+- **Get Default Locale** (read-only): Get the project's default locale.
+- **Get Deployment** (read-only): Get the latest status snapshot, timestamps, creator, preview URL, and failure stage for one Framer deployment.
+- **Get Deployment Issues** (read-only): Get optimization warnings and errors for a Framer deployment, including related node IDs when available.
+- **Get Descendant References Of Types For Agent** (read-only): Get matching style or token nodes referenced by descendants.
+- **Get Descendants Of Types For Agent** (read-only): Get descendants of a node matching provider-defined node types.
+- **Get Font** (read-only): Get one available font variant by family, weight, and style.
+- **Get Fonts** (read-only): List individual font files and variants available to the Framer project.
+- **Get Ground Node For Agent** (read-only): Get the top-level canvas node containing a node.
+- **Get Locale Languages** (read-only): List valid locale language codes.
+- **Get Locale Regions** (read-only): List valid region codes for a language.
+- **Get Locales** (read-only): List configured non-default locales.
+- **Get Localization Groups** (read-only): Get localization groups, optionally filtered by IDs or type.
+- **Get Managed Collection Fields** (read-only): List supported fields in a plugin-managed Framer CMS collection.
+- **Get Managed Collection Item IDs** (read-only): List external item IDs in a plugin-managed CMS collection.
+- **Get Managed Collections** (read-only): List plugin-managed CMS collections available to the connected API session.
+- **Get Node** (read-only): Get a project node by ID.
+- **Get Node For Agent** (read-only): Get one serialized Framer node and its children by ID.
+- **Get Nodes For Agent** (read-only): Get serialized Framer nodes and their children by ID.
+- **Get Nodes Of Types For Agent** (read-only): Get all nodes of selected types on a Framer page without children.
+- **Get Nodes With Attribute** (read-only): Get project nodes whose node type supports an attribute, whether or not it is set.
+- **Get Nodes With Attribute Set** (read-only): Get project nodes where a supported attribute has a non-null value.
+- **Get Nodes With Type** (read-only): Get all nodes of a known class, optionally below a parent node.
+- **Get Parent** (read-only): Get a node's parent.
+- **Get Parent Node For Agent** (read-only): Get the direct parent of a node.
+- **Get Project Info** (read-only): Get the connected Framer project's current identity and legacy migration ID.
+- **Get Publish Info** (read-only): Get the connected project's current staging and production publication URLs, deployment times, and optimization states.
+- **Get Rect** (read-only): Get the bounding rectangle of a Framer node.
+- **Get Rect For Agent** (read-only): Get a node's rounded canvas rectangle.
+- **Get Redirects** (read-only): List the project's redirects, including source and destination paths and locale expansion behavior.
+- **Get Scope Node For Agent** (read-only): Get the enclosing page or component scope for a node.
+- **Get Text for Node** (read-only): Get the plain-text content of a text node by ID.
+- **Get Text Style** (read-only): Get one reusable text style by ID.
+- **Get Text Styles** (read-only): List reusable text styles in the connected Framer project.
+- **Get Unpublished Page Changes** (read-only): List web pages added, updated, or removed since the active branch was last published.
+- **Get Vector Set Item Variables** (read-only): List customizable variables for one Framer vector-set item.
+- **Get Vector Set Items** (read-only): List vector items in one Framer vector set.
+- **Get Vector Sets** (read-only): List vector icon sets available to the connected Framer project.
+- **Join Branch**: Join an explicit project branch as a contributor.
+- **Join Branch For Agent**: Join a branch as a contributor for agent editing.
+- **Leave Branch**: Leave an explicit project branch as a contributor.
+- **Leave Branch For Agent**: Leave a branch as a contributor.
+- **List Components For Agent** (read-only): List project, external, and additional components available to the agent.
+- **List Deployments** (read-only): List one cursor-controlled page of deployments for the active Framer branch, returning at most 30 records.
+- **List Icon Sets For Agent** (read-only): List project, external, and additional icon sets available to the agent on the active page.
+- **List Localization Groups Next** (read-only): List all localization groups from Framer's session-bound iterator.
+- **Make External Component Local For Agent**: Copy an external component into the project and optionally replace all instances.
+- **Merge Branch**: Merge an explicit source branch into its base or a compatible target.
+- **Merge Branch For Agent**: Merge the active agent branch into its base or an explicit target, then switch to the target.
+- **Paginate For Agent** (read-only): Paginate a complete item list to completion within one Framer WebSocket session and return all results.
+- **Publish**: Publish the active Framer branch and return the resulting deployment plus its preview or staging hostnames.
+- **Publish For Agent**: Run an agent publish operation, including production deployment when requested.
+- **Query Analytics For Agent** (read-only): Run an analytics query over an ISO date range.
+- **Query Images For Agent** (read-only): Search Framer's agent image sources and return candidate images.
+- **Read Component Controls For Agent** (read-only): Read provider-defined controls for project components on the active page.
+- **Read Icon Set Controls For Agent** (read-only): Read provider-defined controls for icon sets on the active page.
+- **Read Icons For Agent** (read-only): Read exact icon names from an icon set on the active page.
+- **Read Layout Template Controls For Agent** (read-only): Read provider-defined controls for layout templates on the active page.
+- **Read Project For Agent** (read-only): Execute agent query objects against project state.
+- **Read Shader Controls For Agent** (read-only): Read provider-defined controls for shaders on the active page.
+- **Remove Code File**: Remove a Framer code file.
+- **Remove Collection Fields**: Remove one or more fields from a CMS collection.
+- **Remove Collection Items**: Remove CMS collection items by item or node ID.
+- **Remove Color Style**: Remove a reusable Framer color style.
+- **Remove Enum Case**: Remove a case from an enum field or enum variable.
+- **Remove Managed Collection Items**: Remove items from a managed CMS collection by external item ID.
+- **Remove Nodes**: Remove one or more canvas nodes by ID.
+- **Remove Redirects**: Remove project redirects by ID.
+- **Remove Text Style**: Remove a reusable Framer text style.
+- **Rename Branch**: Rename an explicit project branch.
+- **Rename Branch For Agent**: Rename a branch for the agent workflow.
+- **Rename Code File**: Rename a Framer code file.
+- **Replace Text For Agent**: Replace exact text within one Framer text node.
+- **Screenshot Node** (read-only): Capture a node screenshot through Framer's dedicated WebSocket side channel.
+- **Serialize For Agent** (read-only): Serialize a node with optional depth, attribute, and ancestor filtering.
+- **Serialize Nodes For Agent** (read-only): Serialize multiple nodes with optional depth, attribute, and ancestor filtering.
+- **Set Code File Content**: Replace the source content of a Framer code file.
+- **Set Collection Field Order**: Set the display order of fields in a CMS collection.
+- **Set Collection Item Attributes**: Update one CMS item's slug, typed fields, locale status, or draft state.
+- **Set Collection Item Order**: Set the item order in a CMS collection.
+- **Set Color Style Attributes**: Update selected attributes of a reusable Framer color style.
+- **Set Custom Code**: Set custom HTML at one Framer document injection location, or clear that location by passing null or omitting HTML.
+- **Set Enum Case Order**: Set the case order for an enum field or enum variable.
+- **Set Localization Data**: Set localized values and per-locale group status.
+- **Set Managed Collection Fields**: Replace and synchronize the typed field schema of a managed CMS collection.
+- **Set Managed Collection Item Order**: Set item order in a plugin-managed Framer CMS collection.
+- **Set Node Attributes**: Patch editable attributes on a node.
+- **Set Parent**: Move a node to a new parent and optional child index.
+- **Set Redirect Order**: Set the evaluation and display order of project redirects.
+- **Set Text**: Set text on the current selection or insert it when appropriate.
+- **Set Text Style Attributes**: Update selected attributes of a reusable Framer text style.
+- **Switch Branch**: Switch the editor and subsequent edits to an explicit branch.
+- **Switch Branch For Agent**: Switch the active branch for agent operations.
+- **Typecheck Code** (read-only): Type-check source content with Framer's TypeScript service and return diagnostics.
+- **Update Enum Case**: Update a case in an enum field or enum variable.
+- **Upload File**: Upload one file asset to Framer.
+- **Upload Files**: Upload multiple file assets to Framer.
+- **Upload Image**: Upload one image to Framer without inserting it on the canvas.
+- **Upload Images**: Upload multiple images to Framer without inserting them on the canvas.

@@ -1,0 +1,107 @@
+# AgencyZoom
+
+AgencyZoom is for the P&C insurance agent that's looking to increase sales, boost retention and analyze agency & producer performance.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/agencyzoom/.
+
+## Actions
+
+- **Get a list of producers** (read-only): Retrieves a list of all producers from agencyzoom, typically related to text thread functionalities.
+- **Add tags to a policy**: Adds new comma-separated tagnames to a policy, requiring tagnames and identification by either policyid or amspolicyid.
+- **Authenticate for JWT via V4 SSO** (read-only): Authenticates a user via v4 single sign-on (sso) using the provided callback code (typically required for success) to retrieve a jwt and…
+- **Batch create contacts**: Creates 1 to 5 new contacts in agencyzoom in a single batch api call.
+- **Batch create leads**: Creates up to 5 new leads in agencyzoom.
+- **Batch delete tasks**: Deletes multiple agencyzoom tasks in a batch.
+- **Change lead status**: Updates a lead's lifecycle status (e.g., active, won, lost, x-dated) and can optionally manage its workflow, pipeline, stage, source, or…
+- **Create a customer note**: Adds a new note to an existing customer's profile using their id.
+- **Create a driver for an opportunity**: Creates a new driver record associated with an existing agencyzoom opportunity using its id.
+- **Create a lead note**: Adds a new note to an existing lead in agencyzoom, identified by leadid.
+- **Create a lead opportunity**: Adds a new sales opportunity to an existing lead in agencyzoom, requiring a valid leadid, carrierid, productlineid, and that custom field…
+- **Create a lead quote**: Creates a new insurance quote for an existing lead in agencyzoom, using valid carrier and product line ids, to track a proposal.
+- **Create a vehicle for an opportunity**: Adds a new vehicle record to a specified opportunity.
+- **Create an opportunity**: Creates a new lead opportunity in agencyzoom.
+- **Create business lead**: Creates or updates a business lead in agencyzoom using detailed personal and company information, for b2b sales and marketing lead…
+- **Create lead**: Creates a new lead or updates an existing one in agencyzoom.
+- **Create task post endpoint**: Creates a new task in agencyzoom.
+- **Delete a customer**: Irreversibly deletes a customer and all associated data in agencyzoom using their customerid.
+- **Delete a customer policy**: Permanently deletes a specific policy associated with a customer, for instance, if it's cancelled or inactive.
+- **Delete a lead opportunity**: Permanently deletes an existing opportunity (by opportunityid) associated with an existing lead (by leadid) when it's irrelevant, closed,…
+- **Delete a lead quote**: Deletes a specific quote from a lead, requiring that the lead and quote exist and are associated.
+- **Delete a task**: Permanently and irreversibly deletes an existing task, identified by its taskid.
+- **Delete a vehicle**: Permanently deletes a vehicle record by its vehicleid, which must correspond to an existing vehicle in the agencyzoom system.
+- **Delete an opportunity**: Permanently deletes a specific opportunity by its unique id.
+- **Delete an opportunity driver by ID**: Permanently deletes an existing agencyzoom driver (e.g., lead, potential sale, or business engagement) using its valid driverid.
+- **Delete customer file**: Permanently deletes a specific file, identified by fileid, associated with a customer, identified by customerid.
+- **Delete email thread**: Permanently deletes a specific email thread from the agencyzoom system, identified by its threadid (expected by the endpoint), provided…
+- **Delete file from lead**: Deletes a specific file (identified by fileid) associated with an existing lead (identified by leadid).
+- **Delete thread message**: Deletes a specific message from an email thread within agencyzoom, where the message id is implicitly handled (e.g., via url path or…
+- **Get a list of assign groups** (read-only): Retrieves all assign groups configured in agencyzoom, used for categorizing or assigning items to specific teams or units.
+- **Get a list of carriers** (read-only): Retrieves all insurance carriers from agencyzoom, typically used for populating selection lists or synchronizing carrier data.
+- **Get a list of CSRs** (read-only): Fetches all customer service representatives (csrs), including their id and name, returning an empty list if none are configured.
+- **Get a list of custom fields** (read-only): Retrieves metadata for all configured custom field definitions, not the specific values entered for individual records.
+- **Get a list of drivers for an opportunity** (read-only): Retrieves a list of drivers (individuals), including their personal details, licensing information, and relationship status, associated…
+- **Get a list of employees** (read-only): Retrieves a complete list of all employees for the authenticated agency.
+- **Get a list of life professionals** (read-only): Retrieves a list of life insurance professionals, including only their contact and status information (excluding sales or customer data),…
+- **Get a list of locations** (read-only): Retrieves all agency locations or branches from agencyzoom.
+- **Get a list of pipelines** (read-only): Retrieves all pipelines and their stages from agencyzoom to understand workflow structures.
+- **Get a list of recycle events** (read-only): Retrieves the history of recycling activities (e.g., reassignments, status changes, x-date updates) for a specified existing lead in…
+- **Get AMS policies for a customer** (read-only): Retrieves a customer's synchronized agency management system (ams) policy data (typically a single policy).
+- **Get auth URL for V4 SSO** (read-only): Retrieves a fresh authentication url for agencyzoom's v4 single sign-on (sso) process.
+- **Get departments groups** (read-only): Fetches department and group information for an agency, optionally filtered by a specific agencynumber, to analyze its organizational…
+- **Get lead files** (read-only): Retrieves metadata for files linked to leads.
+- **Get lead quotes** (read-only): Retrieves all insurance quotes (active and inactive) for a specific lead id, useful for reviewing or tracking quote history.
+- **Get lead source categories** (read-only): Retrieves a comprehensive list of all predefined lead source categories from agencyzoom, used to classify lead origins.
+- **Get lead sources** (read-only): Fetches a list of all lead sources configured in agencyzoom, including their id, name, sales exclusion status, and category id.
+- **Get lead tasks** (read-only): Retrieves all tasks for a specific lead, identified by its leadid, to review its activity history or manage follow-ups.
+- **Get list of end stages** (read-only): Fetches a list of all defined end stages, representing final steps in processes like lead conversion or policy closure.
+- **Get loss reasons** (read-only): Retrieves a list of all predefined loss reasons from agencyzoom, used for populating ui elements or analysis, returning all reasons…
+- **Get policies for a customer** (read-only): Retrieves from agencyzoom details for an insurance policy of an existing customer (identified by customerid), excluding premium payment…
+- **Get product lines and policy types** (read-only): Fetches all product lines and policy types from agencyzoom, each detailed with its id, name, and product category id.
+- **Get text thread details** (read-only): Retrieves detailed messages for an implicitly specified text thread.
+- **Get the customer details** (read-only): Fetches comprehensive details for a specific customer, including personal information, policies, notes, tasks, files, and custom fields,…
+- **Get the customer tasks** (read-only): Fetches all tasks (read-only task data) for a customer by customerid to review their activities, follow-ups, and action items.
+- **Get the driver details** (read-only): Retrieves detailed information for a specific, existing driver (by driverid) associated with an agencyzoom opportunity.
+- **Get the lead details** (read-only): Retrieves comprehensive details for a specific lead in agencyzoom by its unique leadid (which must correspond to an existing lead),…
+- **Get the opportunities for a lead** (read-only): Retrieves all sales opportunities and their details for a specified, existing leadid in agencyzoom.
+- **Get the opportunity details** (read-only): Fetches comprehensive details for an existing opportunity using its unique opportunityid.
+- **Get the task details** (read-only): Retrieves comprehensive details for a specific task using its unique taskid, which must correspond to an existing task in agencyzoom.
+- **Get the vehicle details** (read-only): Retrieves detailed information for a specific vehicle, often associated with an agencyzoom opportunity, using its unique vehicleid.
+- **Get thread details** (read-only): Searches and retrieves detailed information for email threads in agencyzoom.
+- **Link a driver to opportunity**: Assigns or reassigns an existing driver to an existing opportunity.
+- **Link vehicle to opportunity**: Links an existing vehicle to an existing sales opportunity in agencyzoom using their respective ids, typically for managing auto insurance…
+- **List Product Categories** (read-only): Retrieves a complete, unfiltered list of all product categories (id and name) from agencyzoom, useful for understanding product…
+- **List service tickets** (read-only): Retrieves a list of service tickets from agencyzoom, optionally filtered by criteria such as status, priority, or date ranges.
+- **Log the user in**: Authenticates an existing agencyzoom user using their email (as username) and password to obtain a jwt for api access.
+- **Log the user out**: Use this action to log the current user out of agencyzoom by invalidating their active session token.
+- **Log user in via SSO**: Logs a user into the agencyzoom platform via single sign-on (sso).
+- **Mark task as completed**: Marks an existing and accessible task in agencyzoom as 'completed'.
+- **Mark thread as unread**: Marks a text thread in agencyzoom as read or unread using its threadid.
+- **Move lead to sold**: Marks an existing lead as sold by its leadid and records product details.
+- **Remove text thread**: Call this action to permanently delete a text thread in agencyzoom.
+- **Rename lead file**: Updates a lead's file name to newfilename.
+- **Reopen a task**: Reopens an existing agencyzoom task that is currently 'completed' or 'closed', allowing it to be reactivated with optional comments.
+- **Retrieve notes for specific lead** (read-only): Fetches the complete history of notes for a specific lead by leadid (which must exist), useful for reviewing context for communications or…
+- **Retrieve vehicles for opportunity** (read-only): Retrieves all vehicles associated with an existing opportunity, using its unique opportunityid.
+- **Search and list tasks** (read-only): Searches and lists tasks, supporting pagination and accepting filter criteria in the post request body despite an empty request schema.
+- **Search business classifications** (read-only): Retrieves a comprehensive list of all available business classifications from agencyzoom, each including an id, code, and description.
+- **Search customers** (read-only): Searches for customers in agencyzoom using criteria like contact information, policy details, or custom fields, with options for…
+- **Search email threads** (read-only): Retrieves a list of email thread metadata from agencyzoom, suitable for an overview when no specific filtering, sorting, or pagination is…
+- **Search leads** (read-only): Retrieves agencyzoom leads, using filters, pagination, and sorting options sent in the post body, as the request schema itself is empty.
+- **Search leads count** (read-only): Retrieves a summary of lead counts categorized by workflow stage from agencyzoom.
+- **Search life and health leads** (read-only): Searches for life and health insurance leads by providing filter criteria (matching alrlead fields) in the request body.
+- **Search SMS threads** (read-only): Searches and retrieves sms threads from agencyzoom, with search parameters, filters, sorting, and pagination typically provided in the…
+- **Unlink driver from opportunity**: Unlinks a currently associated driver from an agencyzoom opportunity, used when the driver is no longer relevant, for policy or data…
+- **Unlink vehicle from opportunity**: Unlinks a specific, existing vehicle from a specific, existing opportunity using their respective ids, removing only the association and…
+- **Unread email thread**: Updates the read or unread status of a specific email thread within agencyzoom.
+- **Update a driver's details**: Updates an existing driver's details in agencyzoom, requiring driverid in the path and firstname and lastname in the request.
+- **Update a lead opportunity**: Updates an existing opportunity's details (carrier, product line, premium, items, custom fields) for a specific lead.
+- **Update a vehicle's details**: Updates details for an existing vehicle within an opportunity.
+- **Update an opportunity**: Updates an existing opportunity with the provided details.
+- **Update business lead**: Updates an existing business lead, identified by leadid (which must be valid and existing), using data provided in the request body not…
+- **Update customer info using id**: Updates an existing customer's information in agencyzoom using their unique customerid.
+- **Update lead**: Updates an existing lead's information in agencyzoom using the leadid.
+- **Update lead quote data**: Updates an existing quote for a specified lead in agencyzoom when its details require revision, ensuring the provided leadid (path…
+- **Update lead status by id**: Updates a lead's status (0=active, 2=won, 3=lost, 5=xdated) by leadid, optionally setting workflow, stage, date, loss reason, x-date type,…
+- **Update my profile**: Updates the profile information (first name, last name, email, and optional phone) for the currently authenticated user in agencyzoom.
+- **Update policy by id**: Updates an existing insurance policy for the given policyid.
+- **Update task**: Modifies an existing agencyzoom task (which must be valid and identified by taskid in the path) with new attributes from the request body,…

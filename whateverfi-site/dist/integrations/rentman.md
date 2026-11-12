@@ -1,0 +1,138 @@
+# Rentman
+
+Efficiently manage your crew and equipment from one place and ensure nothing falls through the cracks.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/rentman/.
+
+## Actions
+
+- **Delete Appointment**: Delete an appointment by its unique ID.
+- **Delete Appointmentcrew Item**: Delete an appointmentcrew item by its numeric ID.
+- **Delete Contact**: Delete a contact by its ID.
+- **Delete contact person**: Delete a contact person from Rentman by their numeric ID.
+- **Delete Crew Availability**: Delete a crew availability item by its ID.
+- **Get Appointments Collection** (read-only): Retrieve a collection of appointments from Rentman.
+- **Get Contacts Collection** (read-only): Retrieve a collection of contacts from Rentman.
+- **Get Contracts Collection** (read-only): Retrieve a collection of contracts from Rentman.
+- **Get Costs Collection** (read-only): Retrieve costs collection from Rentman.
+- **Get Crew Collection** (read-only): Retrieve crew collection from Rentman.
+- **Get equipment collection** (read-only): Get the equipment collection from Rentman.
+- **Get Equipment Repairs** (read-only): Retrieve repairs linked to a specific equipment item.
+- **Get Invoices Collection** (read-only): Retrieve a collection of invoices from Rentman.
+- **Get Payments Collection** (read-only): Retrieve a collection of payments from Rentman.
+- **Get Project Costs** (read-only): Retrieve costs linked to a specific project from Rentman.
+- **Get Project Crew** (read-only): Get project crew custom linked collection for a specific project.
+- **Get Project Equipment** (read-only): Retrieve all equipment items linked to a specific project in Rentman.
+- **Get Project Projectfunctions** (read-only): Retrieve projectfunctions linked to a specific project.
+- **Get Project Requests Collection** (read-only): Retrieve a collection of project requests from Rentman.
+- **Get Projectfunctions Collection** (read-only): Retrieve a collection of projectfunctions from Rentman.
+- **Get Projects Collection** (read-only): Retrieve a collection of projects from Rentman.
+- **Get Quotes Collection** (read-only): Retrieve a collection of quotes from Rentman.
+- **Get Repairs Collection** (read-only): Retrieve a collection of repairs from Rentman.
+- **Get Serialnumbers Collection** (read-only): Retrieve a collection of serialnumbers from Rentman.
+- **Get Stocklocations Collection** (read-only): Retrieve stock locations collection from Rentman.
+- **Get Subrentals Collection** (read-only): Get subrentals collection from Rentman.
+- **Get Timeregistration Collection** (read-only): Retrieve a collection of timeregistrations from Rentman.
+- **Get Vehicles Collection** (read-only): Retrieve a collection of vehicles from Rentman.
+- **Delete Cost Item**: Delete a cost item in Rentman by its numeric ID.
+- **Delete Project Request**: Delete a project request by its ID.
+- **Delete Project Request Equipment Item**: Delete a project request equipment item by its ID.
+- **Delete Time Registration**: Delete a time registration item in Rentman by its numeric ID.
+- **Get Accessories Collection** (read-only): Retrieve a collection of accessories from Rentman.
+- **Get Appointment Crew** (read-only): Retrieve the linked crew members for a specific appointment.
+- **Get Appointmentcrew Collection** (read-only): Retrieve appointmentcrew collection from Rentman.
+- **Get Contact Contactpersons** (read-only): Retrieve all contactpersons linked to a specific contact in Rentman.
+- **Get Contact File Folders** (read-only): Get file folders linked to a contact.
+- **Get Contact Files** (read-only): Get files linked to a contact.
+- **Get Contact Person File Folders** (read-only): Retrieve file folders linked to a contact person in Rentman.
+- **Get Contact Person Files** (read-only): Retrieve files linked to a contact person in Rentman.
+- **Get Contact Persons** (read-only): Retrieve the collection of contact persons from Rentman.
+- **Get Contract Files** (read-only): Retrieve files linked to a specific contract.
+- **Get contract invoicelines** (read-only): Retrieves invoicelines linked to a specific contract.
+- **Get Crew Availability** (read-only): Retrieve crew availability records for a specific crew member in Rentman.
+- **Get Crew Availability Collection** (read-only): Retrieve crew availability collection from Rentman.
+- **Get Crew File Folders** (read-only): Retrieve file folders linked to a crew member.
+- **Get Crew Files** (read-only): Retrieve files linked to a crew member.
+- **Get Crew Member** (read-only): Retrieve a crew member item by ID from Rentman.
+- **Get Crew Member Appointments** (read-only): Retrieve appointments for a specific crew member.
+- **Get Crew Rates** (read-only): Get crew rates linked collection for a specific crew member.
+- **Get Crewrates Collection** (read-only): Retrieve crewrates collection from Rentman.
+- **Get Equipment Accessories** (read-only): Get accessories linked to a specific equipment item.
+- **Get Equipment File Folders** (read-only): Get file folders linked to equipment.
+- **Get Equipment Files** (read-only): Get files linked to equipment.
+- **Get Equipment Serial Numbers** (read-only): Retrieve serial numbers linked to a specific equipment item.
+- **Get Equipment Sets Content** (read-only): Get equipment sets content linked collection for a specific equipment item.
+- **Get Equipment Sets Content Collection** (read-only): Retrieve the equipment sets content collection from Rentman.
+- **Get Equipment Stockmovements** (read-only): Get stockmovements linked collection for a specific equipment item.
+- **Get Files Collection** (read-only): Retrieve files collection from Rentman.
+- **Get Folder Item** (read-only): Retrieve a folder item by ID from Rentman.
+- **Get Folders Collection** (read-only): Retrieve folders collection from Rentman.
+- **Get Invoice Files** (read-only): Retrieve files linked to an invoice in Rentman.
+- **Get Invoice Invoicelines** (read-only): Retrieve invoicelines linked to a specific invoice.
+- **Get Invoice Lines** (read-only): Retrieve invoicelines collection from Rentman.
+- **Get Invoice Payments** (read-only): Retrieve payments linked to a specific invoice.
+- **Get Ledgercodes Collection** (read-only): Retrieve ledger codes collection from Rentman.
+- **Get Project Contracts** (read-only): Retrieve contracts linked to a specific project from Rentman.
+- **Get Project Equipment Collection** (read-only): Retrieve a collection of project equipment from Rentman.
+- **Get project equipment group project equipment** (read-only): Get projectequipment linked collection for a specific projectequipmentgroup.
+- **Get Project File Folders** (read-only): Retrieve file folders linked to a specific project.
+- **Get Project Files** (read-only): Retrieve files linked to a project.
+- **Get Project Function Crew** (read-only): Get project crew linked to a specific project function.
+- **Get Project Function Group Project Functions** (read-only): Get project functions linked to a specific project function group in Rentman.
+- **Get Project Function Groups Collection** (read-only): Retrieve a collection of project function groups from Rentman.
+- **Get Project Function Groups For Project** (read-only): Retrieve project function groups linked to a specific project in Rentman.
+- **Get Project Function Groups For Subproject** (read-only): Retrieve project function groups linked to a specific subproject in Rentman.
+- **Get project projectequipmentgroup** (read-only): Get projectequipmentgroup linked collection for a specific project.
+- **Get Project Projectvehicles** (read-only): Retrieve project vehicles linked to a project.
+- **Get Project Quotes** (read-only): Retrieve quotes linked to a project.
+- **Get Project Request Equipment** (read-only): Retrieve projectrequestequipment linked to a specific project request in Rentman.
+- **Get Project Request Equipment Collection** (read-only): Retrieve project request equipment collection from Rentman.
+- **Get Project Subprojects** (read-only): Retrieve subprojects linked to a specific project from Rentman.
+- **Get Projectcrew Collection** (read-only): Retrieve projectcrew collection from Rentman.
+- **Get Projectequipmentgroup Collection** (read-only): Retrieve projectequipmentgroup collection from Rentman.
+- **Get Projectfunction Projectvehicles** (read-only): Retrieve project vehicles linked to a project function.
+- **Get Projecttypes Collection** (read-only): Retrieve a collection of project types from Rentman.
+- **Get Projectvehicles Collection** (read-only): Retrieve projectvehicles collection from Rentman.
+- **Get Quote Files** (read-only): Get files linked to a quote.
+- **Get quote invoicelines** (read-only): Retrieves invoicelines linked to a specific quote.
+- **Get Rate Ratefactors** (read-only): Retrieve the ratefactors custom linked collection for a specific rate.
+- **Get Ratefactors Collection** (read-only): Retrieve a collection of ratefactors from Rentman.
+- **Get Rates Collection** (read-only): Retrieve rates collection from Rentman.
+- **Get Repair File Folders** (read-only): Get file folders linked to a repair.
+- **Get Repair Files** (read-only): Get files linked to a repair.
+- **Get Serial Number File Folders** (read-only): Get file folders linked to a serial number.
+- **Get Serial Number Files** (read-only): Get files linked to a serial number.
+- **Get Statuses Collection** (read-only): Retrieve a collection of statuses from Rentman.
+- **Get Stockmovements Collection** (read-only): Retrieve the stock movements collection from Rentman.
+- **Get Subproject File Folders** (read-only): Get file folders linked to a subproject.
+- **Get Subproject Project Crew** (read-only): Get project crew custom linked collection for a specific subproject.
+- **Get Subproject Project Equipment** (read-only): Retrieve project equipment collection from a specific subproject in Rentman.
+- **Get subproject projectequipmentgroup** (read-only): Get projectequipmentgroup linked collection for a specific subproject.
+- **Get Subproject Projectvehicles** (read-only): Retrieve project vehicles linked to a subproject.
+- **Get Subprojects Collection** (read-only): Retrieve subprojects collection from Rentman.
+- **Get Subrental Equipment Collection** (read-only): Retrieve a collection of subrental equipment items from Rentman.
+- **Get Subrental Equipment Group** (read-only): Get subrental equipment group custom linked collection from Rentman.
+- **Get Subrental Equipment Group Collection** (read-only): Retrieve the complete collection of subrental equipment groups from Rentman.
+- **Get subrental equipment group subrental equipment** (read-only): Get subrentalequipment custom linked collection for a specific subrentalequipmentgroup.
+- **Get Subrental File Folders** (read-only): Get file folders linked to a subrental.
+- **Get Subrental Files** (read-only): Get files linked to a subrental.
+- **Get Subrental Subrentalequipment** (read-only): Retrieve subrentalequipment linked to a specific subrental in Rentman.
+- **Get Tax Classes Collection** (read-only): Retrieve a collection of tax classes from Rentman.
+- **Get Time Registration Files** (read-only): Get files linked to a time registration.
+- **Get Timeregistration Activities** (read-only): Retrieve all timeregistrationactivities linked to a specific timeregistration in Rentman.
+- **Get Timeregistration Activities Collection** (read-only): Retrieve a collection of timeregistration activities from Rentman.
+- **Get Vehicle File Folders** (read-only): Get file folders linked to a vehicle.
+- **Get Vehicle Files** (read-only): Get files linked to a vehicle.
+- **List Actualcontent** (read-only): Get actualcontent collection from Rentman.
+- **List Equipmentassignedserials Collection** (read-only): Retrieve serial numbers assigned to serialized physical combinations from Rentman.
+- **List Factorgroups** (read-only): Retrieve factorgroups collection from Rentman.
+- **List Factorgroups Factors** (read-only): Retrieve the factors collection for a specific factorgroup.
+- **List Factors** (read-only): Retrieve a collection of factors from Rentman.
+- **List File Folders** (read-only): Retrieve file folders collection from Rentman.
+- **List Leave Mutations** (read-only): Retrieve leave mutations collection from Rentman.
+- **List Leave Request Timeregistration** (read-only): Get timeregistration collection for a specific leave request.
+- **List Leave Requests** (read-only): Retrieve leave requests collection from Rentman.
+- **List Leave Types** (read-only): Retrieve leave types collection from Rentman.
+- **List Serialnumber Actualcontent** (read-only): Retrieve the actualcontent collection for a specific serialnumber item.
+- **List Serialnumber Equipment Assigned Serials** (read-only): Retrieve equipmentassignedserials collection for a specific serialnumber item.
+- **List Stocklocations Vehicles** (read-only): Retrieve vehicles collection for a stocklocation.

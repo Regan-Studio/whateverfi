@@ -1,0 +1,103 @@
+# Shippo
+
+Shipping API for e-commerce merchants to create labels, track packages, and manage shipping operations.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/shippo/.
+
+## Actions
+
+- **Create Live Rate** (read-only): Generate live shipping rates from multiple carriers for a given shipment.
+- **Create Merchant Shipment**: Create a new shipment for a merchant using Shippo's Platform API.
+- **Create Merchant Transaction**: Create a shipping label transaction for a merchant using the Shippo Platform API.
+- **Create Shipment**: Create a new shipment with Shippo.
+- **Create Shippo Address**: Create a new address in Shippo.
+- **Create Transaction**: Create a shipping label transaction with Shippo.
+- **Get Address** (read-only): Retrieve a previously created address from Shippo.
+- **Get Merchant Rate** (read-only): Retrieve a specific shipping rate for a merchant using the Shippo Platform API.
+- **Get Merchant Shipment** (read-only): Retrieve a shipment for a merchant from the Shippo Platform API.
+- **Get Merchant Tracking Status** (read-only): Retrieve tracking status for a merchant from Shippo Platform API.
+- **Get Merchant Transaction** (read-only): Retrieve a shipping label transaction for a merchant from the Shippo Platform API.
+- **Get Rate** (read-only): Retrieve a specific shipping rate by its ID.
+- **Get Shipment** (read-only): Retrieve a shipment by its ID.
+- **Get Tracking Status** (read-only): Retrieve tracking status for a shipment from Shippo.
+- **Get Transaction** (read-only): Retrieve a shipping label transaction by its ID.
+- **List Addresses** (read-only): List all addresses in the Shippo account with pagination support.
+- **List Carrier Accounts** (read-only): List all carrier accounts configured in the Shippo account with pagination support.
+- **List Merchant Shipments** (read-only): List all shipments for a specific merchant using Shippo's Platform API.
+- **List Orders** (read-only): List all orders in the Shippo account with pagination support.
+- **List Shipment Rates** (read-only): Retrieve available shipping rates for a specific shipment.
+- **List Shipments** (read-only): List all shipments in the Shippo account with pagination support.
+- **Validate Address** (read-only): Validate an address using the Shippo API.
+- **Create Batch**: Create a batch of shipments for bulk label purchasing.
+- **Create Carrier Account**: Create a new carrier account in Shippo.
+- **Create Customs Item**: Create a new customs item for international shipments.
+- **Create Manifest**: Create a new shipping manifest with Shippo.
+- **Create Merchant Address**: Create a new address for a merchant using Shippo's Platform API.
+- **Create Merchant Batch**: Create a batch for a merchant using the Shippo Platform API.
+- **Create Merchant Carrier Account**: Create a carrier account for a merchant using the Shippo Platform API.
+- **Create Merchant Customs Declaration**: Create a new customs declaration for a merchant using Shippo's Platform API.
+- **Create Merchant Customs Item**: Create a new customs item for a merchant using Shippo's Platform API.
+- **Create Merchant Order**: Create an order for a merchant using the Shippo Platform API.
+- **Create Merchant Parcel**: Create a new parcel for a merchant using Shippo's Platform API.
+- **Create Merchant Refund**: Create a refund for a merchant using the Shippo Platform API.
+- **Create Order**: Create a new order in Shippo.
+- **Create Parcel**: Create a new parcel in Shippo with dimensions and weight specifications.
+- **Create Refund**: Create a refund for a Shippo transaction.
+- **Create Service Group**: Create a new Shippo service group with specified pricing model and carrier service levels.
+- **Create Shippo Webhook**: Create a new webhook subscription in Shippo.
+- **Create User Parcel Template**: Create a new user parcel template in Shippo with preset dimensions and weight specifications.
+- **Delete Default Parcel Template**: Clear the current default parcel template.
+- **Delete User Parcel Template**: Delete a user-created parcel template.
+- **Delete Webhook**: Delete a specific webhook from Shippo.
+- **Get Carrier Account** (read-only): Retrieve a carrier account by its ID.
+- **Get Carrier Parcel Template** (read-only): Retrieve a specific carrier parcel template by its token.
+- **Get Carrier Registration Status** (read-only): Retrieve carrier registration status from Shippo.
+- **Get Customs Declaration** (read-only): Retrieve a customs declaration by its ID.
+- **Get customs item** (read-only): Retrieve a customs item from Shippo.
+- **Get Default Parcel Template** (read-only): Retrieve the current default parcel template for live rates at checkout.
+- **Get Merchant** (read-only): Retrieve a merchant from the Shippo Platform API.
+- **Get Merchant Address** (read-only): Retrieve a merchant address from Shippo Platform API.
+- **Get Merchant Batch** (read-only): Retrieve a batch for a merchant from the Shippo Platform API.
+- **Get Merchant Carrier Account** (read-only): Retrieve a carrier account for a merchant using the Shippo Platform API.
+- **Get Merchant Carrier Registration Status** (read-only): Retrieve carrier registration status for a specific merchant using Shippo's Platform API.
+- **Get Merchant Customs Declaration** (read-only): Retrieve a specific customs declaration for a merchant using Shippo's Platform API.
+- **Get Merchant Customs Item** (read-only): Retrieve a customs item for a merchant using the Shippo Platform API.
+- **Get Merchant Manifest** (read-only): Retrieve a manifest for a merchant from the Shippo Platform API.
+- **Get Merchant Order** (read-only): Retrieve an order for a merchant from the Shippo Platform API.
+- **Get Merchant Parcel** (read-only): Retrieve a parcel for a merchant from the Shippo Platform API.
+- **Get Merchant Refund** (read-only): Retrieve a merchant refund from Shippo Platform API.
+- **Get Order** (read-only): Retrieve an order from Shippo.
+- **Get Parcel** (read-only): Retrieve a parcel by its ID.
+- **Get Refund** (read-only): Retrieve a refund by its ID from Shippo.
+- **Get Shippo Account** (read-only): Retrieve a Shippo Account from the Shippo Platform API.
+- **Get User Parcel Template** (read-only): Retrieve a specific user-created parcel template by its object ID.
+- **Get Webhook** (read-only): Retrieve a specific webhook subscription from Shippo.
+- **List Carrier Parcel Templates** (read-only): List all carrier parcel templates available for creating shipments.
+- **List Customs Declarations** (read-only): List all customs declarations in the Shippo account with pagination support.
+- **List Customs Items** (read-only): List all customs items with pagination support.
+- **List Manifests** (read-only): List all shipping manifests from Shippo.
+- **List Merchant Addresses** (read-only): List all addresses for a specific merchant using the Shippo Platform API.
+- **List Merchant Carrier Accounts** (read-only): List all carrier accounts for a specific merchant using the Shippo Platform API.
+- **List Merchant Customs Declarations** (read-only): List all customs declarations for a specific merchant using the Shippo Platform API.
+- **List Merchant Customs Items** (read-only): List all customs items for a specific merchant using the Shippo Platform API.
+- **List Merchant Manifests** (read-only): List all manifests for a specific merchant using Shippo's Platform API.
+- **List Merchant Parcels** (read-only): List all parcels for a specific merchant using the Shippo Platform API.
+- **List Merchant Shipment Rates by Currency** (read-only): Retrieve available shipping rates for a merchant's shipment filtered by currency code using the Shippo Platform API.
+- **List Merchant Transactions** (read-only): List all shipping label transactions for a merchant using the Shippo Platform API.
+- **List Merchants** (read-only): List all merchants using the Shippo Platform API with pagination support.
+- **List Refunds** (read-only): Retrieve a list of all refunds from Shippo.
+- **List Service Groups** (read-only): Retrieve all service groups configured in Shippo.
+- **List Shipment Rates by Currency** (read-only): Retrieve available shipping rates for a specific shipment filtered by currency code.
+- **List Shippo Accounts** (read-only): List all Managed Shippo Accounts.
+- **List User Parcel Templates** (read-only): List all user-created parcel templates.
+- **Purchase Merchant Batch**: Purchase a batch for a merchant via the Shippo Platform API.
+- **Register Tracking Webhook**: Register a tracking webhook for a shipment.
+- **Remove Shipments From Batch**: Remove shipments from a batch for a merchant using the Shippo Platform API.
+- **Update Carrier Account**: Update an existing carrier account in Shippo.
+- **Update Default Parcel Template**: Update the default parcel template for live rates at checkout in Shippo.
+- **Update Merchant**: Update an existing merchant in Shippo Platform API.
+- **Update Merchant Carrier Account**: Update a carrier account for a merchant in Shippo Platform API.
+- **Update Service Group**: Update an existing Shippo service group.
+- **Update User Parcel Template**: Update an existing user parcel template with new weight and carrier template settings.
+- **Update Webhook**: Update an existing webhook in Shippo.
+- **Validate Merchant Address** (read-only): Validate a merchant address using the Shippo Platform API.

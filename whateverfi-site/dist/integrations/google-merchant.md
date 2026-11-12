@@ -1,0 +1,131 @@
+# Google Merchant Center
+
+Google Merchant Center helps businesses manage product data, accounts, promotions, inventory, reports, and related commerce resources through the Merchant API.
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/google-merchant/.
+
+## Actions
+
+- **Accept Terms Of Service**: Accept a specific Merchant Center terms of service version for an account.
+- **Batch Create Region**: Creates one or more regions in your Merchant Center account.
+- **Batch Delete Region**: Deletes multiple regions by name from your Merchant Center account.
+- **Batch Update Region**: Updates one or more regions in your Merchant Center account.
+- **Create Account**: Create and configure a Merchant Center account.
+- **Create Account User**: Create a user with access rights in a Merchant Center account.
+- **Create Checkout Settings**: Creates CheckoutSettings for the given merchant.
+- **Create Conversion Source**: Creates a new conversion source for a Merchant Center account.
+- **Create Data Source**: Creates a new data source configuration for a Merchant Center account.
+- **Create Notification Subscription**: Creates a notification subscription for a Merchant Center account.
+- **Create Omnichannel Setting**: Create the omnichannel settings for a given merchant.
+- **Create Online Return Policy**: Creates a new return policy for a given business.
+- **Create Region**: Creates a region definition in your Merchant Center account.
+- **Create Test Account**: Create a Merchant Center test account for development and integration testing.
+- **Delete Account**: Delete a standalone, advanced, or sub-account.
+- **Delete Account User**: Delete a user from a Merchant Center account.
+- **Delete Checkout Settings**: Deletes CheckoutSettings and unenrolls merchant from Checkout program.
+- **Delete Conversion Source**: Archives an existing conversion source.
+- **Delete Data Source**: Deletes a data source from your Merchant Center account.
+- **Delete LFP Store**: Deletes a store for a target merchant.
+- **Delete Notification Subscription**: Deletes a notification subscription for a merchant.
+- **Delete Online Return Policy**: Deletes an existing return policy.
+- **Delete Product Input**: Deletes a product input from a primary or supplemental Merchant Center data source.
+- **Delete Product Inventory**: Deletes one local or regional inventory record from a product in a Merchant Center account.
+- **Delete Region**: Deletes a region definition from your Merchant Center account.
+- **Delete Review**: Deletes one merchant or product review by canonical resource name.
+- **Fetch Data Source Now**: Immediately fetch a file-input data source for a Merchant Center account, even outside its configured schedule.
+- **Get Account** (read-only): Retrieve a Merchant Center account by resource name.
+- **Get Account Relationship** (read-only): Retrieve an account relationship.
+- **Get Account Service** (read-only): Retrieve an account service by its resource name.
+- **Get Account User** (read-only): Retrieve a user associated with a Merchant Center account.
+- **Get Autofeed Settings** (read-only): Retrieves the autofeed settings of an account.
+- **Get Automatic Improvements** (read-only): Retrieves the automatic improvements of a Merchant Center account.
+- **Get Business Identity** (read-only): Retrieve the business identity of a Merchant Center account.
+- **Get Business Info** (read-only): Retrieves the business info of an account.
+- **Get Checkout Settings** (read-only): Gets CheckoutSettings for a merchant, including enrollment, review, and URL settings.
+- **Get Conversion Source** (read-only): Fetch a single conversion source owned by a Merchant Center account using its full resource name.
+- **Get Data Source** (read-only): Retrieves the data source configuration for the given account.
+- **Get Data Source File Upload** (read-only): Gets the latest file upload and processing result for a data source.
+- **Get Developer Registration** (read-only): Retrieves a developer registration for a merchant.
+- **Get Email Preferences** (read-only): Return the email preferences for the authenticated Merchant Center account user.
+- **Get Homepage** (read-only): Retrieves a store's homepage.
+- **Get Latest Terms Of Service** (read-only): Retrieve the latest Merchant Center terms of service version for a given kind and CLDR region code.
+- **Get LFP Merchant State** (read-only): Get the Local Feed Partnership state of a merchant.
+- **Get LFP Store** (read-only): Retrieves information about a Local Feed Partnership store.
+- **Get Notification Subscription** (read-only): Gets a notification subscription owned by a Merchant account.
+- **Get Omnichannel Setting** (read-only): Get the omnichannel settings for a given merchant.
+- **Get Online Return Policy** (read-only): Gets an existing return policy for a given business.
+- **Get Product** (read-only): Retrieves a processed product from a Merchant Center account.
+- **Get Program** (read-only): Retrieves the specified program for the account.
+- **Get Promotion** (read-only): Retrieves one promotion from a Merchant Center account by its resource name.
+- **Get Quota Limit** (read-only): Retrieves a specific resource limit applied to a Merchant Center account.
+- **Get Region** (read-only): Retrieves a region defined in your Merchant Center account.
+- **Get Review** (read-only): Returns one merchant or product review by canonical resource name.
+- **Get Shipping Settings** (read-only): Retrieve shipping setting information.
+- **Get Terms Agreement State** (read-only): Return the state of a terms of service agreement for an account.
+- **Get Terms Agreement State For Application** (read-only): Retrieve an account's agreement state for application terms of service, which govern use of data provided through Merchant Center and…
+- **Get Terms Of Service** (read-only): Retrieve a specific Merchant Center terms of service version.
+- **Get UCP Operation** (read-only): Gets the latest state of a long-running operation.
+- **Get UCP Settings** (read-only): Retrieves the currently stored, validated UCP settings for a Merchant Center account.
+- **Link Business Profile Account**: Link a Merchant Center account to a Google Business Profile account for all countries.
+- **Link LFP Provider**: Link the specified merchant to an LFP provider for the specified country.
+- **List Account Issues** (read-only): List one page of issues belonging to a Merchant Center account.
+- **List Account Relationships** (read-only): List account relationships for the specified account.
+- **List Account Services** (read-only): List one page of account services for a Merchant Center account.
+- **List Account Users** (read-only): Lists all users of a Merchant Center account, one page at a time.
+- **List Accounts** (read-only): Return one page of Merchant Center accounts accessible to the connected Google user, optionally filtered by relationship.
+- **List Aggregate Product Statuses** (read-only): List one page of aggregate product serving statistics and item-level issues for a standalone Merchant Center account or an…
+- **List Business Profile Accounts** (read-only): List one page of Google Business Profile accounts associated with a Merchant Center account.
+- **List Conversion Sources** (read-only): Return one page of conversion sources accessible to the caller for a Merchant Center account, optionally including archived sources.
+- **List Data Sources** (read-only): Return one page of data source configurations for a Merchant Center account, including each source's type-specific settings.
+- **List LFP Providers** (read-only): Find one page of Local Feed Partnership provider candidates for a Merchant Center account and country.
+- **List LFP Stores** (read-only): Return one page of Local Feed Partnership stores for a target Merchant Center merchant.
+- **List Notification Subscriptions** (read-only): Gets one page of notification subscriptions for a merchant.
+- **List Omnichannel Settings** (read-only): List one page of omnichannel settings for a Merchant Center account.
+- **List Online Return Policies** (read-only): Lists one page of existing return policies for a given business.
+- **List Product Inventories** (read-only): Return one page of local or regional inventory records for a processed product in a Merchant Center account.
+- **List Products** (read-only): Return one page of processed products for a Merchant Center account, including catalog attributes, serving status, and policy issues.
+- **List Programs** (read-only): Retrieve one page of programs available to a Merchant Center account, including participation state, active regions, and unmet requirements.
+- **List Promotions** (read-only): Return one page of processed promotions for a Merchant Center account, including eligibility attributes, serving status, and policy issues.
+- **List Quota Groups** (read-only): List one page of daily usage, daily limits, and per-minute limits for the method quota groups of a Merchant Center account.
+- **List Quota Limits** (read-only): List one page of limits of a selected type that apply to a Merchant Center account.
+- **List Regions** (read-only): Lists one page of regions in a Merchant Center account.
+- **List Reviews** (read-only): Return one page of merchant or product reviews for a Merchant Center account.
+- **List Subaccounts** (read-only): List one page of subaccounts managed by an advanced Merchant Center account.
+- **Manage Loyalty Customer**: Insert or update a customer's Google Merchant loyalty tier, or remove the association by setting the tier to NON_MEMBER.
+- **Propose Account Service**: Propose an account service for a Merchant Center account.
+- **Record LFP Sale**: Insert a Local Feed Partnership sale for a target Merchant Center merchant.
+- **Render Account Issues** (read-only): Render a Merchant Center account's current issues, localized impact details, and available resolution actions for an interactive…
+- **Render Product Issues** (read-only): Render a Merchant Center product's current issues, localized impact details, and available resolution actions for an interactive…
+- **Request Inventory Verification**: Request inventory verification for a given merchant in a given country.
+- **Respond to Account Service**: Approve or reject a proposed Merchant Center account service.
+- **Search Reports** (read-only): Run a Merchant Reports Query Language statement and return one page of query-selected report rows.
+- **Set Homepage Claim**: Claim or unclaim a Merchant Center account homepage.
+- **Set Program State**: Enable or disable participation in one Merchant Center program by its canonical resource name.
+- **Trigger Issue Action**: Execute a business-requested Google Merchant issue-remediation action using a fresh context and form returned by RENDER_ACCOUNT_ISSUES for…
+- **Undelete Conversion Source**: Re-enable an archived Merchant Center Destination conversion source.
+- **Update Account**: Update a standalone, advanced, or sub-account in Merchant Center.
+- **Update Account Relationship**: Update an account relationship.
+- **Update Account User**: Update a user's access rights in a Merchant Center account.
+- **Update Autofeed Settings**: Updates the autofeed settings of a Merchant Center account.
+- **Update Automatic Improvements**: Updates the automatic improvements of a Merchant Center account.
+- **Update Business Identity**: Updates the business identity of a Merchant Center account.
+- **Update Business Info**: Updates the business info of a Merchant Center account.
+- **Update Checkout Settings**: Updates CheckoutSettings for the given merchant.
+- **Update Conversion Source**: Updates information for an existing Merchant Center Destination conversion source.
+- **Update Data Source**: Updates an existing Merchant Center data source.
+- **Update Email Preferences**: Update email preferences for the authenticated Merchant Center account user.
+- **Update Homepage**: Update a store's Merchant Center homepage.
+- **Update Notification Subscription**: Updates an existing notification subscription for a merchant.
+- **Update Omnichannel Setting**: Update the omnichannel setting for a given merchant in a given country.
+- **Update Product Input**: Updates an existing product input in Merchant Center through an API data source.
+- **Update Region**: Updates a region definition in your Merchant Center account.
+- **Update UCP Settings**: Patches UCP settings for a Merchant Center account and starts asynchronous validation of the public UCP profile.
+- **Upsert LFP Inventory**: Insert or fully replace a local inventory record for a target merchant as an allowlisted Local Feeds Partnership provider.
+- **Upsert LFP Store**: Insert a Local Feed Partnership store for a target merchant, replacing the existing store when the same store code already exists.
+- **Upsert Order Tracking Signal**: Submit one delivered order's tracking signal to Google Merchant, or update the existing signal by submitting newer data with the same…
+- **Upsert Product Input**: Uploads a product input through an API data source, replacing an existing input with the same language, offer ID, and data source.
+- **Upsert Product Inventory**: Insert or fully replace one local store inventory record or regional inventory record for a processed Merchant Center product.
+- **Upsert Promotion**: Insert a promotion into a Merchant Center account, replacing the existing promotion when its country, language, channels, and promotion ID…
+- **Upsert Review**: Insert or replace one Merchant Center merchant review or product review through its matching review data source.
+- **Upsert Shipping Settings**: Replace a business's shipping settings.
+- **Verify Current User**: Update the connected Merchant Center user from pending to verified for an account.

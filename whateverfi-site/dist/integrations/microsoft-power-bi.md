@@ -1,0 +1,124 @@
+# Microsoft Power Bi
+
+Microsoft Power BI is a business analytics service that provides interactive visualizations and business intelligence capabilities with an interface simple enough for end users to create their own reports and dashboards.
+
+Category: Data. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/microsoft-power-bi/.
+
+## Actions
+
+- **Add Dashboard to Workspace**: Creates a new empty dashboard in the specified workspace.
+- **Add Rows to Dataset Table in Workspace**: Adds new data rows to the specified table within the specified dataset from the specified workspace.
+- **Assign Workspace to Capacity**: Assigns the specified workspace to the specified capacity.
+- **Cancel Dataset Refresh in Workspace**: Cancels the specified refresh operation for the specified dataset from the specified workspace.
+- **Clone Report**: Clones the specified report from My workspace.
+- **Clone Report in Workspace**: Clones the specified report from the specified workspace.
+- **Create Goal Value Check-in**: Creates a new goal value check-in for a Power BI scorecard goal.
+- **Create Push Dataset**: Creates a new dataset on My workspace in Power BI.
+- **Create Push Dataset in Workspace**: Creates a new push dataset in the specified Power BI workspace.
+- **Create Scorecard**: Creates a new scorecard in the specified Power BI workspace.
+- **Create Temporary Upload Location**: Creates a temporary blob storage upload location for importing large Power BI .pbix files that are between 1 GB and 10 GB in size.
+- **Create Temporary Upload Location**: Creates a temporary blob storage upload location for importing large Power BI .pbix files that are between 1 GB and 10 GB in size.
+- **Create Workspace**: Creates a new workspace in Power BI.
+- **Delete Dashboard**: Deletes the specified dashboard from My workspace.
+- **Delete Dataflow**: Deletes the specified dataflow from Power BI data prep storage, including its definition file and model.
+- **Delete Dataset**: Deletes the specified dataset from My workspace.
+- **Delete Dataset from Workspace**: Deletes the specified dataset from the specified workspace.
+- **Delete Goal**: Deletes a goal from a scorecard by goal ID.
+- **Delete Goal Note by ID**: Deletes a goal value check-in note by its unique identifier.
+- **Delete Goal Status Rules**: Removes status rule definitions from a goal.
+- **Delete Pipeline User**: Removes user permissions from the specified deployment pipeline.
+- **Delete Report from Workspace**: Deletes the specified report from the specified workspace.
+- **Delete Rows from Dataset Table**: Deletes all rows from the specified table within the specified dataset from My workspace.
+- **Delete Rows from Dataset Table in Workspace**: Deletes all rows from the specified table within the specified dataset from the specified workspace.
+- **Delete Scorecard By ID**: Deletes a scorecard by its ID from the specified workspace.
+- **Delete Workspace**: Deletes the specified workspace.
+- **Discover Gateways for Dataset** (read-only): Returns a list of gateways that the specified dataset from the specified workspace can be bound to.
+- **Execute DAX Queries** (read-only): Executes Data Analysis Expressions (DAX) queries against the provided dataset in My workspace.
+- **Execute DAX Queries on Dataset** (read-only): Executes Data Analysis Expressions (DAX) queries against the specified Power BI dataset.
+- **Execute Subscription**: Executes the Subscription specified by the Id.
+- **Generate Dashboard Embed Token**: Generates an embed token to view or edit the specified dashboard from the specified workspace.
+- **Generate Dataset Embed Token in Group**: Generates an embed token based on the specified dataset from the specified workspace.
+- **Generate Embed Token for Power BI**: Generates an embed token for multiple reports, datasets, and target workspaces.
+- **Generate Report Embed Token for Create in Group**: Generates an embed token to allow report creation in the specified workspace based on the specified dataset.
+- **Generate Report Embed Token in Group**: Generates an embed token to view or edit the specified report from the specified workspace.
+- **Get Available Feature By Name** (read-only): Returns the specified available feature for the user by name.
+- **Get Capacities** (read-only): Returns a list of Power BI capacities that the authenticated user has access to.
+- **Get Dashboard from My Workspace** (read-only): Returns the specified dashboard from My workspace.
+- **Get Dashboards** (read-only): Returns a list of dashboards from the specified workspace.
+- **Get Dataflows** (read-only): Returns a list of all dataflows from the specified workspace.
+- **Get Dataset** (read-only): Returns the specified dataset from My workspace.
+- **Get DataSet Data** (read-only): Gets the query results for the specified DataSet.
+- **Get Dataset in Workspace** (read-only): Returns the specified dataset from the specified workspace.
+- **Get Dataset Parameters** (read-only): Returns a list of parameters for the specified dataset from **My workspace**.
+- **Get Dataset Parameters in Workspace** (read-only): Returns a list of parameters for the specified dataset from the specified workspace.
+- **Get Dataset Refresh Schedule** (read-only): Returns the refresh schedule for the specified dataset from My workspace.
+- **Get Dataset to Dataflows Links** (read-only): Returns a list of upstream dataflows for datasets from the specified workspace.
+- **Get Dataset Users** (read-only): Returns a list of principals that have access to the specified dataset.
+- **Get Dataset Users In Group** (read-only): Returns a list of principals that have access to the specified dataset within a workspace.
+- **Get Datasets from My Workspace** (read-only): Returns a list of datasets from My workspace.
+- **Get DataSets from Power BI** (read-only): Gets an array of DataSet CatalogItems from Power BI.
+- **Get Datasources for Dataset** (read-only): Returns a list of data sources for the specified dataset from My workspace.
+- **Get Datasources for Dataset in Workspace** (read-only): Returns a list of data sources for the specified dataset from the specified workspace.
+- **Get Gateway** (read-only): Returns the specified gateway.
+- **Get Gateway Datasources in Group** (read-only): Returns a list of gateway data sources for the specified dataset from the specified workspace.
+- **Get Gateways** (read-only): Returns a list of gateways for which the user is an admin.
+- **Get Goal Value By ID** (read-only): Reads a goal value check-in by a UTC date timestamp.
+- **Get Goals from Scorecard** (read-only): Returns a list of goals from a scorecard.
+- **Get Goals Refresh History** (read-only): Reads refresh history of a connected goal.
+- **Get Goals Status Rules** (read-only): Returns status rules of a goal.
+- **Get Group Users** (read-only): Returns a list of users that have access to the specified workspace.
+- **Get Groups** (read-only): Returns a list of workspaces the user has access to.
+- **Get Groups Capacity Assignment Status** (read-only): Gets the status of the assignment-to-capacity operation for the specified workspace.
+- **Get Import** (read-only): Returns the specified import from My workspace.
+- **Get Imports from My Workspace** (read-only): Returns a list of imports from My workspace.
+- **Get Imports in Workspace** (read-only): Returns a list of imports from the specified workspace.
+- **Get Linked Report History Snapshot** (read-only): Gets requested HistorySnapshot item specified by HistoryId of the LinkedReport specified by Id.
+- **Get Pages from Report** (read-only): Returns a list of pages within the specified report from the specified workspace.
+- **Get Pages from Report in My Workspace** (read-only): Returns a list of pages within the specified report from My workspace.
+- **Get Query Scale Out Sync Status** (read-only): Returns the query scale-out sync status for the specified dataset from the specified workspace.
+- **Get Refresh Execution Details In Group** (read-only): Returns execution details of a refresh operation for the specified dataset from the specified workspace.
+- **Get Refresh History for Dataset** (read-only): Returns the refresh history for the specified dataset from My workspace.
+- **Get Refresh Schedule In Group 2** (read-only): Returns the refresh schedule for the specified dataset from the specified workspace.
+- **Get Refreshable For Capacity** (read-only): Returns the specified refreshable for the specified capacity that the user has access to.
+- **Get refreshables for all capacities** (read-only): Returns a list of refreshables for all capacities that the user has access to.
+- **Get Report from My Workspace** (read-only): Returns the specified report from My workspace.
+- **Get Report Page** (read-only): Returns the specified page within the specified report from the specified workspace.
+- **Get Report Page From My Workspace** (read-only): Returns the specified page within the specified report from My workspace.
+- **Get Reports** (read-only): Gets an array of Report CatalogItems from Power BI.
+- **Get Reports From App** (read-only): Returns a list of reports from the specified app.
+- **Get Reports From My Workspace** (read-only): Returns a list of reports from My workspace.
+- **Get Resources** (read-only): Gets an array of Resource catalog items.
+- **Get Scorecard By ID** (read-only): Returns a scorecard with the specified ID.
+- **Get Scorecards** (read-only): Returns a list of scorecards from a workspace.
+- **Get Tables in Dataset** (read-only): Returns a list of tables within the specified dataset from My workspace.
+- **Get Tables in Dataset within Workspace** (read-only): Returns a list of tables within the specified dataset from the specified workspace.
+- **Get Tiles from My Workspace Dashboard** (read-only): Returns a list of tiles within the specified dashboard from My workspace.
+- **Get Tiles from Workspace Dashboard** (read-only): Returns a list of tiles within the specified dashboard from the specified workspace.
+- **Get Workspace** (read-only): Returns a specified workspace (group).
+- **Grant Dataset User Permissions**: Grants the specified user's permissions to the specified dataset.
+- **Grant Dataset User Permissions In Group**: Grants the specified user's permissions to the specified dataset in a workspace.
+- **Move Power BI Scorecard Goals**: Moves goals within the scorecard.
+- **Patch Goal By ID**: Updates a goal by its ID within a Power BI scorecard.
+- **Patch Goal Note**: Updates a goal value check-in note by ID.
+- **Patch Goal Value By ID**: Updates a goal value check-in by a UTC date timestamp.
+- **Patch Scorecard By ID**: Updates a scorecard by its ID.
+- **Post Goal**: Adds a new goal to a Power BI scorecard.
+- **Post Goal Note**: Adds a new note to a goal value check-in for a Power BI scorecard goal.
+- **Post Goal Status Rules**: Creates or updates status rules of a goal in Power BI.
+- **Rebind Report to Dataset**: Rebinds the specified report from the specified workspace to the specified dataset.
+- **Set Linked Report Cache Options**: Replaces the CacheOption's content for a given LinkedReport using the provided definition.
+- **Take Over Dataset**: Transfers ownership over the specified dataset to the current authorized user.
+- **Take Over Paginated Report Ownership**: Transfers ownership of the data sources for the specified paginated report (RDL) to the current authorized user.
+- **Trigger Dataset Refresh in Workspace**: Triggers a refresh for the specified dataset from the specified workspace.
+- **Trigger Query Scale Out Sync**: Triggers a query scale-out sync of read-only replicas for the specified dataset from My workspace.
+- **Trigger Query Scale Out Sync in Workspace**: Triggers a query scale-out sync of read-only replicas for the specified dataset from the specified workspace.
+- **Update Dataset**: Updates the properties for the specified dataset from My workspace.
+- **Update Dataset In Workspace**: Updates the properties for the specified dataset from the specified workspace.
+- **Update Dataset Parameters in Workspace**: Updates the parameters values for the specified dataset from the specified workspace.
+- **Update Paginated Report Data Sources**: Updates the data sources of the specified paginated report (RDL) from the specified workspace.
+- **Update Refresh Schedule**: Updates the refresh schedule for the specified dataset from My workspace.
+- **Update Refresh Schedule In Group**: Updates the refresh schedule for the specified dataset from the specified workspace.
+- **Update Report Content**: Updates the content of the specified report from **My workspace** with the content of a specified source report.
+- **Update Table Schema**: Updates the metadata and schema for the specified table within the specified dataset from My workspace.
+- **Update Table Schema in Workspace**: Updates the metadata and schema for the specified table within the specified dataset from the specified workspace.
+- **Update Workspace**: Updates the properties for the specified workspace.

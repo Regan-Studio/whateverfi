@@ -1,0 +1,128 @@
+# Celigo
+
+Integration platform as a service (iPaaS) for connecting applications and automating workflows
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/celigo/.
+
+## Actions
+
+- **Create Connection**: Create a new connection in Celigo to store credentials and application access information.
+- **Create Export**: Create a new export in Celigo for extracting data from an application.
+- **Create Flow**: Create a new flow in Celigo that composes export and import components together.
+- **Create Import**: Create a new import for inserting data into an application.
+- **Create Integration**: Create a new integration in Celigo to group flows together.
+- **Delete Connection**: Delete a specific connection in Celigo.
+- **Delete Export**: Delete a specific export from Celigo.
+- **Delete Flow**: Delete a specific flow from Celigo.
+- **Delete Import**: Delete a specific import from Celigo integrator.io.
+- **Delete Integration**: Delete a specific integration from Celigo integrator.io.
+- **Get Connection by ID** (read-only): Get a specific connection by its ID.
+- **Get Export** (read-only): Retrieve a specific export by its ID from Celigo Integrator.io.
+- **Get Flow by ID** (read-only): Retrieve a specific Celigo flow by its ID.
+- **Get Import** (read-only): Retrieve a specific import by its ID from the Celigo Integrator API.
+- **List Connections** (read-only): Retrieve all connections in Celigo.
+- **List Exports** (read-only): Retrieve all exports from Celigo integrator.io.
+- **List Flows** (read-only): Retrieve all flows from Celigo.
+- **List Imports** (read-only): Retrieve all imports from Celigo integrator.io.
+- **List Integrations** (read-only): Retrieve all integrations from Celigo.
+- **Patch Integration**: Update part of an integration using JSON Patch operations (RFC 6902).
+- **Update Connection**: Update a connection's configuration or credentials in Celigo.
+- **Update Export**: Update an existing export configuration in Celigo.
+- **Update Flow**: Update a specific flow's configuration in Celigo.
+- **Update Import**: Update a specific import's configuration in Celigo.
+- **Update Integration**: Update a specific integration's configuration in Celigo.
+- **Assign Export Error**: Assign an export error to a user in Celigo.
+- **Clone Export**: Clone a specific export to create a copy.
+- **Clone Flow**: Clone a specific flow to create a copy.
+- **Clone Import**: Clone a specific import to create a copy with remapped connections.
+- **Clone Integration**: Clone a specific integration to create a copy.
+- **Create File Definition**: Create a file definition in Celigo for defining data file structure and format.
+- **Create iClient**: Create a new iClient for SmartConnector authentication in Celigo.
+- **Create Integration Revision**: Create a snapshot revision of a specific integration.
+- **Create Script**: Create a new custom JavaScript script in Celigo for data transformation operations.
+- **Create Tag**: Create a new tag in Celigo for organizing and categorizing resources.
+- **Create User**: Create a new user in your Celigo integrator.io account by sending an invitation.
+- **Delete All Resource State**: Delete all state keys and values stored under a specific resource.
+- **Delete All State**: Delete all global state keys and values in Celigo.
+- **Delete iClient**: Delete a specific iClient from Celigo.
+- **Delete Resolved Errors**: Delete resolved errors for a specific export in Celigo.
+- **Delete Resource State Value**: Delete the resource-specific key and value from state.
+- **Delete Script**: Delete a specific script from Celigo.
+- **Delete State Value**: Delete the specified state key and its value.
+- **Delete Tag**: Delete a specific tag from Celigo integrator.io.
+- **Delete User**: Delete a specific user from your Celigo account.
+- **Evaluate Virtual Import Map** (read-only): Evaluate the mapping step of a virtual import and return post-mapped records.
+- **Execute Virtual Export**: Execute a virtual export using a connection by posting the export model.
+- **Execute Virtual Import**: Execute a virtual import by posting import configuration and data to a connection.
+- **Generate Structured File**: Generate sample EDI data or structured files from input data.
+- **Get All Users** (read-only): Retrieve all users from your Celigo account.
+- **Get Connection Audit Logs** (read-only): Retrieve audit logs for a specific connection.
+- **Get Connection Debug Logs** (read-only): Retrieve debug logs for a connection by its ID.
+- **Get Connection Dependencies** (read-only): Retrieve all resources using or used by a specific connection.
+- **Get EDI Profiles** (read-only): Retrieve all EDI profiles for the account.
+- **Get Export Audit Log** (read-only): Retrieve audit logs for a specific export in Celigo.
+- **Get Export Errors** (read-only): Retrieve all open errors for a specific export within a flow.
+- **Get File Definition** (read-only): Retrieve a specific file definition by its ID from Celigo Integrator.io.
+- **Get File Definitions** (read-only): Retrieve all file definitions from Celigo.
+- **Get Flow Audit Logs** (read-only): Retrieve audit logs for a specific flow.
+- **Get Flow Dependencies** (read-only): Retrieve all resources using or used by a specific flow.
+- **Get Flow Descendants** (read-only): Retrieve all descendant resources of a specific flow.
+- **Get Flow Last Export Datetime** (read-only): Retrieve the last export datetime for a specific Celigo flow.
+- **Get Flow Latest Jobs** (read-only): Retrieve the latest job executions for a specific flow.
+- **Get Flow Template** (read-only): Download a Celigo flow as a template.
+- **Get iClient by ID** (read-only): Get a specific iClient by its ID.
+- **Get Import Audit Logs** (read-only): Retrieve audit logs for a specific import.
+- **Get Import Dependencies** (read-only): Retrieve all resources using or used by a specific import.
+- **Get Import State** (read-only): Retrieve all state keys for a specific import from Celigo Integrator.
+- **Get Integration Audit Logs** (read-only): Retrieve audit logs for a specific integration.
+- **Get Integration Connections** (read-only): Retrieve all connections associated with a specific integration.
+- **Get Integration Dependencies** (read-only): Retrieve all resources using or used by a specific integration.
+- **Get Integration Errors** (read-only): Retrieve all open errors for a specific integration in Celigo.
+- **Get Integration Exports** (read-only): Retrieve all exports associated with a specific integration.
+- **Get Integration Flows** (read-only): Retrieve all flows associated with a specific integration.
+- **Get Integration Imports** (read-only): Retrieve all imports associated with a specific integration.
+- **Get Integration Template** (read-only): Download a Celigo integration as a template.
+- **Get Integration Users** (read-only): Retrieve users associated with a specific integration.
+- **Get Job Errors** (read-only): Retrieve errors for a specific job in Celigo.
+- **Get Resolved Errors** (read-only): Retrieve resolved errors for a specific export within a flow in Celigo.
+- **Get Resource State Value** (read-only): Get the resource-specific value associated with a state key.
+- **Get Script** (read-only): Retrieve a specific script by its ID from Celigo.
+- **Get Script Logs** (read-only): Retrieve logs for a specific Celigo script by its ID.
+- **Get State Value** (read-only): Get the value associated with a specified state key.
+- **Get Tag** (read-only): Retrieve a specific tag by its ID from Celigo Integrator.io.
+- **Get Tags** (read-only): Retrieve all tags from Celigo.
+- **Get Token Info** (read-only): Retrieve information about the current API token.
+- **Get User Share** (read-only): Retrieve a specific user share (ashare) by its ID.
+- **Invite Multiple Users**: Invite multiple users to a Celigo account with specified access levels.
+- **Invite User**: Invite a user to a Celigo account with specified access levels.
+- **Invoke Import**: Trigger/invoke a Celigo import by its ID.
+- **List Audit Logs** (read-only): Retrieve all audit logs for resource changes.
+- **List iClients** (read-only): Retrieve all iClients in Celigo.
+- **List Jobs** (read-only): Retrieve all jobs from Celigo with optional filters.
+- **List Licenses** (read-only): Retrieve all SmartConnector licenses in Celigo.
+- **List Resource State** (read-only): Retrieve all state keys for a specific resource in Celigo.
+- **List State Keys** (read-only): Retrieve all global state keys from Celigo.
+- **Parse CSV to JSON** (read-only): Convert CSV data to JSON format using Celigo's CSV parser.
+- **Parse Structured File** (read-only): Convert EDI or structured file data (delimited or fixed-width) to JSON format.
+- **Parse XML to JSON** (read-only): Convert XML data to JSON format using Celigo's XML parser processor.
+- **Patch Connection**: Update part of a connection using JSON Patch operations (RFC 6902).
+- **Patch Export**: Update specific fields of an export using JSON Patch operations.
+- **Patch Flow**: Update part of a specific flow using JSON Patch operations (RFC 6902).
+- **Patch iClient**: Update part of an iClient using JSON Patch operations (RFC 6902).
+- **Patch Import**: Update specific fields of an import using JSON Patch operations.
+- **Ping Connection** (read-only): Test that a specific Celigo connection is operational by pinging it.
+- **Register Connection**: Register a connection to an integration in Celigo.
+- **Register Connections Bulk**: Register multiple connections to an integration in Celigo at once.
+- **Resolve Errors**: Resolve specified errors for an export in Celigo.
+- **Retry Errors**: Retry specified errors for an export in Celigo.
+- **Test Virtual Connection** (read-only): Test a virtual connection where all details are submitted in the POST body but not saved.
+- **Unregister Connection from Integration**: Unregister a connection from an integration in Celigo.
+- **Update Flow Error Tags**: Update error tags for a specific flow export in Celigo.
+- **Update iClient**: Update a specific iClient's configuration in Celigo.
+- **Update Import State**: Update state for a specific import in Celigo.
+- **Update Resource State Value**: Create or update the resource-specific state value for any Celigo resource type.
+- **Update Script**: Update a specific script's code or configuration in Celigo.
+- **Update State Value**: Create or update the value associated with a specified state key.
+- **Update Tag**: Update a tag's name in Celigo.
+- **Update User**: Update a specific user's account in Celigo.
+- **Virtual Export with Paging** (read-only): Execute a virtual export with paging support for Celigo connections.

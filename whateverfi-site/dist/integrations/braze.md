@@ -1,0 +1,127 @@
+# Braze
+
+Braze is a customer engagement platform for managing user data, messaging, campaigns, analytics, catalogs, templates, and workspace automation.
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/braze/.
+
+## Actions
+
+- **Blocklist Emails**: HIGH IMPACT.
+- **Cancel Segment Exports**: Ask Braze to cancel all ongoing exports for a segment.
+- **Create and Update Users**: Asynchronously ingest Braze attributes, custom events, or purchases, up to 75 combined objects per portable request.
+- **Create Catalog**: Create one persistent catalog in the connected Braze workspace.
+- **Create Catalog Fields**: Asynchronously create up to 50 fields in one Braze catalog.
+- **Create Catalog Item**: Synchronously create one Braze catalog item by exact item ID.
+- **Create Catalog Selection**: Asynchronously create one Braze catalog selection.
+- **Create Content Block**: Persist a reusable HTML or text Content Block in the connected Braze workspace.
+- **Create Email Template**: Persist an HTML email template on Braze's Templates & Media page.
+- **Create Media Library Asset**: Upload one asset to Braze from a public HTTP(S) URL or local file.
+- **Create Message Schedule**: HIGH IMPACT.
+- **Create Multiple Catalog Items**: Asynchronously create up to 50 Braze catalog items.
+- **Create Preference Center**: HIGH IMPACT.
+- **Create SDK Authentication Key**: HIGH IMPACT SECURITY OPERATION.
+- **Create Send ID**: Create or assign a send ID for programmatic message-performance tracking.
+- **Create User Aliases**: Add up to 50 Braze aliases to existing external-ID users or create alias-only profiles.
+- **Delete Campaign Trigger Schedule**: HIGH IMPACT.
+- **Delete Canvas Trigger Schedule**: HIGH IMPACT.
+- **Delete Catalog**: Permanently delete one Braze catalog and all of its contents by exact catalog name through DELETE /catalogs/{catalog_name}.
+- **Delete Catalog Field**: Asynchronously request deletion of one field by exact catalog and field name.
+- **Delete Catalog Item**: Request deletion of one catalog item by exact catalog name and item ID.
+- **Delete Catalog Selection**: Asynchronously request deletion of a selection by exact catalog and selection name.
+- **Delete Message Schedule**: HIGH IMPACT.
+- **Delete Multiple Catalog Items**: Asynchronously request deletion of up to 50 catalog items by exact IDs.
+- **Delete SDK Authentication Key**: HIGH IMPACT SECURITY OPERATION.
+- **Delete Users**: Permanently queue deletion of up to 50 users using exactly one identifier type.
+- **Duplicate Campaign**: HIGH IMPACT.
+- **Duplicate Canvas**: HIGH IMPACT.
+- **End Live Activity**: IRREVERSIBLE.
+- **Export Global Control Group Users** (read-only): Start an asynchronous export of all current Global Control Group users.
+- **Export Segment Users** (read-only): Start an asynchronous newline-delimited JSON export for one segment.
+- **Export Users by Identifiers** (read-only): Return user profiles matching one or more Braze, external, alias, device, email, or phone identifiers.
+- **Generate Preference Center URL** (read-only): Generate a user-specific URL for an API-created or drag-and-drop Braze preference center.
+- **Get Campaign** (read-only): Return configuration and delivery details for one campaign identified by its Braze campaign ID.
+- **Get Campaign Analytics** (read-only): Get up to 100 daily campaign analytics points.
+- **Get Campaign Translation Source** (read-only): Read the default source values inside translation tags for one campaign message variation.
+- **Get Canvas** (read-only): Return configuration and step details for one Canvas identified by its Braze Canvas ID.
+- **Get Canvas Analytics** (read-only): Export Canvas daily time-series analytics with optional variant, step, and deleted-step breakdowns.
+- **Get Canvas Analytics Summary** (read-only): Export Canvas analytics rollups with optional variant, step, and deleted-step breakdowns.
+- **Get Canvas Translation Source** (read-only): Read default source values inside translation tags for one Canvas step message variation.
+- **Get Catalog Item** (read-only): Return one Braze catalog item by exact catalog name and item ID.
+- **Get Content Block** (read-only): Return one persisted Braze Content Block by API identifier, optionally with its current campaign and Canvas inclusion records.
+- **Get Content Block Translation Source** (read-only): Read default source values inside one Content Block's translation tags.
+- **Get Custom Event Analytics** (read-only): Get 1 to 100 daily or hourly occurrence counts for one custom event, optionally filtered by app and analytics-enabled segment.
+- **Get Email Template** (read-only): Return one stored HTML email template by API identifier.
+- **Get Email Template Translation Source** (read-only): Read default source values inside an email template's translation tags.
+- **Get Preference Center** (read-only): Get persisted HTML, state, options, identifiers, and timestamps for one Braze preference center.
+- **Get Purchase Series** (read-only): Get 1 to 100 daily or hourly purchase quantity or revenue points, optionally filtered by app and product.
+- **Get Segment** (read-only): Return Braze's documented configuration details for one segment identified by its segment API identifier.
+- **Get Segment Analytics** (read-only): Get up to 100 daily estimated segment-size points.
+- **Get Send Analytics** (read-only): Get up to 100 daily analytics points for a tracked send from an API campaign.
+- **Get Session Analytics** (read-only): Get 1 to 100 daily or hourly session-count points, optionally filtered by app and analytics-enabled segment.
+- **Get Subscription Group Status** (read-only): Get saved membership status for up to 50 users in one exact subscription group.
+- **Get User KPI Series** (read-only): Get 1 to 100 points for one user KPI.
+- **Get Webhook Template Translation Source** (read-only): Read default source values inside a webhook template's translation tags.
+- **Identify Users**: Assign external IDs to alias-only, email-only, or phone-only Braze profiles, merging into an existing identified profile when applicable.
+- **List Campaign Translations** (read-only): View every configured locale translation map for one campaign message variation, or filter by locale.
+- **List Campaigns** (read-only): Return one page of Braze campaigns for discovery, optionally including archived campaigns and filtering by last edit time.
+- **List Canvas Translations** (read-only): Preview configured locale translations for one Canvas step message variation.
+- **List Canvases** (read-only): Return one fixed provider page of up to 100 Braze Canvases for discovery, optionally including archived Canvases and filtering by last…
+- **List Catalog Items** (read-only): Return one fixed provider page of up to 50 items from a Braze catalog, preserving arbitrary item attributes and exposing Braze Link-header…
+- **List Catalogs** (read-only): Return all catalogs in the connected Braze workspace.
+- **List Cloud Data Ingestion Integrations** (read-only): Return one 10-item page of configured Cloud Data Ingestion integrations.
+- **List Cloud Data Ingestion Sync Statuses** (read-only): Return one 10-item page of sync statuses for a Cloud Data Ingestion integration.
+- **List Content Block Translations** (read-only): View every configured locale translation map for one Content Block, or filter by locale.
+- **List Content Blocks** (read-only): Return one offset-based page of persisted Braze Content Blocks.
+- **List Custom Attributes** (read-only): Return one fixed provider page of up to 50 alphabetically sorted custom-attribute definitions and a Link-header continuation cursor.
+- **List Custom Event Names** (read-only): Return one fixed provider page of up to 250 alphabetically sorted custom event names.
+- **List Custom Events** (read-only): Return one fixed provider page of up to 50 alphabetically sorted custom-event definitions and a Link-header continuation cursor.
+- **List Email Template Locale Translations** (read-only): View email template translations, optionally filtered to one locale.
+- **List Email Template Translations** (read-only): View all configured translations and locales for one email template.
+- **List Email Templates** (read-only): Return one offset-based page of stored HTML email templates.
+- **List Hard Bounced Emails** (read-only): Return one newest-first offset page of hard-bounced emails.
+- **List Invalid Phone Numbers** (read-only): Return one newest-first offset page of invalid SMS numbers by UTC date range, or check exact E.164 numbers.
+- **List Preference Centers** (read-only): List all available Braze preference centers and their IDs and timestamps.
+- **List Purchase Products** (read-only): Return every product ID from an optional caller-selected provider page.
+- **List Scheduled Broadcasts** (read-only): List dashboard and API scheduled campaigns and Canvas entries through an ISO 8601 end date.
+- **List SDK Authentication Keys** (read-only): HIGH IMPACT SECURITY READ.
+- **List Segments** (read-only): Return one fixed provider page of up to 100 Braze segments and their IDs for audience discovery.
+- **List Unsubscribed Emails** (read-only): Return one offset page of latest unsubscribe records for a UTC date range or exact email.
+- **List User Subscription Groups** (read-only): Return one offset page of subscription groups that have status history for users selected by exactly one email or phone identifier type.
+- **List Webhook Template Translations** (read-only): View configured translations for one webhook template, optionally filtered by locale.
+- **Merge Users**: Asynchronously merge up to 50 Braze source profiles into retained target profiles.
+- **Remove Deprecated External IDs**: Permanently remove up to 50 deprecated Braze external IDs.
+- **Remove Emails From Spam List**: HIGH IMPACT.
+- **Remove Hard Bounced Emails**: HIGH IMPACT.
+- **Remove Invalid Phone Numbers**: HIGH IMPACT.
+- **Rename External IDs**: Rename up to 50 primary Braze external IDs, preserving each old ID as deprecated.
+- **Replace Catalog Item**: Synchronously replace a Braze catalog item, creating it if item_id does not exist.
+- **Replace Media Library Asset File**: HIGH IMPACT.
+- **Replace Multiple Catalog Items**: Asynchronously replace or create up to 50 Braze catalog items by id.
+- **Schedule Campaign Trigger**: HIGH IMPACT.
+- **Schedule Canvas Trigger**: HIGH IMPACT.
+- **Send API-Only Messages**: HIGH IMPACT.
+- **Send Campaign Trigger**: HIGH IMPACT.
+- **Send Canvas Trigger**: HIGH IMPACT.
+- **Send Transactional Campaign**: HIGH IMPACT.
+- **Set Global Email Subscription Status**: HIGH IMPACT.
+- **Set Primary SDK Authentication Key**: HIGH IMPACT SECURITY OPERATION.
+- **Set Subscription Group Status**: HIGH IMPACT.
+- **Set Subscription Group Statuses**: HIGH IMPACT.
+- **Start Live Activity**: HIGH IMPACT.
+- **Trigger Cloud Data Ingestion Sync**: HIGH IMPACT.
+- **Update Campaign Translations**: Submit a durable update request with translation-tag string values for one campaign message locale.
+- **Update Campaign Trigger Schedule**: HIGH IMPACT.
+- **Update Canvas Translations**: Submit a durable update request with translation-tag string values for one Canvas step message locale.
+- **Update Canvas Trigger Schedule**: HIGH IMPACT.
+- **Update Catalog Item**: Synchronously patch one existing Braze catalog item.
+- **Update Content Block**: Persist changes to one existing Braze Content Block by API identifier.
+- **Update Content Block Translations**: Submit a durable update request with translation-tag string values for one Content Block locale.
+- **Update Email Template**: Persist one or more changes to an existing Braze email template by API identifier.
+- **Update Email Template Translations**: Submit a durable update request with translation-tag string values for one email template locale.
+- **Update Live Activity**: Update an SDK-registered iOS Live Activity without ending it.
+- **Update Message Schedule**: HIGH IMPACT.
+- **Update Multiple Catalog Items**: Asynchronously patch up to 50 existing Braze catalog items.
+- **Update Preference Center**: HIGH IMPACT.
+- **Update Push Credentials**: HIGH IMPACT.
+- **Update User Aliases**: Asynchronously request renaming of up to 50 existing Braze aliases.
+- **Update Webhook Template Translations**: Submit a durable update request with translation-tag string values for one webhook template locale.

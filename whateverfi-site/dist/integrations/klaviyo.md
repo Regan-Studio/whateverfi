@@ -1,0 +1,239 @@
+# Klaviyo
+
+Klaviyo is a data-driven email and SMS marketing platform that allows e-commerce brands to deliver targeted messages, track conversions, and scale customer relationships
+
+Category: Marketing. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/klaviyo/.
+
+## Actions
+
+- **Add Profile to List**: Add profiles to a klaviyo list by profile ids or email addresses.
+- **Create Campaign Recipient Estimation Job**: Start an asynchronous task to estimate the number of recipients for a campaign.
+- **Create event**: Create or update a profile event with minimum identifiers and metric name.
+- **Create list**: Create a new list.<br><br>*rate limits*.
+- **Create or Update Profile**: Create or update a profile in klaviyo with the given attributes.
+- **Create profile**: Create a new profile.<br><br>*rate limits*.
+- **Get Campaign** (read-only): Retrieve a specific campaign by its id from klaviyo.
+- **Get Campaigns** (read-only): Retrieve campaigns from your klaviyo account.
+- **Get events** (read-only): Get all events in an account requests can be sorted by the following fields.
+- **Get Lists** (read-only): Retrieve marketing lists from your klaviyo account.
+- **Get Profiles** (read-only): Retrieve profiles from your klaviyo account.
+- **Update Campaign**: Update a campaign with the specified attributes.
+- **Assign campaign message template**: Creates a non-reusable version of the template and assigns it to the message.<br><br>*rate limits*.
+- **Bulk create client events**: Use the client-side endpoint with a public api key to track profile activity.
+- **Bulk create events**: This api endpoint creates or updates profiles by batching up to 1,000 events, with a 5mb payload limit.
+- **Create back in stock subscription**: Use the server-side endpoint to subscribe to restock alerts, following the back in stock api guide.
+- **Create campaign**: Creates a campaign given a set of parameters, then returns it.<br><br>*rate limits*.
+- **Create campaign clone**: Clones an existing campaign, returning a new campaign based on the original with a new id and name.<br><br>*rate limits*.
+- **Create campaign send job**: Trigger a campaign to send asynchronously<br><br>*rate limits*.
+- **Create catalog category**: Create a new catalog category.<br><br>*rate limits*.
+- **Create catalog category relationships items**: Create a new item relationship for the given category id.<br><br>*rate limits*.
+- **Create catalog item**: Create a new catalog item.<br><br>*rate limits*.
+- **Create catalog item relationships categories**: Create a new catalog category relationship for the given item id.<br><br>*rate limits*.
+- **Create catalog variant**: Create a new variant for a related catalog item.<br><br>*rate limits*.
+- **Create client back in stock subscription**: Use the endpoint for client-side back in stock notifications with a public api key.
+- **Create client event**: Create client-side events to track profiles using a public api key, not for updating identifiers (server-side only).
+- **Create client subscription**: Endpoint manages email/sms opt-ins using consent and requires public api key for client use.
+- **Create coupon**: Creates a new coupon.<br><br>*rate limits*.
+- **Create coupon code**: Synchronously creates a coupon code for the given coupon.<br><br>*rate limits*.
+- **Create or update client profile**: Update user profiles without tracking using a public client-side api.
+- **Create or update client push token**: This endpoint for mobile sdks (ios & android) creates/updates push tokens using a public api key.
+- **Create or update push token**: Migrate or create push tokens with klaviyo's endpoint, utilizing their mobile sdks for ios & android.
+- **Create segment**: Create a segment.<br><br>*rate limits*.
+- **Create tag**: Summary.
+- **Create tag group**: Create tag groups up to 50 per account, defaulting to non-exclusive unless specified.
+- **Create tag relationships campaigns**: Summary.
+- **Create tag relationships flows**: Assign tags to flows using their ids in the request body, ensuring a flow is not linked to over 100 tags.
+- **Create tag relationships lists**: Summary.
+- **Create tag relationships segments**: Summary.
+- **Create template**: Summary.
+- **Create template clone**: Clone a template by its id, but cloning fails if account has 1,000+ templates.
+- **Create template render** (read-only): Render an email template with specific context and sparse fieldsets, then get html/plain text.
+- **Create webhook**: Create a new webhook<br><br>*rate limits*.
+- **Delete campaign**: Delete a campaign with the given campaign id.<br><br>*rate limits*.
+- **Delete catalog category**: Delete a catalog category using the given category id.<br><br>*rate limits*.
+- **Delete catalog category relationships items**: Delete item relationships for the given category id.<br><br>*rate limits*.
+- **Delete catalog item**: Delete a catalog item with the given item id.<br><br>*rate limits*.
+- **Delete catalog item relationships categories**: Delete catalog category relationships for the given item id.<br><br>*rate limits*.
+- **Delete catalog variant**: Delete a catalog item variant with the given variant id.<br><br>*rate limits*.
+- **Delete coupon**: Delete the coupon with the given coupon id.<br><br>*rate limits*.
+- **Delete coupon code**: Deletes a coupon code specified by the given identifier synchronously.
+- **Delete flow**: Delete a flow with the given flow id.<br><br>*rate limits*.
+- **Delete list**: Delete a list with the given list id.<br><br>*rate limits*.
+- **Delete segment**: Delete a segment with the given segment id.<br><br>*rate limits*.
+- **Delete tag**: Delete the tag with the given tag id.
+- **Delete tag group**: Delete a specified tag group and its contents.
+- **Delete tag relationships campaigns**: Disconnect a tag from campaigns using the campaign id(s) in the request body.
+- **Delete tag relationships flows**: Remove a tag's association with one or more flows.
+- **Delete tag relationships lists**: Remove a tag's association with one or more lists.
+- **Delete tag relationships segments**: Use the request body to de-associate a tag from specified segment ids.
+- **Delete template**: Delete a template with the given template id.<br><br>*rate limits*.
+- **Delete webhook**: Delete a webhook with the given id.<br><br>*rate limits*.
+- **Get account** (read-only): Retrieve a single account object by its account id.
+- **Get accounts** (read-only): Use a private api key to fetch an associated account's details like contact info, timezone, and currency, as well as validate the key.
+- **Get bulk profile import job** (read-only): Get a bulk profile import job with the given job id.<br><br>*rate limits*.
+- **Get bulk profile import job errors** (read-only): Get import errors for the bulk profile import job with the given id.<br><br>*rate limits*.
+- **Get bulk profile import job lists** (read-only): Get list for the bulk profile import job with the given id.<br><br>*rate limits*.
+- **Get bulk profile import job profiles** (read-only): Get profiles for the bulk profile import job with the given id.<br><br>*rate limits*.
+- **Get bulk profile import job relationships lists** (read-only): Get list relationship for the bulk profile import job with the given id.<br><br>*rate limits*.
+- **Get bulk profile import job relationships profiles** (read-only): Get profile relationships for the bulk profile import job with the given id.<br><br>*rate limits*.
+- **Get bulk profile import jobs** (read-only): Get all bulk profile import jobs.
+- **Get campaign campaign messages** (read-only): Return all messages that belong to the given campaign.<br><br>*rate limits*.
+- **Get campaign message** (read-only): Returns a specific message based on a required id.<br><br>*rate limits*.
+- **Get campaign message campaign** (read-only): Return the related campaign<br><br>*rate limits*.
+- **Get campaign message relationships campaign** (read-only): Returns the id of the related campaign<br><br>*rate limits*.
+- **Get campaign message relationships template** (read-only): Returns the id of the related template<br><br>*rate limits*.
+- **Get campaign message template** (read-only): Return the related template<br><br>*rate limits*.
+- **Get campaign recipient estimation** (read-only): Get estimated recipients for a given campaign id using create campaign recipient estimation job.
+- **Get campaign recipient estimation job** (read-only): Retrieve the status of a recipient estimation job triggered with the create campaign recipient estimation job endpoint.<br><br>*rate…
+- **Get campaign relationships campaign messages** (read-only): Returns the ids of all messages associated with the given campaign.<br><br>*rate limits*.
+- **Get campaign relationships tags** (read-only): Returns the ids of all tags associated with the given campaign.<br><br>*rate limits*.
+- **Get campaign send job** (read-only): Get a campaign send job<br><br>*rate limits*.
+- **Get campaign tags** (read-only): Return all tags that belong to the given campaign.<br><br>*rate limits*.
+- **Get catalog categories** (read-only): Retrieve up to 100 account catalog categories, sortable by creation date.
+- **Get catalog category** (read-only): Get a catalog category with the given category id.<br><br>*rate limits*.
+- **Get catalog category items** (read-only): Retrieve up to 100 sorted items per request from a category using the category id.
+- **Get catalog category relationships items** (read-only): Get all items in the given category id.
+- **Get catalog item** (read-only): Get a specific catalog item with the given item id.<br><br>*rate limits*.
+- **Get catalog item categories** (read-only): Retrieve the catalog categories for an item by id, sorted by 'created' date, with a 100-category maximum per request.
+- **Get catalog item relationships categories** (read-only): Get all catalog categories that a particular item is in.
+- **Get catalog item variants** (read-only): Retrieve up to 100 variants per request for a specific item id, sortable by creation date.
+- **Get catalog items** (read-only): Retrieve up to 100 sorted catalog items per account, with $custom integration and $default type.
+- **Get catalog variant** (read-only): Get a catalog item variant with the given variant id.<br><br>*rate limits*.
+- **Get catalog variants** (read-only): Retrieve up to 100 account variants per request, sortable by creation date.
+- **Get coupon** (read-only): Get a specific coupon with the given coupon id.<br><br>*rate limits*.
+- **Get coupon code** (read-only): Returns a coupon code specified by the given identifier.<br><br>*rate limits*.
+- **Get coupon code bulk create job** (read-only): Get a coupon code bulk create job with the given job id.<br><br>*rate limits*.
+- **Get coupon code bulk create jobs** (read-only): Get all coupon code bulk create jobs.
+- **Get coupon code relationships coupon** (read-only): Gets a list of coupon code relationships associated with the given coupon id<br><br>*rate limits*.
+- **Get coupon codes** (read-only): Obtains coupon codes using necessary coupon or profile filters.
+- **Get coupon codes for coupon** (read-only): Gets a list of coupon codes associated with the given coupon id<br><br>*rate limits*.
+- **Get coupon for coupon code** (read-only): Get the coupon associated with a given coupon code id.<br><br>*rate limits*.
+- **Get coupon relationships coupon codes** (read-only): Gets the coupon relationship associated with the given coupon code id<br><br>*rate limits*.
+- **Get coupons** (read-only): Get all coupons in an account.
+- **Get create categories job** (read-only): Get a catalog category bulk create job with the given job id.
+- **Get create categories jobs** (read-only): Get all catalog category bulk create jobs.
+- **Get create items job** (read-only): Get a catalog item bulk create job with the given job id.
+- **Get create items jobs** (read-only): Get all catalog item bulk create jobs.
+- **Get create variants job** (read-only): Get a catalog variant bulk create job with the given job id.
+- **Get create variants jobs** (read-only): Get all catalog variant bulk create jobs.
+- **Get delete categories job** (read-only): Get a catalog category bulk delete job with the given job id.<br><br>*rate limits*.
+- **Get delete categories jobs** (read-only): Get all catalog category bulk delete jobs.
+- **Get delete items job** (read-only): Get a catalog item bulk delete job with the given job id.<br><br>*rate limits*.
+- **Get delete items jobs** (read-only): Get all catalog item bulk delete jobs.
+- **Get delete variants job** (read-only): Get a catalog variant bulk delete job with the given job id.<br><br>*rate limits*.
+- **Get delete variants jobs** (read-only): Get all catalog variant bulk delete jobs.
+- **Get event** (read-only): Get an event with the given event id.<br><br>*rate limits*.
+- **Get event metric** (read-only): Get the metric for an event with the given event id.<br><br>*rate limits*.
+- **Get event profile** (read-only): Get the profile associated with an event with the given event id.<br><br>*rate limits*.
+- **Get event relationships metric** (read-only): Get a list of related metrics for an event<br><br>*rate limits*.
+- **Get event relationships profile** (read-only): Get profile [relationships](https.
+- **Get flow** (read-only): Get a flow with the given flow id.<br><br>*rate limits*.
+- **Get flow action** (read-only): Get a flow action from a flow with the given flow action id.<br><br>*rate limits*.
+- **Get flow action for message** (read-only): Get the flow action for a flow message with the given message id.<br><br>*rate limits*.
+- **Get flow action messages** (read-only): Retrieve up to 50 flow messages per request by action id, sortable by various fields, with ascending/descending options, and paginated…
+- **Get flow action relationships flow** (read-only): Get the flow associated with the given action id.<br><br>*rate limits*.
+- **Get flow action relationships messages** (read-only): Retrieves up to 50 flow message relationships per request for a specified flow action id, with cursor pagination.
+- **Get flow flow actions** (read-only): Get all flow actions associated with the given flow id.
+- **Get flow for flow action** (read-only): Get the flow associated with the given action id.<br><br>*rate limits*.
+- **Get flow message** (read-only): Get the flow message of a flow with the given message id.<br><br>*rate limits*.
+- **Get flow message relationships action** (read-only): Get the [relationship](https.
+- **Get flow message relationships template** (read-only): Returns the id of the related template<br><br>*rate limits*.
+- **Get flow message template** (read-only): Return the related template<br><br>*rate limits*.
+- **Get flow relationships flow actions** (read-only): Retrieve all flow action relationships for a specific flow id, sortable by id, status, created, updated.
+- **Get flow relationships tags** (read-only): Return the tag ids of all tags associated with the given flow.<br><br>*rate limits*.
+- **Get flow tags** (read-only): Return all tags associated with the given flow id.<br><br>*rate limits*.
+- **Get flows** (read-only): Get all flows in an account.
+- **Get form** (read-only): Get the form with the given id.<br><br>*rate limits*.
+- **Get form for form version** (read-only): Get the form associated with the given form version.<br><br>*rate limits*.
+- **Get form id for form version** (read-only): Get the id of the form associated with the given form version.<br><br>*rate limits*.
+- **Get form version** (read-only): Get the form version with the given id.<br><br>*rate limits*.
+- **Get forms** (read-only): Get all forms in an account.<br><br>*rate limits*.
+- **Get image** (read-only): Get the image with the given image id.<br><br>*rate limits*.
+- **Get images** (read-only): Get all images in an account.<br><br>*rate limits*.
+- **Get list** (read-only): Api allows 75 req/sec and 700 req/min, but with 'profile count' param, it's 1 req/sec and 15 req/min.
+- **Get list profiles** (read-only): Retrieve profiles in a list by id, filterable by email/phone/push token/join date, sortable by join date.
+- **Get list relationships profiles** (read-only): Get profile membership [relationships](https.
+- **Get list relationships tags** (read-only): Returns the tag ids of all tags associated with the given list.<br><br>*rate limits*.
+- **Get list tags** (read-only): Return all tags associated with the given list id.<br><br>*rate limits*.
+- **Get metric** (read-only): Get a metric with the given metric id.<br><br>*rate limits*.
+- **Get metrics** (read-only): Get all metrics in an account.
+- **Get profile** (read-only): Get the profile with the given profile id.<br><br>*rate limits*.
+- **Get profile lists** (read-only): Get list memberships for a profile with the given profile id.<br><br>*rate limits*.
+- **Get profile relationships lists** (read-only): Get list memberships for a profile with the given profile id.<br><br>*rate limits*.
+- **Get profile relationships segments** (read-only): Get segment membership relationships for a profile with the given profile id.<br><br>*rate limits*.
+- **Get profile segments** (read-only): Get segment memberships for a profile with the given profile id.<br><br>*rate limits*.
+- **Get segment** (read-only): Fetch a segment by id with default rates of 75/s and 700/m, or with additional-fields at 1/s and 15/m.
+- **Get segment profiles** (read-only): Retrieve profiles in a segment by id, filtering by email, phone, token, or join date, and sorting by join date.
+- **Get segment relationships profiles** (read-only): Get all profile membership [relationships](https.
+- **Get segment relationships tags** (read-only): If related resource is tags, returns the tag ids of all tags associated with the given segment id.<br><br>*rate limits*.
+- **Get segment tags** (read-only): Return all tags associated with the given segment id.<br><br>*rate limits*.
+- **Get segments** (read-only): Fetch segments from an account with filters like name, created, and updated.
+- **Get tag** (read-only): Retrieve the tag with the given tag id.<br><br>*rate limits*.
+- **Get tag group** (read-only): Retrieve the tag group with the given tag group id.<br><br>*rate limits*.
+- **Get tag group relationships tags** (read-only): Returns the tag ids of all tags inside the given tag group.<br><br>*rate limits*.
+- **Get tag group tags** (read-only): Return the tags for a given tag group id.<br><br>*rate limits*.
+- **Get tag groups** (read-only): Retrieve up to 25 tag groups per account, sortable/filterable by specific attributes.
+- **Get tag relationships campaigns** (read-only): Returns the ids of all campaigns associated with the given tag.<br><br>*rate limits*.
+- **Get tag relationships flows** (read-only): Returns the ids of all flows associated with the given tag.<br><br>*rate limits*.
+- **Get tag relationships lists** (read-only): Returns the ids of all lists associated with the given tag.<br><br>*rate limits*.
+- **Get tag relationships segments** (read-only): Returns the ids of all segments associated with the given tag.<br><br>*rate limits*.
+- **Get tag relationships tag group** (read-only): Returns the id of the tag group related to the given tag.<br><br>*rate limits*.
+- **Get tag tag group** (read-only): Returns the tag group resource for a given tag id.<br><br>*rate limits*.
+- **Get tags** (read-only): Retrieve up to 50 account tags at once, filterable/sortable by name or id, with cursor pagination.
+- **Get template** (read-only): Get a template with the given template id.<br><br>*rate limits*.
+- **Get templates** (read-only): Retrieve account templates with sorting options (id, name, created, updated).
+- **Get update categories job** (read-only): Get a catalog category bulk update job with the given job id.
+- **Get update categories jobs** (read-only): Get all catalog category bulk update jobs.
+- **Get update items job** (read-only): Get a catalog item bulk update job with the given job id.
+- **Get update items jobs** (read-only): Get all catalog item bulk update jobs.
+- **Get update variants job** (read-only): Get a catalog variate bulk update job with the given job id.
+- **Get update variants jobs** (read-only): Get all catalog variant bulk update jobs.
+- **Get version ids for form** (read-only): Get the ids of the form versions for the given form.<br><br>*rate limits*.
+- **Get versions for form** (read-only): Get the form versions for the given form.<br><br>*rate limits*.
+- **Get webhook** (read-only): Get the webhook with the given id.<br><br>*rate limits*.
+- **Get webhook topic** (read-only): Get the webhook topic with the given id.<br><br>*rate limits*.
+- **Get webhook topics** (read-only): Get all webhook topics in a klaviyo account.<br><br>*rate limits*.
+- **Get webhooks** (read-only): Get all webhooks in an account.<br><br>*rate limits*.
+- **Merge profiles**: Queue a task to merge one source profile into a destination profile using their ids.
+- **Query campaign values** (read-only): Returns the requested campaign analytics values data<br><br>*rate limits*.
+- **Query flow series** (read-only): Returns the requested flow analytics series data<br><br>*rate limits*.
+- **Query flow values** (read-only): Returns the requested flow analytics values data<br><br>*rate limits*.
+- **Query metric aggregates** (read-only): The klaviyo endpoint fetches metric events, handling json requests for custom data queries, sorting, and filtering.
+- **Remove Profile from List**: Remove profiles from a klaviyo list by profile ids or email addresses.
+- **Request profile deletion**: To delete a profile, use only one identifier.
+- **Spawn bulk profile import job**: Initiate a job to create/update a batch of profiles, up to 10,000 with a max size of 5mb per request.
+- **Spawn coupon code bulk create job**: Create a coupon-code-bulk-create-job to bulk create a list of coupon codes.
+- **Spawn create categories job**: Create bulk job for up to 100 catalog categories with a 5mb size limit and a max of 500 concurrent jobs.
+- **Spawn create items job**: Create batches of up to 100 catalog items with a 5mb size limit using the bulk job, which allows 500 concurrent jobs.
+- **Spawn create variants job**: Initiate a job to bulk create up to 100 catalog variants, with a 5mb payload size limit.
+- **Spawn delete categories job**: Delete multiple catalog categories in bulk, with a limit of 100 per request and a 5mb payload size.
+- **Spawn delete items job**: Delete batches of catalog items with a bulk job, max 100 items/request, 5mb size limit, and up to 500 concurrent jobs.
+- **Spawn delete variants job**: Delete multiple catalog variants with a bulk job, max 100 per request, 5mb size limit.
+- **Spawn update categories job**: Create a job to bulk update up to 100 categories, with a 5mb size limit and a maximum of 500 concurrent jobs.
+- **Spawn update items job**: You can bulk update up to 100 catalog items with a 5mb payload limit.
+- **Spawn update variants job**: Create a job to bulk update up to 100 catalog variants with a 5mb payload limit.
+- **Subscribe profiles**: The api supports double opt-in for marketing, with 'historical import' bypassing consent.
+- **Suppress profiles**: Suppress profiles by email, segment, or list id to stop email marketing, regardless of consent.
+- **Unregister client push token**: This endpoint unsubscribes a push token, for use with klaviyo's mobile sdks and a public api key.
+- **Unsubscribe profiles**: Opt-out profiles from email or sms marketing.
+- **Unsuppress profiles**: Remove 'user suppressed' blocks on profiles manually via email, segment, or list id.
+- **Update campaign message**: Update a campaign message<br><br>*rate limits*.
+- **Update campaign send job**: Permanently cancel the campaign, setting the status to canceled or revert the campaign, setting the status back to draft<br><br>*rate…
+- **Update catalog category**: Update a catalog category with the given category id.<br><br>*rate limits*.
+- **Update catalog category relationships items**: Update item relationships for the given category id.<br><br>*rate limits*.
+- **Update catalog item**: Update a catalog item with the given item id.<br><br>*rate limits*.
+- **Update catalog item relationships categories**: Update catalog category relationships for the given item id.<br><br>*rate limits*.
+- **Update catalog variant**: Update a catalog item variant with the given variant id.<br><br>*rate limits*.
+- **Update coupon**: *rate limits*.
+- **Update coupon code**: Updates a coupon code specified by the given identifier synchronously.
+- **Update flow status**: Update the status of a flow with the given flow id, and all actions in that flow.<br><br>*rate limits*.
+- **Update image**: Update the image with the given image id.<br><br>*rate limits*.
+- **Update list**: Update the name of a list with the given list id.<br><br>*rate limits*.
+- **Update profile**: Update profiles with the provided id.
+- **Update segment**: Update a segment with the given segment id.<br><br>*rate limits*.
+- **Update tag**: Update the tag with the given tag id.
+- **Update tag group**: Update the tag group with the given tag group id.
+- **Update template**: Update a template with the given template id.
+- **Update webhook**: Update the webhook with the given id.<br><br>*rate limits*.
+- **Upload image from file**: Upload an image from a file.
+- **Upload image from url**: Import an image from a url or data uri.

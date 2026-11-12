@@ -1,0 +1,119 @@
+# LiveChat
+
+Manage LiveChat agents, groups, bots, webhooks, properties, and customer conversations through server-side OAuth.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/livechat/.
+
+## Actions
+
+- **Accept Greeting**: Accept an incoming LiveChat greeting for an existing customer and mark that greeting as seen in the customer's live session.
+- **Approve Agent**: Approve a licensed LiveChat agent so they can use the application.
+- **Cancel Greeting**: Cancel an incoming LiveChat invitation for an existing customer.
+- **Check Product Limits for Plan** (read-only): Read which current organization resources exceed a selected LiveChat plan's limits.
+- **Create Agent**: Create a normal-role licensed LiveChat user who must await approval.
+- **Create Auto Access**: Add an ordered LiveChat auto-access rule.
+- **Create Bot**: Create a LiveChat bot and return its write-once secret.
+- **Create Bot Template**: Create a bot template for an application client ID and return its write-once secret.
+- **Create Bot Template Across Installations**: Create a LiveChat bot template and also create a bot from it on every license where the app is already installed.
+- **Create Canned Response**: Create a group-owned LiveChat canned response.
+- **Create Greeting**: Create a LiveChat greeting with trigger rules and optional rich content.
+- **Create Group**: Create a LiveChat routing group with its initial language and agent-priority map.
+- **Create Privileged Agent**: Create a licensed LiveChat agent while explicitly bypassing approval and/or assigning an elevated administrator or viceowner role.
+- **Create Tag**: Create a LiveChat tag and optionally assign it to groups.
+- **Deactivate Chat**: Deactivate a LiveChat chat by closing its currently open thread.
+- **Delete Agent**: Permanently delete a licensed LiveChat agent.
+- **Delete Auto Access**: Permanently delete an auto-access rule.
+- **Delete Bot**: Permanently delete a LiveChat bot.
+- **Delete Bot Template**: Permanently delete only a bot template.
+- **Delete Bot Template And Installed Bots**: Permanently delete a LiveChat bot template and every bot installed from it across all licenses.
+- **Delete Canned Response**: Permanently delete one canned response by ID, removing it from agent use.
+- **Delete Chat Properties**: Permanently delete selected registered property values from a live customer chat.
+- **Delete Event**: Delete one event from a specified LiveChat chat and thread.
+- **Delete Event Properties**: Permanently delete selected registered property values from a live customer-chat event.
+- **Delete Greeting**: Permanently delete a greeting, immediately stopping it from appearing to new matching visitors.
+- **Delete Group**: Permanently delete one LiveChat group by ID.
+- **Delete Group Properties**: Delete selected custom property values from one LiveChat group without unregistering their definitions.
+- **Delete License Properties**: Delete selected license-level custom property values without unregistering their definitions.
+- **Delete Tag**: Permanently delete the exact case-sensitive LiveChat tag, removing it from workflows that rely on that tag.
+- **Delete Thread Properties**: Permanently delete selected registered property values from a live customer-chat thread.
+- **Disable License Webhooks**: Disable all webhooks across the connected LiveChat license.
+- **Enable License Webhooks**: Enable webhooks across the connected LiveChat license after they were explicitly disabled.
+- **Evaluate Goals**: Trigger LiveChat goal evaluation for an offline customer.
+- **Get Agent** (read-only): Return one LiveChat agent by ID, including any explicitly requested optional fields.
+- **Get Bot** (read-only): Return one LiveChat bot by ID with explicitly requested optional fields.
+- **Get Customer** (read-only): Return the customer profile for an explicit existing LiveChat entity through the server-side customer authorization bridge.
+- **Get Customer Chat** (read-only): Return one existing customer's LiveChat chat and either its latest thread or a specified thread.
+- **Get Customer Configuration** (read-only): Return versioned forms, buttons, integrations, and readable properties for a LiveChat customer group.
+- **Get Customer Form** (read-only): Return the enabled pre-chat or post-chat form for one LiveChat group.
+- **Get Customer Localization** (read-only): Return versioned customer-facing localization phrases for a LiveChat group and language through LiveChat's public Customer Chat endpoint.
+- **Get Dynamic Customer Configuration** (read-only): Return current customer-facing widget availability and the version identifiers needed for detailed configuration and localization reads.
+- **Get Greeting** (read-only): Get one LiveChat greeting, including its rules and rich-message structure.
+- **Get Group** (read-only): Return one LiveChat group by ID, including any explicitly requested optional fields.
+- **Get License Webhooks State** (read-only): Return whether webhook delivery is enabled for the connected LiveChat license.
+- **Get Predicted Agent** (read-only): Return whether a new chat for an existing customer is predicted to queue and the agent predicted to receive it, when available.
+- **Get Product Source** (read-only): Return the source parameters supplied when the Text product was activated.
+- **Get URL Preview** (read-only): Return LiveChat-hosted preview image URLs for a public webpage without changing chat state.
+- **Issue Bot Token**: Issue a sensitive, non-revocable bot bearer token valid for 24 hours.
+- **List Agents** (read-only): List LiveChat agents, optionally filtering by group membership or suspension state.
+- **List All Bots** (read-only): List every bot in the LiveChat license, including bots not owned by the connected app.
+- **List All Private Canned Responses** (read-only): Return one page including every private canned response across the requested LiveChat groups.
+- **List Auto Accesses** (read-only): List all LiveChat auto-access rules in their evaluation order.
+- **List Bot Templates** (read-only): List bot templates owned by a specified OAuth application client ID.
+- **List Bots** (read-only): List only bots owned by the connected LiveChat app.
+- **List Canned Responses** (read-only): Return one page of canned responses accessible to the caller and a next_page_id for explicit continuation.
+- **List Channels** (read-only): List summaries of communication channels used by the connected Text product.
+- **List Customer Bans** (read-only): List all active customer bans.
+- **List Customer Chat Threads** (read-only): List threads from one existing customer's chat through LiveChat's server-side customer authorization bridge, returning one page at a time.
+- **List Customer Chats** (read-only): List one existing customer's chat summaries through LiveChat's server-side customer authorization bridge, returning one page at a time.
+- **List Customer Group Properties** (read-only): Read the custom property values a customer may access for one LiveChat group.
+- **List Customer Group Statuses** (read-only): Return chat availability statuses for selected LiveChat groups or all groups visible to an existing customer.
+- **List Customer License Properties** (read-only): Read the license property values visible to a LiveChat customer.
+- **List Greetings** (read-only): List a bounded page of LiveChat greetings, optionally filtered by group.
+- **List Group Properties** (read-only): Read group-level property values for selected LiveChat groups or a property namespace.
+- **List Groups** (read-only): List all LiveChat groups, optionally requesting additional fields for each group.
+- **List License Properties** (read-only): Read license-level property values, optionally narrowed to a namespace and property-name prefix.
+- **List Property Definitions** (read-only): List private and public LiveChat property definitions owned by a specified OAuth application client ID.
+- **List Tags** (read-only): List LiveChat tags, optionally filtering by nested group IDs.
+- **List Webhook Names** (read-only): List webhook actions supported by LiveChat Configuration API version 3.6, including their accepted filters and additional payload data.
+- **List Webhooks** (read-only): List webhooks registered for a specified OAuth application client ID.
+- **Mark Events as Seen**: Advance an existing customer's seen state in a LiveChat chat through an RFC 3339 timestamp.
+- **Publish Property**: Publish a private property for access by tokens belonging to any Client ID.
+- **Reactivate Email**: Reactivate a bounced external email address for one LiveChat agent.
+- **Register Property**: Register one private custom property definition for a LiveChat OAuth application.
+- **Register Webhook**: Register one LiveChat webhook endpoint for an OAuth application and action.
+- **Request Agent Unsuspension**: Request unsuspension for the connected suspended agent.
+- **Request Email Verification**: Send a verification email to an existing LiveChat customer.
+- **Request Welcome Message**: Request an asynchronous welcome message for an existing logged-in customer.
+- **Reset Bot Secret**: Irreversibly rotate a bot secret and return the sensitive replacement.
+- **Reset Bot Template And Installed Bot Secrets**: Irreversibly rotate a LiveChat bot template secret and set the replacement on every installed bot based on it across all licenses.
+- **Reset Bot Template Secret**: Irreversibly rotate only a bot template secret and return the sensitive replacement.
+- **Resume Chat**: Resume an archived LiveChat chat for an existing customer entity.
+- **Send Event**: Send one event into a real LiveChat chat for an existing customer.
+- **Send File Event**: Upload one non-executable file of at most 10,000,000 bytes and irreversibly deliver it as a file event in an existing LiveChat chat.
+- **Send Greeting Button Clicked**: Record that an existing customer clicked a specific button in an incoming LiveChat greeting.
+- **Send Rich Message Postback**: Send a button postback for an existing rich-message event.
+- **Send Sneak Peek**: Send transient typed content into a real LiveChat chat before the customer submits it as a message.
+- **Set Customer Session Fields**: Replace an existing LiveChat customer's ordered session fields.
+- **Start Chat**: Start a new LiveChat chat for an existing customer entity.
+- **Suspend Agent**: Suspend a licensed LiveChat agent.
+- **Unban Customer**: Lift a customer ban by IP address or customer ID.
+- **Unregister Property**: Permanently remove one custom property definition owned by an OAuth application.
+- **Unregister Webhook**: Permanently remove one webhook registration owned by a LiveChat OAuth application.
+- **Unsuspend Agent**: Unsuspend a licensed LiveChat agent.
+- **Update Agent**: Update a licensed LiveChat agent.
+- **Update Auto Access**: Update or reorder an auto-access rule.
+- **Update Bot**: Update a LiveChat bot.
+- **Update Bot Template**: Fully replace a LiveChat bot template for future installations.
+- **Update Canned Response**: Update an existing canned response while preserving omitted fields.
+- **Update Chat Properties**: Set registered custom property values on a live customer chat.
+- **Update Company Details**: Update license-level company details.
+- **Update Customer**: Partially update an existing LiveChat customer profile.
+- **Update Event Properties**: Set registered custom property values on a live customer-chat event.
+- **Update Greeting**: Update a greeting while preserving omitted fields.
+- **Update Group**: Update the name, language, or complete agent-priority map of an existing LiveChat group.
+- **Update Group Properties**: Set one or more custom property values on a LiveChat group.
+- **Update Installed Bots From Template**: Fully replace a LiveChat bot template and propagate the replacement to every bot installed from it across all licenses.
+- **Update License Properties**: Set one or more license-level custom property values grouped by namespace.
+- **Update Tag**: Update a LiveChat tag identified by its exact case-sensitive name.
+- **Update Thread Properties**: Set registered custom property values on a live customer-chat thread.
+- **Upload File**: Upload one non-executable file of at most 10,000,000 bytes for later use in a Customer Chat event.

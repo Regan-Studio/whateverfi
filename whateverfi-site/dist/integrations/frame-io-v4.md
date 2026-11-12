@@ -1,0 +1,105 @@
+# Frame.io V4
+
+Frame.io V4 provides collaborative media review, project, asset, comment, sharing, metadata, and workspace management through Adobe IMS user authorization.
+
+Category: Design. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/frame-io-v4/.
+
+## Actions
+
+- **Add Asset to Share**: Add a file, folder, or version stack to an existing externally visible Frame.io share.
+- **Add Share Reviewers**: Grant reviewers access to a secure Frame.io share or email recipients of a public share.
+- **Bulk Update Metadata**: Set metadata field values across multiple files in one Frame.io project.
+- **Copy File**: Copy one Frame.io file to a destination folder, optionally copying metadata or comments.
+- **Copy Files**: Copy between one and 100 Frame.io files into one destination folder.
+- **Copy Folder**: Copy one Frame.io folder to an optional destination folder, optionally retaining metadata values.
+- **Copy Folders**: Copy 1 to 100 Frame.io folders into one destination folder, optionally retaining metadata and selected comments.
+- **Copy Version Stack**: Create a copy of a Frame.io version stack in its current or a selected destination folder.
+- **Create Comment**: Create a text, frame, page, drawing, or text-review comment on a Frame.io file.
+- **Create Comment Attachment**: Create an attachment record and upload URLs for an existing Frame.io comment.
+- **Create Custom Action**: Create a workspace custom action and return its one-time webhook validation secret with the created action.
+- **Create Folder**: Create a named child folder under an existing Frame.io folder and return its new ID.
+- **Create Group**: Create an account group that can later receive shared resource access.
+- **Create Local Upload**: Create a Frame.io file record and obtain presigned URLs for uploading local file bytes.
+- **Create Metadata Field**: Create an account-level Frame.io metadata field definition with type-specific configuration.
+- **Create Project**: Create a Frame.io project in a specific workspace.
+- **Create Remote Upload**: Start an asynchronous Frame.io upload from a source URL and return its file and status links.
+- **Create Share**: Create an externally accessible Frame.io review share for selected project assets.
+- **Create Version Stack**: Combine two to ten existing files in one folder into a new ordered Frame.io version stack.
+- **Create Webhook**: Register a Frame.io workspace webhook for selected events and return its one-time validation secret.
+- **Create Workspace**: Create a Frame.io workspace in an account.
+- **Delete Comment**: Permanently delete a Frame.io comment by ID.
+- **Delete Comment Attachment**: Permanently delete one attachment from a Frame.io comment.
+- **Delete Custom Action**: Delete a Frame.io custom action by ID.
+- **Delete File**: Permanently delete a Frame.io file by ID.
+- **Delete Folder**: Delete a Frame.io folder by ID.
+- **Delete Metadata Field**: Delete a mutable account-level Frame.io custom metadata field definition.
+- **Delete Project**: Delete a Frame.io project by ID.
+- **Delete Share**: Permanently delete a Frame.io review share and disable its externally visible link.
+- **Delete Webhook**: Permanently delete a Frame.io webhook registration by ID.
+- **Delete Workspace**: Delete a Frame.io workspace from its account by ID.
+- **Get Collection** (read-only): Return current details for one Frame.io collection by ID.
+- **Get Comment** (read-only): Return one Frame.io comment by ID, optionally including its owner or replies.
+- **Get Current User** (read-only): Return the Frame.io user connected through OAuth, including the user ID needed to interpret access and ownership.
+- **Get Custom Action** (read-only): Return current details for one Frame.io custom action by ID.
+- **Get File** (read-only): Return one Frame.io file by ID, optionally including creator, project, metadata, or media links.
+- **Get File Upload Status** (read-only): Return the current completion or failure status of a Frame.io file upload.
+- **Get Folder** (read-only): Return one folder's current details by ID, optionally including creator, project, or metadata data.
+- **Get Group** (read-only): Get an account group's details without changing access.
+- **Get Project** (read-only): Return current details for one Frame.io project by ID.
+- **Get Share** (read-only): Retrieve a Frame.io share's current access, appearance, and review settings without changing it.
+- **Get Version Stack** (read-only): Retrieve a Frame.io version stack and optionally include related data or media links without changing it.
+- **Get Workspace** (read-only): Return current details for one Frame.io workspace by ID.
+- **Import File**: Import a file from a storage location already configured on the Frame.io account.
+- **List Account Users** (read-only): List users and their roles in an account, optionally including deactivated users, without changing permissions.
+- **List Accounts** (read-only): List Frame.io accounts available to the connected user and return account IDs for downstream discovery.
+- **List Audit Logs** (read-only): List account audit events using Frame.io's experimental audit API, optionally expanding the acting user.
+- **List Collections** (read-only): List saved collections in a project, including default review-oriented collections and their root folder IDs.
+- **List Comments** (read-only): List one page of comments on a file, with optional owners, replies, and a next_cursor.
+- **List Custom Actions** (read-only): List one page of custom actions configured in a Frame.io workspace.
+- **List Files** (read-only): List one page of files in a folder, with optional media links and a next_cursor.
+- **List Folder Children** (read-only): List files, folders, and version stacks directly inside a folder, with optional type filtering and media-link expansion.
+- **List Folder User Roles** (read-only): List one page of users with direct access roles on a folder without changing access.
+- **List Folders** (read-only): List only the folders directly inside a Frame.io folder, one cursor-controlled page at a time.
+- **List Groups** (read-only): List one page of account groups and membership counts without changing access.
+- **List Invited Projects** (read-only): List projects where the connected user has project-specific collaborator access but no workspace-level access.
+- **List Metadata Fields** (read-only): List account metadata field definitions so an agent can discover valid field IDs, types, configuration, and mutability.
+- **List Project User Roles** (read-only): List one page of users with direct project access roles without changing access.
+- **List Projects** (read-only): List a page of projects visible in a Frame.io account, including each project ID and root folder ID for asset traversal.
+- **List Recently Deleted Assets** (read-only): List one page of recently deleted files, folders, and version stacks in a project, ordered by the requested deletion or name sort.
+- **List Share Activities** (read-only): Return one page of view, download, and comment activity recorded for a Frame.io share.
+- **List Share Assets** (read-only): Return one page of every direct and recursively nested asset exposed by a Frame.io share.
+- **List Share Reviewers** (read-only): Return one page of reviewers currently associated with a Frame.io share without changing access.
+- **List Shares** (read-only): List review shares for a project without creating or changing externally visible review links.
+- **List Version Stack Children** (read-only): Return one page of files in a Frame.io version stack, with optional related data or media links.
+- **List Version Stacks** (read-only): Return one page of version stacks directly contained in a Frame.io folder without changing them.
+- **List Webhooks** (read-only): List webhook registrations in a workspace without creating callbacks or requiring external delivery infrastructure.
+- **List Workspace Projects** (read-only): List one page of projects in a specific Frame.io workspace.
+- **List Workspace User Roles** (read-only): List one page of users with workspace access roles without changing access.
+- **List Workspaces** (read-only): List workspaces in an account and return workspace IDs used by project, webhook, and collaboration workflows.
+- **Move File**: Move one Frame.io file to a folder or version stack.
+- **Move Files**: Move between one and 100 Frame.io files into one destination folder.
+- **Move Folder**: Move one Frame.io folder to a destination folder and return its updated details.
+- **Move Folders**: Move 1 to 100 Frame.io folders into one destination folder and return their updated details.
+- **Move Version Stack**: Move a Frame.io version stack to a destination folder, changing its parent location.
+- **Remove Asset From Share**: Remove an asset from a Frame.io share without deleting the underlying file, folder, or version stack.
+- **Remove Folder User**: Remove a user's direct role from a folder, revoking that folder access.
+- **Remove Project User**: Remove a user's direct role from a project, revoking that project access.
+- **Remove Share Reviewers**: Revoke selected reviewers' access to a secure Frame.io share.
+- **Remove Workspace User**: Remove a user's role from a workspace, revoking that workspace access.
+- **Search Account** (read-only): Search visible projects, folders, files, and version stacks across a Frame.io account by text.
+- **Show Metadata** (read-only): Return one Frame.io file's metadata values and definitions, optionally including fields with null values.
+- **Show Webhook** (read-only): Return one Frame.io webhook's current callback, event, status, and optional creator details.
+- **Update Account User Role**: Change a user's account-level access to member or admin.
+- **Update Comment**: Update the text, location, annotation, timing, or completion state of a Frame.io comment.
+- **Update Custom Action**: Update the configuration or active state of a Frame.io custom action.
+- **Update File**: Update a Frame.io file's name and return its current details.
+- **Update Folder**: Rename an existing Frame.io folder and return its updated details.
+- **Update Folder User Role**: Add a user to a folder with the selected role, or replace the role if access already exists.
+- **Update Group**: Change an account group's name and/or emoji, altering the group used to organize access.
+- **Update Metadata Field**: Update the name or type-specific configuration of a mutable account-level Frame.io metadata field definition.
+- **Update Project**: Update a Frame.io project's name, restricted state, or status.
+- **Update Project User Role**: Add a user to a project with the selected role, or replace an existing role, immediately changing project access.
+- **Update Share**: Change a Frame.io share's access, review, appearance, or expiration settings.
+- **Update Webhook**: Update a Frame.io webhook's active state, subscribed events, name, or callback URL.
+- **Update Workspace**: Update the name of an existing Frame.io workspace.
+- **Update Workspace User Role**: Add a user to a workspace with the selected role, or replace an existing role, immediately changing workspace access.

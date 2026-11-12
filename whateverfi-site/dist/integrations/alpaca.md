@@ -1,0 +1,108 @@
+# Alpaca
+
+Stock and crypto trading platform with commission-free trading, real-time market data, and algorithmic trading capabilities
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/alpaca/.
+
+## Actions
+
+- **Add Asset to Watchlist**: Adds a symbol to an existing watchlist in the authenticated account.
+- **Add Asset to Watchlist by Name**: Add an asset to a watchlist by name.
+- **Create Watchlist**: Creates a new watchlist for the authenticated account.
+- **Create Watchlist**: Create a new watchlist for the authenticated account.
+- **Delete All Open Positions**: Liquidates all open positions by closing them at market price.
+- **Delete All Orders for Account**: Attempts to cancel all open orders for a specified trading account.
+- **Delete Unsubscribe Account**: Delete a rebalancing subscription to unsubscribe an account.
+- **Delete Watchlist By ID**: Delete a watchlist by its unique identifier.
+- **Get Account** (read-only): Retrieves account information for the authenticated Alpaca account.
+- **Get Account Activities** (read-only): Retrieves account activities for the authenticated Alpaca account.
+- **Get Account Activities By Activity Type** (read-only): Retrieves account activities of a specific type for the authenticated Alpaca account.
+- **Get Account Activities V2** (read-only): Retrieves account activities of one type for the authenticated Alpaca account using the v2 API.
+- **Get Account Configurations** (read-only): Retrieves the current trading account configuration settings for the authenticated Alpaca account.
+- **Get Account Portfolio History** (read-only): Retrieves the portfolio history statistics for an Alpaca trading account.
+- **Get Account Portfolio History** (read-only): Retrieves the portfolio history statistics for a trading account.
+- **Get All Account Positions** (read-only): Bulk fetches all open positions for the authenticated account.
+- **Get All Open Positions** (read-only): Retrieves all open positions for the authenticated Alpaca trading account.
+- **Get All Orders** (read-only): Retrieves all orders for an account based on specified filter criteria.
+- **Get Calendar** (read-only): Retrieves market calendar information for trading days from the Alpaca Trading API.
+- **Get Clock** (read-only): Retrieves the current market clock information from the Alpaca Trading API.
+- **Get Crypto Bars for Multiple Symbols** (read-only): Retrieves OHLCV (Open, High, Low, Close, Volume) bars for multiple crypto symbols.
+- **Get Crypto Latest Orderbooks** (read-only): Retrieves the latest bid and ask orderbook data for specified crypto symbols.
+- **Get Crypto Latest Quote** (read-only): Retrieves the latest bid and ask prices for a specified crypto symbol.
+- **Get Crypto Latest Quotes** (read-only): Retrieves the latest bid and ask prices for specified crypto symbols at a specific location.
+- **Get Crypto Latest Quotes** (read-only): Retrieves the latest bid and ask prices for specified crypto symbols.
+- **Get Crypto Perp Latest Bars** (read-only): Retrieves the latest OHLCV (Open, High, Low, Close, Volume) bars for crypto perpetual futures symbols.
+- **Get Crypto Perp Latest Orderbooks** (read-only): Retrieves the latest bid and ask orderbook data for specified crypto perpetual futures symbols.
+- **Get Crypto Perp Latest Pricing** (read-only): Retrieves the latest pricing data for specified crypto perpetual futures symbols.
+- **Get Crypto Perp Latest Quotes** (read-only): Retrieves the latest bid and ask prices for specified crypto perpetual futures symbols for a specific location.
+- **Get Crypto Perp Latest Trades** (read-only): Retrieves the latest trade data for specified crypto perpetual futures symbols.
+- **Get Crypto Perps Global Latest Bars** (read-only): Retrieves the latest OHLCV (Open, High, Low, Close, Volume) bars for crypto perpetual futures symbols.
+- **Get Crypto Perps Global Latest Pricing** (read-only): Returns the latest pricing data for crypto perpetual futures symbols.
+- **Get Crypto Perps Global Latest Quotes** (read-only): Retrieves the latest bid and ask prices for specified crypto perpetual futures symbols.
+- **Get Crypto Perps Global Latest Trades** (read-only): Retrieves the latest trade data for specified crypto perpetual futures symbols.
+- **Get Crypto Snapshots** (read-only): Retrieves snapshots (latest trade, latest quote, minute bar, daily bar, and previous daily bar) for multiple cryptocurrency symbols in a…
+- **Get Crypto Snapshots** (read-only): Retrieves snapshots (latest trade, latest quote, minute bar, daily bar, and previous daily bar) for multiple cryptocurrency symbols.
+- **Get Crypto US Historical Quotes** (read-only): Retrieves historical quote data (bid/ask prices) for specified crypto symbols on US exchanges.
+- **Get Crypto US Latest Bars** (read-only): Retrieves the latest OHLCV (Open, High, Low, Close, Volume) bars for US crypto symbols.
+- **Get Crypto US Latest Orderbooks** (read-only): Retrieves the latest bid and ask orderbook data for specified crypto symbols in the US market.
+- **Get Crypto US Latest Quotes** (read-only): Retrieves the latest bid and ask prices for specified crypto symbols in the US location.
+- **Get Crypto US Latest Trades** (read-only): Retrieves the latest trade data for specified crypto symbols in the US location.
+- **Get Crypto US Snapshots** (read-only): Retrieves snapshots (latest trade, latest quote, minute bar, daily bar, and previous daily bar) for multiple cryptocurrency symbols in the…
+- **Get Crypto US Trades** (read-only): Retrieves historical trade data for specified US crypto symbols.
+- **Get Exchanges** (read-only): Retrieves a list of supported stock exchanges with their short codes and full names from the Alpaca Market Data API.
+- **Get Historical Bars for Stock Symbol** (read-only): Retrieves historical OHLCV (Open, High, Low, Close, Volume) bars for a single stock symbol.
+- **Get Historical Crypto US Bars** (read-only): Retrieves historical OHLCV (Open, High, Low, Close, Volume) bars for crypto symbols in a specific US location.
+- **Get Historical Stock Bars** (read-only): Retrieves historical OHLCV (Open, High, Low, Close, Volume) bars for a single stock symbol.
+- **Get Historical Trades for Stock Symbol** (read-only): Retrieves historical trade data for a single stock symbol.
+- **Get Latest Bar for Stock Symbol** (read-only): Retrieves the latest OHLCV (Open, High, Low, Close, Volume) bar for a single stock symbol.
+- **Get Latest Bars For Crypto Symbol** (read-only): Retrieves the latest OHLCV (Open, High, Low, Close, Volume) bar data for a crypto symbol.
+- **Get Latest Bars for Crypto Symbols** (read-only): Retrieves the latest OHLCV (Open, High, Low, Close, Volume) bars for multiple crypto symbols.
+- **Get Latest Bars for Multiple Stock Symbols** (read-only): Retrieves the latest OHLCV (Open, High, Low, Close, Volume) bars for multiple stock symbols.
+- **Get Latest Crypto Trades** (read-only): Retrieves the latest trade data for specified crypto symbols.
+- **Get Latest Quote for Stock Symbol** (read-only): Retrieves the latest NBBO (National Best Bid and Offer) quote for a single stock symbol.
+- **Get Latest Quotes for Multiple Stock Symbols** (read-only): Retrieves the latest NBBO (National Best Bid and Offer) quotes for multiple stock symbols.
+- **Get Latest Trade for Stock Symbol** (read-only): Retrieves the latest trade data for a single stock symbol.
+- **Get Latest Trades for Multiple Stock Symbols** (read-only): Retrieves the latest trade data for multiple stock symbols.
+- **Get Market Calendar** (read-only): Retrieves market calendar information for a specific exchange from the Alpaca Trading API.
+- **Get Meta Exchanges** (read-only): Retrieves a list of all US stock exchanges and their identifying information from the Alpaca Market Data API.
+- **Get Most Active Stocks** (read-only): Retrieves the most active stocks by trading volume or trade count.
+- **Get News** (read-only): Retrieves news articles for specified crypto symbols from the Alpaca Market Data API.
+- **Get Open Position** (read-only): Fetches a single open position by symbol or asset ID.
+- **Get Option Chain** (read-only): Retrieves the option chain for a specific underlying symbol including quotes and greeks for all available strikes and expirations.
+- **Get Option Contract** (read-only): Get an option contract by its symbol or unique identifier.
+- **Get Option Contracts** (read-only): Retrieve option contracts from Alpaca Markets API (BETA).
+- **Get Option Latest Quotes** (read-only): Retrieves the latest bid and ask prices for specified option symbols.
+- **Get Options Historical Bars** (read-only): Retrieves historical OHLCV (Open, High, Low, Close, Volume) bars for options contracts.
+- **Get Options Historical Trades** (read-only): Retrieves historical trade data for option contracts.
+- **Get Options Latest Trades** (read-only): Retrieves the latest trade for each requested option contract symbol.
+- **Get Options Meta Conditions** (read-only): Retrieves the mapping of condition codes to their names from Alpaca Markets API for the specified tick type (trade or quote conditions).
+- **Get Options Meta Conditions Trade** (read-only): Retrieves the mapping of trade condition codes to their names from Alpaca Markets API.
+- **Get Options Snapshots** (read-only): Retrieves snapshots (latest trade, latest quote, minute bar, daily bar, and previous daily bar) for multiple option contract symbols.
+- **Get Options Snapshots by Underlying Symbol** (read-only): Retrieves the option chain snapshot data for a specific underlying symbol.
+- **Get PDT Status** (read-only): Retrieves the Pattern Day Trader (PDT) status for a specified Alpaca trading account.
+- **Get Quotes for Multiple Stock Symbols** (read-only): Retrieves historical quote (bid/ask) data for multiple stock symbols.
+- **Get Quotes for Stock Symbol** (read-only): Retrieves historical NBBO (National Best Bid and Offer) quotes for a specific stock symbol.
+- **Get Specific Announcement** (read-only): Retrieves a specific corporate action announcement by its unique identifier.
+- **Get Stock Auctions** (read-only): Retrieves historical auction data for specified stock symbols.
+- **Get Stock Auctions for Symbol** (read-only): Retrieves historical auction (opening/closing print) data for a single stock symbol.
+- **Get Stock Bars for Multiple Symbols** (read-only): Retrieves OHLCV (Open, High, Low, Close, Volume) bars for multiple stock symbols.
+- **Get Stock Conditions** (read-only): Retrieves the mapping of condition codes to their names from Alpaca Markets API for the specified type (trade or quote conditions) and tape.
+- **Get Stock Snapshot for Symbol** (read-only): Retrieves a snapshot (latest trade, latest quote, minute bar, daily bar, and previous daily bar) for a single stock symbol.
+- **Get Stock Snapshots for Multiple Symbols** (read-only): Retrieves snapshots (latest trade, latest quote, minute bar, daily bar, and previous daily bar) for multiple stock symbols.
+- **Get Stocks Meta Conditions Trade** (read-only): Retrieves the mapping of trade condition codes to their names from Alpaca Markets API.
+- **Get Subscription** (read-only): Retrieves a rebalancing subscription by its unique ID.
+- **Get Top Movers By Market Type** (read-only): Retrieves the top market movers (gainers and losers) for a specified market type.
+- **Get Trades for Multiple Crypto Symbols** (read-only): Retrieves historical trade data for specified crypto symbols.
+- **Get Trades for Multiple Stock Symbols** (read-only): Retrieves historical trade data for multiple stock symbols.
+- **Get Watchlist By ID** (read-only): Retrieves a single watchlist by its unique identifier.
+- **Get Watchlist By Name** (read-only): Retrieves a specific watchlist by its name.
+- **Get Watchlists** (read-only): Retrieves all watchlists associated with the authenticated account.
+- **List account positions** (read-only): Lists all open positions for a specified trading account.
+- **Remove Asset From Watchlist**: Removes a symbol from an existing watchlist in Alpaca.
+- **Remove Symbol From Watchlist**: Remove a symbol from an existing watchlist in Alpaca.
+- **Update Account Configurations**: Update the trading account configuration settings for the authenticated account.
+- **Update Trading Configurations**: Updates trading account configurations for an Alpaca trading account.
+- **Update Watchlist By ID**: Updates an existing watchlist by its unique identifier.
+- **Update Watchlist By Name**: Updates an existing watchlist by its name.
+- **Update Watchlist By Name (v2)**: Updates an existing watchlist by its name.
+- **Upload Account CIP Information**: Upload CIP (Customer Identification Program) information for an account to complete identity verification.

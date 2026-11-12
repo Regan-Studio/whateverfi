@@ -1,0 +1,200 @@
+# Dialpad
+
+Dialpad is a cloud-based business phone system and contact center platform that enables voice, video, messages and meetings across your existing devices
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/dialpad/.
+
+## Actions
+
+- **Add operator to call center**: This endpoint adds a new operator to a specified call center in the dialpad system.
+- **Assign phone number to user**: This endpoint assigns a phone number to a specific dialpad user.
+- **Create custom ivr with audio file**: Creates a new custom interactive voice response (ivr) system within the dialpad platform.
+- **Create user with auto assign**: Creates a new user account in the dialpad system with the specified details.
+- **Initiate outbound call via api**: The initiateoutboundcall endpoint allows you to programmatically initiate an outbound call using the dialpad api.
+- **Access control policies listing** (read-only): Retrieves a list of access control policies for the authenticated dialpad company.
+- **Add blocked phone numbers**: Adds specified phone numbers to the blocked list in dialpad.
+- **Add department operator by id**: Adds a new operator to a specific department in dialpad.
+- **Add member to channel**: Adds a new member to a specified channel within the dialpad communication platform.
+- **Add member to coaching team**: Adds a new member to a specific coaching team in dialpad.
+- **Add operator to office**: This endpoint adds a new operator to a specific office within the dialpad system.
+- **Add participant to call**: Adds a new participant to an existing call in the dialpad system.
+- **Assign fax line to target**: Creates and assigns a new fax line to a specified target (user or department) in the dialpad system.
+- **Assign number to call router**: This endpoint assigns a phone number to a specific call router in the dialpad system.
+- **Assign phone number to office**: This endpoint assigns a phone number to a specific office in the dialpad system.
+- **Assign phone number to room**: Assigns a phone number to a specified room in dialpad.
+- **Assign phone number to target**: Assigns a phone number to a specified target within the dialpad system.
+- **Assign policy to user by id**: Assigns an access control policy to a specific user within the dialpad system.
+- **Attach labels to call**: Creates or updates labels for a specific call in the dialpad system.
+- **Configure call center settings**: This endpoint creates a new call center within the dialpad system with customizable settings for call handling, routing, operational…
+- **Create access control policy**: Creates a new access control policy in dialpad, defining a set of permissions and their application scope.
+- **Create agent status subscription**: Creates or updates an agent status subscription for real-time monitoring of contact center agent statuses in dialpad.
+- **Create call review share link**: Creates a shareable link for a specific call review in the dialpad platform.
+- **Create call router configuration**: Creates a new call router in the dialpad system, allowing for custom call routing logic based on a specified url.
+- **Create callback**: Creates a callback request in a dialpad call center.
+- **Create channel endpoint**: Creates a new communication channel within the dialpad platform.
+- **Create new contact entry**: The createcontact endpoint adds a new contact to dialpad's system.
+- **Create new department record**: Creates a new department within the dialpad system with customizable settings for call handling, operating hours, and advanced features.
+- **Create pin for international room calls**: Creates a pin for protected international calls from a dialpad room.
+- **Create room in office via post**: Creates a new room within a specified office in the dialpad system.
+- **Create schedule reports endpoint**: Creates a scheduled report in the dialpad system for various types of communication data.
+- **Create secondary office**: Creates a new office within the dialpad system with specified configurations and settings.
+- **Create sms event subscription**: Creates a new sms event subscription in the dialpad api, allowing users to receive notifications for inbound and/or outbound sms messages.
+- **Create webhook post endpoint**: Creates a new webhook integration for receiving real-time event notifications from dialpad.
+- **Deauthorize oauth2 session**: Deauthorizes (revokes) an oauth2 access token, effectively terminating the application's access to the dialpad api.
+- **Delete access control policy by id**: Deletes a specific access control policy from the dialpad system.
+- **Delete agent status by id**: Deletes a specific agent status subscription identified by its unique id.
+- **Delete call center by id**: Deletes a specific call center from the dialpad system.
+- **Delete call subscription by id**: Deletes a specific call subscription from the dialpad system.
+- **Delete callreviewsharelink by id**: This endpoint deletes a specific call review share link in the dialpad system.
+- **Delete callrouter by id**: Deletes a specific call router from the dialpad system.
+- **Delete channel by id**: Deletes a specific channel from the dialpad communication platform.
+- **Delete channel member by id**: Removes a specified member from a dialpad channel.
+- **Delete contact by id**: Deletes a specific contact from the dialpad system using the provided contact id.
+- **Delete customivr by targettype and ivrtype**: Deletes a custom interactive voice response (ivr) configuration from a specified target in the dialpad system.
+- **Delete department resource**: Deletes a specific department from the dialpad system.
+- **Delete deskphone by user id**: Deletes a specific deskphone associated with a user in the dialpad system.
+- **Delete deskphone in room**: This endpoint removes a specific deskphone from a designated room within the dialpad system.
+- **Delete number via api**: Deletes a specific phone number from the user's dialpad account.
+- **Delete office operator by id**: Removes a specified operator (user or room) from a particular office in the dialpad system.
+- **Delete operator from call center**: Removes a specified operator from a call center in the dialpad system.
+- **Delete operator from department**: Removes a specified operator from a department in the dialpad system.
+- **Delete recording share link by id**: Deletes a specific recording share link in the dialpad system.
+- **Delete room by id**: Deletes a specific room from the dialpad system using its unique identifier.
+- **Delete schedule report by id**: Deletes a specific scheduled report from the dialpad system.
+- **Delete sms subscription by id**: Deletes a specific sms subscription from the dialpad system.
+- **Delete subscription changelog by id**: Deletes a specific changelog entry from a subscription in the dialpad system.
+- **Delete subscription contact by id**: Deletes a specific subscription contact from the dialpad system.
+- **Delete user by id**: Deletes a user from the dialpad system based on the provided user id.
+- **Delete webhook by id**: Deletes a specific webhook subscription from the dialpad platform using its unique identifier.
+- **Delete websocket connection by id**: Closes and removes a specific websocket connection in the dialpad system.
+- **Fetch call byid** (read-only): Retrieves detailed information about a specific call using its unique identifier.
+- **Fetch call transcript by id** (read-only): Retrieves the transcript for a specific call in the dialpad system.
+- **Fetch custom ivrs** (read-only): Retrieves a list of all custom interactive voice response (ivr) configurations associated with the authenticated dialpad account.
+- **Fetch operators for office id** (read-only): Retrieves a list of operators associated with a specific office in dialpad.
+- **Fetch scheduled reports** (read-only): Retrieves a list of scheduled reports from the dialpad system.
+- **Fetch transcript url by call id** (read-only): Retrieves the url of a transcript for a specific call in the dialpad system.
+- **Fetch user details by id** (read-only): Retrieves detailed information about a specific user in the dialpad system.
+- **Format phone numbers** (read-only): The format phone number endpoint is used to standardize and format phone numbers within the dialpad ecosystem.
+- **Get available licenses for an office** (read-only): Retrieves the number of available (unused) licenses for a specific office within a dialpad organization.
+- **Get call center status by id** (read-only): Retrieves the current operational status of a specific call center in the dialpad system.
+- **Get call labels** (read-only): Retrieves a list of all available call labels in the dialpad system.
+- **Get call review share link by id** (read-only): Retrieves or generates a share link for a specific call review in the dialpad system.
+- **Get call subscription details** (read-only): Retrieves a list of call subscriptions associated with the authenticated user's account in the dialpad platform.
+- **Get channel members by id** (read-only): Retrieves a list of members for a specific channel in dialpad.
+- **Get departments by office id** (read-only): Retrieves a list of all departments associated with a specific office in the dialpad system.
+- **Get deskphone by parent id** (read-only): Retrieves detailed information about a specific deskphone within a designated room or parent entity in the dialpad system.
+- **Get deskphones for user parent id** (read-only): Retrieves a list of deskphones associated with a specific user in the dialpad system.
+- **Get deskphones in rooms** (read-only): Retrieves a list of deskphones associated with a specific room in the dialpad system.
+- **Get office call centers** (read-only): Retrieves a list of call centers associated with a specific office in the dialpad platform.
+- **Get operator skills by call center and user** (read-only): Retrieves the skill information for a specific operator within a designated call center.
+- **Get phone number details** (read-only): Retrieves detailed information about a specific phone number associated with the dialpad account.
+- **Get recording share link by id** (read-only): Retrieves detailed information about a specific recording share link in the dialpad system.
+- **Get rooms list** (read-only): Retrieves a list of all available meeting rooms or spaces within the dialpad system.
+- **Get subscription contact by id** (read-only): Retrieves the subscription information for a specific contact in the dialpad system.
+- **Get user caller id** (read-only): Retrieves the caller id information for a specific user in the dialpad system.
+- **Get user deskphones** (read-only): Retrieves detailed information about a specific deskphone associated with a particular user in the dialpad system.
+- **Get user e911 details** (read-only): Retrieves the enhanced 911 (e911) information for a specific user in the dialpad system.
+- **Get webhooks information** (read-only): Retrieves a list of all webhooks configured for the authenticated user's dialpad account.
+- **Hangup call via id**: Terminates an active call in the dialpad system.
+- **Initiate ivr call api endpoint**: Initiates an outbound ivr (interactive voice response) call using the dialpad api.
+- **Initiate user call with group options**: Initiates an outbound call for a specified dialpad user.
+- **List channels api** (read-only): Retrieves a list of all available communication channels in the dialpad platform.
+- **List conference rooms** (read-only): Retrieves a list of conference rooms available in the dialpad system.
+- **List offices endpoint** (read-only): Retrieves a list of offices within the dialpad platform.
+- **List users** (read-only): Retrieves a list of users from the dialpad system.
+- **Modify contact details using id**: Updates an existing contact's information in the dialpad system.
+- **Modify custom ivr settings**: Updates a custom interactive voice response (ivr) configuration for a specific target within the dialpad system.
+- **Modify operator skill level**: Updates the skill level of a specific operator in a designated call center.
+- **Modify webhook configuration**: Updates an existing webhook configuration in the dialpad api.
+- **Move user to specified office**: Updates a user's office assignment within the dialpad system.
+- **Oauth2 authorize endpoint** (read-only): Initiates the oauth 2.0 authorization process for the dialpad api.
+- **Patch access control policy by id**: This endpoint allows you to update an existing access control policy in the dialpad system.
+- **Patch agent status event subscription**: Updates an existing agent status subscription in the dialpad system.
+- **Patch call router by id**: Updates an existing call router in the dialpad system.
+- **Patch department details by id**: Updates the settings and configuration of a specific department in the dialpad system.
+- **Patch subscription changelog endpoint**: Updates an existing change log event subscription in the dialpad system.
+- **Patch user active call recording**: Updates the call recording settings for an active call of a specific dialpad user.
+- **Patch user status**: Updates the status of a specific user in the dialpad system.
+- **Patch websocket signature secret**: Updates the signature secret for a specific websocket connection in the dialpad platform.
+- **Post call event subscription**: Creates a new call event subscription in the dialpad system, allowing real-time notifications for various call states and actions.
+- **Post recording share link**: Creates a shareable link for a specific recording in dialpad, such as a call recording or voicemail.
+- **Post subscription change log event**: Creates or updates a subscription for changelog events in the dialpad system.
+- **Post users screenpop uri**: Triggers a screen pop for a specific dialpad user, displaying relevant information during a call or communication event.
+- **Post websocket connection secret**: Creates a websocket connection for real-time communication with the dialpad platform.
+- **Reassign phone number to target**: Assigns or reassigns a phone number to a specific target within the dialpad system.
+- **Redeem access or refresh token** (read-only): The oauth 2.0 token endpoint for dialpad's api is used to obtain access tokens for authenticating api requests.
+- **Remove blocked numbers**: Removes specified phone numbers from the blocked list in the dialpad system.
+- **Retrieve access control policy assignments** (read-only): Retrieves the assignments of a specific access control policy in dialpad.
+- **Retrieve access control policy by id** (read-only): Retrieves detailed information about a specific access control policy in the dialpad system.
+- **Retrieve agent status by id** (read-only): Retrieves detailed information about a specific agent status subscription using its unique identifier.
+- **Retrieve agent status subscription** (read-only): Retrieves a list of agent status subscriptions from the dialpad system.
+- **Retrieve app settings** (read-only): Retrieves the current application settings for the authenticated dialpad account.
+- **Retrieve blocked number details** (read-only): Retrieves information about a specific blocked number in the dialpad system.
+- **Retrieve blocked phone numbers** (read-only): Retrieves a comprehensive list of all phone numbers that have been blocked through the dialpad api.
+- **Retrieve call center by id** (read-only): Retrieves detailed information about a specific call center in the dialpad system.
+- **Retrieve call centers information** (read-only): Retrieves a list of call centers and their associated information from the dialpad platform.
+- **Retrieve call information** (read-only): Retrieves call information from the dialpad system.
+- **Retrieve call routers v2 api** (read-only): Retrieves a list of call routers configured in the dialpad system.
+- **Retrieve call subscription by id** (read-only): Retrieves detailed information about a specific call subscription in the dialpad system.
+- **Retrieve callcenter operators by id** (read-only): Retrieves a list of operators associated with a specific call center in dialpad.
+- **Retrieve callrouter by id** (read-only): Retrieves detailed information about a specific call router in the dialpad system.
+- **Retrieve channel by id** (read-only): Retrieves detailed information about a specific communication channel in the dialpad platform using its unique identifier.
+- **Retrieve coaching stats v2** (read-only): The getstatistics endpoint retrieves comprehensive statistics for various aspects of dialpad usage, including calls, customer satisfaction…
+- **Retrieve coaching team by id** (read-only): Retrieves detailed information about a specific coaching team in dialpad.
+- **Retrieve coaching teams information** (read-only): Retrieves information about coaching teams in the dialpad platform.
+- **Retrieve company data** (read-only): Retrieves detailed information about a specific company within the dialpad platform.
+- **Retrieve conference meetings** (read-only): Retrieves information about conference meetings in the dialpad platform.
+- **Retrieve contact by id** (read-only): Retrieves detailed information for a specific contact in your dialpad account using the contact's unique identifier.
+- **Retrieve contact list** (read-only): Retrieves a list of contacts from the dialpad platform.
+- **Retrieve department by id** (read-only): Retrieves detailed information about a specific department within the dialpad organization.
+- **Retrieve department operators by id** (read-only): Retrieves a list of operators associated with a specific department in dialpad.
+- **Retrieve e911 office details** (read-only): Retrieves the enhanced 911 (e911) settings for a specific office within the dialpad communication platform.
+- **Retrieve list of departments** (read-only): Retrieves a list of departments for a specified office within the dialpad organization.
+- **Retrieve members of coaching team by id** (read-only): Retrieves a list of members belonging to a specific coaching team in dialpad.
+- **Retrieve numbers via api v2** (read-only): Retrieves a list of phone numbers associated with the user's dialpad account.
+- **Retrieve off duty status by office id** (read-only): Retrieves the list of custom off-duty statuses for a specific office within the dialpad system.
+- **Retrieve office by id** (read-only): Retrieves detailed information about a specific office within the dialpad system.
+- **Retrieve office plan by id** (read-only): Retrieves the current plan details for a specific office in your dialpad organization.
+- **Retrieve operator duty status** (read-only): Retrieves the current duty status of a specific call center operator in dialpad.
+- **Retrieve room information by id** (read-only): Retrieves detailed information about a specific room in the dialpad system.
+- **Retrieve schedule report by id** (read-only): Retrieves detailed information about a specific scheduled report in the dialpad system.
+- **Retrieve sms opt out by company id** (read-only): Retrieves the sms opt-out list for a specific company within the dialpad platform.
+- **Retrieve sms subscription by id** (read-only): Retrieves detailed information about a specific sms subscription in dialpad.
+- **Retrieve sms subscriptions** (read-only): Retrieves a list of sms subscriptions associated with the authenticated user's dialpad account.
+- **Retrieve specific webhook by id** (read-only): Retrieves detailed information about a specific webhook configuration in the dialpad system.
+- **Retrieve stat by id** (read-only): Retrieves detailed statistics and analytics data for a specific entity within the dialpad platform.
+- **Retrieve subscription change log** (read-only): Retrieves the changelog for dialpad api subscriptions.
+- **Retrieve subscription change log by id** (read-only): Retrieves the changelog for a specific subscription in the dialpad system.
+- **Retrieve subscription contacts** (read-only): Retrieves subscription information for contacts in the dialpad system.
+- **Retrieve teams for office id** (read-only): Retrieves a list of teams associated with a specific office in the dialpad organization.
+- **Retrieve user device by id** (read-only): Retrieves detailed information about a specific user device associated with a dialpad account.
+- **Retrieve user devices list** (read-only): Retrieves a list of devices associated with users in the dialpad system.
+- **Retrieve user personas by id** (read-only): Retrieves all personas associated with a specific user in the dialpad system.
+- **Retrieve websocket by id** (read-only): Retrieves detailed information about a specific websocket connection using its unique identifier.
+- **Retrieve websocket connection** (read-only): Retrieves information about websocket connections or initiates a websocket connection for real-time event subscriptions with dialpad.
+- **Send sms with optional media and group sender**: The sendsms endpoint allows you to send sms or mms messages through the dialpad platform to one or multiple recipients.
+- **Set user caller id by id**: Sets or blocks the caller id for a specific dialpad user.
+- **Subscribe contact event**: Creates a new contact event subscription in the dialpad platform, allowing you to receive real-time updates about changes to contacts.
+- **Toggle user do not disturb status**: The toggleuserdonotdisturb endpoint allows you to update the do not disturb (dnd) status for a specific user in the dialpad system.
+- **Toggle vi call for user by id**: Toggles the voice intelligence (vi) feature for a specific dialpad user.
+- **Transfer call to destination**: Transfers an active call within the dialpad system to a new destination.
+- **Unassign access control policy from user**: This endpoint unassigns a user from a specific access control policy in dialpad.
+- **Unassign office number**: This endpoint unassigns a specific phone number from a dialpad office.
+- **Unassign room phone number**: This endpoint unassigns a phone number from a specific room in the dialpad system.
+- **Unassign user phone number**: Unassigns a specified phone number from a user's dialpad account.
+- **Unpark call by user id**: Unparks a previously parked call in the dialpad system.
+- **Update call center settings by id**: Updates the configuration of an existing call center in the dialpad platform.
+- **Update call review share link privacy**: Updates the privacy settings of an existing call review share link in dialpad.
+- **Update call subscription by id**: Updates an existing call event subscription in the dialpad system.
+- **Update contact information**: Updates an existing contact's information in the dialpad system.
+- **Update contact subscription by id**: Updates an existing contact event subscription in the dialpad system.
+- **Update e911 address for office**: This endpoint updates the enhanced 911 (e911) address for a specific office in dialpad.
+- **Update e911 address for user**: Updates the e911 address for a specified user in the dialpad system.
+- **Update ivr details by id**: Updates an existing custom interactive voice response (ivr) workflow in the dialpad system.
+- **Update operator duty status**: Updates the duty status of a specific call center operator in dialpad.
+- **Update recording share link privacy**: Updates the privacy settings of a specific recording share link in dialpad.
+- **Update room details**: Updates the configuration of a specific dialpad room identified by its id.
+- **Update schedule report settings**: The updatescheduledreport endpoint allows you to modify the settings of an existing scheduled report in dialpad.
+- **Update sms subscription settings**: Updates an existing sms event subscription in the dialpad api.
+- **Update user information by id**: This endpoint allows you to update various aspects of a user's profile and settings in the dialpad system.
+- **Validate callback request** (read-only): Validates a callback request for the dialpad system.

@@ -1,0 +1,168 @@
+# Zoho People
+
+Zoho People is a cloud HR platform for employee records, leave, attendance, shifts, timesheets, performance, files, learning, compensation, and HR workflows.
+
+Category: Recruiting & HR. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/zoho-people/.
+
+## Actions
+
+- **Add leave balance**: Add legacy leave balance for the documented employees and leave types.
+- **Add LMS trainers**: Add the supplied employees as Zoho People LMS trainers.
+- **Add timer comment**: Add a comment to a legacy time log or timer.
+- **Apply hourly permission**: Submit an hourly-permission request.
+- **Approve on-duty request**: Approve or reject an on-duty request using the documented decision fields.
+- **Approve timesheet**: Approve or reject one legacy timesheet using the documented decision fields.
+- **Bulk cancel leave requests**: Cancel the explicitly supplied set of V3 leave request IDs.
+- **Cancel compensatory request**: Cancel a V3 compensatory-off request by record ID.
+- **Cancel hourly permission**: Cancel an hourly-permission request by record and form ID.
+- **Cancel leave grant**: Cancel a V3 leave grant request by record ID.
+- **Cancel leave request**: Cancel one V3 leave request by record ID.
+- **Cancel on-duty request**: Cancel an on-duty request using the documented record fields.
+- **Create and tag employee KRAs**: Create a KRA and tag it to selected employees in one Zoho operation.
+- **Create attendance entries**: Create attendance entries using the V3 provider-native batch contract.
+- **Create attendance regularization**: Submit an attendance regularization request using the documented legacy contract.
+- **Create compensatory request**: Create a V3 compensatory-off request.
+- **Create employee salary**: Add a salary record for an employee.
+- **Create file folder**: Create a Zoho People V3 file folder.
+- **Create form record**: Create a record in a supported Zoho People form or create an employee record.
+- **Create HR process record**: Create a V3 HR process record for selected employees using documented process data.
+- **Create job schedule**: Create a legacy job schedule and optionally publish it.
+- **Create leave grant**: Create a V3 leave grant request.
+- **Create leave request**: Create a V3 leave request.
+- **Create leave setting**: Create a V3 holiday, pay-period policy, or work calendar using a closed typed contract.
+- **Create legacy time-tracker client**: Create a client using the legacy time-tracker contract.
+- **Create LMS batch**: Create a batch in a blended-learning Zoho People LMS course.
+- **Create LMS course**: Create a Zoho People LMS course using the documented JSON contract.
+- **Create LMS module**: Create a module through the documented self-paced course or blended-learning batch route.
+- **Create LMS session**: Create a session in a module of a blended-learning LMS batch.
+- **Create on-duty request**: Submit an on-duty request using the documented legacy contract.
+- **Create or update legacy file folder**: Create or rename a legacy Zoho People file folder using its documented GET mutation.
+- **Create performance library items**: Create up to 20 competencies, KRAs, skills, or review questions.
+- **Create shift mapping**: Map a shift to one employee using the V3 multipart contract.
+- **Create time log**: Create a legacy time log.
+- **Create timesheet**: Create a legacy timesheet from time logs and optionally submit it for approval.
+- **Create variable**: Create a V3 Zoho People variable.
+- **Create variable group**: Create a V3 variable group.
+- **Delete attendance entries**: Delete one V3 attendance entry by ID or a provider-supported filtered set of entries.
+- **Delete attendance regularizations**: Delete one explicitly supplied attendance regularization record.
+- **Delete compensatory request**: Delete a V3 compensatory-off request by record ID.
+- **Delete employee performance items**: Permanently remove selected tagged KRAs, competencies, or skills from an employee.
+- **Delete files**: Permanently delete up to 100 explicitly supplied Zoho People file IDs.
+- **Delete job schedule**: Delete one legacy job schedule.
+- **Delete leave grant**: Delete a V3 leave grant request by record ID.
+- **Delete leave request**: Delete one V3 leave request by record ID.
+- **Delete leave setting**: Delete a V3 holiday, pay-period policy, or work calendar by ID.
+- **Delete legacy time-tracker client**: Delete a client using the legacy time-tracker contract.
+- **Delete legacy time-tracker resource**: Delete legacy projects or jobs using the selected documented contract.
+- **Delete on-duty request**: Delete explicitly supplied on-duty requests.
+- **Delete performance library items**: Request deletion of selected performance library records.
+- **Delete shift mapping**: Delete or end one V3 shift mapping with documented date and attendance options.
+- **Delete time log**: Delete one legacy time log.
+- **Delete time-tracker resources**: Delete the explicitly supplied V3 client, project, or job IDs.
+- **Delete timer comment**: Delete one legacy time-tracker comment.
+- **Delete timesheet**: Delete up to 1,000 comma-separated legacy timesheet IDs.
+- **Delete variable**: Delete one V3 variable by numeric ID or API name.
+- **Delete variable group**: Delete one V3 variable group by group ID or API name.
+- **Download file** (read-only): Download one Zoho People V3 file and return a file reference.
+- **Download time-tracker attachment** (read-only): Download one attachment from a documented time-tracker entity and return a file reference.
+- **Enroll LMS learners**: Create externally visible learner enrollments in a course or a specific blended-learning batch.
+- **Get attendance entry** (read-only): Fetch one V3 attendance entry by entry ID.
+- **Get attendance regularization fields** (read-only): Return configured fields for attendance regularization requests.
+- **Get compensatory request** (read-only): Return one specific V3 compensatory-off request by record ID.
+- **Get file** (read-only): View one Zoho People V3 file and return a file reference.
+- **Get file sharing options** (read-only): Return allowed folders or organization-file share targets.
+- **Get form fields** (read-only): Get the field components and label names needed to read or write records in a Zoho People form.
+- **Get form record** (read-only): Fetch one form record, a section-wise record, or records from a saved employee view.
+- **Get holiday** (read-only): Fetch one V3 holiday by holiday ID.
+- **Get hourly permission options** (read-only): Return applicable permission types, balance, or configured details for an hourly-permission request.
+- **Get HR process record** (read-only): Fetch one V3 HR process record by its documented record ID.
+- **Get leave grant** (read-only): Fetch one V3 leave grant request by record ID.
+- **Get leave report** (read-only): Return one page of a selected V3 or documented legacy leave report.
+- **Get leave request** (read-only): Fetch one V3 leave request by record ID.
+- **Get leave setting** (read-only): Fetch one V3 pay-period policy or work calendar by ID.
+- **Get legacy time-tracker resource** (read-only): Fetch one legacy client, project, or job by ID.
+- **Get LMS settings** (read-only): Return organization-level Zoho People LMS settings.
+- **Get my compensation** (read-only): Return compensation details for the connected employee.
+- **Get on-duty details** (read-only): Fetch details for one on-duty request.
+- **Get organization** (read-only): Return the connected Zoho People organization's details.
+- **Get pay-period settings** (read-only): Return legacy payroll pay-period settings.
+- **Get running timer** (read-only): Return the connected user's currently running time-tracker timer.
+- **Get shift mapping** (read-only): Fetch one V3 shift mapping by mapping ID.
+- **Get shift schedule** (read-only): Return V3 shift schedules for an employee and date range.
+- **Get suggested LMS course count** (read-only): Return the number of LMS courses suggested to the connected learner.
+- **Get time log** (read-only): Fetch one legacy time log with optional timer and comment counts.
+- **Get time-tracker reports and settings** (read-only): Return a payroll report page, pay-period details, or general time-tracker settings.
+- **Get time-tracker resource** (read-only): Fetch one V3 client, project, or job by ID with resource-specific include options.
+- **Get timesheet** (read-only): Fetch one legacy timesheet by ID.
+- **Get variable** (read-only): Fetch one V3 variable by numeric ID or API name.
+- **Get variable group** (read-only): Fetch one V3 variable group by group ID or API name.
+- **List attendance entries** (read-only): Return one V3 page of attendance entries with employee, date, and modification filters.
+- **List attendance regularization reasons** (read-only): Return configured reasons available for attendance regularization.
+- **List attendance regularization records** (read-only): Return one page of attendance regularization records using documented filters.
+- **List compensation reference data** (read-only): Return compensation components, packages, currencies, reasons, or settings.
+- **List compensation revisions** (read-only): Return one page of compensation revisions with date and status filters.
+- **List compensatory requests** (read-only): Return one V3 page of compensatory-off requests with employee, date, approval, and status filters.
+- **List employee performance items** (read-only): Return one page of an employee's KRAs, competencies, or skills.
+- **List employee salaries** (read-only): Return one page of employee salary records for team or all visibility.
+- **List file acknowledgements** (read-only): Return one acknowledgement-details page or user acknowledgement statuses.
+- **List file folders** (read-only): Return all Zoho People V3 file folders matching an optional name.
+- **List files** (read-only): Return one page from a documented Zoho People V3 file view.
+- **List form records** (read-only): Return one page of records from a named Zoho People form.
+- **List forms** (read-only): List forms and their identifiers, link names, views, visibility, and permissions in Zoho People.
+- **List holidays** (read-only): Return one V3 page of holidays.
+- **List hourly permission requests** (read-only): Return one page of hourly-permission requests or approvals for the connected user's role.
+- **List job schedules** (read-only): Return one legacy page of job schedules by user and date range.
+- **List leave grants** (read-only): Return one V3 page of leave grant requests with employee, date, approval, and sort filters.
+- **List leave requests** (read-only): Return one V3 page of leave requests with employee, date, type, approval, and status filters.
+- **List leave settings** (read-only): List V3 pay-period policies or work calendars.
+- **List legacy time-tracker resources** (read-only): Return one legacy page of clients, projects, or jobs with legacy filters.
+- **List legacy V2 holidays** (read-only): Return holidays from the V2 all-holidays API using its employee, location, shift, and upcoming filters.
+- **List LMS batch sessions** (read-only): Fetch one page of sessions from a blended-learning LMS batch.
+- **List LMS categories** (read-only): Return one page of Zoho People LMS course categories.
+- **List LMS courses** (read-only): Return one page of all LMS courses or the connected user's courses with documented filters.
+- **List LMS modules** (read-only): Fetch one page of modules from a self-paced course or a fixed blended-learning batch route.
+- **List LMS rooms** (read-only): Return one page of up to 25 rooms available for LMS sessions.
+- **List LMS trainers** (read-only): Return one page of LMS trainers with employee-status and sort filters.
+- **List on-duty requests** (read-only): Return one page of on-duty requests or approvals for the connected user's role.
+- **List on-duty types** (read-only): Return configured on-duty request types.
+- **List performance library items** (read-only): Return one page of competencies, KRAs, skills, or review questions.
+- **List related form records** (read-only): Return one page of records related through a parent module and lookup field.
+- **List shift mappings** (read-only): Return one V3 page of employee shift mappings.
+- **List time logs** (read-only): Return one legacy page of time logs with employee, project, job, date, billing, and approval filters.
+- **List time-tracker resources** (read-only): Return one V3 page of clients, projects, or jobs with resource-specific filters.
+- **List timesheets** (read-only): Return one legacy timesheet page for a required user with documented status and date filters.
+- **List untagged performance items** (read-only): Return one page of KRAs or competencies not tagged to selected employees.
+- **List variable groups** (read-only): Return one page of variable groups using the V3 index selector.
+- **List variables** (read-only): Return one page of variables using the V3 index selector.
+- **List views** (read-only): Return the default and custom Zoho People views available to the connected user.
+- **List work items** (read-only): Return one legacy page of work items for an employee or job.
+- **Mark LMS session attendance**: Record Present or Absent for one learner in a completed LMS session.
+- **Publish LMS course or batch**: Publish a self-paced course or blended-learning batch.
+- **Remove LMS course learner**: Remove one learner enrollment from a Zoho People LMS course.
+- **Search form records** (read-only): Return one page of employee form records matching a field, operator, and value.
+- **Set file acknowledgement**: Acknowledge a Zoho People V3 policy file or revoke its acknowledgement.
+- **Start timer**: Start a legacy timer for a documented time-tracker item.
+- **Tag employee performance items**: Tag up to 20 existing KRAs, competencies, or skills to one employee.
+- **Update attendance entry**: Edit one V3 attendance entry by entry ID.
+- **Update compensatory request**: Edit a V3 compensatory-off request by record ID.
+- **Update currencies**: Update one named compensation currency or multiple currencies.
+- **Update employee performance items**: Update an employee's tagged KRAs, competencies, or skills.
+- **Update employee salary**: Update an employee salary record.
+- **Update file**: Update a V3 file's metadata or content and optionally send email or feed notifications.
+- **Update file folder**: Rename or move a Zoho People V3 file folder.
+- **Update form record**: Update field values and optional tabular rows on an existing Zoho People form record.
+- **Update job schedule**: Edit or publish a legacy job schedule using the selected operation.
+- **Update leave grant**: Edit a V3 leave grant request by record ID.
+- **Update leave setting**: Update a V3 holiday, pay-period policy, or work calendar by ID using a closed typed contract.
+- **Update legacy time-tracker client**: Update a client using the legacy time-tracker contract.
+- **Update legacy time-tracker status**: Change a legacy project or job status.
+- **Update LMS session**: Update fields on an existing blended-learning LMS session.
+- **Update performance library items**: Update up to 20 competencies, KRAs, skills, or review questions.
+- **Update time log**: Edit one legacy time log.
+- **Update time-tracker status**: Change the status of one V3 project or job.
+- **Update timesheet**: Edit a legacy timesheet or replace its attachment.
+- **Update variable**: Update one V3 variable by numeric ID or API name.
+- **Update variable group**: Update one V3 variable group by group ID or API name.
+- **Upgrade employee skills**: Upgrade a skill for selected employees, optionally attaching a certificate.
+- **Upload file**: Upload and optionally share a V3 file, notify people, or require acknowledgement by a deadline.
+- **Upload time and attendance file**: Upload an attachment for a documented time, attendance, or leave resource.

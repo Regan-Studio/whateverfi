@@ -1,0 +1,19 @@
+# Nutrient Document Web Services API
+
+Process, convert, OCR, redact, sign, and analyze documents with Nutrient Document Web Services.
+
+Category: Developer. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/nutrient-document-web-services-api/.
+
+## Actions
+
+- **Analyze Build Cost** (read-only): Estimate the credits and Processor features required by Build API instructions without executing the document job or consuming credits.
+- **Build Document**: Synchronously create one document from remote files, remote HTML, new pages, and composable safe actions, returning its filename, media…
+- **Convert Markdown to PDF**: Convert CommonMark or GitHub-Flavored Markdown text into a PDF using optional built-in styling, custom CSS, page layout, and syntax…
+- **Create PDF from Web Page**: Render an HTML web page at a public URL, with optional page layout settings, into a PDF.
+- **Get Account Information** (read-only): Return the connected Nutrient account's subscription type, status, and estimated remaining credits.
+- **Get Processor Usage** (read-only): Return the connected account's Processor subscription status and credit usage counters.
+- **Make PDF Accessible**: Auto-tag a PDF at a remote URL for PDF/UA screen-reader accessibility and return the result's filename, media type, and Base64 content up…
+- **OCR PDF**: Apply optical character recognition to a PDF at a remote URL and return a searchable PDF's filename, media type, and Base64 content up to…
+- **Revoke JWT Token**: Immediately revoke a bearer token created by CREATE_JWT_TOKEN using its ID.
+- **Stage PDF Redactions**: Find matching content in a remote PDF and return a review PDF's filename, media type, and Base64 content up to 4 MB with unapplied…
+- **Watermark PDF**: Add a positioned text or image watermark to every page of a PDF at a public URL and return the copy's filename, media type, and Base64…

@@ -1,0 +1,119 @@
+# Zulip
+
+Chat for distributed teams. Zulip combines the immediacy of real-time chat with an email threading model.
+
+Category: Communication. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/zulip/.
+
+## Actions
+
+- **Create Channel**: Create a new channel in Zulip.
+- **Create Scheduled Message**: Create a scheduled message in Zulip.
+- **Delete Reminder**: Delete a reminder from Zulip.
+- **Delete Saved Snippet**: Delete a saved snippet by its ID.
+- **Delete Scheduled Message**: Delete a scheduled message in Zulip.
+- **Get All Channels** (read-only): Retrieve all channels (streams) in Zulip that match specified filters.
+- **Get Channel by ID** (read-only): Get detailed information about a Zulip channel by its ID.
+- **Get Channel ID** (read-only): Get a channel's unique ID by its name.
+- **Get message** (read-only): Fetch a single message by ID from Zulip.
+- **Get Messages** (read-only): Fetch messages from Zulip.
+- **Get own user** (read-only): Retrieve the profile information for the authenticated user.
+- **Get Scheduled Messages** (read-only): Fetch all scheduled messages for the authenticated user.
+- **Get stream topics** (read-only): Retrieve all topics in a Zulip channel.
+- **Get Subscriptions** (read-only): Retrieve all channels (streams) the authenticated user is subscribed to.
+- **Get user by email** (read-only): Fetch a user by email address from Zulip.
+- **Mark All Messages as Read**: Mark all messages as read for the authenticated user.
+- **Mark Stream as Read**: Mark all messages in a Zulip channel as read.
+- **Mark Topic as Read**: Mark all messages in a topic as read.
+- **Send Message**: Send a message in Zulip.
+- **Subscribe to Channel**: Subscribe users to one or more Zulip channels.
+- **Update Message**: Edit a message in Zulip.
+- **Update Subscriptions**: Update channel subscriptions by subscribing to new channels or unsubscribing from existing ones.
+- **Add Alert Words**: Add alert words to the current user's configuration.
+- **Add APNs Device Token**: Add an APNs (Apple Push Notification service) device token to Zulip.
+- **Add Default Stream**: Add a channel as a default stream in Zulip.
+- **Add Linkifier**: Add a linkifier to a Zulip realm.
+- **Add Navigation View**: Add a navigation view in Zulip.
+- **Add Reaction**: Add an emoji reaction to a Zulip message.
+- **Archive Channel**: Archive a channel in Zulip.
+- **Check Messages Match Narrow** (read-only): Check if specific messages match a narrow filter.
+- **Create BigBlueButton video call** (read-only): Create a BigBlueButton video call in Zulip.
+- **Create Channel Folder**: Create a new channel folder in Zulip.
+- **Create custom profile field**: Create a custom profile field in Zulip.
+- **Create Drafts**: Create one or more draft messages in Zulip.
+- **Create Message Reminder**: Create a message reminder in Zulip.
+- **Create reusable invitation link**: Create a reusable invitation link for the Zulip organization.
+- **Create Saved Snippet**: Create a saved snippet in Zulip.
+- **Delete Draft**: Delete a draft in Zulip.
+- **Delete Event Queue**: Delete an event queue previously registered via POST /api/v1/register.
+- **Delete Message**: Delete a message in Zulip.
+- **Delete Topic**: Delete a topic from a Zulip channel/stream.
+- **Edit Draft**: Edit an existing draft message in Zulip.
+- **Edit Navigation View**: Update a navigation view in Zulip.
+- **Edit Saved Snippet**: Edit a saved snippet by updating its title and/or content.
+- **Export Realm**: Create a Zulip realm data export.
+- **Get alert words** (read-only): Retrieve all configured alert words for the authenticated user.
+- **Get all data exports** (read-only): Retrieve all data exports for the Zulip organization.
+- **Get all invitations** (read-only): Retrieve all unexpired invitations for the Zulip organization.
+- **Get Another User Presence** (read-only): Get the presence status for a specific user in Zulip.
+- **Get Attachments** (read-only): Retrieve metadata on files uploaded by the requesting user.
+- **Get channel email address** (read-only): Retrieve the email address for a Zulip channel.
+- **Get Channel Folders** (read-only): Retrieve all channel folders in the organization, sorted by display order.
+- **Get Channel Subscribers** (read-only): Get all subscribers of a Zulip channel.
+- **Get custom emoji** (read-only): Retrieve all custom emoji configured in the Zulip realm.
+- **Get custom profile fields** (read-only): Get all custom profile fields configured for the Zulip realm.
+- **Get drafts** (read-only): Fetch all drafts for the authenticated user.
+- **Get Events** (read-only): Get events from a Zulip event queue.
+- **Get file temporary URL** (read-only): Get a public temporary URL for an uploaded file in Zulip.
+- **Get linkifiers** (read-only): Retrieve all configured linkifiers in the Zulip realm.
+- **Get Message History** (read-only): Fetch the complete edit history of a Zulip message.
+- **Get Navigation Views** (read-only): Fetch all navigation views for the authenticated user.
+- **Get Read Receipts** (read-only): Retrieve read receipts for a message in Zulip.
+- **Get realm export consents** (read-only): Retrieve data export consent state for users in a realm.
+- **Get realm icon** (read-only): Retrieve the URL of the Zulip realm's icon.
+- **Get Realm Presence** (read-only): Get the presence status for all users in the Zulip realm.
+- **Get reminders** (read-only): Fetch all undelivered reminders for the authenticated user.
+- **Get Saved Snippets** (read-only): Fetch all saved snippets for the authenticated user.
+- **Get server settings** (read-only): Retrieve server configuration and available authentication methods.
+- **Get subscription status** (read-only): Check whether a specific user is subscribed to a particular channel (stream).
+- **Get user channels** (read-only): Retrieve the list of channel IDs that a specific user is subscribed to.
+- **Get user group members** (read-only): Retrieve all members of a specific user group.
+- **Get user group membership status** (read-only): Check if a user is a member of a specific user group.
+- **Get user group subgroups** (read-only): Retrieve subgroups of a user group.
+- **Get user groups** (read-only): Retrieve all user groups in the Zulip organization.
+- **Get user status** (read-only): Retrieve the status currently set by a user in the Zulip organization.
+- **Mute Topic**: Mute or unmute a topic in a Zulip channel.
+- **Reactivate User**: Reactivate a deactivated user in Zulip.
+- **Register Event Queue**: Register an event queue for receiving Zulip events.
+- **Register Push Device**: Register an E2EE (end-to-end encrypted) push device for mobile notifications.
+- **Remove Alert Words**: Remove alert words from the current user's configuration.
+- **Remove Attachment**: Delete an attachment in Zulip.
+- **Remove Code Playground**: Remove a code playground from a Zulip realm.
+- **Remove Default Stream**: Remove a channel from default streams in Zulip.
+- **Remove FCM Token**: Remove an FCM registration token for Android push notifications.
+- **Remove Linkifier**: Remove a linkifier from a Zulip realm.
+- **Remove Navigation View**: Remove a navigation view in Zulip.
+- **Remove Reaction**: Remove an emoji reaction from a Zulip message.
+- **Render Message** (read-only): Render a message to HTML in Zulip.
+- **Reorder Channel Folders**: Reorder channel folders in Zulip.
+- **Reorder Custom Profile Fields**: Reorder custom profile fields in Zulip.
+- **Reorder Linkifiers**: Reorder linkifiers in Zulip.
+- **Revoke Email Invitation**: Revoke an email invitation in Zulip.
+- **Revoke reusable invitation link**: Revoke a reusable invitation link for the Zulip organization.
+- **Send Test Notification**: Send a test notification to mobile device(s).
+- **Set Typing Status**: Set typing status in Zulip.
+- **Set Typing Status for Message Edit**: Set typing status when editing a message in Zulip.
+- **Test Welcome Bot Custom Message**: Test welcome bot custom message in Zulip.
+- **Unsubscribe From Channel**: Unsubscribe from one or more channels (streams) in Zulip.
+- **Update Channel**: Update a channel in Zulip.
+- **Update Channel Folder**: Update a channel folder in Zulip.
+- **Update Linkifier**: Update a linkifier in a Zulip realm.
+- **Update Message Flags**: Update personal message flags in Zulip.
+- **Update Message Flags for Narrow**: Update personal message flags (e.g., read, starred) for messages matching a narrow filter.
+- **Update Realm User Settings Defaults**: Update realm-level defaults of user settings in Zulip.
+- **Update Scheduled Message**: Edit a scheduled message in Zulip.
+- **Update Settings**: Update user settings in Zulip.
+- **Update Status**: Update your status in Zulip.
+- **Update status for user**: Update the status for a specific user in the Zulip organization.
+- **Update Subscription Settings**: Update the user's personal settings for channels they are subscribed to.
+- **Update user by email**: Update a user by email address in Zulip.
+- **Update User Topic**: Update personal preferences for a topic in a Zulip channel.

@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Move a deployment to a new release, handle one-time migrations, and let the updater sidecar do it for you."><meta name="robots" content="index, follow, max-image-preview:large"><meta name="theme-color" content="#FDFDFD"><meta property="og:title" content="Upgrading | WhatEverFi docs"><meta property="og:description" content="Move a deployment to a new release, handle one-time migrations, and let the updater sidecar do it for you."><meta property="og:url" content="https://whateverfi.com/docs/self-host-upgrading/"><meta property="og:type" content="website"><meta property="og:site_name" content="WhatEverFi"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://whateverfi.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/png"><meta property="og:image:alt" content="WhatEverFi. AI teammates you actually own. Your keys, your model, your machine."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Upgrading | WhatEverFi docs"><meta name="twitter:description" content="Move a deployment to a new release, handle one-time migrations, and let the updater sidecar do it for you."><meta name="twitter:image" content="https://whateverfi.com/og-image.png"><meta name="twitter:image:alt" content="WhatEverFi. AI teammates you actually own. Your keys, your model, your machine."><link rel="canonical" href="https://whateverfi.com/docs/self-host-upgrading/"><link rel="alternate" type="text/markdown" href="/docs/self-host-upgrading.md"><link rel="alternate" type="application/rss+xml" title="WhatEverFi blog" href="/blog/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><link rel="describedby" type="text/plain" href="/llms.txt"><link rel="ai-catalog" type="application/ai-catalog+json" href="/.well-known/ai-catalog.json"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.png" type="image/png" sizes="128x128"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet"><title>Upgrading | WhatEverFi docs</title><link rel="stylesheet" href="/_astro/BaseLayout.WaYUuiGl.css"></head><body><a class="skip-link" href="#main">Skip to content</a><div class="page-shell"><div class="docs-topbar"><div class="docs-shell"><header class="site-header"><div class="site-header__left"><a class="brand-lockup" href="/" aria-label="WhatEverFi home"><img class="brand-lockup__mark" src="/brand/whateverfi-mark.png" width="36" height="36" alt="" aria-hidden="true"><span class="brand-lockup__word">WhatEverFi</span></a><div class="logo-menu" role="menu" aria-label="WhatEverFi home" data-logo-menu data-wordmark="/brand/kit/whateverfi-wordmark.svg" hidden><a role="menuitem" tabindex="-1" href="/" target="_blank" data-attr="logo-menu-new-tab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>Open in new tab</a><button type="button" role="menuitem" tabindex="-1" data-logo-menu-copy data-attr="logo-menu-copy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2"></rect><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path></svg>Copy wordmark as SVG</button><a role="menuitem" tabindex="-1" href="/brand/" data-attr="logo-menu-brand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2.5a1.5 1.5 0 0 0-1.1 2.5A2 2 0 0 1 12 22Z"></path><circle cx="7.5" cy="10.5" r="1"></circle><circle cx="10.5" cy="6.5" r="1"></circle><circle cx="15.5" cy="7.5" r="1"></circle></svg>Brand kit</a></div><a class="site-header__section" href="/docs/">Docs</a><nav class="site-nav" aria-label="Primary"><a href="/download/">Download</a><a href="/integrations/">Integrations</a><a href="/pricing/">Pricing</a></nav></div><div class="site-header__right"><button class="docs-search-trigger" type="button" aria-label="Search" aria-keyshortcuts="Meta+K Control+K"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg><span>Search</span><kbd>⌘K</kbd></button><a class="star-pill" href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener" aria-label="GitHub" data-attr="header-github"><span>GitHub</span></a><div class="site-header__cta"><a class="button button--primary button--small" href="https://app.whateverfi.com">Get started</a></div><details class="site-menu" data-site-menu><summary class="site-menu__toggle" aria-label="Menu"><svg class="site-menu__icon site-menu__icon--open" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"></path></svg><svg class="site-menu__icon site-menu__icon--close" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"></path></svg></summary><nav class="site-menu__panel" aria-label="Primary"><a href="/download/">Download</a><a href="/integrations/">Integrations</a><a href="/pricing/">Pricing</a><a href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener" data-attr="menu-github">GitHub</a></nav></details></div></header><script type="module">var e=document.querySelector(`[data-site-menu]`);e&&(e.addEventListener(`click`,t=>{t.target.closest(`a`)&&(e.open=!1)}),document.addEventListener(`click`,t=>{e.open&&!e.contains(t.target)&&(e.open=!1)}),document.addEventListener(`keydown`,t=>{t.key===`Escape`&&(e.open=!1)}));var t=document.querySelector(`[data-logo-menu]`),n=t?.parentElement?.querySelector(`.brand-lockup`);if(t&&n){let e=()=>[...t.querySelectorAll(`[role=menuitem]`)],r=(e=!1)=>{t.hidden||(t.hidden=!0,e&&n.focus())};n.addEventListener(`contextmenu`,r=>{r.preventDefault(),t.hidden=!1;let i=r.clientX||n.getBoundingClientRect().left,a=r.clientY||n.getBoundingClientRect().bottom;t.style.left=`${Math.min(i,window.innerWidth-t.offsetWidth-8)}px`,t.style.top=`${Math.min(a,window.innerHeight-t.offsetHeight-8)}px`,e()[0]?.focus()}),t.querySelector(`[data-logo-menu-copy]`)?.addEventListener(`click`,()=>{let e=t.dataset.wordmark??``,n=fetch(e).then(async e=>{if(!e.ok)throw Error(`Wordmark request failed: ${e.status}`);return new Blob([await e.text()],{type:`text/plain`})});r(!0);let i=()=>window.location.assign(e);try{navigator.clipboard.write([new ClipboardItem({"text/plain":n})]).catch(i)}catch{i()}}),t.addEventListener(`click`,e=>{e.target.closest(`a`)&&r()}),t.addEventListener(`keydown`,t=>{let n=e(),i=n.indexOf(document.activeElement);t.key===`ArrowDown`||t.key===`ArrowUp`?(t.preventDefault(),n[(i+(t.key===`ArrowDown`?1:-1)+n.length)%n.length]?.focus()):t.key===`Escape`?(t.preventDefault(),r(!0)):t.key===`Tab`&&r()}),document.addEventListener(`pointerdown`,e=>{t.contains(e.target)||r()}),window.addEventListener(`scroll`,()=>r(),{passive:!0}),window.addEventListener(`blur`,()=>r())}</script></div></div><div class="docs-shell docs"><nav class="docs-nav docs-nav--desktop" aria-label="Docs"><div class="docs-nav__section"><p>Get started</p><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/troubleshooting/">Troubleshooting</a></li><li><a href="/docs/bots-and-chats/">Bots and chats</a></li><li><a href="/docs/import-an-agent/">Import an agent</a></li></ul></div><div class="docs-nav__section"><p>Using WhatEverFi</p><ul><li><a href="/docs/integrations/">Connect apps</a></li><li><a href="/docs/routines/">Routines</a></li><li><a href="/docs/pages/">Pages</a></li><li><a href="/docs/computer/">The bot&#39;s computer</a></li><li><a href="/docs/memory/">Memory</a></li><li><a href="/docs/skills/">Skills</a></li><li><a href="/docs/approvals/">Approvals</a></li><li><a href="/docs/groups/">Groups and teamwork</a></li><li><a href="/docs/voice-and-calls/">Voice and calls</a></li><li><a href="/docs/messaging-apps/">Chat apps</a></li></ul></div><div class="docs-nav__section"><p>Settings</p><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/model-subscriptions/">Model subscriptions</a></li><li><a href="/docs/spaces/">Spaces</a></li><li><a href="/docs/bot-secrets/">Reusable credentials</a></li><li><a href="/docs/account/">Account and billing</a></li></ul></div><div class="docs-nav__section"><p>Apps</p><ul><li><a href="/docs/desktop-app/">Desktop app</a></li><li><a href="/docs/mobile-app/">Mobile app</a></li></ul></div><div class="docs-nav__section"><p>Advanced</p><ul><li><a href="/docs/fleet-management/">Bots that manage bots</a></li><li><a href="/docs/build-a-plugin/">Build a plugin</a></li><li><a href="/docs/board/">Ticket board</a></li></ul></div><div class="docs-nav__section"><p>Self-hosting</p><ul><li><a href="/docs/self-host/">Overview</a></li><li><a href="/docs/self-host-configuration/">Configuration</a></li><li><a href="/docs/self-host-secrets/">Secrets</a></li><li><a href="/docs/self-host-production/">Production deployment</a></li><li><a href="/docs/self-host-upgrading/" aria-current="page">Upgrading</a></li><li><a href="/docs/self-host-backups/">Backup and restore</a></li></ul></div><div class="docs-nav__section"><p>Configure your server</p><ul><li><a href="/docs/self-host-accounts/">Sign-in and accounts</a></li><li><a href="/docs/self-host-models/">Models</a></li><li><a href="/docs/self-host-integrations/">Tools and integrations</a></li><li><a href="/docs/self-host-inbound-email/">Bot email addresses</a></li><li><a href="/docs/self-host-sandbox-providers/">Computer providers</a></li><li><a href="/docs/self-host-docker-computers/">Docker computers</a></li><li><a href="/docs/computer-runtime/">Computer runtime</a></li><li><a href="/docs/self-host-storage/">Storage and encryption</a></li><li><a href="/docs/self-host-clients/">Apps and clients</a></li><li><a href="/docs/self-host-billing/">Billing</a></li><li><a href="/docs/self-host-observability/">Logs and monitoring</a></li><li><a href="/docs/self-host-audit-log/">Audit log</a></li><li><a href="/docs/self-host-restricted-network/">Restricted networks</a></li></ul></div><div class="docs-nav__section"><p>Reference</p><ul><li><a href="/integrations/">Integrations</a></li></ul></div></nav><details class="docs-menu"><summary>Docs menu</summary><nav class="docs-nav" aria-label="Docs"><div class="docs-nav__section"><p>Get started</p><ul><li><a href="/docs/">Getting started</a></li><li><a href="/docs/troubleshooting/">Troubleshooting</a></li><li><a href="/docs/bots-and-chats/">Bots and chats</a></li><li><a href="/docs/import-an-agent/">Import an agent</a></li></ul></div><div class="docs-nav__section"><p>Using WhatEverFi</p><ul><li><a href="/docs/integrations/">Connect apps</a></li><li><a href="/docs/routines/">Routines</a></li><li><a href="/docs/pages/">Pages</a></li><li><a href="/docs/computer/">The bot&#39;s computer</a></li><li><a href="/docs/memory/">Memory</a></li><li><a href="/docs/skills/">Skills</a></li><li><a href="/docs/approvals/">Approvals</a></li><li><a href="/docs/groups/">Groups and teamwork</a></li><li><a href="/docs/voice-and-calls/">Voice and calls</a></li><li><a href="/docs/messaging-apps/">Chat apps</a></li></ul></div><div class="docs-nav__section"><p>Settings</p><ul><li><a href="/docs/models/">Models</a></li><li><a href="/docs/model-subscriptions/">Model subscriptions</a></li><li><a href="/docs/spaces/">Spaces</a></li><li><a href="/docs/bot-secrets/">Reusable credentials</a></li><li><a href="/docs/account/">Account and billing</a></li></ul></div><div class="docs-nav__section"><p>Apps</p><ul><li><a href="/docs/desktop-app/">Desktop app</a></li><li><a href="/docs/mobile-app/">Mobile app</a></li></ul></div><div class="docs-nav__section"><p>Advanced</p><ul><li><a href="/docs/fleet-management/">Bots that manage bots</a></li><li><a href="/docs/build-a-plugin/">Build a plugin</a></li><li><a href="/docs/board/">Ticket board</a></li></ul></div><div class="docs-nav__section"><p>Self-hosting</p><ul><li><a href="/docs/self-host/">Overview</a></li><li><a href="/docs/self-host-configuration/">Configuration</a></li><li><a href="/docs/self-host-secrets/">Secrets</a></li><li><a href="/docs/self-host-production/">Production deployment</a></li><li><a href="/docs/self-host-upgrading/" aria-current="page">Upgrading</a></li><li><a href="/docs/self-host-backups/">Backup and restore</a></li></ul></div><div class="docs-nav__section"><p>Configure your server</p><ul><li><a href="/docs/self-host-accounts/">Sign-in and accounts</a></li><li><a href="/docs/self-host-models/">Models</a></li><li><a href="/docs/self-host-integrations/">Tools and integrations</a></li><li><a href="/docs/self-host-inbound-email/">Bot email addresses</a></li><li><a href="/docs/self-host-sandbox-providers/">Computer providers</a></li><li><a href="/docs/self-host-docker-computers/">Docker computers</a></li><li><a href="/docs/computer-runtime/">Computer runtime</a></li><li><a href="/docs/self-host-storage/">Storage and encryption</a></li><li><a href="/docs/self-host-clients/">Apps and clients</a></li><li><a href="/docs/self-host-billing/">Billing</a></li><li><a href="/docs/self-host-observability/">Logs and monitoring</a></li><li><a href="/docs/self-host-audit-log/">Audit log</a></li><li><a href="/docs/self-host-restricted-network/">Restricted networks</a></li></ul></div><div class="docs-nav__section"><p>Reference</p><ul><li><a href="/integrations/">Integrations</a></li></ul></div></nav></details><main id="main" class="docs-main"><div class="docs-page-head"><p class="docs-eyebrow">Self-hosting</p><button class="docs-copy-page" type="button" data-markdown="/docs/self-host-upgrading.md"><svg class="docs-icon-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="docs-icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Copy page</span></button></div><article class="docs-prose" data-pagefind-body><h1 id="upgrading">Upgrading</h1>
+<p>Move a deployment to a new release, handle one-time migrations, and let the updater sidecar do it
+for you.</p>
+<p>English | <a href="https://github.com/elie222/rakazo/blob/main/docs/zh-CN/self-host-upgrading.md">简体中文</a></p>
+<h2 id="upgrade">Upgrade</h2>
+<p>A Compose deployment on a published release tag upgrades by moving that tag:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> compose</span><span style="color:#79B8FF"> --env-file</span><span style="color:#9ECBFF"> .env</span><span style="color:#79B8FF"> -f</span><span style="color:#9ECBFF"> infra/compose/docker-compose.prod.yml</span><span style="color:#9ECBFF"> pull</span><span style="color:#9ECBFF"> api</span><span style="color:#9ECBFF"> worker</span><span style="color:#9ECBFF"> web</span></span>
+<span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> compose</span><span style="color:#79B8FF"> --env-file</span><span style="color:#9ECBFF"> .env</span><span style="color:#79B8FF"> -f</span><span style="color:#9ECBFF"> infra/compose/docker-compose.prod.yml</span><span style="color:#79B8FF"> \</span></span>
+<span class="line"><span style="color:#9ECBFF">  up</span><span style="color:#79B8FF"> -d</span><span style="color:#79B8FF"> --wait</span><span style="color:#79B8FF"> --pull</span><span style="color:#9ECBFF"> never</span><span style="color:#9ECBFF"> api</span><span style="color:#9ECBFF"> worker</span><span style="color:#9ECBFF"> web</span></span></code></pre>
+<p>A deployment on the default <code>local</code> tag has no registry to pull from, so it upgrades by rebuilding
+the checkout instead:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">git</span><span style="color:#9ECBFF"> pull</span></span>
+<span class="line"><span style="color:#E1E4E8">GIT_SHA</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">$(</span><span style="color:#B392F0">git</span><span style="color:#9ECBFF"> rev-parse</span><span style="color:#9ECBFF"> HEAD</span><span style="color:#E1E4E8">) </span><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> compose</span><span style="color:#79B8FF"> --env-file</span><span style="color:#9ECBFF"> .env</span><span style="color:#79B8FF"> -f</span><span style="color:#9ECBFF"> infra/compose/docker-compose.prod.yml</span><span style="color:#79B8FF"> \</span></span>
+<span class="line"><span style="color:#9ECBFF">  up</span><span style="color:#79B8FF"> -d</span><span style="color:#79B8FF"> --wait</span><span style="color:#79B8FF"> --pull</span><span style="color:#9ECBFF"> never</span><span style="color:#79B8FF"> --build</span><span style="color:#9ECBFF"> api</span><span style="color:#9ECBFF"> worker</span><span style="color:#9ECBFF"> web</span></span></code></pre>
+<p><code>up --wait</code> does not report success until the new API is healthy and the worker and web containers
+are running. Compose stops the old worker before it starts the new one, and the stop waits for the
+jobs it is running to finish, for up to 50 minutes, instead of cutting them off; new jobs start once
+the new worker is up. The API starts only after the <code>migrate</code> container finishes, so a migration failure keeps the new API
+from starting. A failed CLI recreate does not auto-roll back; recover with the previous
+<code>RAKAZO_IMAGE_TAG</code> (or rebuild <code>local</code>) and <code>up -d --wait --pull never</code>.</p>
+<p>The updater sidecar has its own image and tag so an update never recreates the process performing
+it. Move it deliberately by setting <code>RAKAZO_UPDATER_IMAGE_TAG</code> to the full <code>sha-&lt;commit&gt;</code> tag, then
+running <code>docker compose … pull updater &amp;&amp; docker compose … up -d --wait --pull never updater</code>.
+Sidecar <code>/apply</code> and <code>/rollback</code> recover a failed recreate by redeploying the previously cached
+image when possible; if that also fails, they report a possible mixed-version runtime.</p>
+<p>Source checkouts (not Compose) still upgrade the old way: pull, rebuild with
+<code>GIT_SHA=$(git rev-parse HEAD)</code>, run <code>pnpm db:migrate</code>, then restart API and worker.
+Product contracts stay compatible across cloud and self-hosted.</p>
+<h2 id="upgrading-to-the-separate-app-database-login">Upgrading to the separate app database login</h2>
+<p>Releases with <a href="/docs/self-host-configuration/#database-roles">database roles</a> need <code>POSTGRES_APP_PASSWORD</code> in <code>.env</code>. The
+desktop app, <code>install-images.sh</code>, the updater sidecar and <code>infra/compose/deploy-main.sh</code> add it
+when it is missing.
+Elsewhere, add it yourself (<code>openssl rand -hex 16</code>) before you pull, or Compose stops at config
+validation with <code>Set POSTGRES_APP_PASSWORD in .env</code>. On first start, the API creates the
+<code>rakazo_app</code> login, and the API and worker then connect as it. Nothing else changes, and the
+upgrade does not rewrite any data.</p>
+<p>If a feature misbehaves under row-level security, run <code>ALTER ROLE &lt;login&gt; BYPASSRLS;</code> on the login
+in <code>DATABASE_URL</code> (<code>rakazo_app</code> in Compose) as a superuser (the Compose owner is one), then
+restart the API and worker. Role attributes are not inherited, so granting it to <code>rakazo_app</code> does
+nothing for a separate login. The app then runs as before, with a startup warning, and later
+migrations leave that login alone. Undo it with
+<code>NOBYPASSRLS</code> and another restart, then search the API and worker logs for
+<code>violates row-level security</code> and <code>without a tenant or system context</code>. An older release ignores
+the extra variable and connects as the owner, but releases from the same day also encrypt content
+at rest: run <code>content-encryption decrypt</code> before rolling back past them
+(<a href="https://github.com/elie222/rakazo/blob/main/docs/content-encryption.md#rollout">content encryption</a>), or older releases show ciphertext.</p>
+<h2 id="upgrading-to-postgres-18">Upgrading to Postgres 18</h2>
+<p>The production and source-checkout Compose files run Postgres 18. Installs created before that
+keep their data in a Postgres 16 volume (<code>pgdata</code>), which Postgres 18 cannot open. Until the data
+is copied to the new <code>postgres</code> volume, the database container exits and logs that it found
+PostgreSQL data in <code>/var/lib/postgresql/16/docker</code>, and production deploys stop before replacing
+anything. Nothing is deleted or started empty. New installs need nothing. The published-images
+file (<code>docker-compose.images.yml</code>, also used by the desktop app) stays on Postgres 16.</p>
+<p>Take a backup and run the drill on it first (<a href="/docs/self-host-backups/#encrypted-and-off-site-backups">encrypted backups</a>).
+Then update the checkout and run the upgrade as root:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#79B8FF">cd</span><span style="color:#9ECBFF"> /srv/rakazo</span></span>
+<span class="line"><span style="color:#B392F0">git</span><span style="color:#9ECBFF"> pull</span><span style="color:#79B8FF"> --ff-only</span></span>
+<span class="line"><span style="color:#B392F0">sudo</span><span style="color:#9ECBFF"> infra/compose/upgrade-postgres.sh</span></span></code></pre>
+<p>When the stack uses other Compose files, such as the Docker computers overlay or the
+source-checkout stack, pass all of them:
+<code>sudo RAKAZO_DEPLOY_DIR="$PWD" infra/compose/upgrade-postgres.sh infra/compose/docker-compose.yml</code>.
+Set <code>COMPOSE_PROJECT_NAME</code> if the stack runs under a custom <code>-p</code>, and on restricted networks set
+<code>RAKAZO_POSTGRES_16_IMAGE</code> to your mirror of the previous Postgres 16 image (<code>POSTGRES_IMAGE</code> must
+now name a Postgres 18 image).</p>
+<p>The script stops the stack, copies every role (with its password) and database from Postgres 16
+with <code>pg_dumpall</code>, and compares roles, memberships, ownership, grants, row-level security
+policies, sequences and the row count of every table. It also checks that <code>rakazo_app</code> signs in
+with <code>POSTGRES_APP_PASSWORD</code> and does not bypass row-level security. Only then does it switch
+Postgres 18 over and restart the services that were running. The site is down for the whole copy,
+which takes about as long as dumping and restoring the database: a few minutes for a small one.
+It needs free disk equal to 125% of the old database data directory’s size, plus 1 GiB.
+Running it again after it succeeded does nothing. If any step fails, it stops
+with the stack down and the Postgres 16 data unchanged; fix the error and run it again. On the
+production host, then rerun the deploy that stopped.</p>
+<p>The Postgres 16 volume stays as it was, mounted read-only. To roll back, check out the previous
+release and start the stack: it runs Postgres 16 on the original data. Anything written after the
+upgrade exists only on Postgres 18, so roll back right away or not at all, and pause CI deploys
+until you upgrade again. Once you no longer need the rollback, stop <code>postgres</code>, remove the
+<code>&lt;project&gt;_pgdata</code> volume and start it again; Compose recreates that volume empty.</p>
+<h2 id="space-privacy-boundary-migration">Space privacy-boundary migration</h2>
+<p>Before upgrading across migration <code>20260830200000_space_scope_names_and_user_credentials</code>, check
+that every existing model and voice credential still belongs to a member of its Space. This query
+uses the pre-migration <code>workspaceId</code> column name and must return no rows:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#9ECBFF"> 'model'</span><span style="color:#F97583"> AS</span><span style="color:#E1E4E8"> credential_type, </span><span style="color:#F97583">credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"id"</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"userId"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">       credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"workspaceId"</span><span style="color:#F97583"> AS</span><span style="color:#9ECBFF"> "spaceId"</span></span>
+<span class="line"><span style="color:#F97583">FROM</span><span style="color:#9ECBFF"> "user_model_credentials"</span><span style="color:#F97583"> AS</span><span style="color:#F97583"> credential</span></span>
+<span class="line"><span style="color:#F97583">LEFT JOIN</span><span style="color:#9ECBFF"> "space_members"</span><span style="color:#F97583"> AS</span><span style="color:#E1E4E8"> membership</span></span>
+<span class="line"><span style="color:#F97583">  ON</span><span style="color:#E1E4E8"> membership.</span><span style="color:#9ECBFF">"spaceId"</span><span style="color:#F97583"> =</span><span style="color:#F97583"> credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"workspaceId"</span></span>
+<span class="line"><span style="color:#F97583"> AND</span><span style="color:#E1E4E8"> membership.</span><span style="color:#9ECBFF">"userId"</span><span style="color:#F97583"> =</span><span style="color:#F97583"> credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"userId"</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span><span style="color:#E1E4E8"> membership.</span><span style="color:#9ECBFF">"id"</span><span style="color:#F97583"> IS</span><span style="color:#F97583"> NULL</span></span>
+<span class="line"><span style="color:#F97583">UNION ALL</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span><span style="color:#9ECBFF"> 'voice'</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"id"</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"userId"</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"workspaceId"</span></span>
+<span class="line"><span style="color:#F97583">FROM</span><span style="color:#9ECBFF"> "user_voice_credentials"</span><span style="color:#F97583"> AS</span><span style="color:#F97583"> credential</span></span>
+<span class="line"><span style="color:#F97583">LEFT JOIN</span><span style="color:#9ECBFF"> "space_members"</span><span style="color:#F97583"> AS</span><span style="color:#E1E4E8"> membership</span></span>
+<span class="line"><span style="color:#F97583">  ON</span><span style="color:#E1E4E8"> membership.</span><span style="color:#9ECBFF">"spaceId"</span><span style="color:#F97583"> =</span><span style="color:#F97583"> credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"workspaceId"</span></span>
+<span class="line"><span style="color:#F97583"> AND</span><span style="color:#E1E4E8"> membership.</span><span style="color:#9ECBFF">"userId"</span><span style="color:#F97583"> =</span><span style="color:#F97583"> credential</span><span style="color:#E1E4E8">.</span><span style="color:#9ECBFF">"userId"</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span><span style="color:#E1E4E8"> membership.</span><span style="color:#9ECBFF">"id"</span><span style="color:#F97583"> IS</span><span style="color:#F97583"> NULL</span><span style="color:#E1E4E8">;</span></span></code></pre>
+<p>The migration renames columns used by the API and worker and is therefore a coordinated cutover,
+not an online rolling migration. Stop the old API and worker, apply the migration, and start the new
+versions together. Its lock waits are bounded so contention fails the migration instead of leaving
+application traffic queued indefinitely.</p>
+<h2 id="published-images-and-tags">Published images and tags</h2>
+<p><code>.github/workflows/publish-server-image.yml</code> publishes to <code>ghcr.io/&lt;owner&gt;/&lt;repo&gt;/…</code>, derived from
+<code>${{ github.repository }}</code> rather than hardcoded, so a fork’s CI fills the fork’s own namespace. For
+this repository that is:</p>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ghcr.io/elie222/rakazo/app</code></td>
+<td>api, worker, web, and sandbox supervisor — one image, multiple commands</td>
+</tr>
+<tr>
+<td><code>ghcr.io/elie222/rakazo/computer</code></td>
+<td>Linux desktop used as each bot computer</td>
+</tr>
+<tr>
+<td><code>ghcr.io/elie222/rakazo/updater</code></td>
+<td>the updater sidecar, plus the Docker CLI</td>
+</tr>
+</tbody>
+</table>
+<p><code>infra/compose/docker-compose.images.yml</code> is the no-checkout path for those app and computer tags
+plus Postgres. The supervisor runs from the app image on the internal network only (not a separate
+published supervisor image, and no host port). Production Compose (<code>docker-compose.prod.yml</code>) can
+also pull the same app tags once <code>RAKAZO_IMAGE_TAG</code> is set to a published value.</p>
+<p>If you deploy from your own fork, set <code>RAKAZO_IMAGE</code> and <code>RAKAZO_UPDATER_IMAGE</code> to your namespace —
+your CI cannot publish into someone else’s.</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Published on</th>
+<th>Moves?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>local</code></td>
+<td>nothing — built locally by <code>up --build</code></td>
+<td>rebuilt in place</td>
+</tr>
+<tr>
+<td><code>local-&lt;full-commit&gt;</code></td>
+<td>nothing — built on the server by a fork update</td>
+<td>never</td>
+</tr>
+<tr>
+<td><code>vX.Y.Z</code>, <code>vX.Y</code></td>
+<td>release tags</td>
+<td>conventionally no / on patch releases</td>
+</tr>
+<tr>
+<td><code>latest</code></td>
+<td>stable <code>vX.Y.Z</code> tags only (not prereleases)</td>
+<td>yes, to the newest stable release</td>
+</tr>
+<tr>
+<td><code>sha-&lt;full-commit&gt;</code></td>
+<td>every main commit, release tag and manual run</td>
+<td>source-addressed; used by the updater sidecar</td>
+</tr>
+<tr>
+<td><code>edge</code></td>
+<td>pushes to main</td>
+<td>yes, to the newest main build</td>
+</tr>
+</tbody>
+</table>
+<p>Every publish, including <code>edge</code> from main merges, is multi-arch (<code>amd64</code> + <code>arm64</code>): each
+architecture builds natively, on Depot when the <code>DEPOT_PROJECT_ID</code> repository variable names a
+project and on GitHub’s runners otherwise, and one manifest is assembled per image. Depot builds
+publish and attest each image in the same job; native GitHub builds combine their architecture
+artifacts in a separate publication job. Main CI revisions validate independently. Publication
+locks are per image, and a superseded main build keeps its commit tag without moving <code>edge</code>.
+Image and release queues retain pending jobs so a slower older run cannot displace a newer one.
+Production deployment remains serialized and deploys the exact revision that passed its checks.
+Before any tag points at a new app image, CI fails the publish if it holds a <code>.env</code> file, a <code>.git</code> directory or a
+private key (<code>infra/compose/check-image.sh</code>). Until a
+stable <code>vX.Y.Z</code> has been published, GHCR may only have <code>edge</code> and <code>sha-*</code> tags; do not pin
+<code>latest</code> unless that tag exists in the registry.</p>
+<p>Building the images yourself does not need QEMU. <code>docker compose up --build</code> builds for the host’s
+own architecture, and a fork publishing multi-arch images should do what <code>publish-server-image.yml</code>
+does: build each architecture on a native runner (GitHub Actions provides <code>ubuntu-24.04-arm</code> for
+public repositories) and merge the digests into one manifest. QEMU emulation
+(<code>docker/setup-qemu-action</code>, <code>binfmt</code>) still works if you have no native arm64 machine, but it is
+many times slower, hours rather than minutes for the <code>computer</code> image.</p>
+<p>The updater resolves the newest stable <code>vX.Y.Z</code> source tag but deploys its <code>sha-&lt;full-commit&gt;</code> image,
+not <code>latest</code> or a moving minor tag. A registry tag is not an OCI digest and GHCR package writers can
+replace it, so the trust boundary remains this repository’s publishing credentials. The workflow
+reduces that boundary by using SHA-pinned actions, read-only pull-request jobs, digest-pinned base
+images, SBOM/provenance output, and a GitHub build attestation. Operators who require registry-level
+content addressing can pin <code>RAKAZO_IMAGE</code> outside the automatic updater to a verified digest.</p>
+<p>Rollback never contacts the registry: it redeploys the previous tag from the local Docker cache,
+so a later tag move cannot change rollback content. Do not prune the previous application image
+until the next update has been accepted. If it is missing, rollback fails closed instead of pulling
+new content under an old tag.</p>
+<p>To populate the registry the first time, run the workflow manually (<code>workflow_dispatch</code>) or push a
+<code>v*</code> tag. A manual run produces <code>sha-&lt;full-commit&gt;</code>; only a stable <code>vX.Y.Z</code> tag (no prerelease
+suffix) produces <code>latest</code>, and any <code>v*</code> tag produces semver tags. The updater ignores prereleases
+and refuses the official path until a stable <code>vX.Y.Z</code> exists.</p>
+<h2 id="updater-sidecar">Updater sidecar</h2>
+<p>Compose production deployments offer an opt-in <code>updater</code> profile on a private <code>control</code> network.
+Normal deployments do not start it or require its credential. To enable it, set a dedicated
+<code>RAKAZO_UPDATER_TOKEN</code> and explicitly start the profile:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> compose</span><span style="color:#79B8FF"> --env-file</span><span style="color:#9ECBFF"> .env</span><span style="color:#79B8FF"> -f</span><span style="color:#9ECBFF"> infra/compose/docker-compose.prod.yml</span><span style="color:#79B8FF"> \</span></span>
+<span class="line"><span style="color:#79B8FF">  --profile</span><span style="color:#9ECBFF"> updater</span><span style="color:#9ECBFF"> up</span><span style="color:#79B8FF"> -d</span><span style="color:#79B8FF"> --build</span><span style="color:#9ECBFF"> updater</span></span></code></pre>
+<p>It exposes <code>/health</code>, <code>/state</code>, <code>/plan</code>, <code>/apply</code>, and <code>/rollback</code> at <code>http://updater:7092</code> with
+<code>RAKAZO_UPDATER_TOKEN</code>. Operator CLI upgrades above do not need it; the sidecar is for automated
+apply/rollback over that private HTTP API. Only deployment tooling calls it; app accounts have no update endpoint, and the application API does not receive the updater token.</p>
+<p>The API cannot update itself — its image has no <code>.git</code>, and nothing inside the container would
+restart it — so the work happens in a separate <code>updater</code> container that outlives the recreate:</p>
+<ul>
+<li><em>Official repository:</em> resolves the newest stable release and its source commit with
+<code>git ls-remote --tags</code>, pins the corresponding full <code>sha-&lt;commit&gt;</code> image tag in <code>.env</code>, keeps the
+outgoing tag in <code>RAKAZO_IMAGE_TAG_PREVIOUS</code>, explicitly pulls the new image, then runs
+<code>up -d --wait --pull never</code>. No build runs on the server.</li>
+<li><em>Fork (Advanced):</em> a fork has no published images, so the sidecar fast-forwards the checkout in
+<code>RAKAZO_DEPLOY_DIR</code> and runs <code>up -d --build</code>. This builds on the server and takes minutes rather
+than seconds. Point it only at a fork you control and have reviewed — the sidecar runs that
+Compose file through a root-equivalent Docker socket.</li>
+</ul>
+<p>Updates and rollbacks run one at a time. A failed pull leaves running services alone; a failed recreate restores the previous environment
+pin and attempts to redeploy the cached previous image. A failed fork build also restores the
+pre-update branch and commit (including when checkout succeeded but merge did not) so a later
+manual <code>--build</code> cannot deploy the rejected or unintended revision. Database migrations are not
+reversed. The sidecar never recreates itself, never touches Postgres or Caddy, and never runs
+migrations — that ordering belongs to the API’s dependency on the <code>migrate</code> service.</p>
+<p>Only <code>https://</code> and <code>ssh://</code> git remotes are accepted. Merges are fast-forward only. A dirty or
+untracked source tree fails closed before anything runs (the application Dockerfile uses <code>COPY . .</code>).</p>
+<h2 id="the-deploy-directory-must-be-one-path">The deploy directory must be one path</h2>
+<p><code>RAKAZO_DEPLOY_DIR</code> is bind-mounted into the updater at the same path it is read from
+(<code>${RAKAZO_DEPLOY_DIR}:${RAKAZO_DEPLOY_DIR}</code>), and that is load-bearing rather than tidy. Production
+Compose defaults both sides to <code>/srv/rakazo</code>; set the variable for any other layout. When the
+updater runs <code>docker compose -p &lt;project&gt; --file $RAKAZO_DEPLOY_DIR/infra/compose/docker-compose.prod.yml up -d</code>,
+the Compose CLI <em>inside</em> the container expands this file’s relative bind mounts — <code>../../.env</code>,
+<code>./Caddyfile.prod</code> — against that path and hands the results to the daemon. The daemon has to be
+able to resolve the same strings, or it silently creates empty directories where your <code>.env</code> and
+Caddyfile should be. Compose makes the effective <code>-p</code> value available for interpolation but does
+not automatically put it in a container’s environment, so the production file explicitly assigns
+<code>COMPOSE_PROJECT_NAME</code> to the updater. A standalone sidecar can instead set
+<code>RAKAZO_COMPOSE_PROJECT_NAME</code>; the final fallback is <code>rakazo-prod</code>. Without that propagation, a
+stack started with <code>-p something-else</code> would be left alone while a second project with a new empty
+Postgres volume came up beside it.</p>
+<p>The value therefore has to be the path <strong>the daemon</strong> sees, which is not always the path your shell
+sees:</p>
+<ul>
+<li><strong>Linux.</strong> The daemon shares the host filesystem, so the checkout path is the answer:
+<code>/srv/rakazo</code> is the default and supported production layout. Set <code>RAKAZO_DEPLOY_DIR</code> explicitly
+when the checkout is elsewhere.</li>
+<li><strong>Docker Desktop (Windows/macOS).</strong> The daemon runs in a VM that mounts your drive somewhere else.
+On Windows, <code>C:</code> appears at <code>/run/desktop/mnt/host/c</code>, so a checkout at <code>C:\Users\you\rakazo</code> is
+<code>RAKAZO_DEPLOY_DIR=/run/desktop/mnt/host/c/Users/you/rakazo</code>. Host Git may use <code>core.autocrlf=true</code>; the updater ignores CR-only diffs so that does not block <code>/apply</code>. Verify the mount before deploying:</li>
+</ul>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> compose</span><span style="color:#79B8FF"> --env-file</span><span style="color:#9ECBFF"> .env</span><span style="color:#79B8FF"> -f</span><span style="color:#9ECBFF"> infra/compose/docker-compose.prod.yml</span><span style="color:#79B8FF"> \</span></span>
+<span class="line"><span style="color:#79B8FF">  --profile</span><span style="color:#9ECBFF"> updater</span><span style="color:#9ECBFF"> run</span><span style="color:#79B8FF"> --rm</span><span style="color:#9ECBFF"> updater</span><span style="color:#79B8FF"> \</span></span>
+<span class="line"><span style="color:#9ECBFF">  sh</span><span style="color:#79B8FF"> -c</span><span style="color:#9ECBFF"> 'git -C "$RAKAZO_DEPLOY_DIR" log --oneline -1'</span></span></code></pre>
+<p>That must print your checkout’s HEAD. The two tempting wrong answers both fail: a native Windows
+path is rejected by the daemon (<code>mount denied: … too many colons</code>, because the drive letter’s
+colon collides with the bind-mount separator), and <code>/mnt/c/...</code> fails <em>silently</em> — the container
+starts, the mount is an empty directory, and the updater simply reports no checkout.</p>
+<h2 id="deployments-that-layer-a-compose-overlay">Deployments that layer a Compose overlay</h2>
+<p><code>RAKAZO_COMPOSE_FILE</code> takes a list, separated the way Compose’s own <code>COMPOSE_FILE</code> is
+(<code>:</code> by default, or whatever <code>COMPOSE_PATH_SEPARATOR</code> says). Each entry becomes its own <code>--file</code>,
+in the order given, so the updater reconciles the same stack the operator runs by hand:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>RAKAZO_COMPOSE_FILE=infra/compose/docker-compose.prod.yml:ops/compose/overlay.yml</span></span></code></pre>
+<p>Every entry is validated separately and must stay inside <code>RAKAZO_DEPLOY_DIR</code>.</p>
+<p>If the overlay adds a service built from the application image, name it in
+<code>RAKAZO_UPDATE_SERVICES</code> (comma separated) so it is pulled, recreated and rolled back with the
+rest. Otherwise an update leaves that service running the previous code:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>RAKAZO_UPDATE_SERVICES=supervisor</span></span></code></pre>
+<p>These names are appended to the built-in <code>api</code>, <code>worker</code>, <code>web</code>, never substituted for them, so no
+value here can drop a core service from an update.</p>
+<h2 id="the-updaters-privileges">The updater’s privileges</h2>
+<p>The updater holds the Docker socket, which is root-equivalent on the host. It is scoped as narrowly
+as that allows:</p>
+<ul>
+<li>No <code>ports</code>, so nothing is published on the host.</li>
+<li>Only on the dedicated <code>control</code> network shared with the API. Caddy is not attached, so the
+reverse proxy has no route to the updater.</li>
+<li>Every route except <code>/health</code> requires the shared bearer token, compared in constant time.</li>
+<li>The process environment carries only updater settings (<code>RAKAZO_UPDATER_TOKEN</code>, deploy path,
+image name, project name). Application secrets stay in the bind-mounted <code>.env</code> that Compose
+reads for interpolation; they are not loaded into this container.</li>
+<li>The Docker CLI lives only in the updater image. The api, worker, and web containers keep
+<code>cap_drop: ALL</code> and no socket.</li>
+</ul>
+<p>Enabling the <code>updater</code> profile requires <code>RAKAZO_UPDATER_TOKEN</code> to be a dedicated random value (at
+least 32 characters in production). It must differ from <code>BETTER_AUTH_SECRET</code>,
+<code>SANDBOX_SUPERVISOR_TOKEN</code>, and <code>SCREEN_PROXY_SECRET</code>. Leave the profile disabled if you would
+rather not grant the capability.</p>
+</article><footer class="docs-pager"><a href="/docs/self-host-production/"><span>Previous</span>Production deployment</a><a class="docs-pager__next" href="/docs/self-host-backups/"><span>Next</span>Backup and restore</a></footer></main><aside class="docs-toc" aria-label="On this page"><p>On this page</p><ul><li><a href="#upgrade">Upgrade</a></li><li><a href="#upgrading-to-the-separate-app-database-login">Upgrading to the separate app database login</a></li><li><a href="#upgrading-to-postgres-18">Upgrading to Postgres 18</a></li><li><a href="#space-privacy-boundary-migration">Space privacy-boundary migration</a></li><li><a href="#published-images-and-tags">Published images and tags</a></li><li><a href="#updater-sidecar">Updater sidecar</a></li><li><a href="#the-deploy-directory-must-be-one-path">The deploy directory must be one path</a></li><li><a href="#deployments-that-layer-a-compose-overlay">Deployments that layer a Compose overlay</a></li><li><a href="#the-updaters-privileges">The updater’s privileges</a></li></ul><div class="docs-toc__links"><a href="/docs/self-host-upgrading.md">View as Markdown</a><a href="https://github.com/elie222/rakazo/edit/main/docs/self-host-upgrading.md" target="_blank" rel="noopener">Edit on GitHub</a></div></aside></div><div class="container"><footer class="site-footer"><div class="site-footer__brand"><a class="brand-lockup" href="/" aria-label="WhatEverFi home"><img class="brand-lockup__mark" src="/brand/whateverfi-mark.png" width="36" height="36" alt="" aria-hidden="true"><span class="brand-lockup__word">WhatEverFi</span></a><nav class="site-footer__languages" aria-label="Language"><details class="language-menu"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>English<svg class="language-menu__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path></svg></summary><ul><li><a href="/" hreflang="en-US" lang="en" aria-current="true">English</a></li><li><a href="/de/" hreflang="de-DE" lang="de">Deutsch</a></li><li><a href="/ko/" hreflang="ko-KR" lang="ko">한국어</a></li><li><a href="/zh/" hreflang="zh-CN" lang="zh-CN">简体中文</a></li><li><a href="/ja/" hreflang="ja-JP" lang="ja">日本語</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/nl/" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/he/" hreflang="he" lang="he">עברית</a></li><li><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a></li><li><a href="/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a></li><li><a href="/pl/" hreflang="pl-PL" lang="pl">Polski</a></li></ul></details></nav><span class="site-footer__legal"><span>© 2026 <a href="https://regan.studio" target="_blank" rel="noopener">Regan.Studio</a></span><a href="/NOTICE.txt">Apache-2.0 · Open-source notices</a></span></div><nav class="site-footer__columns" aria-label="Footer"><div class="site-footer__column"><h2>Product</h2><ul><li><a href="/download/">Download</a></li><li><a href="/self-hosted-ai-agent/">Docs</a></li><li><a href="/enterprise/">Enterprise</a></li><li><a href="/sandboxes/">Sandboxes</a></li><li><a href="/integration-platforms/">Integration platforms</a></li><li><a href="/voice-providers/">Voice providers</a></li><li><a href="/plugins/submit/">Submit a plugin</a></li><li><a href="https://github.com/elie222/rakazo/releases" target="_blank" rel="noopener">Changelog</a></li><li><a href="https://github.com/Regan-Studio/whateverfi" target="_blank" rel="noopener">GitHub</a></li></ul></div><div class="site-footer__column"><h2>Alternatives</h2><ul><li><a href="/grok-bot-alternative/">Grok Bot</a></li><li><a href="/muse-alternative/">Muse</a></li><li><a href="/dots-alternative/">Dots</a></li><li><a href="/instinct-alternative/">Instinct</a></li><li><a href="/hermes-alternative/">Hermes</a></li><li><a href="/claude-duet-alternative/">Claude Duet</a></li><li><a href="/hark-alternative/">Hark</a></li><li><a href="/openclaw-alternative/">OpenClaw</a></li><li><a href="/alternatives/">All</a></li></ul></div><div class="site-footer__column"><h2>Company</h2><ul><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a href="/brand/">Brand</a></li><li><a href="/support/">Support</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li></ul></div></nav></footer></div><dialog class="docs-search" aria-label="Search docs"><div id="docs-search"></div></dialog></div></body></html><script type="module">var e=document.querySelector(`.docs-copy-page`)?.querySelectorAll(`svg`)??[];async function t(e,t){let n=t.then(e=>new Blob([e],{type:`text/plain`}));await navigator.clipboard.write([new ClipboardItem({"text/plain":n})]),e.dataset.copied=``,setTimeout(()=>delete e.dataset.copied,1500)}var n=document.querySelector(`.docs-prose`);n?.querySelectorAll(`h2[id], h3[id]`).forEach(e=>{let t=document.createElement(`a`);t.className=`docs-anchor`,t.href=`#${e.id}`,t.setAttribute(`aria-label`,`Link to ${e.textContent}`),t.textContent=`#`,e.append(t)}),n?.querySelectorAll(`pre`).forEach(n=>{let r=document.createElement(`button`);r.type=`button`,r.className=`docs-copy-code`,r.setAttribute(`aria-label`,`Copy code`),r.append(...[...e].map(e=>e.cloneNode(!0))),r.addEventListener(`click`,()=>t(r,Promise.resolve(n.querySelector(`code`)?.innerText??n.innerText)));let i=document.createElement(`div`);i.className=`docs-code`,n.replaceWith(i),i.append(n,r)});var r=document.querySelector(`.docs-copy-page`);r?.addEventListener(`click`,()=>t(r,fetch(r.dataset.markdown??``).then(e=>e.text())));var i=document.querySelector(`.docs-search`),a=document.querySelector(`.docs-search-trigger`),o;if(!/Mac|iPhone|iPad/.test(navigator.platform)){let e=a?.querySelector(`kbd`);e&&(e.textContent=`Ctrl K`)}function s(){let e=Object.assign(document.createElement(`link`),{rel:`stylesheet`,href:`/pagefind/pagefind-ui.css`}),t=Object.assign(document.createElement(`script`),{src:`/pagefind/pagefind-ui.js`});return document.head.append(e,t),new Promise((e,n)=>{t.onload=()=>{let{PagefindUI:t}=window;new t({element:`#docs-search`,showSubResults:!0,showImages:!1}),e()},t.onerror=n})}async function c(){i&&(o??=s(),i.showModal(),await o,i.querySelector(`input`)?.focus())}a?.addEventListener(`click`,c),i?.addEventListener(`click`,e=>{e.target===i&&i.close(),e.target.closest(`a`)&&i.close()}),document.addEventListener(`keydown`,e=>{(e.metaKey||e.ctrlKey)&&e.key.toLowerCase()===`k`&&(e.preventDefault(),i?.open?i.close():c())});var l=[...document.querySelectorAll(`.docs-toc li a`)],u=l.map(e=>document.getElementById(decodeURIComponent(e.hash.slice(1)))).filter(e=>e!==null);function d(){let e=window.innerHeight+window.scrollY>=document.body.scrollHeight-2?u.at(-1):u.findLast(e=>e.getBoundingClientRect().top<=120);for(let t of l)t.toggleAttribute(`data-active`,t.hash===`#${e?.id}`)}u.length>0&&(d(),window.addEventListener(`scroll`,d,{passive:!0}));</script>

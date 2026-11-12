@@ -1,0 +1,283 @@
+# Pipedrive
+
+Pipedrive is a sales management tool built around pipeline visualization, lead tracking, activity reminders, and automation to keep deals progressing
+
+Category: Sales & CRM. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/pipedrive/.
+
+## Actions
+
+- **Add a deal**: Add a new deal to pipedrive with any custom fields, which vary by account and are identified by long hash keys.
+- **Add a lead**: Pipedrive api lets you add leads linked to people or organizations and tags them with 'api' source.
+- **Add a note**: Add a note to a deal, person, organization, lead, or project in pipedrive.
+- **Add a person**: Add a new contact in pipedrive with optional custom fields unique to each account found using the personfields endpoint.
+- **Add a product**: Adds a new product to the products inventory.
+- **Add an activity**: New activity added.
+- **Get all leads** (read-only): The api returns sorted leads by creation time, supporting pagination via limit and start.
+- **Get all products** (read-only): Returns data about all products.
+- **Get one lead** (read-only): Api returns specific lead details with custom field values in the deals format.
+- **Update a deal**: Updates the properties of a deal.
+- **Update a person**: Modifies a person’s details in pipedrive.
+- **Add a call log**: Adds a new call log.
+- **Add a channel**: New messaging channel added.
+- **Add a comment to a note**: Adds a new comment to a note.
+- **Add a follower to a deal**: Adds a follower to a deal.
+- **Add a follower to a person**: Adds a follower to a person.
+- **Add a follower to a product**: Adds a follower to a product.
+- **Add a follower to an organization**: Adds a follower to an organization.
+- **Add a lead label**: Creates a lead label.
+- **Add a new deal field**: Adds a new deal field.
+- **Add a new filter**: New filter creation returns an id.
+- **Add a new goal**: Adds a new goal.
+- **Add a new organization field**: Adds a new organization field.
+- **Add a new person field**: Adds a new person field.
+- **Add a new pipeline**: Adds a new pipeline.
+- **Add a new product field**: Adds a new product field.
+- **Add a new stage**: Adds a new stage, returns the id upon success.
+- **Add a new team**: Adds a new team to the company and returns the created object.
+- **Add a new user**: Adds a new user to the company, returns the id upon success.
+- **Add a participant to a deal**: Adds a participant to a deal.
+- **Add a product to a deal**: Adds a product to a deal, creating a new item called a deal-product.
+- **Add a project**: Adds a new project.
+- **Add a recurring subscription**: Adds a new recurring subscription.
+- **Add a role**: Adds a new role.
+- **Add a task**: Adds a new task.
+- **Add an installment subscription**: Adds a new installment subscription.
+- **Add an organization**: Set up a new pipedrive organization using custom fields with unique key hashes.
+- **Add file**: Upload and link files to deals, people, organizations, activities, products, or leads in pipedrive.
+- **Add new activity type**: Adds a new activity type.
+- **Add or update role setting**: Adds or updates the visibility setting for a role.
+- **Add person picture**: This service allows adding a photo to a person's profile, replacing any existing one.
+- **Add role assignment**: Assigns a user to a role.
+- **Add users to a team**: Adds users to an existing team.
+- **Archive a project**: Archives a project.
+- **Attach an audio file to the call log**: Adds an audio recording to the call log.
+- **Cancel a recurring subscription**: Cancels a recurring subscription.
+- **Create a new webhook**: Creates and returns details of a new webhook.
+- **Create a remote file and link it to an item**: Creates an empty file on google drive linked to an item.
+- **Create an organization relationship**: Creates and returns an organization relationship.
+- **Delete a call log**: Deletes a call log.
+- **Delete a channel**: The endpoint removes a messenger channel along with conversations and messages.
+- **Delete a comment related to a note**: Deletes a comment.
+- **Delete a conversation**: Deletes an existing conversation.
+- **Delete a deal**: Marks a deal as deleted.
+- **Delete a deal field**: Marks a field as deleted.
+- **Delete a file**: Marks a file as deleted.
+- **Delete a filter**: Marks a filter as deleted.
+- **Delete a follower from a deal**: Deletes a follower from a deal.
+- **Delete a follower from a person**: Deletes a follower from a person.
+- **Delete a follower from a product**: Deletes a follower from a product.
+- **Delete a follower from an organization**: Deletes a follower from an organization.
+- **Delete a lead**: Deletes a specific lead.
+- **Delete a lead label**: Deletes a specific lead label.
+- **Delete a note**: Deletes a specific note.
+- **Delete a participant from a deal**: Deletes a participant from a deal.
+- **Delete a person**: Marks a person as deleted.
+- **Delete a person field**: Marks a field as deleted.
+- **Delete a pipeline**: Marks a pipeline as deleted.
+- **Delete a product**: Marks a product as deleted.
+- **Delete a product field**: Marks a product field as deleted.
+- **Delete a project**: Marks a project as deleted.
+- **Delete a role**: Marks a role as deleted.
+- **Delete a role assignment**: Removes the assigned user from a role and adds to the default role.
+- **Delete a stage**: Marks a stage as deleted.
+- **Delete a subscription**: Marks an installment or a recurring subscription as deleted.
+- **Delete a task**: Marks a task as deleted.
+- **Delete an activity**: Marks an activity as deleted.
+- **Delete an activity type**: Marks an activity type as deleted.
+- **Delete an attached product from a deal**: Deletes a product attachment from a deal, using the product attachment id.
+- **Delete an organization**: Marks an organization as deleted.
+- **Delete an organization field**: Marks a field as deleted.
+- **Delete an organization relationship**: Deletes an organization relationship and returns the deleted id.
+- **Delete existing goal**: Marks a goal as deleted.
+- **Delete existing webhook**: Deletes the specified webhook.
+- **Delete mail thread**: Marks a mail thread as deleted.
+- **Delete multiple activities in bulk**: Marks multiple activities as deleted.
+- **Delete multiple activity types in bulk**: Marks multiple activity types as deleted.
+- **Delete multiple deal fields in bulk**: Marks multiple deal fields as deleted.
+- **Delete multiple deals in bulk**: Marks multiple deals as deleted.
+- **Delete multiple filters in bulk**: Marks multiple filters as deleted.
+- **Delete multiple organization fields in bulk**: Marks multiple fields as deleted.
+- **Delete multiple organizations in bulk**: Marks multiple organizations as deleted.
+- **Delete multiple person fields in bulk**: Marks multiple fields as deleted.
+- **Delete multiple persons in bulk**: Marks multiple persons as deleted.
+- **Delete multiple product fields in bulk**: Marks multiple fields as deleted.
+- **Delete multiple stages in bulk**: Marks multiple stages as deleted.
+- **Delete person picture**: Deletes a person’s picture.
+- **Delete users from a team**: Deletes users from an existing team.
+- **Download one file** (read-only): Initializes a file download.
+- **Duplicate deal**: Duplicates a deal.
+- **Enumerate accessible users for lead** (read-only): Lists the users permitted to access a lead.
+- **Find goals** (read-only): Query goal data by appending {searchfield}={searchvalue} to the url with dot-notation fields and values.
+- **Find subscription by deal** (read-only): Returns details of an installment or a recurring subscription by the deal id.
+- **Find users by name** (read-only): Finds users by their name.
+- **Get a single team** (read-only): Returns data about a specific team.
+- **Get all activities assigned to a particular user** (read-only): Returns all activities assigned to a particular user.
+- **Get all activities beta** (read-only): This beta cursor-paginated endpoint returns all activities, accessible only to global admins, not regular users who get a 403 error.
+- **Get all activity fields** (read-only): Returns all activity fields.
+- **Get all activity types** (read-only): Returns all activity types.
+- **Get all add ons for a single company** (read-only): Returns the add-ons for a single company.
+- **Get all call logs assigned to a particular user** (read-only): Returns all call logs assigned to a particular user.
+- **Get all comments for a note** (read-only): Returns all comments associated with a note.
+- **Get all deal fields** (read-only): Returns data about all deal fields.
+- **Get all deals** (read-only): Returns all deals.
+- **Get all deals beta** (read-only): This endpoint returns all deals with cursor pagination (in beta).
+- **Get all files** (read-only): Returns data about all files.
+- **Get all filter helpers** (read-only): The text provides links to documentation for adding or updating filters, and information on all supported filter helpers in an api.
+- **Get all filters** (read-only): Returns data about all filters.
+- **Get all lead labels** (read-only): Returns details of all lead labels.
+- **Get all lead sources** (read-only): Returns all lead sources.
+- **Get all mail messages of mail thread** (read-only): Returns all the mail messages inside a specified mail thread.
+- **Get all note fields** (read-only): Returns data about all note fields.
+- **Get all notes** (read-only): Returns all notes.
+- **Get all organization fields** (read-only): Returns data about all organization fields.
+- **Get all organizations** (read-only): Returns all organizations.
+- **Get all organizations beta** (read-only): This beta api endpoint lists all organizations with cursor pagination.
+- **Get all payments of a subscription** (read-only): Returns all payments of an installment or recurring subscription.
+- **Get all permission sets** (read-only): Returns data about all permission sets.
+- **Get all person fields** (read-only): Returns data about all person fields.<br>if a company uses the [campaigns product](https.
+- **Get all persons** (read-only): Returns all persons.
+- **Get all persons beta** (read-only): This beta endpoint returns all persons, using cursor pagination.
+- **Get all pipelines** (read-only): Returns data about all pipelines.
+- **Get all product fields** (read-only): Returns data about all product fields.
+- **Get all project boards** (read-only): Returns all projects boards that are not deleted.
+- **Get all project templates** (read-only): The endpoint retrieves all non-deleted project templates with cursor-based pagination.
+- **Get all projects** (read-only): Returns all projects.
+- **Get all relationships for organization** (read-only): Gets all of the relationships for a supplied organization id.
+- **Get all roles** (read-only): Returns all the roles within the company.
+- **Get all stages** (read-only): Returns data about all stages.
+- **Get all supported currencies** (read-only): Returns all supported currencies in given account which should be used when saving monetary values with other objects.
+- **Get all tasks** (read-only): Returns all tasks.
+- **Get all teams** (read-only): Returns data about teams within the company.
+- **Get all teams of a user** (read-only): Returns data about all teams which have the specified user as a member.
+- **Get all user connections** (read-only): Returns data about all connections for the authorized user.
+- **Get all users** (read-only): Returns data about all users within the company.
+- **Get all users in a team** (read-only): Returns a list of all user ids within a team.
+- **Get all webhooks** (read-only): Returns data about all the webhooks of a company.
+- **Get current user data** (read-only): Returns data about an authorized user within the company with bound company data.
+- **Get deals conversion rates in pipeline** (read-only): Returns all stage-to-stage conversion and pipeline-to-close rates for the given time period.
+- **Get deals in a pipeline** (read-only): Lists deals in a specific pipeline across all its stages.
+- **Get deals in a stage** (read-only): Lists deals in a specific stage.
+- **Get deals movements in pipeline** (read-only): Returns statistics for deals movements for the given time period.
+- **Get deals summary** (read-only): Returns a summary of all the deals.
+- **Get deals timeline** (read-only): Returns opened and won deals in time-based groups according to a specified dealfield, with examples of deals grouped by month over a…
+- **Get deals where a product is attached to** (read-only): Returns data about deals that have a product attached to it.
+- **Get details of a board** (read-only): Returns the details of a specific project board.
+- **Get details of a call log** (read-only): Returns details of a specific call log.
+- **Get details of a deal** (read-only): Fetches specific deal details, including exclusive fields like deal age and pipeline stage duration.
+- **Get details of a person** (read-only): The text describes an api endpoint that returns detailed person information, including extra fields and custom fields as hashes.
+- **Get details of a phase** (read-only): Returns the details of a specific project phase.
+- **Get details of a project** (read-only): Returns the details of a specific project.
+- **Get details of a subscription** (read-only): Returns details of an installment or a recurring subscription.
+- **Get details of a task** (read-only): Returns the details of a specific task.
+- **Get details of a template** (read-only): Returns the details of a specific project template.
+- **Get details of an activity** (read-only): Returns the details of a specific activity.
+- **Get details of an organization** (read-only): Provides detailed information about an organization, including additional fields not shown when listing all organizations, and maps custom…
+- **Get mail threads** (read-only): Returns mail threads in a specified folder ordered by the most recent message within.
+- **Get one comment** (read-only): Returns the details of a comment.
+- **Get one deal field** (read-only): Returns data about a specific deal field.
+- **Get one file** (read-only): Returns data about a specific file.
+- **Get one filter** (read-only): Returns data about a specific filter.
+- **Get one mail message** (read-only): Returns data about a specific mail message.
+- **Get one mail thread** (read-only): Returns a specific mail thread.
+- **Get one note** (read-only): Returns details about a specific note.
+- **Get one organization field** (read-only): Returns data about a specific organization field.
+- **Get one organization relationship** (read-only): Finds and returns an organization relationship from its id.
+- **Get one permission set** (read-only): Returns data about a specific permission set.
+- **Get one person field** (read-only): Returns data about a specific person field.
+- **Get one pipeline** (read-only): Returns data about a specific pipeline.
+- **Get one product** (read-only): Returns data about a specific product.
+- **Get one product field** (read-only): Returns data about a specific product field.
+- **Get one role** (read-only): Returns the details of a specific role.
+- **Get one stage** (read-only): Returns data about a specific stage.
+- **Get one user** (read-only): Returns data about a specific user within the company.
+- **Get project phases** (read-only): Returns all active project phases under a specific board.
+- **Get recents** (read-only): Returns data about all recent changes occurred after the given timestamp.
+- **Get result of a goal** (read-only): Gets the progress of a goal for the specified period.
+- **Link a remote file to an item**: Links an existing remote file (googledrive) to the item you supply.
+- **Link User Video Integration**: A video calling provider must call this endpoint after a user has installed the video calling app so that the new user's information is…
+- **List activities associated with a deal** (read-only): Lists activities associated with a deal.
+- **List activities associated with a person** (read-only): Lists activities associated with a person.
+- **List activities associated with an organization** (read-only): Lists activities associated with an organization.
+- **List all persons associated with a deal** (read-only): The endpoint lists every person linked to a deal, including primary contacts and participants, and provides a data.marketing status field…
+- **List deals associated with a person** (read-only): Lists deals associated with a person.
+- **List deals associated with an organization** (read-only): Lists deals associated with an organization.
+- **List files attached to a deal** (read-only): Lists files associated with a deal.
+- **List files attached to a person** (read-only): Lists files associated with a person.
+- **List files attached to a product** (read-only): Lists files associated with a product.
+- **List files attached to an organization** (read-only): Lists files associated with an organization.
+- **List followers of a deal** (read-only): Lists the followers of a deal.
+- **List followers of a person** (read-only): Lists the followers of a person.
+- **List followers of a product** (read-only): Lists the followers of a product.
+- **List followers of a user** (read-only): Lists the followers of a specific user.
+- **List followers of an organization** (read-only): Lists the followers of an organization.
+- **List mail messages associated with a deal** (read-only): Lists mail messages associated with a deal.
+- **List mail messages associated with a person** (read-only): Lists mail messages associated with a person.
+- **List mail messages associated with an organization** (read-only): Lists mail messages associated with an organization.
+- **List participants of a deal** (read-only): Lists the participants associated with a deal.<br>if a company uses the [campaigns product](https.
+- **List permission set assignments** (read-only): Returns the list of assignments for a permission set.
+- **List permitted users** (read-only): Lists the users permitted to access a deal.
+- **List Person Access Users** (read-only): List users permitted to access a person.
+- **List persons of an organization** (read-only): Lists persons associated with an organization.<br>if a company uses the [campaigns product](https.
+- **List pipeline visibility for a role** (read-only): Returns a list of visible or hidden pipeline ids by role.
+- **List Product Permitted Users** (read-only): Lists users permitted to access a product.
+- **List products associated with a person** (read-only): Lists products associated with a person.
+- **List products attached to a deal** (read-only): Lists products attached to a deal.
+- **List role assignments** (read-only): Returns all users assigned to a role.
+- **List role settings** (read-only): Returns the visibility settings of a specific role.
+- **List settings of an authorized user** (read-only): Lists the settings of an authorized user.
+- **List updates about a deal** (read-only): Lists updates about a deal.
+- **List updates about a person** (read-only): Lists updates about a person.<br>if a company uses the [campaigns product](https.
+- **List updates about an organization** (read-only): Lists updates about an organization.
+- **List updates about participants of a deal** (read-only): This endpoint provides cursor-paginated updates on deal participants.
+- **List user permissions** (read-only): Lists aggregated permissions over all assigned permission sets for a user.
+- **List User Role Assignments** (read-only): Lists role assignments for a user.
+- **List user role settings** (read-only): Lists the settings of user's assigned role.
+- **Merge two deals**: Merges a deal with another deal.
+- **Merge two organizations**: Merges an organization with another organization.
+- **Merge two persons**: Merges a person with another person.
+- **Organization accessible user list** (read-only): List users permitted to access an organization.
+- **Perform a search from multiple item types** (read-only): Performs a search from your choice of item types and fields.
+- **Receives an incoming message**: Adds a message to a conversation.
+- **Refreshing the tokens**: Access tokens expire after the time specified in expires in.
+- **Requesting authorization** (read-only): Authorize a user by redirecting them to the pipedrive oauth authorization page and request their permissions to act on their behalf.
+- **Returns project activities** (read-only): Returns activities linked to a specific project.
+- **Returns project groups** (read-only): Returns all active groups under a specific project.
+- **Returns project plan** (read-only): Returns information about items in a project plan.
+- **Returns project tasks** (read-only): Returns tasks linked to a specific project.
+- **Search deals** (read-only): This api endpoint searches deals by title, notes, and custom fields, filters results by person or organization id, and is a specific use…
+- **Search Item By Field** (read-only): Performs a search from the values of a specific field.
+- **Search leads** (read-only): Endpoint searches leads by title, notes, custom fields, with options to filter by person and organization ids, and is a more specific use…
+- **Search organizations** (read-only): Searches all organizations by name, address, notes and/or custom fields.
+- **Search persons** (read-only): This endpoint searches for individuals by various identifiers and is a specific use case of /v1/itemsearch with limited oauth scope,…
+- **Search products** (read-only): Searches all products by name, code and/or custom fields.
+- **Unlinkuserfromvideocallintegration**: A video calling provider must call this endpoint to remove the link between a user and the installed video calling app.
+- **Update a comment related to a note**: Updates a comment related to a note.
+- **Update a deal field**: Updates a deal field.
+- **Update a lead**: Updating lead properties modifies only specified fields.
+- **Update a lead label**: Updates one or more properties of a lead label.
+- **Update a note**: Updates a note.
+- **Update a person field**: Updates a person field.
+- **Update a pipeline**: Updates the properties of a pipeline.
+- **Update a product**: Updates product data.
+- **Update a product field**: Updates a product field.
+- **Update a project**: Updates a project.
+- **Update a recurring subscription**: Updates a recurring subscription.
+- **Update a task**: Updates a task.
+- **Update a team**: Updates an existing team and returns the updated object.
+- **Update activity in project plan**: Updates an activity phase or group in a project.
+- **Update an activity**: Updates an activity.
+- **Update an activity type**: Updates an activity type.
+- **Update an installment subscription**: Updates an installment subscription.
+- **Update an organization**: Updates the properties of an organization.
+- **Update an organization field**: Updates an organization field.
+- **Update an organization relationship**: Updates and returns an organization relationship.
+- **Update existing goal**: Updates an existing goal.
+- **Update file details**: Updates the properties of a file.
+- **Update filter**: Updates an existing filter.
+- **Update mail thread details**: Updates the properties of a mail thread.
+- **Update pipeline visibility for a role**: Updates pipeline visibility settings for different roles.
+- **Update role details**: Updates the parent role and/or the name of a specific role.
+- **Update stage details**: Updates the properties of a stage.
+- **Update task in project plan**: Updates a task phase or group in a project.
+- **Update the product attached to a deal**: Updates the details of the product that has been attached to a deal.
+- **Update user details**: Updates the properties of a user.

@@ -1,0 +1,361 @@
+# PagerDuty
+
+PagerDuty helps you proactively manage your digital operations by collecting data signals from anywhere, interpreting those signals using machine learning, automatically engaging the right people, and accelerating resolution and learning.
+
+Category: Security & Ops. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/pagerduty/.
+
+## Actions
+
+- **Create new webhook subscription**: Creates a new webhook subscription in pagerduty to receive specific event notifications.
+- **Fetch escalation polices list** (read-only): Retrieves a list of escalation policies configured in the pagerduty account.
+- **Fetch incident list** (read-only): Retrieves a list of incidents from pagerduty based on specified criteria.
+- **Get alerts by incident id** (read-only): Retrieves all alerts associated with a specific incident in pagerduty.
+- **Retrieve list of services** (read-only): Retrieves a list of services configured in the pagerduty account.
+- **Retrieve maintenance windows** (read-only): Retrieves a list of maintenance windows from the pagerduty incident management platform.
+- **Retrieve users list** (read-only): Retrieves a list of users from the pagerduty system.
+- **Update service by id**: Updates an existing service in pagerduty with the provided configuration.
+- **Add service to incident workflow trigger**: This endpoint adds a service to an existing incident workflow trigger in pagerduty.
+- **Aggregate escalation policy incident metrics** (read-only): This endpoint analyzes and aggregates incident metrics across all escalation policies in pagerduty.
+- **Aggregate incident metrics with filters** (read-only): Retrieves and aggregates metrics for incidents across all services in pagerduty.
+- **Associate service dependencies**: Associates multiple service dependencies in pagerduty, allowing you to define relationships between supporting and dependent services.
+- **Associate team with automation action**: This endpoint associates a specific team with an automation action in pagerduty.
+- **Audit escalation policy records** (read-only): Retrieves the audit records for a specific escalation policy in pagerduty.
+- **Convert service rule by id**: Converts the rules associated with a specific pagerduty service to a new or optimized format.
+- **Count paused incident reports** (read-only): Retrieves the count of paused incident reports in the pagerduty system.
+- **Create a custom field for an incident type**: Create a custom field for an incident type.
+- **Create a field option for a custom field**: Create a field option for a custom field.
+- **Create a ruleset**: Creates a new ruleset in pagerduty for managing incident routing and notification rules.
+- **Create a trigger**: Create new incident workflow trigger scoped oauth requires.
+- **Create an incident type**: Create a new incident type.
+- **Create and manage custom incident fields**: Creates a new custom field for incidents in pagerduty.
+- **Create automation runner endpoint**: Creates a new automation runner in the pagerduty incident management system.
+- **Create business service**: This endpoint creates a new business service in pagerduty, which represents a specific service or application that can be monitored and…
+- **Create escalation policy**: Creates a new escalation policy in pagerduty, defining how incidents are escalated to different responders or teams.
+- **Create event orchestration**: Creates a new event orchestration in pagerduty, which defines how incoming events are processed and routed to appropriate services.
+- **Create event rule in ruleset**: Creates a new event rule within a specified ruleset in pagerduty's incident management system.
+- **Create extension object**: Creates a new extension in pagerduty, allowing for additional functionality or integrations to be added to your services.
+- **Create handoff notification rule**: Creates a new on-call handoff notification rule for a specific user in pagerduty.
+- **Create incident field option**: Creates a new field option for a specific custom field in pagerduty's incident management system.
+- **Create incident record**: Creates a new incident in pagerduty with specified details and assignments.
+- **Create incident workflow**: This endpoint creates a new incident workflow in pagerduty, allowing users to define a series of automated steps to be executed during…
+- **Create incident workflow instance**: Creates a new instance of an incident workflow for a specific incident in pagerduty.
+- **Create integration for orchestration**: Creates a new integration within an existing event orchestration in pagerduty.
+- **Create integration for service**: This endpoint creates a new integration for a specific pagerduty service.
+- **Create maintenance window object**: Creates a new maintenance window in pagerduty, allowing you to schedule periods of planned maintenance for specific services.
+- **Create new schedule layer**: Creates a new on-call schedule in pagerduty, defining rotation patterns for team members.
+- **Create new service**: Creates a new service in pagerduty, which is a key component for managing incidents and alerts.
+- **Create new tag in system**: Creates a new tag in pagerduty for labeling and categorizing entities.
+- **Create new team with details**: Creates a new team within your pagerduty account.
+- **Create or update status page post**: Creates a new post on a specified pagerduty status page.
+- **Create or update status page postmortem**: Creates or updates a postmortem for a specific status page post in pagerduty.
+- **Create response play for incidents**: Creates a new response play in pagerduty, which is a predefined set of actions to be executed in response to an incident.
+- **Create schedule overrides configuration**: Creates one or more overrides for a specific schedule in pagerduty.
+- **Create service event rule**: Creates a new event rule for a specific service in pagerduty.
+- **Create status update template**: Creates a new template in pagerduty for standardized status updates.
+- **Create statuspage subscription**: Creates a new subscription for a pagerduty status page.
+- **Create user notification rule**: Creates a new notification rule for a specific user in pagerduty.
+- **Create user object**: Creates a new user in the pagerduty system with the specified attributes.
+- **Create user status update notification rule**: Creates a new status update notification rule for a specific user in pagerduty.
+- **Create workflow integration connection**: Create a new workflow integration connection.
+- **Delete a custom field for an incident type**: Delete a custom field for an incident type.
+- **Delete a field option for a custom field**: Delete a field option for a custom field.
+- **Delete account subscription by id**: Deletes the account subscription associated with a specific business service in pagerduty.
+- **Delete addon by id**: Deletes a specific add-on from the pagerduty account using its unique identifier.
+- **Delete alert grouping setting**: This endpoint allows you to delete specific alert grouping settings in pagerduty.
+- **Delete all oauth delegations**: Delete all oauth delegations as per provided query parameters.
+- **Delete automation action by id**: Deletes a specific automation action from the pagerduty system.
+- **Delete automation action service by id**: This endpoint removes a specific automation action from a particular service in pagerduty.
+- **Delete automation actions runner by id**: Deletes a specific automation runner from the pagerduty system.
+- **Delete business service by id**: Deletes a specific business service from the pagerduty system.
+- **Delete business service priority thresholds**: Deletes all priority thresholds for business services in the pagerduty account.
+- **Delete cache variable for event**: Deletes a specific cache variable associated with an event orchestration in pagerduty.
+- **Delete cache variable from service**: This endpoint deletes a specific cache variable associated with a service in pagerduty's event orchestration system.
+- **Delete custom field by field id**: Deletes a specific custom field from incidents in pagerduty.
+- **Delete escalation policy by id**: Permanently removes a specific escalation policy from the pagerduty system.
+- **Delete event by id**: Deletes a specific event orchestration from the pagerduty system.
+- **Delete extension by id**: Deletes a specific extension from the pagerduty service.
+- **Delete field option**: This endpoint deletes a specific field option from a custom field in pagerduty's incident management system.
+- **Delete incident workflow by id**: Deletes a specific incident workflow from the pagerduty system.
+- **Delete incident workflow trigger by id**: Deletes a specific trigger associated with an incident workflow in pagerduty.
+- **Delete incident workflow trigger service**: This endpoint removes a specific service from a trigger within an incident workflow in pagerduty.
+- **Delete integration from event orchestration**: Removes a specific integration from an event orchestration in pagerduty.
+- **Delete maintenance window by id**: Deletes a specific maintenance window in pagerduty's incident management system.
+- **Delete oncall handoff notification rule**: This endpoint deletes a specific on-call handoff notification rule for a given user in pagerduty.
+- **Delete post from status page**: This endpoint deletes a specific post from a pagerduty status page.
+- **Delete post update by id**: This endpoint deletes a specific post update from a status page post in pagerduty.
+- **Delete response play**: Deletes a specific response play from the pagerduty system.
+- **Delete rule from ruleset by id**: Deletes a specific rule from a ruleset in pagerduty's incident management platform.
+- **Delete ruleset by id**: Deletes a specific ruleset from the pagerduty system based on the provided id.
+- **Delete runner team association**: This endpoint removes a team's association from a specific automation action runner in pagerduty.
+- **Delete schedule by id**: The deleteschedule endpoint removes a specific schedule from the pagerduty system.
+- **Delete schedule override by id**: This endpoint deletes a specific override from a pagerduty schedule.
+- **Delete service by id**: Deletes a specific service from the pagerduty account.
+- **Delete service rule by id**: Deletes a specific rule from a pagerduty service.
+- **Delete status page postmortem**: This endpoint allows you to delete a postmortem associated with a specific post on a pagerduty status page.
+- **Delete status update notification rule**: Deletes a specific status update notification rule associated with a user in the pagerduty system.
+- **Delete subscription from status page**: Deletes a specific subscription associated with a pagerduty status page.
+- **Delete tag by id**: Deletes a specific tag from the pagerduty system based on its unique identifier.
+- **Delete team by id**: Deletes a specific team from the pagerduty system based on the provided team id.
+- **Delete team escalation policy**: This endpoint removes an escalation policy association from a specific team in pagerduty.
+- **Delete team from automation action**: This endpoint removes a specific team's access to an automation action in pagerduty.
+- **Delete template by id**: Deletes a specific template from the pagerduty account.
+- **Delete user by id**: Deletes a specific user from the pagerduty system using their unique identifier.
+- **Delete user contact method**: Deletes a specific contact method associated with a user in pagerduty.
+- **Delete user from team by id**: This endpoint removes a specific user from a designated team within the pagerduty incident management platform.
+- **Delete user notification rule**: Deletes a specific notification rule for a user in pagerduty.
+- **Delete user session by id**: Deletes all active sessions for a specified user in the pagerduty system.
+- **Delete user session by type**: This endpoint deletes a specific user session in pagerduty.
+- **Delete webhook subscription by id**: Deletes a specific webhook subscription from your pagerduty account.
+- **Delete workflow integration connection**: Delete a workflow integration connection.
+- **Disassociate service dependencies**: This endpoint disassociates service dependencies in pagerduty by deleting specified relationships between supporting and dependent services.
+- **Edit webhook subscription by id**: The updatewebhooksubscription endpoint allows you to modify an existing webhook subscription in pagerduty.
+- **Enable extension by id**: Enables a specific extension in the pagerduty system.
+- **Enable webhook subscription by id**: Activates a specific webhook subscription in pagerduty, enabling the system to send notifications for the events configured in that…
+- **Execute response play by id**: Executes a predefined response play for a specific incident in pagerduty.
+- **Fetch cache variable for event orchestration** (read-only): Retrieves detailed information about a specific cache variable within an event orchestration in pagerduty.
+- **Fetch custom incident field by id** (read-only): Retrieves detailed information about a specific custom field associated with incidents in pagerduty.
+- **Fetch event orchestrations** (read-only): Retrieves a list of event orchestrations configured in the pagerduty account.
+- **Fetch incident analytics by id** (read-only): Retrieves raw analytics data for a specific incident in pagerduty.
+- **Fetch outlier incident by id** (read-only): Retrieves detailed information about an outlier incident associated with a specific incident in pagerduty.
+- **Fetch post update status** (read-only): Retrieves detailed information about a specific post update on a pagerduty status page.
+- **Fetch priorities list** (read-only): Retrieves a list of existing priorities in the pagerduty system, ordered from most severe to least severe.
+- **Fetch related change events for incident** (read-only): Retrieves a list of change events related to a specific incident in pagerduty.
+- **Fetch related incidents by id** (read-only): Retrieves a list of incidents that are potentially related to a specified incident in pagerduty.
+- **Fetch runner teams integration** (read-only): Retrieves a list of teams associated with a specific automation action runner in pagerduty.
+- **Fetch status pages** (read-only): Retrieves a list of all status pages configured in the pagerduty account.
+- **Fetch user contact method** (read-only): Retrieves detailed information about a specific contact method for a particular user in pagerduty.
+- **Fetch vendor list** (read-only): Retrieves a list of vendors or third-party integrations available in the pagerduty platform.
+- **Filter and aggregate incident metrics** (read-only): Analyzes and aggregates incident metrics across teams in pagerduty, allowing for detailed filtering and customization of results.
+- **Get a field option on a custom field** (read-only): Get a field option on a custom field <!-- theme.
+- **Get a trigger** (read-only): Retrieve an existing incident workflows trigger scoped oauth requires.
+- **Get addons list** (read-only): Retrieves a list of all addons associated with the pagerduty account.
+- **Get aggregated pd advance usage data** (read-only): Provides aggregated metrics for the usage of pd advance.
+- **Get alert grouping settings** (read-only): Retrieves the current alert grouping settings for the pagerduty account.
+- **Get an incident type** (read-only): Get detailed information about a single incident type.
+- **Get an incident type custom field** (read-only): Get a custom field for an incident type.
+- **Get audit records** (read-only): Retrieves a list of audit records from the pagerduty system.
+- **Get automation action by id** (read-only): Retrieves detailed information about a specific automation action in pagerduty's incident management platform.
+- **Get automation action runner by id** (read-only): Retrieves detailed information about a specific automation action runner in pagerduty.
+- **Get automation action team by team id** (read-only): Retrieves detailed information about a specific automation action's association with a particular team in pagerduty.
+- **Get automation actions runners** (read-only): Retrieves a list of automation action runners associated with the pagerduty account.
+- **Get business service subscribers by id** (read-only): Retrieves a list of subscribers for a specific business service in pagerduty.
+- **Get business services priority thresholds** (read-only): Retrieves the current priority threshold settings for all business services in pagerduty.
+- **Get cache variable by id** (read-only): Retrieves detailed information about a specific cache variable associated with a particular service within an event orchestration in…
+- **Get cache variables for service** (read-only): Retrieves the cache variables associated with a specific service in pagerduty's event orchestration system.
+- **Get escalation policy by id** (read-only): Retrieves detailed information about a specific escalation policy in pagerduty.
+- **Get event integrations by id** (read-only): Retrieves a list of integrations associated with a specific event orchestration in pagerduty.
+- **Get event orchestration by id** (read-only): Retrieves detailed information about a specific event orchestration in pagerduty using its unique identifier.
+- **Get event orchestration cache variables** (read-only): Retrieves the cache variables associated with a specific event orchestration in pagerduty.
+- **Get event orchestration global** (read-only): Get the global orchestration for an event orchestration.
+- **Get event orchestration integration** (read-only): Retrieves detailed information about a specific integration associated with an event orchestration in pagerduty.
+- **Get extension schema by id** (read-only): Retrieves a specific extension schema from pagerduty by its unique identifier.
+- **Get impact by status page id** (read-only): Retrieves detailed information about a specific impact on a pagerduty status page.
+- **Get incident alert details** (read-only): Retrieves detailed information about a specific alert associated with a particular incident in pagerduty.
+- **Get incident log entries by id** (read-only): Retrieves all log entries associated with a specific incident in pagerduty.
+- **Get incident workflow action by id** (read-only): Retrieves detailed information about a specific action within an incident workflow in pagerduty.
+- **Get incident workflows** (read-only): Retrieves a list of incident workflows configured in the pagerduty account.
+- **Get incident workflows actions** (read-only): Retrieves a list of all available actions that can be used in incident workflows within pagerduty.
+- **Get log entries** (read-only): Retrieves log entries from the pagerduty system, providing a detailed history of events and actions related to incidents and system…
+- **Get maintenance window by id** (read-only): Retrieves detailed information about a specific maintenance window in pagerduty.
+- **Get oauth delegations revocation requests status** (read-only): Get the status of all oauth delegations revocation requests for this account, specifically how many requests are still pending.
+- **Get paused incident alerts** (read-only): Retrieves alerts associated with paused incident reports in pagerduty.
+- **Get post from status page by id** (read-only): Retrieves detailed information about a specific post on a pagerduty status page.
+- **Get response plays** (read-only): Retrieves a list of response plays configured in the pagerduty account.
+- **Get rule from ruleset by id** (read-only): Retrieves detailed information about a specific rule within a pagerduty ruleset.
+- **Get schedules** (read-only): Retrieves a list of all schedules from your pagerduty account.
+- **Get service impacts by url slug** (read-only): Retrieves service impacts for a specific status dashboard in pagerduty.
+- **Get severity for status page** (read-only): Retrieves detailed information about a specific severity level on a particular status page in pagerduty.
+- **Get specific post update status** (read-only): Retrieves the updates for a specific post on a pagerduty status page.
+- **Get status dashboard by id** (read-only): Retrieves detailed information about a specific status dashboard in pagerduty.
+- **Get status for status page by id** (read-only): Retrieves the current status of a specific item on a pagerduty status page.
+- **Get status page impacts by id** (read-only): Retrieves the impacts associated with a specific status page in pagerduty.
+- **Get status page subscription** (read-only): Retrieves detailed information about a specific subscription associated with a particular status page in pagerduty.
+- **Get team members by id** (read-only): Retrieves a list of all members associated with a specific team in pagerduty.
+- **Get team notification subscriptions** (read-only): Retrieves the notification subscriptions for a specific team in pagerduty.
+- **Get teams associated with action id** (read-only): Retrieves the list of teams associated with a specific automation action in pagerduty.
+- **Get template by id** (read-only): Retrieves detailed information about a specific template in pagerduty by its unique identifier.
+- **Get the service orchestration for a service** (read-only): Get a service orchestration.
+- **Get user notification subscriptions** (read-only): Retrieves the notification subscriptions for a specific user in pagerduty.
+- **Get user session by type** (read-only): Retrieves detailed information about a specific user session in pagerduty.
+- **Get user sessions by id** (read-only): Retrieves all active sessions for a specific user in pagerduty.
+- **Get user status update notification rules** (read-only): Retrieves the status update notification rules for a specific user in pagerduty.
+- **Get webhook subscription by id** (read-only): Retrieves detailed information about a specific webhook subscription in pagerduty.
+- **Get workflow integration** (read-only): Get details about a workflow integration.
+- **Get workflow integration connection** (read-only): Get details about a workflow integration connection.
+- **Install add on endpoint**: This endpoint allows you to install a new add-on to your pagerduty account, enhancing its functionality with custom integrations.
+- **Invoke automation action by id**: Invokes a specific automation action in pagerduty, associating it with a particular incident.
+- **List all workflow integration connections** (read-only): List all workflow integration connections.
+- **List automation action details** (read-only): This endpoint retrieves a list of automation actions configured in the pagerduty account.
+- **List extension schemas** (read-only): Retrieves all available extension schemas from the pagerduty api.
+- **List field options on a custom field** (read-only): List field options for a custom field.
+- **List incident status update subscribers** (read-only): Retrieves a list of subscribers to status updates for a specific incident in pagerduty.
+- **List incident type custom fields** (read-only): List the custom fields for an incident type.
+- **List incident types** (read-only): List the available incident types incident types are a feature which will allow customers to categorize incidents, such as a security…
+- **List licenses** (read-only): The listlicenses endpoint retrieves a comprehensive list of all licenses associated with the authenticated pagerduty account.
+- **List supporting service impacts** (read-only): Retrieves information about the impacts of supporting services on a specific business service in pagerduty.
+- **List templates** (read-only): Retrieves a list of templates available in the pagerduty system.
+- **List workflow integration connections** (read-only): List all workflow integration connections for a specific workflow integration.
+- **List workflow integrations** (read-only): List available workflow integrations.
+- **Manage cache variables for event service**: Creates a new cache variable for a specific service in pagerduty's event orchestrations.
+- **Merge source incidents into target incident**: Merges multiple source incidents into a target incident in pagerduty's incident management system.
+- **Migrate integration between orchestrations**: This endpoint facilitates the migration of an integration from one event orchestration to another within pagerduty.
+- **Modify entity tags**: This endpoint allows you to modify the tags associated with a specific entity in pagerduty.
+- **Ping webhook subscription** (read-only): The pingwebhooksubscription endpoint sends a test post request to a specified webhook subscription in your pagerduty account.
+- **Post account subscription for business service**: This endpoint creates or updates an account subscription for a specific business service in pagerduty.
+- **Post alert grouping settings**: Creates a new alert grouping setting in pagerduty, defining how alerts will be automatically grouped into incidents based on specified…
+- **Post analytic metrics on escalation policies** (read-only): Retrieves and aggregates analytics metrics for incidents related to escalation policies in pagerduty.
+- **Post analytics metrics responder filters** (read-only): The analyzerespondermetrics endpoint aggregates and analyzes responder performance metrics for pagerduty incidents.
+- **Post change events**: Creates a new change event in the pagerduty system.
+- **Post event orchestration cache variables**: Creates a new cache variable within a pagerduty event orchestration.
+- **Post incident metrics** (read-only): This endpoint retrieves analytics metrics for responder teams based on incident data in pagerduty.
+- **Post incident metrics with filters** (read-only): This endpoint retrieves and aggregates analytics metrics for incidents across all teams in pagerduty.
+- **Post incident note using id**: Adds a new note to an existing incident in pagerduty.
+- **Post incident status update**: Posts a status update for a specific incident in pagerduty.
+- **Post incidents analytics with filters** (read-only): The analyzerawincidents endpoint retrieves and analyzes raw incident data from pagerduty.
+- **Post incidents metrics filtered by service** (read-only): The analyzeincidentmetrics endpoint aggregates and analyzes incident data for pagerduty services based on specified filters and parameters.
+- **Post responder incidents with filters** (read-only): Retrieves a list of incidents associated with a specific responder in the pagerduty incident management system.
+- **Post service automation action**: This endpoint adds a service to an existing automation action in pagerduty.
+- **Post team notification subscription**: Creates notification subscriptions for a specific team in pagerduty.
+- **Post team to runner**: This endpoint adds a team to an automation action runner in pagerduty.
+- **Preview schedule object** (read-only): The preview schedule endpoint allows you to simulate and visualize a pagerduty schedule configuration before actually creating or updating…
+- **Render template for incident** (read-only): Renders a specific template for a given incident in pagerduty.
+- **Retrieve abilities list** (read-only): Retrieves a list of abilities or capabilities available in the pagerduty system.
+- **Retrieve ability by id** (read-only): Retrieves detailed information about a specific ability (feature capability) associated with a pagerduty account using its unique…
+- **Retrieve action services by id** (read-only): Retrieves a list of services associated with a specific automation action in pagerduty.
+- **Retrieve active service event by id** (read-only): Retrieves the active event orchestration configuration for a specific pagerduty service.
+- **Retrieve addon by id** (read-only): Retrieves detailed information about a specific addon installed on a pagerduty account.
+- **Retrieve alert grouping settings by id** (read-only): Retrieves the alert grouping settings for a specific configuration identified by its unique id in pagerduty.
+- **Retrieve automation action invocation by id** (read-only): Retrieves detailed information about a specific automation action invocation in pagerduty.
+- **Retrieve automation action invocations** (read-only): Retrieves a list of automation action invocations from the pagerduty incident management platform.
+- **Retrieve automation action runner teams** (read-only): Retrieves detailed information about a specific team associated with an automation actions runner in pagerduty.
+- **Retrieve automation service action** (read-only): Retrieves information about how a specific automation action is associated with a particular service in pagerduty.
+- **Retrieve business service by id** (read-only): Retrieves detailed information about a specific business service in pagerduty using its unique identifier.
+- **Retrieve business service dependencies** (read-only): Retrieves the service dependencies for a specific business service in pagerduty.
+- **Retrieve business service impactors** (read-only): Retrieves a list of impactors currently affecting business services in pagerduty.
+- **Retrieve business service impacts** (read-only): Retrieves the impacts of a specific incident on business services within pagerduty.
+- **Retrieve business services** (read-only): The listbusinessservices endpoint retrieves a comprehensive list of all business services configured within a pagerduty account.
+- **Retrieve change event by id** (read-only): Retrieves detailed information about a specific change event in pagerduty using its unique identifier.
+- **Retrieve change event information** (read-only): Retrieves a list of change events from the pagerduty system within a specified time range.
+- **Retrieve current user info** (read-only): Retrieves the profile information of the currently authenticated user in the pagerduty system.
+- **Retrieve entity tags by id** (read-only): Retrieves the tags associated with a specific entity in the pagerduty system.
+- **Retrieve entity tags by id and type** (read-only): Retrieves the tags associated with a specific entity in pagerduty.
+- **Retrieve event orchestration router by id** (read-only): Retrieves the router configuration for a specific event orchestration in pagerduty.
+- **Retrieve extension by id** (read-only): Retrieves detailed information about a specific extension in pagerduty.
+- **Retrieve extension list** (read-only): Retrieves a list of all extensions associated with the authenticated pagerduty account.
+- **Retrieve incident by incident id** (read-only): Retrieves detailed information about a specific incident in pagerduty using its unique identifier.
+- **Retrieve incident custom field values** (read-only): Retrieves the custom field values associated with a specific incident in pagerduty.
+- **Retrieve incident custom fields** (read-only): Retrieves a list of custom fields associated with incidents in pagerduty.
+- **Retrieve incident field options** (read-only): Retrieves the available field options for a specific custom field associated with incidents in pagerduty.
+- **Retrieve incident workflow by id** (read-only): Retrieves detailed information about a specific incident workflow in pagerduty.
+- **Retrieve incident workflow triggers** (read-only): Retrieves a list of triggers associated with incident workflows in pagerduty.
+- **Retrieve integration by service id** (read-only): Retrieves detailed information about a specific integration associated with a particular service in pagerduty.
+- **Retrieve license allocations** (read-only): Retrieves the current license allocations for the pagerduty account.
+- **Retrieve log entry by id** (read-only): Retrieves detailed information about a specific log entry in the pagerduty system.
+- **Retrieve notes for incident** (read-only): Retrieves all notes associated with a specific incident in pagerduty.
+- **Retrieve notifications** (read-only): Retrieves notifications from the pagerduty system.
+- **Retrieve oncall handoff notification rule** (read-only): Retrieves detailed information about a specific on-call handoff notification rule for a given user in pagerduty.
+- **Retrieve oncall handoff notification rules** (read-only): Retrieves the on-call handoff notification rules for a specific user in pagerduty.
+- **Retrieve oncall list** (read-only): Retrieves the current on-call information for your pagerduty account.
+- **Retrieve past incidents** (read-only): Retrieves a list of past incidents related to a specific incident in pagerduty.
+- **Retrieve postmortem by id** (read-only): Retrieves the postmortem analysis for a specific post on a pagerduty status page.
+- **Retrieve response play by id** (read-only): Retrieves detailed information about a specific response play in the pagerduty incident management system.
+- **Retrieve rule by service id** (read-only): Retrieves a specific rule associated with a particular service in pagerduty.
+- **Retrieve rules for service id** (read-only): Retrieves all rules associated with a specific pagerduty service.
+- **Retrieve rules from ruleset by id** (read-only): Retrieves a list of all rules associated with a specific ruleset in pagerduty.
+- **Retrieve ruleset by id** (read-only): Retrieves detailed information about a specific ruleset in pagerduty using its unique identifier.
+- **Retrieve ruleset list** (read-only): Retrieves a list of rulesets from the pagerduty system.
+- **Retrieve schedule audit records by id** (read-only): Retrieves the audit records for a specific pagerduty schedule.
+- **Retrieve schedule by id** (read-only): Retrieves detailed information about a specific schedule in pagerduty using its unique identifier.
+- **Retrieve schedule override by id** (read-only): Retrieves the list of overrides for a specific schedule in pagerduty.
+- **Retrieve service audit records by id** (read-only): Retrieves the audit records for a specific pagerduty service.
+- **Retrieve service by id** (read-only): Retrieves detailed information about a specific pagerduty service using its unique identifier.
+- **Retrieve service change events by id** (read-only): Retrieves change events associated with a specific pagerduty service.
+- **Retrieve service impacts from status dashboards** (read-only): Retrieves the service impacts associated with a specific status dashboard in pagerduty.
+- **Retrieve service status by id** (read-only): Retrieves a list of services associated with a specific status page in pagerduty.
+- **Retrieve service status page** (read-only): Retrieves detailed information about a specific service associated with a particular status page in pagerduty.
+- **Retrieve standards list** (read-only): Retrieves the current set of standards defined in the pagerduty account.
+- **Retrieve standards scores by resource type and id** (read-only): Retrieves the standards scores for a specific resource in pagerduty.
+- **Retrieve standards scores by resourcetype** (read-only): Retrieves the standards scores for a specified resource type in pagerduty.
+- **Retrieve status dashboard by slug** (read-only): Retrieves detailed information about a specific pagerduty status dashboard using its url slug.
+- **Retrieve status dashboards information** (read-only): Retrieves a list of status dashboards and their associated information from the pagerduty system.
+- **Retrieve status page post** (read-only): Retrieves all posts associated with a specific status page in pagerduty.
+- **Retrieve status page severities by id** (read-only): Retrieves the list of severities associated with a specific status page in pagerduty.
+- **Retrieve status page subscription by id** (read-only): Retrieves a list of subscriptions associated with a specific pagerduty status page.
+- **Retrieve status pages status** (read-only): Retrieves the current statuses for a specified pagerduty status page.
+- **Retrieve tag by id** (read-only): Retrieves detailed information about a specific tag in the pagerduty system using its unique identifier.
+- **Retrieve tags** (read-only): Retrieves a list of all tags currently used within the pagerduty account.
+- **Retrieve team audit records** (read-only): Retrieves the audit records for a specific team in pagerduty.
+- **Retrieve team details by id** (read-only): Retrieves detailed information about a specific team in pagerduty based on the provided team id.
+- **Retrieve team list** (read-only): The listteams endpoint retrieves a list of teams within a pagerduty account.
+- **Retrieve technical service details** (read-only): Retrieves detailed information about a specific technical service and its dependencies within the pagerduty incident management platform.
+- **Retrieve template fields** (read-only): Retrieves the available fields for pagerduty templates.
+- **Retrieve unrouted event orchestration by id** (read-only): Retrieves a list of unrouted events for a specific event orchestration in pagerduty.
+- **Retrieve user audit records by id** (read-only): Retrieves the audit records for a specific user in the pagerduty system.
+- **Retrieve user by id** (read-only): Retrieves detailed information about a specific user in the pagerduty platform using their unique identifier.
+- **Retrieve user contact methods via id** (read-only): Retrieves all contact methods associated with a specific user in pagerduty.
+- **Retrieve user license information** (read-only): Retrieves the license information for a specific user in the pagerduty system.
+- **Retrieve user notification rule** (read-only): Retrieves a specific notification rule for a given user in pagerduty.
+- **Retrieve user notification rules** (read-only): Retrieves the notification rules for a specific user in pagerduty.
+- **Retrieve user status update notification rule** (read-only): Retrieves a specific status update notification rule for a given user in pagerduty.
+- **Retrieve users by schedule id** (read-only): Retrieves a list of users associated with a specific pagerduty schedule.
+- **Retrieve vendor by id** (read-only): Retrieves detailed information about a specific vendor integrated with pagerduty.
+- **Retrieve webhook subscriptions** (read-only): Retrieves a list of all webhook subscriptions associated with the authenticated pagerduty account.
+- **Send responder requests for incidents**: This endpoint allows you to send responder requests for a specific incident in pagerduty.
+- **Set business service impact status**: This endpoint updates the impact status of a specific incident on a particular business service in pagerduty.
+- **Set global priority threshold**: Sets the global priority threshold for business services in pagerduty, determining which incidents can impact these services based on…
+- **Snooze incident by duration**: This endpoint allows you to snooze a specific incident in pagerduty for a defined duration.
+- **Subscribe entities to business services**: This endpoint allows you to subscribe users or teams to a specific business service in pagerduty.
+- **Subscribe entities to incident status updates**: Subscribes specified users or teams to receive status updates for a particular incident in pagerduty.
+- **Subscribe to user notifications**: Creates notification subscriptions for a specific user in pagerduty.
+- **Unsubscribe business service entity**: This endpoint unsubscribes specified users or teams from receiving notifications for a particular business service in pagerduty.
+- **Unsubscribe from incident status updates**: Unsubscribes specified users or teams from receiving status updates for a particular incident in pagerduty.
+- **Unsubscribe team notification subscriptions**: Unsubscribes a team from notifications for specific incidents or business services in pagerduty.
+- **Unsubscribe user notification subscriptions**: This endpoint allows unsubscribing a user from notifications for specific incidents or business services in pagerduty.
+- **Update a custom field for an incident type**: Update a custom field for an incident type.
+- **Update a field option for a custom field**: Update a field option for a custom field.
+- **Update a trigger**: Update an existing incident workflow trigger scoped oauth requires.
+- **Update add on by id**: Updates an existing add-on in pagerduty with new properties.
+- **Update alert grouping settings byid**: This endpoint allows you to update an existing alert grouping setting in pagerduty.
+- **Update alert in incident**: Updates the status of a specific alert within an incident in pagerduty.
+- **Update an incident type**: Update an incident type.
+- **Update automation runner info**: This endpoint allows you to update an existing automation action runner in pagerduty.
+- **Update business service by id**: This endpoint allows you to update an existing business service in pagerduty.
+- **Update change event by id**: Updates an existing change event in pagerduty.
+- **Update custom field option**: Updates a specific field option for a custom field in pagerduty's incident management system.
+- **Update customfield displayname**: This endpoint updates an existing custom field for incidents in pagerduty.
+- **Update escalation policy by id**: Updates an existing escalation policy in pagerduty with new settings and rules.
+- **Update escalation policy for team**: This endpoint updates an existing escalation policy for a specific team in pagerduty.
+- **Update event orchestration by id**: Updates an existing event orchestration in pagerduty.
+- **Update event orchestration cache variable**: This endpoint allows you to update an existing cache variable within a specific event orchestration in pagerduty.
+- **Update event rule by id**: This endpoint allows you to update an existing event rule within a specified ruleset in pagerduty.
+- **Update event rule for service**: This endpoint allows you to update an existing event rule for a specific service in pagerduty.
+- **Update extension by id**: Updates an existing extension in pagerduty.
+- **Update incident alerts**: This endpoint allows you to update the status of multiple alerts associated with a specific incident in pagerduty.
+- **Update incident by id**: The updateincident endpoint allows you to modify various attributes of an existing incident in pagerduty's incident management system.
+- **Update incident custom field values**: This endpoint updates custom field values for a specific incident in pagerduty.
+- **Update incident details**: This endpoint allows for bulk updating of multiple pagerduty incidents in a single api call.
+- **Update incident workflow**: This endpoint updates an existing incident workflow in pagerduty by its unique identifier.
+- **Update integration by id and integration id**: Updates an existing integration for a specific pagerduty service.
+- **Update integration label**: This endpoint updates the label (name) of an integration associated with a specific event orchestration in pagerduty.
+- **Update log entry channel**: Updates the channel information for a specific log entry in pagerduty.
+- **Update maintenance window by id**: Updates an existing maintenance window in pagerduty's incident management system.
+- **Update oncall handoff notification rule**: This endpoint updates an existing on-call handoff notification rule for a specific user in pagerduty.
+- **Update orchestration router details**: Updates the configuration of an existing event orchestration router in pagerduty.
+- **Update response play by id**: Updates an existing response play in pagerduty's incident management system.
+- **Update ruleset by id**: Updates an existing ruleset in the pagerduty incident management system.
+- **Update schedule by id**: The updateschedule endpoint modifies an existing on-call schedule in pagerduty.
+- **Update service orchestration active status**: This endpoint updates the active status of a specific service orchestration in pagerduty.
+- **Update standard by id**: Updates an existing standard in the pagerduty incident management platform.
+- **Update status page post**: Updates an existing post update on a pagerduty status page.
+- **Update status page post info**: Creates or updates a post update on a specific pagerduty status page.
+- **Update status page post postmortem**: Updates or creates a postmortem for a specific post on a pagerduty status page.
+- **Update status page post resource**: This endpoint allows you to update an existing status page post on a specific pagerduty status page.
+- **Update team by id**: This endpoint allows you to update an existing team's information in pagerduty.
+- **Update template by id**: The updatetemplate endpoint allows you to modify an existing status update template in pagerduty.
+- **Update the global orchestration for an event orchestration**: Update the global orchestration for an event orchestration.
+- **Update the service orchestration for a service**: Update a service orchestration.
+- **Update unrouted orchestration rules**: Updates the unrouted orchestration rules for a specific event orchestration in pagerduty.
+- **Update user information**: This endpoint allows updating an existing user's information in pagerduty.
+- **Update user notification rule by id**: Updates a specific status update notification rule for a pagerduty user.
+- **Update user role on team**: Updates the role of a specific user within a pagerduty team.
+- **Update workflow integration connection**: Update an existing workflow integration connection.

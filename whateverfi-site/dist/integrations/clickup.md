@@ -1,0 +1,134 @@
+# ClickUp
+
+ClickUp unifies tasks, docs, goals, and chat in a single platform, allowing teams to plan, organize, and collaborate across projects with customizable workflows
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/clickup/.
+
+## Actions
+
+- **Create a task**: Creates a new clickup task in a specific list, optionally as a subtask if a parent task id (which cannot be a subtask itself and must be…
+- **Create folder**: Creates a new clickup folder within the specified space, which must exist and be accessible.
+- **Create list**: Creates a new list in clickup within a specified, existing folder.
+- **Create task comment**: Adds a comment to a clickup task.
+- **Delete task**: Permanently deletes a task, using its standard id or a custom task id (requires custom task ids=true and team id).
+- **Get task** (read-only): Retrieves comprehensive details for a clickup task by its id, supporting standard or custom task ids (requires team id for custom ids).
+- **Update task**: Updates attributes of an existing task.
+- **Add dependency**: Adds a 'waiting on' or 'blocking' dependency to a task, requiring either depends on (task becomes waiting on) or dependency of (task…
+- **Add guest to folder**: Adds a guest to a folder with specified permissions.
+- **Add guest to list**: Shares a clickup list with an existing guest user, granting them specified permissions.
+- **Add guest to task**: Assigns a guest to a task with specified permissions.
+- **Add tag to task**: Adds an existing tag to a specified task.
+- **Add tags from time entries**: Associates a list of specified tags with one or more time entries within a given team (workspace).
+- **Add task link**: Links two existing and accessible clickup tasks, identified by task id (source) and links to (target).
+- **Add task to list**: Adds an existing task to an additional clickup list.
+- **Change tag names from time entries**: Updates the name, background color, and/or foreground color for an existing time entry tag, identified by its current name and team id.
+- **Create a time entry**: Creates a new time entry for a specified team.
+- **Create chat view comment**: Posts a new comment to a specified clickup chat view.
+- **Create checklist**: Creates a new checklist with a specified name within an existing task, which can be identified by its standard id or a custom task id (if…
+- **Create checklist item**: Creates a new checklist item within a specified, existing checklist, optionally setting the item's name and assigning it to a user.
+- **Create folder view**: Creates a new, highly customizable view within a specific clickup folder using its folder id.
+- **Create folderless list**: Creates a new folderless list (a list not part of any folder) directly within a specified clickup space.
+- **Create goal**: Creates a new goal in a clickup team (workspace).
+- **Create key result**: Creates a new key result (target) for a specified goal in clickup to define and track measurable objectives towards achieving that goal.
+- **Create list comment**: Adds a new comment with specific text to an existing and accessible clickup list, assigns it to a user, and sets notification preferences…
+- **Create list view**: Creates a new, customizable view (e.g., list, board, calendar) within a specified clickup list, requiring an existing list id accessible…
+- **Create space**: Creates a new space in a clickup team, with customizable name, privacy, color, and feature settings.
+- **Create space tag**: Creates a new tag (name, foreground color, background color) in an existing clickup space.
+- **Create space view**: Creates a customizable view (e.g., list, board, gantt) within a specified clickup space, allowing configuration of grouping, sorting,…
+- **Create task attachment**: Uploads a file as an attachment to a specified clickup task, requiring multipart/form-data for file upload.
+- **Create task from template**: Creates a new task in a specified clickup list from a task template, using the provided name for the new task.
+- **Create team**: Creates a new team (user group) with specified members in a workspace.
+- **Create webhook**: Creates a clickup webhook for a team (workspace) to notify a public url on specified events (at least one, or '*' for all), optionally…
+- **Create workspace Everything level view**: Creates a new, customizable view (e.g., list, board) at the 'everything' level for a specified team (workspace id), encompassing all tasks…
+- **Delete a time entry**: Deletes an existing time entry, specified by timer id, from a workspace identified by team id.
+- **Delete checklist**: Permanently deletes an existing checklist identified by its checklist id.
+- **Delete checklist item**: Permanently deletes an existing item, identified by checklist item id, from an existing checklist, identified by checklist id.
+- **Delete comment**: Deletes an existing comment from a task using its comment id.
+- **Delete dependency**: Removes two dependency links for task id.
+- **Delete folder**: Permanently and irreversibly deletes a specified folder and all its contents (lists, tasks) if the folder id exists.
+- **Delete goal**: Permanently removes an existing goal, identified by its goal id, from the workspace.
+- **Delete key result**: Deletes an existing key result, also referred to as a target within a goal, identified by its key result id.
+- **Delete list**: Permanently deletes an existing list and all its contents.
+- **Delete space**: Permanently deletes a specified space in clickup.
+- **Delete space tag**: Deletes a tag from a space, identified by tag name in path.
+- **Delete task link**: Deletes an existing link, effectively a dependency or relationship, between two clickup tasks.
+- **Delete team**: Permanently deletes an existing team (user group) from the workspace using its group id.
+- **Delete time tracked**: Deletes a time-tracked interval from a task.
+- **Delete view**: Permanently and irreversibly deletes an existing view in clickup, identified by its view id.
+- **Delete webhook**: Permanently removes an existing webhook, specified by its id, thereby ceasing all its event monitoring and notifications.
+- **Edit checklist**: Updates an existing checklist's name or position, identified by its checklist id.
+- **Edit checklist item**: Updates an existing checklist item, allowing modification of its name, assignee, resolution status, or parent item for nesting.
+- **Edit guest on workspace**: Modifies the details and permissions of an existing guest user within a specific workspace.
+- **Edit key result**: Updates an existing key result's progress or note in clickup, where the key result measures progress towards a goal.
+- **Edit space tag**: Updates an existing tag's name and colors in a clickup space.
+- **Edit time tracked**: Edits a legacy time-tracked interval for a task (identified by task id and interval id) to update its start/end times and duration.
+- **Edit user on workspace**: Updates a user's username, admin status, or custom role in a workspace.
+- **Get access token** (read-only): Exchanges a clickup oauth 2.0 authorization code (obtained after user consent) for an access token.
+- **Get accessible custom fields** (read-only): Retrieves all accessible custom field definitions for a specified clickup list using its list id.
+- **Get all tags from time entries** (read-only): Retrieves all unique tags applied to time entries within a specified clickup team (workspace).
+- **Get authorized teams workspaces** (read-only): Retrieves a list of workspaces (teams) the authenticated user can access.
+- **Get authorized user** (read-only): Retrieves the details of the currently authenticated clickup user.
+- **Get bulk tasks time in status** (read-only): Retrieves the time spent in each status for multiple tasks.
+- **Get chat view comments** (read-only): Retrieves comments from a specified chat view in clickup, supporting pagination via start and start id to fetch comments older than the…
+- **Get custom roles** (read-only): Retrieves all custom roles, which allow granular permission configurations, for a specified workspace (team).
+- **Get custom task types** (read-only): Retrieves all custom task types available within a specified workspace (team id).
+- **Get filtered team tasks** (read-only): Retrieves a paginated list of tasks (up to 100 per page) from a specified team (workspace id in team id) based on various filter criteria,…
+- **Get folder** (read-only): Retrieves detailed information about a specific folder in clickup.
+- **Get folder views** (read-only): Retrieves all configured views (like list, board, calendar) for a specified, existing folder in clickup.
+- **Get folderless lists** (read-only): Retrieves all lists within a specified space that are not located in any folder.
+- **Get folders** (read-only): Retrieves folders within a specified clickup space, ensuring space id is valid, with an option to filter by archived status.
+- **Get goal** (read-only): Retrieves detailed information for an existing clickup goal, specified by its unique goal id.
+- **Get goals** (read-only): Retrieves goals for a specified clickup workspace (team).
+- **Get guest** (read-only): Call this to retrieve detailed information for a specific guest within a team (workspace), ensuring the guest id is valid for the given…
+- **Get list** (read-only): Retrieves detailed information for an existing list in clickup, identified by its unique list id.
+- **Get list comments** (read-only): Retrieves comments for a specific clickup list, supporting pagination using start (timestamp) and start id (comment id) to fetch earlier…
+- **Get list members** (read-only): Retrieves all members of a specific, existing clickup list by its id.
+- **Get list views** (read-only): Retrieves all task and page views for a specified and accessible clickup list.
+- **Get lists** (read-only): Retrieves all lists within a specified, existing clickup folder, optionally filtering by archived status.
+- **Get running time entry** (read-only): Retrieves the currently active time entry for a user in a workspace.
+- **Get singular time entry** (read-only): Fetches a specific time entry by its id for a given team.
+- **Get space** (read-only): Retrieves detailed information for an existing space in a clickup workspace, identified by its unique space id.
+- **Get space tags** (read-only): Retrieves all tags for tasks within a specified clickup space, requiring a valid space id.
+- **Get space views** (read-only): Retrieves all task and page views for a specified space id in clickup.
+- **Get spaces** (read-only): Retrieves spaces for a team id.
+- **Get task comments** (read-only): Retrieves up to 25 comments for a specified task, supporting pagination using start and start id to fetch older comments.
+- **Get task members** (read-only): Retrieves users with explicit access (directly assigned or shared) to a specific existing task, excluding users with inherited permissions.
+- **Get task s time in status** (read-only): Retrieves the duration a task has spent in each status, provided the 'total time in status' clickapp is enabled for the workspace.
+- **Get task templates** (read-only): Retrieves task templates for a specified workspace (team id), supporting pagination.
+- **Get tasks** (read-only): Retrieves tasks from a specified clickup list.
+- **Get teams** (read-only): Retrieves user groups (teams) from a clickup workspace, typically requiring team id (workspace id), with an option to filter by group ids.
+- **Get time entries within a date range** (read-only): Retrieves time entries for a specified team (workspace id) within a date range (defaults to the last 30 days for the authenticated user if…
+- **Get time entry history** (read-only): Retrieves the modification history for an existing time entry within a specific clickup team (workspace).
+- **Get tracked time** (read-only): Retrieves tracked time for a task using a legacy endpoint.
+- **Get user** (read-only): Retrieves detailed information for a specific user within a clickup workspace (team), available only for workspaces on the clickup…
+- **Get view** (read-only): Fetches details for a specific clickup view, identified by its view id, which must exist.
+- **Get view tasks** (read-only): Retrieves all tasks visible in a specified clickup view, respecting its applied filters, sorting, and grouping.
+- **Get webhooks** (read-only): Fetches webhooks for a team (workspace), returning only those created by the authenticated user via api, for a team id they can access.
+- **Get workspace everything level views** (read-only): Retrieves all task and page views at the 'everything level' (a comprehensive overview of all tasks across all spaces) for a specified…
+- **Get workspace plan** (read-only): Retrieves the details of the current subscription plan for a specified clickup workspace.
+- **Get workspace seats** (read-only): Retrieves seat utilization (used, total, available for members/guests) for a clickup workspace (team) id, which must be for an existing…
+- **Invite guest to workspace**: Invites a guest by email to a clickup workspace (team) on an enterprise plan, setting initial permissions and optionally a custom role.
+- **Invite user to workspace**: Invites a user via email to a clickup workspace (team), optionally granting admin rights or a custom role.
+- **Remove custom field value**: Removes an existing value from a custom field on a specific task.
+- **Remove guest from folder**: Revokes a guest's access to a specific clickup folder, optionally unsharing items explicitly shared with them within it.
+- **Remove guest from list**: Revokes a guest's access to a specific list, provided the guest currently has access to this list and the workspace is on the clickup…
+- **Remove guest from task**: Revokes a guest's access to a specific task.
+- **Remove guest from workspace**: Permanently removes a guest from a specified workspace, revoking all their access.
+- **Remove tag from task**: Removes a tag from a specified task by disassociating it (does not delete the tag from workspace), succeeding even if the tag is not on…
+- **Remove tags from time entries**: Removes tags from specified time entries in a team, without deleting the tags from the workspace.
+- **Remove task from list**: Removes a task from an extra list (not its home list).
+- **Remove user from workspace**: Deactivates a user from a specified clickup workspace, revoking their access (user can be reactivated later).
+- **Set custom field value**: Sets or updates a custom field's value for a task.
+- **Shared hierarchy** (read-only): Retrieves the hierarchy of tasks, lists, and folders shared with the authenticated user within an existing clickup team (workspace),…
+- **Start a time entry**: Starts a new time entry (timer) in the specified team (workspace), optionally associating it with a task, adding a description, setting…
+- **Stop a time entry**: Stops the authenticated user's currently active time entry in the specified team (workspace), which requires an existing time entry to be…
+- **Track time**: Records a time entry for a task using clickup's legacy time tracking system.
+- **Update a time entry**: Updates an existing clickup time entry.
+- **Update comment**: Updates an existing task comment's text, assignee (who must be a valid workspace member), or resolution status, requiring a valid existing…
+- **Update folder**: Updates the name of an existing folder in clickup.
+- **Update goal**: Updates attributes of an existing clickup goal, identified by its goal id.
+- **Update list**: Updates attributes of an existing clickup list, such as its name, content, due date, priority, assignee, or color status, identified by…
+- **Update space**: Updates an existing clickup space, allowing modification of its name, color, privacy, and feature settings (clickapps).
+- **Update team**: Updates an existing clickup user group (team) using its group id.
+- **Update view**: Updates an existing clickup view's settings such as name, type, grouping, or filters.
+- **Update webhook**: Updates the endpoint url, monitored events, and status of an existing webhook, identified by its webhook id.

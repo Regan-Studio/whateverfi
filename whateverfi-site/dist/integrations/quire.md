@@ -1,0 +1,110 @@
+# Quire
+
+Quire is a collaborative project management platform for organizing projects, tasks, documents, discussions, and team workflows.
+
+Category: Productivity. Connect from any WhatEverFi bot at https://whateverfi.com/integrations/quire/.
+
+## Actions
+
+- **Add Insight Field**: Add a custom field to an insight by OID or by owner ID plus insight ID.
+- **Add Project Approval Category**: Add an approval category to a Quire project by project ID or OID.
+- **Add Project Field**: Add a custom-field definition to a Quire project by project ID or OID.
+- **Add Task Timelog**: Add a time log to a Quire task identified by task OID or by project ID plus task ID.
+- **Attach File to Comment**: Upload a file as a raw-byte attachment to an existing Quire comment.
+- **Attach File to Task**: Upload raw file bytes as an attachment to a task identified by ID or OID.
+- **Bulk Create Tasks**: Atomically create one to 300 Quire root, child, or sibling tasks in submitted order.
+- **Bulk Delete Tasks**: Atomically delete 1 to 300 Quire tasks from a project selected by ID or OID.
+- **Bulk Move Tasks**: Atomically move or reorder 1 to 300 Quire tasks within one project, selected by project ID or OID.
+- **Bulk Set Task Approvals**: Atomically apply one approval transition to up to 300 Quire tasks in a project selected by ID or OID.
+- **Bulk Transfer Tasks**: Atomically transfer 1 to 300 Quire tasks from one project to a different target project using ID or OID routing.
+- **Bulk Update Tasks**: Atomically update one to 300 Quire tasks in a project selected by ID or OID.
+- **Create Chat Channel**: Create a chat under a project using its human-readable ID or OID.
+- **Create Chat Comment**: Add a Markdown comment to a chat identified by its OID or by project ID plus chat ID.
+- **Create Dashboard**: Create a dashboard container under a project, organization, folder, or smart folder using the owner's human-readable ID or OID.
+- **Create Document**: Create a document under a project, organization, folder, or smart folder using the owner's human-readable ID or OID.
+- **Create Insight**: Create an insight view under a project, organization, folder, or smart folder using the owner's human-readable ID or OID.
+- **Create Status**: Create a task status in a project identified by ID or OID.
+- **Create Sublist**: Create a sublist under a project, organization, folder, or smart folder using the owner's human-readable ID or OID.
+- **Create Tag**: Create a tag in a project identified by ID or OID.
+- **Create Task**: Create a Quire root task or a child/sibling task using a project ID, a project ID plus task ID, or a project/task OID.
+- **Create Task Comment**: Add a Markdown comment to a task identified by task OID or by project ID plus task ID.
+- **Delete Chat Channel**: Remove one Quire chat channel by its OID or by its owner ID and chat ID.
+- **Delete Comment**: Remove one Quire comment by its OID.
+- **Delete Dashboard**: Remove one Quire dashboard by its OID or by its owner ID and dashboard ID.
+- **Delete Document**: Remove one Quire document by its OID or by its owner ID and document ID.
+- **Delete Insight**: Remove one Quire insight by its OID or by its owner ID and insight ID.
+- **Delete Status**: Delete one project task status by numeric value using the project ID or OID.
+- **Delete Storage Value**: Delete one access-token-scoped app storage value by key name.
+- **Delete Sublist**: Remove one Quire sublist by its OID or by its owner ID and sublist ID.
+- **Delete Tag**: Delete one Quire tag by its OID.
+- **Delete Task**: Remove one Quire task by task OID or by project ID plus numeric task ID.
+- **Export Project CSV** (read-only): Export a Quire project and its filtered tasks and related data as a CSV file, selecting the project by ID or OID.
+- **Export Project JSON** (read-only): Export a Quire project, all tasks, and related data as JSON, selecting the project by ID or OID.
+- **Get Chat Channel** (read-only): Get one chat by its OID or by owner ID plus resource ID.
+- **Get Comment** (read-only): Get one comment by its OID.
+- **Get Dashboard** (read-only): Get one dashboard by its OID or by owner ID plus resource ID.
+- **Get Document** (read-only): Get one document by its OID or by owner ID plus resource ID.
+- **Get Insight** (read-only): Get one insight by OID or by owner ID plus insight ID.
+- **Get Organization** (read-only): Get organization details by ID or OID, including subscription plan when available.
+- **Get Partner** (read-only): Get one external team partner by OID.
+- **Get Project** (read-only): Get one complete project record by ID or OID, including plan details.
+- **Get Rate Limit** (read-only): Return current minute and hourly API usage for an organization or personal project by ID or OID.
+- **Get Status** (read-only): Get one project task status by numeric value.
+- **Get Storage Value** (read-only): Get one application storage value by key name.
+- **Get Sublist** (read-only): Get one sublist by its OID or by owner ID plus resource ID.
+- **Get Tag** (read-only): Return one tag identified by its OID.
+- **Get Task** (read-only): Get one complete Quire task by task OID or by project ID plus numeric task ID.
+- **Get User** (read-only): Get a user by human-readable ID, email address, me, or OID.
+- **List Chat Channels** (read-only): List chats under a supported owner identified by ID or OID.
+- **List Chat Comments** (read-only): List all comments on a chat identified by chat OID or by project ID plus chat ID.
+- **List Dashboards** (read-only): List dashboards under a supported owner identified by ID or OID.
+- **List Documents** (read-only): List documents under a supported owner identified by ID or OID.
+- **List Insights** (read-only): List insights under an owner identified by ID or OID.
+- **List Organizations** (read-only): List organizations visible to the connected user.
+- **List Project Partners** (read-only): List external team partners for a project identified by ID or OID.
+- **List Projects** (read-only): List projects authorized for the current application, globally or within one organization selected by ID or OID, with optional archived…
+- **List Statuses** (read-only): List task statuses for a project identified by ID or OID.
+- **List Storage Values** (read-only): List up to 20 app storage values ordered by key, either across all keys or restricted to a prefix.
+- **List Sublists** (read-only): List sublists under a supported owner identified by ID or OID.
+- **List Tags** (read-only): List tags in a project identified by ID or OID.
+- **List Task Comments** (read-only): List all comments on a task identified by task OID or by project ID plus task ID.
+- **List Tasks** (read-only): List Quire project roots or a task's direct children or paid deep subtree by project/task ID or OID.
+- **List Users** (read-only): List users visible to the app globally or within a project selected by ID or OID.
+- **Move Insight Field**: Reorder a custom field on an insight identified by OID or by owner ID plus insight ID.
+- **Move Project Field**: Reorder a custom field on a Quire project identified by ID or OID.
+- **Move Task**: Reparent or reorder one Quire task within its current project, selected by project ID plus numeric task ID or by task OID.
+- **Remove Insight Field**: Remove a named custom field from a Quire insight by OID or by owner ID plus insight ID.
+- **Remove Project Approval Category**: Remove an approval category from a Quire project by project ID or OID.
+- **Remove Project Field**: Remove a named custom field from a Quire project by project ID or OID.
+- **Remove Task Timelog**: Remove the task time log matching an exact start, end, and optional user, identifying the task by OID or by project ID plus integer task ID.
+- **Rename Insight Field**: Rename a custom field on an insight identified by OID or by owner ID plus insight ID while preserving the field's content.
+- **Rename Project Field**: Rename a custom field on a project identified by ID or OID while preserving the field content and migrating task values.
+- **Restore Chat Channel**: Restore a previously removed chat by its OID or by owner ID plus resource ID.
+- **Restore Comment**: Restore a previously removed comment by OID.
+- **Restore Dashboard**: Restore a previously removed dashboard by its OID or by owner ID plus resource ID.
+- **Restore Document**: Restore a previously removed document by its OID or by owner ID plus resource ID.
+- **Restore Insight**: Restore a previously removed insight by its OID or by owner ID plus insight ID.
+- **Restore Sublist**: Restore a previously removed sublist by its OID or by owner ID plus resource ID.
+- **Restore Task**: Restore a previously removed Quire task by project ID plus numeric task ID, or by task OID.
+- **Revoke Task Approval**: Cancel a Quire task's current approval by task OID or by project ID plus integer task ID.
+- **Run Insight** (read-only): Run a project-scoped insight by OID or by project ID plus insight ID and return its computed grouped table.
+- **Search Tasks** (read-only): Search tasks in one project, folder, or organization selected by ID or OID.
+- **Send Notification**: Irreversibly send a Quire notification to the authorizing user, selected visible users, or every user visible to the app.
+- **Set Storage Value**: Create or replace one access-token-scoped app storage value by key.
+- **Set Task Approval**: Request, approve, reject, or request changes for a task approval category, selecting the task by OID or by project ID plus task ID.
+- **Transfer Task**: Transfer one existing Quire task from its current project to a different project using an ID or OID route.
+- **Update Chat Channel**: Update one chat by its OID or by owner ID plus resource ID.
+- **Update Comment**: Update the Markdown content or pin state of a comment by OID.
+- **Update Dashboard**: Update one dashboard by its OID or by owner ID plus resource ID.
+- **Update Document**: Update one document by its OID or by owner ID plus resource ID.
+- **Update Insight**: Update one insight by OID or by owner ID plus insight ID.
+- **Update Insight Field**: Update an existing custom-field definition on a Quire insight by OID or by owner ID plus insight ID.
+- **Update Organization**: Update organization properties by ID or OID.
+- **Update Project**: Update project properties by ID or OID, including visibility, followers, dates, and archive state.
+- **Update Project Approval Category**: Update an approval category on a Quire project identified by ID or OID.
+- **Update Project Field**: Update an existing custom-field definition on a Quire project by ID or OID.
+- **Update Status**: Update one project task status by numeric value.
+- **Update Sublist**: Update one sublist by its OID or by owner ID plus resource ID.
+- **Update Tag**: Update one tag by OID.
+- **Update Task**: Partially update one Quire task selected by project ID plus numeric task ID, or by task OID.
+- **Update Task Timelog**: Replace fields on the task time log identified by its exact existing start, end, and optional user, selecting the task by project/task ID…
