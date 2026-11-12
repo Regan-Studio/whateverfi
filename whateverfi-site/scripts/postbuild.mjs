@@ -16,8 +16,9 @@ for (const r of vercel.redirects ?? []) {
   const status = r.statusCode ?? (r.permanent ? 308 : 302);
   redirects.push(`${r.source.replace(/:path\*/g, "*")} ${r.destination.replace(/:path\*/g, ":splat")} ${status}`);
 }
-// upstream api/download.ts is a Vercel function; a static host falls back to the latest release page.
-redirects.push("/api/download https://github.com/elie222/rakazo/releases/latest 302");
+// upstream api/download.ts is a Vercel function that serves Rakazo-branded installers. WhatEverFi has
+// no installers yet, so old/bookmarked download links land on the web app instead.
+redirects.push("/api/download https://app.whateverfi.com/ 302");
 writeFileSync(join(dist, "_redirects"), `${redirects.join("\n")}\n`);
 
 const headers = [];

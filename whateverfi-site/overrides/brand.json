@@ -57,10 +57,145 @@
       "$comment": "Real user quotes about the upstream product must not be presented as endorsements of WhatEverFi."
     },
     {
-      "id": "testimonials-hide",
+      "id": "testimonials-remove",
       "file": "apps/www/src/components/HomePage.astro",
-      "find": "<section id=\"testimonials\" class=\"section testimonials\"",
-      "replace": "<section id=\"testimonials\" class=\"section testimonials\" hidden={copy.testimonials.items.length === 0}",
+      "find": "\\n\\s*<section id=\"testimonials\" class=\"section testimonials\"[\\s\\S]*?\\n      </section>",
+      "replace": "",
+      "required": true,
+      "$comment": "Drops the (now empty) testimonials section from the page entirely instead of shipping it hidden. The marquee script is null-safe."
+    },
+    {
+      "id": "testimonials-markdown",
+      "file": "apps/www/src/agent-content.ts",
+      "find": "## \\$\\{home\\.testimonials\\.heading\\}\\n\\n\\$\\{home\\.testimonials\\.items[^\\n]*\\n\\n",
+      "replace": "",
+      "required": true,
+      "$comment": "Same removal for the homepage markdown twin (index.md / llms.txt)."
+    },
+    {
+      "id": "github-deep-links",
+      "find": "\\$\\{GITHUB_URL\\}/",
+      "replace": "https://github.com/elie222/rakazo/",
+      "required": true,
+      "$comment": "Deep links (docs, examples, LICENSE, issues, edit-this-page) document the upstream engine and only exist in the public upstream repo, so they stay on elie222/rakazo. Must run before repo-url."
+    },
+    {
+      "id": "repo-url",
+      "file": "apps/www/src/site.ts",
+      "find": "export const GITHUB_URL = \"https://github\\.com/elie222/rakazo\";",
+      "replace": "export const UPSTREAM_GITHUB_URL = \"https://github.com/elie222/rakazo\";\nexport const GITHUB_URL = \"https://github.com/Regan-Studio/whateverfi\";",
+      "required": true,
+      "$comment": "Repo-level links (header GitHub pill, footer, 'View on GitHub' buttons, structured data) point at the WhatEverFi repository."
+    },
+    {
+      "id": "github-shortlink",
+      "file": "apps/www/vercel.json",
+      "find": "\"destination\": \"https://github\\.com/elie222/rakazo\"",
+      "replace": "\"destination\": \"https://github.com/Regan-Studio/whateverfi\"",
+      "required": true
+    },
+    {
+      "id": "star-pill",
+      "file": "apps/www/src/components/Header.astro",
+      "find": "<span aria-hidden=\"true\">★</span>\\s*<span>\\{starsLabel\\}</span>",
+      "replace": "<span>GitHub</span>",
+      "required": true,
+      "$comment": "The star count is the upstream project's; it must not be shown as WhatEverFi's."
+    },
+    {
+      "id": "stats-no-stars",
+      "file": "apps/www/src/components/HomePage.astro",
+      "find": "copy\\.cta\\.stats\\.map\\(",
+      "replace": "copy.cta.stats.filter((stat) => stat.value !== \"stars\").map(",
+      "required": true
+    },
+    {
+      "id": "repo-card-import",
+      "file": "apps/www/src/components/RepoCard.astro",
+      "find": "import \\{ GITHUB_URL \\} from \"\\.\\./site\";",
+      "replace": "import { UPSTREAM_GITHUB_URL } from \"../site\";",
+      "required": true
+    },
+    {
+      "id": "repo-card-link",
+      "file": "apps/www/src/components/RepoCard.astro",
+      "find": "href=\\{GITHUB_URL\\}",
+      "replace": "href={UPSTREAM_GITHUB_URL}",
+      "required": true,
+      "$comment": "The recent-changes feed lists upstream commits, so the card names and links the upstream engine."
+    },
+    {
+      "id": "repo-card-meta",
+      "file": "apps/www/src/components/RepoCard.astro",
+      "find": "<span class=\"repo-card__meta\">★ \\{starsLabel\\}</span>",
+      "replace": "<span class=\"repo-card__meta\">Upstream engine</span>",
+      "required": true
+    },
+    {
+      "id": "ios-app-url",
+      "file": "apps/www/src/site.ts",
+      "find": "export const IOS_APP_URL = \"https://apps\\.apple\\.com/app/rakazo/id\\d+\";",
+      "replace": "export const IOS_APP_URL = APP_URL;",
+      "required": true,
+      "$comment": "There is no WhatEverFi iOS app yet; the App Store listing is the upstream Rakazo-branded app."
+    },
+    {
+      "id": "android-app-url",
+      "file": "packages/contracts/src/client-build.ts",
+      "find": "\"https://play\\.google\\.com/store/apps/details\\?id=com\\.rakazo\\.app\"",
+      "replace": "\"https://app.whateverfi.com\"",
+      "required": true,
+      "$comment": "Only affects this marketing-site build checkout. No WhatEverFi Android app yet."
+    },
+    {
+      "id": "desktop-download-import",
+      "file": "apps/www/src/github.ts",
+      "find": "import \\{ GITHUB_API_REPO \\} from \"\\./site\";",
+      "replace": "import { APP_URL, GITHUB_API_REPO } from \"./site\";",
+      "required": true
+    },
+    {
+      "id": "desktop-download-href",
+      "file": "apps/www/src/github.ts",
+      "find": "return `/api/download\\?platform=\\$\\{platform\\}`;",
+      "replace": "void platform;\n  return APP_URL;",
+      "required": true,
+      "$comment": "Upstream installers are Rakazo-branded; desktop download links go to the web app until WhatEverFi ships its own."
+    },
+    {
+      "id": "home-desktop-links",
+      "file": "apps/www/src/components/HomePage.astro",
+      "find": "\\{desktopPlatforms\\.map\\(\\(platform\\) => \\(\\s*<a href=\\{desktopDownloadHref\\(platform\\)\\}>\\{PLATFORM_NAMES\\[platform\\]\\}</a>\\s*\\)\\)\\}",
+      "replace": "<a href={APP_URL}>WhatEverFi app coming soon · try the web version</a>",
+      "required": true
+    },
+    {
+      "id": "home-mobile-links",
+      "file": "apps/www/src/components/HomePage.astro",
+      "find": "<a href=\\{IOS_APP_URL\\}>iPhone and iPad</a>\\s*<a href=\\{ANDROID_APP_STORE_URL\\}>Android</a>",
+      "replace": "<a href={APP_URL}>WhatEverFi app coming soon · try the web version</a>",
+      "required": true
+    },
+    {
+      "id": "cta-mobile-buttons",
+      "file": "apps/www/src/components/GetStartedActions.astro",
+      "find": "<a class=\"button button--primary\" href=\\{IOS_APP_URL\\} data-show=\"ios\">\\{copy\\.download\\.ios\\}</a>\\s*<a class=\"button button--primary\" href=\\{ANDROID_APP_STORE_URL\\} data-show=\"android\">\\s*\\{copy\\.download\\.android\\}\\s*</a>",
+      "replace": "<a class=\"button button--primary\" href={APP_URL} data-show=\"ios android\">{copy.getStarted}</a>",
+      "required": true
+    },
+    {
+      "id": "cta-desktop-buttons",
+      "file": "apps/www/src/components/GetStartedActions.astro",
+      "find": "\\(desktop \\? DESKTOP_PLATFORMS : \\[\\]\\)",
+      "replace": "(desktop ? ([] as Array<(typeof DESKTOP_PLATFORMS)[number]>) : [])",
+      "required": true,
+      "$comment": "No 'Download for macOS/Windows/Linux' buttons until WhatEverFi ships its own installers."
+    },
+    {
+      "id": "download-markdown",
+      "file": "apps/www/src/agent-content.ts",
+      "find": "export const DOWNLOAD_MARKDOWN = `# Download WhatEverFi\\n\\n[\\s\\S]*?\\n`;",
+      "replace": "export const DOWNLOAD_MARKDOWN = `# Download WhatEverFi\n\nThe WhatEverFi desktop (macOS, Windows, Linux) and mobile (iPhone, iPad, Android) apps are coming soon. Until then, use the web version:\n\n- [Web](${APP_URL})\n\nSelf-hosting? WhatEverFi is built on the open-source [elie222/rakazo](https://github.com/elie222/rakazo) engine (Apache-2.0). Its [releases page](https://github.com/elie222/rakazo/releases) has the upstream desktop builds, which carry the upstream branding. See the [self-hosting guide](https://whateverfi.com/self-hosted-ai-agent/).\n`;",
       "required": true
     }
   ],
