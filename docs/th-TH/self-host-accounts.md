@@ -80,7 +80,7 @@ SMTP: `SMTP_URL=smtps://...` และ `EMAIL_FROM` development ใช้ `EMAIL
 แอปที่ build เองใช้ passkey ของโดเมนนี้ได้เมื่อตั้งค่าด้านล่าง ยังไม่ตั้งแพลตฟอร์มไหน แอปนั้นจะซ่อน passkey แอป macOS ที่ปล่อยทั่วไปผูกกับ `app.whateverfi.com` จึงซ่อน passkey ของเซิร์ฟเวอร์อื่น
 
 ```bash
-PASSKEY_APPLE_APP_IDS=ABCDE12345.com.rakazo.app,ABCDE12345.dev.rakazo.desktop
+PASSKEY_APPLE_APP_IDS=ABCDE12345.com.rakazo.app,ABCDE12345.com.whateverfi.desktop
 PASSKEY_ANDROID_CERT_SHA256=AA:BB:...:FF
 ```
 

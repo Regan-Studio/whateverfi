@@ -38,7 +38,7 @@
     "yaml": "2.9.1"
   },
   "build": {
-    "appId": "dev.rakazo.desktop",
+    "appId": "com.whateverfi.desktop",
     "directories": {
       "output": "out",
       "buildResources": "assets"
