@@ -269,7 +269,7 @@ describe("NativeStackController", () => {
       API_PORT: "40001",
       SANDBOX_PROVIDER: "local-vm",
       LOCAL_VM_CLI: CLI,
-      LOCAL_VM_COMPUTER_IMAGE: "ghcr.io/elie222/rakazo/computer:v1.0.0",
+      LOCAL_VM_COMPUTER_IMAGE: "ghcr.io/regan-studio/whateverfi/computer:v1.0.0",
       OPENROUTER_API_KEY: "sk-or-test",
       WEB_ORIGIN: "http://127.0.0.1:5173",
       SANDBOX_HOST_URL: "http://127.0.0.1:47000",
@@ -290,7 +290,7 @@ describe("NativeStackController", () => {
       "pull",
       "--progress",
       "plain",
-      "ghcr.io/elie222/rakazo/computer:v1.0.0",
+      "ghcr.io/regan-studio/whateverfi/computer:v1.0.0",
     ]);
 
     await controller.stop();

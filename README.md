@@ -1,26 +1,35 @@
-# Rakazo
+# WhatEverFi
 
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
 
-[![GitHub stars](https://img.shields.io/github/stars/elie222/rakazo?labelColor=black&style=for-the-badge&color=2563EB)](https://github.com/elie222/rakazo/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/Regan-Studio/whateverfi?labelColor=black&style=for-the-badge&color=2563EB)](https://github.com/Regan-Studio/whateverfi/stargazers)
 [![Discord](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?labelColor=black&style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/RWwKa2Sn7h)
 [![Download on the App Store](https://img.shields.io/badge/App%20Store-Download%20for%20iPhone-black?labelColor=black&style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/rakazo/id6801531099)
 [![Get Android on Google Play](https://img.shields.io/badge/Google%20Play-Get%20the%20app-black?labelColor=black&style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.rakazo.app)
 
-![Rakazo — AI teammates you actually own](./docs/readme-hero.png)
+![WhatEverFi — AI teammates you actually own](./docs/readme-hero.png)
 
-Rakazo is an open source, self-hosted alternative to Grok Bot.
+WhatEverFi is an open source, self-hosted alternative to Grok Bot.
 
 Persistent AI teammates with their own memory, routines, apps, and computer. Run it on your own
 machine, with your own model.
 
-Use it on the [web](https://app.rakazo.com), [desktop](https://rakazo.com/download/), [iPhone](https://apps.apple.com/app/rakazo/id6801531099), and
+Use it on the [web](https://app.whateverfi.com), [desktop](https://whateverfi.com/download/), [iPhone](https://apps.apple.com/app/rakazo/id6801531099), and
 [Android](https://play.google.com/store/apps/details?id=com.rakazo.app).
 
 It is also an alternative to Meta Muse, OpenAI Dots, Instinct, OpenClaw, Hermes Agent, and Claude
 Duet.
 
-Learn more at [rakazo.com](https://rakazo.com).
+Learn more at [whateverfi.com](https://whateverfi.com).
+
+Operated by [Regan.Studio](https://regan.studio). Based on Rakazo (Apache-2.0).
+Source: [Regan-Studio/whateverfi](https://github.com/Regan-Studio/whateverfi).
+The Apache-2.0 license and the line "Copyright 2026 Rakazo contributors" are kept in [`LICENSE`](./LICENSE).
+WhatEverFi and Regan.Studio branding is applied in [`overlays/whateverfi/`](./overlays/whateverfi/).
+
+The App Store and Google Play badges above still lead to the upstream Rakazo-branded listings until WhatEverFi ships its own apps. Prefer the [web app](https://app.whateverfi.com) (coming soon) or self-host from this repo.
+
+**Container images at `ghcr.io/regan-studio/whateverfi` are not published yet** and will 404 if pulled. Build from this repository until they are. See [`overlays/whateverfi/GHCR-UNPUBLISHED.md`](./overlays/whateverfi/GHCR-UNPUBLISHED.md).
 
 ## Features
 
@@ -105,11 +114,11 @@ You need Docker Engine, the Compose plugin, curl, and OpenSSL. No clone or Node 
 
 ```bash
 mkdir -p rakazo && cd rakazo &&
-curl -fsSLO https://raw.githubusercontent.com/elie222/rakazo/main/infra/compose/install-images.sh &&
+curl -fsSLO https://raw.githubusercontent.com/Regan-Studio/whateverfi/main/infra/compose/install-images.sh &&
 bash install-images.sh
 ```
 
-The installer downloads the Compose files, creates `.env` with random secrets, and starts Rakazo.
+The installer downloads the Compose files, creates `.env` with random secrets, and starts WhatEverFi.
 It preserves an existing `.env` when rerun.
 
 Open [http://127.0.0.1:5173](http://127.0.0.1:5173), create an account, and connect a model.
@@ -149,7 +158,7 @@ You need Node.js 24.15.0 or newer in the 24.x line, or Node.js 26+; pnpm 12;
 and Docker. Node.js 25.x is not supported.
 
 ```bash
-git clone https://github.com/elie222/rakazo.git
+git clone https://github.com/Regan-Studio/whateverfi.git
 cd rakazo
 cp .env.example .env
 ```
@@ -251,7 +260,7 @@ Workspace exports reject files above 64 MiB without truncating them. Set `RAILWA
 
 ## Desktop and mobile
 
-The Electron and Expo apps are clients of the same Rakazo API used by the web app.
+The Electron and Expo apps are clients of the same WhatEverFi API used by the web app.
 
 With the development stack running, launch Electron with:
 
@@ -259,7 +268,7 @@ With the development stack running, launch Electron with:
 pnpm --filter @rakazo/desktop dev
 ```
 
-On first run the desktop app asks whether to run Rakazo on this computer or connect to an existing
+On first run the desktop app asks whether to run WhatEverFi on this computer or connect to an existing
 server. **This computer** can run without Docker on Apple silicon Macs with macOS 26 or later
 when the build includes a server bundle. Fresh setups use this path: the app downloads the server
 and computer runtime as needed. Existing Docker setups are offered a move while Docker is running;
@@ -272,7 +281,7 @@ an installed Docker app that is not running, and continues on its own once Docke
 builds pin the image tag to their own version; unpackaged builds pull `edge`. Developers running
 `pnpm dev` should pick **Existing instance** with `http://127.0.0.1:5173` instead. Public servers
 must use HTTPS; HTTP is accepted only for loopback and private LAN addresses (not link-local). The
-app verifies Rakazo's health endpoint before saving, and later launches go straight to that
+app verifies WhatEverFi's health endpoint before saving, and later launches go straight to that
 instance. The Docker stack keeps running after the app quits; the Docker-free server stops with the app.
 **Stop Local Stack** in the application menu stops the managed stack without quitting.
 
@@ -283,15 +292,15 @@ that only include FUSE 3, such as Fedora Silverblue or Ubuntu 24.04, show
 FUSE:
 
 ```bash
-chmod +x Rakazo-*.AppImage
-./Rakazo-*.AppImage --appimage-extract-and-run
+chmod +x WhatEverFi-*.AppImage
+./WhatEverFi-*.AppImage --appimage-extract-and-run
 ```
 
 The Docker path of **This computer** looks for the `docker` CLI and does not detect Podman. To try another
 Docker-compatible CLI that supports the `compose` commands, set `RAKAZO_DOCKER_BINARY` to its path
 before starting the app.
 
-Use **Change Rakazo Server…** in the application menu to reconnect. Closing that window without
+Use **Change WhatEverFi Server…** in the application menu to reconnect. Closing that window without
 saving returns to the previous instance. For development automation, set `RAKAZO_WEB_URL` to point
 the shell somewhere else without changing the saved instance, or `RAKAZO_FORCE_SETUP=1` to run
 setup again.
@@ -359,19 +368,19 @@ Chinese guides cover [self-hosting](./docs/zh-CN/self-host.md), [models](./docs/
 - [Performance testing](./docs/performance.md)
 - [Bots that manage bots](./docs/fleet-management.md)
 
-## How Rakazo compares
+## How WhatEverFi compares
 
-- [Grok Bot](https://rakazo.com/grok-bot-alternative/)
-- [Muse](https://rakazo.com/muse-alternative/)
-- [Dots](https://rakazo.com/dots-alternative/)
-- [Instinct](https://rakazo.com/instinct-alternative/)
-- [OpenClaw](https://rakazo.com/openclaw-alternative/)
-- [Hermes Agent](https://rakazo.com/hermes-alternative/)
-- [All comparisons](https://rakazo.com/alternatives/)
+- [Grok Bot](https://whateverfi.com/grok-bot-alternative/)
+- [Muse](https://whateverfi.com/muse-alternative/)
+- [Dots](https://whateverfi.com/dots-alternative/)
+- [Instinct](https://whateverfi.com/instinct-alternative/)
+- [OpenClaw](https://whateverfi.com/openclaw-alternative/)
+- [Hermes Agent](https://whateverfi.com/hermes-alternative/)
+- [All comparisons](https://whateverfi.com/alternatives/)
 
 ## Thanks
 
-- [Inbox Zero](https://getinboxzero.com/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
+- [Regan.Studio](https://getinboxzero.com/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
 - [PromptLayer](https://promptlayer.com/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
 - [ConnectorMap](https://connectormap.luinbytes.dev/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
 - [CodeRabbit](https://www.coderabbit.ai/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
@@ -398,6 +407,6 @@ Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) befo
 request. For security vulnerabilities, follow [SECURITY.md](./SECURITY.md) instead of filing a public
 issue.
 
-Rakazo is licensed under the [Apache License 2.0](./LICENSE).
+WhatEverFi is licensed under the [Apache License 2.0](./LICENSE).
 
-Questions and ideas are welcome in the [Rakazo Discord community](https://discord.gg/RWwKa2Sn7h).
+Questions and ideas are welcome in the [WhatEverFi Discord community](https://discord.gg/RWwKa2Sn7h).

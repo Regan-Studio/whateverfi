@@ -30,7 +30,7 @@ export function referralEmail(
       <Text>{say("Have any questions? Just reply to this email.")}</Text>
       <Text>
         {say("If you're enjoying Rakazo,")}{" "}
-        <Link href="https://github.com/elie222/rakazo" style={linkStyle}>
+        <Link href="https://github.com/Regan-Studio/whateverfi" style={linkStyle}>
           {say("give us a star on GitHub")}
         </Link>
         .

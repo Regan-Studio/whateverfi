@@ -39,22 +39,22 @@ The Electron desktop app is a client of the same API. Docker remains the default
 Native file reads and workspace exports are limited to 8 MiB per file. A larger workspace file fails the checkpoint and preserves the previous saved workspace; local files remain on the computer. Writes are bounded by the 12 MiB encoded request limit.
 
 - **Published images** (`docker-compose.images.yml`) default to `SANDBOX_PROVIDER=docker` with a
-  local supervisor and published `ghcr.io/elie222/rakazo/computer` image. No E2B account required.
+  local supervisor and published `ghcr.io/regan-studio/whateverfi/computer` image. No E2B account required.
   Optional: set `e2b`, `novita`, `daytona`, `createos`, or `boat` plus the matching API key for remote computers.
 - **Docker** is the quick-start default for published images and for a source checkout / full local
   Compose stack. Workspace bots share a persistent Team Computer by default; Private computers are
   optional. Keep the supervisor private, as the included Compose files do.
-- **E2B** runs bot computers away from the Rakazo host and is a good choice for public or multi-user
-  production deployments. Rakazo checkpoints the portable workspace and browser-profile directory to
+- **E2B** runs bot computers away from the WhatEverFi host and is a good choice for public or multi-user
+  production deployments. WhatEverFi checkpoints the portable workspace and browser-profile directory to
   `DATA_DIR`; the E2B disk is a runtime cache, not the durable source of truth.
 - **Daytona** provides the same remote-computer contract through Daytona sandboxes. Configure
   `DAYTONA_API_KEY` and optionally `DAYTONA_API_URL` / `DAYTONA_TARGET` / `DAYTONA_SNAPSHOT`.
 - **CreateOS** provides the same remote-computer contract through CreateOS desktop sandboxes.
   Configure `CREATEOS_SANDBOX_API_KEY` and optionally `CREATEOS_SANDBOX_BASE_URL`,
-  `CREATEOS_SANDBOX_SHAPE`, or `CREATEOS_SANDBOX_ROOTFS`. Rakazo defaults to
+  `CREATEOS_SANDBOX_SHAPE`, or `CREATEOS_SANDBOX_ROOTFS`. WhatEverFi defaults to
   `https://api.sb.createos.sh`, `s-2vcpu-2gb`, and `desktop:1`.
 - **Boat** provides a managed Linux desktop through `BOAT_API_KEY` and optionally
-  `BOAT_API_URL`. Rakazo always creates or resumes sandboxes with `noEnv: true`, keeps the portable
+  `BOAT_API_URL`. WhatEverFi always creates or resumes sandboxes with `noEnv: true`, keeps the portable
   workspace under `/home/user/rakazo-home`, and refreshes a two-hour TTL. Boat uses the shared Linux
   desktop runtime and protected port routes for concurrent bot desktops. Each bot has its own
   persistent Chrome profile; logins are not shared between bots.
@@ -139,7 +139,7 @@ The API and worker talk to the Kubernetes API with their own service account (or
 | Variable                                             | Default                                | Notes                                                                 |
 | ---------------------------------------------------- | -------------------------------------- | --------------------------------------------------------------------- |
 | `KUBERNETES_SANDBOX_NAMESPACE`                       | `rakazo-sandboxes`                     | Namespace for computer pods; it must exist                            |
-| `KUBERNETES_SANDBOX_COMPUTER_IMAGE`                  | `ghcr.io/elie222/rakazo/computer:edge` | Pin a digest in production                                            |
+| `KUBERNETES_SANDBOX_COMPUTER_IMAGE`                  | `ghcr.io/regan-studio/whateverfi/computer:edge` | Pin a digest in production                                            |
 | `KUBERNETES_SANDBOX_RUNTIME_CLASS_NAME`              | unset                                  | For example `kata` or `gvisor` for a VM or user-space kernel boundary |
 | `KUBERNETES_SANDBOX_CPU_LIMIT` / `_MEMORY_LIMIT`     | unset                                  | Container limits, such as `2` and `4Gi`                               |
 | `KUBERNETES_SANDBOX_POD_LABELS` / `_POD_ANNOTATIONS` | unset                                  | JSON objects of strings, merged into every pod                        |
@@ -170,7 +170,7 @@ Run checkpoints record a revision without exporting files or changing the comput
 `suspending`, so they do not interrupt its screen. An intentional stop or idle shutdown still
 closes the screen.
 
-This option applies to the local home store. With `OBJECT_STORAGE_BUCKET` configured, Rakazo
+This option applies to the local home store. With `OBJECT_STORAGE_BUCKET` configured, WhatEverFi
 ignores the home claim and continues copying workspaces. A mounted home retains the latest files;
 it is not an immutable snapshot or a backup. Keep encrypted, off-host backups of the data volume.
 
@@ -200,7 +200,7 @@ The two `HOME_COLOCATE` settings are required. They keep computers on a node wit
 application pods. A ReadWriteOnce volume can be used by multiple pods on the same node; it does
 not mean one pod only. A ReadWriteOncePod claim is unsuitable for this shared layout. See
 [Kubernetes volume access modes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes).
-The directory must be writable by the computer image's uid/gid 1000. Rakazo sets `fsGroup: 1000`
+The directory must be writable by the computer image's uid/gid 1000. WhatEverFi sets `fsGroup: 1000`
 and mounts the exact `homes/<home key>` subpath, not the whole data directory.
 
 #### Keeping a separate computer namespace on k3s
@@ -233,7 +233,7 @@ server-side dry runs before replacing live pods.
 
 #### Move existing computers without losing their files
 
-1. Wait for bot jobs and manual computer sessions to finish. Stop each computer through Rakazo
+1. Wait for bot jobs and manual computer sessions to finish. Stop each computer through WhatEverFi
    and confirm its save succeeds. Do not delete an unmounted pod first: its newest files may
    exist only inside that pod.
 2. Back up the data volume, including `homes` and `home-revisions`, and record checksums of
@@ -245,12 +245,12 @@ server-side dry runs before replacing live pods.
    `/home/rakazo` with that computer's `homes/<home key>` subpath. A successful boot alone does
    not prove the home is mounted.
 5. Compare the saved file checksums. Write a small test file in the computer, stop and start it
-   through Rakazo, then verify that file again. Confirm that finishing a bot task no longer
+   through WhatEverFi, then verify that file again. Confirm that finishing a bot task no longer
    disconnects the screen during its workspace checkpoint before moving the remaining computers.
 
 For rollback, stop computers cleanly before removing mounts or changing the storage mapping.
 Retain the shared directory and the backup. Removing the environment variable alone does not
-unmount an existing pod; Rakazo still detects its mounted home to avoid copying over live files.
+unmount an existing pod; WhatEverFi still detects its mounted home to avoid copying over live files.
 A replacement unmounted pod restores from the saved server directory.
 
 #### When a computer still feels slow
@@ -308,7 +308,7 @@ involved.
 | `INCUS_SANDBOX_CLIENT_CERT` / `_CLIENT_KEY`                    | none                                   | PEM client certificate and key; `\n` escapes are accepted. API and worker only                                           |
 | `INCUS_SANDBOX_SERVER_CERT`                                    | unset                                  | The server's own certificate (`incus info` shows it), trusted exactly. Unset uses the system CAs and the URL's host name |
 | `INCUS_SANDBOX_PROJECT`                                        | `default`                              | Use a project of its own, below                                                                                          |
-| `INCUS_SANDBOX_COMPUTER_IMAGE`                                 | `ghcr.io/elie222/rakazo/computer:edge` | Pin a release tag or digest in production                                                                                |
+| `INCUS_SANDBOX_COMPUTER_IMAGE`                                 | `ghcr.io/regan-studio/whateverfi/computer:edge` | Pin a release tag or digest in production                                                                                |
 | `INCUS_SANDBOX_CPU_LIMIT` / `_MEMORY_LIMIT` / `_PROCESS_LIMIT` | `2` / `2GiB` / `2048`                  | Incus `limits.cpu`, `limits.memory` and `limits.processes` of each computer                                              |
 
 Computers without the URL, certificate or key fall back to `none`.
@@ -334,7 +334,7 @@ instance on a network the host routes to the computers.
 
 ### Restricted project and certificate
 
-Give Rakazo a project and a client certificate that can reach nothing else. A restricted
+Give WhatEverFi a project and a client certificate that can reach nothing else. A restricted
 certificate cannot change its project's restrictions or limits. On the Incus host:
 
 ```bash
@@ -376,7 +376,7 @@ a computer from spoofing addresses or sending router advertisements to the host.
 
 ## `local-vm`
 
-Each computer is one lightweight Linux VM on the Mac running Rakazo, started from the published
+Each computer is one lightweight Linux VM on the Mac running WhatEverFi, started from the published
 computer image by Apple's [`container`](https://github.com/apple/container) runtime
 (Virtualization.framework). It needs Apple silicon and macOS 26 or newer, with the `container`
 system service started; no Docker, supervisor or socket is involved.
@@ -384,7 +384,7 @@ system service started; no Docker, supervisor or socket is involved.
 | Variable                  | Default                                | Notes                                        |
 | ------------------------- | -------------------------------------- | -------------------------------------------- |
 | `LOCAL_VM_CLI`            | `container`                            | Path to the `container` CLI                  |
-| `LOCAL_VM_COMPUTER_IMAGE` | `ghcr.io/elie222/rakazo/computer:edge` | Must include `nft`; older images are refused |
+| `LOCAL_VM_COMPUTER_IMAGE` | `ghcr.io/regan-studio/whateverfi/computer:edge` | Must include `nft`; older images are refused |
 | `LOCAL_VM_CPUS`           | `2`                                    | CPUs of each VM                              |
 | `LOCAL_VM_MEMORY`         | `2g`                                   | Memory of each VM                            |
 
@@ -394,7 +394,7 @@ start command and every command run as uid 1000 with no capabilities and no priv
 As with Incus, VMs are removed when they stop: the saved workspace is copied in when a computer
 starts and saved back when it stops. The API, worker and web reach the screen on the VM's address.
 
-Before a computer is used, Rakazo loads an nftables firewall into the VM as root and checks it is
+Before a computer is used, WhatEverFi loads an nftables firewall into the VM as root and checks it is
 in place; if that fails, the VM is removed and the start fails. The firewall allows the public
 internet and DNS to the VM's gateway, and rejects everything else to the Mac, the LAN,
 link-local and cloud-metadata, CGNAT, multicast and other private addresses (the same list as the
@@ -456,7 +456,7 @@ Set `SANDBOX_PROVIDER` to exactly one of:
 | `boxd`     | `BOXD_API_KEY`                                   | Optional `BOXD_ORG` to create computers in a boxd organization                                                                                                                                                                                            |
 | `instabox` | `INSTABOX_API_KEY`                               | Computers start in the key's organization; see [instabox computers](#instabox-computers)                                                                                                                                                                  |
 | `createos` | `CREATEOS_SANDBOX_API_KEY`                       | Optional `CREATEOS_SANDBOX_BASE_URL`, `CREATEOS_SANDBOX_SHAPE`, `CREATEOS_SANDBOX_ROOTFS`                                                                                                                                                                 |
-| `railway`  | `RAILWAY_API_TOKEN` and `RAILWAY_ENVIRONMENT_ID` | Optional `RAILWAY_SANDBOX_REGION`; `RAILWAY_MAX_WORKSPACE_FILE_BYTES` (default 64 MiB) caps each workspace file Rakazo reads or saves. Railway supplies the environment ID when Rakazo runs there; see the [Railway template](../infra/railway/README.md) |
+| `railway`  | `RAILWAY_API_TOKEN` and `RAILWAY_ENVIRONMENT_ID` | Optional `RAILWAY_SANDBOX_REGION`; `RAILWAY_MAX_WORKSPACE_FILE_BYTES` (default 64 MiB) caps each workspace file WhatEverFi reads or saves. Railway supplies the environment ID when WhatEverFi runs there; see the [Railway template](../infra/railway/README.md) |
 | `wuying`   | `WUYING_*` (below)                               | One existing Wuying cloud computer (Windows)                                                                                                                                                                                                              |
 
 Remote paths still need a working API/worker; they do not replace Postgres or
@@ -487,7 +487,7 @@ computer's owner and space. A run starts when the computer becomes ready (boot t
 counted) and ends when it stops. `endReason` says how: `stopped`, `idle`, `active_limit`,
 `replaced` (update, recovery, or reset), `gone` (the provider had already stopped or lost
 the sandbox), `deleted`, or `reconciled` (the end was never seen; the worker found the
-computer no longer running). For `gone` and `reconciled`, `endedAt` is when Rakazo
+computer no longer running). For `gone` and `reconciled`, `endedAt` is when WhatEverFi
 noticed, so the true end may be earlier. The worker also opens the run of a running
 computer whose start was not recorded. An open run whose computer still reads as running
 is a computer that may be left on. Deleting a user or space keeps their runs with
@@ -626,7 +626,7 @@ the instabox account's vault, so secrets saved on that account never reach a bot
 The desktop is served on the computer's public HTTPS address; every screen and terminal still
 needs its own token, which the desktop gateway checks. Stopping a computer suspends it with its
 memory. instabox also pauses a computer after 30 idle minutes, later than the default
-`SANDBOX_IDLE_MS`, so Rakazo normally stops it first. One key's computers share its account's
+`SANDBOX_IDLE_MS`, so WhatEverFi normally stops it first. One key's computers share its account's
 limits on requests at once (API calls, and connections to screens and terminals), so a
 deployment with many active computers at the same time can see them slow down.
 

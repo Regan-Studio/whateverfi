@@ -22,7 +22,7 @@ const { class: className, copy, desktop, placement, githubLabel = copy.viewOnGit
   Astro.props;
 
 // `data-show` lists the platforms (set on <html> by the HomePage script) that see each action.
-const desktopDownloads = (desktop ? DESKTOP_PLATFORMS : []).map((platform) => ({
+const desktopDownloads = (desktop ? ([] as Array<(typeof DESKTOP_PLATFORMS)[number]>) : []).map((platform) => ({
   platform,
   label: copy.download[platform],
   href: desktopDownloadHref(platform),
@@ -36,10 +36,7 @@ const githubPlatforms = ["ios", "android", "web", "mac", "windows", "linux"]
   <a class="button button--primary" href={APP_URL} data-show="mac windows linux web">
     {copy.getStarted}
   </a>
-  <a class="button button--primary" href={IOS_APP_URL} data-show="ios">{copy.download.ios}</a>
-  <a class="button button--primary" href={ANDROID_APP_STORE_URL} data-show="android">
-    {copy.download.android}
-  </a>
+  <a class="button button--primary" href={APP_URL} data-show="ios android">{copy.getStarted}</a>
   {
     desktopDownloads.map((download) => (
       <a class="button button--secondary" href={download.href} data-show={download.platform}>

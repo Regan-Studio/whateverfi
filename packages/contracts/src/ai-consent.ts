@@ -2,7 +2,7 @@ import * as z from "zod";
 import { SettingsScopeSchema } from "./settings-scope.js";
 
 export const AI_DISCLOSURE_VERSION = "2026-11-12";
-export const AI_PRIVACY_URL = "https://rakazo.com/privacy/";
+export const AI_PRIVACY_URL = "https://whateverfi.com/privacy/";
 export const AiDataUseSchema = z.enum(["model", "voice", "memory"]);
 export type AiDataUse = z.infer<typeof AiDataUseSchema>;
 export const AiConsentQuerySchema = z

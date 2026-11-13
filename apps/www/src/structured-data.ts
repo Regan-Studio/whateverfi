@@ -1,6 +1,6 @@
 import { GITHUB_URL, SITE_NAME, SITE_URL } from "./site";
 
-const LEGAL_NAME = "Inbox Zero Inc.";
+const LEGAL_NAME = "Regan.Studio";
 
 export type HomeFaqItem = {
   question: string;
@@ -28,12 +28,12 @@ export function homeStructuredData(input: HomeStructuredDataInput) {
         name: SITE_NAME,
         legalName: LEGAL_NAME,
         url: `${SITE_URL}/`,
-        logo: `${SITE_URL}/brand/rakazo-mark.png`,
-        email: "hello@rakazo.com",
+        logo: `${SITE_URL}/brand/whateverfi-mark.png`,
+        email: "hello@whateverfi.com",
         contactPoint: {
           "@type": "ContactPoint",
           contactType: "customer support",
-          email: "hello@rakazo.com",
+          email: "hello@whateverfi.com",
           url: `${SITE_URL}/support/`,
           availableLanguage: input.availableLanguages,
         },
@@ -45,7 +45,7 @@ export function homeStructuredData(input: HomeStructuredDataInput) {
           postalCode: "19713",
           addressCountry: "US",
         },
-        sameAs: [GITHUB_URL, "https://www.getinboxzero.com/"],
+        sameAs: [GITHUB_URL, "https://regan.studio"],
       },
       {
         "@type": "WebSite",

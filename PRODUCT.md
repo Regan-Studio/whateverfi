@@ -1,6 +1,6 @@
 # Product definition
 
-[VISION.md](VISION.md) defines Rakazo's purpose, principles, and boundaries.
+[VISION.md](VISION.md) defines WhatEverFi's purpose, principles, and boundaries.
 This document defines behavior by capability so feature work has one shared product reference across web, desktop, mobile, and messaging wherever applicable.
 It is a maintained definition, not an exhaustive feature inventory, roadmap, implementation plan, or release checklist.
 Update the relevant section when a product decision changes; Git history preserves replaced decisions.
@@ -9,7 +9,7 @@ Update the relevant section when a product decision changes; Git history preserv
 
 The recorded decisions below carry forward the existing product requirements from VISION.md without a new implementation audit.
 They define expected behavior, not proof that every path already conforms.
-The subagent section separately records the intended change agreed during review of [PR #3101](https://github.com/elie222/rakazo/pull/3101); it is not a claim that the change has shipped.
+The subagent section separately records the intended change agreed during review of [PR #3101](https://github.com/Regan-Studio/whateverfi/pull/3101); it is not a claim that the change has shipped.
 Keep implementation gaps explicit when adding a capability, and keep technical plans and verification evidence in the relevant PR or technical documentation.
 
 ## Conversation
@@ -45,7 +45,7 @@ PR #3101 proposes optional background execution with read-only helpers; that pro
 ## Computers
 
 A Team Computer shares files, installed tools, and a canonical browser identity among bots inside the same trust boundary.
-Rakazo gives each concurrently active Team bot a separate live desktop and browser process when the provider supports it, and unsupported providers expose the limitation instead of silently coupling control.
+WhatEverFi gives each concurrently active Team bot a separate live desktop and browser process when the provider supports it, and unsupported providers expose the limitation instead of silently coupling control.
 Browser sign-ins are checkpointed into the shared identity and become available to desktops opened or restarted after that checkpoint.
 Concurrent Chromium processes do not write directly to one profile directory, and generation fencing prevents older desktops from overwriting newer shared state.
 A Private Computer isolates the entire working home, including files and browser identity, when working state must not be shared with other bots.

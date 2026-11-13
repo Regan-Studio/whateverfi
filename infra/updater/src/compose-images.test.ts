@@ -62,10 +62,10 @@ describe("the images compose file", () => {
       "worker",
     ]);
     for (const service of appServices) {
-      expect(compose.services[service]?.image).toContain("ghcr.io/elie222/rakazo/app");
+      expect(compose.services[service]?.image).toContain("ghcr.io/regan-studio/whateverfi/app");
       expect(compose.services[service]?.image).toContain("RAKAZO_IMAGE_TAG");
     }
-    expect(compose.services.computer?.image).toContain("ghcr.io/elie222/rakazo/computer");
+    expect(compose.services.computer?.image).toContain("ghcr.io/regan-studio/whateverfi/computer");
     expect(compose.services.computer?.image).toContain("RAKAZO_COMPUTER_IMAGE_TAG");
     expect(compose.services.postgres?.image).toMatch(
       /^\$\{POSTGRES_IMAGE:-postgres:16@sha256:[0-9a-f]{64}\}$/,
@@ -77,7 +77,7 @@ describe("the images compose file", () => {
     expect(firstPartyImageNames(null)).toEqual([]);
     expect(firstPartyImageNames(true)).toEqual([]);
     expect(firstPartyImageNames(7091)).toEqual([]);
-    expect(firstPartyImageNames("ghcr.io/elie222/rakazo/computer:edge")).toEqual(["computer"]);
+    expect(firstPartyImageNames("ghcr.io/regan-studio/whateverfi/computer:edge")).toEqual(["computer"]);
   });
 
   it("only references first-party images that the publish matrix publishes", () => {

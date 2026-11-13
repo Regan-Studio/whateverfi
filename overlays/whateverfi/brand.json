@@ -1,0 +1,345 @@
+{
+  "$comment": "WhatEverFi / Regan.Studio overlay. Required rules must match at least once. LICENSE and 'Copyright 2026 Rakazo contributors' are never rewritten (enforced in apply-overlay.mjs).",
+  "brand": "WhatEverFi",
+  "company": "Regan.Studio",
+  "companyUrl": "https://regan.studio",
+  "siteUrl": "https://whateverfi.com",
+  "appUrl": "https://app.whateverfi.com",
+  "githubUrl": "https://github.com/Regan-Studio/whateverfi",
+  "scope": {
+    "include": [
+      "apps/www",
+      "docs",
+      "infra/compose",
+      "packages/core/src",
+      "packages/i18n/src",
+      "packages/ui-web/src",
+      "packages/contracts/src",
+      ".github/ISSUE_TEMPLATE"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist",
+      ".astro",
+      ".vercel",
+      "e2e",
+      "overlays",
+      ".git"
+    ],
+    "textExtensions": [
+      ".ts",
+      ".tsx",
+      ".mjs",
+      ".js",
+      ".astro",
+      ".md",
+      ".mdx",
+      ".json",
+      ".txt",
+      ".svg",
+      ".webmanifest",
+      ".css",
+      ".html",
+      ".xml",
+      ".yml",
+      ".yaml",
+      ".sh",
+      ".example"
+    ],
+    "rootFiles": [
+      "README.md",
+      "README.ja.md",
+      "README.th-TH.md",
+      "README.zh-CN.md",
+      "SETUP_PROMPT.md",
+      "SECURITY.md",
+      "CONTRIBUTING.md",
+      "PRODUCT.md"
+    ],
+    "linkInclude": [
+      "."
+    ]
+  },
+  "renameFiles": {
+    "roots": [
+      "apps/www/public",
+      "apps/www/src/content"
+    ],
+    "from": "rakazo",
+    "to": "whateverfi"
+  },
+  "rules": [
+    {
+      "id": "www-url",
+      "find": "https://www\\.rakazo\\.com",
+      "replace": "https://www.whateverfi.com"
+    },
+    {
+      "id": "www-host",
+      "find": "(?<![\\w.-])www\\.rakazo\\.com",
+      "replace": "www.whateverfi.com",
+      "required": true
+    },
+    {
+      "id": "site-url",
+      "find": "https://rakazo\\.com",
+      "replace": "https://whateverfi.com",
+      "required": true
+    },
+    {
+      "id": "app-url",
+      "find": "https://app\\.rakazo\\.com",
+      "replace": "https://app.whateverfi.com",
+      "required": true
+    },
+    {
+      "id": "app-host",
+      "find": "(?<![\\w./-])app\\.rakazo\\.com",
+      "replace": "app.whateverfi.com"
+    },
+    {
+      "id": "emails",
+      "find": "([A-Za-z0-9._%+-]+)@rakazo\\.com",
+      "replace": "$1@whateverfi.com",
+      "required": true
+    },
+    {
+      "id": "bare-domain",
+      "find": "(?<![\\w.@/-])rakazo\\.com\\b",
+      "replace": "whateverfi.com"
+    },
+    {
+      "id": "utm-source",
+      "find": "utm_source=rakazo",
+      "replace": "utm_source=whateverfi"
+    },
+    {
+      "id": "github-repo",
+      "find": "https://github\\.com/elie222/rakazo",
+      "replace": "https://github.com/Regan-Studio/whateverfi",
+      "required": true,
+      "group": "links"
+    },
+    {
+      "id": "raw-github",
+      "find": "https://raw\\.githubusercontent\\.com/elie222/rakazo",
+      "replace": "https://raw.githubusercontent.com/Regan-Studio/whateverfi",
+      "required": true,
+      "group": "links"
+    },
+    {
+      "id": "ghcr-image",
+      "find": "ghcr\\.io/elie222/rakazo",
+      "replace": "ghcr.io/regan-studio/whateverfi",
+      "required": true,
+      "$comment": "Images under this name are not published yet; install scripts will 404 until GHCR is set up. See overlays/whateverfi/GHCR-UNPUBLISHED.md.",
+      "group": "links"
+    },
+    {
+      "id": "github-api",
+      "find": "https://api\\.github\\.com/repos/elie222/rakazo",
+      "replace": "https://api.github.com/repos/Regan-Studio/whateverfi",
+      "required": true,
+      "group": "links"
+    },
+    {
+      "id": "github-short",
+      "find": "elie222/rakazo",
+      "replace": "Regan-Studio/whateverfi",
+      "required": true,
+      "$comment": "Badge slugs and owner/repo short names. Must run after the full URL rules.",
+      "group": "links"
+    },
+    {
+      "id": "company-url",
+      "find": "https://www\\.getinboxzero\\.com/[^\"'`\\s)]*",
+      "replace": "https://regan.studio",
+      "required": true
+    },
+    {
+      "id": "company-name-inc",
+      "find": "Inbox Zero Inc\\.",
+      "replace": "Regan.Studio",
+      "required": true
+    },
+    {
+      "id": "company-short-quoted",
+      "find": "\\(\"Inbox Zero,\"",
+      "replace": "(\"Regan.Studio,\""
+    },
+    {
+      "id": "company-short",
+      "find": "\\bInbox Zero\\b",
+      "replace": "Regan.Studio"
+    },
+    {
+      "id": "company-address",
+      "find": "\\s*131 Continental Dr, Suite 305(<br\\s*/>)?\\s*\\n?\\s*Newark, Delaware 19713, United States(<br\\s*/>)?",
+      "replace": "",
+      "$comment": "Upstream postal address removed; Regan.Studio address unknown."
+    },
+    {
+      "id": "footer-legal",
+      "file": "apps/www/src/components/Footer.astro",
+      "find": "<span>\u00a9 2026 <a href=\\{INBOX_ZERO_URL\\} target=\"_blank\" rel=\"noopener\">Regan.Studio</a></span>\\s*<span>Apache-2\\.0</span>",
+      "replace": "<span>\u00a9 2026 <a href=\"https://regan.studio\" rel=\"noopener\">Regan.Studio</a></span>\n      <span>Based on Rakazo (<a href=\"/about/#license\">Apache-2.0</a>)</span>",
+      "required": true,
+      "$comment": "Matches after company-name-inc has rewritten Inbox Zero Inc. to Regan.Studio."
+    },
+    {
+      "id": "about-license",
+      "file": "apps/www/src/pages/about.astro",
+      "find": "<h2>Open by default</h2>\\s*<p>\\s*Rakazo is maintained by Regan.Studio and released under the Apache-2\\.0 license\\.",
+      "replace": "<h2 id=\"license\">Open by default</h2>\n      <p>\n        WhatEverFi is operated by Regan.Studio and released under the Apache-2.0 license. Based on Rakazo (Apache-2.0).",
+      "required": true,
+      "$comment": "Matches after company-name-inc, before/independent of brand-word (this rule itself writes WhatEverFi)."
+    },
+    {
+      "id": "brand-word",
+      "find": "\\bRakazo\\b",
+      "replace": "WhatEverFi",
+      "required": true
+    },
+    {
+      "id": "brand-upper",
+      "find": "\\bRAKAZO\\b",
+      "replace": "WHATEVERFI"
+    },
+    {
+      "id": "logo-word",
+      "find": "(<span class=\"brand-lockup__word\">)rakazo(</span>)",
+      "replace": "$1WhatEverFi$2",
+      "required": true
+    },
+    {
+      "id": "claims-data-source",
+      "file": "apps/www/src/site.ts",
+      "find": "`\\$\\{APP_URL\\}/api/v1/integration-claims`",
+      "replace": "\"https://app.rakazo.com/api/v1/integration-claims\"",
+      "required": true,
+      "$comment": "Build-time data feed only; app.whateverfi.com has no API. This is an intentional leftover app.rakazo.com URL, not a user-facing install link."
+    },
+    {
+      "id": "testimonials",
+      "file": "apps/www/src/i18n/home.ts",
+      "find": "(const TESTIMONIALS: HomeCopy\\[\"testimonials\"\\]\\[\"items\"\\] = )\\[[\\s\\S]*?\\n\\];",
+      "replace": "$1[];",
+      "required": true
+    },
+    {
+      "id": "testimonials-remove",
+      "file": "apps/www/src/components/HomePage.astro",
+      "find": "\\n\\s*<section id=\"testimonials\" class=\"section testimonials\"[\\s\\S]*?\\n      </section>",
+      "replace": "",
+      "required": true
+    },
+    {
+      "id": "testimonials-markdown",
+      "file": "apps/www/src/agent-content.ts",
+      "find": "## \\$\\{home\\.testimonials\\.heading\\}\\n\\n\\$\\{home\\.testimonials\\.items[^\\n]*\\n\\n",
+      "replace": "",
+      "required": true
+    },
+    {
+      "id": "star-pill",
+      "file": "apps/www/src/components/Header.astro",
+      "find": "<span aria-hidden=\"true\">\u2605</span>\\s*<span>\\{starsLabel\\}</span>",
+      "replace": "<span>GitHub</span>",
+      "required": true,
+      "$comment": "Do not present upstream star counts as WhatEverFi's."
+    },
+    {
+      "id": "stats-no-stars",
+      "file": "apps/www/src/components/HomePage.astro",
+      "find": "copy\\.cta\\.stats\\.map\\(",
+      "replace": "copy.cta.stats.filter((stat) => stat.value !== \"stars\").map(",
+      "required": true
+    },
+    {
+      "id": "ios-app-url",
+      "file": "apps/www/src/site.ts",
+      "find": "export const IOS_APP_URL = \"https://apps\\.apple\\.com/app/rakazo/id\\d+\";",
+      "replace": "export const IOS_APP_URL = APP_URL;",
+      "required": true
+    },
+    {
+      "id": "android-app-url",
+      "file": "packages/contracts/src/client-build.ts",
+      "find": "\"https://play\\.google\\.com/store/apps/details\\?id=com\\.rakazo\\.app\"",
+      "replace": "\"https://app.whateverfi.com\"",
+      "required": true
+    },
+    {
+      "id": "desktop-download-import",
+      "file": "apps/www/src/github.ts",
+      "find": "import \\{ GITHUB_API_REPO \\} from \"\\./site\";",
+      "replace": "import { APP_URL, GITHUB_API_REPO } from \"./site\";",
+      "required": true
+    },
+    {
+      "id": "desktop-download-href",
+      "file": "apps/www/src/github.ts",
+      "find": "return `/api/download\\?platform=\\$\\{platform\\}`;",
+      "replace": "void platform;\n  return APP_URL;",
+      "required": true
+    },
+    {
+      "id": "home-desktop-links",
+      "file": "apps/www/src/components/HomePage.astro",
+      "find": "\\{desktopPlatforms\\.map\\(\\(platform\\) => \\(\\s*<a href=\\{desktopDownloadHref\\(platform\\)\\}>\\{PLATFORM_NAMES\\[platform\\]\\}</a>\\s*\\)\\)\\}",
+      "replace": "<a href={APP_URL}>WhatEverFi app coming soon \u00b7 try the web version</a>",
+      "required": true
+    },
+    {
+      "id": "home-mobile-links",
+      "file": "apps/www/src/components/HomePage.astro",
+      "find": "<a href=\\{IOS_APP_URL\\}>iPhone and iPad</a>\\s*<a href=\\{ANDROID_APP_STORE_URL\\}>Android</a>",
+      "replace": "<a href={APP_URL}>WhatEverFi app coming soon \u00b7 try the web version</a>",
+      "required": true
+    },
+    {
+      "id": "cta-mobile-buttons",
+      "file": "apps/www/src/components/GetStartedActions.astro",
+      "find": "<a class=\"button button--primary\" href=\\{IOS_APP_URL\\} data-show=\"ios\">\\{copy\\.download\\.ios\\}</a>\\s*<a class=\"button button--primary\" href=\\{ANDROID_APP_STORE_URL\\} data-show=\"android\">\\s*\\{copy\\.download\\.android\\}\\s*</a>",
+      "replace": "<a class=\"button button--primary\" href={APP_URL} data-show=\"ios android\">{copy.getStarted}</a>",
+      "required": true
+    },
+    {
+      "id": "cta-desktop-buttons",
+      "file": "apps/www/src/components/GetStartedActions.astro",
+      "find": "\\(desktop \\? DESKTOP_PLATFORMS : \\[\\]\\)",
+      "replace": "(desktop ? ([] as Array<(typeof DESKTOP_PLATFORMS)[number]>) : [])",
+      "required": true
+    },
+    {
+      "id": "download-markdown",
+      "file": "apps/www/src/agent-content.ts",
+      "find": "export const DOWNLOAD_MARKDOWN = `# Download WhatEverFi\\n\\n[\\s\\S]*?\\n`;",
+      "replace": "export const DOWNLOAD_MARKDOWN = `# Download WhatEverFi\n\nThe WhatEverFi desktop (macOS, Windows, Linux) and mobile (iPhone, iPad, Android) apps are coming soon. Until then, use the web version:\n\n- [Web](${APP_URL})\n\nSelf-hosting? Clone the source at [Regan-Studio/whateverfi](https://github.com/Regan-Studio/whateverfi) (Apache-2.0, based on Rakazo) and follow the [self-hosting guide](https://whateverfi.com/self-hosted-ai-agent/). Container images at ghcr.io/regan-studio/whateverfi are not published yet; build from source until they are.\n`;",
+      "required": true
+    }
+  ],
+  "verify": {
+    "forbidden_visible": [
+      "inbox zero",
+      "getinboxzero"
+    ],
+    "requiredStrings": {
+      "README.md": [
+        "WhatEverFi",
+        "Regan.Studio",
+        "Based on Rakazo",
+        "Apache-2.0"
+      ],
+      "apps/www/src/pages/about.astro": [
+        "WhatEverFi",
+        "Regan.Studio",
+        "Based on Rakazo (Apache-2.0)"
+      ]
+    },
+    "skipAttributionFiles": [
+      "LICENSE",
+      "overlays/whateverfi/GHCR-UNPUBLISHED.md"
+    ]
+  }
+}

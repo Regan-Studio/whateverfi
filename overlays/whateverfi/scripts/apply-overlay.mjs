@@ -1,0 +1,147 @@
+#!/usr/bin/env node
+// Applies the WhatEverFi overlay to a checkout that still has pristine (or
+// previously merged) upstream files. Never modifies LICENSE or "Copyright 2026
+// Rakazo contributors" lines.
+// Usage: node overlays/whateverfi/scripts/apply-overlay.mjs <repo-root>
+// Exit: 0 ok, 2 usage, 4 a required rule no longer matches.
+import { cpSync, existsSync, readdirSync, readFileSync, renameSync, statSync, writeFileSync } from "node:fs";
+import { basename, dirname, extname, join, relative } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const overlayRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
+const root = process.argv[2];
+if (!root || !existsSync(join(root, ".git")) || !existsSync(join(root, "LICENSE"))) {
+  console.error("usage: apply-overlay.mjs <repo-root-with-git-and-LICENSE>");
+  process.exit(2);
+}
+const brand = JSON.parse(readFileSync(join(overlayRoot, "brand.json"), "utf8"));
+const { include, exclude, textExtensions, rootFiles = [], linkInclude = [] } = brand.scope;
+const failures = [];
+const COPYRIGHT = "Copyright 2026 Rakazo contributors";
+
+function isProtected(rel) {
+  const base = basename(rel);
+  if (base === "LICENSE" || rel === "LICENSE") return true;
+  if (rel.startsWith("overlays/")) return true;
+  if (base === "pnpm-lock.yaml") return true;
+  return false;
+}
+
+function walk(dir, out = []) {
+  if (!existsSync(dir)) return out;
+  for (const name of readdirSync(dir)) {
+    if (exclude.includes(name)) continue;
+    const full = join(dir, name);
+    const st = statSync(full);
+    if (st.isDirectory()) walk(full, out);
+    else out.push(full);
+  }
+  return out;
+}
+
+// 1. Rename brand-named files in configured roots (marketing assets only).
+const renames = new Map();
+for (const rroot of brand.renameFiles?.roots ?? []) {
+  const abs = join(root, rroot);
+  if (!existsSync(abs)) {
+    failures.push(`rename root missing: ${rroot}`);
+    continue;
+  }
+  for (const file of walk(abs)) {
+    const name = basename(file);
+    if (!name.toLowerCase().includes(brand.renameFiles.from)) continue;
+    const next = name.replaceAll(brand.renameFiles.from, brand.renameFiles.to);
+    const stem = (n) => n.slice(0, n.length - extname(n).length);
+    if (stem(name).toLowerCase() === brand.renameFiles.from) {
+      failures.push(`refusing to rename bare brand file ${relative(root, file)}; add an explicit rule`);
+      continue;
+    }
+    renameSync(file, join(dirname(file), next));
+    renames.set(stem(name), stem(next));
+  }
+}
+
+// 2. Text rules.
+const rules = brand.rules.map((r) => ({ ...r, re: new RegExp(r.find, "g"), hits: 0 }));
+const stemRules = [...renames].sort((a, b) => b[0].length - a[0].length);
+const targets = [];
+for (const inc of include) {
+  const abs = join(root, inc);
+  if (!existsSync(abs)) {
+    failures.push(`include path missing: ${inc}`);
+    continue;
+  }
+  if (statSync(abs).isFile()) targets.push(abs);
+  else targets.push(...walk(abs));
+}
+for (const rf of rootFiles) {
+  const abs = join(root, rf);
+  if (existsSync(abs)) targets.push(abs);
+  else failures.push(`root file missing: ${rf}`);
+}
+
+const linkTargets = [];
+for (const inc of linkInclude) {
+  const abs = join(root, inc);
+  if (!existsSync(abs)) continue;
+  if (statSync(abs).isFile()) linkTargets.push(abs);
+  else linkTargets.push(...walk(abs));
+}
+
+let filesChanged = 0;
+const seen = new Set();
+const allFiles = [
+  ...targets.map((file) => ({ file, linkOnly: false })),
+  ...linkTargets.map((file) => ({ file, linkOnly: true })),
+];
+for (const { file, linkOnly } of allFiles) {
+  const rel = relative(root, file);
+  const key = `${rel}|${linkOnly}`;
+  if (seen.has(key)) continue;
+  seen.add(key);
+  if (isProtected(rel)) continue;
+  if (!textExtensions.includes(extname(file)) && extname(file) !== "") continue;
+  const before = readFileSync(file, "utf8");
+  const hadCopyright = before.includes(COPYRIGHT);
+  let text = before;
+  if (!linkOnly) {
+    for (const [from, to] of stemRules) text = text.replaceAll(from, to);
+  }
+  for (const rule of rules) {
+    if (linkOnly && rule.group !== "links") continue;
+    if (rule.file && rule.file !== rel) continue;
+    text = text.replace(rule.re, (...args) => {
+      rule.hits++;
+      const groups = args.slice(1, -2);
+      return rule.replace.replace(/\$(\d)/g, (_, i) => groups[Number(i) - 1] ?? "");
+    });
+  }
+  if (hadCopyright && !text.includes(COPYRIGHT)) {
+    text = text.replaceAll("Copyright 2026 WhatEverFi contributors", COPYRIGHT);
+    if (!text.includes(COPYRIGHT)) {
+      failures.push(`copyright line would have been lost in ${rel}; skipped write`);
+      continue;
+    }
+  }
+  if (text !== before) {
+    writeFileSync(file, text);
+    filesChanged++;
+  }
+}
+for (const rule of rules) {
+  if (rule.required && rule.hits === 0) failures.push(`required rule "${rule.id}" matched nothing`);
+}
+
+// 3. Copy verbatim overlay files (never LICENSE).
+const filesDir = join(overlayRoot, "files");
+if (existsSync(filesDir)) {
+  cpSync(filesDir, root, { recursive: true });
+}
+
+console.log(`overlay: ${renames.size} files renamed, ${filesChanged} files rewritten`);
+for (const rule of rules) console.log(`  rule ${rule.id.padEnd(28)} ${rule.hits}`);
+if (failures.length) {
+  console.error("\nOVERLAY FAILED - upstream no longer matches the overlay:");
+  for (const f of failures) console.error(`  - ${f}`);
+  process.exitCode = 4;
+}

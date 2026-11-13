@@ -1,6 +1,6 @@
 # Model subscriptions
 
-Can you use the AI plan you already pay for? It depends on the plan: some support a Rakazo
+Can you use the AI plan you already pay for? It depends on the plan: some support a WhatEverFi
 connection, while others cover only the provider's own apps. Subscription allowances and API
 billing are often separate.
 
@@ -15,13 +15,13 @@ See the [official OpenAI authentication documentation](https://learn.chatgpt.com
 
 ## Claude
 
-**Use an Anthropic API key for Rakazo's bot models.** Claude Pro and Max subscriptions do not
-include API credit. Although Rakazo currently exposes a Claude sign-in option, Anthropic's
+**Use an Anthropic API key for WhatEverFi's bot models.** Claude Pro and Max subscriptions do not
+include API credit. Although WhatEverFi currently exposes a Claude sign-in option, Anthropic's
 published rules prohibit third-party apps from offering Claude account login or routing their own
 requests through consumer subscription credentials. We do not recommend that path.
 
 Using your subscription in the unmodified Claude Code app is a separate case. It does not authorize
-Rakazo's model connection. See Anthropic's [authentication and credential rules](https://code.claude.com/docs/en/legal-and-compliance#authentication-and-credential-use).
+WhatEverFi's model connection. See Anthropic's [authentication and credential rules](https://code.claude.com/docs/en/legal-and-compliance#authentication-and-credential-use).
 
 ## OpenCode
 
@@ -34,7 +34,7 @@ bot's workflow.
 
 **OpenCode Zen / pay-as-you-go** uses the **OpenCode** provider instead. Connect its API key;
 usage comes from your OpenCode credit balance rather than Go's allowance. Its free-tier chat
-models require the OpenCode app and are not offered in Rakazo. See [OpenCode's model documentation](https://opencode.ai/docs/console/models/).
+models require the OpenCode app and are not offered in WhatEverFi. See [OpenCode's model documentation](https://opencode.ai/docs/console/models/).
 
 ## Other subscriptions
 
@@ -45,15 +45,15 @@ Check the exact plan before connecting or buying it:
 - **Kimi:** Code membership and Moonshot's general API have different keys, endpoints, and billing.
   Check the [Kimi account documentation](https://www.kimi.ai/help/kimi-code/faq) for your plan.
 - **Copilot, Grok, and other coding plans:** check the provider's current terms, eligible clients,
-  and included models. A sign-in option alone does not establish permission for every Rakazo workload.
+  and included models. A sign-in option alone does not establish permission for every WhatEverFi workload.
 
-You need both a connection Rakazo supports and permission from the provider for your intended use.
+You need both a connection WhatEverFi supports and permission from the provider for your intended use.
 For compatible APIs, see [Models](./models.md) for custom server connections.
 
 ## Billing and limits
 
 Your provider's allowance, charges, and rate limits apply when you connect your own account.
-This does not add Rakazo model credits or change your Rakazo hosting plan.
+This does not add WhatEverFi model credits or change your WhatEverFi hosting plan.
 
 A [fallback model](./models.md#main-model-and-fallbacks) can use a separately billed connection
 when your subscription reaches a limit. See [Account and billing](./account.md).

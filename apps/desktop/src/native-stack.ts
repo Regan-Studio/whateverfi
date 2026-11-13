@@ -58,7 +58,7 @@ const NATIVE_OWNER = "rakazo";
 const NATIVE_DATABASE = "rakazo";
 /** Written once a Docker move has copied everything, so a cut-short move reruns. */
 const DOCKER_IMPORTED = ".docker-imported";
-const COMPUTER_IMAGE = "ghcr.io/elie222/rakazo/computer";
+const COMPUTER_IMAGE = "ghcr.io/regan-studio/whateverfi/computer";
 const POSTGRES_LISTENING = "listening on IPv4 address";
 const POSTGRES_READY = "database system is ready to accept connections";
 const HEALTH_POLL_INTERVAL_MS = 1_000;

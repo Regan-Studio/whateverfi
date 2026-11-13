@@ -1,4 +1,4 @@
-# Self-host Rakazo
+# Self-host WhatEverFi
 
 รัน API, worker, เว็บ, ฐานข้อมูล และ computer ของ bot บนเครื่องที่คุณควบคุม
 
@@ -12,7 +12,7 @@
 
 ```bash
 mkdir -p rakazo && cd rakazo &&
-curl -fsSLO https://raw.githubusercontent.com/elie222/rakazo/main/infra/compose/install-images.sh &&
+curl -fsSLO https://raw.githubusercontent.com/Regan-Studio/whateverfi/main/infra/compose/install-images.sh &&
 bash install-images.sh
 ```
 

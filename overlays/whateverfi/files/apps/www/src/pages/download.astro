@@ -1,0 +1,60 @@
+---
+// WhatEverFi override (copied verbatim by apply-overlay.mjs after the text rules).
+// WhatEverFi has no native apps yet: the upstream App Store / Google Play listings and desktop
+// installers are Rakazo-branded, so every platform points at the web app for now.
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { githubStarsLabel } from "../github";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { APP_URL, SELF_HOST_GUIDE_PATH } from "../site";
+
+const starsLabel = await githubStarsLabel();
+
+const platforms = [
+  { name: "Web", status: "Available now", action: "Open", attr: "web" },
+  { name: "macOS", status: "Coming soon", action: "Try the web version", attr: "mac" },
+  { name: "Windows", status: "Coming soon", action: "Try the web version", attr: "windows" },
+  { name: "Linux", status: "Coming soon", action: "Try the web version", attr: "linux" },
+  { name: "iPhone, iPhone Duo, and iPad", status: "Coming soon", action: "Try the web version", attr: "ios" },
+  { name: "Android", status: "Coming soon", action: "Try the web version", attr: "android" },
+];
+---
+
+<BaseLayout title="Download · WhatEverFi" description="The WhatEverFi desktop and mobile apps are coming soon. Use WhatEverFi on the web today.">
+  <div class="container">
+    <Header starsLabel={starsLabel} />
+    <main id="main" class="privacy-copy">
+      <h1>Download WhatEverFi</h1>
+      <p>
+        The WhatEverFi desktop and mobile apps are coming soon. Until then, you can use the web
+        version from any browser.
+      </p>
+      <ul class="platform-list">
+        {
+          platforms.map((platform) => (
+            <li>
+              <span>
+                {platform.name} <small>· {platform.status}</small>
+              </span>
+              <a
+                class="button button--secondary button--small"
+                href={APP_URL}
+                aria-label={`${platform.action}: ${platform.name}`}
+                data-attr={`download-page-${platform.attr}`}
+              >
+                {platform.action}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <p>
+        Running your own server? See the <a href={SELF_HOST_GUIDE_PATH}>self-hosting guide</a>.
+        Source is at <a href="https://github.com/Regan-Studio/whateverfi">Regan-Studio/whateverfi</a>
+        (Apache-2.0, based on Rakazo). Container images are not published yet; build from the repo
+        until they are.
+      </p>
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

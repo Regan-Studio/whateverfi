@@ -68,7 +68,7 @@ const [starsLabel, recentChanges] = await Promise.all([
   githubStarsLabel(),
   fetchRecentChanges(5),
 ]);
-const setupAgentPrompt = `Set up Rakazo for me. Follow the setup prompt at ${SETUP_PROMPT_URL}`;
+const setupAgentPrompt = `Set up WhatEverFi for me. Follow the setup prompt at ${SETUP_PROMPT_URL}`;
 const desktopPlatforms = DESKTOP_PLATFORMS;
 const PLATFORM_NAMES = { mac: "macOS", windows: "Windows", linux: "Linux" } as const;
 const PROVIDER_LOGOS: Record<string, string> = {
@@ -252,60 +252,6 @@ const structuredData = homeStructuredData({
         </div>
       </section>
 
-      <section id="testimonials" class="section testimonials" aria-labelledby="testimonials-heading">
-        <div class="section-intro testimonials__heading">
-          <h2 id="testimonials-heading" class="section-heading">{copy.testimonials.heading}</h2>
-          <button
-            class="testimonial-pause"
-            type="button"
-            aria-label={copy.testimonials.pause}
-            title={copy.testimonials.pause}
-            data-testimonial-pause
-            data-pause-label={copy.testimonials.pause}
-            data-play-label={copy.testimonials.play}
-          >
-            <svg class="testimonial-pause__pause" viewBox="0 0 16 16" aria-hidden="true"><rect x="4" y="3" width="2.5" height="10" rx="1" /><rect x="9.5" y="3" width="2.5" height="10" rx="1" /></svg>
-            <svg class="testimonial-pause__play" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3.4v9.2a.8.8 0 0 0 1.2.7l7.4-4.6a.8.8 0 0 0 0-1.4L6.2 2.7A.8.8 0 0 0 5 3.4Z" /></svg>
-          </button>
-        </div>
-        <div
-          class="testimonial-viewport"
-          data-testimonial-marquee
-          tabindex="0"
-          role="region"
-          aria-labelledby="testimonials-heading"
-        >
-          <div class="testimonial-track">
-            {
-              [false, true].map((clone) => (
-                <div
-                  class="testimonial-group"
-                  aria-hidden={clone ? "true" : undefined}
-                  inert={clone ? true : undefined}
-                  data-testimonial-clone={clone ? "" : undefined}
-                >
-                  {copy.testimonials.items.map((item, index) => (
-                    <figure class="testimonial-card" lang="en">
-                      <blockquote>
-                        <p>{item.quote}</p>
-                      </blockquote>
-                      <figcaption>
-                        <LandingBotAvatar
-                          color={copy.roster.bots[index % copy.roster.bots.length].color}
-                          size={32}
-                          className="testimonial-avatar"
-                        />
-                        <span>{item.attribution}</span>
-                      </figcaption>
-                    </figure>
-                  ))}
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </section>
-
       <section id="selfhost" class="section">
         <div class="selfhost__intro">
           <div class="section-intro">
@@ -365,9 +311,7 @@ const structuredData = homeStructuredData({
               </svg>
               <h3>{copy.platforms.desktop}</h3>
               <div class="platform-card__links">
-                {desktopPlatforms.map((platform) => (
-                  <a href={desktopDownloadHref(platform)}>{PLATFORM_NAMES[platform]}</a>
-                ))}
+                <a href={APP_URL}>WhatEverFi app coming soon · try the web version</a>
               </div>
             </article>
             <article class="platform-card">
@@ -377,8 +321,7 @@ const structuredData = homeStructuredData({
               </svg>
               <h3>{copy.platforms.mobile}</h3>
               <div class="platform-card__links">
-                <a href={IOS_APP_URL}>iPhone and iPad</a>
-                <a href={ANDROID_APP_STORE_URL}>Android</a>
+                <a href={APP_URL}>WhatEverFi app coming soon · try the web version</a>
               </div>
             </article>
           </div>
@@ -434,7 +377,7 @@ const structuredData = homeStructuredData({
         </div>
         <div class="stats-grid">
           {
-            copy.cta.stats.map((stat) => (
+            copy.cta.stats.filter((stat) => stat.value !== "stars").map((stat) => (
               <div>
                 <div class="stat-value">
                   {stat.value === "stars"

@@ -2,13 +2,13 @@ import { docsPath } from "./docs";
 import { GITHUB_URL, SELF_HOST_GUIDE_PATH, SITE_URL } from "./site";
 
 export const ENTERPRISE_PATH = "/enterprise/";
-export const ENTERPRISE_H1 = "Rakazo for enterprise";
-export const ENTERPRISE_TITLE = "Enterprise AI agents on your own infrastructure · Rakazo";
+export const ENTERPRISE_H1 = "WhatEverFi for enterprise";
+export const ENTERPRISE_TITLE = "Enterprise AI agents on your own infrastructure · WhatEverFi";
 export const ENTERPRISE_DESCRIPTION =
-  "Run Rakazo on your own infrastructure with SSO, SCIM, an audit log, encryption at rest, and approval rules. Open source under Apache-2.0.";
+  "Run WhatEverFi on your own infrastructure with SSO, SCIM, an audit log, encryption at rest, and approval rules. Open source under Apache-2.0.";
 export const ENTERPRISE_LEAD =
   "AI teammates on infrastructure you control, with the sign-in, audit, and encryption controls a security review asks for.";
-export const ENTERPRISE_CONTACT_EMAIL = "hello@rakazo.com";
+export const ENTERPRISE_CONTACT_EMAIL = "hello@whateverfi.com";
 
 export type EnterpriseFeatureKind =
   | "sso"

@@ -402,7 +402,7 @@ describe("resolveContainerRuntime", () => {
 
 describe("readServerBundle", () => {
   const descriptor = {
-    url: "https://github.com/elie222/rakazo/releases/download/v1.0.0/rakazo-server-darwin-arm64-1.0.0.tar.xz",
+    url: "https://github.com/Regan-Studio/whateverfi/releases/download/v1.0.0/rakazo-server-darwin-arm64-1.0.0.tar.xz",
     sha256: "a".repeat(64),
     size: 100,
     version: "1.0.0",

@@ -68,7 +68,7 @@ Resend:
 ```env
 EMAIL_PROVIDER=resend
 EMAIL_API_KEY=replace-with-sending-api-key
-EMAIL_FROM=Rakazo <hello@mail.example.com>
+EMAIL_FROM=WhatEverFi <hello@mail.example.com>
 ```
 
 SMTP: `SMTP_URL=smtps://...` และ `EMAIL_FROM` development ใช้ `EMAIL_EMULATOR=true` ได้ (ปิดบน production)
@@ -77,7 +77,7 @@ SMTP: `SMTP_URL=smtps://...` และ `EMAIL_FROM` development ใช้ `EMAIL
 
 เปิดเมื่อ `WEB_ORIGIN` เป็นโดเมน HTTPS หรือ `localhost` ตอนพัฒนา passkey เดิมใช้ได้เฉพาะโดเมนเดิม ปิดเมื่อเป็น SSO อย่างเดียว
 
-แอปที่ build เองใช้ passkey ของโดเมนนี้ได้เมื่อตั้งค่าด้านล่าง ยังไม่ตั้งแพลตฟอร์มไหน แอปนั้นจะซ่อน passkey แอป macOS ที่ปล่อยทั่วไปผูกกับ `app.rakazo.com` จึงซ่อน passkey ของเซิร์ฟเวอร์อื่น
+แอปที่ build เองใช้ passkey ของโดเมนนี้ได้เมื่อตั้งค่าด้านล่าง ยังไม่ตั้งแพลตฟอร์มไหน แอปนั้นจะซ่อน passkey แอป macOS ที่ปล่อยทั่วไปผูกกับ `app.whateverfi.com` จึงซ่อน passkey ของเซิร์ฟเวอร์อื่น
 
 ```bash
 PASSKEY_APPLE_APP_IDS=ABCDE12345.com.rakazo.app,ABCDE12345.dev.rakazo.desktop

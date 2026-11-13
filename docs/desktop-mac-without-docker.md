@@ -34,7 +34,7 @@ existed; the egress row shows the result with it.
 | Step                                                        | Result                                                                                                                                                               |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `container` 1.7.1 release package (Apple-signed, notarized) | Expanded with `pkgutil`; `container system start --install-root … --app-root … --log-root …` registered user launchd agents in 45 s, including kernel download       |
-| Pull `ghcr.io/elie222/rakazo/computer:edge` (linux/arm64)   | 50 s, 1.58 GB unpacked                                                                                                                                               |
+| Pull `ghcr.io/regan-studio/whateverfi/computer:edge` (linux/arm64)   | 50 s, 1.58 GB unpacked                                                                                                                                               |
 | First computer VM, noVNC gateway ready                      | 11 s (includes the one-time 66 MB init image); later VMs 2–3 s                                                                                                       |
 | Host reaches VM screen gateway                              | `http://<vm-ip>:6080/embed.html` and per-bot `:6100` answered 200                                                                                                    |
 | Two computers on separate networks                          | Cannot reach each other; each reaches the internet                                                                                                                   |
@@ -223,7 +223,7 @@ plus the kernel download on its first start (about 45 s measured). The computer 
   the app pins the image tag of its own version.
 - Docker users: when a Docker stack exists (its compose file is in the stack folder), no native
   stack exists yet (`.native-ports`), the saved setup is **This computer** and Docker answers, the
-  app asks once ("Run Rakazo without Docker?" with **Move** and **Keep Docker**) and remembers the
+  app asks once ("Run WhatEverFi without Docker?" with **Move** and **Keep Docker**) and remembers the
   answer in `.desktop-stack-choice`. **Keep Docker** keeps today's path. **Move** keeps the same
   `.env` (so `BETTER_AUTH_SECRET`, `ENCRYPTION_KEY` and the other secrets carry over) and, on the
   next start, after the database VM is up and before migrations: empties the `rakazo` database,

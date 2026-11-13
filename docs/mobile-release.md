@@ -1,10 +1,10 @@
 # Mobile builds and store releases
 
-Rakazo's public repository does not contain production App Store Connect,
+WhatEverFi's public repository does not contain production App Store Connect,
 Google Play, Apple team, or private EAS submission identifiers. Those values
 belong in the release operator's private configuration.
 
-Self-hosters normally do not need to publish their own mobile app: the Rakazo
+Self-hosters normally do not need to publish their own mobile app: the WhatEverFi
 client can select a compatible server from the sign-in screen. If you distribute
 your own branded build, use your own Expo and store accounts.
 
@@ -91,7 +91,7 @@ scores once processed. Managed publishing can delay release after approval.
 
 ## Android APK
 
-Android users should install [Rakazo from Google Play](https://play.google.com/store/apps/details?id=com.rakazo.app).
+Android users should install [WhatEverFi from Google Play](https://play.google.com/store/apps/details?id=com.rakazo.app).
 For manual installation, an APK remains available.
 `release-mobile` publishes it, or run the `release-android-apk` workflow from
 `main` on its own. It builds the `android-apk` EAS profile, signed with the
@@ -99,7 +99,7 @@ project's managed keystore, and replaces the rolling `android` GitHub release,
 so the download link stays the same:
 
 ```text
-https://github.com/elie222/rakazo/releases/download/android/rakazo.apk
+https://github.com/Regan-Studio/whateverfi/releases/download/android/rakazo.apk
 ```
 
 The APK uses the production update channel, so JavaScript changes reach it

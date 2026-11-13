@@ -1,9 +1,9 @@
-# 自托管 Rakazo
+# 自托管 WhatEverFi
 
 [English](../self-host.md) | 简体中文
 
 在自己掌控的机器上运行 API、后台任务、网页应用、数据库和机器人计算机。
-Rakazo 需要持续运行的后端服务，不是静态网站；`apps/www` 中的官网可以单独托管。
+WhatEverFi 需要持续运行的后端服务，不是静态网站；`apps/www` 中的官网可以单独托管。
 
 ## 准备条件
 
@@ -17,7 +17,7 @@ Rakazo 需要持续运行的后端服务，不是静态网站；`apps/www` 中�
 
 ```bash
 mkdir -p rakazo && cd rakazo &&
-curl -fsSLO https://raw.githubusercontent.com/elie222/rakazo/main/infra/compose/install-images.sh &&
+curl -fsSLO https://raw.githubusercontent.com/Regan-Studio/whateverfi/main/infra/compose/install-images.sh &&
 bash install-images.sh
 ```
 
@@ -138,7 +138,7 @@ docker compose --env-file .env -f infra/compose/docker-compose.yml \
 
 ## 报告问题
 
-镜像版可以生成诊断报告，附到[自托管问题](https://github.com/elie222/rakazo/issues/new?template=self-host.yml)中：
+镜像版可以生成诊断报告，附到[自托管问题](https://github.com/Regan-Studio/whateverfi/issues/new?template=self-host.yml)中：
 
 ```bash
 docker compose -f docker-compose.images.yml exec api node dist/cli/diagnostics.js
@@ -146,4 +146,4 @@ docker compose -f docker-compose.images.yml exec api node dist/cli/diagnostics.j
 
 源码版改用 `-f infra/compose/docker-compose.yml`，生产部署使用对应的生产文件。
 报告包含版本、功能开关、迁移状态、MCP 健康状态与最近运行情况；不会输出密钥、设置值、姓名、地址、路径或消息内容。
-用户让机器人报告问题时，反馈只保存在本服务器的 `feedback_reports` 表中，不会自动发送给 Rakazo 项目。
+用户让机器人报告问题时，反馈只保存在本服务器的 `feedback_reports` 表中，不会自动发送给 WhatEverFi 项目。

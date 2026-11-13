@@ -1,6 +1,6 @@
 // Relative source path: Vercel functions cannot resolve the TypeScript exports of @rakazo/core.
 import { readBoundedJsonResponse } from "../../../packages/core/src/http-response.js";
-import { GITHUB_API_REPO } from "./site";
+import { APP_URL, GITHUB_API_REPO } from "./site";
 
 export const GITHUB_STARS_TIMEOUT_MS = 5_000;
 export const MAX_GITHUB_STARS_RESPONSE_BYTES = 64 * 1024;
@@ -39,7 +39,8 @@ export const DESKTOP_PLATFORMS = ["mac", "windows", "linux"] as const;
 
 /** The redirect resolves the newest installer per request, so releases need no site rebuild. */
 export function desktopDownloadHref(platform: keyof DesktopDownloads) {
-  return `/api/download?platform=${platform}`;
+  void platform;
+  return APP_URL;
 }
 
 export async function fetchDesktopDownloads(

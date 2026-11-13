@@ -19,16 +19,16 @@ if [[ "${1:-}" == image ]]; then
   case "${2:-}" in
     ls)
       cat <<'EOF'
-sha256:app-current ghcr.io/elie222/rakazo/app edge
-sha256:app-old ghcr.io/elie222/rakazo/app <none>
-sha256:computer-old ghcr.io/elie222/rakazo/computer <none>
-sha256:computer-in-use ghcr.io/elie222/rakazo/computer <none>
-sha256:app-pinned ghcr.io/elie222/rakazo/app sha-0123
+sha256:app-current ghcr.io/regan-studio/whateverfi/app edge
+sha256:app-old ghcr.io/regan-studio/whateverfi/app <none>
+sha256:computer-old ghcr.io/regan-studio/whateverfi/computer <none>
+sha256:computer-in-use ghcr.io/regan-studio/whateverfi/computer <none>
+sha256:app-pinned ghcr.io/regan-studio/whateverfi/app sha-0123
 sha256:postgres-old postgres <none>
 sha256:mirror-old registry.example.com:5000/busybox <none>
 sha256:other-old example/other-project <none>
 sha256:other-current example/other-project latest
-sha256:prefix-old ghcr.io/elie222/rakazo/app-fork <none>
+sha256:prefix-old ghcr.io/regan-studio/whateverfi/app-fork <none>
 EOF
       ;;
     rm)
@@ -45,8 +45,8 @@ for a in "$@"; do
     config)
       if [[ " $* " == *" --images "* ]]; then
         printf '%s\n' \
-          ghcr.io/elie222/rakazo/app:edge \
-          ghcr.io/elie222/rakazo/computer:edge \
+          ghcr.io/regan-studio/whateverfi/app:edge \
+          ghcr.io/regan-studio/whateverfi/computer:edge \
           'postgres:16@sha256:e17e86066e5ef83e0952a9347f5c792b7ece00972e2aa787a6986f471b3dd3d5' \
           registry.example.com:5000/busybox
         exit 0

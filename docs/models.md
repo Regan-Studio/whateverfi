@@ -19,7 +19,7 @@ Have a ChatGPT, Claude, OpenCode, or other plan? See [Model subscriptions](./mod
 for connection options, separate API billing, and provider restrictions.
 
 > [!NOTE]
-> On rakazo.com you can skip this and choose **Use Rakazo credits**, which includes monthly model
+> On whateverfi.com you can skip this and choose **Use WhatEverFi credits**, which includes monthly model
 > credits. See [Account and billing](./account.md).
 
 ## Main model and fallbacks

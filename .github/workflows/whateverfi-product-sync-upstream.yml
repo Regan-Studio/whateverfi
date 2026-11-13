@@ -1,0 +1,161 @@
+name: whateverfi-product-sync-upstream
+
+# DRAFT — not installed, not pushed.
+# Intended path after main holds the imported rakazo engine + overlay:
+#   .github/workflows/whateverfi-product-sync-upstream.yml
+#
+# Weekly (Monday 15:17 UTC / 10:17 AM America/New_York) or manual.
+# Fast-forwards a local upstream-mirror branch, applies the WhatEverFi overlay
+# on a sync branch, runs tests + gitleaks + branding-guard, and opens a PR.
+# Never merges, never pushes to main, never deploys.
+#
+# Requires a one-time history import so this repo shares git history with
+# Regan-Studio/whateverfi (see PLAN-v2.md). Until that lands, this workflow should not
+# be enabled.
+
+on:
+  schedule:
+    - cron: "17 15 * * 1"
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Upstream ref (branch, tag, or SHA); default = upstream main HEAD"
+        required: false
+        default: latest
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: whateverfi-product-sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ secrets.SYNC_TOKEN || github.token }}
+      GITHUB_TOKEN: ${{ github.token }}
+      UPSTREAM_URL: https://github.com/Regan-Studio/whateverfi.git
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SYNC_TOKEN || github.token }}
+          fetch-depth: 0
+
+      - name: Fetch upstream (read-only)
+        id: target
+        run: |
+          set -euo pipefail
+          git remote add upstream "$UPSTREAM_URL" 2>/dev/null || git remote set-url upstream "$UPSTREAM_URL"
+          git fetch --no-tags upstream +refs/heads/main:refs/remotes/upstream/main
+          ref="${{ inputs.ref || 'latest' }}"
+          [[ "$ref" == latest ]] && ref=main
+          if [[ "$ref" =~ ^[0-9a-f]{40}$ ]]; then sha="$ref"; else
+            sha=$(git rev-parse "refs/remotes/upstream/$ref" 2>/dev/null || git ls-remote "$UPSTREAM_URL" "refs/heads/$ref" | awk '{print $1}')
+          fi
+          [[ -n "$sha" ]] || { echo "::error::cannot resolve $ref"; exit 1; }
+          pinned=$(git rev-parse HEAD)
+          # If an explicit pin file exists, prefer it for the compare URL only.
+          if [[ -f overlays/whateverfi/upstream.json ]]; then
+            pinned=$(jq -r .sha overlays/whateverfi/upstream.json)
+          fi
+          { echo "sha=$sha"; echo "short=${sha:0:12}"; echo "pinned=$pinned"; } >> "$GITHUB_OUTPUT"
+          if git merge-base --is-ancestor "$sha" HEAD; then
+            echo "uptodate=true" >> "$GITHUB_OUTPUT"
+            echo "HEAD already contains $sha"
+          fi
+
+      - name: Fast-forward upstream-mirror and apply overlay
+        id: build
+        if: steps.target.outputs.uptodate != 'true'
+        run: |
+          set +e
+          sha=${{ steps.target.outputs.sha }}
+          short=${{ steps.target.outputs.short }}
+          git checkout -B upstream-mirror refs/remotes/upstream/main
+          git merge --ff-only "$sha" || { echo "code=3" >> "$GITHUB_OUTPUT"; echo "upstream-mirror could not fast-forward"; exit 0; }
+          git checkout -B "sync/upstream-$short" main
+          # Prefer merging the FF'd mirror (shared history) then re-applying the overlay
+          # so branded files are regenerated rather than hand-resolved every week.
+          git merge --no-ff --no-edit --no-commit upstream-mirror
+          merge_code=$?
+          if [[ "$merge_code" -ne 0 ]]; then
+            echo "code=3" >> "$GITHUB_OUTPUT"
+            echo "merge conflict against upstream $short — needs a human (see PLAN-v2.md)"
+            git merge --abort || true
+            exit 0
+          fi
+          if [[ -x overlays/whateverfi/scripts/apply-overlay.mjs ]]; then
+            node overlays/whateverfi/scripts/apply-overlay.mjs . || { echo "code=4" >> "$GITHUB_OUTPUT"; exit 0; }
+          fi
+          echo "code=0" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Tests
+        if: steps.target.outputs.uptodate != 'true' && steps.build.outputs.code == '0'
+        run: |
+          # Hook the repo's real test command once the engine is on main (pnpm test / turbo).
+          if [[ -f package.json ]] && jq -e '.scripts.test' package.json >/dev/null; then
+            corepack enable || true
+            pnpm test || npm test
+          else
+            echo "No test script found; fail closed once the engine lands."
+            exit 1
+          fi
+
+      - name: Gitleaks
+        if: steps.target.outputs.uptodate != 'true' && steps.build.outputs.code == '0'
+        run: |
+          set -euo pipefail
+          ver=8.30.1
+          curl -fsSL -o /tmp/gitleaks_checksums.txt "https://github.com/gitleaks/gitleaks/releases/download/v${ver}/gitleaks_${ver}_checksums.txt"
+          curl -fsSL -o /tmp/gitleaks_linux_x64.tar.gz "https://github.com/gitleaks/gitleaks/releases/download/v${ver}/gitleaks_${ver}_linux_x64.tar.gz"
+          awk "/gitleaks_${ver}_linux_x64.tar.gz\$/" /tmp/gitleaks_checksums.txt | (cd /tmp && sha256sum -c -)
+          tar -xzf /tmp/gitleaks_linux_x64.tar.gz -C /tmp gitleaks
+          /tmp/gitleaks detect --source . --no-banner --exit-code 1
+
+      - name: Branding guard
+        if: steps.target.outputs.uptodate != 'true' && steps.build.outputs.code == '0'
+        run: bash overlays/whateverfi/scripts/branding-guard.sh .
+
+      - name: Open/update PR
+        if: steps.target.outputs.uptodate != 'true' && steps.build.outputs.code == '0'
+        run: |
+          sha=${{ steps.target.outputs.sha }}; short=${{ steps.target.outputs.short }}
+          branch="sync/upstream-$short"
+          git config user.name "whateverfi-sync[bot]"
+          git config user.email "whateverfi-sync@users.noreply.github.com"
+          git add -A
+          git commit -m "Sync upstream Regan-Studio/whateverfi to $short and reapply WhatEverFi overlay" || echo "nothing to commit"
+          git push --force-with-lease origin "$branch"   # sync branch only, never main
+          body=$(printf 'Automated full-product sync to [`%s`](https://github.com/Regan-Studio/whateverfi/commit/%s).\n\nMerge of upstream + WhatEverFi/Regan.Studio overlay, tests, gitleaks, and branding-guard passed.\n\n**Human review required before merge.** Never auto-merged.\nCompare: https://github.com/Regan-Studio/whateverfi/compare/%s...%s' "$short" "$sha" "${{ steps.target.outputs.pinned }}" "$sha")
+          if gh pr view "$branch" --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr edit "$branch" --body "$body"
+          else
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head "$branch" \
+              --title "Sync upstream rakazo to $short (WhatEverFi overlay)" --body "$body"
+          fi
+          gh pr list --state open --json headRefName,number -q '.[] | select(.headRefName|startswith("sync/upstream-")) | select(.headRefName != "'"$branch"'") | .number' \
+            | xargs -r -n1 -I{} gh pr close {} --comment "Superseded by $branch"
+
+      - name: Open/update issue on failure
+        if: steps.target.outputs.uptodate != 'true' && steps.build.outputs.code != '0'
+        run: |
+          short=${{ steps.target.outputs.short }}; code=${{ steps.build.outputs.code }}
+          case "$code" in
+            3) kind="merge/fast-forward conflict" ;; 4) kind="overlay no longer matches" ;;
+            6) kind="required WhatEverFi/Regan.Studio branding missing" ;;
+            7) kind="Regan-Studio/whateverfi links reappeared" ;; *) kind="sync failure (exit $code)" ;;
+          esac
+          title="Upstream product sync blocked at $short: $kind"
+          body=$(printf 'Scheduled full-product sync could not open a PR.\n\n- Upstream: https://github.com/Regan-Studio/whateverfi/commit/%s\n- Run: %s/%s/actions/runs/%s\n- Exit: %s (%s)\n\nSee PLAN-v2.md.' \
+            "${{ steps.target.outputs.sha }}" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" "$code" "$kind")
+          gh label create upstream-sync --color B60205 2>/dev/null || true
+          existing=$(gh issue list --label upstream-sync --state open --search "$short in:title" --json number -q '.[0].number')
+          if [[ -n "$existing" ]]; then gh issue comment "$existing" --body "$body"; else
+            gh issue create --title "$title" --label upstream-sync --body "$body"; fi
+          exit 1
