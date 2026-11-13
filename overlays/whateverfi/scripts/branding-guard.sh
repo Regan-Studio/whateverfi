@@ -76,6 +76,53 @@ for f in apps/desktop/assets/es.lproj/InfoPlist.strings apps/desktop/assets/pl.l
   fi
 done
 
+# Upstream Rakazo store listings must not appear in built web output (the
+# running app's JS and HTML). Source is checked for live URL forms only, so
+# tests can mention the id in a "must not contain" assertion.
+forbid_store_grep() {
+  local target="$1"
+  shift
+  if [[ ! -e "$target" ]]; then
+    return 0
+  fi
+  local hits
+  hits="$(mktemp)"
+  set +e
+  grep -RInE --binary-files=without-match \
+    --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=.cache --exclude-dir=.turbo \
+    "$@" \
+    "$target" > "$hits"
+  local code=$?
+  set -e
+  if [[ "$code" -eq 0 ]]; then
+    echo "FORBIDDEN: upstream Rakazo App Store or Play Store listing in $target:" >&2
+    cat "$hits" >&2
+    forbidden=1
+  elif [[ "$code" -gt 1 ]]; then
+    echo "branding-guard: store-listing grep failed with $code on $target" >&2
+    rm -f "$hits"
+    exit 6
+  fi
+  rm -f "$hits"
+}
+# Live URL forms in product source (not bare-id mentions in tests).
+for d in packages/contracts/src apps/web/src apps/www/src packages/auth/src docs; do
+  forbid_store_grep "$d" \
+    -e 'apps\.apple\.com/[^[:space:]"'"'"'<>]*id6801531099' \
+    -e 'play\.google\.com/store/apps/details\?id=com\.rakazo\.app'
+done
+# Built web/marketing output: the id or Play URL in any form (bundled constants, hrefs).
+if [[ -d apps/web/dist ]]; then
+  forbid_store_grep "apps/web/dist" \
+    -e 'id6801531099' \
+    -e 'play\.google\.com/store/apps/details\?id=com\.rakazo\.app'
+fi
+if [[ -d apps/www/dist ]]; then
+  forbid_store_grep "apps/www/dist" \
+    -e 'id6801531099' \
+    -e 'play\.google\.com/store/apps/details\?id=com\.rakazo\.app'
+fi
+
 # Clone/install/issue/GHCR links that should already have been retargeted.
 # Allowed to mention elie222/rakazo: LICENSE (not present), overlays (rules),
 # this script, PUSH-PLAN / GHCR-UNPUBLISHED, and the weekly sync workflow

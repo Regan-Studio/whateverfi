@@ -4,8 +4,7 @@ Chat with your bots, answer their questions, watch their computers and take call
 
 ## Install
 
-- iPhone, iPhone Duo and iPad: [App Store](https://apps.apple.com/app/rakazo/id6801531099).
-- Android: [Google Play](https://app.whateverfi.com/).
+- There is no App Store or Google Play listing yet. On your phone, open the [web app](https://app.whateverfi.com) and add it to your Home Screen (Safari: Share → Add to Home Screen; Chrome: menu → Add to Home Screen or Install app).
 
 You can also choose **Get the mobile app** from the account menu in the web or desktop app.
 

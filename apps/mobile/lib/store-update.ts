@@ -1,4 +1,4 @@
-import { IOS_APP_STORE_URL } from "@rakazo/contracts";
+import { mobileInstallUrl } from "@rakazo/contracts";
 import { useQuery } from "@tanstack/react-query";
 import * as Application from "expo-application";
 import { Linking, Platform } from "react-native";
@@ -48,5 +48,6 @@ export function useStoreUpdateAvailable(): boolean {
 }
 
 export function openStoreListing(): void {
-  void Linking.openURL(IOS_APP_STORE_URL).catch(() => undefined);
+  const url = mobileInstallUrl("ios");
+  if (url) void Linking.openURL(url).catch(() => undefined);
 }

@@ -31,7 +31,7 @@ vi.mock("./api-auth", () => ({}));
 vi.mock("./api-live", () => ({}));
 vi.mock("./api", () => ({ configureClientBuild: vi.fn() }));
 
-import { IOS_APP_STORE_URL } from "@rakazo/contracts";
+import { mobileInstallUrl } from "@rakazo/contracts";
 import {
   clientBuildHeaders,
   FOREGROUND_UPDATE_CHECK_MS,
@@ -88,7 +88,7 @@ describe("update required", () => {
     pressUpdate();
     await flush();
     expect(updates.reloadAsync).not.toHaveBeenCalled();
-    expect(rn.Linking.openURL).toHaveBeenCalledWith(IOS_APP_STORE_URL);
+    expect(rn.Linking.openURL).toHaveBeenCalledWith(mobileInstallUrl("ios"));
     noteClientUpdateRequired();
     expect(rn.Alert.alert).toHaveBeenCalledTimes(2);
   });

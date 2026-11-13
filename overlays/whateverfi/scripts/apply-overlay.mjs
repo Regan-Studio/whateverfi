@@ -125,7 +125,14 @@ for (const { file, linkOnly } of allFiles) {
     text = text.replace(rule.re, (...args) => {
       rule.hits++;
       const groups = args.slice(1, -2);
-      return rule.replace.replace(/\$(\d)/g, (_, i) => groups[Number(i) - 1] ?? "");
+      const interpolated = rule.replace.replace(/\{brand\.([A-Za-z][A-Za-z0-9]*)\}/g, (_, key) => {
+        if (!Object.hasOwn(brand, key) || typeof brand[key] !== "string") {
+          failures.push(`rule "${rule.id}" replace refers to missing string brand.${key}`);
+          return "";
+        }
+        return brand[key];
+      });
+      return interpolated.replace(/\$(\d)/g, (_, i) => groups[Number(i) - 1] ?? "");
     });
   }
   if (hadCopyright && !text.includes(COPYRIGHT)) {

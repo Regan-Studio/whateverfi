@@ -1,11 +1,16 @@
 import { describe, expect, it } from "vitest";
 import {
+  ANDROID_APP_STORE_URL,
   buildIdAt,
   CLIENT_UPDATE_REQUIRED,
   clientUpdateRequired,
   compareBuilds,
   formatClientBuild,
+  IOS_APP_STORE_URL,
   isClientUpdateRequiredError,
+  MOBILE_WEB_APP_URL,
+  mobileInstallUrl,
+  nativeStoreUrl,
   parseClientBuild,
   parseMinimumClientBuilds,
 } from "./client-build.js";
@@ -66,5 +71,19 @@ describe("client builds", () => {
     expect(isClientUpdateRequiredError({ status: 426 })).toBe(true);
     expect(isClientUpdateRequiredError({ status: 401 })).toBe(false);
     expect(isClientUpdateRequiredError(null)).toBe(false);
+  });
+});
+
+describe("mobile install URLs", () => {
+  it("exposes empty native store listings for this brand, and falls back to the web app", () => {
+    expect(IOS_APP_STORE_URL).toBe("");
+    expect(ANDROID_APP_STORE_URL).toBe("");
+    expect(nativeStoreUrl("ios")).toBe("");
+    expect(nativeStoreUrl("android")).toBe("");
+    expect(mobileInstallUrl("ios")).toBe(MOBILE_WEB_APP_URL);
+    expect(mobileInstallUrl("android")).toBe(MOBILE_WEB_APP_URL);
+    expect(MOBILE_WEB_APP_URL).toBe("https://app.whateverfi.com");
+    expect(mobileInstallUrl("ios")).not.toContain("id6801531099");
+    expect(mobileInstallUrl("android")).not.toContain("play.google.com");
   });
 });

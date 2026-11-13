@@ -1,10 +1,9 @@
 import { t } from "@lingui/core/macro";
 import {
-  ANDROID_APK_URL,
   buildIdAt,
   CLIENT_BUILD_HEADER,
   formatClientBuild,
-  IOS_APP_STORE_URL,
+  mobileInstallUrl,
 } from "@rakazo/contracts";
 import * as Updates from "expo-updates";
 import type { AppStateStatus } from "react-native";
@@ -52,9 +51,8 @@ export async function applyRequiredUpdate(): Promise<void> {
   } catch {
     // An unreachable update server falls through to the store.
   }
-  await Linking.openURL(Platform.OS === "ios" ? IOS_APP_STORE_URL : ANDROID_APK_URL).catch(
-    () => undefined,
-  );
+  const updateUrl = mobileInstallUrl(Platform.OS === "ios" ? "ios" : "android");
+  if (updateUrl) await Linking.openURL(updateUrl).catch(() => undefined);
 }
 
 let prompting = false;
