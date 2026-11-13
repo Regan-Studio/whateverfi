@@ -17,7 +17,7 @@ concurrency:
 jobs:
   deploy:
     name: Deploy preview
-    if: (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'pull_request') && github.repository == 'Regan-Studio/whateverfi' && secrets.FLY_PREVIEW_TOKEN != ''
+    if: (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'pull_request') && github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:

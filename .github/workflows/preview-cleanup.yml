@@ -18,7 +18,7 @@ concurrency:
 jobs:
   cleanup:
     name: Delete previews
-    if: github.repository == 'Regan-Studio/whateverfi' && secrets.FLY_PREVIEW_TOKEN != ''
+    if: github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:

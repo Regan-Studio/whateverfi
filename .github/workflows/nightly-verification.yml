@@ -15,7 +15,7 @@ concurrency:
 jobs:
   visual-web:
     name: Daily web screenshots
-    if: github.repository == 'Regan-Studio/whateverfi' && secrets.S3_ACCESS_KEY_ID != ''
+    if: github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     uses: ./.github/workflows/playwright.yml
     with:
       publish_report: true

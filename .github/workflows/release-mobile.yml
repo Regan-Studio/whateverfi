@@ -26,7 +26,7 @@ concurrency:
 jobs:
   ios:
     name: Build iOS and submit it for App Store review
-    if: github.ref == 'refs/heads/main' && github.repository == 'Regan-Studio/whateverfi' && secrets.ASC_PRIVATE_KEY != ''
+    if: github.ref == 'refs/heads/main' && github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 180
     steps:

@@ -1,12 +1,13 @@
 #!/usr/bin/env node
+import { spawnSync } from "node:child_process";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+
 // Idempotently add job-level skip conditions to upstream workflows that need
 // secrets or infrastructure Regan-Studio/whateverfi does not have. Weekly
 // sync re-runs this after merging elie222/rakazo so the Actions tab stays
 // green instead of failing on missing tokens.
 // Usage: node guard-fork-workflows.mjs <repo-root>
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
-import { spawnSync } from "node:child_process";
 
 const root = process.argv[2];
 if (!root || !existsSync(join(root, ".github/workflows"))) {
@@ -103,8 +104,12 @@ const guards = [
   },
 ];
 
-function guardExpr(secret) {
-  return `github.repository == '${REPO}' && secrets.${secret} != ''`;
+// secrets.* is not allowed in job-level `if` (GitHub reports "Invalid workflow
+// file" and a 0-second failed run named after the workflow path). A repository
+// variable is the supported opt-in: unset means skip (green), and Mark can set
+// WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION=true after adding the matching secrets.
+function guardExpr(_secret) {
+  return `github.repository == '${REPO}' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'`;
 }
 
 function andIf(existing, guard) {
@@ -240,9 +245,11 @@ for (const g of guards) {
       continue;
     }
     changed++;
-    console.log(`guard: ${g.file} job ${g.job} <- secrets.${g.secret}  (${g.why})`);
+    console.log(
+      `guard: ${g.file} job ${g.job} <- vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION  (${g.why}; requires secrets.${g.secret})`,
+    );
   } else {
-    console.log(`guard: ${g.file} job ${g.job} already has secrets.${g.secret}`);
+    console.log(`guard: ${g.file} job ${g.job} already has the vars opt-in`);
   }
 }
 

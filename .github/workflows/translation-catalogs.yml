@@ -28,7 +28,7 @@ jobs:
   extract:
     name: Extract catalogs
     # A manual run from another branch would base the sync PR on unmerged work.
-    if: github.ref == 'refs/heads/main' && github.repository == 'Regan-Studio/whateverfi' && secrets.GH_DEPENDENCY_UPDATES_PAT != ''
+    if: github.ref == 'refs/heads/main' && github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -60,7 +60,7 @@ jobs:
 
   publish:
     name: Update catalog PR
-    if: github.repository == 'Regan-Studio/whateverfi' && secrets.GH_DEPENDENCY_UPDATES_PAT != ''
+    if: github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     needs: extract
     runs-on: ubuntu-latest
     timeout-minutes: 10

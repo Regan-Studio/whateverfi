@@ -16,7 +16,7 @@ concurrency:
 jobs:
   release:
     name: Build and publish the Android APK
-    if: github.ref == 'refs/heads/main' && github.repository == 'Regan-Studio/whateverfi' && secrets.EXPO_TOKEN != ''
+    if: github.ref == 'refs/heads/main' && github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     permissions:

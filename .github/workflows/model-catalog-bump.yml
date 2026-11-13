@@ -20,7 +20,7 @@ concurrency:
 jobs:
   update:
     name: Update pi packages and verify
-    if: github.repository == 'Regan-Studio/whateverfi' && secrets.GH_DEPENDENCY_UPDATES_PAT != ''
+    if: github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -85,7 +85,7 @@ jobs:
   publish:
     name: Open bump PR
     needs: update
-    if: needs.update.outputs.changed == 'true' && github.repository == 'Regan-Studio/whateverfi' && secrets.GH_DEPENDENCY_UPDATES_PAT != ''
+    if: needs.update.outputs.changed == 'true' && github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
