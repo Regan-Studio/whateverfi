@@ -1,7 +1,14 @@
 import type { IncomingMessage, ServerResponse } from "node:http";
 import path from "node:path";
 import { describe, expect, it, vi } from "vitest";
-import { missingAssetMiddleware } from "./missing-asset";
+import {
+  IMMUTABLE_ASSET_CACHE_CONTROL,
+  isPublicHashedAsset,
+  missingAssetMiddleware,
+  pinHashedAssetCache,
+  REVALIDATE_ASSET_CACHE_CONTROL,
+  staticAssetCacheControl,
+} from "./missing-asset";
 
 const assetsDir = path.resolve("/srv/dist/assets");
 const archiveDir = path.resolve("/srv/archive/assets");
@@ -53,5 +60,55 @@ describe("missing asset middleware", () => {
     expect(request("/assets/..%2Fassets%2Findex-new.js").next).toHaveBeenCalled();
     expect(request("/assets/..%2F..%2Fetc%2Fpasswd").res.statusCode).toBe(404);
     expect(request("/assets/%E0%A4%A").res.statusCode).toBe(404);
+  });
+});
+
+describe("static asset cache control", () => {
+  it("marks hashed Vite chunks under /assets/ immutable", () => {
+    expect(isPublicHashedAsset("/assets/index-gNVebcYW.js")).toBe(true);
+    expect(isPublicHashedAsset("/assets/index-4d1JMFIt.css?v=1")).toBe(true);
+    expect(staticAssetCacheControl("/assets/app-1.js")).toBe(IMMUTABLE_ASSET_CACHE_CONTROL);
+  });
+
+  it("revalidates HTML, unhashed files, and paths outside /assets/", () => {
+    for (const path of [
+      "/",
+      "/index.html",
+      "/theme.js",
+      "/site.webmanifest",
+      "/login",
+      "/assets",
+      "/assets/",
+      "/assets/../index.html",
+    ]) {
+      expect(isPublicHashedAsset(path)).toBe(false);
+      expect(staticAssetCacheControl(path)).toBe(REVALIDATE_ASSET_CACHE_CONTROL);
+    }
+  });
+
+  it("overrides a later Cache-Control on hashed assets only", () => {
+    const hashed = {
+      headers: {} as Record<string, unknown>,
+      setHeader(name: string, value: unknown) {
+        this.headers[name] = value;
+        return this;
+      },
+    };
+    pinHashedAssetCache("/assets/app-1.js", hashed as unknown as ServerResponse);
+    hashed.setHeader("cache-control", "no-cache");
+    hashed.setHeader("content-type", "text/javascript");
+    expect(hashed.headers["cache-control"]).toBe(IMMUTABLE_ASSET_CACHE_CONTROL);
+    expect(hashed.headers["content-type"]).toBe("text/javascript");
+
+    const page = {
+      headers: {} as Record<string, unknown>,
+      setHeader(name: string, value: unknown) {
+        this.headers[name] = value;
+        return this;
+      },
+    };
+    pinHashedAssetCache("/theme.js", page as unknown as ServerResponse);
+    page.setHeader("cache-control", "no-cache");
+    expect(page.headers["cache-control"]).toBe("no-cache");
   });
 });
