@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && pagefind --site dist && node ../../overlays/whateverfi/scripts/postbuild.mjs .",
     "preview": "astro preview",
     "check": "astro check",
     "e2e": "playwright test"

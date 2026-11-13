@@ -163,6 +163,20 @@ if (existsSync(filesDir)) {
   cpSync(filesDir, root, { recursive: true });
 }
 
+// 4. Rebrand / restore marketing images (live kit + OG cards; generate any new ones).
+const rebrand = join(overlayRoot, "scripts/rebrand-assets.py");
+if (existsSync(rebrand)) {
+  const py = spawnSync("python3", [rebrand, root, "WhatEverFi"], {
+    cwd: root,
+    encoding: "utf8",
+  });
+  if (py.stdout) process.stdout.write(py.stdout);
+  if (py.stderr) process.stderr.write(py.stderr);
+  if (py.status !== 0) {
+    failures.push(`rebrand-assets.py exited ${py.status ?? 1}`);
+  }
+}
+
 // Re-format files the overlay touched so long URL/email rewrites do not fail `pnpm lint`.
 const biome = join(root, "node_modules/.bin/biome");
 if (existsSync(biome) && changedRels.length) {

@@ -28,20 +28,12 @@ const formatDate = new Intl.DateTimeFormat(LOCALE_HREFLANG[locale], {
     <span class="repo-card__name">Regan-Studio/whateverfi</span>
     <span class="repo-card__meta">★ {starsLabel}</span>
   </a>
-  <ol class="repo-card__changes">
-    {
-      changes.map((change) => (
-        <li>
-          <a href={change.url} target="_blank" rel="noopener" data-attr="repo-card-change">
-            <span class="repo-card__dot" aria-hidden="true" />
-            <span class="repo-card__title">{change.title}</span>
-            {change.pr && <span class="repo-card__pr">#{change.pr}</span>}
-            <time datetime={change.date}>{formatDate.format(new Date(change.date))}</time>
-          </a>
-        </li>
-      ))
-    }
-  </ol>
+  <p class="repo-card__note" data-pending-main-changes={changes.length}>
+    Source is{" "}
+    <a href={GITHUB_URL} target="_blank" rel="noopener">Regan-Studio/whateverfi</a>.
+    The public <code>main</code> branch still has the previous app until the product
+    source review PR is merged, so recent commits are not listed here yet.
+  </p>
 </div>
 
 <style>
@@ -58,6 +50,20 @@ const formatDate = new Intl.DateTimeFormat(LOCALE_HREFLANG[locale], {
   .repo-card a {
     color: inherit;
   }
+
+
+  .repo-card__note {
+    margin: 0;
+    padding: 12px 22px 4px;
+    color: var(--panel-muted);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .repo-card__note a {
+    font-weight: 600;
+  }
+
 
   .repo-card__head {
     display: flex;

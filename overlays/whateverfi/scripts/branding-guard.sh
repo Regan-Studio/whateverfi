@@ -64,6 +64,31 @@ elif [[ "$grep_code" -gt 1 ]]; then
 fi
 rm -f "$tmp"
 
+# Built marketing artifacts (run after `pnpm build`).
+if [[ ! -d apps/www/dist ]]; then
+  echo "MISSING apps/www/dist (run pnpm build before branding-guard)" >&2
+  missing=1
+else
+  if [[ ! -f apps/www/dist/_redirects ]]; then
+    echo "MISSING apps/www/dist/_redirects" >&2
+    missing=1
+  elif ! grep -qF -- '/api/download https://app.whateverfi.com/ 302' apps/www/dist/_redirects; then
+    echo "MISSING /api/download -> app.whateverfi.com rule in apps/www/dist/_redirects" >&2
+    missing=1
+  fi
+  if [[ ! -f apps/www/dist/build-info.json ]]; then
+    echo "MISSING apps/www/dist/build-info.json" >&2
+    missing=1
+  elif ! grep -qF -- 'upstreamSha' apps/www/dist/build-info.json; then
+    echo "MISSING upstreamSha in apps/www/dist/build-info.json" >&2
+    missing=1
+  fi
+fi
+
+if ! python3 overlays/whateverfi/scripts/check-branded-images.py "$ROOT"; then
+  missing=1
+fi
+
 if [[ "$missing" -ne 0 ]]; then exit 6; fi
 if [[ "$forbidden" -ne 0 ]]; then exit 7; fi
 echo "branding-guard: OK"

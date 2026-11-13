@@ -125,6 +125,12 @@ jobs:
           # Full imported upstream history is not scanned here: it currently reports
           # pre-existing gitleaks hits that this overlay did not introduce.
 
+      - name: Build marketing site
+        if: steps.target.outputs.uptodate != 'true' && steps.build.outputs.code == '0'
+        run: |
+          corepack enable || true
+          pnpm build
+
       - name: Branding guard
         if: steps.target.outputs.uptodate != 'true' && steps.build.outputs.code == '0'
         run: bash overlays/whateverfi/scripts/branding-guard.sh .
