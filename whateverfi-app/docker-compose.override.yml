@@ -1,0 +1,24 @@
+# Layered automatically by upstream install-images.sh after docker-compose.images.yml.
+# Adds the WhatEverFi theme and a Cloudflare Tunnel connector for app.whateverfi.com.
+services:
+  web:
+    volumes:
+      - ./theme:/theme:ro
+
+  cloudflared:
+    image: cloudflare/cloudflared:2026.11.0
+    restart: unless-stopped
+    command: ["tunnel", "--no-autoupdate", "run"]
+    environment:
+      # Remotely-managed tunnel; ingress (app.whateverfi.com -> http://web:5173) lives in Cloudflare.
+      # Written by scripts/cloudflare-tunnel.sh; scripts/install.sh refuses to start without it.
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN:-}
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    networks:
+      - app
+    depends_on:
+      web:
+        condition: service_started

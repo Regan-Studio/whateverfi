@@ -1,0 +1,5 @@
+{
+  "light": { "background": "#FAF7F2", "primary": "#242424" },
+  "dark": { "background": "#1A1A1A", "sidebar": "#141414", "primary": "#FAF7F2" },
+  "radius": "8px"
+}
