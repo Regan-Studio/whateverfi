@@ -16,7 +16,7 @@ concurrency:
 jobs:
   release:
     name: Build Android and submit to Google Play
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.repository == 'Regan-Studio/whateverfi' && secrets.EXPO_TOKEN != ''
     runs-on: ubuntu-24.04
     timeout-minutes: 180
     steps:
