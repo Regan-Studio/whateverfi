@@ -2,7 +2,9 @@
 
 ## Reporting vulnerabilities
 
-Email **security@whateverfi.com** only. Do not open public GitHub issues for security bugs.
+Please **do not** open a public GitHub issue for a security bug, and do not email `security@whateverfi.com` yet: `whateverfi.com` has no MX records, so mail to that address will not be delivered.
+
+Report vulnerabilities privately with [GitHub private vulnerability reporting](https://github.com/Regan-Studio/whateverfi/security/advisories/new) on this repository. If that form is not yet enabled, contact a repository owner by a private channel and ask them to enable it (see the steps in the accompanying settings proposal).
 
 Please include:
 
@@ -14,8 +16,7 @@ We will acknowledge your report and work on a fix. Please do not file a public i
 
 ## Other contact
 
-- General support: **support@whateverfi.com**
-- Maintainer: **elie@whateverfi.com**
+Product and self-hosting questions can go through GitHub issues using the templates in this repository, or through [whateverfi.com](https://whateverfi.com). Do not send sensitive reports to public issues.
 
 ## Scope
 

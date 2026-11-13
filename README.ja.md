@@ -3,18 +3,13 @@
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/Regan-Studio/whateverfi?labelColor=black&style=for-the-badge&color=2563EB)](https://github.com/Regan-Studio/whateverfi/stargazers)
-[![Discord コミュニティに参加](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?labelColor=black&style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/RWwKa2Sn7h)
-[![App Store で iPhone 版をダウンロード](https://img.shields.io/badge/App%20Store-Download%20for%20iPhone-black?labelColor=black&style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/rakazo/id6801531099)
-[![Google Play で Android 版をダウンロード](https://img.shields.io/badge/Google%20Play-Get%20the%20app-black?labelColor=black&style=for-the-badge&logo=googleplay&logoColor=white)](https://app.whateverfi.com/)
-
 ![WhatEverFi：本当に自分のものにできる AI チームメイト](./docs/readme-hero.png)
 
 WhatEverFi は、Grok Bot のオープンソースかつセルフホスト可能な代替ツールです。
 
 メモリ、ルーティン、アプリ、コンピューターを持つ常駐型の AI チームメイト。自分のマシンで、自分のモデルを使って動かせます。
 
-[Web](https://app.whateverfi.com)、[デスクトップ](https://whateverfi.com/download/)、[iPhone](https://apps.apple.com/app/rakazo/id6801531099)、
-[Android](https://app.whateverfi.com/) で利用できます。
+[Web](https://app.whateverfi.com)、[デスクトップ](https://whateverfi.com/download/) で利用できます。iPhone / Android 向けの WhatEverFi アプリは準備中です。
 
 Meta Muse、OpenAI Dots、Instinct、OpenClaw、Hermes Agent、Claude Duet の代替ツールでもあります。
 
@@ -104,7 +99,7 @@ Web、デスクトップ、iPhone、iPad、Android が同じサーバーにつ�
 Docker Engine、Compose プラグイン、curl、OpenSSL が必要です。リポジトリのクローンや Node のインストールは不要です。
 
 ```bash
-mkdir -p rakazo && cd rakazo &&
+mkdir -p whateverfi && cd whateverfi &&
 curl -fsSLO https://raw.githubusercontent.com/regan-studio/whateverfi/main/infra/compose/install-images.sh &&
 bash install-images.sh
 ```
@@ -150,7 +145,7 @@ pnpm 12、Docker が必要です。Node.js 25.x はサポートしていませ�
 
 ```bash
 git clone https://github.com/Regan-Studio/whateverfi.git
-cd rakazo
+cd whateverfi
 cp .env.example .env
 ```
 
@@ -330,7 +325,7 @@ pnpm test:e2e
 
 ## 謝辞
 
-- [Regan.Studio](https://getinboxzero.com/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
+- [Regan.Studio](https://regan.studio)
 - [PromptLayer](https://promptlayer.com/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
 - [ConnectorMap](https://connectormap.luinbytes.dev/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
 - [CodeRabbit](https://www.coderabbit.ai/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
@@ -356,5 +351,3 @@ pnpm test:e2e
 セキュリティ上の脆弱性は、公開の Issue を作成せず、[SECURITY.md](./SECURITY.md) の手順に従って報告してください。
 
 WhatEverFi は [Apache License 2.0](./LICENSE) のもとでライセンスされています。
-
-質問やアイデアは [WhatEverFi Discord コミュニティ](https://discord.gg/RWwKa2Sn7h)でお気軽にどうぞ。

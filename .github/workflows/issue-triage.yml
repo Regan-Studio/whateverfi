@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   triage:
-    if: github.event_name == 'workflow_dispatch' || github.event.issue.user.type != 'Bot'
+    if: (github.event_name == 'workflow_dispatch' || github.event.issue.user.type != 'Bot') && github.repository == 'Regan-Studio/whateverfi' && vars.WHATEVERFI_ENABLE_UPSTREAM_AUTOMATION == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:

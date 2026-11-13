@@ -163,6 +163,17 @@ if (existsSync(filesDir)) {
   cpSync(filesDir, root, { recursive: true });
 }
 
+// 3b. Guard workflows that need secrets this fork does not have.
+const guard = join(overlayRoot, "scripts/guard-fork-workflows.mjs");
+if (existsSync(guard)) {
+  const g = spawnSync(process.execPath, [guard, root], { cwd: root, encoding: "utf8" });
+  if (g.stdout) process.stdout.write(g.stdout);
+  if (g.stderr) process.stderr.write(g.stderr);
+  if (g.status !== 0) {
+    failures.push(`guard-fork-workflows.mjs exited ${g.status ?? 1}`);
+  }
+}
+
 // 4. Rebrand / restore marketing images (live kit + OG cards; generate any new ones).
 const rebrand = join(overlayRoot, "scripts/rebrand-assets.py");
 if (existsSync(rebrand)) {

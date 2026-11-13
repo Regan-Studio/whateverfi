@@ -1,11 +1,11 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
   - name: Security vulnerabilities
-    url: https://github.com/Regan-Studio/whateverfi/blob/main/SECURITY.md
-    about: Report security issues to security@whateverfi.com — do not open a public issue.
-  - name: User support
-    url: mailto:support@whateverfi.com
-    about: Questions about using WhatEverFi or self-hosting help.
-  - name: Maintainer
-    url: mailto:elie@whateverfi.com
-    about: Reach the maintainer directly.
+    url: https://github.com/Regan-Studio/whateverfi/security/advisories/new
+    about: Report security issues privately. Do not open a public issue. See SECURITY.md.
+  - name: WhatEverFi website
+    url: https://whateverfi.com
+    about: Product overview, comparisons, and documentation on whateverfi.com.
+  - name: Self-hosting guide
+    url: https://github.com/Regan-Studio/whateverfi/blob/main/docs/self-host.md
+    about: Setup, configuration, and production hardening.

@@ -13,8 +13,9 @@ on top of the imported `elie222/rakazo` engine.
 - `scripts/branding-guard.sh` — CI check (source branding, no elie222 install links,
   built `_redirects` / `build-info.json`, no Rakazo text in marketing images)
 - `scripts/check-branded-images.py` — OCR + golden-hash image check used by the guard
-- `files/` — verbatim copies (download page, RepoCard note, live WhatEverFi kit and
-  social cards)
+- `files/` — verbatim copies (README, SECURITY, CONTRIBUTING, CODE_OF_CONDUCT,
+  issue/PR templates, docs/readme-hero.png, download page, RepoCard note, live
+  WhatEverFi kit and social cards)
 - `GHCR-UNPUBLISHED.md` — `ghcr.io/regan-studio/whateverfi` images are not live yet
 
 Do not restore the Abacus-generated `NOTICE.txt`. Attribution is the Apache-2.0

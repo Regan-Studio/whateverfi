@@ -132,6 +132,18 @@ def main() -> int:
                     f"OCR says rakazo in {label}/{p.relative_to(base)}: {text.strip()[:120]!r}"
                 )
 
+    # GitHub README hero must stay WhatEverFi-branded (it used to be a Rakazo screenshot).
+    hero = root / "docs/readme-hero.png"
+    if not hero.is_file():
+        failures.append("missing docs/readme-hero.png")
+    elif tess:
+        text = ocr_text(hero)
+        if RAKAZO_RE.search(text):
+            failures.append(f"OCR says rakazo in docs/readme-hero.png: {text.strip()[:120]!r}")
+        elif "whateverfi" not in text.lower() and "what ever fi" not in text.lower():
+            # OCR sometimes splits the mark; require a recognizable product name.
+            failures.append(f"OCR did not read WhatEverFi in docs/readme-hero.png: {text.strip()[:120]!r}")
+
     if failures:
         print("check-branded-images: FAILED", file=sys.stderr)
         for f in failures:

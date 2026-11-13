@@ -7,7 +7,7 @@ import {
 
 /**
  * The GitHub repository whose CI fills the image namespace. `publish-server-image.yml` pushes to
- * `ghcr.io/${{ github.repository }}`, so the namespace always belongs to whichever repository ran
+ * `ghcr.io/regan-studio/whateverfi`, so the namespace always belongs to whichever repository ran
  * the workflow. Naming a different owner here points the deployment at packages nobody publishes.
  *
  * `OFFICIAL_REPO_URL` names the same repository, so the source commit selected from a release is

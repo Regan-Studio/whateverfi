@@ -22,7 +22,6 @@
       "dist",
       ".astro",
       ".vercel",
-      "e2e",
       "overlays",
       ".git",
       "generated",
@@ -48,7 +47,8 @@
       ".yaml",
       ".sh",
       ".example",
-      ".po"
+      ".po",
+      ".swift"
     ],
     "rootFiles": [
       "README.md",
@@ -170,6 +170,14 @@
       "replace": "ghcr.io/regan-studio/whateverfi",
       "required": false,
       "$comment": "github-short uses the GitHub owner spelling (Regan-Studio). GHCR image names must be lowercase. Also pin PUBLISHED_IMAGE_REPO to lowercase."
+    },
+    {
+      "id": "ghcr-github-repository-expr",
+      "group": "links",
+      "find": "ghcr\\.io/\\$\\{\\{\\s*github\\.repository\\s*\\}\\}",
+      "replace": "ghcr.io/regan-studio/whateverfi",
+      "required": true,
+      "$comment": "github.repository expands to Regan-Studio/whateverfi (mixed case). GHCR and docker buildx require lowercase; docker/build-push-action passes the un-lowercased name= and fails. Weekly sync will keep rewriting the upstream expression."
     },
     {
       "id": "published-image-repo",
@@ -453,6 +461,22 @@
       "required": true,
       "group": "links",
       "$comment": "Repo-wide product name, including tests. Leaves 'Based on Rakazo' attribution, the Rakazo.icon asset filename, and hostnames like App.Rakazo.com unchanged."
+    },
+    {
+      "id": "brand-word-before-period",
+      "find": "(?<!Based on )(?<!based on )(?<![\\w.])Rakazo(?=\\.(?![iI]con))",
+      "replace": "WhatEverFi",
+      "required": false,
+      "group": "links",
+      "$comment": "brand-word's lookahead treats '.' as a stopper so it can keep Rakazo.icon. This rule still rewrites sentence-final 'Rakazo.' (and 'in Rakazo.') while leaving Rakazo.icon and App.Rakazo.com alone."
+    },
+    {
+      "id": "maestro-name-rakazo",
+      "find": "name: Rakazo(?=\\.)",
+      "replace": "name: WhatEverFi",
+      "required": false,
+      "group": "links",
+      "$comment": "Maestro flow used a regex '.*name: Rakazo.*' which brand-word also skips because of the trailing dot."
     },
     {
       "id": "brand-upper",

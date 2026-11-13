@@ -1,7 +1,7 @@
 name: whateverfi-branding
 
-# Local draft, not pushed. Runs branding-guard and gitleaks on pull requests
-# and manual dispatch. Never deploys, never merges, never publishes images.
+# Runs branding-guard and gitleaks on pull requests and manual dispatch.
+# Never deploys, never merges, never publishes images.
 on:
   pull_request:
   workflow_dispatch:
@@ -17,16 +17,20 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Install tesseract
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr
       - name: Branding guard
+        env:
+          BRANDING_GUARD_ALLOW_UNBUILT: "1"
         run: bash overlays/whateverfi/scripts/branding-guard.sh .
       - name: Gitleaks
         run: |
           set -euo pipefail
           ver=8.30.1
           curl -fsSL -o /tmp/gitleaks_checksums.txt "https://github.com/gitleaks/gitleaks/releases/download/v${ver}/gitleaks_${ver}_checksums.txt"
-          curl -fsSL -o /tmp/gitleaks_linux_x64.tar.gz "https://github.com/gitleaks/gitleaks/releases/download/v${ver}/gitleaks_${ver}_linux_x64.tar.gz"
+          curl -fsSL -o "/tmp/gitleaks_${ver}_linux_x64.tar.gz" "https://github.com/gitleaks/gitleaks/releases/download/v${ver}/gitleaks_${ver}_linux_x64.tar.gz"
           awk "/gitleaks_${ver}_linux_x64.tar.gz\$/" /tmp/gitleaks_checksums.txt | (cd /tmp && sha256sum -c -)
-          tar -xzf /tmp/gitleaks_linux_x64.tar.gz -C /tmp gitleaks
+          tar -xzf "/tmp/gitleaks_${ver}_linux_x64.tar.gz" -C /tmp gitleaks
           base=$(git merge-base HEAD refs/heads/upstream-mirror 2>/dev/null || git merge-base HEAD origin/main || true)
           if [[ -n "$base" && "$base" != "$(git rev-parse HEAD)" ]]; then
             /tmp/gitleaks detect --source . --no-banner --exit-code 1 --log-opts="${base}..HEAD"

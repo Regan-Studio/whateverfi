@@ -7897,8 +7897,8 @@ msgid "WhatEverFi credits"
 msgstr "Créditos do WhatEverFi"
 
 #: apps/web/src/pages/memory-providers/HonchoSettingsForm.tsx
-msgid "rakazo-shared and IDs starting with bot- are reserved for Rakazo."
-msgstr "rakazo-shared e IDs que começam com bot- são reservados para o Rakazo."
+msgid "rakazo-shared and IDs starting with bot- are reserved for WhatEverFi."
+msgstr "rakazo-shared e IDs que começam com bot- são reservados para o WhatEverFi."
 
 #: apps/mobile/components/thread/message-row.tsx
 #: apps/web/src/pages/shell/message-hover-actions.tsx
@@ -7951,7 +7951,7 @@ msgstr "Recuperar dos bancos"
 
 #: apps/web/src/pages/memory-providers/HonchoSettingsForm.tsx
 msgid "Recall from this peer; save to WhatEverFi’s own peers."
-msgstr "Consultar este peer; salvar nos próprios peers do Rakazo."
+msgstr "Consultar este peer; salvar nos próprios peers do WhatEverFi."
 
 #: apps/web/src/pages/memory-providers/SerenitySettingsForm.tsx
 msgid "Recall only"
@@ -10290,7 +10290,7 @@ msgstr "O resultado da ferramenta deste servidor não cabe no modelo. Desative M
 #: apps/mobile/app/(settings)/model-connection.tsx
 #: apps/web/src/pages/model-settings/connection-controls.tsx
 msgid "This subscription sign-in is not available in WhatEverFi yet. Use a deployment credential or choose another provider."
-msgstr "Este login de assinatura ainda não está disponível no Rakazo. Use uma credencial de implantação ou escolha outro provedor."
+msgstr "Este login de assinatura ainda não está disponível no WhatEverFi. Use uma credencial de implantação ou escolha outro provedor."
 
 #: apps/mobile/app/(settings)/bot-template.tsx
 #: apps/web/src/components/bot-templates/bot-templates-dialog.tsx

@@ -7897,8 +7897,8 @@ msgid "WhatEverFi credits"
 msgstr "קרדיטים של WhatEverFi"
 
 #: apps/web/src/pages/memory-providers/HonchoSettingsForm.tsx
-msgid "rakazo-shared and IDs starting with bot- are reserved for Rakazo."
-msgstr "rakazo-shared ומזהים שמתחילים ב-bot- שמורים ל-Rakazo."
+msgid "rakazo-shared and IDs starting with bot- are reserved for WhatEverFi."
+msgstr "rakazo-shared ומזהים שמתחילים ב-bot- שמורים ל-WhatEverFi."
 
 #: apps/mobile/components/thread/message-row.tsx
 #: apps/web/src/pages/shell/message-hover-actions.tsx
@@ -7951,7 +7951,7 @@ msgstr "שליפה ממאגרים"
 
 #: apps/web/src/pages/memory-providers/HonchoSettingsForm.tsx
 msgid "Recall from this peer; save to WhatEverFi’s own peers."
-msgstr "שליפה מהעמית הזה; שמירה בעמיתים של Rakazo."
+msgstr "שליפה מהעמית הזה; שמירה בעמיתים של WhatEverFi."
 
 #: apps/web/src/pages/memory-providers/SerenitySettingsForm.tsx
 msgid "Recall only"
@@ -10290,7 +10290,7 @@ msgstr "תוצאת הכלי מהשרת הזה לא נכנסת למודל. יש �
 #: apps/mobile/app/(settings)/model-connection.tsx
 #: apps/web/src/pages/model-settings/connection-controls.tsx
 msgid "This subscription sign-in is not available in WhatEverFi yet. Use a deployment credential or choose another provider."
-msgstr "התחברות עם המנוי הזה עדיין לא זמינה ב-Rakazo. אפשר להשתמש בפרטי גישה של ההתקנה או לבחור ספק אחר."
+msgstr "התחברות עם המנוי הזה עדיין לא זמינה ב-WhatEverFi. אפשר להשתמש בפרטי גישה של ההתקנה או לבחור ספק אחר."
 
 #: apps/mobile/app/(settings)/bot-template.tsx
 #: apps/web/src/components/bot-templates/bot-templates-dialog.tsx

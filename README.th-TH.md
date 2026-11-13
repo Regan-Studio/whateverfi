@@ -1,10 +1,6 @@
 # WhatEverFi
 
 [![GitHub stars](https://img.shields.io/github/stars/Regan-Studio/whateverfi?labelColor=black&style=for-the-badge&color=2563EB)](https://github.com/Regan-Studio/whateverfi/stargazers)
-[![Discord](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?labelColor=black&style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/RWwKa2Sn7h)
-[![Download on the App Store](https://img.shields.io/badge/App%20Store-Download%20for%20iPhone-black?labelColor=black&style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/rakazo/id6801531099)
-[![Get Android on Google Play](https://img.shields.io/badge/Google%20Play-Get%20the%20app-black?labelColor=black&style=for-the-badge&logo=googleplay&logoColor=white)](https://app.whateverfi.com/)
-
 ![WhatEverFi — AI teammates you actually own](./docs/readme-hero.png)
 
 WhatEverFi เป็น AI agent โอเพนซอร์สสำหรับ bot ที่ทำงานต่อเนื่องและผู้ช่วยที่ self-host บนเครื่องคุณ มีบนเว็บ เดสก์ท็อป Electron และมือถือ นำโมเดลและ computer provider มาเองหรือรันทั้งสแต็ก local ได้
@@ -16,7 +12,7 @@ WhatEverFi เป็น AI agent โอเพนซอร์สสำหรั�
 ต้องมี Docker Engine, Compose plugin, curl และ OpenSSL ไม่ต้อง clone หรือติดตั้ง Node
 
 ```bash
-mkdir -p rakazo && cd rakazo &&
+mkdir -p whateverfi && cd whateverfi &&
 curl -fsSLO https://raw.githubusercontent.com/regan-studio/whateverfi/main/infra/compose/install-images.sh &&
 bash install-images.sh
 ```
@@ -61,5 +57,3 @@ bash install-images.sh
 - [การอนุมัติ](./docs/th-TH/approvals.md)
 - [คอมพิวเตอร์ของ bot](./docs/th-TH/computer.md)
 - [ความจำ](./docs/th-TH/memory.md)
-
-คำถามและไอเดียพูดคุยได้ใน [ชุมชน Discord ของ WhatEverFi](https://discord.gg/RWwKa2Sn7h)
