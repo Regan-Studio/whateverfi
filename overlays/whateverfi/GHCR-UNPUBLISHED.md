@@ -8,11 +8,11 @@ intended source of truth.
 `758d47c5a1f940f0dc9f6ed4a64beb1a4dc32f75`), GitHub Actions run 43411431054
 pushed multi-arch (linux/amd64 and linux/arm64) indexes:
 
-| Image | Tags | Index digest |
-| --- | --- | --- |
-| `ghcr.io/regan-studio/whateverfi/app` | `edge`, `sha-758d47c5a1f940f0dc9f6ed4a64beb1a4dc32f75` | `sha256:d319b6b94f699b3d67f62956fd678c29ec9ebfed7a40b5231c3c5a2cb6e3a337` |
-| `ghcr.io/regan-studio/whateverfi/updater` | same tags | `sha256:2810ac2e889fc19307a9ad3648d6fb5bbfe5fceaf29c15c4105bd0f7c683ee4e` |
-| `ghcr.io/regan-studio/whateverfi/computer` | same tags | `sha256:9604f8df6e1c047b1a347af648c013bde0ddb7108189f5f8a644addc42574dad` |
+| Image                                      | Tags                                                   | Index digest                                                              |
+| ------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------------------------- |
+| `ghcr.io/regan-studio/whateverfi/app`      | `edge`, `sha-758d47c5a1f940f0dc9f6ed4a64beb1a4dc32f75` | `sha256:d319b6b94f699b3d67f62956fd678c29ec9ebfed7a40b5231c3c5a2cb6e3a337` |
+| `ghcr.io/regan-studio/whateverfi/updater`  | same tags                                              | `sha256:2810ac2e889fc19307a9ad3648d6fb5bbfe5fceaf29c15c4105bd0f7c683ee4e` |
+| `ghcr.io/regan-studio/whateverfi/computer` | same tags                                              | `sha256:9604f8df6e1c047b1a347af648c013bde0ddb7108189f5f8a644addc42574dad` |
 
 Later `main` builds will move the `edge` tag and add a new `sha-<commit>` tag.
 Pin `RAKAZO_IMAGE_TAG=sha-…` for a fixed build, or leave `edge` for the latest
