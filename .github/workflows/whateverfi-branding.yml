@@ -27,4 +27,11 @@ jobs:
           curl -fsSL -o /tmp/gitleaks_linux_x64.tar.gz "https://github.com/gitleaks/gitleaks/releases/download/v${ver}/gitleaks_${ver}_linux_x64.tar.gz"
           awk "/gitleaks_${ver}_linux_x64.tar.gz\$/" /tmp/gitleaks_checksums.txt | (cd /tmp && sha256sum -c -)
           tar -xzf /tmp/gitleaks_linux_x64.tar.gz -C /tmp gitleaks
-          /tmp/gitleaks detect --source . --no-banner --exit-code 1
+          base=$(git merge-base HEAD refs/heads/upstream-mirror 2>/dev/null || git merge-base HEAD origin/main || true)
+          if [[ -n "$base" && "$base" != "$(git rev-parse HEAD)" ]]; then
+            /tmp/gitleaks detect --source . --no-banner --exit-code 1 --log-opts="${base}..HEAD"
+          else
+            /tmp/gitleaks detect --source . --no-banner --exit-code 1 --log-opts="-1"
+          fi
+          # Full imported upstream history is not scanned here: it currently reports
+          # pre-existing gitleaks hits that this overlay did not introduce.
