@@ -65,9 +65,15 @@ fi
 rm -f "$tmp"
 
 # Built marketing artifacts (run after `pnpm build`).
+# The weekly sync builds first. The pull-request branding workflow may set
+# BRANDING_GUARD_ALLOW_UNBUILT=1 to skip dist-only checks.
 if [[ ! -d apps/www/dist ]]; then
-  echo "MISSING apps/www/dist (run pnpm build before branding-guard)" >&2
-  missing=1
+  if [[ "${BRANDING_GUARD_ALLOW_UNBUILT:-}" == "1" ]]; then
+    echo "branding-guard: skipping built-site checks (apps/www/dist missing, BRANDING_GUARD_ALLOW_UNBUILT=1)"
+  else
+    echo "MISSING apps/www/dist (run pnpm build before branding-guard)" >&2
+    missing=1
+  fi
 else
   if [[ ! -f apps/www/dist/_redirects ]]; then
     echo "MISSING apps/www/dist/_redirects" >&2
