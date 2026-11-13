@@ -17,6 +17,7 @@ on top of the imported `elie222/rakazo` engine.
   issue/PR templates, docs/readme-hero.png, download page, RepoCard note, live
   WhatEverFi kit and social cards)
 - `GHCR-UNPUBLISHED.md` — `ghcr.io/regan-studio/whateverfi` images are published from `main` (tag `edge`); packages may still be private
+- `INTERNAL-IDENTIFIERS.md` — `RAKAZO_*` env names, `@rakazo/*` packages, and other identifiers that must stay for sync and existing installs
 
 Do not restore the Abacus-generated `NOTICE.txt`. Attribution is the Apache-2.0
 LICENSE plus the footer / about line “Based on Rakazo (Apache-2.0)” linking

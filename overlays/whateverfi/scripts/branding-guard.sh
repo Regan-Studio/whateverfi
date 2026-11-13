@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Fails if WhatEverFi / Regan.Studio branding is missing, Rakazo copyright was
-# stripped from LICENSE, or user-facing clone/install/issue/GHCR links still
-# point at elie222/rakazo (except overlays, LICENSE, and documented exceptions).
+# stripped from LICENSE, the product tab title or home-screen name is still
+# Rakazo, or user-facing clone/install/issue/GHCR links still point at
+# elie222/rakazo (except overlays, LICENSE, and documented exceptions).
 # Usage: bash overlays/whateverfi/scripts/branding-guard.sh [repo-root]
 # Exit 0 OK | 6 missing branding / stripped copyright | 7 forbidden links
 set -euo pipefail
@@ -33,6 +34,47 @@ need "apps/www/src/pages/about.astro" "WhatEverFi"
 need "apps/www/src/pages/about.astro" "Regan.Studio"
 need "apps/www/src/pages/about.astro" "Based on Rakazo (Apache-2.0)"
 need "apps/www/src/components/Footer.astro" "Based on Rakazo"
+
+# Tab title and home-screen name people see in the web and desktop shells.
+need "apps/web/index.html" "<title>WhatEverFi</title>"
+need "apps/web/index.html" 'name="apple-mobile-web-app-title" content="WhatEverFi"'
+need "apps/desktop/src/setup.html" "<title>Set up WhatEverFi</title>"
+need "apps/web/src/pwa/plugin.ts" 'name: "WhatEverFi"'
+need "apps/web/src/pwa/plugin.ts" 'short_name: "WhatEverFi"'
+
+# Fail if the product name or tab title has slipped back to Rakazo.
+# "Based on Rakazo", LICENSE copyright, package scopes, and RAKAZO_* env names
+# are not matched by these patterns.
+forbid_product_title() {
+  local file="$1"
+  if [[ ! -f "$file" ]]; then
+    return 0
+  fi
+  if grep -qE '<title>Rakazo(</title>|[[:space:]·—-])' "$file" \
+    || grep -qE 'apple-mobile-web-app-title" content="Rakazo"' "$file" \
+    || grep -qE 'name="application-name" content="Rakazo"' "$file"; then
+    echo "FORBIDDEN: product title or home-screen name is still Rakazo in $file" >&2
+    forbidden=1
+  fi
+}
+forbid_product_title "apps/web/index.html"
+forbid_product_title "apps/desktop/src/setup.html"
+if [[ -f apps/web/dist/index.html ]]; then
+  forbid_product_title "apps/web/dist/index.html"
+  if ! grep -qF -- "<title>WhatEverFi</title>" apps/web/dist/index.html; then
+    echo "MISSING <title>WhatEverFi</title> in apps/web/dist/index.html (built shell still unbranded)" >&2
+    missing=1
+  fi
+fi
+if [[ -f apps/www/dist/index.html ]]; then
+  forbid_product_title "apps/www/dist/index.html"
+fi
+for f in apps/desktop/assets/es.lproj/InfoPlist.strings apps/desktop/assets/pl.lproj/InfoPlist.strings; do
+  if [[ -f "$f" ]] && grep -qF -- "Rakazo" "$f"; then
+    echo "FORBIDDEN: desktop permission prompt still says Rakazo in $f" >&2
+    forbidden=1
+  fi
+done
 
 # Clone/install/issue/GHCR links that should already have been retargeted.
 # Allowed to mention elie222/rakazo: LICENSE (not present), overlays (rules),
