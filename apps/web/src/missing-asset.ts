@@ -20,6 +20,37 @@ export const CONTENT_TYPES: Record<string, string> = {
   ".webmanifest": "application/manifest+json",
 };
 
+/** Hashed Vite chunks under `/assets/` never change; HTML and unhashed files revalidate. */
+export const IMMUTABLE_ASSET_CACHE_CONTROL = "public, max-age=31536000, immutable";
+export const REVALIDATE_ASSET_CACHE_CONTROL = "no-cache";
+
+export function isPublicHashedAsset(pathname: string): boolean {
+  const path = pathname.split("?", 1)[0] ?? "";
+  if (!path.startsWith("/assets/")) return false;
+  const name = path.slice("/assets/".length);
+  return name.length > 0 && !name.includes("/") && name !== "." && name !== "..";
+}
+
+export function staticAssetCacheControl(pathname: string): string {
+  return isPublicHashedAsset(pathname)
+    ? IMMUTABLE_ASSET_CACHE_CONTROL
+    : REVALIDATE_ASSET_CACHE_CONTROL;
+}
+
+/**
+ * Vite preview sets `Cache-Control: no-cache` and a weak size-and-time tag on every file, so a
+ * CDN revalidates hashed chunks on every load. Pin the header before Vite writes its own.
+ */
+export function pinHashedAssetCache(pathname: string, res: ServerResponse): void {
+  if (!isPublicHashedAsset(pathname)) return;
+  const setHeader = res.setHeader.bind(res);
+  res.setHeader = ((name, value) =>
+    setHeader(
+      name,
+      String(name).toLowerCase() === "cache-control" ? IMMUTABLE_ASSET_CACHE_CONTROL : value,
+    )) as typeof res.setHeader;
+}
+
 function inside(root: string, relative: string): string | null {
   try {
     const file = path.resolve(root, decodeURIComponent(relative));
@@ -63,7 +94,7 @@ export function missingAssetMiddleware(
         CONTENT_TYPES[path.extname(archived)] ?? "application/octet-stream",
       );
       // The name carries the content hash, so it never changes.
-      res.setHeader("cache-control", "public, max-age=31536000, immutable");
+      res.setHeader("cache-control", IMMUTABLE_ASSET_CACHE_CONTROL);
       if (req.method === "HEAD") {
         res.end();
         return;

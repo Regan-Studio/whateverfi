@@ -27,7 +27,7 @@ import { resolveScreenProxySecret } from "@rakazo/core/secrets-guard";
 import type { Logger } from "@rakazo/logging";
 import { ASSET_ARCHIVE_DIR, archiveAssets } from "./asset-archive.js";
 import { instanceThemeIndexMiddleware, instanceThemeMiddleware } from "./instance-theme.js";
-import { missingAssetMiddleware } from "./missing-asset.js";
+import { missingAssetMiddleware, pinHashedAssetCache } from "./missing-asset.js";
 import {
   collectNovncHtml,
   injectNovncStorageShim,
@@ -537,6 +537,7 @@ export function attachPreviewMiddleware(
   const { middlewares } = server;
   middlewares.use((req, res, next) => {
     const pathname = req.url?.split("?", 1)[0] ?? "/";
+    pinHashedAssetCache(pathname, res);
     if (pathname !== COMPUTER_SCREEN_RUNTIME_PATH) res.setHeader("x-frame-options", "SAMEORIGIN");
     const policy = contentSecurityPolicyFor(pathname, settings.appPolicy, wuyingScreenPolicy);
     if (policy) {

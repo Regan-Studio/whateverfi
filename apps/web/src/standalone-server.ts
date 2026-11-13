@@ -15,7 +15,7 @@ import { pathToFileURL } from "node:url";
 import { createServiceLogger } from "@rakazo/logging";
 import { forwardsToApi, hostAllowed } from "./api-proxy.js";
 import { appendForwardedFor } from "./forwarded-for.js";
-import { CONTENT_TYPES } from "./missing-asset.js";
+import { CONTENT_TYPES, staticAssetCacheControl } from "./missing-asset.js";
 import type { Middleware } from "./preview-middleware.js";
 import { attachPreviewMiddleware, webServerSettings } from "./preview-middleware.js";
 import { novncRequestPath } from "./screen-proxy.js";
@@ -44,14 +44,15 @@ function distFile(dist: string, url: string | undefined): { file: string; stats:
   return stats?.isFile() ? { file, stats } : null;
 }
 
-/** `vite preview`'s static files: revalidated on every load by a weak size-and-time tag. */
+/** Hashed `/assets/` chunks are immutable; HTML and unhashed files revalidate. */
 function staticFiles(dist: string): Middleware {
   return (req, res, next) => {
     const found = req.method === "GET" || req.method === "HEAD" ? distFile(dist, req.url) : null;
     if (!found) return next();
     const etag = `W/"${found.stats.size}-${found.stats.mtime.getTime()}"`;
+    const cacheControl = staticAssetCacheControl(req.url ?? "/");
     if (req.headers["if-none-match"] === etag) {
-      res.writeHead(304).end();
+      res.writeHead(304, { "cache-control": cacheControl, etag }).end();
       return;
     }
     res.writeHead(200, {
@@ -59,7 +60,7 @@ function staticFiles(dist: string): Middleware {
       "content-type": CONTENT_TYPES[path.extname(found.file)] ?? "application/octet-stream",
       "last-modified": found.stats.mtime.toUTCString(),
       etag,
-      "cache-control": "no-cache",
+      "cache-control": cacheControl,
     });
     if (req.method === "HEAD") res.end();
     else pipeline(createReadStream(found.file), res).catch(() => res.destroy());

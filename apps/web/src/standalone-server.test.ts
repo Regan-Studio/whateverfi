@@ -103,6 +103,9 @@ describe("standalone web server", () => {
 
     const script = await get(port, "/assets/app-1.js");
     expect(script.headers["content-type"]).toBe("text/javascript");
+    expect(script.headers["cache-control"]).toBe("public, max-age=31536000, immutable");
+    expect(page.headers["cache-control"]).toBe("no-cache");
+    expect((await get(port, "/build-id")).headers["cache-control"]).toBe("no-cache");
     expect((await get(port, "/assets/gone.js")).status).toBe(404);
     expect((await get(port, "/p/shared")).headers["x-robots-tag"]).toBe("noindex, nofollow");
     expect((await get(port, "/", { host: "evil.example" })).status).toBe(403);
