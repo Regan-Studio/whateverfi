@@ -28,7 +28,7 @@ Learn more at [whateverfi.com](https://whateverfi.com).
 **Operated by [Regan.Studio](https://regan.studio). Based on Rakazo (Apache-2.0).**
 The Apache-2.0 license and the line `Copyright 2026 Rakazo contributors` are kept in [`LICENSE`](./LICENSE). WhatEverFi and Regan.Studio branding lives in [`overlays/whateverfi/`](./overlays/whateverfi/).
 
-Container images at `ghcr.io/regan-studio/whateverfi` are not published yet and will 404 if pulled. Build and run from this repository until they are. See [`overlays/whateverfi/GHCR-UNPUBLISHED.md`](./overlays/whateverfi/GHCR-UNPUBLISHED.md).
+Container images at `ghcr.io/regan-studio/whateverfi` (`app`, `updater`, and `computer`, tag `edge`) are published from `main`. They are still **private** on GHCR, so a pull without a login will 401 until package visibility is set to Public. See [`overlays/whateverfi/GHCR-UNPUBLISHED.md`](./overlays/whateverfi/GHCR-UNPUBLISHED.md).
 
 ## Features
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# WARNING: ghcr.io/regan-studio/whateverfi images are not published yet.
-# This script's default image names will 404 until they are. Build from this
-# repo, or see overlays/whateverfi/GHCR-UNPUBLISHED.md.
+# Images ghcr.io/regan-studio/whateverfi/{app,updater,computer}:edge are published from main.
+# Packages may still be private on GHCR (a pull without a login returns 401) until
+# visibility is Public. See overlays/whateverfi/GHCR-UNPUBLISHED.md.
 
 set -Eeuo pipefail
 

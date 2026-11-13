@@ -145,7 +145,7 @@
       "find": "ghcr\\.io/elie222/rakazo",
       "replace": "ghcr.io/regan-studio/whateverfi",
       "required": true,
-      "$comment": "Images under this name are not published yet; install scripts will 404 until GHCR is set up. See overlays/whateverfi/GHCR-UNPUBLISHED.md.",
+      "$comment": "Images are published to ghcr.io/regan-studio/whateverfi from main (edge + sha tags). Packages may still be private. See overlays/whateverfi/GHCR-UNPUBLISHED.md.",
       "group": "links"
     },
     {
@@ -178,6 +178,22 @@
       "replace": "ghcr.io/regan-studio/whateverfi",
       "required": true,
       "$comment": "github.repository expands to Regan-Studio/whateverfi (mixed case). GHCR and docker buildx require lowercase; docker/build-push-action passes the un-lowercased name= and fails. Weekly sync will keep rewriting the upstream expression."
+    },
+    {
+      "id": "desktop-app-id",
+      "group": "links",
+      "find": "dev\\.rakazo\\.desktop",
+      "replace": "com.whateverfi.desktop",
+      "required": true,
+      "$comment": "Electron appId and related desktop bundle ids (speech helper CFBundleIdentifier, passkey docs and tests). Does not match mobile com.rakazo.app."
+    },
+    {
+      "id": "install-images-ghcr-status",
+      "file": "infra/compose/install-images.sh",
+      "find": "# WARNING: ghcr\\.io/regan-studio/whateverfi images are not published yet\\.\\n# This script's default image names will 404 until they are\\. Build from this\\n# repo, or see overlays/whateverfi/GHCR-UNPUBLISHED\\.md\\.",
+      "replace": "# Images ghcr.io/regan-studio/whateverfi/{app,updater,computer}:edge are published from main.\n# Packages may still be private on GHCR (a pull without a login returns 401) until\n# visibility is Public. See overlays/whateverfi/GHCR-UNPUBLISHED.md.",
+      "required": true,
+      "$comment": "Keeps the installer warning in sync with published-but-private GHCR status."
     },
     {
       "id": "published-image-repo",
@@ -593,7 +609,7 @@
       "id": "download-markdown",
       "file": "apps/www/src/agent-content.ts",
       "find": "export const DOWNLOAD_MARKDOWN = `# Download WhatEverFi\\n\\n[\\s\\S]*?\\n`;",
-      "replace": "export const DOWNLOAD_MARKDOWN = `# Download WhatEverFi\n\nThe WhatEverFi desktop (macOS, Windows, Linux) and mobile (iPhone, iPad, Android) apps are coming soon. Until then, use the web version:\n\n- [Web](${APP_URL})\n\nSelf-hosting? Clone the source at [Regan-Studio/whateverfi](https://github.com/Regan-Studio/whateverfi) (Apache-2.0, based on Rakazo) and follow the [self-hosting guide](https://whateverfi.com/self-hosted-ai-agent/). Container images at ghcr.io/regan-studio/whateverfi are not published yet; build from source until they are.\n`;",
+      "replace": "export const DOWNLOAD_MARKDOWN = `# Download WhatEverFi\n\nThe WhatEverFi desktop (macOS, Windows, Linux) and mobile (iPhone, iPad, Android) apps are coming soon. Until then, use the web version:\n\n- [Web](${APP_URL})\n\nSelf-hosting? Clone the source at [Regan-Studio/whateverfi](https://github.com/Regan-Studio/whateverfi) (Apache-2.0, based on Rakazo) and follow the [self-hosting guide](https://whateverfi.com/self-hosted-ai-agent/). Container images at ghcr.io/regan-studio/whateverfi (app, updater, computer; tag edge) are published from main; packages may still be private on GHCR (a pull without a login returns 401) until visibility is Public. See overlays/whateverfi/GHCR-UNPUBLISHED.md.\n`;",
       "required": true
     },
     {

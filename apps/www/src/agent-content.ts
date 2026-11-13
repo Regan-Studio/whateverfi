@@ -128,7 +128,7 @@ The WhatEverFi desktop (macOS, Windows, Linux) and mobile (iPhone, iPad, Android
 
 - [Web](${APP_URL})
 
-Self-hosting? Clone the source at [Regan-Studio/whateverfi](https://github.com/Regan-Studio/whateverfi) (Apache-2.0, based on Rakazo) and follow the [self-hosting guide](https://whateverfi.com/self-hosted-ai-agent/). Container images at ghcr.io/regan-studio/whateverfi are not published yet; build from source until they are.
+Self-hosting? Clone the source at [Regan-Studio/whateverfi](https://github.com/Regan-Studio/whateverfi) (Apache-2.0, based on Rakazo) and follow the [self-hosting guide](https://whateverfi.com/self-hosted-ai-agent/). Container images at ghcr.io/regan-studio/whateverfi (app, updater, computer; tag edge) are published from main; packages may still be private on GHCR (a pull without a login returns 401) until visibility is Public. See overlays/whateverfi/GHCR-UNPUBLISHED.md.
 `;
 
 export const SUPPORT_MARKDOWN = `# WhatEverFi support
