@@ -151,6 +151,23 @@
       "group": "links"
     },
     {
+      "id": "ghcr-case",
+      "group": "links",
+      "find": "ghcr\\.io/Regan-Studio/whateverfi",
+      "replace": "ghcr.io/regan-studio/whateverfi",
+      "required": false,
+      "$comment": "github-short uses the GitHub owner spelling (Regan-Studio). GHCR image names must be lowercase. Also pin PUBLISHED_IMAGE_REPO to lowercase."
+    },
+    {
+      "id": "published-image-repo",
+      "file": "packages/core/src/compose-update.ts",
+      "group": "links",
+      "find": "export const PUBLISHED_IMAGE_REPO = \"Regan-Studio/whateverfi\";",
+      "replace": "export const PUBLISHED_IMAGE_REPO = \"regan-studio/whateverfi\";",
+      "required": true,
+      "$comment": "Must run after github-short, which would otherwise leave a mixed-case GHCR namespace."
+    },
+    {
       "id": "company-url",
       "find": "https://www\\.getinboxzero\\.com/[^\"'`\\s)]*",
       "replace": "https://regan.studio",
