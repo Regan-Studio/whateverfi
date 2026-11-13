@@ -48,7 +48,8 @@
       ".sh",
       ".example",
       ".po",
-      ".swift"
+      ".swift",
+      ".strings"
     ],
     "rootFiles": [
       "README.md",
