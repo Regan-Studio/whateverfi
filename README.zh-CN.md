@@ -3,18 +3,13 @@
 [English](./README.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/Regan-Studio/whateverfi?labelColor=black&style=for-the-badge&color=2563EB)](https://github.com/Regan-Studio/whateverfi/stargazers)
-[![加入 Discord 社区](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?labelColor=black&style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/RWwKa2Sn7h)
-[![在 App Store 下载 iPhone 版](https://img.shields.io/badge/App%20Store-Download%20for%20iPhone-black?labelColor=black&style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/rakazo/id6801531099)
-[![在 Google Play 下载 Android 版](https://img.shields.io/badge/Google%20Play-Get%20the%20app-black?labelColor=black&style=for-the-badge&logo=googleplay&logoColor=white)](https://app.whateverfi.com/)
-
 ![WhatEverFi：由你掌控的 AI 队友](./docs/readme-hero.png)
 
 WhatEverFi 是 Grok Bot 的开源、自托管替代方案。
 
 长期在线的 AI 队友，各自拥有记忆、例行任务、应用和计算机。在自己的机器上运行，使用自己的模型。
 
-可在[网页](https://app.whateverfi.com)、[桌面端](https://whateverfi.com/download/)、[iPhone](https://apps.apple.com/app/rakazo/id6801531099) 和
-[Android](https://app.whateverfi.com/) 上使用。
+可在[网页](https://app.whateverfi.com)和[桌面端](https://whateverfi.com/download/)使用。WhatEverFi 的 iPhone / Android 应用即将推出。
 
 它也是 Meta Muse、OpenAI Dots、Instinct、OpenClaw、Hermes Agent 和 Claude Duet 的替代方案。
 
@@ -104,7 +99,7 @@ Gmail、Slack、GitHub、Notion、Linear 等数千个应用，以及你自己的
 需要 Docker Engine、Compose 插件、curl 和 OpenSSL。无需克隆仓库或安装 Node.js。
 
 ```bash
-mkdir -p rakazo && cd rakazo &&
+mkdir -p whateverfi && cd whateverfi &&
 curl -fsSLO https://raw.githubusercontent.com/regan-studio/whateverfi/main/infra/compose/install-images.sh &&
 bash install-images.sh
 ```
@@ -148,7 +143,7 @@ bash install-images.sh
 
 ```bash
 git clone https://github.com/Regan-Studio/whateverfi.git
-cd rakazo
+cd whateverfi
 cp .env.example .env
 ```
 
@@ -340,7 +335,7 @@ Muse、Dots、Instinct 和 Claude Duet 是托管式助手；OpenClaw 和 Hermes 
 
 ## 致谢
 
-- [Regan.Studio](https://getinboxzero.com/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
+- [Regan.Studio](https://regan.studio)
 - [PromptLayer](https://promptlayer.com/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
 - [ConnectorMap](https://connectormap.luinbytes.dev/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
 - [CodeRabbit](https://www.coderabbit.ai/?utm_source=github&utm_medium=referral&utm_campaign=rakazo_readme)
@@ -367,5 +362,3 @@ Muse、Dots、Instinct 和 Claude Duet 是托管式助手；OpenClaw 和 Hermes 
 发现安全漏洞时，请按照 [SECURITY.md](./SECURITY.md) 的说明报告，勿提交公开 Issue。
 
 WhatEverFi 采用 [Apache License 2.0](./LICENSE) 许可证。
-
-欢迎在 [WhatEverFi Discord 社区](https://discord.gg/RWwKa2Sn7h)交流问题与想法。

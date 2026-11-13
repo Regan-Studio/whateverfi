@@ -118,10 +118,16 @@ capability config, fixtures, logs, or snapshots; use the encrypted secret store 
 - Describe why the change is needed, what changed, and **how you tested** (e.g. `pnpm test`, manual steps).
 - Link related issues when applicable.
 
+## Branding and upstream sync
+
+User-visible WhatEverFi and Regan.Studio branding belongs in [`overlays/whateverfi/`](overlays/whateverfi/). The weekly sync reapplies that overlay and will overwrite branding edits made only in upstream files. Do not remove the Apache-2.0 `LICENSE` or the line `Copyright 2026 Rakazo contributors`.
+
 ## Contact
 
-| Address                                                   | Use for                                               |
-| --------------------------------------------------------- | ----------------------------------------------------- |
-| [security@whateverfi.com](mailto:security@whateverfi.com) | Vulnerabilities only — see [SECURITY.md](SECURITY.md) |
-| [support@whateverfi.com](mailto:support@whateverfi.com)   | User and support questions                            |
-| [elie@whateverfi.com](mailto:elie@whateverfi.com)         | Maintainer                                            |
+Do not email `security@whateverfi.com`, `support@whateverfi.com`, or any other `@whateverfi.com` address yet: the domain has no MX records, so that mail will not be delivered.
+
+| Where                                                                                                        | Use for                                               |
+| ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- |
+| [GitHub private vulnerability reporting](https://github.com/Regan-Studio/whateverfi/security/advisories/new) | Vulnerabilities only — see [SECURITY.md](SECURITY.md) |
+| GitHub issues (use a template)                                                                               | Bugs, self-host setup, and product questions          |
+| [whateverfi.com](https://whateverfi.com)                                                                     | Public product information                            |

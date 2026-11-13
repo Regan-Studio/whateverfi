@@ -7,9 +7,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        For **security vulnerabilities**, email [security@whateverfi.com](mailto:security@whateverfi.com). See [SECURITY.md](https://github.com/Regan-Studio/whateverfi/blob/main/SECURITY.md).
+        For **security vulnerabilities**, do not use this form. Report them privately with
+        [GitHub private vulnerability reporting](https://github.com/Regan-Studio/whateverfi/security/advisories/new).
+        See [SECURITY.md](https://github.com/Regan-Studio/whateverfi/blob/main/SECURITY.md).
 
-        Setup steps are in [README.md](https://github.com/Regan-Studio/whateverfi/blob/main/README.md). Do not paste `.env` contents or API keys.
+        Setup steps are in [README.md](https://github.com/Regan-Studio/whateverfi/blob/main/README.md).
+        Do not paste `.env` contents or API keys.
 
   - type: dropdown
     id: step
