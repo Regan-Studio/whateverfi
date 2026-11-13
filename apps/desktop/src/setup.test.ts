@@ -249,7 +249,7 @@ describe("setup", () => {
     currentCheck.resolve({ ok: true, url: "https://two.example" });
     await flush();
     expect(field.value).toBe("https://two.example");
-    expect(element("status").textContent).toBe("Rakazo answered at https://two.example.");
+    expect(element("status").textContent).toBe("WhatEverFi answered at https://two.example.");
     expect(element("status").getAttribute("data-tone")).toBe("ok");
     expect(element<HTMLButtonElement>("check").disabled).toBe(false);
     expect(element<HTMLButtonElement>("continue").disabled).toBe(false);
@@ -306,7 +306,7 @@ describe("setup", () => {
     await flush();
 
     expect(element("stack").hidden).toBe(false);
-    expect(element("stack-phase").textContent).toBe("Downloading Rakazo…");
+    expect(element("stack-phase").textContent).toBe("Downloading WhatEverFi…");
   });
 
   it("locks the address while it is being saved and unlocks it when the save fails", async () => {
@@ -361,7 +361,7 @@ describe("setup", () => {
     await flush();
 
     expect(element<HTMLInputElement>("server-url").value).toBe("https://one.example");
-    expect(element("status").textContent).toBe("Rakazo answered at https://one.example.");
+    expect(element("status").textContent).toBe("WhatEverFi answered at https://one.example.");
     expect(element("status").getAttribute("data-tone")).toBe("ok");
     expect(element<HTMLButtonElement>("check").disabled).toBe(false);
   });
@@ -412,7 +412,7 @@ describe("setup", () => {
     ui.startResult.resolve(stackState("pulling"));
     await flush();
     expect(element("stack").hidden).toBe(false);
-    expect(element("stack-phase").textContent).toBe("Downloading Rakazo…");
+    expect(element("stack-phase").textContent).toBe("Downloading WhatEverFi…");
     expect(element<HTMLButtonElement>("continue").disabled).toBe(true);
 
     ui.resolveStackState(stackState("ready"));
@@ -422,7 +422,7 @@ describe("setup", () => {
     ui.resolveSave({ ok: true });
     await flush();
 
-    expect(element("stack-phase").textContent).toBe("Rakazo is ready.");
+    expect(element("stack-phase").textContent).toBe("WhatEverFi is ready.");
     expect(element("stack-phase").getAttribute("data-tone")).toBe("ok");
     expect(ui.saves).toEqual([{ mode: "new", serverUrl: DEFAULT_LOCAL_URL }]);
     expect(element<HTMLButtonElement>("continue").disabled).toBe(false);
@@ -434,7 +434,7 @@ describe("setup", () => {
     submitForm();
     const missing = {
       ...stackState("docker-missing"),
-      message: "Rakazo needs Docker Desktop to run on this computer.",
+      message: "WhatEverFi needs Docker Desktop to run on this computer.",
     };
     ui.startResult.resolve(missing);
     await flush();
@@ -460,7 +460,10 @@ describe("setup", () => {
     const ui = await boot(null, ENGLISH, "darwin");
     selectMode("new");
     submitForm();
-    const missing = { ...stackState("docker-missing"), message: "Rakazo needs Docker Desktop." };
+    const missing = {
+      ...stackState("docker-missing"),
+      message: "WhatEverFi needs Docker Desktop.",
+    };
     ui.startResult.resolve(missing);
     await flush();
     ui.resolveStackState(missing);
@@ -491,7 +494,10 @@ describe("setup", () => {
     const ui = await boot(null, ENGLISH, "darwin");
     selectMode("new");
     submitForm();
-    const missing = { ...stackState("docker-missing"), message: "Rakazo needs Docker Desktop." };
+    const missing = {
+      ...stackState("docker-missing"),
+      message: "WhatEverFi needs Docker Desktop.",
+    };
     ui.startResult.resolve(missing);
     await flush();
     ui.resolveStackState(missing);
@@ -517,7 +523,7 @@ describe("setup", () => {
       submitForm();
       ui.startResult.resolve(stackState("pulling"));
       await flush();
-      expect(element("stack-phase").textContent).toBe("Downloading Rakazo…");
+      expect(element("stack-phase").textContent).toBe("Downloading WhatEverFi…");
 
       if (leaveAfterReady) {
         ui.resolveStackState(stackState("ready"));
@@ -550,7 +556,7 @@ describe("setup", () => {
     const ui = await boot(null, { lang: "es", dir: "ltr", messages: ES_MESSAGES });
     expect(document.documentElement.lang).toBe("es");
     expect(document.documentElement.dir).toBe("ltr");
-    expect(document.querySelector("h1")?.textContent).toBe("Te damos la bienvenida a Rakazo");
+    expect(document.querySelector("h1")?.textContent).toBe("Te damos la bienvenida a WhatEverFi");
     expect(document.querySelector('label[for="mode-new"] .choice-title')?.textContent).toBe(
       "Esta computadora",
     );
@@ -558,10 +564,10 @@ describe("setup", () => {
       "Tus datos se quedan en esta computadora.",
     );
     expect(document.querySelector('label[for="mode-cloud"] .choice-title')?.textContent).toBe(
-      "Rakazo Cloud",
+      "WhatEverFi Cloud",
     );
     expect(element("quit").textContent).toBe("Salir");
-    expect(element("quit").title).toBe("Salir de Rakazo");
+    expect(element("quit").title).toBe("Salir de WhatEverFi");
     expect(element("stack-details").getAttribute("aria-label")).toBe("Detalles técnicos");
     expect(element<HTMLTextAreaElement>("server-headers").placeholder).toBe("Nombre: valor");
     expect(element("continue").textContent).toBe("Continuar");
@@ -574,13 +580,13 @@ describe("setup", () => {
     expect(element("status").textContent).toBe("Comprobando…");
     ui.resolveCheck({ ok: true, url: "https://one.example" });
     await flush();
-    expect(element("status").textContent).toBe("Rakazo respondió en https://one.example.");
+    expect(element("status").textContent).toBe("WhatEverFi respondió en https://one.example.");
 
     selectMode("new");
     submitForm();
     ui.startResult.resolve({ ...stackState("pulling"), layerBytes: { layer: 2.5e6 } });
     await flush();
-    expect(element("stack-phase").textContent).toBe("Descargando Rakazo…");
+    expect(element("stack-phase").textContent).toBe("Descargando WhatEverFi…");
     expect(element("stack-detail").textContent).toBe("3 MB descargados");
   });
 
@@ -588,7 +594,7 @@ describe("setup", () => {
     const ui = await boot(null, { lang: "pl", dir: "ltr", messages: PL_MESSAGES });
     expect(document.documentElement.lang).toBe("pl");
     expect(document.documentElement.dir).toBe("ltr");
-    expect(document.querySelector("h1")?.textContent).toBe("Witaj w Rakazo");
+    expect(document.querySelector("h1")?.textContent).toBe("Witaj w WhatEverFi");
     expect(element("continue").textContent).toBe(PL_MESSAGES.Continue);
     expect(element("stack-details").getAttribute("aria-label")).toBe(
       PL_MESSAGES["Technical details"],
@@ -606,14 +612,14 @@ describe("setup", () => {
     ui.resolveCheck({ ok: true, url: "https://one.example" });
     await flush();
     expect(element("status").textContent).toBe(
-      "Rakazo odpowiedziało pod adresem https://one.example.",
+      "WhatEverFi odpowiedziało pod adresem https://one.example.",
     );
 
     selectMode("new");
     submitForm();
     ui.startResult.resolve({ ...stackState("pulling"), layerBytes: { layer: 2.5e6 } });
     await flush();
-    expect(element("stack-phase").textContent).toBe(PL_MESSAGES["Downloading Rakazo…"]);
+    expect(element("stack-phase").textContent).toBe(PL_MESSAGES["Downloading WhatEverFi…"]);
     expect(element("stack-detail").textContent).toBe("Pobrano 3 MB");
   });
 });

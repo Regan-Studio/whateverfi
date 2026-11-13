@@ -179,7 +179,7 @@ export default function BillingScreen() {
               : plan === "byok"
                 ? t`Your subscription or API key`
                 : plan === "credits"
-                  ? t`Rakazo credits`
+                  ? t`WhatEverFi credits`
                   : t`None`
           }
         />
@@ -394,7 +394,7 @@ export default function BillingScreen() {
           ) : null}
           {status.canManage && status.funding === "byok" && (status.balanceUsd ?? 0) > 0 ? (
             <SettingsRow
-              title={t`Use Rakazo credits`}
+              title={t`Use WhatEverFi credits`}
               disabled={pending || !status.creditPurchasesEnabled}
               onPress={() =>
                 void action(async () => {

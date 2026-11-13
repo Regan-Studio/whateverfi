@@ -138,8 +138,8 @@ application traffic queued indefinitely.
 `${{ github.repository }}` rather than hardcoded, so a fork's CI fills the fork's own namespace. For
 this repository that is:
 
-| Image                             | Contents                                                                |
-| --------------------------------- | ----------------------------------------------------------------------- |
+| Image                                      | Contents                                                                |
+| ------------------------------------------ | ----------------------------------------------------------------------- |
 | `ghcr.io/regan-studio/whateverfi/app`      | api, worker, web, and sandbox supervisor — one image, multiple commands |
 | `ghcr.io/regan-studio/whateverfi/computer` | Linux desktop used as each bot computer                                 |
 | `ghcr.io/regan-studio/whateverfi/updater`  | the updater sidecar, plus the Docker CLI                                |

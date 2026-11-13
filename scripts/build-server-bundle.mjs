@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Packs the API, worker, web server and migrations into one archive that runs on plain Node, or
-// on Electron's binary with ELECTRON_RUN_AS_NODE=1, for hosts that run Rakazo without containers.
+// on Electron's binary with ELECTRON_RUN_AS_NODE=1, for hosts that run WhatEverFi without containers.
 // Usage: build-server-bundle.mjs <out-dir> [download-base-url]
 // Needs `pnpm db:generate` and `pnpm --filter @rakazo/web build` first. Writes
 // rakazo-server-<platform>-<arch>-<version>.tar.xz and server-bundle.json { url, sha256, size,

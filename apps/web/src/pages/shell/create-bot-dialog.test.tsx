@@ -96,20 +96,20 @@ describe("CreateBotDialog", () => {
     expect(onCreate.mock.lastCall?.[0]).not.toHaveProperty("id");
   });
 
-  it("sends the Rakazo preview id without an organic family", async () => {
+  it("sends the WhatEverFi preview id without an organic family", async () => {
     const onCreate = vi.fn(async (_input: CreateBotDialogInput) => undefined);
     await render(onCreate, "rakazo");
     await typeName("Scout");
     await click(button("Create"));
     const input = onCreate.mock.lastCall![0];
-    const preview = document.querySelector(".rakazo-logo-avatar")!;
+    const preview = document.querySelector(".whateverfi-logo-avatar")!;
     expect(input).toMatchObject({ name: "Scout" });
     expect(input).not.toHaveProperty("avatarFamily");
     expect(input.id).toMatch(/^c[a-z0-9]{24}$/);
     expect(input.color?.toUpperCase()).toBe(preview.getAttribute("data-color")?.toUpperCase());
   });
 
-  it("preserves an explicitly chosen Rakazo colour through a failed create and retry", async () => {
+  it("preserves an explicitly chosen WhatEverFi colour through a failed create and retry", async () => {
     const onCreate = vi
       .fn(async (_input: CreateBotDialogInput) => undefined)
       .mockRejectedValueOnce(new Error("Try again"));
@@ -170,10 +170,12 @@ it("retains the preview identity and colour through rerenders and a retry", asyn
     .fn(async (_input: CreateBotDialogInput) => undefined)
     .mockRejectedValueOnce(new Error("Try again"));
   await render(onCreate, "rakazo");
-  const colour = document.querySelector(".rakazo-logo-avatar")!.getAttribute("data-color");
+  const colour = document.querySelector(".whateverfi-logo-avatar")!.getAttribute("data-color");
   await typeName("First name");
   await render(onCreate, "rakazo");
-  expect(document.querySelector(".rakazo-logo-avatar")!.getAttribute("data-color")).toBe(colour);
+  expect(document.querySelector(".whateverfi-logo-avatar")!.getAttribute("data-color")).toBe(
+    colour,
+  );
   await click(button("Create"));
   const first = onCreate.mock.lastCall![0];
   await typeName("Retry name");

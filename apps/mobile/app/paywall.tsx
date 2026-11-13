@@ -62,7 +62,7 @@ import { errorText } from "../lib/user-error";
 type Amount = (typeof MODEL_CREDIT_AMOUNTS)[number];
 type SymbolName = ComponentProps<typeof NativeSymbol>["android"];
 
-const TERMS_URL = "https://rakazo.com/terms/";
+const TERMS_URL = "https://whateverfi.com/terms/";
 
 // Bots carry the app's only colour, so the paywall's colour is a small crew of them.
 const CREW = [
@@ -299,7 +299,7 @@ export default function Paywall() {
         </View>
         <View style={styles.footer}>
           <NativeActionButton
-            label={started === "byok" ? t`Connect your AI` : t`Start using Rakazo`}
+            label={started === "byok" ? t`Connect your AI` : t`Start using WhatEverFi`}
             onPress={() => {
               router.back();
               if (started === "byok") router.push("/models");

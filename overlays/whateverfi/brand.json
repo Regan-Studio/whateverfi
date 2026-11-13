@@ -24,7 +24,10 @@
       ".vercel",
       "e2e",
       "overlays",
-      ".git"
+      ".git",
+      "generated",
+      ".cache",
+      ".turbo"
     ],
     "textExtensions": [
       ".ts",
@@ -56,15 +59,10 @@
       "CONTRIBUTING.md",
       "PRODUCT.md"
     ],
-    "linkInclude": [
-      "."
-    ]
+    "linkInclude": ["."]
   },
   "renameFiles": {
-    "roots": [
-      "apps/www/public",
-      "apps/www/src/content"
-    ],
+    "roots": ["apps/www/public", "apps/www/src/content"],
     "from": "rakazo",
     "to": "whateverfi"
   },
@@ -72,25 +70,37 @@
     {
       "id": "www-url",
       "find": "https://www\\.rakazo\\.com",
-      "replace": "https://www.whateverfi.com"
+      "replace": "https://www.whateverfi.com",
+      "group": "links"
     },
     {
       "id": "www-host",
       "find": "(?<![\\w.-])www\\.rakazo\\.com",
       "replace": "www.whateverfi.com",
-      "required": true
+      "required": true,
+      "group": "links"
     },
     {
       "id": "site-url",
       "find": "https://rakazo\\.com",
       "replace": "https://whateverfi.com",
-      "required": true
+      "required": true,
+      "group": "links"
     },
     {
       "id": "app-url",
-      "find": "https://app\\.rakazo\\.com",
+      "find": "https://app\\.rakazo\\.com(?!/api/v1/integration-claims)",
       "replace": "https://app.whateverfi.com",
-      "required": true
+      "required": true,
+      "$comment": "Do not retarget the build-time integration-claims feed (app.whateverfi.com has no API yet)."
+    },
+    {
+      "id": "restore-claims-url",
+      "file": "apps/www/src/site.ts",
+      "find": "export const INTEGRATION_CLAIMS_URL = \"https://app\\.whateverfi\\.com/api/v1/integration-claims\";",
+      "replace": "export const INTEGRATION_CLAIMS_URL = \"https://app.rakazo.com/api/v1/integration-claims\";",
+      "required": true,
+      "$comment": "Re-assert the intentional claims-feed leftover after app-url / site-url rewrites."
     },
     {
       "id": "app-host",
@@ -101,12 +111,14 @@
       "id": "emails",
       "find": "([A-Za-z0-9._%+-]+)@rakazo\\.com",
       "replace": "$1@whateverfi.com",
-      "required": true
+      "required": true,
+      "group": "links"
     },
     {
       "id": "bare-domain",
       "find": "(?<![\\w.@/-])rakazo\\.com\\b",
-      "replace": "whateverfi.com"
+      "replace": "whateverfi.com",
+      "group": "links"
     },
     {
       "id": "utm-source",
@@ -168,6 +180,140 @@
       "$comment": "Must run after github-short, which would otherwise leave a mixed-case GHCR namespace."
     },
     {
+      "id": "restore-sync-upstream-url",
+      "file": ".github/workflows/whateverfi-product-sync-upstream.yml",
+      "group": "links",
+      "find": "UPSTREAM_URL: https://github\\.com/Regan-Studio/whateverfi\\.git",
+      "replace": "UPSTREAM_URL: https://github.com/elie222/rakazo.git",
+      "required": true,
+      "$comment": "github-short would retarget the weekly job's fetch URL at this repo. It must keep fetching elie222/rakazo. branding-guard already excludes this workflow file."
+    },
+    {
+      "id": "split-owner-repo-json",
+      "group": "links",
+      "find": "\"owner\": \"elie222\",(\\s*)\"repo\": \"rakazo\"",
+      "replace": "\"owner\": \"Regan-Studio\",$1\"repo\": \"whateverfi\"",
+      "$comment": "electron-builder publish and other split JSON owner/repo fields. github-short only matches the joined slug elie222/rakazo."
+    },
+    {
+      "id": "split-owner-yaml",
+      "group": "links",
+      "find": "owner: elie222",
+      "replace": "owner: Regan-Studio",
+      "$comment": "app-update.yml checks and PowerShell expected-owner lists in release-desktop.yml."
+    },
+    {
+      "id": "split-repo-yaml",
+      "group": "links",
+      "find": "repo: rakazo(?![-_])",
+      "replace": "repo: whateverfi",
+      "$comment": "Paired with split-owner-yaml. Negative lookahead keeps rakazo-prod / rakazo-computer-egress names."
+    },
+    {
+      "id": "desktop-executable-name",
+      "file": "apps/desktop/package.json",
+      "group": "links",
+      "find": "\"executableName\": \"rakazo\"",
+      "replace": "\"executableName\": \"whateverfi\"",
+      "required": true
+    },
+    {
+      "id": "first-party-image-regex",
+      "group": "links",
+      "find": "ghcr\\\\\\.io\\\\/elie222\\\\/rakazo",
+      "replace": "ghcr\\.io\\/regan-studio\\/whateverfi",
+      "$comment": "Test regexes that escaped the ghcr.io/elie222/rakazo path, which github-short does not match."
+    },
+    {
+      "id": "reserved-header-prefix",
+      "group": "links",
+      "find": "startsWith\\(\"x-rakazo-\"\\)",
+      "replace": "startsWith(\"x-whateverfi-\")",
+      "required": true,
+      "$comment": "brand-word rewrote test header names to X-WhatEverFi-*; the reserved-prefix check must match."
+    },
+    {
+      "id": "release-watch-mentions-repo",
+      "file": "packages/adapters/src/release-watch.ts",
+      "group": "links",
+      "find": "/rakazo\\|elie222/i",
+      "replace": "/rakazo|elie222|whateverfi|regan-studio/i",
+      "required": true
+    },
+    {
+      "id": "release-watch-default-owner",
+      "file": "packages/adapters/src/release-watch.ts",
+      "group": "links",
+      "find": "owner: \"elie222\",(\\s*)repo: \"rakazo\",",
+      "replace": "owner: \"Regan-Studio\",$1repo: \"whateverfi\","
+    },
+    {
+      "id": "composio-default-owner",
+      "file": "packages/adapters/src/composio-fake.ts",
+      "group": "links",
+      "find": "args\\.owner \\?\\? args\\.owner_name \\?\\? \"elie222\"",
+      "replace": "args.owner ?? args.owner_name ?? \"Regan-Studio\""
+    },
+    {
+      "id": "composio-owner-example",
+      "file": "packages/adapters/src/composio-fake.ts",
+      "group": "links",
+      "find": "Repository owner, e\\.g\\. elie222",
+      "replace": "Repository owner, e.g. Regan-Studio"
+    },
+    {
+      "id": "composio-test-owner-repo",
+      "group": "links",
+      "find": "owner: \"elie222\", repo: \"rakazo\"",
+      "replace": "owner: \"Regan-Studio\", repo: \"whateverfi\""
+    },
+    {
+      "id": "release-watch-prompt-owner",
+      "group": "links",
+      "find": "owner elie222 repo rakazo",
+      "replace": "owner Regan-Studio repo whateverfi"
+    },
+    {
+      "id": "logo-avatar-class",
+      "group": "links",
+      "find": "rakazo-logo-avatar",
+      "replace": "whateverfi-logo-avatar",
+      "required": true,
+      "$comment": "ui-web class was retargeted; tests outside the original include scope still queried .rakazo-logo-avatar."
+    },
+    {
+      "id": "play-store-url",
+      "group": "links",
+      "find": "https://play\\.google\\.com/store/apps/details\\?id=com\\.rakazo\\.app",
+      "replace": "https://app.whateverfi.com/",
+      "$comment": "WhatEverFi has no Play listing yet; android-app-url already retargeted the product constant. Tests use HTMLHyperlinkElementUtils.href, which adds a trailing slash."
+    },
+    {
+      "id": "image-alias-case",
+      "group": "links",
+      "find": "(?<!github\\.com/)(?<!repos/)Regan-Studio/whateverfi/",
+      "replace": "regan-studio/whateverfi/",
+      "$comment": "github-short leaves mixed-case GitHub owner spelling in image aliases; GHCR/OCI aliases are lowercase. Does not rewrite github.com/Regan-Studio/whateverfi URLs."
+    },
+    {
+      "id": "self-update-identity-case",
+      "file": "packages/core/src/self-update.test.ts",
+      "group": "links",
+      "find": "github\\.com/Regan-Studio/whateverfi",
+      "replace": "github.com/regan-studio/whateverfi",
+      "required": true,
+      "$comment": "repoIdentity() lowercases the host/path. elie222 was already lowercase; Regan-Studio is not."
+    },
+    {
+      "id": "smoke-download-ref-path",
+      "file": "infra/compose/install-images-pull-never.smoke.sh",
+      "group": "links",
+      "find": "rakazo/\\[\\^/\\]\\+/infra/compose",
+      "replace": "whateverfi/[^/]+/infra/compose",
+      "required": true,
+      "$comment": "Smoke extracted raw.githubusercontent.com/.../rakazo/<ref>/infra/compose; the path segment is now whateverfi."
+    },
+    {
       "id": "company-url",
       "find": "https://www\\.getinboxzero\\.com/[^\"'`\\s)]*",
       "replace": "https://regan.studio",
@@ -213,9 +359,11 @@
     },
     {
       "id": "brand-word",
-      "find": "\\bRakazo\\b",
+      "find": "(?<!Based on )(?<!based on )(?<![\\w.])Rakazo(?![\\w.])",
       "replace": "WhatEverFi",
-      "required": true
+      "required": true,
+      "group": "links",
+      "$comment": "Repo-wide product name, including tests. Leaves 'Based on Rakazo' attribution, the Rakazo.icon asset filename, and hostnames like App.Rakazo.com unchanged."
     },
     {
       "id": "brand-upper",
@@ -337,26 +485,15 @@
     }
   ],
   "verify": {
-    "forbidden_visible": [
-      "inbox zero",
-      "getinboxzero"
-    ],
+    "forbidden_visible": ["inbox zero", "getinboxzero"],
     "requiredStrings": {
-      "README.md": [
-        "WhatEverFi",
-        "Regan.Studio",
-        "Based on Rakazo",
-        "Apache-2.0"
-      ],
+      "README.md": ["WhatEverFi", "Regan.Studio", "Based on Rakazo", "Apache-2.0"],
       "apps/www/src/pages/about.astro": [
         "WhatEverFi",
         "Regan.Studio",
         "Based on Rakazo (Apache-2.0)"
       ]
     },
-    "skipAttributionFiles": [
-      "LICENSE",
-      "overlays/whateverfi/GHCR-UNPUBLISHED.md"
-    ]
+    "skipAttributionFiles": ["LICENSE", "overlays/whateverfi/GHCR-UNPUBLISHED.md"]
   }
 }

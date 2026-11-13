@@ -39,7 +39,7 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.SYNC_TOKEN || github.token }}
       GITHUB_TOKEN: ${{ github.token }}
-      UPSTREAM_URL: https://github.com/Regan-Studio/whateverfi.git
+      UPSTREAM_URL: https://github.com/elie222/rakazo.git
     steps:
       - uses: actions/checkout@v4
         with:

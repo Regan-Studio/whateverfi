@@ -45,7 +45,7 @@ export type TeamChatInboundTarget = {
 
 /**
  * One workspace's team chat for one bot, as seen by the API process its webhooks reach. Each
- * message is recorded with the job that backs it up, mirrored into the bot's Rakazo thread, and
+ * message is recorded with the job that backs it up, mirrored into the bot's WhatEverFi thread, and
  * answered at once: a direct message or mention starts its agent run here, an ambient one waits
  * for its conversation's scheduled decision, and a deferred one goes to routine routing first.
  */
@@ -356,7 +356,7 @@ export class TeamChatBridge {
       conversation.spaceId !== target.spaceId ||
       !conversation.thread
     ) {
-      throw new Error("Team chat conversation belongs to a different Rakazo target");
+      throw new Error("Team chat conversation belongs to a different WhatEverFi target");
     }
     return { ...conversation, thread: conversation.thread };
   }

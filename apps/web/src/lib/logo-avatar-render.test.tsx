@@ -67,7 +67,7 @@ async function mount(status?: string) {
   );
 }
 const live = () => container.querySelector<SVGSVGElement>('[data-testid="live"] svg')!;
-it("projects production feed events into the live avatar and subscribes only live Rakazo consumers", async () => {
+it("projects production feed events into the live avatar and subscribes only live WhatEverFi consumers", async () => {
   const subscribe = vi.spyOn(webLogoAvatarActivity, "subscribe");
   await mount();
   expect(subscribe).toHaveBeenCalledTimes(1);
@@ -156,7 +156,7 @@ it("keeps static SVG artwork mounted through rapid live activity changes", async
         event(seq, "thread.meta", { activity: { thinking: seq % 2 === 0 } }),
       ),
     );
-    expect(container.querySelector(".rakazo-logo-avatar")!.getAttribute("data-activity")).toBe(
+    expect(container.querySelector(".whateverfi-logo-avatar")!.getAttribute("data-activity")).toBe(
       seq % 2 === 0 ? "thinking" : "working",
     );
     expect(container.querySelector(".logo-avatar-art")).toBe(body);

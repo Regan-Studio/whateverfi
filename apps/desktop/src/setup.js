@@ -60,10 +60,10 @@
   const PHASE_LABELS = {
     "checking-docker": t("Getting ready…"),
     preparing: t("Getting ready…"),
-    pulling: t("Downloading Rakazo…"),
-    starting: t("Starting Rakazo…"),
+    pulling: t("Downloading WhatEverFi…"),
+    starting: t("Starting WhatEverFi…"),
     "waiting-healthy": t("Almost ready…"),
-    ready: t("Rakazo is ready."),
+    ready: t("WhatEverFi is ready."),
   };
   const TERMINAL_PHASES = new Set([
     "idle",
@@ -238,7 +238,7 @@
     stackHint.hidden = phase !== "docker-missing";
     stackHint.textContent = dockerDesktop
       ? t(
-          "Docker Desktop is a free app that runs Rakazo in the background. Install it and open it once.",
+          "Docker Desktop is a free app that runs WhatEverFi in the background. Install it and open it once.",
         )
       : t("Install Docker Engine and start it.");
     stackWaiting.hidden = !isDockerPhase(phase);
@@ -395,7 +395,7 @@
       if (generation !== requestGeneration) return result;
       if (result.ok) {
         serverUrl.value = result.url;
-        setStatus(t("Rakazo answered at {url}.", { url: result.url }), "ok");
+        setStatus(t("WhatEverFi answered at {url}.", { url: result.url }), "ok");
       } else {
         setStatus(result.error ?? t("Could not reach that address."), "error");
       }
@@ -535,7 +535,7 @@
         continueButton.focus();
       }
     } catch {
-      setStatus(t("Setup could not start. Quit Rakazo and try again."), "error");
+      setStatus(t("Setup could not start. Quit WhatEverFi and try again."), "error");
       setBusy(true);
     }
   }

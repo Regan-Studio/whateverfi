@@ -52,7 +52,7 @@ export const MESSAGING_DM_OUTBOUND_CAP = 140;
 
 /**
  * How long one send may take, file upload included. Providers that take the abort signal stop
- * there; the vendor clients Rakazo configures (Slack, Sendblue) already give up well before it.
+ * there; the vendor clients WhatEverFi configures (Slack, Sendblue) already give up well before it.
  */
 export const MESSAGING_SEND_TIMEOUT_MS = 60_000;
 
@@ -1097,7 +1097,7 @@ export class MessagingDelivery {
           )
         : ambient
           ? ""
-          : `${run.bot.name} could not complete that request. Open Rakazo for details.`;
+          : `${run.bot.name} could not complete that request. Open WhatEverFi for details.`;
     const recorded = await this.deps.prisma.$transaction(async (tx) => {
       const claimed = await tx.externalMessage.updateMany({
         where: { id: message.id, status: "running" },
@@ -1143,7 +1143,7 @@ export class MessagingDelivery {
         : null;
     const body =
       run.status === "failed"
-        ? `${run.bot.name} could not complete the delegated request. Open Rakazo for details.`
+        ? `${run.bot.name} could not complete the delegated request. Open WhatEverFi for details.`
         : teamChatResponseText(
             Array.isArray(reply?.blocks) ? (reply.blocks as MessageBlock[]) : [],
             run.bot.name,

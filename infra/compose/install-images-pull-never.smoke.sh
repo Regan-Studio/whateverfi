@@ -281,7 +281,7 @@ download_ref() {
     [[ -z "$image_tag" ]] || export RAKAZO_IMAGE_TAG="$image_tag"
     run_install "$tmp/$name" "$@" >/dev/null 2>&1
   ) || fail "$name install failed"
-  grep -F 'docker-compose.images.yml' "$tmp/$name/curl.log" | grep -oE 'rakazo/[^/]+/infra/compose' | sort -u
+  grep -F 'docker-compose.images.yml' "$tmp/$name/curl.log" | grep -oE 'whateverfi/[^/]+/infra/compose' | sort -u
 }
 ref="$(download_ref untagged "")"
 [[ "$ref" == "rakazo/main/infra/compose" ]] || fail "no pin should use main, got: $ref"

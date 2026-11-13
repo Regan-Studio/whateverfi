@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/Regan-Studio/whateverfi?labelColor=black&style=for-the-badge&color=2563EB)](https://github.com/Regan-Studio/whateverfi/stargazers)
 [![加入 Discord 社区](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?labelColor=black&style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/RWwKa2Sn7h)
 [![在 App Store 下载 iPhone 版](https://img.shields.io/badge/App%20Store-Download%20for%20iPhone-black?labelColor=black&style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/rakazo/id6801531099)
-[![在 Google Play 下载 Android 版](https://img.shields.io/badge/Google%20Play-Get%20the%20app-black?labelColor=black&style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.rakazo.app)
+[![在 Google Play 下载 Android 版](https://img.shields.io/badge/Google%20Play-Get%20the%20app-black?labelColor=black&style=for-the-badge&logo=googleplay&logoColor=white)](https://app.whateverfi.com/)
 
 ![WhatEverFi：由你掌控的 AI 队友](./docs/readme-hero.png)
 
@@ -14,7 +14,7 @@ WhatEverFi 是 Grok Bot 的开源、自托管替代方案。
 长期在线的 AI 队友，各自拥有记忆、例行任务、应用和计算机。在自己的机器上运行，使用自己的模型。
 
 可在[网页](https://app.whateverfi.com)、[桌面端](https://whateverfi.com/download/)、[iPhone](https://apps.apple.com/app/rakazo/id6801531099) 和
-[Android](https://play.google.com/store/apps/details?id=com.rakazo.app) 上使用。
+[Android](https://app.whateverfi.com/) 上使用。
 
 它也是 Meta Muse、OpenAI Dots、Instinct、OpenClaw、Hermes Agent 和 Claude Duet 的替代方案。
 
@@ -105,7 +105,7 @@ Gmail、Slack、GitHub、Notion、Linear 等数千个应用，以及你自己的
 
 ```bash
 mkdir -p rakazo && cd rakazo &&
-curl -fsSLO https://raw.githubusercontent.com/Regan-Studio/whateverfi/main/infra/compose/install-images.sh &&
+curl -fsSLO https://raw.githubusercontent.com/regan-studio/whateverfi/main/infra/compose/install-images.sh &&
 bash install-images.sh
 ```
 

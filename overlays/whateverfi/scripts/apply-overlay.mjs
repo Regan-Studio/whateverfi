@@ -4,7 +4,16 @@
 // Rakazo contributors" lines.
 // Usage: node overlays/whateverfi/scripts/apply-overlay.mjs <repo-root>
 // Exit: 0 ok, 2 usage, 4 a required rule no longer matches.
-import { cpSync, existsSync, readdirSync, readFileSync, renameSync, statSync, writeFileSync } from "node:fs";
+import { spawnSync } from "node:child_process";
+import {
+  cpSync,
+  existsSync,
+  readdirSync,
+  readFileSync,
+  renameSync,
+  statSync,
+  writeFileSync,
+} from "node:fs";
 import { basename, dirname, extname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -53,7 +62,9 @@ for (const rroot of brand.renameFiles?.roots ?? []) {
     const next = name.replaceAll(brand.renameFiles.from, brand.renameFiles.to);
     const stem = (n) => n.slice(0, n.length - extname(n).length);
     if (stem(name).toLowerCase() === brand.renameFiles.from) {
-      failures.push(`refusing to rename bare brand file ${relative(root, file)}; add an explicit rule`);
+      failures.push(
+        `refusing to rename bare brand file ${relative(root, file)}; add an explicit rule`,
+      );
       continue;
     }
     renameSync(file, join(dirname(file), next));
@@ -89,6 +100,7 @@ for (const inc of linkInclude) {
 }
 
 let filesChanged = 0;
+const changedRels = [];
 const seen = new Set();
 const allFiles = [
   ...targets.map((file) => ({ file, linkOnly: false })),
@@ -126,16 +138,50 @@ for (const { file, linkOnly } of allFiles) {
   if (text !== before) {
     writeFileSync(file, text);
     filesChanged++;
+    changedRels.push(rel);
   }
 }
+const alreadyBranded =
+  existsSync(join(root, "overlays/whateverfi/brand.json")) &&
+  existsSync(join(root, "README.md")) &&
+  readFileSync(join(root, "README.md"), "utf8").includes("WhatEverFi");
 for (const rule of rules) {
-  if (rule.required && rule.hits === 0) failures.push(`required rule "${rule.id}" matched nothing`);
+  if (rule.required && rule.hits === 0) {
+    if (alreadyBranded && rule.required !== "always") {
+      console.log(
+        `  note: required rule "${rule.id}" matched nothing (already applied on this tree)`,
+      );
+    } else {
+      failures.push(`required rule "${rule.id}" matched nothing`);
+    }
+  }
 }
 
 // 3. Copy verbatim overlay files (never LICENSE).
 const filesDir = join(overlayRoot, "files");
 if (existsSync(filesDir)) {
   cpSync(filesDir, root, { recursive: true });
+}
+
+// Re-format files the overlay touched so long URL/email rewrites do not fail `pnpm lint`.
+const biome = join(root, "node_modules/.bin/biome");
+if (existsSync(biome) && changedRels.length) {
+  const unique = [...new Set(changedRels)].filter((rel) => !rel.startsWith("overlays/"));
+  if (unique.length) {
+    const fmt = spawnSync(
+      biome,
+      ["check", "--write", "--linter-enabled=false", "--no-errors-on-unmatched", ...unique],
+      {
+        cwd: root,
+        encoding: "utf8",
+      },
+    );
+    if (fmt.status !== 0) {
+      process.stderr.write(fmt.stdout || "");
+      process.stderr.write(fmt.stderr || "");
+      failures.push(`biome format of overlay-touched files exited ${fmt.status}`);
+    }
+  }
 }
 
 console.log(`overlay: ${renames.size} files renamed, ${filesChanged} files rewritten`);

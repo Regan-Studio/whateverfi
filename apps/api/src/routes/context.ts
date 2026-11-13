@@ -192,7 +192,7 @@ export function createRouterContext(deps: RouterDeps) {
           ? {
               ...entry,
               managed: true,
-              billing: runsOnHostedCredits(auth, entry) ? "Uses Rakazo credits" : entry.billing,
+              billing: runsOnHostedCredits(auth, entry) ? "Uses WhatEverFi credits" : entry.billing,
             }
           : entry,
       );

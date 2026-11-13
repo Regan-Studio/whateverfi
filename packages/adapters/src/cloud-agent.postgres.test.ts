@@ -781,7 +781,7 @@ describePostgres("cloud agent lifecycle and recovery (PostgreSQL + Cursor emulat
   describe("on a T3 Code environment the user connected", () => {
     const secrets = new EncryptedSecretStore("test-only-encryption-key");
 
-    /** An MCP server connected over OAuth, as Rakazo stores it after T3 Code's approval. */
+    /** An MCP server connected over OAuth, as WhatEverFi stores it after T3 Code's approval. */
     async function connectServer(
       owner: { spaceId: string; userId: string },
       overrides: {

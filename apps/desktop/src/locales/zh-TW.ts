@@ -3,7 +3,7 @@ export const ZH_TW_MESSAGES: Record<string, string> = {
   "Check for Updates…": "檢查更新項目…",
   "Computer Access…": "電腦存取權…",
   "Revoke Local Computer Access": "撤銷本機電腦存取權",
-  "Change Rakazo Server…": "更換 Rakazo 伺服器…",
+  "Change WhatEverFi Server…": "更換 WhatEverFi 伺服器…",
   "Stop Local Stack": "停止本機服務堆疊",
   "Hide {name}": "隱藏 {name}",
   "Hide Others": "隱藏其他",
@@ -35,21 +35,21 @@ export const ZH_TW_MESSAGES: Record<string, string> = {
   Close: "關閉",
   "Close Window": "關閉視窗",
   "Bring All to Front": "將此程式所有視窗移至最前",
-  "Rakazo {version} is ready to install.": "Rakazo {version} 已可安裝。",
+  "WhatEverFi {version} is ready to install.": "WhatEverFi {version} 已可安裝。",
   Restart: "重新啟動",
   Later: "稍後",
   "Could not install the update.": "無法安裝更新項目。",
   "Could not check for updates.": "無法檢查更新項目。",
-  "Rakazo is up to date.": "Rakazo 已是最新版本。",
+  "WhatEverFi is up to date.": "WhatEverFi 已是最新版本。",
   "Version {version}": "版本 {version}",
   "Automatic updates are turned off for this install.": "此安裝已關閉自動更新。",
   "Automatic updates only run in an installed build.": "自動更新僅在已安裝的版本中執行。",
   "No desktop releases are published for this build yet.": "此版本尚未發佈桌面版。",
-  "Move Rakazo to Applications to install updates.":
-    "將 Rakazo 移到「應用程式」檔案夾以安裝更新項目。",
+  "Move WhatEverFi to Applications to install updates.":
+    "將 WhatEverFi 移到「應用程式」檔案夾以安裝更新項目。",
   "Free up disk space to install updates.": "釋放磁碟空間以安裝更新項目。",
-  "This update could not be verified. Reinstall Rakazo from a trusted download.":
-    "無法驗證此更新項目。請從可信任的來源重新下載並安裝 Rakazo。",
+  "This update could not be verified. Reinstall WhatEverFi from a trusted download.":
+    "無法驗證此更新項目。請從可信任的來源重新下載並安裝 WhatEverFi。",
   "The update could not be completed. Try again later.": "無法完成更新。請稍後再試一次。",
   "Could not reach the update server.": "無法連線到更新伺服器。",
   "Allow local computer access?": "要允許存取本機電腦嗎？",
@@ -67,12 +67,13 @@ export const ZH_TW_MESSAGES: Record<string, string> = {
     "已有登入正在進行。請取消後再試一次。",
   "Could not open browser sign-in. Close other sign-in attempts and retry.":
     "無法開啟瀏覽器登入。請關閉其他登入嘗試後再試一次。",
-  "Sign-in callback rejected. Return to Rakazo to retry.": "登入回應遭拒。請返回 Rakazo 再試一次。",
-  "You can close this tab and return to Rakazo.": "你可以關閉此分頁並返回 Rakazo。",
-  "Set up Rakazo": "設定 Rakazo",
-  "Quit Rakazo": "結束 Rakazo",
-  "Welcome to Rakazo": "歡迎使用 Rakazo",
-  "Choose where Rakazo runs.": "選擇 Rakazo 的執行位置。",
+  "Sign-in callback rejected. Return to WhatEverFi to retry.":
+    "登入回應遭拒。請返回 WhatEverFi 再試一次。",
+  "You can close this tab and return to WhatEverFi.": "你可以關閉此分頁並返回 WhatEverFi。",
+  "Set up WhatEverFi": "設定 WhatEverFi",
+  "Quit WhatEverFi": "結束 WhatEverFi",
+  "Welcome to WhatEverFi": "歡迎使用 WhatEverFi",
+  "Choose where WhatEverFi runs.": "選擇 WhatEverFi 的執行位置。",
   Instance: "執行個體",
   "This computer": "這台電腦",
   "Existing instance": "現有執行個體",
@@ -85,14 +86,14 @@ export const ZH_TW_MESSAGES: Record<string, string> = {
   Continue: "繼續",
   Retry: "重試",
   "Getting ready…": "準備中…",
-  "Downloading Rakazo…": "正在下載 Rakazo…",
-  "Starting Rakazo…": "正在啟動 Rakazo…",
+  "Downloading WhatEverFi…": "正在下載 WhatEverFi…",
+  "Starting WhatEverFi…": "正在啟動 WhatEverFi…",
   "Almost ready…": "即將完成…",
-  "Rakazo is ready.": "Rakazo 已就緒。",
+  "WhatEverFi is ready.": "WhatEverFi 已就緒。",
   "{size} downloaded": "已下載 {size}",
   "Connecting…": "正在連線…",
   "Checking…": "正在檢查…",
-  "Rakazo answered at {url}.": "Rakazo 已在 {url} 回應。",
+  "WhatEverFi answered at {url}.": "WhatEverFi 已在 {url} 回應。",
   "Enter a server address first.": "請先輸入伺服器位址。",
   "Could not save that address.": "無法儲存該位址。",
   "Could not save that address. Try again.": "無法儲存該位址。請再試一次。",
@@ -100,15 +101,16 @@ export const ZH_TW_MESSAGES: Record<string, string> = {
   "Could not start the local stack. Try again.": "無法啟動本機服務堆疊。請再試一次。",
   "Could not run the connection check. Try again.": "無法檢查連線。請再試一次。",
   "Setup bridge unavailable.": "無法使用設定橋接。",
-  "Setup could not start. Quit Rakazo and try again.": "無法開始設定。請結束 Rakazo 後再試一次。",
+  "Setup could not start. Quit WhatEverFi and try again.":
+    "無法開始設定。請結束 WhatEverFi 後再試一次。",
   "Enter a server address.": "請輸入伺服器位址。",
   "Enter a valid http:// or https:// address.": "請輸入有效的 http:// 或 https:// 位址。",
   "Enter a valid server address. Public servers require HTTPS; a new local instance must use localhost.":
     "請輸入有效的伺服器位址。公開伺服器需要 HTTPS；新的本機執行個體必須使用 localhost。",
   "Invalid custom headers": "自訂標頭無效",
-  "That address redirects elsewhere. Enter the final Rakazo server address.":
-    "該位址會重新導向到其他位置。請輸入 Rakazo 伺服器的最終位址。",
-  "That address did not respond like a Rakazo server.": "該位址的回應不像 Rakazo 伺服器。",
+  "That address redirects elsewhere. Enter the final WhatEverFi server address.":
+    "該位址會重新導向到其他位置。請輸入 WhatEverFi 伺服器的最終位址。",
+  "That address did not respond like a WhatEverFi server.": "該位址的回應不像 WhatEverFi 伺服器。",
   "The server answered with HTTP {status}.": "伺服器回應了 HTTP {status}。",
   "Timed out reaching that address.": "連線到該位址逾時。",
   "Nothing is listening at that address yet.": "該位址目前沒有任何服務在監聽。",
@@ -131,8 +133,8 @@ export const ZH_TW_MESSAGES: Record<string, string> = {
     "無法儲存設定。已還原先前的執行個體。",
   "Connected, but could not save setup for the next launch. Try Continue again.":
     "已連線，但無法為下次啟動儲存設定。請再按一次「繼續」。",
-  "The app-managed Rakazo services are not ready. Retry setup.":
-    "由 App 管理的 Rakazo 服務尚未就緒。請重新設定。",
+  "The app-managed WhatEverFi services are not ready. Retry setup.":
+    "由 App 管理的 WhatEverFi 服務尚未就緒。請重新設定。",
   "Docker is installed, but Docker Compose is missing. Install Docker Desktop or the docker-compose-plugin.":
     "已安裝 Docker，但缺少 Docker Compose。請安裝 Docker Desktop 或 docker-compose-plugin。",
   "Could not check Docker Compose. Check the output below, then retry.":
@@ -152,10 +154,10 @@ export const ZH_TW_MESSAGES: Record<string, string> = {
     "Docker 已停止回應。請啟動 Docker 後再試一次。",
   "Docker Compose is missing. Install Docker Desktop or the docker-compose-plugin, then retry.":
     "缺少 Docker Compose。請安裝 Docker Desktop 或 docker-compose-plugin 後再試一次。",
-  "Downloading Rakazo images failed. Check the output below, then retry.":
-    "無法下載 Rakazo 映像檔。請查看下方輸出後再試一次。",
-  "Rakazo services did not start. Check the output below, then retry.":
-    "Rakazo 服務未能啟動。請查看下方輸出後再試一次。",
+  "Downloading WhatEverFi images failed. Check the output below, then retry.":
+    "無法下載 WhatEverFi 映像檔。請查看下方輸出後再試一次。",
+  "WhatEverFi services did not start. Check the output below, then retry.":
+    "WhatEverFi 服務未能啟動。請查看下方輸出後再試一次。",
   "The stack started but the web app did not answer. Retry, and check the output below.":
     "服務堆疊已啟動，但網頁 App 沒有回應。請重試並查看下方輸出。",
   "Could not prepare the local stack. Retry.": "無法準備本機服務堆疊。請再試一次。",
@@ -178,15 +180,15 @@ export const ZH_TW_MESSAGES: Record<string, string> = {
   "Chat Details": "聊天詳細資料",
   Help: "說明",
   "Keyboard Shortcuts": "鍵盤快速鍵",
-  "Downloading Rakazo failed. Check the internet connection, then retry.":
-    "無法下載 Rakazo。請檢查網路連線，然後再試一次。",
+  "Downloading WhatEverFi failed. Check the internet connection, then retry.":
+    "無法下載 WhatEverFi。請檢查網路連線，然後再試一次。",
   "Could not move your data from Docker. Check the output below, then retry.":
     "無法從 Docker 移轉你的資料。請查看下方輸出，然後再試一次。",
   "The computer runtime already running is too old. Update or quit it, then retry.":
     "已在執行的電腦執行環境版本過舊。請更新或結束它，然後再試一次。",
-  "Your Rakazo data is in a different computer runtime. Quit the one running, then retry.":
-    "你的 Rakazo 資料位於另一個電腦執行環境中。請結束正在執行的那個，然後再試一次。",
-  "Run Rakazo without Docker?": "不使用 Docker 執行 Rakazo？",
+  "Your WhatEverFi data is in a different computer runtime. Quit the one running, then retry.":
+    "你的 WhatEverFi 資料位於另一個電腦執行環境中。請結束正在執行的那個，然後再試一次。",
+  "Run WhatEverFi without Docker?": "不使用 Docker 執行 WhatEverFi？",
   "Your bots and data move over. Docker is stopped, not removed.":
     "你的機器人和資料會一併移轉。Docker 只會停止，不會移除。",
   Move: "移轉",
@@ -194,11 +196,12 @@ export const ZH_TW_MESSAGES: Record<string, string> = {
   "Nothing to install.": "無需安裝。",
   "Your data stays on this computer.": "你的資料保留在這台電腦上。",
   "Connect to a server you or your team already run.": "連線到你或你的團隊已在執行的伺服器。",
-  "Rakazo needs Docker Desktop to run on this computer.":
-    "Rakazo 需要 Docker Desktop 才能在這台電腦上執行。",
-  "Rakazo needs Docker to run on this computer.": "Rakazo 需要 Docker 才能在這台電腦上執行。",
-  "Docker Desktop is a free app that runs Rakazo in the background. Install it and open it once.":
-    "Docker Desktop 是一款免費應用程式，可在背景執行 Rakazo。安裝並開啟一次即可。",
+  "WhatEverFi needs Docker Desktop to run on this computer.":
+    "WhatEverFi 需要 Docker Desktop 才能在這台電腦上執行。",
+  "WhatEverFi needs Docker to run on this computer.":
+    "WhatEverFi 需要 Docker 才能在這台電腦上執行。",
+  "Docker Desktop is a free app that runs WhatEverFi in the background. Install it and open it once.":
+    "Docker Desktop 是一款免費應用程式，可在背景執行 WhatEverFi。安裝並開啟一次即可。",
   "Install Docker Engine and start it.": "安裝並啟動 Docker Engine。",
   "Download Docker Desktop": "下載 Docker Desktop",
   "Install Docker": "安裝 Docker",

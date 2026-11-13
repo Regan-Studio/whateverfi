@@ -40,7 +40,7 @@ Setup:
 
 1. Create the directory if needed and enter it.
 2. Download and inspect this installer (do not clone the repository):
-   https://raw.githubusercontent.com/Regan-Studio/whateverfi/main/infra/compose/install-images.sh
+   https://raw.githubusercontent.com/regan-studio/whateverfi/main/infra/compose/install-images.sh
    If that host is unreachable, use a mirror URL (e.g. set `RAKAZO_INSTALLER_URL` to
    `https://example.com/mirror/rakazo/infra/compose/install-images.sh` and curl that instead).
 3. Run `bash install-images.sh --prepare-only`. It downloads the Compose and environment example

@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/Regan-Studio/whateverfi?labelColor=black&style=for-the-badge&color=2563EB)](https://github.com/Regan-Studio/whateverfi/stargazers)
 [![Discord コミュニティに参加](https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?labelColor=black&style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/RWwKa2Sn7h)
 [![App Store で iPhone 版をダウンロード](https://img.shields.io/badge/App%20Store-Download%20for%20iPhone-black?labelColor=black&style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/app/rakazo/id6801531099)
-[![Google Play で Android 版をダウンロード](https://img.shields.io/badge/Google%20Play-Get%20the%20app-black?labelColor=black&style=for-the-badge&logo=googleplay&logoColor=white)](https://play.google.com/store/apps/details?id=com.rakazo.app)
+[![Google Play で Android 版をダウンロード](https://img.shields.io/badge/Google%20Play-Get%20the%20app-black?labelColor=black&style=for-the-badge&logo=googleplay&logoColor=white)](https://app.whateverfi.com/)
 
 ![WhatEverFi：本当に自分のものにできる AI チームメイト](./docs/readme-hero.png)
 
@@ -14,7 +14,7 @@ WhatEverFi は、Grok Bot のオープンソースかつセルフホスト可能
 メモリ、ルーティン、アプリ、コンピューターを持つ常駐型の AI チームメイト。自分のマシンで、自分のモデルを使って動かせます。
 
 [Web](https://app.whateverfi.com)、[デスクトップ](https://whateverfi.com/download/)、[iPhone](https://apps.apple.com/app/rakazo/id6801531099)、
-[Android](https://play.google.com/store/apps/details?id=com.rakazo.app) で利用できます。
+[Android](https://app.whateverfi.com/) で利用できます。
 
 Meta Muse、OpenAI Dots、Instinct、OpenClaw、Hermes Agent、Claude Duet の代替ツールでもあります。
 
@@ -105,7 +105,7 @@ Docker Engine、Compose プラグイン、curl、OpenSSL が必要です。リ�
 
 ```bash
 mkdir -p rakazo && cd rakazo &&
-curl -fsSLO https://raw.githubusercontent.com/Regan-Studio/whateverfi/main/infra/compose/install-images.sh &&
+curl -fsSLO https://raw.githubusercontent.com/regan-studio/whateverfi/main/infra/compose/install-images.sh &&
 bash install-images.sh
 ```
 

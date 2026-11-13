@@ -109,14 +109,14 @@ export class TeamChat {
   constructor(private readonly deps: TeamChatDeps) {}
 
   /**
-   * Copies a message into the bot's Rakazo thread before anything answers it. With `files`, the
+   * Copies a message into the bot's WhatEverFi thread before anything answers it. With `files`, the
    * receiving process stored its attachments; without, uploads an earlier attempt finished are
    * reused, since attachment fetchers do not survive a restart.
    */
   async mirrorTranscript(message: TeamChatMessage, files?: TranscriptFiles): Promise<void> {
     if (message.threadMessageId) return;
     const conversation = message.externalConversation;
-    if (!conversation.thread) throw new Error("Team chat conversation has no Rakazo thread");
+    if (!conversation.thread) throw new Error("Team chat conversation has no WhatEverFi thread");
     const stored = files ?? {
       artifacts: await this.deps.prisma.artifact.findMany({
         where: {
@@ -169,7 +169,7 @@ export class TeamChat {
     if (!message || !from.includes(message.status)) return;
     const conversation = message.externalConversation;
     const thread = conversation.thread;
-    if (!thread) throw new Error("Team chat conversation has no Rakazo thread");
+    if (!thread) throw new Error("Team chat conversation has no WhatEverFi thread");
     // A routine the previous release woke without claiming the message already answers it.
     if (await this.routineWoken(message)) {
       await this.settle(message.id, from, {

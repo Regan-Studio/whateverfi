@@ -165,7 +165,7 @@ it("offers Google Play on Android", async () => {
   const mobile = [...document.querySelectorAll("a")].find(
     (link) => link.textContent === "Get the mobile app",
   )!;
-  expect(mobile.href).toBe("https://play.google.com/store/apps/details?id=com.rakazo.app");
+  expect(mobile.href).toBe("https://app.whateverfi.com/");
 });
 
 it("falls back when app artwork fails and accepts replacement artwork", async () => {

@@ -431,7 +431,7 @@ describe("IncusSandboxProvider", () => {
     const fake = new FakeIncus();
     await providerFor(fake).provision({ botId: "bot-a", homePath: "/unused" }, context);
     expect(fake.requests.find((entry) => entry.method === "POST")?.body).toMatchObject({
-      source: { server: "https://ghcr.io", alias: "Regan-Studio/whateverfi/computer:edge" },
+      source: { server: "https://ghcr.io", alias: "regan-studio/whateverfi/computer:edge" },
       config: { "limits.cpu": "2", "limits.memory": "2GiB", "limits.processes": "2048" },
     });
   });
@@ -989,7 +989,11 @@ describe("IncusSandboxProvider", () => {
 
 describe("ociImageSource", () => {
   it.each([
-    ["ghcr.io/regan-studio/whateverfi/computer:edge", "https://ghcr.io", "Regan-Studio/whateverfi/computer:edge"],
+    [
+      "ghcr.io/regan-studio/whateverfi/computer:edge",
+      "https://ghcr.io",
+      "regan-studio/whateverfi/computer:edge",
+    ],
     [
       "registry.example.test:5000/computer@sha256:abc",
       "https://registry.example.test:5000",

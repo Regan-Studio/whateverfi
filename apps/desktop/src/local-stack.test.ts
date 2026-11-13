@@ -312,11 +312,11 @@ describe("reduceStackState", () => {
   it("records why Docker is unavailable", () => {
     const state = reduceStackState(reduceStackState(start, { type: "check-start" }), {
       type: "docker-missing",
-      message: "Rakazo needs Docker to run on this computer.",
+      message: "WhatEverFi needs Docker to run on this computer.",
     });
     expect(state).toMatchObject({
       phase: "docker-missing",
-      message: "Rakazo needs Docker to run on this computer.",
+      message: "WhatEverFi needs Docker to run on this computer.",
     });
   });
 });
@@ -644,7 +644,7 @@ describe("LocalStackController", () => {
     const state = await stack.start();
     expect(state).toMatchObject({
       phase: "docker-missing",
-      message: "Rakazo needs Docker to run on this computer.",
+      message: "WhatEverFi needs Docker to run on this computer.",
     });
     expect(calls).toEqual([]);
     await expect(stat(path.join(root, "stack", STACK_ENV_FILE))).rejects.toThrow();
@@ -722,7 +722,7 @@ describe("LocalStackController", () => {
   it("names Docker Desktop when it is missing on macOS and Windows", async () => {
     const stack = controller({ platform: "darwin", exists: () => false });
     expect((await stack.start()).message).toBe(
-      "Rakazo needs Docker Desktop to run on this computer.",
+      "WhatEverFi needs Docker Desktop to run on this computer.",
     );
   });
 

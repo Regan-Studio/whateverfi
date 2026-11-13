@@ -120,8 +120,8 @@ capability config, fixtures, logs, or snapshots; use the encrypted secret store 
 
 ## Contact
 
-| Address                                           | Use for                                               |
-| ------------------------------------------------- | ----------------------------------------------------- |
+| Address                                                   | Use for                                               |
+| --------------------------------------------------------- | ----------------------------------------------------- |
 | [security@whateverfi.com](mailto:security@whateverfi.com) | Vulnerabilities only — see [SECURITY.md](SECURITY.md) |
 | [support@whateverfi.com](mailto:support@whateverfi.com)   | User and support questions                            |
 | [elie@whateverfi.com](mailto:elie@whateverfi.com)         | Maintainer                                            |

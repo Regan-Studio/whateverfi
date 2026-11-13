@@ -196,7 +196,7 @@ async function probeServer(
         ok: false,
         status: response.status,
         url,
-        error: t("That address redirects elsewhere. Enter the final Rakazo server address."),
+        error: t("That address redirects elsewhere. Enter the final WhatEverFi server address."),
       };
     }
     if (!response.ok) {
@@ -213,7 +213,7 @@ async function probeServer(
         ok: false,
         status: response.status,
         url,
-        error: t("That address did not respond like a Rakazo server."),
+        error: t("That address did not respond like a WhatEverFi server."),
       };
     }
     return {
@@ -243,7 +243,7 @@ async function offerDockerMove(userStackDir: string): Promise<StackChoice> {
     return "docker";
   const { response } = await dialog.showMessageBox({
     type: "question",
-    message: t("Run Rakazo without Docker?"),
+    message: t("Run WhatEverFi without Docker?"),
     detail: t("Your bots and data move over. Docker is stopped, not removed."),
     buttons: [t("Move"), t("Keep Docker")],
     defaultId: 0,

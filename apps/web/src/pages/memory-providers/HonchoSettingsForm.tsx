@@ -7,7 +7,7 @@ import { MemoryProviderAdvanced } from "./MemoryProviderAdvanced";
 import type { MemoryProviderConnectionDraft, MemoryProviderSettingsFormProps } from "./registry";
 
 const RESOURCE_ID_PATTERN = /^[A-Za-z0-9_-]{0,512}$/;
-// Rakazo writes to these peers, so they cannot be read as the user's own peer.
+// WhatEverFi writes to these peers, so they cannot be read as the user's own peer.
 function isReservedPeerId(value: string): boolean {
   return value === "rakazo-shared" || value.startsWith("bot-");
 }
@@ -121,12 +121,14 @@ export function HonchoSettingsForm({
               autoComplete="off"
             />
             <p id={userPeerDescriptionId} className="mt-2 text-body-sm text-muted-foreground">
-              <Trans>Recall from this peer; save to Rakazo’s own peers.</Trans>
+              <Trans>Recall from this peer; save to WhatEverFi’s own peers.</Trans>
             </p>
             {!userPeerValid ? (
               <FieldError id={userPeerErrorId}>
                 {userPeerFormatValid ? (
-                  <Trans>rakazo-shared and IDs starting with bot- are reserved for Rakazo.</Trans>
+                  <Trans>
+                    rakazo-shared and IDs starting with bot- are reserved for WhatEverFi.
+                  </Trans>
                 ) : (
                   <Trans>Use up to 512 letters, digits, _ or -.</Trans>
                 )}

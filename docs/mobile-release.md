@@ -91,7 +91,7 @@ scores once processed. Managed publishing can delay release after approval.
 
 ## Android APK
 
-Android users should install [WhatEverFi from Google Play](https://play.google.com/store/apps/details?id=com.rakazo.app).
+Android users should install [WhatEverFi from Google Play](https://app.whateverfi.com/).
 For manual installation, an APK remains available.
 `release-mobile` publishes it, or run the `release-android-apk` workflow from
 `main` on its own. It builds the `android-apk` EAS profile, signed with the

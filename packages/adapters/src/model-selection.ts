@@ -161,7 +161,7 @@ export type SpaceCatalogAuth = {
   secretIdByModel: Partial<Record<string, Partial<Record<string, string>>>>;
 };
 
-/** Whether this space would run the model on Rakazo credits rather than a member's own connection. */
+/** Whether this space would run the model on WhatEverFi credits rather than a member's own connection. */
 export function runsOnHostedCredits(
   auth: SpaceCatalogAuth,
   entry: { provider: string; id: string },
