@@ -47,7 +47,8 @@
       ".yml",
       ".yaml",
       ".sh",
-      ".example"
+      ".example",
+      ".po"
     ],
     "rootFiles": [
       "README.md",
@@ -314,6 +315,94 @@
       "$comment": "Smoke extracted raw.githubusercontent.com/.../rakazo/<ref>/infra/compose; the path segment is now whateverfi."
     },
     {
+      "id": "linux-update-signature-filename",
+      "file": "apps/desktop/src/linux-update-signature.test.ts",
+      "group": "links",
+      "find": "\\\\nRakazo-1\\\\.2\\\\.3\\\\.AppImage",
+      "replace": "\\\\nWhatEverFi-1.2.3.AppImage",
+      "$comment": "The signed payload's third line is the product filename; brand-word rewrote the input but not this expected string in the same literal."
+    },
+    {
+      "id": "passkey-example-host",
+      "file": "apps/desktop/src/passkeys.test.ts",
+      "group": "links",
+      "find": "toBe\\(\"rakazo\\.example\\.org\"\\)",
+      "replace": "toBe(\"whateverfi.example.org\")"
+    },
+    {
+      "id": "passkey-example-entitlement",
+      "file": "apps/desktop/src/passkeys.test.ts",
+      "group": "links",
+      "find": "webcredentials:rakazo\\.example\\.org",
+      "replace": "webcredentials:whateverfi.example.org"
+    },
+    {
+      "id": "sandbox-windows-product-dir",
+      "file": "packages/adapters/src/desktop-sandbox-paths.test.ts",
+      "group": "links",
+      "find": "users\\\\\\\\owner\\\\\\\\rakazo\\\\\\\\",
+      "replace": "users\\\\\\\\owner\\\\\\\\whateverfi\\\\\\\\",
+      "$comment": "Keep the requested path's product-dir casing in sync with the WhatEverFi root."
+    },
+    {
+      "id": "builtin-skills-docs-regex",
+      "file": "packages/adapters/src/builtin-skills.test.ts",
+      "group": "links",
+      "find": "https:\\\\/\\\\/rakazo\\\\.com\\\\/docs\\\\/",
+      "replace": "https:\\\\/\\\\/whateverfi\\\\.com\\\\/docs\\\\/"
+    },
+    {
+      "id": "builtin-skill-description-length",
+      "file": "packages/adapters/src/builtin-skills.ts",
+      "find": "How to use or set up WhatEverFi: chat apps, your computer, billing, hosting",
+      "replace": "How to use or set up WhatEverFi: apps, your computer, billing, hosting",
+      "required": true,
+      "$comment": "WhatEverFi is longer than Rakazo; the skill picker truncates at 72 characters.",
+      "group": "links"
+    },
+    {
+      "id": "normalize-official-repo-case",
+      "file": "packages/core/src/self-update.test.ts",
+      "group": "links",
+      "find": "url: \"https://github.com/regan-studio/whateverfi\"",
+      "replace": "url: \"https://github.com/Regan-Studio/whateverfi\"",
+      "required": true,
+      "$comment": "normalizeRepoUrl does not lowercase; repoIdentity does. self-update-identity-case must not rewrite this expectation."
+    },
+    {
+      "id": "repo-identity-case-variant",
+      "file": "packages/core/src/self-update.test.ts",
+      "group": "links",
+      "find": "ssh://git@github.com/Elie222/WhatEverFi",
+      "replace": "ssh://git@github.com/Regan-Studio/WhatEverFi",
+      "required": true,
+      "$comment": "The upstream case-fold fixture was Elie222/Rakazo. brand-word left the old owner and produced the corrupted slug elie222/whateverfi."
+    },
+    {
+      "id": "smoke-unpinned-download-ref",
+      "file": "infra/compose/install-images-pull-never.smoke.sh",
+      "group": "links",
+      "find": "rakazo/(?=v[0-9]|main/infra/compose)",
+      "replace": "whateverfi/",
+      "required": true
+    },
+    {
+      "id": "deploy-example-ghcr-repo",
+      "file": "packages/testkit/src/deploy-script.test.ts",
+      "group": "links",
+      "find": "ghcr\\.io/example/rakazo/",
+      "replace": "ghcr.io/example/whateverfi/"
+    },
+    {
+      "id": "desktop-host-own-window-name",
+      "file": "packages/adapters/src/agent-desktop-host-screen.test.ts",
+      "group": "links",
+      "find": "observe\\(scope, \"rakazo\"\\)",
+      "replace": "observe(scope, \"whateverfi\")",
+      "required": true,
+      "$comment": "The product refuses to drive its own window; the program name is the Linux executableName."
+    },
+    {
       "id": "company-url",
       "find": "https://www\\.getinboxzero\\.com/[^\"'`\\s)]*",
       "replace": "https://regan.studio",
@@ -344,8 +433,8 @@
     {
       "id": "footer-legal",
       "file": "apps/www/src/components/Footer.astro",
-      "find": "<span>\u00a9 2026 <a href=\\{INBOX_ZERO_URL\\} target=\"_blank\" rel=\"noopener\">Regan.Studio</a></span>\\s*<span>Apache-2\\.0</span>",
-      "replace": "<span>\u00a9 2026 <a href=\"https://regan.studio\" rel=\"noopener\">Regan.Studio</a></span>\n      <span>Based on Rakazo (<a href=\"/about/#license\">Apache-2.0</a>)</span>",
+      "find": "<span>© 2026 <a href=\\{INBOX_ZERO_URL\\} target=\"_blank\" rel=\"noopener\">Regan.Studio</a></span>\\s*<span>Apache-2\\.0</span>",
+      "replace": "<span>© 2026 <a href=\"https://regan.studio\" rel=\"noopener\">Regan.Studio</a></span>\n      <span>Based on Rakazo (<a href=\"/about/#license\">Apache-2.0</a>)</span>",
       "required": true,
       "$comment": "Matches after company-name-inc has rewritten Inbox Zero Inc. to Regan.Studio."
     },
@@ -408,7 +497,7 @@
     {
       "id": "star-pill",
       "file": "apps/www/src/components/Header.astro",
-      "find": "<span aria-hidden=\"true\">\u2605</span>\\s*<span>\\{starsLabel\\}</span>",
+      "find": "<span aria-hidden=\"true\">★</span>\\s*<span>\\{starsLabel\\}</span>",
       "replace": "<span>GitHub</span>",
       "required": true,
       "$comment": "Do not present upstream star counts as WhatEverFi's."
@@ -452,14 +541,14 @@
       "id": "home-desktop-links",
       "file": "apps/www/src/components/HomePage.astro",
       "find": "\\{desktopPlatforms\\.map\\(\\(platform\\) => \\(\\s*<a href=\\{desktopDownloadHref\\(platform\\)\\}>\\{PLATFORM_NAMES\\[platform\\]\\}</a>\\s*\\)\\)\\}",
-      "replace": "<a href={APP_URL}>WhatEverFi app coming soon \u00b7 try the web version</a>",
+      "replace": "<a href={APP_URL}>WhatEverFi app coming soon · try the web version</a>",
       "required": true
     },
     {
       "id": "home-mobile-links",
       "file": "apps/www/src/components/HomePage.astro",
       "find": "<a href=\\{IOS_APP_URL\\}>iPhone and iPad</a>\\s*<a href=\\{ANDROID_APP_STORE_URL\\}>Android</a>",
-      "replace": "<a href={APP_URL}>WhatEverFi app coming soon \u00b7 try the web version</a>",
+      "replace": "<a href={APP_URL}>WhatEverFi app coming soon · try the web version</a>",
       "required": true
     },
     {

@@ -429,7 +429,7 @@ describe("production deploy script", () => {
       );
       expect(deploy.run().status).toBe(0);
       expect(commandsOf(deploy)).toContain(
-        `docker pull --quiet ghcr.io/example/rakazo/app:sha-${next}`,
+        `docker pull --quiet ghcr.io/example/whateverfi/app:sha-${next}`,
       );
     });
 

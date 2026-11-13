@@ -18,7 +18,7 @@ import {
 describe("normalizeRepoUrl", () => {
   it("accepts the official repository and https forks", () => {
     expect(normalizeRepoUrl(OFFICIAL_REPO_URL)).toEqual({
-      url: "https://github.com/regan-studio/whateverfi",
+      url: "https://github.com/Regan-Studio/whateverfi",
     });
     expect(normalizeRepoUrl("  https://github.com/me/rakazo.git/  ")).toEqual({
       url: "https://github.com/me/rakazo.git",
@@ -73,7 +73,7 @@ describe("repoIdentity", () => {
     expect(repoIdentity("https://github.com/regan-studio/whateverfi")).toBe(identity);
     expect(repoIdentity("https://github.com/regan-studio/whateverfi.git")).toBe(identity);
     expect(repoIdentity("git@github.com:Regan-Studio/whateverfi.git")).toBe(identity);
-    expect(repoIdentity("ssh://git@github.com/Elie222/WhatEverFi")).toBe(identity);
+    expect(repoIdentity("ssh://git@github.com/Regan-Studio/WhatEverFi")).toBe(identity);
     expect(repoIdentity("not a url")).toBeNull();
   });
 

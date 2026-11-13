@@ -42,7 +42,7 @@ describe("linuxUpdateSignatureMessage", () => {
   it("is the versioned three-line format the release workflow signs", () => {
     expect(
       linuxUpdateSignatureMessage("1.2.3", "WhatEverFi-1.2.3.AppImage", "ab12").toString("utf8"),
-    ).toBe("rakazo-linux-update-v1\n1.2.3\nRakazo-1.2.3.AppImage\nab12\n");
+    ).toBe("rakazo-linux-update-v1\n1.2.3\nWhatEverFi-1.2.3.AppImage\nab12\n");
   });
 
   it("hashes the whole file with SHA-512", async () => {

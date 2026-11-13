@@ -16,7 +16,7 @@ describe("WhatEverFi skill", () => {
       const slug =
         url === "https://whateverfi.com/docs.md"
           ? publishedSlugs[0]
-          : /^https:\/\/rakazo\.com\/docs\/([\w-]+)\.md$/.exec(url)?.[1];
+          : /^https:\/\/whateverfi\.com\/docs\/([\w-]+)\.md$/.exec(url)?.[1];
       expect(publishedSlugs, url).toContain(slug);
       expect(existsSync(repoFile(`docs/${slug}.md`)), url).toBe(true);
     }

@@ -1309,8 +1309,8 @@ msgid "Allow once"
 msgstr "Allow once"
 
 #: apps/web/src/lib/dictation.ts
-msgid "Allow Rakazo to use Speech Recognition and the microphone in System Settings."
-msgstr "Allow Rakazo to use Speech Recognition and the microphone in System Settings."
+msgid "Allow WhatEverFi to use Speech Recognition and the microphone in System Settings."
+msgstr "Allow WhatEverFi to use Speech Recognition and the microphone in System Settings."
 
 #: apps/mobile/lib/call-session.ts
 #: apps/mobile/lib/composer-dictation.ts
@@ -2333,8 +2333,8 @@ msgstr "Choose folder"
 
 #: apps/web/src/components/ModelCredits.tsx
 #: apps/web/src/components/SubscriptionGate.tsx
-msgid "Choose how to use Rakazo"
-msgstr "Choose how to use Rakazo"
+msgid "Choose how to use WhatEverFi"
+msgstr "Choose how to use WhatEverFi"
 
 #: apps/mobile/components/vault-item-editor.tsx
 #: apps/mobile/components/vault-item-sheet.tsx
@@ -2770,8 +2770,8 @@ msgstr "Connect your AI"
 
 #. js-lingui-explicit-id
 #: packages/i18n/src/run-error.ts
-msgid "Connect your own API key in Models or choose Rakazo credits in Billing."
-msgstr "Connect your own API key in Models or choose Rakazo credits in Billing."
+msgid "Connect your own API key in Models or choose WhatEverFi credits in Billing."
+msgstr "Connect your own API key in Models or choose WhatEverFi credits in Billing."
 
 #: apps/mobile/app/(settings)/bot-template.tsx
 #: apps/mobile/app/(settings)/integrations.tsx
@@ -4101,8 +4101,8 @@ msgid "Create space"
 msgstr "Create space"
 
 #: apps/web/src/pages/Auth.tsx
-msgid "Create your Rakazo"
-msgstr "Create your Rakazo"
+msgid "Create your WhatEverFi"
+msgstr "Create your WhatEverFi"
 
 #: apps/mobile/components/thread/message-bubble.tsx
 #: apps/web/src/components/AskCard.tsx
@@ -4830,8 +4830,8 @@ msgid "Ends {day}"
 msgstr "Ends {day}"
 
 #: apps/web/src/components/GitHubStarPrompt.tsx
-msgid "Enjoying Rakazo?"
-msgstr "Enjoying Rakazo?"
+msgid "Enjoying WhatEverFi?"
+msgstr "Enjoying WhatEverFi?"
 
 #: apps/mobile/lib/user-error.ts
 #: apps/web/src/lib/user-error.ts
@@ -5597,8 +5597,8 @@ msgstr "How to check"
 
 #: apps/mobile/app/(settings)/signup-survey.tsx
 #: apps/web/src/components/SignupSurvey.tsx
-msgid "How will you use Rakazo?"
-msgstr "How will you use Rakazo?"
+msgid "How will you use WhatEverFi?"
+msgstr "How will you use WhatEverFi?"
 
 #: apps/mobile/components/compatible-endpoint-form.tsx
 msgid "http://127.0.0.1:8000/v1"
@@ -7082,8 +7082,8 @@ msgid "Not imported"
 msgstr "Not imported"
 
 #: apps/web/src/pages/shell/import-status.ts
-msgid "Not in Rakazo's catalog"
-msgstr "Not in Rakazo's catalog"
+msgid "Not in WhatEverFi's catalog"
+msgstr "Not in WhatEverFi's catalog"
 
 #: apps/mobile/app/(settings)/integrations.tsx
 #: apps/web/src/pages/plugins/plugin-browse.tsx
@@ -7122,12 +7122,12 @@ msgstr "Not sent. Tap to retry"
 
 #: apps/web/src/pages/shell/agent-import-plan.tsx
 #: apps/web/src/pages/shell/import-status.ts
-msgid "Not supported in Rakazo"
-msgstr "Not supported in Rakazo"
+msgid "Not supported in WhatEverFi"
+msgstr "Not supported in WhatEverFi"
 
 #: apps/web/src/pages/shell/agent-import-plan.tsx
-msgid "Not used by Rakazo"
-msgstr "Not used by Rakazo"
+msgid "Not used by WhatEverFi"
+msgstr "Not used by WhatEverFi"
 
 #: apps/mobile/app/(settings)/integrations.tsx
 #: apps/web/src/components/McpServerHealthLine.tsx
@@ -7350,8 +7350,8 @@ msgstr "Open navigation"
 #: apps/web/src/components/pages/PublicPageShell.tsx
 #: apps/web/src/pages/Invite.tsx
 #: apps/web/src/pages/SharedPage.tsx
-msgid "Open Rakazo"
-msgstr "Open Rakazo"
+msgid "Open WhatEverFi"
+msgstr "Open WhatEverFi"
 
 #: apps/mobile/lib/composer-dictation.ts
 #: apps/mobile/lib/thread-voice.ts
@@ -7594,8 +7594,8 @@ msgstr "Paste a replacement key"
 
 #: apps/mobile/components/compatible-endpoint-form.tsx
 #: apps/web/src/pages/model-settings/compatible-model-fields.tsx
-msgid "Paste the OpenAI-compatible address from your server. Rakazo adds /v1 if needed."
-msgstr "Paste the OpenAI-compatible address from your server. Rakazo adds /v1 if needed."
+msgid "Paste the OpenAI-compatible address from your server. WhatEverFi adds /v1 if needed."
+msgstr "Paste the OpenAI-compatible address from your server. WhatEverFi adds /v1 if needed."
 
 #: apps/web/src/pages/shell/agent-import.tsx
 msgid "Paste the reply"
@@ -7888,13 +7888,13 @@ msgstr "Quote"
 #: apps/mobile/app/bot-settings.tsx
 #: apps/web/src/pages/AccountSettingsOverlay.tsx
 #: apps/web/src/pages/shell/avatar-studio-popover.tsx
-msgid "Rakazo"
-msgstr "Rakazo"
+msgid "WhatEverFi"
+msgstr "WhatEverFi"
 
 #: apps/mobile/app/(settings)/billing.tsx
 #: apps/web/src/pages/onboarding/use-onboarding-model.ts
-msgid "Rakazo credits"
-msgstr "Rakazo credits"
+msgid "WhatEverFi credits"
+msgstr "WhatEverFi credits"
 
 #: apps/web/src/pages/memory-providers/HonchoSettingsForm.tsx
 msgid "rakazo-shared and IDs starting with bot- are reserved for Rakazo."
@@ -7950,8 +7950,8 @@ msgid "Recall from banks"
 msgstr "Recall from banks"
 
 #: apps/web/src/pages/memory-providers/HonchoSettingsForm.tsx
-msgid "Recall from this peer; save to Rakazo’s own peers."
-msgstr "Recall from this peer; save to Rakazo’s own peers."
+msgid "Recall from this peer; save to WhatEverFi’s own peers."
+msgstr "Recall from this peer; save to WhatEverFi’s own peers."
 
 #: apps/web/src/pages/memory-providers/SerenitySettingsForm.tsx
 msgid "Recall only"
@@ -8535,8 +8535,8 @@ msgstr "Return to inbox"
 
 #: apps/web/src/pages/McpOAuthCallback.tsx
 #: apps/web/src/pages/SlackInstallCallback.tsx
-msgid "Return to Rakazo"
-msgstr "Return to Rakazo"
+msgid "Return to WhatEverFi"
+msgstr "Return to WhatEverFi"
 
 #: apps/web/src/lib/model-connection-preflight.ts
 msgid "Review provider settings and test again."
@@ -9253,8 +9253,8 @@ msgstr "Sign in at <0>{0}</0>, then paste the code here."
 
 #: apps/mobile/app/sign-in.tsx
 #: apps/web/src/pages/Auth.tsx
-msgid "Sign in to Rakazo"
-msgstr "Sign in to Rakazo"
+msgid "Sign in to WhatEverFi"
+msgstr "Sign in to WhatEverFi"
 
 #: apps/mobile/lib/user-error.ts
 #: apps/web/src/lib/user-error.ts
@@ -9285,8 +9285,8 @@ msgid "Sign up"
 msgstr "Sign up"
 
 #: apps/mobile/app/sign-in.tsx
-msgid "Sign up for Rakazo"
-msgstr "Sign up for Rakazo"
+msgid "Sign up for WhatEverFi"
+msgstr "Sign up for WhatEverFi"
 
 #: apps/web/src/components/integrations/plugin-marketplace.tsx
 msgid "Sign-in cancelled. Try again."
@@ -9574,8 +9574,8 @@ msgid "Start recording"
 msgstr "Start recording"
 
 #: apps/mobile/app/paywall.tsx
-msgid "Start using Rakazo"
-msgstr "Start using Rakazo"
+msgid "Start using WhatEverFi"
+msgstr "Start using WhatEverFi"
 
 #: apps/mobile/app/(settings)/billing.tsx
 #: apps/web/src/components/ModelCredits.tsx
@@ -9886,8 +9886,8 @@ msgid "That doesn’t look like a URL"
 msgstr "That doesn’t look like a URL"
 
 #: apps/mobile/lib/endpoint.ts
-msgid "That URL did not look like a Rakazo server"
-msgstr "That URL did not look like a Rakazo server"
+msgid "That URL did not look like a WhatEverFi server"
+msgstr "That URL did not look like a WhatEverFi server"
 
 #: apps/mobile/lib/endpoint.ts
 msgid "That URL is missing a host"
@@ -10289,8 +10289,8 @@ msgstr "This server's tool result does not fit the model. Turn off Keep tool res
 
 #: apps/mobile/app/(settings)/model-connection.tsx
 #: apps/web/src/pages/model-settings/connection-controls.tsx
-msgid "This subscription sign-in is not available in Rakazo yet. Use a deployment credential or choose another provider."
-msgstr "This subscription sign-in is not available in Rakazo yet. Use a deployment credential or choose another provider."
+msgid "This subscription sign-in is not available in WhatEverFi yet. Use a deployment credential or choose another provider."
+msgstr "This subscription sign-in is not available in WhatEverFi yet. Use a deployment credential or choose another provider."
 
 #: apps/mobile/app/(settings)/bot-template.tsx
 #: apps/web/src/components/bot-templates/bot-templates-dialog.tsx
@@ -10811,8 +10811,8 @@ msgstr "Use Protected input for passwords."
 
 #: apps/mobile/app/(settings)/billing.tsx
 #: apps/web/src/components/ModelCredits.tsx
-msgid "Use Rakazo credits"
-msgstr "Use Rakazo credits"
+msgid "Use WhatEverFi credits"
+msgstr "Use WhatEverFi credits"
 
 #: apps/mobile/components/space-bots-model.tsx
 msgid "Use space default"
@@ -11028,8 +11028,8 @@ msgstr "Weekly"
 
 #: apps/mobile/app/(settings)/_layout.tsx
 #: apps/web/src/components/SignupSurvey.tsx
-msgid "Welcome to Rakazo"
-msgstr "Welcome to Rakazo"
+msgid "Welcome to WhatEverFi"
+msgstr "Welcome to WhatEverFi"
 
 #: apps/web/src/pages/shell/dialogs.tsx
 msgid "What about its memories?"
@@ -11041,8 +11041,8 @@ msgstr "What can this space use?"
 
 #: apps/mobile/app/(settings)/signup-survey.tsx
 #: apps/web/src/components/SignupSurvey.tsx
-msgid "What do you most want Rakazo to help with?"
-msgstr "What do you most want Rakazo to help with?"
+msgid "What do you most want WhatEverFi to help with?"
+msgstr "What do you most want WhatEverFi to help with?"
 
 #: apps/web/src/pages/shell/message-cards.tsx
 msgid "What do you want me on first?"

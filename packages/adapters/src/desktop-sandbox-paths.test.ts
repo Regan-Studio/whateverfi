@@ -7,7 +7,7 @@ describe("desktop sandbox path rules", () => {
     const roots = ["C:\\Users\\Owner\\WhatEverFi\\bot"];
 
     expect(
-      isAllowedDesktopPath("c:\\users\\owner\\rakazo\\BOT\\notes.txt", roots, path.win32),
+      isAllowedDesktopPath("c:\\users\\\\owner\\\\whateverfi\\\\BOT\\notes.txt", roots, path.win32),
     ).toBe(true);
     expect(
       isAllowedDesktopPath("C:\\Users\\Owner\\WhatEverFi\\bot-other\\notes.txt", roots, path.win32),
