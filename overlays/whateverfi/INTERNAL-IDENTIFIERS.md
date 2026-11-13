@@ -20,3 +20,10 @@ The product name, tab title, and home-screen name are **WhatEverFi**.
 `overlays/whateverfi/scripts/branding-guard.sh` fails a build if
 `<title>Rakazo</title>` or `apple-mobile-web-app-title` "Rakazo" comes back
 in the web or desktop shells (source or built `apps/web/dist/index.html`).
+
+The App Store id `6801531099` and the Play Store listing
+`play.google.com/store/apps/details?id=com.rakazo.app` are **not** identifiers
+to keep. `brand.json` `iosAppUrl` and `androidAppUrl` are empty, so product UI
+offers the PWA at `appUrl` (`https://app.whateverfi.com`). The branding guard
+fails a build if either upstream listing appears in product source or built
+web output.

@@ -233,7 +233,11 @@ describe("email languages", () => {
     const english = await welcomeEmail(user, "https://example.test/u");
     expect(english.subject).toBe("Welcome to WhatEverFi");
     expect(english.text).toContain("Hi Ana,");
-    expect(english.text).toContain("WhatEverFi also has apps for iPhone");
+    expect(english.text).toContain("WhatEverFi also has apps for Web");
+    expect(english.text).not.toContain("iPhone");
+    expect(english.html).toContain("https://app.whateverfi.com");
+    expect(english.html).not.toContain("id6801531099");
+    expect(english.html).not.toContain("play.google.com");
   });
 
   it.each(Object.entries(CATALOGS))(

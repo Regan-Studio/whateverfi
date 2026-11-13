@@ -5,6 +5,8 @@
   "companyUrl": "https://regan.studio",
   "siteUrl": "https://whateverfi.com",
   "appUrl": "https://app.whateverfi.com",
+  "iosAppUrl": "",
+  "androidAppUrl": "",
   "githubUrl": "https://github.com/Regan-Studio/whateverfi",
   "scope": {
     "include": [
@@ -59,7 +61,14 @@
       "SETUP_PROMPT.md",
       "SECURITY.md",
       "CONTRIBUTING.md",
-      "PRODUCT.md"
+      "PRODUCT.md",
+      "apps/web/src/components/SidebarFooter.tsx",
+      "apps/web/src/components/SidebarFooter.test.tsx",
+      "apps/mobile/lib/client-update.ts",
+      "apps/mobile/lib/client-update.test.ts",
+      "apps/mobile/lib/store-update.ts",
+      "packages/auth/src/welcome-email.tsx",
+      "packages/auth/src/email.test.ts"
     ],
     "linkInclude": ["."]
   },
@@ -311,7 +320,7 @@
       "id": "play-store-url",
       "group": "links",
       "find": "https://play\\.google\\.com/store/apps/details\\?id=com\\.rakazo\\.app",
-      "replace": "https://app.whateverfi.com/",
+      "replace": "{brand.appUrl}/",
       "$comment": "WhatEverFi has no Play listing yet; android-app-url already retargeted the product constant. Tests use HTMLHyperlinkElementUtils.href, which adds a trailing slash."
     },
     {
@@ -561,8 +570,9 @@
       "id": "android-app-url",
       "file": "packages/contracts/src/client-build.ts",
       "find": "\"https://play\\.google\\.com/store/apps/details\\?id=com\\.rakazo\\.app\"",
-      "replace": "\"https://app.whateverfi.com\"",
-      "required": true
+      "replace": "\"{brand.androidAppUrl}\"",
+      "required": true,
+      "$comment": "Empty androidAppUrl means no Play listing. The product UI offers the PWA at appUrl; play-store-url still retargets any leftover Play href to appUrl so there is no dead link."
     },
     {
       "id": "desktop-download-import",
@@ -620,6 +630,112 @@
       "replace": "\"build\": \"astro build && pagefind --site dist && node ../../overlays/whateverfi/scripts/postbuild.mjs .\"",
       "required": true,
       "$comment": "Writes Cloudflare _redirects (including /api/download -> app.whateverfi.com), _headers, and build-info.json after the marketing site build."
+    },
+    {
+      "id": "ios-app-store-url",
+      "file": "packages/contracts/src/client-build.ts",
+      "find": "export const IOS_APP_STORE_URL = \"https://apps\\.apple\\.com/app/rakazo/id\\d+\";",
+      "replace": "export const IOS_APP_STORE_URL = \"{brand.iosAppUrl}\";",
+      "required": true,
+      "$comment": "Empty iosAppUrl means no App Store listing; MobileInstallItem offers the PWA at appUrl."
+    },
+    {
+      "id": "mobile-web-app-url",
+      "file": "packages/contracts/src/client-build.ts",
+      "find": "export const ANDROID_APP_STORE_URL = \"[^\"]*\";\\n",
+      "replace": "export const ANDROID_APP_STORE_URL = \"{brand.androidAppUrl}\";\n/** Web app people can add to their Home Screen when a native listing is not published. */\nexport const MOBILE_WEB_APP_URL = \"{brand.appUrl}\";\n\n/** Native store listing, or \"\" when this brand has not published one. */\nexport function nativeStoreUrl(platform: \"ios\" | \"android\"): string {\n  return (platform === \"ios\" ? IOS_APP_STORE_URL : ANDROID_APP_STORE_URL).trim();\n}\n\n/** Store listing if this brand has one, otherwise the PWA/web app. Never an empty href. */\nexport function mobileInstallUrl(platform: \"ios\" | \"android\"): string {\n  return nativeStoreUrl(platform) || MOBILE_WEB_APP_URL;\n}\n",
+      "required": true
+    },
+    {
+      "id": "docs-mobile-install",
+      "file": "docs/mobile-app.md",
+      "find": "- iPhone, iPhone Duo and iPad: \\[App Store\\]\\(https://apps\\.apple\\.com/app/rakazo/id\\d+\\)\\.\\s*- Android: \\[Google Play\\]\\([^)]+\\)\\.",
+      "replace": "- There is no App Store or Google Play listing yet. On your phone, open the [web app]({brand.appUrl}) and add it to your Home Screen (Safari: Share \u2192 Add to Home Screen; Chrome: menu \u2192 Add to Home Screen or Install app).",
+      "required": true
+    },
+    {
+      "id": "welcome-email-store-apps",
+      "file": "packages/auth/src/welcome-email.tsx",
+      "find": "const APPS: Readonly<Record<string, string>> = \\{\\s*  iPhone: IOS_APP_STORE_URL,\\s*  Android: ANDROID_APP_STORE_URL,\\s*",
+      "replace": "const APPS: Readonly<Record<string, string>> = {\n  ...(IOS_APP_STORE_URL.trim() ? { iPhone: IOS_APP_STORE_URL } : {}),\n  ...(ANDROID_APP_STORE_URL.trim() ? { Android: ANDROID_APP_STORE_URL } : {}),\n  Web: MOBILE_WEB_APP_URL,\n",
+      "required": true
+    },
+    {
+      "id": "welcome-email-store-import",
+      "file": "packages/auth/src/welcome-email.tsx",
+      "find": "import \\{ ANDROID_APP_STORE_URL, IOS_APP_STORE_URL \\} from \"@rakazo/contracts\";",
+      "replace": "import { ANDROID_APP_STORE_URL, IOS_APP_STORE_URL, MOBILE_WEB_APP_URL } from \"@rakazo/contracts\";",
+      "required": true
+    },
+    {
+      "id": "sidebar-mobile-install",
+      "file": "apps/web/src/components/SidebarFooter.tsx",
+      "find": "import \\{ ANDROID_APP_STORE_URL, IOS_APP_STORE_URL \\} from \"@rakazo/contracts\";",
+      "replace": "import { MobileInstallItem } from \"./MobileInstallItem\";",
+      "required": true
+    },
+    {
+      "id": "sidebar-mobile-install-item",
+      "file": "apps/web/src/components/SidebarFooter.tsx",
+      "find": "<a\\s+className=\\{`\\$\\{buttonVariants\\(\\{ variant: \"ghost\" \\}\\)\\} h-9 w-full justify-start gap-2\\.5 font-normal`\\}\\s+href=\\{\\s*/Android/i\\.test\\(navigator\\.userAgent\\) \\? ANDROID_APP_STORE_URL : IOS_APP_STORE_URL\\s*\\}\\s+target=\"_blank\"\\s+rel=\"noreferrer\"\\s*>\\s*<Smartphone className=\"text-muted-foreground\" strokeWidth=\\{1\\.75\\} />\\s*<Trans>Get the mobile app</Trans>\\s*</a>",
+      "replace": "<MobileInstallItem />",
+      "required": true
+    },
+    {
+      "id": "client-update-store-fallback",
+      "file": "apps/mobile/lib/client-update.ts",
+      "find": "await Linking\\.openURL\\(Platform\\.OS === \"ios\" \\? IOS_APP_STORE_URL : ANDROID_APK_URL\\)\\.catch\\(\\s*\\(\\) => undefined,\\s*\\);",
+      "replace": "const updateUrl = mobileInstallUrl(Platform.OS === \"ios\" ? \"ios\" : \"android\");\n  if (updateUrl) await Linking.openURL(updateUrl).catch(() => undefined);",
+      "required": true
+    },
+    {
+      "id": "client-update-store-import",
+      "file": "apps/mobile/lib/client-update.ts",
+      "find": "import \\{\\s*  ANDROID_APK_URL,\\s*  buildIdAt,\\s*  CLIENT_BUILD_HEADER,\\s*  formatClientBuild,\\s*  IOS_APP_STORE_URL,\\s*\\} from \"@rakazo/contracts\";",
+      "replace": "import {\n  buildIdAt,\n  CLIENT_BUILD_HEADER,\n  formatClientBuild,\n  mobileInstallUrl,\n} from \"@rakazo/contracts\";",
+      "required": true
+    },
+    {
+      "id": "store-update-open-guard",
+      "file": "apps/mobile/lib/store-update.ts",
+      "find": "import \\{ IOS_APP_STORE_URL \\} from \"@rakazo/contracts\";",
+      "replace": "import { mobileInstallUrl } from \"@rakazo/contracts\";",
+      "required": true
+    },
+    {
+      "id": "store-update-open-url",
+      "file": "apps/mobile/lib/store-update.ts",
+      "find": "void Linking\\.openURL\\(IOS_APP_STORE_URL\\)\\.catch\\(\\(\\) => undefined\\);",
+      "replace": "const url = mobileInstallUrl(\"ios\");\n  if (url) void Linking.openURL(url).catch(() => undefined);",
+      "required": true
+    },
+    {
+      "id": "client-update-test-store",
+      "file": "apps/mobile/lib/client-update.test.ts",
+      "find": "import \\{ IOS_APP_STORE_URL \\} from \"@rakazo/contracts\";",
+      "replace": "import { mobileInstallUrl } from \"@rakazo/contracts\";",
+      "required": true
+    },
+    {
+      "id": "client-update-test-expect",
+      "file": "apps/mobile/lib/client-update.test.ts",
+      "find": "expect\\(rn\\.Linking\\.openURL\\)\\.toHaveBeenCalledWith\\(IOS_APP_STORE_URL\\);",
+      "replace": "expect(rn.Linking.openURL).toHaveBeenCalledWith(mobileInstallUrl(\"ios\"));",
+      "required": true
+    },
+    {
+      "id": "email-test-no-store-iphone",
+      "file": "packages/auth/src/email.test.ts",
+      "find": "expect\\(english\\.text\\)\\.toContain\\(\"WhatEverFi also has apps for iPhone\"\\);",
+      "replace": "expect(english.text).toContain(\"WhatEverFi also has apps for Web\");\n    expect(english.text).not.toContain(\"iPhone\");\n    expect(english.html).toContain(\"https://app.whateverfi.com\");\n    expect(english.html).not.toContain(\"id6801531099\");\n    expect(english.html).not.toContain(\"play.google.com\");",
+      "required": true
+    },
+    {
+      "id": "sidebar-test-pwa-install",
+      "file": "apps/web/src/components/SidebarFooter.test.tsx",
+      "find": "it\\(\"offers Google Play on Android\", async \\(\\) => \\{\\s*  vi\\.spyOn\\(navigator, \"userAgent\", \"get\"\\)\\.mockReturnValue\\(\"Android\"\\);\\s*  await render\\(\\);\\s*  const mobile = \\[\\.\\.\\.document\\.querySelectorAll\\(\"a\"\\)\\]\\.find\\(\\s*    \\(link\\) => link\\.textContent === \"Get the mobile app\",\\s*  \\)!;\\s*  expect\\(mobile\\.href\\)\\.toBe\\(\"https://app\\.whateverfi\\.com/\"\\);\\s*\\}\\);",
+      "replace": "it(\"offers Home Screen instructions instead of a store listing\", async () => {\n  vi.spyOn(navigator, \"userAgent\", \"get\").mockReturnValue(\"Android\");\n  await render();\n  const mobile = [...document.querySelectorAll(\"button, a\")].find(\n    (el) => el.textContent === \"Get the mobile app\",\n  )!;\n  expect(mobile.tagName).toBe(\"BUTTON\");\n  expect(mobile.getAttribute(\"href\")).toBeNull();\n  await act(async () => (mobile as HTMLButtonElement).click());\n  const dialog = document.querySelector('[data-slot=\"dialog-content\"], [role=\"dialog\"]')!;\n  expect(dialog.textContent).toContain(\"https://app.whateverfi.com\");\n  expect(dialog.textContent).toContain(\"Add to Home Screen\");\n  expect(dialog.innerHTML).not.toContain(\"id6801531099\");\n  expect(dialog.innerHTML).not.toContain(\"play.google.com\");\n});",
+      "required": true
     }
   ],
   "verify": {

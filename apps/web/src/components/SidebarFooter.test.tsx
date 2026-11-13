@@ -159,13 +159,35 @@ it("omits Board when unavailable", async () => {
   );
 });
 
-it("offers Google Play on Android", async () => {
+it("offers Home Screen instructions instead of a store listing", async () => {
   vi.spyOn(navigator, "userAgent", "get").mockReturnValue("Android");
   await render();
-  const mobile = [...document.querySelectorAll("a")].find(
-    (link) => link.textContent === "Get the mobile app",
+  const mobile = [...document.querySelectorAll("button, a")].find(
+    (el) => el.textContent === "Get the mobile app",
   )!;
-  expect(mobile.href).toBe("https://app.whateverfi.com/");
+  expect(mobile.tagName).toBe("BUTTON");
+  expect(mobile.getAttribute("href")).toBeNull();
+  await act(async () => (mobile as HTMLButtonElement).click());
+  let dialog: Element | null = null;
+  await act(async () => {
+    for (let i = 0; i < 10; i++) {
+      dialog = document.querySelector('[data-testid="mobile-install-dialog"]');
+      if (dialog) break;
+      await new Promise((resolve) => setTimeout(resolve, 20));
+    }
+  });
+  expect(dialog, document.body.innerHTML.slice(0, 1500)).not.toBeNull();
+  expect(dialog!.textContent).toContain("https://app.whateverfi.com");
+  expect(dialog!.textContent).toContain("Add to Home Screen");
+  expect(dialog!.innerHTML).not.toContain("id6801531099");
+  expect(dialog!.innerHTML).not.toContain("play.google.com");
+});
+
+it("does not link Get the mobile app to the upstream App Store listing", async () => {
+  await render();
+  const hrefs = [...document.querySelectorAll("a")].map((a) => a.href);
+  expect(hrefs.join("\n")).not.toContain("id6801531099");
+  expect(hrefs.join("\n")).not.toContain("play.google.com");
 });
 
 it("falls back when app artwork fails and accepts replacement artwork", async () => {

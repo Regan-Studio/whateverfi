@@ -16,10 +16,22 @@ export const CLIENT_KINDS = ["web", "mobile"] as const;
 export type ClientKind = (typeof CLIENT_KINDS)[number];
 export type MinimumClientBuilds = Partial<Record<ClientKind, string>>;
 
-export const IOS_APP_STORE_URL = "https://apps.apple.com/app/rakazo/id6801531099";
+export const IOS_APP_STORE_URL = "";
 export const ANDROID_APK_URL =
   "https://github.com/Regan-Studio/whateverfi/releases/download/android/rakazo.apk";
-export const ANDROID_APP_STORE_URL = "https://app.whateverfi.com";
+export const ANDROID_APP_STORE_URL = "";
+/** Web app people can add to their Home Screen when a native listing is not published. */
+export const MOBILE_WEB_APP_URL = "https://app.whateverfi.com";
+
+/** Native store listing, or "" when this brand has not published one. */
+export function nativeStoreUrl(platform: "ios" | "android"): string {
+  return (platform === "ios" ? IOS_APP_STORE_URL : ANDROID_APP_STORE_URL).trim();
+}
+
+/** Store listing if this brand has one, otherwise the PWA/web app. Never an empty href. */
+export function mobileInstallUrl(platform: "ios" | "android"): string {
+  return nativeStoreUrl(platform) || MOBILE_WEB_APP_URL;
+}
 
 const BUILD_ID = /^\d{14}$/;
 

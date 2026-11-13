@@ -1,12 +1,13 @@
 /** @jsxRuntime automatic */
 import type { TransactionalEmail } from "@rakazo/adapter-kit";
-import { ANDROID_APP_STORE_URL, IOS_APP_STORE_URL } from "@rakazo/contracts";
+import { ANDROID_APP_STORE_URL, IOS_APP_STORE_URL, MOBILE_WEB_APP_URL } from "@rakazo/contracts";
 import { Link, Text } from "react-email";
 import { emailText, greeting, linkStyle, message } from "./email.js";
 
 const APPS: Readonly<Record<string, string>> = {
-  iPhone: IOS_APP_STORE_URL,
-  Android: ANDROID_APP_STORE_URL,
+  ...(IOS_APP_STORE_URL.trim() ? { iPhone: IOS_APP_STORE_URL } : {}),
+  ...(ANDROID_APP_STORE_URL.trim() ? { Android: ANDROID_APP_STORE_URL } : {}),
+  Web: MOBILE_WEB_APP_URL,
   Mac: "https://whateverfi.com/api/download?platform=mac",
   Windows: "https://whateverfi.com/api/download?platform=windows",
   Linux: "https://whateverfi.com/api/download?platform=linux",
