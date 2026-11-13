@@ -1,0 +1,166 @@
+name: deploy-whateverfi-www
+
+# Direct-uploads the branded apps/www build to the Cloudflare Pages project
+# whateverfi-splash (whateverfi.com and www). Preview is the default.
+#
+# Production deploys use --branch main, which is this project's production
+# branch. They stay disabled until vars.WHATEVERFI_ENABLE_PAGES_PRODUCTION is
+# the string `true`. Merging this workflow and adding the secrets does not by
+# itself change the live site.
+#
+# Required secrets (never logged):
+#   CLOUDFLARE_API_TOKEN   Account > Cloudflare Pages > Edit, on account
+#                          f313233d70f42b234ebcb49d1da50b7e (Regan.Studio) only
+#   CLOUDFLARE_ACCOUNT_ID  f313233d70f42b234ebcb49d1da50b7e
+#
+# Does not touch DNS, the whateverfi-app project, or any other Pages project.
+
+on:
+  workflow_run:
+    workflows: [ci]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "Pages target. preview uses --branch github-main and does not change production. production requires vars.WHATEVERFI_ENABLE_PAGES_PRODUCTION=true."
+        type: choice
+        options: [preview, production]
+        default: preview
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-whateverfi-www-${{ github.event.inputs.target || 'auto' }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy apps/www to whateverfi-splash
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    if: >
+      github.repository == 'Regan-Studio/whateverfi'
+      && (
+        github.event_name == 'workflow_dispatch'
+        || (
+          github.event_name == 'workflow_run'
+          && github.event.workflow_run.conclusion == 'success'
+          && github.event.workflow_run.event == 'push'
+        )
+      )
+    steps:
+      - name: Decide target and refuse a production deploy without the opt-in
+        id: target
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_TARGET: ${{ github.event.inputs.target }}
+          ENABLE_PROD: ${{ vars.WHATEVERFI_ENABLE_PAGES_PRODUCTION }}
+          TOKEN_SET: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
+          ACCOUNT_SET: ${{ secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+        run: |
+          set -euo pipefail
+          if [[ "$TOKEN_SET" != "true" || "$ACCOUNT_SET" != "true" ]]; then
+            echo "CLOUDFLARE_API_TOKEN or CLOUDFLARE_ACCOUNT_ID is not set; skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            target="${DISPATCH_TARGET:-preview}"
+          else
+            # Green main: preview until the production opt-in is on.
+            if [[ "$ENABLE_PROD" == "true" ]]; then
+              target=production
+            else
+              target=preview
+            fi
+          fi
+          if [[ "$target" == "production" ]]; then
+            if [[ "$ENABLE_PROD" != "true" ]]; then
+              echo "Production deploys require vars.WHATEVERFI_ENABLE_PAGES_PRODUCTION=true; refusing."
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            branch=main
+          elif [[ "$target" == "preview" ]]; then
+            branch=github-main
+          else
+            echo "Unknown target: $target" >&2
+            exit 1
+          fi
+          # wrangler pages deploy with an empty --branch falls back to the git
+          # branch, which on this workflow is main (production). Refuse that.
+          if [[ -z "$branch" ]]; then
+            echo "Refusing deploy with empty --branch" >&2
+            exit 1
+          fi
+          if [[ "$target" != "production" && "$branch" == "main" ]]; then
+            echo "Refusing to pass --branch main for a non-production target" >&2
+            exit 1
+          fi
+          {
+            echo "skip=false"
+            echo "target=$target"
+            echo "branch=$branch"
+          } >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        if: steps.target.outputs.skip != 'true'
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - uses: ./.github/actions/setup-workspace
+        if: steps.target.outputs.skip != 'true'
+        with:
+          filter: "@rakazo/www..."
+
+      - name: Build apps/www
+        if: steps.target.outputs.skip != 'true'
+        run: |
+          set -euo pipefail
+          umask 0022
+          pnpm --filter @rakazo/www... build
+          test -f apps/www/dist/_redirects
+          grep -F '/api/download https://app.whateverfi.com/ 302' apps/www/dist/_redirects
+          test -f apps/www/dist/build-info.json
+          grep -F upstreamSha apps/www/dist/build-info.json
+          test -f apps/www/dist/og-image.png
+
+      - name: Install tesseract for branding-guard
+        if: steps.target.outputs.skip != 'true'
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr
+
+      - name: Branding guard
+        if: steps.target.outputs.skip != 'true'
+        run: bash overlays/whateverfi/scripts/branding-guard.sh .
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.target.outputs.skip != 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          BRANCH: ${{ steps.target.outputs.branch }}
+          TARGET: ${{ steps.target.outputs.target }}
+          SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          set -euo pipefail
+          # Re-check in the deploy step so a later edit cannot drop --branch.
+          if [[ -z "$BRANCH" ]]; then
+            echo "Refusing deploy with empty BRANCH" >&2
+            exit 1
+          fi
+          if [[ "$TARGET" != "production" && "$BRANCH" == "main" ]]; then
+            echo "Refusing --branch main for target=$TARGET" >&2
+            exit 1
+          fi
+          if [[ "$TARGET" == "production" && "$BRANCH" != "main" ]]; then
+            echo "Production target must use --branch main, got $BRANCH" >&2
+            exit 1
+          fi
+          npx --yes wrangler@4.161.0 pages deploy apps/www/dist \
+            --project-name=whateverfi-splash \
+            --branch="$BRANCH" \
+            --commit-hash="$SHA" \
+            --commit-dirty=false
