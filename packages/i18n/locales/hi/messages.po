@@ -7897,7 +7897,7 @@ msgid "WhatEverFi credits"
 msgstr "WhatEverFi क्रेडिट"
 
 #: apps/web/src/pages/memory-providers/HonchoSettingsForm.tsx
-msgid "rakazo-shared and IDs starting with bot- are reserved for Rakazo."
+msgid "rakazo-shared and IDs starting with bot- are reserved for WhatEverFi."
 msgstr "rakazo-shared और bot- से शुरू होने वाली ID, WhatEverFi के लिए आरक्षित हैं।"
 
 #: apps/mobile/components/thread/message-row.tsx
