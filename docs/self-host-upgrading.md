@@ -235,6 +235,39 @@ migrations — that ordering belongs to the API's dependency on the `migrate` se
 Only `https://` and `ssh://` git remotes are accepted. Merges are fast-forward only. A dirty or
 untracked source tree fails closed before anything runs (the application Dockerfile uses `COPY . .`).
 
+## Updater sidecar on the images stack
+
+`docker-compose.images.yml` (the no-checkout stack `install-images.sh` writes) stays pull-only
+and has no updater. To add one, download the opt-in overlay next to it and layer it after the
+images file. It reuses the production `updater` profile with the same scoping (no `ports`, own
+`control` network, no `env_file`) and pulls `ghcr.io/regan-studio/whateverfi/updater`:
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/regan-studio/whateverfi/main/infra/compose/docker-compose.images.updater.yml
+# In .env (generate the token on the host; never paste it into a ticket or chat):
+#   RAKAZO_UPDATER_TOKEN=<dedicated random value, 32+ chars>
+#   RAKAZO_DEPLOY_DIR=<absolute path of this directory>
+#   RAKAZO_UPDATER_IMAGE_TAG=sha-<full-commit>   # recommended pin
+docker compose --env-file .env -f docker-compose.images.yml -f docker-compose.images.updater.yml \
+  --profile updater up -d --wait updater
+```
+
+Only the `updater` service starts; nothing else is recreated. Once the overlay is layered, every
+later Compose command for this stack must pass both `-f` files, because the overlay requires
+`RAKAZO_DEPLOY_DIR`. Defaults for this layout: `COMPOSE_PROJECT_NAME=rakazo`,
+`RAKAZO_COMPOSE_FILE=docker-compose.images.yml:docker-compose.images.updater.yml`, and
+`RAKAZO_UPDATE_SERVICES=supervisor` (the supervisor runs from the app image). The official
+update path needs a stable `vX.Y.Z` release tag on the repository; until one exists `/plan`
+and `/apply` refuse ("… has no published release tags, so there is no image to pull."). Check health without publishing a port:
+
+```bash
+docker compose --env-file .env -f docker-compose.images.yml -f docker-compose.images.updater.yml \
+  exec -T updater node -e "fetch('http://127.0.0.1:7092/health').then(r=>r.text()).then(console.log)"
+```
+
+To remove it: `docker compose … --profile updater rm -sf updater`, then drop the overlay file and
+the extra `-f`.
+
 ## The deploy directory must be one path
 
 `RAKAZO_DEPLOY_DIR` is bind-mounted into the updater at the same path it is read from

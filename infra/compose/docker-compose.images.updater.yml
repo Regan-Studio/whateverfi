@@ -1,0 +1,83 @@
+# Optional overlay: the updater sidecar for the pull-based images stack.
+# The images file stays pull-only and unchanged; layer this one after it, and only when you
+# want automated apply/rollback. It reuses the `updater` profile from docker-compose.prod.yml,
+# adapted to the no-checkout layout that install-images.sh writes (compose files + .env in one
+# directory, project name `rakazo`, published images only):
+#
+#   docker compose --env-file .env \
+#     -f docker-compose.images.yml -f docker-compose.images.updater.yml \
+#     --profile updater up -d --wait updater
+#
+# Without `--profile updater` nothing here starts, so layering the file alone changes no
+# running service. See docs/self-host-upgrading.md#updater-sidecar-on-the-images-stack.
+#
+# Required in .env before enabling (names only; generate values on the host, never commit them):
+#   RAKAZO_UPDATER_TOKEN   dedicated random value, >= 32 chars, different from
+#                          BETTER_AUTH_SECRET, SANDBOX_SUPERVISOR_TOKEN and SCREEN_PROXY_SECRET
+#   RAKAZO_DEPLOY_DIR      absolute host path of this directory (where .env and the compose
+#                          files live); it is bind-mounted at the same path
+# Optional: RAKAZO_UPDATER_IMAGE, RAKAZO_UPDATER_IMAGE_TAG (pin a full sha-<commit> tag),
+#   RAKAZO_COMPOSE_FILE, RAKAZO_UPDATE_SERVICES, COMPOSE_PROJECT_NAME.
+
+services:
+  # The updater holds the Docker socket, which is root-equivalent on the host, so it is opt-in and
+  # deliberately narrow: no `ports` (nothing on the host), only its own `control` network (no
+  # route from web, api or the tunnel), and no `env_file` — application secrets stay in the
+  # bind-mounted `.env` that Compose reads for interpolation, not in this process. It is never
+  # recreated by an update, because it is the process performing the update.
+  updater:
+    profiles: [updater]
+    # Pinned separately from the application image: the updater does not recreate itself, so
+    # moving its own version is an operator action. Pin a full sha-<commit> tag in production.
+    image: ${RAKAZO_UPDATER_IMAGE:-ghcr.io/regan-studio/whateverfi/updater}:${RAKAZO_UPDATER_IMAGE_TAG:-edge}
+    restart: unless-stopped
+    init: true
+    user: root
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 256
+    mem_limit: 1g
+    environment:
+      NODE_ENV: production
+      # Optional at interpolation so `config` works without it; resolveUpdaterConfig still
+      # refuses to start the sidecar without a dedicated secure value.
+      RAKAZO_UPDATER_TOKEN: ${RAKAZO_UPDATER_TOKEN:-}
+      RAKAZO_UPDATER_HOST: "0.0.0.0"
+      RAKAZO_UPDATER_PORT: "7092"
+      RAKAZO_IMAGE: ${RAKAZO_IMAGE:-ghcr.io/regan-studio/whateverfi/app}
+      # docker-compose.images.yml pins `name: rakazo`; the sidecar must target that project.
+      COMPOSE_PROJECT_NAME: ${COMPOSE_PROJECT_NAME:-rakazo}
+      # No default: the images stack lives wherever the operator ran install-images.sh, and a
+      # wrong path here makes Docker create empty directories in place of .env.
+      RAKAZO_DEPLOY_DIR: ${RAKAZO_DEPLOY_DIR:?Set RAKAZO_DEPLOY_DIR to the absolute path of this compose directory}
+      # Reconcile the same file list the operator runs by hand (paths relative to RAKAZO_DEPLOY_DIR).
+      RAKAZO_COMPOSE_FILE: ${RAKAZO_COMPOSE_FILE:-docker-compose.images.yml:docker-compose.images.updater.yml}
+      # The supervisor runs from the app image, so it moves with api, worker and web.
+      RAKAZO_UPDATE_SERVICES: ${RAKAZO_UPDATE_SERVICES:-supervisor}
+      COMPOSE_PATH_SEPARATOR: ${COMPOSE_PATH_SEPARATOR:-}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      LOG_FORMAT: ${LOG_FORMAT:-}
+      AXIOM_TOKEN: ${AXIOM_TOKEN:-}
+      AXIOM_DATASET: ${AXIOM_DATASET:-}
+      AXIOM_EDGE: ${AXIOM_EDGE:-}
+      AXIOM_EDGE_URL: ${AXIOM_EDGE_URL:-}
+      SENTRY_DSN: ${SENTRY_DSN:-}
+      SENTRY_ENVIRONMENT: ${SENTRY_ENVIRONMENT:-}
+      SENTRY_RELEASE: ${SENTRY_RELEASE:-}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${RAKAZO_DEPLOY_DIR:?Set RAKAZO_DEPLOY_DIR to the absolute path of this compose directory}:${RAKAZO_DEPLOY_DIR:?Set RAKAZO_DEPLOY_DIR to the absolute path of this compose directory}
+    networks:
+      - control
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - fetch('http://127.0.0.1:7092/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+networks:
+  control:

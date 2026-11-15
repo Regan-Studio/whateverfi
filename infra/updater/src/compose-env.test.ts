@@ -195,6 +195,7 @@ function loadServices(file: string): Record<string, ComposeService> {
 /** Each deployable stack: a base file plus any overlay layered on it. */
 const STACKS = [
   ["docker-compose.images.yml"],
+  ["docker-compose.images.yml", "docker-compose.images.updater.yml"],
   ["docker-compose.prod.yml"],
   ["docker-compose.prod.yml", "docker-compose.prod.docker.yml"],
   ["docker-compose.yml"],
