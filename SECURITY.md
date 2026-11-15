@@ -6,7 +6,7 @@ Please **do not** open a public GitHub issue for a security bug.
 
 Report vulnerabilities privately with [GitHub private vulnerability reporting](https://github.com/Regan-Studio/whateverfi/security/advisories/new) on this repository. If that form is not yet enabled, contact a repository owner by a private channel and ask them to enable it.
 
-Mail to `security@whateverfi.com` is being prepared on the same Proton Mail account that already receives mark@ and scarecrow@regan.studio. Until MX and authentication records for `whateverfi.com` are published, do not rely on that address; use GitHub private reporting.
+Mail to `security@whateverfi.com` is routed to the same Proton Mail account that receives mark@ and scarecrow@regan.studio. Prefer GitHub private vulnerability reporting for new reports so nothing is missed.
 
 Please include:
 
