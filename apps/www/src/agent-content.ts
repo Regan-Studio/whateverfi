@@ -135,14 +135,14 @@ export const SUPPORT_MARKDOWN = `# WhatEverFi support
 
 For help with the WhatEverFi mobile app or a hosted WhatEverFi account, email [hello@whateverfi.com](mailto:hello@whateverfi.com). Include the email address on the account, what you expected to happen, and any error message you saw. Never send passwords, API keys, access tokens, or other secrets.
 
-For self-hosted WhatEverFi, start with the [self-hosting guide](https://whateverfi.com/self-hosted-ai-agent/). The [full reference](https://github.com/Regan-Studio/whateverfi/blob/main/docs/self-host.md) is on GitHub. Open reproducible bugs and feature requests in the [public GitHub repository](https://github.com/Regan-Studio/whateverfi/issues). Report vulnerabilities only to [security@whateverfi.com](mailto:security@whateverfi.com).
+For self-hosted WhatEverFi, start with the [self-hosting guide](https://whateverfi.com/self-hosted-ai-agent/). The [full reference](https://github.com/Regan-Studio/whateverfi/blob/main/docs/self-host.md) is on GitHub. Open reproducible bugs and feature requests in the [public GitHub repository](https://github.com/Regan-Studio/whateverfi/issues). Report vulnerabilities privately through [GitHub private vulnerability reporting](https://github.com/Regan-Studio/whateverfi/security/advisories/new). Do not rely on security@whateverfi.com until whateverfi.com mail is published; see [SECURITY.md](https://github.com/Regan-Studio/whateverfi/blob/main/SECURITY.md).
 
 Hosted users can permanently delete their account and associated personal Space data from the Account screen in the WhatEverFi app, or on the web at [app.whateverfi.com](https://app.whateverfi.com) under Settings → Account. Without access to the app, email [hello@whateverfi.com](mailto:hello@whateverfi.com) from the account's email address to ask us to delete it. Sign-in security records are kept for up to 90 days.
 `;
 
 export const PRIVACY_MARKDOWN = `# WhatEverFi privacy
 
-Last updated: November 12, 2026
+Last updated: November 15, 2026
 
 WhatEverFi processes account details, user-provided bot content, connection information, and technical records needed to operate and secure the service. Content comes from what you enter, upload, record, or authorize your bots to access. WhatEverFi does not sell personal information or use WhatEverFi content for third-party advertising.
 
@@ -156,7 +156,9 @@ Services we select must provide protection equal to or greater than the safeguar
 
 Hosted users can delete their account and associated personal Space data from Account. In self-hosted deployments, the server operator controls information sent to that deployment. For privacy requests, email [hello@whateverfi.com](mailto:hello@whateverfi.com).
 
-Read the [complete privacy policy](https://whateverfi.com/privacy/) for account information, other service providers, retention, deletion, security, international transfers, children, and your rights.
+If you are a California resident, the CCPA/CPRA gives you the right to know, access, correct, and delete personal information, to opt out of the sale or sharing of personal information, and not to be discriminated against for exercising those rights. We do not sell personal information and we do not share it for cross-context behavioral advertising. Email [hello@whateverfi.com](mailto:hello@whateverfi.com) or use the [contact page](https://whateverfi.com/contact/) to make a request.
+
+Read the [complete privacy policy](https://whateverfi.com/privacy/) for account information, other service providers, retention, deletion, security, international transfers, children, your rights, and California privacy rights.
 `;
 
 export const TERMS_MARKDOWN = `# WhatEverFi terms
@@ -285,6 +287,17 @@ The requested WhatEverFi page does not exist.
 - [Self-hosting guide](https://whateverfi.com/self-hosted-ai-agent/)
 `;
 
+export const CONTACT_MARKDOWN = `# WhatEverFi contact
+
+For product, account, and self-hosting help, email [hello@whateverfi.com](mailto:hello@whateverfi.com). Do not send passwords, API keys, access tokens, or other secrets.
+
+Press and general inquiries can use the same address. Privacy requests, including California CCPA/CPRA requests, can also be sent to [hello@whateverfi.com](mailto:hello@whateverfi.com) or made from this page's HTML version at [whateverfi.com/contact](https://whateverfi.com/contact/).
+
+Report security vulnerabilities privately through [GitHub private vulnerability reporting](https://github.com/Regan-Studio/whateverfi/security/advisories/new). Mail to security@whateverfi.com is being prepared on the same Proton Mail account that already receives mark@ and scarecrow@regan.studio, but it is not a reliable contact until MX and authentication records for whateverfi.com are published. See [SECURITY.md](https://github.com/Regan-Studio/whateverfi/blob/main/SECURITY.md).
+
+Regan.Studio maintains WhatEverFi.
+`;
+
 const MARKDOWN_DOCUMENTS = new Map<string, string>([
   ["/", HOME_MARKDOWN],
   ["/about", ABOUT_MARKDOWN],
@@ -296,6 +309,7 @@ const MARKDOWN_DOCUMENTS = new Map<string, string>([
   ["/privacy", PRIVACY_MARKDOWN],
   ["/self-hosted-ai-agent", SELF_HOST_MARKDOWN],
   ["/support", SUPPORT_MARKDOWN],
+  ["/contact", CONTACT_MARKDOWN],
   ["/plugins/submit", PLUGIN_SUBMIT_MARKDOWN],
   ["/alternatives", roundupMarkdown()],
   ...ALTERNATIVES.map((page) => [`/${page.slug}`, alternativeMarkdown(page)] as const),
