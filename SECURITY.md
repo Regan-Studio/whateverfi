@@ -2,9 +2,11 @@
 
 ## Reporting vulnerabilities
 
-Please **do not** open a public GitHub issue for a security bug, and do not email `security@whateverfi.com` yet: `whateverfi.com` has no MX records, so mail to that address will not be delivered.
+Please **do not** open a public GitHub issue for a security bug.
 
-Report vulnerabilities privately with [GitHub private vulnerability reporting](https://github.com/Regan-Studio/whateverfi/security/advisories/new) on this repository. If that form is not yet enabled, contact a repository owner by a private channel and ask them to enable it (see the steps in the accompanying settings proposal).
+Report vulnerabilities privately with [GitHub private vulnerability reporting](https://github.com/Regan-Studio/whateverfi/security/advisories/new) on this repository. If that form is not yet enabled, contact a repository owner by a private channel and ask them to enable it.
+
+Mail to `security@whateverfi.com` is being prepared on the same Proton Mail account that already receives mark@ and scarecrow@regan.studio. Until MX and authentication records for `whateverfi.com` are published, do not rely on that address; use GitHub private reporting.
 
 Please include:
 

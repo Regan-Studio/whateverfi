@@ -1,0 +1,42 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { githubStarsLabel } from "../github";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { GITHUB_URL } from "../site";
+
+const starsLabel = await githubStarsLabel();
+---
+
+<BaseLayout title="Contact · WhatEverFi" description="Contact Regan.Studio about WhatEverFi, privacy requests, or security reports.">
+  <div class="container">
+    <Header starsLabel={starsLabel} />
+    <main id="main" class="privacy-copy">
+      <h1>Contact WhatEverFi</h1>
+      <p>
+        WhatEverFi is maintained by Regan.Studio. For product, account, and self-hosting help, email{" "}
+        <a href="mailto:hello@whateverfi.com">hello@whateverfi.com</a>. Include enough detail to help us help you.
+        Do not send passwords, API keys, access tokens, or other secrets.
+      </p>
+      <h2>Privacy requests</h2>
+      <p>
+        To access, correct, or delete personal information, or to make a California CCPA/CPRA request, email{" "}
+        <a href="mailto:hello@whateverfi.com">hello@whateverfi.com</a> or see the{" "}
+        <a href="/privacy/">privacy policy</a>. We may need to verify your request.
+      </p>
+      <h2>Security reports</h2>
+      <p>
+        Report vulnerabilities privately through{" "}
+        <a href={`${GITHUB_URL}/security/advisories/new`}>GitHub private vulnerability reporting</a>.
+        Do not open a public issue for an unfixed security bug.
+      </p>
+      <p>
+        Mail to <a href="mailto:security@whateverfi.com">security@whateverfi.com</a> is being prepared on the
+        same Proton Mail account that already receives mark@ and scarecrow@regan.studio. Until MX and
+        authentication records for whateverfi.com are published, do not rely on that address; use GitHub
+        private reporting. See the <a href={`${GITHUB_URL}/blob/main/SECURITY.md`}>security policy</a>.
+      </p>
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>
