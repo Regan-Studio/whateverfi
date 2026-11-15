@@ -3,13 +3,27 @@
   "redirects": [
     {
       "source": "/",
-      "has": [{ "type": "host", "value": { "eq": "www.whateverfi.com" } }],
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "eq": "www.whateverfi.com"
+          }
+        }
+      ],
       "destination": "https://whateverfi.com/",
       "statusCode": 301
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": { "eq": "www.whateverfi.com" } }],
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "eq": "www.whateverfi.com"
+          }
+        }
+      ],
       "destination": "https://whateverfi.com/:path*",
       "statusCode": 301
     },
@@ -46,6 +60,30 @@
         {
           "key": "Link",
           "value": "</llms.txt>; rel=\"describedby\"; type=\"text/plain\", </.well-known/ai-catalog.json>; rel=\"ai-catalog\"; type=\"application/ai-catalog+json\""
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "accelerometer=(), autoplay=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), publickey-credentials-get=(), usb=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://us.i.posthog.com https://us-assets.i.posthog.com https://client.crisp.chat https://settings.crisp.chat; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://client.crisp.chat; img-src 'self' data: https://*.crisp.chat https://*.crisp.email https://us.i.posthog.com; font-src 'self' https://fonts.gstatic.com https://*.crisp.chat; connect-src 'self' https://us.i.posthog.com https://us-assets.i.posthog.com https://*.crisp.chat wss://*.crisp.chat https://*.crisp.email; frame-src https://game.crisp.chat; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
         }
       ]
     },
