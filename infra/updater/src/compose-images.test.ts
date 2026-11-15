@@ -197,3 +197,66 @@ describe("the images compose file", () => {
     expect(compose.services.computer?.environment?.LOG_LEVEL).toBeUndefined();
   });
 });
+
+/**
+ * The opt-in updater overlay for the images stack. It reuses the production `updater` profile, so
+ * the same root-equivalent scoping is asserted here rather than reviewed.
+ */
+describe("the images updater overlay", () => {
+  const overlayFile = path.resolve(repoRoot, "infra/compose/docker-compose.images.updater.yml");
+  const overlay = parse(readFileSync(overlayFile, "utf8"), { merge: true }) as {
+    services: Record<string, ComposeService & { profiles?: string[] }>;
+    networks?: Record<string, unknown>;
+  };
+  const updater = overlay.services.updater;
+
+  it("adds only the updater, behind its profile", () => {
+    expect(Object.keys(overlay.services)).toEqual(["updater"]);
+    expect(updater?.profiles).toEqual(["updater"]);
+  });
+
+  it("pulls the published updater image and never builds", () => {
+    expect(updater?.image).toBe(
+      // biome-ignore lint/suspicious/noTemplateCurlyInString: this is the literal Compose expression
+      "${RAKAZO_UPDATER_IMAGE:-ghcr.io/regan-studio/whateverfi/updater}:${RAKAZO_UPDATER_IMAGE_TAG:-edge}",
+    );
+    expect(updater?.build).toBeUndefined();
+  });
+
+  it("publishes nothing and sits only on its own control network", () => {
+    expect(updater?.ports).toBeUndefined();
+    expect(updater?.networks).toEqual(["control"]);
+    expect(overlay.networks).toHaveProperty("control");
+    for (const name of Object.keys(compose.services)) {
+      expect(compose.services[name]?.networks ?? []).not.toContain("control");
+    }
+  });
+
+  it("keeps application secrets out of the root-equivalent process", () => {
+    expect(updater?.env_file).toBeUndefined();
+    // biome-ignore lint/suspicious/noTemplateCurlyInString: this is the literal Compose expression
+    expect(updater?.environment?.RAKAZO_UPDATER_TOKEN).toBe("${RAKAZO_UPDATER_TOKEN:-}");
+    for (const key of ["BETTER_AUTH_SECRET", "POSTGRES_PASSWORD", "ENCRYPTION_KEY"]) {
+      expect(updater?.environment).not.toHaveProperty(key);
+    }
+  });
+
+  it("mounts the deploy directory at its host path and targets the images project", () => {
+    const deployDir =
+      // biome-ignore lint/suspicious/noTemplateCurlyInString: this is the literal Compose expression
+      "${RAKAZO_DEPLOY_DIR:?Set RAKAZO_DEPLOY_DIR to the absolute path of this compose directory}";
+    expect(updater?.environment?.RAKAZO_DEPLOY_DIR).toBe(deployDir);
+    expect(updater?.volumes).toContain(`${deployDir}:${deployDir}`);
+    expect(updater?.volumes).toContain("/var/run/docker.sock:/var/run/docker.sock");
+    // biome-ignore lint/suspicious/noTemplateCurlyInString: this is the literal Compose expression
+    expect(updater?.environment?.COMPOSE_PROJECT_NAME).toBe("${COMPOSE_PROJECT_NAME:-rakazo}");
+    expect(updater?.environment?.RAKAZO_COMPOSE_FILE).toBe(
+      // biome-ignore lint/suspicious/noTemplateCurlyInString: this is the literal Compose expression
+      "${RAKAZO_COMPOSE_FILE:-docker-compose.images.yml:docker-compose.images.updater.yml}",
+    );
+    expect(updater?.environment?.RAKAZO_UPDATE_SERVICES).toBe(
+      // biome-ignore lint/suspicious/noTemplateCurlyInString: this is the literal Compose expression
+      "${RAKAZO_UPDATE_SERVICES:-supervisor}",
+    );
+  });
+});
